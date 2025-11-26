@@ -1184,6 +1184,68 @@ Va aita su vo seka su kisun ait
 
 ---
 
+### Démonstratifs (VALIDÉ)
+
+Les démonstratifs utilisent des **racines complètes** liées par une **liaison sacrée** au mot qu'ils désignent.
+
+#### Racines démonstratives
+
+| Racine | Forme liée | Sens |
+|--------|------------|------|
+| **tisa** | tis- | ici, proche, présent |
+| **tova** | tov- | là-bas, loin, distant |
+
+#### Formation
+
+On utilise la liaison **-i-** (agent : "qui est") :
+
+```
+tis- + i + [mot] = ce [mot]-ci (proche)
+tov- + i + [mot] = ce [mot]-là (loin)
+```
+
+#### Exemples
+
+| Français | Confluent | Composition |
+|----------|-----------|-------------|
+| cette pierre-ci | **tisikari** | tis-i-kari |
+| cette pierre-là | **tovikari** | tov-i-kari |
+| ce regard-ci | **tisisili** | tis-i-sili |
+| ce regard-là | **tovisili** | tov-i-sili |
+| cette personne-ci | **tisitori** | tis-i-tori |
+| cette personne-là | **tovitori** | tov-i-tori |
+| cette eau-ci | **tisiura** | tis-i-ura |
+| cette eau-là | **toviura** | tov-i-ura |
+
+#### Pluriel des démonstratifs
+
+Le pluriel **su** se place après le mot composé complet :
+
+```
+tisikari su = ces pierres-ci
+tovikari su = ces pierres-là
+tisitori su = ces personnes-ci
+tovitori su = ces personnes-là
+```
+
+#### Exemples dans des phrases
+
+```
+Va tori vo tisikari mirak u
+[SUJET] personne [OBJET] cette.pierre.ci observer [PRÉSENT]
+"La personne observe cette pierre-ci"
+
+Ve tovitoka vi tisitoka tekis en
+[DEPUIS] cette.terre.là [VERS] cette.terre.ci aller [FUTUR]
+"(Il) ira depuis cette terre-là vers cette terre-ci"
+
+Va tisitori su vo tovisili mirak at
+[SUJET] cette.personne.ci [PL] [OBJET] ce.regard.là observer [PASSÉ]
+"Ces personnes-ci ont observé ce regard-là"
+```
+
+---
+
 ### Cumul des modes
 
 On peut cumuler négation + mode. La structure de fin de phrase est :
@@ -1268,7 +1330,8 @@ Ku ve Kekutoka vi Uraakota no Talusavu vu kari na aita su va Oraumi ni naki su v
 8. ✅ Définir la négation et les questions
 9. ✅ Définir le pluriel (particule su)
 10. ✅ Définir le cumul des modes et règles avancées
-11. [ ] Créer le fichier de données JSON/YAML
-12. [ ] Définir des formules rituelles
-13. [ ] Enrichir le lexique verbal
-14. [ ] Propositions relatives / phrases multi-verbes (ex: "le chien qui a mangé...")
+11. ✅ Définir les démonstratifs (tisa/tova + liaison sacrée)
+12. [ ] Créer le fichier de données JSON/YAML
+13. [ ] Définir des formules rituelles
+14. [ ] Enrichir le lexique verbal
+15. [ ] Propositions relatives / phrases multi-verbes (ex: "le chien qui a mangé...")
