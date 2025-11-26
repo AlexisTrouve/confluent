@@ -1271,3 +1271,4 @@ Ku ve Kekutoka vi Uraakota no Talusavu vu kari na aita su va Oraumi ni naki su v
 11. [ ] Créer le fichier de données JSON/YAML
 12. [ ] Définir des formules rituelles
 13. [ ] Enrichir le lexique verbal
+14. [ ] Propositions relatives / phrases multi-verbes (ex: "le chien qui a mangé...")
