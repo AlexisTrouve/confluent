@@ -834,6 +834,428 @@ Les groupes les plus sacrés (chamans) en contiennent plusieurs.
 
 ---
 
+## SYSTÈME VERBAL (VALIDÉ)
+
+### Distinction Noms / Verbes
+
+| Type | Structure | Longueur | Fin | Exemple |
+|------|-----------|----------|-----|---------|
+| **Nom/racine** | ...CV | 2-4 lettres | Voyelle | sili, aska, kota |
+| **Verbe** | CVCVC | 5 lettres | Consonne | mirak, nekan, vosak |
+
+Cette distinction claire permet de reconnaître immédiatement la nature d'un mot.
+
+---
+
+### Verbes de base
+
+Transformation des racines verbales en format CVCVC :
+
+| Verbe | Sens |
+|-------|------|
+| **mirak** | voir, observer |
+| **tekis** | aller, se déplacer |
+| **kitan** | donner |
+| **pasak** | prendre |
+| **nekan** | faire, créer |
+| **vosak** | dire, parler |
+| **sekam** | savoir, connaître |
+| **mokis** | apprendre |
+| **kisun** | transmettre, enseigner |
+| **zakis** | garder, protéger |
+| **takan** | porter, transporter |
+| **zanak** | chasser, traquer |
+
+---
+
+### Conjugateurs
+
+Les conjugateurs sont des particules placées **après le verbe**. Ils marquent le temps, l'aspect ou le mode.
+
+**Structure des conjugateurs :**
+- V (une voyelle seule)
+- VC (voyelle + consonne)
+- VVC (deux voyelles + consonne)
+- VCVC (exception cérémonielle)
+
+#### Présent
+
+| Conjugateur | Structure | Sens |
+|-------------|-----------|------|
+| **u** | V | Présent neutre |
+
+#### Passés
+
+| Conjugateur | Structure | Sens |
+|-------------|-----------|------|
+| **at** | VC | Passé vécu (dans ma vie) |
+| **aan** | VVC | Passé regretté / "oups, j'ai fait ça" |
+| **ait** | VVC | Passé ancestral (nos ancêtres ont fait) |
+| **amat** | VCVC | Passé mythique (cérémoniel, temps des Premiers Ancêtres) |
+
+#### Futur
+
+| Conjugateur | Structure | Sens |
+|-------------|-----------|------|
+| **en** | VC | Futur |
+
+#### Aspects
+
+| Conjugateur | Structure | Sens |
+|-------------|-----------|------|
+| **il** | VC | Accompli (c'est fait, terminé) |
+| **eol** | VVC | Habituel (fait régulièrement) |
+| **eon** | VVC | Cyclique (revient comme les saisons) |
+| **eom** | VVC | Éternel (toujours vrai, immuable) |
+
+#### Modes
+
+| Conjugateur | Structure | Sens |
+|-------------|-----------|------|
+| **ok** | VC | Impératif / ordre hiérarchique |
+| **es** | VC | Souhait / désir |
+| **ul** | VC | Capacité / pouvoir |
+
+#### Évidentiel
+
+| Conjugateur | Structure | Sens |
+|-------------|-----------|------|
+| **uv** | VC | C'est écrit (dans les glyphes, source textuelle) |
+
+---
+
+### Exemples de conjugaison
+
+Avec le verbe **mirak** (observer) :
+
+```
+mirak u     = observe (maintenant)
+mirak at    = a observé (dans sa vie)
+mirak aan   = a observé (oups, pas prévu)
+mirak ait   = nos ancêtres ont observé
+mirak amat  = aux temps mythiques, on observait (cérémoniel)
+mirak en    = observera
+mirak il    = a fini d'observer
+mirak eol   = observe régulièrement
+mirak eon   = observe à chaque cycle
+mirak eom   = observe éternellement (vérité immuable)
+mirak ok    = observe ! (ordre)
+mirak es    = veut observer
+mirak ul    = peut observer
+mirak uv    = c'est écrit qu'on observe
+```
+
+---
+
+## STRUCTURE DE LA PHRASE (VALIDÉ)
+
+### Ordre des mots : SOV
+
+Le Confluent utilise l'ordre **Sujet-Objet-Verbe** :
+
+```
+[SUJET] [OBJET] [VERBE] [CONJUGATEUR]
+```
+
+Le verbe est toujours à la fin, suivi de son conjugateur.
+
+---
+
+### Système de particules de cas
+
+Les particules marquent la fonction grammaticale des mots. Elles se placent **AVANT** le mot qu'elles marquent.
+
+**Structure des particules :** CV (consonne + voyelle)
+
+| Particule | Fonction | Usage |
+|-----------|----------|-------|
+| **va** | Sujet | qui fait l'action |
+| **vo** | Objet direct | qui subit l'action |
+| **vi** | Direction | vers, destination |
+| **ve** | Origine | depuis, source |
+| **vu** | Instrument | avec quoi, au moyen de |
+| **na** | Possession | de, appartenant à |
+| **ni** | Bénéficiaire | pour, à destination de |
+| **no** | Lieu | dans, à |
+
+---
+
+### Exemples de phrases
+
+**Phrase simple :**
+```
+Va tori vo sili mirak u
+[SUJET] personne [OBJET] regard observer [PRÉSENT]
+"La personne observe le regard"
+```
+
+**Phrase avec bénéficiaire :**
+```
+Va aita ni naki vo seka kisun at
+[SUJET] ancêtre [POUR] enfant [OBJET] savoir transmettre [PASSÉ]
+"L'ancêtre a transmis le savoir pour l'enfant"
+```
+
+**Phrase avec mouvement :**
+```
+Ve ura vi toka tekis en
+[DEPUIS] eau [VERS] terre aller [FUTUR]
+"(Il) ira depuis l'eau vers la terre"
+```
+
+**Phrase avec lieu :**
+```
+No talu va kasi vosak u
+[DANS] hall [SUJET] chef parler [PRÉSENT]
+"Dans le hall, le chef parle"
+```
+
+**Phrase avec instrument :**
+```
+Va naki vu kari vo kova nekan at
+[SUJET] enfant [AVEC] pierre [OBJET] peinture faire [PASSÉ]
+"L'enfant a fait la peinture avec la pierre"
+```
+
+---
+
+### Distinction des structures
+
+| Élément | Structure | Position |
+|---------|-----------|----------|
+| **Nom/racine** | CV final, 2-4 lettres | après particule |
+| **Verbe** | CVCVC, 5 lettres | fin de phrase |
+| **Conjugateur** | V/VC/VVC | après verbe |
+| **Particule de cas** | CV | avant le nom |
+
+Cette distinction permet une analyse claire de chaque phrase.
+
+---
+
+## NÉGATION ET QUESTIONS (VALIDÉ)
+
+### Négation
+
+Les particules de négation se placent **avant le verbe**. Elles forment une famille basée sur **zo-**.
+
+| Particule | Structure | Sens |
+|-----------|-----------|------|
+| **zo** | CV | ne...pas (négation neutre) |
+| **zom** | CVC | jamais (négation éternelle) |
+| **zob** | CVC | interdit / tabou |
+| **zoe** | CVC | pas vraiment (négation douce) |
+
+#### Exemples de négation
+
+```
+Va tori vo sili zo mirak u
+[SUJET] personne [OBJET] regard [NÉG] observer [PRÉSENT]
+"La personne n'observe pas le regard"
+
+Va tori vo sili zom mirak u
+"La personne n'observe jamais le regard"
+
+Va tori vo sili zob mirak u
+"Il est interdit d'observer le regard"
+
+Va tori vo sili zoe mirak u
+"La personne n'observe pas vraiment le regard"
+```
+
+---
+
+### Questions
+
+#### Question fermée (oui/non)
+
+La particule **ka** se place en **fin de phrase** (après le conjugateur).
+
+| Particule | Structure | Sens |
+|-----------|-----------|------|
+| **ka** | CV | est-ce que ? (question fermée) |
+
+```
+Va tori vo sili mirak u ka
+"Est-ce que la personne observe le regard ?"
+```
+
+#### Questions ouvertes (qui, quoi, où, quand)
+
+Les mots interrogatifs **remplacent** le mot inconnu dans la phrase.
+
+| Particule | Structure | Sens |
+|-----------|-----------|------|
+| **ki** | CV | qui ? |
+| **ke** | CV | quoi ? |
+| **ko** | CV | où ? |
+| **ku** | CV | quand ? |
+
+#### Exemples de questions ouvertes
+
+```
+Va ki vo sili mirak u
+[SUJET] qui ? [OBJET] regard observer [PRÉSENT]
+"Qui observe le regard ?"
+
+Va tori vo ke mirak u
+[SUJET] personne [OBJET] quoi ? observer [PRÉSENT]
+"La personne observe quoi ?"
+
+No ko va tori tekis en
+[DANS] où ? [SUJET] personne aller [FUTUR]
+"Où la personne ira ?"
+
+Ku va tori tekis at
+quand ? [SUJET] personne aller [PASSÉ]
+"Quand la personne est-elle allée ?"
+```
+
+---
+
+### Récapitulatif des particules
+
+#### Particules de cas (CV, avant le mot)
+
+| Particule | Fonction |
+|-----------|----------|
+| **va** | Sujet |
+| **vo** | Objet direct |
+| **vi** | Direction (vers) |
+| **ve** | Origine (depuis) |
+| **vu** | Instrument (avec) |
+| **na** | Possession (de) |
+| **ni** | Bénéficiaire (pour) |
+| **no** | Lieu (dans, à) |
+
+#### Particules de négation (avant le verbe)
+
+| Particule | Sens |
+|-----------|------|
+| **zo** | ne...pas |
+| **zom** | jamais |
+| **zob** | interdit |
+| **zoe** | pas vraiment |
+
+#### Particules interrogatives
+
+| Particule | Position | Sens |
+|-----------|----------|------|
+| **ka** | fin de phrase | est-ce que ? |
+| **ki** | remplace le mot | qui ? |
+| **ke** | remplace le mot | quoi ? |
+| **ko** | remplace le mot | où ? |
+| **ku** | remplace le mot | quand ? |
+
+#### Particule de pluriel
+
+| Particule | Position | Sens |
+|-----------|----------|------|
+| **su** | après le mot | pluriel (plusieurs) |
+
+Le pluriel est considéré comme une information secondaire, donc placé après le mot.
+
+#### Exemples de pluriel
+
+```
+Va tori mirak u
+"La personne observe"
+
+Va tori su mirak u
+"Les personnes observent"
+
+Va aita ni naki su vo seka kisun ait
+[SUJET] ancêtre [POUR] enfant [PLURIEL] [OBJET] savoir transmettre [PASSÉ.ANCESTRAL]
+"L'ancêtre a transmis le savoir pour les enfants"
+
+Va aita su vo seka su kisun ait
+[SUJET] ancêtre [PLURIEL] [OBJET] savoir [PLURIEL] transmettre [PASSÉ.ANCESTRAL]
+"Les ancêtres ont transmis les savoirs"
+```
+
+---
+
+### Notes grammaticales
+
+- **Pas de pronoms** : le sujet est implicite ou on utilise le nom/titre
+- **Pas d'articles** : pas de "le/la/un/une"
+- **Pluriel optionnel** : marqué par **su** après le mot si nécessaire
+- **Une seule question par phrase** : on ne peut pas cumuler ki, ke, ko, ku dans la même phrase
+- **Ordre des circonstants libre** : ve, vi, no, vu, na, ku... peuvent être dans n'importe quel ordre
+
+---
+
+### Cumul des modes
+
+On peut cumuler négation + mode. La structure de fin de phrase est :
+
+```
+[NÉGATION] [VERBE] [CONJUGATEUR] [MODE]
+```
+
+La négation modifie le verbe, le mode modifie l'ensemble.
+
+#### Exemples de cumuls
+
+```
+Va tori vo asa zob mirak u ul
+[SUJET] personne [OBJET] sacré [INTERDIT] observer [PRÉSENT] [CAPACITÉ]
+"La personne ne peut pas observer le sacré (c'est interdit)"
+
+Va naki vo seka zo sekam en es
+[SUJET] enfant [OBJET] savoir [NÉG] connaître [FUTUR] [SOUHAIT]
+"L'enfant veut ne pas connaître le savoir (dans le futur)"
+
+Va Oraumi vo veri zom kisun ait ul
+[SUJET] Voix.Aurore [OBJET] vérité [JAMAIS] transmettre [PASSÉ.ANCESTRAL] [CAPACITÉ]
+"Les Voix de l'Aurore n'ont jamais pu transmettre la vérité (ancestral)"
+```
+
+---
+
+### Phrases complexes (exemples)
+
+#### Phrase avec lieu, pluriel, passé ancestral
+
+```
+No Vukuura va aita su ni naki su vo seka su kisun ait
+[DANS] Gouffre.Humide [SUJET] ancêtre [PL] [POUR] enfant [PL] [OBJET] savoir [PL] transmettre [PASSÉ.ANCESTRAL]
+"Dans le Gouffre Humide, les ancêtres ont transmis les savoirs pour les enfants"
+```
+
+#### Phrase avec mouvement, bénéficiaire, souhait
+
+```
+Ve Kekutoka vi Uraakota ni Ariaska va Nakukeko vo kari su takan es
+[DEPUIS] Antres.Échos [VERS] Confluence [POUR] Ailes-Grises [SUJET] Enfants.Échos [OBJET] pierre [PL] porter [SOUHAIT]
+"Les Enfants des Échos veulent porter les pierres depuis les Antres vers la Confluence pour les Ailes-Grises"
+```
+
+#### Phrase cyclique, pluriel, origine, évidentiel
+
+```
+Ve ora vi luna va Oraumi su vo umi su mirak eon uv
+[DEPUIS] aurore [VERS] lune [SUJET] Voix.Aurore [PL] [OBJET] esprit [PL] observer [CYCLIQUE] [ÉCRIT]
+"C'est écrit que les Voix de l'Aurore observent cycliquement les esprits depuis l'aurore jusqu'à la lune"
+```
+
+#### Phrase avec triple mouvement, vérité éternelle
+
+```
+Ve ura vi toka ve toka vi zeru va umi tekis eom
+[DEPUIS] eau [VERS] terre [DEPUIS] terre [VERS] ciel [SUJET] esprit aller [ÉTERNEL]
+"L'esprit va éternellement de l'eau vers la terre, de la terre vers le ciel"
+```
+
+#### Phrase maximale
+
+```
+Ku ve Kekutoka vi Uraakota no Talusavu vu kari na aita su va Oraumi ni naki su vo seka su zoe kisun ait ka
+[QUAND] [DEPUIS] Antres [VERS] Confluence [DANS] Halls [AVEC] pierre [DE] ancêtre [PL] [SUJET] Voix.Aurore [POUR] enfant [PL] [OBJET] savoir [PL] [NÉG.DOUX] transmettre [PASSÉ.ANCESTRAL] [QUESTION]
+"Quand est-ce que les Voix de l'Aurore n'ont pas vraiment transmis les savoirs des ancêtres pour les enfants, avec la pierre, dans les Halls des Serments, depuis les Antres vers la Confluence ?"
+```
+
+---
+
 ### Prochaines étapes
 
 1. ✅ Valider le système des liaisons sacrées
@@ -841,5 +1263,11 @@ Les groupes les plus sacrés (chamans) en contiennent plusieurs.
 3. ✅ Nommer les castes principales
 4. ✅ Définir le nom des Voix de l'Aurore
 5. ✅ Nommer les lieux clés
-6. [ ] Créer le fichier de données JSON/YAML
-7. [ ] Définir des formules rituelles
+6. ✅ Définir le système verbal (verbes CVCVC + conjugateurs)
+7. ✅ Définir la structure de phrase (SOV + particules)
+8. ✅ Définir la négation et les questions
+9. ✅ Définir le pluriel (particule su)
+10. ✅ Définir le cumul des modes et règles avancées
+11. [ ] Créer le fichier de données JSON/YAML
+12. [ ] Définir des formules rituelles
+13. [ ] Enrichir le lexique verbal
