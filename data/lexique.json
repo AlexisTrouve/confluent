@@ -1,0 +1,315 @@
+{
+  "meta": {
+    "version": "2.0",
+    "langue": "Confluent",
+    "stade": "Ancien Confluent",
+    "total_racines": 173,
+    "racines_sacrees": 19,
+    "racines_standards": 154,
+    "ratio_sacrees": "11%"
+  },
+  "liaisons": {
+    "i": { "base": "I", "domaine": "agent", "concept": "actif", "description": "celui qui fait, porte, agit" },
+    "ie": { "base": "I", "domaine": "agent", "concept": "recepteur", "description": "celui qui recoit, subit" },
+    "ii": { "base": "I", "domaine": "agent", "concept": "essentiel", "description": "celui qui EST" },
+    "iu": { "base": "I", "domaine": "agent", "concept": "potentiel", "description": "celui qui devient" },
+    "u": { "base": "U", "domaine": "appartenance", "concept": "de", "description": "appartenant a" },
+    "ui": { "base": "U", "domaine": "appartenance", "concept": "pour", "description": "destine a" },
+    "a": { "base": "A", "domaine": "relation", "concept": "avec", "description": "ensemble" },
+    "aa": { "base": "A", "domaine": "relation", "concept": "melange", "description": "mele a, confluent" },
+    "ae": { "base": "A", "domaine": "relation", "concept": "egal", "description": "equivalent a" },
+    "ao": { "base": "A", "domaine": "relation", "concept": "domine", "description": "superieur a" },
+    "o": { "base": "O", "domaine": "tension", "concept": "obstacle", "description": "face a, contre" },
+    "oa": { "base": "O", "domaine": "tension", "concept": "resolu", "description": "surmonte, accompli" },
+    "e": { "base": "E", "domaine": "dimension", "concept": "source", "description": "origine, passe" },
+    "ei": { "base": "E", "domaine": "dimension", "concept": "centre", "description": "present, ici" },
+    "ea": { "base": "E", "domaine": "dimension", "concept": "direction", "description": "futur, but" },
+    "eo": { "base": "E", "domaine": "dimension", "concept": "totalite", "description": "eternel, universel" }
+  },
+  "racines": {
+    "sacrees": [
+      { "id": 1, "forme_base": "aska", "forme_liee": "ask", "sens": "libre, liberte", "domaine": "concept_fondateur" },
+      { "id": 2, "forme_base": "aita", "forme_liee": "ait", "sens": "ancetre, ancien", "domaine": "lignee_sacree" },
+      { "id": 3, "forme_base": "asa", "forme_liee": "as", "sens": "sacre, divin", "domaine": "spirituel" },
+      { "id": 4, "forme_base": "avi", "forme_liee": "av", "sens": "oiseau, vol", "domaine": "nature_sacree" },
+      { "id": 5, "forme_base": "aru", "forme_liee": "ar", "sens": "grue (Regard-Libre)", "domaine": "animal_sacre" },
+      { "id": 6, "forme_base": "aki", "forme_liee": "ak", "sens": "faucon", "domaine": "animal_sacre" },
+      { "id": 7, "forme_base": "ura", "forme_liee": "ur", "sens": "eau, fluide", "domaine": "element_primordial" },
+      { "id": 8, "forme_base": "umi", "forme_liee": "um", "sens": "esprit, souffle vital", "domaine": "spirituel" },
+      { "id": 9, "forme_base": "iko", "forme_liee": "ik", "sens": "un, unique, seul", "domaine": "concept_fondateur" },
+      { "id": 10, "forme_base": "ita", "forme_liee": "it", "sens": "etre, exister", "domaine": "existence" },
+      { "id": 11, "forme_base": "ena", "forme_liee": "en", "sens": "origine, source, naissance", "domaine": "dimension" },
+      { "id": 12, "forme_base": "eka", "forme_liee": "ek", "sens": "tout, entier, totalite", "domaine": "dimension" },
+      { "id": 13, "forme_base": "oki", "forme_liee": "ok", "sens": "epreuve, defi, danger", "domaine": "conflit_sacre" },
+      { "id": 14, "forme_base": "ora", "forme_liee": "or", "sens": "aurore, aube", "domaine": "moment_sacre" },
+      { "id": 15, "forme_base": "onu", "forme_liee": "on", "sens": "son, vibration", "domaine": "rituel" },
+      { "id": 68, "forme_base": "anu", "forme_liee": "an", "sens": "ame, conscience profonde", "domaine": "spirituel" },
+      { "id": 69, "forme_base": "eku", "forme_liee": "ek", "sens": "etoile", "domaine": "celeste_sacre" },
+      { "id": 70, "forme_base": "osi", "forme_liee": "os", "sens": "mort, mourir", "domaine": "cycle_sacre" },
+      { "id": 71, "forme_base": "ava", "forme_liee": "av", "sens": "aile", "domaine": "nature_sacree" }
+    ],
+    "standards": {
+      "elements_nature": [
+        { "id": 16, "forme_base": "zeru", "forme_liee": "zer", "sens": "ciel" },
+        { "id": 17, "forme_base": "toka", "forme_liee": "tok", "sens": "terre, sol" },
+        { "id": 18, "forme_base": "suki", "forme_liee": "suk", "sens": "feu, flamme" },
+        { "id": 19, "forme_base": "vena", "forme_liee": "ven", "sens": "air, vent" },
+        { "id": 20, "forme_base": "kari", "forme_liee": "kar", "sens": "pierre, roche" },
+        { "id": 21, "forme_base": "nura", "forme_liee": "nur", "sens": "riviere, courant" },
+        { "id": 22, "forme_base": "tasa", "forme_liee": "tas", "sens": "montagne" },
+        { "id": 23, "forme_base": "viku", "forme_liee": "vik", "sens": "foret, arbre" },
+        { "id": 24, "forme_base": "luna", "forme_liee": "lun", "sens": "lune" },
+        { "id": 25, "forme_base": "sora", "forme_liee": "sor", "sens": "soleil, lumiere" },
+        { "id": 74, "forme_base": "daku", "forme_liee": "dak", "sens": "sombre, obscur" },
+        { "id": 108, "forme_base": "siku", "forme_liee": "sik", "sens": "sec, aride" },
+        { "id": 114, "forme_base": "tani", "forme_liee": "tan", "sens": "vallee" },
+        { "id": 105, "forme_base": "seli", "forme_liee": "sel", "sens": "sel, mer" }
+      ],
+      "corps_sens": [
+        { "id": 26, "forme_base": "sili", "forme_liee": "sil", "sens": "oeil, regard, vision" },
+        { "id": 27, "forme_base": "kanu", "forme_liee": "kan", "sens": "main" },
+        { "id": 28, "forme_base": "voki", "forme_liee": "vok", "sens": "voix, parole" },
+        { "id": 29, "forme_base": "tiku", "forme_liee": "tik", "sens": "oreille, ecoute" },
+        { "id": 30, "forme_base": "muka", "forme_liee": "muk", "sens": "visage" },
+        { "id": 31, "forme_base": "kori", "forme_liee": "kor", "sens": "coeur" },
+        { "id": 32, "forme_base": "sanu", "forme_liee": "san", "sens": "corps" },
+        { "id": 33, "forme_base": "peki", "forme_liee": "pek", "sens": "pied, base" },
+        { "id": 34, "forme_base": "keko", "forme_liee": "kek", "sens": "echo, resonance" },
+        { "id": 98, "forme_base": "puli", "forme_liee": "pul", "sens": "poumon, souffle" },
+        { "id": 138, "forme_base": "niku", "forme_liee": "nik", "sens": "chair, viande" },
+        { "id": 95, "forme_base": "peli", "forme_liee": "pel", "sens": "peau, surface" },
+        { "id": 77, "forme_base": "kina", "forme_liee": "kin", "sens": "sang" }
+      ],
+      "actions": [
+        { "id": 35, "forme_base": "mira", "forme_liee": "mir", "sens": "voir, observer", "verbe": "mirak" },
+        { "id": 36, "forme_base": "teki", "forme_liee": "tek", "sens": "aller, chemin", "verbe": "tekis" },
+        { "id": 37, "forme_base": "kita", "forme_liee": "kit", "sens": "donner", "verbe": "kitan" },
+        { "id": 38, "forme_base": "pasa", "forme_liee": "pas", "sens": "prendre", "verbe": "pasak" },
+        { "id": 39, "forme_base": "neka", "forme_liee": "nek", "sens": "faire, creer", "verbe": "nekan" },
+        { "id": 40, "forme_base": "vosa", "forme_liee": "vos", "sens": "dire, parler", "verbe": "vosak" },
+        { "id": 41, "forme_base": "seka", "forme_liee": "sek", "sens": "savoir, connaitre", "verbe": "sekam" },
+        { "id": 42, "forme_base": "moki", "forme_liee": "mok", "sens": "apprendre", "verbe": "mokis" },
+        { "id": 43, "forme_base": "kisu", "forme_liee": "kis", "sens": "transmettre, enseigner", "verbe": "kisun" },
+        { "id": 44, "forme_base": "zaki", "forme_liee": "zak", "sens": "garder, proteger", "verbe": "zakis" },
+        { "id": 45, "forme_base": "taka", "forme_liee": "tak", "sens": "porter, transporter", "verbe": "takan" },
+        { "id": 46, "forme_base": "zana", "forme_liee": "zan", "sens": "chasser, traquer", "verbe": "zanak" },
+        { "id": 78, "forme_base": "kisu", "forme_liee": "kis", "sens": "couper, trancher" },
+        { "id": 110, "forme_base": "soki", "forme_liee": "sok", "sens": "frapper, battre" },
+        { "id": 111, "forme_base": "sopi", "forme_liee": "sop", "sens": "sommeil, dormir" },
+        { "id": 117, "forme_base": "tenu", "forme_liee": "ten", "sens": "tenir, garder" },
+        { "id": 119, "forme_base": "tiki", "forme_liee": "tik", "sens": "tisser, lier" },
+        { "id": 120, "forme_base": "toku", "forme_liee": "tok", "sens": "toucher, contact" },
+        { "id": 136, "forme_base": "lanu", "forme_liee": "lan", "sens": "lancer, jeter" },
+        { "id": 140, "forme_base": "samu", "forme_liee": "sam", "sens": "assembler, unir" },
+        { "id": 145, "forme_base": "levi", "forme_liee": "lev", "sens": "lever, elever" },
+        { "id": 151, "forme_base": "tiru", "forme_liee": "tir", "sens": "tirer, extraire" },
+        { "id": 152, "forme_base": "venu", "forme_liee": "ven", "sens": "venir, arriver" },
+        { "id": 156, "forme_base": "kapi", "forme_liee": "kap", "sens": "capturer, prendre" },
+        { "id": 158, "forme_base": "miku", "forme_liee": "mik", "sens": "melanger, mixer" },
+        { "id": 170, "forme_base": "roti", "forme_liee": "rot", "sens": "rotation, tourner" }
+      ],
+      "etres_relations": [
+        { "id": 47, "forme_base": "kota", "forme_liee": "kot", "sens": "union, confluence, ensemble" },
+        { "id": 48, "forme_base": "naki", "forme_liee": "nak", "sens": "enfant, descendant" },
+        { "id": 49, "forme_base": "tori", "forme_liee": "tor", "sens": "personne, individu" },
+        { "id": 50, "forme_base": "vaku", "forme_liee": "vak", "sens": "ami, allie" },
+        { "id": 51, "forme_base": "zoka", "forme_liee": "zok", "sens": "ennemi, etranger hostile" },
+        { "id": 52, "forme_base": "mitu", "forme_liee": "mit", "sens": "famille, clan" },
+        { "id": 53, "forme_base": "kasi", "forme_liee": "kas", "sens": "chef, guide" },
+        { "id": 72, "forme_base": "besi", "forme_liee": "bes", "sens": "bete, animal sauvage" },
+        { "id": 94, "forme_base": "pesa", "forme_liee": "pes", "sens": "poisson" },
+        { "id": 118, "forme_base": "tibu", "forme_liee": "tib", "sens": "tribu, groupe" },
+        { "id": 132, "forme_base": "ziku", "forme_liee": "zik", "sens": "serpent" }
+      ],
+      "concepts_abstraits": [
+        { "id": 54, "forme_base": "veri", "forme_liee": "ver", "sens": "vrai, verite" },
+        { "id": 55, "forme_base": "tosa", "forme_liee": "tos", "sens": "bon, bien" },
+        { "id": 56, "forme_base": "mako", "forme_liee": "mak", "sens": "grand, vaste" },
+        { "id": 57, "forme_base": "pisu", "forme_liee": "pis", "sens": "petit, fin" },
+        { "id": 58, "forme_base": "novu", "forme_liee": "nov", "sens": "nouveau, jeune" },
+        { "id": 59, "forme_base": "kiru", "forme_liee": "kir", "sens": "echanger, troquer" },
+        { "id": 60, "forme_base": "vasi", "forme_liee": "vas", "sens": "pont, lien, passage" },
+        { "id": 82, "forme_base": "leku", "forme_liee": "lek", "sens": "loi, regle" },
+        { "id": 85, "forme_base": "meli", "forme_liee": "mel", "sens": "doux, tendre" },
+        { "id": 88, "forme_base": "mori", "forme_liee": "mor", "sens": "memoire, souvenir" },
+        { "id": 92, "forme_base": "paki", "forme_liee": "pak", "sens": "paix, calme" },
+        { "id": 97, "forme_base": "poku", "forme_liee": "pok", "sens": "poison, toxique" },
+        { "id": 106, "forme_base": "seni", "forme_liee": "sen", "sens": "vieux, ancien" },
+        { "id": 116, "forme_base": "temi", "forme_liee": "tem", "sens": "temps, duree" },
+        { "id": 123, "forme_base": "vali", "forme_liee": "val", "sens": "valeur, merite" },
+        { "id": 125, "forme_base": "viku", "forme_liee": "vik", "sens": "victoire, vaincre" },
+        { "id": 129, "forme_base": "voli", "forme_liee": "vol", "sens": "vouloir, desir" },
+        { "id": 130, "forme_base": "zaki", "forme_liee": "zak", "sens": "justice, equite" },
+        { "id": 142, "forme_base": "varu", "forme_liee": "var", "sens": "guerre, combat" },
+        { "id": 150, "forme_base": "seku", "forme_liee": "sek", "sens": "secret, cache" },
+        { "id": 168, "forme_base": "noli", "forme_liee": "nol", "sens": "noble, eleve" }
+      ],
+      "lieux_structures": [
+        { "id": 61, "forme_base": "vuku", "forme_liee": "vuk", "sens": "profond, gouffre, abime" },
+        { "id": 62, "forme_base": "nisa", "forme_liee": "nis", "sens": "humide, mouille" },
+        { "id": 63, "forme_base": "riku", "forme_liee": "rik", "sens": "cercle, anneau" },
+        { "id": 64, "forme_base": "vela", "forme_liee": "vel", "sens": "veille, vigile, guet" },
+        { "id": 65, "forme_base": "savu", "forme_liee": "sav", "sens": "serment, promesse" },
+        { "id": 66, "forme_base": "talu", "forme_liee": "tal", "sens": "hall, grande salle" },
+        { "id": 67, "forme_base": "kova", "forme_liee": "kov", "sens": "peinture, image, fresque" },
+        { "id": 79, "forme_base": "koni", "forme_liee": "kon", "sens": "assemblee, reunion" },
+        { "id": 84, "forme_base": "loku", "forme_liee": "lok", "sens": "lieu, endroit" },
+        { "id": 103, "forme_base": "rovi", "forme_liee": "rov", "sens": "route, chemin" },
+        { "id": 121, "forme_base": "tumi", "forme_liee": "tum", "sens": "tombe, enterrer" },
+        { "id": 135, "forme_base": "kama", "forme_liee": "kam", "sens": "chambre, piece" },
+        { "id": 161, "forme_base": "sumu", "forme_liee": "sum", "sens": "sommet, haut" },
+        { "id": 164, "forme_base": "bori", "forme_liee": "bor", "sens": "bord, limite" },
+        { "id": 169, "forme_base": "pori", "forme_liee": "por", "sens": "porte, passage" },
+        { "id": 133, "forme_base": "zoni", "forme_liee": "zon", "sens": "zone, region" }
+      ],
+      "materiaux_objets": [
+        { "id": 73, "forme_base": "buki", "forme_liee": "buk", "sens": "bois, arbre (materiau)" },
+        { "id": 75, "forme_base": "kelu", "forme_liee": "kel", "sens": "couleur, teinte" },
+        { "id": 76, "forme_base": "kesa", "forme_liee": "kes", "sens": "cendre, gris" },
+        { "id": 80, "forme_base": "koru", "forme_liee": "kor", "sens": "cercle, cycle" },
+        { "id": 81, "forme_base": "lavi", "forme_liee": "lav", "sens": "lait, liquide blanc" },
+        { "id": 83, "forme_base": "lina", "forme_liee": "lin", "sens": "ligne, corde" },
+        { "id": 89, "forme_base": "navi", "forme_liee": "nav", "sens": "navire, embarcation" },
+        { "id": 96, "forme_base": "piki", "forme_liee": "pik", "sens": "pic, pointe" },
+        { "id": 99, "forme_base": "rasu", "forme_liee": "ras", "sens": "rouge" },
+        { "id": 104, "forme_base": "saki", "forme_liee": "sak", "sens": "sac, contenant" },
+        { "id": 109, "forme_base": "sinu", "forme_liee": "sin", "sens": "signe, marque" },
+        { "id": 113, "forme_base": "tabi", "forme_liee": "tab", "sens": "tablette, plaque" },
+        { "id": 154, "forme_base": "doku", "forme_liee": "dok", "sens": "document, ecrit" },
+        { "id": 165, "forme_base": "ketu", "forme_liee": "ket", "sens": "chaine, lien" },
+        { "id": 167, "forme_base": "meti", "forme_liee": "met", "sens": "metal, minerai" }
+      ],
+      "communication": [
+        { "id": 86, "forme_base": "mesi", "forme_liee": "mes", "sens": "message, nouvelle" },
+        { "id": 91, "forme_base": "nomi", "forme_liee": "nom", "sens": "nom, appellation" },
+        { "id": 100, "forme_base": "reki", "forme_liee": "rek", "sens": "recit, histoire" },
+        { "id": 159, "forme_base": "paru", "forme_liee": "par", "sens": "parler, discuter" },
+        { "id": 160, "forme_base": "rumi", "forme_liee": "rum", "sens": "rumeur, bruit" },
+        { "id": 128, "forme_base": "voki", "forme_liee": "vok", "sens": "appeler, invoquer" }
+      ],
+      "travail_technique": [
+        { "id": 87, "forme_base": "moki", "forme_liee": "mok", "sens": "moule, forme" },
+        { "id": 107, "forme_base": "seru", "forme_liee": "ser", "sens": "servir, aider" },
+        { "id": 115, "forme_base": "teku", "forme_liee": "tek", "sens": "technique, art" },
+        { "id": 141, "forme_base": "tavu", "forme_liee": "tav", "sens": "travail, oeuvre" },
+        { "id": 155, "forme_base": "fisu", "forme_liee": "fis", "sens": "fixer, attacher" }
+      ]
+    }
+  },
+  "demonstratifs": {
+    "tisa": { "forme_base": "tisa", "forme_liee": "tis", "sens": "ici, proche, present" },
+    "tova": { "forme_base": "tova", "forme_liee": "tov", "sens": "la-bas, loin, distant" }
+  },
+  "conjugateurs": {
+    "temps": {
+      "u": { "structure": "V", "sens": "present neutre" },
+      "at": { "structure": "VC", "sens": "passe vecu" },
+      "aan": { "structure": "VVC", "sens": "passe regrette" },
+      "ait": { "structure": "VVC", "sens": "passe ancestral" },
+      "amat": { "structure": "VCVC", "sens": "passe mythique" },
+      "en": { "structure": "VC", "sens": "futur" }
+    },
+    "aspects": {
+      "il": { "structure": "VC", "sens": "accompli" },
+      "eol": { "structure": "VVC", "sens": "habituel" },
+      "eon": { "structure": "VVC", "sens": "cyclique" },
+      "eom": { "structure": "VVC", "sens": "eternel" }
+    },
+    "modes": {
+      "ok": { "structure": "VC", "sens": "imperatif" },
+      "es": { "structure": "VC", "sens": "souhait" },
+      "ul": { "structure": "VC", "sens": "capacite" }
+    },
+    "evidentiel": {
+      "uv": { "structure": "VC", "sens": "c'est ecrit" }
+    }
+  },
+  "particules": {
+    "cas": {
+      "va": { "fonction": "sujet", "position": "avant" },
+      "vo": { "fonction": "objet_direct", "position": "avant" },
+      "vi": { "fonction": "direction", "position": "avant" },
+      "ve": { "fonction": "origine", "position": "avant" },
+      "vu": { "fonction": "instrument", "position": "avant" },
+      "na": { "fonction": "possession", "position": "avant" },
+      "ni": { "fonction": "beneficiaire", "position": "avant" },
+      "no": { "fonction": "lieu", "position": "avant" }
+    },
+    "negation": {
+      "zo": { "sens": "ne...pas" },
+      "zom": { "sens": "jamais" },
+      "zob": { "sens": "interdit" },
+      "zoe": { "sens": "pas vraiment" }
+    },
+    "interrogation": {
+      "ka": { "sens": "question fermee", "position": "fin" },
+      "ki": { "sens": "qui?", "position": "remplace" },
+      "ke": { "sens": "quoi?", "position": "remplace" },
+      "ko": { "sens": "ou?", "position": "remplace" },
+      "ku": { "sens": "quand?", "position": "remplace" }
+    },
+    "pluriel": {
+      "su": { "sens": "pluriel", "position": "apres" }
+    }
+  },
+  "vocabulaire_valide": {
+    "peuple": {
+      "nom": "Siliaska",
+      "composition": "sil-i-aska",
+      "sens": "Porteurs du regard libre"
+    },
+    "castes": [
+      { "francais": "Enfants des Echos", "confluent": "Nakukeko", "composition": "nak-u-keko" },
+      { "francais": "Enfants du Courant", "confluent": "Nakuura", "composition": "nak-u-ura" },
+      { "francais": "Ailes-Grises", "confluent": "Ariaska", "composition": "ar-i-aska" },
+      { "francais": "Faucons Chasseurs", "confluent": "Akoazana", "composition": "ak-oa-zana" },
+      { "francais": "Passes-bien", "confluent": "Takitosa", "composition": "tak-i-tosa" },
+      { "francais": "Voix de l'Aurore", "confluent": "Oraumi", "composition": "or-a-umi" }
+    ],
+    "lieux": [
+      { "francais": "La Confluence", "confluent": "Uraakota", "composition": "ur-aa-kota" },
+      { "francais": "Gouffre Humide", "confluent": "Vukuura", "composition": "vuk-u-ura" },
+      { "francais": "Antres des Echos", "confluent": "Kekutoka", "composition": "kek-u-toka" },
+      { "francais": "Cercles de Vigile", "confluent": "Rikuvela", "composition": "rik-u-vela" },
+      { "francais": "Halls des Serments", "confluent": "Talusavu", "composition": "tal-u-savu" },
+      { "francais": "Grande Fresque", "confluent": "Ekakova", "composition": "ek-a-kova" }
+    ]
+  },
+  "verbes": [
+    { "infinitif": "mirak", "sens": "voir, observer", "racine": "mira" },
+    { "infinitif": "tekis", "sens": "aller", "racine": "teki" },
+    { "infinitif": "kitan", "sens": "donner", "racine": "kita" },
+    { "infinitif": "pasak", "sens": "prendre", "racine": "pasa" },
+    { "infinitif": "nekan", "sens": "faire, creer", "racine": "neka" },
+    { "infinitif": "vosak", "sens": "dire, parler", "racine": "vosa" },
+    { "infinitif": "sekam", "sens": "savoir", "racine": "seka" },
+    { "infinitif": "mokis", "sens": "apprendre", "racine": "moki" },
+    { "infinitif": "kisun", "sens": "transmettre", "racine": "kisu" },
+    { "infinitif": "zakis", "sens": "garder", "racine": "zaki" },
+    { "infinitif": "takan", "sens": "porter", "racine": "taka" },
+    { "infinitif": "zanak", "sens": "chasser", "racine": "zana" },
+    { "infinitif": "umiak", "sens": "mediter", "racine": "umi" },
+    { "infinitif": "asavik", "sens": "prier", "racine": "asa" },
+    { "infinitif": "vokis", "sens": "invoquer", "racine": "voki" },
+    { "infinitif": "tosan", "sens": "benir", "racine": "tosa" },
+    { "infinitif": "kotam", "sens": "communier", "racine": "kota" },
+    { "infinitif": "osian", "sens": "mourir", "racine": "osi" },
+    { "infinitif": "sinan", "sens": "graver", "racine": "sinu" },
+    { "infinitif": "kovak", "sens": "sculpter", "racine": "kova" },
+    { "infinitif": "kelum", "sens": "peindre", "racine": "kelu" },
+    { "infinitif": "samuk", "sens": "assembler", "racine": "samu" },
+    { "infinitif": "lokun", "sens": "construire", "racine": "loku" },
+    { "infinitif": "vukis", "sens": "creuser", "racine": "vuku" },
+    { "infinitif": "pesak", "sens": "pecher", "racine": "pesa" },
+    { "infinitif": "tikun", "sens": "ecouter", "racine": "tiku" },
+    { "infinitif": "novak", "sens": "decouvrir", "racine": "novu" },
+    { "infinitif": "morik", "sens": "memoriser", "racine": "mori" },
+    { "infinitif": "paruk", "sens": "debattre", "racine": "paru" },
+    { "infinitif": "velak", "sens": "surveiller", "racine": "vela" },
+    { "infinitif": "varum", "sens": "armer", "racine": "varu" },
+    { "infinitif": "kapik", "sens": "capturer", "racine": "kapi" },
+    { "infinitif": "kirum", "sens": "troquer", "racine": "kiru" },
+    { "infinitif": "tenuk", "sens": "entreposer", "racine": "tenu" },
+    { "infinitif": "zakin", "sens": "arbitrer", "racine": "zaki" }
+  ]
+}
