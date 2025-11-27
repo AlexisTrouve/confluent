@@ -189,9 +189,45 @@ Pluriel : `tisikari su` = "ces pierres-ci"
 
 ---
 
+## Connecteurs logiques
+
+Les connecteurs sont des **particules** (structure CV) qui lient des phrases ou des éléments.
+
+| Connecteur | Confluent | Position | Usage |
+|------------|-----------|----------|-------|
+| **et** | **ti** | entre éléments | coordination |
+| **mais** | **bo** | début phrase 2 | opposition |
+| **ou** | **po** | entre options | alternative |
+| **donc** | **lo** | début phrase 2 | conséquence |
+| **car** | **se** | début phrase 2 | cause |
+| **si** | **me** | début condition | hypothèse |
+| **alors** | **ne** | début résultat | conséquence du "si" |
+
+### Exemples
+
+```
+va miki mirak u ti vo sinu mirak u
+= je vois et te vois
+
+va miki tekis at bo va sinu zo tekis at
+= je suis allé mais tu n'es pas allé
+
+me va miki mirak u ne vo sinu miki vosak u
+= si je vois alors je te parle
+
+va miki tekis u se va sinu zo tekis at
+= je vais car tu n'es pas allé
+
+vo kari po vo buki miki pasak u
+= je prends pierre ou bois
+```
+
+---
+
 ## Notes grammaticales
 
-- **Pas de pronoms** : le sujet est implicite ou on utilise le nom/titre
+- **Pronoms** : racines de 3 lettres (miki, sinu, tani)
+- **Connecteurs** : particules CV (ti, bo, po, lo, se, me, ne)
 - **Pas d'articles** : pas de "le/la/un/une"
 - **Pluriel optionnel** : marqué par **su** si nécessaire
 - **Ordre des circonstants libre** : ve, vi, no, vu, na peuvent être dans n'importe quel ordre

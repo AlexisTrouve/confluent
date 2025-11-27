@@ -248,11 +248,11 @@ Commencent par une consonne. Vocabulaire quotidien et concret.
 | **kilo** | échanger, troquer |
 | **leko** | loi, règle |
 | **mako** | grand, vaste |
-| **meli** | doux, tendre |
+| **melu** | doux, tendre |
 | **moli** | mémoire, souvenir |
-| **noli** | noble, élevé |
+| **nelu** | noble, élevé |
 | **nopo** | nouveau, jeune |
-| **paki** | paix, calme |
+| **paku** | paix, calme |
 | **pasi** | pont, lien, passage |
 | **piso** | petit, fin |
 | **poko** | poison, toxique |
@@ -293,7 +293,7 @@ Commencent par une consonne. Vocabulaire quotidien et concret.
 | **lapi** | lait, liquide blanc |
 | **laso** | rouge |
 | **lina** | ligne, corde |
-| **meti** | métal, minerai |
+| **metu** | métal, minerai |
 | **napi** | navire, embarcation |
 | **piki** | pic, pointe |
 | **saki** | sac, contenant |
@@ -306,7 +306,7 @@ Commencent par une consonne. Vocabulaire quotidien et concret.
 |-------|------|
 | **leki** | récit, histoire |
 | **lomi** | rumeur, bruit |
-| **mesi** | message, nouvelle |
+| **vesi** | message, nouvelle |
 | **nomi** | nom, appellation |
 | **palo** | parler, discuter |
 

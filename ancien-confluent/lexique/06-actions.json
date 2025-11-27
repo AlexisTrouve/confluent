@@ -1,17 +1,6 @@
 {
   "_comment": "Verbes et actions (forme racine + forme verbale CVCVC)",
-  "_mots_a_gerer": [
-    "voir", "observer", "mirak", "aller", "tekis", "donner", "kitan", "prendre",
-    "pasak", "faire", "créer", "nekan", "dire", "parler", "vosak", "savoir",
-    "connaître", "sekam", "apprendre", "mokis", "transmettre", "enseigner",
-    "kisun", "garder", "protéger", "zakis", "porter", "transporter", "takan",
-    "chasser", "traquer", "zanak", "méditer", "prier", "invoquer", "bénir",
-    "communier", "mourir", "graver", "sculpter", "peindre", "assembler",
-    "construire", "creuser", "tisser", "forger", "écouter", "étudier",
-    "découvrir", "explorer", "mémoriser", "interpréter", "défendre",
-    "surveiller", "attaquer", "capturer", "fuir", "vaincre", "troquer",
-    "entreposer", "arbitrer", "pêcher"
-  ],
+  "_mots_a_gerer": [],
   "dictionnaire": {
     "voir": {
       "traductions": [
@@ -26,6 +15,484 @@
         }
       ],
       "synonymes_fr": ["observer", "regarder"]
+    },
+    "aller": {
+      "traductions": [
+        {
+          "confluent": "tekis",
+          "type": "verbe",
+          "racine": "teki",
+          "forme_liee": "tek",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Mouvement, chemin"
+        }
+      ]
+    },
+    "donner": {
+      "traductions": [
+        {
+          "confluent": "kitan",
+          "type": "verbe",
+          "racine": "kita",
+          "forme_liee": "kit",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ]
+    },
+    "prendre": {
+      "traductions": [
+        {
+          "confluent": "pasak",
+          "type": "verbe",
+          "racine": "pasa",
+          "forme_liee": "pas",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ]
+    },
+    "faire": {
+      "traductions": [
+        {
+          "confluent": "nekan",
+          "type": "verbe",
+          "racine": "neka",
+          "forme_liee": "nek",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ],
+      "synonymes_fr": ["créer"]
+    },
+    "dire": {
+      "traductions": [
+        {
+          "confluent": "vosak",
+          "type": "verbe",
+          "racine": "vosa",
+          "forme_liee": "vos",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ],
+      "synonymes_fr": ["parler"]
+    },
+    "savoir": {
+      "traductions": [
+        {
+          "confluent": "sekam",
+          "type": "verbe",
+          "racine": "seka",
+          "forme_liee": "sek",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ],
+      "synonymes_fr": ["connaître"]
+    },
+    "apprendre": {
+      "traductions": [
+        {
+          "confluent": "mokis",
+          "type": "verbe",
+          "racine": "moki",
+          "forme_liee": "mok",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Recevoir le savoir"
+        }
+      ]
+    },
+    "transmettre": {
+      "traductions": [
+        {
+          "confluent": "kisun",
+          "type": "verbe",
+          "racine": "kisu",
+          "forme_liee": "kis",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Enseigner, passer le savoir"
+        }
+      ],
+      "synonymes_fr": ["enseigner"]
+    },
+    "garder": {
+      "traductions": [
+        {
+          "confluent": "zakis",
+          "type": "verbe",
+          "racine": "zaki",
+          "forme_liee": "zak",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ],
+      "synonymes_fr": ["protéger"]
+    },
+    "porter": {
+      "traductions": [
+        {
+          "confluent": "takan",
+          "type": "verbe",
+          "racine": "taka",
+          "forme_liee": "tak",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ],
+      "synonymes_fr": ["transporter"]
+    },
+    "chasser": {
+      "traductions": [
+        {
+          "confluent": "zanak",
+          "type": "verbe",
+          "racine": "zana",
+          "forme_liee": "zan",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ],
+      "synonymes_fr": ["traquer"]
+    },
+    "méditer": {
+      "traductions": [
+        {
+          "confluent": "umiak",
+          "type": "verbe",
+          "racine": "umi",
+          "forme_liee": "um",
+          "structure": "VCVC",
+          "domaine": "action_spirituelle",
+          "note": "Verbe sacré dérivé de 'esprit'"
+        }
+      ],
+      "synonymes_fr": ["prier"]
+    },
+    "invoquer": {
+      "traductions": [
+        {
+          "confluent": "onak",
+          "type": "verbe",
+          "racine": "onu",
+          "forme_liee": "on",
+          "structure": "VCVC",
+          "domaine": "action_spirituelle",
+          "note": "Utiliser le son sacré"
+        }
+      ]
+    },
+    "bénir": {
+      "traductions": [
+        {
+          "confluent": "asak",
+          "type": "verbe",
+          "racine": "asa",
+          "forme_liee": "as",
+          "structure": "VCVC",
+          "domaine": "action_spirituelle"
+        }
+      ]
+    },
+    "communier": {
+      "traductions": [
+        {
+          "confluent": "kotam",
+          "type": "verbe",
+          "racine": "kota",
+          "forme_liee": "kot",
+          "structure": "CVCVC",
+          "domaine": "action_spirituelle",
+          "note": "S'unir spirituellement"
+        }
+      ]
+    },
+    "mourir": {
+      "traductions": [
+        {
+          "confluent": "osiak",
+          "type": "verbe",
+          "racine": "osi",
+          "forme_liee": "os",
+          "structure": "VCVC",
+          "domaine": "action_sacree"
+        }
+      ]
+    },
+    "graver": {
+      "traductions": [
+        {
+          "confluent": "kovak",
+          "type": "verbe",
+          "racine": "kova",
+          "forme_liee": "kov",
+          "structure": "CVCVC",
+          "domaine": "action_artisanale"
+        }
+      ],
+      "synonymes_fr": ["sculpter"]
+    },
+    "peindre": {
+      "traductions": [
+        {
+          "confluent": "kovam",
+          "type": "verbe",
+          "racine": "kova",
+          "forme_liee": "kov",
+          "structure": "CVCVC",
+          "domaine": "action_artisanale",
+          "note": "Même racine que graver - art visuel"
+        }
+      ]
+    },
+    "assembler": {
+      "traductions": [
+        {
+          "confluent": "kotak",
+          "type": "verbe",
+          "racine": "kota",
+          "forme_liee": "kot",
+          "structure": "CVCVC",
+          "domaine": "action_artisanale"
+        }
+      ]
+    },
+    "construire": {
+      "traductions": [
+        {
+          "confluent": "nekis",
+          "type": "verbe",
+          "racine": "neka",
+          "forme_liee": "nek",
+          "structure": "CVCVC",
+          "domaine": "action_artisanale"
+        }
+      ]
+    },
+    "creuser": {
+      "traductions": [
+        {
+          "confluent": "vukan",
+          "type": "verbe",
+          "racine": "vuku",
+          "forme_liee": "vuk",
+          "structure": "CVCVC",
+          "domaine": "action_artisanale"
+        }
+      ]
+    },
+    "tisser": {
+      "traductions": [
+        {
+          "confluent": "vasin",
+          "type": "verbe",
+          "racine": "vasi",
+          "forme_liee": "vas",
+          "structure": "CVCVC",
+          "domaine": "action_artisanale",
+          "note": "Lier des fils ensemble"
+        }
+      ]
+    },
+    "forger": {
+      "traductions": [
+        {
+          "confluent": "sukam",
+          "type": "verbe",
+          "racine": "suki",
+          "forme_liee": "suk",
+          "structure": "CVCVC",
+          "domaine": "action_artisanale",
+          "note": "Travailler par le feu"
+        }
+      ]
+    },
+    "écouter": {
+      "traductions": [
+        {
+          "confluent": "tikam",
+          "type": "verbe",
+          "racine": "tiku",
+          "forme_liee": "tik",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ]
+    },
+    "étudier": {
+      "traductions": [
+        {
+          "confluent": "sekis",
+          "type": "verbe",
+          "racine": "seka",
+          "forme_liee": "sek",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ]
+    },
+    "découvrir": {
+      "traductions": [
+        {
+          "confluent": "miris",
+          "type": "verbe",
+          "racine": "mira",
+          "forme_liee": "mir",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Voir pour la première fois"
+        }
+      ],
+      "synonymes_fr": ["explorer"]
+    },
+    "mémoriser": {
+      "traductions": [
+        {
+          "confluent": "memak",
+          "type": "verbe",
+          "racine": "memu",
+          "forme_liee": "mem",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ]
+    },
+    "interpréter": {
+      "traductions": [
+        {
+          "confluent": "sekun",
+          "type": "verbe",
+          "racine": "seka",
+          "forme_liee": "sek",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ]
+    },
+    "défendre": {
+      "traductions": [
+        {
+          "confluent": "zakam",
+          "type": "verbe",
+          "racine": "zaki",
+          "forme_liee": "zak",
+          "structure": "CVCVC",
+          "domaine": "action_combat"
+        }
+      ]
+    },
+    "surveiller": {
+      "traductions": [
+        {
+          "confluent": "velak",
+          "type": "verbe",
+          "racine": "vela",
+          "forme_liee": "vel",
+          "structure": "CVCVC",
+          "domaine": "action_combat"
+        }
+      ]
+    },
+    "attaquer": {
+      "traductions": [
+        {
+          "confluent": "okiak",
+          "type": "verbe",
+          "racine": "oki",
+          "forme_liee": "ok",
+          "structure": "VCVC",
+          "domaine": "action_combat"
+        }
+      ]
+    },
+    "capturer": {
+      "traductions": [
+        {
+          "confluent": "pasik",
+          "type": "verbe",
+          "racine": "pasa",
+          "forme_liee": "pas",
+          "structure": "CVCVC",
+          "domaine": "action_combat"
+        }
+      ]
+    },
+    "fuir": {
+      "traductions": [
+        {
+          "confluent": "tekun",
+          "type": "verbe",
+          "racine": "teki",
+          "forme_liee": "tek",
+          "structure": "CVCVC",
+          "domaine": "action_combat"
+        }
+      ]
+    },
+    "vaincre": {
+      "traductions": [
+        {
+          "confluent": "okian",
+          "type": "verbe",
+          "racine": "oki",
+          "forme_liee": "ok",
+          "structure": "VCVC",
+          "domaine": "action_combat"
+        }
+      ]
+    },
+    "troquer": {
+      "traductions": [
+        {
+          "confluent": "kirak",
+          "type": "verbe",
+          "racine": "kiru",
+          "forme_liee": "kir",
+          "structure": "CVCVC",
+          "domaine": "action_commerce"
+        }
+      ]
+    },
+    "entreposer": {
+      "traductions": [
+        {
+          "confluent": "zakun",
+          "type": "verbe",
+          "racine": "zaki",
+          "forme_liee": "zak",
+          "structure": "CVCVC",
+          "domaine": "action_commerce"
+        }
+      ]
+    },
+    "arbitrer": {
+      "traductions": [
+        {
+          "confluent": "verim",
+          "type": "verbe",
+          "racine": "veri",
+          "forme_liee": "ver",
+          "structure": "CVCVC",
+          "domaine": "action_justice",
+          "note": "Juger selon la vérité"
+        }
+      ]
+    },
+    "pêcher": {
+      "traductions": [
+        {
+          "confluent": "pisak",
+          "type": "verbe",
+          "racine": "pisu",
+          "forme_liee": "pis",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Chasser dans l'eau"
+        }
+      ]
     }
   }
 }

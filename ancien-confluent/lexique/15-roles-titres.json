@@ -1,14 +1,6 @@
 {
   "_comment": "Rôles sociaux, titres et fonctions",
-  "_mots_a_gerer": [
-    "Arbitre des Esprits", "oracle", "chef", "Grand Chef", "Proclamateur", "sage",
-    "Faucon Chasseur", "Faucon vétéran", "traqueur", "guerrier", "archer",
-    "porteur de lance", "capitaine", "sentinelle", "Aile-Grise", "chaman",
-    "dresseur de grues", "guide des âmes", "gardien des lois", "Passe-bien",
-    "Porteur de Flamme", "maître artisan", "façonneur de pierre", "sculpteur",
-    "peintre", "tisserand", "pêcheur", "mineur", "aîné", "descendant", "ancêtre",
-    "mère", "père", "époux", "épouse"
-  ],
+  "_mots_a_gerer": [],
   "dictionnaire": {
     "Arbitre des Esprits": {
       "traductions": [
@@ -22,6 +14,393 @@
           "note": "Entité tutélaire du jeu, pouvoir de réserve"
         }
       ]
+    },
+    "oracle": {
+      "traductions": [
+        {
+          "confluent": "siluuumi",
+          "type": "composition",
+          "composition": "sil-u-umi",
+          "sens_litteral": "Regard de l'esprit",
+          "racines": ["sili", "umi"],
+          "domaine": "titre_spirituel"
+        }
+      ]
+    },
+    "chef": {
+      "traductions": [
+        {
+          "confluent": "kasi",
+          "type": "racine",
+          "forme_liee": "kas",
+          "domaine": "titre"
+        }
+      ]
+    },
+    "Grand Chef": {
+      "traductions": [
+        {
+          "confluent": "Makokasi",
+          "type": "nom_propre",
+          "composition": "mak-o-kasi",
+          "sens_litteral": "Chef de grandeur",
+          "racines": ["mako", "kasi"],
+          "categorie": "titre"
+        }
+      ]
+    },
+    "Proclamateur": {
+      "traductions": [
+        {
+          "confluent": "Vokiueka",
+          "type": "nom_propre",
+          "composition": "vok-i-eka",
+          "sens_litteral": "Voix de la totalité",
+          "racines": ["voki", "eka"],
+          "categorie": "titre"
+        }
+      ]
+    },
+    "sage": {
+      "traductions": [
+        {
+          "confluent": "sekitori",
+          "type": "composition",
+          "composition": "sek-i-tori",
+          "sens_litteral": "Porteur de savoir",
+          "racines": ["seka", "tori"],
+          "domaine": "titre"
+        }
+      ]
+    },
+    "Faucon Chasseur": {
+      "traductions": [
+        {
+          "confluent": "Akoazana",
+          "type": "nom_propre",
+          "composition": "ak-oa-zana",
+          "sens_litteral": "Faucon vainqueur de la chasse",
+          "racines": ["aki", "zana"],
+          "categorie": "caste"
+        }
+      ]
+    },
+    "Faucon vétéran": {
+      "traductions": [
+        {
+          "confluent": "Akiuaita",
+          "type": "composition",
+          "composition": "ak-i-aita",
+          "sens_litteral": "Faucon des ancêtres",
+          "racines": ["aki", "aita"],
+          "domaine": "titre"
+        }
+      ]
+    },
+    "traqueur": {
+      "traductions": [
+        {
+          "confluent": "zanatori",
+          "type": "composition",
+          "composition": "zan-a-tori",
+          "sens_litteral": "Personne de la chasse",
+          "racines": ["zana", "tori"],
+          "domaine": "titre"
+        }
+      ]
+    },
+    "guerrier": {
+      "traductions": [
+        {
+          "confluent": "okitori",
+          "type": "composition",
+          "composition": "ok-i-tori",
+          "sens_litteral": "Personne de l'épreuve",
+          "racines": ["oki", "tori"],
+          "domaine": "titre"
+        }
+      ]
+    },
+    "archer": {
+      "traductions": [
+        {
+          "confluent": "arkutori",
+          "type": "composition",
+          "composition": "ark-u-tori",
+          "sens_litteral": "Personne de l'arc",
+          "racines": ["arku", "tori"],
+          "domaine": "titre"
+        }
+      ]
+    },
+    "porteur de lance": {
+      "traductions": [
+        {
+          "confluent": "takiupiki",
+          "type": "composition",
+          "composition": "tak-i-piki",
+          "sens_litteral": "Porteur de lance",
+          "racines": ["taka", "piki"],
+          "domaine": "titre"
+        }
+      ]
+    },
+    "capitaine": {
+      "traductions": [
+        {
+          "confluent": "kasiuoki",
+          "type": "composition",
+          "composition": "kas-i-oki",
+          "sens_litteral": "Chef de l'épreuve",
+          "racines": ["kasi", "oki"],
+          "domaine": "titre"
+        }
+      ]
+    },
+    "sentinelle": {
+      "traductions": [
+        {
+          "confluent": "velatori",
+          "type": "composition",
+          "composition": "vel-a-tori",
+          "sens_litteral": "Personne de vigile",
+          "racines": ["vela", "tori"],
+          "domaine": "titre"
+        }
+      ]
+    },
+    "Aile-Grise": {
+      "traductions": [
+        {
+          "confluent": "Aliaska",
+          "type": "nom_propre",
+          "composition": "al-i-aska",
+          "sens_litteral": "Porteur de la grue libre",
+          "racines": ["alu", "aska"],
+          "categorie": "caste"
+        }
+      ]
+    },
+    "chaman": {
+      "traductions": [
+        {
+          "confluent": "umitori",
+          "type": "composition",
+          "composition": "um-i-tori",
+          "sens_litteral": "Personne de l'esprit",
+          "racines": ["umi", "tori"],
+          "domaine": "titre_spirituel"
+        }
+      ]
+    },
+    "dresseur de grues": {
+      "traductions": [
+        {
+          "confluent": "aruzakitori",
+          "type": "composition",
+          "composition": "al-u-zak-i-tori",
+          "sens_litteral": "Personne gardienne des grues",
+          "racines": ["alu", "zaki", "tori"],
+          "domaine": "titre"
+        }
+      ]
+    },
+    "guide des âmes": {
+      "traductions": [
+        {
+          "confluent": "tekiuumi",
+          "type": "composition",
+          "composition": "tek-i-umi",
+          "sens_litteral": "Chemin des esprits",
+          "racines": ["teki", "umi"],
+          "domaine": "titre_spirituel"
+        }
+      ]
+    },
+    "gardien des lois": {
+      "traductions": [
+        {
+          "confluent": "zakiuloku",
+          "type": "composition",
+          "composition": "zak-i-loku",
+          "sens_litteral": "Gardien des lois",
+          "racines": ["zaki", "loku"],
+          "domaine": "titre"
+        }
+      ]
+    },
+    "Passe-bien": {
+      "traductions": [
+        {
+          "confluent": "Takitosa",
+          "type": "nom_propre",
+          "composition": "tak-i-tosa",
+          "sens_litteral": "Porteur du bien",
+          "racines": ["taka", "tosa"],
+          "categorie": "caste"
+        }
+      ]
+    },
+    "Porteur de Flamme": {
+      "traductions": [
+        {
+          "confluent": "Takiusuki",
+          "type": "nom_propre",
+          "composition": "tak-i-suki",
+          "sens_litteral": "Porteur du feu",
+          "racines": ["taka", "suki"],
+          "categorie": "titre_rituel"
+        }
+      ]
+    },
+    "maître artisan": {
+      "traductions": [
+        {
+          "confluent": "makouneka",
+          "type": "composition",
+          "composition": "mak-o-neka",
+          "sens_litteral": "Grand de l'œuvre",
+          "racines": ["mako", "neka"],
+          "domaine": "titre"
+        }
+      ]
+    },
+    "façonneur de pierre": {
+      "traductions": [
+        {
+          "confluent": "nekaukari",
+          "type": "composition",
+          "composition": "nek-a-kari",
+          "sens_litteral": "Faiseur avec pierre",
+          "racines": ["neka", "kari"],
+          "domaine": "titre"
+        }
+      ]
+    },
+    "sculpteur": {
+      "traductions": [
+        {
+          "confluent": "kovatori",
+          "type": "composition",
+          "composition": "kov-a-tori",
+          "sens_litteral": "Personne de la gravure",
+          "racines": ["kova", "tori"],
+          "domaine": "titre"
+        }
+      ]
+    },
+    "peintre": {
+      "traductions": [
+        {
+          "confluent": "koluutori",
+          "type": "composition",
+          "composition": "kol-u-tori",
+          "sens_litteral": "Personne des couleurs",
+          "racines": ["kolu", "tori"],
+          "domaine": "titre"
+        }
+      ]
+    },
+    "tisserand": {
+      "traductions": [
+        {
+          "confluent": "vasitori",
+          "type": "composition",
+          "composition": "vas-i-tori",
+          "sens_litteral": "Personne du tissage",
+          "racines": ["vasi", "tori"],
+          "domaine": "titre"
+        }
+      ]
+    },
+    "pêcheur": {
+      "traductions": [
+        {
+          "confluent": "pisutori",
+          "type": "composition",
+          "composition": "pis-u-tori",
+          "sens_litteral": "Personne du poisson",
+          "racines": ["pisu", "tori"],
+          "domaine": "titre"
+        }
+      ]
+    },
+    "mineur": {
+      "traductions": [
+        {
+          "confluent": "vukutori",
+          "type": "composition",
+          "composition": "vuk-u-tori",
+          "sens_litteral": "Personne du gouffre",
+          "racines": ["vuku", "tori"],
+          "domaine": "titre"
+        }
+      ]
+    },
+    "aîné": {
+      "traductions": [
+        {
+          "confluent": "aitatori",
+          "type": "composition",
+          "composition": "ait-a-tori",
+          "sens_litteral": "Personne avec ancêtre",
+          "racines": ["aita", "tori"],
+          "domaine": "titre"
+        }
+      ]
+    },
+    "descendant": {
+      "traductions": [
+        {
+          "confluent": "naki",
+          "type": "racine",
+          "forme_liee": "nak",
+          "domaine": "famille"
+        }
+      ]
+    },
+    "ancêtre": {
+      "traductions": [
+        {
+          "confluent": "aita",
+          "type": "racine_sacree",
+          "forme_liee": "ait",
+          "domaine": "famille"
+        }
+      ]
+    },
+    "mère": {
+      "traductions": [
+        {
+          "confluent": "mamu",
+          "type": "racine",
+          "forme_liee": "mam",
+          "domaine": "famille"
+        }
+      ]
+    },
+    "père": {
+      "traductions": [
+        {
+          "confluent": "papu",
+          "type": "racine",
+          "forme_liee": "pap",
+          "domaine": "famille"
+        }
+      ]
+    },
+    "époux": {
+      "traductions": [
+        {
+          "confluent": "kotautori",
+          "type": "composition",
+          "composition": "kot-a-tori",
+          "sens_litteral": "Personne d'union",
+          "racines": ["kota", "tori"],
+          "domaine": "famille"
+        }
+      ],
+      "synonymes_fr": ["épouse"]
     }
   }
 }

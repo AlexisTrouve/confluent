@@ -1,14 +1,6 @@
 {
   "_comment": "Éléments naturels et phénomènes",
-  "_mots_a_gerer": [
-    "ciel", "terre", "sol", "feu", "flamme", "air", "vent", "pierre", "roche",
-    "rivière", "courant", "montagne", "forêt", "arbre", "lune", "soleil",
-    "lumière", "sombre", "obscur", "sec", "aride", "vallée", "sel", "mer",
-    "humide", "mouillé", "profond", "gouffre", "abîme", "cercle", "anneau",
-    "étoile", "tempête", "nuage", "cascade", "source", "grotte", "crevasse",
-    "promontoire", "pic", "cime", "côte", "horizon", "confluence de rivières",
-    "rivière azur", "rivière verte"
-  ],
+  "_mots_a_gerer": [],
   "dictionnaire": {
     "ciel": {
       "traductions": [
@@ -21,6 +13,392 @@
         }
       ],
       "synonymes_fr": ["cieux"]
+    },
+    "terre": {
+      "traductions": [
+        {
+          "confluent": "toka",
+          "type": "racine",
+          "forme_liee": "tok",
+          "domaine": "element_nature",
+          "note": "Sol, terre ferme"
+        }
+      ],
+      "synonymes_fr": ["sol"]
+    },
+    "feu": {
+      "traductions": [
+        {
+          "confluent": "suki",
+          "type": "racine",
+          "forme_liee": "suk",
+          "domaine": "element_nature",
+          "note": "Élément primordial"
+        }
+      ],
+      "synonymes_fr": ["flamme"]
+    },
+    "air": {
+      "traductions": [
+        {
+          "confluent": "vena",
+          "type": "racine",
+          "forme_liee": "ven",
+          "domaine": "element_nature",
+          "note": "Élément primordial"
+        }
+      ],
+      "synonymes_fr": ["vent"]
+    },
+    "pierre": {
+      "traductions": [
+        {
+          "confluent": "kari",
+          "type": "racine",
+          "forme_liee": "kar",
+          "domaine": "element_nature",
+          "note": "Matière dure"
+        }
+      ],
+      "synonymes_fr": ["roche"]
+    },
+    "rivière": {
+      "traductions": [
+        {
+          "confluent": "nura",
+          "type": "racine",
+          "forme_liee": "nur",
+          "domaine": "geographie",
+          "note": "Eau qui coule"
+        }
+      ],
+      "synonymes_fr": ["courant"]
+    },
+    "montagne": {
+      "traductions": [
+        {
+          "confluent": "tasa",
+          "type": "racine",
+          "forme_liee": "tas",
+          "domaine": "geographie",
+          "note": "Haute terre"
+        }
+      ]
+    },
+    "forêt": {
+      "traductions": [
+        {
+          "confluent": "viku",
+          "type": "racine",
+          "forme_liee": "vik",
+          "domaine": "geographie",
+          "note": "Beaucoup d'arbres"
+        }
+      ]
+    },
+    "arbre": {
+      "traductions": [
+        {
+          "confluent": "viku",
+          "type": "racine",
+          "forme_liee": "vik",
+          "domaine": "nature",
+          "note": "Plante haute"
+        }
+      ]
+    },
+    "lune": {
+      "traductions": [
+        {
+          "confluent": "luna",
+          "type": "racine",
+          "forme_liee": "lun",
+          "domaine": "celeste",
+          "note": "Astre nocturne"
+        }
+      ]
+    },
+    "soleil": {
+      "traductions": [
+        {
+          "confluent": "sora",
+          "type": "racine",
+          "forme_liee": "sor",
+          "domaine": "celeste",
+          "note": "Astre du jour"
+        }
+      ]
+    },
+    "lumière": {
+      "traductions": [
+        {
+          "confluent": "sora",
+          "type": "racine",
+          "forme_liee": "sor",
+          "domaine": "perception",
+          "note": "Même racine que soleil"
+        }
+      ]
+    },
+    "sombre": {
+      "traductions": [
+        {
+          "confluent": "kumu",
+          "type": "racine",
+          "forme_liee": "kum",
+          "domaine": "perception",
+          "note": "Sans lumière"
+        }
+      ],
+      "synonymes_fr": ["obscur"]
+    },
+    "sec": {
+      "traductions": [
+        {
+          "confluent": "seku",
+          "type": "racine",
+          "forme_liee": "sek",
+          "domaine": "qualite",
+          "note": "Sans eau"
+        }
+      ],
+      "synonymes_fr": ["aride"]
+    },
+    "vallée": {
+      "traductions": [
+        {
+          "confluent": "valu",
+          "type": "racine",
+          "forme_liee": "val",
+          "domaine": "geographie",
+          "note": "Creux entre montagnes"
+        }
+      ]
+    },
+    "sel": {
+      "traductions": [
+        {
+          "confluent": "salu",
+          "type": "racine",
+          "forme_liee": "sal",
+          "domaine": "materiau",
+          "note": "Cristal marin"
+        }
+      ]
+    },
+    "mer": {
+      "traductions": [
+        {
+          "confluent": "meru",
+          "type": "racine",
+          "forme_liee": "mer",
+          "domaine": "geographie",
+          "note": "Grande eau salée"
+        }
+      ]
+    },
+    "humide": {
+      "traductions": [
+        {
+          "confluent": "nisa",
+          "type": "racine",
+          "forme_liee": "nis",
+          "domaine": "qualite",
+          "note": "Avec eau"
+        }
+      ],
+      "synonymes_fr": ["mouillé"]
+    },
+    "profond": {
+      "traductions": [
+        {
+          "confluent": "vuku",
+          "type": "racine",
+          "forme_liee": "vuk",
+          "domaine": "qualite",
+          "note": "Gouffre, abîme"
+        }
+      ],
+      "synonymes_fr": ["gouffre", "abîme"]
+    },
+    "cercle": {
+      "traductions": [
+        {
+          "confluent": "siku",
+          "type": "racine",
+          "forme_liee": "rik",
+          "domaine": "forme",
+          "note": "Forme sacrée"
+        }
+      ],
+      "synonymes_fr": ["anneau"]
+    },
+    "étoile": {
+      "traductions": [
+        {
+          "confluent": "atu",
+          "type": "racine_sacree",
+          "forme_liee": "at",
+          "domaine": "celeste",
+          "note": "Points lumineux du ciel nocturne"
+        }
+      ]
+    },
+    "tempête": {
+      "traductions": [
+        {
+          "confluent": "venaoki",
+          "type": "composition",
+          "composition": "ven-a-oki",
+          "sens_litteral": "Vent de danger",
+          "racines": ["vena", "oki"],
+          "domaine": "meteo"
+        }
+      ]
+    },
+    "nuage": {
+      "traductions": [
+        {
+          "confluent": "nubu",
+          "type": "racine",
+          "forme_liee": "nub",
+          "domaine": "celeste",
+          "note": "Vapeur du ciel"
+        }
+      ]
+    },
+    "cascade": {
+      "traductions": [
+        {
+          "confluent": "uraoavuku",
+          "type": "composition",
+          "composition": "ur-oa-vuku",
+          "sens_litteral": "Eau vers le gouffre",
+          "racines": ["ura", "vuku"],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "source": {
+      "traductions": [
+        {
+          "confluent": "enuura",
+          "type": "composition",
+          "composition": "en-u-ura",
+          "sens_litteral": "Origine de l'eau",
+          "racines": ["ena", "ura"],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "grotte": {
+      "traductions": [
+        {
+          "confluent": "vukutoka",
+          "type": "composition",
+          "composition": "vuk-u-toka",
+          "sens_litteral": "Gouffre dans la terre",
+          "racines": ["vuku", "toka"],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "crevasse": {
+      "traductions": [
+        {
+          "confluent": "vukukari",
+          "type": "composition",
+          "composition": "vuk-u-kari",
+          "sens_litteral": "Gouffre dans la pierre",
+          "racines": ["vuku", "kari"],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "promontoire": {
+      "traductions": [
+        {
+          "confluent": "tasumeru",
+          "type": "composition",
+          "composition": "tas-u-meru",
+          "sens_litteral": "Montagne de la mer",
+          "racines": ["tasa", "meru"],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "pic": {
+      "traductions": [
+        {
+          "confluent": "tasupiki",
+          "type": "composition",
+          "composition": "tas-u-piki",
+          "sens_litteral": "Montagne pointue",
+          "racines": ["tasa", "piki"],
+          "domaine": "geographie"
+        }
+      ],
+      "synonymes_fr": ["cime"]
+    },
+    "côte": {
+      "traductions": [
+        {
+          "confluent": "tokumeru",
+          "type": "composition",
+          "composition": "tok-u-meru",
+          "sens_litteral": "Terre de la mer",
+          "racines": ["toka", "meru"],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "horizon": {
+      "traductions": [
+        {
+          "confluent": "zerutoka",
+          "type": "composition",
+          "composition": "zer-u-toka",
+          "sens_litteral": "Ciel de la terre",
+          "racines": ["zeru", "toka"],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "confluence de rivières": {
+      "traductions": [
+        {
+          "confluent": "nuraakota",
+          "type": "composition",
+          "composition": "nur-aa-kota",
+          "sens_litteral": "Rivière mêlée à union",
+          "racines": ["nura", "kota"],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "rivière azur": {
+      "traductions": [
+        {
+          "confluent": "nuruzeru",
+          "type": "composition",
+          "composition": "nur-u-zeru",
+          "sens_litteral": "Rivière du ciel",
+          "racines": ["nura", "zeru"],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "rivière verte": {
+      "traductions": [
+        {
+          "confluent": "nuruviku",
+          "type": "composition",
+          "composition": "nur-u-viku",
+          "sens_litteral": "Rivière de la forêt",
+          "racines": ["nura", "viku"],
+          "domaine": "geographie"
+        }
+      ]
     }
   }
 }

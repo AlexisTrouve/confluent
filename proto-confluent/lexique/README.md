@@ -50,7 +50,7 @@ lexique-proto/
 
 Ces concepts n'existent **PAS** en Proto-Confluent (ils apparaissent plus tard) :
 
-- ❌ Castes (Nakukeko, Ariaska, etc.)
+- ❌ Castes (Nakukeko, Aliaska, etc.)
 - ❌ Institutions (Cercle des Sages, Tribunal, etc.)
 - ❌ Lieux nommés complexes (La Confluence, etc.)
 - ❌ Rituels formalisés

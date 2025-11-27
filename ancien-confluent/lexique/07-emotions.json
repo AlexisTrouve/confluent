@@ -1,11 +1,6 @@
 {
   "_comment": "États émotionnels et sentiments",
-  "_mots_a_gerer": [
-    "joie", "bonheur", "espoir", "fierté", "amour", "curiosité", "soulagement",
-    "confiance", "gratitude", "sérénité", "peur", "colère", "tristesse",
-    "désespoir", "honte", "haine", "angoisse", "anxiété", "méfiance", "regret",
-    "jalousie"
-  ],
+  "_mots_a_gerer": [],
   "dictionnaire": {
     "joie": {
       "traductions": [
@@ -20,6 +15,225 @@
         }
       ],
       "synonymes_fr": ["bonheur", "allégresse"]
+    },
+    "espoir": {
+      "traductions": [
+        {
+          "confluent": "koriuora",
+          "type": "composition",
+          "composition": "kor-i-ora",
+          "sens_litteral": "Cœur de l'aurore",
+          "racines": ["kori", "ora"],
+          "domaine": "emotion_positive"
+        }
+      ]
+    },
+    "fierté": {
+      "traductions": [
+        {
+          "confluent": "koriumako",
+          "type": "composition",
+          "composition": "kor-i-mako",
+          "sens_litteral": "Cœur de grandeur",
+          "racines": ["kori", "mako"],
+          "domaine": "emotion_positive"
+        }
+      ]
+    },
+    "amour": {
+      "traductions": [
+        {
+          "confluent": "koriukota",
+          "type": "composition",
+          "composition": "kor-i-kota",
+          "sens_litteral": "Cœur d'union",
+          "racines": ["kori", "kota"],
+          "domaine": "emotion_positive"
+        }
+      ]
+    },
+    "curiosité": {
+      "traductions": [
+        {
+          "confluent": "koriusili",
+          "type": "composition",
+          "composition": "kor-i-sili",
+          "sens_litteral": "Cœur du regard",
+          "racines": ["kori", "sili"],
+          "domaine": "emotion_positive"
+        }
+      ]
+    },
+    "soulagement": {
+      "traductions": [
+        {
+          "confluent": "koriatosa",
+          "type": "composition",
+          "composition": "kor-i-tosa",
+          "sens_litteral": "Cœur avec bien",
+          "racines": ["kori", "tosa"],
+          "domaine": "emotion_positive",
+          "note": "Retour au bien après tension"
+        }
+      ]
+    },
+    "confiance": {
+      "traductions": [
+        {
+          "confluent": "koriuveri",
+          "type": "composition",
+          "composition": "kor-i-veri",
+          "sens_litteral": "Cœur de vérité",
+          "racines": ["kori", "veri"],
+          "domaine": "emotion_positive"
+        }
+      ]
+    },
+    "gratitude": {
+      "traductions": [
+        {
+          "confluent": "koriukitan",
+          "type": "composition",
+          "composition": "kor-i-kitan",
+          "sens_litteral": "Cœur du don",
+          "racines": ["kori", "kitan"],
+          "domaine": "emotion_positive"
+        }
+      ]
+    },
+    "sérénité": {
+      "traductions": [
+        {
+          "confluent": "koriuura",
+          "type": "composition",
+          "composition": "kor-i-ura",
+          "sens_litteral": "Cœur de l'eau",
+          "racines": ["kori", "ura"],
+          "domaine": "emotion_positive",
+          "note": "Calme comme l'eau"
+        }
+      ]
+    },
+    "peur": {
+      "traductions": [
+        {
+          "confluent": "korioaoki",
+          "type": "composition",
+          "composition": "kor-oa-oki",
+          "sens_litteral": "Cœur face au danger",
+          "racines": ["kori", "oki"],
+          "domaine": "emotion_negative"
+        }
+      ]
+    },
+    "colère": {
+      "traductions": [
+        {
+          "confluent": "koriusuki",
+          "type": "composition",
+          "composition": "kor-i-suki",
+          "sens_litteral": "Cœur de feu",
+          "racines": ["kori", "suki"],
+          "domaine": "emotion_negative"
+        }
+      ]
+    },
+    "tristesse": {
+      "traductions": [
+        {
+          "confluent": "korioaosi",
+          "type": "composition",
+          "composition": "kor-oa-osi",
+          "sens_litteral": "Cœur vers la mort",
+          "racines": ["kori", "osi"],
+          "domaine": "emotion_negative"
+        }
+      ]
+    },
+    "désespoir": {
+      "traductions": [
+        {
+          "confluent": "korizoora",
+          "type": "composition",
+          "composition": "kor-i-zo-ora",
+          "sens_litteral": "Cœur sans aurore",
+          "racines": ["kori", "zo", "ora"],
+          "domaine": "emotion_negative"
+        }
+      ]
+    },
+    "honte": {
+      "traductions": [
+        {
+          "confluent": "korioakumu",
+          "type": "composition",
+          "composition": "kor-oa-kumu",
+          "sens_litteral": "Cœur vers l'ombre",
+          "racines": ["kori", "kumu"],
+          "domaine": "emotion_negative"
+        }
+      ]
+    },
+    "haine": {
+      "traductions": [
+        {
+          "confluent": "koriuzoka",
+          "type": "composition",
+          "composition": "kor-i-zoka",
+          "sens_litteral": "Cœur de l'ennemi",
+          "racines": ["kori", "zoka"],
+          "domaine": "emotion_negative"
+        }
+      ]
+    },
+    "angoisse": {
+      "traductions": [
+        {
+          "confluent": "korioavuku",
+          "type": "composition",
+          "composition": "kor-oa-vuku",
+          "sens_litteral": "Cœur vers le gouffre",
+          "racines": ["kori", "vuku"],
+          "domaine": "emotion_negative"
+        }
+      ],
+      "synonymes_fr": ["anxiété"]
+    },
+    "méfiance": {
+      "traductions": [
+        {
+          "confluent": "korizoveri",
+          "type": "composition",
+          "composition": "kor-i-zo-veri",
+          "sens_litteral": "Cœur sans vérité",
+          "racines": ["kori", "zo", "veri"],
+          "domaine": "emotion_negative"
+        }
+      ]
+    },
+    "regret": {
+      "traductions": [
+        {
+          "confluent": "korioaaita",
+          "type": "composition",
+          "composition": "kor-oa-aita",
+          "sens_litteral": "Cœur vers le passé",
+          "racines": ["kori", "aita"],
+          "domaine": "emotion_negative"
+        }
+      ]
+    },
+    "jalousie": {
+      "traductions": [
+        {
+          "confluent": "korioakiru",
+          "type": "composition",
+          "composition": "kor-oa-kiru",
+          "sens_litteral": "Cœur contre l'échange",
+          "racines": ["kori", "kiru"],
+          "domaine": "emotion_negative"
+        }
+      ]
     }
   }
 }

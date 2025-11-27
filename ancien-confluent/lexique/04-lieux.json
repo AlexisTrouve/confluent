@@ -1,12 +1,6 @@
 {
   "_comment": "Lieux géographiques majeurs et noms propres",
-  "_mots_a_gerer": [
-    "La Confluence", "Uraakota", "Gouffre Humide", "Vukuura", "Antres des Échos",
-    "Kekutoka", "Cercles de Vigile", "Rikuvela", "Halls des Serments", "Talusavu",
-    "Grande Fresque", "Ekakova", "Gorge Profonde", "Ruines des Premiers Ancêtres",
-    "village fortifié", "basses-terres", "avant-poste côtier", "sanctuaire",
-    "forteresse"
-  ],
+  "_mots_a_gerer": [],
   "dictionnaire": {
     "La Confluence": {
       "traductions": [
@@ -18,6 +12,228 @@
           "racines": ["ura", "kota"],
           "categorie": "lieu_majeur",
           "note": "Lieu central où deux rivières se rejoignent"
+        }
+      ]
+    },
+    "Uraakota": {
+      "traductions": [
+        {
+          "confluent": "Uraakota",
+          "type": "nom_propre",
+          "composition": "ur-aa-kota",
+          "sens_litteral": "Eau mêlée à l'union",
+          "racines": ["ura", "kota"],
+          "categorie": "lieu_majeur"
+        }
+      ]
+    },
+    "Gouffre Humide": {
+      "traductions": [
+        {
+          "confluent": "Vukuura",
+          "type": "nom_propre",
+          "composition": "vuk-u-ura",
+          "sens_litteral": "Gouffre de l'eau",
+          "racines": ["vuku", "ura"],
+          "categorie": "lieu_majeur",
+          "note": "Lieu sacré souterrain"
+        }
+      ]
+    },
+    "Vukuura": {
+      "traductions": [
+        {
+          "confluent": "Vukuura",
+          "type": "nom_propre",
+          "composition": "vuk-u-ura",
+          "sens_litteral": "Gouffre de l'eau",
+          "racines": ["vuku", "ura"],
+          "categorie": "lieu_majeur"
+        }
+      ]
+    },
+    "Antres des Échos": {
+      "traductions": [
+        {
+          "confluent": "Kekutoka",
+          "type": "nom_propre",
+          "composition": "kek-u-toka",
+          "sens_litteral": "Écho de la terre",
+          "racines": ["keko", "toka"],
+          "categorie": "lieu_majeur",
+          "note": "Grottes souterraines"
+        }
+      ]
+    },
+    "Kekutoka": {
+      "traductions": [
+        {
+          "confluent": "Kekutoka",
+          "type": "nom_propre",
+          "composition": "kek-u-toka",
+          "sens_litteral": "Écho de la terre",
+          "racines": ["keko", "toka"],
+          "categorie": "lieu_majeur"
+        }
+      ]
+    },
+    "Cercles de Vigile": {
+      "traductions": [
+        {
+          "confluent": "Sikuvela",
+          "type": "nom_propre",
+          "composition": "sik-u-vela",
+          "sens_litteral": "Cercle de la vigile",
+          "racines": ["siku", "vela"],
+          "categorie": "lieu_majeur",
+          "note": "Promontoires de guet"
+        }
+      ]
+    },
+    "Sikuvela": {
+      "traductions": [
+        {
+          "confluent": "Sikuvela",
+          "type": "nom_propre",
+          "composition": "sik-u-vela",
+          "sens_litteral": "Cercle de la vigile",
+          "racines": ["siku", "vela"],
+          "categorie": "lieu_majeur"
+        }
+      ]
+    },
+    "Halls des Serments": {
+      "traductions": [
+        {
+          "confluent": "Talusavu",
+          "type": "nom_propre",
+          "composition": "tal-u-savu",
+          "sens_litteral": "Hall du serment",
+          "racines": ["talu", "savu"],
+          "categorie": "lieu_majeur",
+          "note": "Structures gouvernementales"
+        }
+      ]
+    },
+    "Talusavu": {
+      "traductions": [
+        {
+          "confluent": "Talusavu",
+          "type": "nom_propre",
+          "composition": "tal-u-savu",
+          "sens_litteral": "Hall du serment",
+          "racines": ["talu", "savu"],
+          "categorie": "lieu_majeur"
+        }
+      ]
+    },
+    "Grande Fresque": {
+      "traductions": [
+        {
+          "confluent": "Ekakova",
+          "type": "nom_propre",
+          "composition": "ek-a-kova",
+          "sens_litteral": "Totalité avec peinture",
+          "racines": ["eka", "kova"],
+          "categorie": "lieu_majeur",
+          "note": "Artefact multi-générationnel"
+        }
+      ]
+    },
+    "Ekakova": {
+      "traductions": [
+        {
+          "confluent": "Ekakova",
+          "type": "nom_propre",
+          "composition": "ek-a-kova",
+          "sens_litteral": "Totalité avec peinture",
+          "racines": ["eka", "kova"],
+          "categorie": "lieu_majeur"
+        }
+      ]
+    },
+    "Gorge Profonde": {
+      "traductions": [
+        {
+          "confluent": "Vukumako",
+          "type": "composition",
+          "composition": "vuk-u-mako",
+          "sens_litteral": "Gouffre de grandeur",
+          "racines": ["vuku", "mako"],
+          "categorie": "lieu"
+        }
+      ]
+    },
+    "Ruines des Premiers Ancêtres": {
+      "traductions": [
+        {
+          "confluent": "Osiuaita",
+          "type": "composition",
+          "composition": "os-i-aita",
+          "sens_litteral": "Mort des ancêtres",
+          "racines": ["osi", "aita"],
+          "categorie": "lieu_sacre",
+          "note": "Vestiges de la civilisation disparue"
+        }
+      ]
+    },
+    "village fortifié": {
+      "traductions": [
+        {
+          "confluent": "kotauzaki",
+          "type": "composition",
+          "composition": "kot-a-zaki",
+          "sens_litteral": "Union avec protection",
+          "racines": ["kota", "zaki"],
+          "categorie": "structure"
+        }
+      ]
+    },
+    "basses-terres": {
+      "traductions": [
+        {
+          "confluent": "tokuvuku",
+          "type": "composition",
+          "composition": "tok-u-vuku",
+          "sens_litteral": "Terre du bas",
+          "racines": ["toka", "vuku"],
+          "categorie": "region"
+        }
+      ]
+    },
+    "avant-poste côtier": {
+      "traductions": [
+        {
+          "confluent": "velaumeru",
+          "type": "composition",
+          "composition": "vel-a-meru",
+          "sens_litteral": "Vigile avec mer",
+          "racines": ["vela", "meru"],
+          "categorie": "structure"
+        }
+      ]
+    },
+    "sanctuaire": {
+      "traductions": [
+        {
+          "confluent": "asauloku",
+          "type": "composition",
+          "composition": "as-a-loku",
+          "sens_litteral": "Sacré avec lieu",
+          "racines": ["asa", "loku"],
+          "categorie": "structure"
+        }
+      ]
+    },
+    "forteresse": {
+      "traductions": [
+        {
+          "confluent": "zakiukari",
+          "type": "composition",
+          "composition": "zak-i-kari",
+          "sens_litteral": "Protection de pierre",
+          "racines": ["zaki", "kari"],
+          "categorie": "structure"
         }
       ]
     }

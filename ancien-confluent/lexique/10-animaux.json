@@ -1,15 +1,11 @@
 {
   "_comment": "Animaux et créatures",
-  "_mots_a_gerer": [
-    "Regards-Libres", "grue", "grue cendrée", "faucon", "bête", "animal",
-    "bête sacrée", "gibier", "poisson", "poisson de rivière", "serpent",
-    "serpent d'eau", "oiseau", "oiseau de proie", "créature inconnue"
-  ],
+  "_mots_a_gerer": [],
   "dictionnaire": {
     "grue": {
       "traductions": [
         {
-          "confluent": "aru",
+          "confluent": "alu",
           "type": "racine_sacree",
           "forme_liee": "ar",
           "domaine": "animal_sacre",
@@ -23,11 +19,152 @@
         {
           "confluent": "Aruaska",
           "type": "composition",
-          "composition": "ar-u-aska",
+          "composition": "al-u-aska",
           "sens_litteral": "Grue de liberté",
-          "racines": ["aru", "aska"],
+          "racines": ["alu", "aska"],
           "categorie": "animal_sacre",
           "note": "Grues domestiquées, messagers sacrés"
+        }
+      ]
+    },
+    "grue cendrée": {
+      "traductions": [
+        {
+          "confluent": "Arusenu",
+          "type": "composition",
+          "composition": "al-u-senu",
+          "sens_litteral": "Grue de cendre",
+          "racines": ["alu", "senu"],
+          "categorie": "animal"
+        }
+      ]
+    },
+    "faucon": {
+      "traductions": [
+        {
+          "confluent": "aki",
+          "type": "racine_sacree",
+          "forme_liee": "ak",
+          "domaine": "animal_sacre",
+          "note": "Oiseau de proie sacré"
+        }
+      ]
+    },
+    "bête": {
+      "traductions": [
+        {
+          "confluent": "betu",
+          "type": "racine",
+          "forme_liee": "bet",
+          "domaine": "animal",
+          "note": "Animal générique"
+        }
+      ],
+      "synonymes_fr": ["animal"]
+    },
+    "bête sacrée": {
+      "traductions": [
+        {
+          "confluent": "asaubetu",
+          "type": "composition",
+          "composition": "as-a-betu",
+          "sens_litteral": "Sacré avec bête",
+          "racines": ["asa", "betu"],
+          "categorie": "animal_sacre"
+        }
+      ]
+    },
+    "gibier": {
+      "traductions": [
+        {
+          "confluent": "zanubetu",
+          "type": "composition",
+          "composition": "zan-u-betu",
+          "sens_litteral": "Bête de chasse",
+          "racines": ["zana", "betu"],
+          "domaine": "animal"
+        }
+      ]
+    },
+    "poisson": {
+      "traductions": [
+        {
+          "confluent": "pisu",
+          "type": "racine",
+          "forme_liee": "pis",
+          "domaine": "animal",
+          "note": "Créature de l'eau"
+        }
+      ]
+    },
+    "poisson de rivière": {
+      "traductions": [
+        {
+          "confluent": "pisunura",
+          "type": "composition",
+          "composition": "pis-u-nura",
+          "sens_litteral": "Poisson de rivière",
+          "racines": ["pisu", "nura"],
+          "domaine": "animal"
+        }
+      ]
+    },
+    "serpent": {
+      "traductions": [
+        {
+          "confluent": "sepu",
+          "type": "racine",
+          "forme_liee": "sep",
+          "domaine": "animal",
+          "note": "Créature rampante"
+        }
+      ]
+    },
+    "serpent d'eau": {
+      "traductions": [
+        {
+          "confluent": "sepuura",
+          "type": "composition",
+          "composition": "sep-u-ura",
+          "sens_litteral": "Serpent de l'eau",
+          "racines": ["sepu", "ura"],
+          "domaine": "animal"
+        }
+      ]
+    },
+    "oiseau": {
+      "traductions": [
+        {
+          "confluent": "apo",
+          "type": "racine_sacree",
+          "forme_liee": "av",
+          "domaine": "animal",
+          "note": "Créature ailée"
+        }
+      ]
+    },
+    "oiseau de proie": {
+      "traductions": [
+        {
+          "confluent": "aviuzana",
+          "type": "composition",
+          "composition": "ap-i-zana",
+          "sens_litteral": "Oiseau de chasse",
+          "racines": ["apo", "zana"],
+          "domaine": "animal"
+        }
+      ]
+    },
+    "créature inconnue": {
+      "traductions": [
+        {
+          "confluent": "zomira",
+          "type": "composition",
+          "composition": "zo-mira",
+          "sens_litteral": "Sans vue",
+          "racines": ["zo", "mira"],
+          "domaine": "animal",
+          "note": "Créature jamais observée"
         }
       ]
     }

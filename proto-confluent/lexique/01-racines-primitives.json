@@ -1,24 +1,107 @@
 {
   "_comment": "Racines proto les plus anciennes - concepts fondamentaux",
   "_note": "En Proto-Confluent, ces racines sont monosyllabiques et pures",
-  "_mots_a_gerer": [
-    "eau", "feu", "air", "terre", "pierre", "ciel", "soleil", "lune",
-    "main", "œil", "pied", "bouche", "cœur", "tête",
-    "aller", "venir", "voir", "prendre", "donner", "faire",
-    "un", "deux", "beaucoup", "peu",
-    "grand", "petit", "bon", "mauvais",
-    "je", "tu", "nous", "eux",
-    "ici", "là", "où"
-  ],
+  "_mots_a_gerer": [],
   "dictionnaire": {
     "eau": {
       "traductions": [
         {
           "confluent": "ur",
-          "type": "racine_proto",
+          "type": "racine_proto_sacree",
           "evolution_ancien": "ura",
           "domaine": "element_primordial",
-          "note": "Racine proto monosyllabique, devient 'ura' en Ancien"
+          "note": "Racine proto sacrée (voyelle initiale)"
+        }
+      ]
+    },
+    "feu": {
+      "traductions": [
+        {
+          "confluent": "suk",
+          "type": "racine_proto",
+          "evolution_ancien": "suki",
+          "domaine": "element_primordial",
+          "note": "Élément primordial"
+        }
+      ]
+    },
+    "air": {
+      "traductions": [
+        {
+          "confluent": "ven",
+          "type": "racine_proto",
+          "evolution_ancien": "vena",
+          "domaine": "element_primordial",
+          "note": "Élément primordial, aussi vent"
+        }
+      ],
+      "synonymes_fr": ["vent"]
+    },
+    "terre": {
+      "traductions": [
+        {
+          "confluent": "tok",
+          "type": "racine_proto",
+          "evolution_ancien": "toka",
+          "domaine": "element_primordial",
+          "note": "Sol, terre ferme"
+        }
+      ]
+    },
+    "pierre": {
+      "traductions": [
+        {
+          "confluent": "kar",
+          "type": "racine_proto",
+          "evolution_ancien": "kari",
+          "domaine": "element_primordial",
+          "note": "Roche, matériau dur"
+        }
+      ],
+      "synonymes_fr": ["roche"]
+    },
+    "ciel": {
+      "traductions": [
+        {
+          "confluent": "zer",
+          "type": "racine_proto",
+          "evolution_ancien": "zeru",
+          "domaine": "element_primordial",
+          "note": "Voûte céleste"
+        }
+      ]
+    },
+    "soleil": {
+      "traductions": [
+        {
+          "confluent": "sor",
+          "type": "racine_proto",
+          "evolution_ancien": "sora",
+          "domaine": "element_primordial",
+          "note": "Lumière du jour"
+        }
+      ],
+      "synonymes_fr": ["lumière"]
+    },
+    "lune": {
+      "traductions": [
+        {
+          "confluent": "lun",
+          "type": "racine_proto",
+          "evolution_ancien": "luna",
+          "domaine": "element_primordial",
+          "note": "Astre nocturne"
+        }
+      ]
+    },
+    "main": {
+      "traductions": [
+        {
+          "confluent": "kan",
+          "type": "racine_proto",
+          "evolution_ancien": "kanu",
+          "domaine": "corps",
+          "note": "Partie du corps essentielle"
         }
       ]
     },
@@ -29,10 +112,287 @@
           "type": "racine_proto",
           "evolution_ancien": "sili",
           "domaine": "corps",
-          "note": "Concept central même en proto"
+          "note": "Concept central - regard, vision"
         }
       ],
-      "synonymes_fr": ["voir", "regard"]
+      "synonymes_fr": ["regard"]
+    },
+    "pied": {
+      "traductions": [
+        {
+          "confluent": "pek",
+          "type": "racine_proto",
+          "evolution_ancien": "peki",
+          "domaine": "corps",
+          "note": "Base, appui"
+        }
+      ]
+    },
+    "bouche": {
+      "traductions": [
+        {
+          "confluent": "vok",
+          "type": "racine_proto",
+          "evolution_ancien": "voki",
+          "domaine": "corps",
+          "note": "Parole, voix - même racine"
+        }
+      ],
+      "synonymes_fr": ["voix"]
+    },
+    "cœur": {
+      "traductions": [
+        {
+          "confluent": "kor",
+          "type": "racine_proto",
+          "evolution_ancien": "kori",
+          "domaine": "corps",
+          "note": "Centre vital"
+        }
+      ]
+    },
+    "tête": {
+      "traductions": [
+        {
+          "confluent": "kep",
+          "type": "racine_proto",
+          "evolution_ancien": "kepu",
+          "domaine": "corps",
+          "note": "Nouvelle racine - sommet du corps"
+        }
+      ]
+    },
+    "aller": {
+      "traductions": [
+        {
+          "confluent": "tek",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "teki → tekis",
+          "domaine": "action",
+          "note": "Mouvement, chemin"
+        }
+      ]
+    },
+    "venir": {
+      "traductions": [
+        {
+          "confluent": "vet",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "veti → vetis",
+          "domaine": "action",
+          "note": "Nouvelle racine - mouvement vers soi"
+        }
+      ]
+    },
+    "voir": {
+      "traductions": [
+        {
+          "confluent": "mir",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "mira → mirak",
+          "domaine": "action",
+          "note": "Action fondamentale - observer"
+        }
+      ]
+    },
+    "prendre": {
+      "traductions": [
+        {
+          "confluent": "pas",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "pasa → pasak",
+          "domaine": "action",
+          "note": "Saisir"
+        }
+      ]
+    },
+    "donner": {
+      "traductions": [
+        {
+          "confluent": "kit",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "kita → kitan",
+          "domaine": "action",
+          "note": "Transférer"
+        }
+      ]
+    },
+    "faire": {
+      "traductions": [
+        {
+          "confluent": "nek",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "neka → nekan",
+          "domaine": "action",
+          "note": "Créer, fabriquer"
+        }
+      ]
+    },
+    "un": {
+      "traductions": [
+        {
+          "confluent": "ik",
+          "type": "racine_proto_sacree",
+          "evolution_ancien": "iko",
+          "domaine": "nombre",
+          "note": "Nombre sacré, unicité"
+        }
+      ]
+    },
+    "deux": {
+      "traductions": [
+        {
+          "confluent": "tov",
+          "type": "racine_proto",
+          "evolution_ancien": "tovu",
+          "domaine": "nombre",
+          "note": "Nouvelle racine - dualité"
+        }
+      ]
+    },
+    "beaucoup": {
+      "traductions": [
+        {
+          "confluent": "ek",
+          "type": "racine_proto_sacree",
+          "evolution_ancien": "eka",
+          "domaine": "quantite",
+          "note": "Totalité, multitude - racine sacrée"
+        }
+      ],
+      "synonymes_fr": ["tous", "tout"]
+    },
+    "peu": {
+      "traductions": [
+        {
+          "confluent": "pis",
+          "type": "racine_proto",
+          "evolution_ancien": "pisu",
+          "domaine": "quantite",
+          "note": "Petit, peu"
+        }
+      ]
+    },
+    "grand": {
+      "traductions": [
+        {
+          "confluent": "mak",
+          "type": "racine_proto",
+          "evolution_ancien": "mako",
+          "domaine": "qualificatif",
+          "note": "Vaste, important"
+        }
+      ]
+    },
+    "petit": {
+      "traductions": [
+        {
+          "confluent": "pis",
+          "type": "racine_proto",
+          "evolution_ancien": "pisu",
+          "domaine": "qualificatif",
+          "note": "Même racine que 'peu'"
+        }
+      ]
+    },
+    "bon": {
+      "traductions": [
+        {
+          "confluent": "tos",
+          "type": "racine_proto",
+          "evolution_ancien": "tosa",
+          "domaine": "qualificatif",
+          "note": "Bien, positif"
+        }
+      ]
+    },
+    "mauvais": {
+      "traductions": [
+        {
+          "confluent": "zok",
+          "type": "racine_proto",
+          "evolution_ancien": "zoka",
+          "domaine": "qualificatif",
+          "note": "Même racine que 'ennemi' - hostile"
+        }
+      ]
+    },
+    "je": {
+      "traductions": [
+        {
+          "confluent": "ma",
+          "type": "racine_proto",
+          "evolution_ancien": "ma",
+          "domaine": "pronom",
+          "note": "Nouvelle racine - pronom 1ère personne (optionnel en Ancien)"
+        }
+      ]
+    },
+    "tu": {
+      "traductions": [
+        {
+          "confluent": "ta",
+          "type": "racine_proto",
+          "evolution_ancien": "ta",
+          "domaine": "pronom",
+          "note": "Nouvelle racine - pronom 2ème personne (optionnel en Ancien)"
+        }
+      ]
+    },
+    "nous": {
+      "traductions": [
+        {
+          "confluent": "mas",
+          "type": "racine_proto",
+          "evolution_ancien": "masu",
+          "domaine": "pronom",
+          "note": "Dérivé de 'ma' + pluriel ancien"
+        }
+      ]
+    },
+    "eux": {
+      "traductions": [
+        {
+          "confluent": "tas",
+          "type": "racine_proto",
+          "evolution_ancien": "tasu",
+          "domaine": "pronom",
+          "note": "Dérivé de 'ta' + pluriel ancien"
+        }
+      ]
+    },
+    "ici": {
+      "traductions": [
+        {
+          "confluent": "tis",
+          "type": "racine_proto",
+          "evolution_ancien": "tisa",
+          "domaine": "demonstratif",
+          "note": "Proche, présent"
+        }
+      ]
+    },
+    "là": {
+      "traductions": [
+        {
+          "confluent": "tov",
+          "type": "racine_proto",
+          "evolution_ancien": "tova",
+          "domaine": "demonstratif",
+          "note": "Loin, distant"
+        }
+      ]
+    },
+    "où": {
+      "traductions": [
+        {
+          "confluent": "ko",
+          "type": "racine_proto",
+          "evolution_ancien": "ko",
+          "domaine": "interrogatif",
+          "note": "Particule interrogative de lieu"
+        }
+      ]
     }
   }
 }

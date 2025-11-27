@@ -91,7 +91,7 @@ sili (regard) + -i- (agent) + aska (libre)
 |----------|-----------|
 | Enfants des Échos | Nakukeko |
 | Enfants du Courant | Nakuura |
-| Ailes-Grises | Ariaska |
+| Ailes-Grises | Aliaska |
 | Faucons Chasseurs | Akoazana |
 | Passes-bien | Takitosa |
 | Voix de l'Aurore | Oraumi |
@@ -102,7 +102,7 @@ sili (regard) + -i- (agent) + aska (libre)
 | La Confluence | Uraakota |
 | Gouffre Humide | Vukuura |
 | Antres des Échos | Kekutoka |
-| Cercles de Vigile | Rikuvela |
+| Cercles de Vigile | Sikuvela |
 | Halls des Serments | Talusavu |
 | Grande Fresque | Ekakova |
 

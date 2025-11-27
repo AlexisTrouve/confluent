@@ -1,18 +1,7 @@
 {
   "_comment": "Concepts de base - qualificatifs et quantités primitives",
   "_note": "Concepts concrets uniquement, pas de philosophie",
-  "_mots_a_gerer": [
-    "grand", "petit", "long", "court", "haut", "bas",
-    "fort", "faible", "lourd", "léger",
-    "rapide", "lent", "vieux", "jeune",
-    "bon", "mauvais", "beau", "laid",
-    "chaud", "froid", "dur", "mou",
-    "plein", "vide", "beaucoup", "peu",
-    "un", "deux", "trois", "plusieurs", "tous",
-    "vivant", "mort", "malade", "sain",
-    "proche", "loin", "dedans", "dehors",
-    "avant", "après", "maintenant", "toujours", "jamais"
-  ],
+  "_mots_a_gerer": [],
   "dictionnaire": {
     "grand": {
       "traductions": [
@@ -21,7 +10,282 @@
           "type": "racine_proto",
           "evolution_ancien": "mako",
           "domaine": "qualificatif",
-          "note": "Qualité de base"
+          "note": "Vaste, important"
+        }
+      ]
+    },
+    "petit": {
+      "traductions": [
+        {
+          "confluent": "pis",
+          "type": "racine_proto",
+          "evolution_ancien": "pisu",
+          "domaine": "qualificatif",
+          "note": "Fin, peu"
+        }
+      ]
+    },
+    "long": {
+      "traductions": [
+        {
+          "confluent": "len",
+          "type": "racine_proto",
+          "evolution_ancien": "lenu",
+          "domaine": "qualificatif",
+          "note": "Nouvelle racine - étendu"
+        }
+      ]
+    },
+    "court": {
+      "traductions": [
+        {
+          "confluent": "kus",
+          "type": "racine_proto",
+          "evolution_ancien": "kusu",
+          "domaine": "qualificatif",
+          "note": "Nouvelle racine - bref"
+        }
+      ]
+    },
+    "haut": {
+      "traductions": [
+        {
+          "confluent": "tas",
+          "type": "racine_proto",
+          "evolution_ancien": "tasa",
+          "domaine": "qualificatif",
+          "note": "Même racine que 'montagne' - élevé"
+        }
+      ]
+    },
+    "bas": {
+      "traductions": [
+        {
+          "confluent": "vuk",
+          "type": "racine_proto",
+          "evolution_ancien": "vuku",
+          "domaine": "qualificatif",
+          "note": "Même racine que 'profond, gouffre'"
+        }
+      ]
+    },
+    "fort": {
+      "traductions": [
+        {
+          "confluent": "kop",
+          "type": "racine_proto",
+          "evolution_ancien": "kopu",
+          "domaine": "qualificatif",
+          "note": "Nouvelle racine - puissant"
+        }
+      ]
+    },
+    "faible": {
+      "traductions": [
+        {
+          "confluent": "lem",
+          "type": "racine_proto",
+          "evolution_ancien": "lemu",
+          "domaine": "qualificatif",
+          "note": "Nouvelle racine - sans force"
+        }
+      ]
+    },
+    "lourd": {
+      "traductions": [
+        {
+          "confluent": "pes",
+          "type": "racine_proto",
+          "evolution_ancien": "pesu",
+          "domaine": "qualificatif",
+          "note": "Nouvelle racine - pesant"
+        }
+      ]
+    },
+    "léger": {
+      "traductions": [
+        {
+          "confluent": "lev",
+          "type": "racine_proto",
+          "evolution_ancien": "levu",
+          "domaine": "qualificatif",
+          "note": "Nouvelle racine - sans poids"
+        }
+      ]
+    },
+    "rapide": {
+      "traductions": [
+        {
+          "confluent": "kur",
+          "type": "racine_proto",
+          "evolution_ancien": "kuru",
+          "domaine": "qualificatif",
+          "note": "Même racine que 'courir'"
+        }
+      ]
+    },
+    "lent": {
+      "traductions": [
+        {
+          "confluent": "mol",
+          "type": "racine_proto",
+          "evolution_ancien": "molu",
+          "domaine": "qualificatif",
+          "note": "Nouvelle racine - pas pressé"
+        }
+      ]
+    },
+    "vieux": {
+      "traductions": [
+        {
+          "confluent": "ait",
+          "type": "racine_proto_sacree",
+          "evolution_ancien": "aita",
+          "domaine": "qualificatif",
+          "note": "Même racine que 'ancêtre' - sacrée"
+        }
+      ]
+    },
+    "jeune": {
+      "traductions": [
+        {
+          "confluent": "nov",
+          "type": "racine_proto",
+          "evolution_ancien": "nuvi",
+          "domaine": "qualificatif",
+          "note": "Nouveau"
+        }
+      ]
+    },
+    "bon": {
+      "traductions": [
+        {
+          "confluent": "tos",
+          "type": "racine_proto",
+          "evolution_ancien": "tosa",
+          "domaine": "qualificatif",
+          "note": "Bien, positif"
+        }
+      ]
+    },
+    "mauvais": {
+      "traductions": [
+        {
+          "confluent": "zok",
+          "type": "racine_proto",
+          "evolution_ancien": "zoka",
+          "domaine": "qualificatif",
+          "note": "Hostile, ennemi"
+        }
+      ]
+    },
+    "beau": {
+      "traductions": [
+        {
+          "confluent": "sor",
+          "type": "racine_proto",
+          "evolution_ancien": "sora",
+          "domaine": "qualificatif",
+          "note": "Lié à 'lumière, soleil' - ce qui brille"
+        }
+      ]
+    },
+    "laid": {
+      "traductions": [
+        {
+          "confluent": "kum",
+          "type": "racine_proto",
+          "evolution_ancien": "kumu",
+          "domaine": "qualificatif",
+          "note": "Lié à 'ombre, sombre'"
+        }
+      ]
+    },
+    "chaud": {
+      "traductions": [
+        {
+          "confluent": "suk",
+          "type": "racine_proto",
+          "evolution_ancien": "suki",
+          "domaine": "qualificatif",
+          "note": "Même racine que 'feu'"
+        }
+      ]
+    },
+    "froid": {
+      "traductions": [
+        {
+          "confluent": "kol",
+          "type": "racine_proto",
+          "evolution_ancien": "kolu",
+          "domaine": "qualificatif",
+          "note": "Même racine que 'glace'"
+        }
+      ]
+    },
+    "dur": {
+      "traductions": [
+        {
+          "confluent": "kar",
+          "type": "racine_proto",
+          "evolution_ancien": "kari",
+          "domaine": "qualificatif",
+          "note": "Même racine que 'pierre'"
+        }
+      ]
+    },
+    "mou": {
+      "traductions": [
+        {
+          "confluent": "mol",
+          "type": "racine_proto",
+          "evolution_ancien": "molu",
+          "domaine": "qualificatif",
+          "note": "Même racine que 'lent' - sans résistance"
+        }
+      ]
+    },
+    "plein": {
+      "traductions": [
+        {
+          "confluent": "ek",
+          "type": "racine_proto_sacree",
+          "evolution_ancien": "eka",
+          "domaine": "qualificatif",
+          "note": "Totalité - racine sacrée"
+        }
+      ]
+    },
+    "vide": {
+      "traductions": [
+        {
+          "confluent": "nul",
+          "type": "racine_proto",
+          "evolution_ancien": "nulu",
+          "domaine": "qualificatif",
+          "note": "Nouvelle racine - rien dedans"
+        }
+      ]
+    },
+    "beaucoup": {
+      "traductions": [
+        {
+          "confluent": "ek",
+          "type": "racine_proto_sacree",
+          "evolution_ancien": "eka",
+          "domaine": "quantite",
+          "note": "Totalité - racine sacrée"
+        }
+      ]
+    },
+    "peu": {
+      "traductions": [
+        {
+          "confluent": "pis",
+          "type": "racine_proto",
+          "evolution_ancien": "pisu",
+          "domaine": "quantite",
+          "note": "Même racine que 'petit'"
         }
       ]
     },
@@ -32,7 +296,194 @@
           "type": "racine_proto_sacree",
           "evolution_ancien": "iko",
           "domaine": "nombre",
-          "note": "Nombre premier, concept sacré"
+          "note": "Unicité - racine sacrée"
+        }
+      ]
+    },
+    "deux": {
+      "traductions": [
+        {
+          "confluent": "tov",
+          "type": "racine_proto",
+          "evolution_ancien": "tovu",
+          "domaine": "nombre",
+          "note": "Dualité"
+        }
+      ]
+    },
+    "trois": {
+      "traductions": [
+        {
+          "confluent": "kel",
+          "type": "racine_proto",
+          "evolution_ancien": "kelu",
+          "domaine": "nombre",
+          "note": "Nouvelle racine"
+        }
+      ]
+    },
+    "plusieurs": {
+      "traductions": [
+        {
+          "confluent": "ek",
+          "type": "racine_proto_sacree",
+          "evolution_ancien": "eka",
+          "domaine": "nombre",
+          "note": "Lié à 'tout, totalité'"
+        }
+      ]
+    },
+    "tous": {
+      "traductions": [
+        {
+          "confluent": "ek",
+          "type": "racine_proto_sacree",
+          "evolution_ancien": "eka",
+          "domaine": "nombre",
+          "note": "Totalité - racine sacrée"
+        }
+      ]
+    },
+    "vivant": {
+      "traductions": [
+        {
+          "confluent": "it",
+          "type": "racine_proto_sacree",
+          "evolution_ancien": "ita",
+          "domaine": "etat",
+          "note": "Être, exister - racine sacrée"
+        }
+      ]
+    },
+    "mort": {
+      "traductions": [
+        {
+          "confluent": "mus",
+          "type": "racine_proto",
+          "evolution_ancien": "musu",
+          "domaine": "etat",
+          "note": "Lié à 'crépuscule' - fin"
+        }
+      ]
+    },
+    "malade": {
+      "traductions": [
+        {
+          "confluent": "zok",
+          "type": "racine_proto",
+          "evolution_ancien": "zoka",
+          "domaine": "etat",
+          "note": "Lié à 'mauvais' - corps hostile"
+        }
+      ]
+    },
+    "sain": {
+      "traductions": [
+        {
+          "confluent": "tos",
+          "type": "racine_proto",
+          "evolution_ancien": "tosa",
+          "domaine": "etat",
+          "note": "Lié à 'bon' - corps bien"
+        }
+      ]
+    },
+    "proche": {
+      "traductions": [
+        {
+          "confluent": "tis",
+          "type": "racine_proto",
+          "evolution_ancien": "tisa",
+          "domaine": "spatial",
+          "note": "Ici, présent"
+        }
+      ]
+    },
+    "loin": {
+      "traductions": [
+        {
+          "confluent": "tov",
+          "type": "racine_proto",
+          "evolution_ancien": "tova",
+          "domaine": "spatial",
+          "note": "Là-bas, distant"
+        }
+      ]
+    },
+    "dedans": {
+      "traductions": [
+        {
+          "confluent": "nut",
+          "type": "racine_proto",
+          "evolution_ancien": "nutu",
+          "domaine": "spatial",
+          "note": "Nouvelle racine - intérieur"
+        }
+      ]
+    },
+    "dehors": {
+      "traductions": [
+        {
+          "confluent": "vek",
+          "type": "racine_proto",
+          "evolution_ancien": "veku",
+          "domaine": "spatial",
+          "note": "Nouvelle racine - extérieur"
+        }
+      ]
+    },
+    "avant": {
+      "traductions": [
+        {
+          "confluent": "en",
+          "type": "racine_proto_sacree",
+          "evolution_ancien": "ena",
+          "domaine": "temporel",
+          "note": "Origine, source - ce qui précède"
+        }
+      ]
+    },
+    "après": {
+      "traductions": [
+        {
+          "confluent": "nak",
+          "type": "racine_proto",
+          "evolution_ancien": "naki",
+          "domaine": "temporel",
+          "note": "Lié à 'enfant' - ce qui suit"
+        }
+      ]
+    },
+    "maintenant": {
+      "traductions": [
+        {
+          "confluent": "tis",
+          "type": "racine_proto",
+          "evolution_ancien": "tisa",
+          "domaine": "temporel",
+          "note": "Même racine que 'ici, proche'"
+        }
+      ]
+    },
+    "toujours": {
+      "traductions": [
+        {
+          "confluent": "ek",
+          "type": "racine_proto_sacree",
+          "evolution_ancien": "eka",
+          "domaine": "temporel",
+          "note": "Totalité - racine sacrée"
+        }
+      ]
+    },
+    "jamais": {
+      "traductions": [
+        {
+          "confluent": "nul",
+          "type": "racine_proto",
+          "evolution_ancien": "nulu",
+          "domaine": "temporel",
+          "note": "Même racine que 'vide' - aucun temps"
         }
       ]
     }

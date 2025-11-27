@@ -1,10 +1,6 @@
 {
   "_comment": "Concepts temporels",
-  "_mots_a_gerer": [
-    "temps", "génération", "siècle", "saison", "lune", "mois", "aurore",
-    "matin", "crépuscule", "nuit", "éternité", "passé", "futur", "présent",
-    "cycle éternel", "renaissance", "au-delà", "moment", "instant", "durée"
-  ],
+  "_mots_a_gerer": [],
   "dictionnaire": {
     "temps": {
       "traductions": [
@@ -17,6 +13,222 @@
         }
       ],
       "synonymes_fr": ["durée"]
+    },
+    "génération": {
+      "traductions": [
+        {
+          "confluent": "temiuaita",
+          "type": "composition",
+          "composition": "tem-i-aita",
+          "sens_litteral": "Temps des ancêtres",
+          "racines": ["temi", "aita"],
+          "domaine": "temps"
+        }
+      ]
+    },
+    "siècle": {
+      "traductions": [
+        {
+          "confluent": "makoutemi",
+          "type": "composition",
+          "composition": "mak-o-temi",
+          "sens_litteral": "Grand temps",
+          "racines": ["mako", "temi"],
+          "domaine": "temps"
+        }
+      ]
+    },
+    "saison": {
+      "traductions": [
+        {
+          "confluent": "temiuriku",
+          "type": "composition",
+          "composition": "tem-i-siku",
+          "sens_litteral": "Temps du cercle",
+          "racines": ["temi", "siku"],
+          "domaine": "temps"
+        }
+      ]
+    },
+    "lune": {
+      "traductions": [
+        {
+          "confluent": "luna",
+          "type": "racine",
+          "forme_liee": "lun",
+          "domaine": "temps"
+        }
+      ]
+    },
+    "mois": {
+      "traductions": [
+        {
+          "confluent": "lunariku",
+          "type": "composition",
+          "composition": "lun-a-siku",
+          "sens_litteral": "Lune avec cercle",
+          "racines": ["luna", "siku"],
+          "domaine": "temps"
+        }
+      ]
+    },
+    "aurore": {
+      "traductions": [
+        {
+          "confluent": "ora",
+          "type": "racine_sacree",
+          "forme_liee": "or",
+          "domaine": "temps"
+        }
+      ]
+    },
+    "matin": {
+      "traductions": [
+        {
+          "confluent": "orausora",
+          "type": "composition",
+          "composition": "or-a-sora",
+          "sens_litteral": "Aurore avec soleil",
+          "racines": ["ora", "sora"],
+          "domaine": "temps"
+        }
+      ]
+    },
+    "crépuscule": {
+      "traductions": [
+        {
+          "confluent": "musu",
+          "type": "racine",
+          "forme_liee": "mus",
+          "domaine": "temps"
+        }
+      ]
+    },
+    "nuit": {
+      "traductions": [
+        {
+          "confluent": "luna",
+          "type": "racine",
+          "forme_liee": "lun",
+          "domaine": "temps",
+          "note": "Même racine que lune"
+        }
+      ]
+    },
+    "éternité": {
+      "traductions": [
+        {
+          "confluent": "ekautemi",
+          "type": "composition",
+          "composition": "ek-a-temi",
+          "sens_litteral": "Totalité avec temps",
+          "racines": ["eka", "temi"],
+          "domaine": "temps"
+        }
+      ]
+    },
+    "passé": {
+      "traductions": [
+        {
+          "confluent": "ena",
+          "type": "racine_sacree",
+          "forme_liee": "en",
+          "domaine": "temps",
+          "note": "Même racine que origine"
+        }
+      ]
+    },
+    "futur": {
+      "traductions": [
+        {
+          "confluent": "naki",
+          "type": "racine",
+          "forme_liee": "nak",
+          "domaine": "temps",
+          "note": "Même racine que descendant"
+        }
+      ]
+    },
+    "présent": {
+      "traductions": [
+        {
+          "confluent": "tisa",
+          "type": "racine",
+          "forme_liee": "tis",
+          "domaine": "temps",
+          "note": "Même racine que ici, proche"
+        }
+      ]
+    },
+    "cycle éternel": {
+      "traductions": [
+        {
+          "confluent": "rikuueka",
+          "type": "composition",
+          "composition": "sik-u-eka",
+          "sens_litteral": "Cercle de totalité",
+          "racines": ["siku", "eka"],
+          "domaine": "temps"
+        }
+      ]
+    },
+    "renaissance": {
+      "traductions": [
+        {
+          "confluent": "novuuita",
+          "type": "composition",
+          "composition": "nuv-u-ita",
+          "sens_litteral": "Nouveau de vie",
+          "racines": ["nuvi", "ita"],
+          "domaine": "temps"
+        }
+      ]
+    },
+    "au-delà": {
+      "traductions": [
+        {
+          "confluent": "tovauosi",
+          "type": "composition",
+          "composition": "tov-a-osi",
+          "sens_litteral": "Loin avec mort",
+          "racines": ["tova", "osi"],
+          "domaine": "spirituel"
+        }
+      ]
+    },
+    "moment": {
+      "traductions": [
+        {
+          "confluent": "pisutemi",
+          "type": "composition",
+          "composition": "pis-u-temi",
+          "sens_litteral": "Petit temps",
+          "racines": ["pisu", "temi"],
+          "domaine": "temps"
+        }
+      ]
+    },
+    "instant": {
+      "traductions": [
+        {
+          "confluent": "pisutemi",
+          "type": "composition",
+          "composition": "pis-u-temi",
+          "sens_litteral": "Petit temps",
+          "racines": ["pisu", "temi"],
+          "domaine": "temps"
+        }
+      ]
+    },
+    "durée": {
+      "traductions": [
+        {
+          "confluent": "temi",
+          "type": "racine",
+          "forme_liee": "tem",
+          "domaine": "temps"
+        }
+      ]
     }
   }
 }

@@ -260,7 +260,7 @@
       const resultsDiv = document.getElementById('lexique-results');
       const countDiv = document.getElementById('lexique-count');
 
-      if (!lexiqueData) {
+      if (!lexiqueData || !lexiqueData.dictionnaire) {
         resultsDiv.innerHTML = '<div class="no-results">Lexique en cours de chargement...</div>';
         return;
       }
@@ -271,22 +271,36 @@
         return;
       }
 
-      // For proto, we only have limited data (would need proto lexique file)
-      // For ancien, we use the full lexique
-      const dict = niveau === 'ancien' ? lexiqueData.dictionnaire : {};
+      const dict = lexiqueData.dictionnaire;
 
       // Search in all entries
       const results = [];
-      for (const letter in dict) {
-        for (const [fr, cf] of Object.entries(dict[letter])) {
-          if (fr.toLowerCase().includes(query)) {
-            results.push({ fr, cf });
-          }
+      for (const [key, data] of Object.entries(dict)) {
+        if (key.includes(query) || (data.mot_francais && data.mot_francais.toLowerCase().includes(query))) {
+          // Skip synonym entries to avoid duplicates
+          if (data.is_synonym_of) continue;
+
+          // Get the confluent translation
+          const cf = data.traductions && data.traductions.length > 0
+            ? data.traductions[0].confluent
+            : '?';
+
+          results.push({
+            fr: data.mot_francais || key,
+            cf: cf,
+            type: data.traductions?.[0]?.type || '',
+            domaine: data.traductions?.[0]?.domaine || ''
+          });
         }
       }
 
-      // Sort by relevance (starts with query first)
+      // Sort by relevance (starts with query first, then exact match)
       results.sort((a, b) => {
+        const aExact = a.fr.toLowerCase() === query;
+        const bExact = b.fr.toLowerCase() === query;
+        if (aExact && !bExact) return -1;
+        if (!aExact && bExact) return 1;
+
         const aStarts = a.fr.toLowerCase().startsWith(query);
         const bStarts = b.fr.toLowerCase().startsWith(query);
         if (aStarts && !bStarts) return -1;

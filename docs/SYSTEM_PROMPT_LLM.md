@@ -187,8 +187,8 @@ sili (regard) + -i- (agent) + aska (libre)
 | aska | ask- | libre |
 | aita | ait- | ancêtre |
 | asa | as- | sacré |
-| avi | av- | oiseau |
-| aru | ar- | grue |
+| apo | ap- | oiseau |
+| alu | al- | grue |
 | aki | ak- | faucon |
 | ura | ur- | eau |
 | umi | um- | esprit |
@@ -210,9 +210,9 @@ sili (regard) + -i- (agent) + aska (libre)
 
 **Êtres :** kota (union), naki (enfant), tori (personne), vaku (ami), zoka (ennemi), mitu (famille), kasi (chef)
 
-**Abstraits :** veri (vrai), tosa (bon), mako (grand), pisu (petit), novu (nouveau)
+**Abstraits :** veri (vrai), tosa (bon), mako (grand), pisu (petit), nuvi (nouveau)
 
-**Lieux :** vuku (gouffre), nisa (humide), riku (cercle), vela (vigile), savu (serment), talu (hall), kova (fresque)
+**Lieux :** vuku (gouffre), nisa (humide), siku (cercle), vela (vigile), savu (serment), talu (hall), kova (fresque)
 
 ---
 
@@ -226,7 +226,7 @@ sili (regard) + -i- (agent) + aska (libre)
 |----------|-----------|-------------|
 | Enfants des Échos | Nakukeko | nak-u-keko |
 | Enfants du Courant | Nakuura | nak-u-ura |
-| Ailes-Grises | Ariaska | ar-i-aska |
+| Ailes-Grises | Aliaska | al-i-aska |
 | Faucons Chasseurs | Akoazana | ak-oa-zana |
 | Passes-bien | Takitosa | tak-i-tosa |
 | Voix de l'Aurore | Oraumi | or-a-umi |
@@ -237,7 +237,7 @@ sili (regard) + -i- (agent) + aska (libre)
 | La Confluence | Uraakota | ur-aa-kota |
 | Gouffre Humide | Vukuura | vuk-u-ura |
 | Antres des Échos | Kekutoka | kek-u-toka |
-| Cercles de Vigile | Rikuvela | rik-u-vela |
+| Cercles de Vigile | Sikuvela | sik-u-vela |
 | Halls des Serments | Talusavu | tal-u-savu |
 | Grande Fresque | Ekakova | ek-a-kova |
 

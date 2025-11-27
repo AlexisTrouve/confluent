@@ -1,12 +1,6 @@
 {
   "_comment": "Objets, matériaux et artéfacts",
-  "_mots_a_gerer": [
-    "bois", "pierre", "argile", "métal", "minerai", "couleur", "teinte",
-    "cendre", "sang", "lait", "ligne", "corde", "sac", "contenant",
-    "tablette", "plaque", "document", "écrit", "chaîne", "lien",
-    "vase rituel", "coffret", "foyer", "grenier", "chambre", "pièce",
-    "porte", "passage", "zone", "région", "navire", "embarcation"
-  ],
+  "_mots_a_gerer": [],
   "dictionnaire": {
     "pierre": {
       "traductions": [
@@ -19,6 +13,367 @@
         }
       ],
       "synonymes_fr": ["roche", "pierres"]
+    },
+    "bois": {
+      "traductions": [
+        {
+          "confluent": "viku",
+          "type": "racine",
+          "forme_liee": "vik",
+          "domaine": "materiau",
+          "note": "Matériau de l'arbre/forêt"
+        }
+      ]
+    },
+    "argile": {
+      "traductions": [
+        {
+          "confluent": "tokauura",
+          "type": "composition",
+          "composition": "tok-a-ura",
+          "sens_litteral": "Terre avec eau",
+          "racines": ["toka", "ura"],
+          "domaine": "materiau"
+        }
+      ]
+    },
+    "métal": {
+      "traductions": [
+        {
+          "confluent": "kariusuki",
+          "type": "composition",
+          "composition": "kar-i-suki",
+          "sens_litteral": "Pierre du feu",
+          "racines": ["kari", "suki"],
+          "domaine": "materiau"
+        }
+      ]
+    },
+    "minerai": {
+      "traductions": [
+        {
+          "confluent": "kariuvuku",
+          "type": "composition",
+          "composition": "kar-i-vuku",
+          "sens_litteral": "Pierre du gouffre",
+          "racines": ["kari", "vuku"],
+          "domaine": "materiau"
+        }
+      ]
+    },
+    "cendre": {
+      "traductions": [
+        {
+          "confluent": "senu",
+          "type": "racine",
+          "forme_liee": "sen",
+          "domaine": "materiau"
+        }
+      ]
+    },
+    "sang": {
+      "traductions": [
+        {
+          "confluent": "pasu",
+          "type": "racine",
+          "forme_liee": "ras",
+          "domaine": "materiau"
+        }
+      ]
+    },
+    "lait": {
+      "traductions": [
+        {
+          "confluent": "milu",
+          "type": "racine",
+          "forme_liee": "mil",
+          "domaine": "materiau"
+        }
+      ]
+    },
+    "ligne": {
+      "traductions": [
+        {
+          "confluent": "linu",
+          "type": "racine",
+          "forme_liee": "lin",
+          "domaine": "forme"
+        }
+      ]
+    },
+    "corde": {
+      "traductions": [
+        {
+          "confluent": "kopu",
+          "type": "racine",
+          "forme_liee": "kop",
+          "domaine": "outil"
+        }
+      ]
+    },
+    "sac": {
+      "traductions": [
+        {
+          "confluent": "saku",
+          "type": "racine",
+          "forme_liee": "sak",
+          "domaine": "objet"
+        }
+      ],
+      "synonymes_fr": ["contenant"]
+    },
+    "tablette": {
+      "traductions": [
+        {
+          "confluent": "tabu",
+          "type": "racine",
+          "forme_liee": "tab",
+          "domaine": "objet"
+        }
+      ],
+      "synonymes_fr": ["plaque"]
+    },
+    "document": {
+      "traductions": [
+        {
+          "confluent": "tabukova",
+          "type": "composition",
+          "composition": "tab-u-kova",
+          "sens_litteral": "Tablette de gravure",
+          "racines": ["tabu", "kova"],
+          "domaine": "objet"
+        }
+      ],
+      "synonymes_fr": ["écrit"]
+    },
+    "chaîne": {
+      "traductions": [
+        {
+          "confluent": "kopuukari",
+          "type": "composition",
+          "composition": "kop-u-kari",
+          "sens_litteral": "Corde de pierre",
+          "racines": ["kopu", "kari"],
+          "domaine": "objet"
+        }
+      ],
+      "synonymes_fr": ["lien"]
+    },
+    "vase rituel": {
+      "traductions": [
+        {
+          "confluent": "sakuasa",
+          "type": "composition",
+          "composition": "sak-u-asa",
+          "sens_litteral": "Contenant du sacré",
+          "racines": ["saku", "asa"],
+          "domaine": "objet_rituel"
+        }
+      ]
+    },
+    "coffret": {
+      "traductions": [
+        {
+          "confluent": "sakuzaki",
+          "type": "composition",
+          "composition": "sak-u-zaki",
+          "sens_litteral": "Contenant protégé",
+          "racines": ["saku", "zaki"],
+          "domaine": "objet"
+        }
+      ]
+    },
+    "foyer": {
+      "traductions": [
+        {
+          "confluent": "sukiuloku",
+          "type": "composition",
+          "composition": "suk-i-loku",
+          "sens_litteral": "Feu du lieu",
+          "racines": ["suki", "loku"],
+          "domaine": "structure"
+        }
+      ]
+    },
+    "grenier": {
+      "traductions": [
+        {
+          "confluent": "lokuzaki",
+          "type": "composition",
+          "composition": "lok-u-zaki",
+          "sens_litteral": "Lieu gardé",
+          "racines": ["loku", "zaki"],
+          "domaine": "structure"
+        }
+      ]
+    },
+    "chambre": {
+      "traductions": [
+        {
+          "confluent": "lokuusupu",
+          "type": "composition",
+          "composition": "lok-u-supu",
+          "sens_litteral": "Lieu du sommeil",
+          "racines": ["loku", "supu"],
+          "domaine": "structure"
+        }
+      ],
+      "synonymes_fr": ["pièce"]
+    },
+    "porte": {
+      "traductions": [
+        {
+          "confluent": "tekiuloku",
+          "type": "composition",
+          "composition": "tek-i-loku",
+          "sens_litteral": "Chemin du lieu",
+          "racines": ["teki", "loku"],
+          "domaine": "structure"
+        }
+      ],
+      "synonymes_fr": ["passage"]
+    },
+    "zone": {
+      "traductions": [
+        {
+          "confluent": "loku",
+          "type": "racine",
+          "forme_liee": "lok",
+          "domaine": "espace"
+        }
+      ],
+      "synonymes_fr": ["région"]
+    },
+    "navire": {
+      "traductions": [
+        {
+          "confluent": "vanu",
+          "type": "racine",
+          "forme_liee": "nav",
+          "domaine": "objet"
+        }
+      ],
+      "synonymes_fr": ["embarcation"]
+    },
+    "barque": {
+      "traductions": [
+        {
+          "confluent": "naviupisu",
+          "type": "composition",
+          "composition": "van-i-pisu",
+          "sens_litteral": "Petit navire",
+          "racines": ["vanu", "pisu"],
+          "domaine": "objet"
+        }
+      ]
+    },
+    "radeau": {
+      "traductions": [
+        {
+          "confluent": "naviuviku",
+          "type": "composition",
+          "composition": "van-i-viku",
+          "sens_litteral": "Navire de bois",
+          "racines": ["vanu", "viku"],
+          "domaine": "objet"
+        }
+      ]
+    },
+    "torche": {
+      "traductions": [
+        {
+          "confluent": "sukiuviku",
+          "type": "composition",
+          "composition": "suk-i-viku",
+          "sens_litteral": "Feu de bois",
+          "racines": ["suki", "viku"],
+          "domaine": "objet"
+        }
+      ]
+    },
+    "lampe": {
+      "traductions": [
+        {
+          "confluent": "sorausaku",
+          "type": "composition",
+          "composition": "sor-a-saku",
+          "sens_litteral": "Lumière avec contenant",
+          "racines": ["sora", "saku"],
+          "domaine": "objet"
+        }
+      ]
+    },
+    "vêtement": {
+      "traductions": [
+        {
+          "confluent": "vekuuvasi",
+          "type": "composition",
+          "composition": "vek-u-vasi",
+          "sens_litteral": "Peau tissée",
+          "racines": ["veku", "vasi"],
+          "domaine": "objet"
+        }
+      ]
+    },
+    "cape": {
+      "traductions": [
+        {
+          "confluent": "vekuuzaki",
+          "type": "composition",
+          "composition": "vek-u-zaki",
+          "sens_litteral": "Peau de protection",
+          "racines": ["veku", "zaki"],
+          "domaine": "objet"
+        }
+      ]
+    },
+    "bijou": {
+      "traductions": [
+        {
+          "confluent": "kariuora",
+          "type": "composition",
+          "composition": "kar-i-ora",
+          "sens_litteral": "Pierre de l'aurore",
+          "racines": ["kari", "ora"],
+          "domaine": "objet"
+        }
+      ]
+    },
+    "offrande": {
+      "traductions": [
+        {
+          "confluent": "kitanuasa",
+          "type": "composition",
+          "composition": "kit-a-n-asa",
+          "sens_litteral": "Don avec sacré",
+          "racines": ["kitan", "asa"],
+          "domaine": "objet_rituel"
+        }
+      ]
+    },
+    "trésor": {
+      "traductions": [
+        {
+          "confluent": "zakiumako",
+          "type": "composition",
+          "composition": "zak-i-mako",
+          "sens_litteral": "Gardé de grandeur",
+          "racines": ["zaki", "mako"],
+          "domaine": "objet"
+        }
+      ]
+    },
+    "relique": {
+      "traductions": [
+        {
+          "confluent": "asauaita",
+          "type": "composition",
+          "composition": "as-a-aita",
+          "sens_litteral": "Sacré avec ancêtre",
+          "racines": ["asa", "aita"],
+          "domaine": "objet_rituel"
+        }
+      ]
     }
   }
 }

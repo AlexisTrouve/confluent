@@ -14,7 +14,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 |--------|------------|------|
 | **anu** | an- | âme, conscience profonde |
 | **osi** | os- | mort, mourir |
-| **ava** | av- | aile |
+| **apa** | ap- | aile |
 
 ### Racines standards additionnelles (C-)
 
@@ -22,24 +22,24 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 |--------|------------|------|
 | **besi** | bes- | bête, animal |
 | **buki** | buk- | bois (matériau) |
-| **daku** | dak- | sombre, obscur |
+| **taku** | tak- | sombre, obscur |
 | **kelu** | kel- | couleur |
 | **kesa** | kes- | cendre, gris |
 | **kina** | kin- | sang |
 | **koni** | kon- | assemblée |
-| **lavi** | lav- | lait, liquide blanc |
+| **lapu** | lap- | lait, liquide blanc |
 | **leku** | lek- | loi, règle |
 | **lina** | lin- | corde, ligne |
 | **loku** | lok- | lieu, endroit |
 | **mori** | mor- | mémoire, souvenir |
-| **navi** | nav- | navire |
-| **paki** | pak- | paix |
+| **vanu** | van- | navire |
+| **paku** | pak- | paix |
 | **pesa** | pes- | poisson |
 | **piki** | pik- | pointe, lance |
 | **poku** | pok- | poison |
-| **rasu** | ras- | rouge |
-| **reki** | rek- | récit, histoire |
-| **rovi** | rov- | route |
+| **pasu** | pas- | rouge |
+| **leki** | lek- | récit, histoire |
+| **kovi** | kov- | route |
 | **saki** | sak- | sac, contenant |
 | **seli** | sel- | sel, mer |
 | **seni** | sen- | vieux, âgé |
@@ -52,7 +52,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 | **temi** | tem- | temps |
 | **tibu** | tib- | tribu |
 | **tumi** | tum- | tombe |
-| **vali** | val- | valeur, mérite |
+| **valu** | val- | valeur, mérite |
 | **varu** | var- | guerre, combat |
 | **ziku** | zik- | serpent |
 
@@ -68,7 +68,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 | Ciels-clairs | **Zeriiora** | zer-**ii**-ora | Ceux qui SONT ciel-aurore |
 | Sans-ciels | **Zokuzeru** | zok-**u**-zeru | Étrangers au ciel |
 | Voix de l'Aurore | **Oraumi** | or-**a**-umi | Aurore avec esprit |
-| Ailes-Grises | **Ariaska** | ar-**i**-aska | Grue portant liberté |
+| Ailes-Grises | **Aliaska** | al-**i**-aska | Grue portant liberté |
 | Faucons Chasseurs | **Akoazana** | ak-**oa**-zana | Faucon vainqueur de chasse |
 | Enfants du Courant | **Nakuura** | nak-**u**-ura | Enfants de l'eau |
 | Enfants des Échos | **Nakukeko** | nak-**u**-keko | Enfants de l'écho |
@@ -93,11 +93,11 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 
 | Français | Confluent | Composition | Sens littéral |
 |----------|-----------|-------------|---------------|
-| Cercle des Sages | **Rikuusekitori** | rik-**u**-sek-**i**-tori | Cercle des porteurs-de-savoir |
+| Cercle des Sages | **Rikuusekitori** | sik-**u**-sek-**i**-tori | Cercle des porteurs-de-savoir |
 | Tribunal des Mœurs | **Taluuzaki** | tal-**u**-zaki | Hall de la justice |
 | Proclamateurs | **Vosiaoleku** | vos-**i**-**ao**-leku | Voix dominant la loi |
 | Assemblée des Chefs | **Koniukasi** | kon-**i**-kasi | Assemblée des guides |
-| Maison des Découvertes | **Taluunovu** | tal-**u**-novu | Hall du nouveau |
+| Maison des Découvertes | **Taluunovu** | tal-**u**-nuvi | Hall du nouveau |
 | Arbitre des Esprits | **Zakiiumi** | zak-**ii**-umi | Celui qui EST gardien des esprits |
 | Directoire | **Koniutibukasi** | kon-**i**-tib-**u**-kasi | Assemblée des chefs de tribu |
 
@@ -136,7 +136,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 | Français | Confluent | Composition | Sens littéral |
 |----------|-----------|-------------|---------------|
 | Argile vivante | **Kariita** | kar-**ii**-ita | Pierre qui EST vie |
-| Lait de pierre | **Lavukari** | lav-**u**-kari | Lait de pierre |
+| Lait de pierre | **Lavukari** | lap-**u**-kari | Lait de pierre |
 | Roche braise | **Kariasuki** | kar-**i**-a-suki | Pierre avec feu |
 | Pigments anciens | **Keluuaitaena** | kel-**u**-aita-ena | Couleurs des ancêtres-origine |
 
@@ -144,7 +144,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 
 | Français | Confluent | Composition | Sens littéral |
 |----------|-----------|-------------|---------------|
-| Regards-Libres (grues) | **Aruaska** | ar-**u**-aska | Grue de liberté |
+| Regards-Libres (grues) | **Aruaska** | al-**u**-aska | Grue de liberté |
 | Rhombes sacrés | **Onuasa** | on-**u**-asa | Son du sacré |
 | Rhombes géants | **Onuaomako** | on-**u**-**ao**-mako | Son dominant le grand |
 | Rhombe miniature | **Onupisu** | on-**u**-pisu | Son du petit |
@@ -170,7 +170,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 | Pèlerinage | **Tekiuasa** | tek-**i**-asa | Chemin du sacré |
 | Regard libre (état) | **Siliaska** | sil-**i**-aska | Regard de liberté |
 | Rites funéraires | **Asauosi** | as-**a**-osi | Sacré avec mort |
-| Cercles de Vigile | **Rikuvela** | rik-**u**-vela | Cercle de vigile |
+| Cercles de Vigile | **Sikuvela** | sik-**u**-vela | Cercle de vigile |
 | Communion des esprits | **Kotaaumi** | kot-**aa**-umi | Union mêlée aux esprits |
 
 ### Traditions sacrées
@@ -215,10 +215,10 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 
 | Français | Confluent | Composition | Sens littéral |
 |----------|-----------|-------------|---------------|
-| Cercles de Vigile | **Rikuvela** | rik-**u**-vela | Cercle de vigile |
+| Cercles de Vigile | **Sikuvela** | sik-**u**-vela | Cercle de vigile |
 | Antres des Échos | **Kekutoka** | kek-**u**-toka | Écho de la terre |
 | Village sur pilotis | **Lokuurabuki** | lok-**u**-ur-**a**-buki | Lieu d'eau avec bois |
-| Route sécurisée | **Roviuzaki** | rov-**i**-zaki | Route de garde |
+| Route sécurisée | **Roviuzaki** | kov-**i**-zaki | Route de garde |
 | Avant-poste côtier | **Lokuseli** | lok-**u**-seli | Lieu du sel |
 | Sanctuaire | **Lokuasa** | lok-**u**-asa | Lieu du sacré |
 | Forteresse | **Lokuzakimako** | lok-**u**-zak-**i**-mako | Lieu de grande garde |
@@ -236,7 +236,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 | Mer | **Seliamako** | sel-**i**-a-mako | Sel avec grandeur |
 | Côte | **Tokaaseli** | tok-**a**-seli | Terre avec sel |
 | Horizon | **Silieamako** | sil-**i**-**ea**-mako | Regard vers le grand |
-| Grotte | **Tokaudaku** | tok-**a**-u-daku | Terre du sombre |
+| Grotte | **Tokaudaku** | tok-**a**-u-taku | Terre du sombre |
 | Source | **Uraena** | ur-**a**-ena | Eau d'origine |
 | Cascade | **Uraetoka** | ur-**a**-e-toka | Eau depuis terre |
 
@@ -272,9 +272,9 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 
 | Français | Confluent | Composition | Sens littéral |
 |----------|-----------|-------------|---------------|
-| Aile-Grise | **Avakesa** | av-**a**-kesa | Aile avec cendre |
+| Aile-Grise | **Avakesa** | ap-**a**-kesa | Aile avec cendre |
 | Chaman | **Vokiiumi** | vok-**ii**-umi | Celui qui EST voix des esprits |
-| Dresseur de grues | **Mokiiaru** | mok-**ii**-aru | Celui qui EST formateur de grues |
+| Dresseur de grues | **Mokiiaru** | mok-**ii**-alu | Celui qui EST formateur de grues |
 | Guide des âmes | **Tekiianu** | tek-**ii**-anu | Celui qui EST chemin des âmes |
 | Gardien des lois | **Zakiileku** | zak-**ii**-leku | Celui qui EST gardien des lois |
 
@@ -309,16 +309,16 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 
 | Français | Confluent | Composition | Sens littéral |
 |----------|-----------|-------------|---------------|
-| Regards-Libres (grues) | **Aruaska** | ar-**u**-aska | Grue de liberté |
-| Grue cendrée | **Arukesa** | ar-**u**-kesa | Grue de cendre |
+| Regards-Libres (grues) | **Aruaska** | al-**u**-aska | Grue de liberté |
+| Grue cendrée | **Arukesa** | al-**u**-kesa | Grue de cendre |
 | Faucon | **Aki** | aki | Faucon |
 | Bête sacrée | **Besiasa** | bes-**i**-asa | Bête du sacré |
 | Gibier | **Besiuzana** | bes-**i**-zana | Bête de chasse |
 | Poisson | **Pesa** | pesa | Poisson |
 | Poisson de rivière | **Pesaunura** | pes-**a**-nura | Poisson avec rivière |
 | Serpent d'eau | **Zikuura** | zik-**u**-ura | Serpent de l'eau |
-| Oiseau | **Avi** | avi | Oiseau |
-| Oiseau de proie | **Aviuzana** | av-**i**-zana | Oiseau de chasse |
+| Oiseau | **Apo** | apo | Oiseau |
+| Oiseau de proie | **Aviuzana** | ap-**i**-zana | Oiseau de chasse |
 | Créature inconnue | **Besiuzoka** | bes-**i**-zoka | Bête de l'étranger |
 
 ---
@@ -331,7 +331,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 |----------|-----------|-------------|---------------|
 | Regard libre | **Siliaska** | sil-**i**-aska | Regard de liberté |
 | Confluence/Union | **Kota** | kota | Union |
-| Harmonie | **Kotaapaki** | kot-**aa**-paki | Union mêlée à paix |
+| Harmonie | **Kotaapaki** | kot-**aa**-paku | Union mêlée à paix |
 | Sagesse | **Sekaamori** | sek-**aa**-mori | Savoir mêlé à mémoire |
 | Honneur | **Valiutori** | val-**i**-tori | Valeur de personne |
 | Justice | **Zakiuveri** | zak-**i**-veri | Garde de vérité |
@@ -356,7 +356,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 | Miasmes | **Venaopoku** | ven-**a**-o-poku | Air contre poison |
 | Ciel spirituel | **Zeruumi** | zer-**u**-umi | Ciel de l'esprit |
 | Aurore sacrée | **Oraasa** | or-**a**-asa | Aurore avec sacré |
-| Nuage (mauvais augure) | **Zerudaku** | zer-**u**-daku | Ciel du sombre |
+| Nuage (mauvais augure) | **Zerudaku** | zer-**u**-taku | Ciel du sombre |
 | Bénédiction | **Tosaumi** | tos-**a**-umi | Bien avec esprit |
 | Malédiction | **Osiumi** | os-**i**-umi | Mort de l'esprit |
 
@@ -383,13 +383,13 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 | Français | Confluent | Composition | Sens littéral |
 |----------|-----------|-------------|---------------|
 | Guerre | **Varu** | varu | Guerre |
-| Paix | **Paki** | paki | Paix |
+| Paix | **Paki** | paku | Paix |
 | Victoire | **Oaoki** | **oa**-oki | Épreuve surmontée |
 | Défaite | **Oki** | oki | Épreuve (non surmontée) |
 | Meurtre | **Osiotori** | os-**i**-o-tori | Mort contre personne |
 | Violence bestiale | **Varubesi** | var-**u**-besi | Guerre de bête |
 | Gourdin (arme honteuse) | **Bukiusoki** | buk-**i**-soki | Bois qui frappe |
-| Formation phalange | **Rikuvaru** | rik-**u**-varu | Cercle de guerre |
+| Formation phalange | **Sikuvaru** | sik-**u**-varu | Cercle de guerre |
 | Embuscade | **Varuzana** | var-**u**-zana | Guerre de chasse |
 | Prisonnier | **Toriokapi** | tor-**i**-o-kapi | Personne contre capture |
 
@@ -404,7 +404,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 | Lune (mois) | **Luna** | luna | Lune |
 | Aurore (matin) | **Ora** | ora | Aurore |
 | Crépuscule | **Oraosi** | or-**a**-osi | Aurore avec mort |
-| Nuit | **Dakusora** | dak-**u**-sora | Sombre du soleil |
+| Nuit | **Dakusora** | tak-**u**-sora | Sombre du soleil |
 | Éternité | **Temieo** | tem-**i**-**eo** | Temps éternel |
 | Passé | **Temieaita** | tem-**i**-e-aita | Temps depuis ancêtres |
 | Futur | **Temieanaki** | tem-**i**-**ea**-naki | Temps vers enfants |
@@ -449,7 +449,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 | Nanzagouet | **Nanzagouet** | - | (nom propre conservé) |
 | L'Autre | **Zoka** | zoka | Étranger |
 | Étranger | **Toriezoka** | tor-**i**-e-zoka | Personne de l'étranger |
-| Embarcation | **Naviuzoka** | nav-**i**-zoka | Navire de l'étranger |
+| Embarcation | **Naviuzoka** | van-**i**-zoka | Navire de l'étranger |
 | Horizon | **Silieamako** | sil-**i**-**ea**-mako | Regard vers le grand |
 | L'inconnu | **Zoseka** | zo-seka | Sans savoir |
 | Terre étrangère | **Tokazoka** | tok-**a**-zoka | Terre avec étranger |
@@ -462,13 +462,13 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 
 | Français | Confluent | Composition | Sens littéral |
 |----------|-----------|-------------|---------------|
-| Rouge | **Rasu** | rasu | Rouge |
-| Orange | **Rasuaora** | ras-**u**-**a**-ora | Rouge avec aurore |
-| Violet | **Oradaku** | or-**a**-daku | Aurore avec sombre |
-| Rose | **Rasupisu** | ras-**u**-pisu | Rouge du petit |
+| Rouge | **Rasu** | pasu | Rouge |
+| Orange | **Rasuaora** | pas-**u**-**a**-ora | Rouge avec aurore |
+| Violet | **Oradaku** | or-**a**-taku | Aurore avec sombre |
+| Rose | **Rasupisu** | pas-**u**-pisu | Rouge du petit |
 | Blanc | **Kelusora** | kel-**u**-sora | Couleur du soleil |
 | Gris | **Kesa** | kesa | Cendre |
-| Noir | **Daku** | daku | Sombre |
+| Noir | **Daku** | taku | Sombre |
 | Vert | **Keluviku** | kel-**u**-viku | Couleur de forêt |
 | Bleu/Azur | **Keluzeru** | kel-**u**-zeru | Couleur de ciel |
 | Bleu d'eau | **Keluura** | kel-**u**-ura | Couleur d'eau |
@@ -484,7 +484,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 | Éclat | **Soramako** | sor-**a**-mako | Lumière grande |
 | Translucide | **Siliasora** | sil-**i**-**a**-sora | Regard avec lumière |
 | Lumineux | **Soritori** | sor-**i**-tori | Porteur de lumière |
-| Sombre | **Daku** | daku | Sombre |
+| Sombre | **Daku** | taku | Sombre |
 | Patine | **Keluutemi** | kel-**u**-temi | Couleur du temps |
 | Gravure | **Sinukari** | sin-**u**-kari | Signe dans pierre |
 | Bas-relief | **Kovapisu** | kov-**a**-pisu | Fresque avec petitesse |
@@ -619,7 +619,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 |----------|-----------|-------------|
 | écouter | **tikun** | tik-**u**-n (oreille-de) |
 | étudier | **sekis** | sek-**i**-s (savoir-agent) |
-| découvrir | **novak** | nov-**a**-k (nouveau-avec) |
+| découvrir | **novak** | nuv-**a**-k (nouveau-avec) |
 | explorer | **tekil** | tek-**i**-l (chemin-agent) |
 | mémoriser | **morik** | mor-**i**-k (mémoire-agent) |
 | interpréter | **sinim** | sin-**i**-m (signe-agent) |
@@ -657,11 +657,11 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 | Espoir | **Silieatosa** | sil-**i**-**ea**-tosa | Regard vers bien |
 | Fierté | **Valiumako** | val-**i**-mako | Valeur grande |
 | Amour | **Koriaakota** | kor-**i**-**aa**-kota | Cœur mêlé à union |
-| Curiosité | **Siliunovu** | sil-**i**-novu | Regard du nouveau |
+| Curiosité | **Siliunovu** | sil-**i**-nuvi | Regard du nouveau |
 | Soulagement | **Korioaoki** | kor-**i**-**oa**-oki | Cœur surmontant épreuve |
 | Confiance | **Koriiusavu** | kor-**ii**-savu | Cœur qui EST serment |
 | Gratitude | **Koriakita** | kor-**i**-**a**-kita | Cœur avec don |
-| Sérénité | **Koriaapaki** | kor-**i**-**aa**-paki | Cœur mêlé à paix |
+| Sérénité | **Koriaapaki** | kor-**i**-**aa**-paku | Cœur mêlé à paix |
 
 ### Émotions négatives
 
@@ -671,9 +671,9 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 | Colère | **Sukiukori** | suk-**i**-kori | Feu du cœur |
 | Tristesse | **Uraakori** | ur-**aa**-kori | Eau mêlée au cœur |
 | Désespoir | **Zosilieatos** | zo-sil-**i**-**ea**-tos | Sans regard vers bien |
-| Honte | **Zoovali** | zo-**oa**-vali | Valeur non surmontée |
+| Honte | **Zoovali** | zo-**oa**-valu | Valeur non surmontée |
 | Haine | **Sukiozoka** | suk-**i**-o-zoka | Feu contre étranger |
-| Angoisse | **Koridaku** | kor-**i**-daku | Cœur du sombre |
+| Angoisse | **Koridaku** | kor-**i**-taku | Cœur du sombre |
 | Anxiété | **Korivela** | kor-**i**-vela | Cœur de vigile |
 | Méfiance | **Zosavu** | zo-savu | Sans serment |
 | Regret | **Korieuosi** | kor-**i**-e-osi | Cœur depuis mort |
@@ -697,18 +697,18 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 | Honorable | **Savuutori** | sav-**u**-tori | Serment de personne |
 | Fidèle | **Savuiikori** | sav-**u**-**ii**-kori | Serment qui EST cœur |
 | Juste | **Zakiiveri** | zak-**ii**-veri | Qui EST garde de vérité |
-| Humble | **Pisuvali** | pis-**u**-vali | Petite valeur |
-| Ancien (respectueux) | **Seniuvali** | sen-**i**-vali | Vieux de valeur |
+| Humble | **Pisuvali** | pis-**u**-valu | Petite valeur |
+| Ancien (respectueux) | **Seniuvali** | sen-**i**-valu | Vieux de valeur |
 
 ### Qualités négatives
 
 | Français | Confluent | Composition | Sens littéral |
 |----------|-----------|-------------|---------------|
-| Laid | **Silidaku** | sil-**i**-daku | Regard du sombre |
+| Laid | **Silidaku** | sil-**i**-taku | Regard du sombre |
 | Terrible | **Okimako** | ok-**i**-mako | Grande épreuve |
 | Maudit | **Zoasa** | zo-asa | Sans sacré |
 | Faible | **Sanupisu** | san-**u**-pisu | Corps petit |
-| Indigne | **Zovali** | zo-vali | Sans valeur |
+| Indigne | **Zovali** | zo-valu | Sans valeur |
 | Honteux | **Zovalitori** | zo-val-**i**-tori | Personne sans valeur |
 | Traître | **Zosavuitori** | zo-sav-**u**-tori | Personne sans serment |
 | Injuste | **Zozaki** | zo-zaki | Sans justice |
@@ -729,15 +729,15 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 | Symbole | **Sinumako** | sin-**u**-mako | Grand signe |
 | Trace | **Sinupeki** | sin-**u**-peki | Signe du pied |
 | Rhombe (son) | **Onuasa** | on-**u**-asa | Son du sacré |
-| Récit | **Reki** | reki | Récit |
-| Légende | **Rekiuaita** | rek-**i**-aita | Récit de l'ancêtre |
-| Histoire vraie | **Rekiuveri** | rek-**i**-veri | Récit de vérité |
+| Récit | **Reki** | leki | Récit |
+| Légende | **Rekiuaita** | lek-**i**-aita | Récit de l'ancêtre |
+| Histoire vraie | **Rekiuveri** | lek-**i**-veri | Récit de vérité |
 | Poème/Vers | **Vokiukoru** | vok-**i**-koru | Voix du cycle |
 | Chant | **Vokiaonu** | vok-**i**-**a**-onu | Voix avec son |
 | Chant sacré | **Vokionuasa** | vok-**i**-on-**u**-asa | Voix de son sacré |
 | Message | **Vokiuteki** | vok-**i**-teki | Voix du chemin |
 | Rapport | **Vokiuveri** | vok-**i**-veri | Voix de vérité |
-| Chronique | **Rekiutemi** | rek-**i**-temi | Récit du temps |
+| Chronique | **Rekiutemi** | lek-**i**-temi | Récit du temps |
 | Traité | **Savuusinu** | sav-**u**-sinu | Serment de signes |
 | Loi | **Leku** | leku | Loi |
 | Décret | **Lekuukasi** | lek-**u**-kasi | Loi du guide |
@@ -745,7 +745,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 | Conseil | **Sekiukasi** | sek-**i**-kasi | Savoir du guide |
 | Débat | **Vokiaakota** | vok-**i**-**aa**-kota | Voix mêlée à union |
 | Silence | **Zovoki** | zo-voki | Sans voix |
-| Secret | **Vokiudaku** | vok-**i**-daku | Voix du sombre |
+| Secret | **Vokiudaku** | vok-**i**-taku | Voix du sombre |
 | Mensonge | **Zoveri** | zo-veri | Sans vérité |
 | Promesse | **Savu** | savu | Serment |
 
@@ -757,7 +757,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 |-----------|----------|------|
 | **Aita** | Ancêtre | racine sacrée |
 | **Anu** | Âme | racine sacrée |
-| **Ariaska** | Ailes-Grises | composé |
+| **Aliaska** | Ailes-Grises | composé |
 | **Asa** | Sacré | racine sacrée |
 | **Aska** | Liberté | racine sacrée |
 | **Daku** | Sombre | racine |
@@ -782,7 +782,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 | **Paki** | Paix | racine |
 | **Pisu** | Petit | racine |
 | **Riku** | Cercle | racine |
-| **Rikuvela** | Cercles de Vigile | composé |
+| **Sikuvela** | Cercles de Vigile | composé |
 | **Savu** | Serment | racine |
 | **Seka** | Savoir | racine |
 | **Sili** | Regard | racine |

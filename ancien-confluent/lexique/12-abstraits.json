@@ -1,15 +1,6 @@
 {
   "_comment": "Concepts abstraits et philosophiques",
-  "_mots_a_gerer": [
-    "regard libre", "confluence", "union", "harmonie", "sagesse", "honneur",
-    "justice", "vérité", "liberté", "esprit", "âme", "destinée", "devoir sacré",
-    "compétence", "transmission", "L'Autre", "étranger", "Premiers Ancêtres",
-    "présage", "miasmes", "bénédiction", "malédiction", "caste", "village",
-    "famille", "clan", "généalogie", "serment", "serment de sang", "loi",
-    "loi sacrée", "épreuve", "épreuve de vérité", "trahison", "exil",
-    "guerre", "paix", "victoire", "défaite", "meurtre", "violence bestiale",
-    "embuscade", "prisonnier"
-  ],
+  "_mots_a_gerer": [],
   "dictionnaire": {
     "regard libre": {
       "traductions": [
@@ -21,6 +12,449 @@
           "racines": ["sili", "aska"],
           "domaine": "concept_fondateur",
           "note": "État spirituel central"
+        }
+      ]
+    },
+    "confluence": {
+      "traductions": [
+        {
+          "confluent": "kota",
+          "type": "racine",
+          "forme_liee": "kot",
+          "domaine": "concept_fondateur",
+          "note": "Union, rencontre"
+        }
+      ],
+      "synonymes_fr": ["union"]
+    },
+    "harmonie": {
+      "traductions": [
+        {
+          "confluent": "kotautosa",
+          "type": "composition",
+          "composition": "kot-a-tosa",
+          "sens_litteral": "Union avec le bien",
+          "racines": ["kota", "tosa"],
+          "domaine": "concept_abstrait"
+        }
+      ]
+    },
+    "sagesse": {
+      "traductions": [
+        {
+          "confluent": "sekauaita",
+          "type": "composition",
+          "composition": "sek-a-aita",
+          "sens_litteral": "Savoir des ancêtres",
+          "racines": ["seka", "aita"],
+          "domaine": "concept_abstrait"
+        }
+      ]
+    },
+    "honneur": {
+      "traductions": [
+        {
+          "confluent": "valuuveri",
+          "type": "composition",
+          "composition": "val-u-veri",
+          "sens_litteral": "Valeur de vérité",
+          "racines": ["valu", "veri"],
+          "domaine": "concept_abstrait"
+        }
+      ]
+    },
+    "justice": {
+      "traductions": [
+        {
+          "confluent": "veriukota",
+          "type": "composition",
+          "composition": "ver-i-kota",
+          "sens_litteral": "Vérité de l'union",
+          "racines": ["veri", "kota"],
+          "domaine": "concept_abstrait"
+        }
+      ]
+    },
+    "vérité": {
+      "traductions": [
+        {
+          "confluent": "veri",
+          "type": "racine",
+          "forme_liee": "ver",
+          "domaine": "concept_fondateur"
+        }
+      ]
+    },
+    "liberté": {
+      "traductions": [
+        {
+          "confluent": "aska",
+          "type": "racine_sacree",
+          "forme_liee": "ask",
+          "domaine": "concept_fondateur"
+        }
+      ]
+    },
+    "esprit": {
+      "traductions": [
+        {
+          "confluent": "umi",
+          "type": "racine_sacree",
+          "forme_liee": "um",
+          "domaine": "concept_fondateur"
+        }
+      ],
+      "synonymes_fr": ["âme"]
+    },
+    "destinée": {
+      "traductions": [
+        {
+          "confluent": "tekiuumi",
+          "type": "composition",
+          "composition": "tek-i-umi",
+          "sens_litteral": "Chemin de l'esprit",
+          "racines": ["teki", "umi"],
+          "domaine": "concept_abstrait"
+        }
+      ]
+    },
+    "devoir sacré": {
+      "traductions": [
+        {
+          "confluent": "asauneka",
+          "type": "composition",
+          "composition": "as-a-neka",
+          "sens_litteral": "Sacré avec œuvre",
+          "racines": ["asa", "neka"],
+          "domaine": "concept_abstrait"
+        }
+      ]
+    },
+    "compétence": {
+      "traductions": [
+        {
+          "confluent": "sekautosa",
+          "type": "composition",
+          "composition": "sek-a-tosa",
+          "sens_litteral": "Savoir avec bien",
+          "racines": ["seka", "tosa"],
+          "domaine": "concept_abstrait"
+        }
+      ]
+    },
+    "transmission": {
+      "traductions": [
+        {
+          "confluent": "kisunuaita",
+          "type": "composition",
+          "composition": "kis-u-n-aita",
+          "sens_litteral": "Enseignement des ancêtres",
+          "racines": ["kisu", "aita"],
+          "domaine": "concept_abstrait"
+        }
+      ]
+    },
+    "L'Autre": {
+      "traductions": [
+        {
+          "confluent": "Tova",
+          "type": "nom_propre",
+          "composition": "tova",
+          "sens_litteral": "Celui de loin",
+          "racines": ["tova"],
+          "domaine": "social",
+          "note": "L'étranger, celui qui n'est pas du peuple"
+        }
+      ],
+      "synonymes_fr": ["étranger"]
+    },
+    "Premiers Ancêtres": {
+      "traductions": [
+        {
+          "confluent": "Enuaita",
+          "type": "nom_propre",
+          "composition": "en-u-aita",
+          "sens_litteral": "Origine des ancêtres",
+          "racines": ["ena", "aita"],
+          "domaine": "spirituel"
+        }
+      ]
+    },
+    "présage": {
+      "traductions": [
+        {
+          "confluent": "siluunovi",
+          "type": "composition",
+          "composition": "sil-u-novi",
+          "sens_litteral": "Regard du nouveau",
+          "racines": ["sili", "novi"],
+          "domaine": "spirituel"
+        }
+      ]
+    },
+    "miasmes": {
+      "traductions": [
+        {
+          "confluent": "venuzoka",
+          "type": "composition",
+          "composition": "ven-u-zoka",
+          "sens_litteral": "Air de l'ennemi",
+          "racines": ["vena", "zoka"],
+          "domaine": "danger"
+        }
+      ]
+    },
+    "bénédiction": {
+      "traductions": [
+        {
+          "confluent": "asautosa",
+          "type": "composition",
+          "composition": "as-a-tosa",
+          "sens_litteral": "Sacré avec bien",
+          "racines": ["asa", "tosa"],
+          "domaine": "spirituel"
+        }
+      ]
+    },
+    "malédiction": {
+      "traductions": [
+        {
+          "confluent": "asauzoka",
+          "type": "composition",
+          "composition": "as-a-zoka",
+          "sens_litteral": "Sacré avec ennemi",
+          "racines": ["asa", "zoka"],
+          "domaine": "spirituel"
+        }
+      ]
+    },
+    "caste": {
+      "traductions": [
+        {
+          "confluent": "kotauneki",
+          "type": "composition",
+          "composition": "kot-a-neka",
+          "sens_litteral": "Union avec œuvre",
+          "racines": ["kota", "neka"],
+          "domaine": "social"
+        }
+      ]
+    },
+    "village": {
+      "traductions": [
+        {
+          "confluent": "kota",
+          "type": "racine",
+          "forme_liee": "kot",
+          "domaine": "social",
+          "note": "Union de maisons"
+        }
+      ]
+    },
+    "famille": {
+      "traductions": [
+        {
+          "confluent": "mitu",
+          "type": "racine",
+          "forme_liee": "mit",
+          "domaine": "social",
+          "note": "Groupe de sang"
+        }
+      ],
+      "synonymes_fr": ["clan"]
+    },
+    "généalogie": {
+      "traductions": [
+        {
+          "confluent": "mituuaita",
+          "type": "composition",
+          "composition": "mit-u-aita",
+          "sens_litteral": "Famille des ancêtres",
+          "racines": ["mitu", "aita"],
+          "domaine": "social"
+        }
+      ]
+    },
+    "serment": {
+      "traductions": [
+        {
+          "confluent": "savu",
+          "type": "racine",
+          "forme_liee": "sav",
+          "domaine": "institution",
+          "note": "Promesse sacrée"
+        }
+      ]
+    },
+    "serment de sang": {
+      "traductions": [
+        {
+          "confluent": "savuurasu",
+          "type": "composition",
+          "composition": "sav-u-pasu",
+          "sens_litteral": "Serment du sang",
+          "racines": ["savu", "pasu"],
+          "domaine": "institution"
+        }
+      ]
+    },
+    "loi": {
+      "traductions": [
+        {
+          "confluent": "loku",
+          "type": "racine",
+          "forme_liee": "lok",
+          "domaine": "institution"
+        }
+      ]
+    },
+    "loi sacrée": {
+      "traductions": [
+        {
+          "confluent": "lokuuasa",
+          "type": "composition",
+          "composition": "lok-u-asa",
+          "sens_litteral": "Loi du sacré",
+          "racines": ["loku", "asa"],
+          "domaine": "institution"
+        }
+      ]
+    },
+    "épreuve": {
+      "traductions": [
+        {
+          "confluent": "oki",
+          "type": "racine_sacree",
+          "forme_liee": "ok",
+          "domaine": "concept_fondateur"
+        }
+      ]
+    },
+    "épreuve de vérité": {
+      "traductions": [
+        {
+          "confluent": "okiuveri",
+          "type": "composition",
+          "composition": "ok-i-veri",
+          "sens_litteral": "Épreuve de vérité",
+          "racines": ["oki", "veri"],
+          "domaine": "institution"
+        }
+      ]
+    },
+    "trahison": {
+      "traductions": [
+        {
+          "confluent": "zoosavu",
+          "type": "composition",
+          "composition": "zo-savu",
+          "sens_litteral": "Sans serment",
+          "racines": ["zo", "savu"],
+          "domaine": "concept_negatif"
+        }
+      ]
+    },
+    "exil": {
+      "traductions": [
+        {
+          "confluent": "zokota",
+          "type": "composition",
+          "composition": "zo-kota",
+          "sens_litteral": "Sans union",
+          "racines": ["zo", "kota"],
+          "domaine": "concept_negatif"
+        }
+      ]
+    },
+    "guerre": {
+      "traductions": [
+        {
+          "confluent": "oki",
+          "type": "racine_sacree",
+          "forme_liee": "ok",
+          "domaine": "conflit"
+        }
+      ]
+    },
+    "paix": {
+      "traductions": [
+        {
+          "confluent": "tosa",
+          "type": "racine",
+          "forme_liee": "tos",
+          "domaine": "etat"
+        }
+      ]
+    },
+    "victoire": {
+      "traductions": [
+        {
+          "confluent": "okiatosa",
+          "type": "composition",
+          "composition": "ok-i-a-tosa",
+          "sens_litteral": "Épreuve avec bien",
+          "racines": ["oki", "tosa"],
+          "domaine": "conflit"
+        }
+      ]
+    },
+    "défaite": {
+      "traductions": [
+        {
+          "confluent": "okiazoka",
+          "type": "composition",
+          "composition": "ok-i-a-zoka",
+          "sens_litteral": "Épreuve avec mal",
+          "racines": ["oki", "zoka"],
+          "domaine": "conflit"
+        }
+      ]
+    },
+    "meurtre": {
+      "traductions": [
+        {
+          "confluent": "osiakuzoka",
+          "type": "composition",
+          "composition": "os-i-a-zoka",
+          "sens_litteral": "Mort avec hostilité",
+          "racines": ["osi", "zoka"],
+          "domaine": "concept_negatif"
+        }
+      ]
+    },
+    "violence bestiale": {
+      "traductions": [
+        {
+          "confluent": "betuuzoka",
+          "type": "composition",
+          "composition": "bet-u-zoka",
+          "sens_litteral": "Bête de l'hostilité",
+          "racines": ["betu", "zoka"],
+          "domaine": "concept_negatif"
+        }
+      ]
+    },
+    "embuscade": {
+      "traductions": [
+        {
+          "confluent": "zokuuzana",
+          "type": "composition",
+          "composition": "zok-u-zana",
+          "sens_litteral": "Secret de chasse",
+          "racines": ["zoku", "zana"],
+          "domaine": "conflit"
+        }
+      ]
+    },
+    "prisonnier": {
+      "traductions": [
+        {
+          "confluent": "pasikitori",
+          "type": "composition",
+          "composition": "pas-ik-i-tori",
+          "sens_litteral": "Personne capturée",
+          "racines": ["pasik", "tori"],
+          "domaine": "conflit"
         }
       ]
     }

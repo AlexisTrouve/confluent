@@ -625,8 +625,8 @@ Concepts fondamentaux, anciens, liés au sacré.
 | 1 | **aska** | ask- | libre, liberté | a- | Concept fondateur |
 | 2 | **aita** | ait- | ancêtre, ancien | a- | Lignée sacrée |
 | 3 | **asa** | as- | sacré, divin, intouchable | a- | Spirituel |
-| 4 | **avi** | av- | oiseau, vol | a- | Nature sacrée |
-| 5 | **aru** | ar- | grue (Regard-Libre) | a- | Animal sacré |
+| 4 | **apo** | ap- | oiseau, vol | a- | Nature sacrée |
+| 5 | **alu** | al- | grue (Regard-Libre) | a- | Animal sacré |
 | 6 | **aki** | ak- | faucon | a- | Animal sacré |
 | 7 | **ura** | ur- | eau, fluide | u- | Élément primordial |
 | 8 | **umi** | um- | esprit, souffle vital | u- | Spirituel |
@@ -718,7 +718,7 @@ Concepts fondamentaux, anciens, liés au sacré.
 | 55 | **tosa** | tos- | bon, bien |
 | 56 | **mako** | mak- | grand, vaste |
 | 57 | **pisu** | pis- | petit, fin |
-| 58 | **novu** | nov- | nouveau, jeune |
+| 58 | **nuvi** | nuv- | nouveau, jeune |
 | 59 | **kiru** | kir- | échanger, troquer |
 | 60 | **vasi** | vas- | pont, lien, passage |
 
@@ -728,7 +728,7 @@ Concepts fondamentaux, anciens, liés au sacré.
 |---|--------|------------|------|
 | 61 | **vuku** | vuk- | profond, gouffre, abîme |
 | 62 | **nisa** | nis- | humide, mouillé |
-| 63 | **riku** | rik- | cercle, anneau |
+| 63 | **siku** | sik- | cercle, anneau |
 | 64 | **vela** | vel- | veille, vigile, guet |
 | 65 | **savu** | sav- | serment, promesse |
 | 66 | **talu** | tal- | hall, grande salle |
@@ -798,7 +798,7 @@ Les groupes les plus sacrés (chamans) en contiennent plusieurs.
 |-------|-----|-------------|---------------|-----------------|
 | **Terre** | **Nakukeko** | nak-u-keko | Enfants de l'écho | 0 |
 | **Eau** | **Nakuura** | nak-u-ura | Enfants de l'eau | 1 (ura) |
-| **Air** | **Ariaska** | ar-i-aska | Porteurs de la grue libre | 2 (aru, aska) |
+| **Air** | **Aliaska** | al-i-aska | Porteurs de la grue libre | 2 (alu, aska) |
 | **Feu** | **Akoazana** | ak-oa-zana | Faucon vainqueur de la chasse | 1 (aki) |
 | **Éther** | **Takitosa** | tak-i-tosa | Porteurs du bien | 0 |
 
@@ -814,7 +814,7 @@ Les groupes les plus sacrés (chamans) en contiennent plusieurs.
 |--------------|---------------|------|
 | Enfants des Échos | **Nakukeko** | Souterrains, mineurs |
 | Enfants du Courant | **Nakuura** | Pêcheurs, villages sur pilotis |
-| Ailes-Grises | **Ariaska** | Dresseurs de grues |
+| Ailes-Grises | **Aliaska** | Dresseurs de grues |
 | Faucons Chasseurs | **Akoazana** | Élite militaire |
 | Passes-bien | **Takitosa** | Marchands, médiateurs |
 | Voix de l'Aurore | **Oraumi** | Chamans, gardiens des lois sacrées |
@@ -828,7 +828,7 @@ Les groupes les plus sacrés (chamans) en contiennent plusieurs.
 | La Confluence | **Uraakota** | ur-aa-kota | Eau mêlée à l'union |
 | Gouffre Humide | **Vukuura** | vuk-u-ura | Gouffre de l'eau |
 | Antres des Échos | **Kekutoka** | kek-u-toka | Écho de la terre |
-| Cercles de Vigile | **Rikuvela** | rik-u-vela | Cercle de la vigile |
+| Cercles de Vigile | **Sikuvela** | sik-u-vela | Cercle de la vigile |
 | Halls des Serments | **Talusavu** | tal-u-savu | Hall du serment |
 | Grande Fresque | **Ekakova** | ek-a-kova | Totalité avec peinture |
 
@@ -1287,7 +1287,7 @@ No Vukuura va aita su ni naki su vo seka su kisun ait
 #### Phrase avec mouvement, bénéficiaire, souhait
 
 ```
-Ve Kekutoka vi Uraakota ni Ariaska va Nakukeko vo kari su takan es
+Ve Kekutoka vi Uraakota ni Aliaska va Nakukeko vo kari su takan es
 [DEPUIS] Antres.Échos [VERS] Confluence [POUR] Ailes-Grises [SUJET] Enfants.Échos [OBJET] pierre [PL] porter [SOUHAIT]
 "Les Enfants des Échos veulent porter les pierres depuis les Antres vers la Confluence pour les Ailes-Grises"
 ```

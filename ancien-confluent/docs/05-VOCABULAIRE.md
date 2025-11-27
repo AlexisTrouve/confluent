@@ -27,7 +27,7 @@ sil- (forme liée) + i + aska = Siliaska
 |-------|---------------|-------------|---------------|-----------------|
 | Terre | **Nakukeko** | nak-u-keko | Enfants de l'écho | 0 |
 | Eau | **Nakuura** | nak-u-ura | Enfants de l'eau | 1 (ura) |
-| Air | **Ariaska** | ar-i-aska | Porteurs de la grue libre | 2 (aru, aska) |
+| Air | **Aliaska** | al-i-aska | Porteurs de la grue libre | 2 (alu, aska) |
 | Feu | **Akoazana** | ak-oa-zana | Faucon vainqueur de la chasse | 1 (aki) |
 | Éther | **Takitosa** | tak-i-tosa | Porteurs du bien | 0 |
 
@@ -43,7 +43,7 @@ sil- (forme liée) + i + aska = Siliaska
 |--------------|---------------|------|
 | Enfants des Échos | **Nakukeko** | Souterrains, mineurs, artisans |
 | Enfants du Courant | **Nakuura** | Pêcheurs, villages sur pilotis |
-| Ailes-Grises | **Ariaska** | Dresseurs de grues, chamans |
+| Ailes-Grises | **Aliaska** | Dresseurs de grues, chamans |
 | Faucons Chasseurs | **Akoazana** | Élite militaire/judiciaire |
 | Passes-bien | **Takitosa** | Marchands, médiateurs |
 | Voix de l'Aurore | **Oraumi** | Chamans suprêmes, gardiens des lois |
@@ -57,7 +57,7 @@ sil- (forme liée) + i + aska = Siliaska
 | La Confluence | **Uraakota** | ur-aa-kota | Eau mêlée à l'union |
 | Gouffre Humide | **Vukuura** | vuk-u-ura | Gouffre de l'eau |
 | Antres des Échos | **Kekutoka** | kek-u-toka | Écho de la terre |
-| Cercles de Vigile | **Rikuvela** | rik-u-vela | Cercle de la vigile |
+| Cercles de Vigile | **Sikuvela** | sik-u-vela | Cercle de la vigile |
 | Halls des Serments | **Talusavu** | tal-u-savu | Hall du serment |
 | Grande Fresque | **Ekakova** | ek-a-kova | Totalité avec peinture |
 
@@ -108,8 +108,8 @@ Les groupes les plus sacrés (chamans) en contiennent plusieurs.
 | **aska** | libre, liberté | Concept fondateur |
 | **aita** | ancêtre, ancien | Lignée sacrée |
 | **asa** | sacré, divin | Spirituel |
-| **avi** | oiseau, vol | Nature sacrée |
-| **aru** | grue (Regard-Libre) | Animal sacré |
+| **apo** | oiseau, vol | Nature sacrée |
+| **alu** | grue (Regard-Libre) | Animal sacré |
 | **aki** | faucon | Animal sacré |
 | **ura** | eau, fluide | Élément primordial |
 | **umi** | esprit, souffle vital | Spirituel |
@@ -189,7 +189,7 @@ Les groupes les plus sacrés (chamans) en contiennent plusieurs.
 | **tosa** | bon, bien |
 | **mako** | grand, vaste |
 | **pisu** | petit, fin |
-| **novu** | nouveau, jeune |
+| **nuvi** | nouveau, jeune |
 | **kiru** | échanger, troquer |
 | **vasi** | pont, lien, passage |
 
@@ -199,7 +199,7 @@ Les groupes les plus sacrés (chamans) en contiennent plusieurs.
 |--------|------|
 | **vuku** | profond, gouffre, abîme |
 | **nisa** | humide, mouillé |
-| **riku** | cercle, anneau |
+| **siku** | cercle, anneau |
 | **vela** | veille, vigile, guet |
 | **savu** | serment, promesse |
 | **talu** | hall, grande salle |
@@ -207,13 +207,40 @@ Les groupes les plus sacrés (chamans) en contiennent plusieurs.
 
 ---
 
+## Pronoms personnels
+
+Les pronoms sont des **racines standards** de 3 lettres.
+
+| Pronom | Confluent | Pluriel |
+|--------|-----------|---------|
+| je, moi | **miki** | — |
+| tu, toi | **sinu** | — |
+| il, elle, iel | **tani** | — |
+| nous | **miki su** | miki + pluriel |
+| vous | **sinu su** | sinu + pluriel |
+| ils, elles | **tani su** | tani + pluriel |
+
+### Exemples
+
+```
+va miki mirak u = je vois
+va sinu mirak u = tu vois
+va tani mirak u = il/elle voit
+va miki su mirak u = nous voyons
+va sinu su mirak u = vous voyez
+va tani su mirak u = ils/elles voient
+```
+
+---
+
 ## Statistiques
 
 | Type | Quantité | Proportion |
 |------|----------|------------|
-| Racines sacrées (V-) | 15 | 22% |
-| Racines standards (C-) | 52 | 78% |
-| **Total** | **67** | 100% |
+| Racines sacrées (V-) | 15 | 21% |
+| Racines standards (C-) | 52 | 74% |
+| Pronoms | 3 | 4% |
+| **Total** | **70** | 100% |
 
 ---
 

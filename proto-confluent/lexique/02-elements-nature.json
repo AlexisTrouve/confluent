@@ -1,16 +1,19 @@
 {
   "_comment": "Éléments naturels en proto - vocabulaire primitif",
   "_note": "Concepts liés à l'environnement immédiat, pas de termes abstraits",
-  "_mots_a_gerer": [
-    "eau", "feu", "air", "vent", "terre", "pierre", "roche",
-    "ciel", "soleil", "lune", "étoile", "nuage",
-    "montagne", "rivière", "arbre", "forêt",
-    "pluie", "orage", "neige", "glace",
-    "jour", "nuit", "aube", "crépuscule",
-    "chaud", "froid", "sec", "humide",
-    "lumière", "ombre", "sombre"
-  ],
+  "_mots_a_gerer": [],
   "dictionnaire": {
+    "eau": {
+      "traductions": [
+        {
+          "confluent": "ur",
+          "type": "racine_proto_sacree",
+          "evolution_ancien": "ura",
+          "domaine": "element",
+          "note": "Élément primordial sacré"
+        }
+      ]
+    },
     "feu": {
       "traductions": [
         {
@@ -19,6 +22,325 @@
           "evolution_ancien": "suki",
           "domaine": "element",
           "note": "Élément primordial"
+        }
+      ]
+    },
+    "air": {
+      "traductions": [
+        {
+          "confluent": "ven",
+          "type": "racine_proto",
+          "evolution_ancien": "vena",
+          "domaine": "element",
+          "note": "Élément primordial"
+        }
+      ]
+    },
+    "vent": {
+      "traductions": [
+        {
+          "confluent": "ven",
+          "type": "racine_proto",
+          "evolution_ancien": "vena",
+          "domaine": "element",
+          "note": "Même racine que 'air'"
+        }
+      ]
+    },
+    "terre": {
+      "traductions": [
+        {
+          "confluent": "tok",
+          "type": "racine_proto",
+          "evolution_ancien": "toka",
+          "domaine": "element",
+          "note": "Sol ferme"
+        }
+      ]
+    },
+    "pierre": {
+      "traductions": [
+        {
+          "confluent": "kar",
+          "type": "racine_proto",
+          "evolution_ancien": "kari",
+          "domaine": "materiau",
+          "note": "Matière dure"
+        }
+      ]
+    },
+    "roche": {
+      "traductions": [
+        {
+          "confluent": "kar",
+          "type": "racine_proto",
+          "evolution_ancien": "kari",
+          "domaine": "materiau",
+          "note": "Même racine que 'pierre'"
+        }
+      ]
+    },
+    "ciel": {
+      "traductions": [
+        {
+          "confluent": "zer",
+          "type": "racine_proto",
+          "evolution_ancien": "zeru",
+          "domaine": "celeste",
+          "note": "Voûte céleste"
+        }
+      ]
+    },
+    "soleil": {
+      "traductions": [
+        {
+          "confluent": "sor",
+          "type": "racine_proto",
+          "evolution_ancien": "sora",
+          "domaine": "celeste",
+          "note": "Astre du jour, lumière"
+        }
+      ]
+    },
+    "lune": {
+      "traductions": [
+        {
+          "confluent": "lun",
+          "type": "racine_proto",
+          "evolution_ancien": "luna",
+          "domaine": "celeste",
+          "note": "Astre nocturne"
+        }
+      ]
+    },
+    "étoile": {
+      "traductions": [
+        {
+          "confluent": "zat",
+          "type": "racine_proto",
+          "evolution_ancien": "zatu",
+          "domaine": "celeste",
+          "note": "Nouvelle racine - points lumineux du ciel nocturne"
+        }
+      ]
+    },
+    "nuage": {
+      "traductions": [
+        {
+          "confluent": "nub",
+          "type": "racine_proto",
+          "evolution_ancien": "nubu",
+          "domaine": "celeste",
+          "note": "Nouvelle racine - vapeur du ciel"
+        }
+      ]
+    },
+    "montagne": {
+      "traductions": [
+        {
+          "confluent": "tas",
+          "type": "racine_proto",
+          "evolution_ancien": "tasa",
+          "domaine": "terrain",
+          "note": "Haute terre"
+        }
+      ]
+    },
+    "rivière": {
+      "traductions": [
+        {
+          "confluent": "nur",
+          "type": "racine_proto",
+          "evolution_ancien": "nura",
+          "domaine": "terrain",
+          "note": "Eau qui coule"
+        }
+      ]
+    },
+    "arbre": {
+      "traductions": [
+        {
+          "confluent": "vik",
+          "type": "racine_proto",
+          "evolution_ancien": "viku",
+          "domaine": "vegetal",
+          "note": "Plante haute"
+        }
+      ]
+    },
+    "forêt": {
+      "traductions": [
+        {
+          "confluent": "vik",
+          "type": "racine_proto",
+          "evolution_ancien": "viku",
+          "domaine": "vegetal",
+          "note": "Même racine que 'arbre' - beaucoup d'arbres"
+        }
+      ]
+    },
+    "pluie": {
+      "traductions": [
+        {
+          "confluent": "sur",
+          "type": "racine_proto",
+          "evolution_ancien": "suru",
+          "domaine": "meteo",
+          "note": "Nouvelle racine - eau qui tombe du ciel"
+        }
+      ]
+    },
+    "orage": {
+      "traductions": [
+        {
+          "confluent": "bom",
+          "type": "racine_proto",
+          "evolution_ancien": "bomu",
+          "domaine": "meteo",
+          "note": "Nouvelle racine - son du ciel en colère"
+        }
+      ]
+    },
+    "neige": {
+      "traductions": [
+        {
+          "confluent": "nis",
+          "type": "racine_proto",
+          "evolution_ancien": "nisu",
+          "domaine": "meteo",
+          "note": "Lié à 'nisa' (humide) - eau froide qui tombe"
+        }
+      ]
+    },
+    "glace": {
+      "traductions": [
+        {
+          "confluent": "kol",
+          "type": "racine_proto",
+          "evolution_ancien": "kolu",
+          "domaine": "meteo",
+          "note": "Nouvelle racine - eau dure froide"
+        }
+      ]
+    },
+    "jour": {
+      "traductions": [
+        {
+          "confluent": "sor",
+          "type": "racine_proto",
+          "evolution_ancien": "sora",
+          "domaine": "temps",
+          "note": "Même racine que 'soleil' - période de lumière"
+        }
+      ]
+    },
+    "nuit": {
+      "traductions": [
+        {
+          "confluent": "lun",
+          "type": "racine_proto",
+          "evolution_ancien": "luna",
+          "domaine": "temps",
+          "note": "Même racine que 'lune' - période sombre"
+        }
+      ]
+    },
+    "aube": {
+      "traductions": [
+        {
+          "confluent": "or",
+          "type": "racine_proto_sacree",
+          "evolution_ancien": "ora",
+          "domaine": "temps",
+          "note": "Racine sacrée - moment de transition sacré"
+        }
+      ]
+    },
+    "crépuscule": {
+      "traductions": [
+        {
+          "confluent": "mus",
+          "type": "racine_proto",
+          "evolution_ancien": "musu",
+          "domaine": "temps",
+          "note": "Nouvelle racine - fin du jour"
+        }
+      ]
+    },
+    "chaud": {
+      "traductions": [
+        {
+          "confluent": "suk",
+          "type": "racine_proto",
+          "evolution_ancien": "suki",
+          "domaine": "sensation",
+          "note": "Même racine que 'feu'"
+        }
+      ]
+    },
+    "froid": {
+      "traductions": [
+        {
+          "confluent": "kol",
+          "type": "racine_proto",
+          "evolution_ancien": "kolu",
+          "domaine": "sensation",
+          "note": "Même racine que 'glace'"
+        }
+      ]
+    },
+    "sec": {
+      "traductions": [
+        {
+          "confluent": "sek",
+          "type": "racine_proto",
+          "evolution_ancien": "seku",
+          "domaine": "sensation",
+          "note": "Nouvelle racine - sans eau"
+        }
+      ]
+    },
+    "humide": {
+      "traductions": [
+        {
+          "confluent": "nis",
+          "type": "racine_proto",
+          "evolution_ancien": "nisa",
+          "domaine": "sensation",
+          "note": "Avec eau"
+        }
+      ]
+    },
+    "lumière": {
+      "traductions": [
+        {
+          "confluent": "sor",
+          "type": "racine_proto",
+          "evolution_ancien": "sora",
+          "domaine": "perception",
+          "note": "Même racine que 'soleil'"
+        }
+      ]
+    },
+    "ombre": {
+      "traductions": [
+        {
+          "confluent": "kum",
+          "type": "racine_proto",
+          "evolution_ancien": "kumu",
+          "domaine": "perception",
+          "note": "Nouvelle racine - absence de lumière partielle"
+        }
+      ]
+    },
+    "sombre": {
+      "traductions": [
+        {
+          "confluent": "kum",
+          "type": "racine_proto",
+          "evolution_ancien": "kumu",
+          "domaine": "perception",
+          "note": "Même racine que 'ombre'"
         }
       ]
     }

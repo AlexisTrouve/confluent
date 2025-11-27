@@ -167,7 +167,7 @@ No Vukuura va aita su ni naki su vo seka su kisun ait
 ### Avec mouvement, bénéficiaire, souhait
 
 ```
-Ve Kekutoka vi Uraakota ni Ariaska va Nakukeko vo kari su takan es
+Ve Kekutoka vi Uraakota ni Aliaska va Nakukeko vo kari su takan es
 [DEPUIS] Antres.Échos [VERS] Confluence [POUR] Ailes-Grises [SUJET] Enfants.Échos [OBJET] pierre [PL] porter [SOUHAIT]
 "Les Enfants des Échos veulent porter les pierres depuis les Antres vers la Confluence pour les Ailes-Grises"
 ```

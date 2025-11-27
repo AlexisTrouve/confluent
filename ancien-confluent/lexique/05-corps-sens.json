@@ -1,10 +1,6 @@
 {
   "_comment": "Parties du corps et organes des sens",
-  "_mots_a_gerer": [
-    "œil", "regard", "vision", "main", "voix", "parole", "oreille", "écoute",
-    "visage", "cœur", "corps", "pied", "base", "écho", "résonance", "poumon",
-    "souffle", "chair", "viande", "peau", "surface", "sang", "yeux de l'aurore"
-  ],
+  "_mots_a_gerer": [],
   "dictionnaire": {
     "œil": {
       "traductions": [
@@ -17,6 +13,169 @@
         }
       ],
       "synonymes_fr": ["regard", "vision", "yeux"]
+    },
+    "main": {
+      "traductions": [
+        {
+          "confluent": "kanu",
+          "type": "racine",
+          "forme_liee": "kan",
+          "domaine": "corps_sens",
+          "note": "Partie du corps pour saisir"
+        }
+      ]
+    },
+    "voix": {
+      "traductions": [
+        {
+          "confluent": "voki",
+          "type": "racine",
+          "forme_liee": "vok",
+          "domaine": "corps_sens",
+          "note": "Organe de la parole"
+        }
+      ],
+      "synonymes_fr": ["parole"]
+    },
+    "oreille": {
+      "traductions": [
+        {
+          "confluent": "tiku",
+          "type": "racine",
+          "forme_liee": "tik",
+          "domaine": "corps_sens",
+          "note": "Organe de l'écoute"
+        }
+      ],
+      "synonymes_fr": ["écoute"]
+    },
+    "visage": {
+      "traductions": [
+        {
+          "confluent": "muka",
+          "type": "racine",
+          "forme_liee": "muk",
+          "domaine": "corps_sens",
+          "note": "Face, ce qu'on montre"
+        }
+      ]
+    },
+    "cœur": {
+      "traductions": [
+        {
+          "confluent": "kori",
+          "type": "racine",
+          "forme_liee": "kor",
+          "domaine": "corps_sens",
+          "note": "Centre vital et émotionnel"
+        }
+      ]
+    },
+    "corps": {
+      "traductions": [
+        {
+          "confluent": "sanu",
+          "type": "racine",
+          "forme_liee": "san",
+          "domaine": "corps_sens",
+          "note": "Enveloppe physique"
+        }
+      ]
+    },
+    "pied": {
+      "traductions": [
+        {
+          "confluent": "peki",
+          "type": "racine",
+          "forme_liee": "pek",
+          "domaine": "corps_sens",
+          "note": "Base, appui"
+        }
+      ],
+      "synonymes_fr": ["base"]
+    },
+    "écho": {
+      "traductions": [
+        {
+          "confluent": "keko",
+          "type": "racine",
+          "forme_liee": "kek",
+          "domaine": "corps_sens",
+          "note": "Son qui revient, résonance"
+        }
+      ],
+      "synonymes_fr": ["résonance"]
+    },
+    "poumon": {
+      "traductions": [
+        {
+          "confluent": "venusanu",
+          "type": "composition",
+          "composition": "ven-u-sanu",
+          "sens_litteral": "Air du corps",
+          "racines": ["vena", "sanu"],
+          "domaine": "corps"
+        }
+      ]
+    },
+    "souffle": {
+      "traductions": [
+        {
+          "confluent": "umi",
+          "type": "racine_sacree",
+          "forme_liee": "um",
+          "domaine": "corps_esprit",
+          "note": "Même racine que esprit"
+        }
+      ]
+    },
+    "chair": {
+      "traductions": [
+        {
+          "confluent": "sanu",
+          "type": "racine",
+          "forme_liee": "san",
+          "domaine": "corps",
+          "note": "Même racine que corps"
+        }
+      ],
+      "synonymes_fr": ["viande"]
+    },
+    "peau": {
+      "traductions": [
+        {
+          "confluent": "veku",
+          "type": "racine",
+          "forme_liee": "vek",
+          "domaine": "corps",
+          "note": "Surface, enveloppe extérieure"
+        }
+      ],
+      "synonymes_fr": ["surface"]
+    },
+    "sang": {
+      "traductions": [
+        {
+          "confluent": "pasu",
+          "type": "racine",
+          "forme_liee": "ras",
+          "domaine": "corps",
+          "note": "Fluide vital rouge"
+        }
+      ]
+    },
+    "yeux de l'aurore": {
+      "traductions": [
+        {
+          "confluent": "siluora",
+          "type": "composition",
+          "composition": "sil-u-ora",
+          "sens_litteral": "Regard de l'aurore",
+          "racines": ["sili", "ora"],
+          "domaine": "corps_sacre",
+          "note": "Yeux des Ciels-clairs aux couleurs de l'aurore"
+        }
+      ]
     }
   }
 }

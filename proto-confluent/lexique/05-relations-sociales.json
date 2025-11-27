@@ -1,28 +1,148 @@
 {
   "_comment": "Relations sociales primitives",
   "_note": "Structure sociale basique, pas de castes ni d'institutions complexes",
-  "_mots_a_gerer": [
-    "homme", "femme", "enfant", "vieux", "ancêtre",
-    "père", "mère", "frère", "sœur", "famille",
-    "ami", "ennemi", "étranger",
-    "chef", "guerrier", "chasseur", "shaman",
-    "groupe", "clan", "tribu",
-    "maison", "village", "camp",
-    "chasse", "guerre", "paix",
-    "mort", "esprit", "rêve",
-    "parole", "nom", "signe",
-    "donner", "prendre", "échanger", "voler",
-    "aider", "protéger", "attaquer", "fuir"
-  ],
+  "_mots_a_gerer": [],
   "dictionnaire": {
+    "homme": {
+      "traductions": [
+        {
+          "confluent": "tor",
+          "type": "racine_proto",
+          "evolution_ancien": "tori",
+          "domaine": "personne",
+          "note": "Personne adulte mâle"
+        }
+      ]
+    },
+    "femme": {
+      "traductions": [
+        {
+          "confluent": "ten",
+          "type": "racine_proto",
+          "evolution_ancien": "tenu",
+          "domaine": "personne",
+          "note": "Nouvelle racine - personne adulte femelle"
+        }
+      ]
+    },
     "enfant": {
       "traductions": [
         {
           "confluent": "nak",
           "type": "racine_proto",
           "evolution_ancien": "naki",
+          "domaine": "personne",
+          "note": "Descendant, jeune"
+        }
+      ]
+    },
+    "vieux": {
+      "traductions": [
+        {
+          "confluent": "ait",
+          "type": "racine_proto_sacree",
+          "evolution_ancien": "aita",
+          "domaine": "personne",
+          "note": "Ancien - racine sacrée"
+        }
+      ]
+    },
+    "ancêtre": {
+      "traductions": [
+        {
+          "confluent": "ait",
+          "type": "racine_proto_sacree",
+          "evolution_ancien": "aita",
+          "domaine": "personne",
+          "note": "Ancien, celui d'avant - racine sacrée"
+        }
+      ]
+    },
+    "père": {
+      "traductions": [
+        {
+          "confluent": "pap",
+          "type": "racine_proto",
+          "evolution_ancien": "papu",
           "domaine": "famille",
-          "note": "Concept de descendance"
+          "note": "Nouvelle racine - parent mâle"
+        }
+      ]
+    },
+    "mère": {
+      "traductions": [
+        {
+          "confluent": "mam",
+          "type": "racine_proto",
+          "evolution_ancien": "mamu",
+          "domaine": "famille",
+          "note": "Nouvelle racine - parent femelle"
+        }
+      ]
+    },
+    "frère": {
+      "traductions": [
+        {
+          "confluent": "bor",
+          "type": "racine_proto",
+          "evolution_ancien": "boru",
+          "domaine": "famille",
+          "note": "Nouvelle racine - enfant mâle de mêmes parents"
+        }
+      ]
+    },
+    "sœur": {
+      "traductions": [
+        {
+          "confluent": "sis",
+          "type": "racine_proto",
+          "evolution_ancien": "sisu",
+          "domaine": "famille",
+          "note": "Nouvelle racine - enfant femelle de mêmes parents"
+        }
+      ]
+    },
+    "famille": {
+      "traductions": [
+        {
+          "confluent": "mit",
+          "type": "racine_proto",
+          "evolution_ancien": "mitu",
+          "domaine": "social",
+          "note": "Clan, groupe lié par le sang"
+        }
+      ]
+    },
+    "ami": {
+      "traductions": [
+        {
+          "confluent": "vak",
+          "type": "racine_proto",
+          "evolution_ancien": "vaku",
+          "domaine": "social",
+          "note": "Allié, proche non-sang"
+        }
+      ]
+    },
+    "ennemi": {
+      "traductions": [
+        {
+          "confluent": "zok",
+          "type": "racine_proto",
+          "evolution_ancien": "zoka",
+          "domaine": "social",
+          "note": "Hostile, opposé"
+        }
+      ]
+    },
+    "étranger": {
+      "traductions": [
+        {
+          "confluent": "tov",
+          "type": "racine_proto",
+          "evolution_ancien": "tova",
+          "domaine": "social",
+          "note": "Lié à 'loin, là-bas' - celui de loin"
         }
       ]
     },
@@ -33,7 +153,150 @@
           "type": "racine_proto",
           "evolution_ancien": "kasi",
           "domaine": "social",
-          "note": "Leadership primitif"
+          "note": "Guide, leader"
+        }
+      ]
+    },
+    "guerrier": {
+      "traductions": [
+        {
+          "confluent": "zan",
+          "type": "racine_proto",
+          "evolution_ancien": "zana",
+          "domaine": "social",
+          "note": "Lié à 'chasser' - celui qui combat"
+        }
+      ]
+    },
+    "chasseur": {
+      "traductions": [
+        {
+          "confluent": "zan",
+          "type": "racine_proto",
+          "evolution_ancien": "zana",
+          "domaine": "social",
+          "note": "Celui qui traque"
+        }
+      ]
+    },
+    "shaman": {
+      "traductions": [
+        {
+          "confluent": "um",
+          "type": "racine_proto_sacree",
+          "evolution_ancien": "umi",
+          "domaine": "social",
+          "note": "Lié à 'esprit' - celui des esprits"
+        }
+      ]
+    },
+    "groupe": {
+      "traductions": [
+        {
+          "confluent": "kot",
+          "type": "racine_proto",
+          "evolution_ancien": "kota",
+          "domaine": "social",
+          "note": "Union, confluence"
+        }
+      ]
+    },
+    "clan": {
+      "traductions": [
+        {
+          "confluent": "mit",
+          "type": "racine_proto",
+          "evolution_ancien": "mitu",
+          "domaine": "social",
+          "note": "Même racine que 'famille'"
+        }
+      ]
+    },
+    "tribu": {
+      "traductions": [
+        {
+          "confluent": "kot",
+          "type": "racine_proto",
+          "evolution_ancien": "kota",
+          "domaine": "social",
+          "note": "Grand groupe uni"
+        }
+      ]
+    },
+    "maison": {
+      "traductions": [
+        {
+          "confluent": "nut",
+          "type": "racine_proto",
+          "evolution_ancien": "nutu",
+          "domaine": "lieu",
+          "note": "Lié à 'dedans' - abri"
+        }
+      ]
+    },
+    "village": {
+      "traductions": [
+        {
+          "confluent": "kot",
+          "type": "racine_proto",
+          "evolution_ancien": "kota",
+          "domaine": "lieu",
+          "note": "Groupe de maisons - union"
+        }
+      ]
+    },
+    "camp": {
+      "traductions": [
+        {
+          "confluent": "tek",
+          "type": "racine_proto",
+          "evolution_ancien": "teku",
+          "domaine": "lieu",
+          "note": "Lié à 'chemin' - arrêt temporaire"
+        }
+      ]
+    },
+    "chasse": {
+      "traductions": [
+        {
+          "confluent": "zan",
+          "type": "racine_proto",
+          "evolution_ancien": "zana",
+          "domaine": "activite",
+          "note": "Traquer des proies"
+        }
+      ]
+    },
+    "guerre": {
+      "traductions": [
+        {
+          "confluent": "ok",
+          "type": "racine_proto_sacree",
+          "evolution_ancien": "oki",
+          "domaine": "activite",
+          "note": "Épreuve, défi - racine sacrée"
+        }
+      ]
+    },
+    "paix": {
+      "traductions": [
+        {
+          "confluent": "tos",
+          "type": "racine_proto",
+          "evolution_ancien": "tosa",
+          "domaine": "activite",
+          "note": "Lié à 'bon' - état bon"
+        }
+      ]
+    },
+    "mort": {
+      "traductions": [
+        {
+          "confluent": "mus",
+          "type": "racine_proto",
+          "evolution_ancien": "musu",
+          "domaine": "spirituel",
+          "note": "Fin de vie"
         }
       ]
     },
@@ -44,7 +307,139 @@
           "type": "racine_proto_sacree",
           "evolution_ancien": "umi",
           "domaine": "spirituel",
-          "note": "Concept sacré ancien"
+          "note": "Souffle vital - racine sacrée"
+        }
+      ]
+    },
+    "rêve": {
+      "traductions": [
+        {
+          "confluent": "um",
+          "type": "racine_proto_sacree",
+          "evolution_ancien": "umi",
+          "domaine": "spirituel",
+          "note": "Vision de l'esprit - racine sacrée"
+        }
+      ]
+    },
+    "parole": {
+      "traductions": [
+        {
+          "confluent": "vok",
+          "type": "racine_proto",
+          "evolution_ancien": "voki",
+          "domaine": "communication",
+          "note": "Voix, ce qui sort de la bouche"
+        }
+      ]
+    },
+    "nom": {
+      "traductions": [
+        {
+          "confluent": "nom",
+          "type": "racine_proto",
+          "evolution_ancien": "nomu",
+          "domaine": "communication",
+          "note": "Nouvelle racine - identité parlée"
+        }
+      ]
+    },
+    "signe": {
+      "traductions": [
+        {
+          "confluent": "sil",
+          "type": "racine_proto",
+          "evolution_ancien": "sili",
+          "domaine": "communication",
+          "note": "Lié à 'voir, regard' - ce qu'on montre"
+        }
+      ]
+    },
+    "donner": {
+      "traductions": [
+        {
+          "confluent": "kit",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "kita → kitan",
+          "domaine": "action",
+          "note": "Transférer"
+        }
+      ]
+    },
+    "prendre": {
+      "traductions": [
+        {
+          "confluent": "pas",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "pasa → pasak",
+          "domaine": "action",
+          "note": "Saisir"
+        }
+      ]
+    },
+    "échanger": {
+      "traductions": [
+        {
+          "confluent": "kir",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "kiru → kirak",
+          "domaine": "action",
+          "note": "Troquer"
+        }
+      ]
+    },
+    "voler": {
+      "traductions": [
+        {
+          "confluent": "zok",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "zoka → zokam",
+          "domaine": "action",
+          "note": "Lié à 'ennemi' - prendre hostile"
+        }
+      ]
+    },
+    "aider": {
+      "traductions": [
+        {
+          "confluent": "tos",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "tosa → tosak",
+          "domaine": "action",
+          "note": "Lié à 'bon' - faire le bien"
+        }
+      ]
+    },
+    "protéger": {
+      "traductions": [
+        {
+          "confluent": "zak",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "zaki → zakis",
+          "domaine": "action",
+          "note": "Garder, défendre"
+        }
+      ]
+    },
+    "attaquer": {
+      "traductions": [
+        {
+          "confluent": "zok",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "zoka → zokak",
+          "domaine": "action",
+          "note": "Lié à 'ennemi' - agir hostile"
+        }
+      ]
+    },
+    "fuir": {
+      "traductions": [
+        {
+          "confluent": "tek",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "teki → tekun",
+          "domaine": "action",
+          "note": "Aller vite loin"
         }
       ]
     }

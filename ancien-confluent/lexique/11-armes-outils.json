@@ -1,12 +1,6 @@
 {
   "_comment": "Armes, outils et équipements",
-  "_mots_a_gerer": [
-    "lance", "lance de guerre", "arc", "flèche", "flèche empoisonnée",
-    "hachette", "couteau", "gourdin", "bouclier", "pioche", "ciseau à pierre",
-    "maillet", "burin", "corde", "filet", "panier", "piège", "vase rituel",
-    "coffret", "tablette", "tablette gravée", "collier", "foyer", "foyer éternel",
-    "armurerie", "grenier"
-  ],
+  "_mots_a_gerer": [],
   "dictionnaire": {
     "lance": {
       "traductions": [
@@ -19,6 +13,302 @@
         }
       ],
       "synonymes_fr": ["pointe"]
+    },
+    "lance de guerre": {
+      "traductions": [
+        {
+          "confluent": "pikiuoki",
+          "type": "composition",
+          "composition": "pik-i-oki",
+          "sens_litteral": "Lance de l'épreuve",
+          "racines": ["piki", "oki"],
+          "domaine": "arme"
+        }
+      ]
+    },
+    "arc": {
+      "traductions": [
+        {
+          "confluent": "arku",
+          "type": "racine",
+          "forme_liee": "ark",
+          "domaine": "arme",
+          "note": "Nouvelle racine - arme de jet"
+        }
+      ]
+    },
+    "flèche": {
+      "traductions": [
+        {
+          "confluent": "pikiuark",
+          "type": "composition",
+          "composition": "pik-i-ark",
+          "sens_litteral": "Pointe de l'arc",
+          "racines": ["piki", "arku"],
+          "domaine": "arme"
+        }
+      ]
+    },
+    "flèche empoisonnée": {
+      "traductions": [
+        {
+          "confluent": "pikiutoku",
+          "type": "composition",
+          "composition": "pik-i-toku",
+          "sens_litteral": "Pointe de poison",
+          "racines": ["piki", "toku"],
+          "domaine": "arme"
+        }
+      ]
+    },
+    "hachette": {
+      "traductions": [
+        {
+          "confluent": "kutu",
+          "type": "racine",
+          "forme_liee": "kut",
+          "domaine": "outil",
+          "note": "Lame pour couper"
+        }
+      ]
+    },
+    "couteau": {
+      "traductions": [
+        {
+          "confluent": "kutupisu",
+          "type": "composition",
+          "composition": "kut-u-pisu",
+          "sens_litteral": "Lame petite",
+          "racines": ["kutu", "pisu"],
+          "domaine": "outil"
+        }
+      ]
+    },
+    "gourdin": {
+      "traductions": [
+        {
+          "confluent": "bopuviku",
+          "type": "composition",
+          "composition": "bop-u-viku",
+          "sens_litteral": "Frappeur de bois",
+          "racines": ["bopu", "viku"],
+          "domaine": "arme"
+        }
+      ]
+    },
+    "bouclier": {
+      "traductions": [
+        {
+          "confluent": "zakikari",
+          "type": "composition",
+          "composition": "zak-i-kari",
+          "sens_litteral": "Protection de pierre",
+          "racines": ["zaki", "kari"],
+          "domaine": "arme"
+        }
+      ]
+    },
+    "pioche": {
+      "traductions": [
+        {
+          "confluent": "vukukari",
+          "type": "composition",
+          "composition": "vuk-u-kari",
+          "sens_litteral": "Pierre du gouffre",
+          "racines": ["vuku", "kari"],
+          "domaine": "outil"
+        }
+      ]
+    },
+    "ciseau à pierre": {
+      "traductions": [
+        {
+          "confluent": "kovukari",
+          "type": "composition",
+          "composition": "kov-u-kari",
+          "sens_litteral": "Graveur de pierre",
+          "racines": ["kova", "kari"],
+          "domaine": "outil"
+        }
+      ]
+    },
+    "maillet": {
+      "traductions": [
+        {
+          "confluent": "bopukari",
+          "type": "composition",
+          "composition": "bop-u-kari",
+          "sens_litteral": "Frappeur de pierre",
+          "racines": ["bopu", "kari"],
+          "domaine": "outil"
+        }
+      ]
+    },
+    "burin": {
+      "traductions": [
+        {
+          "confluent": "kovupiki",
+          "type": "composition",
+          "composition": "kov-u-piki",
+          "sens_litteral": "Graveur pointu",
+          "racines": ["kova", "piki"],
+          "domaine": "outil"
+        }
+      ]
+    },
+    "corde": {
+      "traductions": [
+        {
+          "confluent": "kopu",
+          "type": "racine",
+          "forme_liee": "kop",
+          "domaine": "outil",
+          "note": "Lien tressé"
+        }
+      ]
+    },
+    "filet": {
+      "traductions": [
+        {
+          "confluent": "kopuupisu",
+          "type": "composition",
+          "composition": "kop-u-pisu",
+          "sens_litteral": "Corde à poisson",
+          "racines": ["kopu", "pisu"],
+          "domaine": "outil"
+        }
+      ]
+    },
+    "panier": {
+      "traductions": [
+        {
+          "confluent": "sakuvasi",
+          "type": "composition",
+          "composition": "sak-u-vasi",
+          "sens_litteral": "Sac tissé",
+          "racines": ["saku", "vasi"],
+          "domaine": "outil"
+        }
+      ]
+    },
+    "piège": {
+      "traductions": [
+        {
+          "confluent": "zokuuzana",
+          "type": "composition",
+          "composition": "zok-u-zana",
+          "sens_litteral": "Secret de chasse",
+          "racines": ["zoku", "zana"],
+          "domaine": "outil"
+        }
+      ]
+    },
+    "vase rituel": {
+      "traductions": [
+        {
+          "confluent": "sakuuasa",
+          "type": "composition",
+          "composition": "sak-u-asa",
+          "sens_litteral": "Contenant sacré",
+          "racines": ["saku", "asa"],
+          "domaine": "objet_rituel"
+        }
+      ]
+    },
+    "coffret": {
+      "traductions": [
+        {
+          "confluent": "sakuzaki",
+          "type": "composition",
+          "composition": "sak-u-zaki",
+          "sens_litteral": "Contenant protégé",
+          "racines": ["saku", "zaki"],
+          "domaine": "objet"
+        }
+      ]
+    },
+    "tablette": {
+      "traductions": [
+        {
+          "confluent": "tabu",
+          "type": "racine",
+          "forme_liee": "tab",
+          "domaine": "objet",
+          "note": "Surface pour écrire"
+        }
+      ]
+    },
+    "tablette gravée": {
+      "traductions": [
+        {
+          "confluent": "tabuukova",
+          "type": "composition",
+          "composition": "tab-u-kova",
+          "sens_litteral": "Tablette de gravure",
+          "racines": ["tabu", "kova"],
+          "domaine": "objet"
+        }
+      ]
+    },
+    "collier": {
+      "traductions": [
+        {
+          "confluent": "kopuuveki",
+          "type": "composition",
+          "composition": "kop-u-vek-i",
+          "sens_litteral": "Corde de la peau",
+          "racines": ["kopu", "veku"],
+          "domaine": "objet"
+        }
+      ]
+    },
+    "foyer": {
+      "traductions": [
+        {
+          "confluent": "sukiuloku",
+          "type": "composition",
+          "composition": "suk-i-loku",
+          "sens_litteral": "Feu du lieu",
+          "racines": ["suki", "loku"],
+          "domaine": "structure"
+        }
+      ]
+    },
+    "foyer éternel": {
+      "traductions": [
+        {
+          "confluent": "sukiueka",
+          "type": "composition",
+          "composition": "suk-i-eka",
+          "sens_litteral": "Feu de totalité",
+          "racines": ["suki", "eka"],
+          "domaine": "objet_sacre"
+        }
+      ]
+    },
+    "armurerie": {
+      "traductions": [
+        {
+          "confluent": "lokuupiki",
+          "type": "composition",
+          "composition": "lok-u-piki",
+          "sens_litteral": "Lieu des lances",
+          "racines": ["loku", "piki"],
+          "domaine": "structure"
+        }
+      ]
+    },
+    "grenier": {
+      "traductions": [
+        {
+          "confluent": "lokuzaki",
+          "type": "composition",
+          "composition": "lok-u-zaki",
+          "sens_litteral": "Lieu gardé",
+          "racines": ["loku", "zaki"],
+          "domaine": "structure"
+        }
+      ]
     }
   }
 }

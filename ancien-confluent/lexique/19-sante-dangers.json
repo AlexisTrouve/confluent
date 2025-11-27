@@ -1,11 +1,6 @@
 {
   "_comment": "Maladies, dangers et conditions de santé",
-  "_mots_a_gerer": [
-    "maladie", "Maladie des Antres", "miasmes", "infection pulmonaire",
-    "malnutrition", "suffocation", "fièvre", "blessure", "guérison",
-    "éboulement", "inondation", "toxine", "poison", "gouffre", "crevasse",
-    "roche impénétrable", "avalanche", "feu sauvage"
-  ],
+  "_mots_a_gerer": [],
   "dictionnaire": {
     "maladie": {
       "traductions": [
@@ -17,6 +12,205 @@
           "racines": ["osi", "sanu"],
           "domaine": "sante",
           "note": "Concept de maladie comme mort partielle"
+        }
+      ]
+    },
+    "Maladie des Antres": {
+      "traductions": [
+        {
+          "confluent": "Osiusanuuvuku",
+          "type": "nom_propre",
+          "composition": "os-i-sanu-vuku",
+          "sens_litteral": "Maladie du gouffre",
+          "racines": ["osi", "sanu", "vuku"],
+          "categorie": "maladie",
+          "note": "Maladie pulmonaire des mineurs"
+        }
+      ]
+    },
+    "miasmes": {
+      "traductions": [
+        {
+          "confluent": "venuzoka",
+          "type": "composition",
+          "composition": "ven-u-zoka",
+          "sens_litteral": "Air de l'ennemi",
+          "racines": ["vena", "zoka"],
+          "domaine": "danger"
+        }
+      ]
+    },
+    "infection pulmonaire": {
+      "traductions": [
+        {
+          "confluent": "venuzokausanu",
+          "type": "composition",
+          "composition": "ven-u-zoka-sanu",
+          "sens_litteral": "Air ennemi du corps",
+          "racines": ["vena", "zoka", "sanu"],
+          "domaine": "maladie"
+        }
+      ]
+    },
+    "malnutrition": {
+      "traductions": [
+        {
+          "confluent": "zomuta",
+          "type": "composition",
+          "composition": "zo-muta",
+          "sens_litteral": "Sans manger",
+          "racines": ["zo", "muta"],
+          "domaine": "maladie"
+        }
+      ]
+    },
+    "suffocation": {
+      "traductions": [
+        {
+          "confluent": "zovena",
+          "type": "composition",
+          "composition": "zo-vena",
+          "sens_litteral": "Sans air",
+          "racines": ["zo", "vena"],
+          "domaine": "danger"
+        }
+      ]
+    },
+    "fièvre": {
+      "traductions": [
+        {
+          "confluent": "sanuusuki",
+          "type": "composition",
+          "composition": "san-u-suki",
+          "sens_litteral": "Corps de feu",
+          "racines": ["sanu", "suki"],
+          "domaine": "maladie"
+        }
+      ]
+    },
+    "blessure": {
+      "traductions": [
+        {
+          "confluent": "sanuuzoka",
+          "type": "composition",
+          "composition": "san-u-zoka",
+          "sens_litteral": "Corps de l'ennemi",
+          "racines": ["sanu", "zoka"],
+          "domaine": "sante"
+        }
+      ]
+    },
+    "guérison": {
+      "traductions": [
+        {
+          "confluent": "tosausanu",
+          "type": "composition",
+          "composition": "tos-a-sanu",
+          "sens_litteral": "Bien avec corps",
+          "racines": ["tosa", "sanu"],
+          "domaine": "sante"
+        }
+      ]
+    },
+    "éboulement": {
+      "traductions": [
+        {
+          "confluent": "kariovuku",
+          "type": "composition",
+          "composition": "kar-oa-vuku",
+          "sens_litteral": "Pierre vers le gouffre",
+          "racines": ["kari", "vuku"],
+          "domaine": "danger"
+        }
+      ]
+    },
+    "inondation": {
+      "traductions": [
+        {
+          "confluent": "uraueka",
+          "type": "composition",
+          "composition": "ur-a-eka",
+          "sens_litteral": "Eau avec totalité",
+          "racines": ["ura", "eka"],
+          "domaine": "danger"
+        }
+      ]
+    },
+    "toxine": {
+      "traductions": [
+        {
+          "confluent": "toku",
+          "type": "racine",
+          "forme_liee": "tok",
+          "domaine": "danger"
+        }
+      ]
+    },
+    "poison": {
+      "traductions": [
+        {
+          "confluent": "toku",
+          "type": "racine",
+          "forme_liee": "tok",
+          "domaine": "danger"
+        }
+      ]
+    },
+    "gouffre": {
+      "traductions": [
+        {
+          "confluent": "vuku",
+          "type": "racine",
+          "forme_liee": "vuk",
+          "domaine": "danger"
+        }
+      ]
+    },
+    "crevasse": {
+      "traductions": [
+        {
+          "confluent": "vukukari",
+          "type": "composition",
+          "composition": "vuk-u-kari",
+          "sens_litteral": "Gouffre de pierre",
+          "racines": ["vuku", "kari"],
+          "domaine": "danger"
+        }
+      ]
+    },
+    "roche impénétrable": {
+      "traductions": [
+        {
+          "confluent": "kariuoki",
+          "type": "composition",
+          "composition": "kar-i-oki",
+          "sens_litteral": "Pierre de l'épreuve",
+          "racines": ["kari", "oki"],
+          "domaine": "danger"
+        }
+      ]
+    },
+    "avalanche": {
+      "traductions": [
+        {
+          "confluent": "nisaoavuku",
+          "type": "composition",
+          "composition": "nis-oa-vuku",
+          "sens_litteral": "Neige vers le gouffre",
+          "racines": ["nisa", "vuku"],
+          "domaine": "danger"
+        }
+      ]
+    },
+    "feu sauvage": {
+      "traductions": [
+        {
+          "confluent": "sukiuzoka",
+          "type": "composition",
+          "composition": "suk-i-zoka",
+          "sens_litteral": "Feu de l'ennemi",
+          "racines": ["suki", "zoka"],
+          "domaine": "danger"
         }
       ]
     }

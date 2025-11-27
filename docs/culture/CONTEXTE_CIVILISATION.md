@@ -42,7 +42,7 @@ Ce document présente le contexte culturel nécessaire pour comprendre la langue
 | Groupe | Rôle | Caractéristiques |
 |--------|------|------------------|
 | **Voix de l'Aurore** (Oraumi) | Chamans, gardiens des lois sacrées | Ciels-clairs |
-| **Ailes-Grises** (Ariaska) | Chamans dresseurs de Regards-Libres | Dressent les grues |
+| **Ailes-Grises** (Aliaska) | Chamans dresseurs de Regards-Libres | Dressent les grues |
 | **Faucons Chasseurs** (Akoazana) | Élite militaire/judiciaire/religieuse | Émergente |
 | **Enfants du Courant** (Nakuura) | Pêcheurs, maîtres de l'eau | Sans-ciels, villages sur pilotis |
 | **Enfants des Échos** (Nakukeko) | Mineurs, artisans | Sans-ciels, souterrains, pâles |

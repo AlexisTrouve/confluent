@@ -1,20 +1,256 @@
 {
   "_comment": "Couleurs et qualités visuelles",
-  "_mots_a_gerer": [
-    "rouge", "orange", "violet", "rose", "blanc", "gris", "noir", "vert",
-    "bleu", "azur", "bleu d'eau", "ocre", "pâle", "yeux de l'aurore",
-    "éclat", "translucide", "lumineux", "sombre", "patine", "gravure",
-    "bas-relief", "motif"
-  ],
+  "_mots_a_gerer": [],
   "dictionnaire": {
     "rouge": {
       "traductions": [
         {
-          "confluent": "rasu",
+          "confluent": "pasu",
           "type": "racine",
           "forme_liee": "ras",
           "domaine": "couleur",
           "note": "Couleur importante (yeux des Ciels-clairs)"
+        }
+      ]
+    },
+    "orange": {
+      "traductions": [
+        {
+          "confluent": "sukiusora",
+          "type": "composition",
+          "composition": "suk-i-sora",
+          "sens_litteral": "Feu de lumière",
+          "racines": ["suki", "sora"],
+          "domaine": "couleur"
+        }
+      ]
+    },
+    "violet": {
+      "traductions": [
+        {
+          "confluent": "zeruurasu",
+          "type": "composition",
+          "composition": "zer-u-pasu",
+          "sens_litteral": "Ciel de sang",
+          "racines": ["zeru", "pasu"],
+          "domaine": "couleur"
+        }
+      ],
+      "synonymes_fr": ["pourpre"]
+    },
+    "rose": {
+      "traductions": [
+        {
+          "confluent": "rasuumilu",
+          "type": "composition",
+          "composition": "pas-u-milu",
+          "sens_litteral": "Rouge de lait",
+          "racines": ["pasu", "milu"],
+          "domaine": "couleur"
+        }
+      ]
+    },
+    "blanc": {
+      "traductions": [
+        {
+          "confluent": "milu",
+          "type": "racine",
+          "forme_liee": "mil",
+          "domaine": "couleur",
+          "note": "Couleur du lait"
+        }
+      ]
+    },
+    "gris": {
+      "traductions": [
+        {
+          "confluent": "senu",
+          "type": "racine",
+          "forme_liee": "sen",
+          "domaine": "couleur",
+          "note": "Couleur de la cendre"
+        }
+      ]
+    },
+    "noir": {
+      "traductions": [
+        {
+          "confluent": "kumu",
+          "type": "racine",
+          "forme_liee": "kum",
+          "domaine": "couleur",
+          "note": "Couleur de l'ombre"
+        }
+      ]
+    },
+    "vert": {
+      "traductions": [
+        {
+          "confluent": "viku",
+          "type": "racine",
+          "forme_liee": "vik",
+          "domaine": "couleur",
+          "note": "Couleur de la forêt"
+        }
+      ]
+    },
+    "bleu": {
+      "traductions": [
+        {
+          "confluent": "zeru",
+          "type": "racine",
+          "forme_liee": "zer",
+          "domaine": "couleur",
+          "note": "Couleur du ciel"
+        }
+      ]
+    },
+    "azur": {
+      "traductions": [
+        {
+          "confluent": "zeru",
+          "type": "racine",
+          "forme_liee": "zer",
+          "domaine": "couleur"
+        }
+      ]
+    },
+    "bleu d'eau": {
+      "traductions": [
+        {
+          "confluent": "zeruuura",
+          "type": "composition",
+          "composition": "zer-u-ura",
+          "sens_litteral": "Ciel de l'eau",
+          "racines": ["zeru", "ura"],
+          "domaine": "couleur"
+        }
+      ]
+    },
+    "ocre": {
+      "traductions": [
+        {
+          "confluent": "tokausora",
+          "type": "composition",
+          "composition": "tok-a-sora",
+          "sens_litteral": "Terre avec soleil",
+          "racines": ["toka", "sora"],
+          "domaine": "couleur"
+        }
+      ]
+    },
+    "pâle": {
+      "traductions": [
+        {
+          "confluent": "miluukolu",
+          "type": "composition",
+          "composition": "mil-u-kolu",
+          "sens_litteral": "Lait de couleur",
+          "racines": ["milu", "kolu"],
+          "domaine": "qualificatif"
+        }
+      ]
+    },
+    "yeux de l'aurore": {
+      "traductions": [
+        {
+          "confluent": "siluora",
+          "type": "composition",
+          "composition": "sil-u-ora",
+          "sens_litteral": "Regard de l'aurore",
+          "racines": ["sili", "ora"],
+          "domaine": "corps_sacre",
+          "note": "Yeux des Ciels-clairs aux couleurs de l'aurore"
+        }
+      ]
+    },
+    "éclat": {
+      "traductions": [
+        {
+          "confluent": "soraumako",
+          "type": "composition",
+          "composition": "sor-a-mako",
+          "sens_litteral": "Lumière avec grandeur",
+          "racines": ["sora", "mako"],
+          "domaine": "qualificatif"
+        }
+      ]
+    },
+    "translucide": {
+      "traductions": [
+        {
+          "confluent": "sorauura",
+          "type": "composition",
+          "composition": "sor-a-ura",
+          "sens_litteral": "Lumière avec eau",
+          "racines": ["sora", "ura"],
+          "domaine": "qualificatif"
+        }
+      ]
+    },
+    "lumineux": {
+      "traductions": [
+        {
+          "confluent": "sora",
+          "type": "racine",
+          "forme_liee": "sor",
+          "domaine": "qualificatif"
+        }
+      ]
+    },
+    "sombre": {
+      "traductions": [
+        {
+          "confluent": "kumu",
+          "type": "racine",
+          "forme_liee": "kum",
+          "domaine": "qualificatif"
+        }
+      ]
+    },
+    "patine": {
+      "traductions": [
+        {
+          "confluent": "koluuaita",
+          "type": "composition",
+          "composition": "kol-u-aita",
+          "sens_litteral": "Couleur des ancêtres",
+          "racines": ["kolu", "aita"],
+          "domaine": "qualificatif"
+        }
+      ]
+    },
+    "gravure": {
+      "traductions": [
+        {
+          "confluent": "kova",
+          "type": "racine",
+          "forme_liee": "kov",
+          "domaine": "art"
+        }
+      ]
+    },
+    "bas-relief": {
+      "traductions": [
+        {
+          "confluent": "kovaukari",
+          "type": "composition",
+          "composition": "kov-a-kari",
+          "sens_litteral": "Gravure avec pierre",
+          "racines": ["kova", "kari"],
+          "domaine": "art"
+        }
+      ]
+    },
+    "motif": {
+      "traductions": [
+        {
+          "confluent": "kovauriku",
+          "type": "composition",
+          "composition": "kov-a-siku",
+          "sens_litteral": "Gravure avec cercle",
+          "racines": ["kova", "siku"],
+          "domaine": "art"
         }
       ]
     }

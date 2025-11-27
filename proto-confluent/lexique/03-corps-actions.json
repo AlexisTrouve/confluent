@@ -1,18 +1,63 @@
 {
   "_comment": "Corps et actions primitives",
   "_note": "Verbes simples, actions concrètes, pas d'abstractions",
-  "_mots_a_gerer": [
-    "tête", "œil", "oreille", "bouche", "nez", "main", "pied", "cœur", "ventre",
-    "marcher", "courir", "sauter", "ramper",
-    "voir", "entendre", "sentir", "toucher", "goûter",
-    "manger", "boire", "dormir", "rêver",
-    "prendre", "donner", "jeter", "porter",
-    "frapper", "couper", "casser", "lier",
-    "parler", "crier", "chanter", "rire", "pleurer",
-    "naître", "vivre", "mourir",
-    "chasser", "pêcher", "cueillir", "creuser"
-  ],
+  "_mots_a_gerer": [],
   "dictionnaire": {
+    "tête": {
+      "traductions": [
+        {
+          "confluent": "kep",
+          "type": "racine_proto",
+          "evolution_ancien": "kepu",
+          "domaine": "corps",
+          "note": "Sommet du corps"
+        }
+      ]
+    },
+    "œil": {
+      "traductions": [
+        {
+          "confluent": "sil",
+          "type": "racine_proto",
+          "evolution_ancien": "sili",
+          "domaine": "corps",
+          "note": "Organe de la vision - concept central"
+        }
+      ]
+    },
+    "oreille": {
+      "traductions": [
+        {
+          "confluent": "tik",
+          "type": "racine_proto",
+          "evolution_ancien": "tiku",
+          "domaine": "corps",
+          "note": "Organe de l'écoute"
+        }
+      ]
+    },
+    "bouche": {
+      "traductions": [
+        {
+          "confluent": "vok",
+          "type": "racine_proto",
+          "evolution_ancien": "voki",
+          "domaine": "corps",
+          "note": "Parole et voix - même racine"
+        }
+      ]
+    },
+    "nez": {
+      "traductions": [
+        {
+          "confluent": "nas",
+          "type": "racine_proto",
+          "evolution_ancien": "nasu",
+          "domaine": "corps",
+          "note": "Nouvelle racine - organe de l'odorat"
+        }
+      ]
+    },
     "main": {
       "traductions": [
         {
@@ -20,7 +65,84 @@
           "type": "racine_proto",
           "evolution_ancien": "kanu",
           "domaine": "corps",
-          "note": "Partie du corps essentielle"
+          "note": "Partie du corps pour saisir"
+        }
+      ]
+    },
+    "pied": {
+      "traductions": [
+        {
+          "confluent": "pek",
+          "type": "racine_proto",
+          "evolution_ancien": "peki",
+          "domaine": "corps",
+          "note": "Base, appui"
+        }
+      ]
+    },
+    "cœur": {
+      "traductions": [
+        {
+          "confluent": "kor",
+          "type": "racine_proto",
+          "evolution_ancien": "kori",
+          "domaine": "corps",
+          "note": "Centre vital"
+        }
+      ]
+    },
+    "ventre": {
+      "traductions": [
+        {
+          "confluent": "bel",
+          "type": "racine_proto",
+          "evolution_ancien": "belu",
+          "domaine": "corps",
+          "note": "Nouvelle racine - centre du corps"
+        }
+      ]
+    },
+    "marcher": {
+      "traductions": [
+        {
+          "confluent": "tek",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "teki → tekis",
+          "domaine": "action",
+          "note": "Mouvement de base"
+        }
+      ]
+    },
+    "courir": {
+      "traductions": [
+        {
+          "confluent": "kur",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "kuru → kuris",
+          "domaine": "action",
+          "note": "Nouvelle racine - mouvement rapide"
+        }
+      ]
+    },
+    "sauter": {
+      "traductions": [
+        {
+          "confluent": "zup",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "zupu → zupan",
+          "domaine": "action",
+          "note": "Nouvelle racine - mouvement vertical"
+        }
+      ]
+    },
+    "ramper": {
+      "traductions": [
+        {
+          "confluent": "kol",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "kolu → kolan",
+          "domaine": "action",
+          "note": "Mouvement au sol (lié à 'bas')"
         }
       ]
     },
@@ -31,7 +153,315 @@
           "type": "racine_proto_verbale",
           "evolution_ancien": "mira → mirak",
           "domaine": "action",
-          "note": "Action fondamentale"
+          "note": "Action fondamentale - observer"
+        }
+      ]
+    },
+    "entendre": {
+      "traductions": [
+        {
+          "confluent": "tik",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "tiku → tikam",
+          "domaine": "action",
+          "note": "Même racine que 'oreille'"
+        }
+      ]
+    },
+    "sentir": {
+      "traductions": [
+        {
+          "confluent": "nas",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "nasu → nasan",
+          "domaine": "action",
+          "note": "Même racine que 'nez'"
+        }
+      ]
+    },
+    "toucher": {
+      "traductions": [
+        {
+          "confluent": "kan",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "kanu → kanak",
+          "domaine": "action",
+          "note": "Même racine que 'main'"
+        }
+      ]
+    },
+    "goûter": {
+      "traductions": [
+        {
+          "confluent": "vok",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "voki → vokim",
+          "domaine": "action",
+          "note": "Même racine que 'bouche'"
+        }
+      ]
+    },
+    "manger": {
+      "traductions": [
+        {
+          "confluent": "mut",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "mutu → mutak",
+          "domaine": "action",
+          "note": "Nouvelle racine - absorber nourriture"
+        }
+      ]
+    },
+    "boire": {
+      "traductions": [
+        {
+          "confluent": "biv",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "bivu → bivak",
+          "domaine": "action",
+          "note": "Nouvelle racine - absorber liquide"
+        }
+      ]
+    },
+    "dormir": {
+      "traductions": [
+        {
+          "confluent": "sup",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "supu → supan",
+          "domaine": "action",
+          "note": "Nouvelle racine - repos profond"
+        }
+      ]
+    },
+    "rêver": {
+      "traductions": [
+        {
+          "confluent": "um",
+          "type": "racine_proto_verbale_sacree",
+          "evolution_ancien": "umi → umiak",
+          "domaine": "action",
+          "note": "Lié à 'esprit' - vision pendant le sommeil"
+        }
+      ]
+    },
+    "prendre": {
+      "traductions": [
+        {
+          "confluent": "pas",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "pasa → pasak",
+          "domaine": "action",
+          "note": "Saisir"
+        }
+      ]
+    },
+    "donner": {
+      "traductions": [
+        {
+          "confluent": "kit",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "kita → kitan",
+          "domaine": "action",
+          "note": "Transférer"
+        }
+      ]
+    },
+    "jeter": {
+      "traductions": [
+        {
+          "confluent": "lam",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "lamu → lamak",
+          "domaine": "action",
+          "note": "Nouvelle racine - envoyer loin"
+        }
+      ]
+    },
+    "porter": {
+      "traductions": [
+        {
+          "confluent": "tak",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "taka → takan",
+          "domaine": "action",
+          "note": "Transporter"
+        }
+      ]
+    },
+    "frapper": {
+      "traductions": [
+        {
+          "confluent": "bop",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "bopu → bopak",
+          "domaine": "action",
+          "note": "Nouvelle racine - impact violent"
+        }
+      ]
+    },
+    "couper": {
+      "traductions": [
+        {
+          "confluent": "kut",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "kutu → kutak",
+          "domaine": "action",
+          "note": "Nouvelle racine - séparer"
+        }
+      ]
+    },
+    "casser": {
+      "traductions": [
+        {
+          "confluent": "bop",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "bopu → bopan",
+          "domaine": "action",
+          "note": "Même racine que 'frapper' - briser"
+        }
+      ]
+    },
+    "lier": {
+      "traductions": [
+        {
+          "confluent": "vas",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "vasi → vasak",
+          "domaine": "action",
+          "note": "Pont, lien - attacher"
+        }
+      ]
+    },
+    "parler": {
+      "traductions": [
+        {
+          "confluent": "vos",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "vosa → vosak",
+          "domaine": "action",
+          "note": "Dire, communiquer"
+        }
+      ]
+    },
+    "crier": {
+      "traductions": [
+        {
+          "confluent": "kol",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "kola → kolak",
+          "domaine": "action",
+          "note": "Nouvelle racine - parole forte"
+        }
+      ]
+    },
+    "chanter": {
+      "traductions": [
+        {
+          "confluent": "on",
+          "type": "racine_proto_verbale_sacree",
+          "evolution_ancien": "onu → onak",
+          "domaine": "action",
+          "note": "Lié à 'son' - racine sacrée"
+        }
+      ]
+    },
+    "rire": {
+      "traductions": [
+        {
+          "confluent": "zik",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "ziku → zikam",
+          "domaine": "action",
+          "note": "Nouvelle racine - expression de joie"
+        }
+      ]
+    },
+    "pleurer": {
+      "traductions": [
+        {
+          "confluent": "sur",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "suru → suran",
+          "domaine": "action",
+          "note": "Lié à 'pluie' - eau des yeux"
+        }
+      ]
+    },
+    "naître": {
+      "traductions": [
+        {
+          "confluent": "en",
+          "type": "racine_proto_verbale_sacree",
+          "evolution_ancien": "ena → enak",
+          "domaine": "action",
+          "note": "Origine, source - racine sacrée"
+        }
+      ]
+    },
+    "vivre": {
+      "traductions": [
+        {
+          "confluent": "it",
+          "type": "racine_proto_verbale_sacree",
+          "evolution_ancien": "ita → itak",
+          "domaine": "action",
+          "note": "Être, exister - racine sacrée"
+        }
+      ]
+    },
+    "mourir": {
+      "traductions": [
+        {
+          "confluent": "mus",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "musu → musak",
+          "domaine": "action",
+          "note": "Lié à 'crépuscule' - fin de vie"
+        }
+      ]
+    },
+    "chasser": {
+      "traductions": [
+        {
+          "confluent": "zan",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "zana → zanak",
+          "domaine": "action",
+          "note": "Traquer une proie"
+        }
+      ]
+    },
+    "pêcher": {
+      "traductions": [
+        {
+          "confluent": "nur",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "nura → nurak",
+          "domaine": "action",
+          "note": "Lié à 'rivière' - chasser dans l'eau"
+        }
+      ]
+    },
+    "cueillir": {
+      "traductions": [
+        {
+          "confluent": "pas",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "pasa → pasik",
+          "domaine": "action",
+          "note": "Même racine que 'prendre' - saisir des plantes"
+        }
+      ]
+    },
+    "creuser": {
+      "traductions": [
+        {
+          "confluent": "vuk",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "vuku → vukan",
+          "domaine": "action",
+          "note": "Lié à 'profond, gouffre'"
         }
       ]
     }
