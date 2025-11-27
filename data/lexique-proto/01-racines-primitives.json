@@ -1,0 +1,38 @@
+{
+  "_comment": "Racines proto les plus anciennes - concepts fondamentaux",
+  "_note": "En Proto-Confluent, ces racines sont monosyllabiques et pures",
+  "_mots_a_gerer": [
+    "eau", "feu", "air", "terre", "pierre", "ciel", "soleil", "lune",
+    "main", "œil", "pied", "bouche", "cœur", "tête",
+    "aller", "venir", "voir", "prendre", "donner", "faire",
+    "un", "deux", "beaucoup", "peu",
+    "grand", "petit", "bon", "mauvais",
+    "je", "tu", "nous", "eux",
+    "ici", "là", "où"
+  ],
+  "dictionnaire": {
+    "eau": {
+      "traductions": [
+        {
+          "confluent": "ur",
+          "type": "racine_proto",
+          "evolution_ancien": "ura",
+          "domaine": "element_primordial",
+          "note": "Racine proto monosyllabique, devient 'ura' en Ancien"
+        }
+      ]
+    },
+    "œil": {
+      "traductions": [
+        {
+          "confluent": "sil",
+          "type": "racine_proto",
+          "evolution_ancien": "sili",
+          "domaine": "corps",
+          "note": "Concept central même en proto"
+        }
+      ],
+      "synonymes_fr": ["voir", "regard"]
+    }
+  }
+}

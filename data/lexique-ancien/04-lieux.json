@@ -1,0 +1,25 @@
+{
+  "_comment": "Lieux géographiques majeurs et noms propres",
+  "_mots_a_gerer": [
+    "La Confluence", "Uraakota", "Gouffre Humide", "Vukuura", "Antres des Échos",
+    "Kekutoka", "Cercles de Vigile", "Rikuvela", "Halls des Serments", "Talusavu",
+    "Grande Fresque", "Ekakova", "Gorge Profonde", "Ruines des Premiers Ancêtres",
+    "village fortifié", "basses-terres", "avant-poste côtier", "sanctuaire",
+    "forteresse"
+  ],
+  "dictionnaire": {
+    "La Confluence": {
+      "traductions": [
+        {
+          "confluent": "Uraakota",
+          "type": "nom_propre",
+          "composition": "ur-aa-kota",
+          "sens_litteral": "Eau mêlée à l'union",
+          "racines": ["ura", "kota"],
+          "categorie": "lieu_majeur",
+          "note": "Lieu central où deux rivières se rejoignent"
+        }
+      ]
+    }
+  }
+}

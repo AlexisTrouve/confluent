@@ -1,0 +1,25 @@
+{
+  "_comment": "États émotionnels et sentiments",
+  "_mots_a_gerer": [
+    "joie", "bonheur", "espoir", "fierté", "amour", "curiosité", "soulagement",
+    "confiance", "gratitude", "sérénité", "peur", "colère", "tristesse",
+    "désespoir", "honte", "haine", "angoisse", "anxiété", "méfiance", "regret",
+    "jalousie"
+  ],
+  "dictionnaire": {
+    "joie": {
+      "traductions": [
+        {
+          "confluent": "koriatosa",
+          "type": "composition",
+          "composition": "kor-i-a-tosa",
+          "sens_litteral": "Cœur avec bien",
+          "racines": ["kori", "tosa"],
+          "domaine": "emotion_positive",
+          "note": "Composition standard pour exprimer les émotions"
+        }
+      ],
+      "synonymes_fr": ["bonheur", "allégresse"]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_comment": "Rôles sociaux, titres et fonctions",
+  "_mots_a_gerer": [
+    "Arbitre des Esprits", "oracle", "chef", "Grand Chef", "Proclamateur", "sage",
+    "Faucon Chasseur", "Faucon vétéran", "traqueur", "guerrier", "archer",
+    "porteur de lance", "capitaine", "sentinelle", "Aile-Grise", "chaman",
+    "dresseur de grues", "guide des âmes", "gardien des lois", "Passe-bien",
+    "Porteur de Flamme", "maître artisan", "façonneur de pierre", "sculpteur",
+    "peintre", "tisserand", "pêcheur", "mineur", "aîné", "descendant", "ancêtre",
+    "mère", "père", "époux", "épouse"
+  ],
+  "dictionnaire": {
+    "Arbitre des Esprits": {
+      "traductions": [
+        {
+          "confluent": "Zakiiumi",
+          "type": "nom_propre",
+          "composition": "zak-ii-umi",
+          "sens_litteral": "Celui qui EST gardien des esprits",
+          "racines": ["zaki", "umi"],
+          "categorie": "titre_supreme",
+          "note": "Entité tutélaire du jeu, pouvoir de réserve"
+        }
+      ]
+    }
+  }
+}

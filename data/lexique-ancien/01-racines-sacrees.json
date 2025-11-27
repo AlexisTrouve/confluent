@@ -1,0 +1,24 @@
+{
+  "_comment": "Les 19 racines sacrées (commencent par une voyelle)",
+  "_mots_a_gerer": [
+    "libre", "liberté", "ancêtre", "ancien", "sacré", "divin", "oiseau", "vol",
+    "grue", "Regard-Libre", "faucon", "eau", "fluide", "esprit", "souffle",
+    "un", "unique", "seul", "être", "exister", "origine", "source", "naissance",
+    "tout", "entier", "totalité", "épreuve", "défi", "danger", "aurore", "aube",
+    "son", "vibration", "âme", "conscience", "étoile", "mort", "mourir", "aile"
+  ],
+  "dictionnaire": {
+    "libre": {
+      "traductions": [
+        {
+          "confluent": "aska",
+          "type": "racine_sacree",
+          "forme_liee": "ask",
+          "domaine": "concept_fondateur",
+          "note": "Concept central de la civilisation"
+        }
+      ],
+      "synonymes_fr": ["liberté"]
+    }
+  }
+}

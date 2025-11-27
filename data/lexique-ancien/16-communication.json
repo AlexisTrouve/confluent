@@ -1,0 +1,24 @@
+{
+  "_comment": "Langage, communication et écriture",
+  "_mots_a_gerer": [
+    "langage", "glyphe", "écriture", "symbole", "trace", "rhombe", "récit",
+    "légende", "histoire vraie", "poème", "vers", "chant", "chant sacré",
+    "message", "rapport", "chronique", "traité", "loi", "décret", "proclamation",
+    "conseil", "débat", "silence", "secret", "mensonge", "promesse"
+  ],
+  "dictionnaire": {
+    "langage": {
+      "traductions": [
+        {
+          "confluent": "vokiukota",
+          "type": "composition",
+          "composition": "vok-i-kota",
+          "sens_litteral": "Voix d'union",
+          "racines": ["voki", "kota"],
+          "domaine": "communication",
+          "note": "Concept de langue comme union"
+        }
+      ]
+    }
+  }
+}

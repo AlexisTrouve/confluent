@@ -1,0 +1,39 @@
+{
+  "_comment": "Corps et actions primitives",
+  "_note": "Verbes simples, actions concrètes, pas d'abstractions",
+  "_mots_a_gerer": [
+    "tête", "œil", "oreille", "bouche", "nez", "main", "pied", "cœur", "ventre",
+    "marcher", "courir", "sauter", "ramper",
+    "voir", "entendre", "sentir", "toucher", "goûter",
+    "manger", "boire", "dormir", "rêver",
+    "prendre", "donner", "jeter", "porter",
+    "frapper", "couper", "casser", "lier",
+    "parler", "crier", "chanter", "rire", "pleurer",
+    "naître", "vivre", "mourir",
+    "chasser", "pêcher", "cueillir", "creuser"
+  ],
+  "dictionnaire": {
+    "main": {
+      "traductions": [
+        {
+          "confluent": "kan",
+          "type": "racine_proto",
+          "evolution_ancien": "kanu",
+          "domaine": "corps",
+          "note": "Partie du corps essentielle"
+        }
+      ]
+    },
+    "voir": {
+      "traductions": [
+        {
+          "confluent": "mir",
+          "type": "racine_proto_verbale",
+          "evolution_ancien": "mira → mirak",
+          "domaine": "action",
+          "note": "Action fondamentale"
+        }
+      ]
+    }
+  }
+}

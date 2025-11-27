@@ -1,0 +1,26 @@
+{
+  "_comment": "Éléments naturels et phénomènes",
+  "_mots_a_gerer": [
+    "ciel", "terre", "sol", "feu", "flamme", "air", "vent", "pierre", "roche",
+    "rivière", "courant", "montagne", "forêt", "arbre", "lune", "soleil",
+    "lumière", "sombre", "obscur", "sec", "aride", "vallée", "sel", "mer",
+    "humide", "mouillé", "profond", "gouffre", "abîme", "cercle", "anneau",
+    "étoile", "tempête", "nuage", "cascade", "source", "grotte", "crevasse",
+    "promontoire", "pic", "cime", "côte", "horizon", "confluence de rivières",
+    "rivière azur", "rivière verte"
+  ],
+  "dictionnaire": {
+    "ciel": {
+      "traductions": [
+        {
+          "confluent": "zeru",
+          "type": "racine",
+          "forme_liee": "zer",
+          "domaine": "element_nature",
+          "note": "Élément primordial"
+        }
+      ],
+      "synonymes_fr": ["cieux"]
+    }
+  }
+}

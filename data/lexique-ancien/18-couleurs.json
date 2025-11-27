@@ -1,0 +1,22 @@
+{
+  "_comment": "Couleurs et qualités visuelles",
+  "_mots_a_gerer": [
+    "rouge", "orange", "violet", "rose", "blanc", "gris", "noir", "vert",
+    "bleu", "azur", "bleu d'eau", "ocre", "pâle", "yeux de l'aurore",
+    "éclat", "translucide", "lumineux", "sombre", "patine", "gravure",
+    "bas-relief", "motif"
+  ],
+  "dictionnaire": {
+    "rouge": {
+      "traductions": [
+        {
+          "confluent": "rasu",
+          "type": "racine",
+          "forme_liee": "ras",
+          "domaine": "couleur",
+          "note": "Couleur importante (yeux des Ciels-clairs)"
+        }
+      ]
+    }
+  }
+}

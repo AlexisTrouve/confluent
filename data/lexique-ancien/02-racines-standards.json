@@ -1,0 +1,28 @@
+{
+  "_comment": "Racines standards diverses (commencent par une consonne)",
+  "_mots_a_gerer": [
+    "vrai", "vérité", "bon", "bien", "grand", "vaste", "petit", "fin",
+    "nouveau", "jeune", "échanger", "troquer", "pont", "lien", "passage",
+    "bois", "sombre", "obscur", "couleur", "cendre", "gris", "sang",
+    "assemblée", "lait", "loi", "règle", "ligne", "corde", "lieu", "endroit",
+    "mémoire", "souvenir", "navire", "paix", "calme", "poisson", "pointe",
+    "poison", "rouge", "récit", "histoire", "route", "sac", "contenant",
+    "sel", "mer", "vieux", "âgé", "signe", "marque", "frapper", "sommet",
+    "tablette", "vallée", "travail", "œuvre", "temps", "durée", "tribu",
+    "tombe", "valeur", "mérite", "guerre", "combat", "serpent", "secret"
+  ],
+  "dictionnaire": {
+    "vrai": {
+      "traductions": [
+        {
+          "confluent": "veri",
+          "type": "racine",
+          "forme_liee": "ver",
+          "domaine": "concept_abstrait",
+          "note": "Racine fondamentale"
+        }
+      ],
+      "synonymes_fr": ["vérité"]
+    }
+  }
+}

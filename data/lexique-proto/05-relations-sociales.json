@@ -1,0 +1,52 @@
+{
+  "_comment": "Relations sociales primitives",
+  "_note": "Structure sociale basique, pas de castes ni d'institutions complexes",
+  "_mots_a_gerer": [
+    "homme", "femme", "enfant", "vieux", "ancêtre",
+    "père", "mère", "frère", "sœur", "famille",
+    "ami", "ennemi", "étranger",
+    "chef", "guerrier", "chasseur", "shaman",
+    "groupe", "clan", "tribu",
+    "maison", "village", "camp",
+    "chasse", "guerre", "paix",
+    "mort", "esprit", "rêve",
+    "parole", "nom", "signe",
+    "donner", "prendre", "échanger", "voler",
+    "aider", "protéger", "attaquer", "fuir"
+  ],
+  "dictionnaire": {
+    "enfant": {
+      "traductions": [
+        {
+          "confluent": "nak",
+          "type": "racine_proto",
+          "evolution_ancien": "naki",
+          "domaine": "famille",
+          "note": "Concept de descendance"
+        }
+      ]
+    },
+    "chef": {
+      "traductions": [
+        {
+          "confluent": "kas",
+          "type": "racine_proto",
+          "evolution_ancien": "kasi",
+          "domaine": "social",
+          "note": "Leadership primitif"
+        }
+      ]
+    },
+    "esprit": {
+      "traductions": [
+        {
+          "confluent": "um",
+          "type": "racine_proto_sacree",
+          "evolution_ancien": "umi",
+          "domaine": "spirituel",
+          "note": "Concept sacré ancien"
+        }
+      ]
+    }
+  }
+}

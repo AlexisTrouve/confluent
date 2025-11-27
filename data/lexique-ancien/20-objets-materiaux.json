@@ -1,0 +1,24 @@
+{
+  "_comment": "Objets, matériaux et artéfacts",
+  "_mots_a_gerer": [
+    "bois", "pierre", "argile", "métal", "minerai", "couleur", "teinte",
+    "cendre", "sang", "lait", "ligne", "corde", "sac", "contenant",
+    "tablette", "plaque", "document", "écrit", "chaîne", "lien",
+    "vase rituel", "coffret", "foyer", "grenier", "chambre", "pièce",
+    "porte", "passage", "zone", "région", "navire", "embarcation"
+  ],
+  "dictionnaire": {
+    "pierre": {
+      "traductions": [
+        {
+          "confluent": "kari",
+          "type": "racine",
+          "forme_liee": "kar",
+          "domaine": "materiau",
+          "note": "Matériau fondamental"
+        }
+      ],
+      "synonymes_fr": ["roche", "pierres"]
+    }
+  }
+}

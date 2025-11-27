@@ -1,0 +1,24 @@
+{
+  "_comment": "Institutions politiques et gouvernementales",
+  "_mots_a_gerer": [
+    "Cercle des Sages", "Tribunal des Mœurs", "Proclamateur", "Assemblée des Chefs",
+    "Maison des Découvertes", "Arbitre des Esprits", "Directoire",
+    "Hall des Serments", "Conseil du Village", "Autel ancestral",
+    "Vigile Lunaire", "Jour des Ancêtres", "Jour du Faucon"
+  ],
+  "dictionnaire": {
+    "Cercle des Sages": {
+      "traductions": [
+        {
+          "confluent": "Rikuusekitori",
+          "type": "nom_propre",
+          "composition": "rik-u-sek-i-tori",
+          "sens_litteral": "Cercle des porteurs-de-savoir",
+          "racines": ["riku", "seka", "tori"],
+          "categorie": "institution",
+          "note": "Institution centrale"
+        }
+      ]
+    }
+  }
+}

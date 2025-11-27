@@ -1,0 +1,24 @@
+{
+  "_comment": "Caractéristiques géographiques",
+  "_mots_a_gerer": [
+    "confluence de rivières", "rivière azur", "rivière verte", "promontoire",
+    "pic", "cime", "vallée", "mer", "côte", "horizon", "grotte", "source",
+    "cascade", "éboulement", "inondation", "crevasse", "roche impénétrable",
+    "avalanche", "feu sauvage"
+  ],
+  "dictionnaire": {
+    "confluence de rivières": {
+      "traductions": [
+        {
+          "confluent": "nuraakota",
+          "type": "composition",
+          "composition": "nur-aa-kota",
+          "sens_litteral": "Rivière mêlée à union",
+          "racines": ["nura", "kota"],
+          "domaine": "geographie",
+          "note": "Point de rencontre des eaux"
+        }
+      ]
+    }
+  }
+}

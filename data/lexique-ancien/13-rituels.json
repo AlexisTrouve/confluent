@@ -1,0 +1,28 @@
+{
+  "_comment": "Rituels, traditions et pratiques sacrées",
+  "_mots_a_gerer": [
+    "Rituel du Regard Partagé", "pèlerinage", "rites funéraires",
+    "Cercles de Vigile", "Communion des esprits", "Lois du Sang et de la Bête",
+    "Porteur de Flamme", "Mémento", "serment sacré", "Glyphes du Gouffre",
+    "Colliers de glyphes", "Tablettes d'argile", "idéoglyphes", "écriture",
+    "argile vivante", "lait de pierre", "roche braise", "pigments anciens",
+    "Rhombes sacrés", "Rhombes géants", "Rhombe miniature",
+    "artefact multi-générationnel", "Grande Fresque", "fenêtre temporelle",
+    "Autel des Pionniers"
+  ],
+  "dictionnaire": {
+    "Rituel du Regard Partagé": {
+      "traductions": [
+        {
+          "confluent": "Asausiliaakota",
+          "type": "nom_propre",
+          "composition": "as-a-sil-aa-kota",
+          "sens_litteral": "Sacré avec regard-mêlé-à-union",
+          "racines": ["asa", "sili", "kota"],
+          "categorie": "rituel_majeur",
+          "note": "Rituel central de la civilisation"
+        }
+      ]
+    }
+  }
+}

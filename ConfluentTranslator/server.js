@@ -15,6 +15,23 @@ app.use(express.static('public'));
 const protoPrompt = fs.readFileSync(path.join(__dirname, 'prompts', 'proto-system.txt'), 'utf-8');
 const ancienPrompt = fs.readFileSync(path.join(__dirname, 'prompts', 'ancien-system.txt'), 'utf-8');
 
+// Load lexique
+const lexiquePath = path.join(__dirname, '..', 'data', 'lexique-francais-confluent.json');
+let lexiqueData = null;
+try {
+  lexiqueData = JSON.parse(fs.readFileSync(lexiquePath, 'utf-8'));
+} catch (error) {
+  console.error('Error loading lexique:', error.message);
+}
+
+// Lexique endpoint
+app.get('/lexique', (req, res) => {
+  if (!lexiqueData) {
+    return res.status(500).json({ error: 'Lexique not loaded' });
+  }
+  res.json(lexiqueData);
+});
+
 // Translation endpoint
 app.post('/translate', async (req, res) => {
   const { text, target, provider, model } = req.body;

@@ -1,0 +1,24 @@
+{
+  "_comment": "Maladies, dangers et conditions de santé",
+  "_mots_a_gerer": [
+    "maladie", "Maladie des Antres", "miasmes", "infection pulmonaire",
+    "malnutrition", "suffocation", "fièvre", "blessure", "guérison",
+    "éboulement", "inondation", "toxine", "poison", "gouffre", "crevasse",
+    "roche impénétrable", "avalanche", "feu sauvage"
+  ],
+  "dictionnaire": {
+    "maladie": {
+      "traductions": [
+        {
+          "confluent": "osiusanu",
+          "type": "composition",
+          "composition": "os-i-sanu",
+          "sens_litteral": "Mort du corps",
+          "racines": ["osi", "sanu"],
+          "domaine": "sante",
+          "note": "Concept de maladie comme mort partielle"
+        }
+      ]
+    }
+  }
+}

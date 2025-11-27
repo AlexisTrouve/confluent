@@ -1,0 +1,35 @@
+{
+  "_comment": "Animaux et créatures",
+  "_mots_a_gerer": [
+    "Regards-Libres", "grue", "grue cendrée", "faucon", "bête", "animal",
+    "bête sacrée", "gibier", "poisson", "poisson de rivière", "serpent",
+    "serpent d'eau", "oiseau", "oiseau de proie", "créature inconnue"
+  ],
+  "dictionnaire": {
+    "grue": {
+      "traductions": [
+        {
+          "confluent": "aru",
+          "type": "racine_sacree",
+          "forme_liee": "ar",
+          "domaine": "animal_sacre",
+          "note": "Animal sacré central dans la culture"
+        }
+      ],
+      "synonymes_fr": ["grues"]
+    },
+    "Regards-Libres": {
+      "traductions": [
+        {
+          "confluent": "Aruaska",
+          "type": "composition",
+          "composition": "ar-u-aska",
+          "sens_litteral": "Grue de liberté",
+          "racines": ["aru", "aska"],
+          "categorie": "animal_sacre",
+          "note": "Grues domestiquées, messagers sacrés"
+        }
+      ]
+    }
+  }
+}

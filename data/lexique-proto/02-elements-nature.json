@@ -1,0 +1,26 @@
+{
+  "_comment": "Éléments naturels en proto - vocabulaire primitif",
+  "_note": "Concepts liés à l'environnement immédiat, pas de termes abstraits",
+  "_mots_a_gerer": [
+    "eau", "feu", "air", "vent", "terre", "pierre", "roche",
+    "ciel", "soleil", "lune", "étoile", "nuage",
+    "montagne", "rivière", "arbre", "forêt",
+    "pluie", "orage", "neige", "glace",
+    "jour", "nuit", "aube", "crépuscule",
+    "chaud", "froid", "sec", "humide",
+    "lumière", "ombre", "sombre"
+  ],
+  "dictionnaire": {
+    "feu": {
+      "traductions": [
+        {
+          "confluent": "suk",
+          "type": "racine_proto",
+          "evolution_ancien": "suki",
+          "domaine": "element",
+          "note": "Élément primordial"
+        }
+      ]
+    }
+  }
+}

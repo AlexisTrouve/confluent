@@ -1,0 +1,22 @@
+{
+  "_comment": "Parties du corps et organes des sens",
+  "_mots_a_gerer": [
+    "œil", "regard", "vision", "main", "voix", "parole", "oreille", "écoute",
+    "visage", "cœur", "corps", "pied", "base", "écho", "résonance", "poumon",
+    "souffle", "chair", "viande", "peau", "surface", "sang", "yeux de l'aurore"
+  ],
+  "dictionnaire": {
+    "œil": {
+      "traductions": [
+        {
+          "confluent": "sili",
+          "type": "racine",
+          "forme_liee": "sil",
+          "domaine": "corps_sens",
+          "note": "Concept central : l'observation"
+        }
+      ],
+      "synonymes_fr": ["regard", "vision", "yeux"]
+    }
+  }
+}

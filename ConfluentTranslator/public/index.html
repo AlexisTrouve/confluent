@@ -81,14 +81,84 @@
     .error { color: #ff4a4a; }
     .row { display: flex; gap: 15px; }
     .row .form-group { flex: 1; }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #3a3a3a;
+    }
+    .tab {
+      background: transparent;
+      padding: 10px 20px;
+      border: none;
+      color: #b0b0b0;
+      cursor: pointer;
+      font-weight: 600;
+      border-bottom: 3px solid transparent;
+      transition: all 0.2s;
+    }
+    .tab:hover { color: #e0e0e0; }
+    .tab.active {
+      color: #4a9eff;
+      border-bottom-color: #4a9eff;
+    }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    /* Lexique */
+    .lexique-results {
+      max-height: 400px;
+      overflow-y: auto;
+      margin-top: 15px;
+    }
+    .lexique-item {
+      background: #1a1a1a;
+      padding: 10px;
+      margin-bottom: 8px;
+      border-radius: 4px;
+      border-left: 3px solid #4a9eff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .lexique-fr {
+      color: #e0e0e0;
+      font-weight: 500;
+    }
+    .lexique-cf {
+      color: #4a9eff;
+      font-family: monospace;
+      font-size: 1.1em;
+    }
+    .lexique-count {
+      color: #b0b0b0;
+      font-size: 0.9em;
+      margin-top: 10px;
+    }
+    .no-results {
+      color: #b0b0b0;
+      text-align: center;
+      padding: 20px;
+      font-style: italic;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>ConfluentTranslator</h1>
 
-    <div class="panel">
-      <h2>Configuration</h2>
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" data-tab="traduction">Traduction</button>
+      <button class="tab" data-tab="lexique">Lexique</button>
+    </div>
+
+    <!-- Tab: Traduction -->
+    <div id="tab-traduction" class="tab-content active">
+      <div class="panel">
+        <h2>Configuration</h2>
       <div class="row">
         <div class="form-group">
           <label>Provider</label>
@@ -109,29 +179,141 @@
       </div>
     </div>
 
-    <div class="panel">
-      <h2>Traduction</h2>
-      <div class="form-group">
-        <label>Langue cible</label>
-        <select id="target">
-          <option value="proto">Proto-Confluent</option>
-          <option value="ancien">Ancien Confluent</option>
-        </select>
+      <div class="panel">
+        <h2>Traduction</h2>
+        <div class="form-group">
+          <label>Langue cible</label>
+          <select id="target">
+            <option value="proto">Proto-Confluent</option>
+            <option value="ancien">Ancien Confluent</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Texte français</label>
+          <textarea id="input" placeholder="Entrez votre texte en français..."></textarea>
+        </div>
+        <button id="translate">Traduire</button>
       </div>
-      <div class="form-group">
-        <label>Texte français</label>
-        <textarea id="input" placeholder="Entrez votre texte en français..."></textarea>
+
+      <div class="panel">
+        <h2>Résultat</h2>
+        <div id="output" class="output">La traduction apparaîtra ici...</div>
       </div>
-      <button id="translate">Traduire</button>
     </div>
 
-    <div class="panel">
-      <h2>Résultat</h2>
-      <div id="output" class="output">La traduction apparaîtra ici...</div>
+    <!-- Tab: Lexique -->
+    <div id="tab-lexique" class="tab-content">
+      <div class="panel">
+        <h2>Recherche dans le lexique</h2>
+        <div class="form-group">
+          <label>Niveau de langue</label>
+          <select id="lexique-niveau">
+            <option value="proto">Proto-Confluent</option>
+            <option value="ancien">Ancien Confluent</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Rechercher un mot français</label>
+          <input type="text" id="lexique-search" placeholder="Tapez un mot en français...">
+        </div>
+        <div class="lexique-count" id="lexique-count">0 résultat(s)</div>
+        <div class="lexique-results" id="lexique-results">
+          <div class="no-results">Commencez à taper pour rechercher...</div>
+        </div>
+      </div>
     </div>
+
   </div>
 
   <script>
+    // Lexique data
+    let lexiqueData = null;
+
+    // Load lexique
+    const loadLexique = async () => {
+      try {
+        const response = await fetch('/lexique');
+        lexiqueData = await response.json();
+      } catch (error) {
+        console.error('Error loading lexique:', error);
+      }
+    };
+
+    // Tab switching
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs and contents
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+        // Add active class to clicked tab and corresponding content
+        tab.classList.add('active');
+        const tabName = tab.dataset.tab;
+        document.getElementById(`tab-${tabName}`).classList.add('active');
+      });
+    });
+
+    // Lexique search
+    const searchLexique = () => {
+      const query = document.getElementById('lexique-search').value.toLowerCase().trim();
+      const niveau = document.getElementById('lexique-niveau').value;
+      const resultsDiv = document.getElementById('lexique-results');
+      const countDiv = document.getElementById('lexique-count');
+
+      if (!lexiqueData) {
+        resultsDiv.innerHTML = '<div class="no-results">Lexique en cours de chargement...</div>';
+        return;
+      }
+
+      if (!query) {
+        resultsDiv.innerHTML = '<div class="no-results">Commencez à taper pour rechercher...</div>';
+        countDiv.textContent = '0 résultat(s)';
+        return;
+      }
+
+      // For proto, we only have limited data (would need proto lexique file)
+      // For ancien, we use the full lexique
+      const dict = niveau === 'ancien' ? lexiqueData.dictionnaire : {};
+
+      // Search in all entries
+      const results = [];
+      for (const letter in dict) {
+        for (const [fr, cf] of Object.entries(dict[letter])) {
+          if (fr.toLowerCase().includes(query)) {
+            results.push({ fr, cf });
+          }
+        }
+      }
+
+      // Sort by relevance (starts with query first)
+      results.sort((a, b) => {
+        const aStarts = a.fr.toLowerCase().startsWith(query);
+        const bStarts = b.fr.toLowerCase().startsWith(query);
+        if (aStarts && !bStarts) return -1;
+        if (!aStarts && bStarts) return 1;
+        return a.fr.localeCompare(b.fr);
+      });
+
+      // Display results
+      if (results.length === 0) {
+        resultsDiv.innerHTML = '<div class="no-results">Aucun résultat trouvé</div>';
+        countDiv.textContent = '0 résultat(s)';
+      } else {
+        const html = results.map(r => `
+          <div class="lexique-item">
+            <span class="lexique-fr">${r.fr}</span>
+            <span class="lexique-cf">${r.cf}</span>
+          </div>
+        `).join('');
+        resultsDiv.innerHTML = html;
+        countDiv.textContent = `${results.length} résultat(s)`;
+      }
+    };
+
+    // Search on input
+    document.getElementById('lexique-search').addEventListener('input', searchLexique);
+    document.getElementById('lexique-niveau').addEventListener('change', searchLexique);
+
     // Load config from localStorage
     const loadConfig = () => {
       const config = JSON.parse(localStorage.getItem('confluentConfig') || '{}');
@@ -217,6 +399,7 @@
 
     // Initialize
     loadConfig();
+    loadLexique();
   </script>
 </body>
 </html>

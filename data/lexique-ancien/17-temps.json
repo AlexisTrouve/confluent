@@ -1,0 +1,22 @@
+{
+  "_comment": "Concepts temporels",
+  "_mots_a_gerer": [
+    "temps", "génération", "siècle", "saison", "lune", "mois", "aurore",
+    "matin", "crépuscule", "nuit", "éternité", "passé", "futur", "présent",
+    "cycle éternel", "renaissance", "au-delà", "moment", "instant", "durée"
+  ],
+  "dictionnaire": {
+    "temps": {
+      "traductions": [
+        {
+          "confluent": "temi",
+          "type": "racine",
+          "forme_liee": "tem",
+          "domaine": "temps",
+          "note": "Concept fondamental"
+        }
+      ],
+      "synonymes_fr": ["durée"]
+    }
+  }
+}

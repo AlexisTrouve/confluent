@@ -1,0 +1,31 @@
+{
+  "_comment": "Verbes et actions (forme racine + forme verbale CVCVC)",
+  "_mots_a_gerer": [
+    "voir", "observer", "mirak", "aller", "tekis", "donner", "kitan", "prendre",
+    "pasak", "faire", "créer", "nekan", "dire", "parler", "vosak", "savoir",
+    "connaître", "sekam", "apprendre", "mokis", "transmettre", "enseigner",
+    "kisun", "garder", "protéger", "zakis", "porter", "transporter", "takan",
+    "chasser", "traquer", "zanak", "méditer", "prier", "invoquer", "bénir",
+    "communier", "mourir", "graver", "sculpter", "peindre", "assembler",
+    "construire", "creuser", "tisser", "forger", "écouter", "étudier",
+    "découvrir", "explorer", "mémoriser", "interpréter", "défendre",
+    "surveiller", "attaquer", "capturer", "fuir", "vaincre", "troquer",
+    "entreposer", "arbitrer", "pêcher"
+  ],
+  "dictionnaire": {
+    "voir": {
+      "traductions": [
+        {
+          "confluent": "mirak",
+          "type": "verbe",
+          "racine": "mira",
+          "forme_liee": "mir",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Verbe fondamental lié à l'observation"
+        }
+      ],
+      "synonymes_fr": ["observer", "regarder"]
+    }
+  }
+}

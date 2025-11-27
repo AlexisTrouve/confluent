@@ -1,0 +1,28 @@
+{
+  "_comment": "Concepts abstraits et philosophiques",
+  "_mots_a_gerer": [
+    "regard libre", "confluence", "union", "harmonie", "sagesse", "honneur",
+    "justice", "vérité", "liberté", "esprit", "âme", "destinée", "devoir sacré",
+    "compétence", "transmission", "L'Autre", "étranger", "Premiers Ancêtres",
+    "présage", "miasmes", "bénédiction", "malédiction", "caste", "village",
+    "famille", "clan", "généalogie", "serment", "serment de sang", "loi",
+    "loi sacrée", "épreuve", "épreuve de vérité", "trahison", "exil",
+    "guerre", "paix", "victoire", "défaite", "meurtre", "violence bestiale",
+    "embuscade", "prisonnier"
+  ],
+  "dictionnaire": {
+    "regard libre": {
+      "traductions": [
+        {
+          "confluent": "siliaska",
+          "type": "composition",
+          "composition": "sil-i-aska",
+          "sens_litteral": "Regard de liberté",
+          "racines": ["sili", "aska"],
+          "domaine": "concept_fondateur",
+          "note": "État spirituel central"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "_comment": "Concepts de base - qualificatifs et quantités primitives",
+  "_note": "Concepts concrets uniquement, pas de philosophie",
+  "_mots_a_gerer": [
+    "grand", "petit", "long", "court", "haut", "bas",
+    "fort", "faible", "lourd", "léger",
+    "rapide", "lent", "vieux", "jeune",
+    "bon", "mauvais", "beau", "laid",
+    "chaud", "froid", "dur", "mou",
+    "plein", "vide", "beaucoup", "peu",
+    "un", "deux", "trois", "plusieurs", "tous",
+    "vivant", "mort", "malade", "sain",
+    "proche", "loin", "dedans", "dehors",
+    "avant", "après", "maintenant", "toujours", "jamais"
+  ],
+  "dictionnaire": {
+    "grand": {
+      "traductions": [
+        {
+          "confluent": "mak",
+          "type": "racine_proto",
+          "evolution_ancien": "mako",
+          "domaine": "qualificatif",
+          "note": "Qualité de base"
+        }
+      ]
+    },
+    "un": {
+      "traductions": [
+        {
+          "confluent": "ik",
+          "type": "racine_proto_sacree",
+          "evolution_ancien": "iko",
+          "domaine": "nombre",
+          "note": "Nombre premier, concept sacré"
+        }
+      ]
+    }
+  }
+}

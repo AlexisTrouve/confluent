@@ -1,0 +1,41 @@
+{
+  "_comment": "Les six castes et groupes sociaux majeurs",
+  "_mots_a_gerer": [
+    "Siliaska", "peuple", "Enfants des Échos", "Nakukeko", "Enfants du Courant",
+    "Nakuura", "Ailes-Grises", "Ariaska", "Faucons Chasseurs", "Akoazana",
+    "Passes-bien", "Takitosa", "Voix de l'Aurore", "Oraumi", "Ciels-clairs",
+    "Sans-ciels", "Gardiens de la Confluence", "Caste de l'Air", "Caste du Feu",
+    "Caste de l'Eau", "Caste de la Terre", "Caste de l'Éther"
+  ],
+  "dictionnaire": {
+    "Siliaska": {
+      "traductions": [
+        {
+          "confluent": "Siliaska",
+          "type": "nom_propre",
+          "composition": "sil-i-aska",
+          "sens_litteral": "Porteurs du regard libre",
+          "racines": ["sili", "aska"],
+          "categorie": "peuple",
+          "note": "Nom du peuple de la Confluence"
+        }
+      ],
+      "synonymes_fr": ["peuple", "Les porteurs du regard libre"]
+    },
+    "Enfants des Échos": {
+      "traductions": [
+        {
+          "confluent": "Nakukeko",
+          "type": "nom_propre",
+          "composition": "nak-u-keko",
+          "sens_litteral": "Enfants de l'écho",
+          "racines": ["naki", "keko"],
+          "categorie": "caste",
+          "element": "terre",
+          "racines_sacrees": 0,
+          "note": "Souterrains, mineurs, artisans"
+        }
+      ]
+    }
+  }
+}

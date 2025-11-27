@@ -1,0 +1,24 @@
+{
+  "_comment": "Armes, outils et équipements",
+  "_mots_a_gerer": [
+    "lance", "lance de guerre", "arc", "flèche", "flèche empoisonnée",
+    "hachette", "couteau", "gourdin", "bouclier", "pioche", "ciseau à pierre",
+    "maillet", "burin", "corde", "filet", "panier", "piège", "vase rituel",
+    "coffret", "tablette", "tablette gravée", "collier", "foyer", "foyer éternel",
+    "armurerie", "grenier"
+  ],
+  "dictionnaire": {
+    "lance": {
+      "traductions": [
+        {
+          "confluent": "piki",
+          "type": "racine",
+          "forme_liee": "pik",
+          "domaine": "arme",
+          "note": "Arme principale"
+        }
+      ],
+      "synonymes_fr": ["pointe"]
+    }
+  }
+}
