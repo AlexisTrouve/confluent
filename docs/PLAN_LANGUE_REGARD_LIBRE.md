@@ -1335,3 +1335,96 @@ Ku ve Kekutoka vi Uraakota no Talusavu vu kari na aita su va Oraumi ni naki su v
 13. [ ] Définir des formules rituelles
 14. [ ] Enrichir le lexique verbal
 15. [ ] Propositions relatives / phrases multi-verbes (ex: "le chien qui a mangé...")
+
+---
+
+## CE QUI MANQUE POUR UNE LANGUE COMPLÈTE
+
+**Note :** La langue est **suffisante pour le JDR**. Les éléments ci-dessous peuvent être développés au fil du jeu.
+
+---
+
+### 1. Propositions relatives ("le chien qui a mangé")
+
+Options à explorer :
+- Particule relative **ra**
+- Verbe nominalisé : **[VERBE]-la** = "celui qui [VERBE]"
+- Composition avec liaison : **[OBJET]-i-[VERBE]-la** = "celui qui [VERBE] l'[OBJET]"
+
+---
+
+### 2. Formules rituelles
+
+À créer selon les besoins du JDR :
+- Rituel du Regard Partagé
+- Serments dans les Halls
+- Invocations aux ancêtres
+- Salutations entre castes
+- Formules de naissance/mort
+
+---
+
+### 3. Vocabulaire manquant
+
+**Émotions :** joie, tristesse, colère, peur, espoir, fierté, honte...
+- Workaround temporaire : compositions (ex: joie = sil-ea-tosa "regard vers le bien")
+
+**Abstractions :** sagesse, justice, mensonge, destin, loi...
+
+**Nombres :** Système quinaire ou décimal ? (conflit **oko** = 8 vs **oki** = épreuve)
+
+---
+
+### 4. Adjectifs
+
+Options :
+- **A)** Composition **-ii-** : **makiikari** = grande pierre
+- **B)** Particule **mi** : **mi mako kari** = grande pierre
+- **C)** Juxtaposition : **mako kari** = grande pierre
+
+---
+
+### 5. Connecteurs logiques
+
+Mais, donc, car, si, alors, ou...
+- Workaround : juxtaposition ou structures de phrase
+
+---
+
+### 6. Pronoms personnels
+
+Question ouverte : en a-t-on besoin ?
+- Option A : Pas de pronoms (contexte suffit)
+- Option B : Créer des racines dédiées
+
+---
+
+### 7. Subordination
+
+"Avant de", "après avoir", "parce que", "afin de"...
+- À définir si nécessaire pour le JDR
+
+---
+
+### 8. Fichier de données JSON/YAML
+
+Structure à créer pour centraliser racines, liaisons, verbes, conjugateurs, particules.
+
+---
+
+## VERDICT : PRÊT POUR LE JDR ✅
+
+**Utilisable immédiatement pour :**
+- Nommer lieux, personnages, objets
+- Construire phrases simples et complexes
+- Exprimer temps, espace, relations
+- Questions, négations
+- Créer nouveaux mots par composition
+
+**Workarounds temporaires :**
+- Propositions relatives → 2 phrases séparées
+- Émotions → compositions existantes
+- Nombres → pluriel **su** + français
+- Adjectifs → juxtaposition ou **-ii-**
+
+**Développement organique recommandé** (artefact multi-générationnel).
