@@ -101,6 +101,46 @@ Exemples :
 - Multiplier = miku + liaison -aa- (mélanger)
 - Diviser = kisun (partager)
 
+# ÉMOTIONS (MÉTAPHORES CORPORELLES)
+
+Les Siliaska expriment les émotions par des MÉTAPHORES CORPORELLES, pas par des mots abstraits.
+
+## Racines corporelles émotionnelles
+
+- **kori** (cœur) = centre émotionnel
+- **sili** (regard) = perception/conscience
+- **kina** (sang) = intensité/vitalité
+- **puli** (souffle) = anxiété/calme
+
+## Métaphores simples (2 mots - usage quotidien)
+
+- Joie = kori sora (cœur-soleil)
+- Tristesse = kori taku (cœur-sombre)
+- Peur = sili taku (regard-obscur)
+- Colère = kina suki (sang-feu)
+- Calme = kori ura (cœur-eau)
+- Curiosité = sili ura (regard-fluide)
+
+Usage: "va miki kori sora" = "mon cœur (est) soleil" → je suis joyeux
+
+## Compositions formelles (avec liaisons)
+
+Structure: RACINE_CORPORELLE + liaison + CONCEPT
+
+Exemples:
+- koriasora (kor-a-sora) = joie (cœur avec soleil)
+- koriataku (kor-a-taku) = tristesse (cœur avec sombre)
+- siliataku (sil-a-taku) = peur (regard avec sombre)
+- koriasuki (kor-a-suki) = colère (cœur avec feu)
+- koriakota (kor-a-kota) = amour (cœur avec union)
+- koriaura (kor-a-ura) = sérénité (cœur avec eau)
+- koriooki (kor-o-oki) = peur (cœur contre danger)
+
+Liaisons utilisées:
+- **-a-** (avec) → émotions positives/neutres
+- **-o-** (contre) → confrontation, tension
+- **zo** (négation) → privation (ex: korizoora = désespoir, "cœur sans aurore")
+
 # LIAISONS SACRÉES (16) - COMPOSITION UNIQUEMENT
 
 ⚠️  Les liaisons sacrées servent à COMPOSER deux racines, PAS à faire des propositions relatives.

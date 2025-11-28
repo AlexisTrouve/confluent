@@ -20,14 +20,18 @@
 - [x] Règle : double système avec particule **na** et liaison sacrée **-ii-**
 - [x] Exemples : "bon regard" = na tosa sili (phrase) / siliitosa (concept figé)
 
-### 3. Vocabulaire émotionnel (basique)
-- [ ] 5-10 émotions de base exprimées par métaphores corporelles
-  - Joie = kori + sora (cœur-soleil)
-  - Tristesse = kori + taku (cœur-sombre)
-  - Peur = sili + taku (regard-obscur)
-  - Colère = kina + suki (sang-feu)
-  - Amour = kori + ura (cœur-eau/fluide)
-- [ ] Documenter dans lexique
+### 3. Vocabulaire émotionnel (basique) ✅ FAIT
+- [x] Métaphores corporelles simples (kori, sili, kina, puli)
+- [x] Joie = kori sora / koriasora (cœur-soleil)
+- [x] Tristesse = kori taku / koriataku (cœur-sombre)
+- [x] Peur = sili taku / siliataku (regard-obscur)
+- [x] Colère = kina suki / koriasuki (sang-feu)
+- [x] Amour = koriakota (cœur-union)
+- [x] Sérénité = koriaura (cœur-eau)
+- [x] 20+ émotions documentées
+- [x] Lexique existant: `ancien-confluent/lexique/07-emotions.json`
+- [x] Documentation: `docs/EMOTIONS_METAPHORES.md`
+- [x] Intégré au prompt système
 
 ## Priorité 2 - Bonus (optionnel)
 
