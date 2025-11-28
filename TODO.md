@@ -2,11 +2,17 @@
 
 ## Priorité 1 - Essentiel pour langage ancien complet
 
-### 1. Système de nombres (limité)
-- [ ] Nombres 1-5 (racines simples)
-- [ ] Nombres 6-10 (compositions possibles)
-- [ ] Concepts : "quelques", "plusieurs", "beaucoup"
-- [ ] Peut-être système de comptage par cycles lunaires
+### 1. Système de nombres (limité) ✅ FAIT
+- [x] Nombres 0-12 en base 12 (zaro, iko, diku... tolu)
+- [x] Puissances de 12 (tolusa=144, toluaa=1728, tolumako=20736)
+- [x] Construction positionnelle (ex: 25 = diku tolu iko)
+- [x] Concepts vagues : "tiru tiru" (quelques), "tolu tolu" (beaucoup)
+- [x] Système de comptage par 12 cycles lunaires
+- [x] Ancrage culturel : 12 phalanges, 12 lunes/an
+- [x] Lexique complet : `ancien-confluent/lexique/22-nombres.json`
+- [x] Documentation détaillée : `docs/SYSTEME_NUMERIQUE_BASE12.md`
+- [x] Référence rapide : `docs/REFERENCE_RAPIDE_NOMBRES.md`
+- [x] Intégré au prompt système `ConfluentTranslator/prompts/ancien-system.txt`
 
 ### 2. Adjectifs (système limité) ✅ FAIT
 - [x] Définir position syntaxique des adjectifs → **na + ADJ + NOM** (épithète) et **NOM-ii-ADJ** (composition)

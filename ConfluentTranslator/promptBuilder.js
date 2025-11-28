@@ -10,6 +10,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { preprocessNumbers } = require('./numberPreprocessor');
 
 /**
  * Charge le template de prompt de base depuis les fichiers
@@ -154,19 +155,28 @@ function formatRootsFallback(roots) {
  * @param {string} variant - 'proto' ou 'ancien'
  * @returns {string} - Prompt complet optimisé
  */
-function buildContextualPrompt(contextResult, variant = 'ancien') {
+function buildContextualPrompt(contextResult, variant = 'ancien', originalText = '') {
   // Charger le template de base
   const basePrompt = loadBaseTemplate(variant);
+
+  // NOUVEAU: Preprocessing des nombres
+  let numbersSection = '';
+  if (originalText) {
+    const numberInfo = preprocessNumbers(originalText);
+    if (numberInfo.hasNumbers && numberInfo.promptSection) {
+      numbersSection = numberInfo.promptSection;
+    }
+  }
 
   // Si fallback, injecter toutes les racines
   if (contextResult.useFallback) {
     const rootsSection = formatRootsFallback(contextResult.rootsFallback);
-    return basePrompt + '\n' + rootsSection;
+    return basePrompt + '\n' + numbersSection + '\n' + rootsSection;
   }
 
   // Sinon, injecter uniquement le vocabulaire pertinent
   const vocabularySection = formatVocabularySection(contextResult.entries);
-  return basePrompt + '\n' + vocabularySection;
+  return basePrompt + '\n' + numbersSection + '\n' + vocabularySection;
 }
 
 /**

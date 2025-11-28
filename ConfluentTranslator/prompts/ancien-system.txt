@@ -46,6 +46,61 @@ Autres:
 - zo/zom/zob/zoe = négation
 - ka = question (fin)
 
+# SYSTÈME DE NOMBRES (BASE 12)
+
+Les Siliaska utilisent la BASE 12 (douze) pour compter, basée sur :
+- 12 phalanges sur 4 doigts (comptage corporel)
+- 12 cycles lunaires par année (cosmologie)
+
+## Chiffres de base (0-12)
+
+0 = zaro (zéro)
+1 = iko (un)
+2 = diku (deux)
+3 = tiru (trois)
+4 = katu (quatre)
+5 = penu (cinq)
+6 = seku (six)
+7 = sivu (sept)
+8 = oktu (huit)
+9 = novu (neuf)
+10 = deku (dix)
+11 = levu (onze)
+12 = tolu (douze, "une douzaine")
+
+## Puissances de 12
+
+12 = tolu (douzaine)
+144 = tolusa (grosse, composition: tol-u-sa)
+1728 = toluaa (confluence de douzaines, composition: tol-aa-tol)
+20736 = tolumako (grande douzaine, composition: tol-u-mako)
+
+## Construction des nombres
+
+Structure : COEFFICIENT + tolu + UNITÉ
+
+Exemples :
+- 13 (base 10) = 11 (base 12) = "tolu iko" (douze-un)
+- 25 (base 10) = 21 (base 12) = "diku tolu iko" (deux-douze-un)
+- 37 (base 10) = 31 (base 12) = "tiru tolu iko" (trois-douze-un)
+- 144 (base 10) = 100 (base 12) = "tolusa" (une grosse)
+- 156 (base 10) = 110 (base 12) = "tolusa tolu" (grosse-douze)
+
+## Quantificateurs vagues
+
+- "tiru tiru" = quelques (littéralement "trois trois")
+- "tolu tolu" = beaucoup (littéralement "douze douze")
+- "mako" = grand nombre, beaucoup
+- "pisu" = petit nombre, peu
+
+## Opérations arithmétiques
+
+- Compter = toluk (verbe de tolu)
+- Additionner = samuk (assembler)
+- Soustraire = pasak (prendre)
+- Multiplier = miku + liaison -aa- (mélanger)
+- Diviser = kisun (partager)
+
 # LIAISONS SACRÉES (16) - COMPOSITION UNIQUEMENT
 
 ⚠️  Les liaisons sacrées servent à COMPOSER deux racines, PAS à faire des propositions relatives.
@@ -246,3 +301,61 @@ vo kari = OBJET pierre
 pasak u = prendre + présent (approximation de "manger")
 
 Note: "manger" traduit par "prendre" (verbe le plus proche disponible)
+
+---
+
+## Exemple 4 : Nombres en base 12
+
+**Français:** Trois enfants voient douze oiseaux.
+
+ANALYSE:
+- Nombres : 3 = tiru, 12 = tolu
+- "oiseaux" = apo (racine sacrée)
+- Structure SOV simple
+
+STRATÉGIE:
+- Utiliser nombres de base 12
+- "trois enfants" = tiru naki (nombre + nom, pas de particule)
+- "douze oiseaux" = tolu apo
+- Structure classique avec particules
+
+Ancien Confluent:
+va tiru naki vo tolu apo mirak u
+
+Décomposition:
+va tiru naki = SUJET trois enfant
+vo tolu apo = OBJET douze oiseau
+mirak u = voir + présent
+
+---
+
+**Français:** Vingt-cinq personnes (25 en base 10 = 21 en base 12).
+
+ANALYSE:
+- 25 en base 10 = 2×12 + 1 = "21" en base 12
+- En Confluent : "diku tolu iko" (deux-douze-un)
+
+Ancien Confluent:
+diku tolu iko tori
+
+Décomposition:
+diku tolu iko = deux douze un (= 25 en base 10)
+tori = personne
+
+---
+
+**Français:** Une grosse de poissons (144 poissons).
+
+ANALYSE:
+- 144 = 12² = "tolusa" (grosse)
+- "poissons" = pesa
+- Notion de quantité
+
+Ancien Confluent:
+tolusa pesa
+
+Décomposition:
+tolusa = grosse (144)
+pesa = poisson
+
+Note: En Confluent, les nombres précèdent directement le nom sans particule

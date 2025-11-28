@@ -145,7 +145,7 @@ app.post('/api/debug/prompt', (req, res) => {
     // MÊME CODE QUE /translate
     if (useLexique) {
       const contextResult = analyzeContext(text, lexiques[variant]);
-      systemPrompt = buildContextualPrompt(contextResult, variant);
+      systemPrompt = buildContextualPrompt(contextResult, variant, text);
 
       const promptStats = getPromptStats(systemPrompt, contextResult);
       contextMetadata = {
@@ -196,7 +196,7 @@ app.post('/translate', async (req, res) => {
     // NOUVEAU: Analyse contextuelle et génération de prompt optimisé
     if (useLexique) {
       const contextResult = analyzeContext(text, lexiques[variant]);
-      systemPrompt = buildContextualPrompt(contextResult, variant);
+      systemPrompt = buildContextualPrompt(contextResult, variant, text);
 
       // Générer métadonnées pour Layer 2
       const promptStats = getPromptStats(systemPrompt, contextResult);
