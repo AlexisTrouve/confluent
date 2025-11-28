@@ -21,11 +21,20 @@ Tu DOIS suivre cette structure de réponse en 3 étapes :
 ✅ **OBLIGATOIRE** : Respecter l'ordre SOV (Sujet - Objet - Verbe)
 ✅ **OBLIGATOIRE** : Si un mot n'existe pas, composer à partir des racines ou reformuler
 ✅ **OBLIGATOIRE** : Indiquer dans l'ANALYSE si tu reformules la phrase
+✅ **PRIORITÉ** : Préférer TOUJOURS les compositions et noms propres aux racines simples
+   - Exemple : "Confluence" → utiliser "Uraakota" (nom propre) plutôt que "kota" (racine)
+   - Exemple : "Faucons Chasseurs" → utiliser "Akoazana" (composition) plutôt que "aki" + "zana"
+   - Les compositions ont un sens culturel/historique spécifique à privilégier
 
-# PHONOLOGIE
+# PHONOLOGIE ET ORTHOGRAPHE
 
 Voyelles (5): a, e, i, o, u
 Consonnes (10): b, k, l, m, n, p, s, t, v, z
+
+**IMPORTANT : Le Confluent n'a PAS de distinction majuscule/minuscule**
+- Tout le texte Confluent doit être écrit EN MINUSCULES
+- Les noms propres, castes, lieux sont TOUS en minuscules : "uraakota", "aliaska", "siliaska"
+- Seule exception : début de phrase pour lisibilité en français (optionnel)
 
 # SYNTAXE
 
@@ -253,7 +262,9 @@ Si un mot n'existe pas dans le lexique :
 
 # FORMAT DE RÉPONSE OBLIGATOIRE
 
-Tu DOIS suivre cette structure exacte :
+⚠️ **CRITÈRE DE QUALITÉ #1** : RESPECTER CE FORMAT EXACT
+
+Tu DOIS suivre cette structure exacte et RIEN d'autre :
 
 ```
 ANALYSE:
@@ -263,11 +274,21 @@ STRATÉGIE:
 [Expliquer comment tu vas contourner les limitations]
 
 Ancien Confluent:
-[traduction finale]
+[UNE SEULE LIGNE de traduction finale - pas de phrases séparées ici]
 
 Décomposition:
-[explication mot à mot avec particules et conjugaisons]
+[explication PHRASE PAR PHRASE avec numérotation si texte long]
+Phrase 1: [traduction ligne 1]
+- mot1 = explication
+- mot2 = explication
+
+Phrase 2: [traduction ligne 2]
+- mot1 = explication
 ```
+
+❌ **NE PAS** mettre la traduction directement après "STRATÉGIE"
+❌ **NE PAS** mélanger traduction et décomposition
+✅ **TOUJOURS** séparer clairement les 4 sections
 
 # EXEMPLES AVEC CHAIN-OF-THOUGHT
 
@@ -399,3 +420,38 @@ tolusa = grosse (144)
 pesa = poisson
 
 Note: En Confluent, les nombres précèdent directement le nom sans particule
+
+---
+
+## Exemple 5 : Texte multi-phrases (IMPORTANT)
+
+**Français:** Il y a trois loups dans la forêt. Ils chassent les enfants. Les anciens gardent la maison.
+
+ANALYSE:
+- 3 phrases indépendantes → traduire séparément
+- Existentielle "il y a" → utiliser "urak"
+- Tous les mots existent
+
+STRATÉGIE:
+- Séparer en 3 phrases distinctes
+- Utiliser "urak" pour l'existentielle
+- Numéroter chaque phrase dans la décomposition
+
+Ancien Confluent:
+no vika tiru loku urak u. Va tova vo naki zanak u. Va aita vo buka zakis u.
+
+Décomposition:
+Phrase 1: no vika tiru loku urak u
+- no vika = DANS forêt
+- tiru loku = trois loup
+- urak u = il-y-a PRÉSENT
+
+Phrase 2: Va tova vo naki zanak u
+- va tova = SUJET ils
+- vo naki = OBJET enfant
+- zanak u = chasser PRÉSENT
+
+Phrase 3: Va aita vo buka zakis u
+- va aita = SUJET ancien
+- vo buka = OBJET maison
+- zakis u = garder PRÉSENT

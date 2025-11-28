@@ -11,6 +11,7 @@
 
 /**
  * Tokenize un texte français
+ * - Détecte expressions figées (il y a, y a-t-il, etc.)
  * - Lowercase
  * - Retire ponctuation
  * - Split sur espaces
@@ -25,10 +26,21 @@ function tokenizeFrench(text) {
     'au', 'aux', 'à', 'et', 'ou', 'où', 'est', 'sont'
   ]);
 
-  return text
+  // ÉTAPE 1: Remplacer expressions figées par tokens uniques
+  // (avant tokenisation pour éviter la découpe)
+  let processedText = text
     .toLowerCase()
-    .normalize('NFD') // Normaliser les accents
-    .replace(/[\u0300-\u036f]/g, '') // Retirer les diacritiques
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+
+  // Expressions existentielles → "exister"
+  processedText = processedText
+    .replace(/il\s+y\s+a(?:vait)?/g, 'exister') // il y a, il y avait
+    .replace(/y\s+a-t-il/g, 'exister')          // y a-t-il
+    .replace(/n['']y\s+a-t-il\s+pas/g, 'exister'); // n'y a-t-il pas
+
+  // ÉTAPE 2: Tokenisation normale
+  return processedText
     .replace(/[^\w\s]/g, ' ') // Remplacer ponctuation par espaces
     .split(/\s+/)
     .filter(word => word.length > 0 && !stopWords.has(word));
@@ -36,16 +48,19 @@ function tokenizeFrench(text) {
 
 /**
  * Calcule le nombre maximum d'entrées selon la longueur du texte
- * - < 20 mots: 30 entrées
- * - 20-50 mots: 50 entrées
- * - > 50 mots: 100 entrées
+ * Adapté pour contexte 200k tokens (Claude) / 128k tokens (GPT)
+ * - < 20 mots: 50 entrées
+ * - 20-100 mots: 100 entrées
+ * - 100-300 mots: 200 entrées
+ * - > 300 mots: 400 entrées
  * @param {number} wordCount - Nombre de mots
  * @returns {number} - Nombre max d'entrées
  */
 function calculateMaxEntries(wordCount) {
-  if (wordCount < 20) return 30;
-  if (wordCount <= 50) return 50;
-  return 100;
+  if (wordCount < 20) return 50;
+  if (wordCount <= 100) return 100;
+  if (wordCount <= 300) return 200;
+  return 400;
 }
 
 /**
@@ -153,6 +168,7 @@ function searchWord(word, dictionnaire) {
       results.push({
         mot_francais: entry.mot_francais || key,
         traductions: entry.traductions || [],
+        synonymes_fr: entry.synonymes_fr || [],
         score,
         source: entry.source_files || []
       });
@@ -259,6 +275,7 @@ function expandContext(entries, lexique, maxEntries, expansionLevel = 1) {
             expanded.set(dictEntry.mot_francais || key, {
               mot_francais: dictEntry.mot_francais || key,
               traductions: dictEntry.traductions || [],
+              synonymes_fr: dictEntry.synonymes_fr || [],
               score: 0.7, // Score pour expansion niveau 1
               source: dictEntry.source_files || [],
               expanded: true
@@ -340,7 +357,7 @@ function analyzeContext(text, lexique, options = {}) {
     expansionLevel
   );
 
-  // 5. Fallback si trop de mots manquants (>50% de mots non trouvés)
+  // 5. Fallback si trop de mots manquants (>80% de mots non trouvés)
   const wordsFoundCount = searchResult.wordsFound.length;
   const wordsNotFoundCount = searchResult.wordsNotFound.length;
   const totalWords = wordsFoundCount + wordsNotFoundCount;
@@ -348,8 +365,8 @@ function analyzeContext(text, lexique, options = {}) {
 
   // Activer fallback si :
   // - Aucune entrée trouvée OU
-  // - Couverture < 50% (majorité de mots manquants)
-  const useFallback = expandedEntries.length === 0 || coveragePercent < 50;
+  // - Couverture < 20% (très peu de mots trouvés)
+  const useFallback = expandedEntries.length === 0 || coveragePercent < 20;
   const rootsFallback = useFallback ? extractRoots(lexique) : [];
 
   // 6. Calculer tokens économisés (estimation)

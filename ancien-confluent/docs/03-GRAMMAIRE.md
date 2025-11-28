@@ -268,10 +268,10 @@ tisikari na pisu su  = ces petites pierres-ci
 Va tori vo na nuvi kari pasak at
 "La personne a pris la nouvelle pierre"
 
-Va Nakuura no na mako ura tekis u
+Va nakuura no na mako ura tekis u
 "Les Enfants du Courant vont dans la grande eau"
 
-No Uraakota va aita su ni naki su vo Siliitosa kisun ait
+No uraakota va aita su ni naki su vo Siliitosa kisun ait
 "À la Confluence, les ancêtres ont transmis le Siliitosa (concept) aux enfants"
 ```
 

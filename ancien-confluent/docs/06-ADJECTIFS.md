@@ -67,7 +67,7 @@ Pour les couleurs, le Confluent utilise principalement des métaphores naturelle
 
 | Racine | Forme liée | Sens | Métaphore | Exemple |
 |--------|------------|------|-----------|---------|
-| **kesa** | kes- | gris, cendré | cendre | na kesa apa = aile grise → Aliaska (Ailes-Grises) |
+| **kesa** | kes- | gris, cendré | cendre | na kesa apa = aile grise → aliaska (Ailes-Grises) |
 | **sora** | sor- | doré, lumineux | soleil | na sora eku = étoile dorée |
 | **taku** | tak- | noir, sombre | obscurité | na taku sanu = corps sombre |
 | **ura** | ur- | bleu, azur | eau | na ura zeru = ciel bleu |
@@ -108,7 +108,7 @@ Pour les couleurs, le Confluent utilise principalement des métaphores naturelle
 Va tori vo na tosa sili mirak u
 "La personne observe le bon regard"
 
-Va Nakuura no na mako ura tekis u
+Va nakuura no na mako ura tekis u
 "Les Enfants du Courant vont dans la grande eau"
 
 Va aita su vo na nuvi naki su kisun at
@@ -136,10 +136,10 @@ tovikari na pisu = cette petite pierre-là
 ### Compositions comme noms propres
 
 ```
-No Vukuura (Gouffre-Humide) va Nakukeko tekis at
+No vukuura (Gouffre-Humide) va nakukeko tekis at
 "Dans le Gouffre-Humide, les Enfants des Échos sont allés"
 
-Va Aliaska (Ailes-Grises) vo Siliaska (Regard-Libre) mirak u
+Va aliaska (Ailes-Grises) vo siliaska (Regard-Libre) mirak u
 "Les Ailes-Grises observent le Regard-Libre"
 ```
 
@@ -168,7 +168,7 @@ na zom nuvi aita = ancêtre jamais-jeune = ancien ancestral
 
 ## Notes culturelles
 
-Les Siliaska (le peuple) valorisent certains adjectifs plus que d'autres :
+Les siliaska (le peuple) valorisent certains adjectifs plus que d'autres :
 
 **Valorisés** :
 - **veri** (vrai) - la vérité est sacrée

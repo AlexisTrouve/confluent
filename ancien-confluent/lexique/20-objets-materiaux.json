@@ -374,6 +374,18 @@
           "domaine": "objet_rituel"
         }
       ]
+    },
+    "maison": {
+      "traductions": [
+        {
+          "confluent": "buka",
+          "type": "racine",
+          "forme_liee": "buk",
+          "domaine": "structure",
+          "note": "Habitation, foyer domestique"
+        }
+      ],
+      "synonymes_fr": ["habitation", "demeure", "logis"]
     }
   }
 }

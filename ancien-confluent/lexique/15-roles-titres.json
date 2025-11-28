@@ -5,11 +5,14 @@
     "Arbitre des Esprits": {
       "traductions": [
         {
-          "confluent": "Zakiiumi",
+          "confluent": "zakiiumi",
           "type": "nom_propre",
           "composition": "zak-ii-umi",
           "sens_litteral": "Celui qui EST gardien des esprits",
-          "racines": ["zaki", "umi"],
+          "racines": [
+            "zaki",
+            "umi"
+          ],
           "categorie": "titre_supreme",
           "note": "Entité tutélaire du jeu, pouvoir de réserve"
         }
@@ -22,7 +25,10 @@
           "type": "composition",
           "composition": "sil-u-umi",
           "sens_litteral": "Regard de l'esprit",
-          "racines": ["sili", "umi"],
+          "racines": [
+            "sili",
+            "umi"
+          ],
           "domaine": "titre_spirituel"
         }
       ]
@@ -40,11 +46,14 @@
     "Grand Chef": {
       "traductions": [
         {
-          "confluent": "Makokasi",
+          "confluent": "makokasi",
           "type": "nom_propre",
           "composition": "mak-o-kasi",
           "sens_litteral": "Chef de grandeur",
-          "racines": ["mako", "kasi"],
+          "racines": [
+            "mako",
+            "kasi"
+          ],
           "categorie": "titre"
         }
       ]
@@ -52,11 +61,14 @@
     "Proclamateur": {
       "traductions": [
         {
-          "confluent": "Vokiueka",
+          "confluent": "vokiueka",
           "type": "nom_propre",
           "composition": "vok-i-eka",
           "sens_litteral": "Voix de la totalité",
-          "racines": ["voki", "eka"],
+          "racines": [
+            "voki",
+            "eka"
+          ],
           "categorie": "titre"
         }
       ]
@@ -68,7 +80,10 @@
           "type": "composition",
           "composition": "sek-i-tori",
           "sens_litteral": "Porteur de savoir",
-          "racines": ["seka", "tori"],
+          "racines": [
+            "seka",
+            "tori"
+          ],
           "domaine": "titre"
         }
       ]
@@ -76,23 +91,35 @@
     "Faucon Chasseur": {
       "traductions": [
         {
-          "confluent": "Akoazana",
+          "confluent": "akoazana",
           "type": "nom_propre",
           "composition": "ak-oa-zana",
           "sens_litteral": "Faucon vainqueur de la chasse",
-          "racines": ["aki", "zana"],
+          "racines": [
+            "aki",
+            "zana"
+          ],
           "categorie": "caste"
         }
+      ],
+      "synonymes_fr": [
+        "faucon chasseur",
+        "faucons chasseurs",
+        "faucon",
+        "faucons"
       ]
     },
     "Faucon vétéran": {
       "traductions": [
         {
-          "confluent": "Akiuaita",
+          "confluent": "akiuaita",
           "type": "composition",
           "composition": "ak-i-aita",
           "sens_litteral": "Faucon des ancêtres",
-          "racines": ["aki", "aita"],
+          "racines": [
+            "aki",
+            "aita"
+          ],
           "domaine": "titre"
         }
       ]
@@ -104,9 +131,17 @@
           "type": "composition",
           "composition": "zan-a-tori",
           "sens_litteral": "Personne de la chasse",
-          "racines": ["zana", "tori"],
+          "racines": [
+            "zana",
+            "tori"
+          ],
           "domaine": "titre"
         }
+      ],
+      "synonymes_fr": [
+        "chasseur",
+        "chasseurs",
+        "traqueurs"
       ]
     },
     "guerrier": {
@@ -116,7 +151,10 @@
           "type": "composition",
           "composition": "ok-i-tori",
           "sens_litteral": "Personne de l'épreuve",
-          "racines": ["oki", "tori"],
+          "racines": [
+            "oki",
+            "tori"
+          ],
           "domaine": "titre"
         }
       ]
@@ -128,7 +166,10 @@
           "type": "composition",
           "composition": "ark-u-tori",
           "sens_litteral": "Personne de l'arc",
-          "racines": ["arku", "tori"],
+          "racines": [
+            "arku",
+            "tori"
+          ],
           "domaine": "titre"
         }
       ]
@@ -140,7 +181,10 @@
           "type": "composition",
           "composition": "tak-i-piki",
           "sens_litteral": "Porteur de lance",
-          "racines": ["taka", "piki"],
+          "racines": [
+            "taka",
+            "piki"
+          ],
           "domaine": "titre"
         }
       ]
@@ -152,7 +196,10 @@
           "type": "composition",
           "composition": "kas-i-oki",
           "sens_litteral": "Chef de l'épreuve",
-          "racines": ["kasi", "oki"],
+          "racines": [
+            "kasi",
+            "oki"
+          ],
           "domaine": "titre"
         }
       ]
@@ -164,7 +211,10 @@
           "type": "composition",
           "composition": "vel-a-tori",
           "sens_litteral": "Personne de vigile",
-          "racines": ["vela", "tori"],
+          "racines": [
+            "vela",
+            "tori"
+          ],
           "domaine": "titre"
         }
       ]
@@ -172,13 +222,24 @@
     "Aile-Grise": {
       "traductions": [
         {
-          "confluent": "Aliaska",
+          "confluent": "aliaska",
           "type": "nom_propre",
           "composition": "al-i-aska",
           "sens_litteral": "Porteur de la grue libre",
-          "racines": ["alu", "aska"],
+          "racines": [
+            "alu",
+            "aska"
+          ],
           "categorie": "caste"
         }
+      ],
+      "synonymes_fr": [
+        "aile-grise",
+        "ailes-grises",
+        "aile grise",
+        "ailes grises",
+        "aile",
+        "ailes"
       ]
     },
     "chaman": {
@@ -188,7 +249,10 @@
           "type": "composition",
           "composition": "um-i-tori",
           "sens_litteral": "Personne de l'esprit",
-          "racines": ["umi", "tori"],
+          "racines": [
+            "umi",
+            "tori"
+          ],
           "domaine": "titre_spirituel"
         }
       ]
@@ -200,7 +264,11 @@
           "type": "composition",
           "composition": "al-u-zak-i-tori",
           "sens_litteral": "Personne gardienne des grues",
-          "racines": ["alu", "zaki", "tori"],
+          "racines": [
+            "alu",
+            "zaki",
+            "tori"
+          ],
           "domaine": "titre"
         }
       ]
@@ -212,7 +280,10 @@
           "type": "composition",
           "composition": "tek-i-umi",
           "sens_litteral": "Chemin des esprits",
-          "racines": ["teki", "umi"],
+          "racines": [
+            "teki",
+            "umi"
+          ],
           "domaine": "titre_spirituel"
         }
       ]
@@ -224,7 +295,10 @@
           "type": "composition",
           "composition": "zak-i-loku",
           "sens_litteral": "Gardien des lois",
-          "racines": ["zaki", "loku"],
+          "racines": [
+            "zaki",
+            "loku"
+          ],
           "domaine": "titre"
         }
       ]
@@ -232,11 +306,14 @@
     "Passe-bien": {
       "traductions": [
         {
-          "confluent": "Takitosa",
+          "confluent": "takitosa",
           "type": "nom_propre",
           "composition": "tak-i-tosa",
           "sens_litteral": "Porteur du bien",
-          "racines": ["taka", "tosa"],
+          "racines": [
+            "taka",
+            "tosa"
+          ],
           "categorie": "caste"
         }
       ]
@@ -244,11 +321,14 @@
     "Porteur de Flamme": {
       "traductions": [
         {
-          "confluent": "Takiusuki",
+          "confluent": "takiusuki",
           "type": "nom_propre",
           "composition": "tak-i-suki",
           "sens_litteral": "Porteur du feu",
-          "racines": ["taka", "suki"],
+          "racines": [
+            "taka",
+            "suki"
+          ],
           "categorie": "titre_rituel"
         }
       ]
@@ -260,7 +340,10 @@
           "type": "composition",
           "composition": "mak-o-neka",
           "sens_litteral": "Grand de l'œuvre",
-          "racines": ["mako", "neka"],
+          "racines": [
+            "mako",
+            "neka"
+          ],
           "domaine": "titre"
         }
       ]
@@ -272,7 +355,10 @@
           "type": "composition",
           "composition": "nek-a-kari",
           "sens_litteral": "Faiseur avec pierre",
-          "racines": ["neka", "kari"],
+          "racines": [
+            "neka",
+            "kari"
+          ],
           "domaine": "titre"
         }
       ]
@@ -284,7 +370,10 @@
           "type": "composition",
           "composition": "kov-a-tori",
           "sens_litteral": "Personne de la gravure",
-          "racines": ["kova", "tori"],
+          "racines": [
+            "kova",
+            "tori"
+          ],
           "domaine": "titre"
         }
       ]
@@ -296,7 +385,10 @@
           "type": "composition",
           "composition": "kol-u-tori",
           "sens_litteral": "Personne des couleurs",
-          "racines": ["kolu", "tori"],
+          "racines": [
+            "kolu",
+            "tori"
+          ],
           "domaine": "titre"
         }
       ]
@@ -308,7 +400,10 @@
           "type": "composition",
           "composition": "vas-i-tori",
           "sens_litteral": "Personne du tissage",
-          "racines": ["vasi", "tori"],
+          "racines": [
+            "vasi",
+            "tori"
+          ],
           "domaine": "titre"
         }
       ]
@@ -320,7 +415,10 @@
           "type": "composition",
           "composition": "pis-u-tori",
           "sens_litteral": "Personne du poisson",
-          "racines": ["pisu", "tori"],
+          "racines": [
+            "pisu",
+            "tori"
+          ],
           "domaine": "titre"
         }
       ]
@@ -332,7 +430,10 @@
           "type": "composition",
           "composition": "vuk-u-tori",
           "sens_litteral": "Personne du gouffre",
-          "racines": ["vuku", "tori"],
+          "racines": [
+            "vuku",
+            "tori"
+          ],
           "domaine": "titre"
         }
       ]
@@ -344,7 +445,10 @@
           "type": "composition",
           "composition": "ait-a-tori",
           "sens_litteral": "Personne avec ancêtre",
-          "racines": ["aita", "tori"],
+          "racines": [
+            "aita",
+            "tori"
+          ],
           "domaine": "titre"
         }
       ]
@@ -396,11 +500,21 @@
           "type": "composition",
           "composition": "kot-a-tori",
           "sens_litteral": "Personne d'union",
-          "racines": ["kota", "tori"],
+          "racines": [
+            "kota",
+            "tori"
+          ],
           "domaine": "famille"
         }
       ],
-      "synonymes_fr": ["épouse"]
+      "synonymes_fr": [
+        "épouse",
+        "épouses",
+        "mari",
+        "maris",
+        "conjoint",
+        "conjoints"
+      ]
     }
   }
 }

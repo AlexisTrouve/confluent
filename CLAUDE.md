@@ -58,10 +58,16 @@ confluent/
 
 ## Règles linguistiques (résumé)
 
-### Phonétique
+### Phonétique et Orthographe
 - **Consonnes (10):** b, k, l, m, n, p, s, t, v, z
 - **Voyelles actives (5):** a, e, i, o, u
 - **Voyelles réservées:** y, é, è (expansion future)
+
+**⚠️ IMPORTANT : Pas de majuscules en Confluent**
+- Le Confluent n'a PAS de distinction majuscule/minuscule
+- Tout le texte Confluent est écrit en MINUSCULES
+- Les noms propres, castes, lieux sont TOUS en minuscules : "uraakota", "siliaska", "aliaska"
+- Les lexiques JSON stockent tout en minuscules
 
 ### Structure des racines
 - Toute racine **finit par CV** (consonne + voyelle)

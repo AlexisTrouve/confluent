@@ -6,7 +6,7 @@ Ce document recense tout le vocabulaire validé et prêt à l'usage.
 
 ## Nom du peuple
 
-### Siliaska
+### siliaska
 
 **Sens :** "Les porteurs du regard libre"
 
@@ -14,7 +14,7 @@ Ce document recense tout le vocabulaire validé et prêt à l'usage.
 ```
 sili (regard) + -i- (agent actif) + aska (libre)
      ↓
-sil- (forme liée) + i + aska = Siliaska
+sil- (forme liée) + i + aska = siliaska
 ```
 
 **Glyphes :** [SILI] + [-i-] + [ASKA]
@@ -25,28 +25,28 @@ sil- (forme liée) + i + aska = Siliaska
 
 | Caste | Nom Confluent | Composition | Sens littéral | Racines sacrées |
 |-------|---------------|-------------|---------------|-----------------|
-| Terre | **Nakukeko** | nak-u-keko | Enfants de l'écho | 0 |
-| Eau | **Nakuura** | nak-u-ura | Enfants de l'eau | 1 (ura) |
-| Air | **Aliaska** | al-i-aska | Porteurs de la grue libre | 2 (alu, aska) |
-| Feu | **Akoazana** | ak-oa-zana | Faucon vainqueur de la chasse | 1 (aki) |
-| Éther | **Takitosa** | tak-i-tosa | Porteurs du bien | 0 |
+| Terre | **nakukeko** | nak-u-keko | Enfants de l'écho | 0 |
+| Eau | **nakuura** | nak-u-ura | Enfants de l'eau | 1 (ura) |
+| Air | **aliaska** | al-i-aska | Porteurs de la grue libre | 2 (alu, aska) |
+| Feu | **akoazana** | ak-oa-zana | Faucon vainqueur de la chasse | 1 (aki) |
+| Éther | **takitosa** | tak-i-tosa | Porteurs du bien | 0 |
 
 ### Groupe spirituel suprême
 
 | Groupe | Nom Confluent | Composition | Sens littéral | Racines sacrées |
 |--------|---------------|-------------|---------------|-----------------|
-| Voix de l'Aurore | **Oraumi** | or-a-umi | Aurore avec esprit | 2 (ora, umi) |
+| Voix de l'Aurore | **oraumi** | or-a-umi | Aurore avec esprit | 2 (ora, umi) |
 
 ### Correspondance avec les noms français
 
 | Nom français | Nom Confluent | Rôle |
 |--------------|---------------|------|
-| Enfants des Échos | **Nakukeko** | Souterrains, mineurs, artisans |
-| Enfants du Courant | **Nakuura** | Pêcheurs, villages sur pilotis |
-| Ailes-Grises | **Aliaska** | Dresseurs de grues, chamans |
-| Faucons Chasseurs | **Akoazana** | Élite militaire/judiciaire |
-| Passes-bien | **Takitosa** | Marchands, médiateurs |
-| Voix de l'Aurore | **Oraumi** | Chamans suprêmes, gardiens des lois |
+| Enfants des Échos | **nakukeko** | Souterrains, mineurs, artisans |
+| Enfants du Courant | **nakuura** | Pêcheurs, villages sur pilotis |
+| Ailes-Grises | **aliaska** | Dresseurs de grues, chamans |
+| Faucons Chasseurs | **akoazana** | Élite militaire/judiciaire |
+| Passes-bien | **takitosa** | Marchands, médiateurs |
+| Voix de l'Aurore | **oraumi** | Chamans suprêmes, gardiens des lois |
 
 ---
 
@@ -54,12 +54,12 @@ sil- (forme liée) + i + aska = Siliaska
 
 | Nom français | Nom Confluent | Composition | Sens littéral |
 |--------------|---------------|-------------|---------------|
-| La Confluence | **Uraakota** | ur-aa-kota | Eau mêlée à l'union |
-| Gouffre Humide | **Vukuura** | vuk-u-ura | Gouffre de l'eau |
-| Antres des Échos | **Kekutoka** | kek-u-toka | Écho de la terre |
-| Cercles de Vigile | **Sikuvela** | sik-u-vela | Cercle de la vigile |
-| Halls des Serments | **Talusavu** | tal-u-savu | Hall du serment |
-| Grande Fresque | **Ekakova** | ek-a-kova | Totalité avec peinture |
+| La Confluence | **uraakota** | ur-aa-kota | Eau mêlée à l'union |
+| Gouffre Humide | **vukuura** | vuk-u-ura | Gouffre de l'eau |
+| Antres des Échos | **kekutoka** | kek-u-toka | Écho de la terre |
+| Cercles de Vigile | **sikuvela** | sik-u-vela | Cercle de la vigile |
+| Halls des Serments | **talusavu** | tal-u-savu | Hall du serment |
+| Grande Fresque | **ekakova** | ek-a-kova | Totalité avec peinture |
 
 ---
 
@@ -76,7 +76,7 @@ Les groupes les plus sacrés (chamans) en contiennent plusieurs.
 
 | Expression | Composition | Résultat |
 |------------|-------------|----------|
-| Porteur du regard libre | sil-i-aska | **Siliaska** |
+| Porteur du regard libre | sil-i-aska | **siliaska** |
 | L'eau du ciel | ur-u-zeru | **Uruzeru** |
 | Enfant de l'ancêtre | nak-u-aita | **Nakuaita** |
 | Celui qui transmet le savoir | kis-i-seka | **Kisiseka** |

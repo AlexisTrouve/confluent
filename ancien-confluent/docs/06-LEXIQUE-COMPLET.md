@@ -64,15 +64,15 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 
 | Français | Confluent | Composition | Sens littéral |
 |----------|-----------|-------------|---------------|
-| Le peuple (Siliaska) | **Siliaska** | sil-**i**-aska | Porteurs du regard libre |
+| Le peuple (siliaska) | **siliaska** | sil-**i**-aska | Porteurs du regard libre |
 | Ciels-clairs | **Zeriiora** | zer-**ii**-ora | Ceux qui SONT ciel-aurore |
 | Sans-ciels | **Zokuzeru** | zok-**u**-zeru | Étrangers au ciel |
-| Voix de l'Aurore | **Oraumi** | or-**a**-umi | Aurore avec esprit |
-| Ailes-Grises | **Aliaska** | al-**i**-aska | Grue portant liberté |
-| Faucons Chasseurs | **Akoazana** | ak-**oa**-zana | Faucon vainqueur de chasse |
-| Enfants du Courant | **Nakuura** | nak-**u**-ura | Enfants de l'eau |
-| Enfants des Échos | **Nakukeko** | nak-**u**-keko | Enfants de l'écho |
-| Passes-bien | **Takitosa** | tak-**i**-tosa | Porteurs du bien |
+| Voix de l'Aurore | **oraumi** | or-**a**-umi | Aurore avec esprit |
+| Ailes-Grises | **aliaska** | al-**i**-aska | Grue portant liberté |
+| Faucons Chasseurs | **akoazana** | ak-**oa**-zana | Faucon vainqueur de chasse |
+| Enfants du Courant | **nakuura** | nak-**u**-ura | Enfants de l'eau |
+| Enfants des Échos | **nakukeko** | nak-**u**-keko | Enfants de l'écho |
+| Passes-bien | **takitosa** | tak-**i**-tosa | Porteurs du bien |
 | Gardiens de la Confluence | **Zakiuraakota** | zak-**i**-ur-**aa**-kota | Gardiens de l'eau-mêlée-à-union |
 
 ### Système des Cinq Castes
@@ -105,7 +105,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 
 | Français | Confluent | Composition | Sens littéral |
 |----------|-----------|-------------|---------------|
-| Hall des Serments | **Talusavu** | tal-**u**-savu | Hall du serment |
+| Hall des Serments | **talusavu** | tal-**u**-savu | Hall du serment |
 | Conseil du Village | **Koniuloku** | kon-**i**-loku | Assemblée du lieu |
 | Autel ancestral | **Asauaita** | as-**a**-aita | Sacré avec ancêtre |
 
@@ -154,7 +154,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 | Français | Confluent | Composition | Sens littéral |
 |----------|-----------|-------------|---------------|
 | Artefact multi-générationnel | **Tavueaaita** | tav-**ea**-aita | Œuvre vers ancêtres |
-| Grande Fresque | **Ekakova** | ek-**a**-kova | Totalité avec peinture |
+| Grande Fresque | **ekakova** | ek-**a**-kova | Totalité avec peinture |
 | Fenêtre temporelle | **Siliutemi** | sil-**i**-temi | Regard du temps |
 | Autel des Pionniers | **Asautekiena** | as-**a**-tek-**i**-ena | Sacré avec chemin d'origine |
 
@@ -168,9 +168,9 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 |----------|-----------|-------------|---------------|
 | Rituel du Regard Partagé | **Asausiliaakota** | as-**a**-sil-**aa**-kota | Sacré avec regard-mêlé-à-union |
 | Pèlerinage | **Tekiuasa** | tek-**i**-asa | Chemin du sacré |
-| Regard libre (état) | **Siliaska** | sil-**i**-aska | Regard de liberté |
+| Regard libre (état) | **siliaska** | sil-**i**-aska | Regard de liberté |
 | Rites funéraires | **Asauosi** | as-**a**-osi | Sacré avec mort |
-| Cercles de Vigile | **Sikuvela** | sik-**u**-vela | Cercle de vigile |
+| Cercles de Vigile | **sikuvela** | sik-**u**-vela | Cercle de vigile |
 | Communion des esprits | **Kotaaumi** | kot-**aa**-umi | Union mêlée aux esprits |
 
 ### Traditions sacrées
@@ -204,8 +204,8 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 
 | Français | Confluent | Composition | Sens littéral |
 |----------|-----------|-------------|---------------|
-| La Confluence | **Uraakota** | ur-**aa**-kota | Eau mêlée à union |
-| Gouffre Humide | **Vukuura** | vuk-**u**-ura | Gouffre de l'eau |
+| La Confluence | **uraakota** | ur-**aa**-kota | Eau mêlée à union |
+| Gouffre Humide | **vukuura** | vuk-**u**-ura | Gouffre de l'eau |
 | Gorge Profonde | **Vukumako** | vuk-**u**-mako | Gouffre du grand |
 | Ruines des Premiers Ancêtres | **Kariuaitaena** | kar-**i**-aita-ena | Pierre des ancêtres-origine |
 | Village fortifié | **Lokuzaki** | lok-**u**-zaki | Lieu de garde |
@@ -215,8 +215,8 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 
 | Français | Confluent | Composition | Sens littéral |
 |----------|-----------|-------------|---------------|
-| Cercles de Vigile | **Sikuvela** | sik-**u**-vela | Cercle de vigile |
-| Antres des Échos | **Kekutoka** | kek-**u**-toka | Écho de la terre |
+| Cercles de Vigile | **sikuvela** | sik-**u**-vela | Cercle de vigile |
+| Antres des Échos | **kekutoka** | kek-**u**-toka | Écho de la terre |
 | Village sur pilotis | **Lokuurabuki** | lok-**u**-ur-**a**-buki | Lieu d'eau avec bois |
 | Route sécurisée | **Roviuzaki** | kov-**i**-zaki | Route de garde |
 | Avant-poste côtier | **Lokuseli** | lok-**u**-seli | Lieu du sel |
@@ -282,7 +282,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 
 | Français | Confluent | Composition | Sens littéral |
 |----------|-----------|-------------|---------------|
-| Passe-bien | **Takitosa** | tak-**i**-tosa | Porteur du bien |
+| Passe-bien | **takitosa** | tak-**i**-tosa | Porteur du bien |
 | Porteur de Flamme | **Takisuki** | tak-**i**-suki | Porteur de feu |
 | Maître artisan | **Kasiiutavu** | kas-**ii**-tavu | Celui qui EST guide du travail |
 | Façonneur de pierre | **Nekiikari** | nek-**ii**-kari | Celui qui EST créateur de pierre |
@@ -329,7 +329,7 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 
 | Français | Confluent | Composition | Sens littéral |
 |----------|-----------|-------------|---------------|
-| Regard libre | **Siliaska** | sil-**i**-aska | Regard de liberté |
+| Regard libre | **siliaska** | sil-**i**-aska | Regard de liberté |
 | Confluence/Union | **Kota** | kota | Union |
 | Harmonie | **Kotaapaki** | kot-**aa**-paku | Union mêlée à paix |
 | Sagesse | **Sekaamori** | sek-**aa**-mori | Savoir mêlé à mémoire |
@@ -757,12 +757,12 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 |-----------|----------|------|
 | **Aita** | Ancêtre | racine sacrée |
 | **Anu** | Âme | racine sacrée |
-| **Aliaska** | Ailes-Grises | composé |
+| **aliaska** | Ailes-Grises | composé |
 | **Asa** | Sacré | racine sacrée |
 | **Aska** | Liberté | racine sacrée |
 | **Daku** | Sombre | racine |
 | **Eka** | Totalité | racine sacrée |
-| **Ekakova** | Grande Fresque | composé |
+| **ekakova** | Grande Fresque | composé |
 | **Kari** | Pierre | racine |
 | **Kasi** | Chef/Guide | racine |
 | **Kota** | Union | racine |
@@ -773,25 +773,25 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 | **Mitu** | Famille | racine |
 | **Mori** | Mémoire | racine |
 | **Naki** | Enfant | racine |
-| **Nakukeko** | Enfants des Échos | composé |
-| **Nakuura** | Enfants du Courant | composé |
+| **nakukeko** | Enfants des Échos | composé |
+| **nakuura** | Enfants du Courant | composé |
 | **Oki** | Épreuve | racine sacrée |
 | **Ora** | Aurore | racine sacrée |
-| **Oraumi** | Voix de l'Aurore | composé |
+| **oraumi** | Voix de l'Aurore | composé |
 | **Osi** | Mort | racine sacrée |
 | **Paki** | Paix | racine |
 | **Pisu** | Petit | racine |
 | **Riku** | Cercle | racine |
-| **Sikuvela** | Cercles de Vigile | composé |
+| **sikuvela** | Cercles de Vigile | composé |
 | **Savu** | Serment | racine |
 | **Seka** | Savoir | racine |
 | **Sili** | Regard | racine |
-| **Siliaska** | Regard libre / Le peuple | composé |
+| **siliaska** | Regard libre / Le peuple | composé |
 | **Sinu** | Signe | racine |
 | **Sora** | Soleil/Lumière | racine |
 | **Suki** | Feu | racine |
 | **Talu** | Hall | racine |
-| **Talusavu** | Halls des Serments | composé |
+| **talusavu** | Halls des Serments | composé |
 | **Teki** | Chemin | racine |
 | **Temi** | Temps | racine |
 | **Toka** | Terre | racine |
@@ -799,13 +799,13 @@ Ce document traduit l'ensemble du vocabulaire de la Civilisation de la Confluenc
 | **Tosa** | Bien/Bon | racine |
 | **Umi** | Esprit | racine sacrée |
 | **Ura** | Eau | racine sacrée |
-| **Uraakota** | La Confluence | composé |
+| **uraakota** | La Confluence | composé |
 | **Vali** | Valeur | racine |
 | **Varu** | Guerre | racine |
 | **Vela** | Vigile | racine |
 | **Veri** | Vérité | racine |
 | **Vuku** | Gouffre | racine |
-| **Vukuura** | Gouffre Humide | composé |
+| **vukuura** | Gouffre Humide | composé |
 | **Zaki** | Garder/Justice | racine |
 | **Zeru** | Ciel | racine |
 | **Zoka** | Étranger | racine |

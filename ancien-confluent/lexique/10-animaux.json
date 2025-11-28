@@ -12,16 +12,21 @@
           "note": "Animal sacré central dans la culture"
         }
       ],
-      "synonymes_fr": ["grues"]
+      "synonymes_fr": [
+        "grues"
+      ]
     },
     "Regards-Libres": {
       "traductions": [
         {
-          "confluent": "Aruaska",
+          "confluent": "aruaska",
           "type": "composition",
           "composition": "al-u-aska",
           "sens_litteral": "Grue de liberté",
-          "racines": ["alu", "aska"],
+          "racines": [
+            "alu",
+            "aska"
+          ],
           "categorie": "animal_sacre",
           "note": "Grues domestiquées, messagers sacrés"
         }
@@ -30,11 +35,14 @@
     "grue cendrée": {
       "traductions": [
         {
-          "confluent": "Arusenu",
+          "confluent": "arusenu",
           "type": "composition",
           "composition": "al-u-senu",
           "sens_litteral": "Grue de cendre",
-          "racines": ["alu", "senu"],
+          "racines": [
+            "alu",
+            "senu"
+          ],
           "categorie": "animal"
         }
       ]
@@ -60,7 +68,9 @@
           "note": "Animal générique"
         }
       ],
-      "synonymes_fr": ["animal"]
+      "synonymes_fr": [
+        "animal"
+      ]
     },
     "bête sacrée": {
       "traductions": [
@@ -69,7 +79,10 @@
           "type": "composition",
           "composition": "as-a-betu",
           "sens_litteral": "Sacré avec bête",
-          "racines": ["asa", "betu"],
+          "racines": [
+            "asa",
+            "betu"
+          ],
           "categorie": "animal_sacre"
         }
       ]
@@ -81,7 +94,10 @@
           "type": "composition",
           "composition": "zan-u-betu",
           "sens_litteral": "Bête de chasse",
-          "racines": ["zana", "betu"],
+          "racines": [
+            "zana",
+            "betu"
+          ],
           "domaine": "animal"
         }
       ]
@@ -104,7 +120,10 @@
           "type": "composition",
           "composition": "pis-u-nura",
           "sens_litteral": "Poisson de rivière",
-          "racines": ["pisu", "nura"],
+          "racines": [
+            "pisu",
+            "nura"
+          ],
           "domaine": "animal"
         }
       ]
@@ -127,7 +146,10 @@
           "type": "composition",
           "composition": "sep-u-ura",
           "sens_litteral": "Serpent de l'eau",
-          "racines": ["sepu", "ura"],
+          "racines": [
+            "sepu",
+            "ura"
+          ],
           "domaine": "animal"
         }
       ]
@@ -150,7 +172,10 @@
           "type": "composition",
           "composition": "ap-i-zana",
           "sens_litteral": "Oiseau de chasse",
-          "racines": ["apo", "zana"],
+          "racines": [
+            "apo",
+            "zana"
+          ],
           "domaine": "animal"
         }
       ]
@@ -162,7 +187,10 @@
           "type": "composition",
           "composition": "zo-mira",
           "sens_litteral": "Sans vue",
-          "racines": ["zo", "mira"],
+          "racines": [
+            "zo",
+            "mira"
+          ],
           "domaine": "animal",
           "note": "Créature jamais observée"
         }
@@ -186,7 +214,9 @@
           "type": "composition",
           "composition": "loku + su",
           "sens_litteral": "Loups (pluriel)",
-          "racines": ["loku"],
+          "racines": [
+            "loku"
+          ],
           "domaine": "animal"
         }
       ]

@@ -1,4 +1,4 @@
-require('dotenv').config({ path: '../.env' });
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
@@ -12,6 +12,8 @@ const {
 } = require('./lexiqueLoader');
 const { analyzeContext } = require('./contextAnalyzer');
 const { buildContextualPrompt, getBasePrompt, getPromptStats } = require('./promptBuilder');
+const { buildReverseIndex: buildConfluentIndex } = require('./reverseIndexBuilder');
+const { translateConfluentToFrench, translateConfluentDetailed } = require('./confluentToFrench');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -27,6 +29,7 @@ const ancienPrompt = fs.readFileSync(path.join(__dirname, 'prompts', 'ancien-sys
 const baseDir = path.join(__dirname, '..');
 let lexiques = { proto: null, ancien: null };
 let reverseIndexes = { proto: null, ancien: null };
+let confluentIndexes = { proto: null, ancien: null };
 
 function reloadLexiques() {
   console.log('Loading lexiques...');
@@ -35,7 +38,12 @@ function reloadLexiques() {
     proto: buildReverseIndex(lexiques.proto),
     ancien: buildReverseIndex(lexiques.ancien)
   };
+  confluentIndexes = {
+    proto: buildConfluentIndex(lexiques.proto),
+    ancien: buildConfluentIndex(lexiques.ancien)
+  };
   console.log('Lexiques loaded successfully');
+  console.log(`Confluent→FR index: ${Object.keys(confluentIndexes.ancien || {}).length} entries`);
 }
 
 // Initial load
@@ -226,7 +234,7 @@ app.post('/translate', async (req, res) => {
 
       const message = await anthropic.messages.create({
         model: model,
-        max_tokens: 1024,
+        max_tokens: 8192, // Max pour Claude Sonnet/Haiku 4.5
         system: systemPrompt,
         messages: [
           { role: 'user', content: text }
@@ -243,6 +251,7 @@ app.post('/translate', async (req, res) => {
 
       const completion = await openai.chat.completions.create({
         model: model,
+        max_tokens: 16384, // Max pour GPT-4o et GPT-4o-mini
         messages: [
           { role: 'system', content: systemPrompt },
           { role: 'user', content: text }
@@ -355,6 +364,92 @@ function parseTranslationResponse(response) {
   };
 }
 
+// Raw translation endpoint (for debugging - returns unprocessed LLM output)
+app.post('/api/translate/raw', async (req, res) => {
+  const { text, target, provider, model, useLexique = true } = req.body;
+
+  if (!text || !target || !provider || !model) {
+    return res.status(400).json({ error: 'Missing parameters' });
+  }
+
+  const variant = target === 'proto' ? 'proto' : 'ancien';
+
+  try {
+    let systemPrompt;
+    let contextMetadata = null;
+
+    if (useLexique) {
+      const contextResult = analyzeContext(text, lexiques[variant]);
+      systemPrompt = buildContextualPrompt(contextResult, variant, text);
+
+      const promptStats = getPromptStats(systemPrompt, contextResult);
+      contextMetadata = {
+        wordsFound: contextResult.metadata.wordsFound,
+        wordsNotFound: contextResult.metadata.wordsNotFound,
+        entriesUsed: contextResult.metadata.entriesUsed,
+        totalLexiqueSize: contextResult.metadata.totalLexiqueSize,
+        tokensFullLexique: promptStats.fullLexiqueTokens,
+        tokensUsed: promptStats.promptTokens,
+        tokensSaved: promptStats.tokensSaved,
+        savingsPercent: promptStats.savingsPercent,
+        useFallback: contextResult.useFallback,
+        expansionLevel: contextResult.metadata.expansionLevel
+      };
+    } else {
+      systemPrompt = getBasePrompt(variant);
+    }
+
+    let rawResponse;
+
+    if (provider === 'anthropic') {
+      const anthropic = new Anthropic({
+        apiKey: process.env.ANTHROPIC_API_KEY,
+      });
+
+      const message = await anthropic.messages.create({
+        model: model,
+        max_tokens: 8192, // Max pour Claude Sonnet/Haiku 4.5
+        system: systemPrompt,
+        messages: [
+          { role: 'user', content: text }
+        ]
+      });
+
+      rawResponse = message.content[0].text;
+
+    } else if (provider === 'openai') {
+      const openai = new OpenAI({
+        apiKey: process.env.OPENAI_API_KEY,
+      });
+
+      const completion = await openai.chat.completions.create({
+        model: model,
+        max_tokens: 16384, // Max pour GPT-4o et GPT-4o-mini
+        messages: [
+          { role: 'system', content: systemPrompt },
+          { role: 'user', content: text }
+        ]
+      });
+
+      rawResponse = completion.choices[0].message.content;
+    } else {
+      return res.status(400).json({ error: 'Unknown provider' });
+    }
+
+    // Retourner la réponse BRUTE sans parsing
+    res.json({
+      raw_output: rawResponse,
+      metadata: contextMetadata,
+      length: rawResponse.length,
+      lines: rawResponse.split('\n').length
+    });
+
+  } catch (error) {
+    console.error('Translation error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // Batch translation endpoint
 app.post('/api/translate/batch', async (req, res) => {
   const { words, target = 'ancien' } = req.body;
@@ -380,6 +475,34 @@ app.post('/api/translate/batch', async (req, res) => {
   }
 
   res.json({ target, results });
+});
+
+// Confluent → French translation endpoint (traduction brute)
+app.post('/api/translate/conf2fr', (req, res) => {
+  const { text, variant = 'ancien', detailed = false } = req.body;
+
+  if (!text) {
+    return res.status(400).json({ error: 'Missing parameter: text' });
+  }
+
+  const variantKey = variant === 'proto' ? 'proto' : 'ancien';
+
+  if (!confluentIndexes[variantKey]) {
+    return res.status(500).json({ error: `Confluent index for ${variantKey} not loaded` });
+  }
+
+  try {
+    if (detailed) {
+      const result = translateConfluentDetailed(text, confluentIndexes[variantKey]);
+      res.json(result);
+    } else {
+      const result = translateConfluentToFrench(text, confluentIndexes[variantKey]);
+      res.json(result);
+    }
+  } catch (error) {
+    console.error('Confluent→FR translation error:', error);
+    res.status(500).json({ error: error.message });
+  }
 });
 
 app.listen(PORT, () => {

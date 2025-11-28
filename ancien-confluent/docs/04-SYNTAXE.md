@@ -148,7 +148,7 @@ Va tori vo asa zob mirak u ul
 Va naki vo seka zo sekam en es
 "L'enfant veut ne pas connaître le savoir (dans le futur)"
 
-Va Oraumi vo veri zom kisun ait ul
+Va oraumi vo veri zom kisun ait ul
 "Les Voix de l'Aurore n'ont jamais pu transmettre la vérité (ancestral)"
 ```
 
@@ -159,7 +159,7 @@ Va Oraumi vo veri zom kisun ait ul
 ### Avec lieu, pluriel, passé ancestral
 
 ```
-No Vukuura va aita su ni naki su vo seka su kisun ait
+No vukuura va aita su ni naki su vo seka su kisun ait
 [DANS] Gouffre.Humide [SUJET] ancêtre [PL] [POUR] enfant [PL] [OBJET] savoir [PL] transmettre [PASSÉ.ANCESTRAL]
 "Dans le Gouffre Humide, les ancêtres ont transmis les savoirs pour les enfants"
 ```
@@ -167,7 +167,7 @@ No Vukuura va aita su ni naki su vo seka su kisun ait
 ### Avec mouvement, bénéficiaire, souhait
 
 ```
-Ve Kekutoka vi Uraakota ni Aliaska va Nakukeko vo kari su takan es
+Ve kekutoka vi uraakota ni aliaska va nakukeko vo kari su takan es
 [DEPUIS] Antres.Échos [VERS] Confluence [POUR] Ailes-Grises [SUJET] Enfants.Échos [OBJET] pierre [PL] porter [SOUHAIT]
 "Les Enfants des Échos veulent porter les pierres depuis les Antres vers la Confluence pour les Ailes-Grises"
 ```
@@ -175,7 +175,7 @@ Ve Kekutoka vi Uraakota ni Aliaska va Nakukeko vo kari su takan es
 ### Cyclique, pluriel, évidentiel
 
 ```
-Ve ora vi luna va Oraumi su vo umi su mirak eon uv
+Ve ora vi luna va oraumi su vo umi su mirak eon uv
 [DEPUIS] aurore [VERS] lune [SUJET] Voix.Aurore [PL] [OBJET] esprit [PL] observer [CYCLIQUE] [ÉCRIT]
 "C'est écrit que les Voix de l'Aurore observent cycliquement les esprits depuis l'aurore jusqu'à la lune"
 ```
@@ -195,7 +195,7 @@ Ve ura vi toka ve toka vi zeru va umi tekis eom
 Structure complète avec tous les éléments :
 
 ```
-Ku ve Kekutoka vi Uraakota no Talusavu vu kari na aita su va Oraumi ni naki su vo seka su zoe kisun ait ka
+Ku ve kekutoka vi uraakota no talusavu vu kari na aita su va oraumi ni naki su vo seka su zoe kisun ait ka
 
 [QUAND] [DEPUIS] Antres [VERS] Confluence [DANS] Halls [AVEC] pierre [DE] ancêtre [PL]
 [SUJET] Voix.Aurore [POUR] enfant [PL] [OBJET] savoir [PL] [NÉG.DOUX] transmettre [PASSÉ.ANCESTRAL] [QUESTION]

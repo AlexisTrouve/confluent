@@ -125,7 +125,7 @@ sili (regard) + -i- (agent actif) + aska (libre)
      ↓
 sil- (on retire le -i final)
      ↓
-sil + i + aska = Siliaska
+sil + i + aska = siliaska
 ```
 
 ---

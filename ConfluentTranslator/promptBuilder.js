@@ -49,30 +49,68 @@ function formatVocabularySection(entries) {
     autre: []
   };
 
+  // Map pour dédupliquer par mot confluent
+  const deduplicationMap = new Map();
+
   entries.forEach(entry => {
     if (entry.traductions && entry.traductions.length > 0) {
-      const trad = entry.traductions[0];
-      const type = trad.type || 'autre';
-      const key = type === 'racine_sacree' ? 'racine_sacree' :
-                  type === 'racine' ? 'racine' :
-                  type === 'verbe' ? 'verbe' :
-                  type === 'nom' ? 'nom' : 'autre';
+      // Traiter TOUTES les traductions (pas seulement la première)
+      entry.traductions.forEach(trad => {
+        const confKey = trad.confluent;
 
-      byType[key].push({
-        fr: entry.mot_francais,
-        conf: trad.confluent,
-        forme_liee: trad.forme_liee || trad.confluent,
-        domaine: trad.domaine || '',
-        note: trad.note || ''
+        // Si cette traduction existe déjà, fusionner les infos françaises
+        if (deduplicationMap.has(confKey)) {
+          const existing = deduplicationMap.get(confKey);
+          // Ajouter le mot français s'il n'est pas déjà présent (lowercase pour comparaison)
+          const motLower = entry.mot_francais.toLowerCase();
+          if (!existing.fr_variants.some(v => v.toLowerCase() === motLower)) {
+            existing.fr_variants.push(entry.mot_francais);
+          }
+          // Fusionner les synonymes (éviter doublons case-insensitive)
+          if (entry.synonymes_fr) {
+            entry.synonymes_fr.forEach(syn => {
+              const synLower = syn.toLowerCase();
+              if (!existing.synonymes.some(s => s.toLowerCase() === synLower)) {
+                existing.synonymes.push(syn);
+              }
+            });
+          }
+        } else {
+          const type = trad.type || 'autre';
+          const key = type === 'racine_sacree' ? 'racine_sacree' :
+                      type === 'racine' ? 'racine' :
+                      type.includes('verbe') ? 'verbe' : // verbe, verbe_irregulier
+                      type === 'nom' ? 'nom' : 'autre';
+
+          deduplicationMap.set(confKey, {
+            fr_variants: [entry.mot_francais],
+            conf: trad.confluent,
+            forme_liee: trad.forme_liee || trad.confluent,
+            domaine: trad.domaine || '',
+            note: trad.note || '',
+            type: trad.type || '',
+            synonymes: [...(entry.synonymes_fr || [])],
+            typeKey: key
+          });
+        }
       });
     }
+  });
+
+  // Réorganiser par type
+  deduplicationMap.forEach(item => {
+    byType[item.typeKey].push(item);
   });
 
   // Formatter par type
   if (byType.racine_sacree.length > 0) {
     lines.push('## Racines sacrées (voyelle initiale)\n');
     byType.racine_sacree.forEach(item => {
-      lines.push(`- ${item.conf} (${item.fr}) [forme liée: ${item.forme_liee}]`);
+      // Combiner et dédupliquer fr_variants et synonymes
+      const allFrench = [...new Set([...item.fr_variants, ...item.synonymes])];
+      let line = `- ${item.conf} (${allFrench.join(', ')}) [forme liée: ${item.forme_liee}]`;
+      if (item.note) line += ` - ${item.note}`;
+      lines.push(line);
     });
     lines.push('');
   }
@@ -80,7 +118,10 @@ function formatVocabularySection(entries) {
   if (byType.racine.length > 0) {
     lines.push('## Racines standards\n');
     byType.racine.forEach(item => {
-      lines.push(`- ${item.conf} (${item.fr}) [forme liée: ${item.forme_liee}]`);
+      const allFrench = [...new Set([...item.fr_variants, ...item.synonymes])];
+      let line = `- ${item.conf} (${allFrench.join(', ')}) [forme liée: ${item.forme_liee}]`;
+      if (item.note) line += ` - ${item.note}`;
+      lines.push(line);
     });
     lines.push('');
   }
@@ -88,7 +129,11 @@ function formatVocabularySection(entries) {
   if (byType.verbe.length > 0) {
     lines.push('## Verbes\n');
     byType.verbe.forEach(item => {
-      lines.push(`- ${item.fr} → ${item.conf}`);
+      const allFrench = [...new Set([...item.fr_variants, ...item.synonymes])];
+      let line = `- ${allFrench.join(', ')} → ${item.conf}`;
+      if (item.type) line += ` [${item.type}]`;
+      if (item.note) line += ` - ${item.note}`;
+      lines.push(line);
     });
     lines.push('');
   }
@@ -96,7 +141,9 @@ function formatVocabularySection(entries) {
   if (byType.nom.length > 0) {
     lines.push('## Noms et concepts\n');
     byType.nom.forEach(item => {
-      lines.push(`- ${item.fr} → ${item.conf}`);
+      const allFrench = [...new Set([...item.fr_variants, ...item.synonymes])];
+      let line = `- ${allFrench.join(', ')} → ${item.conf}`;
+      lines.push(line);
     });
     lines.push('');
   }
@@ -104,7 +151,9 @@ function formatVocabularySection(entries) {
   if (byType.autre.length > 0) {
     lines.push('## Autres\n');
     byType.autre.forEach(item => {
-      lines.push(`- ${item.fr} → ${item.conf}`);
+      const allFrench = [...new Set([...item.fr_variants, ...item.synonymes])];
+      let line = `- ${allFrench.join(', ')} → ${item.conf}`;
+      lines.push(line);
     });
     lines.push('');
   }

@@ -570,6 +570,21 @@
           "note": "Manger violemment, comme un prédateur"
         }
       ]
+    },
+    "exister": {
+      "racine_fr": "exist",
+      "traductions": [
+        {
+          "confluent": "urak",
+          "type": "verbe_irregulier",
+          "racine": "ura",
+          "forme_liee": "ur",
+          "structure": "VCVC",
+          "domaine": "action_existentielle",
+          "note": "Verbe irrégulier existentiel - 'il y a', présence, existence. Dérivé de la racine sacrée 'ura' (eau/flux vital)"
+        }
+      ],
+      "synonymes_fr": ["il y a", "y a-t-il", "existe", "existent", "existant"]
     }
   }
 }

@@ -5,11 +5,14 @@
     "La Confluence": {
       "traductions": [
         {
-          "confluent": "Uraakota",
+          "confluent": "uraakota",
           "type": "nom_propre",
           "composition": "ur-aa-kota",
           "sens_litteral": "Eau mêlée à l'union",
-          "racines": ["ura", "kota"],
+          "racines": [
+            "ura",
+            "kota"
+          ],
           "categorie": "lieu_majeur",
           "note": "Lieu central où deux rivières se rejoignent"
         }
@@ -18,11 +21,14 @@
     "Uraakota": {
       "traductions": [
         {
-          "confluent": "Uraakota",
+          "confluent": "uraakota",
           "type": "nom_propre",
           "composition": "ur-aa-kota",
           "sens_litteral": "Eau mêlée à l'union",
-          "racines": ["ura", "kota"],
+          "racines": [
+            "ura",
+            "kota"
+          ],
           "categorie": "lieu_majeur"
         }
       ]
@@ -30,11 +36,14 @@
     "Gouffre Humide": {
       "traductions": [
         {
-          "confluent": "Vukuura",
+          "confluent": "vukuura",
           "type": "nom_propre",
           "composition": "vuk-u-ura",
           "sens_litteral": "Gouffre de l'eau",
-          "racines": ["vuku", "ura"],
+          "racines": [
+            "vuku",
+            "ura"
+          ],
           "categorie": "lieu_majeur",
           "note": "Lieu sacré souterrain"
         }
@@ -43,11 +52,14 @@
     "Vukuura": {
       "traductions": [
         {
-          "confluent": "Vukuura",
+          "confluent": "vukuura",
           "type": "nom_propre",
           "composition": "vuk-u-ura",
           "sens_litteral": "Gouffre de l'eau",
-          "racines": ["vuku", "ura"],
+          "racines": [
+            "vuku",
+            "ura"
+          ],
           "categorie": "lieu_majeur"
         }
       ]
@@ -55,11 +67,14 @@
     "Antres des Échos": {
       "traductions": [
         {
-          "confluent": "Kekutoka",
+          "confluent": "kekutoka",
           "type": "nom_propre",
           "composition": "kek-u-toka",
           "sens_litteral": "Écho de la terre",
-          "racines": ["keko", "toka"],
+          "racines": [
+            "keko",
+            "toka"
+          ],
           "categorie": "lieu_majeur",
           "note": "Grottes souterraines"
         }
@@ -68,11 +83,14 @@
     "Kekutoka": {
       "traductions": [
         {
-          "confluent": "Kekutoka",
+          "confluent": "kekutoka",
           "type": "nom_propre",
           "composition": "kek-u-toka",
           "sens_litteral": "Écho de la terre",
-          "racines": ["keko", "toka"],
+          "racines": [
+            "keko",
+            "toka"
+          ],
           "categorie": "lieu_majeur"
         }
       ]
@@ -80,11 +98,14 @@
     "Cercles de Vigile": {
       "traductions": [
         {
-          "confluent": "Sikuvela",
+          "confluent": "sikuvela",
           "type": "nom_propre",
           "composition": "sik-u-vela",
           "sens_litteral": "Cercle de la vigile",
-          "racines": ["siku", "vela"],
+          "racines": [
+            "siku",
+            "vela"
+          ],
           "categorie": "lieu_majeur",
           "note": "Promontoires de guet"
         }
@@ -93,11 +114,14 @@
     "Sikuvela": {
       "traductions": [
         {
-          "confluent": "Sikuvela",
+          "confluent": "sikuvela",
           "type": "nom_propre",
           "composition": "sik-u-vela",
           "sens_litteral": "Cercle de la vigile",
-          "racines": ["siku", "vela"],
+          "racines": [
+            "siku",
+            "vela"
+          ],
           "categorie": "lieu_majeur"
         }
       ]
@@ -105,11 +129,14 @@
     "Halls des Serments": {
       "traductions": [
         {
-          "confluent": "Talusavu",
+          "confluent": "talusavu",
           "type": "nom_propre",
           "composition": "tal-u-savu",
           "sens_litteral": "Hall du serment",
-          "racines": ["talu", "savu"],
+          "racines": [
+            "talu",
+            "savu"
+          ],
           "categorie": "lieu_majeur",
           "note": "Structures gouvernementales"
         }
@@ -118,11 +145,14 @@
     "Talusavu": {
       "traductions": [
         {
-          "confluent": "Talusavu",
+          "confluent": "talusavu",
           "type": "nom_propre",
           "composition": "tal-u-savu",
           "sens_litteral": "Hall du serment",
-          "racines": ["talu", "savu"],
+          "racines": [
+            "talu",
+            "savu"
+          ],
           "categorie": "lieu_majeur"
         }
       ]
@@ -130,11 +160,14 @@
     "Grande Fresque": {
       "traductions": [
         {
-          "confluent": "Ekakova",
+          "confluent": "ekakova",
           "type": "nom_propre",
           "composition": "ek-a-kova",
           "sens_litteral": "Totalité avec peinture",
-          "racines": ["eka", "kova"],
+          "racines": [
+            "eka",
+            "kova"
+          ],
           "categorie": "lieu_majeur",
           "note": "Artefact multi-générationnel"
         }
@@ -143,11 +176,14 @@
     "Ekakova": {
       "traductions": [
         {
-          "confluent": "Ekakova",
+          "confluent": "ekakova",
           "type": "nom_propre",
           "composition": "ek-a-kova",
           "sens_litteral": "Totalité avec peinture",
-          "racines": ["eka", "kova"],
+          "racines": [
+            "eka",
+            "kova"
+          ],
           "categorie": "lieu_majeur"
         }
       ]
@@ -155,11 +191,14 @@
     "Gorge Profonde": {
       "traductions": [
         {
-          "confluent": "Vukumako",
+          "confluent": "vukumako",
           "type": "composition",
           "composition": "vuk-u-mako",
           "sens_litteral": "Gouffre de grandeur",
-          "racines": ["vuku", "mako"],
+          "racines": [
+            "vuku",
+            "mako"
+          ],
           "categorie": "lieu"
         }
       ]
@@ -167,11 +206,14 @@
     "Ruines des Premiers Ancêtres": {
       "traductions": [
         {
-          "confluent": "Osiuaita",
+          "confluent": "osiuaita",
           "type": "composition",
           "composition": "os-i-aita",
           "sens_litteral": "Mort des ancêtres",
-          "racines": ["osi", "aita"],
+          "racines": [
+            "osi",
+            "aita"
+          ],
           "categorie": "lieu_sacre",
           "note": "Vestiges de la civilisation disparue"
         }
@@ -184,7 +226,10 @@
           "type": "composition",
           "composition": "kot-a-zaki",
           "sens_litteral": "Union avec protection",
-          "racines": ["kota", "zaki"],
+          "racines": [
+            "kota",
+            "zaki"
+          ],
           "categorie": "structure"
         }
       ]
@@ -196,7 +241,10 @@
           "type": "composition",
           "composition": "tok-u-vuku",
           "sens_litteral": "Terre du bas",
-          "racines": ["toka", "vuku"],
+          "racines": [
+            "toka",
+            "vuku"
+          ],
           "categorie": "region"
         }
       ]
@@ -208,7 +256,10 @@
           "type": "composition",
           "composition": "vel-a-meru",
           "sens_litteral": "Vigile avec mer",
-          "racines": ["vela", "meru"],
+          "racines": [
+            "vela",
+            "meru"
+          ],
           "categorie": "structure"
         }
       ]
@@ -220,7 +271,10 @@
           "type": "composition",
           "composition": "as-a-loku",
           "sens_litteral": "Sacré avec lieu",
-          "racines": ["asa", "loku"],
+          "racines": [
+            "asa",
+            "loku"
+          ],
           "categorie": "structure"
         }
       ]
@@ -232,7 +286,10 @@
           "type": "composition",
           "composition": "zak-i-kari",
           "sens_litteral": "Protection de pierre",
-          "racines": ["zaki", "kari"],
+          "racines": [
+            "zaki",
+            "kari"
+          ],
           "categorie": "structure"
         }
       ]

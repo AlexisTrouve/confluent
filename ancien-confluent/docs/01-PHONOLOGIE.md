@@ -41,6 +41,23 @@ Ce document décrit le système phonologique de la langue Confluent.
 
 ---
 
+## Orthographe
+
+### ⚠️ Règle importante : Pas de majuscules
+
+**Le Confluent n'a PAS de distinction majuscule/minuscule.**
+
+- Tout le texte Confluent s'écrit EN MINUSCULES uniquement
+- Les noms propres sont également en minuscules : `uraakota`, `siliaska`, `aliaska`
+- Les castes et titres sont en minuscules : `akoazana`, `nakukeko`
+- Les lieux sont en minuscules : `vukuura`, `kekutoka`
+
+**Exception :** Pour la lisibilité en français, on peut mettre une majuscule en début de phrase (ex: "uraakota u toka" au lieu de "uraakota u toka"), mais c'est purement cosmétique et optionnel.
+
+**Raison linguistique :** Le système d'écriture original du Confluent (gravures, glyphes) ne comportait pas de distinction entre majuscules et minuscules. La transcription en alphabet latin conserve cette propriété.
+
+---
+
 ## Inspirations phonétiques
 
 ### Du basque on garde :
