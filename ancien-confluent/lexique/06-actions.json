@@ -3,6 +3,7 @@
   "_mots_a_gerer": [],
   "dictionnaire": {
     "voir": {
+      "racine_fr": "voi",
       "traductions": [
         {
           "confluent": "mirak",
@@ -14,9 +15,10 @@
           "note": "Verbe fondamental lié à l'observation"
         }
       ],
-      "synonymes_fr": ["observer", "regarder"]
+      "synonymes_fr": ["observer", "regarder", "vu", "vus", "vue", "vues"]
     },
     "aller": {
+      "racine_fr": null,
       "traductions": [
         {
           "confluent": "tekis",
@@ -27,9 +29,11 @@
           "domaine": "action",
           "note": "Mouvement, chemin"
         }
-      ]
+      ],
+      "synonymes_fr": ["va", "vas", "vais", "vont", "allons", "allez", "allais", "allait", "allions", "alliez", "allaient", "allant", "allé", "irai", "iras", "ira", "irons", "irez", "iront", "aille", "ailles", "aillent", "aillions", "ailliez"]
     },
     "donner": {
+      "racine_fr": "donn",
       "traductions": [
         {
           "confluent": "kitan",
@@ -42,6 +46,7 @@
       ]
     },
     "prendre": {
+      "racine_fr": "pren",
       "traductions": [
         {
           "confluent": "pasak",
@@ -51,9 +56,11 @@
           "structure": "CVCVC",
           "domaine": "action"
         }
-      ]
+      ],
+      "synonymes_fr": ["prennent", "pris", "prisse"]
     },
     "faire": {
+      "racine_fr": "fai",
       "traductions": [
         {
           "confluent": "nekan",
@@ -64,9 +71,10 @@
           "domaine": "action"
         }
       ],
-      "synonymes_fr": ["créer"]
+      "synonymes_fr": ["créer", "font", "ferai", "feras", "fera", "ferons", "ferez", "feront"]
     },
     "dire": {
+      "racine_fr": "di",
       "traductions": [
         {
           "confluent": "vosak",
@@ -77,9 +85,10 @@
           "domaine": "action"
         }
       ],
-      "synonymes_fr": ["parler"]
+      "synonymes_fr": ["parler", "dites", "dit"]
     },
     "savoir": {
+      "racine_fr": "sav",
       "traductions": [
         {
           "confluent": "sekam",
@@ -90,9 +99,10 @@
           "domaine": "action"
         }
       ],
-      "synonymes_fr": ["connaître"]
+      "synonymes_fr": ["connaître", "savent", "su", "sache", "saches", "sachent", "sachions", "sachiez"]
     },
     "apprendre": {
+      "racine_fr": "appren",
       "traductions": [
         {
           "confluent": "mokis",
@@ -103,9 +113,11 @@
           "domaine": "action",
           "note": "Recevoir le savoir"
         }
-      ]
+      ],
+      "synonymes_fr": ["apprennent", "appris"]
     },
     "transmettre": {
+      "racine_fr": "transmet",
       "traductions": [
         {
           "confluent": "kisun",
@@ -117,9 +129,10 @@
           "note": "Enseigner, passer le savoir"
         }
       ],
-      "synonymes_fr": ["enseigner"]
+      "synonymes_fr": ["enseigner", "transmettent", "transmis"]
     },
     "garder": {
+      "racine_fr": "gard",
       "traductions": [
         {
           "confluent": "zakis",
@@ -133,6 +146,7 @@
       "synonymes_fr": ["protéger"]
     },
     "porter": {
+      "racine_fr": "port",
       "traductions": [
         {
           "confluent": "takan",
@@ -146,6 +160,7 @@
       "synonymes_fr": ["transporter"]
     },
     "chasser": {
+      "racine_fr": "chass",
       "traductions": [
         {
           "confluent": "zanak",
@@ -159,6 +174,7 @@
       "synonymes_fr": ["traquer"]
     },
     "méditer": {
+      "racine_fr": "médit",
       "traductions": [
         {
           "confluent": "umiak",
@@ -173,6 +189,7 @@
       "synonymes_fr": ["prier"]
     },
     "invoquer": {
+      "racine_fr": "invoqu",
       "traductions": [
         {
           "confluent": "onak",
@@ -186,6 +203,7 @@
       ]
     },
     "bénir": {
+      "racine_fr": "béni",
       "traductions": [
         {
           "confluent": "asak",
@@ -195,9 +213,11 @@
           "structure": "VCVC",
           "domaine": "action_spirituelle"
         }
-      ]
+      ],
+      "synonymes_fr": ["bénit"]
     },
     "communier": {
+      "racine_fr": "communi",
       "traductions": [
         {
           "confluent": "kotam",
@@ -211,6 +231,7 @@
       ]
     },
     "mourir": {
+      "racine_fr": "meur",
       "traductions": [
         {
           "confluent": "osiak",
@@ -220,9 +241,11 @@
           "structure": "VCVC",
           "domaine": "action_sacree"
         }
-      ]
+      ],
+      "synonymes_fr": ["meurent", "mort"]
     },
     "graver": {
+      "racine_fr": "grav",
       "traductions": [
         {
           "confluent": "kovak",
@@ -236,6 +259,7 @@
       "synonymes_fr": ["sculpter"]
     },
     "peindre": {
+      "racine_fr": "pein",
       "traductions": [
         {
           "confluent": "kovam",
@@ -246,9 +270,11 @@
           "domaine": "action_artisanale",
           "note": "Même racine que graver - art visuel"
         }
-      ]
+      ],
+      "synonymes_fr": ["peignent", "peint"]
     },
     "assembler": {
+      "racine_fr": "assembl",
       "traductions": [
         {
           "confluent": "kotak",
@@ -261,6 +287,7 @@
       ]
     },
     "construire": {
+      "racine_fr": "construi",
       "traductions": [
         {
           "confluent": "nekis",
@@ -270,9 +297,11 @@
           "structure": "CVCVC",
           "domaine": "action_artisanale"
         }
-      ]
+      ],
+      "synonymes_fr": ["construisent", "construit"]
     },
     "creuser": {
+      "racine_fr": "creus",
       "traductions": [
         {
           "confluent": "vukan",
@@ -285,6 +314,7 @@
       ]
     },
     "tisser": {
+      "racine_fr": "tiss",
       "traductions": [
         {
           "confluent": "vasin",
@@ -298,6 +328,7 @@
       ]
     },
     "forger": {
+      "racine_fr": "forg",
       "traductions": [
         {
           "confluent": "sukam",
@@ -311,6 +342,7 @@
       ]
     },
     "écouter": {
+      "racine_fr": "écout",
       "traductions": [
         {
           "confluent": "tikam",
@@ -323,6 +355,7 @@
       ]
     },
     "étudier": {
+      "racine_fr": "étudi",
       "traductions": [
         {
           "confluent": "sekis",
@@ -335,6 +368,7 @@
       ]
     },
     "découvrir": {
+      "racine_fr": "découvr",
       "traductions": [
         {
           "confluent": "miris",
@@ -346,9 +380,10 @@
           "note": "Voir pour la première fois"
         }
       ],
-      "synonymes_fr": ["explorer"]
+      "synonymes_fr": ["explorer", "découvert"]
     },
     "mémoriser": {
+      "racine_fr": "mémoris",
       "traductions": [
         {
           "confluent": "memak",
@@ -361,6 +396,7 @@
       ]
     },
     "interpréter": {
+      "racine_fr": "interprèt",
       "traductions": [
         {
           "confluent": "sekun",
@@ -373,6 +409,7 @@
       ]
     },
     "défendre": {
+      "racine_fr": "défen",
       "traductions": [
         {
           "confluent": "zakam",
@@ -382,9 +419,11 @@
           "structure": "CVCVC",
           "domaine": "action_combat"
         }
-      ]
+      ],
+      "synonymes_fr": ["défendent", "défendu"]
     },
     "surveiller": {
+      "racine_fr": "surveill",
       "traductions": [
         {
           "confluent": "velak",
@@ -397,6 +436,7 @@
       ]
     },
     "attaquer": {
+      "racine_fr": "attaqu",
       "traductions": [
         {
           "confluent": "okiak",
@@ -409,6 +449,7 @@
       ]
     },
     "capturer": {
+      "racine_fr": "captur",
       "traductions": [
         {
           "confluent": "pasik",
@@ -421,6 +462,7 @@
       ]
     },
     "fuir": {
+      "racine_fr": "fui",
       "traductions": [
         {
           "confluent": "tekun",
@@ -430,9 +472,11 @@
           "structure": "CVCVC",
           "domaine": "action_combat"
         }
-      ]
+      ],
+      "synonymes_fr": ["fuient", "fuyent"]
     },
     "vaincre": {
+      "racine_fr": "vainc",
       "traductions": [
         {
           "confluent": "okian",
@@ -442,9 +486,11 @@
           "structure": "VCVC",
           "domaine": "action_combat"
         }
-      ]
+      ],
+      "synonymes_fr": ["vainquent", "vaincu"]
     },
     "troquer": {
+      "racine_fr": "troqu",
       "traductions": [
         {
           "confluent": "kirak",
@@ -457,6 +503,7 @@
       ]
     },
     "entreposer": {
+      "racine_fr": "entrepos",
       "traductions": [
         {
           "confluent": "zakun",
@@ -469,6 +516,7 @@
       ]
     },
     "arbitrer": {
+      "racine_fr": "arbitr",
       "traductions": [
         {
           "confluent": "verim",
@@ -482,6 +530,7 @@
       ]
     },
     "pêcher": {
+      "racine_fr": "pêch",
       "traductions": [
         {
           "confluent": "pisak",
@@ -495,6 +544,7 @@
       ]
     },
     "manger": {
+      "racine_fr": "mang",
       "traductions": [
         {
           "confluent": "mukis",
@@ -508,6 +558,7 @@
       ]
     },
     "dévorer": {
+      "racine_fr": "dévor",
       "traductions": [
         {
           "confluent": "mukiuzana",

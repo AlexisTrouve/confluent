@@ -144,6 +144,10 @@ function searchWord(word, dictionnaire) {
     else if (entry.synonymes_fr?.some(syn => lemmas.includes(syn.toLowerCase()))) {
       score = 0.85;
     }
+    // Correspondance sur racine française déclarée dans le lexique
+    else if (entry.racine_fr && word.startsWith(entry.racine_fr.toLowerCase())) {
+      score = 0.75;
+    }
 
     if (score > 0) {
       results.push({
