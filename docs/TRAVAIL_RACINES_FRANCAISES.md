@@ -13,47 +13,97 @@ Améliorer le matching des mots français conjugués/accordés en utilisant un s
 
 Le lemmatizer actuel est trop basique et rate beaucoup de formes conjuguées.
 
-## Solution : Double approche
+## Solution : Système hybride avec racines manuelles
 
-### 1. Système de racines automatique (pour verbes réguliers)
+### 1. Déclaration manuelle des racines françaises dans le lexique
 
-**Principe** : Extraire les 4 premières lettres d'un mot comme "racine"
+**Principe** : Ajouter un champ `racine_fr` dans chaque entrée du lexique avec le **dénominateur commun le plus long** qui couvre toutes les conjugaisons/formes du mot.
 
-**Exemples qui marchent** :
-- "manger", "mangé", "mange", "mangeait" → racine **"mang"** → trouve "mukis" ✅
-- "donner", "donné", "donne", "donnait" → racine **"donn"** → trouve "kitan" ✅
-- "aller", "allé", "allait" → racine **"alle"** → trouve "tekis" ✅
+**IMPORTANT** : Ce n'est PAS une extraction automatique des 4 premières lettres. C'est un **travail manuel intelligent** pour déterminer la meilleure racine pour chaque mot.
 
-**Code à ajouter** :
-```javascript
-/**
- * Extrait la racine française d'un mot (4 premières lettres)
- * Minimum 4 lettres pour éviter les faux positifs
- * @param {string} word - Mot français
- * @returns {string|null} - Racine ou null si mot trop court
- */
-function extractFrenchRoot(word) {
-  if (word.length < 4) return null;
-  return word.slice(0, 4).toLowerCase();
+**Exemples** :
+- "manger" → `racine_fr: "mang"` (4 lettres) → couvre mangé, mange, mangeait, mangerons...
+- "donner" → `racine_fr: "donn"` (4 lettres) → couvre donné, donne, donnait, donnerons...
+- "comparer" → `racine_fr: "compar"` (6 lettres) → couvre comparé, compare, comparaison...
+- "comprendre" → `racine_fr: "compr"` (5 lettres) → couvre compris, comprend, comprenait...
+
+**Structure dans le lexique** :
+```json
+"manger": {
+  "racine_fr": "mang",
+  "traductions": [...],
+  "synonymes_fr": ["mange", "mangé", "mangeait"]
+}
+
+"comparer": {
+  "racine_fr": "compar",
+  "traductions": [...],
+  "synonymes_fr": ["comparé", "compare", "comparaison"]
+}
+
+"comprendre": {
+  "racine_fr": "compr",
+  "traductions": [...],
+  "synonymes_fr": ["compris", "comprend", "comprenait"]
 }
 ```
 
-### 2. Exceptions manuelles (verbes irréguliers + racines courtes)
+**Comportement du matching** :
+
+Quand l'utilisateur tape "comparé" :
+1. Le système cherche les entrées dont `racine_fr` matche le début de "comparé"
+2. Il trouve `"compar"` → match "comparer" ✅
+3. Il ne trouve PAS `"compr"` (trop court) → ne propose pas "comprendre" ✅
+
+Quand l'utilisateur tape "comprend" :
+1. Le système trouve :
+   - `"compr"` (5 lettres) → match "comprendre" ✅
+   - `"comp"` pourrait aussi matcher si on avait un mot avec cette racine
+2. En cas de **multiples matches**, le système retourne **TOUS les candidats** au LLM
+3. Le **LLM choisit** selon le contexte de la phrase
+
+**Avantages** :
+- Contrôle total sur la longueur de chaque racine (4, 5, 6 lettres selon le besoin)
+- Gère les ambiguïtés en laissant le LLM arbitrer
+- Plus précis qu'une extraction automatique aveugle
+
+### 2. Formes irrégulières dans `synonymes_fr`
 
 **Principe** : Ajouter toutes les formes conjuguées dans le champ `synonymes_fr` du lexique
 
-**Exemples qui NE marchent PAS avec racines automatiques** :
+**Exemples de cas nécessitant `synonymes_fr`** :
 
-#### Racines trop courtes
-- **"voir"** → racine "voir" (4 lettres OK) MAIS "vu", "vus" → racine "vu" (2 lettres ❌)
-- **"être"** → racine impossible (formes trop différentes)
-- **"avoir"** → racine impossible (formes trop différentes)
+#### Formes trop différentes de la racine
+- **"voir"** → `racine_fr: "voi"` couvre "voit", "voyait", "voyons"
+  - MAIS "vu", "vus", "vue", "vues" sont trop différents → à mettre dans `synonymes_fr`
 
-#### Verbes irréguliers
-- **"prendre"** → racine "pren" mais "pris", "prit" ont racine "pris" ❌
-- **"faire"** → racine "fair" mais "fait", "faite" ont racine "fait" ❌
+- **"être"** → formes trop différentes (est, suis, sont, été, était, sera, fut...)
+  - Impossible d'avoir une racine unique → tout dans `synonymes_fr`
 
-**Solution** : Ajouter manuellement dans `synonymes_fr`
+- **"avoir"** → formes trop différentes (a, ai, ont, eu, avait, aura...)
+  - Impossible d'avoir une racine unique → tout dans `synonymes_fr`
+
+#### Verbes irréguliers avec changement de radical
+- **"prendre"** → `racine_fr: "pren"` couvre "prend", "prenait", "prendra"
+  - MAIS "pris", "prit", "prise" ont un radical différent → dans `synonymes_fr`
+
+- **"faire"** → `racine_fr: "fai"` couvre "fais", "faisait", "faisons"
+  - MAIS "fait", "faite", "faites" ont un radical différent → dans `synonymes_fr`
+
+**Combinaison racine + synonymes** :
+```json
+"voir": {
+  "racine_fr": "voi",
+  "synonymes_fr": ["vu", "vus", "vue", "vues", "observer", "regarder"]
+}
+
+"prendre": {
+  "racine_fr": "pren",
+  "synonymes_fr": ["pris", "prit", "prise", "prises"]
+}
+```
+
+Le système essaie d'abord la racine, puis les synonymes.
 
 ---
 
@@ -63,41 +113,42 @@ function extractFrenchRoot(word) {
 
 ### Modifications à faire :
 
-#### A. Ajouter la fonction extractFrenchRoot()
+#### A. Modifier searchWord() pour utiliser le champ `racine_fr`
 
+**Principe** : Chercher les entrées dont le champ `racine_fr` est **contenu au début** du mot recherché.
+
+**Emplacement** : ligne ~124 dans la fonction `searchWord()`
+
+**Modifier la logique de matching pour ajouter** :
 ```javascript
-/**
- * Extrait la racine française d'un mot (4 premières lettres minimum)
- * Pour matcher des conjugaisons : manger/mangé/mange → "mang"
- * @param {string} word - Mot français (déjà en lowercase)
- * @returns {string|null} - Racine de 4 lettres ou null si trop court
- */
-function extractFrenchRoot(word) {
-  if (word.length < 4) return null;
-  return word.slice(0, 4);
-}
-```
-
-#### B. Modifier searchWord() pour utiliser les racines
-
-**Emplacement** : ligne ~124
-
-**Ajouter après la ligne 126** :
-```javascript
-const results = [];
-const lemmas = simpleLemmatize(word);
-const root = extractFrenchRoot(word); // NOUVEAU
-```
-
-**Ajouter après la ligne 146 (après matching sur synonymes lemmatisés)** :
-```javascript
-    // NOUVEAU: Correspondance sur racine française (4 lettres)
-    else if (root && key.toLowerCase().startsWith(root)) {
+    // NOUVEAU: Correspondance sur racine française déclarée
+    // Si l'entrée a un champ racine_fr et que le mot commence par cette racine
+    else if (entry.racine_fr && word.startsWith(entry.racine_fr.toLowerCase())) {
       score = 0.75;
     }
-    // NOUVEAU: Correspondance sur racine dans synonymes
-    else if (root && entry.synonymes_fr?.some(syn => syn.toLowerCase().startsWith(root))) {
-      score = 0.70;
+```
+
+**Insertion dans la cascade de matching** (après synonymes lemmatisés, avant le return) :
+```javascript
+    // Correspondance exacte sur le mot français
+    if (key === word || entry.mot_francais?.toLowerCase() === word) {
+      score = 1.0;
+    }
+    // Correspondance sur formes lemmatisées
+    else if (lemmas.some(lemma => key === lemma || entry.mot_francais?.toLowerCase() === lemma)) {
+      score = 0.95;
+    }
+    // Correspondance sur synonymes
+    else if (entry.synonymes_fr?.some(syn => syn.toLowerCase() === word)) {
+      score = 0.9;
+    }
+    // Correspondance sur synonymes lemmatisés
+    else if (entry.synonymes_fr?.some(syn => lemmas.includes(syn.toLowerCase()))) {
+      score = 0.85;
+    }
+    // NOUVEAU: Correspondance sur racine française déclarée
+    else if (entry.racine_fr && word.startsWith(entry.racine_fr.toLowerCase())) {
+      score = 0.75;
     }
 ```
 
@@ -106,7 +157,6 @@ const root = extractFrenchRoot(word); // NOUVEAU
 function searchWord(word, dictionnaire) {
   const results = [];
   const lemmas = simpleLemmatize(word);
-  const root = extractFrenchRoot(word); // NOUVEAU
 
   for (const [key, entry] of Object.entries(dictionnaire)) {
     let score = 0;
@@ -127,13 +177,9 @@ function searchWord(word, dictionnaire) {
     else if (entry.synonymes_fr?.some(syn => lemmas.includes(syn.toLowerCase()))) {
       score = 0.85;
     }
-    // NOUVEAU: Correspondance sur racine française (4 lettres)
-    else if (root && key.toLowerCase().startsWith(root)) {
+    // NOUVEAU: Correspondance sur racine française déclarée dans le lexique
+    else if (entry.racine_fr && word.startsWith(entry.racine_fr.toLowerCase())) {
       score = 0.75;
-    }
-    // NOUVEAU: Correspondance sur racine dans synonymes
-    else if (root && entry.synonymes_fr?.some(syn => syn.toLowerCase().startsWith(root))) {
-      score = 0.70;
     }
 
     if (score > 0) {
@@ -150,161 +196,187 @@ function searchWord(word, dictionnaire) {
 }
 ```
 
-#### C. Exporter la nouvelle fonction
-
-**Emplacement** : ligne ~387 (module.exports)
-
-```javascript
-module.exports = {
-  tokenizeFrench,
-  calculateMaxEntries,
-  simpleLemmatize,
-  extractFrenchRoot, // NOUVEAU
-  searchWord,
-  findRelevantEntries,
-  expandContext,
-  extractRoots,
-  analyzeContext
-};
-```
+**Note** : Pas besoin d'exporter de nouvelle fonction, on utilise simplement le champ `racine_fr` du lexique.
 
 ---
 
-## TRAVAIL 2 : Compléter les exceptions dans le lexique
+## TRAVAIL 2 : Compléter le lexique avec racines et synonymes
 
-**Objectif** : Ajouter manuellement les formes conjuguées des verbes irréguliers dans `synonymes_fr`
+**Objectif** : Pour chaque verbe du lexique, ajouter :
+1. Le champ `racine_fr` avec le dénominateur commun optimal
+2. Les formes conjuguées irrégulières dans `synonymes_fr`
 
 ### Fichiers à modifier :
 
 `ancien-confluent/lexique/06-actions.json`
 
+### Structure à suivre pour chaque verbe
+
+```json
+"[verbe_infinitif]": {
+  "racine_fr": "[racine_optimale]",
+  "traductions": [...],
+  "synonymes_fr": ["[formes_irrégulières]", "[autres_synonymes]"]
+}
+```
+
 ### Verbes à compléter (par priorité)
 
 #### Priorité 1 : Verbes très courants
 
-**1. voir** (déjà présent)
+**1. voir**
 ```json
 "voir": {
+  "racine_fr": "voi",
   "traductions": [...],
-  "synonymes_fr": ["observer", "regarder", "voit", "vois", "vu", "vus", "vue", "vues", "voyait", "voyais", "voyant", "verra", "verras", "verront"]
+  "synonymes_fr": ["observer", "regarder", "vu", "vus", "vue", "vues"]
 }
 ```
+*Note : "voit", "voyait", "voyons", "verra" sont couverts par la racine "voi". Seules les formes avec radical différent (vu/vue) vont dans synonymes_fr.*
 
 **2. prendre**
 ```json
 "prendre": {
+  "racine_fr": "pren",
   "traductions": [...],
-  "synonymes_fr": ["pris", "prit", "prise", "prises", "prend", "prends", "prenait", "prenais", "prenant", "prendra", "prendras", "prendront"]
+  "synonymes_fr": ["pris", "prit", "prise", "prises"]
 }
 ```
+*Note : "prend", "prenait", "prendra" sont couverts par la racine "pren".*
 
 **3. faire**
 ```json
 "faire": {
+  "racine_fr": "fai",
   "traductions": [...],
-  "synonymes_fr": ["créer", "fait", "faits", "faite", "faites", "fais", "faisait", "faisais", "faisant", "fera", "feras", "feront"]
+  "synonymes_fr": ["créer", "fait", "faits", "faite", "faites"]
 }
 ```
+*Note : "fais", "faisait", "faisons" sont couverts par la racine "fai".*
 
-**4. manger** (nouveau verbe, déjà ajouté)
+**4. manger** (nouveau verbe si pas déjà présent)
 ```json
 "manger": {
+  "racine_fr": "mang",
   "traductions": [...],
-  "synonymes_fr": ["mange", "manges", "mangé", "mangée", "mangés", "mangées", "mangeait", "mangeais", "mangeant", "mangera", "mangeras", "mangeront"]
+  "synonymes_fr": []
 }
 ```
+*Note : Toutes les formes (mange, mangé, mangeait, mangera) sont couvertes par la racine "mang". Pas besoin de synonymes.*
 
 **5. aller**
 ```json
 "aller": {
+  "racine_fr": "all",
   "traductions": [...],
-  "synonymes_fr": ["va", "vas", "vais", "allé", "allée", "allés", "allées", "allait", "allais", "allant", "ira", "iras", "iront"]
+  "synonymes_fr": ["va", "vas", "vais", "ira", "iras", "iront"]
 }
 ```
+*Note : "allé", "allait" sont couverts par "all". Les formes irrégulières (va/vais, ira) vont dans synonymes_fr.*
 
 **6. donner**
 ```json
 "donner": {
+  "racine_fr": "donn",
   "traductions": [...],
-  "synonymes_fr": ["donne", "donnes", "donné", "donnée", "donnés", "données", "donnait", "donnais", "donnant", "donnera", "donneras", "donneront"]
+  "synonymes_fr": []
 }
 ```
+*Note : Toutes les formes sont couvertes par "donn".*
 
 **7. dire**
 ```json
 "dire": {
+  "racine_fr": "di",
   "traductions": [...],
-  "synonymes_fr": ["parler", "dit", "dits", "dite", "dites", "dis", "disait", "disais", "disant", "dira", "diras", "diront"]
+  "synonymes_fr": ["parler", "dit", "dits", "dite", "dites"]
 }
 ```
+*Note : "dis", "disait", "dira" sont couverts par "di". "dit/dite" ont un radical différent donc dans synonymes_fr.*
 
 #### Priorité 2 : Verbes auxiliaires (très irréguliers)
 
 **8. être**
 ```json
 "être": {
+  "racine_fr": null,
   "traductions": [...],
-  "synonymes_fr": ["est", "es", "suis", "sont", "été", "était", "étais", "étant", "sera", "seras", "seront", "fut", "fus"]
+  "synonymes_fr": ["est", "es", "suis", "sont", "sommes", "êtes", "été", "était", "étais", "étant", "sera", "seras", "seront", "fut", "fus"]
 }
 ```
+*Note : Aucune racine commune possible. Toutes les formes dans synonymes_fr.*
 
 **9. avoir**
 ```json
 "avoir": {
+  "racine_fr": "av",
   "traductions": [...],
-  "synonymes_fr": ["a", "as", "ai", "ont", "eu", "eue", "eus", "eues", "avait", "avais", "ayant", "aura", "auras", "auront"]
+  "synonymes_fr": ["a", "as", "ai", "ont", "eu", "eue", "eus", "eues", "aura", "auras", "auront"]
 }
 ```
+*Note : "avait", "avais", "avons", "avez" couverts par "av". Formes irrégulières (a/ai/ont, eu, aura) dans synonymes_fr.*
 
 #### Priorité 3 : Autres verbes courants
 
 **10. savoir**
 ```json
 "savoir": {
+  "racine_fr": "sav",
   "traductions": [...],
-  "synonymes_fr": ["connaître", "sait", "sais", "su", "sue", "sus", "sues", "savait", "savais", "sachant", "saura", "sauras", "sauront"]
+  "synonymes_fr": ["connaître", "sait", "sais", "su", "sue", "sus", "sues", "saura", "sauront"]
 }
 ```
+*Note : "savait", "savons", "sachant" couverts par "sav". Formes irrégulières (sait/sais, su, saura) dans synonymes_fr.*
 
 **11. chasser**
 ```json
 "chasser": {
+  "racine_fr": "chass",
   "traductions": [...],
-  "synonymes_fr": ["traquer", "chasse", "chasses", "chassé", "chassée", "chassés", "chassées", "chassait", "chassais", "chassant", "chassera", "chasseras", "chasseront"]
+  "synonymes_fr": ["traquer"]
 }
 ```
+*Note : Toutes les conjugaisons couvertes par "chass".*
 
 **12. transmettre**
 ```json
 "transmettre": {
+  "racine_fr": "transm",
   "traductions": [...],
-  "synonymes_fr": ["enseigner", "transmet", "transmets", "transmis", "transmise", "transmises", "transmettait", "transmettais", "transmettant", "transmettra", "transmettras", "transmettront"]
+  "synonymes_fr": ["enseigner", "transmis", "transmise", "transmises"]
 }
 ```
+*Note : "transmet", "transmettait", "transmettra" couverts par "transm". Participe passé (transmis) dans synonymes_fr.*
 
 **13. garder**
 ```json
 "garder": {
+  "racine_fr": "gard",
   "traductions": [...],
-  "synonymes_fr": ["protéger", "garde", "gardes", "gardé", "gardée", "gardés", "gardées", "gardait", "gardais", "gardant", "gardera", "garderas", "garderont"]
+  "synonymes_fr": ["protéger"]
 }
 ```
+*Note : Toutes les conjugaisons couvertes par "gard".*
 
 **14. porter**
 ```json
 "porter": {
+  "racine_fr": "port",
   "traductions": [...],
-  "synonymes_fr": ["transporter", "porte", "portes", "porté", "portée", "portés", "portées", "portait", "portais", "portant", "portera", "porteras", "porteront"]
+  "synonymes_fr": ["transporter"]
 }
 ```
+*Note : Toutes les conjugaisons couvertes par "port".*
 
 **15. apprendre**
 ```json
 "apprendre": {
+  "racine_fr": "appren",
   "traductions": [...],
-  "synonymes_fr": ["apprend", "apprends", "appris", "apprise", "apprises", "apprenait", "apprenais", "apprenant", "apprendra", "apprendras", "apprendront"]
+  "synonymes_fr": ["appris", "apprise", "apprises"]
 }
 ```
+*Note : "apprend", "apprenait", "apprendra" couverts par "appren". Participe passé (appris) dans synonymes_fr.*
 
 ---
 
@@ -347,45 +419,57 @@ curl -X POST http://localhost:3000/api/debug/prompt \
 
 ## Estimation de travail
 
-- **Code (contextAnalyzer.js)** : ~30 lignes, 15 minutes
-- **Lexique (06-actions.json)** : 15 verbes × ~12 formes = ~180 formes à ajouter, 45-60 minutes
+- **Code (contextAnalyzer.js)** : ~5 lignes à ajouter (une seule condition else if), 5 minutes
+- **Lexique (06-actions.json)** :
+  - Ajouter champ `racine_fr` pour 15 verbes : ~15 minutes
+  - Ajouter formes irrégulières dans `synonymes_fr` : ~30 formes uniques, ~20 minutes
 
-**Total** : ~1h15 de travail
+**Total** : ~40 minutes de travail
+
+**Révision par rapport à l'estimation initiale** : Beaucoup plus simple car on ne fait pas d'extraction automatique, juste du matching sur un champ déclaré.
 
 ---
 
 ## Notes importantes
 
-1. **Lowercase** : Tout est déjà en lowercase dans tokenizeFrench(), pas besoin de le refaire
-2. **Normalisation des accents** : Déjà fait (mangé → mange dans la tokenization)
+1. **Lowercase** : Tout est déjà en lowercase dans tokenizeFrench(), pas besoin de le refaire dans le matching
+2. **Normalisation des accents** : Déjà fait en amont (mangé → mange dans la tokenization)
 3. **Ordre de priorité matching** :
    - 1.0 = Exacte
    - 0.95 = Lemma
    - 0.9 = Synonyme exact
    - 0.85 = Synonyme lemmatisé
-   - **0.75 = Racine sur clé** (NOUVEAU)
-   - **0.70 = Racine sur synonyme** (NOUVEAU)
-4. **Longueur minimum racine** : 4 lettres pour éviter faux positifs ("il", "du", "un", etc.)
+   - **0.75 = Racine française déclarée** (NOUVEAU)
+4. **Choix de la racine** :
+   - Doit être le **dénominateur commun le plus long** qui couvre la majorité des conjugaisons
+   - Exemples : "mang" (4 lettres), "compar" (6 lettres), "transm" (6 lettres)
+   - Pas de règle fixe sur la longueur : décision au cas par cas
+5. **Multiples matches** :
+   - Si plusieurs entrées matchent (ex: "comp" et "compr"), TOUTES sont retournées au LLM
+   - Le LLM choisit selon le contexte de la phrase
+   - Pas de filtrage automatique
 
 ---
 
-## Commandes pour lancer un agent
+## Résumé du système final
 
-Si tu veux déléguer le travail lexique à un agent :
+### Workflow de matching pour un mot tapé par l'utilisateur
 
-```
-Lance un agent general-purpose avec cette tâche :
+1. L'utilisateur tape "comparé"
+2. Le système tokenize et met en lowercase → "compare" (accent normalisé)
+3. Le système cherche dans le lexique avec cette cascade :
+   - **Score 1.0** : Match exact sur clé ou `mot_francais` → ❌
+   - **Score 0.95** : Match sur lemme → ❌
+   - **Score 0.9** : Match exact dans `synonymes_fr` → ❌
+   - **Score 0.85** : Match lemme dans `synonymes_fr` → ❌
+   - **Score 0.75** : `"compare".startsWith(entry.racine_fr)` → ✅ trouve "compar" dans l'entrée "comparer"
+4. Le système retourne l'entrée "comparer" avec score 0.75
+5. Le LLM utilise la traduction confluente
 
-Complète le fichier ancien-confluent/lexique/06-actions.json en ajoutant les formes conjuguées dans synonymes_fr pour tous les verbes selon le document docs/TRAVAIL_RACINES_FRANCAISES.md section "TRAVAIL 2".
+### Avantages de cette approche
 
-Pour chaque verbe, ajoute dans synonymes_fr :
-- Présent : 3ème personne singulier/pluriel
-- Passé composé : participe passé (masculin/féminin/pluriel)
-- Imparfait : 3ème personne
-- Participe présent
-- Futur : 3ème personne
-
-Priorité 1 (très courants) en premier, puis Priorité 2, puis Priorité 3.
-
-Vérifie que le JSON reste valide après chaque modification.
-```
+- ✅ **Contrôle total** : chaque racine est choisie manuellement pour être optimale
+- ✅ **Ambiguïté gérée** : multiples matches possibles, le LLM arbitre
+- ✅ **Performance** : pas de calcul complexe, juste du `startsWith()`
+- ✅ **Maintenance** : facile d'ajuster une racine si elle ne convient pas
+- ✅ **Hybride intelligent** : racines pour les formes régulières, synonymes pour les irrégulières
