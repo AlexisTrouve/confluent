@@ -8,11 +8,11 @@
 - [ ] Concepts : "quelques", "plusieurs", "beaucoup"
 - [ ] Peut-être système de comptage par cycles lunaires
 
-### 2. Adjectifs (système limité)
-- [ ] Définir position syntaxique des adjectifs
-- [ ] Liste d'adjectifs de base (couleurs, tailles, qualités)
-- [ ] Règle : adjectifs = compositions avec liaisons
-- [ ] Exemples : "bon regard" = sili-tosa, "grande eau" = ura-mako
+### 2. Adjectifs (système limité) ✅ FAIT
+- [x] Définir position syntaxique des adjectifs → **na + ADJ + NOM** (épithète) et **NOM-ii-ADJ** (composition)
+- [x] Liste d'adjectifs de base (couleurs, tailles, qualités) → voir docs/06-ADJECTIFS.md
+- [x] Règle : double système avec particule **na** et liaison sacrée **-ii-**
+- [x] Exemples : "bon regard" = na tosa sili (phrase) / siliitosa (concept figé)
 
 ### 3. Vocabulaire émotionnel (basique)
 - [ ] 5-10 émotions de base exprimées par métaphores corporelles
@@ -33,6 +33,7 @@
 
 ## Documentation
 
+- [x] Mettre à jour docs avec système des adjectifs (03-GRAMMAIRE.md, 06-ADJECTIFS.md)
 - [ ] Mettre à jour CLAUDE.md avec nouveaux systèmes
 - [ ] Mettre à jour lexique.json avec nouveaux mots
 - [ ] Créer exemples d'utilisation pour chaque système

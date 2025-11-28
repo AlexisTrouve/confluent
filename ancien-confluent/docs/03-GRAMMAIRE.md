@@ -139,7 +139,7 @@ Les particules marquent la fonction grammaticale des mots. Elles se placent **AV
 | **vi** | Direction | vers, destination |
 | **ve** | Origine | depuis, source |
 | **vu** | Instrument | avec quoi, au moyen de |
-| **na** | Possession | de, appartenant à |
+| **na** | Possession / Adjectif | de, appartenant à / marque l'adjectif épithète |
 | **ni** | Bénéficiaire | pour, à destination de |
 | **no** | Lieu | dans, à |
 
@@ -189,6 +189,94 @@ Pluriel : `tisikari su` = "ces pierres-ci"
 
 ---
 
+## Adjectifs
+
+Le Confluent possède un système dual pour exprimer les qualités : une forme syntaxique pour les phrases et une forme compositionnelle pour créer des concepts figés.
+
+### Double système adjectival
+
+#### 1. Forme syntaxique (épithète) : **na + ADJ + NOM**
+
+La particule **na** (possession/appartenance) sert aussi à marquer les adjectifs épithètes en phrase.
+
+```
+na tosa sili    = de-bon regard → bon regard
+na mako ura     = de-grande eau → grande eau
+na pisu kari    = de-petite pierre → petite pierre
+na nuvi naki    = de-jeune enfant → jeune enfant
+na seni aita    = de-vieux ancêtre → vieil ancêtre
+```
+
+**Position** : la particule **na** se place avant l'adjectif, qui précède le nom.
+
+**Note** : Le contexte désambiguïse entre possession et qualité :
+- `na tosa sili` = bon regard (tosa est une qualité)
+- `na aita sili` = regard de l'ancêtre (aita est un nom)
+
+#### 2. Forme compositionnelle : **NOM-ii-ADJ**
+
+Pour créer un nom composé, un concept figé ou un titre, on utilise la liaison sacrée **-ii-** (agent essentiel = "qui EST").
+
+```
+sil-ii-tosa = siliitosa    = le Regard-Bon (concept/titre)
+ur-ii-mako = uraiimako     = la Grande-Eau (nom propre/lieu)
+nak-ii-nuvi = nakiinuvi    = le Jeune-Enfant (titre/statut)
+```
+
+**Usage** : ces compositions deviennent des noms à part entière, souvent avec majuscule.
+
+### Différence d'usage
+
+| Contexte | Forme | Exemple |
+|----------|-------|---------|
+| Description en phrase | na + ADJ + NOM | `va tori vo na tosa sili mirak u` = "la personne observe le bon regard" |
+| Concept figé / Nom propre | NOM-ii-ADJ | `va tori vo Siliitosa mirak u` = "la personne observe le Siliitosa" (nom d'un concept/lieu) |
+
+### Racines adjectivales de base
+
+Les racines suivantes servent couramment d'adjectifs :
+
+**Taille** :
+- **mako** (grand, vaste)
+- **pisu** (petit, fin)
+
+**Qualité** :
+- **tosa** (bon, bien)
+- **melu** (doux, tendre)
+
+**Âge** :
+- **nuvi** (nouveau, jeune)
+- **seni** (vieux, ancien)
+
+**Lumière** :
+- **sora** (lumineux, clair)
+- **taku** (sombre, obscur)
+
+### Adjectifs avec pluriel
+
+Le pluriel **su** se place après le groupe adjectival :
+
+```
+na tosa sili su      = bons regards
+na mako ura su       = grandes eaux
+tisikari na pisu su  = ces petites pierres-ci
+```
+
+### Exemples en contexte
+
+```
+Va tori vo na nuvi kari pasak at
+"La personne a pris la nouvelle pierre"
+
+Va Nakuura no na mako ura tekis u
+"Les Enfants du Courant vont dans la grande eau"
+
+No Uraakota va aita su ni naki su vo Siliitosa kisun ait
+"À la Confluence, les ancêtres ont transmis le Siliitosa (concept) aux enfants"
+```
+
+---
+
 ## Connecteurs logiques
 
 Les connecteurs sont des **particules** (structure CV) qui lient des phrases ou des éléments.
@@ -228,6 +316,7 @@ vo kari po vo buki miki pasak u
 
 - **Pronoms** : racines de 3 lettres (miki, sinu, tani)
 - **Connecteurs** : particules CV (ti, bo, po, lo, se, me, ne)
+- **Adjectifs** : double système avec **na** (épithète) et **-ii-** (composition)
 - **Pas d'articles** : pas de "le/la/un/une"
 - **Pluriel optionnel** : marqué par **su** si nécessaire
 - **Ordre des circonstants libre** : ve, vi, no, vu, na peuvent être dans n'importe quel ordre
