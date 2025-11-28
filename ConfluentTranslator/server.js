@@ -10,6 +10,8 @@ const {
   generateLexiqueSummary,
   buildReverseIndex
 } = require('./lexiqueLoader');
+const { analyzeContext } = require('./contextAnalyzer');
+const { buildContextualPrompt, getBasePrompt, getPromptStats } = require('./promptBuilder');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -126,7 +128,7 @@ ${summary}
 `;
 }
 
-// Translation endpoint
+// Translation endpoint (NOUVEAU SYSTÈME CONTEXTUEL)
 app.post('/translate', async (req, res) => {
   const { text, target, provider, model, useLexique = true } = req.body;
 
@@ -135,15 +137,36 @@ app.post('/translate', async (req, res) => {
   }
 
   const variant = target === 'proto' ? 'proto' : 'ancien';
-  const basePrompt = target === 'proto' ? protoPrompt : ancienPrompt;
-
-  // Enhance prompt with lexique data if requested
-  const systemPrompt = useLexique
-    ? buildEnhancedPrompt(basePrompt, variant)
-    : basePrompt;
 
   try {
+    let systemPrompt;
+    let contextMetadata = null;
+
+    // NOUVEAU: Analyse contextuelle et génération de prompt optimisé
+    if (useLexique) {
+      const contextResult = analyzeContext(text, lexiques[variant]);
+      systemPrompt = buildContextualPrompt(contextResult, variant);
+
+      // Générer métadonnées pour Layer 2
+      const promptStats = getPromptStats(systemPrompt, contextResult);
+      contextMetadata = {
+        wordsFound: contextResult.metadata.wordsFound,
+        wordsNotFound: contextResult.metadata.wordsNotFound,
+        entriesUsed: contextResult.metadata.entriesUsed,
+        totalLexiqueSize: contextResult.metadata.totalLexiqueSize,
+        tokensFullLexique: promptStats.fullLexiqueTokens,
+        tokensUsed: promptStats.promptTokens,
+        tokensSaved: promptStats.tokensSaved,
+        savingsPercent: promptStats.savingsPercent,
+        useFallback: contextResult.useFallback,
+        expansionLevel: contextResult.metadata.expansionLevel
+      };
+    } else {
+      systemPrompt = getBasePrompt(variant);
+    }
+
     let translation;
+    let rawResponse;
 
     if (provider === 'anthropic') {
       const anthropic = new Anthropic({
@@ -159,7 +182,8 @@ app.post('/translate', async (req, res) => {
         ]
       });
 
-      translation = message.content[0].text;
+      rawResponse = message.content[0].text;
+      translation = rawResponse;
 
     } else if (provider === 'openai') {
       const openai = new OpenAI({
@@ -174,18 +198,93 @@ app.post('/translate', async (req, res) => {
         ]
       });
 
-      translation = completion.choices[0].message.content;
+      rawResponse = completion.choices[0].message.content;
+      translation = rawResponse;
     } else {
       return res.status(400).json({ error: 'Unknown provider' });
     }
 
-    res.json({ translation });
+    // Parser la réponse pour extraire Layer 1 et Layer 3
+    const parsed = parseTranslationResponse(rawResponse);
+
+    // Construire la réponse avec les 3 layers
+    const response = {
+      // Layer 1: Traduction
+      layer1: {
+        translation: parsed.translation
+      },
+
+      // Layer 2: Contexte (COT hors LLM)
+      layer2: contextMetadata,
+
+      // Layer 3: Explications LLM
+      layer3: {
+        decomposition: parsed.decomposition,
+        notes: parsed.notes,
+        wordsCreated: parsed.wordsCreated || []
+      },
+
+      // Compatibilité avec ancien format
+      translation: parsed.translation
+    };
+
+    res.json(response);
 
   } catch (error) {
     console.error('Translation error:', error);
     res.status(500).json({ error: error.message });
   }
 });
+
+/**
+ * Parse la réponse du LLM pour extraire les différentes sections
+ * @param {string} response - Réponse brute du LLM
+ * @returns {Object} - Sections parsées
+ */
+function parseTranslationResponse(response) {
+  const lines = response.split('\n');
+
+  let translation = '';
+  let decomposition = '';
+  let notes = '';
+  let currentSection = null;
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+
+    // Détecter les sections
+    if (trimmed.match(/^(Ancien )?Confluent:/i)) {
+      currentSection = 'translation';
+      continue;
+    }
+    if (trimmed.match(/^D[ée]composition:/i)) {
+      currentSection = 'decomposition';
+      continue;
+    }
+    if (trimmed.match(/^Notes?:/i) || trimmed.match(/^Explication:/i)) {
+      currentSection = 'notes';
+      continue;
+    }
+
+    // Ajouter le contenu à la section appropriée
+    if (currentSection === 'translation' && trimmed && !trimmed.match(/^---/)) {
+      translation += line + '\n';
+    } else if (currentSection === 'decomposition' && trimmed) {
+      decomposition += line + '\n';
+    } else if (currentSection === 'notes' && trimmed) {
+      notes += line + '\n';
+    } else if (!currentSection && trimmed && !trimmed.match(/^---/)) {
+      // Si pas de section détectée, c'est probablement la traduction
+      translation += line + '\n';
+    }
+  }
+
+  return {
+    translation: translation.trim() || response.trim(),
+    decomposition: decomposition.trim(),
+    notes: notes.trim()
+  };
+}
 
 // Batch translation endpoint
 app.post('/api/translate/batch', async (req, res) => {

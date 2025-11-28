@@ -6,12 +6,17 @@
   <title>ConfluentTranslator</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
+    html {
+      background: #1a1a1a;
+      min-height: 100%;
+    }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #1a1a1a;
       color: #e0e0e0;
       padding: 20px;
       line-height: 1.6;
+      min-height: 100vh;
     }
     .container { max-width: 900px; margin: 0 auto; }
     h1 {
@@ -50,6 +55,15 @@
       color: #e0e0e0;
       font-family: inherit;
     }
+    select option {
+      background: #1a1a1a;
+      color: #e0e0e0;
+      padding: 10px;
+    }
+    select:focus {
+      outline: none;
+      border-color: #4a9eff;
+    }
     textarea {
       resize: vertical;
       min-height: 120px;
@@ -68,17 +82,6 @@
     }
     button:hover { background: #357abd; }
     button:disabled { background: #555; cursor: not-allowed; }
-    .output {
-      background: #1a1a1a;
-      padding: 15px;
-      border-radius: 4px;
-      border: 1px solid #3a3a3a;
-      min-height: 100px;
-      white-space: pre-wrap;
-      font-family: monospace;
-      color: #4a9eff;
-    }
-    .error { color: #ff4a4a; }
     .row { display: flex; gap: 15px; }
     .row .form-group { flex: 1; }
 
@@ -107,7 +110,163 @@
     .tab-content { display: none; }
     .tab-content.active { display: block; }
 
-    /* Lexique */
+    /* 3 LAYERS SYSTEM */
+    .layer {
+      background: #2a2a2a;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #3a3a3a;
+      overflow: hidden;
+    }
+
+    /* Layer 1 - Always visible */
+    .layer1 {
+      padding: 20px;
+      background: #1a1a1a;
+      border: 2px solid #4a9eff;
+    }
+    .layer1-title {
+      font-size: 0.9em;
+      color: #4a9eff;
+      margin-bottom: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .layer1-content {
+      font-size: 1.3em;
+      color: #4a9eff;
+      font-family: 'Courier New', monospace;
+      line-height: 1.8;
+      padding: 10px 0;
+    }
+
+    /* Layer 2 & 3 - Collapsible */
+    .layer-header {
+      padding: 15px 20px;
+      background: #2a2a2a;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.2s;
+      user-select: none;
+    }
+    .layer-header:hover {
+      background: #333;
+    }
+    .layer-title {
+      font-size: 1em;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .layer-icon {
+      font-size: 1.2em;
+    }
+    .layer-arrow {
+      transition: transform 0.3s;
+      font-size: 1.2em;
+      color: #4a9eff;
+    }
+    .layer-arrow.expanded {
+      transform: rotate(180deg);
+    }
+    .layer-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background: #1a1a1a;
+    }
+    .layer-content.expanded {
+      max-height: 1000px;
+      transition: max-height 0.5s ease-in;
+    }
+    .layer-content-inner {
+      padding: 20px;
+    }
+
+    /* Layer 2 specific styles */
+    .context-item {
+      margin-bottom: 15px;
+    }
+    .context-label {
+      color: #b0b0b0;
+      font-size: 0.85em;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .word-match {
+      display: inline-block;
+      background: #2a2a2a;
+      padding: 5px 10px;
+      margin: 3px;
+      border-radius: 4px;
+      font-size: 0.9em;
+      border-left: 3px solid #4a9eff;
+    }
+    .word-match-input {
+      color: #e0e0e0;
+    }
+    .word-match-arrow {
+      color: #4a9eff;
+      margin: 0 5px;
+    }
+    .word-match-output {
+      color: #4a9eff;
+      font-family: monospace;
+    }
+    .word-match-score {
+      color: #888;
+      font-size: 0.85em;
+      margin-left: 5px;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .stat-box {
+      background: #2a2a2a;
+      padding: 10px;
+      border-radius: 4px;
+      border-left: 3px solid #4a9eff;
+    }
+    .stat-value {
+      font-size: 1.5em;
+      color: #4a9eff;
+      font-weight: 700;
+    }
+    .stat-label {
+      color: #b0b0b0;
+      font-size: 0.85em;
+    }
+
+    /* Layer 3 specific styles */
+    .decomposition-line {
+      font-family: 'Courier New', monospace;
+      margin: 5px 0;
+      padding-left: 10px;
+      border-left: 2px solid #3a3a3a;
+      color: #e0e0e0;
+    }
+    .notes-text {
+      color: #b0b0b0;
+      line-height: 1.8;
+    }
+
+    /* Empty state */
+    .empty-state {
+      color: #b0b0b0;
+      text-align: center;
+      padding: 30px;
+      font-style: italic;
+    }
+
+    /* Lexique styles */
     .lexique-results {
       max-height: 400px;
       overflow-y: auto;
@@ -143,6 +302,7 @@
       padding: 20px;
       font-style: italic;
     }
+    .error { color: #ff4a4a; }
   </style>
 </head>
 <body>
@@ -159,25 +319,25 @@
     <div id="tab-traduction" class="tab-content active">
       <div class="panel">
         <h2>Configuration</h2>
-      <div class="row">
-        <div class="form-group">
-          <label>Provider</label>
-          <select id="provider">
-            <option value="anthropic">Anthropic</option>
-            <option value="openai">OpenAI</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Modèle</label>
-          <select id="model">
-            <option value="claude-sonnet-4-5-20250929">Claude Sonnet 4.5</option>
-            <option value="claude-4-5-haiku-20250514">Claude Haiku 4.5</option>
-            <option value="gpt-4o-mini">GPT-4o Mini</option>
-            <option value="o1-mini">GPT o1-mini</option>
-          </select>
+        <div class="row">
+          <div class="form-group">
+            <label>Provider</label>
+            <select id="provider">
+              <option value="anthropic">Anthropic</option>
+              <option value="openai">OpenAI</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Modèle</label>
+            <select id="model">
+              <option value="claude-sonnet-4-5-20250929">Claude Sonnet 4.5</option>
+              <option value="claude-haiku-4-5-20251001">Claude Haiku 4.5</option>
+              <option value="gpt-4o-mini">GPT-4o Mini</option>
+              <option value="o1-mini">GPT o1-mini</option>
+            </select>
+          </div>
         </div>
       </div>
-    </div>
 
       <div class="panel">
         <h2>Traduction</h2>
@@ -195,9 +355,58 @@
         <button id="translate">Traduire</button>
       </div>
 
-      <div class="panel">
-        <h2>Résultat</h2>
-        <div id="output" class="output">La traduction apparaîtra ici...</div>
+      <!-- LAYER 1: TRADUCTION (Always visible) -->
+      <div id="result-container" style="display: none;">
+        <div class="layer layer1">
+          <div class="layer1-title">Traduction</div>
+          <div id="layer1-content" class="layer1-content"></div>
+        </div>
+
+        <!-- LAYER 2: CONTEXTE (Collapsible) -->
+        <div class="layer">
+          <div class="layer-header" onclick="toggleLayer('layer2')">
+            <div class="layer-title">
+              <span class="layer-icon">📚</span>
+              <span>Contexte Lexical</span>
+            </div>
+            <span class="layer-arrow" id="layer2-arrow">▼</span>
+          </div>
+          <div id="layer2-content" class="layer-content">
+            <div class="layer-content-inner">
+              <div class="context-item">
+                <div class="context-label">Mots trouvés dans le lexique</div>
+                <div id="layer2-words"></div>
+              </div>
+              <div class="context-item">
+                <div class="context-label">Optimisation</div>
+                <div class="stats-grid" id="layer2-stats"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LAYER 3: EXPLICATIONS LLM (Collapsible) -->
+        <div class="layer">
+          <div class="layer-header" onclick="toggleLayer('layer3')">
+            <div class="layer-title">
+              <span class="layer-icon">💡</span>
+              <span>Explications</span>
+            </div>
+            <span class="layer-arrow" id="layer3-arrow">▼</span>
+          </div>
+          <div id="layer3-content" class="layer-content">
+            <div class="layer-content-inner">
+              <div class="context-item">
+                <div class="context-label">Décomposition</div>
+                <div id="layer3-decomposition"></div>
+              </div>
+              <div class="context-item" id="layer3-notes-container" style="display: none;">
+                <div class="context-label">Notes linguistiques</div>
+                <div id="layer3-notes" class="notes-text"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -239,14 +448,21 @@
       }
     };
 
+    // Toggle layer (expand/collapse)
+    function toggleLayer(layerId) {
+      const content = document.getElementById(`${layerId}-content`);
+      const arrow = document.getElementById(`${layerId}-arrow`);
+
+      content.classList.toggle('expanded');
+      arrow.classList.toggle('expanded');
+    }
+
     // Tab switching
     document.querySelectorAll('.tab').forEach(tab => {
       tab.addEventListener('click', () => {
-        // Remove active class from all tabs and contents
         document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
         document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
 
-        // Add active class to clicked tab and corresponding content
         tab.classList.add('active');
         const tabName = tab.dataset.tab;
         document.getElementById(`tab-${tabName}`).classList.add('active');
@@ -272,15 +488,12 @@
       }
 
       const dict = lexiqueData.dictionnaire;
-
-      // Search in all entries
       const results = [];
+
       for (const [key, data] of Object.entries(dict)) {
         if (key.includes(query) || (data.mot_francais && data.mot_francais.toLowerCase().includes(query))) {
-          // Skip synonym entries to avoid duplicates
           if (data.is_synonym_of) continue;
 
-          // Get the confluent translation
           const cf = data.traductions && data.traductions.length > 0
             ? data.traductions[0].confluent
             : '?';
@@ -294,7 +507,6 @@
         }
       }
 
-      // Sort by relevance (starts with query first, then exact match)
       results.sort((a, b) => {
         const aExact = a.fr.toLowerCase() === query;
         const bExact = b.fr.toLowerCase() === query;
@@ -308,7 +520,6 @@
         return a.fr.localeCompare(b.fr);
       });
 
-      // Display results
       if (results.length === 0) {
         resultsDiv.innerHTML = '<div class="no-results">Aucun résultat trouvé</div>';
         countDiv.textContent = '0 résultat(s)';
@@ -324,11 +535,10 @@
       }
     };
 
-    // Search on input
     document.getElementById('lexique-search').addEventListener('input', searchLexique);
     document.getElementById('lexique-niveau').addEventListener('change', searchLexique);
 
-    // Load config from localStorage
+    // Load/Save config
     const loadConfig = () => {
       const config = JSON.parse(localStorage.getItem('confluentConfig') || '{}');
       if (config.provider) document.getElementById('provider').value = config.provider;
@@ -336,7 +546,6 @@
       if (config.target) document.getElementById('target').value = config.target;
     };
 
-    // Save config to localStorage
     const saveConfig = () => {
       const config = {
         provider: document.getElementById('provider').value,
@@ -346,7 +555,7 @@
       localStorage.setItem('confluentConfig', JSON.stringify(config));
     };
 
-    // Update model options based on provider
+    // Update model options
     document.getElementById('provider').addEventListener('change', (e) => {
       const modelSelect = document.getElementById('model');
       modelSelect.innerHTML = '';
@@ -354,7 +563,7 @@
       if (e.target.value === 'anthropic') {
         modelSelect.innerHTML = `
           <option value="claude-sonnet-4-5-20250929">Claude Sonnet 4.5</option>
-          <option value="claude-4-5-haiku-20250514">Claude Haiku 4.5</option>
+          <option value="claude-haiku-4-5-20251001">Claude Haiku 4.5</option>
         `;
       } else if (e.target.value === 'openai') {
         modelSelect.innerHTML = `
@@ -365,23 +574,26 @@
       saveConfig();
     });
 
-    // Save config on change
     document.getElementById('model').addEventListener('change', saveConfig);
     document.getElementById('target').addEventListener('change', saveConfig);
 
-    // Translation
+    // Translation with 3 layers
     document.getElementById('translate').addEventListener('click', async () => {
       const button = document.getElementById('translate');
-      const output = document.getElementById('output');
       const text = document.getElementById('input').value.trim();
+      const resultContainer = document.getElementById('result-container');
 
       if (!text) {
-        output.innerHTML = '<span class="error">Veuillez entrer un texte.</span>';
+        alert('Veuillez entrer un texte.');
         return;
       }
 
       button.disabled = true;
-      output.textContent = 'Traduction en cours...';
+      resultContainer.style.display = 'none';
+
+      // Show loading in layer 1
+      resultContainer.style.display = 'block';
+      document.getElementById('layer1-content').textContent = 'Traduction en cours...';
 
       const config = {
         text,
@@ -400,12 +612,68 @@
         const data = await response.json();
 
         if (response.ok) {
-          output.textContent = data.translation;
+          // LAYER 1: Translation
+          document.getElementById('layer1-content').textContent = data.layer1.translation;
+
+          // LAYER 2: Context
+          if (data.layer2) {
+            const wordsHtml = data.layer2.wordsFound && data.layer2.wordsFound.length > 0
+              ? data.layer2.wordsFound.map(w => `
+                  <div class="word-match">
+                    <span class="word-match-input">${w.input}</span>
+                    <span class="word-match-arrow">→</span>
+                    <span class="word-match-output">${w.confluent}</span>
+                    <span class="word-match-score">(${w.score.toFixed(2)})</span>
+                  </div>
+                `).join('')
+              : '<div class="no-results">Aucun mot trouvé (fallback racines activé)</div>';
+
+            document.getElementById('layer2-words').innerHTML = wordsHtml;
+
+            const statsHtml = `
+              <div class="stat-box">
+                <div class="stat-value">${data.layer2.entriesUsed || 0}</div>
+                <div class="stat-label">Entrées utilisées</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-value">${data.layer2.tokensSaved || 0}</div>
+                <div class="stat-label">Tokens économisés</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-value">${data.layer2.savingsPercent || 0}%</div>
+                <div class="stat-label">Économie</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-value">${data.layer2.useFallback ? 'OUI' : 'NON'}</div>
+                <div class="stat-label">Fallback racines</div>
+              </div>
+            `;
+            document.getElementById('layer2-stats').innerHTML = statsHtml;
+          }
+
+          // LAYER 3: Explanations
+          if (data.layer3) {
+            const decompHtml = data.layer3.decomposition
+              ? data.layer3.decomposition.split('\n').map(line =>
+                  `<div class="decomposition-line">${line}</div>`
+                ).join('')
+              : '<div class="no-results">Pas de décomposition disponible</div>';
+
+            document.getElementById('layer3-decomposition').innerHTML = decompHtml;
+
+            if (data.layer3.notes) {
+              document.getElementById('layer3-notes').textContent = data.layer3.notes;
+              document.getElementById('layer3-notes-container').style.display = 'block';
+            } else {
+              document.getElementById('layer3-notes-container').style.display = 'none';
+            }
+          }
+
         } else {
-          output.innerHTML = `<span class="error">Erreur: ${data.error}</span>`;
+          document.getElementById('layer1-content').innerHTML = `<span class="error">Erreur: ${data.error}</span>`;
         }
       } catch (error) {
-        output.innerHTML = `<span class="error">Erreur: ${error.message}</span>`;
+        document.getElementById('layer1-content').innerHTML = `<span class="error">Erreur: ${error.message}</span>`;
       } finally {
         button.disabled = false;
       }

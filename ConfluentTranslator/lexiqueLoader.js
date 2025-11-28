@@ -97,6 +97,61 @@ function loadLexiqueFromDir(lexiqueDir) {
 }
 
 /**
+ * Charge et fusionne le lexique simple depuis data/lexique-francais-confluent.json
+ * @param {string} baseDir - Chemin de base du projet
+ * @param {Object} existingLexique - Lexique existant à enrichir
+ * @returns {Object} - Lexique enrichi
+ */
+function mergeSimpleLexique(baseDir, existingLexique) {
+  const simpleLexiquePath = path.join(baseDir, 'data', 'lexique-francais-confluent.json');
+
+  if (!fs.existsSync(simpleLexiquePath)) {
+    console.warn(`  Simple lexique not found: ${simpleLexiquePath}`);
+    return existingLexique;
+  }
+
+  try {
+    const content = JSON.parse(fs.readFileSync(simpleLexiquePath, 'utf-8'));
+    let addedCount = 0;
+
+    // Parcourir le dictionnaire simple (structure: {"mot": "traduction"})
+    if (content.dictionnaire) {
+      for (const [section, entries] of Object.entries(content.dictionnaire)) {
+        if (typeof entries === 'object') {
+          for (const [motFr, traduction] of Object.entries(entries)) {
+            const key = motFr.toLowerCase();
+
+            // N'ajouter que si pas déjà présent
+            if (!existingLexique.dictionnaire[key]) {
+              existingLexique.dictionnaire[key] = {
+                mot_francais: motFr,
+                traductions: [{
+                  confluent: traduction,
+                  type: 'racine', // Type par défaut
+                  forme_liee: traduction,
+                  domaine: 'general'
+                }],
+                synonymes_fr: [],
+                source_files: ['data/lexique-francais-confluent.json']
+              };
+              addedCount++;
+            }
+          }
+        }
+      }
+    }
+
+    console.log(`  Merged ${addedCount} entries from simple lexique`);
+    existingLexique.meta.total_entries = Object.keys(existingLexique.dictionnaire).length;
+
+  } catch (error) {
+    console.error(`  Error merging simple lexique: ${error.message}`);
+  }
+
+  return existingLexique;
+}
+
+/**
  * Charge les lexiques pour les deux variantes de la langue
  * @param {string} baseDir - Chemin de base du projet confluent
  * @returns {Object} - Lexiques proto et ancien
@@ -110,8 +165,11 @@ function loadAllLexiques(baseDir) {
   console.log(`  Loaded ${proto.meta.total_entries} entries from ${proto.meta.files_loaded.length} files`);
 
   console.log('Loading Ancien-Confluent lexique...');
-  const ancien = loadLexiqueFromDir(ancienDir);
+  let ancien = loadLexiqueFromDir(ancienDir);
   console.log(`  Loaded ${ancien.meta.total_entries} entries from ${ancien.meta.files_loaded.length} files`);
+
+  // Fusionner le lexique simple
+  ancien = mergeSimpleLexique(baseDir, ancien);
 
   return { proto, ancien };
 }
