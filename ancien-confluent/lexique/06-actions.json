@@ -493,6 +493,32 @@
           "note": "Chasser dans l'eau"
         }
       ]
+    },
+    "manger": {
+      "traductions": [
+        {
+          "confluent": "mukis",
+          "type": "verbe",
+          "racine": "muki",
+          "forme_liee": "muk",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Consommer de la nourriture"
+        }
+      ]
+    },
+    "dévorer": {
+      "traductions": [
+        {
+          "confluent": "mukiuzana",
+          "type": "composition",
+          "composition": "muk-i-zana",
+          "sens_litteral": "Manger avec chasse",
+          "racines": ["muki", "zana"],
+          "domaine": "action",
+          "note": "Manger violemment, comme un prédateur"
+        }
+      ]
     }
   }
 }

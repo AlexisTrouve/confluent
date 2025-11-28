@@ -1,0 +1,76 @@
+{
+  "_comment": "Relations familiales",
+  "_mots_a_gerer": [],
+  "dictionnaire": {
+    "frère": {
+      "traductions": [
+        {
+          "confluent": "vaki",
+          "type": "racine",
+          "forme_liee": "vak",
+          "domaine": "famille",
+          "note": "Frère de sang"
+        }
+      ],
+      "synonymes_fr": ["frères"]
+    },
+    "sœur": {
+      "traductions": [
+        {
+          "confluent": "seki",
+          "type": "racine",
+          "forme_liee": "sek",
+          "domaine": "famille",
+          "note": "Sœur de sang"
+        }
+      ],
+      "synonymes_fr": ["sœurs"]
+    },
+    "mère": {
+      "traductions": [
+        {
+          "confluent": "matu",
+          "type": "racine",
+          "forme_liee": "mat",
+          "domaine": "famille",
+          "note": "Mère biologique"
+        }
+      ]
+    },
+    "père": {
+      "traductions": [
+        {
+          "confluent": "patu",
+          "type": "racine",
+          "forme_liee": "pat",
+          "domaine": "famille",
+          "note": "Père biologique"
+        }
+      ]
+    },
+    "famille": {
+      "traductions": [
+        {
+          "confluent": "mitu",
+          "type": "racine",
+          "forme_liee": "mit",
+          "domaine": "famille",
+          "note": "Unité familiale"
+        }
+      ]
+    },
+    "frères et sœurs": {
+      "traductions": [
+        {
+          "confluent": "vakisu",
+          "type": "composition",
+          "composition": "vaki + su",
+          "sens_litteral": "Frères (pluriel inclusif)",
+          "racines": ["vaki"],
+          "domaine": "famille"
+        }
+      ],
+      "synonymes_fr": ["fratrie"]
+    }
+  }
+}

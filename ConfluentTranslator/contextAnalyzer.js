@@ -336,8 +336,16 @@ function analyzeContext(text, lexique, options = {}) {
     expansionLevel
   );
 
-  // 5. Fallback si aucune entrée trouvée
-  const useFallback = expandedEntries.length === 0;
+  // 5. Fallback si trop de mots manquants (>50% de mots non trouvés)
+  const wordsFoundCount = searchResult.wordsFound.length;
+  const wordsNotFoundCount = searchResult.wordsNotFound.length;
+  const totalWords = wordsFoundCount + wordsNotFoundCount;
+  const coveragePercent = totalWords > 0 ? (wordsFoundCount / totalWords) * 100 : 0;
+
+  // Activer fallback si :
+  // - Aucune entrée trouvée OU
+  // - Couverture < 50% (majorité de mots manquants)
+  const useFallback = expandedEntries.length === 0 || coveragePercent < 50;
   const rootsFallback = useFallback ? extractRoots(lexique) : [];
 
   // 6. Calculer tokens économisés (estimation)

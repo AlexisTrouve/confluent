@@ -167,6 +167,29 @@
           "note": "Créature jamais observée"
         }
       ]
+    },
+    "loup": {
+      "traductions": [
+        {
+          "confluent": "loku",
+          "type": "racine",
+          "forme_liee": "lok",
+          "domaine": "animal",
+          "note": "Prédateur sauvage"
+        }
+      ]
+    },
+    "meute": {
+      "traductions": [
+        {
+          "confluent": "lokusu",
+          "type": "composition",
+          "composition": "loku + su",
+          "sens_litteral": "Loups (pluriel)",
+          "racines": ["loku"],
+          "domaine": "animal"
+        }
+      ]
     }
   }
 }

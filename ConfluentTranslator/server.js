@@ -128,6 +128,57 @@ ${summary}
 `;
 }
 
+// Debug endpoint: Generate prompt without calling LLM
+app.post('/api/debug/prompt', (req, res) => {
+  const { text, target = 'ancien', useLexique = true } = req.body;
+
+  if (!text) {
+    return res.status(400).json({ error: 'Missing parameter: text' });
+  }
+
+  const variant = target === 'proto' ? 'proto' : 'ancien';
+
+  try {
+    let systemPrompt;
+    let contextMetadata = null;
+
+    // MÊME CODE QUE /translate
+    if (useLexique) {
+      const contextResult = analyzeContext(text, lexiques[variant]);
+      systemPrompt = buildContextualPrompt(contextResult, variant);
+
+      const promptStats = getPromptStats(systemPrompt, contextResult);
+      contextMetadata = {
+        wordsFound: contextResult.metadata.wordsFound,
+        wordsNotFound: contextResult.metadata.wordsNotFound,
+        entriesUsed: contextResult.metadata.entriesUsed,
+        totalLexiqueSize: contextResult.metadata.totalLexiqueSize,
+        tokensFullLexique: promptStats.fullLexiqueTokens,
+        tokensUsed: promptStats.promptTokens,
+        tokensSaved: promptStats.tokensSaved,
+        savingsPercent: promptStats.savingsPercent,
+        useFallback: contextResult.useFallback,
+        expansionLevel: contextResult.metadata.expansionLevel
+      };
+    } else {
+      systemPrompt = getBasePrompt(variant);
+    }
+
+    res.json({
+      prompt: systemPrompt,
+      metadata: contextMetadata,
+      stats: {
+        promptLength: systemPrompt.length,
+        promptLines: systemPrompt.split('\n').length
+      }
+    });
+
+  } catch (error) {
+    console.error('Prompt generation error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // Translation endpoint (NOUVEAU SYSTÈME CONTEXTUEL)
 app.post('/translate', async (req, res) => {
   const { text, target, provider, model, useLexique = true } = req.body;
@@ -217,8 +268,10 @@ app.post('/translate', async (req, res) => {
       // Layer 2: Contexte (COT hors LLM)
       layer2: contextMetadata,
 
-      // Layer 3: Explications LLM
+      // Layer 3: Explications LLM (avec COT)
       layer3: {
+        analyse: parsed.analyse,
+        strategie: parsed.strategie,
         decomposition: parsed.decomposition,
         notes: parsed.notes,
         wordsCreated: parsed.wordsCreated || []
@@ -237,13 +290,15 @@ app.post('/translate', async (req, res) => {
 });
 
 /**
- * Parse la réponse du LLM pour extraire les différentes sections
+ * Parse la réponse du LLM pour extraire les différentes sections (avec COT)
  * @param {string} response - Réponse brute du LLM
  * @returns {Object} - Sections parsées
  */
 function parseTranslationResponse(response) {
   const lines = response.split('\n');
 
+  let analyse = '';
+  let strategie = '';
   let translation = '';
   let decomposition = '';
   let notes = '';
@@ -252,7 +307,15 @@ function parseTranslationResponse(response) {
   for (const line of lines) {
     const trimmed = line.trim();
 
-    // Détecter les sections
+    // Détecter les sections (nouveau format COT)
+    if (trimmed.match(/^ANALYSE:/i)) {
+      currentSection = 'analyse';
+      continue;
+    }
+    if (trimmed.match(/^STRAT[ÉE]GIE:/i)) {
+      currentSection = 'strategie';
+      continue;
+    }
     if (trimmed.match(/^(Ancien )?Confluent:/i)) {
       currentSection = 'translation';
       continue;
@@ -267,19 +330,25 @@ function parseTranslationResponse(response) {
     }
 
     // Ajouter le contenu à la section appropriée
-    if (currentSection === 'translation' && trimmed && !trimmed.match(/^---/)) {
+    if (currentSection === 'analyse' && trimmed && !trimmed.match(/^---/)) {
+      analyse += line + '\n';
+    } else if (currentSection === 'strategie' && trimmed && !trimmed.match(/^---/)) {
+      strategie += line + '\n';
+    } else if (currentSection === 'translation' && trimmed && !trimmed.match(/^---/)) {
       translation += line + '\n';
     } else if (currentSection === 'decomposition' && trimmed) {
       decomposition += line + '\n';
     } else if (currentSection === 'notes' && trimmed) {
       notes += line + '\n';
-    } else if (!currentSection && trimmed && !trimmed.match(/^---/)) {
+    } else if (!currentSection && trimmed && !trimmed.match(/^---/) && !trimmed.match(/^\*\*/)) {
       // Si pas de section détectée, c'est probablement la traduction
       translation += line + '\n';
     }
   }
 
   return {
+    analyse: analyse.trim(),
+    strategie: strategie.trim(),
     translation: translation.trim() || response.trim(),
     decomposition: decomposition.trim(),
     notes: notes.trim()
