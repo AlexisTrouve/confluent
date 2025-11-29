@@ -65,6 +65,15 @@
         "note": "Instrument, accompagnement"
       }]
     },
+    "ve": {
+      "mot_francais": "[ORIGINE]",
+      "traductions": [{
+        "confluent": "ve",
+        "type": "particule",
+        "categorie": "cas",
+        "note": "Origine, source (depuis)"
+      }]
+    },
     "at": {
       "mot_francais": "[PASSÉ-VÉCU]",
       "traductions": [{
@@ -126,6 +135,15 @@
         "type": "marqueur_temps",
         "categorie": "temps",
         "note": "Passé avec regret ou nostalgie"
+      }]
+    },
+    "eol": {
+      "mot_francais": "[HABITUEL]",
+      "traductions": [{
+        "confluent": "eol",
+        "type": "marqueur_aspect",
+        "categorie": "aspect",
+        "note": "Aspect habituel (fait régulièrement)"
       }]
     },
     "zo": {
