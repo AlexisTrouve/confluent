@@ -169,6 +169,9 @@
           ],
           "domaine": "qualificatif"
         }
+      ],
+      "synonymes_fr": [
+        "pales"
       ]
     },
     "yeux de l'aurore": {
@@ -200,6 +203,11 @@
           ],
           "domaine": "qualificatif"
         }
+      ],
+      "synonymes_fr": [
+        "eclate",
+        "eclats",
+        "eclates"
       ]
     },
     "translucide": {
@@ -215,6 +223,9 @@
           ],
           "domaine": "qualificatif"
         }
+      ],
+      "synonymes_fr": [
+        "translucides"
       ]
     },
     "lumineux": {
@@ -225,6 +236,10 @@
           "forme_liee": "sor",
           "domaine": "qualificatif"
         }
+      ],
+      "synonymes_fr": [
+        "lumineuse",
+        "lumineuses"
       ]
     },
     "sombre": {
@@ -235,6 +250,9 @@
           "forme_liee": "kum",
           "domaine": "qualificatif"
         }
+      ],
+      "synonymes_fr": [
+        "sombres"
       ]
     },
     "patine": {
@@ -250,6 +268,9 @@
           ],
           "domaine": "qualificatif"
         }
+      ],
+      "synonymes_fr": [
+        "patines"
       ]
     },
     "gravure": {

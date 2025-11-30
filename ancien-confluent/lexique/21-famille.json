@@ -63,6 +63,64 @@
         }
       ]
     },
+    "homme": {
+      "traductions": [
+        {
+          "confluent": "toko",
+          "type": "racine",
+          "forme_liee": "tok",
+          "domaine": "personne",
+          "note": "Homme adulte"
+        }
+      ],
+      "synonymes_fr": [
+        "hommes"
+      ]
+    },
+    "femme": {
+      "traductions": [
+        {
+          "confluent": "nako",
+          "type": "racine",
+          "forme_liee": "nak",
+          "domaine": "personne",
+          "note": "Femme adulte"
+        }
+      ],
+      "synonymes_fr": [
+        "femmes"
+      ]
+    },
+    "fille": {
+      "traductions": [
+        {
+          "confluent": "naku",
+          "type": "racine",
+          "forme_liee": "nak",
+          "domaine": "personne",
+          "note": "Fille, enfant féminin"
+        }
+      ],
+      "synonymes_fr": [
+        "filles"
+      ]
+    },
+    "garcon": {
+      "traductions": [
+        {
+          "confluent": "toku",
+          "type": "racine",
+          "forme_liee": "tok",
+          "domaine": "personne",
+          "note": "Garçon, enfant masculin"
+        }
+      ],
+      "synonymes_fr": [
+        "garçon",
+        "garcons",
+        "garçons"
+      ]
+    },
     "freres et sœurs": {
       "traductions": [
         {

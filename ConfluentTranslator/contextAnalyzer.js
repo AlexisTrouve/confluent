@@ -93,6 +93,27 @@ function simpleLemmatize(word) {
     forms.push(word.slice(0, -1)); // eaux → eau
   }
 
+  // Gérer les adverbes en -ment (lentement → lent)
+  if (word.endsWith('ment') && word.length > 6) {
+    // lentement → lent, rapidement → rapide
+    let adjBase = word.slice(0, -4); // retire "ment"
+
+    // Cas spéciaux : -emment → -ent, -amment → -ant
+    if (word.endsWith('emment')) {
+      adjBase = word.slice(0, -5) + 'ent'; // prudemment → prudent
+    } else if (word.endsWith('amment')) {
+      adjBase = word.slice(0, -5) + 'ant'; // couramment → courant
+    }
+    // Cas général : retire le 'e' si présent avant 'ment'
+    else if (adjBase.endsWith('e')) {
+      // rapidement → rapide (déjà bon)
+      // lentement → lente → lent
+      forms.push(adjBase.slice(0, -1)); // sans le 'e' final
+    }
+
+    forms.push(adjBase);
+  }
+
   // Gérer formes verbales courantes
   const verbEndings = {
     'ent': 'er', // observent → observer, donnent → donner

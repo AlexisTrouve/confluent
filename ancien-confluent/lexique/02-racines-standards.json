@@ -41,7 +41,10 @@
         }
       ],
       "synonymes_fr": [
-        "vaste"
+        "vaste",
+        "grande",
+        "grands",
+        "grandes"
       ]
     },
     "petit": {
@@ -55,7 +58,46 @@
         }
       ],
       "synonymes_fr": [
-        "fin"
+        "fin",
+        "petite",
+        "petits",
+        "petites"
+      ]
+    },
+    "lent": {
+      "traductions": [
+        {
+          "confluent": "telu",
+          "type": "racine",
+          "forme_liee": "tel",
+          "domaine": "qualificatif",
+          "note": "Lent, sans hâte"
+        }
+      ],
+      "synonymes_fr": [
+        "lente",
+        "lents",
+        "lentes",
+        "lentement"
+      ]
+    },
+    "rapide": {
+      "traductions": [
+        {
+          "confluent": "hayo",
+          "type": "racine",
+          "forme_liee": "hay",
+          "domaine": "qualificatif",
+          "note": "Rapide, vif"
+        }
+      ],
+      "synonymes_fr": [
+        "rapides",
+        "rapidement",
+        "vif",
+        "vifs",
+        "vive",
+        "vives"
       ]
     },
     "nouveau": {
@@ -69,7 +111,10 @@
         }
       ],
       "synonymes_fr": [
-        "jeune"
+        "jeune",
+        "nouvelle",
+        "nouveaux",
+        "nouvelles"
       ]
     },
     "echanger": {
@@ -123,7 +168,8 @@
         }
       ],
       "synonymes_fr": [
-        "obscur"
+        "obscur",
+        "sombres"
       ]
     },
     "couleur": {
@@ -405,7 +451,9 @@
         }
       ],
       "synonymes_fr": [
-        "âgé"
+        "âgé",
+        "vieille",
+        "vieilles"
       ]
     },
     "signe": {
