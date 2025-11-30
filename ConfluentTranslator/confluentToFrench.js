@@ -93,7 +93,7 @@ function searchConfluent(word, reverseIndex) {
   }
 
   // 5. NOUVEAU: Décomposition morphologique
-  const decompositions = decomposeWord(lowerWord);
+  const decompositions = decomposeWord(lowerWord, reverseIndex);
   for (const decomp of decompositions) {
     const part1Match = searchConfluent(decomp.part1, reverseIndex);
     const part2Match = searchConfluent(decomp.part2, reverseIndex);

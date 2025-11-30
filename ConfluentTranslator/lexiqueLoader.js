@@ -2,6 +2,20 @@ const fs = require('fs');
 const path = require('path');
 
 /**
+ * Normalise un texte : lowercase + retire accents + ligatures
+ * @param {string} text - Texte à normaliser
+ * @returns {string} - Texte normalisé
+ */
+function normalizeText(text) {
+  return text
+    .toLowerCase()
+    .replace(/œ/g, 'oe')
+    .replace(/æ/g, 'ae')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+}
+
+/**
  * Charge dynamiquement tous les fichiers de lexique d'un dossier
  * @param {string} lexiqueDir - Chemin vers le dossier contenant les fichiers JSON
  * @returns {Object} - Lexique fusionné avec métadonnées
@@ -33,7 +47,7 @@ function loadLexiqueFromDir(lexiqueDir) {
       if (content.dictionnaire) {
         // Fusionner les entrées
         for (const [motFr, data] of Object.entries(content.dictionnaire)) {
-          const key = motFr.toLowerCase();
+          const key = normalizeText(motFr);
 
           if (!result.dictionnaire[key]) {
             result.dictionnaire[key] = {
@@ -67,7 +81,7 @@ function loadLexiqueFromDir(lexiqueDir) {
                 result.dictionnaire[key].synonymes_fr.push(syn);
               }
               // Créer une entrée pour le synonyme qui pointe vers le mot principal
-              const synKey = syn.toLowerCase();
+              const synKey = normalizeText(syn);
               if (!result.dictionnaire[synKey]) {
                 result.dictionnaire[synKey] = {
                   mot_francais: syn,
@@ -119,7 +133,7 @@ function mergeSimpleLexique(baseDir, existingLexique) {
       for (const [section, entries] of Object.entries(content.dictionnaire)) {
         if (typeof entries === 'object') {
           for (const [motFr, traduction] of Object.entries(entries)) {
-            const key = motFr.toLowerCase();
+            const key = normalizeText(motFr);
 
             // N'ajouter que si pas déjà présent
             if (!existingLexique.dictionnaire[key]) {
@@ -210,7 +224,7 @@ function buildReverseIndex(lexique) {
  */
 function searchLexique(lexique, query, direction = 'fr2conf') {
   const results = [];
-  const queryLower = query.toLowerCase();
+  const queryLower = normalizeText(query);
 
   if (direction === 'fr2conf') {
     // Recherche exacte

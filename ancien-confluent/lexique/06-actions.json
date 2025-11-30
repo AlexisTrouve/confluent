@@ -809,6 +809,20 @@
           "domaine": "action",
           "note": "Consommer de la nourriture"
         }
+      ],
+      "synonymes_fr": [
+        "mange",
+        "manges",
+        "mangeons",
+        "mangez",
+        "mangent",
+        "mangeais",
+        "mangeait",
+        "mangions",
+        "mangiez",
+        "mangeaient",
+        "mangeant",
+        "mangé"
       ]
     },
     "devorer": {
@@ -934,6 +948,109 @@
         "rejoignaient",
         "rejoignant",
         "rejoint"
+      ]
+    },
+    "battre": {
+      "racine_fr": "bat",
+      "traductions": [
+        {
+          "confluent": "pulum",
+          "type": "verbe",
+          "racine": "pulu",
+          "forme_liee": "pul",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Battre (cœur), pulser, rythme vital"
+        }
+      ],
+      "synonymes_fr": [
+        "bat",
+        "bats",
+        "battons",
+        "battez",
+        "battent",
+        "battais",
+        "battait",
+        "battions",
+        "battiez",
+        "battaient",
+        "battant",
+        "battu"
+      ]
+    },
+    "penser": {
+      "racine_fr": "pens",
+      "traductions": [
+        {
+          "confluent": "umis",
+          "type": "verbe",
+          "racine": "umi",
+          "forme_liee": "um",
+          "structure": "VCVC",
+          "domaine": "action_cognitive",
+          "note": "Penser, réfléchir - activité mentale (même racine que méditer)"
+        }
+      ],
+      "synonymes_fr": [
+        "réfléchir",
+        "pense",
+        "penses",
+        "pensons",
+        "pensez",
+        "pensent",
+        "pensais",
+        "pensait",
+        "pensions",
+        "pensiez",
+        "pensaient",
+        "pensant",
+        "pensé",
+        "réfléchis",
+        "réfléchit",
+        "réfléchissons",
+        "réfléchissez",
+        "réfléchissent",
+        "réfléchissais",
+        "réfléchissait",
+        "réfléchissions",
+        "réfléchissiez",
+        "réfléchissaient",
+        "réfléchissant",
+        "réfléchi"
+      ]
+    },
+    "voler": {
+      "racine_fr": "vol",
+      "traductions": [
+        {
+          "confluent": "aliuk",
+          "type": "verbe",
+          "racine": "aliu",
+          "forme_liee": "ali",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Voler, s'envoler, planer dans les airs"
+        }
+      ],
+      "synonymes_fr": [
+        "vole",
+        "voles",
+        "volons",
+        "volez",
+        "volent",
+        "volais",
+        "volait",
+        "volions",
+        "voliez",
+        "volaient",
+        "volant",
+        "volé",
+        "s'envoler",
+        "envole",
+        "envoles",
+        "envolons",
+        "envolez",
+        "envolent"
       ]
     }
   }

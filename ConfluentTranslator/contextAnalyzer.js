@@ -28,9 +28,11 @@ function tokenizeFrench(text) {
   ]);
 
   // ÉTAPE 1: Normaliser et nettoyer le texte
-  // ORDRE IMPORTANT: lowercase → accents → contractions
+  // ORDRE IMPORTANT: lowercase → ligatures → accents → contractions
   let processedText = text
     .toLowerCase()
+    .replace(/œ/g, 'oe')                 // Ligature œ → oe (cœur → coeur)
+    .replace(/æ/g, 'ae')                 // Ligature æ → ae
     .normalize('NFD')                    // Décompose les caractères accentués
     .replace(/[\u0300-\u036f]/g, '');   // Retire les diacritiques (é→e, è→e, ê→e, etc.)
 
@@ -143,7 +145,12 @@ function simpleLemmatize(word) {
     if (word.endsWith(ending) && word.length > ending.length + 2) {
       const root = word.slice(0, -ending.length);
       forms.push(root + replacement);
-      forms.push(root); // juste la racine aussi
+      // Ajouter le radical seul UNIQUEMENT s'il fait au moins 5 lettres
+      // Évite: "dansent" → "dans" (4 lettres, faux positif avec particule "dans")
+      // Accepte: "écoutent" → "écoute" (6 lettres), "observent" → "observe" (7 lettres)
+      if (root.length >= 5) {
+        forms.push(root);
+      }
     }
   }
 
@@ -175,9 +182,10 @@ function simpleLemmatize(word) {
  * Cherche un mot dans le dictionnaire (correspondance exacte ou synonyme)
  * @param {string} word - Mot à chercher
  * @param {Object} dictionnaire - Dictionnaire du lexique
+ * @param {string} normalizedText - Texte original normalisé (pour vérifier frontières)
  * @returns {Array} - Entrées trouvées avec score
  */
-function searchWord(word, dictionnaire) {
+function searchWord(word, dictionnaire, normalizedText = '') {
   const results = [];
   const lemmas = simpleLemmatize(word);
 
@@ -224,9 +232,10 @@ function searchWord(word, dictionnaire) {
  * @param {string[]} words - Liste de mots
  * @param {Object} lexique - Lexique complet
  * @param {number} maxEntries - Nombre max d'entrées
+ * @param {string} normalizedText - Texte original normalisé (pour vérifier frontières)
  * @returns {Object} - Résultat avec entrées trouvées et métadonnées
  */
-function findRelevantEntries(words, lexique, maxEntries) {
+function findRelevantEntries(words, lexique, maxEntries, normalizedText = '') {
   const foundEntries = new Map(); // key: mot_francais, value: entry
   const wordsFound = []; // Pour Layer 2
   const wordsNotFound = [];
@@ -243,7 +252,7 @@ function findRelevantEntries(words, lexique, maxEntries) {
 
   // Chercher chaque mot
   for (const word of words) {
-    const results = searchWord(word, lexique.dictionnaire);
+    const results = searchWord(word, lexique.dictionnaire, normalizedText);
 
     if (results.length > 0) {
       // Prendre la meilleure correspondance
@@ -380,6 +389,14 @@ function extractRoots(lexique) {
 function analyzeContext(text, lexique, options = {}) {
   const expansionLevel = options.expansionLevel || 1;
 
+  // 0. Normaliser le texte (pour vérifier frontières de mots plus tard)
+  const normalizedText = text
+    .toLowerCase()
+    .replace(/œ/g, 'oe')
+    .replace(/æ/g, 'ae')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+
   // 1. Tokenization
   const words = tokenizeFrench(text);
   const uniqueWords = [...new Set(words)];
@@ -387,8 +404,8 @@ function analyzeContext(text, lexique, options = {}) {
   // 2. Calculer limite dynamique
   const maxEntries = calculateMaxEntries(words.length);
 
-  // 3. Trouver entrées pertinentes
-  const searchResult = findRelevantEntries(uniqueWords, lexique, maxEntries);
+  // 3. Trouver entrées pertinentes (avec texte normalisé pour vérifier frontières)
+  const searchResult = findRelevantEntries(uniqueWords, lexique, maxEntries, normalizedText);
 
   // 4. Expansion sémantique
   const expandedEntries = expandContext(

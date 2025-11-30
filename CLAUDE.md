@@ -115,6 +115,29 @@ sili (regard) + -i- (agent) + aska (libre)
 ### Peuple
 **Siliaska** = "Les porteurs du regard libre"
 
+## API ConfluentTranslator
+
+Le serveur de traduction (`ConfluentTranslator/server.js`) expose les endpoints suivants :
+
+### Gestion des lexiques
+- **GET** `/lexique` - Retourne le lexique ancien (legacy)
+- **GET** `/api/lexique/:variant` - Retourne le lexique pour `proto` ou `ancien`
+- **GET** `/api/stats` - Statistiques des lexiques chargés
+- **POST** `/api/reload` - Recharge les lexiques (développement)
+
+### Recherche et analyse
+- **GET** `/api/search?q=<mot>&variant=<proto|ancien>&direction=<fr2conf|conf2fr>` - Recherche dans le lexique
+- **POST** `/api/analyze/coverage` - Analyse la couverture d'un texte français avant traduction
+
+### Traduction
+- **POST** `/translate` - Traduction FR → Confluent avec système contextuel (retourne layers 1-3)
+- **POST** `/api/translate/raw` - Traduction brute sans parsing (debug)
+- **POST** `/api/translate/batch` - Traduction par lot de mots
+- **POST** `/api/translate/conf2fr` - Traduction Confluent → FR
+
+### Debug
+- **POST** `/api/debug/prompt` - Génère le prompt système sans appeler le LLM
+
 ## Prochaines étapes
 
 1. Enrichir le lexique (verbes, concepts abstraits, émotions...)

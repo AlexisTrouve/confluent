@@ -438,6 +438,101 @@
       "synonymes_fr": [
         "elles"
       ]
+    },
+    "nous": {
+      "traductions": [
+        {
+          "confluent": "tanu",
+          "type": "pronom",
+          "categorie": "personnel",
+          "note": "Pronom 1ère personne pluriel"
+        }
+      ]
+    },
+    "sa": {
+      "traductions": [
+        {
+          "confluent": "na",
+          "type": "particule",
+          "categorie": "possession",
+          "note": "Possessif (réutilise particule génitif na)"
+        }
+      ],
+      "synonymes_fr": [
+        "son",
+        "ses",
+        "mon",
+        "ma",
+        "mes",
+        "ton",
+        "ta",
+        "tes",
+        "notre",
+        "nos",
+        "votre",
+        "vos",
+        "leur",
+        "leurs"
+      ]
+    },
+    "ce": {
+      "traductions": [
+        {
+          "confluent": "ko",
+          "type": "determinant",
+          "categorie": "demonstratif",
+          "note": "Démonstratif (radical ko-)"
+        }
+      ],
+      "synonymes_fr": [
+        "cet",
+        "cette",
+        "ces"
+      ]
+    },
+    "avant": {
+      "traductions": [
+        {
+          "confluent": "at",
+          "type": "particule",
+          "categorie": "temps",
+          "note": "Avant/passé (réutilise marqueur passé at)"
+        }
+      ],
+      "synonymes_fr": [
+        "hier",
+        "auparavant"
+      ]
+    },
+    "apres": {
+      "traductions": [
+        {
+          "confluent": "ok",
+          "type": "particule",
+          "categorie": "temps",
+          "note": "Après/futur (réutilise marqueur futur ok)"
+        }
+      ],
+      "synonymes_fr": [
+        "après",
+        "demain",
+        "ensuite"
+      ]
+    },
+    "autour": {
+      "traductions": [
+        {
+          "confluent": "no",
+          "type": "particule",
+          "categorie": "lieu",
+          "note": "Autour/spatial (réutilise particule locative no)"
+        }
+      ],
+      "synonymes_fr": [
+        "près",
+        "proche",
+        "alentour"
+      ]
     }
   }
 }
