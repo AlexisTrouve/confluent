@@ -9,12 +9,18 @@
           "type": "composition",
           "composition": "kor-i-a-tosa",
           "sens_litteral": "Cœur avec bien",
-          "racines": ["kori", "tosa"],
+          "racines": [
+            "kori",
+            "tosa"
+          ],
           "domaine": "emotion_positive",
           "note": "Composition standard pour exprimer les émotions"
         }
       ],
-      "synonymes_fr": ["bonheur", "allégresse"]
+      "synonymes_fr": [
+        "bonheur",
+        "allégresse"
+      ]
     },
     "espoir": {
       "traductions": [
@@ -23,19 +29,25 @@
           "type": "composition",
           "composition": "kor-i-ora",
           "sens_litteral": "Cœur de l'aurore",
-          "racines": ["kori", "ora"],
+          "racines": [
+            "kori",
+            "ora"
+          ],
           "domaine": "emotion_positive"
         }
       ]
     },
-    "fierté": {
+    "fierte": {
       "traductions": [
         {
           "confluent": "koriumako",
           "type": "composition",
           "composition": "kor-i-mako",
           "sens_litteral": "Cœur de grandeur",
-          "racines": ["kori", "mako"],
+          "racines": [
+            "kori",
+            "mako"
+          ],
           "domaine": "emotion_positive"
         }
       ]
@@ -47,19 +59,25 @@
           "type": "composition",
           "composition": "kor-i-kota",
           "sens_litteral": "Cœur d'union",
-          "racines": ["kori", "kota"],
+          "racines": [
+            "kori",
+            "kota"
+          ],
           "domaine": "emotion_positive"
         }
       ]
     },
-    "curiosité": {
+    "curiosite": {
       "traductions": [
         {
           "confluent": "koriusili",
           "type": "composition",
           "composition": "kor-i-sili",
           "sens_litteral": "Cœur du regard",
-          "racines": ["kori", "sili"],
+          "racines": [
+            "kori",
+            "sili"
+          ],
           "domaine": "emotion_positive"
         }
       ]
@@ -71,7 +89,10 @@
           "type": "composition",
           "composition": "kor-i-tosa",
           "sens_litteral": "Cœur avec bien",
-          "racines": ["kori", "tosa"],
+          "racines": [
+            "kori",
+            "tosa"
+          ],
           "domaine": "emotion_positive",
           "note": "Retour au bien après tension"
         }
@@ -84,7 +105,10 @@
           "type": "composition",
           "composition": "kor-i-veri",
           "sens_litteral": "Cœur de vérité",
-          "racines": ["kori", "veri"],
+          "racines": [
+            "kori",
+            "veri"
+          ],
           "domaine": "emotion_positive"
         }
       ]
@@ -96,19 +120,25 @@
           "type": "composition",
           "composition": "kor-i-kitan",
           "sens_litteral": "Cœur du don",
-          "racines": ["kori", "kitan"],
+          "racines": [
+            "kori",
+            "kitan"
+          ],
           "domaine": "emotion_positive"
         }
       ]
     },
-    "sérénité": {
+    "serenite": {
       "traductions": [
         {
           "confluent": "koriuura",
           "type": "composition",
           "composition": "kor-i-ura",
           "sens_litteral": "Cœur de l'eau",
-          "racines": ["kori", "ura"],
+          "racines": [
+            "kori",
+            "ura"
+          ],
           "domaine": "emotion_positive",
           "note": "Calme comme l'eau"
         }
@@ -121,19 +151,25 @@
           "type": "composition",
           "composition": "kor-oa-oki",
           "sens_litteral": "Cœur face au danger",
-          "racines": ["kori", "oki"],
+          "racines": [
+            "kori",
+            "oki"
+          ],
           "domaine": "emotion_negative"
         }
       ]
     },
-    "colère": {
+    "colere": {
       "traductions": [
         {
           "confluent": "koriusuki",
           "type": "composition",
           "composition": "kor-i-suki",
           "sens_litteral": "Cœur de feu",
-          "racines": ["kori", "suki"],
+          "racines": [
+            "kori",
+            "suki"
+          ],
           "domaine": "emotion_negative"
         }
       ]
@@ -145,19 +181,26 @@
           "type": "composition",
           "composition": "kor-oa-osi",
           "sens_litteral": "Cœur vers la mort",
-          "racines": ["kori", "osi"],
+          "racines": [
+            "kori",
+            "osi"
+          ],
           "domaine": "emotion_negative"
         }
       ]
     },
-    "désespoir": {
+    "desespoir": {
       "traductions": [
         {
           "confluent": "korizoora",
           "type": "composition",
           "composition": "kor-i-zo-ora",
           "sens_litteral": "Cœur sans aurore",
-          "racines": ["kori", "zo", "ora"],
+          "racines": [
+            "kori",
+            "zo",
+            "ora"
+          ],
           "domaine": "emotion_negative"
         }
       ]
@@ -169,7 +212,10 @@
           "type": "composition",
           "composition": "kor-oa-kumu",
           "sens_litteral": "Cœur vers l'ombre",
-          "racines": ["kori", "kumu"],
+          "racines": [
+            "kori",
+            "kumu"
+          ],
           "domaine": "emotion_negative"
         }
       ]
@@ -181,7 +227,10 @@
           "type": "composition",
           "composition": "kor-i-zoka",
           "sens_litteral": "Cœur de l'ennemi",
-          "racines": ["kori", "zoka"],
+          "racines": [
+            "kori",
+            "zoka"
+          ],
           "domaine": "emotion_negative"
         }
       ]
@@ -193,20 +242,29 @@
           "type": "composition",
           "composition": "kor-oa-vuku",
           "sens_litteral": "Cœur vers le gouffre",
-          "racines": ["kori", "vuku"],
+          "racines": [
+            "kori",
+            "vuku"
+          ],
           "domaine": "emotion_negative"
         }
       ],
-      "synonymes_fr": ["anxiété"]
+      "synonymes_fr": [
+        "anxiété"
+      ]
     },
-    "méfiance": {
+    "mefiance": {
       "traductions": [
         {
           "confluent": "korizoveri",
           "type": "composition",
           "composition": "kor-i-zo-veri",
           "sens_litteral": "Cœur sans vérité",
-          "racines": ["kori", "zo", "veri"],
+          "racines": [
+            "kori",
+            "zo",
+            "veri"
+          ],
           "domaine": "emotion_negative"
         }
       ]
@@ -218,7 +276,10 @@
           "type": "composition",
           "composition": "kor-oa-aita",
           "sens_litteral": "Cœur vers le passé",
-          "racines": ["kori", "aita"],
+          "racines": [
+            "kori",
+            "aita"
+          ],
           "domaine": "emotion_negative"
         }
       ]
@@ -230,7 +291,10 @@
           "type": "composition",
           "composition": "kor-oa-kiru",
           "sens_litteral": "Cœur contre l'échange",
-          "racines": ["kori", "kiru"],
+          "racines": [
+            "kori",
+            "kiru"
+          ],
           "domaine": "emotion_negative"
         }
       ]

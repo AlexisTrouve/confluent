@@ -12,7 +12,10 @@
           "note": "Matériau fondamental"
         }
       ],
-      "synonymes_fr": ["roche", "pierres"]
+      "synonymes_fr": [
+        "roche",
+        "pierres"
+      ]
     },
     "bois": {
       "traductions": [
@@ -32,19 +35,25 @@
           "type": "composition",
           "composition": "tok-a-ura",
           "sens_litteral": "Terre avec eau",
-          "racines": ["toka", "ura"],
+          "racines": [
+            "toka",
+            "ura"
+          ],
           "domaine": "materiau"
         }
       ]
     },
-    "métal": {
+    "metal": {
       "traductions": [
         {
           "confluent": "kariusuki",
           "type": "composition",
           "composition": "kar-i-suki",
           "sens_litteral": "Pierre du feu",
-          "racines": ["kari", "suki"],
+          "racines": [
+            "kari",
+            "suki"
+          ],
           "domaine": "materiau"
         }
       ]
@@ -56,7 +65,10 @@
           "type": "composition",
           "composition": "kar-i-vuku",
           "sens_litteral": "Pierre du gouffre",
-          "racines": ["kari", "vuku"],
+          "racines": [
+            "kari",
+            "vuku"
+          ],
           "domaine": "materiau"
         }
       ]
@@ -120,7 +132,9 @@
           "domaine": "objet"
         }
       ],
-      "synonymes_fr": ["contenant"]
+      "synonymes_fr": [
+        "contenant"
+      ]
     },
     "tablette": {
       "traductions": [
@@ -131,7 +145,9 @@
           "domaine": "objet"
         }
       ],
-      "synonymes_fr": ["plaque"]
+      "synonymes_fr": [
+        "plaque"
+      ]
     },
     "document": {
       "traductions": [
@@ -140,24 +156,34 @@
           "type": "composition",
           "composition": "tab-u-kova",
           "sens_litteral": "Tablette de gravure",
-          "racines": ["tabu", "kova"],
+          "racines": [
+            "tabu",
+            "kova"
+          ],
           "domaine": "objet"
         }
       ],
-      "synonymes_fr": ["écrit"]
+      "synonymes_fr": [
+        "écrit"
+      ]
     },
-    "chaîne": {
+    "chaine": {
       "traductions": [
         {
           "confluent": "kopuukari",
           "type": "composition",
           "composition": "kop-u-kari",
           "sens_litteral": "Corde de pierre",
-          "racines": ["kopu", "kari"],
+          "racines": [
+            "kopu",
+            "kari"
+          ],
           "domaine": "objet"
         }
       ],
-      "synonymes_fr": ["lien"]
+      "synonymes_fr": [
+        "lien"
+      ]
     },
     "vase rituel": {
       "traductions": [
@@ -166,7 +192,10 @@
           "type": "composition",
           "composition": "sak-u-asa",
           "sens_litteral": "Contenant du sacré",
-          "racines": ["saku", "asa"],
+          "racines": [
+            "saku",
+            "asa"
+          ],
           "domaine": "objet_rituel"
         }
       ]
@@ -178,7 +207,10 @@
           "type": "composition",
           "composition": "sak-u-zaki",
           "sens_litteral": "Contenant protégé",
-          "racines": ["saku", "zaki"],
+          "racines": [
+            "saku",
+            "zaki"
+          ],
           "domaine": "objet"
         }
       ]
@@ -190,7 +222,10 @@
           "type": "composition",
           "composition": "suk-i-loku",
           "sens_litteral": "Feu du lieu",
-          "racines": ["suki", "loku"],
+          "racines": [
+            "suki",
+            "loku"
+          ],
           "domaine": "structure"
         }
       ]
@@ -202,7 +237,10 @@
           "type": "composition",
           "composition": "lok-u-zaki",
           "sens_litteral": "Lieu gardé",
-          "racines": ["loku", "zaki"],
+          "racines": [
+            "loku",
+            "zaki"
+          ],
           "domaine": "structure"
         }
       ]
@@ -214,11 +252,16 @@
           "type": "composition",
           "composition": "lok-u-supu",
           "sens_litteral": "Lieu du sommeil",
-          "racines": ["loku", "supu"],
+          "racines": [
+            "loku",
+            "supu"
+          ],
           "domaine": "structure"
         }
       ],
-      "synonymes_fr": ["pièce"]
+      "synonymes_fr": [
+        "pièce"
+      ]
     },
     "porte": {
       "traductions": [
@@ -227,11 +270,16 @@
           "type": "composition",
           "composition": "tek-i-loku",
           "sens_litteral": "Chemin du lieu",
-          "racines": ["teki", "loku"],
+          "racines": [
+            "teki",
+            "loku"
+          ],
           "domaine": "structure"
         }
       ],
-      "synonymes_fr": ["passage"]
+      "synonymes_fr": [
+        "passage"
+      ]
     },
     "zone": {
       "traductions": [
@@ -242,7 +290,9 @@
           "domaine": "espace"
         }
       ],
-      "synonymes_fr": ["région"]
+      "synonymes_fr": [
+        "région"
+      ]
     },
     "navire": {
       "traductions": [
@@ -253,7 +303,9 @@
           "domaine": "objet"
         }
       ],
-      "synonymes_fr": ["embarcation"]
+      "synonymes_fr": [
+        "embarcation"
+      ]
     },
     "barque": {
       "traductions": [
@@ -262,7 +314,10 @@
           "type": "composition",
           "composition": "van-i-pisu",
           "sens_litteral": "Petit navire",
-          "racines": ["vanu", "pisu"],
+          "racines": [
+            "vanu",
+            "pisu"
+          ],
           "domaine": "objet"
         }
       ]
@@ -274,7 +329,10 @@
           "type": "composition",
           "composition": "van-i-viku",
           "sens_litteral": "Navire de bois",
-          "racines": ["vanu", "viku"],
+          "racines": [
+            "vanu",
+            "viku"
+          ],
           "domaine": "objet"
         }
       ]
@@ -286,7 +344,10 @@
           "type": "composition",
           "composition": "suk-i-viku",
           "sens_litteral": "Feu de bois",
-          "racines": ["suki", "viku"],
+          "racines": [
+            "suki",
+            "viku"
+          ],
           "domaine": "objet"
         }
       ]
@@ -298,19 +359,25 @@
           "type": "composition",
           "composition": "sor-a-saku",
           "sens_litteral": "Lumière avec contenant",
-          "racines": ["sora", "saku"],
+          "racines": [
+            "sora",
+            "saku"
+          ],
           "domaine": "objet"
         }
       ]
     },
-    "vêtement": {
+    "vetement": {
       "traductions": [
         {
           "confluent": "vekuuvasi",
           "type": "composition",
           "composition": "vek-u-vasi",
           "sens_litteral": "Peau tissée",
-          "racines": ["veku", "vasi"],
+          "racines": [
+            "veku",
+            "vasi"
+          ],
           "domaine": "objet"
         }
       ]
@@ -322,7 +389,10 @@
           "type": "composition",
           "composition": "vek-u-zaki",
           "sens_litteral": "Peau de protection",
-          "racines": ["veku", "zaki"],
+          "racines": [
+            "veku",
+            "zaki"
+          ],
           "domaine": "objet"
         }
       ]
@@ -334,7 +404,10 @@
           "type": "composition",
           "composition": "kar-i-ora",
           "sens_litteral": "Pierre de l'aurore",
-          "racines": ["kari", "ora"],
+          "racines": [
+            "kari",
+            "ora"
+          ],
           "domaine": "objet"
         }
       ]
@@ -346,19 +419,25 @@
           "type": "composition",
           "composition": "kit-a-n-asa",
           "sens_litteral": "Don avec sacré",
-          "racines": ["kitan", "asa"],
+          "racines": [
+            "kitan",
+            "asa"
+          ],
           "domaine": "objet_rituel"
         }
       ]
     },
-    "trésor": {
+    "tresor": {
       "traductions": [
         {
           "confluent": "zakiumako",
           "type": "composition",
           "composition": "zak-i-mako",
           "sens_litteral": "Gardé de grandeur",
-          "racines": ["zaki", "mako"],
+          "racines": [
+            "zaki",
+            "mako"
+          ],
           "domaine": "objet"
         }
       ]
@@ -370,7 +449,10 @@
           "type": "composition",
           "composition": "as-a-aita",
           "sens_litteral": "Sacré avec ancêtre",
-          "racines": ["asa", "aita"],
+          "racines": [
+            "asa",
+            "aita"
+          ],
           "domaine": "objet_rituel"
         }
       ]
@@ -385,7 +467,11 @@
           "note": "Habitation, foyer domestique"
         }
       ],
-      "synonymes_fr": ["habitation", "demeure", "logis"]
+      "synonymes_fr": [
+        "habitation",
+        "demeure",
+        "logis"
+      ]
     }
   }
 }

@@ -15,7 +15,14 @@
           "note": "Verbe fondamental lié à l'observation"
         }
       ],
-      "synonymes_fr": ["observer", "regarder", "vu", "vus", "vue", "vues"]
+      "synonymes_fr": [
+        "observer",
+        "regarder",
+        "vu",
+        "vus",
+        "vue",
+        "vues"
+      ]
     },
     "aller": {
       "racine_fr": null,
@@ -30,7 +37,60 @@
           "note": "Mouvement, chemin"
         }
       ],
-      "synonymes_fr": ["va", "vas", "vais", "vont", "allons", "allez", "allais", "allait", "allions", "alliez", "allaient", "allant", "allé", "irai", "iras", "ira", "irons", "irez", "iront", "aille", "ailles", "aillent", "aillions", "ailliez"]
+      "synonymes_fr": [
+        "va",
+        "vas",
+        "vais",
+        "vont",
+        "allons",
+        "allez",
+        "allais",
+        "allait",
+        "allions",
+        "alliez",
+        "allaient",
+        "allant",
+        "allé",
+        "irai",
+        "iras",
+        "ira",
+        "irons",
+        "irez",
+        "iront",
+        "aille",
+        "ailles",
+        "aillent",
+        "aillions",
+        "ailliez"
+      ]
+    },
+    "marcher": {
+      "racine_fr": "march",
+      "traductions": [
+        {
+          "confluent": "tekam",
+          "type": "verbe",
+          "racine": "teka",
+          "forme_liee": "tek",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Marcher, se déplacer à pied"
+        }
+      ],
+      "synonymes_fr": [
+        "marche",
+        "marches",
+        "marchons",
+        "marchez",
+        "marchent",
+        "marchais",
+        "marchait",
+        "marchions",
+        "marchiez",
+        "marchaient",
+        "marchant",
+        "marché"
+      ]
     },
     "donner": {
       "racine_fr": "donn",
@@ -57,7 +117,11 @@
           "domaine": "action"
         }
       ],
-      "synonymes_fr": ["prennent", "pris", "prisse"]
+      "synonymes_fr": [
+        "prennent",
+        "pris",
+        "prisse"
+      ]
     },
     "faire": {
       "racine_fr": "fai",
@@ -71,7 +135,16 @@
           "domaine": "action"
         }
       ],
-      "synonymes_fr": ["créer", "font", "ferai", "feras", "fera", "ferons", "ferez", "feront"]
+      "synonymes_fr": [
+        "créer",
+        "font",
+        "ferai",
+        "feras",
+        "fera",
+        "ferons",
+        "ferez",
+        "feront"
+      ]
     },
     "dire": {
       "racine_fr": "di",
@@ -85,7 +158,11 @@
           "domaine": "action"
         }
       ],
-      "synonymes_fr": ["parler", "dites", "dit"]
+      "synonymes_fr": [
+        "parler",
+        "dites",
+        "dit"
+      ]
     },
     "savoir": {
       "racine_fr": "sav",
@@ -99,7 +176,16 @@
           "domaine": "action"
         }
       ],
-      "synonymes_fr": ["connaître", "savent", "su", "sache", "saches", "sachent", "sachions", "sachiez"]
+      "synonymes_fr": [
+        "connaître",
+        "savent",
+        "su",
+        "sache",
+        "saches",
+        "sachent",
+        "sachions",
+        "sachiez"
+      ]
     },
     "apprendre": {
       "racine_fr": "appren",
@@ -114,7 +200,10 @@
           "note": "Recevoir le savoir"
         }
       ],
-      "synonymes_fr": ["apprennent", "appris"]
+      "synonymes_fr": [
+        "apprennent",
+        "appris"
+      ]
     },
     "transmettre": {
       "racine_fr": "transmet",
@@ -129,7 +218,11 @@
           "note": "Enseigner, passer le savoir"
         }
       ],
-      "synonymes_fr": ["enseigner", "transmettent", "transmis"]
+      "synonymes_fr": [
+        "enseigner",
+        "transmettent",
+        "transmis"
+      ]
     },
     "garder": {
       "racine_fr": "gard",
@@ -143,7 +236,9 @@
           "domaine": "action"
         }
       ],
-      "synonymes_fr": ["protéger"]
+      "synonymes_fr": [
+        "protéger"
+      ]
     },
     "porter": {
       "racine_fr": "port",
@@ -157,7 +252,9 @@
           "domaine": "action"
         }
       ],
-      "synonymes_fr": ["transporter"]
+      "synonymes_fr": [
+        "transporter"
+      ]
     },
     "chasser": {
       "racine_fr": "chass",
@@ -171,9 +268,11 @@
           "domaine": "action"
         }
       ],
-      "synonymes_fr": ["traquer"]
+      "synonymes_fr": [
+        "traquer"
+      ]
     },
-    "méditer": {
+    "mediter": {
       "racine_fr": "médit",
       "traductions": [
         {
@@ -186,7 +285,9 @@
           "note": "Verbe sacré dérivé de 'esprit'"
         }
       ],
-      "synonymes_fr": ["prier"]
+      "synonymes_fr": [
+        "prier"
+      ]
     },
     "invoquer": {
       "racine_fr": "invoqu",
@@ -202,7 +303,7 @@
         }
       ]
     },
-    "bénir": {
+    "benir": {
       "racine_fr": "béni",
       "traductions": [
         {
@@ -214,7 +315,9 @@
           "domaine": "action_spirituelle"
         }
       ],
-      "synonymes_fr": ["bénit"]
+      "synonymes_fr": [
+        "bénit"
+      ]
     },
     "communier": {
       "racine_fr": "communi",
@@ -242,7 +345,10 @@
           "domaine": "action_sacree"
         }
       ],
-      "synonymes_fr": ["meurent", "mort"]
+      "synonymes_fr": [
+        "meurent",
+        "mort"
+      ]
     },
     "graver": {
       "racine_fr": "grav",
@@ -256,7 +362,9 @@
           "domaine": "action_artisanale"
         }
       ],
-      "synonymes_fr": ["sculpter"]
+      "synonymes_fr": [
+        "sculpter"
+      ]
     },
     "peindre": {
       "racine_fr": "pein",
@@ -271,7 +379,10 @@
           "note": "Même racine que graver - art visuel"
         }
       ],
-      "synonymes_fr": ["peignent", "peint"]
+      "synonymes_fr": [
+        "peignent",
+        "peint"
+      ]
     },
     "assembler": {
       "racine_fr": "assembl",
@@ -298,7 +409,10 @@
           "domaine": "action_artisanale"
         }
       ],
-      "synonymes_fr": ["construisent", "construit"]
+      "synonymes_fr": [
+        "construisent",
+        "construit"
+      ]
     },
     "creuser": {
       "racine_fr": "creus",
@@ -341,7 +455,7 @@
         }
       ]
     },
-    "écouter": {
+    "ecouter": {
       "racine_fr": "écout",
       "traductions": [
         {
@@ -354,7 +468,7 @@
         }
       ]
     },
-    "étudier": {
+    "etudier": {
       "racine_fr": "étudi",
       "traductions": [
         {
@@ -367,7 +481,7 @@
         }
       ]
     },
-    "découvrir": {
+    "decouvrir": {
       "racine_fr": "découvr",
       "traductions": [
         {
@@ -380,9 +494,12 @@
           "note": "Voir pour la première fois"
         }
       ],
-      "synonymes_fr": ["explorer", "découvert"]
+      "synonymes_fr": [
+        "explorer",
+        "découvert"
+      ]
     },
-    "mémoriser": {
+    "memoriser": {
       "racine_fr": "mémoris",
       "traductions": [
         {
@@ -395,7 +512,7 @@
         }
       ]
     },
-    "interpréter": {
+    "interpreter": {
       "racine_fr": "interprèt",
       "traductions": [
         {
@@ -408,7 +525,7 @@
         }
       ]
     },
-    "défendre": {
+    "defendre": {
       "racine_fr": "défen",
       "traductions": [
         {
@@ -420,7 +537,10 @@
           "domaine": "action_combat"
         }
       ],
-      "synonymes_fr": ["défendent", "défendu"]
+      "synonymes_fr": [
+        "défendent",
+        "défendu"
+      ]
     },
     "surveiller": {
       "racine_fr": "surveill",
@@ -473,7 +593,10 @@
           "domaine": "action_combat"
         }
       ],
-      "synonymes_fr": ["fuient", "fuyent"]
+      "synonymes_fr": [
+        "fuient",
+        "fuyent"
+      ]
     },
     "vaincre": {
       "racine_fr": "vainc",
@@ -487,7 +610,10 @@
           "domaine": "action_combat"
         }
       ],
-      "synonymes_fr": ["vainquent", "vaincu"]
+      "synonymes_fr": [
+        "vainquent",
+        "vaincu"
+      ]
     },
     "troquer": {
       "racine_fr": "troqu",
@@ -529,7 +655,7 @@
         }
       ]
     },
-    "pêcher": {
+    "pecher": {
       "racine_fr": "pêch",
       "traductions": [
         {
@@ -557,7 +683,7 @@
         }
       ]
     },
-    "dévorer": {
+    "devorer": {
       "racine_fr": "dévor",
       "traductions": [
         {
@@ -565,7 +691,10 @@
           "type": "composition",
           "composition": "muk-i-zana",
           "sens_litteral": "Manger avec chasse",
-          "racines": ["muki", "zana"],
+          "racines": [
+            "muki",
+            "zana"
+          ],
           "domaine": "action",
           "note": "Manger violemment, comme un prédateur"
         }
@@ -584,7 +713,13 @@
           "note": "Verbe irrégulier existentiel - 'il y a', présence, existence. Dérivé de la racine sacrée 'ura' (eau/flux vital)"
         }
       ],
-      "synonymes_fr": ["il y a", "y a-t-il", "existe", "existent", "existant"]
+      "synonymes_fr": [
+        "il y a",
+        "y a-t-il",
+        "existe",
+        "existent",
+        "existant"
+      ]
     }
   }
 }

@@ -92,7 +92,7 @@
         }
       ]
     },
-    "vérité": {
+    "verite": {
       "traductions": [
         {
           "confluent": "veri",
@@ -102,7 +102,7 @@
         }
       ]
     },
-    "liberté": {
+    "liberte": {
       "traductions": [
         {
           "confluent": "aska",
@@ -125,7 +125,7 @@
         "âme"
       ]
     },
-    "destinée": {
+    "destinee": {
       "traductions": [
         {
           "confluent": "tekiuumi",
@@ -140,7 +140,7 @@
         }
       ]
     },
-    "devoir sacré": {
+    "devoir sacre": {
       "traductions": [
         {
           "confluent": "asauneka",
@@ -155,7 +155,7 @@
         }
       ]
     },
-    "compétence": {
+    "competence": {
       "traductions": [
         {
           "confluent": "sekautosa",
@@ -203,7 +203,7 @@
         "étranger"
       ]
     },
-    "Premiers Ancêtres": {
+    "Premiers Ancetres": {
       "traductions": [
         {
           "confluent": "enuaita",
@@ -218,7 +218,7 @@
         }
       ]
     },
-    "présage": {
+    "presage": {
       "traductions": [
         {
           "confluent": "siluunovi",
@@ -248,7 +248,7 @@
         }
       ]
     },
-    "bénédiction": {
+    "benediction": {
       "traductions": [
         {
           "confluent": "asautosa",
@@ -263,7 +263,7 @@
         }
       ]
     },
-    "malédiction": {
+    "malediction": {
       "traductions": [
         {
           "confluent": "asauzoka",
@@ -318,7 +318,7 @@
         "clan"
       ]
     },
-    "généalogie": {
+    "genealogie": {
       "traductions": [
         {
           "confluent": "mituuaita",
@@ -369,7 +369,7 @@
         }
       ]
     },
-    "loi sacrée": {
+    "loi sacree": {
       "traductions": [
         {
           "confluent": "lokuuasa",
@@ -384,7 +384,7 @@
         }
       ]
     },
-    "épreuve": {
+    "epreuve": {
       "traductions": [
         {
           "confluent": "oki",
@@ -394,7 +394,7 @@
         }
       ]
     },
-    "épreuve de vérité": {
+    "epreuve de verite": {
       "traductions": [
         {
           "confluent": "okiuveri",
@@ -490,7 +490,7 @@
         }
       ]
     },
-    "défaite": {
+    "defaite": {
       "traductions": [
         {
           "confluent": "okiazoka",

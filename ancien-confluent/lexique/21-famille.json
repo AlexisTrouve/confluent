@@ -2,7 +2,7 @@
   "_comment": "Relations familiales",
   "_mots_a_gerer": [],
   "dictionnaire": {
-    "frère": {
+    "frere": {
       "traductions": [
         {
           "confluent": "vaki",
@@ -12,7 +12,9 @@
           "note": "Frère de sang"
         }
       ],
-      "synonymes_fr": ["frères"]
+      "synonymes_fr": [
+        "frères"
+      ]
     },
     "sœur": {
       "traductions": [
@@ -24,9 +26,11 @@
           "note": "Sœur de sang"
         }
       ],
-      "synonymes_fr": ["sœurs"]
+      "synonymes_fr": [
+        "sœurs"
+      ]
     },
-    "mère": {
+    "mere": {
       "traductions": [
         {
           "confluent": "matu",
@@ -37,7 +41,7 @@
         }
       ]
     },
-    "père": {
+    "pere": {
       "traductions": [
         {
           "confluent": "patu",
@@ -59,18 +63,22 @@
         }
       ]
     },
-    "frères et sœurs": {
+    "freres et sœurs": {
       "traductions": [
         {
           "confluent": "vakisu",
           "type": "composition",
           "composition": "vaki + su",
           "sens_litteral": "Frères (pluriel inclusif)",
-          "racines": ["vaki"],
+          "racines": [
+            "vaki"
+          ],
           "domaine": "famille"
         }
       ],
-      "synonymes_fr": ["fratrie"]
+      "synonymes_fr": [
+        "fratrie"
+      ]
     }
   }
 }

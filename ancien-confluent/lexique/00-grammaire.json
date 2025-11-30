@@ -4,248 +4,329 @@
   "dictionnaire": {
     "va": {
       "mot_francais": "[SUJET]",
-      "traductions": [{
-        "confluent": "va",
-        "type": "particule",
-        "categorie": "cas",
-        "note": "Marque le sujet de la phrase"
-      }]
+      "traductions": [
+        {
+          "confluent": "va",
+          "type": "particule",
+          "categorie": "cas",
+          "note": "Marque le sujet de la phrase"
+        }
+      ]
     },
     "vo": {
       "mot_francais": "[OBJET]",
-      "traductions": [{
-        "confluent": "vo",
-        "type": "particule",
-        "categorie": "cas",
-        "note": "Marque l'objet direct"
-      }]
+      "traductions": [
+        {
+          "confluent": "vo",
+          "type": "particule",
+          "categorie": "cas",
+          "note": "Marque l'objet direct"
+        }
+      ]
     },
     "no": {
       "mot_francais": "[DANS/LIEU]",
-      "traductions": [{
-        "confluent": "no",
-        "type": "particule",
-        "categorie": "cas",
-        "note": "Localisation spatiale"
-      }]
+      "traductions": [
+        {
+          "confluent": "no",
+          "type": "particule",
+          "categorie": "cas",
+          "note": "Localisation spatiale"
+        }
+      ],
+      "synonymes_fr": [
+        "dans",
+        "sur",
+        "sous"
+      ]
     },
     "na": {
       "mot_francais": "[DE/GÉNITIF]",
-      "traductions": [{
-        "confluent": "na",
-        "type": "particule",
-        "categorie": "cas",
-        "note": "Possession, origine, appartenance"
-      }]
+      "traductions": [
+        {
+          "confluent": "na",
+          "type": "particule",
+          "categorie": "cas",
+          "note": "Possession, origine, appartenance"
+        }
+      ]
     },
     "se": {
       "mot_francais": "[POUR/BUT]",
-      "traductions": [{
-        "confluent": "se",
-        "type": "particule",
-        "categorie": "cas",
-        "note": "But, bénéficiaire"
-      }]
+      "traductions": [
+        {
+          "confluent": "se",
+          "type": "particule",
+          "categorie": "cas",
+          "note": "But, bénéficiaire"
+        }
+      ],
+      "synonymes_fr": [
+        "pour",
+        "contre"
+      ]
     },
     "lo": {
       "mot_francais": "[MAIS/ET]",
-      "traductions": [{
-        "confluent": "lo",
-        "type": "particule",
-        "categorie": "coordination",
-        "note": "Opposition ou coordination selon contexte"
-      }]
+      "traductions": [
+        {
+          "confluent": "lo",
+          "type": "particule",
+          "categorie": "coordination",
+          "note": "Opposition ou coordination selon contexte"
+        }
+      ]
     },
     "vi": {
       "mot_francais": "[AVEC/INSTRUMENT]",
-      "traductions": [{
-        "confluent": "vi",
-        "type": "particule",
-        "categorie": "cas",
-        "note": "Instrument, accompagnement"
-      }]
+      "traductions": [
+        {
+          "confluent": "vi",
+          "type": "particule",
+          "categorie": "cas",
+          "note": "Instrument, accompagnement"
+        }
+      ],
+      "synonymes_fr": [
+        "avec"
+      ]
     },
     "ve": {
       "mot_francais": "[ORIGINE]",
-      "traductions": [{
-        "confluent": "ve",
-        "type": "particule",
-        "categorie": "cas",
-        "note": "Origine, source (depuis)"
-      }]
+      "traductions": [
+        {
+          "confluent": "ve",
+          "type": "particule",
+          "categorie": "cas",
+          "note": "Origine, source (depuis)"
+        }
+      ]
     },
     "at": {
       "mot_francais": "[PASSÉ-VÉCU]",
-      "traductions": [{
-        "confluent": "at",
-        "type": "marqueur_temps",
-        "categorie": "temps",
-        "note": "Passé récent ou vécu directement"
-      }]
+      "traductions": [
+        {
+          "confluent": "at",
+          "type": "marqueur_temps",
+          "categorie": "temps",
+          "note": "Passé récent ou vécu directement"
+        }
+      ],
+      "synonymes_fr": [
+        "pendant"
+      ]
     },
     "u": {
       "mot_francais": "[PRÉSENT]",
-      "traductions": [{
-        "confluent": "u",
-        "type": "marqueur_temps",
-        "categorie": "temps",
-        "note": "Présent ou vérité générale"
-      }]
+      "traductions": [
+        {
+          "confluent": "u",
+          "type": "marqueur_temps",
+          "categorie": "temps",
+          "note": "Présent ou vérité générale"
+        }
+      ]
     },
     "ok": {
       "mot_francais": "[FUTUR/VOLONTÉ]",
-      "traductions": [{
-        "confluent": "ok",
-        "type": "marqueur_temps",
-        "categorie": "temps",
-        "note": "Futur ou intention volontaire"
-      }]
+      "traductions": [
+        {
+          "confluent": "ok",
+          "type": "marqueur_temps",
+          "categorie": "temps",
+          "note": "Futur ou intention volontaire"
+        }
+      ]
     },
     "en": {
       "mot_francais": "[IMPÉRATIF]",
-      "traductions": [{
-        "confluent": "en",
-        "type": "marqueur_temps",
-        "categorie": "mode",
-        "note": "Ordre ou demande"
-      }]
+      "traductions": [
+        {
+          "confluent": "en",
+          "type": "marqueur_temps",
+          "categorie": "mode",
+          "note": "Ordre ou demande"
+        }
+      ]
     },
     "ui": {
       "mot_francais": "[INFINITIF]",
-      "traductions": [{
-        "confluent": "ui",
-        "type": "marqueur_temps",
-        "categorie": "mode",
-        "note": "Forme infinitive du verbe"
-      }]
+      "traductions": [
+        {
+          "confluent": "ui",
+          "type": "marqueur_temps",
+          "categorie": "mode",
+          "note": "Forme infinitive du verbe"
+        }
+      ]
     },
     "ul": {
       "mot_francais": "[NÉG-POUVOIR]",
-      "traductions": [{
-        "confluent": "ul",
-        "type": "marqueur_temps",
-        "categorie": "modalité",
-        "note": "Impossibilité, négation de capacité"
-      }]
+      "traductions": [
+        {
+          "confluent": "ul",
+          "type": "marqueur_temps",
+          "categorie": "modalité",
+          "note": "Impossibilité, négation de capacité"
+        }
+      ]
     },
     "aan": {
       "mot_francais": "[PASSÉ-REGRETTÉ]",
-      "traductions": [{
-        "confluent": "aan",
-        "type": "marqueur_temps",
-        "categorie": "temps",
-        "note": "Passé avec regret ou nostalgie"
-      }]
+      "traductions": [
+        {
+          "confluent": "aan",
+          "type": "marqueur_temps",
+          "categorie": "temps",
+          "note": "Passé avec regret ou nostalgie"
+        }
+      ]
     },
     "eol": {
       "mot_francais": "[HABITUEL]",
-      "traductions": [{
-        "confluent": "eol",
-        "type": "marqueur_aspect",
-        "categorie": "aspect",
-        "note": "Aspect habituel (fait régulièrement)"
-      }]
+      "traductions": [
+        {
+          "confluent": "eol",
+          "type": "marqueur_aspect",
+          "categorie": "aspect",
+          "note": "Aspect habituel (fait régulièrement)"
+        }
+      ]
     },
     "zo": {
       "mot_francais": "[NÉG]",
-      "traductions": [{
-        "confluent": "zo",
-        "type": "negation",
-        "categorie": "négation",
-        "note": "Négation générale"
-      }]
+      "traductions": [
+        {
+          "confluent": "zo",
+          "type": "negation",
+          "categorie": "négation",
+          "note": "Négation générale"
+        }
+      ],
+      "synonymes_fr": [
+        "sans"
+      ]
     },
     "zom": {
       "mot_francais": "[JAMAIS]",
-      "traductions": [{
-        "confluent": "zom",
-        "type": "negation",
-        "categorie": "négation",
-        "note": "Négation temporelle absolue (jamais)"
-      }]
+      "traductions": [
+        {
+          "confluent": "zom",
+          "type": "negation",
+          "categorie": "négation",
+          "note": "Négation temporelle absolue (jamais)"
+        }
+      ]
     },
     "su": {
       "mot_francais": "[PLURIEL]",
-      "traductions": [{
-        "confluent": "su",
-        "type": "marqueur_nombre",
-        "categorie": "quantité",
-        "note": "Marque le pluriel"
-      }]
+      "traductions": [
+        {
+          "confluent": "su",
+          "type": "marqueur_nombre",
+          "categorie": "quantité",
+          "note": "Marque le pluriel"
+        }
+      ]
     },
     "ku": {
       "mot_francais": "[QUESTION]",
-      "traductions": [{
-        "confluent": "ku",
-        "type": "interrogation",
-        "categorie": "question",
-        "note": "Marque l'interrogation"
-      }]
+      "traductions": [
+        {
+          "confluent": "ku",
+          "type": "interrogation",
+          "categorie": "question",
+          "note": "Marque l'interrogation"
+        }
+      ]
     },
     "riku": {
       "mot_francais": "[POURQUOI]",
-      "traductions": [{
-        "confluent": "riku",
-        "type": "interrogation",
-        "categorie": "question",
-        "note": "Question causale (pourquoi)"
-      }]
+      "traductions": [
+        {
+          "confluent": "riku",
+          "type": "interrogation",
+          "categorie": "question",
+          "note": "Question causale (pourquoi)"
+        }
+      ]
     },
     "siku": {
       "mot_francais": "[COMMENT]",
-      "traductions": [{
-        "confluent": "siku",
-        "type": "interrogation",
-        "categorie": "question",
-        "note": "Question de manière (comment)"
-      }]
+      "traductions": [
+        {
+          "confluent": "siku",
+          "type": "interrogation",
+          "categorie": "question",
+          "note": "Question de manière (comment)"
+        }
+      ]
     },
     "tiku": {
       "mot_francais": "[QUAND]",
-      "traductions": [{
-        "confluent": "tiku",
-        "type": "interrogation",
-        "categorie": "question",
-        "note": "Question temporelle (quand)"
-      }]
+      "traductions": [
+        {
+          "confluent": "tiku",
+          "type": "interrogation",
+          "categorie": "question",
+          "note": "Question temporelle (quand)"
+        }
+      ]
     },
     "viku": {
       "mot_francais": "[OÙ]",
-      "traductions": [{
-        "confluent": "viku",
-        "type": "interrogation",
-        "categorie": "question",
-        "note": "Question spatiale (où)"
-      }]
+      "traductions": [
+        {
+          "confluent": "viku",
+          "type": "interrogation",
+          "categorie": "question",
+          "note": "Question spatiale (où)"
+        }
+      ]
     },
     "tova": {
       "mot_francais": "ceci/cela",
-      "traductions": [{
-        "confluent": "tova",
-        "type": "demonstratif",
-        "categorie": "démonstratif",
-        "note": "Démonstratif neutre"
-      }],
-      "synonymes_fr": ["ceci", "cela", "ça", "ce"]
+      "traductions": [
+        {
+          "confluent": "tova",
+          "type": "demonstratif",
+          "categorie": "démonstratif",
+          "note": "Démonstratif neutre"
+        }
+      ],
+      "synonymes_fr": [
+        "ceci",
+        "cela",
+        "ça",
+        "ce"
+      ]
     },
     "tovak": {
       "mot_francais": "faire-cela",
-      "traductions": [{
-        "confluent": "tovak",
-        "type": "verbe",
-        "categorie": "action",
-        "note": "Faire cela, agir ainsi (tova + faire)"
-      }],
-      "synonymes_fr": ["agir", "faire", "accomplir"]
+      "traductions": [
+        {
+          "confluent": "tovak",
+          "type": "verbe",
+          "categorie": "action",
+          "note": "Faire cela, agir ainsi (tova + faire)"
+        }
+      ],
+      "synonymes_fr": [
+        "agir",
+        "faire",
+        "accomplir"
+      ]
     },
     "taki": {
       "mot_francais": "celui-ci/celui-là",
-      "traductions": [{
-        "confluent": "taki",
-        "type": "demonstratif",
-        "categorie": "démonstratif",
-        "note": "Démonstratif pour personnes"
-      }]
+      "traductions": [
+        {
+          "confluent": "taki",
+          "type": "demonstratif",
+          "categorie": "démonstratif",
+          "note": "Démonstratif pour personnes"
+        }
+      ]
     }
   }
 }

@@ -37,7 +37,7 @@
         }
       ]
     },
-    "Enfants des Échos": {
+    "Enfants des Echos": {
       "traductions": [
         {
           "confluent": "nakukeko",
@@ -53,6 +53,19 @@
           "racines_sacrees": 0,
           "note": "Souterrains, mineurs, artisans"
         }
+      ]
+    },
+    "echos": {
+      "traductions": [
+        {
+          "confluent": "keko",
+          "type": "racine",
+          "categorie": "concept",
+          "note": "Écho, résonance (racine extraite de Nakukeko)"
+        }
+      ],
+      "synonymes_fr": [
+        "echo"
       ]
     },
     "Nakukeko": {
@@ -347,7 +360,7 @@
         }
       ]
     },
-    "Caste de l'Éther": {
+    "Caste de l'Ether": {
       "traductions": [
         {
           "confluent": "umiaakota",

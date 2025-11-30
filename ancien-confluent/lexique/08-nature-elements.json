@@ -12,7 +12,9 @@
           "note": "Élément primordial"
         }
       ],
-      "synonymes_fr": ["cieux"]
+      "synonymes_fr": [
+        "cieux"
+      ]
     },
     "terre": {
       "traductions": [
@@ -24,7 +26,9 @@
           "note": "Sol, terre ferme"
         }
       ],
-      "synonymes_fr": ["sol"]
+      "synonymes_fr": [
+        "sol"
+      ]
     },
     "feu": {
       "traductions": [
@@ -36,7 +40,9 @@
           "note": "Élément primordial"
         }
       ],
-      "synonymes_fr": ["flamme"]
+      "synonymes_fr": [
+        "flamme"
+      ]
     },
     "air": {
       "traductions": [
@@ -48,7 +54,9 @@
           "note": "Élément primordial"
         }
       ],
-      "synonymes_fr": ["vent"]
+      "synonymes_fr": [
+        "vent"
+      ]
     },
     "pierre": {
       "traductions": [
@@ -60,9 +68,11 @@
           "note": "Matière dure"
         }
       ],
-      "synonymes_fr": ["roche"]
+      "synonymes_fr": [
+        "roche"
+      ]
     },
-    "rivière": {
+    "riviere": {
       "traductions": [
         {
           "confluent": "nura",
@@ -72,7 +82,9 @@
           "note": "Eau qui coule"
         }
       ],
-      "synonymes_fr": ["courant"]
+      "synonymes_fr": [
+        "courant"
+      ]
     },
     "montagne": {
       "traductions": [
@@ -85,7 +97,7 @@
         }
       ]
     },
-    "forêt": {
+    "foret": {
       "traductions": [
         {
           "confluent": "viku",
@@ -129,7 +141,7 @@
         }
       ]
     },
-    "lumière": {
+    "lumiere": {
       "traductions": [
         {
           "confluent": "sora",
@@ -150,7 +162,9 @@
           "note": "Sans lumière"
         }
       ],
-      "synonymes_fr": ["obscur"]
+      "synonymes_fr": [
+        "obscur"
+      ]
     },
     "sec": {
       "traductions": [
@@ -162,9 +176,11 @@
           "note": "Sans eau"
         }
       ],
-      "synonymes_fr": ["aride"]
+      "synonymes_fr": [
+        "aride"
+      ]
     },
-    "vallée": {
+    "vallee": {
       "traductions": [
         {
           "confluent": "valu",
@@ -207,7 +223,9 @@
           "note": "Avec eau"
         }
       ],
-      "synonymes_fr": ["mouillé"]
+      "synonymes_fr": [
+        "mouillé"
+      ]
     },
     "profond": {
       "traductions": [
@@ -219,7 +237,10 @@
           "note": "Gouffre, abîme"
         }
       ],
-      "synonymes_fr": ["gouffre", "abîme"]
+      "synonymes_fr": [
+        "gouffre",
+        "abîme"
+      ]
     },
     "cercle": {
       "traductions": [
@@ -231,9 +252,11 @@
           "note": "Forme sacrée"
         }
       ],
-      "synonymes_fr": ["anneau"]
+      "synonymes_fr": [
+        "anneau"
+      ]
     },
-    "étoile": {
+    "etoile": {
       "traductions": [
         {
           "confluent": "atu",
@@ -244,14 +267,17 @@
         }
       ]
     },
-    "tempête": {
+    "tempete": {
       "traductions": [
         {
           "confluent": "venaoki",
           "type": "composition",
           "composition": "ven-a-oki",
           "sens_litteral": "Vent de danger",
-          "racines": ["vena", "oki"],
+          "racines": [
+            "vena",
+            "oki"
+          ],
           "domaine": "meteo"
         }
       ]
@@ -274,7 +300,10 @@
           "type": "composition",
           "composition": "ur-oa-vuku",
           "sens_litteral": "Eau vers le gouffre",
-          "racines": ["ura", "vuku"],
+          "racines": [
+            "ura",
+            "vuku"
+          ],
           "domaine": "geographie"
         }
       ]
@@ -286,7 +315,10 @@
           "type": "composition",
           "composition": "en-u-ura",
           "sens_litteral": "Origine de l'eau",
-          "racines": ["ena", "ura"],
+          "racines": [
+            "ena",
+            "ura"
+          ],
           "domaine": "geographie"
         }
       ]
@@ -298,7 +330,10 @@
           "type": "composition",
           "composition": "vuk-u-toka",
           "sens_litteral": "Gouffre dans la terre",
-          "racines": ["vuku", "toka"],
+          "racines": [
+            "vuku",
+            "toka"
+          ],
           "domaine": "geographie"
         }
       ]
@@ -310,7 +345,10 @@
           "type": "composition",
           "composition": "vuk-u-kari",
           "sens_litteral": "Gouffre dans la pierre",
-          "racines": ["vuku", "kari"],
+          "racines": [
+            "vuku",
+            "kari"
+          ],
           "domaine": "geographie"
         }
       ]
@@ -322,7 +360,10 @@
           "type": "composition",
           "composition": "tas-u-meru",
           "sens_litteral": "Montagne de la mer",
-          "racines": ["tasa", "meru"],
+          "racines": [
+            "tasa",
+            "meru"
+          ],
           "domaine": "geographie"
         }
       ]
@@ -334,20 +375,28 @@
           "type": "composition",
           "composition": "tas-u-piki",
           "sens_litteral": "Montagne pointue",
-          "racines": ["tasa", "piki"],
+          "racines": [
+            "tasa",
+            "piki"
+          ],
           "domaine": "geographie"
         }
       ],
-      "synonymes_fr": ["cime"]
+      "synonymes_fr": [
+        "cime"
+      ]
     },
-    "côte": {
+    "cote": {
       "traductions": [
         {
           "confluent": "tokumeru",
           "type": "composition",
           "composition": "tok-u-meru",
           "sens_litteral": "Terre de la mer",
-          "racines": ["toka", "meru"],
+          "racines": [
+            "toka",
+            "meru"
+          ],
           "domaine": "geographie"
         }
       ]
@@ -359,43 +408,55 @@
           "type": "composition",
           "composition": "zer-u-toka",
           "sens_litteral": "Ciel de la terre",
-          "racines": ["zeru", "toka"],
+          "racines": [
+            "zeru",
+            "toka"
+          ],
           "domaine": "geographie"
         }
       ]
     },
-    "confluence de rivières": {
+    "confluence de rivieres": {
       "traductions": [
         {
           "confluent": "nuraakota",
           "type": "composition",
           "composition": "nur-aa-kota",
           "sens_litteral": "Rivière mêlée à union",
-          "racines": ["nura", "kota"],
+          "racines": [
+            "nura",
+            "kota"
+          ],
           "domaine": "geographie"
         }
       ]
     },
-    "rivière azur": {
+    "riviere azur": {
       "traductions": [
         {
           "confluent": "nuruzeru",
           "type": "composition",
           "composition": "nur-u-zeru",
           "sens_litteral": "Rivière du ciel",
-          "racines": ["nura", "zeru"],
+          "racines": [
+            "nura",
+            "zeru"
+          ],
           "domaine": "geographie"
         }
       ]
     },
-    "rivière verte": {
+    "riviere verte": {
       "traductions": [
         {
           "confluent": "nuruviku",
           "type": "composition",
           "composition": "nur-u-viku",
           "sens_litteral": "Rivière de la forêt",
-          "racines": ["nura", "viku"],
+          "racines": [
+            "nura",
+            "viku"
+          ],
           "domaine": "geographie"
         }
       ]

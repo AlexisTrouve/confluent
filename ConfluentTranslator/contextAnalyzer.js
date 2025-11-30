@@ -23,21 +23,35 @@ function tokenizeFrench(text) {
   // Mots vides à retirer (articles, prépositions très courantes)
   const stopWords = new Set([
     'le', 'la', 'les', 'un', 'une', 'des', 'de', 'du', 'd',
-    'au', 'aux', 'à', 'et', 'ou', 'où', 'est', 'sont'
+    'au', 'aux', 'à', 'et', 'ou', 'où', 'est', 'sont',
+    'ne', 'je', 'me', 'te', 'se', 'ce', 'que', 'il', 'elle'
   ]);
 
-  // ÉTAPE 1: Remplacer expressions figées par tokens uniques
-  // (avant tokenisation pour éviter la découpe)
+  // ÉTAPE 1: Normaliser et nettoyer le texte
+  // ORDRE IMPORTANT: lowercase → accents → contractions
   let processedText = text
     .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '');
+    .normalize('NFD')                    // Décompose les caractères accentués
+    .replace(/[\u0300-\u036f]/g, '');   // Retire les diacritiques (é→e, è→e, ê→e, etc.)
+
+  // ÉTAPE 1.5: Nettoyer les contractions françaises (l', d', n', etc.)
+  // APRÈS normalisation pour que "l'été" devienne "l'ete" puis "le ete"
+  processedText = processedText
+    .replace(/l['']/g, 'le ')     // l'enfant → le enfant
+    .replace(/d['']/g, 'de ')     // d'eau → de eau
+    .replace(/n['']/g, 'ne ')     // n'est → ne est
+    .replace(/j['']/g, 'je ')     // j'ai → je ai
+    .replace(/m['']/g, 'me ')     // m'a → me a
+    .replace(/t['']/g, 'te ')     // t'a → te a
+    .replace(/s['']/g, 'se ')     // s'est → se est
+    .replace(/c['']/g, 'ce ')     // c'est → ce est
+    .replace(/qu['']/g, 'que ');  // qu'il → que il
 
   // Expressions existentielles → "exister"
   processedText = processedText
     .replace(/il\s+y\s+a(?:vait)?/g, 'exister') // il y a, il y avait
     .replace(/y\s+a-t-il/g, 'exister')          // y a-t-il
-    .replace(/n['']y\s+a-t-il\s+pas/g, 'exister'); // n'y a-t-il pas
+    .replace(/ne\s+y\s+a-t-il\s+pas/g, 'exister'); // n'y a-t-il pas (déjà décontracté)
 
   // ÉTAPE 2: Tokenisation normale
   return processedText
@@ -81,7 +95,7 @@ function simpleLemmatize(word) {
 
   // Gérer formes verbales courantes
   const verbEndings = {
-    'ent': '', // transmettent → transmett → chercher "transmettre"
+    'ent': 'er', // observent → observer, donnent → donner
     'ons': 'er', // donnons → donner
     'ez': 'er', // donnez → donner
     'ais': 'er', // donnais → donner
@@ -112,12 +126,18 @@ function simpleLemmatize(word) {
     }
   }
 
-  // Formes en -ir
+  // Formes en -ir et -oir
   if (word.endsWith('it') && word.length > 3) {
     forms.push(word.slice(0, -2) + 'ir'); // voit → voir
   }
   if (word.endsWith('is') && word.length > 3) {
     forms.push(word.slice(0, -2) + 'ir'); // finis → finir
+  }
+  if (word.endsWith('ient') && word.length > 5) {
+    forms.push(word.slice(0, -4) + 'ir'); // voient → voir
+  }
+  if (word.endsWith('oient') && word.length > 6) {
+    forms.push(word.slice(0, -5) + 'oir'); // voient → voir (alternative)
   }
 
   // Retirer les s finaux de l'infinitif hypothétique
@@ -392,6 +412,7 @@ function analyzeContext(text, lexique, options = {}) {
       maxEntries,
       wordsFound: searchResult.wordsFound,
       wordsNotFound: searchResult.wordsNotFound,
+      coveragePercent: Math.round(coveragePercent),
       entriesUsed: useFallback ? rootsFallback.length : expandedEntries.length,
       totalLexiqueSize: totalLexiqueEntries,
       tokensFullLexique,

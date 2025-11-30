@@ -12,7 +12,11 @@
           "note": "Concept central : l'observation"
         }
       ],
-      "synonymes_fr": ["regard", "vision", "yeux"]
+      "synonymes_fr": [
+        "regard",
+        "vision",
+        "yeux"
+      ]
     },
     "main": {
       "traductions": [
@@ -35,7 +39,9 @@
           "note": "Organe de la parole"
         }
       ],
-      "synonymes_fr": ["parole"]
+      "synonymes_fr": [
+        "parole"
+      ]
     },
     "oreille": {
       "traductions": [
@@ -47,7 +53,9 @@
           "note": "Organe de l'écoute"
         }
       ],
-      "synonymes_fr": ["écoute"]
+      "synonymes_fr": [
+        "écoute"
+      ]
     },
     "visage": {
       "traductions": [
@@ -92,9 +100,11 @@
           "note": "Base, appui"
         }
       ],
-      "synonymes_fr": ["base"]
+      "synonymes_fr": [
+        "base"
+      ]
     },
-    "écho": {
+    "echo": {
       "traductions": [
         {
           "confluent": "keko",
@@ -104,7 +114,9 @@
           "note": "Son qui revient, résonance"
         }
       ],
-      "synonymes_fr": ["résonance"]
+      "synonymes_fr": [
+        "résonance"
+      ]
     },
     "poumon": {
       "traductions": [
@@ -113,7 +125,10 @@
           "type": "composition",
           "composition": "ven-u-sanu",
           "sens_litteral": "Air du corps",
-          "racines": ["vena", "sanu"],
+          "racines": [
+            "vena",
+            "sanu"
+          ],
           "domaine": "corps"
         }
       ]
@@ -139,7 +154,9 @@
           "note": "Même racine que corps"
         }
       ],
-      "synonymes_fr": ["viande"]
+      "synonymes_fr": [
+        "viande"
+      ]
     },
     "peau": {
       "traductions": [
@@ -151,7 +168,9 @@
           "note": "Surface, enveloppe extérieure"
         }
       ],
-      "synonymes_fr": ["surface"]
+      "synonymes_fr": [
+        "surface"
+      ]
     },
     "sang": {
       "traductions": [
@@ -171,7 +190,10 @@
           "type": "composition",
           "composition": "sil-u-ora",
           "sens_litteral": "Regard de l'aurore",
-          "racines": ["sili", "ora"],
+          "racines": [
+            "sili",
+            "ora"
+          ],
           "domaine": "corps_sacre",
           "note": "Yeux des Ciels-clairs aux couleurs de l'aurore"
         }

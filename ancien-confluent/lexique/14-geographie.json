@@ -2,38 +2,47 @@
   "_comment": "Caractéristiques géographiques",
   "_mots_a_gerer": [],
   "dictionnaire": {
-    "confluence de rivières": {
+    "confluence de rivieres": {
       "traductions": [
         {
           "confluent": "nuraakota",
           "type": "composition",
           "composition": "nur-aa-kota",
           "sens_litteral": "Rivière mêlée à union",
-          "racines": ["nura", "kota"],
+          "racines": [
+            "nura",
+            "kota"
+          ],
           "domaine": "geographie"
         }
       ]
     },
-    "rivière azur": {
+    "riviere azur": {
       "traductions": [
         {
           "confluent": "nuruzeru",
           "type": "composition",
           "composition": "nur-u-zeru",
           "sens_litteral": "Rivière du ciel",
-          "racines": ["nura", "zeru"],
+          "racines": [
+            "nura",
+            "zeru"
+          ],
           "domaine": "geographie"
         }
       ]
     },
-    "rivière verte": {
+    "riviere verte": {
       "traductions": [
         {
           "confluent": "nuruviku",
           "type": "composition",
           "composition": "nur-u-viku",
           "sens_litteral": "Rivière de la forêt",
-          "racines": ["nura", "viku"],
+          "racines": [
+            "nura",
+            "viku"
+          ],
           "domaine": "geographie"
         }
       ]
@@ -45,7 +54,10 @@
           "type": "composition",
           "composition": "tas-u-meru",
           "sens_litteral": "Montagne de la mer",
-          "racines": ["tasa", "meru"],
+          "racines": [
+            "tasa",
+            "meru"
+          ],
           "domaine": "geographie"
         }
       ]
@@ -57,13 +69,18 @@
           "type": "composition",
           "composition": "tas-u-piki",
           "sens_litteral": "Montagne pointue",
-          "racines": ["tasa", "piki"],
+          "racines": [
+            "tasa",
+            "piki"
+          ],
           "domaine": "geographie"
         }
       ],
-      "synonymes_fr": ["cime"]
+      "synonymes_fr": [
+        "cime"
+      ]
     },
-    "vallée": {
+    "vallee": {
       "traductions": [
         {
           "confluent": "valu",
@@ -83,14 +100,17 @@
         }
       ]
     },
-    "côte": {
+    "cote": {
       "traductions": [
         {
           "confluent": "tokumeru",
           "type": "composition",
           "composition": "tok-u-meru",
           "sens_litteral": "Terre de la mer",
-          "racines": ["toka", "meru"],
+          "racines": [
+            "toka",
+            "meru"
+          ],
           "domaine": "geographie"
         }
       ]
@@ -102,7 +122,10 @@
           "type": "composition",
           "composition": "zer-u-toka",
           "sens_litteral": "Ciel de la terre",
-          "racines": ["zeru", "toka"],
+          "racines": [
+            "zeru",
+            "toka"
+          ],
           "domaine": "geographie"
         }
       ]
@@ -114,7 +137,10 @@
           "type": "composition",
           "composition": "vuk-u-toka",
           "sens_litteral": "Gouffre dans la terre",
-          "racines": ["vuku", "toka"],
+          "racines": [
+            "vuku",
+            "toka"
+          ],
           "domaine": "geographie"
         }
       ]
@@ -126,7 +152,10 @@
           "type": "composition",
           "composition": "en-u-ura",
           "sens_litteral": "Origine de l'eau",
-          "racines": ["ena", "ura"],
+          "racines": [
+            "ena",
+            "ura"
+          ],
           "domaine": "geographie"
         }
       ]
@@ -138,19 +167,25 @@
           "type": "composition",
           "composition": "ur-oa-vuku",
           "sens_litteral": "Eau vers le gouffre",
-          "racines": ["ura", "vuku"],
+          "racines": [
+            "ura",
+            "vuku"
+          ],
           "domaine": "geographie"
         }
       ]
     },
-    "éboulement": {
+    "eboulement": {
       "traductions": [
         {
           "confluent": "kariovuku",
           "type": "composition",
           "composition": "kar-oa-vuku",
           "sens_litteral": "Pierre vers le gouffre",
-          "racines": ["kari", "vuku"],
+          "racines": [
+            "kari",
+            "vuku"
+          ],
           "domaine": "danger_naturel"
         }
       ]
@@ -162,7 +197,10 @@
           "type": "composition",
           "composition": "ur-a-eki",
           "sens_litteral": "Eau avec totalité",
-          "racines": ["ura", "eka"],
+          "racines": [
+            "ura",
+            "eka"
+          ],
           "domaine": "danger_naturel"
         }
       ]
@@ -174,19 +212,25 @@
           "type": "composition",
           "composition": "vuk-u-kari",
           "sens_litteral": "Gouffre dans la pierre",
-          "racines": ["vuku", "kari"],
+          "racines": [
+            "vuku",
+            "kari"
+          ],
           "domaine": "geographie"
         }
       ]
     },
-    "roche impénétrable": {
+    "roche impenetrable": {
       "traductions": [
         {
           "confluent": "kariuzoki",
           "type": "composition",
           "composition": "kar-i-zoki",
           "sens_litteral": "Pierre de l'épreuve",
-          "racines": ["kari", "oki"],
+          "racines": [
+            "kari",
+            "oki"
+          ],
           "domaine": "geographie"
         }
       ]
@@ -198,7 +242,10 @@
           "type": "composition",
           "composition": "nis-oa-vuku",
           "sens_litteral": "Neige vers le gouffre",
-          "racines": ["nisa", "vuku"],
+          "racines": [
+            "nisa",
+            "vuku"
+          ],
           "domaine": "danger_naturel"
         }
       ]
@@ -210,7 +257,10 @@
           "type": "composition",
           "composition": "suk-i-zoka",
           "sens_litteral": "Feu de l'ennemi",
-          "racines": ["suki", "zoka"],
+          "racines": [
+            "suki",
+            "zoka"
+          ],
           "domaine": "danger_naturel"
         }
       ]

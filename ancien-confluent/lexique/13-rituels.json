@@ -2,7 +2,7 @@
   "_comment": "Rituels, traditions et pratiques sacrées",
   "_mots_a_gerer": [],
   "dictionnaire": {
-    "Rituel du Regard Partagé": {
+    "Rituel du Regard Partage": {
       "traductions": [
         {
           "confluent": "asausiliaakota",
@@ -19,7 +19,7 @@
         }
       ]
     },
-    "pèlerinage": {
+    "pelerinage": {
       "traductions": [
         {
           "confluent": "tekiuasa",
@@ -34,7 +34,7 @@
         }
       ]
     },
-    "rites funéraires": {
+    "rites funeraires": {
       "traductions": [
         {
           "confluent": "asauosi",
@@ -79,7 +79,7 @@
         }
       ]
     },
-    "Lois du Sang et de la Bête": {
+    "Lois du Sang et de la Bete": {
       "traductions": [
         {
           "confluent": "lokuurasubetu",
@@ -110,7 +110,7 @@
         }
       ]
     },
-    "Mémento": {
+    "Memento": {
       "traductions": [
         {
           "confluent": "memuuaita",
@@ -125,7 +125,7 @@
         }
       ]
     },
-    "serment sacré": {
+    "serment sacre": {
       "traductions": [
         {
           "confluent": "savuuasa",
@@ -185,7 +185,7 @@
         }
       ]
     },
-    "idéoglyphes": {
+    "ideoglyphes": {
       "traductions": [
         {
           "confluent": "kovausili",
@@ -263,7 +263,7 @@
         }
       ]
     },
-    "Rhombes sacrés": {
+    "Rhombes sacres": {
       "traductions": [
         {
           "confluent": "onuuasa",
@@ -279,7 +279,7 @@
         }
       ]
     },
-    "Rhombes géants": {
+    "Rhombes geants": {
       "traductions": [
         {
           "confluent": "onuumako",
@@ -309,7 +309,7 @@
         }
       ]
     },
-    "artefact multi-générationnel": {
+    "artefact multi-generationnel": {
       "traductions": [
         {
           "confluent": "nekauekaaita",
@@ -340,7 +340,7 @@
         }
       ]
     },
-    "fenêtre temporelle": {
+    "fenetre temporelle": {
       "traductions": [
         {
           "confluent": "siluutemi",

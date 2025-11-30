@@ -187,6 +187,67 @@ app.post('/api/debug/prompt', (req, res) => {
   }
 });
 
+// Coverage analysis endpoint (analyze French text before translation)
+app.post('/api/analyze/coverage', (req, res) => {
+  const { text, target = 'ancien' } = req.body;
+
+  if (!text) {
+    return res.status(400).json({ error: 'Missing parameter: text' });
+  }
+
+  const variant = target === 'proto' ? 'proto' : 'ancien';
+
+  try {
+    // Use the same contextAnalyzer as the translation pipeline
+    const contextResult = analyzeContext(text, lexiques[variant]);
+    const metadata = contextResult.metadata;
+
+    // Calculate recommendation
+    const needsFullRoots = metadata.coveragePercent < 90;
+    let recommendation;
+    if (metadata.coveragePercent >= 95) {
+      recommendation = 'Excellent coverage - context only';
+    } else if (metadata.coveragePercent >= 90) {
+      recommendation = 'Good coverage - context only';
+    } else if (metadata.coveragePercent >= 70) {
+      recommendation = 'Moderate coverage - consider adding roots';
+    } else if (metadata.coveragePercent >= 50) {
+      recommendation = 'Low coverage - full roots recommended';
+    } else {
+      recommendation = 'Very low coverage - full roots required';
+    }
+
+    res.json({
+      coverage: metadata.coveragePercent,
+      found: metadata.wordsFound.map(w => ({
+        word: w.input,
+        confluent: w.confluent,
+        type: w.type,
+        score: w.score
+      })),
+      missing: metadata.wordsNotFound.map(word => ({
+        word,
+        suggestions: [] // TODO: add suggestions based on similar words
+      })),
+      stats: {
+        totalWords: metadata.wordCount,
+        uniqueWords: metadata.uniqueWordCount,
+        foundCount: metadata.wordsFound.length,
+        missingCount: metadata.wordsNotFound.length,
+        entriesUsed: metadata.entriesUsed,
+        useFallback: metadata.useFallback
+      },
+      needsFullRoots,
+      recommendation,
+      variant
+    });
+
+  } catch (error) {
+    console.error('Coverage analysis error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // Translation endpoint (NOUVEAU SYSTÈME CONTEXTUEL)
 app.post('/translate', async (req, res) => {
   const { text, target, provider, model, useLexique = true } = req.body;

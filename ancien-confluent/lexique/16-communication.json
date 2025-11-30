@@ -9,7 +9,10 @@
           "type": "composition",
           "composition": "vok-i-kota",
           "sens_litteral": "Voix d'union",
-          "racines": ["voki", "kota"],
+          "racines": [
+            "voki",
+            "kota"
+          ],
           "domaine": "communication",
           "note": "Concept de langue comme union"
         }
@@ -26,14 +29,17 @@
         }
       ]
     },
-    "écriture": {
+    "ecriture": {
       "traductions": [
         {
           "confluent": "kovausili",
           "type": "composition",
           "composition": "kov-a-sili",
           "sens_litteral": "Gravure avec regard",
-          "racines": ["kova", "sili"],
+          "racines": [
+            "kova",
+            "sili"
+          ],
           "domaine": "communication"
         }
       ]
@@ -45,7 +51,10 @@
           "type": "composition",
           "composition": "sil-u-kova",
           "sens_litteral": "Regard de la gravure",
-          "racines": ["sili", "kova"],
+          "racines": [
+            "sili",
+            "kova"
+          ],
           "domaine": "communication"
         }
       ]
@@ -57,7 +66,10 @@
           "type": "composition",
           "composition": "tek-i-kova",
           "sens_litteral": "Chemin de la gravure",
-          "racines": ["teki", "kova"],
+          "racines": [
+            "teki",
+            "kova"
+          ],
           "domaine": "communication"
         }
       ]
@@ -73,18 +85,23 @@
         }
       ]
     },
-    "récit": {
+    "recit": {
       "traductions": [
         {
           "confluent": "vokiaita",
           "type": "composition",
           "composition": "vok-i-aita",
           "sens_litteral": "Voix des ancêtres",
-          "racines": ["voki", "aita"],
+          "racines": [
+            "voki",
+            "aita"
+          ],
           "domaine": "communication"
         }
       ],
-      "synonymes_fr": ["légende"]
+      "synonymes_fr": [
+        "légende"
+      ]
     },
     "histoire vraie": {
       "traductions": [
@@ -93,23 +110,31 @@
           "type": "composition",
           "composition": "vok-i-veri",
           "sens_litteral": "Voix de vérité",
-          "racines": ["voki", "veri"],
+          "racines": [
+            "voki",
+            "veri"
+          ],
           "domaine": "communication"
         }
       ]
     },
-    "poème": {
+    "poeme": {
       "traductions": [
         {
           "confluent": "onuvoki",
           "type": "composition",
           "composition": "on-u-voki",
           "sens_litteral": "Son de la voix",
-          "racines": ["onu", "voki"],
+          "racines": [
+            "onu",
+            "voki"
+          ],
           "domaine": "communication"
         }
       ],
-      "synonymes_fr": ["vers"]
+      "synonymes_fr": [
+        "vers"
+      ]
     },
     "chant": {
       "traductions": [
@@ -118,19 +143,25 @@
           "type": "composition",
           "composition": "on-u-voki",
           "sens_litteral": "Son de la voix",
-          "racines": ["onu", "voki"],
+          "racines": [
+            "onu",
+            "voki"
+          ],
           "domaine": "communication"
         }
       ]
     },
-    "chant sacré": {
+    "chant sacre": {
       "traductions": [
         {
           "confluent": "onuasa",
           "type": "composition",
           "composition": "on-u-asa",
           "sens_litteral": "Son du sacré",
-          "racines": ["onu", "asa"],
+          "racines": [
+            "onu",
+            "asa"
+          ],
           "domaine": "communication"
         }
       ]
@@ -142,7 +173,10 @@
           "type": "composition",
           "composition": "vok-i-teki",
           "sens_litteral": "Voix du chemin",
-          "racines": ["voki", "teki"],
+          "racines": [
+            "voki",
+            "teki"
+          ],
           "domaine": "communication"
         }
       ]
@@ -154,7 +188,10 @@
           "type": "composition",
           "composition": "vok-i-mira",
           "sens_litteral": "Voix de l'observation",
-          "racines": ["voki", "mira"],
+          "racines": [
+            "voki",
+            "mira"
+          ],
           "domaine": "communication"
         }
       ]
@@ -166,19 +203,25 @@
           "type": "composition",
           "composition": "vok-i-temi",
           "sens_litteral": "Voix du temps",
-          "racines": ["voki", "temi"],
+          "racines": [
+            "voki",
+            "temi"
+          ],
           "domaine": "communication"
         }
       ]
     },
-    "traité": {
+    "traite": {
       "traductions": [
         {
           "confluent": "tabusavu",
           "type": "composition",
           "composition": "tab-u-savu",
           "sens_litteral": "Tablette du serment",
-          "racines": ["tabu", "savu"],
+          "racines": [
+            "tabu",
+            "savu"
+          ],
           "domaine": "communication"
         }
       ]
@@ -193,14 +236,17 @@
         }
       ]
     },
-    "décret": {
+    "decret": {
       "traductions": [
         {
           "confluent": "lokukasi",
           "type": "composition",
           "composition": "lok-u-kasi",
           "sens_litteral": "Loi du chef",
-          "racines": ["loku", "kasi"],
+          "racines": [
+            "loku",
+            "kasi"
+          ],
           "domaine": "communication"
         }
       ]
@@ -212,7 +258,10 @@
           "type": "composition",
           "composition": "vok-i-eka",
           "sens_litteral": "Voix de la totalité",
-          "racines": ["voki", "eka"],
+          "racines": [
+            "voki",
+            "eka"
+          ],
           "domaine": "communication"
         }
       ]
@@ -224,19 +273,25 @@
           "type": "composition",
           "composition": "sek-a-voki",
           "sens_litteral": "Savoir avec voix",
-          "racines": ["seka", "voki"],
+          "racines": [
+            "seka",
+            "voki"
+          ],
           "domaine": "communication"
         }
       ]
     },
-    "débat": {
+    "debat": {
       "traductions": [
         {
           "confluent": "vokioavoki",
           "type": "composition",
           "composition": "vok-oa-voki",
           "sens_litteral": "Voix contre voix",
-          "racines": ["voki", "voki"],
+          "racines": [
+            "voki",
+            "voki"
+          ],
           "domaine": "communication"
         }
       ]
@@ -248,7 +303,10 @@
           "type": "composition",
           "composition": "zo-voki",
           "sens_litteral": "Sans voix",
-          "racines": ["zo", "voki"],
+          "racines": [
+            "zo",
+            "voki"
+          ],
           "domaine": "communication"
         }
       ]
@@ -270,7 +328,10 @@
           "type": "composition",
           "composition": "zo-veri",
           "sens_litteral": "Sans vérité",
-          "racines": ["zo", "veri"],
+          "racines": [
+            "zo",
+            "veri"
+          ],
           "domaine": "communication"
         }
       ]

@@ -20,7 +20,10 @@
           "type": "composition",
           "composition": "suk-i-sora",
           "sens_litteral": "Feu de lumière",
-          "racines": ["suki", "sora"],
+          "racines": [
+            "suki",
+            "sora"
+          ],
           "domaine": "couleur"
         }
       ]
@@ -32,11 +35,16 @@
           "type": "composition",
           "composition": "zer-u-pasu",
           "sens_litteral": "Ciel de sang",
-          "racines": ["zeru", "pasu"],
+          "racines": [
+            "zeru",
+            "pasu"
+          ],
           "domaine": "couleur"
         }
       ],
-      "synonymes_fr": ["pourpre"]
+      "synonymes_fr": [
+        "pourpre"
+      ]
     },
     "rose": {
       "traductions": [
@@ -45,7 +53,10 @@
           "type": "composition",
           "composition": "pas-u-milu",
           "sens_litteral": "Rouge de lait",
-          "racines": ["pasu", "milu"],
+          "racines": [
+            "pasu",
+            "milu"
+          ],
           "domaine": "couleur"
         }
       ]
@@ -122,7 +133,10 @@
           "type": "composition",
           "composition": "zer-u-ura",
           "sens_litteral": "Ciel de l'eau",
-          "racines": ["zeru", "ura"],
+          "racines": [
+            "zeru",
+            "ura"
+          ],
           "domaine": "couleur"
         }
       ]
@@ -134,19 +148,25 @@
           "type": "composition",
           "composition": "tok-a-sora",
           "sens_litteral": "Terre avec soleil",
-          "racines": ["toka", "sora"],
+          "racines": [
+            "toka",
+            "sora"
+          ],
           "domaine": "couleur"
         }
       ]
     },
-    "pâle": {
+    "pale": {
       "traductions": [
         {
           "confluent": "miluukolu",
           "type": "composition",
           "composition": "mil-u-kolu",
           "sens_litteral": "Lait de couleur",
-          "racines": ["milu", "kolu"],
+          "racines": [
+            "milu",
+            "kolu"
+          ],
           "domaine": "qualificatif"
         }
       ]
@@ -158,20 +178,26 @@
           "type": "composition",
           "composition": "sil-u-ora",
           "sens_litteral": "Regard de l'aurore",
-          "racines": ["sili", "ora"],
+          "racines": [
+            "sili",
+            "ora"
+          ],
           "domaine": "corps_sacre",
           "note": "Yeux des Ciels-clairs aux couleurs de l'aurore"
         }
       ]
     },
-    "éclat": {
+    "eclat": {
       "traductions": [
         {
           "confluent": "soraumako",
           "type": "composition",
           "composition": "sor-a-mako",
           "sens_litteral": "Lumière avec grandeur",
-          "racines": ["sora", "mako"],
+          "racines": [
+            "sora",
+            "mako"
+          ],
           "domaine": "qualificatif"
         }
       ]
@@ -183,7 +209,10 @@
           "type": "composition",
           "composition": "sor-a-ura",
           "sens_litteral": "Lumière avec eau",
-          "racines": ["sora", "ura"],
+          "racines": [
+            "sora",
+            "ura"
+          ],
           "domaine": "qualificatif"
         }
       ]
@@ -215,7 +244,10 @@
           "type": "composition",
           "composition": "kol-u-aita",
           "sens_litteral": "Couleur des ancêtres",
-          "racines": ["kolu", "aita"],
+          "racines": [
+            "kolu",
+            "aita"
+          ],
           "domaine": "qualificatif"
         }
       ]
@@ -237,7 +269,10 @@
           "type": "composition",
           "composition": "kov-a-kari",
           "sens_litteral": "Gravure avec pierre",
-          "racines": ["kova", "kari"],
+          "racines": [
+            "kova",
+            "kari"
+          ],
           "domaine": "art"
         }
       ]
@@ -249,7 +284,10 @@
           "type": "composition",
           "composition": "kov-a-siku",
           "sens_litteral": "Gravure avec cercle",
-          "racines": ["kova", "siku"],
+          "racines": [
+            "kova",
+            "siku"
+          ],
           "domaine": "art"
         }
       ]

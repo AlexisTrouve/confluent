@@ -12,9 +12,11 @@
           "note": "Concept central de la civilisation"
         }
       ],
-      "synonymes_fr": ["liberté"]
+      "synonymes_fr": [
+        "liberté"
+      ]
     },
-    "ancêtre": {
+    "ancetre": {
       "traductions": [
         {
           "confluent": "aita",
@@ -24,9 +26,12 @@
           "note": "Ceux qui sont venus avant"
         }
       ],
-      "synonymes_fr": ["ancien", "aïeul"]
+      "synonymes_fr": [
+        "ancien",
+        "aïeul"
+      ]
     },
-    "sacré": {
+    "sacre": {
       "traductions": [
         {
           "confluent": "asa",
@@ -36,7 +41,10 @@
           "note": "Ce qui est intouchable, divin"
         }
       ],
-      "synonymes_fr": ["divin", "saint"]
+      "synonymes_fr": [
+        "divin",
+        "saint"
+      ]
     },
     "oiseau": {
       "traductions": [
@@ -48,7 +56,9 @@
           "note": "Vol, créature ailée"
         }
       ],
-      "synonymes_fr": ["vol"]
+      "synonymes_fr": [
+        "vol"
+      ]
     },
     "grue": {
       "traductions": [
@@ -60,7 +70,9 @@
           "note": "Regard-Libre, animal sacré central"
         }
       ],
-      "synonymes_fr": ["Regard-Libre"]
+      "synonymes_fr": [
+        "Regard-Libre"
+      ]
     },
     "faucon": {
       "traductions": [
@@ -83,7 +95,9 @@
           "note": "Élément primordial, fluide"
         }
       ],
-      "synonymes_fr": ["fluide"]
+      "synonymes_fr": [
+        "fluide"
+      ]
     },
     "esprit": {
       "traductions": [
@@ -95,7 +109,10 @@
           "note": "Souffle vital, essence"
         }
       ],
-      "synonymes_fr": ["souffle", "âme"]
+      "synonymes_fr": [
+        "souffle",
+        "âme"
+      ]
     },
     "un": {
       "traductions": [
@@ -107,9 +124,12 @@
           "note": "Unicité, premier nombre"
         }
       ],
-      "synonymes_fr": ["unique", "seul"]
+      "synonymes_fr": [
+        "unique",
+        "seul"
+      ]
     },
-    "être": {
+    "etre": {
       "traductions": [
         {
           "confluent": "ita",
@@ -119,7 +139,10 @@
           "note": "Exister, vivre"
         }
       ],
-      "synonymes_fr": ["exister", "vivre"]
+      "synonymes_fr": [
+        "exister",
+        "vivre"
+      ]
     },
     "origine": {
       "traductions": [
@@ -131,7 +154,10 @@
           "note": "Source, naissance, commencement"
         }
       ],
-      "synonymes_fr": ["source", "naissance"]
+      "synonymes_fr": [
+        "source",
+        "naissance"
+      ]
     },
     "tout": {
       "traductions": [
@@ -143,9 +169,12 @@
           "note": "Totalité, entièreté"
         }
       ],
-      "synonymes_fr": ["entier", "totalité"]
+      "synonymes_fr": [
+        "entier",
+        "totalité"
+      ]
     },
-    "épreuve": {
+    "epreuve": {
       "traductions": [
         {
           "confluent": "oki",
@@ -155,7 +184,10 @@
           "note": "Défi, danger, test"
         }
       ],
-      "synonymes_fr": ["défi", "danger"]
+      "synonymes_fr": [
+        "défi",
+        "danger"
+      ]
     },
     "aurore": {
       "traductions": [
@@ -167,7 +199,9 @@
           "note": "Aube, moment de transition sacré"
         }
       ],
-      "synonymes_fr": ["aube"]
+      "synonymes_fr": [
+        "aube"
+      ]
     },
     "son": {
       "traductions": [
@@ -179,9 +213,11 @@
           "note": "Vibration, lié aux rhombes sacrés"
         }
       ],
-      "synonymes_fr": ["vibration"]
+      "synonymes_fr": [
+        "vibration"
+      ]
     },
-    "âme": {
+    "ame": {
       "traductions": [
         {
           "confluent": "umi",
@@ -191,9 +227,11 @@
           "note": "Même racine que 'esprit'"
         }
       ],
-      "synonymes_fr": ["conscience"]
+      "synonymes_fr": [
+        "conscience"
+      ]
     },
-    "étoile": {
+    "etoile": {
       "traductions": [
         {
           "confluent": "atu",
@@ -214,7 +252,10 @@
           "note": "Nouvelle racine sacrée - fin de l'existence"
         }
       ],
-      "synonymes_fr": ["mourir", "trépas"]
+      "synonymes_fr": [
+        "mourir",
+        "trépas"
+      ]
     },
     "aile": {
       "traductions": [

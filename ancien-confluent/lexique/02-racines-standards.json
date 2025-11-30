@@ -12,7 +12,9 @@
           "note": "Racine fondamentale"
         }
       ],
-      "synonymes_fr": ["vérité"]
+      "synonymes_fr": [
+        "vérité"
+      ]
     },
     "bon": {
       "traductions": [
@@ -24,7 +26,9 @@
           "note": "Bien, positif"
         }
       ],
-      "synonymes_fr": ["bien"]
+      "synonymes_fr": [
+        "bien"
+      ]
     },
     "grand": {
       "traductions": [
@@ -36,7 +40,9 @@
           "note": "Vaste, important"
         }
       ],
-      "synonymes_fr": ["vaste"]
+      "synonymes_fr": [
+        "vaste"
+      ]
     },
     "petit": {
       "traductions": [
@@ -48,7 +54,9 @@
           "note": "Fin, menu"
         }
       ],
-      "synonymes_fr": ["fin"]
+      "synonymes_fr": [
+        "fin"
+      ]
     },
     "nouveau": {
       "traductions": [
@@ -60,9 +68,11 @@
           "note": "Jeune, récent"
         }
       ],
-      "synonymes_fr": ["jeune"]
+      "synonymes_fr": [
+        "jeune"
+      ]
     },
-    "échanger": {
+    "echanger": {
       "traductions": [
         {
           "confluent": "kiru",
@@ -72,7 +82,9 @@
           "note": "Troquer, commercer"
         }
       ],
-      "synonymes_fr": ["troquer"]
+      "synonymes_fr": [
+        "troquer"
+      ]
     },
     "pont": {
       "traductions": [
@@ -84,7 +96,10 @@
           "note": "Lien, passage entre deux"
         }
       ],
-      "synonymes_fr": ["lien", "passage"]
+      "synonymes_fr": [
+        "lien",
+        "passage"
+      ]
     },
     "bois": {
       "traductions": [
@@ -107,7 +122,9 @@
           "note": "Obscur, sans lumière"
         }
       ],
-      "synonymes_fr": ["obscur"]
+      "synonymes_fr": [
+        "obscur"
+      ]
     },
     "couleur": {
       "traductions": [
@@ -153,14 +170,17 @@
         }
       ]
     },
-    "assemblée": {
+    "assemblee": {
       "traductions": [
         {
           "confluent": "kotaitori",
           "type": "composition",
           "composition": "kot-a-tori",
           "sens_litteral": "Union avec personnes",
-          "racines": ["kota", "tori"],
+          "racines": [
+            "kota",
+            "tori"
+          ],
           "domaine": "institution"
         }
       ]
@@ -186,7 +206,9 @@
           "note": "Nouvelle racine - règle fixée"
         }
       ],
-      "synonymes_fr": ["règle"]
+      "synonymes_fr": [
+        "règle"
+      ]
     },
     "ligne": {
       "traductions": [
@@ -220,9 +242,11 @@
           "note": "Endroit, place"
         }
       ],
-      "synonymes_fr": ["endroit"]
+      "synonymes_fr": [
+        "endroit"
+      ]
     },
-    "mémoire": {
+    "memoire": {
       "traductions": [
         {
           "confluent": "memu",
@@ -232,7 +256,9 @@
           "note": "Nouvelle racine - ce qu'on retient"
         }
       ],
-      "synonymes_fr": ["souvenir"]
+      "synonymes_fr": [
+        "souvenir"
+      ]
     },
     "navire": {
       "traductions": [
@@ -255,7 +281,9 @@
           "note": "Même racine que 'bon' - état bon"
         }
       ],
-      "synonymes_fr": ["calme"]
+      "synonymes_fr": [
+        "calme"
+      ]
     },
     "poisson": {
       "traductions": [
@@ -301,18 +329,23 @@
         }
       ]
     },
-    "récit": {
+    "recit": {
       "traductions": [
         {
           "confluent": "vokiaita",
           "type": "composition",
           "composition": "vok-i-aita",
           "sens_litteral": "Voix des ancêtres",
-          "racines": ["voki", "aita"],
+          "racines": [
+            "voki",
+            "aita"
+          ],
           "domaine": "communication"
         }
       ],
-      "synonymes_fr": ["histoire"]
+      "synonymes_fr": [
+        "histoire"
+      ]
     },
     "route": {
       "traductions": [
@@ -335,7 +368,9 @@
           "note": "Nouvelle racine - contenant souple"
         }
       ],
-      "synonymes_fr": ["contenant"]
+      "synonymes_fr": [
+        "contenant"
+      ]
     },
     "sel": {
       "traductions": [
@@ -369,7 +404,9 @@
           "note": "Même racine que ancêtre"
         }
       ],
-      "synonymes_fr": ["âgé"]
+      "synonymes_fr": [
+        "âgé"
+      ]
     },
     "signe": {
       "traductions": [
@@ -381,7 +418,9 @@
           "note": "Lié à regard - ce qu'on montre"
         }
       ],
-      "synonymes_fr": ["marque"]
+      "synonymes_fr": [
+        "marque"
+      ]
     },
     "frapper": {
       "traductions": [
@@ -417,7 +456,7 @@
         }
       ]
     },
-    "vallée": {
+    "vallee": {
       "traductions": [
         {
           "confluent": "valu",
@@ -438,7 +477,9 @@
           "note": "Même racine que faire/créer"
         }
       ],
-      "synonymes_fr": ["œuvre"]
+      "synonymes_fr": [
+        "œuvre"
+      ]
     },
     "temps": {
       "traductions": [
@@ -450,7 +491,9 @@
           "note": "Nouvelle racine - durée"
         }
       ],
-      "synonymes_fr": ["durée"]
+      "synonymes_fr": [
+        "durée"
+      ]
     },
     "tribu": {
       "traductions": [
@@ -470,7 +513,10 @@
           "type": "composition",
           "composition": "os-i-toka",
           "sens_litteral": "Mort dans la terre",
-          "racines": ["osi", "toka"],
+          "racines": [
+            "osi",
+            "toka"
+          ],
           "domaine": "lieu"
         }
       ]
@@ -485,7 +531,9 @@
           "note": "Nouvelle racine - mérite"
         }
       ],
-      "synonymes_fr": ["mérite"]
+      "synonymes_fr": [
+        "mérite"
+      ]
     },
     "guerre": {
       "traductions": [
@@ -497,7 +545,9 @@
           "note": "Même racine que épreuve/défi"
         }
       ],
-      "synonymes_fr": ["combat"]
+      "synonymes_fr": [
+        "combat"
+      ]
     },
     "serpent": {
       "traductions": [
@@ -533,7 +583,9 @@
           "note": "Première personne singulier, inspiré du finnois 'minä'"
         }
       ],
-      "synonymes_fr": ["moi"]
+      "synonymes_fr": [
+        "moi"
+      ]
     },
     "tu": {
       "traductions": [
@@ -545,7 +597,9 @@
           "note": "Deuxième personne singulier, inspiré du finnois 'sinä'"
         }
       ],
-      "synonymes_fr": ["toi"]
+      "synonymes_fr": [
+        "toi"
+      ]
     },
     "il": {
       "traductions": [
@@ -557,7 +611,10 @@
           "note": "Troisième personne singulier neutre (il/elle/iel)"
         }
       ],
-      "synonymes_fr": ["elle", "iel"]
+      "synonymes_fr": [
+        "elle",
+        "iel"
+      ]
     }
   }
 }
