@@ -18,6 +18,29 @@
       "synonymes_fr": [
         "observer",
         "regarder",
+        "regarde",
+        "regardes",
+        "regardons",
+        "regardez",
+        "regardent",
+        "regardais",
+        "regardait",
+        "regardions",
+        "regardiez",
+        "regardaient",
+        "regardant",
+        "regardé",
+        "vois",
+        "voit",
+        "voyons",
+        "voyez",
+        "voient",
+        "voyais",
+        "voyait",
+        "voyions",
+        "voyiez",
+        "voyaient",
+        "voyant",
         "vu",
         "vus",
         "vue",
@@ -90,6 +113,62 @@
         "marchaient",
         "marchant",
         "marché"
+      ]
+    },
+    "courir": {
+      "racine_fr": "cour",
+      "traductions": [
+        {
+          "confluent": "hayak",
+          "type": "verbe",
+          "racine": "haya",
+          "forme_liee": "hay",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Courir, se déplacer rapidement"
+        }
+      ],
+      "synonymes_fr": [
+        "cours",
+        "court",
+        "courons",
+        "courez",
+        "courent",
+        "courais",
+        "courait",
+        "courions",
+        "couriez",
+        "couraient",
+        "courant",
+        "couru"
+      ]
+    },
+    "couler": {
+      "racine_fr": "coul",
+      "traductions": [
+        {
+          "confluent": "urak",
+          "type": "verbe",
+          "racine": "ura",
+          "forme_liee": "ur",
+          "structure": "VCVC",
+          "domaine": "action",
+          "note": "Couler, s'écouler - lié à l'eau"
+        }
+      ],
+      "synonymes_fr": [
+        "coule",
+        "coules",
+        "coulons",
+        "coulez",
+        "coulent",
+        "coulais",
+        "coulait",
+        "coulions",
+        "couliez",
+        "coulaient",
+        "coulant",
+        "coulé"
       ]
     },
     "donner": {
@@ -220,7 +299,17 @@
       ],
       "synonymes_fr": [
         "enseigner",
+        "transmet",
+        "transmets",
+        "transmettons",
+        "transmettez",
         "transmettent",
+        "transmettais",
+        "transmettait",
+        "transmettions",
+        "transmettez",
+        "transmettaient",
+        "transmettant",
         "transmis"
       ]
     },
@@ -269,7 +358,19 @@
         }
       ],
       "synonymes_fr": [
-        "traquer"
+        "traquer",
+        "chasse",
+        "chasses",
+        "chassons",
+        "chassez",
+        "chassent",
+        "chassais",
+        "chassait",
+        "chassions",
+        "chassiez",
+        "chassaient",
+        "chassant",
+        "chassé"
       ]
     },
     "mediter": {
@@ -553,6 +654,33 @@
           "structure": "CVCVC",
           "domaine": "action_combat"
         }
+      ],
+      "synonymes_fr": [
+        "veiller",
+        "veille",
+        "veilles",
+        "veillons",
+        "veillez",
+        "veillent",
+        "veillais",
+        "veillait",
+        "veillions",
+        "veilliez",
+        "veillaient",
+        "veillant",
+        "veillé",
+        "surveille",
+        "surveilles",
+        "surveillons",
+        "surveillez",
+        "surveillent",
+        "surveillais",
+        "surveillait",
+        "surveillions",
+        "surveilliez",
+        "surveillaient",
+        "surveillant",
+        "surveillé"
       ]
     },
     "attaquer": {
@@ -719,6 +847,93 @@
         "existe",
         "existent",
         "existant"
+      ]
+    },
+    "planer": {
+      "racine_fr": "plan",
+      "traductions": [
+        {
+          "confluent": "aliuk",
+          "type": "verbe",
+          "racine": "aliu",
+          "forme_liee": "ali",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Voler, planer dans les airs"
+        }
+      ],
+      "synonymes_fr": [
+        "planer",
+        "plane",
+        "planes",
+        "planons",
+        "planez",
+        "planent",
+        "planais",
+        "planait",
+        "planions",
+        "planiez",
+        "planaient",
+        "planant",
+        "plané"
+      ]
+    },
+    "resonner": {
+      "racine_fr": "résonn",
+      "traductions": [
+        {
+          "confluent": "kekak",
+          "type": "verbe",
+          "racine": "keka",
+          "forme_liee": "kek",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Résonner, faire écho"
+        }
+      ],
+      "synonymes_fr": [
+        "résonner",
+        "résonne",
+        "résonnes",
+        "résonnons",
+        "résonnez",
+        "résonnent",
+        "résonnais",
+        "résonnait",
+        "résonnions",
+        "résonniez",
+        "résonnaient",
+        "résonnant",
+        "résonné"
+      ]
+    },
+    "rejoindre": {
+      "racine_fr": "rejoind",
+      "traductions": [
+        {
+          "confluent": "kotan",
+          "type": "verbe",
+          "racine": "kota",
+          "forme_liee": "kot",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Rejoindre, se réunir"
+        }
+      ],
+      "synonymes_fr": [
+        "rejoindre",
+        "rejoinds",
+        "rejoint",
+        "rejoignons",
+        "rejoignez",
+        "rejoignent",
+        "rejoignais",
+        "rejoignait",
+        "rejoignions",
+        "rejoigniez",
+        "rejoignaient",
+        "rejoignant",
+        "rejoint"
       ]
     }
   }

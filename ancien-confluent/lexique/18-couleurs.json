@@ -81,6 +81,11 @@
           "domaine": "couleur",
           "note": "Couleur de la cendre"
         }
+      ],
+      "synonymes_fr": [
+        "gris",
+        "grise",
+        "grises"
       ]
     },
     "noir": {

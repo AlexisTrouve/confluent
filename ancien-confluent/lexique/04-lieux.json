@@ -293,6 +293,24 @@
           "categorie": "structure"
         }
       ]
+    },
+    "antre": {
+      "traductions": [
+        {
+          "confluent": "keku",
+          "type": "racine",
+          "forme_liee": "kek",
+          "domaine": "lieu",
+          "note": "Caverne, grotte profonde"
+        }
+      ],
+      "synonymes_fr": [
+        "antres",
+        "caverne",
+        "cavernes",
+        "grotte",
+        "grottes"
+      ]
     }
   }
 }

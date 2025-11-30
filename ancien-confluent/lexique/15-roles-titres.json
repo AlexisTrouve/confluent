@@ -515,6 +515,27 @@
         "conjoint",
         "conjoints"
       ]
+    },
+    "artisan": {
+      "traductions": [
+        {
+          "confluent": "nekatoku",
+          "type": "composition",
+          "composition": "nek-a-toku",
+          "sens_litteral": "Créateur avec savoir",
+          "racines": [
+            "neka",
+            "toku"
+          ],
+          "domaine": "role"
+        }
+      ],
+      "synonymes_fr": [
+        "artisans",
+        "artisane",
+        "artisanes",
+        "crafteur"
+      ]
     }
   }
 }

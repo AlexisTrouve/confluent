@@ -370,6 +370,26 @@
           "categorie": "lieu_rituel"
         }
       ]
+    },
+    "tradition": {
+      "traductions": [
+        {
+          "confluent": "aitatoku",
+          "type": "composition",
+          "composition": "ait-a-toku",
+          "sens_litteral": "Ancêtre avec savoir",
+          "racines": [
+            "aita",
+            "toku"
+          ],
+          "domaine": "rituel"
+        }
+      ],
+      "synonymes_fr": [
+        "traditions",
+        "coutume",
+        "coutumes"
+      ]
     }
   }
 }

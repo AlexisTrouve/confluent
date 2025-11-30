@@ -28,7 +28,12 @@
       ],
       "synonymes_fr": [
         "ancien",
-        "aïeul"
+        "aïeul",
+        "anciens",
+        "ancienne",
+        "anciennes",
+        "ancêtre",
+        "ancêtres"
       ]
     },
     "sacre": {
@@ -43,7 +48,11 @@
       ],
       "synonymes_fr": [
         "divin",
-        "saint"
+        "saint",
+        "sacrés",
+        "sacrée",
+        "sacrées",
+        "sacré"
       ]
     },
     "oiseau": {

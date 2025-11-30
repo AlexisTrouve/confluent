@@ -75,6 +75,10 @@
           "categorie": "coordination",
           "note": "Opposition ou coordination selon contexte"
         }
+      ],
+      "synonymes_fr": [
+        "et",
+        "mais"
       ]
     },
     "vi": {
@@ -326,6 +330,113 @@
           "categorie": "démonstratif",
           "note": "Démonstratif pour personnes"
         }
+      ]
+    },
+    "dessus": {
+      "traductions": [
+        {
+          "confluent": "ze",
+          "type": "particule",
+          "domaine": "spatial",
+          "note": "Au-dessus, en haut"
+        }
+      ],
+      "synonymes_fr": [
+        "au-dessus",
+        "au dessus"
+      ]
+    },
+    "tous": {
+      "traductions": [
+        {
+          "confluent": "susu",
+          "type": "quantificateur",
+          "domaine": "quantite",
+          "note": "Tous, toutes, ensemble"
+        }
+      ],
+      "synonymes_fr": [
+        "toutes",
+        "tout",
+        "toute"
+      ]
+    },
+    "qui": {
+      "traductions": [
+        {
+          "confluent": "ki",
+          "type": "relatif",
+          "categorie": "pronom",
+          "note": "Pronom relatif (qui, que)"
+        }
+      ],
+      "synonymes_fr": [
+        "que",
+        "dont"
+      ]
+    },
+    "leurs": {
+      "traductions": [
+        {
+          "confluent": "nasu",
+          "type": "possessif",
+          "categorie": "pronom",
+          "note": "Possessif 3ème personne pluriel"
+        }
+      ],
+      "synonymes_fr": [
+        "leur"
+      ]
+    },
+    "ces": {
+      "traductions": [
+        {
+          "confluent": "tovasu",
+          "type": "demonstratif",
+          "categorie": "determinant",
+          "note": "Démonstratif pluriel (ces, ceux-ci)"
+        }
+      ],
+      "synonymes_fr": [
+        "ceux",
+        "celles"
+      ]
+    },
+    "chaque": {
+      "traductions": [
+        {
+          "confluent": "eka",
+          "type": "quantificateur",
+          "categorie": "determinant",
+          "note": "Chaque, chacun (distributif)"
+        }
+      ],
+      "synonymes_fr": [
+        "chacun",
+        "chacune"
+      ]
+    },
+    "depuis": {
+      "traductions": [
+        {
+          "confluent": "ve",
+          "type": "particule",
+          "categorie": "temps",
+          "note": "Depuis (origine temporelle) - utilise particule ve (origine)"
+        }
+      ]
+    },
+    "ils": {
+      "traductions": [
+        {
+          "confluent": "tasu",
+          "type": "pronom",
+          "categorie": "personnel",
+          "note": "Pronom 3ème personne pluriel"
+        }
+      ],
+      "synonymes_fr": [
+        "elles"
       ]
     }
   }
