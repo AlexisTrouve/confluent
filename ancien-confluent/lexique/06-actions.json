@@ -240,7 +240,14 @@
       "synonymes_fr": [
         "parler",
         "dites",
-        "dit"
+        "dit",
+        "murmurer",
+        "murmure",
+        "murmures",
+        "murmurons",
+        "murmurez",
+        "murmurent",
+        "chuchoter"
       ]
     },
     "savoir": {
@@ -263,7 +270,12 @@
         "saches",
         "sachent",
         "sachions",
-        "sachiez"
+        "sachiez",
+        "comprendre",
+        "comprends",
+        "comprenons",
+        "comprenez",
+        "comprennent"
       ]
     },
     "apprendre": {
@@ -1051,6 +1063,123 @@
         "envolons",
         "envolez",
         "envolent"
+      ]
+    },
+    "aimer": {
+      "racine_fr": "aim",
+      "traductions": [
+        {
+          "confluent": "koris",
+          "type": "verbe",
+          "racine": "kori",
+          "forme_liee": "kor",
+          "structure": "CVCVC",
+          "domaine": "action_emotion",
+          "note": "Verbe d'amour (du cœur kori)"
+        }
+      ],
+      "synonymes_fr": [
+        "aime",
+        "aimes",
+        "aimons",
+        "aimez",
+        "aiment",
+        "aimais",
+        "aimait",
+        "aimions",
+        "aimiez",
+        "aimaient",
+        "aimant",
+        "aimé"
+      ]
+    },
+    "pouvoir": {
+      "racine_fr": "pouv",
+      "traductions": [
+        {
+          "confluent": "polas",
+          "type": "verbe",
+          "racine": "pola",
+          "forme_liee": "pol",
+          "structure": "CVCVC",
+          "domaine": "action_capacite",
+          "note": "Avoir la capacité de"
+        }
+      ],
+      "synonymes_fr": [
+        "peux",
+        "peut",
+        "pouvons",
+        "pouvez",
+        "peuvent",
+        "pouvais",
+        "pouvait",
+        "pouvions",
+        "pouviez",
+        "pouvaient",
+        "pouvant",
+        "pu"
+      ]
+    },
+    "devoir": {
+      "racine_fr": "dev",
+      "traductions": [
+        {
+          "confluent": "nekas",
+          "type": "verbe",
+          "racine": "neka",
+          "forme_liee": "nek",
+          "structure": "CVCVC",
+          "domaine": "action_obligation",
+          "note": "Être obligé de, avoir l'obligation (lié à œuvre/tâche)"
+        }
+      ],
+      "synonymes_fr": [
+        "dois",
+        "doit",
+        "devons",
+        "devez",
+        "doivent",
+        "devais",
+        "devait",
+        "devions",
+        "deviez",
+        "devaient",
+        "devant",
+        "dû",
+        "due",
+        "dus",
+        "dues"
+      ]
+    },
+    "reposer": {
+      "racine_fr": "repos",
+      "traductions": [
+        {
+          "confluent": "tokas",
+          "type": "verbe",
+          "racine": "toka",
+          "forme_liee": "tok",
+          "structure": "CVCVC",
+          "domaine": "action_fondement",
+          "note": "Reposer sur, être fondé sur (lié à toka=lieu/base)"
+        }
+      ],
+      "synonymes_fr": [
+        "repose",
+        "reposes",
+        "reposons",
+        "reposez",
+        "reposent",
+        "reposais",
+        "reposait",
+        "reposions",
+        "reposiez",
+        "reposaient",
+        "reposant",
+        "reposé",
+        "être fondé",
+        "se fonder"
       ]
     }
   }

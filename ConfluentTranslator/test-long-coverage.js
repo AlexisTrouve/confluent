@@ -1,32 +1,55 @@
+/**
+ * Test de couverture lexicale sur textes longs
+ * UTILISE LES FONCTIONS CENTRALISÉES de contextAnalyzer.js
+ */
+
 const fs = require('fs');
 const path = require('path');
+const { normalizeFrenchText, tokenizeFrench, simpleLemmatize } = require('./contextAnalyzer');
 
 // Load all lexicon files
 const lexiqueDir = path.join(__dirname, '../ancien-confluent/lexique');
-const lexiqueFiles = fs.readdirSync(lexiqueDir).filter(f => f.endsWith('.json'));
+const lexiqueFiles = fs.readdirSync(lexiqueDir).filter(f => f.endsWith('.json') && !f.startsWith('_'));
 
 const fullLexique = new Map();
 
-// Helper to normalize text (lowercase + strip accents)
-function normalize(text) {
-  return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-}
-
 lexiqueFiles.forEach(file => {
-  const content = JSON.parse(fs.readFileSync(path.join(lexiqueDir, file), 'utf8'));
-  if (content.dictionnaire) {
-    Object.entries(content.dictionnaire).forEach(([key, value]) => {
-      // Add both original and normalized versions
-      fullLexique.set(key.toLowerCase(), value);
-      fullLexique.set(normalize(key), value);
+  try {
+    const content = JSON.parse(fs.readFileSync(path.join(lexiqueDir, file), 'utf8'));
 
-      if (value.synonymes_fr) {
-        value.synonymes_fr.forEach(syn => {
-          fullLexique.set(syn.toLowerCase(), value);
-          fullLexique.set(normalize(syn), value);
-        });
-      }
-    });
+    // Charger le dictionnaire principal
+    if (content.dictionnaire) {
+      Object.entries(content.dictionnaire).forEach(([key, value]) => {
+        // Normaliser la clé avec la fonction centrale
+        const normalizedKey = normalizeFrenchText(key).trim();
+        fullLexique.set(normalizedKey, value);
+
+        // Ajouter aussi les synonymes
+        if (value.synonymes_fr) {
+          value.synonymes_fr.forEach(syn => {
+            const normalizedSyn = normalizeFrenchText(syn).trim();
+            fullLexique.set(normalizedSyn, value);
+          });
+        }
+      });
+    }
+
+    // Charger aussi la section "pronoms" si elle existe
+    if (content.pronoms) {
+      Object.entries(content.pronoms).forEach(([key, value]) => {
+        const normalizedKey = normalizeFrenchText(key).trim();
+        fullLexique.set(normalizedKey, value);
+
+        if (value.synonymes_fr) {
+          value.synonymes_fr.forEach(syn => {
+            const normalizedSyn = normalizeFrenchText(syn).trim();
+            fullLexique.set(normalizedSyn, value);
+          });
+        }
+      });
+    }
+  } catch (error) {
+    console.error(`Erreur chargement ${file}:`, error.message);
   }
 });
 
@@ -53,35 +76,35 @@ const longTexts = [
 console.log('\n=== LONG TEXT COVERAGE TEST ===\n');
 console.log(`Lexique size: ${fullLexique.size} entries\n`);
 
-// Common French articles and prepositions to ignore in coverage
-const stopWords = new Set(['le', 'la', 'les', 'un', 'une', 'des', 'du', 'de', 'au', 'aux', 'a', 'l', 'd', 'c', 's', 'n', 't', 'qu', 'j', 'm']);
-
 let globalFound = 0;
 let globalTotal = 0;
 const allMissing = new Set();
 
 longTexts.forEach(({ title, text }) => {
-  const words = text.toLowerCase()
-    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-    .replace(/['']/g, ' ')
-    .split(/[\s,;:.!?()«»""-]+/)
-    .filter(w => w.length > 0);
-
-  // Filter out stopwords before checking
-  const contentWords = words.filter(w => !stopWords.has(w));
+  // UTILISER LA FONCTION CENTRALE tokenizeFrench()
+  const words = tokenizeFrench(text);
 
   const found = [];
   const missing = [];
 
-  contentWords.forEach(word => {
+  words.forEach(word => {
+    // Chercher le mot directement
     if (fullLexique.has(word)) {
       found.push(word);
     } else {
-      // Try lemmatization for -ment adverbs
-      const withoutMent = word.replace(/ment$/, '');
-      if (fullLexique.has(withoutMent)) {
-        found.push(word);
-      } else {
+      // Essayer avec la lemmatisation
+      const lemmas = simpleLemmatize(word);
+      let foundViaLemma = false;
+
+      for (const lemma of lemmas) {
+        if (fullLexique.has(lemma)) {
+          found.push(word);
+          foundViaLemma = true;
+          break;
+        }
+      }
+
+      if (!foundViaLemma) {
         missing.push(word);
         allMissing.add(word);
       }
@@ -89,12 +112,12 @@ longTexts.forEach(({ title, text }) => {
   });
 
   globalFound += found.length;
-  globalTotal += contentWords.length;
+  globalTotal += words.length;
 
-  const coverage = contentWords.length > 0 ? ((found.length / contentWords.length) * 100).toFixed(1) : 100;
+  const coverage = words.length > 0 ? ((found.length / words.length) * 100).toFixed(1) : 100;
   const status = parseFloat(coverage) >= 95 ? '✅' : parseFloat(coverage) >= 70 ? '⚠️' : '❌';
 
-  console.log(`${status} ${coverage}% - ${title} (${found.length}/${contentWords.length} mots)`);
+  console.log(`${status} ${coverage}% - ${title} (${found.length}/${words.length} mots)`);
   if (missing.length > 0) {
     const uniqueMissing = [...new Set(missing)];
     console.log(`   Manquants (${uniqueMissing.length}): ${uniqueMissing.slice(0, 10).join(', ')}${uniqueMissing.length > 10 ? '...' : ''}`);
@@ -110,11 +133,7 @@ console.log(`\n🔍 MOTS MANQUANTS UNIQUES: ${allMissing.size}\n`);
 // Count frequency of missing words
 const missingFrequency = new Map();
 longTexts.forEach(({ text }) => {
-  const words = text.toLowerCase()
-    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-    .replace(/['']/g, ' ')
-    .split(/[\s,;:.!?()«»""-]+/)
-    .filter(w => w.length > 0 && !stopWords.has(w));
+  const words = tokenizeFrench(text);
 
   words.forEach(word => {
     if (allMissing.has(word)) {

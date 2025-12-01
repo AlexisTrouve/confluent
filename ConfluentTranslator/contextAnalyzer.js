@@ -7,12 +7,51 @@
  * 3. Expansion sémantique (niveau 1: synonymes directs)
  * 4. Calcul dynamique du nombre max d'entrées selon longueur
  * 5. Fallback racines si aucun terme trouvé
+ * 6. Conversion automatique des nombres français → Confluent
  */
+
+const { convertFrenchNumber, isNumber } = require('./numberConverter');
+
+/**
+ * FONCTION CENTRALE DE NORMALISATION
+ * Normalise un texte français: lowercase + ligatures + accents + contractions
+ * UTILISER CETTE FONCTION PARTOUT pour garantir la cohérence
+ *
+ * @param {string} text - Texte français à normaliser
+ * @returns {string} - Texte normalisé (sans accents, contractions expansées)
+ */
+function normalizeFrenchText(text) {
+  // ÉTAPE 1: Lowercase + ligatures
+  let result = text
+    .toLowerCase()
+    .replace(/œ/g, 'oe')                 // Ligature œ → oe (cœur → coeur)
+    .replace(/æ/g, 'ae');                // Ligature æ → ae
+
+  // ÉTAPE 2: Normaliser et retirer les accents
+  result = result
+    .normalize('NFD')                    // Décompose les caractères accentués
+    .replace(/[\u0300-\u036f]/g, '');   // Retire les diacritiques (é→e, è→e, ê→e, etc.)
+
+  // ÉTAPE 3: Expanser les contractions françaises (l', d', n', etc.)
+  // IMPORTANT: Capture TOUTES les apostrophes: ' (droite U+0027), ' (courbe gauche U+2018), ' (courbe droite U+2019)
+  result = result
+    .replace(/l[''']/g, 'le ')     // l'enfant → le enfant
+    .replace(/d[''']/g, 'de ')     // d'eau → de eau
+    .replace(/n[''']/g, 'ne ')     // n'est → ne est
+    .replace(/j[''']/g, 'je ')     // j'ai → je ai
+    .replace(/m[''']/g, 'me ')     // m'a → me a
+    .replace(/t[''']/g, 'te ')     // t'a → te a
+    .replace(/s[''']/g, 'se ')     // s'est → se est
+    .replace(/c[''']/g, 'ce ')     // c'est → ce est
+    .replace(/qu[''']/g, 'que ');  // qu'il → que il
+
+  return result;
+}
 
 /**
  * Tokenize un texte français
+ * - Utilise normalizeFrenchText() pour la normalisation
  * - Détecte expressions figées (il y a, y a-t-il, etc.)
- * - Lowercase
  * - Retire ponctuation
  * - Split sur espaces
  * - Retire mots vides très courants (le, la, les, un, une, des, de, du)
@@ -21,41 +60,24 @@
  */
 function tokenizeFrench(text) {
   // Mots vides à retirer (articles, prépositions très courantes)
+  // NOTE: Les pronoms personnels (je, tu, il, elle, etc.) ne sont PAS des stopwords
+  // car ils ont une traduction en Confluent (miki, sinu, tani, etc.)
   const stopWords = new Set([
     'le', 'la', 'les', 'un', 'une', 'des', 'de', 'du', 'd',
-    'au', 'aux', 'à', 'et', 'ou', 'où', 'est', 'sont',
-    'ne', 'je', 'me', 'te', 'se', 'ce', 'que', 'il', 'elle'
+    'au', 'aux', 'a', 'et', 'ou', 'ou', 'est', 'sont',
+    'ne', 'me', 'te', 'se', 'ce', 'que'
   ]);
 
-  // ÉTAPE 1: Normaliser et nettoyer le texte
-  // ORDRE IMPORTANT: lowercase → ligatures → accents → contractions
-  let processedText = text
-    .toLowerCase()
-    .replace(/œ/g, 'oe')                 // Ligature œ → oe (cœur → coeur)
-    .replace(/æ/g, 'ae')                 // Ligature æ → ae
-    .normalize('NFD')                    // Décompose les caractères accentués
-    .replace(/[\u0300-\u036f]/g, '');   // Retire les diacritiques (é→e, è→e, ê→e, etc.)
+  // ÉTAPE 1: Utiliser la fonction centrale de normalisation
+  let processedText = normalizeFrenchText(text);
 
-  // ÉTAPE 1.5: Nettoyer les contractions françaises (l', d', n', etc.)
-  // APRÈS normalisation pour que "l'été" devienne "l'ete" puis "le ete"
-  processedText = processedText
-    .replace(/l['']/g, 'le ')     // l'enfant → le enfant
-    .replace(/d['']/g, 'de ')     // d'eau → de eau
-    .replace(/n['']/g, 'ne ')     // n'est → ne est
-    .replace(/j['']/g, 'je ')     // j'ai → je ai
-    .replace(/m['']/g, 'me ')     // m'a → me a
-    .replace(/t['']/g, 'te ')     // t'a → te a
-    .replace(/s['']/g, 'se ')     // s'est → se est
-    .replace(/c['']/g, 'ce ')     // c'est → ce est
-    .replace(/qu['']/g, 'que ');  // qu'il → que il
-
-  // Expressions existentielles → "exister"
+  // ÉTAPE 2: Expressions existentielles → "exister"
   processedText = processedText
     .replace(/il\s+y\s+a(?:vait)?/g, 'exister') // il y a, il y avait
     .replace(/y\s+a-t-il/g, 'exister')          // y a-t-il
     .replace(/ne\s+y\s+a-t-il\s+pas/g, 'exister'); // n'y a-t-il pas (déjà décontracté)
 
-  // ÉTAPE 2: Tokenisation normale
+  // ÉTAPE 3: Tokenisation - retirer ponctuation et splitter
   return processedText
     .replace(/[^\w\s]/g, ' ') // Remplacer ponctuation par espaces
     .split(/\s+/)
@@ -252,6 +274,33 @@ function findRelevantEntries(words, lexique, maxEntries, normalizedText = '') {
 
   // Chercher chaque mot
   for (const word of words) {
+    // ÉTAPE 1: Vérifier si c'est un nombre
+    const numberConversion = convertFrenchNumber(word);
+
+    if (numberConversion) {
+      // C'est un nombre - créer une entrée virtuelle
+      const numberEntry = {
+        mot_francais: word,
+        traductions: [{
+          confluent: numberConversion.confluent,
+          type: numberConversion.type
+        }],
+        score: 1.0,
+        source_file: 'number_system'
+      };
+
+      foundEntries.set(word, numberEntry);
+      wordsFound.push({
+        input: word,
+        found: word,
+        confluent: numberConversion.confluent,
+        type: numberConversion.type,
+        score: 1.0
+      });
+      continue; // Passer au mot suivant
+    }
+
+    // ÉTAPE 2: Recherche normale dans le lexique
     const results = searchWord(word, lexique.dictionnaire, normalizedText);
 
     if (results.length > 0) {
@@ -464,6 +513,7 @@ function analyzeContext(text, lexique, options = {}) {
 }
 
 module.exports = {
+  normalizeFrenchText,  // FONCTION CENTRALE - utiliser partout !
   tokenizeFrench,
   calculateMaxEntries,
   simpleLemmatize,

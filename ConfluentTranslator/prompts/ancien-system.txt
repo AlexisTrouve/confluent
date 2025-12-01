@@ -214,7 +214,7 @@ Les verbes sont des racines de 5 lettres (CVCVC) qui finissent par une consonne.
 Castes:
 - Nakukeko (Enfants des Échos): nak-u-keko
 - Nakuura (Enfants du Courant): nak-u-ura
-- Ariaska (Ailes-Grises): ar-i-aska
+- Aliaska (Ailes-Grises): al-i-aska
 - Akoazana (Faucons Chasseurs): ak-oa-zana
 - Takitosa (Passes-bien): tak-i-tosa
 - Oraumi (Voix de l'Aurore): or-a-umi

@@ -566,6 +566,83 @@ app.post('/api/translate/conf2fr', (req, res) => {
   }
 });
 
+// NEW: Confluent → French with LLM refinement
+app.post('/api/translate/conf2fr/llm', async (req, res) => {
+  const { text, variant = 'ancien', provider = 'anthropic', model = 'claude-sonnet-4-20250514' } = req.body;
+
+  if (!text) {
+    return res.status(400).json({ error: 'Missing parameter: text' });
+  }
+
+  const variantKey = variant === 'proto' ? 'proto' : 'ancien';
+
+  if (!confluentIndexes[variantKey]) {
+    return res.status(500).json({ error: `Confluent index for ${variantKey} not loaded` });
+  }
+
+  try {
+    // Step 1: Get raw word-by-word translation
+    const rawTranslation = translateConfluentToFrench(text, confluentIndexes[variantKey]);
+
+    // Step 2: Load refinement prompt
+    const refinementPrompt = fs.readFileSync(path.join(__dirname, 'prompts', 'cf2fr-refinement.txt'), 'utf-8');
+
+    // Step 3: Use LLM to refine translation
+    let refinedText;
+
+    if (provider === 'anthropic') {
+      const anthropic = new Anthropic({
+        apiKey: process.env.ANTHROPIC_API_KEY,
+      });
+
+      const message = await anthropic.messages.create({
+        model: model,
+        max_tokens: 2048,
+        system: refinementPrompt,
+        messages: [
+          {
+            role: 'user',
+            content: `Voici la traduction brute mot-à-mot du Confluent vers le français. Transforme-la en français fluide et naturel:\n\n${rawTranslation.translation}`
+          }
+        ]
+      });
+
+      refinedText = message.content[0].text.trim();
+    } else if (provider === 'openai') {
+      const openai = new OpenAI({
+        apiKey: process.env.OPENAI_API_KEY,
+      });
+
+      const completion = await openai.chat.completions.create({
+        model: model,
+        messages: [
+          { role: 'system', content: refinementPrompt },
+          { role: 'user', content: `Voici la traduction brute mot-à-mot du Confluent vers le français. Transforme-la en français fluide et naturel:\n\n${rawTranslation.translation}` }
+        ]
+      });
+
+      refinedText = completion.choices[0].message.content.trim();
+    } else {
+      return res.status(400).json({ error: 'Unsupported provider. Use "anthropic" or "openai".' });
+    }
+
+    // Return both raw and refined versions
+    res.json({
+      confluentText: text,
+      rawTranslation: rawTranslation.translation,
+      refinedTranslation: refinedText,
+      wordsTranslated: rawTranslation.wordsTranslated,
+      wordsNotTranslated: rawTranslation.wordsNotTranslated,
+      provider,
+      model
+    });
+
+  } catch (error) {
+    console.error('Confluent→FR LLM refinement error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`ConfluentTranslator running on http://localhost:${PORT}`);
   console.log(`Loaded: ${lexiques.ancien?.meta?.total_entries || 0} ancien entries, ${lexiques.proto?.meta?.total_entries || 0} proto entries`);

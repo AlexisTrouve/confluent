@@ -44,9 +44,9 @@ function loadLexiqueFromDir(lexiqueDir) {
     try {
       const content = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 
-      if (content.dictionnaire) {
-        // Fusionner les entrées
-        for (const [motFr, data] of Object.entries(content.dictionnaire)) {
+      // Fonction helper pour merger des entrées
+      const mergeEntries = (entries, sectionName = 'dictionnaire') => {
+        for (const [motFr, data] of Object.entries(entries)) {
           const key = normalizeText(motFr);
 
           if (!result.dictionnaire[key]) {
@@ -68,7 +68,8 @@ function loadLexiqueFromDir(lexiqueDir) {
               if (!exists) {
                 result.dictionnaire[key].traductions.push({
                   ...trad,
-                  source_file: file
+                  source_file: file,
+                  source_section: sectionName
                 });
               }
             }
@@ -98,6 +99,16 @@ function loadLexiqueFromDir(lexiqueDir) {
             result.dictionnaire[key].source_files.push(file);
           }
         }
+      };
+
+      // Charger la section "dictionnaire" si elle existe
+      if (content.dictionnaire) {
+        mergeEntries(content.dictionnaire, 'dictionnaire');
+      }
+
+      // Charger la section "pronoms" si elle existe (pour 02-racines-standards.json)
+      if (content.pronoms) {
+        mergeEntries(content.pronoms, 'pronoms');
       }
 
       result.meta.files_loaded.push(file);

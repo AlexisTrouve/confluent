@@ -618,6 +618,106 @@
           "note": "Nouvelle racine - ce qui est caché"
         }
       ]
+    },
+    "bas": {
+      "traductions": [
+        {
+          "confluent": "baso",
+          "type": "racine",
+          "forme_liee": "bas",
+          "domaine": "qualificatif",
+          "note": "Bas, inférieur (opposé de haut)"
+        }
+      ],
+      "synonymes_fr": [
+        "basse",
+        "basses"
+      ]
+    },
+    "long": {
+      "traductions": [
+        {
+          "confluent": "lono",
+          "type": "racine",
+          "forme_liee": "lon",
+          "domaine": "qualificatif",
+          "note": "Long, étendu (opposé de court)"
+        }
+      ],
+      "synonymes_fr": [
+        "longue",
+        "longs",
+        "longues"
+      ]
+    },
+    "chaud": {
+      "traductions": [
+        {
+          "confluent": "suka",
+          "type": "racine",
+          "forme_liee": "suk",
+          "domaine": "qualificatif",
+          "note": "Chaud, chaleureux (lié à feu)"
+        }
+      ],
+      "synonymes_fr": [
+        "chaude",
+        "chauds",
+        "chaudes",
+        "chaleur"
+      ]
+    },
+    "froid": {
+      "traductions": [
+        {
+          "confluent": "kiso",
+          "type": "racine",
+          "forme_liee": "kis",
+          "domaine": "qualificatif",
+          "note": "Froid, frais, glacé"
+        }
+      ],
+      "synonymes_fr": [
+        "froide",
+        "froids",
+        "froides",
+        "frais",
+        "fraîche"
+      ]
+    },
+    "mauvais": {
+      "traductions": [
+        {
+          "confluent": "daku",
+          "type": "racine",
+          "forme_liee": "dak",
+          "domaine": "qualificatif",
+          "note": "Mauvais, négatif (opposé de bon)"
+        }
+      ],
+      "synonymes_fr": [
+        "mauvaise",
+        "mauvaises",
+        "mal"
+      ]
+    },
+    "clair": {
+      "traductions": [
+        {
+          "confluent": "sora",
+          "type": "racine",
+          "forme_liee": "sor",
+          "domaine": "qualificatif",
+          "note": "Clair, lumineux (lié à lumière)"
+        }
+      ],
+      "synonymes_fr": [
+        "claire",
+        "clairs",
+        "claires",
+        "lumineux",
+        "lumineuse"
+      ]
     }
   },
   "pronoms": {
@@ -662,6 +762,45 @@
       "synonymes_fr": [
         "elle",
         "iel"
+      ]
+    },
+    "nous": {
+      "traductions": [
+        {
+          "confluent": "mikisu",
+          "type": "pronom",
+          "composition": "miki-su",
+          "racines": ["miki", "su"],
+          "personne": "1pl",
+          "note": "Première personne pluriel - miki (je) + su (pluriel)"
+        }
+      ]
+    },
+    "vous": {
+      "traductions": [
+        {
+          "confluent": "sinusu",
+          "type": "pronom",
+          "composition": "sinu-su",
+          "racines": ["sinu", "su"],
+          "personne": "2pl",
+          "note": "Deuxième personne pluriel - sinu (tu) + su (pluriel)"
+        }
+      ]
+    },
+    "ils": {
+      "traductions": [
+        {
+          "confluent": "tanisu",
+          "type": "pronom",
+          "composition": "tani-su",
+          "racines": ["tani", "su"],
+          "personne": "3pl",
+          "note": "Troisième personne pluriel - tani (il/elle) + su (pluriel)"
+        }
+      ],
+      "synonymes_fr": [
+        "elles"
       ]
     }
   }

@@ -1,0 +1,164 @@
+{
+  "_comment": "Vocabulaire de l'habitat et de l'architecture",
+  "_source": "Extension vocabulaire quotidien",
+  "dictionnaire": {
+    "table": {
+      "racine_fr": "tabl",
+      "traductions": [
+        {
+          "confluent": "mukisloku",
+          "type": "composition",
+          "composition": "mukis-loku",
+          "sens_litteral": "Lieu-de-manger",
+          "racines": ["mukis", "loku"],
+          "structure": "composition",
+          "domaine": "habitat",
+          "note": "Table - lieu où l'on mange (mukis=manger + loku=lieu)"
+        }
+      ],
+      "synonymes_fr": [
+        "tables",
+        "surface pour manger"
+      ]
+    },
+    "fenetre": {
+      "racine_fr": "fenêtr",
+      "traductions": [
+        {
+          "confluent": "soratuva",
+          "type": "composition",
+          "composition": "sora-tuva",
+          "sens_litteral": "Ouverture-de-lumière",
+          "racines": ["sora", "tuva"],
+          "structure": "composition",
+          "domaine": "habitat",
+          "note": "Fenêtre - ouverture qui laisse passer la lumière (sora=lumière + tuva=ouverture)"
+        }
+      ],
+      "synonymes_fr": [
+        "fenêtre",
+        "fenêtres",
+        "ouverture"
+      ]
+    },
+    "toit": {
+      "racine_fr": "toit",
+      "traductions": [
+        {
+          "confluent": "zakusumu",
+          "type": "composition",
+          "composition": "zaku-sumu",
+          "sens_litteral": "Protection-haute",
+          "racines": ["zaku", "sumu"],
+          "structure": "composition",
+          "domaine": "habitat",
+          "note": "Toit - protection en hauteur (zaku=protection/réserve + sumu=haut)"
+        }
+      ],
+      "synonymes_fr": [
+        "toits",
+        "toiture",
+        "abri"
+      ]
+    },
+    "mur": {
+      "racine_fr": "mur",
+      "traductions": [
+        {
+          "confluent": "karisumu",
+          "type": "composition",
+          "composition": "kari-sumu",
+          "sens_litteral": "Pierre-dressée",
+          "racines": ["kari", "sumu"],
+          "structure": "composition",
+          "domaine": "habitat",
+          "note": "Mur - pierre élevée (kari=pierre + sumu=haut/élevé)"
+        }
+      ],
+      "synonymes_fr": [
+        "murs",
+        "paroi",
+        "cloison"
+      ]
+    },
+    "escalier": {
+      "racine_fr": "escalier",
+      "traductions": [
+        {
+          "confluent": "vukukari",
+          "type": "composition",
+          "composition": "vuku-kari",
+          "sens_litteral": "Gouffre-de-pierre",
+          "racines": ["vuku", "kari"],
+          "structure": "composition",
+          "domaine": "habitat",
+          "note": "Escalier - montée de pierre (référence au Gouffre Humide avec ses escaliers dans la roche, vuku=gouffre + kari=pierre)"
+        }
+      ],
+      "synonymes_fr": [
+        "escaliers",
+        "marches",
+        "montée"
+      ]
+    },
+    "ouvrir": {
+      "racine_fr": "ouvr",
+      "traductions": [
+        {
+          "confluent": "tuvas",
+          "type": "verbe",
+          "racine": "tuva",
+          "forme_liee": "tuv",
+          "structure": "CVCV",
+          "domaine": "action",
+          "note": "Ouvrir, créer une ouverture"
+        }
+      ],
+      "synonymes_fr": [
+        "ouvre",
+        "ouvres",
+        "ouvrons",
+        "ouvrez",
+        "ouvrent",
+        "ouvrais",
+        "ouvrait",
+        "ouvrions",
+        "ouvriez",
+        "ouvraient",
+        "ouvrant",
+        "ouvert",
+        "ouverture"
+      ]
+    },
+    "monter": {
+      "racine_fr": "mont",
+      "traductions": [
+        {
+          "confluent": "sumus",
+          "type": "verbe",
+          "racine": "sumu",
+          "forme_liee": "sum",
+          "structure": "CVCV",
+          "domaine": "action",
+          "note": "Monter, s'élever (même racine que haut)"
+        }
+      ],
+      "synonymes_fr": [
+        "monte",
+        "montes",
+        "montons",
+        "montez",
+        "montent",
+        "montais",
+        "montait",
+        "montions",
+        "montiez",
+        "montaient",
+        "montant",
+        "monté",
+        "grimper",
+        "élever"
+      ]
+    }
+  }
+}

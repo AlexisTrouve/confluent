@@ -426,29 +426,6 @@
         }
       ]
     },
-    "ils": {
-      "traductions": [
-        {
-          "confluent": "tasu",
-          "type": "pronom",
-          "categorie": "personnel",
-          "note": "Pronom 3ème personne pluriel"
-        }
-      ],
-      "synonymes_fr": [
-        "elles"
-      ]
-    },
-    "nous": {
-      "traductions": [
-        {
-          "confluent": "tanu",
-          "type": "pronom",
-          "categorie": "personnel",
-          "note": "Pronom 1ère personne pluriel"
-        }
-      ]
-    },
     "sa": {
       "traductions": [
         {
@@ -532,6 +509,22 @@
         "près",
         "proche",
         "alentour"
+      ]
+    },
+    "tandis": {
+      "traductions": [
+        {
+          "confluent": "ta",
+          "type": "particule",
+          "categorie": "temporel",
+          "note": "Tandis que, pendant que - conjonction temporelle de simultanéité"
+        }
+      ],
+      "synonymes_fr": [
+        "tandis que",
+        "pendant",
+        "pendant que",
+        "alors que"
       ]
     }
   }

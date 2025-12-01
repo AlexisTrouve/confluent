@@ -564,6 +564,108 @@
           "domaine": "conflit"
         }
       ]
+    },
+    "civilisation": {
+      "traductions": [
+        {
+          "confluent": "uraikota",
+          "type": "composition",
+          "composition": "ura-i-kota",
+          "sens_litteral": "Confluence-de-vie",
+          "racines": ["ura", "kota"],
+          "liaison": "i",
+          "domaine": "concept_fondateur",
+          "note": "Civilisation - l'union des gens qui vivent ensemble (ura=eau/vie + i=agentivité + kota=confluence/union)"
+        }
+      ],
+      "synonymes_fr": [
+        "civilisations",
+        "société"
+      ]
+    },
+    "observation": {
+      "traductions": [
+        {
+          "confluent": "silimira",
+          "type": "composition",
+          "composition": "sili-mira",
+          "sens_litteral": "Regard-observant",
+          "racines": ["sili", "mirak"],
+          "domaine": "concept_fondateur",
+          "note": "Observation - acte de regarder avec attention (sili=regard + mirak=observer)"
+        }
+      ],
+      "synonymes_fr": [
+        "observations",
+        "contemplation"
+      ]
+    },
+    "culture": {
+      "traductions": [
+        {
+          "confluent": "aitatoka",
+          "type": "composition",
+          "composition": "aita-toka",
+          "sens_litteral": "Lieux-des-ancêtres",
+          "racines": ["aita", "toka"],
+          "domaine": "concept_fondateur",
+          "note": "Culture - les lieux/traditions des ancêtres transmis (aita=ancêtres + toka=lieux)"
+        }
+      ],
+      "synonymes_fr": [
+        "cultures",
+        "patrimoine"
+      ]
+    },
+    "connaissance": {
+      "traductions": [
+        {
+          "confluent": "sekamemu",
+          "type": "composition",
+          "composition": "seka-memu",
+          "sens_litteral": "Savoir-en-mémoire",
+          "racines": ["seka", "memu"],
+          "domaine": "concept_fondateur",
+          "note": "Connaissance - le savoir gardé en mémoire (seka=savoir + memu=mémoire)"
+        }
+      ],
+      "synonymes_fr": [
+        "connaissances",
+        "science",
+        "érudition"
+      ]
+    },
+    "mémoire": {
+      "traductions": [
+        {
+          "confluent": "memu",
+          "type": "racine",
+          "forme_liee": "mem",
+          "domaine": "concept_fondateur",
+          "note": "Mémoire - concept central de la civilisation (synonyme normalisé de memoire)"
+        }
+      ],
+      "synonymes_fr": [
+        "memoire",
+        "souvenir",
+        "souvenirs"
+      ]
+    },
+    "liberté": {
+      "traductions": [
+        {
+          "confluent": "aska",
+          "type": "racine_sacree",
+          "forme_liee": "ask",
+          "domaine": "concept_fondateur",
+          "note": "Liberté - racine sacrée centrale (synonyme normalisé de liberte)"
+        }
+      ],
+      "synonymes_fr": [
+        "liberte",
+        "libre",
+        "affranchissement"
+      ]
     }
   }
 }

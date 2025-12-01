@@ -19,16 +19,29 @@
     "generation": {
       "traductions": [
         {
-          "confluent": "temiuaita",
+          "confluent": "noviuaita",
           "type": "composition",
-          "composition": "tem-i-aita",
-          "sens_litteral": "Temps des ancêtres",
+          "composition": "nov-i-u-aita",
+          "sens_litteral": "Nouveaux (qui deviendront) ancêtres",
           "racines": [
-            "temi",
+            "nuvi",
             "aita"
           ],
-          "domaine": "temps"
+          "liaison": "i-u",
+          "structure": "composition",
+          "domaine": "temps",
+          "note": "Nouvelle génération - ceux qui porteront la mémoire (nov=nouveau + i=agentivité + u=appartenance + aita=ancêtres)"
         }
+      ],
+      "synonymes_fr": [
+        "génération",
+        "generations",
+        "générations",
+        "nouvelle generation",
+        "nouvelle génération",
+        "nouvelles generations",
+        "nouvelles générations",
+        "descendants"
       ]
     },
     "siecle": {

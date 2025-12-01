@@ -1,0 +1,463 @@
+{
+  "_comment": "Vocabulaire alimentaire et culinaire de la Confluence",
+  "_source": "Basé sur civjdr/Background/2024-10-28-le-village.md",
+  "dictionnaire": {
+    "poisson": {
+      "racine_fr": "poiss",
+      "traductions": [
+        {
+          "confluent": "pisu",
+          "type": "racine",
+          "forme_liee": "pis",
+          "structure": "CVCV",
+          "domaine": "nourriture",
+          "note": "Poisson - source vitale de protéines (même racine que pêcher)"
+        }
+      ],
+      "synonymes_fr": [
+        "poissons"
+      ]
+    },
+    "gibier": {
+      "racine_fr": "gibier",
+      "traductions": [
+        {
+          "confluent": "zana",
+          "type": "racine",
+          "forme_liee": "zan",
+          "structure": "CVCV",
+          "domaine": "nourriture",
+          "note": "Gibier chassé (lié à zanak-chasser)"
+        }
+      ],
+      "synonymes_fr": [
+        "proie"
+      ]
+    },
+    "baie": {
+      "racine_fr": "bai",
+      "traductions": [
+        {
+          "confluent": "beka",
+          "type": "racine",
+          "forme_liee": "bek",
+          "structure": "CVCV",
+          "domaine": "nourriture",
+          "note": "Baies - fruits sauvages essentiels"
+        }
+      ],
+      "synonymes_fr": [
+        "baies",
+        "petits fruits"
+      ]
+    },
+    "tubercule": {
+      "racine_fr": "tubercul",
+      "traductions": [
+        {
+          "confluent": "tuba",
+          "type": "racine",
+          "forme_liee": "tub",
+          "structure": "CVCV",
+          "domaine": "nourriture",
+          "note": "Tubercules, racines comestibles"
+        }
+      ],
+      "synonymes_fr": [
+        "racine",
+        "tubercules"
+      ]
+    },
+    "fruit": {
+      "racine_fr": "fruit",
+      "traductions": [
+        {
+          "confluent": "veka",
+          "type": "racine",
+          "forme_liee": "vek",
+          "structure": "CVCV",
+          "domaine": "nourriture",
+          "note": "Fruits génériques"
+        }
+      ],
+      "synonymes_fr": [
+        "fruits"
+      ]
+    },
+    "mollusque": {
+      "racine_fr": "mollusqu",
+      "traductions": [
+        {
+          "confluent": "molu",
+          "type": "racine",
+          "forme_liee": "mol",
+          "structure": "CVCV",
+          "domaine": "nourriture",
+          "note": "Mollusques, coquillages"
+        }
+      ],
+      "synonymes_fr": [
+        "coquillage",
+        "mollusques"
+      ]
+    },
+    "graine": {
+      "racine_fr": "grain",
+      "traductions": [
+        {
+          "confluent": "seka",
+          "type": "racine",
+          "forme_liee": "sek",
+          "structure": "CVCV",
+          "domaine": "nourriture",
+          "note": "Graines comestibles"
+        }
+      ],
+      "synonymes_fr": [
+        "graines",
+        "semence"
+      ]
+    },
+    "galette": {
+      "racine_fr": "galet",
+      "traductions": [
+        {
+          "confluent": "panu",
+          "type": "racine",
+          "forme_liee": "pan",
+          "structure": "CVCV",
+          "domaine": "nourriture",
+          "note": "Galette, pain plat"
+        }
+      ],
+      "synonymes_fr": [
+        "pain",
+        "crêpe",
+        "galettes"
+      ]
+    },
+    "herbe": {
+      "racine_fr": "herb",
+      "traductions": [
+        {
+          "confluent": "pala",
+          "type": "racine",
+          "forme_liee": "pal",
+          "structure": "CVCV",
+          "domaine": "nourriture",
+          "note": "Herbes aromatiques"
+        }
+      ],
+      "synonymes_fr": [
+        "herbes"
+      ]
+    },
+    "aromate": {
+      "racine_fr": "aromat",
+      "traductions": [
+        {
+          "confluent": "palusuki",
+          "type": "composition",
+          "composition": "pal-u-suki",
+          "sens_litteral": "Herbe du feu (qui brûle le goût)",
+          "racines": ["pala", "suki"],
+          "liaison": "u",
+          "structure": "composition",
+          "domaine": "nourriture",
+          "note": "Aromate, épice - herbe qui réchauffe/brûle (piquant)"
+        }
+      ],
+      "synonymes_fr": [
+        "aromates",
+        "epice",
+        "epices",
+        "épice",
+        "épices"
+      ]
+    },
+    "morsure-des-ancetres": {
+      "racine_fr": null,
+      "traductions": [
+        {
+          "confluent": "aiteopalu",
+          "type": "composition",
+          "composition": "ait-eo-palu",
+          "sens_litteral": "Ancêtre-éternel-qui-brûle",
+          "racines": ["aita", "palu"],
+          "liaison": "eo",
+          "structure": "composition_sacree",
+          "domaine": "nourriture_sacree",
+          "note": "Gingembre sauvage très estimé, épice sacrée - utilise liaison sacrée eo (totalité/éternel)"
+        }
+      ],
+      "synonymes_fr": [
+        "gingembre sauvage",
+        "epice sacree"
+      ]
+    },
+    "larmes-du-ciel": {
+      "racine_fr": null,
+      "traductions": [
+        {
+          "confluent": "zeruosi",
+          "type": "composition",
+          "composition": "zer-u-osi",
+          "sens_litteral": "Ciel-de-mort (larmes célestes)",
+          "racines": ["zeru", "osi"],
+          "liaison": "u",
+          "structure": "composition_sacree",
+          "domaine": "nourriture_sacree",
+          "note": "Plat cérémoniel traditionnel - poisson fumé, gibier, Morsure-des-Ancêtres, herbes et baies. Utilise liaison u (appartenance)"
+        }
+      ],
+      "synonymes_fr": [
+        "plat ceremoniel",
+        "plat traditionnel"
+      ]
+    },
+    "fumer": {
+      "racine_fr": "fum",
+      "traductions": [
+        {
+          "confluent": "simus",
+          "type": "verbe",
+          "racine": "simu",
+          "forme_liee": "sim",
+          "structure": "CVCV",
+          "domaine": "technique_culinaire",
+          "note": "Fumer (aliment), technique de conservation"
+        }
+      ],
+      "synonymes_fr": [
+        "fume",
+        "fumes",
+        "fumons",
+        "fumez",
+        "fument",
+        "fumais",
+        "fumait",
+        "fumions",
+        "fumiez",
+        "fumaient",
+        "fumant",
+        "fumé",
+        "fumée"
+      ]
+    },
+    "secher": {
+      "racine_fr": "séch",
+      "traductions": [
+        {
+          "confluent": "sekus",
+          "type": "verbe",
+          "racine": "seku",
+          "forme_liee": "sek",
+          "structure": "CVCV",
+          "domaine": "technique_culinaire",
+          "note": "Sécher (aliment), conservation"
+        }
+      ],
+      "synonymes_fr": [
+        "sécher",
+        "sèche",
+        "sèches",
+        "séchons",
+        "séchez",
+        "sèchent",
+        "séchais",
+        "séchait",
+        "séchions",
+        "séchiez",
+        "séchaient",
+        "séchant",
+        "séché",
+        "sec",
+        "sèche"
+      ]
+    },
+    "griller": {
+      "racine_fr": "grill",
+      "traductions": [
+        {
+          "confluent": "palus",
+          "type": "verbe",
+          "racine": "palu",
+          "forme_liee": "pal",
+          "structure": "CVCV",
+          "domaine": "technique_culinaire",
+          "note": "Griller, cuire sur feu"
+        }
+      ],
+      "synonymes_fr": [
+        "grille",
+        "grilles",
+        "grillons",
+        "grillez",
+        "grillent",
+        "grillais",
+        "grillait",
+        "grillions",
+        "grilliez",
+        "grillaient",
+        "grillant",
+        "grillé",
+        "cuire",
+        "rôtir"
+      ]
+    },
+    "cuisiner": {
+      "racine_fr": "cuisin",
+      "traductions": [
+        {
+          "confluent": "mukunekas",
+          "type": "composition",
+          "composition": "muk-u-nekas",
+          "sens_litteral": "Nourriture-de-faire",
+          "racines": ["muki", "nekas"],
+          "liaison": "u",
+          "structure": "composition",
+          "domaine": "technique_culinaire",
+          "note": "Cuisiner, préparer (faire de la nourriture) - muki + liaison u + nekas"
+        }
+      ],
+      "synonymes_fr": [
+        "cuisine",
+        "cuisines",
+        "cuisinons",
+        "cuisinez",
+        "cuisinent",
+        "cuisinais",
+        "cuisinait",
+        "cuisinions",
+        "cuisiniez",
+        "cuisinaient",
+        "cuisinant",
+        "cuisiné",
+        "preparer la nourriture",
+        "préparer la nourriture"
+      ]
+    },
+    "infuser": {
+      "racine_fr": "infus",
+      "traductions": [
+        {
+          "confluent": "urapis",
+          "type": "composition",
+          "composition": "ura-pis",
+          "sens_litteral": "Eau-tremper",
+          "racines": ["ura", "pisu"],
+          "structure": "composition",
+          "domaine": "technique_culinaire",
+          "note": "Infuser, faire tremper dans l'eau"
+        }
+      ],
+      "synonymes_fr": [
+        "infuse",
+        "infusion",
+        "tremper"
+      ]
+    },
+    "reserve": {
+      "racine_fr": "réserv",
+      "traductions": [
+        {
+          "confluent": "zaku",
+          "type": "racine",
+          "forme_liee": "zak",
+          "structure": "CVCV",
+          "domaine": "nourriture",
+          "note": "Réserves alimentaires (lié à garder/protéger)"
+        }
+      ],
+      "synonymes_fr": [
+        "réserves",
+        "provisions",
+        "stock"
+      ]
+    },
+    "nourriture": {
+      "racine_fr": "nourritur",
+      "traductions": [
+        {
+          "confluent": "muki",
+          "type": "racine",
+          "forme_liee": "muk",
+          "structure": "CVCV",
+          "domaine": "nourriture",
+          "note": "Nourriture (racine de manger)"
+        }
+      ],
+      "synonymes_fr": [
+        "aliment",
+        "aliments",
+        "repas"
+      ]
+    },
+    "boire": {
+      "racine_fr": "boir",
+      "traductions": [
+        {
+          "confluent": "urapis",
+          "type": "verbe",
+          "racine": "ura",
+          "forme_liee": "ura",
+          "structure": "VCVCV",
+          "domaine": "nourriture",
+          "note": "Boire - utilise racine sacrée ura (eau)"
+        }
+      ],
+      "synonymes_fr": [
+        "bois",
+        "boit",
+        "buvons",
+        "buvez",
+        "boivent",
+        "buvais",
+        "buvait",
+        "buvions",
+        "buviez",
+        "buvaient",
+        "buvant",
+        "bu"
+      ]
+    },
+    "legume": {
+      "racine_fr": "légum",
+      "traductions": [
+        {
+          "confluent": "leva",
+          "type": "racine",
+          "forme_liee": "lev",
+          "structure": "CVCV",
+          "domaine": "nourriture",
+          "note": "Légume, plante comestible cultivée"
+        }
+      ],
+      "synonymes_fr": [
+        "légume",
+        "légumes",
+        "plante comestible"
+      ]
+    },
+    "manque": {
+      "racine_fr": "manqu",
+      "traductions": [
+        {
+          "confluent": "zomuki",
+          "type": "composition",
+          "composition": "zo-muki",
+          "sens_litteral": "Négation-nourriture",
+          "racines": ["zo", "muki"],
+          "structure": "composition",
+          "domaine": "nourriture",
+          "note": "Manque (de nourriture) - zo (négation) + muki (nourriture)"
+        }
+      ],
+      "synonymes_fr": [
+        "manquer",
+        "absence",
+        "pénurie"
+      ]
+    }
+  }
+}
