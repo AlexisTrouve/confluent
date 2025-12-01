@@ -5,9 +5,9 @@
     "ciel": {
       "traductions": [
         {
-          "confluent": "zeru",
+          "confluent": "zelu",
           "type": "racine",
-          "forme_liee": "zer",
+          "forme_liee": "zel",
           "domaine": "element_nature",
           "note": "Élément primordial"
         }
@@ -61,9 +61,9 @@
     "pierre": {
       "traductions": [
         {
-          "confluent": "kari",
+          "confluent": "kali",
           "type": "racine",
-          "forme_liee": "kar",
+          "forme_liee": "kal",
           "domaine": "element_nature",
           "note": "Matière dure"
         }
@@ -75,9 +75,9 @@
     "riviere": {
       "traductions": [
         {
-          "confluent": "nura",
+          "confluent": "nula",
           "type": "racine",
-          "forme_liee": "nur",
+          "forme_liee": "nul",
           "domaine": "geographie",
           "note": "Eau qui coule"
         }
@@ -205,9 +205,9 @@
     "mer": {
       "traductions": [
         {
-          "confluent": "meru",
+          "confluent": "melu",
           "type": "racine",
-          "forme_liee": "mer",
+          "forme_liee": "mel",
           "domaine": "geographie",
           "note": "Grande eau salée"
         }
@@ -296,9 +296,9 @@
     "cascade": {
       "traductions": [
         {
-          "confluent": "uraoavuku",
+          "confluent": "ulaoavuku",
           "type": "composition",
-          "composition": "ur-oa-vuku",
+          "composition": "ul-oa-vuku",
           "sens_litteral": "Eau vers le gouffre",
           "racines": [
             "ura",
@@ -311,9 +311,9 @@
     "source": {
       "traductions": [
         {
-          "confluent": "enuura",
+          "confluent": "enuula",
           "type": "composition",
-          "composition": "en-u-ura",
+          "composition": "en-u-ula",
           "sens_litteral": "Origine de l'eau",
           "racines": [
             "ena",
@@ -341,13 +341,13 @@
     "crevasse": {
       "traductions": [
         {
-          "confluent": "vukukari",
+          "confluent": "vukukali",
           "type": "composition",
-          "composition": "vuk-u-kari",
+          "composition": "vuk-u-kali",
           "sens_litteral": "Gouffre dans la pierre",
           "racines": [
             "vuku",
-            "kari"
+            "kali"
           ],
           "domaine": "geographie"
         }
@@ -356,13 +356,13 @@
     "promontoire": {
       "traductions": [
         {
-          "confluent": "tasumeru",
+          "confluent": "tasumelu",
           "type": "composition",
-          "composition": "tas-u-meru",
+          "composition": "tas-u-melu",
           "sens_litteral": "Montagne de la mer",
           "racines": [
             "tasa",
-            "meru"
+            "melu"
           ],
           "domaine": "geographie"
         }
@@ -389,13 +389,13 @@
     "cote": {
       "traductions": [
         {
-          "confluent": "tokumeru",
+          "confluent": "tokumelu",
           "type": "composition",
-          "composition": "tok-u-meru",
+          "composition": "tok-u-melu",
           "sens_litteral": "Terre de la mer",
           "racines": [
             "toka",
-            "meru"
+            "melu"
           ],
           "domaine": "geographie"
         }
@@ -404,12 +404,12 @@
     "horizon": {
       "traductions": [
         {
-          "confluent": "zerutoka",
+          "confluent": "zelutoka",
           "type": "composition",
-          "composition": "zer-u-toka",
+          "composition": "zel-u-toka",
           "sens_litteral": "Ciel de la terre",
           "racines": [
-            "zeru",
+            "zelu",
             "toka"
           ],
           "domaine": "geographie"
@@ -419,12 +419,12 @@
     "confluence de rivieres": {
       "traductions": [
         {
-          "confluent": "nuraakota",
+          "confluent": "nulaakota",
           "type": "composition",
-          "composition": "nur-aa-kota",
+          "composition": "nul-aa-kota",
           "sens_litteral": "Rivière mêlée à union",
           "racines": [
-            "nura",
+            "nula",
             "kota"
           ],
           "domaine": "geographie"
@@ -434,13 +434,13 @@
     "riviere azur": {
       "traductions": [
         {
-          "confluent": "nuruzeru",
+          "confluent": "nuluzelu",
           "type": "composition",
-          "composition": "nur-u-zeru",
+          "composition": "nul-u-zelu",
           "sens_litteral": "Rivière du ciel",
           "racines": [
-            "nura",
-            "zeru"
+            "nula",
+            "zelu"
           ],
           "domaine": "geographie"
         }
@@ -449,12 +449,12 @@
     "riviere verte": {
       "traductions": [
         {
-          "confluent": "nuruviku",
+          "confluent": "nuluviku",
           "type": "composition",
-          "composition": "nur-u-viku",
+          "composition": "nul-u-viku",
           "sens_litteral": "Rivière de la forêt",
           "racines": [
-            "nura",
+            "nula",
             "viku"
           ],
           "domaine": "geographie"

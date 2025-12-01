@@ -1,0 +1,513 @@
+{
+  "_comment": "Vocabulaire architectural et de construction",
+  "_mots_a_gerer": [],
+  "dictionnaire": {
+    "pilotis": {
+      "traductions": [
+        {
+          "confluent": "ulapeki",
+          "type": "composition",
+          "composition": "ula-peki",
+          "sens_litteral": "Pieds dans l'eau",
+          "racines": [
+            "ura",
+            "peki"
+          ],
+          "domaine": "architecture",
+          "note": "CRITIQUE - architecture majeure des Enfants du Courant"
+        }
+      ],
+      "synonymes_fr": [
+        "pieux",
+        "piliers d'eau"
+      ]
+    },
+    "plate-forme": {
+      "traductions": [
+        {
+          "confluent": "pekutoka",
+          "type": "composition",
+          "composition": "pek-u-toka",
+          "sens_litteral": "Lieu sur pieds",
+          "racines": [
+            "peki",
+            "toka"
+          ],
+          "domaine": "architecture",
+          "note": "Structure élevée sur pilotis"
+        }
+      ],
+      "synonymes_fr": [
+        "plateforme",
+        "terrasse"
+      ]
+    },
+    "escalier": {
+      "traductions": [
+        {
+          "confluent": "pekivasi",
+          "type": "composition",
+          "composition": "peki-vasi",
+          "sens_litteral": "Pont de pieds",
+          "racines": [
+            "peki",
+            "vasi"
+          ],
+          "domaine": "architecture",
+          "note": "Passage pour monter/descendre"
+        }
+      ],
+      "synonymes_fr": [
+        "escaliers",
+        "marches"
+      ]
+    },
+    "marche": {
+      "traductions": [
+        {
+          "confluent": "pekivi",
+          "type": "composition",
+          "composition": "peki-vi",
+          "sens_litteral": "Partie de pied",
+          "racines": [
+            "peki"
+          ],
+          "domaine": "architecture",
+          "note": "Élément d'escalier"
+        }
+      ],
+      "synonymes_fr": [
+        "marches",
+        "degré"
+      ]
+    },
+    "tour": {
+      "traductions": [
+        {
+          "confluent": "tokamakouti",
+          "type": "composition",
+          "composition": "toka-mako-uti",
+          "sens_litteral": "Lieu très haut",
+          "racines": [
+            "toka",
+            "mako"
+          ],
+          "domaine": "architecture",
+          "note": "Structure haute"
+        }
+      ],
+      "synonymes_fr": [
+        "tours"
+      ]
+    },
+    "tour de guet": {
+      "traductions": [
+        {
+          "confluent": "silimakotoka",
+          "type": "composition",
+          "composition": "sili-mako-toka",
+          "sens_litteral": "Haut lieu pour voir",
+          "racines": [
+            "sili",
+            "mako",
+            "toka"
+          ],
+          "domaine": "architecture_militaire",
+          "note": "Tour pour surveiller"
+        }
+      ]
+    },
+    "mur": {
+      "traductions": [
+        {
+          "confluent": "linukonu",
+          "type": "composition",
+          "composition": "lin-u-konu",
+          "sens_litteral": "Ligne gardée",
+          "racines": [
+            "linu",
+            "konu"
+          ],
+          "domaine": "architecture",
+          "note": "Paroi de protection"
+        }
+      ],
+      "synonymes_fr": [
+        "muraille",
+        "paroi"
+      ]
+    },
+    "muraille": {
+      "traductions": [
+        {
+          "confluent": "makolinukonu",
+          "type": "composition",
+          "composition": "mako-linu-konu",
+          "sens_litteral": "Grande ligne gardée",
+          "racines": [
+            "mako",
+            "linu",
+            "konu"
+          ],
+          "domaine": "architecture_militaire",
+          "note": "Fortification"
+        }
+      ],
+      "synonymes_fr": [
+        "fortification",
+        "enceinte"
+      ]
+    },
+    "porte": {
+      "traductions": [
+        {
+          "confluent": "vasiumu",
+          "type": "composition",
+          "composition": "vasi-umu",
+          "sens_litteral": "Passage ouvert",
+          "racines": [
+            "vasi"
+          ],
+          "domaine": "architecture",
+          "note": "Ouverture pour entrer/sortir"
+        }
+      ],
+      "synonymes_fr": [
+        "portes",
+        "entrée"
+      ]
+    },
+    "seuil": {
+      "traductions": [
+        {
+          "confluent": "vasitoka",
+          "type": "composition",
+          "composition": "vasi-toka",
+          "sens_litteral": "Lieu de passage",
+          "racines": [
+            "vasi",
+            "toka"
+          ],
+          "domaine": "architecture",
+          "note": "Entrée, limite"
+        }
+      ]
+    },
+    "fenêtre": {
+      "traductions": [
+        {
+          "confluent": "siliveku",
+          "type": "composition",
+          "composition": "sili-veku",
+          "sens_litteral": "Surface pour voir",
+          "racines": [
+            "sili",
+            "veku"
+          ],
+          "domaine": "architecture",
+          "note": "Ouverture pour la lumière et l'air"
+        }
+      ],
+      "synonymes_fr": [
+        "fenêtres"
+      ]
+    },
+    "toit": {
+      "traductions": [
+        {
+          "confluent": "tokuveku",
+          "type": "composition",
+          "composition": "toka-veku",
+          "sens_litteral": "Surface du lieu",
+          "racines": [
+            "toka",
+            "veku"
+          ],
+          "domaine": "architecture",
+          "note": "Couverture supérieure"
+        }
+      ],
+      "synonymes_fr": [
+        "toiture",
+        "couverture"
+      ]
+    },
+    "galerie": {
+      "traductions": [
+        {
+          "confluent": "vukuvasi",
+          "type": "composition",
+          "composition": "vuku-vasi",
+          "sens_litteral": "Passage du gouffre",
+          "racines": [
+            "vuku",
+            "vasi"
+          ],
+          "domaine": "architecture_souterraine",
+          "note": "Passage souterrain (crucial pour Antres)"
+        }
+      ],
+      "synonymes_fr": [
+        "tunnel",
+        "corridor"
+      ]
+    },
+    "voûte": {
+      "traductions": [
+        {
+          "confluent": "vukutoka",
+          "type": "composition",
+          "composition": "vuku-toka",
+          "sens_litteral": "Lieu du gouffre courbé",
+          "racines": [
+            "vuku",
+            "toka"
+          ],
+          "domaine": "architecture_souterraine",
+          "note": "Construction arquée souterraine"
+        }
+      ]
+    },
+    "chambre": {
+      "traductions": [
+        {
+          "confluent": "tokapisu",
+          "type": "composition",
+          "composition": "toka-pisu",
+          "sens_litteral": "Petit lieu",
+          "racines": [
+            "toka",
+            "pisu"
+          ],
+          "domaine": "architecture",
+          "note": "Pièce fermée"
+        }
+      ],
+      "synonymes_fr": [
+        "pièce",
+        "salle"
+      ]
+    },
+    "atelier": {
+      "traductions": [
+        {
+          "confluent": "kovatoka",
+          "type": "composition",
+          "composition": "kova-toka",
+          "sens_litteral": "Lieu du travail/gravure",
+          "racines": [
+            "kova",
+            "toka"
+          ],
+          "domaine": "architecture",
+          "note": "Lieu de production artisanale"
+        }
+      ],
+      "synonymes_fr": [
+        "ateliers"
+      ]
+    },
+    "entrepôt": {
+      "traductions": [
+        {
+          "confluent": "nutukotoka",
+          "type": "composition",
+          "composition": "nutu-koto-ka",
+          "sens_litteral": "Grand lieu de réserves",
+          "racines": [
+            "nutu",
+            "kota"
+          ],
+          "domaine": "architecture",
+          "note": "Stockage de provisions"
+        }
+      ],
+      "synonymes_fr": [
+        "stockage",
+        "réserve"
+      ]
+    },
+    "colonne": {
+      "traductions": [
+        {
+          "confluent": "tokupeki",
+          "type": "composition",
+          "composition": "toka-peki",
+          "sens_litteral": "Pied du lieu",
+          "racines": [
+            "toka",
+            "peki"
+          ],
+          "domaine": "architecture",
+          "note": "Support vertical"
+        }
+      ],
+      "synonymes_fr": [
+        "pilier",
+        "colonnes"
+      ]
+    },
+    "linteau": {
+      "traductions": [
+        {
+          "confluent": "vasilinu",
+          "type": "composition",
+          "composition": "vasi-linu",
+          "sens_litteral": "Ligne de passage",
+          "racines": [
+            "vasi",
+            "linu"
+          ],
+          "domaine": "architecture",
+          "note": "Élément au-dessus d'une ouverture"
+        }
+      ]
+    },
+    "fondation": {
+      "traductions": [
+        {
+          "confluent": "tokapeku",
+          "type": "composition",
+          "composition": "toka-peku",
+          "sens_litteral": "Base du lieu",
+          "racines": [
+            "toka",
+            "peki"
+          ],
+          "domaine": "architecture",
+          "note": "Base d'un bâtiment"
+        }
+      ],
+      "synonymes_fr": [
+        "fondations",
+        "base"
+      ]
+    },
+    "charpente": {
+      "traductions": [
+        {
+          "confluent": "vitosanu",
+          "type": "composition",
+          "composition": "vito-sanu",
+          "sens_litteral": "Corps de bois",
+          "racines": [
+            "vito",
+            "sanu"
+          ],
+          "domaine": "architecture",
+          "note": "Structure en bois"
+        }
+      ]
+    },
+    "poutre": {
+      "traductions": [
+        {
+          "confluent": "vitolinumako",
+          "type": "composition",
+          "composition": "vito-linu-mako",
+          "sens_litteral": "Grande ligne de bois",
+          "racines": [
+            "vito",
+            "linu",
+            "mako"
+          ],
+          "domaine": "architecture",
+          "note": "Élément structurel horizontal"
+        }
+      ],
+      "synonymes_fr": [
+        "poutres"
+      ]
+    },
+    "planche": {
+      "traductions": [
+        {
+          "confluent": "vitoveku",
+          "type": "composition",
+          "composition": "vito-veku",
+          "sens_litteral": "Surface de bois",
+          "racines": [
+            "vito",
+            "veku"
+          ],
+          "domaine": "architecture",
+          "note": "Morceau de bois plat"
+        }
+      ],
+      "synonymes_fr": [
+        "planches",
+        "madrier"
+      ]
+    },
+    "sol": {
+      "traductions": [
+        {
+          "confluent": "tokuvuku",
+          "type": "composition",
+          "composition": "toka-vuku",
+          "sens_litteral": "Bas du lieu",
+          "racines": [
+            "toka",
+            "vuku"
+          ],
+          "domaine": "architecture",
+          "note": "Surface au niveau du sol"
+        }
+      ],
+      "synonymes_fr": [
+        "plancher",
+        "terre"
+      ]
+    },
+    "enceinte": {
+      "traductions": [
+        {
+          "confluent": "kotakonu",
+          "type": "composition",
+          "composition": "kota-konu",
+          "sens_litteral": "Protection de confluence",
+          "racines": [
+            "kota",
+            "konu"
+          ],
+          "domaine": "architecture_militaire",
+          "note": "Murs qui entourent un lieu"
+        }
+      ],
+      "synonymes_fr": [
+        "fortification"
+      ]
+    },
+    "fosse": {
+      "traductions": [
+        {
+          "confluent": "vukupisu",
+          "type": "composition",
+          "composition": "vuku-pisu",
+          "sens_litteral": "Petit gouffre",
+          "racines": [
+            "vuku",
+            "pisu"
+          ],
+          "domaine": "architecture",
+          "note": "Trou creusé"
+        }
+      ],
+      "synonymes_fr": [
+        "fossé",
+        "trou"
+      ]
+    },
+    "pont": {
+      "traductions": [
+        {
+          "confluent": "vasi",
+          "type": "racine",
+          "forme_liee": "vas",
+          "domaine": "architecture",
+          "note": "Déjà existant - lien, passage entre deux"
+        }
+      ]
+    }
+  }
+}

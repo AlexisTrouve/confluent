@@ -49,16 +49,24 @@
     select, input, textarea {
       width: 100%;
       padding: 10px;
-      background: #1a1a1a;
+      background: #1a1a1a !important;
       border: 1px solid #3a3a3a;
       border-radius: 4px;
-      color: #e0e0e0;
+      color: #e0e0e0 !important;
       font-family: inherit;
     }
     select option {
-      background: #1a1a1a;
-      color: #e0e0e0;
+      background: #1a1a1a !important;
+      background-color: #1a1a1a !important;
+      color: #e0e0e0 !important;
       padding: 10px;
+    }
+    /* Force dark background on select dropdown in dark mode */
+    body:not(.light-theme) select,
+    body:not(.light-theme) select option {
+      background: #1a1a1a !important;
+      background-color: #1a1a1a !important;
+      color: #e0e0e0 !important;
     }
     select:focus {
       outline: none;
@@ -393,6 +401,20 @@
     body.light-theme .lexique-cf {
       color: #2563eb;
     }
+
+    /* Settings indicator */
+    .settings-indicator {
+      font-size: 0.75em;
+      color: #888;
+      text-align: center;
+      padding: 8px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #3a3a3a;
+    }
+    body.light-theme .settings-indicator {
+      color: #666;
+      border-bottom-color: #e0e0e0;
+    }
   </style>
 </head>
 <body>
@@ -409,6 +431,7 @@
 
     <!-- Tab: Traduction Français → Confluent -->
     <div id="tab-traduction" class="tab-content active">
+      <div class="settings-indicator" id="settings-indicator-fr2cf"></div>
       <div class="panel">
         <h2>Traduction Français → Confluent</h2>
         <div class="form-group">
@@ -475,6 +498,7 @@
 
     <!-- Tab: Confluent → Français -->
     <div id="tab-cf2fr" class="tab-content">
+      <div class="settings-indicator" id="settings-indicator-cf2fr"></div>
       <div class="panel">
         <h2>Traduction Confluent → Français</h2>
         <div class="form-group">
@@ -487,14 +511,38 @@
       <!-- Résultat -->
       <div id="cf2fr-result-container" style="display: none;">
         <div class="layer layer1">
-          <div class="layer1-title">Traduction brute</div>
+          <div class="layer1-title">Traduction</div>
           <div id="cf2fr-layer1-content" class="layer1-content"></div>
+        </div>
+
+        <!-- LAYER 2: DÉTAILS (Collapsible) -->
+        <div class="layer">
+          <div class="layer-header" onclick="toggleLayer('cf2fr-layer2')">
+            <div class="layer-title">
+              <span class="layer-icon">📚</span>
+              <span>Détails de la traduction</span>
+            </div>
+            <span class="layer-arrow" id="cf2fr-layer2-arrow">▼</span>
+          </div>
+          <div id="cf2fr-layer2-content" class="layer-content">
+            <div class="layer-content-inner">
+              <div class="context-item">
+                <div class="context-label">Mots traduits</div>
+                <div id="cf2fr-layer2-tokens"></div>
+              </div>
+              <div class="context-item">
+                <div class="context-label">Couverture</div>
+                <div class="stats-grid" id="cf2fr-layer2-stats"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Tab: Lexique -->
     <div id="tab-lexique" class="tab-content">
+      <div class="settings-indicator" id="settings-indicator-lexique"></div>
       <div class="panel">
         <h2>Recherche dans le lexique</h2>
         <div class="form-group">
@@ -604,7 +652,9 @@
     // Load lexique
     const loadLexique = async () => {
       try {
-        const response = await fetch('/lexique');
+        const settings = JSON.parse(localStorage.getItem('confluentSettings') || '{}');
+        const niveau = settings.target || 'ancien';
+        const response = await fetch(`/api/lexique/${niveau}`);
         lexiqueData = await response.json();
       } catch (error) {
         console.error('Error loading lexique:', error);
@@ -707,7 +757,7 @@
       provider: 'anthropic',
       model: 'claude-sonnet-4-20250514',
       temperature: 1.0,
-      theme: 'dark',
+      theme: 'light',
       verbose: false,
       anthropicKey: '',
       openaiKey: ''
@@ -753,6 +803,12 @@
       // Apply theme
       applyTheme(settings.theme);
 
+      // Reload lexique if target changed
+      loadLexique();
+
+      // Update settings indicators
+      updateSettingsIndicators();
+
       // Show saved message
       const msg = document.getElementById('settings-saved-message');
       msg.style.display = 'block';
@@ -765,6 +821,33 @@
       } else {
         document.body.classList.remove('light-theme');
       }
+    };
+
+    const updateSettingsIndicators = () => {
+      const settings = { ...DEFAULT_SETTINGS, ...JSON.parse(localStorage.getItem('confluentSettings') || '{}') };
+
+      const targetLabel = settings.target === 'proto' ? 'Proto-Confluent' : 'Ancien Confluent';
+      const providerLabel = settings.provider === 'anthropic' ? 'Anthropic' : 'OpenAI';
+
+      // Better model label detection
+      let modelLabel = 'Model';
+      if (settings.model.includes('sonnet')) {
+        modelLabel = 'Sonnet 4.5';
+      } else if (settings.model.includes('haiku')) {
+        modelLabel = 'Haiku 4.5';
+      } else if (settings.model === 'chatgpt-4o-latest') {
+        modelLabel = 'ChatGPT-5.1';
+      } else if (settings.model === 'gpt-4o-mini') {
+        modelLabel = 'GPT-4o Mini';
+      } else if (settings.model === 'gpt-4o') {
+        modelLabel = 'GPT-4o';
+      }
+
+      const indicatorText = `${targetLabel} • ${providerLabel} ${modelLabel} • Temp: ${settings.temperature}`;
+
+      document.getElementById('settings-indicator-fr2cf').textContent = indicatorText;
+      document.getElementById('settings-indicator-cf2fr').textContent = indicatorText;
+      document.getElementById('settings-indicator-lexique').textContent = indicatorText;
     };
 
     const updateModelOptions = (provider) => {
@@ -863,8 +946,8 @@
                 <div class="stat-label">Économie</div>
               </div>
               <div class="stat-box">
-                <div class="stat-value">${data.layer2.useFallback ? 'OUI' : 'NON'}</div>
-                <div class="stat-label">Fallback racines</div>
+                <div class="stat-value">${data.layer2.useFallback ? 'UNIQUEMENT' : 'AVEC VOCAB'}</div>
+                <div class="stat-label">Mode racines</div>
               </div>
             `;
             document.getElementById('layer2-stats').innerHTML = statsHtml;
@@ -916,17 +999,63 @@
       resultContainer.style.display = 'block';
       document.getElementById('cf2fr-layer1-content').textContent = 'Traduction en cours...';
 
+      const settings = JSON.parse(localStorage.getItem('confluentSettings') || '{}');
+
       try {
         const response = await fetch('/api/translate/conf2fr', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ text }),
+          body: JSON.stringify({
+            text,
+            variant: settings.target || 'ancien',
+            detailed: true
+          }),
         });
 
         const data = await response.json();
 
         if (response.ok) {
+          // Display translation
           document.getElementById('cf2fr-layer1-content').textContent = data.translation || data.result || 'Traduction effectuée';
+
+          // Display detailed tokens
+          if (data.tokens && data.tokens.length > 0) {
+            const tokensHtml = data.tokens.map(token => {
+              const statusClass = token.found ? 'found' : 'not-found';
+              const frText = token.francais || '❓';
+              const typeText = token.type ? `[${token.type}]` : '';
+
+              return `
+                <div class="word-item ${statusClass}">
+                  <span class="word-cf">${token.confluent}</span>
+                  <span class="word-arrow">→</span>
+                  <span class="word-fr">${frText} ${typeText}</span>
+                </div>
+              `;
+            }).join('');
+            document.getElementById('cf2fr-layer2-tokens').innerHTML = tokensHtml;
+
+            // Display stats
+            const coverage = data.coverage || 0;
+            const total = data.tokens.length;
+            const found = data.tokens.filter(t => t.found).length;
+            const notFound = total - found;
+
+            document.getElementById('cf2fr-layer2-stats').innerHTML = `
+              <div class="stat-box">
+                <div class="stat-label">Couverture</div>
+                <div class="stat-value">${coverage}%</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-label">Mots trouvés</div>
+                <div class="stat-value">${found}/${total}</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-label">Mots inconnus</div>
+                <div class="stat-value">${notFound}</div>
+              </div>
+            `;
+          }
         } else {
           document.getElementById('cf2fr-layer1-content').innerHTML = `<span class="error">Erreur: ${data.error}</span>`;
         }
@@ -937,9 +1066,15 @@
       }
     });
 
+    // Listen to theme change in settings
+    document.getElementById('settings-theme').addEventListener('change', (e) => {
+      applyTheme(e.target.value);
+    });
+
     // Initialize
     loadSettings();
     loadLexique();
+    updateSettingsIndicators();
   </script>
 </body>
 </html>

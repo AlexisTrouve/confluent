@@ -1,0 +1,638 @@
+{
+  "_comment": "Vocabulaire du contact interculturel et de l'altérité",
+  "_mots_a_gerer": [],
+  "dictionnaire": {
+    "étranger": {
+      "traductions": [
+        {
+          "confluent": "otana",
+          "type": "racine_sacree_composee",
+          "composition": "ota-na",
+          "sens_litteral": "Celui de l'extérieur",
+          "racines": [
+            "ota",
+            "na"
+          ],
+          "domaine": "alterite",
+          "note": "Racine sacrée ota (autre, extérieur) + suffixe agent -na"
+        }
+      ],
+      "synonymes_fr": [
+        "inconnu",
+        "étranger",
+        "étrangère",
+        "étrangers"
+      ]
+    },
+    "l'autre": {
+      "traductions": [
+        {
+          "confluent": "ota",
+          "type": "racine_sacree",
+          "forme_liee": "ot",
+          "domaine": "alterite",
+          "note": "Concept philosophique : celui qui ne partage ni ancêtres, ni langue, ni intentions"
+        }
+      ],
+      "synonymes_fr": [
+        "autre",
+        "l'Autre"
+      ]
+    },
+    "différent": {
+      "traductions": [
+        {
+          "confluent": "otavi",
+          "type": "composition",
+          "composition": "ota-vi",
+          "sens_litteral": "De nature autre",
+          "racines": [
+            "ota"
+          ],
+          "domaine": "alterite",
+          "note": "Suffixe adjectival -vi"
+        }
+      ],
+      "synonymes_fr": [
+        "différente",
+        "différents",
+        "différentes"
+      ]
+    },
+    "nanzagouet": {
+      "traductions": [
+        {
+          "confluent": "pupasula",
+          "type": "composition",
+          "composition": "pupu-a-pasu-la",
+          "sens_litteral": "Cheveux de sang",
+          "racines": [
+            "pupu",
+            "pasu"
+          ],
+          "domaine": "peuple_etranger",
+          "note": "Nom donné aux étrangers aux cheveux roux - 'Cheveux de Sang'"
+        }
+      ],
+      "synonymes_fr": [
+        "Nanzagouet",
+        "peuple aux cheveux roux"
+      ]
+    },
+    "cheveux de sang": {
+      "traductions": [
+        {
+          "confluent": "pupasula",
+          "type": "composition",
+          "composition": "pupu-a-pasu-la",
+          "sens_litteral": "Poils rouges comme le sang",
+          "racines": [
+            "pupu",
+            "pasu"
+          ],
+          "domaine": "description_physique",
+          "note": "Descriptif initial des étrangers aux cheveux roux"
+        }
+      ]
+    },
+    "cheveux": {
+      "traductions": [
+        {
+          "confluent": "pupu",
+          "type": "racine",
+          "forme_liee": "pup",
+          "domaine": "corps",
+          "note": "Partie du corps qui pousse sur la tête"
+        }
+      ],
+      "synonymes_fr": [
+        "chevelure",
+        "poils"
+      ]
+    },
+    "roux": {
+      "traductions": [
+        {
+          "confluent": "pasovi",
+          "type": "composition",
+          "composition": "paso-vi",
+          "sens_litteral": "De couleur sang/rouge",
+          "racines": [
+            "pasu"
+          ],
+          "domaine": "couleur",
+          "note": "Utilise la racine pasu (sang) pour rouge"
+        }
+      ],
+      "synonymes_fr": [
+        "rousse",
+        "rouge",
+        "rouges"
+      ]
+    },
+    "inconnu": {
+      "traductions": [
+        {
+          "confluent": "otasili",
+          "type": "composition",
+          "composition": "ota-sili",
+          "sens_litteral": "Non vu, étranger au regard",
+          "racines": [
+            "ota",
+            "sili"
+          ],
+          "domaine": "alterite",
+          "note": "Ce qui n'a jamais été observé"
+        }
+      ],
+      "synonymes_fr": [
+        "inconnus",
+        "inconnue",
+        "inconnues"
+      ]
+    },
+    "premiers ancêtres": {
+      "traductions": [
+        {
+          "confluent": "enuaita",
+          "type": "composition",
+          "composition": "en-u-aita",
+          "sens_litteral": "Ancêtres de l'origine",
+          "racines": [
+            "ena",
+            "aita"
+          ],
+          "domaine": "histoire",
+          "note": "Peuple disparu distinct des ancêtres directs (aita)"
+        }
+      ],
+      "synonymes_fr": [
+        "Premiers Ancêtres"
+      ]
+    },
+    "rencontrer": {
+      "traductions": [
+        {
+          "confluent": "kotavi",
+          "type": "racine",
+          "forme_liee": "kotav",
+          "domaine": "action_sociale",
+          "note": "Croiser le chemin de, se rencontrer"
+        }
+      ],
+      "synonymes_fr": [
+        "rencontre",
+        "croiser"
+      ]
+    },
+    "accueillir": {
+      "traductions": [
+        {
+          "confluent": "takavi",
+          "type": "racine",
+          "forme_liee": "takav",
+          "domaine": "action_sociale",
+          "note": "Recevoir, accepter l'arrivée de"
+        }
+      ],
+      "synonymes_fr": [
+        "accueil",
+        "recevoir"
+      ]
+    },
+    "rejeter": {
+      "traductions": [
+        {
+          "confluent": "volaki",
+          "type": "racine",
+          "forme_liee": "volak",
+          "domaine": "action_sociale",
+          "note": "Repousser, refuser"
+        }
+      ],
+      "synonymes_fr": [
+        "rejet",
+        "repousser",
+        "refuser"
+      ]
+    },
+    "comprendre": {
+      "traductions": [
+        {
+          "confluent": "silumi",
+          "type": "composition",
+          "composition": "sil-umi",
+          "sens_litteral": "Voir avec l'esprit",
+          "racines": [
+            "sili",
+            "umi"
+          ],
+          "domaine": "cognition",
+          "note": "Saisir le sens"
+        }
+      ],
+      "synonymes_fr": [
+        "compréhension",
+        "saisir"
+      ]
+    },
+    "langue": {
+      "traductions": [
+        {
+          "confluent": "vokina",
+          "type": "composition",
+          "composition": "voki-na",
+          "sens_litteral": "Ensemble des voix/paroles",
+          "racines": [
+            "voki"
+          ],
+          "domaine": "communication",
+          "note": "Système linguistique (distinct de langue organe)"
+        }
+      ],
+      "synonymes_fr": [
+        "langage",
+        "idiome"
+      ]
+    },
+    "geste": {
+      "traductions": [
+        {
+          "confluent": "kanuki",
+          "type": "composition",
+          "composition": "kan-uki",
+          "sens_litteral": "Mouvement de main",
+          "racines": [
+            "kanu"
+          ],
+          "domaine": "communication",
+          "note": "Communication non-verbale"
+        }
+      ],
+      "synonymes_fr": [
+        "gestes",
+        "signe"
+      ]
+    },
+    "intention": {
+      "traductions": [
+        {
+          "confluent": "umikoli",
+          "type": "composition",
+          "composition": "umi-koli",
+          "sens_litteral": "Esprit-cœur, volonté intérieure",
+          "racines": [
+            "umi",
+            "kori"
+          ],
+          "domaine": "cognition",
+          "note": "Ce qu'on veut faire, la volonté"
+        }
+      ],
+      "synonymes_fr": [
+        "volonté",
+        "but",
+        "dessein"
+      ]
+    },
+    "méfiance": {
+      "traductions": [
+        {
+          "confluent": "silikonu",
+          "type": "composition",
+          "composition": "sili-ko-nu",
+          "sens_litteral": "Regard gardé",
+          "racines": [
+            "sili",
+            "konu"
+          ],
+          "domaine": "emotion",
+          "note": "Ne pas faire confiance, observer avec prudence"
+        }
+      ],
+      "synonymes_fr": [
+        "méfiant",
+        "suspicion"
+      ]
+    },
+    "confiance": {
+      "traductions": [
+        {
+          "confluent": "kolaska",
+          "type": "composition",
+          "composition": "kol-aska",
+          "sens_litteral": "Cœur libre",
+          "racines": [
+            "kori",
+            "aska"
+          ],
+          "domaine": "emotion",
+          "note": "Ouvrir son cœur sans crainte"
+        }
+      ],
+      "synonymes_fr": [
+        "confiant",
+        "foi"
+      ]
+    },
+    "partager": {
+      "traductions": [
+        {
+          "confluent": "kiluvi",
+          "type": "composition",
+          "composition": "kil-u-vi",
+          "sens_litteral": "Faire l'échange",
+          "racines": [
+            "kilu"
+          ],
+          "domaine": "action_sociale",
+          "note": "Donner une partie à l'autre"
+        }
+      ],
+      "synonymes_fr": [
+        "partage",
+        "distribuer"
+      ]
+    },
+    "commun": {
+      "traductions": [
+        {
+          "confluent": "kotavi",
+          "type": "composition",
+          "composition": "kota-vi",
+          "sens_litteral": "De la confluence, partagé",
+          "racines": [
+            "kota"
+          ],
+          "domaine": "social",
+          "note": "Ce qui appartient à tous"
+        }
+      ],
+      "synonymes_fr": [
+        "partagé",
+        "collectif",
+        "commune"
+      ]
+    },
+    "frontière": {
+      "traductions": [
+        {
+          "confluent": "linuota",
+          "type": "composition",
+          "composition": "lin-u-ota",
+          "sens_litteral": "Ligne de l'autre",
+          "racines": [
+            "linu",
+            "ota"
+          ],
+          "domaine": "geographie",
+          "note": "Limite entre nous et les autres"
+        }
+      ],
+      "synonymes_fr": [
+        "limite",
+        "frontières",
+        "bord"
+      ]
+    },
+    "territoire": {
+      "traductions": [
+        {
+          "confluent": "tokukota",
+          "type": "composition",
+          "composition": "tok-u-kota",
+          "sens_litteral": "Lieu de la confluence/union",
+          "racines": [
+            "toka",
+            "kota"
+          ],
+          "domaine": "geographie",
+          "note": "Terre qui appartient au peuple"
+        }
+      ],
+      "synonymes_fr": [
+        "terre",
+        "domaine"
+      ]
+    },
+    "contact": {
+      "traductions": [
+        {
+          "confluent": "kotavuki",
+          "type": "composition",
+          "composition": "kotav-uki",
+          "sens_litteral": "Mouvement de rencontre",
+          "racines": [
+            "kotavi"
+          ],
+          "domaine": "action_sociale",
+          "note": "Premier contact, toucher"
+        }
+      ],
+      "synonymes_fr": [
+        "toucher",
+        "rencontre initiale"
+      ]
+    },
+    "commerce": {
+      "traductions": [
+        {
+          "confluent": "kilukota",
+          "type": "composition",
+          "composition": "kil-u-kota",
+          "sens_litteral": "Échange en confluence",
+          "racines": [
+            "kilu",
+            "kota"
+          ],
+          "domaine": "economie",
+          "note": "Échanges réguliers entre groupes"
+        }
+      ],
+      "synonymes_fr": [
+        "échange commercial",
+        "négoce"
+      ]
+    },
+    "hostile": {
+      "traductions": [
+        {
+          "confluent": "zanaoti",
+          "type": "composition",
+          "composition": "zana-ot-i",
+          "sens_litteral": "Qui chasse l'autre",
+          "racines": [
+            "zana",
+            "ota"
+          ],
+          "domaine": "attitude",
+          "note": "Agressif envers l'étranger"
+        }
+      ],
+      "synonymes_fr": [
+        "agressif",
+        "ennemi",
+        "hostile"
+      ]
+    },
+    "pacifique": {
+      "traductions": [
+        {
+          "confluent": "tosavi",
+          "type": "composition",
+          "composition": "tosa-vi",
+          "sens_litteral": "De nature bonne/paisible",
+          "racines": [
+            "tosa"
+          ],
+          "domaine": "attitude",
+          "note": "Sans agressivité"
+        }
+      ],
+      "synonymes_fr": [
+        "paisible",
+        "pacifiques",
+        "bienveillant"
+      ]
+    },
+    "alliance": {
+      "traductions": [
+        {
+          "confluent": "savukota",
+          "type": "composition",
+          "composition": "sav-u-kota",
+          "sens_litteral": "Serment de confluence",
+          "racines": [
+            "savu",
+            "kota"
+          ],
+          "domaine": "politique",
+          "note": "Accord entre peuples"
+        }
+      ],
+      "synonymes_fr": [
+        "pacte",
+        "accord"
+      ]
+    },
+    "traité": {
+      "traductions": [
+        {
+          "confluent": "savukova",
+          "type": "composition",
+          "composition": "sav-u-kova",
+          "sens_litteral": "Serment gravé",
+          "racines": [
+            "savu",
+            "kova"
+          ],
+          "domaine": "politique",
+          "note": "Accord formel écrit"
+        }
+      ],
+      "synonymes_fr": [
+        "accord écrit",
+        "traités"
+      ]
+    },
+    "ambassadeur": {
+      "traductions": [
+        {
+          "confluent": "vokiotana",
+          "type": "composition",
+          "composition": "voki-ota-na",
+          "sens_litteral": "Voix pour l'autre",
+          "racines": [
+            "voki",
+            "ota"
+          ],
+          "domaine": "role_politique",
+          "note": "Celui qui parle au nom de son peuple auprès des étrangers"
+        }
+      ],
+      "synonymes_fr": [
+        "émissaire",
+        "envoyé"
+      ]
+    },
+    "interprète": {
+      "traductions": [
+        {
+          "confluent": "vokikota",
+          "type": "composition",
+          "composition": "voki-kota",
+          "sens_litteral": "Voix de confluence",
+          "racines": [
+            "voki",
+            "kota"
+          ],
+          "domaine": "role_communication",
+          "note": "Celui qui traduit entre langues"
+        }
+      ],
+      "synonymes_fr": [
+        "traducteur"
+      ]
+    },
+    "curiosité": {
+      "traductions": [
+        {
+          "confluent": "siliota",
+          "type": "composition",
+          "composition": "sili-ota",
+          "sens_litteral": "Regard vers l'autre",
+          "racines": [
+            "sili",
+            "ota"
+          ],
+          "domaine": "emotion",
+          "note": "Désir de découvrir l'inconnu"
+        }
+      ],
+      "synonymes_fr": [
+        "curieux",
+        "intérêt"
+      ]
+    },
+    "découverte": {
+      "traductions": [
+        {
+          "confluent": "nuvisili",
+          "type": "composition",
+          "composition": "nuvi-sili",
+          "sens_litteral": "Nouveau regard",
+          "racines": [
+            "nuvi",
+            "sili"
+          ],
+          "domaine": "cognition",
+          "note": "Voir pour la première fois"
+        }
+      ],
+      "synonymes_fr": [
+        "découvrir",
+        "trouver"
+      ]
+    },
+    "similitude": {
+      "traductions": [
+        {
+          "confluent": "silikinu",
+          "type": "composition",
+          "composition": "sili-ki-nu",
+          "sens_litteral": "Même regard/apparence",
+          "racines": [
+            "sili"
+          ],
+          "domaine": "concept",
+          "note": "Ressemblance, points communs"
+        }
+      ],
+      "synonymes_fr": [
+        "ressemblance",
+        "semblable",
+        "similaire"
+      ]
+    }
+  }
+}

@@ -5,9 +5,9 @@
     "pierre": {
       "traductions": [
         {
-          "confluent": "kari",
+          "confluent": "kali",
           "type": "racine",
-          "forme_liee": "kar",
+          "forme_liee": "kal",
           "domaine": "materiau",
           "note": "Matériau fondamental"
         }
@@ -31,9 +31,9 @@
     "argile": {
       "traductions": [
         {
-          "confluent": "tokauura",
+          "confluent": "tokauula",
           "type": "composition",
-          "composition": "tok-a-ura",
+          "composition": "tok-a-ula",
           "sens_litteral": "Terre avec eau",
           "racines": [
             "toka",
@@ -46,12 +46,12 @@
     "metal": {
       "traductions": [
         {
-          "confluent": "kariusuki",
+          "confluent": "kaliusuki",
           "type": "composition",
-          "composition": "kar-i-suki",
+          "composition": "kal-i-suki",
           "sens_litteral": "Pierre du feu",
           "racines": [
-            "kari",
+            "kali",
             "suki"
           ],
           "domaine": "materiau"
@@ -61,12 +61,12 @@
     "minerai": {
       "traductions": [
         {
-          "confluent": "kariuvuku",
+          "confluent": "kaliuvuku",
           "type": "composition",
-          "composition": "kar-i-vuku",
+          "composition": "kal-i-vuku",
           "sens_litteral": "Pierre du gouffre",
           "racines": [
-            "kari",
+            "kali",
             "vuku"
           ],
           "domaine": "materiau"
@@ -170,13 +170,13 @@
     "chaine": {
       "traductions": [
         {
-          "confluent": "kopuukari",
+          "confluent": "kopuukali",
           "type": "composition",
-          "composition": "kop-u-kari",
+          "composition": "kop-u-kali",
           "sens_litteral": "Corde de pierre",
           "racines": [
             "kopu",
-            "kari"
+            "kali"
           ],
           "domaine": "objet"
         }
@@ -355,9 +355,9 @@
     "lampe": {
       "traductions": [
         {
-          "confluent": "sorausaku",
+          "confluent": "solausaku",
           "type": "composition",
-          "composition": "sor-a-saku",
+          "composition": "sol-a-saku",
           "sens_litteral": "Lumière avec contenant",
           "racines": [
             "sora",
@@ -400,12 +400,12 @@
     "bijou": {
       "traductions": [
         {
-          "confluent": "kariuora",
+          "confluent": "kaliuola",
           "type": "composition",
-          "composition": "kar-i-ora",
+          "composition": "kal-i-ola",
           "sens_litteral": "Pierre de l'aurore",
           "racines": [
-            "kari",
+            "kali",
             "ora"
           ],
           "domaine": "objet"

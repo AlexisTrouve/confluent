@@ -45,9 +45,9 @@
     "fleche": {
       "traductions": [
         {
-          "confluent": "pikiuark",
+          "confluent": "pikiuarku",
           "type": "composition",
-          "composition": "pik-i-ark",
+          "composition": "pik-i-alk",
           "sens_litteral": "Pointe de l'arc",
           "racines": [
             "piki",
@@ -116,13 +116,13 @@
     "bouclier": {
       "traductions": [
         {
-          "confluent": "zakikari",
+          "confluent": "zakikali",
           "type": "composition",
-          "composition": "zak-i-kari",
+          "composition": "zak-i-kali",
           "sens_litteral": "Protection de pierre",
           "racines": [
             "zaki",
-            "kari"
+            "kali"
           ],
           "domaine": "arme"
         }
@@ -131,13 +131,13 @@
     "pioche": {
       "traductions": [
         {
-          "confluent": "vukukari",
+          "confluent": "vukukali",
           "type": "composition",
-          "composition": "vuk-u-kari",
+          "composition": "vuk-u-kali",
           "sens_litteral": "Pierre du gouffre",
           "racines": [
             "vuku",
-            "kari"
+            "kali"
           ],
           "domaine": "outil"
         }
@@ -146,13 +146,13 @@
     "ciseau a pierre": {
       "traductions": [
         {
-          "confluent": "kovukari",
+          "confluent": "kovukali",
           "type": "composition",
-          "composition": "kov-u-kari",
+          "composition": "kov-u-kali",
           "sens_litteral": "Graveur de pierre",
           "racines": [
             "kova",
-            "kari"
+            "kali"
           ],
           "domaine": "outil"
         }
@@ -161,13 +161,13 @@
     "maillet": {
       "traductions": [
         {
-          "confluent": "bopukari",
+          "confluent": "bopukali",
           "type": "composition",
-          "composition": "bop-u-kari",
+          "composition": "bop-u-kali",
           "sens_litteral": "Frappeur de pierre",
           "racines": [
             "bopu",
-            "kari"
+            "kali"
           ],
           "domaine": "outil"
         }

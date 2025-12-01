@@ -189,7 +189,7 @@
     "Passes-bien": {
       "traductions": [
         {
-          "confluent": "takitosa",
+          "confluent": "kanutosa",
           "type": "nom_propre",
           "composition": "tak-i-tosa",
           "sens_litteral": "Porteurs du bien",
@@ -207,7 +207,7 @@
     "Takitosa": {
       "traductions": [
         {
-          "confluent": "takitosa",
+          "confluent": "kanutosa",
           "type": "nom_propre",
           "composition": "tak-i-tosa",
           "sens_litteral": "Porteurs du bien",
@@ -271,13 +271,13 @@
     "Sans-ciels": {
       "traductions": [
         {
-          "confluent": "zozeru",
+          "confluent": "zozelu",
           "type": "composition",
-          "composition": "zo-zeru",
+          "composition": "zo-zelu",
           "sens_litteral": "Sans ciel",
           "racines": [
             "zo",
-            "zeru"
+            "zelu"
           ],
           "categorie": "groupe_social",
           "note": "Nés sous ciel couvert"
@@ -287,9 +287,9 @@
     "Gardiens de la Confluence": {
       "traductions": [
         {
-          "confluent": "zakiuraakota",
+          "confluent": "zakiulaakota",
           "type": "composition",
-          "composition": "zak-i-uraakota",
+          "composition": "zak-i-ulaakota",
           "sens_litteral": "Gardiens de la Confluence",
           "racines": [
             "zaki",

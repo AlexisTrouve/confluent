@@ -82,7 +82,7 @@
     "Lois du Sang et de la Bete": {
       "traductions": [
         {
-          "confluent": "lokuurasubetu",
+          "confluent": "lokuulasubetu",
           "type": "nom_propre",
           "composition": "lok-u-pasu-betu",
           "sens_litteral": "Loi du sang et de la bête",
@@ -98,7 +98,7 @@
     "Porteur de Flamme": {
       "traductions": [
         {
-          "confluent": "takiusuki",
+          "confluent": "kanuusuki",
           "type": "nom_propre",
           "composition": "tak-i-suki",
           "sens_litteral": "Porteur du feu",
@@ -221,13 +221,13 @@
     "lait de pierre": {
       "traductions": [
         {
-          "confluent": "miluukari",
+          "confluent": "miluukali",
           "type": "composition",
-          "composition": "mil-u-kari",
+          "composition": "mil-u-kali",
           "sens_litteral": "Lait de pierre",
           "racines": [
             "milu",
-            "kari"
+            "kali"
           ],
           "domaine": "materiau_rituel"
         }
@@ -236,12 +236,12 @@
     "roche braise": {
       "traductions": [
         {
-          "confluent": "kariusuki",
+          "confluent": "kaliusuki",
           "type": "composition",
-          "composition": "kar-i-suki",
+          "composition": "kal-i-suki",
           "sens_litteral": "Pierre du feu",
           "racines": [
-            "kari",
+            "kali",
             "suki"
           ],
           "domaine": "materiau_rituel"

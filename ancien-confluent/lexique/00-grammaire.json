@@ -325,7 +325,7 @@
       "mot_francais": "celui-ci/celui-là",
       "traductions": [
         {
-          "confluent": "taki",
+          "confluent": "kanu",
           "type": "demonstratif",
           "categorie": "démonstratif",
           "note": "Démonstratif pour personnes"
@@ -525,6 +525,131 @@
         "pendant",
         "pendant que",
         "alors que"
+      ]
+    },
+    "ai": {
+      "mot_francais": "avoir (1sg présent)",
+      "traductions": [
+        {
+          "confluent": "iku",
+          "type": "auxiliaire",
+          "categorie": "verbe",
+          "note": "J'ai - auxiliaire avoir 1ère personne singulier présent"
+        }
+      ],
+      "synonymes_fr": [
+        "j'ai"
+      ]
+    },
+    "as": {
+      "mot_francais": "avoir (2sg présent)",
+      "traductions": [
+        {
+          "confluent": "iku",
+          "type": "auxiliaire",
+          "categorie": "verbe",
+          "note": "Tu as - auxiliaire avoir 2ème personne singulier"
+        }
+      ],
+      "synonymes_fr": [
+        "tu as"
+      ]
+    },
+    "a": {
+      "mot_francais": "avoir (3sg présent)",
+      "traductions": [
+        {
+          "confluent": "iku",
+          "type": "auxiliaire",
+          "categorie": "verbe",
+          "note": "Il/elle a - auxiliaire avoir 3ème personne singulier"
+        }
+      ],
+      "synonymes_fr": [
+        "il a",
+        "elle a",
+        "on a"
+      ]
+    },
+    "avons": {
+      "mot_francais": "avoir (1pl présent)",
+      "traductions": [
+        {
+          "confluent": "iku",
+          "type": "auxiliaire",
+          "categorie": "verbe",
+          "note": "Nous avons - auxiliaire avoir 1ère personne pluriel"
+        }
+      ],
+      "synonymes_fr": [
+        "nous avons"
+      ]
+    },
+    "avez": {
+      "mot_francais": "avoir (2pl présent)",
+      "traductions": [
+        {
+          "confluent": "iku",
+          "type": "auxiliaire",
+          "categorie": "verbe",
+          "note": "Vous avez - auxiliaire avoir 2ème personne pluriel"
+        }
+      ],
+      "synonymes_fr": [
+        "vous avez"
+      ]
+    },
+    "ont": {
+      "mot_francais": "avoir (3pl présent)",
+      "traductions": [
+        {
+          "confluent": "iku",
+          "type": "auxiliaire",
+          "categorie": "verbe",
+          "note": "Ils/elles ont - auxiliaire avoir 3ème personne pluriel"
+        }
+      ],
+      "synonymes_fr": [
+        "ils ont",
+        "elles ont"
+      ]
+    },
+    "avais": {
+      "mot_francais": "avoir (imparfait)",
+      "traductions": [
+        {
+          "confluent": "ikuat",
+          "type": "auxiliaire",
+          "categorie": "verbe",
+          "note": "Avais - auxiliaire avoir imparfait (iku + marqueur passé at)"
+        }
+      ],
+      "synonymes_fr": [
+        "j'avais",
+        "tu avais",
+        "il avait",
+        "nous avions",
+        "vous aviez",
+        "ils avaient"
+      ]
+    },
+    "aurai": {
+      "mot_francais": "avoir (futur)",
+      "traductions": [
+        {
+          "confluent": "ikuok",
+          "type": "auxiliaire",
+          "categorie": "verbe",
+          "note": "Aurai - auxiliaire avoir futur (iku + marqueur futur ok)"
+        }
+      ],
+      "synonymes_fr": [
+        "j'aurai",
+        "tu auras",
+        "il aura",
+        "nous aurons",
+        "vous aurez",
+        "ils auront"
       ]
     }
   }

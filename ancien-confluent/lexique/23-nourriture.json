@@ -160,7 +160,10 @@
           "type": "composition",
           "composition": "pal-u-suki",
           "sens_litteral": "Herbe du feu (qui brûle le goût)",
-          "racines": ["pala", "suki"],
+          "racines": [
+            "pala",
+            "suki"
+          ],
           "liaison": "u",
           "structure": "composition",
           "domaine": "nourriture",
@@ -183,7 +186,10 @@
           "type": "composition",
           "composition": "ait-eo-palu",
           "sens_litteral": "Ancêtre-éternel-qui-brûle",
-          "racines": ["aita", "palu"],
+          "racines": [
+            "aita",
+            "palu"
+          ],
           "liaison": "eo",
           "structure": "composition_sacree",
           "domaine": "nourriture_sacree",
@@ -199,11 +205,14 @@
       "racine_fr": null,
       "traductions": [
         {
-          "confluent": "zeruosi",
+          "confluent": "zeluosi",
           "type": "composition",
-          "composition": "zer-u-osi",
+          "composition": "zel-u-osi",
           "sens_litteral": "Ciel-de-mort (larmes célestes)",
-          "racines": ["zeru", "osi"],
+          "racines": [
+            "zelu",
+            "osi"
+          ],
           "liaison": "u",
           "structure": "composition_sacree",
           "domaine": "nourriture_sacree",
@@ -309,11 +318,14 @@
       "racine_fr": "cuisin",
       "traductions": [
         {
-          "confluent": "mukunekas",
+          "confluent": "mukuneka",
           "type": "composition",
           "composition": "muk-u-nekas",
           "sens_litteral": "Nourriture-de-faire",
-          "racines": ["muki", "nekas"],
+          "racines": [
+            "muki",
+            "nekas"
+          ],
           "liaison": "u",
           "structure": "composition",
           "domaine": "technique_culinaire",
@@ -341,11 +353,14 @@
       "racine_fr": "infus",
       "traductions": [
         {
-          "confluent": "urapis",
-          "type": "composition",
-          "composition": "ura-pis",
+          "confluent": "lapis",
+          "type": "verbe",
+          "racine": "lapi",
           "sens_litteral": "Eau-tremper",
-          "racines": ["ura", "pisu"],
+          "racines": [
+            "ura",
+            "pisu"
+          ],
           "structure": "composition",
           "domaine": "technique_culinaire",
           "note": "Infuser, faire tremper dans l'eau"
@@ -397,11 +412,11 @@
       "racine_fr": "boir",
       "traductions": [
         {
-          "confluent": "urapis",
+          "confluent": "lapis",
           "type": "verbe",
-          "racine": "ura",
-          "forme_liee": "ura",
-          "structure": "VCVCV",
+          "racine": "lapi",
+          "forme_liee": "lap",
+          "structure": "CVCVC",
           "domaine": "nourriture",
           "note": "Boire - utilise racine sacrée ura (eau)"
         }
@@ -447,7 +462,10 @@
           "type": "composition",
           "composition": "zo-muki",
           "sens_litteral": "Négation-nourriture",
-          "racines": ["zo", "muki"],
+          "racines": [
+            "zo",
+            "muki"
+          ],
           "structure": "composition",
           "domaine": "nourriture",
           "note": "Manque (de nourriture) - zo (négation) + muki (nourriture)"

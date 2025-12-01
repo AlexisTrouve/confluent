@@ -250,7 +250,7 @@ app.post('/api/analyze/coverage', (req, res) => {
 
 // Translation endpoint (NOUVEAU SYSTÈME CONTEXTUEL)
 app.post('/translate', async (req, res) => {
-  const { text, target, provider, model, useLexique = true } = req.body;
+  const { text, target, provider, model, temperature = 1.0, useLexique = true } = req.body;
 
   if (!text || !target || !provider || !model) {
     return res.status(400).json({ error: 'Missing parameters' });
@@ -296,6 +296,7 @@ app.post('/translate', async (req, res) => {
       const message = await anthropic.messages.create({
         model: model,
         max_tokens: 8192, // Max pour Claude Sonnet/Haiku 4.5
+        temperature: temperature,
         system: systemPrompt,
         messages: [
           { role: 'user', content: text }
@@ -313,6 +314,7 @@ app.post('/translate', async (req, res) => {
       const completion = await openai.chat.completions.create({
         model: model,
         max_tokens: 16384, // Max pour GPT-4o et GPT-4o-mini
+        temperature: temperature,
         messages: [
           { role: 'system', content: systemPrompt },
           { role: 'user', content: text }

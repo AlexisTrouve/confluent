@@ -106,13 +106,13 @@
     "histoire vraie": {
       "traductions": [
         {
-          "confluent": "vokiuveri",
+          "confluent": "vokiuveli",
           "type": "composition",
-          "composition": "vok-i-veri",
+          "composition": "vok-i-veli",
           "sens_litteral": "Voix de vérité",
           "racines": [
             "voki",
-            "veri"
+            "veli"
           ],
           "domaine": "communication"
         }
@@ -184,13 +184,13 @@
     "rapport": {
       "traductions": [
         {
-          "confluent": "vokiumira",
+          "confluent": "vokiumila",
           "type": "composition",
-          "composition": "vok-i-mira",
+          "composition": "vok-i-mila",
           "sens_litteral": "Voix de l'observation",
           "racines": [
             "voki",
-            "mira"
+            "mila"
           ],
           "domaine": "communication"
         }
@@ -324,13 +324,13 @@
     "mensonge": {
       "traductions": [
         {
-          "confluent": "zoveri",
+          "confluent": "zoveli",
           "type": "composition",
-          "composition": "zo-veri",
+          "composition": "zo-veli",
           "sens_litteral": "Sans vérité",
           "racines": [
             "zo",
-            "veri"
+            "veli"
           ],
           "domaine": "communication"
         }

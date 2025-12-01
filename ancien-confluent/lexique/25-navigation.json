@@ -1,0 +1,655 @@
+{
+  "_comment": "Vocabulaire de la navigation et des activités maritimes",
+  "_mots_a_gerer": [],
+  "dictionnaire": {
+    "naviguer": {
+      "traductions": [
+        {
+          "confluent": "ulaki",
+          "type": "composition",
+          "composition": "ula-ki",
+          "sens_litteral": "Aller sur l'eau",
+          "racines": [
+            "ura"
+          ],
+          "domaine": "action_maritime",
+          "note": "Voyager sur l'eau avec une embarcation"
+        }
+      ],
+      "synonymes_fr": [
+        "navigation",
+        "voguer"
+      ]
+    },
+    "marin": {
+      "traductions": [
+        {
+          "confluent": "ulakina",
+          "type": "composition",
+          "composition": "ula-ki-na",
+          "sens_litteral": "Celui qui va sur l'eau",
+          "racines": [
+            "ura"
+          ],
+          "domaine": "role_maritime",
+          "note": "Personne qui navigue"
+        }
+      ],
+      "synonymes_fr": [
+        "navigateur",
+        "marins"
+      ]
+    },
+    "embarcation": {
+      "traductions": [
+        {
+          "confluent": "ulavanu",
+          "type": "composition",
+          "composition": "ula-vanu",
+          "sens_litteral": "Chose d'eau",
+          "racines": [
+            "ura",
+            "vanu"
+          ],
+          "domaine": "objet_maritime",
+          "note": "Bateau, barque - terme générique"
+        }
+      ],
+      "synonymes_fr": [
+        "bateau",
+        "barque"
+      ]
+    },
+    "flotter": {
+      "traductions": [
+        {
+          "confluent": "ulatuli",
+          "type": "composition",
+          "composition": "ula-tuli",
+          "sens_litteral": "Être porté par l'eau",
+          "racines": [
+            "ura"
+          ],
+          "domaine": "action_maritime",
+          "note": "Rester à la surface de l'eau"
+        }
+      ],
+      "synonymes_fr": [
+        "flotté",
+        "flottera"
+      ]
+    },
+    "chavirer": {
+      "traductions": [
+        {
+          "confluent": "vanuloli",
+          "type": "composition",
+          "composition": "vanu-loli",
+          "sens_litteral": "L'embarcation se retourne",
+          "racines": [
+            "vanu"
+          ],
+          "domaine": "accident_maritime",
+          "note": "Le bateau bascule"
+        }
+      ],
+      "synonymes_fr": [
+        "se retourner",
+        "basculer"
+      ]
+    },
+    "couler": {
+      "traductions": [
+        {
+          "confluent": "vanuvuku",
+          "type": "composition",
+          "composition": "vanu-vuku",
+          "sens_litteral": "L'embarcation descend dans le gouffre",
+          "racines": [
+            "vanu",
+            "vuku"
+          ],
+          "domaine": "accident_maritime",
+          "note": "Sombrer, aller au fond"
+        }
+      ],
+      "synonymes_fr": [
+        "sombrer",
+        "s'enfoncer"
+      ]
+    },
+    "noyade": {
+      "traductions": [
+        {
+          "confluent": "ulaosi",
+          "type": "composition",
+          "composition": "ula-osi",
+          "sens_litteral": "Mort par l'eau",
+          "racines": [
+            "ura",
+            "osi"
+          ],
+          "domaine": "danger_maritime",
+          "note": "Mort par immersion"
+        }
+      ],
+      "synonymes_fr": [
+        "se noyer",
+        "noyé"
+      ]
+    },
+    "échouer": {
+      "traductions": [
+        {
+          "confluent": "vanukosti",
+          "type": "composition",
+          "composition": "vanu-kosti",
+          "sens_litteral": "L'embarcation touche la rive",
+          "racines": [
+            "vanu",
+            "kosti"
+          ],
+          "domaine": "navigation",
+          "note": "Bateau qui s'arrête sur le rivage involontairement"
+        }
+      ],
+      "synonymes_fr": [
+        "échouée",
+        "échoué"
+      ]
+    },
+    "rivage": {
+      "traductions": [
+        {
+          "confluent": "kosti",
+          "type": "racine",
+          "forme_liee": "kost",
+          "domaine": "geographie_maritime",
+          "note": "Bord de la mer, côte"
+        }
+      ],
+      "synonymes_fr": [
+        "côte",
+        "littoral",
+        "bord de mer"
+      ]
+    },
+    "berge": {
+      "traductions": [
+        {
+          "confluent": "ulalinu",
+          "type": "composition",
+          "composition": "ula-linu",
+          "sens_litteral": "Ligne d'eau",
+          "racines": [
+            "ura",
+            "linu"
+          ],
+          "domaine": "geographie",
+          "note": "Bord de rivière ou fleuve"
+        }
+      ],
+      "synonymes_fr": [
+        "rive",
+        "bord"
+      ]
+    },
+    "embouchure": {
+      "traductions": [
+        {
+          "confluent": "ulakotamelu",
+          "type": "composition",
+          "composition": "ula-kota-melu",
+          "sens_litteral": "Confluence d'eau vers la mer",
+          "racines": [
+            "ura",
+            "kota",
+            "melu"
+          ],
+          "domaine": "geographie_maritime",
+          "note": "Où le fleuve rencontre la mer"
+        }
+      ],
+      "synonymes_fr": [
+        "delta"
+      ]
+    },
+    "eau salée": {
+      "traductions": [
+        {
+          "confluent": "ulaselu",
+          "type": "composition",
+          "composition": "ula-selu",
+          "sens_litteral": "Eau de sel",
+          "racines": [
+            "ura",
+            "selu"
+          ],
+          "domaine": "nature_maritime",
+          "note": "Eau de mer, impure pour boire"
+        }
+      ],
+      "synonymes_fr": [
+        "eau de mer",
+        "eau impure"
+      ]
+    },
+    "eau douce": {
+      "traductions": [
+        {
+          "confluent": "ulapuli",
+          "type": "composition",
+          "composition": "ula-puli",
+          "sens_litteral": "Eau pure",
+          "racines": [
+            "ura"
+          ],
+          "domaine": "nature",
+          "note": "Eau potable de rivière ou source"
+        }
+      ],
+      "synonymes_fr": [
+        "eau potable",
+        "eau pure"
+      ]
+    },
+    "marée": {
+      "traductions": [
+        {
+          "confluent": "meluuki",
+          "type": "composition",
+          "composition": "melu-uki",
+          "sens_litteral": "Mouvement de la mer",
+          "racines": [
+            "melu"
+          ],
+          "domaine": "phenomene_maritime",
+          "note": "Montée et descente de l'eau"
+        }
+      ],
+      "synonymes_fr": [
+        "flux",
+        "marées"
+      ]
+    },
+    "vague": {
+      "traductions": [
+        {
+          "confluent": "meluloli",
+          "type": "composition",
+          "composition": "melu-loli",
+          "sens_litteral": "Roulement de la mer",
+          "racines": [
+            "melu"
+          ],
+          "domaine": "phenomene_maritime",
+          "note": "Ondulation de l'eau"
+        }
+      ],
+      "synonymes_fr": [
+        "vagues",
+        "flot"
+      ]
+    },
+    "manœuvrer": {
+      "traductions": [
+        {
+          "confluent": "vanukanu",
+          "type": "composition",
+          "composition": "vanu-kanu",
+          "sens_litteral": "Diriger l'embarcation avec les mains",
+          "racines": [
+            "vanu",
+            "kanu"
+          ],
+          "domaine": "action_maritime",
+          "note": "Piloter un bateau"
+        }
+      ],
+      "synonymes_fr": [
+        "piloter",
+        "diriger"
+      ]
+    },
+    "ramer": {
+      "traductions": [
+        {
+          "confluent": "kanulaki",
+          "type": "composition",
+          "composition": "kanu-la-ki",
+          "sens_litteral": "Pousser avec les mains pour aller",
+          "racines": [
+            "kanu"
+          ],
+          "domaine": "action_maritime",
+          "note": "Faire avancer avec des rames"
+        }
+      ],
+      "synonymes_fr": [
+        "rame",
+        "pagayer"
+      ]
+    },
+    "rame": {
+      "traductions": [
+        {
+          "confluent": "kanuvi",
+          "type": "composition",
+          "composition": "kanu-vi",
+          "sens_litteral": "Bois de main pour l'eau",
+          "racines": [
+            "kanu",
+            "vito"
+          ],
+          "domaine": "outil_maritime",
+          "note": "Longue pièce de bois pour propulser"
+        }
+      ],
+      "synonymes_fr": [
+        "aviron",
+        "pagaie"
+      ]
+    },
+    "voile": {
+      "traductions": [
+        {
+          "confluent": "venuvanu",
+          "type": "composition",
+          "composition": "ven-u-vanu",
+          "sens_litteral": "Air de l'embarcation",
+          "racines": [
+            "vena",
+            "vanu"
+          ],
+          "domaine": "equipement_maritime",
+          "note": "Tissu qui capte le vent"
+        }
+      ],
+      "synonymes_fr": [
+        "voiles"
+      ]
+    },
+    "ancre": {
+      "traductions": [
+        {
+          "confluent": "vanupeku",
+          "type": "composition",
+          "composition": "vanu-peku",
+          "sens_litteral": "Pied de l'embarcation",
+          "racines": [
+            "vanu",
+            "peki"
+          ],
+          "domaine": "equipement_maritime",
+          "note": "Objet lourd qui maintient le bateau"
+        }
+      ],
+      "synonymes_fr": [
+        "ancres"
+      ]
+    },
+    "aborder": {
+      "traductions": [
+        {
+          "confluent": "vanukoti",
+          "type": "composition",
+          "composition": "vanu-koti",
+          "sens_litteral": "Monter sur l'embarcation",
+          "racines": [
+            "vanu"
+          ],
+          "domaine": "action_maritime",
+          "note": "Monter à bord (ou attaquer un navire)"
+        }
+      ],
+      "synonymes_fr": [
+        "monter à bord",
+        "embarquer"
+      ]
+    },
+    "débarquer": {
+      "traductions": [
+        {
+          "confluent": "vanuvoli",
+          "type": "composition",
+          "composition": "vanu-voli",
+          "sens_litteral": "Quitter l'embarcation",
+          "racines": [
+            "vanu"
+          ],
+          "domaine": "action_maritime",
+          "note": "Descendre du bateau"
+        }
+      ],
+      "synonymes_fr": [
+        "descendre",
+        "sortir du bateau"
+      ]
+    },
+    "cargaison": {
+      "traductions": [
+        {
+          "confluent": "vanusaki",
+          "type": "composition",
+          "composition": "vanu-saki",
+          "sens_litteral": "Sac de l'embarcation",
+          "racines": [
+            "vanu",
+            "saki"
+          ],
+          "domaine": "commerce_maritime",
+          "note": "Marchandises transportées"
+        }
+      ],
+      "synonymes_fr": [
+        "charge",
+        "marchandises"
+      ]
+    },
+    "pérégrination aquatique": {
+      "traductions": [
+        {
+          "confluent": "ulakimako",
+          "type": "composition",
+          "composition": "ula-ki-mako",
+          "sens_litteral": "Grand voyage sur l'eau",
+          "racines": [
+            "ura",
+            "mako"
+          ],
+          "domaine": "voyage_maritime",
+          "note": "Voyage de longue durée sur l'eau"
+        }
+      ],
+      "synonymes_fr": [
+        "voyage maritime",
+        "traversée"
+      ]
+    },
+    "point d'eau": {
+      "traductions": [
+        {
+          "confluent": "ulatoka",
+          "type": "composition",
+          "composition": "ula-toka",
+          "sens_litteral": "Lieu d'eau",
+          "racines": [
+            "ura",
+            "toka"
+          ],
+          "domaine": "geographie",
+          "note": "Endroit où trouver de l'eau (source, puits, rivière)"
+        }
+      ],
+      "synonymes_fr": [
+        "source d'eau"
+      ]
+    },
+    "ravitaillement": {
+      "traductions": [
+        {
+          "confluent": "nutukovi",
+          "type": "composition",
+          "composition": "nutu-kovi",
+          "sens_litteral": "Remplir les réserves",
+          "racines": [
+            "nutu"
+          ],
+          "domaine": "logistique",
+          "note": "Reconstituer les provisions"
+        }
+      ],
+      "synonymes_fr": [
+        "ravitailler",
+        "approvisionner"
+      ]
+    },
+    "se ravitailler": {
+      "traductions": [
+        {
+          "confluent": "nutukili",
+          "type": "composition",
+          "composition": "nutu-kili",
+          "sens_litteral": "Échanger pour obtenir provisions",
+          "racines": [
+            "nutu",
+            "kilu"
+          ],
+          "domaine": "logistique",
+          "note": "Obtenir de la nourriture et de l'eau"
+        }
+      ],
+      "synonymes_fr": [
+        "s'approvisionner"
+      ]
+    },
+    "construction en bois": {
+      "traductions": [
+        {
+          "confluent": "vitokova",
+          "type": "composition",
+          "composition": "vito-kova",
+          "sens_litteral": "Bois assemblé/travaillé",
+          "racines": [
+            "vito",
+            "kova"
+          ],
+          "domaine": "construction",
+          "note": "Structure faite de planches"
+        }
+      ],
+      "synonymes_fr": [
+        "charpente"
+      ]
+    },
+    "créature flottante": {
+      "traductions": [
+        {
+          "confluent": "betulatuli",
+          "type": "composition",
+          "composition": "betu-ula-tuli",
+          "sens_litteral": "Bête qui flotte sur l'eau",
+          "racines": [
+            "betu",
+            "ura"
+          ],
+          "domaine": "perception",
+          "note": "Perception initiale des navires étrangers comme créatures vivantes"
+        }
+      ]
+    },
+    "port": {
+      "traductions": [
+        {
+          "confluent": "vanukotoka",
+          "type": "composition",
+          "composition": "vanu-kotoka",
+          "sens_litteral": "Lieu des embarcations",
+          "racines": [
+            "vanu",
+            "toka"
+          ],
+          "domaine": "geographie_maritime",
+          "note": "Endroit où les bateaux s'arrêtent"
+        }
+      ],
+      "synonymes_fr": [
+        "havre",
+        "quai"
+      ]
+    },
+    "tempête marine": {
+      "traductions": [
+        {
+          "confluent": "meluzelu",
+          "type": "composition",
+          "composition": "melu-zelu",
+          "sens_litteral": "Ciel furieux de la mer",
+          "racines": [
+            "melu",
+            "zelu"
+          ],
+          "domaine": "danger_maritime",
+          "note": "Tempête en mer"
+        }
+      ],
+      "synonymes_fr": [
+        "ouragan marin"
+      ]
+    },
+    "profondeur": {
+      "traductions": [
+        {
+          "confluent": "vukumako",
+          "type": "composition",
+          "composition": "vuku-mako",
+          "sens_litteral": "Grand gouffre",
+          "racines": [
+            "vuku",
+            "mako"
+          ],
+          "domaine": "geographie_maritime",
+          "note": "Eau très profonde"
+        }
+      ],
+      "synonymes_fr": [
+        "abîme",
+        "fond"
+      ]
+    },
+    "houle": {
+      "traductions": [
+        {
+          "confluent": "meluloli",
+          "type": "composition",
+          "composition": "melu-loli",
+          "sens_litteral": "Ondulation lente de la mer",
+          "racines": [
+            "melu"
+          ],
+          "domaine": "phenomene_maritime",
+          "note": "Vagues longues et régulières"
+        }
+      ]
+    },
+    "écume": {
+      "traductions": [
+        {
+          "confluent": "ulamiluvi",
+          "type": "composition",
+          "composition": "ula-milu-vi",
+          "sens_litteral": "Blanc d'eau",
+          "racines": [
+            "ura",
+            "milu"
+          ],
+          "domaine": "phenomene_maritime",
+          "note": "Mousse blanche des vagues"
+        }
+      ],
+      "synonymes_fr": [
+        "mousse"
+      ]
+    }
+  }
+}

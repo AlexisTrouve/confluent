@@ -474,12 +474,14 @@ function analyzeContext(text, lexique, options = {}) {
   // - Aucune entrée trouvée OU
   // - Couverture < 20% (très peu de mots trouvés)
   const useFallback = expandedEntries.length === 0 || coveragePercent < 20;
-  const rootsFallback = useFallback ? extractRoots(lexique) : [];
+
+  // TOUJOURS extraire les racines (nécessaires pour composition de mots manquants)
+  const rootsFallback = extractRoots(lexique);
 
   // 6. Calculer tokens économisés (estimation)
   const totalLexiqueEntries = Object.keys(lexique.dictionnaire || {}).length;
   const tokensFullLexique = totalLexiqueEntries * 15; // ~15 tokens par entrée en moyenne
-  const tokensUsed = (useFallback ? rootsFallback.length : expandedEntries.length) * 15;
+  const tokensUsed = (useFallback ? rootsFallback.length : (expandedEntries.length + rootsFallback.length)) * 15;
   const tokensSaved = tokensFullLexique - tokensUsed;
   const savingsPercent = totalLexiqueEntries > 0
     ? Math.round((tokensSaved / tokensFullLexique) * 100)
@@ -488,7 +490,7 @@ function analyzeContext(text, lexique, options = {}) {
   return {
     // Données pour le prompt
     entries: useFallback ? [] : expandedEntries,
-    rootsFallback: useFallback ? rootsFallback : [],
+    rootsFallback: rootsFallback,  // TOUJOURS inclure les racines
     useFallback,
 
     // Métadonnées pour Layer 2

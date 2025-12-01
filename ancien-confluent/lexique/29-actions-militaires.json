@@ -1,0 +1,540 @@
+{
+  "_comment": "Actions militaires et tactiques de combat",
+  "_mots_a_gerer": [],
+  "dictionnaire": {
+    "capturer": {
+      "traductions": [
+        {
+          "confluent": "konuki",
+          "type": "composition",
+          "composition": "kon-uki",
+          "sens_litteral": "Prendre et garder",
+          "racines": [
+            "konu"
+          ],
+          "domaine": "action_militaire",
+          "note": "Prendre prisonnier"
+        }
+      ],
+      "synonymes_fr": [
+        "capture",
+        "captif",
+        "prisonnier"
+      ]
+    },
+    "menacer": {
+      "traductions": [
+        {
+          "confluent": "zanasili",
+          "type": "composition",
+          "composition": "zana-sili",
+          "sens_litteral": "Montrer la chasse",
+          "racines": [
+            "zana",
+            "sili"
+          ],
+          "domaine": "action_militaire",
+          "note": "Action d'intimidation"
+        }
+      ],
+      "synonymes_fr": [
+        "menace",
+        "intimidation",
+        "intimider"
+      ]
+    },
+    "soumettre": {
+      "traductions": [
+        {
+          "confluent": "konumaki",
+          "type": "composition",
+          "composition": "kon-u-maki",
+          "sens_litteral": "Forcer à garder sous contrôle",
+          "racines": [
+            "konu"
+          ],
+          "domaine": "action_militaire",
+          "note": "Forcer la reddition"
+        }
+      ],
+      "synonymes_fr": [
+        "soumission",
+        "dominer"
+      ]
+    },
+    "paniquer": {
+      "traductions": [
+        {
+          "confluent": "kolivolu",
+          "type": "composition",
+          "composition": "koli-volu",
+          "sens_litteral": "Cœur qui fuit",
+          "racines": [
+            "kori"
+          ],
+          "domaine": "emotion_combat",
+          "note": "Peur panique"
+        }
+      ],
+      "synonymes_fr": [
+        "panique",
+        "affolement",
+        "s'affoler"
+      ]
+    },
+    "résister": {
+      "traductions": [
+        {
+          "confluent": "konuveli",
+          "type": "composition",
+          "composition": "kon-u-veli",
+          "sens_litteral": "Garder vraiment/tenir bon",
+          "racines": [
+            "konu",
+            "veli"
+          ],
+          "domaine": "action_militaire",
+          "note": "Opposition, défense"
+        }
+      ],
+      "synonymes_fr": [
+        "résistance",
+        "tenir bon",
+        "s'opposer"
+      ]
+    },
+    "rouer de coups": {
+      "traductions": [
+        {
+          "confluent": "kopusuvi",
+          "type": "composition",
+          "composition": "kopu-su-vi",
+          "sens_litteral": "Frapper plusieurs fois",
+          "racines": [
+            "kopu"
+          ],
+          "domaine": "violence",
+          "note": "Violence physique répétée"
+        }
+      ],
+      "synonymes_fr": [
+        "battre",
+        "frapper violemment"
+      ]
+    },
+    "mâter": {
+      "traductions": [
+        {
+          "confluent": "konupaka",
+          "type": "composition",
+          "composition": "kon-u-paka",
+          "sens_litteral": "Garder par le mal",
+          "racines": [
+            "konu",
+            "paka"
+          ],
+          "domaine": "action_militaire",
+          "note": "Soumettre par la force brutale"
+        }
+      ],
+      "synonymes_fr": [
+        "réprimer",
+        "briser"
+      ]
+    },
+    "forcer à rester": {
+      "traductions": [
+        {
+          "confluent": "tulimaki",
+          "type": "composition",
+          "composition": "tuli-maki",
+          "sens_litteral": "Faire rester/être",
+          "racines": [
+            "tuli"
+          ],
+          "domaine": "action_militaire",
+          "note": "Contrainte physique"
+        }
+      ],
+      "synonymes_fr": [
+        "contraindre",
+        "retenir"
+      ]
+    },
+    "courir après": {
+      "traductions": [
+        {
+          "confluent": "pekikazo",
+          "type": "composition",
+          "composition": "peki-kazo",
+          "sens_litteral": "Pieds rapides vers",
+          "racines": [
+            "peki",
+            "kazo"
+          ],
+          "domaine": "action_militaire",
+          "note": "Poursuite"
+        }
+      ],
+      "synonymes_fr": [
+        "poursuivre",
+        "poursuite",
+        "chasser"
+      ]
+    },
+    "se faire passer pour": {
+      "traductions": [
+        {
+          "confluent": "mukavi",
+          "type": "composition",
+          "composition": "muka-vi",
+          "sens_litteral": "Prendre le visage de",
+          "racines": [
+            "muka"
+          ],
+          "domaine": "action_militaire",
+          "note": "Déguisement/subterfuge"
+        }
+      ],
+      "synonymes_fr": [
+        "imiter",
+        "se déguiser",
+        "feindre"
+      ]
+    },
+    "abordage": {
+      "traductions": [
+        {
+          "confluent": "vanuzanaki",
+          "type": "composition",
+          "composition": "vanu-zana-ki",
+          "sens_litteral": "Attaque de l'embarcation",
+          "racines": [
+            "vanu",
+            "zana"
+          ],
+          "domaine": "combat_maritime",
+          "note": "Attaque d'un navire"
+        }
+      ],
+      "synonymes_fr": [
+        "aborder (attaque)"
+      ]
+    },
+    "observation": {
+      "traductions": [
+        {
+          "confluent": "silikonu",
+          "type": "composition",
+          "composition": "sili-konu",
+          "sens_litteral": "Regard gardé/vigilant",
+          "racines": [
+            "sili",
+            "konu"
+          ],
+          "domaine": "tactique_militaire",
+          "note": "Surveillance des ennemis"
+        }
+      ],
+      "synonymes_fr": [
+        "observer",
+        "surveiller",
+        "surveillance"
+      ]
+    },
+    "interrogation": {
+      "traductions": [
+        {
+          "confluent": "vokikonuki",
+          "type": "composition",
+          "composition": "voki-kon-uki",
+          "sens_litteral": "Paroles pour prendre",
+          "racines": [
+            "voki",
+            "konu"
+          ],
+          "domaine": "action_militaire",
+          "note": "Questionnement de captifs"
+        }
+      ],
+      "synonymes_fr": [
+        "interroger",
+        "questionner"
+      ]
+    },
+    "embuscade": {
+      "traductions": [
+        {
+          "confluent": "konusili",
+          "type": "composition",
+          "composition": "konu-sili",
+          "sens_litteral": "Garde cachée qui observe",
+          "racines": [
+            "konu",
+            "sili"
+          ],
+          "domaine": "tactique_militaire",
+          "note": "Tactique de surprise"
+        }
+      ],
+      "synonymes_fr": [
+        "guet-apens",
+        "piège"
+      ]
+    },
+    "surnombre": {
+      "traductions": [
+        {
+          "confluent": "ikomako",
+          "type": "composition",
+          "composition": "iko-mako",
+          "sens_litteral": "Nombre grand/beaucoup",
+          "racines": [
+            "iko",
+            "mako"
+          ],
+          "domaine": "tactique_militaire",
+          "note": "Supériorité numérique"
+        }
+      ],
+      "synonymes_fr": [
+        "supériorité numérique"
+      ]
+    },
+    "arracher": {
+      "traductions": [
+        {
+          "confluent": "kanuvoli",
+          "type": "composition",
+          "composition": "kanu-voli",
+          "sens_litteral": "Prendre avec la main en arrachant",
+          "racines": [
+            "kanu"
+          ],
+          "domaine": "action_violente",
+          "note": "Enlever de force"
+        }
+      ],
+      "synonymes_fr": [
+        "enlever de force",
+        "déchirer"
+      ]
+    },
+    "vulnérable": {
+      "traductions": [
+        {
+          "confluent": "konupisu",
+          "type": "composition",
+          "composition": "kon-u-pisu",
+          "sens_litteral": "Petite garde/protection",
+          "racines": [
+            "konu",
+            "pisu"
+          ],
+          "domaine": "etat_militaire",
+          "note": "État de faiblesse, non protégé"
+        }
+      ],
+      "synonymes_fr": [
+        "faible",
+        "exposé"
+      ]
+    },
+    "audace": {
+      "traductions": [
+        {
+          "confluent": "kolaska",
+          "type": "composition",
+          "composition": "kol-aska",
+          "sens_litteral": "Cœur libre",
+          "racines": [
+            "kori",
+            "aska"
+          ],
+          "domaine": "qualite_guerriere",
+          "note": "Qualité de courage"
+        }
+      ],
+      "synonymes_fr": [
+        "audacieux",
+        "courage",
+        "brave"
+      ]
+    },
+    "orgueilleux": {
+      "traductions": [
+        {
+          "confluent": "kolimakovi",
+          "type": "composition",
+          "composition": "koli-mako-vi",
+          "sens_litteral": "De très grand cœur",
+          "racines": [
+            "kori",
+            "mako"
+          ],
+          "domaine": "defaut_caractere",
+          "note": "Défaut caractériel - arrogance"
+        }
+      ],
+      "synonymes_fr": [
+        "arrogant",
+        "orgueil",
+        "fier"
+      ]
+    },
+    "patient": {
+      "traductions": [
+        {
+          "confluent": "teluveli",
+          "type": "composition",
+          "composition": "telu-veli",
+          "sens_litteral": "Vraiment lent/calme",
+          "racines": [
+            "telu",
+            "veli"
+          ],
+          "domaine": "qualite",
+          "note": "Vertu - capacité d'attendre"
+        }
+      ],
+      "synonymes_fr": [
+        "patience",
+        "calme"
+      ]
+    },
+    "initiative": {
+      "traductions": [
+        {
+          "confluent": "ikikoli",
+          "type": "composition",
+          "composition": "iki-koli",
+          "sens_litteral": "Premier cœur/mouvement",
+          "racines": [
+            "iko",
+            "kori"
+          ],
+          "domaine": "qualite_tactique",
+          "note": "Prise de décision autonome"
+        }
+      ],
+      "synonymes_fr": [
+        "prendre l'initiative"
+      ]
+    },
+    "imprévu": {
+      "traductions": [
+        {
+          "confluent": "silinovi",
+          "type": "composition",
+          "composition": "sili-no-vi",
+          "sens_litteral": "Non vu avant",
+          "racines": [
+            "sili"
+          ],
+          "domaine": "evenement",
+          "note": "Événement inattendu"
+        }
+      ],
+      "synonymes_fr": [
+        "inattendu",
+        "surprise"
+      ]
+    },
+    "désordre": {
+      "traductions": [
+        {
+          "confluent": "kotavoli",
+          "type": "composition",
+          "composition": "kota-voli",
+          "sens_litteral": "Hors de la confluence/ordre",
+          "racines": [
+            "kota"
+          ],
+          "domaine": "etat",
+          "note": "Chaos, absence d'organisation"
+        }
+      ],
+      "synonymes_fr": [
+        "chaos",
+        "confusion"
+      ]
+    },
+    "choc": {
+      "traductions": [
+        {
+          "confluent": "kolikopuvi",
+          "type": "composition",
+          "composition": "koli-kopu-vi",
+          "sens_litteral": "Coup au cœur",
+          "racines": [
+            "kori",
+            "kopu"
+          ],
+          "domaine": "emotion",
+          "note": "Traumatisme émotionnel violent"
+        }
+      ],
+      "synonymes_fr": [
+        "traumatisme",
+        "stupeur"
+      ]
+    },
+    "émeute": {
+      "traductions": [
+        {
+          "confluent": "kotavolisu",
+          "type": "composition",
+          "composition": "kota-voli-su",
+          "sens_litteral": "Multiples hors de l'ordre",
+          "racines": [
+            "kota"
+          ],
+          "domaine": "social_violent",
+          "note": "Rébellion collective"
+        }
+      ],
+      "synonymes_fr": [
+        "révolte",
+        "insurrection"
+      ]
+    },
+    "garrison": {
+      "traductions": [
+        {
+          "confluent": "konutulitoka",
+          "type": "composition",
+          "composition": "kon-u-tuli-toka",
+          "sens_litteral": "Lieu de garde permanente",
+          "racines": [
+            "konu",
+            "tuli",
+            "toka"
+          ],
+          "domaine": "structure_militaire",
+          "note": "Groupe de défense permanent"
+        }
+      ],
+      "synonymes_fr": [
+        "garnison"
+      ]
+    },
+    "réserves": {
+      "traductions": [
+        {
+          "confluent": "zanakovu",
+          "type": "composition",
+          "composition": "zana-kovu",
+          "sens_litteral": "Réservoir pour la chasse/guerre",
+          "racines": [
+            "zana"
+          ],
+          "domaine": "logistique_militaire",
+          "note": "Stocks d'urgence (armes, nourriture)"
+        }
+      ],
+      "synonymes_fr": [
+        "stocks militaires"
+      ]
+    }
+  }
+}

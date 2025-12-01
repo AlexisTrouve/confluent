@@ -186,9 +186,9 @@
     "yeux de l'aurore": {
       "traductions": [
         {
-          "confluent": "siluora",
+          "confluent": "siluola",
           "type": "composition",
-          "composition": "sil-u-ora",
+          "composition": "sil-u-ola",
           "sens_litteral": "Regard de l'aurore",
           "racines": [
             "sili",
@@ -197,6 +197,365 @@
           "domaine": "corps_sacre",
           "note": "Yeux des Ciels-clairs aux couleurs de l'aurore"
         }
+      ]
+    },
+    "tête": {
+      "traductions": [
+        {
+          "confluent": "muto",
+          "type": "racine",
+          "forme_liee": "mut",
+          "domaine": "corps",
+          "note": "Sommet du corps, partie supérieure"
+        }
+      ],
+      "synonymes_fr": [
+        "crâne",
+        "chef"
+      ]
+    },
+    "bras": {
+      "traductions": [
+        {
+          "confluent": "kanuvi",
+          "type": "composition",
+          "composition": "kan-u-vi",
+          "sens_litteral": "Membre de la main",
+          "racines": [
+            "kanu"
+          ],
+          "domaine": "corps",
+          "note": "Membre supérieur jusqu'à la main"
+        }
+      ]
+    },
+    "jambe": {
+      "traductions": [
+        {
+          "confluent": "pekuvi",
+          "type": "composition",
+          "composition": "pek-u-vi",
+          "sens_litteral": "Membre du pied",
+          "racines": [
+            "peki"
+          ],
+          "domaine": "corps",
+          "note": "Membre inférieur jusqu'au pied"
+        }
+      ],
+      "synonymes_fr": [
+        "jambes"
+      ]
+    },
+    "doigt": {
+      "traductions": [
+        {
+          "confluent": "kanupisu",
+          "type": "composition",
+          "composition": "kan-u-pisu",
+          "sens_litteral": "Petit de la main",
+          "racines": [
+            "kanu",
+            "pisu"
+          ],
+          "domaine": "corps",
+          "note": "Extrémité de la main"
+        }
+      ],
+      "synonymes_fr": [
+        "doigts"
+      ]
+    },
+    "orteil": {
+      "traductions": [
+        {
+          "confluent": "pekupisu",
+          "type": "composition",
+          "composition": "pek-u-pisu",
+          "sens_litteral": "Petit du pied",
+          "racines": [
+            "peki",
+            "pisu"
+          ],
+          "domaine": "corps",
+          "note": "Extrémité du pied"
+        }
+      ],
+      "synonymes_fr": [
+        "orteils"
+      ]
+    },
+    "bouche": {
+      "traductions": [
+        {
+          "confluent": "vokumu",
+          "type": "composition",
+          "composition": "vok-umu",
+          "sens_litteral": "Ouverture de la voix",
+          "racines": [
+            "voki"
+          ],
+          "domaine": "corps_sens",
+          "note": "Organe de la parole et de l'alimentation"
+        }
+      ]
+    },
+    "langue": {
+      "traductions": [
+        {
+          "confluent": "vokivi",
+          "type": "composition",
+          "composition": "voki-vi",
+          "sens_litteral": "Organe de la voix",
+          "racines": [
+            "voki"
+          ],
+          "domaine": "corps",
+          "note": "Organe dans la bouche (distinct de langue=langage)"
+        }
+      ],
+      "synonymes_fr": [
+        "langue organe"
+      ]
+    },
+    "dent": {
+      "traductions": [
+        {
+          "confluent": "bitu",
+          "type": "racine",
+          "forme_liee": "bit",
+          "domaine": "corps",
+          "note": "Organe pour mordre et mâcher"
+        }
+      ],
+      "synonymes_fr": [
+        "dents"
+      ]
+    },
+    "nez": {
+      "traductions": [
+        {
+          "confluent": "venu",
+          "type": "composition",
+          "composition": "ven-u",
+          "sens_litteral": "Organe de l'air",
+          "racines": [
+            "vena"
+          ],
+          "domaine": "corps_sens",
+          "note": "Organe de l'odorat et de la respiration"
+        }
+      ]
+    },
+    "front": {
+      "traductions": [
+        {
+          "confluent": "mukamako",
+          "type": "composition",
+          "composition": "muka-mako",
+          "sens_litteral": "Haut du visage",
+          "racines": [
+            "muka",
+            "mako"
+          ],
+          "domaine": "corps",
+          "note": "Partie supérieure du visage"
+        }
+      ]
+    },
+    "joue": {
+      "traductions": [
+        {
+          "confluent": "mukavi",
+          "type": "composition",
+          "composition": "muka-vi",
+          "sens_litteral": "Partie du visage",
+          "racines": [
+            "muka"
+          ],
+          "domaine": "corps",
+          "note": "Côté du visage"
+        }
+      ],
+      "synonymes_fr": [
+        "joues"
+      ]
+    },
+    "menton": {
+      "traductions": [
+        {
+          "confluent": "mukavuku",
+          "type": "composition",
+          "composition": "muka-vuku",
+          "sens_litteral": "Bas du visage",
+          "racines": [
+            "muka",
+            "vuku"
+          ],
+          "domaine": "corps",
+          "note": "Partie inférieure du visage"
+        }
+      ]
+    },
+    "cou": {
+      "traductions": [
+        {
+          "confluent": "mutuvasi",
+          "type": "composition",
+          "composition": "mutu-vasi",
+          "sens_litteral": "Pont de la tête",
+          "racines": [
+            "muto",
+            "vasi"
+          ],
+          "domaine": "corps",
+          "note": "Lien entre tête et corps"
+        }
+      ]
+    },
+    "épaule": {
+      "traductions": [
+        {
+          "confluent": "kanuvasi",
+          "type": "composition",
+          "composition": "kan-u-vasi",
+          "sens_litteral": "Pont du bras",
+          "racines": [
+            "kanu",
+            "vasi"
+          ],
+          "domaine": "corps",
+          "note": "Jonction bras-corps"
+        }
+      ],
+      "synonymes_fr": [
+        "épaules"
+      ]
+    },
+    "dos": {
+      "traductions": [
+        {
+          "confluent": "sanuvoli",
+          "type": "composition",
+          "composition": "san-u-voli",
+          "sens_litteral": "Arrière du corps",
+          "racines": [
+            "sanu"
+          ],
+          "domaine": "corps",
+          "note": "Face postérieure"
+        }
+      ]
+    },
+    "ventre": {
+      "traductions": [
+        {
+          "confluent": "nutusanu",
+          "type": "composition",
+          "composition": "nutu-sanu",
+          "sens_litteral": "Corps de nourriture",
+          "racines": [
+            "nutu",
+            "sanu"
+          ],
+          "domaine": "corps",
+          "note": "Abdomen, partie centrale"
+        }
+      ],
+      "synonymes_fr": [
+        "abdomen"
+      ]
+    },
+    "estomac": {
+      "traductions": [
+        {
+          "confluent": "nutukovu",
+          "type": "composition",
+          "composition": "nutu-kovu",
+          "sens_litteral": "Réservoir de nourriture",
+          "racines": [
+            "nutu"
+          ],
+          "domaine": "corps",
+          "note": "Organe digestif"
+        }
+      ]
+    },
+    "foie": {
+      "traductions": [
+        {
+          "confluent": "sanukoli",
+          "type": "composition",
+          "composition": "san-u-koli",
+          "sens_litteral": "Cœur du corps",
+          "racines": [
+            "sanu",
+            "kori"
+          ],
+          "domaine": "corps",
+          "note": "Organe vital interne"
+        }
+      ]
+    },
+    "os": {
+      "traductions": [
+        {
+          "confluent": "talu",
+          "type": "racine",
+          "forme_liee": "tal",
+          "domaine": "corps",
+          "note": "Structure dure interne du corps"
+        }
+      ]
+    },
+    "squelette": {
+      "traductions": [
+        {
+          "confluent": "talusanu",
+          "type": "composition",
+          "composition": "tal-u-sanu",
+          "sens_litteral": "Os du corps",
+          "racines": [
+            "talu",
+            "sanu"
+          ],
+          "domaine": "corps",
+          "note": "Ensemble des os"
+        }
+      ]
+    },
+    "crâne": {
+      "traductions": [
+        {
+          "confluent": "mututalu",
+          "type": "composition",
+          "composition": "mutu-talu",
+          "sens_litteral": "Os de la tête",
+          "racines": [
+            "muto",
+            "talu"
+          ],
+          "domaine": "corps",
+          "note": "Os de la tête"
+        }
+      ]
+    },
+    "côte": {
+      "traductions": [
+        {
+          "confluent": "taluvi",
+          "type": "composition",
+          "composition": "tal-u-vi",
+          "sens_litteral": "Os du côté",
+          "racines": [
+            "talu"
+          ],
+          "domaine": "corps",
+          "note": "Os du thorax"
+        }
+      ],
+      "synonymes_fr": [
+        "côtes"
       ]
     }
   }

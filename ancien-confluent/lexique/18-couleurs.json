@@ -16,9 +16,9 @@
     "orange": {
       "traductions": [
         {
-          "confluent": "sukiusora",
+          "confluent": "sukiusola",
           "type": "composition",
-          "composition": "suk-i-sora",
+          "composition": "suk-i-sola",
           "sens_litteral": "Feu de lumière",
           "racines": [
             "suki",
@@ -31,12 +31,12 @@
     "violet": {
       "traductions": [
         {
-          "confluent": "zeruurasu",
+          "confluent": "zeluulasu",
           "type": "composition",
-          "composition": "zer-u-pasu",
+          "composition": "zel-u-pasu",
           "sens_litteral": "Ciel de sang",
           "racines": [
-            "zeru",
+            "zelu",
             "pasu"
           ],
           "domaine": "couleur"
@@ -49,7 +49,7 @@
     "rose": {
       "traductions": [
         {
-          "confluent": "rasuumilu",
+          "confluent": "lasuumilu",
           "type": "composition",
           "composition": "pas-u-milu",
           "sens_litteral": "Rouge de lait",
@@ -113,9 +113,9 @@
     "bleu": {
       "traductions": [
         {
-          "confluent": "zeru",
+          "confluent": "zelu",
           "type": "racine",
-          "forme_liee": "zer",
+          "forme_liee": "zel",
           "domaine": "couleur",
           "note": "Couleur du ciel"
         }
@@ -124,9 +124,9 @@
     "azur": {
       "traductions": [
         {
-          "confluent": "zeru",
+          "confluent": "zelu",
           "type": "racine",
-          "forme_liee": "zer",
+          "forme_liee": "zel",
           "domaine": "couleur"
         }
       ]
@@ -134,12 +134,12 @@
     "bleu d'eau": {
       "traductions": [
         {
-          "confluent": "zeruuura",
+          "confluent": "zeluuula",
           "type": "composition",
-          "composition": "zer-u-ura",
+          "composition": "zel-u-ula",
           "sens_litteral": "Ciel de l'eau",
           "racines": [
-            "zeru",
+            "zelu",
             "ura"
           ],
           "domaine": "couleur"
@@ -149,9 +149,9 @@
     "ocre": {
       "traductions": [
         {
-          "confluent": "tokausora",
+          "confluent": "tokausola",
           "type": "composition",
-          "composition": "tok-a-sora",
+          "composition": "tok-a-sola",
           "sens_litteral": "Terre avec soleil",
           "racines": [
             "toka",
@@ -182,9 +182,9 @@
     "yeux de l'aurore": {
       "traductions": [
         {
-          "confluent": "siluora",
+          "confluent": "siluola",
           "type": "composition",
-          "composition": "sil-u-ora",
+          "composition": "sil-u-ola",
           "sens_litteral": "Regard de l'aurore",
           "racines": [
             "sili",
@@ -198,9 +198,9 @@
     "eclat": {
       "traductions": [
         {
-          "confluent": "soraumako",
+          "confluent": "solaumako",
           "type": "composition",
-          "composition": "sor-a-mako",
+          "composition": "sol-a-mako",
           "sens_litteral": "Lumière avec grandeur",
           "racines": [
             "sora",
@@ -218,9 +218,9 @@
     "translucide": {
       "traductions": [
         {
-          "confluent": "sorauura",
+          "confluent": "solauula",
           "type": "composition",
-          "composition": "sor-a-ura",
+          "composition": "sol-a-ula",
           "sens_litteral": "Lumière avec eau",
           "racines": [
             "sora",
@@ -291,13 +291,13 @@
     "bas-relief": {
       "traductions": [
         {
-          "confluent": "kovaukari",
+          "confluent": "kovaukali",
           "type": "composition",
-          "composition": "kov-a-kari",
+          "composition": "kov-a-kali",
           "sens_litteral": "Gravure avec pierre",
           "racines": [
             "kova",
-            "kari"
+            "kali"
           ],
           "domaine": "art"
         }
@@ -306,7 +306,7 @@
     "motif": {
       "traductions": [
         {
-          "confluent": "kovauriku",
+          "confluent": "kovauliku",
           "type": "composition",
           "composition": "kov-a-siku",
           "sens_litteral": "Gravure avec cercle",

@@ -5,9 +5,9 @@
     "joie": {
       "traductions": [
         {
-          "confluent": "koriatosa",
+          "confluent": "koliatosa",
           "type": "composition",
-          "composition": "kor-i-a-tosa",
+          "composition": "kol-i-a-tosa",
           "sens_litteral": "Cœur avec bien",
           "racines": [
             "kori",
@@ -25,9 +25,9 @@
     "espoir": {
       "traductions": [
         {
-          "confluent": "koriuora",
+          "confluent": "koliuola",
           "type": "composition",
-          "composition": "kor-i-ora",
+          "composition": "kol-i-ola",
           "sens_litteral": "Cœur de l'aurore",
           "racines": [
             "kori",
@@ -40,9 +40,9 @@
     "fierte": {
       "traductions": [
         {
-          "confluent": "koriumako",
+          "confluent": "koliumako",
           "type": "composition",
-          "composition": "kor-i-mako",
+          "composition": "kol-i-mako",
           "sens_litteral": "Cœur de grandeur",
           "racines": [
             "kori",
@@ -55,9 +55,9 @@
     "amour": {
       "traductions": [
         {
-          "confluent": "koriukota",
+          "confluent": "koliukota",
           "type": "composition",
-          "composition": "kor-i-kota",
+          "composition": "kol-i-kota",
           "sens_litteral": "Cœur d'union",
           "racines": [
             "kori",
@@ -70,9 +70,9 @@
     "curiosite": {
       "traductions": [
         {
-          "confluent": "koriusili",
+          "confluent": "koliusili",
           "type": "composition",
-          "composition": "kor-i-sili",
+          "composition": "kol-i-sili",
           "sens_litteral": "Cœur du regard",
           "racines": [
             "kori",
@@ -85,9 +85,9 @@
     "soulagement": {
       "traductions": [
         {
-          "confluent": "koriatosa",
+          "confluent": "koliatosa",
           "type": "composition",
-          "composition": "kor-i-tosa",
+          "composition": "kol-i-tosa",
           "sens_litteral": "Cœur avec bien",
           "racines": [
             "kori",
@@ -101,13 +101,13 @@
     "confiance": {
       "traductions": [
         {
-          "confluent": "koriuveri",
+          "confluent": "koliuveli",
           "type": "composition",
-          "composition": "kor-i-veri",
+          "composition": "kol-i-veli",
           "sens_litteral": "Cœur de vérité",
           "racines": [
             "kori",
-            "veri"
+            "veli"
           ],
           "domaine": "emotion_positive"
         }
@@ -116,9 +116,9 @@
     "gratitude": {
       "traductions": [
         {
-          "confluent": "koriukitan",
+          "confluent": "koliukita",
           "type": "composition",
-          "composition": "kor-i-kitan",
+          "composition": "kol-i-kitan",
           "sens_litteral": "Cœur du don",
           "racines": [
             "kori",
@@ -131,9 +131,9 @@
     "serenite": {
       "traductions": [
         {
-          "confluent": "koriuura",
+          "confluent": "koliuula",
           "type": "composition",
-          "composition": "kor-i-ura",
+          "composition": "kol-i-ula",
           "sens_litteral": "Cœur de l'eau",
           "racines": [
             "kori",
@@ -147,9 +147,9 @@
     "peur": {
       "traductions": [
         {
-          "confluent": "korioaoki",
+          "confluent": "kolioaoki",
           "type": "composition",
-          "composition": "kor-oa-oki",
+          "composition": "kol-oa-oki",
           "sens_litteral": "Cœur face au danger",
           "racines": [
             "kori",
@@ -162,9 +162,9 @@
     "colere": {
       "traductions": [
         {
-          "confluent": "koriusuki",
+          "confluent": "koliusuki",
           "type": "composition",
-          "composition": "kor-i-suki",
+          "composition": "kol-i-suki",
           "sens_litteral": "Cœur de feu",
           "racines": [
             "kori",
@@ -177,9 +177,9 @@
     "tristesse": {
       "traductions": [
         {
-          "confluent": "korioaosi",
+          "confluent": "kolioaosi",
           "type": "composition",
-          "composition": "kor-oa-osi",
+          "composition": "kol-oa-osi",
           "sens_litteral": "Cœur vers la mort",
           "racines": [
             "kori",
@@ -192,9 +192,9 @@
     "desespoir": {
       "traductions": [
         {
-          "confluent": "korizoora",
+          "confluent": "kolizoola",
           "type": "composition",
-          "composition": "kor-i-zo-ora",
+          "composition": "kol-i-zo-ola",
           "sens_litteral": "Cœur sans aurore",
           "racines": [
             "kori",
@@ -208,9 +208,9 @@
     "honte": {
       "traductions": [
         {
-          "confluent": "korioakumu",
+          "confluent": "kolioakumu",
           "type": "composition",
-          "composition": "kor-oa-kumu",
+          "composition": "kol-oa-kumu",
           "sens_litteral": "Cœur vers l'ombre",
           "racines": [
             "kori",
@@ -223,9 +223,9 @@
     "haine": {
       "traductions": [
         {
-          "confluent": "koriuzoka",
+          "confluent": "koliuzoka",
           "type": "composition",
-          "composition": "kor-i-zoka",
+          "composition": "kol-i-zoka",
           "sens_litteral": "Cœur de l'ennemi",
           "racines": [
             "kori",
@@ -238,9 +238,9 @@
     "angoisse": {
       "traductions": [
         {
-          "confluent": "korioavuku",
+          "confluent": "kolioavuku",
           "type": "composition",
-          "composition": "kor-oa-vuku",
+          "composition": "kol-oa-vuku",
           "sens_litteral": "Cœur vers le gouffre",
           "racines": [
             "kori",
@@ -256,14 +256,14 @@
     "mefiance": {
       "traductions": [
         {
-          "confluent": "korizoveri",
+          "confluent": "kolizoveli",
           "type": "composition",
-          "composition": "kor-i-zo-veri",
+          "composition": "kol-i-zo-veli",
           "sens_litteral": "Cœur sans vérité",
           "racines": [
             "kori",
             "zo",
-            "veri"
+            "veli"
           ],
           "domaine": "emotion_negative"
         }
@@ -272,9 +272,9 @@
     "regret": {
       "traductions": [
         {
-          "confluent": "korioaaita",
+          "confluent": "kolioaaita",
           "type": "composition",
-          "composition": "kor-oa-aita",
+          "composition": "kol-oa-aita",
           "sens_litteral": "Cœur vers le passé",
           "racines": [
             "kori",
@@ -287,13 +287,13 @@
     "jalousie": {
       "traductions": [
         {
-          "confluent": "korioakiru",
+          "confluent": "kolioakilu",
           "type": "composition",
-          "composition": "kor-oa-kiru",
+          "composition": "kol-oa-kilu",
           "sens_litteral": "Cœur contre l'échange",
           "racines": [
             "kori",
-            "kiru"
+            "kilu"
           ],
           "domaine": "emotion_negative"
         }

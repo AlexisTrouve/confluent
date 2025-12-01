@@ -5,12 +5,12 @@
     "confluence de rivieres": {
       "traductions": [
         {
-          "confluent": "nuraakota",
+          "confluent": "nulaakota",
           "type": "composition",
-          "composition": "nur-aa-kota",
+          "composition": "nul-aa-kota",
           "sens_litteral": "Rivière mêlée à union",
           "racines": [
-            "nura",
+            "nula",
             "kota"
           ],
           "domaine": "geographie"
@@ -20,13 +20,13 @@
     "riviere azur": {
       "traductions": [
         {
-          "confluent": "nuruzeru",
+          "confluent": "nuluzelu",
           "type": "composition",
-          "composition": "nur-u-zeru",
+          "composition": "nul-u-zelu",
           "sens_litteral": "Rivière du ciel",
           "racines": [
-            "nura",
-            "zeru"
+            "nula",
+            "zelu"
           ],
           "domaine": "geographie"
         }
@@ -35,12 +35,12 @@
     "riviere verte": {
       "traductions": [
         {
-          "confluent": "nuruviku",
+          "confluent": "nuluviku",
           "type": "composition",
-          "composition": "nur-u-viku",
+          "composition": "nul-u-viku",
           "sens_litteral": "Rivière de la forêt",
           "racines": [
-            "nura",
+            "nula",
             "viku"
           ],
           "domaine": "geographie"
@@ -50,13 +50,13 @@
     "promontoire": {
       "traductions": [
         {
-          "confluent": "tasumeru",
+          "confluent": "tasumelu",
           "type": "composition",
-          "composition": "tas-u-meru",
+          "composition": "tas-u-melu",
           "sens_litteral": "Montagne de la mer",
           "racines": [
             "tasa",
-            "meru"
+            "melu"
           ],
           "domaine": "geographie"
         }
@@ -90,12 +90,52 @@
         }
       ]
     },
+    "est": {
+      "traductions": [
+        {
+          "confluent": "solaola",
+          "type": "composition",
+          "composition": "sol-a-ola",
+          "sens_litteral": "Soleil de l'aurore",
+          "racines": [
+            "sora",
+            "ora"
+          ],
+          "domaine": "direction",
+          "note": "Est - direction du soleil levant/aurore"
+        }
+      ],
+      "synonymes_fr": [
+        "levant",
+        "orient"
+      ]
+    },
+    "ouest": {
+      "traductions": [
+        {
+          "confluent": "solaluna",
+          "type": "composition",
+          "composition": "sol-a-luna",
+          "sens_litteral": "Soleil vers la nuit",
+          "racines": [
+            "sora",
+            "luna"
+          ],
+          "domaine": "direction",
+          "note": "Ouest - direction où le soleil va vers la nuit"
+        }
+      ],
+      "synonymes_fr": [
+        "couchant",
+        "occident"
+      ]
+    },
     "mer": {
       "traductions": [
         {
-          "confluent": "meru",
+          "confluent": "melu",
           "type": "racine",
-          "forme_liee": "mer",
+          "forme_liee": "mel",
           "domaine": "geographie"
         }
       ]
@@ -103,13 +143,13 @@
     "cote": {
       "traductions": [
         {
-          "confluent": "tokumeru",
+          "confluent": "tokumelu",
           "type": "composition",
-          "composition": "tok-u-meru",
+          "composition": "tok-u-melu",
           "sens_litteral": "Terre de la mer",
           "racines": [
             "toka",
-            "meru"
+            "melu"
           ],
           "domaine": "geographie"
         }
@@ -118,12 +158,12 @@
     "horizon": {
       "traductions": [
         {
-          "confluent": "zerutoka",
+          "confluent": "zelutoka",
           "type": "composition",
-          "composition": "zer-u-toka",
+          "composition": "zel-u-toka",
           "sens_litteral": "Ciel de la terre",
           "racines": [
-            "zeru",
+            "zelu",
             "toka"
           ],
           "domaine": "geographie"
@@ -148,9 +188,9 @@
     "source": {
       "traductions": [
         {
-          "confluent": "enuura",
+          "confluent": "enuula",
           "type": "composition",
-          "composition": "en-u-ura",
+          "composition": "en-u-ula",
           "sens_litteral": "Origine de l'eau",
           "racines": [
             "ena",
@@ -163,9 +203,9 @@
     "cascade": {
       "traductions": [
         {
-          "confluent": "uraoavuku",
+          "confluent": "ulaoavuku",
           "type": "composition",
-          "composition": "ur-oa-vuku",
+          "composition": "ul-oa-vuku",
           "sens_litteral": "Eau vers le gouffre",
           "racines": [
             "ura",
@@ -178,12 +218,12 @@
     "eboulement": {
       "traductions": [
         {
-          "confluent": "kariovuku",
+          "confluent": "kaliovuku",
           "type": "composition",
-          "composition": "kar-oa-vuku",
+          "composition": "kal-oa-vuku",
           "sens_litteral": "Pierre vers le gouffre",
           "racines": [
-            "kari",
+            "kali",
             "vuku"
           ],
           "domaine": "danger_naturel"
@@ -193,9 +233,9 @@
     "inondation": {
       "traductions": [
         {
-          "confluent": "uraueki",
+          "confluent": "ulaueki",
           "type": "composition",
-          "composition": "ur-a-eki",
+          "composition": "ul-a-eki",
           "sens_litteral": "Eau avec totalité",
           "racines": [
             "ura",
@@ -208,13 +248,13 @@
     "crevasse": {
       "traductions": [
         {
-          "confluent": "vukukari",
+          "confluent": "vukukali",
           "type": "composition",
-          "composition": "vuk-u-kari",
+          "composition": "vuk-u-kali",
           "sens_litteral": "Gouffre dans la pierre",
           "racines": [
             "vuku",
-            "kari"
+            "kali"
           ],
           "domaine": "geographie"
         }
@@ -223,12 +263,12 @@
     "roche impenetrable": {
       "traductions": [
         {
-          "confluent": "kariuzoki",
+          "confluent": "kaliuzoki",
           "type": "composition",
-          "composition": "kar-i-zoki",
+          "composition": "kal-i-zoki",
           "sens_litteral": "Pierre de l'épreuve",
           "racines": [
-            "kari",
+            "kali",
             "oki"
           ],
           "domaine": "geographie"

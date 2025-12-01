@@ -65,13 +65,13 @@
     "honneur": {
       "traductions": [
         {
-          "confluent": "valuuveri",
+          "confluent": "valuuveli",
           "type": "composition",
-          "composition": "val-u-veri",
+          "composition": "val-u-veli",
           "sens_litteral": "Valeur de vérité",
           "racines": [
             "valu",
-            "veri"
+            "veli"
           ],
           "domaine": "concept_abstrait"
         }
@@ -80,12 +80,12 @@
     "justice": {
       "traductions": [
         {
-          "confluent": "veriukota",
+          "confluent": "veliukota",
           "type": "composition",
-          "composition": "ver-i-kota",
+          "composition": "vel-i-kota",
           "sens_litteral": "Vérité de l'union",
           "racines": [
-            "veri",
+            "veli",
             "kota"
           ],
           "domaine": "concept_abstrait"
@@ -95,9 +95,9 @@
     "verite": {
       "traductions": [
         {
-          "confluent": "veri",
+          "confluent": "veli",
           "type": "racine",
-          "forme_liee": "ver",
+          "forme_liee": "vel",
           "domaine": "concept_fondateur"
         }
       ]
@@ -347,7 +347,7 @@
     "serment de sang": {
       "traductions": [
         {
-          "confluent": "savuurasu",
+          "confluent": "savuulasu",
           "type": "composition",
           "composition": "sav-u-pasu",
           "sens_litteral": "Serment du sang",
@@ -397,13 +397,13 @@
     "epreuve de verite": {
       "traductions": [
         {
-          "confluent": "okiuveri",
+          "confluent": "okiuveli",
           "type": "composition",
-          "composition": "ok-i-veri",
+          "composition": "ok-i-veli",
           "sens_litteral": "Épreuve de vérité",
           "racines": [
             "oki",
-            "veri"
+            "veli"
           ],
           "domaine": "institution"
         }
@@ -553,13 +553,13 @@
     "prisonnier": {
       "traductions": [
         {
-          "confluent": "pasikitori",
+          "confluent": "pasikitoli",
           "type": "composition",
-          "composition": "pas-ik-i-tori",
+          "composition": "pas-ik-i-toli",
           "sens_litteral": "Personne capturée",
           "racines": [
             "pasik",
-            "tori"
+            "toli"
           ],
           "domaine": "conflit"
         }
@@ -568,11 +568,14 @@
     "civilisation": {
       "traductions": [
         {
-          "confluent": "uraikota",
+          "confluent": "ulaikota",
           "type": "composition",
-          "composition": "ura-i-kota",
+          "composition": "ula-i-kota",
           "sens_litteral": "Confluence-de-vie",
-          "racines": ["ura", "kota"],
+          "racines": [
+            "ura",
+            "kota"
+          ],
           "liaison": "i",
           "domaine": "concept_fondateur",
           "note": "Civilisation - l'union des gens qui vivent ensemble (ura=eau/vie + i=agentivité + kota=confluence/union)"
@@ -586,11 +589,14 @@
     "observation": {
       "traductions": [
         {
-          "confluent": "silimira",
+          "confluent": "silimila",
           "type": "composition",
-          "composition": "sili-mira",
+          "composition": "sili-mila",
           "sens_litteral": "Regard-observant",
-          "racines": ["sili", "mirak"],
+          "racines": [
+            "sili",
+            "milak"
+          ],
           "domaine": "concept_fondateur",
           "note": "Observation - acte de regarder avec attention (sili=regard + mirak=observer)"
         }
@@ -607,7 +613,10 @@
           "type": "composition",
           "composition": "aita-toka",
           "sens_litteral": "Lieux-des-ancêtres",
-          "racines": ["aita", "toka"],
+          "racines": [
+            "aita",
+            "toka"
+          ],
           "domaine": "concept_fondateur",
           "note": "Culture - les lieux/traditions des ancêtres transmis (aita=ancêtres + toka=lieux)"
         }
@@ -624,7 +633,10 @@
           "type": "composition",
           "composition": "seka-memu",
           "sens_litteral": "Savoir-en-mémoire",
-          "racines": ["seka", "memu"],
+          "racines": [
+            "seka",
+            "memu"
+          ],
           "domaine": "concept_fondateur",
           "note": "Connaissance - le savoir gardé en mémoire (seka=savoir + memu=mémoire)"
         }

@@ -1,0 +1,552 @@
+{
+  "_comment": "Concepts philosophiques et idées centrales à la civilisation",
+  "_mots_a_gerer": [],
+  "dictionnaire": {
+    "porter un regard libre": {
+      "traductions": [
+        {
+          "confluent": "kanusiliaska",
+          "type": "composition",
+          "composition": "kanu-sili-aska",
+          "sens_litteral": "Porter le regard libre",
+          "racines": [
+            "kanu",
+            "sili",
+            "aska"
+          ],
+          "domaine": "philosophie_centrale",
+          "note": "Concept central de la civilisation - pèlerinage obligatoire, identité culturelle"
+        }
+      ]
+    },
+    "promis à pareil destin": {
+      "traductions": [
+        {
+          "confluent": "savuosikota",
+          "type": "composition",
+          "composition": "sav-u-osi-kota",
+          "sens_litteral": "Serment de même mort",
+          "racines": [
+            "savu",
+            "osi",
+            "kota"
+          ],
+          "domaine": "philosophie_centrale",
+          "note": "Phrase existentielle clé : peur de disparaître comme les Premiers Ancêtres"
+        }
+      ]
+    },
+    "gardiens des passages": {
+      "traductions": [
+        {
+          "confluent": "konuvasiaita",
+          "type": "composition",
+          "composition": "kon-u-vasi-aita",
+          "sens_litteral": "Ancêtres gardiens des passages",
+          "racines": [
+            "konu",
+            "vasi",
+            "aita"
+          ],
+          "domaine": "spiritualite",
+          "note": "Âmes des pionniers morts qui ne peuvent atteindre le ciel"
+        }
+      ]
+    },
+    "multi-générationnel": {
+      "traductions": [
+        {
+          "confluent": "ekaitavi",
+          "type": "composition",
+          "composition": "eka-aita-vi",
+          "sens_litteral": "De tous les ancêtres",
+          "racines": [
+            "eka",
+            "aita"
+          ],
+          "domaine": "temps_philosophie",
+          "note": "Qui traverse plusieurs générations (crucial pour artefacts)"
+        }
+      ],
+      "synonymes_fr": [
+        "transgénérationnel"
+      ]
+    },
+    "relais": {
+      "traductions": [
+        {
+          "confluent": "vasiaita",
+          "type": "composition",
+          "composition": "vasi-aita",
+          "sens_litteral": "Passage des ancêtres",
+          "racines": [
+            "vasi",
+            "aita"
+          ],
+          "domaine": "temps_philosophie",
+          "note": "Transmission à travers le temps"
+        }
+      ],
+      "synonymes_fr": [
+        "transmission",
+        "passage témoin"
+      ]
+    },
+    "relais de mémorisation": {
+      "traductions": [
+        {
+          "confluent": "vasinemu",
+          "type": "composition",
+          "composition": "vasi-nemu",
+          "sens_litteral": "Passage de mémoire",
+          "racines": [
+            "vasi",
+            "nemu"
+          ],
+          "domaine": "techniques_culturelles",
+          "note": "Technique des Ailes-Grises pour interpréter la fresque"
+        }
+      ]
+    },
+    "débat à travers le temps": {
+      "traductions": [
+        {
+          "confluent": "vokaitaaika",
+          "type": "composition",
+          "composition": "voki-aita-aika",
+          "sens_litteral": "Voix des ancêtres dans le temps",
+          "racines": [
+            "voki",
+            "aita",
+            "aika"
+          ],
+          "domaine": "philosophie",
+          "note": "Concept de l'interprétation multi-générationnelle"
+        }
+      ]
+    },
+    "génération": {
+      "traductions": [
+        {
+          "confluent": "aitakolu",
+          "type": "composition",
+          "composition": "aita-kolu",
+          "sens_litteral": "Cycle des ancêtres",
+          "racines": [
+            "aita"
+          ],
+          "domaine": "temps",
+          "note": "Unité de temps civilisationnelle"
+        }
+      ],
+      "synonymes_fr": [
+        "générations"
+      ]
+    },
+    "éternel": {
+      "traductions": [
+        {
+          "confluent": "ekaaikavi",
+          "type": "composition",
+          "composition": "eka-aika-vi",
+          "sens_litteral": "De tout temps",
+          "racines": [
+            "eka",
+            "aika"
+          ],
+          "domaine": "temps_philosophie",
+          "note": "Sans fin"
+        }
+      ],
+      "synonymes_fr": [
+        "éternité",
+        "perpétuel"
+      ]
+    },
+    "temporalité": {
+      "traductions": [
+        {
+          "confluent": "aikakota",
+          "type": "composition",
+          "composition": "aika-kota",
+          "sens_litteral": "Confluence du temps",
+          "racines": [
+            "aika",
+            "kota"
+          ],
+          "domaine": "philosophie",
+          "note": "Concept du temps"
+        }
+      ]
+    },
+    "stratification temporelle": {
+      "traductions": [
+        {
+          "confluent": "aikakovasu",
+          "type": "composition",
+          "composition": "aika-kova-su",
+          "sens_litteral": "Gravures multiples du temps",
+          "racines": [
+            "aika",
+            "kova"
+          ],
+          "domaine": "philosophie",
+          "note": "Couches de temps superposées"
+        }
+      ]
+    },
+    "mériter": {
+      "traductions": [
+        {
+          "confluent": "tosaki",
+          "type": "composition",
+          "composition": "tosa-ki",
+          "sens_litteral": "Aller vers le bien",
+          "racines": [
+            "tosa"
+          ],
+          "domaine": "valeur_sociale",
+          "note": "Gagner par le mérite"
+        }
+      ],
+      "synonymes_fr": [
+        "mérite",
+        "gagner"
+      ]
+    },
+    "charge": {
+      "traductions": [
+        {
+          "confluent": "kanukota",
+          "type": "composition",
+          "composition": "kanu-kota",
+          "sens_litteral": "Porter la confluence",
+          "racines": [
+            "kanu",
+            "kota"
+          ],
+          "domaine": "politique",
+          "note": "Fonction politique ou responsabilité"
+        }
+      ],
+      "synonymes_fr": [
+        "charges",
+        "fonction",
+        "responsabilité"
+      ]
+    },
+    "héréditaire": {
+      "traductions": [
+        {
+          "confluent": "aitakovi",
+          "type": "composition",
+          "composition": "aita-kovi",
+          "sens_litteral": "Réservé aux ancêtres",
+          "racines": [
+            "aita"
+          ],
+          "domaine": "politique",
+          "note": "Concept à rejeter - transmission familiale du pouvoir"
+        }
+      ]
+    },
+    "fief": {
+      "traductions": [
+        {
+          "confluent": "tokaitavi",
+          "type": "composition",
+          "composition": "toka-aita-vi",
+          "sens_litteral": "Lieu des ancêtres",
+          "racines": [
+            "toka",
+            "aita"
+          ],
+          "domaine": "politique",
+          "note": "Concept à rejeter - territoire accordé par hérédité"
+        }
+      ]
+    },
+    "monopole": {
+      "traductions": [
+        {
+          "confluent": "ikokonu",
+          "type": "composition",
+          "composition": "iko-konu",
+          "sens_litteral": "Un seul gardien",
+          "racines": [
+            "iko",
+            "konu"
+          ],
+          "domaine": "economie_politique",
+          "note": "Contrôle exclusif (crucial pour économie)"
+        }
+      ]
+    },
+    "permanent": {
+      "traductions": [
+        {
+          "confluent": "aikaveli",
+          "type": "composition",
+          "composition": "aika-veli",
+          "sens_litteral": "Vrai dans le temps",
+          "racines": [
+            "aika",
+            "veli"
+          ],
+          "domaine": "temps",
+          "note": "Non temporaire"
+        }
+      ],
+      "synonymes_fr": [
+        "permanente",
+        "durable"
+      ]
+    },
+    "temporaire": {
+      "traductions": [
+        {
+          "confluent": "aikapisu",
+          "type": "composition",
+          "composition": "aika-pisu",
+          "sens_litteral": "Petit temps",
+          "racines": [
+            "aika",
+            "pisu"
+          ],
+          "domaine": "temps",
+          "note": "Opposé de permanent"
+        }
+      ],
+      "synonymes_fr": [
+        "transitoire",
+        "éphémère"
+      ]
+    },
+    "gloire": {
+      "traductions": [
+        {
+          "confluent": "nemumako",
+          "type": "composition",
+          "composition": "nemu-mako",
+          "sens_litteral": "Grande mémoire",
+          "racines": [
+            "nemu",
+            "mako"
+          ],
+          "domaine": "valeur_sociale",
+          "note": "Honneur et renommée"
+        }
+      ],
+      "synonymes_fr": [
+        "glorieux",
+        "renommée"
+      ]
+    },
+    "honneur": {
+      "traductions": [
+        {
+          "confluent": "tosanemu",
+          "type": "composition",
+          "composition": "tosa-nemu",
+          "sens_litteral": "Bonne mémoire",
+          "racines": [
+            "tosa",
+            "nemu"
+          ],
+          "domaine": "valeur_sociale",
+          "note": "Valeur morale"
+        }
+      ],
+      "synonymes_fr": [
+        "honorable"
+      ]
+    },
+    "fierté": {
+      "traductions": [
+        {
+          "confluent": "kolimako",
+          "type": "composition",
+          "composition": "koli-mako",
+          "sens_litteral": "Grand cœur",
+          "racines": [
+            "kori",
+            "mako"
+          ],
+          "domaine": "emotion",
+          "note": "Sentiment de dignité"
+        }
+      ]
+    },
+    "reproche": {
+      "traductions": [
+        {
+          "confluent": "vokipaka",
+          "type": "composition",
+          "composition": "voki-paka",
+          "sens_litteral": "Parole mauvaise",
+          "racines": [
+            "voki",
+            "paka"
+          ],
+          "domaine": "action_sociale",
+          "note": "Critique"
+        }
+      ],
+      "synonymes_fr": [
+        "reprocher",
+        "blâme"
+      ]
+    },
+    "louer": {
+      "traductions": [
+        {
+          "confluent": "vokitosa",
+          "type": "composition",
+          "composition": "voki-tosa",
+          "sens_litteral": "Parole bonne",
+          "racines": [
+            "voki",
+            "tosa"
+          ],
+          "domaine": "action_sociale",
+          "note": "Complimenter, faire l'éloge"
+        }
+      ],
+      "synonymes_fr": [
+        "louange",
+        "éloge",
+        "complimenter"
+      ]
+    },
+    "indigne": {
+      "traductions": [
+        {
+          "confluent": "pakaveli",
+          "type": "composition",
+          "composition": "paka-veli",
+          "sens_litteral": "Vraiment mauvais",
+          "racines": [
+            "paka",
+            "veli"
+          ],
+          "domaine": "valeur_sociale",
+          "note": "Déshonorant"
+        }
+      ]
+    },
+    "satisfaire": {
+      "traductions": [
+        {
+          "confluent": "tosavi",
+          "type": "composition",
+          "composition": "tosa-vi",
+          "sens_litteral": "Rendre bon",
+          "racines": [
+            "tosa"
+          ],
+          "domaine": "action_sociale",
+          "note": "Répondre aux attentes"
+        }
+      ],
+      "synonymes_fr": [
+        "satisfaction",
+        "contenter"
+      ]
+    },
+    "exigence": {
+      "traductions": [
+        {
+          "confluent": "vokimako",
+          "type": "composition",
+          "composition": "voki-mako",
+          "sens_litteral": "Grande parole/demande",
+          "racines": [
+            "voki",
+            "mako"
+          ],
+          "domaine": "action_sociale",
+          "note": "Demande forte"
+        }
+      ],
+      "synonymes_fr": [
+        "exiger",
+        "demande"
+      ]
+    },
+    "compensation": {
+      "traductions": [
+        {
+          "confluent": "kilutosa",
+          "type": "composition",
+          "composition": "kil-u-tosa",
+          "sens_litteral": "Bon échange",
+          "racines": [
+            "kilu",
+            "tosa"
+          ],
+          "domaine": "economie",
+          "note": "Rémunération équitable"
+        }
+      ],
+      "synonymes_fr": [
+        "rémunération",
+        "rétribution"
+      ]
+    },
+    "suffocation": {
+      "traductions": [
+        {
+          "confluent": "venuosi",
+          "type": "composition",
+          "composition": "ven-u-osi",
+          "sens_litteral": "Mort de l'air",
+          "racines": [
+            "vena",
+            "osi"
+          ],
+          "domaine": "danger_spirituel",
+          "note": "Effet de rester trop longtemps dans les Antres (spirituel)"
+        }
+      ],
+      "synonymes_fr": [
+        "suffoquer",
+        "étouffement"
+      ]
+    },
+    "multicouche": {
+      "traductions": [
+        {
+          "confluent": "kovasu",
+          "type": "composition",
+          "composition": "kova-su",
+          "sens_litteral": "Gravures multiples",
+          "racines": [
+            "kova"
+          ],
+          "domaine": "art_philosophie",
+          "note": "Concept des fresques à plusieurs strates temporelles"
+        }
+      ],
+      "synonymes_fr": [
+        "multi-couche",
+        "stratifié"
+      ]
+    },
+    "devenir partie de l'Antre": {
+      "traductions": [
+        {
+          "confluent": "tulikeko",
+          "type": "composition",
+          "composition": "tuli-keko",
+          "sens_litteral": "Être de l'écho",
+          "racines": [
+            "tuli",
+            "keko"
+          ],
+          "domaine": "tradition",
+          "note": "Tradition des artisans âgés (refus d'enlever le corps, fierté)"
+        }
+      ]
+    }
+  }
+}

@@ -217,15 +217,19 @@ function buildContextualPrompt(contextResult, variant = 'ancien', originalText =
     }
   }
 
-  // Si fallback, injecter toutes les racines
+  // TOUJOURS injecter les racines (nécessaires pour composition)
+  const rootsSection = contextResult.rootsFallback && contextResult.rootsFallback.length > 0
+    ? formatRootsFallback(contextResult.rootsFallback)
+    : '';
+
+  // Si fallback, injecter UNIQUEMENT les racines (pas de vocabulaire)
   if (contextResult.useFallback) {
-    const rootsSection = formatRootsFallback(contextResult.rootsFallback);
     return basePrompt + '\n' + numbersSection + '\n' + rootsSection;
   }
 
-  // Sinon, injecter uniquement le vocabulaire pertinent
+  // Sinon, injecter vocabulaire pertinent + racines
   const vocabularySection = formatVocabularySection(contextResult.entries);
-  return basePrompt + '\n' + numbersSection + '\n' + vocabularySection;
+  return basePrompt + '\n' + numbersSection + '\n' + vocabularySection + '\n' + rootsSection;
 }
 
 /**

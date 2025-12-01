@@ -5,14 +5,14 @@
     "Cercle des Sages": {
       "traductions": [
         {
-          "confluent": "rikuusekitori",
+          "confluent": "likuusekitoli",
           "type": "nom_propre",
-          "composition": "sik-u-sek-i-tori",
+          "composition": "sik-u-sek-i-toli",
           "sens_litteral": "Cercle des porteurs-de-savoir",
           "racines": [
             "siku",
             "seka",
-            "tori"
+            "toli"
           ],
           "categorie": "institution",
           "note": "Institution centrale"
@@ -22,12 +22,12 @@
     "Tribunal des Mœurs": {
       "traductions": [
         {
-          "confluent": "verimuloku",
+          "confluent": "velimuloku",
           "type": "nom_propre",
-          "composition": "ver-i-m-loku",
+          "composition": "vel-i-m-loku",
           "sens_litteral": "Lieu de vérité des mœurs",
           "racines": [
-            "veri",
+            "veli",
             "loku"
           ],
           "categorie": "institution"
@@ -67,13 +67,13 @@
     "Maison des Decouvertes": {
       "traductions": [
         {
-          "confluent": "nutuumiris",
+          "confluent": "nutuumili",
           "type": "nom_propre",
-          "composition": "nut-u-miris",
+          "composition": "nut-u-milis",
           "sens_litteral": "Maison de la découverte",
           "racines": [
             "nutu",
-            "miris"
+            "milis"
           ],
           "categorie": "institution"
         }
@@ -128,7 +128,7 @@
     "Conseil du Village": {
       "traductions": [
         {
-          "confluent": "kotaurikusi",
+          "confluent": "kotaulikusi",
           "type": "composition",
           "composition": "kot-a-sik-u-si",
           "sens_litteral": "Union avec cercle de regard",
@@ -174,9 +174,9 @@
     "Jour des Ancetres": {
       "traductions": [
         {
-          "confluent": "sorauaita",
+          "confluent": "solauaita",
           "type": "composition",
-          "composition": "sor-a-aita",
+          "composition": "sol-a-aita",
           "sens_litteral": "Jour avec ancêtres",
           "racines": [
             "sora",
@@ -189,9 +189,9 @@
     "Jour du Faucon": {
       "traductions": [
         {
-          "confluent": "sorauaki",
+          "confluent": "solauaki",
           "type": "composition",
-          "composition": "sor-a-aki",
+          "composition": "sol-a-aki",
           "sens_litteral": "Jour avec faucon",
           "racines": [
             "sora",

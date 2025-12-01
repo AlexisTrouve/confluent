@@ -6,10 +6,10 @@
       "racine_fr": "voi",
       "traductions": [
         {
-          "confluent": "mirak",
+          "confluent": "milak",
           "type": "verbe",
-          "racine": "mira",
-          "forme_liee": "mir",
+          "racine": "mila",
+          "forme_liee": "mil",
           "structure": "CVCVC",
           "domaine": "action",
           "note": "Verbe fondamental lié à l'observation"
@@ -119,10 +119,10 @@
       "racine_fr": "cour",
       "traductions": [
         {
-          "confluent": "hayak",
+          "confluent": "kazok",
           "type": "verbe",
-          "racine": "haya",
-          "forme_liee": "hay",
+          "racine": "kazo",
+          "forme_liee": "kaz",
           "structure": "CVCVC",
           "domaine": "action",
           "note": "Courir, se déplacer rapidement"
@@ -147,10 +147,10 @@
       "racine_fr": "coul",
       "traductions": [
         {
-          "confluent": "urak",
+          "confluent": "kulak",
           "type": "verbe",
-          "racine": "ura",
-          "forme_liee": "ur",
+          "racine": "kula",
+          "forme_liee": "kul",
           "structure": "VCVC",
           "domaine": "action",
           "note": "Couler, s'écouler - lié à l'eau"
@@ -598,10 +598,10 @@
       "racine_fr": "découvr",
       "traductions": [
         {
-          "confluent": "miris",
+          "confluent": "milis",
           "type": "verbe",
-          "racine": "mira",
-          "forme_liee": "mir",
+          "racine": "mila",
+          "forme_liee": "mil",
           "structure": "CVCVC",
           "domaine": "action",
           "note": "Voir pour la première fois"
@@ -759,10 +759,10 @@
       "racine_fr": "troqu",
       "traductions": [
         {
-          "confluent": "kirak",
+          "confluent": "kilak",
           "type": "verbe",
-          "racine": "kiru",
-          "forme_liee": "kir",
+          "racine": "kilu",
+          "forme_liee": "kil",
           "structure": "CVCVC",
           "domaine": "action_commerce"
         }
@@ -785,10 +785,10 @@
       "racine_fr": "arbitr",
       "traductions": [
         {
-          "confluent": "verim",
+          "confluent": "velim",
           "type": "verbe",
-          "racine": "veri",
-          "forme_liee": "ver",
+          "racine": "veli",
+          "forme_liee": "vel",
           "structure": "CVCVC",
           "domaine": "action_justice",
           "note": "Juger selon la vérité"
@@ -858,10 +858,10 @@
       "racine_fr": "exist",
       "traductions": [
         {
-          "confluent": "urak",
+          "confluent": "kulak",
           "type": "verbe_irregulier",
-          "racine": "ura",
-          "forme_liee": "ur",
+          "racine": "kula",
+          "forme_liee": "kul",
           "structure": "VCVC",
           "domaine": "action_existentielle",
           "note": "Verbe irrégulier existentiel - 'il y a', présence, existence. Dérivé de la racine sacrée 'ura' (eau/flux vital)"
@@ -1069,10 +1069,10 @@
       "racine_fr": "aim",
       "traductions": [
         {
-          "confluent": "koris",
+          "confluent": "kolis",
           "type": "verbe",
-          "racine": "kori",
-          "forme_liee": "kor",
+          "racine": "koli",
+          "forme_liee": "kol",
           "structure": "CVCVC",
           "domaine": "action_emotion",
           "note": "Verbe d'amour (du cœur kori)"

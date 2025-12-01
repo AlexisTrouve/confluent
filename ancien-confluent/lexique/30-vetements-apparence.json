@@ -1,0 +1,488 @@
+{
+  "_comment": "Vêtements, apparence physique et descriptions corporelles",
+  "_mots_a_gerer": [],
+  "dictionnaire": {
+    "vêtement": {
+      "traductions": [
+        {
+          "confluent": "vekuvi",
+          "type": "composition",
+          "composition": "vek-u-vi",
+          "sens_litteral": "Chose de surface/peau",
+          "racines": [
+            "veku"
+          ],
+          "domaine": "vetement",
+          "note": "Ce qu'on porte sur le corps"
+        }
+      ],
+      "synonymes_fr": [
+        "vêtements",
+        "habit",
+        "habits"
+      ]
+    },
+    "tenue": {
+      "traductions": [
+        {
+          "confluent": "sanuveku",
+          "type": "composition",
+          "composition": "san-u-veku",
+          "sens_litteral": "Surface du corps",
+          "racines": [
+            "sanu",
+            "veku"
+          ],
+          "domaine": "vetement",
+          "note": "Ensemble de vêtements"
+        }
+      ],
+      "synonymes_fr": [
+        "tenues",
+        "costume"
+      ]
+    },
+    "oripeaux": {
+      "traductions": [
+        {
+          "confluent": "vekupaka",
+          "type": "composition",
+          "composition": "vek-u-paka",
+          "sens_litteral": "Mauvaise surface/vêtement",
+          "racines": [
+            "veku",
+            "paka"
+          ],
+          "domaine": "vetement",
+          "note": "Vêtements en mauvais état"
+        }
+      ],
+      "synonymes_fr": [
+        "haillons",
+        "guenilles"
+      ]
+    },
+    "nu": {
+      "traductions": [
+        {
+          "confluent": "vekuvoli",
+          "type": "composition",
+          "composition": "vek-u-voli",
+          "sens_litteral": "Sans surface/vêtement",
+          "racines": [
+            "veku"
+          ],
+          "domaine": "apparence",
+          "note": "Sans vêtement"
+        }
+      ],
+      "synonymes_fr": [
+        "nudité",
+        "dénudé"
+      ]
+    },
+    "exhiber nu": {
+      "traductions": [
+        {
+          "confluent": "silivekuvoli",
+          "type": "composition",
+          "composition": "sili-vek-u-voli",
+          "sens_litteral": "Montrer sans vêtement",
+          "racines": [
+            "sili",
+            "veku"
+          ],
+          "domaine": "action",
+          "note": "Montrer la nudité"
+        }
+      ]
+    },
+    "trancher": {
+      "traductions": [
+        {
+          "confluent": "bituki",
+          "type": "composition",
+          "composition": "bit-uki",
+          "sens_litteral": "Mouvement de dent/couper",
+          "racines": [
+            "bitu"
+          ],
+          "domaine": "action",
+          "note": "Couper net (cheveux, corde, etc.)"
+        }
+      ],
+      "synonymes_fr": [
+        "couper",
+        "sectionner"
+      ]
+    },
+    "couper": {
+      "traductions": [
+        {
+          "confluent": "voliuki",
+          "type": "composition",
+          "composition": "voli-uki",
+          "sens_litteral": "Mouvement de séparation",
+          "racines": [],
+          "domaine": "action",
+          "note": "Séparer en deux"
+        }
+      ],
+      "synonymes_fr": [
+        "découper",
+        "séparer"
+      ]
+    },
+    "taille": {
+      "traductions": [
+        {
+          "confluent": "sanumako",
+          "type": "composition",
+          "composition": "san-u-mako",
+          "sens_litteral": "Grande mesure du corps",
+          "racines": [
+            "sanu",
+            "mako"
+          ],
+          "domaine": "apparence",
+          "note": "Dimensions corporelles"
+        }
+      ],
+      "synonymes_fr": [
+        "grandeur",
+        "stature"
+      ]
+    },
+    "morphologie": {
+      "traductions": [
+        {
+          "confluent": "sanukova",
+          "type": "composition",
+          "composition": "san-u-kova",
+          "sens_litteral": "Forme du corps",
+          "racines": [
+            "sanu"
+          ],
+          "domaine": "apparence",
+          "note": "Structure physique"
+        }
+      ],
+      "synonymes_fr": [
+        "forme corporelle"
+      ]
+    },
+    "correspondre": {
+      "traductions": [
+        {
+          "confluent": "kotavi",
+          "type": "composition",
+          "composition": "kota-vi",
+          "sens_litteral": "Être en confluence/accord",
+          "racines": [
+            "kota"
+          ],
+          "domaine": "relation",
+          "note": "Adéquation de taille, compatibilité"
+        }
+      ],
+      "synonymes_fr": [
+        "correspondance",
+        "être adapté",
+        "convenir"
+      ]
+    },
+    "pâle": {
+      "traductions": [
+        {
+          "confluent": "miluveku",
+          "type": "composition",
+          "composition": "milu-veku",
+          "sens_litteral": "Peau blanche/pâle",
+          "racines": [
+            "milu",
+            "veku"
+          ],
+          "domaine": "couleur_peau",
+          "note": "Couleur de peau claire (Enfants des Échos)"
+        }
+      ],
+      "synonymes_fr": [
+        "pâleur",
+        "blancheur"
+      ]
+    },
+    "allongé": {
+      "traductions": [
+        {
+          "confluent": "linumako",
+          "type": "composition",
+          "composition": "lin-u-mako",
+          "sens_litteral": "Grande ligne/longueur",
+          "racines": [
+            "linu",
+            "mako"
+          ],
+          "domaine": "forme",
+          "note": "Forme corporelle étirée (membres allongés)"
+        }
+      ],
+      "synonymes_fr": [
+        "allongée",
+        "étiré",
+        "long"
+      ]
+    },
+    "aveugle": {
+      "traductions": [
+        {
+          "confluent": "silivoli",
+          "type": "composition",
+          "composition": "sili-voli",
+          "sens_litteral": "Sans regard/vue",
+          "racines": [
+            "sili"
+          ],
+          "domaine": "handicap",
+          "note": "Perte de vision"
+        }
+      ],
+      "synonymes_fr": [
+        "cécité",
+        "non-voyant"
+      ]
+    },
+    "adaptation": {
+      "traductions": [
+        {
+          "confluent": "sanukotavi",
+          "type": "composition",
+          "composition": "san-u-kota-vi",
+          "sens_litteral": "Corps en confluence/harmonie",
+          "racines": [
+            "sanu",
+            "kota"
+          ],
+          "domaine": "evolution",
+          "note": "Changements corporels pour s'adapter à l'environnement"
+        }
+      ],
+      "synonymes_fr": [
+        "adapté",
+        "s'adapter"
+      ]
+    },
+    "cape": {
+      "traductions": [
+        {
+          "confluent": "vekumako",
+          "type": "composition",
+          "composition": "vek-u-mako",
+          "sens_litteral": "Grand vêtement de surface",
+          "racines": [
+            "veku",
+            "mako"
+          ],
+          "domaine": "vetement",
+          "note": "Vêtement ample qui couvre"
+        }
+      ],
+      "synonymes_fr": [
+        "manteau",
+        "capes"
+      ]
+    },
+    "ceinture": {
+      "traductions": [
+        {
+          "confluent": "nutulinu",
+          "type": "composition",
+          "composition": "nutu-linu",
+          "sens_litteral": "Ligne du ventre",
+          "racines": [
+            "nutu",
+            "linu"
+          ],
+          "domaine": "vetement",
+          "note": "Lien autour de la taille"
+        }
+      ],
+      "synonymes_fr": [
+        "ceintures"
+      ]
+    },
+    "collier": {
+      "traductions": [
+        {
+          "confluent": "mutulinu",
+          "type": "composition",
+          "composition": "mutu-linu",
+          "sens_litteral": "Ligne du cou",
+          "racines": [
+            "muto",
+            "linu"
+          ],
+          "domaine": "parure",
+          "note": "Objet porté autour du cou"
+        }
+      ],
+      "synonymes_fr": [
+        "colliers"
+      ]
+    },
+    "bracelet": {
+      "traductions": [
+        {
+          "confluent": "kanulinu",
+          "type": "composition",
+          "composition": "kan-u-linu",
+          "sens_litteral": "Ligne de bras/poignet",
+          "racines": [
+            "kanu",
+            "linu"
+          ],
+          "domaine": "parure",
+          "note": "Objet porté au bras"
+        }
+      ],
+      "synonymes_fr": [
+        "bracelets"
+      ]
+    },
+    "peinture corporelle": {
+      "traductions": [
+        {
+          "confluent": "sanukova",
+          "type": "composition",
+          "composition": "sanu-kova",
+          "sens_litteral": "Gravure/motif sur le corps",
+          "racines": [
+            "sanu",
+            "kova"
+          ],
+          "domaine": "parure",
+          "note": "Décorations peintes sur la peau"
+        }
+      ],
+      "synonymes_fr": [
+        "tatouage",
+        "motifs corporels"
+      ]
+    },
+    "cicatrice": {
+      "traductions": [
+        {
+          "confluent": "vekukova",
+          "type": "composition",
+          "composition": "vek-u-kova",
+          "sens_litteral": "Gravure sur la peau",
+          "racines": [
+            "veku",
+            "kova"
+          ],
+          "domaine": "corps",
+          "note": "Marque permanente sur la peau"
+        }
+      ],
+      "synonymes_fr": [
+        "cicatrices",
+        "balafre"
+      ]
+    },
+    "barbe": {
+      "traductions": [
+        {
+          "confluent": "mukupupu",
+          "type": "composition",
+          "composition": "muka-pupu",
+          "sens_litteral": "Poils du visage",
+          "racines": [
+            "muka",
+            "pupu"
+          ],
+          "domaine": "corps",
+          "note": "Pilosité faciale"
+        }
+      ]
+    },
+    "coiffure": {
+      "traductions": [
+        {
+          "confluent": "pupukova",
+          "type": "composition",
+          "composition": "pupu-kova",
+          "sens_litteral": "Forme/arrangement des cheveux",
+          "racines": [
+            "pupu",
+            "kova"
+          ],
+          "domaine": "apparence",
+          "note": "Style de cheveux"
+        }
+      ],
+      "synonymes_fr": [
+        "coiffures"
+      ]
+    },
+    "tresser": {
+      "traductions": [
+        {
+          "confluent": "linukotavi",
+          "type": "composition",
+          "composition": "linu-kota-vi",
+          "sens_litteral": "Faire confluencer des lignes",
+          "racines": [
+            "linu",
+            "kota"
+          ],
+          "domaine": "action_artisanale",
+          "note": "Entrelacer (cheveux, fibres, cordes)"
+        }
+      ],
+      "synonymes_fr": [
+        "tressage",
+        "entrelacer",
+        "natter"
+      ]
+    },
+    "sale": {
+      "traductions": [
+        {
+          "confluent": "vekupaka",
+          "type": "composition",
+          "composition": "vek-u-paka",
+          "sens_litteral": "Mauvaise surface",
+          "racines": [
+            "veku",
+            "paka"
+          ],
+          "domaine": "etat",
+          "note": "Non propre, souillé"
+        }
+      ],
+      "synonymes_fr": [
+        "souillé",
+        "crasseux"
+      ]
+    },
+    "propre": {
+      "traductions": [
+        {
+          "confluent": "vekupuli",
+          "type": "composition",
+          "composition": "vek-u-puli",
+          "sens_litteral": "Surface pure",
+          "racines": [
+            "veku"
+          ],
+          "domaine": "etat",
+          "note": "Nettoyé, sans saleté"
+        }
+      ],
+      "synonymes_fr": [
+        "propreté",
+        "pur",
+        "net"
+      ]
+    }
+  }
+}

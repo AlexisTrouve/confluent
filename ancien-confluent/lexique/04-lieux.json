@@ -252,13 +252,13 @@
     "avant-poste cotier": {
       "traductions": [
         {
-          "confluent": "velaumeru",
+          "confluent": "velaumelu",
           "type": "composition",
-          "composition": "vel-a-meru",
+          "composition": "vel-a-melu",
           "sens_litteral": "Vigile avec mer",
           "racines": [
             "vela",
-            "meru"
+            "melu"
           ],
           "categorie": "structure"
         }
@@ -282,13 +282,13 @@
     "forteresse": {
       "traductions": [
         {
-          "confluent": "zakiukari",
+          "confluent": "zakiukali",
           "type": "composition",
-          "composition": "zak-i-kari",
+          "composition": "zak-i-kali",
           "sens_litteral": "Protection de pierre",
           "racines": [
             "zaki",
-            "kari"
+            "kali"
           ],
           "categorie": "structure"
         }

@@ -10,7 +10,10 @@
           "type": "composition",
           "composition": "mukis-loku",
           "sens_litteral": "Lieu-de-manger",
-          "racines": ["mukis", "loku"],
+          "racines": [
+            "mukis",
+            "loku"
+          ],
           "structure": "composition",
           "domaine": "habitat",
           "note": "Table - lieu où l'on mange (mukis=manger + loku=lieu)"
@@ -25,11 +28,14 @@
       "racine_fr": "fenêtr",
       "traductions": [
         {
-          "confluent": "soratuva",
+          "confluent": "solatuva",
           "type": "composition",
-          "composition": "sora-tuva",
+          "composition": "sola-tuva",
           "sens_litteral": "Ouverture-de-lumière",
-          "racines": ["sora", "tuva"],
+          "racines": [
+            "sora",
+            "tuva"
+          ],
           "structure": "composition",
           "domaine": "habitat",
           "note": "Fenêtre - ouverture qui laisse passer la lumière (sora=lumière + tuva=ouverture)"
@@ -49,7 +55,10 @@
           "type": "composition",
           "composition": "zaku-sumu",
           "sens_litteral": "Protection-haute",
-          "racines": ["zaku", "sumu"],
+          "racines": [
+            "zaku",
+            "sumu"
+          ],
           "structure": "composition",
           "domaine": "habitat",
           "note": "Toit - protection en hauteur (zaku=protection/réserve + sumu=haut)"
@@ -65,11 +74,14 @@
       "racine_fr": "mur",
       "traductions": [
         {
-          "confluent": "karisumu",
+          "confluent": "kalisumu",
           "type": "composition",
-          "composition": "kari-sumu",
+          "composition": "kali-sumu",
           "sens_litteral": "Pierre-dressée",
-          "racines": ["kari", "sumu"],
+          "racines": [
+            "kali",
+            "sumu"
+          ],
           "structure": "composition",
           "domaine": "habitat",
           "note": "Mur - pierre élevée (kari=pierre + sumu=haut/élevé)"
@@ -85,11 +97,14 @@
       "racine_fr": "escalier",
       "traductions": [
         {
-          "confluent": "vukukari",
+          "confluent": "vukukali",
           "type": "composition",
-          "composition": "vuku-kari",
+          "composition": "vuku-kali",
           "sens_litteral": "Gouffre-de-pierre",
-          "racines": ["vuku", "kari"],
+          "racines": [
+            "vuku",
+            "kali"
+          ],
           "structure": "composition",
           "domaine": "habitat",
           "note": "Escalier - montée de pierre (référence au Gouffre Humide avec ses escaliers dans la roche, vuku=gouffre + kari=pierre)"

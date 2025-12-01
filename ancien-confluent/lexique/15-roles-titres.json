@@ -76,13 +76,13 @@
     "sage": {
       "traductions": [
         {
-          "confluent": "sekitori",
+          "confluent": "sekitoli",
           "type": "composition",
-          "composition": "sek-i-tori",
+          "composition": "sek-i-toli",
           "sens_litteral": "Porteur de savoir",
           "racines": [
             "seka",
-            "tori"
+            "toli"
           ],
           "domaine": "titre"
         }
@@ -127,13 +127,13 @@
     "traqueur": {
       "traductions": [
         {
-          "confluent": "zanatori",
+          "confluent": "zanatoli",
           "type": "composition",
-          "composition": "zan-a-tori",
+          "composition": "zan-a-toli",
           "sens_litteral": "Personne de la chasse",
           "racines": [
             "zana",
-            "tori"
+            "toli"
           ],
           "domaine": "titre"
         }
@@ -147,13 +147,13 @@
     "guerrier": {
       "traductions": [
         {
-          "confluent": "okitori",
+          "confluent": "okitoli",
           "type": "composition",
-          "composition": "ok-i-tori",
+          "composition": "ok-i-toli",
           "sens_litteral": "Personne de l'épreuve",
           "racines": [
             "oki",
-            "tori"
+            "toli"
           ],
           "domaine": "titre"
         }
@@ -162,13 +162,13 @@
     "archer": {
       "traductions": [
         {
-          "confluent": "arkutori",
+          "confluent": "alkutoli",
           "type": "composition",
-          "composition": "ark-u-tori",
+          "composition": "alk-u-toli",
           "sens_litteral": "Personne de l'arc",
           "racines": [
             "arku",
-            "tori"
+            "toli"
           ],
           "domaine": "titre"
         }
@@ -177,7 +177,7 @@
     "porteur de lance": {
       "traductions": [
         {
-          "confluent": "takiupiki",
+          "confluent": "kanuupiki",
           "type": "composition",
           "composition": "tak-i-piki",
           "sens_litteral": "Porteur de lance",
@@ -207,13 +207,13 @@
     "sentinelle": {
       "traductions": [
         {
-          "confluent": "velatori",
+          "confluent": "velatoli",
           "type": "composition",
-          "composition": "vel-a-tori",
+          "composition": "vel-a-toli",
           "sens_litteral": "Personne de vigile",
           "racines": [
             "vela",
-            "tori"
+            "toli"
           ],
           "domaine": "titre"
         }
@@ -245,13 +245,13 @@
     "chaman": {
       "traductions": [
         {
-          "confluent": "umitori",
+          "confluent": "umitoli",
           "type": "composition",
-          "composition": "um-i-tori",
+          "composition": "um-i-toli",
           "sens_litteral": "Personne de l'esprit",
           "racines": [
             "umi",
-            "tori"
+            "toli"
           ],
           "domaine": "titre_spirituel"
         }
@@ -260,14 +260,14 @@
     "dresseur de grues": {
       "traductions": [
         {
-          "confluent": "aruzakitori",
+          "confluent": "aluzakitoli",
           "type": "composition",
-          "composition": "al-u-zak-i-tori",
+          "composition": "al-u-zak-i-toli",
           "sens_litteral": "Personne gardienne des grues",
           "racines": [
             "alu",
             "zaki",
-            "tori"
+            "toli"
           ],
           "domaine": "titre"
         }
@@ -306,7 +306,7 @@
     "Passe-bien": {
       "traductions": [
         {
-          "confluent": "takitosa",
+          "confluent": "kanutosa",
           "type": "nom_propre",
           "composition": "tak-i-tosa",
           "sens_litteral": "Porteur du bien",
@@ -321,7 +321,7 @@
     "Porteur de Flamme": {
       "traductions": [
         {
-          "confluent": "takiusuki",
+          "confluent": "kanuusuki",
           "type": "nom_propre",
           "composition": "tak-i-suki",
           "sens_litteral": "Porteur du feu",
@@ -351,13 +351,13 @@
     "faconneur de pierre": {
       "traductions": [
         {
-          "confluent": "nekaukari",
+          "confluent": "nekaukali",
           "type": "composition",
-          "composition": "nek-a-kari",
+          "composition": "nek-a-kali",
           "sens_litteral": "Faiseur avec pierre",
           "racines": [
             "neka",
-            "kari"
+            "kali"
           ],
           "domaine": "titre"
         }
@@ -366,13 +366,13 @@
     "sculpteur": {
       "traductions": [
         {
-          "confluent": "kovatori",
+          "confluent": "kovatoli",
           "type": "composition",
-          "composition": "kov-a-tori",
+          "composition": "kov-a-toli",
           "sens_litteral": "Personne de la gravure",
           "racines": [
             "kova",
-            "tori"
+            "toli"
           ],
           "domaine": "titre"
         }
@@ -381,13 +381,13 @@
     "peintre": {
       "traductions": [
         {
-          "confluent": "koluutori",
+          "confluent": "koluutoli",
           "type": "composition",
-          "composition": "kol-u-tori",
+          "composition": "kol-u-toli",
           "sens_litteral": "Personne des couleurs",
           "racines": [
             "kolu",
-            "tori"
+            "toli"
           ],
           "domaine": "titre"
         }
@@ -396,13 +396,13 @@
     "tisserand": {
       "traductions": [
         {
-          "confluent": "vasitori",
+          "confluent": "vasitoli",
           "type": "composition",
-          "composition": "vas-i-tori",
+          "composition": "vas-i-toli",
           "sens_litteral": "Personne du tissage",
           "racines": [
             "vasi",
-            "tori"
+            "toli"
           ],
           "domaine": "titre"
         }
@@ -411,13 +411,13 @@
     "pecheur": {
       "traductions": [
         {
-          "confluent": "pisutori",
+          "confluent": "pisutoli",
           "type": "composition",
-          "composition": "pis-u-tori",
+          "composition": "pis-u-toli",
           "sens_litteral": "Personne du poisson",
           "racines": [
             "pisu",
-            "tori"
+            "toli"
           ],
           "domaine": "titre"
         }
@@ -426,13 +426,13 @@
     "mineur": {
       "traductions": [
         {
-          "confluent": "vukutori",
+          "confluent": "vukutoli",
           "type": "composition",
-          "composition": "vuk-u-tori",
+          "composition": "vuk-u-toli",
           "sens_litteral": "Personne du gouffre",
           "racines": [
             "vuku",
-            "tori"
+            "toli"
           ],
           "domaine": "titre"
         }
@@ -441,13 +441,13 @@
     "aine": {
       "traductions": [
         {
-          "confluent": "aitatori",
+          "confluent": "aitatoli",
           "type": "composition",
-          "composition": "ait-a-tori",
+          "composition": "ait-a-toli",
           "sens_litteral": "Personne avec ancêtre",
           "racines": [
             "aita",
-            "tori"
+            "toli"
           ],
           "domaine": "titre"
         }
@@ -496,13 +496,13 @@
     "epoux": {
       "traductions": [
         {
-          "confluent": "kotautori",
+          "confluent": "kotautoli",
           "type": "composition",
-          "composition": "kot-a-tori",
+          "composition": "kot-a-toli",
           "sens_litteral": "Personne d'union",
           "racines": [
             "kota",
-            "tori"
+            "toli"
           ],
           "domaine": "famille"
         }

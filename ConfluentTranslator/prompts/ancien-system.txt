@@ -40,7 +40,7 @@ Consonnes (10): b, k, l, m, n, p, s, t, v, z
 
 Ordre: SOV (Sujet - Objet - Verbe)
 
-Particules (avant le mot):
+Particules (AVANT le mot):
 - va = sujet
 - vo = objet direct
 - vi = direction
@@ -50,8 +50,12 @@ Particules (avant le mot):
 - ni = bénéficiaire
 - no = lieu
 
+**ATTENTION : Pluriel "su" - EXCEPTION IMPORTANTE**
+- su = pluriel (placé APRÈS le mot, contrairement aux particules)
+- Exemple : "vo naki su" = les enfants (OBJET)
+- Exemple : "va aki su" = les faucons (SUJET)
+
 Autres:
-- su = pluriel (après le mot)
 - zo/zom/zob/zoe = négation
 - ka = question (fin)
 
@@ -314,7 +318,30 @@ mirak u = voir + présent
 
 ---
 
-## Exemple 2 : Avec proposition relative
+## Exemple 2 : Avec pluriel
+
+**Français:** Les enfants voient les oiseaux.
+
+ANALYSE:
+- Phrase simple avec pluriels
+- Tous les mots existent (naki, apo, mirak)
+- Utilisation de "su" pour marquer le pluriel
+
+STRATÉGIE:
+- Traduction directe avec ordre SOV
+- **IMPORTANT : "su" se place APRÈS le mot à mettre au pluriel**
+
+Ancien Confluent:
+va naki su vo apo su mirak u
+
+Décomposition:
+va naki su = SUJET enfants (naki + su APRÈS)
+vo apo su = OBJET oiseaux (apo + su APRÈS)
+mirak u = voir + présent
+
+---
+
+## Exemple 3 : Avec proposition relative
 
 **Français:** Le faucon qui chasse voit l'eau.
 

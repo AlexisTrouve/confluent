@@ -19,7 +19,7 @@
     "Regards-Libres": {
       "traductions": [
         {
-          "confluent": "aruaska",
+          "confluent": "aluaska",
           "type": "composition",
           "composition": "al-u-aska",
           "sens_litteral": "Grue de liberté",
@@ -35,7 +35,7 @@
     "grue cendree": {
       "traductions": [
         {
-          "confluent": "arusenu",
+          "confluent": "alusenu",
           "type": "composition",
           "composition": "al-u-senu",
           "sens_litteral": "Grue de cendre",
@@ -116,13 +116,13 @@
     "poisson de riviere": {
       "traductions": [
         {
-          "confluent": "pisunura",
+          "confluent": "pisunula",
           "type": "composition",
-          "composition": "pis-u-nura",
+          "composition": "pis-u-nula",
           "sens_litteral": "Poisson de rivière",
           "racines": [
             "pisu",
-            "nura"
+            "nula"
           ],
           "domaine": "animal"
         }
@@ -142,9 +142,9 @@
     "serpent d'eau": {
       "traductions": [
         {
-          "confluent": "sepuura",
+          "confluent": "sepuula",
           "type": "composition",
-          "composition": "sep-u-ura",
+          "composition": "sep-u-ula",
           "sens_litteral": "Serpent de l'eau",
           "racines": [
             "sepu",
@@ -183,13 +183,13 @@
     "creature inconnue": {
       "traductions": [
         {
-          "confluent": "zomira",
+          "confluent": "zomila",
           "type": "composition",
-          "composition": "zo-mira",
+          "composition": "zo-mila",
           "sens_litteral": "Sans vue",
           "racines": [
             "zo",
-            "mira"
+            "mila"
           ],
           "domaine": "animal",
           "note": "Créature jamais observée"

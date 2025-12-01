@@ -144,12 +144,12 @@
     "eboulement": {
       "traductions": [
         {
-          "confluent": "kariovuku",
+          "confluent": "kaliovuku",
           "type": "composition",
-          "composition": "kar-oa-vuku",
+          "composition": "kal-oa-vuku",
           "sens_litteral": "Pierre vers le gouffre",
           "racines": [
-            "kari",
+            "kali",
             "vuku"
           ],
           "domaine": "danger"
@@ -159,9 +159,9 @@
     "inondation": {
       "traductions": [
         {
-          "confluent": "uraueka",
+          "confluent": "ulaueka",
           "type": "composition",
-          "composition": "ur-a-eka",
+          "composition": "ul-a-eka",
           "sens_litteral": "Eau avec totalité",
           "racines": [
             "ura",
@@ -204,13 +204,13 @@
     "crevasse": {
       "traductions": [
         {
-          "confluent": "vukukari",
+          "confluent": "vukukali",
           "type": "composition",
-          "composition": "vuk-u-kari",
+          "composition": "vuk-u-kali",
           "sens_litteral": "Gouffre de pierre",
           "racines": [
             "vuku",
-            "kari"
+            "kali"
           ],
           "domaine": "danger"
         }
@@ -219,12 +219,12 @@
     "roche impenetrable": {
       "traductions": [
         {
-          "confluent": "kariuoki",
+          "confluent": "kaliuoki",
           "type": "composition",
-          "composition": "kar-i-oki",
+          "composition": "kal-i-oki",
           "sens_litteral": "Pierre de l'épreuve",
           "racines": [
-            "kari",
+            "kali",
             "oki"
           ],
           "domaine": "danger"

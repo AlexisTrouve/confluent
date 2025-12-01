@@ -62,7 +62,7 @@
     "saison": {
       "traductions": [
         {
-          "confluent": "temiuriku",
+          "confluent": "temiuliku",
           "type": "composition",
           "composition": "tem-i-siku",
           "sens_litteral": "Temps du cercle",
@@ -87,7 +87,7 @@
     "mois": {
       "traductions": [
         {
-          "confluent": "lunariku",
+          "confluent": "lunaliku",
           "type": "composition",
           "composition": "lun-a-siku",
           "sens_litteral": "Lune avec cercle",
@@ -112,9 +112,9 @@
     "matin": {
       "traductions": [
         {
-          "confluent": "orausora",
+          "confluent": "olausola",
           "type": "composition",
-          "composition": "or-a-sora",
+          "composition": "ol-a-sola",
           "sens_litteral": "Aurore avec soleil",
           "racines": [
             "ora",
@@ -196,7 +196,7 @@
     "cycle eternel": {
       "traductions": [
         {
-          "confluent": "rikuueka",
+          "confluent": "likuueka",
           "type": "composition",
           "composition": "sik-u-eka",
           "sens_litteral": "Cercle de totalité",
