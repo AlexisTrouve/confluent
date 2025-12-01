@@ -303,6 +303,96 @@
       font-style: italic;
     }
     .error { color: #ff4a4a; }
+
+    /* Light theme */
+    body.light-theme {
+      background: #f5f5f5;
+      color: #1a1a1a;
+    }
+    body.light-theme html {
+      background: #f5f5f5;
+    }
+    body.light-theme h1 {
+      color: #2563eb;
+    }
+    body.light-theme .panel {
+      background: #ffffff;
+      border-color: #e5e5e5;
+    }
+    body.light-theme .panel h2 {
+      color: #2563eb;
+    }
+    body.light-theme label {
+      color: #666;
+    }
+    body.light-theme select,
+    body.light-theme input,
+    body.light-theme textarea {
+      background: #f9f9f9;
+      border-color: #e5e5e5;
+      color: #1a1a1a;
+    }
+    body.light-theme select option {
+      background: #ffffff;
+      color: #1a1a1a;
+    }
+    body.light-theme .tab {
+      color: #666;
+    }
+    body.light-theme .tab.active {
+      color: #2563eb;
+      border-bottom-color: #2563eb;
+    }
+    body.light-theme .tabs {
+      border-bottom-color: #e5e5e5;
+    }
+    body.light-theme .layer {
+      background: #ffffff;
+      border-color: #e5e5e5;
+    }
+    body.light-theme .layer1 {
+      background: #f9f9f9;
+      border-color: #2563eb;
+    }
+    body.light-theme .layer1-title {
+      color: #2563eb;
+    }
+    body.light-theme .layer1-content {
+      color: #2563eb;
+    }
+    body.light-theme .layer-header {
+      background: #ffffff;
+    }
+    body.light-theme .layer-header:hover {
+      background: #f5f5f5;
+    }
+    body.light-theme .layer-content {
+      background: #f9f9f9;
+    }
+    body.light-theme .layer-arrow {
+      color: #2563eb;
+    }
+    body.light-theme .word-match {
+      background: #ffffff;
+      border-left-color: #2563eb;
+    }
+    body.light-theme .word-match-output {
+      color: #2563eb;
+    }
+    body.light-theme .stat-box {
+      background: #ffffff;
+      border-left-color: #2563eb;
+    }
+    body.light-theme .stat-value {
+      color: #2563eb;
+    }
+    body.light-theme .lexique-item {
+      background: #f9f9f9;
+      border-left-color: #2563eb;
+    }
+    body.light-theme .lexique-cf {
+      color: #2563eb;
+    }
   </style>
 </head>
 <body>
@@ -314,19 +404,13 @@
       <button class="tab active" data-tab="traduction">Français → Confluent</button>
       <button class="tab" data-tab="cf2fr">Confluent → Français</button>
       <button class="tab" data-tab="lexique">Lexique</button>
+      <button class="tab" data-tab="settings">⚙️ Settings</button>
     </div>
 
     <!-- Tab: Traduction Français → Confluent -->
     <div id="tab-traduction" class="tab-content active">
       <div class="panel">
         <h2>Traduction Français → Confluent</h2>
-        <div class="form-group">
-          <label>Langue cible</label>
-          <select id="target">
-            <option value="proto">Proto-Confluent</option>
-            <option value="ancien">Ancien Confluent</option>
-          </select>
-        </div>
         <div class="form-group">
           <label>Texte français</label>
           <textarea id="input" placeholder="Entrez votre texte en français..."></textarea>
@@ -414,19 +498,99 @@
       <div class="panel">
         <h2>Recherche dans le lexique</h2>
         <div class="form-group">
-          <label>Niveau de langue</label>
-          <select id="lexique-niveau">
-            <option value="proto">Proto-Confluent</option>
-            <option value="ancien">Ancien Confluent</option>
-          </select>
-        </div>
-        <div class="form-group">
           <label>Rechercher un mot français</label>
           <input type="text" id="lexique-search" placeholder="Tapez un mot en français...">
         </div>
         <div class="lexique-count" id="lexique-count">0 résultat(s)</div>
         <div class="lexique-results" id="lexique-results">
           <div class="no-results">Commencez à taper pour rechercher...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Settings -->
+    <div id="tab-settings" class="tab-content">
+      <div class="panel">
+        <h2>⚙️ Paramètres globaux</h2>
+
+        <div class="form-group">
+          <label>Niveau de langue (global)</label>
+          <select id="settings-target">
+            <option value="proto">Proto-Confluent</option>
+            <option value="ancien">Ancien Confluent</option>
+          </select>
+          <small style="color: #888; display: block; margin-top: 5px;">
+            S'applique aux traductions et recherches dans le lexique
+          </small>
+        </div>
+
+        <h2 style="margin-top: 30px;">🤖 Configuration LLM</h2>
+
+        <div class="row">
+          <div class="form-group">
+            <label>Provider</label>
+            <select id="settings-provider">
+              <option value="anthropic">Anthropic</option>
+              <option value="openai">OpenAI</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Modèle</label>
+            <select id="settings-model">
+              <option value="claude-sonnet-4-20250514">Claude Sonnet 4.5 (latest)</option>
+              <option value="claude-haiku-4-20250514">Claude Haiku 4.5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Température (créativité)</label>
+          <input type="range" id="settings-temperature" min="0" max="2" step="0.1" value="1.0">
+          <div style="display: flex; justify-content: space-between; color: #888; font-size: 0.85em;">
+            <span>Précis (0.0)</span>
+            <span id="temp-value">1.0</span>
+            <span>Créatif (2.0)</span>
+          </div>
+        </div>
+
+        <h2 style="margin-top: 30px;">🎨 Interface</h2>
+
+        <div class="form-group">
+          <label>Thème</label>
+          <select id="settings-theme">
+            <option value="dark">Sombre</option>
+            <option value="light">Clair</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label style="display: flex; align-items: center; cursor: pointer;">
+            <input type="checkbox" id="settings-verbose" style="width: auto; margin-right: 10px;">
+            <span>Mode verbose (afficher plus de détails)</span>
+          </label>
+        </div>
+
+        <h2 style="margin-top: 30px;">🔑 API Keys (optionnel)</h2>
+
+        <div class="form-group">
+          <label>Anthropic API Key</label>
+          <input type="password" id="settings-anthropic-key" placeholder="sk-ant-...">
+          <small style="color: #888; display: block; margin-top: 5px;">
+            Laisser vide pour utiliser la clé du serveur
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label>OpenAI API Key</label>
+          <input type="password" id="settings-openai-key" placeholder="sk-...">
+          <small style="color: #888; display: block; margin-top: 5px;">
+            Laisser vide pour utiliser la clé du serveur
+          </small>
+        </div>
+
+        <button onclick="saveSettings()" style="margin-top: 20px;">💾 Sauvegarder les paramètres</button>
+        <div id="settings-saved-message" style="display: none; color: #4a9eff; margin-top: 10px; font-weight: 600;">
+          ✓ Paramètres sauvegardés !
         </div>
       </div>
     </div>
@@ -471,7 +635,8 @@
     // Lexique search
     const searchLexique = () => {
       const query = document.getElementById('lexique-search').value.toLowerCase().trim();
-      const niveau = document.getElementById('lexique-niveau').value;
+      const settings = JSON.parse(localStorage.getItem('confluentSettings') || '{}');
+      const niveau = settings.target || 'ancien';
       const resultsDiv = document.getElementById('lexique-results');
       const countDiv = document.getElementById('lexique-count');
 
@@ -535,22 +700,99 @@
     };
 
     document.getElementById('lexique-search').addEventListener('input', searchLexique);
-    document.getElementById('lexique-niveau').addEventListener('change', searchLexique);
 
-    // Load/Save config
-    const loadConfig = () => {
-      const config = JSON.parse(localStorage.getItem('confluentConfig') || '{}');
-      if (config.target) document.getElementById('target').value = config.target;
+    // Settings management
+    const DEFAULT_SETTINGS = {
+      target: 'ancien',
+      provider: 'anthropic',
+      model: 'claude-sonnet-4-20250514',
+      temperature: 1.0,
+      theme: 'dark',
+      verbose: false,
+      anthropicKey: '',
+      openaiKey: ''
     };
 
-    const saveConfig = () => {
-      const config = {
-        target: document.getElementById('target').value,
+    const loadSettings = () => {
+      const settings = { ...DEFAULT_SETTINGS, ...JSON.parse(localStorage.getItem('confluentSettings') || '{}') };
+
+      // Apply to settings page
+      document.getElementById('settings-target').value = settings.target;
+      document.getElementById('settings-provider').value = settings.provider;
+      document.getElementById('settings-model').value = settings.model;
+      document.getElementById('settings-temperature').value = settings.temperature;
+      document.getElementById('temp-value').textContent = settings.temperature;
+      document.getElementById('settings-theme').value = settings.theme;
+      document.getElementById('settings-verbose').checked = settings.verbose;
+      document.getElementById('settings-anthropic-key').value = settings.anthropicKey;
+      document.getElementById('settings-openai-key').value = settings.openaiKey;
+
+      // Apply theme
+      applyTheme(settings.theme);
+
+      // Update model options based on provider
+      updateModelOptions(settings.provider);
+
+      return settings;
+    };
+
+    const saveSettings = () => {
+      const settings = {
+        target: document.getElementById('settings-target').value,
+        provider: document.getElementById('settings-provider').value,
+        model: document.getElementById('settings-model').value,
+        temperature: parseFloat(document.getElementById('settings-temperature').value),
+        theme: document.getElementById('settings-theme').value,
+        verbose: document.getElementById('settings-verbose').checked,
+        anthropicKey: document.getElementById('settings-anthropic-key').value,
+        openaiKey: document.getElementById('settings-openai-key').value
       };
-      localStorage.setItem('confluentConfig', JSON.stringify(config));
+
+      localStorage.setItem('confluentSettings', JSON.stringify(settings));
+
+      // Apply theme
+      applyTheme(settings.theme);
+
+      // Show saved message
+      const msg = document.getElementById('settings-saved-message');
+      msg.style.display = 'block';
+      setTimeout(() => { msg.style.display = 'none'; }, 2000);
     };
 
-    document.getElementById('target').addEventListener('change', saveConfig);
+    const applyTheme = (theme) => {
+      if (theme === 'light') {
+        document.body.classList.add('light-theme');
+      } else {
+        document.body.classList.remove('light-theme');
+      }
+    };
+
+    const updateModelOptions = (provider) => {
+      const modelSelect = document.getElementById('settings-model');
+      modelSelect.innerHTML = '';
+
+      if (provider === 'anthropic') {
+        modelSelect.innerHTML = `
+          <option value="claude-sonnet-4-20250514">Claude Sonnet 4.5 (latest)</option>
+          <option value="claude-haiku-4-20250514">Claude Haiku 4.5</option>
+        `;
+      } else if (provider === 'openai') {
+        modelSelect.innerHTML = `
+          <option value="chatgpt-4o-latest">ChatGPT-5.1 (latest)</option>
+          <option value="gpt-4o">GPT-4o</option>
+          <option value="gpt-4o-mini">GPT-4o Mini</option>
+        `;
+      }
+    };
+
+    // Settings event listeners
+    document.getElementById('settings-provider').addEventListener('change', (e) => {
+      updateModelOptions(e.target.value);
+    });
+
+    document.getElementById('settings-temperature').addEventListener('input', (e) => {
+      document.getElementById('temp-value').textContent = e.target.value;
+    });
 
     // Translation with 3 layers
     document.getElementById('translate').addEventListener('click', async () => {
@@ -570,9 +812,13 @@
       resultContainer.style.display = 'block';
       document.getElementById('layer1-content').textContent = 'Traduction en cours...';
 
+      const settings = JSON.parse(localStorage.getItem('confluentSettings') || '{}');
       const config = {
         text,
-        target: document.getElementById('target').value,
+        target: settings.target || 'ancien',
+        provider: settings.provider || 'anthropic',
+        model: settings.model || 'claude-sonnet-4-20250514',
+        temperature: settings.temperature || 1.0,
       };
 
       try {
@@ -692,7 +938,7 @@
     });
 
     // Initialize
-    loadConfig();
+    loadSettings();
     loadLexique();
   </script>
 </body>
