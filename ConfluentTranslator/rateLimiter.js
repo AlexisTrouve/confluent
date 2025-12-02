@@ -6,6 +6,10 @@ const globalLimiter = rateLimit({
   max: 200, // max 200 requêtes par IP
   standardHeaders: true,
   legacyHeaders: false,
+  skip: (req) => {
+    // Skip pour les endpoints qui doivent être appelés très fréquemment
+    return req.path === '/api/llm/limit';
+  },
   message: { error: 'Too many requests from this IP, please try again later.' }
 });
 

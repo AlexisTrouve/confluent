@@ -402,6 +402,13 @@
       color: #2563eb;
     }
 
+    /* Light theme red counter - darker red */
+    body.light-theme #llm-limit-counter {
+      color: #c41e1e;
+      background: rgba(196, 30, 30, 0.1);
+      border-color: #c41e1e;
+    }
+
     /* Settings indicator */
     .settings-indicator {
       font-size: 0.75em;
@@ -517,7 +524,24 @@
   <div class="container">
     <div class="header-container">
       <h1>ConfluentTranslator</h1>
-      <button class="logout-btn" onclick="logout()">Déconnexion</button>
+      <!-- LLM Rate Limit Counter (CENTER, RED) -->
+      <div id="llm-limit-counter" style="
+        color: #ff4444;
+        font-weight: bold;
+        font-size: 1.1em;
+        text-align: center;
+        padding: 8px 16px;
+        background: rgba(255, 68, 68, 0.1);
+        border: 2px solid #ff4444;
+        border-radius: 6px;
+        display: none;
+      ">
+        <span id="llm-limit-text">Requêtes LLM: 20/20</span>
+      </div>
+      <div>
+        <button class="logout-btn" onclick="goToAdmin()" id="admin-btn" style="display:none; margin-right: 10px;">🔐 Admin</button>
+        <button class="logout-btn" onclick="logout()">Déconnexion</button>
+      </div>
     </div>
 
     <!-- Tabs -->
@@ -836,9 +860,38 @@
       } else {
         // Hide login overlay
         overlay.classList.add('hidden');
+        // Load LLM limit counter
+        updateLLMLimit();
       }
 
       return !!apiKey;
+    };
+
+    // Update LLM rate limit counter
+    const updateLLMLimit = async () => {
+      try {
+        const response = await authFetch('/api/llm/limit');
+        const data = await response.json();
+
+        console.log('LLM Limit data:', data); // Debug
+
+        const counter = document.getElementById('llm-limit-counter');
+        const text = document.getElementById('llm-limit-text');
+
+        if (data.limit === -1) {
+          // Admin with unlimited requests
+          counter.style.display = 'none';
+        } else {
+          // User with limited requests
+          counter.style.display = 'block';
+          const used = data.used || 0;
+          const limit = data.limit || 20;
+          const remaining = limit - used;
+          text.textContent = `Requêtes LLM restantes: ${remaining}/${limit}`;
+        }
+      } catch (error) {
+        console.error('Error loading LLM limit:', error);
+      }
     };
 
     // Login function
@@ -852,9 +905,9 @@
         return;
       }
 
-      // Test the API key with a simple request
+      // Test the API key with the validation endpoint
       try {
-        const response = await fetch('/api/stats', {
+        const response = await fetch('/api/validate', {
           headers: {
             'x-api-key': apiKey
           }
@@ -866,6 +919,9 @@
           checkAuth();
           errorDiv.style.display = 'none';
           document.getElementById('login-api-key').value = '';
+
+          // Load initial data after successful login
+          await loadLexique();
         } else if (response.status === 401 || response.status === 403) {
           // Invalid key
           errorDiv.textContent = 'Clé API invalide';
@@ -896,10 +952,28 @@
           login();
         }
       });
+
+      // Refresh LLM limit counter every 3 seconds if logged in
+      let limitErrorCount = 0;
+      const limitInterval = setInterval(() => {
+        if (getApiKey()) {
+          updateLLMLimit().catch(err => {
+            limitErrorCount++;
+            // Stop polling after 5 consecutive errors
+            if (limitErrorCount >= 5) {
+              console.warn('Too many errors loading LLM limit, stopping auto-refresh');
+              clearInterval(limitInterval);
+            }
+          });
+        } else {
+          // Reset error count if not logged in
+          limitErrorCount = 0;
+        }
+      }, 3000);
     });
 
-    // Authenticated fetch wrapper
-    const authFetch = (url, options = {}) => {
+    // Authenticated fetch wrapper with auto-logout on 401/403
+    const authFetch = async (url, options = {}) => {
       const apiKey = getApiKey();
 
       // Merge headers
@@ -908,10 +982,20 @@
         'x-api-key': apiKey
       };
 
-      return fetch(url, {
+      const response = await fetch(url, {
         ...options,
         headers
       });
+
+      // Auto-logout on authentication errors
+      if (response.status === 401 || response.status === 403) {
+        console.warn('Authentication failed - logging out');
+        clearApiKey();
+        checkAuth();
+        throw new Error('Session expirée. Veuillez vous reconnecter.');
+      }
+
+      return response;
     };
 
     // Lexique data
@@ -921,7 +1005,7 @@
     const loadLexique = async () => {
       try {
         const niveau = 'ancien';
-        const response = await fetch(`/api/lexique/${niveau}`);
+        const response = await authFetch(`/api/lexique/${niveau}`);
         lexiqueData = await response.json();
 
         // Load stats
@@ -934,7 +1018,7 @@
     // Load statistics
     const loadStats = async (niveau) => {
       try {
-        const response = await fetch(`/api/stats?variant=${niveau}`);
+        const response = await authFetch(`/api/stats?variant=${niveau}`);
         const stats = await response.json();
 
         // Update general stats
@@ -1256,6 +1340,14 @@
         temperature: settings.temperature || 1.0,
       };
 
+      // Add custom API keys if provided
+      if (settings.anthropicKey && settings.anthropicKey.trim()) {
+        config.customAnthropicKey = settings.anthropicKey.trim();
+      }
+      if (settings.openaiKey && settings.openaiKey.trim()) {
+        config.customOpenAIKey = settings.openaiKey.trim();
+      }
+
       try {
         const response = await authFetch('/translate', {
           method: 'POST',
@@ -1412,15 +1504,25 @@
         }
 
         // Step 2: Get LLM refined translation
+        const llmConfig = {
+          text,
+          variant: 'ancien',
+          provider: settings.provider || 'anthropic',
+          model: settings.model || 'claude-sonnet-4-20250514'
+        };
+
+        // Add custom API keys if provided
+        if (settings.anthropicKey && settings.anthropicKey.trim()) {
+          llmConfig.customAnthropicKey = settings.anthropicKey.trim();
+        }
+        if (settings.openaiKey && settings.openaiKey.trim()) {
+          llmConfig.customOpenAIKey = settings.openaiKey.trim();
+        }
+
         const llmResponse = await authFetch('/api/translate/conf2fr/llm', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            text,
-            variant: 'ancien',
-            provider: settings.provider || 'anthropic',
-            model: settings.model || 'claude-sonnet-4-20250514'
-          }),
+          body: JSON.stringify(llmConfig),
         });
 
         const llmData = await llmResponse.json();
@@ -1443,11 +1545,32 @@
       applyTheme(e.target.value);
     });
 
+    // Go to admin panel
+    const goToAdmin = () => {
+      window.location.href = '/admin.html';
+    };
+
+    // Check if user is admin and show admin button
+    const checkAdminRole = async () => {
+      try {
+        const response = await authFetch('/api/validate');
+        if (response.ok) {
+          const data = await response.json();
+          if (data.role === 'admin') {
+            document.getElementById('admin-btn').style.display = 'inline-block';
+          }
+        }
+      } catch (error) {
+        console.log('Not admin or error checking role');
+      }
+    };
+
     // Initialize
     checkAuth();  // Check if user is logged in
     loadSettings();
     loadLexique();
     updateSettingsIndicators();
+    checkAdminRole();  // Check if admin to show admin button
   </script>
 </body>
 </html>

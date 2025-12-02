@@ -34,7 +34,20 @@ function loadTokens() {
       createdAt: new Date().toISOString(),
       active: true,
       requestsToday: 0,
-      dailyLimit: -1 // illimité
+      dailyLimit: -1, // illimité
+      // Tracking des tokens LLM
+      llmTokens: {
+        totalInput: 0,
+        totalOutput: 0,
+        today: {
+          input: 0,
+          output: 0,
+          date: new Date().toISOString().split('T')[0]
+        }
+      },
+      // Rate limiting LLM (illimité pour admin)
+      llmRequestsToday: 0,
+      llmDailyLimit: -1
     }
   };
 
@@ -43,9 +56,9 @@ function loadTokens() {
   return defaultTokens;
 }
 
-function saveTokens() {
+function saveTokens(tokensToSave = tokens) {
   try {
-    fs.writeFileSync(TOKENS_FILE, JSON.stringify(tokens, null, 2));
+    fs.writeFileSync(TOKENS_FILE, JSON.stringify(tokensToSave, null, 2));
   } catch (error) {
     console.error('Error saving tokens:', error);
   }
@@ -124,7 +137,20 @@ function createToken(name, role = 'user', dailyLimit = 100) {
     createdAt: new Date().toISOString(),
     active: true,
     requestsToday: 0,
-    dailyLimit
+    dailyLimit,
+    // Tracking des tokens LLM
+    llmTokens: {
+      totalInput: 0,
+      totalOutput: 0,
+      today: {
+        input: 0,
+        output: 0,
+        date: new Date().toISOString().split('T')[0]
+      }
+    },
+    // Rate limiting LLM
+    llmRequestsToday: 0,
+    llmDailyLimit: 20
   };
 
   saveTokens();
@@ -189,6 +215,112 @@ function getGlobalStats() {
   };
 }
 
+// Vérifier la limite de requêtes LLM
+function checkLLMLimit(apiKey) {
+  const token = Object.values(tokens).find(t => t.apiKey === apiKey);
+
+  if (!token) return { allowed: false, error: 'Invalid API key' };
+
+  // Initialiser si n'existe pas
+  if (token.llmRequestsToday === undefined) {
+    token.llmRequestsToday = 0;
+    token.llmDailyLimit = token.role === 'admin' ? -1 : 20;
+    saveTokens(); // Sauvegarder l'initialisation
+  }
+
+  // Initialiser llmTokens.today.date si n'existe pas
+  if (!token.llmTokens) {
+    token.llmTokens = {
+      totalInput: 0,
+      totalOutput: 0,
+      today: {
+        input: 0,
+        output: 0,
+        date: new Date().toISOString().split('T')[0]
+      }
+    };
+    saveTokens();
+  }
+
+  const today = new Date().toISOString().split('T')[0];
+
+  // Reset si changement de jour
+  if (token.llmTokens.today.date !== today) {
+    token.llmRequestsToday = 0;
+    token.llmTokens.today = {
+      input: 0,
+      output: 0,
+      date: today
+    };
+    saveTokens();
+  }
+
+  // Vérifier la limite (-1 = illimité pour admin)
+  if (token.llmDailyLimit > 0 && token.llmRequestsToday >= token.llmDailyLimit) {
+    return {
+      allowed: false,
+      error: 'Daily LLM request limit reached',
+      limit: token.llmDailyLimit,
+      used: token.llmRequestsToday
+    };
+  }
+
+  return {
+    allowed: true,
+    remaining: token.llmDailyLimit > 0 ? token.llmDailyLimit - token.llmRequestsToday : -1,
+    limit: token.llmDailyLimit,
+    used: token.llmRequestsToday
+  };
+}
+
+// Tracker les tokens LLM utilisés
+function trackLLMUsage(apiKey, inputTokens, outputTokens) {
+  const token = Object.values(tokens).find(t => t.apiKey === apiKey);
+
+  if (!token) return false;
+
+  // Initialiser la structure si elle n'existe pas (tokens existants)
+  if (!token.llmTokens) {
+    token.llmTokens = {
+      totalInput: 0,
+      totalOutput: 0,
+      today: {
+        input: 0,
+        output: 0,
+        date: new Date().toISOString().split('T')[0]
+      }
+    };
+  }
+
+  // Initialiser rate limiting LLM si n'existe pas
+  if (token.llmRequestsToday === undefined) {
+    token.llmRequestsToday = 0;
+    token.llmDailyLimit = token.role === 'admin' ? -1 : 20;
+  }
+
+  const today = new Date().toISOString().split('T')[0];
+
+  // Reset des compteurs quotidiens si changement de jour
+  if (token.llmTokens.today.date !== today) {
+    token.llmTokens.today = {
+      input: 0,
+      output: 0,
+      date: today
+    };
+    token.llmRequestsToday = 0; // Reset compteur requêtes LLM
+  }
+
+  // Incrémenter les compteurs
+  token.llmTokens.totalInput += inputTokens;
+  token.llmTokens.totalOutput += outputTokens;
+  token.llmTokens.today.input += inputTokens;
+  token.llmTokens.today.output += outputTokens;
+  token.llmRequestsToday++;
+
+  saveTokens();
+  return true;
+}
+
 // Charger les tokens au démarrage
 tokens = loadTokens();
 
@@ -202,5 +334,7 @@ module.exports = {
   deleteToken,
   getGlobalStats,
   loadTokens,
+  trackLLMUsage,
+  checkLLMLimit,
   tokens
 };

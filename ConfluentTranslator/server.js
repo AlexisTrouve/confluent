@@ -16,7 +16,7 @@ const { buildReverseIndex: buildConfluentIndex } = require('./reverseIndexBuilde
 const { translateConfluentToFrench, translateConfluentDetailed } = require('./confluentToFrench');
 
 // Security modules
-const { authenticate, requireAdmin, createToken, listTokens, disableToken, enableToken, deleteToken, getGlobalStats } = require('./auth');
+const { authenticate, requireAdmin, createToken, listTokens, disableToken, enableToken, deleteToken, getGlobalStats, trackLLMUsage, checkLLMLimit } = require('./auth');
 const { globalLimiter, translationLimiter, adminLimiter } = require('./rateLimiter');
 const { requestLogger, getLogs, getLogStats } = require('./logger');
 
@@ -27,6 +27,27 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(requestLogger);      // Log toutes les requêtes
 app.use(globalLimiter);       // Rate limiting global
+
+// Route protégée pour admin.html (AVANT express.static)
+// Vérifie l'auth seulement si API key présente, sinon laisse passer (le JS client vérifiera)
+app.get('/admin.html', (req, res, next) => {
+  const apiKey = req.headers['x-api-key'] || req.query.apiKey;
+
+  // Si pas d'API key, c'est une requête browser normale -> laisser passer
+  if (!apiKey) {
+    return res.sendFile(path.join(__dirname, 'public', 'admin.html'));
+  }
+
+  // Si API key présente, vérifier qu'elle est admin
+  authenticate(req, res, (authErr) => {
+    if (authErr) return next(authErr);
+    requireAdmin(req, res, (adminErr) => {
+      if (adminErr) return next(adminErr);
+      res.sendFile(path.join(__dirname, 'public', 'admin.html'));
+    });
+  });
+});
+
 app.use(express.static('public'));
 
 // Load prompts
@@ -57,8 +78,38 @@ function reloadLexiques() {
 // Initial load
 reloadLexiques();
 
-// Legacy lexique endpoint (for backward compatibility)
-app.get('/lexique', (req, res) => {
+// Health check endpoint (public - for login validation)
+app.get('/api/health', (req, res) => {
+  res.json({
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+    version: '1.0.0'
+  });
+});
+
+// Auth validation endpoint (tests API key without exposing data)
+app.get('/api/validate', authenticate, (req, res) => {
+  res.json({
+    valid: true,
+    user: req.user?.name || 'anonymous',
+    role: req.user?.role || 'user'
+  });
+});
+
+// LLM limit check endpoint - Always returns 200 with info
+app.get('/api/llm/limit', authenticate, (req, res) => {
+  const apiKey = req.headers['x-api-key'] || req.query.apiKey;
+  const limitCheck = checkLLMLimit(apiKey);
+
+  console.log('[/api/llm/limit] Check result:', limitCheck); // Debug
+
+  // TOUJOURS retourner 200 avec les données
+  // Cet endpoint ne bloque jamais, il informe seulement
+  res.status(200).json(limitCheck);
+});
+
+// Legacy lexique endpoint (for backward compatibility) - SECURED
+app.get('/lexique', authenticate, (req, res) => {
   // Return ancien-confluent by default (legacy behavior)
   if (!lexiques.ancien) {
     return res.status(500).json({ error: 'Lexique not loaded' });
@@ -66,8 +117,8 @@ app.get('/lexique', (req, res) => {
   res.json(lexiques.ancien);
 });
 
-// New lexique endpoints
-app.get('/api/lexique/:variant', (req, res) => {
+// New lexique endpoints - SECURED
+app.get('/api/lexique/:variant', authenticate, (req, res) => {
   const { variant } = req.params;
 
   if (variant !== 'proto' && variant !== 'ancien') {
@@ -81,8 +132,8 @@ app.get('/api/lexique/:variant', (req, res) => {
   res.json(lexiques[variant]);
 });
 
-// Stats endpoint
-app.get('/api/stats', (req, res) => {
+// Stats endpoint - SECURED
+app.get('/api/stats', authenticate, (req, res) => {
   const { variant = 'ancien' } = req.query;
 
   if (variant !== 'proto' && variant !== 'ancien') {
@@ -167,8 +218,8 @@ app.get('/api/stats', (req, res) => {
   res.json(stats);
 });
 
-// Search endpoint
-app.get('/api/search', (req, res) => {
+// Search endpoint - SECURED
+app.get('/api/search', authenticate, (req, res) => {
   const { q, variant = 'ancien', direction = 'fr2conf' } = req.query;
 
   if (!q) {
@@ -183,8 +234,8 @@ app.get('/api/search', (req, res) => {
   res.json({ query: q, variant, direction, results });
 });
 
-// Reload endpoint (for development)
-app.post('/api/reload', (req, res) => {
+// Reload endpoint (for development) - SECURED (admin only)
+app.post('/api/reload', authenticate, requireAdmin, (req, res) => {
   try {
     reloadLexiques();
     res.json({
@@ -214,8 +265,8 @@ ${summary}
 `;
 }
 
-// Debug endpoint: Generate prompt without calling LLM
-app.post('/api/debug/prompt', (req, res) => {
+// Debug endpoint: Generate prompt without calling LLM - SECURED
+app.post('/api/debug/prompt', authenticate, (req, res) => {
   const { text, target = 'ancien', useLexique = true } = req.body;
 
   if (!text) {
@@ -265,8 +316,8 @@ app.post('/api/debug/prompt', (req, res) => {
   }
 });
 
-// Coverage analysis endpoint (analyze French text before translation)
-app.post('/api/analyze/coverage', (req, res) => {
+// Coverage analysis endpoint (analyze French text before translation) - SECURED
+app.post('/api/analyze/coverage', authenticate, (req, res) => {
   const { text, target = 'ancien' } = req.body;
 
   if (!text) {
@@ -328,10 +379,26 @@ app.post('/api/analyze/coverage', (req, res) => {
 
 // Translation endpoint (NOUVEAU SYSTÈME CONTEXTUEL)
 app.post('/translate', authenticate, translationLimiter, async (req, res) => {
-  const { text, target, provider, model, temperature = 1.0, useLexique = true } = req.body;
+  const { text, target, provider, model, temperature = 1.0, useLexique = true, customAnthropicKey, customOpenAIKey } = req.body;
 
   if (!text || !target || !provider || !model) {
     return res.status(400).json({ error: 'Missing parameters' });
+  }
+
+  // Check for custom API keys
+  const usingCustomKey = !!(customAnthropicKey || customOpenAIKey);
+
+  // Only check rate limit if NOT using custom keys
+  if (!usingCustomKey) {
+    const apiKey = req.headers['x-api-key'] || req.query.apiKey;
+    const limitCheck = checkLLMLimit(apiKey);
+    if (!limitCheck.allowed) {
+      return res.status(429).json({
+        error: limitCheck.error,
+        limit: limitCheck.limit,
+        used: limitCheck.used
+      });
+    }
   }
 
   const variant = target === 'proto' ? 'proto' : 'ancien';
@@ -369,7 +436,7 @@ app.post('/translate', authenticate, translationLimiter, async (req, res) => {
 
     if (provider === 'anthropic') {
       const anthropic = new Anthropic({
-        apiKey: process.env.ANTHROPIC_API_KEY,
+        apiKey: customAnthropicKey || process.env.ANTHROPIC_API_KEY,
       });
 
       const message = await anthropic.messages.create({
@@ -385,9 +452,15 @@ app.post('/translate', authenticate, translationLimiter, async (req, res) => {
       rawResponse = message.content[0].text;
       translation = rawResponse;
 
+      // Track LLM usage (only increment counter if NOT using custom key)
+      const apiKey = req.headers['x-api-key'] || req.query.apiKey;
+      if (apiKey && message.usage && !usingCustomKey) {
+        trackLLMUsage(apiKey, message.usage.input_tokens, message.usage.output_tokens);
+      }
+
     } else if (provider === 'openai') {
       const openai = new OpenAI({
-        apiKey: process.env.OPENAI_API_KEY,
+        apiKey: customOpenAIKey || process.env.OPENAI_API_KEY,
       });
 
       const completion = await openai.chat.completions.create({
@@ -402,6 +475,12 @@ app.post('/translate', authenticate, translationLimiter, async (req, res) => {
 
       rawResponse = completion.choices[0].message.content;
       translation = rawResponse;
+
+      // Track LLM usage (only increment counter if NOT using custom key)
+      const apiKey = req.headers['x-api-key'] || req.query.apiKey;
+      if (apiKey && completion.usage && !usingCustomKey) {
+        trackLLMUsage(apiKey, completion.usage.prompt_tokens, completion.usage.completion_tokens);
+      }
     } else {
       return res.status(400).json({ error: 'Unknown provider' });
     }
@@ -506,12 +585,28 @@ function parseTranslationResponse(response) {
   };
 }
 
-// Raw translation endpoint (for debugging - returns unprocessed LLM output)
-app.post('/api/translate/raw', async (req, res) => {
-  const { text, target, provider, model, useLexique = true } = req.body;
+// Raw translation endpoint (for debugging - returns unprocessed LLM output) - SECURED
+app.post('/api/translate/raw', authenticate, translationLimiter, async (req, res) => {
+  const { text, target, provider, model, useLexique = true, customAnthropicKey, customOpenAIKey } = req.body;
 
   if (!text || !target || !provider || !model) {
     return res.status(400).json({ error: 'Missing parameters' });
+  }
+
+  // Check for custom API keys
+  const usingCustomKey = !!(customAnthropicKey || customOpenAIKey);
+
+  // Only check rate limit if NOT using custom keys
+  if (!usingCustomKey) {
+    const apiKey = req.headers['x-api-key'] || req.query.apiKey;
+    const limitCheck = checkLLMLimit(apiKey);
+    if (!limitCheck.allowed) {
+      return res.status(429).json({
+        error: limitCheck.error,
+        limit: limitCheck.limit,
+        used: limitCheck.used
+      });
+    }
   }
 
   const variant = target === 'proto' ? 'proto' : 'ancien';
@@ -545,7 +640,7 @@ app.post('/api/translate/raw', async (req, res) => {
 
     if (provider === 'anthropic') {
       const anthropic = new Anthropic({
-        apiKey: process.env.ANTHROPIC_API_KEY,
+        apiKey: customAnthropicKey || process.env.ANTHROPIC_API_KEY,
       });
 
       const message = await anthropic.messages.create({
@@ -559,9 +654,15 @@ app.post('/api/translate/raw', async (req, res) => {
 
       rawResponse = message.content[0].text;
 
+      // Track LLM usage (only increment counter if NOT using custom key)
+      const apiKey = req.headers['x-api-key'] || req.query.apiKey;
+      if (apiKey && message.usage && !usingCustomKey) {
+        trackLLMUsage(apiKey, message.usage.input_tokens, message.usage.output_tokens);
+      }
+
     } else if (provider === 'openai') {
       const openai = new OpenAI({
-        apiKey: process.env.OPENAI_API_KEY,
+        apiKey: customOpenAIKey || process.env.OPENAI_API_KEY,
       });
 
       const completion = await openai.chat.completions.create({
@@ -574,6 +675,12 @@ app.post('/api/translate/raw', async (req, res) => {
       });
 
       rawResponse = completion.choices[0].message.content;
+
+      // Track LLM usage (only increment counter if NOT using custom key)
+      const apiKey = req.headers['x-api-key'] || req.query.apiKey;
+      if (apiKey && completion.usage && !usingCustomKey) {
+        trackLLMUsage(apiKey, completion.usage.prompt_tokens, completion.usage.completion_tokens);
+      }
     } else {
       return res.status(400).json({ error: 'Unknown provider' });
     }
@@ -592,8 +699,8 @@ app.post('/api/translate/raw', async (req, res) => {
   }
 });
 
-// Batch translation endpoint
-app.post('/api/translate/batch', async (req, res) => {
+// Batch translation endpoint - SECURED
+app.post('/api/translate/batch', authenticate, translationLimiter, async (req, res) => {
   const { words, target = 'ancien' } = req.body;
 
   if (!words || !Array.isArray(words)) {
@@ -619,8 +726,8 @@ app.post('/api/translate/batch', async (req, res) => {
   res.json({ target, results });
 });
 
-// Confluent → French translation endpoint (traduction brute)
-app.post('/api/translate/conf2fr', (req, res) => {
+// Confluent → French translation endpoint (traduction brute) - SECURED
+app.post('/api/translate/conf2fr', authenticate, translationLimiter, (req, res) => {
   const { text, variant = 'ancien', detailed = false } = req.body;
 
   if (!text) {
@@ -649,10 +756,26 @@ app.post('/api/translate/conf2fr', (req, res) => {
 
 // NEW: Confluent → French with LLM refinement
 app.post('/api/translate/conf2fr/llm', authenticate, translationLimiter, async (req, res) => {
-  const { text, variant = 'ancien', provider = 'anthropic', model = 'claude-sonnet-4-20250514' } = req.body;
+  const { text, variant = 'ancien', provider = 'anthropic', model = 'claude-sonnet-4-20250514', customAnthropicKey, customOpenAIKey } = req.body;
 
   if (!text) {
     return res.status(400).json({ error: 'Missing parameter: text' });
+  }
+
+  // Check for custom API keys
+  const usingCustomKey = !!(customAnthropicKey || customOpenAIKey);
+
+  // Only check rate limit if NOT using custom keys
+  if (!usingCustomKey) {
+    const apiKey = req.headers['x-api-key'] || req.query.apiKey;
+    const limitCheck = checkLLMLimit(apiKey);
+    if (!limitCheck.allowed) {
+      return res.status(429).json({
+        error: limitCheck.error,
+        limit: limitCheck.limit,
+        used: limitCheck.used
+      });
+    }
   }
 
   const variantKey = variant === 'proto' ? 'proto' : 'ancien';
@@ -673,7 +796,7 @@ app.post('/api/translate/conf2fr/llm', authenticate, translationLimiter, async (
 
     if (provider === 'anthropic') {
       const anthropic = new Anthropic({
-        apiKey: process.env.ANTHROPIC_API_KEY,
+        apiKey: customAnthropicKey || process.env.ANTHROPIC_API_KEY,
       });
 
       const message = await anthropic.messages.create({
@@ -689,9 +812,15 @@ app.post('/api/translate/conf2fr/llm', authenticate, translationLimiter, async (
       });
 
       refinedText = message.content[0].text.trim();
+
+      // Track LLM usage (only increment counter if NOT using custom key)
+      const apiKey = req.headers['x-api-key'] || req.query.apiKey;
+      if (apiKey && message.usage && !usingCustomKey) {
+        trackLLMUsage(apiKey, message.usage.input_tokens, message.usage.output_tokens);
+      }
     } else if (provider === 'openai') {
       const openai = new OpenAI({
-        apiKey: process.env.OPENAI_API_KEY,
+        apiKey: customOpenAIKey || process.env.OPENAI_API_KEY,
       });
 
       const completion = await openai.chat.completions.create({
@@ -703,6 +832,12 @@ app.post('/api/translate/conf2fr/llm', authenticate, translationLimiter, async (
       });
 
       refinedText = completion.choices[0].message.content.trim();
+
+      // Track LLM usage (only increment counter if NOT using custom key)
+      const apiKey = req.headers['x-api-key'] || req.query.apiKey;
+      if (apiKey && completion.usage && !usingCustomKey) {
+        trackLLMUsage(apiKey, completion.usage.prompt_tokens, completion.usage.completion_tokens);
+      }
     } else {
       return res.status(400).json({ error: 'Unsupported provider. Use "anthropic" or "openai".' });
     }
