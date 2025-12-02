@@ -415,11 +415,110 @@
       color: #666;
       border-bottom-color: #e0e0e0;
     }
+
+    /* Login overlay */
+    .login-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.95);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    .login-overlay.hidden {
+      display: none;
+    }
+    .login-modal {
+      background: #2a2a2a;
+      border: 2px solid #4a9eff;
+      border-radius: 12px;
+      padding: 40px;
+      max-width: 500px;
+      width: 90%;
+      box-shadow: 0 10px 40px rgba(74, 158, 255, 0.3);
+    }
+    .login-modal h2 {
+      color: #4a9eff;
+      margin-bottom: 20px;
+      font-size: 1.5em;
+      text-align: center;
+    }
+    .login-modal p {
+      color: #b0b0b0;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .login-modal .form-group {
+      margin-bottom: 20px;
+    }
+    .login-modal input {
+      width: 100%;
+      padding: 12px;
+      font-size: 1em;
+      font-family: monospace;
+    }
+    .login-modal button {
+      width: 100%;
+      padding: 14px;
+      font-size: 1.1em;
+    }
+    .login-error {
+      color: #ff4a4a;
+      margin-top: 10px;
+      text-align: center;
+      display: none;
+    }
+    body.light-theme .login-modal {
+      background: #ffffff;
+      border-color: #2563eb;
+      box-shadow: 0 10px 40px rgba(37, 99, 235, 0.3);
+    }
+    body.light-theme .login-modal h2 {
+      color: #2563eb;
+    }
+
+    /* Logout button */
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .logout-btn {
+      background: #555;
+      padding: 8px 16px;
+      font-size: 0.9em;
+      font-weight: normal;
+    }
+    .logout-btn:hover {
+      background: #666;
+    }
   </style>
 </head>
 <body>
+  <!-- Login overlay -->
+  <div id="login-overlay" class="login-overlay">
+    <div class="login-modal">
+      <h2>🔐 Connexion requise</h2>
+      <p>Entrez votre clé API pour accéder au traducteur Confluent.</p>
+      <div class="form-group">
+        <label>API Key</label>
+        <input type="password" id="login-api-key" placeholder="c32b04be-2e68-4e15-8362-...">
+      </div>
+      <button onclick="login()">Se connecter</button>
+      <div id="login-error" class="login-error">Clé API invalide</div>
+    </div>
+  </div>
+
   <div class="container">
-    <h1>ConfluentTranslator</h1>
+    <div class="header-container">
+      <h1>ConfluentTranslator</h1>
+      <button class="logout-btn" onclick="logout()">Déconnexion</button>
+    </div>
 
     <!-- Tabs -->
     <div class="tabs">
@@ -715,6 +814,106 @@
   </div>
 
   <script>
+    // === AUTHENTICATION SYSTEM ===
+
+    // Get API key from localStorage
+    const getApiKey = () => localStorage.getItem('confluentApiKey');
+
+    // Set API key to localStorage
+    const setApiKey = (key) => localStorage.setItem('confluentApiKey', key);
+
+    // Remove API key from localStorage
+    const clearApiKey = () => localStorage.removeItem('confluentApiKey');
+
+    // Check if user is authenticated
+    const checkAuth = () => {
+      const apiKey = getApiKey();
+      const overlay = document.getElementById('login-overlay');
+
+      if (!apiKey) {
+        // Show login overlay
+        overlay.classList.remove('hidden');
+      } else {
+        // Hide login overlay
+        overlay.classList.add('hidden');
+      }
+
+      return !!apiKey;
+    };
+
+    // Login function
+    const login = async () => {
+      const apiKey = document.getElementById('login-api-key').value.trim();
+      const errorDiv = document.getElementById('login-error');
+
+      if (!apiKey) {
+        errorDiv.textContent = 'Veuillez entrer une clé API';
+        errorDiv.style.display = 'block';
+        return;
+      }
+
+      // Test the API key with a simple request
+      try {
+        const response = await fetch('/api/stats', {
+          headers: {
+            'x-api-key': apiKey
+          }
+        });
+
+        if (response.ok) {
+          // Key is valid
+          setApiKey(apiKey);
+          checkAuth();
+          errorDiv.style.display = 'none';
+          document.getElementById('login-api-key').value = '';
+        } else if (response.status === 401 || response.status === 403) {
+          // Invalid key
+          errorDiv.textContent = 'Clé API invalide';
+          errorDiv.style.display = 'block';
+        } else {
+          // Other error
+          errorDiv.textContent = `Erreur: ${response.status}`;
+          errorDiv.style.display = 'block';
+        }
+      } catch (error) {
+        errorDiv.textContent = `Erreur de connexion: ${error.message}`;
+        errorDiv.style.display = 'block';
+      }
+    };
+
+    // Logout function
+    const logout = () => {
+      if (confirm('Êtes-vous sûr de vouloir vous déconnecter ?')) {
+        clearApiKey();
+        checkAuth();
+      }
+    };
+
+    // Add enter key support for login
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('login-api-key').addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          login();
+        }
+      });
+    });
+
+    // Authenticated fetch wrapper
+    const authFetch = (url, options = {}) => {
+      const apiKey = getApiKey();
+
+      // Merge headers
+      const headers = {
+        ...options.headers,
+        'x-api-key': apiKey
+      };
+
+      return fetch(url, {
+        ...options,
+        headers
+      });
+    };
+
     // Lexique data
     let lexiqueData = null;
 
@@ -1058,7 +1257,7 @@
       };
 
       try {
-        const response = await fetch('/translate', {
+        const response = await authFetch('/translate', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(config),
@@ -1159,7 +1358,7 @@
 
       try {
         // Step 1: Get raw translation to show details immediately
-        const rawResponse = await fetch('/api/translate/conf2fr', {
+        const rawResponse = await authFetch('/api/translate/conf2fr', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -1213,7 +1412,7 @@
         }
 
         // Step 2: Get LLM refined translation
-        const llmResponse = await fetch('/api/translate/conf2fr/llm', {
+        const llmResponse = await authFetch('/api/translate/conf2fr/llm', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -1245,6 +1444,7 @@
     });
 
     // Initialize
+    checkAuth();  // Check if user is logged in
     loadSettings();
     loadLexique();
     updateSettingsIndicators();

@@ -15,10 +15,18 @@ const { buildContextualPrompt, getBasePrompt, getPromptStats } = require('./prom
 const { buildReverseIndex: buildConfluentIndex } = require('./reverseIndexBuilder');
 const { translateConfluentToFrench, translateConfluentDetailed } = require('./confluentToFrench');
 
+// Security modules
+const { authenticate, requireAdmin, createToken, listTokens, disableToken, enableToken, deleteToken, getGlobalStats } = require('./auth');
+const { globalLimiter, translationLimiter, adminLimiter } = require('./rateLimiter');
+const { requestLogger, getLogs, getLogStats } = require('./logger');
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Middlewares
 app.use(express.json());
+app.use(requestLogger);      // Log toutes les requêtes
+app.use(globalLimiter);       // Rate limiting global
 app.use(express.static('public'));
 
 // Load prompts
@@ -319,7 +327,7 @@ app.post('/api/analyze/coverage', (req, res) => {
 });
 
 // Translation endpoint (NOUVEAU SYSTÈME CONTEXTUEL)
-app.post('/translate', async (req, res) => {
+app.post('/translate', authenticate, translationLimiter, async (req, res) => {
   const { text, target, provider, model, temperature = 1.0, useLexique = true } = req.body;
 
   if (!text || !target || !provider || !model) {
@@ -640,7 +648,7 @@ app.post('/api/translate/conf2fr', (req, res) => {
 });
 
 // NEW: Confluent → French with LLM refinement
-app.post('/api/translate/conf2fr/llm', async (req, res) => {
+app.post('/api/translate/conf2fr/llm', authenticate, translationLimiter, async (req, res) => {
   const { text, variant = 'ancien', provider = 'anthropic', model = 'claude-sonnet-4-20250514' } = req.body;
 
   if (!text) {
@@ -718,6 +726,10 @@ app.post('/api/translate/conf2fr/llm', async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 });
+
+// Admin routes
+const adminRoutes = require('./adminRoutes');
+app.use('/api/admin', authenticate, adminRoutes);
 
 app.listen(PORT, () => {
   console.log(`ConfluentTranslator running on http://localhost:${PORT}`);
