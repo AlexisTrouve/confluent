@@ -5,9 +5,9 @@
     "pierre": {
       "traductions": [
         {
-          "confluent": "kali",
+          "confluent": "zmepa",
           "type": "racine",
-          "forme_liee": "kal",
+          "forme_liee": "zmep",
           "domaine": "materiau",
           "note": "Matériau fondamental"
         }
@@ -20,9 +20,9 @@
     "bois": {
       "traductions": [
         {
-          "confluent": "viku",
+          "confluent": "nmeme",
           "type": "racine",
-          "forme_liee": "vik",
+          "forme_liee": "nmem",
           "domaine": "materiau",
           "note": "Matériau de l'arbre/forêt"
         }
@@ -46,7 +46,7 @@
     "metal": {
       "traductions": [
         {
-          "confluent": "kaliusuki",
+          "confluent": "vmevubakba",
           "type": "composition",
           "composition": "kal-i-suki",
           "sens_litteral": "Pierre du feu",
@@ -76,9 +76,9 @@
     "cendre": {
       "traductions": [
         {
-          "confluent": "senu",
+          "confluent": "kvile",
           "type": "racine",
-          "forme_liee": "sen",
+          "forme_liee": "kvil",
           "domaine": "materiau"
         }
       ]
@@ -86,9 +86,9 @@
     "sang": {
       "traductions": [
         {
-          "confluent": "pasu",
+          "confluent": "mzune",
           "type": "racine",
-          "forme_liee": "ras",
+          "forme_liee": "mzun",
           "domaine": "materiau"
         }
       ]
@@ -96,9 +96,9 @@
     "lait": {
       "traductions": [
         {
-          "confluent": "milu",
+          "confluent": "stuki",
           "type": "racine",
-          "forme_liee": "mil",
+          "forme_liee": "stuk",
           "domaine": "materiau"
         }
       ]
@@ -106,9 +106,9 @@
     "ligne": {
       "traductions": [
         {
-          "confluent": "linu",
+          "confluent": "speto",
           "type": "racine",
-          "forme_liee": "lin",
+          "forme_liee": "spet",
           "domaine": "forme"
         }
       ]
@@ -116,9 +116,9 @@
     "corde": {
       "traductions": [
         {
-          "confluent": "kopu",
+          "confluent": "kkese",
           "type": "racine",
-          "forme_liee": "kop",
+          "forme_liee": "kkes",
           "domaine": "outil"
         }
       ]
@@ -126,9 +126,9 @@
     "sac": {
       "traductions": [
         {
-          "confluent": "saku",
+          "confluent": "pnomu",
           "type": "racine",
-          "forme_liee": "sak",
+          "forme_liee": "pnom",
           "domaine": "objet"
         }
       ],
@@ -139,9 +139,9 @@
     "tablette": {
       "traductions": [
         {
-          "confluent": "tabu",
+          "confluent": "zkami",
           "type": "racine",
-          "forme_liee": "tab",
+          "forme_liee": "zkam",
           "domaine": "objet"
         }
       ],
@@ -203,7 +203,7 @@
     "coffret": {
       "traductions": [
         {
-          "confluent": "sakuzaki",
+          "confluent": "svalezelu",
           "type": "composition",
           "composition": "sak-u-zaki",
           "sens_litteral": "Contenant protégé",
@@ -218,7 +218,7 @@
     "foyer": {
       "traductions": [
         {
-          "confluent": "sukiuloku",
+          "confluent": "bvuvibolvu",
           "type": "composition",
           "composition": "suk-i-loku",
           "sens_litteral": "Feu du lieu",
@@ -233,7 +233,7 @@
     "grenier": {
       "traductions": [
         {
-          "confluent": "lokuzaki",
+          "confluent": "bkisesiku",
           "type": "composition",
           "composition": "lok-u-zaki",
           "sens_litteral": "Lieu gardé",
@@ -284,9 +284,9 @@
     "zone": {
       "traductions": [
         {
-          "confluent": "loku",
+          "confluent": "pvevi",
           "type": "racine",
-          "forme_liee": "lok",
+          "forme_liee": "pvev",
           "domaine": "espace"
         }
       ],
@@ -297,9 +297,9 @@
     "navire": {
       "traductions": [
         {
-          "confluent": "vanu",
+          "confluent": "bnuve",
           "type": "racine",
-          "forme_liee": "nav",
+          "forme_liee": "bnuv",
           "domaine": "objet"
         }
       ],
@@ -445,7 +445,7 @@
     "relique": {
       "traductions": [
         {
-          "confluent": "asauaita",
+          "confluent": "iovenalsa",
           "type": "composition",
           "composition": "as-a-aita",
           "sens_litteral": "Sacré avec ancêtre",

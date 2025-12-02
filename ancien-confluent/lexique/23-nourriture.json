@@ -6,9 +6,9 @@
       "racine_fr": "poiss",
       "traductions": [
         {
-          "confluent": "pisu",
+          "confluent": "zsita",
           "type": "racine",
-          "forme_liee": "pis",
+          "forme_liee": "zsit",
           "structure": "CVCV",
           "domaine": "nourriture",
           "note": "Poisson - source vitale de protéines (même racine que pêcher)"
@@ -412,10 +412,10 @@
       "racine_fr": "boir",
       "traductions": [
         {
-          "confluent": "lapis",
+          "confluent": "minet",
           "type": "verbe",
           "racine": "lapi",
-          "forme_liee": "lap",
+          "forme_liee": "mine",
           "structure": "CVCVC",
           "domaine": "nourriture",
           "note": "Boire - utilise racine sacrée ura (eau)"

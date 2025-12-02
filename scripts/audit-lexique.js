@@ -336,6 +336,51 @@ function auditerFichier(file, toutesLesRacines) {
 }
 
 /**
+ * Détecte les doublons de mots Confluent
+ */
+function detecterDoublons() {
+  const motsCF = new Map(); // mot -> [{file, motFr, type}]
+
+  const files = fs.readdirSync(LEXIQUE_DIR).filter(f => f.endsWith('.json'));
+
+  files.forEach(file => {
+    const filePath = path.join(LEXIQUE_DIR, file);
+    const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+
+    if (!content.dictionnaire) return;
+
+    Object.entries(content.dictionnaire).forEach(([motFr, data]) => {
+      if (!data.traductions) return;
+
+      data.traductions.forEach(trad => {
+        const motCF = trad.confluent;
+        if (!motCF) return;
+
+        if (!motsCF.has(motCF)) {
+          motsCF.set(motCF, []);
+        }
+
+        motsCF.get(motCF).push({
+          file: file,
+          motFr: motFr,
+          type: trad.type || 'unknown'
+        });
+      });
+    });
+  });
+
+  // Trouver les doublons
+  const doublons = [];
+  motsCF.forEach((occurrences, motCF) => {
+    if (occurrences.length > 1) {
+      doublons.push({ motCF, occurrences });
+    }
+  });
+
+  return doublons;
+}
+
+/**
  * Fonction principale
  */
 function main() {
@@ -354,6 +399,21 @@ function main() {
   files.forEach(file => {
     auditerFichier(file, toutesLesRacines);
   });
+
+  // Détecter les doublons
+  console.log('🔍 Détection des doublons...\n');
+  const doublons = detecterDoublons();
+
+  if (doublons.length > 0) {
+    console.log(`⚠️  DOUBLONS DÉTECTÉS: ${doublons.length} mots Confluent apparaissent plusieurs fois\n`);
+
+    doublons.forEach(({motCF, occurrences}) => {
+      errors.push(`DOUBLON: "${motCF}" apparaît ${occurrences.length} fois:`);
+      occurrences.forEach(occ => {
+        errors.push(`  → [${occ.file}] "${occ.motFr}" (${occ.type})`);
+      });
+    });
+  }
 
   // Vérifier le ratio de consonnes rares
   const ratioConsonnesRares = (stats.consonnes_rares_utilisees / stats.total_mots) * 100;

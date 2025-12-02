@@ -92,28 +92,45 @@ function searchConfluent(word, reverseIndex) {
     }
   }
 
-  // 5. NOUVEAU: Décomposition morphologique
+  // 5. NOUVEAU: Décomposition morphologique récursive (N racines)
   const decompositions = decomposeWord(lowerWord, reverseIndex);
-  for (const decomp of decompositions) {
-    const part1Match = searchConfluent(decomp.part1, reverseIndex);
-    const part2Match = searchConfluent(decomp.part2, reverseIndex);
 
-    if (part1Match && part2Match) {
-      return {
-        matchType: 'composition_inferred',
-        originalWord: word,
-        composition: `${decomp.part1}-${decomp.liaison}-${decomp.part2}`,
-        parts: {
-          part1: part1Match,
-          liaison: decomp.liaison,
-          liaisonMeaning: decomp.liaisonMeaning,
-          part2: part2Match
-        },
-        confidence: decomp.confidence * 0.7, // Pénalité pour inférence
-        francais: `${part1Match.francais} [${decomp.liaisonMeaning}] ${part2Match.francais}`,
-        type: 'composition'
-      };
+  if (decompositions.length > 0) {
+    const bestDecomp = decompositions[0]; // Prendre la meilleure
+
+    // Construire la traduction française composite pour le LLM
+    const elements = [];
+
+    for (let i = 0; i < bestDecomp.roots.length; i++) {
+      const root = bestDecomp.roots[i];
+
+      // Ajouter la traduction de la racine
+      if (root.entry && root.entry.francais) {
+        elements.push(root.entry.francais);
+      } else {
+        elements.push(`${root.fullRoot}?`);
+      }
+
+      // Ajouter la liaison si ce n'est pas la dernière racine
+      if (i < bestDecomp.liaisons.length) {
+        const liaison = bestDecomp.liaisons[i];
+        elements.push(liaison.concept);
+      }
     }
+
+    // Format pour le LLM : [composition: element1 + liaison1 + element2 + ...]
+    const compositionText = `[composition: ${elements.join(' + ')}]`;
+
+    return {
+      matchType: 'composition_recursive',
+      originalWord: word,
+      decomposition: bestDecomp,
+      pattern: bestDecomp.pattern,
+      rootCount: bestDecomp.roots.length,
+      confidence: bestDecomp.confidence,
+      francais: compositionText,
+      type: 'composition'
+    };
   }
 
   // 6. Vraiment inconnu

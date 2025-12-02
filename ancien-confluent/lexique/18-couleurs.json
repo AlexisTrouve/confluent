@@ -5,9 +5,9 @@
     "rouge": {
       "traductions": [
         {
-          "confluent": "pasu",
+          "confluent": "zkaba",
           "type": "racine",
-          "forme_liee": "ras",
+          "forme_liee": "zkab",
           "domaine": "couleur",
           "note": "Couleur importante (yeux des Ciels-clairs)"
         }
@@ -64,9 +64,9 @@
     "blanc": {
       "traductions": [
         {
-          "confluent": "milu",
+          "confluent": "tbibu",
           "type": "racine",
-          "forme_liee": "mil",
+          "forme_liee": "tbib",
           "domaine": "couleur",
           "note": "Couleur du lait"
         }
@@ -75,9 +75,9 @@
     "gris": {
       "traductions": [
         {
-          "confluent": "senu",
+          "confluent": "msobe",
           "type": "racine",
-          "forme_liee": "sen",
+          "forme_liee": "msob",
           "domaine": "couleur",
           "note": "Couleur de la cendre"
         }
@@ -91,9 +91,9 @@
     "noir": {
       "traductions": [
         {
-          "confluent": "kumu",
+          "confluent": "bkipe",
           "type": "racine",
-          "forme_liee": "kum",
+          "forme_liee": "bkip",
           "domaine": "couleur",
           "note": "Couleur de l'ombre"
         }
@@ -102,9 +102,9 @@
     "vert": {
       "traductions": [
         {
-          "confluent": "viku",
+          "confluent": "nsime",
           "type": "racine",
-          "forme_liee": "vik",
+          "forme_liee": "nsim",
           "domaine": "couleur",
           "note": "Couleur de la forêt"
         }
@@ -113,9 +113,9 @@
     "bleu": {
       "traductions": [
         {
-          "confluent": "zelu",
+          "confluent": "spati",
           "type": "racine",
-          "forme_liee": "zel",
+          "forme_liee": "spat",
           "domaine": "couleur",
           "note": "Couleur du ciel"
         }
@@ -124,9 +124,9 @@
     "azur": {
       "traductions": [
         {
-          "confluent": "zelu",
+          "confluent": "ssebi",
           "type": "racine",
-          "forme_liee": "zel",
+          "forme_liee": "sseb",
           "domaine": "couleur"
         }
       ]
@@ -182,7 +182,7 @@
     "yeux de l'aurore": {
       "traductions": [
         {
-          "confluent": "siluola",
+          "confluent": "vlibupve",
           "type": "composition",
           "composition": "sil-u-ola",
           "sens_litteral": "Regard de l'aurore",
@@ -236,9 +236,9 @@
     "lumineux": {
       "traductions": [
         {
-          "confluent": "sora",
+          "confluent": "kvana",
           "type": "racine",
-          "forme_liee": "sor",
+          "forme_liee": "kvan",
           "domaine": "qualificatif"
         }
       ],
@@ -250,9 +250,9 @@
     "sombre": {
       "traductions": [
         {
-          "confluent": "kumu",
+          "confluent": "zpasi",
           "type": "racine",
-          "forme_liee": "kum",
+          "forme_liee": "zpas",
           "domaine": "qualificatif"
         }
       ],
@@ -263,7 +263,7 @@
     "patine": {
       "traductions": [
         {
-          "confluent": "koluuaita",
+          "confluent": "kmanilimbi",
           "type": "composition",
           "composition": "kol-u-aita",
           "sens_litteral": "Couleur des ancêtres",
@@ -281,9 +281,9 @@
     "gravure": {
       "traductions": [
         {
-          "confluent": "kova",
+          "confluent": "lmoso",
           "type": "racine",
-          "forme_liee": "kov",
+          "forme_liee": "lmos",
           "domaine": "art"
         }
       ]

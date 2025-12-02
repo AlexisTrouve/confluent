@@ -38,7 +38,7 @@
     "miasmes": {
       "traductions": [
         {
-          "confluent": "venuzoka",
+          "confluent": "smiboseve",
           "type": "composition",
           "composition": "ven-u-zoka",
           "sens_litteral": "Air de l'ennemi",
@@ -144,7 +144,7 @@
     "eboulement": {
       "traductions": [
         {
-          "confluent": "kaliovuku",
+          "confluent": "tverameppu",
           "type": "composition",
           "composition": "kal-oa-vuku",
           "sens_litteral": "Pierre vers le gouffre",
@@ -174,9 +174,9 @@
     "toxine": {
       "traductions": [
         {
-          "confluent": "toku",
+          "confluent": "shoto",
           "type": "racine",
-          "forme_liee": "tok",
+          "forme_liee": "shot",
           "domaine": "danger"
         }
       ]
@@ -184,9 +184,9 @@
     "poison": {
       "traductions": [
         {
-          "confluent": "toku",
+          "confluent": "vpesu",
           "type": "racine",
-          "forme_liee": "tok",
+          "forme_liee": "vpes",
           "domaine": "danger"
         }
       ]
@@ -194,9 +194,9 @@
     "gouffre": {
       "traductions": [
         {
-          "confluent": "vuku",
+          "confluent": "zkito",
           "type": "racine",
-          "forme_liee": "vuk",
+          "forme_liee": "zkit",
           "domaine": "danger"
         }
       ]
@@ -204,7 +204,7 @@
     "crevasse": {
       "traductions": [
         {
-          "confluent": "vukukali",
+          "confluent": "nvipovito",
           "type": "composition",
           "composition": "vuk-u-kali",
           "sens_litteral": "Gouffre de pierre",
@@ -234,7 +234,7 @@
     "avalanche": {
       "traductions": [
         {
-          "confluent": "nisaoavuku",
+          "confluent": "bvovasapisu",
           "type": "composition",
           "composition": "nis-oa-vuku",
           "sens_litteral": "Neige vers le gouffre",
@@ -249,7 +249,7 @@
     "feu sauvage": {
       "traductions": [
         {
-          "confluent": "sukiuzoka",
+          "confluent": "kpizotahvu",
           "type": "composition",
           "composition": "suk-i-zoka",
           "sens_litteral": "Feu de l'ennemi",

@@ -456,27 +456,33 @@ function analyzeContext(text, lexique, options = {}) {
   // 3. Trouver entrées pertinentes (avec texte normalisé pour vérifier frontières)
   const searchResult = findRelevantEntries(uniqueWords, lexique, maxEntries, normalizedText);
 
-  // 4. Expansion sémantique
-  const expandedEntries = expandContext(
-    searchResult.entries,
-    lexique,
-    maxEntries,
-    expansionLevel
-  );
-
-  // 5. Fallback si trop de mots manquants (>80% de mots non trouvés)
+  // 3.5. Calculer couverture AVANT expansion (pour décider si on expand)
   const wordsFoundCount = searchResult.wordsFound.length;
   const wordsNotFoundCount = searchResult.wordsNotFound.length;
   const totalWords = wordsFoundCount + wordsNotFoundCount;
   const coveragePercent = totalWords > 0 ? (wordsFoundCount / totalWords) * 100 : 0;
+
+  // 4. Expansion sémantique SEULEMENT si couverture < 100%
+  // Si 100% trouvé, pas besoin d'ajouter des synonymes
+  const shouldExpand = coveragePercent < 100;
+  const expandedEntries = shouldExpand ? expandContext(
+    searchResult.entries,
+    lexique,
+    maxEntries,
+    expansionLevel
+  ) : searchResult.entries;
+
+  // 5. Fallback si trop de mots manquants (>80% de mots non trouvés)
 
   // Activer fallback si :
   // - Aucune entrée trouvée OU
   // - Couverture < 20% (très peu de mots trouvés)
   const useFallback = expandedEntries.length === 0 || coveragePercent < 20;
 
-  // TOUJOURS extraire les racines (nécessaires pour composition de mots manquants)
-  const rootsFallback = extractRoots(lexique);
+  // Activer mode racines seulement si couverture < 100%
+  // (Si 100% trouvé, pas besoin des racines pour composer de nouveaux mots)
+  const needRoots = coveragePercent < 100;
+  const rootsFallback = needRoots ? extractRoots(lexique) : [];
 
   // 6. Calculer tokens économisés (estimation)
   const totalLexiqueEntries = Object.keys(lexique.dictionnaire || {}).length;
@@ -490,7 +496,7 @@ function analyzeContext(text, lexique, options = {}) {
   return {
     // Données pour le prompt
     entries: useFallback ? [] : expandedEntries,
-    rootsFallback: rootsFallback,  // TOUJOURS inclure les racines
+    rootsFallback: rootsFallback,  // Inclure racines seulement si couverture < 100%
     useFallback,
 
     // Métadonnées pour Layer 2

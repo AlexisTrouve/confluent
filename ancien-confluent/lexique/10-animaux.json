@@ -5,9 +5,9 @@
     "grue": {
       "traductions": [
         {
-          "confluent": "alu",
+          "confluent": "iena",
           "type": "racine_sacree",
-          "forme_liee": "ar",
+          "forme_liee": "ien",
           "domaine": "animal_sacre",
           "note": "Animal sacré central dans la culture"
         }
@@ -50,9 +50,9 @@
     "faucon": {
       "traductions": [
         {
-          "confluent": "aki",
+          "confluent": "euto",
           "type": "racine_sacree",
-          "forme_liee": "ak",
+          "forme_liee": "eut",
           "domaine": "animal_sacre",
           "note": "Oiseau de proie sacré"
         }
@@ -105,9 +105,9 @@
     "poisson": {
       "traductions": [
         {
-          "confluent": "pisu",
+          "confluent": "mzoti",
           "type": "racine",
-          "forme_liee": "pis",
+          "forme_liee": "mzot",
           "domaine": "animal",
           "note": "Créature de l'eau"
         }
@@ -131,9 +131,9 @@
     "serpent": {
       "traductions": [
         {
-          "confluent": "sepu",
+          "confluent": "btite",
           "type": "racine",
-          "forme_liee": "sep",
+          "forme_liee": "btit",
           "domaine": "animal",
           "note": "Créature rampante"
         }
@@ -157,9 +157,9 @@
     "oiseau": {
       "traductions": [
         {
-          "confluent": "apo",
+          "confluent": "ioze",
           "type": "racine_sacree",
-          "forme_liee": "av",
+          "forme_liee": "ioz",
           "domaine": "animal",
           "note": "Créature ailée"
         }
@@ -199,9 +199,9 @@
     "loup": {
       "traductions": [
         {
-          "confluent": "loku",
+          "confluent": "ltute",
           "type": "racine",
-          "forme_liee": "lok",
+          "forme_liee": "ltut",
           "domaine": "animal",
           "note": "Prédateur sauvage"
         }

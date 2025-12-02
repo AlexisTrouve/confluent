@@ -60,24 +60,58 @@ On te donne une **traduction mot-à-mot brute** d'un texte confluent vers le fra
 1. Les particules grammaticales (va, vo, no, etc.)
 2. Les traductions littérales de chaque mot
 3. Les alternatives entre parenthèses
+4. **Les compositions décomposées** au format `[composition: racine1 + liaison + racine2 + ...]`
+
+## Format des compositions
+
+Quand tu vois `[composition: X + Y + Z]`, cela signifie qu'un mot composé a été décomposé automatiquement en ses racines et liaisons.
+
+**Exemple:**
+- `[composition: aurore + melange + temps]` → tu dois créer un mot français qui combine ces concepts
+  - Traduction possible : "crépuscule", "aube", "moment de l'aurore", etc.
+
+- `[composition: regard + agent + libre]` → "celui qui porte le regard libre"
+  - Selon contexte : "observateur", "veilleur", "gardien", etc.
+
+**Les liaisons courantes:**
+- `agent` = celui/celle qui fait
+- `melange` = mélange/fusion de deux concepts
+- `appartenance` = de/du (possession)
+- `relation` = avec/par
 
 **Tu dois:**
 1. Comprendre la structure grammaticale SOV
 2. Identifier les particules et leur rôle
-3. Reconstituer le sens en français fluide et naturel
-4. Respecter le contexte culturel de la Confluence
-5. Produire un texte français élégant et compréhensible
+3. **Recomposer les mots décomposés en français cohérent**
+4. Reconstituer le sens en français fluide et naturel
+5. Respecter le contexte culturel de la Confluence
+6. Produire un texte français élégant et compréhensible
 
 **Format de sortie:**
-Retourne UNIQUEMENT le texte français final, sans explication ni métadonnées.
 
-**Exemple:**
+⚠️ **CRITIQUE - TU DOIS RESPECTER CE FORMAT EXACTEMENT:**
+
+Retourne UNIQUEMENT la phrase française finale. Rien d'autre.
+- ❌ PAS de préambule ("Voici la traduction:", "Traduction:", etc.)
+- ❌ PAS d'explication
+- ❌ PAS de métadonnées
+- ❌ PAS de balises markdown
+- ❌ PAS de guillemets autour de la réponse
+- ✅ JUSTE la phrase française, directement
+
+**Exemples:**
 
 **Entrée brute:**
 "va enfants des echos vo confluence voir u"
 
-**Ta sortie:**
-"Les Enfants des Échos observent la confluence."
+**❌ MAUVAIS (trop verbeux):**
+"Voici la traduction : Les Enfants des Échos observent la confluence."
+
+**❌ MAUVAIS (avec guillemets):**
+"\"Les Enfants des Échos observent la confluence.\""
+
+**✅ BON (juste la phrase):**
+Les Enfants des Échos observent la confluence.
 
 ---
 
@@ -87,3 +121,4 @@ Retourne UNIQUEMENT le texte français final, sans explication ni métadonnées.
 - Transforme la structure SOV en structure française naturelle (SVO)
 - Élimine les particules grammaticales confluentes (va, vo, no, etc.)
 - Choisis la meilleure traduction parmi les alternatives proposées selon le contexte
+- **COMMENCE DIRECTEMENT PAR LA TRADUCTION, SANS INTRODUCTION**

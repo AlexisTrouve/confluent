@@ -5,7 +5,7 @@
     "regard libre": {
       "traductions": [
         {
-          "confluent": "siliaska",
+          "confluent": "zvekamema",
           "type": "composition",
           "composition": "sil-i-aska",
           "sens_litteral": "Regard de liberté",
@@ -21,9 +21,9 @@
     "confluence": {
       "traductions": [
         {
-          "confluent": "kota",
+          "confluent": "psate",
           "type": "racine",
-          "forme_liee": "kot",
+          "forme_liee": "psat",
           "domaine": "concept_fondateur",
           "note": "Union, rencontre"
         }
@@ -95,9 +95,9 @@
     "verite": {
       "traductions": [
         {
-          "confluent": "veli",
+          "confluent": "vpuma",
           "type": "racine",
-          "forme_liee": "vel",
+          "forme_liee": "vpum",
           "domaine": "concept_fondateur"
         }
       ]
@@ -105,9 +105,9 @@
     "liberte": {
       "traductions": [
         {
-          "confluent": "aska",
+          "confluent": "oabsi",
           "type": "racine_sacree",
-          "forme_liee": "ask",
+          "forme_liee": "oabs",
           "domaine": "concept_fondateur"
         }
       ]
@@ -115,9 +115,9 @@
     "esprit": {
       "traductions": [
         {
-          "confluent": "umi",
+          "confluent": "oelu",
           "type": "racine_sacree",
-          "forme_liee": "um",
+          "forme_liee": "oel",
           "domaine": "concept_fondateur"
         }
       ],
@@ -188,7 +188,7 @@
     "L'Autre": {
       "traductions": [
         {
-          "confluent": "tova",
+          "confluent": "vvobu",
           "type": "nom_propre",
           "composition": "tova",
           "sens_litteral": "Celui de loin",
@@ -206,7 +206,7 @@
     "Premiers Ancetres": {
       "traductions": [
         {
-          "confluent": "enuaita",
+          "confluent": "iusoluke",
           "type": "nom_propre",
           "composition": "en-u-aita",
           "sens_litteral": "Origine des ancêtres",
@@ -296,9 +296,9 @@
     "village": {
       "traductions": [
         {
-          "confluent": "kota",
+          "confluent": "vluto",
           "type": "racine",
-          "forme_liee": "kot",
+          "forme_liee": "vlut",
           "domaine": "social",
           "note": "Union de maisons"
         }
@@ -362,9 +362,9 @@
     "loi": {
       "traductions": [
         {
-          "confluent": "loku",
+          "confluent": "bmumu",
           "type": "racine",
-          "forme_liee": "lok",
+          "forme_liee": "bmum",
           "domaine": "institution"
         }
       ]
@@ -387,9 +387,9 @@
     "epreuve": {
       "traductions": [
         {
-          "confluent": "oki",
+          "confluent": "uuno",
           "type": "racine_sacree",
-          "forme_liee": "ok",
+          "forme_liee": "uun",
           "domaine": "concept_fondateur"
         }
       ]
@@ -442,9 +442,9 @@
     "guerre": {
       "traductions": [
         {
-          "confluent": "oki",
+          "confluent": "ouso",
           "type": "racine_sacree",
-          "forme_liee": "ok",
+          "forme_liee": "ous",
           "domaine": "conflit"
         }
       ]
@@ -468,9 +468,9 @@
     "paix": {
       "traductions": [
         {
-          "confluent": "tosa",
+          "confluent": "bbolu",
           "type": "racine",
-          "forme_liee": "tos",
+          "forme_liee": "bbol",
           "domaine": "etat"
         }
       ]
@@ -538,7 +538,7 @@
     "embuscade": {
       "traductions": [
         {
-          "confluent": "zokuuzana",
+          "confluent": "vsivapepke",
           "type": "composition",
           "composition": "zok-u-zana",
           "sens_litteral": "Secret de chasse",
@@ -650,9 +650,9 @@
     "mémoire": {
       "traductions": [
         {
-          "confluent": "memu",
+          "confluent": "ltuma",
           "type": "racine",
-          "forme_liee": "mem",
+          "forme_liee": "ltum",
           "domaine": "concept_fondateur",
           "note": "Mémoire - concept central de la civilisation (synonyme normalisé de memoire)"
         }
@@ -666,9 +666,9 @@
     "liberté": {
       "traductions": [
         {
-          "confluent": "aska",
+          "confluent": "eilne",
           "type": "racine_sacree",
-          "forme_liee": "ask",
+          "forme_liee": "eiln",
           "domaine": "concept_fondateur",
           "note": "Liberté - racine sacrée centrale (synonyme normalisé de liberte)"
         }

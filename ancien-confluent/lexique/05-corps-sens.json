@@ -5,9 +5,9 @@
     "œil": {
       "traductions": [
         {
-          "confluent": "sili",
+          "confluent": "spima",
           "type": "racine",
-          "forme_liee": "sil",
+          "forme_liee": "spim",
           "domaine": "corps_sens",
           "note": "Concept central : l'observation"
         }
@@ -21,9 +21,9 @@
     "main": {
       "traductions": [
         {
-          "confluent": "kanu",
+          "confluent": "sbove",
           "type": "racine",
-          "forme_liee": "kan",
+          "forme_liee": "sbov",
           "domaine": "corps_sens",
           "note": "Partie du corps pour saisir"
         }
@@ -46,9 +46,9 @@
     "oreille": {
       "traductions": [
         {
-          "confluent": "tiku",
+          "confluent": "bpivu",
           "type": "racine",
-          "forme_liee": "tik",
+          "forme_liee": "bpiv",
           "domaine": "corps_sens",
           "note": "Organe de l'écoute"
         }
@@ -107,9 +107,9 @@
     "echo": {
       "traductions": [
         {
-          "confluent": "keko",
+          "confluent": "bmipe",
           "type": "racine",
-          "forme_liee": "kek",
+          "forme_liee": "bmip",
           "domaine": "corps_sens",
           "note": "Son qui revient, résonance"
         }
@@ -136,9 +136,9 @@
     "souffle": {
       "traductions": [
         {
-          "confluent": "umi",
+          "confluent": "eila",
           "type": "racine_sacree",
-          "forme_liee": "um",
+          "forme_liee": "eil",
           "domaine": "corps_esprit",
           "note": "Même racine que esprit"
         }
@@ -147,9 +147,9 @@
     "chair": {
       "traductions": [
         {
-          "confluent": "sanu",
+          "confluent": "bbuke",
           "type": "racine",
-          "forme_liee": "san",
+          "forme_liee": "bbuk",
           "domaine": "corps",
           "note": "Même racine que corps"
         }
@@ -175,9 +175,9 @@
     "sang": {
       "traductions": [
         {
-          "confluent": "pasu",
+          "confluent": "mnake",
           "type": "racine",
-          "forme_liee": "ras",
+          "forme_liee": "mnak",
           "domaine": "corps",
           "note": "Fluide vital rouge"
         }

@@ -5,9 +5,9 @@
     "lance": {
       "traductions": [
         {
-          "confluent": "piki",
+          "confluent": "skulo",
           "type": "racine",
-          "forme_liee": "pik",
+          "forme_liee": "skul",
           "domaine": "arme",
           "note": "Arme principale"
         }
@@ -131,7 +131,7 @@
     "pioche": {
       "traductions": [
         {
-          "confluent": "vukukali",
+          "confluent": "zkumopubo",
           "type": "composition",
           "composition": "vuk-u-kali",
           "sens_litteral": "Pierre du gouffre",
@@ -191,9 +191,9 @@
     "corde": {
       "traductions": [
         {
-          "confluent": "kopu",
+          "confluent": "vkiza",
           "type": "racine",
-          "forme_liee": "kop",
+          "forme_liee": "vkiz",
           "domaine": "outil",
           "note": "Lien tressé"
         }
@@ -277,9 +277,9 @@
     "tablette": {
       "traductions": [
         {
-          "confluent": "tabu",
+          "confluent": "pkesa",
           "type": "racine",
-          "forme_liee": "tab",
+          "forme_liee": "pkes",
           "domaine": "objet",
           "note": "Surface pour écrire"
         }

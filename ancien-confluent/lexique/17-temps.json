@@ -5,9 +5,9 @@
     "temps": {
       "traductions": [
         {
-          "confluent": "temi",
+          "confluent": "kpebo",
           "type": "racine",
-          "forme_liee": "tem",
+          "forme_liee": "kpeb",
           "domaine": "temps",
           "note": "Concept fondamental"
         }
@@ -77,9 +77,9 @@
     "lune": {
       "traductions": [
         {
-          "confluent": "luna",
+          "confluent": "bhenu",
           "type": "racine",
-          "forme_liee": "lun",
+          "forme_liee": "bhen",
           "domaine": "temps"
         }
       ]
@@ -102,9 +102,9 @@
     "aurore": {
       "traductions": [
         {
-          "confluent": "ora",
+          "confluent": "uizi",
           "type": "racine_sacree",
-          "forme_liee": "or",
+          "forme_liee": "uiz",
           "domaine": "temps"
         }
       ]
@@ -137,9 +137,9 @@
     "nuit": {
       "traductions": [
         {
-          "confluent": "luna",
+          "confluent": "vzena",
           "type": "racine",
-          "forme_liee": "lun",
+          "forme_liee": "vzen",
           "domaine": "temps",
           "note": "Même racine que lune"
         }
@@ -163,9 +163,9 @@
     "passe": {
       "traductions": [
         {
-          "confluent": "ena",
+          "confluent": "ieso",
           "type": "racine_sacree",
-          "forme_liee": "en",
+          "forme_liee": "ies",
           "domaine": "temps",
           "note": "Même racine que origine"
         }
@@ -174,9 +174,9 @@
     "futur": {
       "traductions": [
         {
-          "confluent": "naki",
+          "confluent": "lkopi",
           "type": "racine",
-          "forme_liee": "nak",
+          "forme_liee": "lkop",
           "domaine": "temps",
           "note": "Même racine que descendant"
         }
@@ -256,7 +256,7 @@
     "instant": {
       "traductions": [
         {
-          "confluent": "pisutemi",
+          "confluent": "snunolave",
           "type": "composition",
           "composition": "pis-u-temi",
           "sens_litteral": "Petit temps",
@@ -271,9 +271,9 @@
     "duree": {
       "traductions": [
         {
-          "confluent": "temi",
+          "confluent": "pmubo",
           "type": "racine",
-          "forme_liee": "tem",
+          "forme_liee": "pmub",
           "domaine": "temps"
         }
       ]

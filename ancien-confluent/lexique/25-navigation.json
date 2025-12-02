@@ -333,7 +333,7 @@
     "rame": {
       "traductions": [
         {
-          "confluent": "kanuvi",
+          "confluent": "pzekana",
           "type": "composition",
           "composition": "kanu-vi",
           "sens_litteral": "Bois de main pour l'eau",
@@ -600,7 +600,7 @@
     "profondeur": {
       "traductions": [
         {
-          "confluent": "vukumako",
+          "confluent": "nsalapinu",
           "type": "composition",
           "composition": "vuku-mako",
           "sens_litteral": "Grand gouffre",
@@ -620,7 +620,7 @@
     "houle": {
       "traductions": [
         {
-          "confluent": "meluloli",
+          "confluent": "vtukaviti",
           "type": "composition",
           "composition": "melu-loli",
           "sens_litteral": "Ondulation lente de la mer",

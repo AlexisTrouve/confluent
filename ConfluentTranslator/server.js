@@ -73,6 +73,92 @@ app.get('/api/lexique/:variant', (req, res) => {
   res.json(lexiques[variant]);
 });
 
+// Stats endpoint
+app.get('/api/stats', (req, res) => {
+  const { variant = 'ancien' } = req.query;
+
+  if (variant !== 'proto' && variant !== 'ancien') {
+    return res.status(400).json({ error: 'Invalid variant. Use "proto" or "ancien"' });
+  }
+
+  if (!lexiques[variant]) {
+    return res.status(500).json({ error: `Lexique ${variant} not loaded` });
+  }
+
+  const lexique = lexiques[variant];
+  const stats = {
+    motsCF: 0,           // Mots Confluent uniques
+    motsFR: 0,           // Mots français uniques
+    totalTraductions: 0, // Total de traductions
+    racines: 0,          // Racines (racine, racine_sacree)
+    racinesSacrees: 0,   // Racines sacrées
+    racinesStandards: 0, // Racines standards
+    compositions: 0,     // Compositions
+    verbes: 0,           // Verbes
+    verbesIrreguliers: 0, // Verbes irréguliers
+    particules: 0,       // Particules grammaticales (negation, particule, interrogation, demonstratif)
+    nomsPropes: 0,       // Noms propres
+    marqueurs: 0,        // Marqueurs (temps, aspect, nombre)
+    pronoms: 0,          // Pronoms (pronom, possessif, relatif, determinant)
+    autres: 0            // Autres types (auxiliaire, quantificateur, etc.)
+  };
+
+  const motsCFSet = new Set();
+  const motsFRSet = new Set();
+
+  // Le lexique peut avoir une structure {dictionnaire: {...}} ou être directement un objet
+  const dict = lexique.dictionnaire || lexique;
+
+  // Parcourir le dictionnaire
+  Object.keys(dict).forEach(motFR => {
+    const entry = dict[motFR];
+    motsFRSet.add(motFR);
+
+    if (entry.traductions) {
+      entry.traductions.forEach(trad => {
+        stats.totalTraductions++;
+
+        // Compter les mots CF uniques
+        if (trad.confluent) {
+          motsCFSet.add(trad.confluent);
+        }
+
+        // Compter par type
+        const type = trad.type || '';
+        if (type === 'racine') {
+          stats.racines++;
+          stats.racinesStandards++;
+        } else if (type === 'racine_sacree') {
+          stats.racines++;
+          stats.racinesSacrees++;
+        } else if (type === 'composition' || type === 'racine_sacree_composee') {
+          stats.compositions++;
+        } else if (type === 'verbe') {
+          stats.verbes++;
+        } else if (type === 'verbe_irregulier') {
+          stats.verbes++;
+          stats.verbesIrreguliers++;
+        } else if (type === 'negation' || type === 'particule' || type === 'interrogation' || type === 'demonstratif') {
+          stats.particules++;
+        } else if (type === 'nom_propre') {
+          stats.nomsPropes++;
+        } else if (type === 'marqueur_temps' || type === 'marqueur_aspect' || type === 'marqueur_nombre') {
+          stats.marqueurs++;
+        } else if (type === 'pronom' || type === 'possessif' || type === 'relatif' || type === 'determinant') {
+          stats.pronoms++;
+        } else if (type !== '') {
+          stats.autres++;
+        }
+      });
+    }
+  });
+
+  stats.motsCF = motsCFSet.size;
+  stats.motsFR = motsFRSet.size;
+
+  res.json(stats);
+});
+
 // Search endpoint
 app.get('/api/search', (req, res) => {
   const { q, variant = 'ancien', direction = 'fr2conf' } = req.query;
@@ -87,22 +173,6 @@ app.get('/api/search', (req, res) => {
 
   const results = searchLexique(lexiques[variant], q, direction);
   res.json({ query: q, variant, direction, results });
-});
-
-// Stats endpoint
-app.get('/api/stats', (req, res) => {
-  res.json({
-    proto: {
-      total_entries: lexiques.proto?.meta?.total_entries || 0,
-      files_loaded: lexiques.proto?.meta?.files_loaded?.length || 0,
-      loaded_at: lexiques.proto?.meta?.loaded_at
-    },
-    ancien: {
-      total_entries: lexiques.ancien?.meta?.total_entries || 0,
-      files_loaded: lexiques.ancien?.meta?.files_loaded?.length || 0,
-      loaded_at: lexiques.ancien?.meta?.loaded_at
-    }
-  });
 });
 
 // Reload endpoint (for development)
@@ -279,7 +349,8 @@ app.post('/translate', async (req, res) => {
         tokensSaved: promptStats.tokensSaved,
         savingsPercent: promptStats.savingsPercent,
         useFallback: contextResult.useFallback,
-        expansionLevel: contextResult.metadata.expansionLevel
+        expansionLevel: contextResult.metadata.expansionLevel,
+        rootsUsed: contextResult.rootsFallback?.length || 0  // Nombre de racines envoyées
       };
     } else {
       systemPrompt = getBasePrompt(variant);
@@ -296,7 +367,7 @@ app.post('/translate', async (req, res) => {
       const message = await anthropic.messages.create({
         model: model,
         max_tokens: 8192, // Max pour Claude Sonnet/Haiku 4.5
-        temperature: temperature,
+        temperature: temperature / 2, // Diviser par 2 pour Claude (max 1.0)
         system: systemPrompt,
         messages: [
           { role: 'user', content: text }
@@ -628,11 +699,14 @@ app.post('/api/translate/conf2fr/llm', async (req, res) => {
       return res.status(400).json({ error: 'Unsupported provider. Use "anthropic" or "openai".' });
     }
 
-    // Return both raw and refined versions
+    // Return both raw and refined versions with detailed token info
     res.json({
       confluentText: text,
       rawTranslation: rawTranslation.translation,
       refinedTranslation: refinedText,
+      translation: refinedText, // For compatibility
+      tokens: rawTranslation.tokens || [],
+      coverage: rawTranslation.coverage || 0,
       wordsTranslated: rawTranslation.wordsTranslated,
       wordsNotTranslated: rawTranslation.wordsNotTranslated,
       provider,

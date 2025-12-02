@@ -197,9 +197,9 @@
     "gris": {
       "traductions": [
         {
-          "confluent": "senu",
+          "confluent": "bkula",
           "type": "racine",
-          "forme_liee": "sen",
+          "forme_liee": "bkul",
           "domaine": "couleur",
           "note": "Même racine que cendre"
         }
@@ -281,9 +281,9 @@
     "lieu": {
       "traductions": [
         {
-          "confluent": "loku",
+          "confluent": "plozi",
           "type": "racine",
-          "forme_liee": "lok",
+          "forme_liee": "ploz",
           "domaine": "espace",
           "note": "Endroit, place"
         }
@@ -320,9 +320,9 @@
     "paix": {
       "traductions": [
         {
-          "confluent": "tosa",
+          "confluent": "lsezi",
           "type": "racine",
-          "forme_liee": "tos",
+          "forme_liee": "lsez",
           "domaine": "etat",
           "note": "Même racine que 'bon' - état bon"
         }
@@ -334,9 +334,9 @@
     "poisson": {
       "traductions": [
         {
-          "confluent": "pisu",
+          "confluent": "ltiti",
           "type": "racine",
-          "forme_liee": "pis",
+          "forme_liee": "ltit",
           "domaine": "animal",
           "note": "Nouvelle racine - créature de l'eau"
         }
@@ -367,9 +367,9 @@
     "rouge": {
       "traductions": [
         {
-          "confluent": "pasu",
+          "confluent": "kzunu",
           "type": "racine",
-          "forme_liee": "ras",
+          "forme_liee": "kzun",
           "domaine": "couleur",
           "note": "Couleur du sang, yeux des Ciels-clairs"
         }
@@ -443,9 +443,9 @@
     "vieux": {
       "traductions": [
         {
-          "confluent": "aita",
+          "confluent": "eabme",
           "type": "racine_sacree",
-          "forme_liee": "ait",
+          "forme_liee": "eabm",
           "domaine": "qualificatif",
           "note": "Même racine que ancêtre"
         }
@@ -572,9 +572,9 @@
     "valeur": {
       "traductions": [
         {
-          "confluent": "valu",
+          "confluent": "vbite",
           "type": "racine",
-          "forme_liee": "val",
+          "forme_liee": "vbit",
           "domaine": "concept_abstrait",
           "note": "Nouvelle racine - mérite"
         }
@@ -586,9 +586,9 @@
     "guerre": {
       "traductions": [
         {
-          "confluent": "oki",
+          "confluent": "uovi",
           "type": "racine_sacree",
-          "forme_liee": "ok",
+          "forme_liee": "uov",
           "domaine": "conflit",
           "note": "Même racine que épreuve/défi"
         }

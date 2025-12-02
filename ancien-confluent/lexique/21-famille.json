@@ -55,9 +55,9 @@
     "famille": {
       "traductions": [
         {
-          "confluent": "mitu",
+          "confluent": "mzoba",
           "type": "racine",
-          "forme_liee": "mit",
+          "forme_liee": "mzob",
           "domaine": "famille",
           "note": "Unité familiale"
         }
@@ -108,9 +108,9 @@
     "garcon": {
       "traductions": [
         {
-          "confluent": "toku",
+          "confluent": "zliva",
           "type": "racine",
-          "forme_liee": "tok",
+          "forme_liee": "zliv",
           "domaine": "personne",
           "note": "Garçon, enfant masculin"
         }

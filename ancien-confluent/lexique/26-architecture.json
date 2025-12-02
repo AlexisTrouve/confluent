@@ -255,7 +255,7 @@
     "voûte": {
       "traductions": [
         {
-          "confluent": "vukutoka",
+          "confluent": "mbalateki",
           "type": "composition",
           "composition": "vuku-toka",
           "sens_litteral": "Lieu du gouffre courbé",
@@ -442,7 +442,7 @@
     "sol": {
       "traductions": [
         {
-          "confluent": "tokuvuku",
+          "confluent": "zzekonabo",
           "type": "composition",
           "composition": "toka-vuku",
           "sens_litteral": "Bas du lieu",
@@ -501,9 +501,9 @@
     "pont": {
       "traductions": [
         {
-          "confluent": "vasi",
+          "confluent": "tvoli",
           "type": "racine",
-          "forme_liee": "vas",
+          "forme_liee": "tvol",
           "domaine": "architecture",
           "note": "Déjà existant - lien, passage entre deux"
         }

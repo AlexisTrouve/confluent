@@ -37,7 +37,7 @@
     "Proclamateur": {
       "traductions": [
         {
-          "confluent": "vokiueka",
+          "confluent": "zzulosika",
           "type": "nom_propre",
           "composition": "vok-i-eka",
           "sens_litteral": "Voix de la totalité",
@@ -113,7 +113,7 @@
     "Hall des Serments": {
       "traductions": [
         {
-          "confluent": "talusavu",
+          "confluent": "szuvozeni",
           "type": "nom_propre",
           "composition": "tal-u-savu",
           "sens_litteral": "Hall du serment",

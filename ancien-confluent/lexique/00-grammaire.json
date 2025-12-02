@@ -281,7 +281,7 @@
       "mot_francais": "[OÙ]",
       "traductions": [
         {
-          "confluent": "viku",
+          "confluent": "psopo",
           "type": "interrogation",
           "categorie": "question",
           "note": "Question spatiale (où)"
@@ -405,7 +405,7 @@
     "chaque": {
       "traductions": [
         {
-          "confluent": "eka",
+          "confluent": "oubo",
           "type": "quantificateur",
           "categorie": "determinant",
           "note": "Chaque, chacun (distributif)"
@@ -419,7 +419,7 @@
     "depuis": {
       "traductions": [
         {
-          "confluent": "ve",
+          "confluent": "mle",
           "type": "particule",
           "categorie": "temps",
           "note": "Depuis (origine temporelle) - utilise particule ve (origine)"
@@ -429,7 +429,7 @@
     "sa": {
       "traductions": [
         {
-          "confluent": "na",
+          "confluent": "tla",
           "type": "particule",
           "categorie": "possession",
           "note": "Possessif (réutilise particule génitif na)"
@@ -470,7 +470,7 @@
     "avant": {
       "traductions": [
         {
-          "confluent": "at",
+          "confluent": "isu",
           "type": "particule",
           "categorie": "temps",
           "note": "Avant/passé (réutilise marqueur passé at)"
@@ -484,7 +484,7 @@
     "apres": {
       "traductions": [
         {
-          "confluent": "ok",
+          "confluent": "alo",
           "type": "particule",
           "categorie": "temps",
           "note": "Après/futur (réutilise marqueur futur ok)"
@@ -499,7 +499,7 @@
     "autour": {
       "traductions": [
         {
-          "confluent": "no",
+          "confluent": "mla",
           "type": "particule",
           "categorie": "lieu",
           "note": "Autour/spatial (réutilise particule locative no)"
@@ -545,7 +545,7 @@
       "mot_francais": "avoir (2sg présent)",
       "traductions": [
         {
-          "confluent": "iku",
+          "confluent": "euma",
           "type": "auxiliaire",
           "categorie": "verbe",
           "note": "Tu as - auxiliaire avoir 2ème personne singulier"
@@ -559,7 +559,7 @@
       "mot_francais": "avoir (3sg présent)",
       "traductions": [
         {
-          "confluent": "iku",
+          "confluent": "oape",
           "type": "auxiliaire",
           "categorie": "verbe",
           "note": "Il/elle a - auxiliaire avoir 3ème personne singulier"
@@ -575,7 +575,7 @@
       "mot_francais": "avoir (1pl présent)",
       "traductions": [
         {
-          "confluent": "iku",
+          "confluent": "uila",
           "type": "auxiliaire",
           "categorie": "verbe",
           "note": "Nous avons - auxiliaire avoir 1ère personne pluriel"
@@ -589,7 +589,7 @@
       "mot_francais": "avoir (2pl présent)",
       "traductions": [
         {
-          "confluent": "iku",
+          "confluent": "aila",
           "type": "auxiliaire",
           "categorie": "verbe",
           "note": "Vous avez - auxiliaire avoir 2ème personne pluriel"
@@ -603,7 +603,7 @@
       "mot_francais": "avoir (3pl présent)",
       "traductions": [
         {
-          "confluent": "iku",
+          "confluent": "oolu",
           "type": "auxiliaire",
           "categorie": "verbe",
           "note": "Ils/elles ont - auxiliaire avoir 3ème personne pluriel"

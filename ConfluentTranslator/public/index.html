@@ -426,6 +426,7 @@
       <button class="tab active" data-tab="traduction">Français → Confluent</button>
       <button class="tab" data-tab="cf2fr">Confluent → Français</button>
       <button class="tab" data-tab="lexique">Lexique</button>
+      <button class="tab" data-tab="stats">📊 Stats</button>
       <button class="tab" data-tab="settings">⚙️ Settings</button>
     </div>
 
@@ -543,6 +544,8 @@
     <!-- Tab: Lexique -->
     <div id="tab-lexique" class="tab-content">
       <div class="settings-indicator" id="settings-indicator-lexique"></div>
+
+      <!-- Recherche -->
       <div class="panel">
         <h2>Recherche dans le lexique</h2>
         <div class="form-group">
@@ -556,23 +559,89 @@
       </div>
     </div>
 
+    <!-- Tab: Stats -->
+    <div id="tab-stats" class="tab-content">
+      <div class="settings-indicator" id="settings-indicator-stats"></div>
+
+      <div class="panel">
+        <h2>📊 Statistiques du lexique</h2>
+
+        <h3 style="color: #4a9eff; margin-top: 20px; margin-bottom: 15px; font-size: 1.1em;">Couverture générale</h3>
+        <div class="stats-grid" id="stats-general">
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Mots CF uniques</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Entrées FR</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Total traductions</div>
+          </div>
+        </div>
+
+        <h3 style="color: #4a9eff; margin-top: 30px; margin-bottom: 15px; font-size: 1.1em;">Racines</h3>
+        <div class="stats-grid" id="stats-racines">
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Total racines</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Racines sacrées</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Racines standards</div>
+          </div>
+        </div>
+
+        <h3 style="color: #4a9eff; margin-top: 30px; margin-bottom: 15px; font-size: 1.1em;">Types de mots</h3>
+        <div class="stats-grid" id="stats-types">
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Compositions</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Verbes</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Verbes irréguliers</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Particules</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Noms propres</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Pronoms</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Marqueurs</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Autres</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Tab: Settings -->
     <div id="tab-settings" class="tab-content">
       <div class="panel">
         <h2>⚙️ Paramètres globaux</h2>
 
-        <div class="form-group">
-          <label>Niveau de langue (global)</label>
-          <select id="settings-target">
-            <option value="proto">Proto-Confluent</option>
-            <option value="ancien">Ancien Confluent</option>
-          </select>
-          <small style="color: #888; display: block; margin-top: 5px;">
-            S'applique aux traductions et recherches dans le lexique
-          </small>
-        </div>
-
-        <h2 style="margin-top: 30px;">🤖 Configuration LLM</h2>
+        <h2>🤖 Configuration LLM</h2>
 
         <div class="row">
           <div class="form-group">
@@ -652,12 +721,101 @@
     // Load lexique
     const loadLexique = async () => {
       try {
-        const settings = JSON.parse(localStorage.getItem('confluentSettings') || '{}');
-        const niveau = settings.target || 'ancien';
+        const niveau = 'ancien';
         const response = await fetch(`/api/lexique/${niveau}`);
         lexiqueData = await response.json();
+
+        // Load stats
+        await loadStats(niveau);
       } catch (error) {
         console.error('Error loading lexique:', error);
+      }
+    };
+
+    // Load statistics
+    const loadStats = async (niveau) => {
+      try {
+        const response = await fetch(`/api/stats?variant=${niveau}`);
+        const stats = await response.json();
+
+        // Update general stats
+        const statsGeneral = document.getElementById('stats-general');
+        if (statsGeneral) {
+          statsGeneral.innerHTML = `
+            <div class="stat-box">
+              <div class="stat-value">${stats.motsCF || 0}</div>
+              <div class="stat-label">Mots CF uniques</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.motsFR || 0}</div>
+              <div class="stat-label">Entrées FR</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.totalTraductions || 0}</div>
+              <div class="stat-label">Total traductions</div>
+            </div>
+          `;
+        }
+
+        // Update racines stats
+        const statsRacines = document.getElementById('stats-racines');
+        if (statsRacines) {
+          statsRacines.innerHTML = `
+            <div class="stat-box">
+              <div class="stat-value">${stats.racines || 0}</div>
+              <div class="stat-label">Total racines</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.racinesSacrees || 0}</div>
+              <div class="stat-label">Racines sacrées</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.racinesStandards || 0}</div>
+              <div class="stat-label">Racines standards</div>
+            </div>
+          `;
+        }
+
+        // Update types stats
+        const statsTypes = document.getElementById('stats-types');
+        if (statsTypes) {
+          statsTypes.innerHTML = `
+            <div class="stat-box">
+              <div class="stat-value">${stats.compositions || 0}</div>
+              <div class="stat-label">Compositions</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.verbes || 0}</div>
+              <div class="stat-label">Verbes</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.verbesIrreguliers || 0}</div>
+              <div class="stat-label">Verbes irréguliers</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.particules || 0}</div>
+              <div class="stat-label">Particules</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.nomsPropes || 0}</div>
+              <div class="stat-label">Noms propres</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.pronoms || 0}</div>
+              <div class="stat-label">Pronoms</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.marqueurs || 0}</div>
+              <div class="stat-label">Marqueurs</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.autres || 0}</div>
+              <div class="stat-label">Autres</div>
+            </div>
+          `;
+        }
+      } catch (error) {
+        console.error('Error loading stats:', error);
       }
     };
 
@@ -685,8 +843,6 @@
     // Lexique search
     const searchLexique = () => {
       const query = document.getElementById('lexique-search').value.toLowerCase().trim();
-      const settings = JSON.parse(localStorage.getItem('confluentSettings') || '{}');
-      const niveau = settings.target || 'ancien';
       const resultsDiv = document.getElementById('lexique-results');
       const countDiv = document.getElementById('lexique-count');
 
@@ -753,7 +909,6 @@
 
     // Settings management
     const DEFAULT_SETTINGS = {
-      target: 'ancien',
       provider: 'anthropic',
       model: 'claude-sonnet-4-20250514',
       temperature: 1.0,
@@ -767,7 +922,6 @@
       const settings = { ...DEFAULT_SETTINGS, ...JSON.parse(localStorage.getItem('confluentSettings') || '{}') };
 
       // Apply to settings page
-      document.getElementById('settings-target').value = settings.target;
       document.getElementById('settings-provider').value = settings.provider;
       document.getElementById('settings-model').value = settings.model;
       document.getElementById('settings-temperature').value = settings.temperature;
@@ -788,7 +942,6 @@
 
     const saveSettings = () => {
       const settings = {
-        target: document.getElementById('settings-target').value,
         provider: document.getElementById('settings-provider').value,
         model: document.getElementById('settings-model').value,
         temperature: parseFloat(document.getElementById('settings-temperature').value),
@@ -826,7 +979,6 @@
     const updateSettingsIndicators = () => {
       const settings = { ...DEFAULT_SETTINGS, ...JSON.parse(localStorage.getItem('confluentSettings') || '{}') };
 
-      const targetLabel = settings.target === 'proto' ? 'Proto-Confluent' : 'Ancien Confluent';
       const providerLabel = settings.provider === 'anthropic' ? 'Anthropic' : 'OpenAI';
 
       // Better model label detection
@@ -843,11 +995,12 @@
         modelLabel = 'GPT-4o';
       }
 
-      const indicatorText = `${targetLabel} • ${providerLabel} ${modelLabel} • Temp: ${settings.temperature}`;
+      const indicatorText = `Ancien Confluent • ${providerLabel} ${modelLabel} • Temp: ${settings.temperature}`;
 
       document.getElementById('settings-indicator-fr2cf').textContent = indicatorText;
       document.getElementById('settings-indicator-cf2fr').textContent = indicatorText;
       document.getElementById('settings-indicator-lexique').textContent = indicatorText;
+      document.getElementById('settings-indicator-stats').textContent = indicatorText;
     };
 
     const updateModelOptions = (provider) => {
@@ -898,7 +1051,7 @@
       const settings = JSON.parse(localStorage.getItem('confluentSettings') || '{}');
       const config = {
         text,
-        target: settings.target || 'ancien',
+        target: 'ancien',
         provider: settings.provider || 'anthropic',
         model: settings.model || 'claude-sonnet-4-20250514',
         temperature: settings.temperature || 1.0,
@@ -946,8 +1099,11 @@
                 <div class="stat-label">Économie</div>
               </div>
               <div class="stat-box">
-                <div class="stat-value">${data.layer2.useFallback ? 'UNIQUEMENT' : 'AVEC VOCAB'}</div>
-                <div class="stat-label">Mode racines</div>
+                <div class="stat-value">${
+                  data.layer2.useFallback ? 'RACINES SEULES' :
+                  (data.layer2.rootsUsed > 0 ? 'VOCAB + RACINES' : 'VOCAB SEUL')
+                }</div>
+                <div class="stat-label">Mode</div>
               </div>
             `;
             document.getElementById('layer2-stats').innerHTML = statsHtml;
@@ -1002,25 +1158,23 @@
       const settings = JSON.parse(localStorage.getItem('confluentSettings') || '{}');
 
       try {
-        const response = await fetch('/api/translate/conf2fr', {
+        // Step 1: Get raw translation to show details immediately
+        const rawResponse = await fetch('/api/translate/conf2fr', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             text,
-            variant: settings.target || 'ancien',
+            variant: 'ancien',
             detailed: true
           }),
         });
 
-        const data = await response.json();
+        const rawData = await rawResponse.json();
 
-        if (response.ok) {
-          // Display translation
-          document.getElementById('cf2fr-layer1-content').textContent = data.translation || data.result || 'Traduction effectuée';
-
-          // Display detailed tokens
-          if (data.tokens && data.tokens.length > 0) {
-            const tokensHtml = data.tokens.map(token => {
+        if (rawResponse.ok) {
+          // Display detailed tokens immediately
+          if (rawData.tokens && rawData.tokens.length > 0) {
+            const tokensHtml = rawData.tokens.map(token => {
               const statusClass = token.found ? 'found' : 'not-found';
               const frText = token.francais || '❓';
               const typeText = token.type ? `[${token.type}]` : '';
@@ -1036,9 +1190,9 @@
             document.getElementById('cf2fr-layer2-tokens').innerHTML = tokensHtml;
 
             // Display stats
-            const coverage = data.coverage || 0;
-            const total = data.tokens.length;
-            const found = data.tokens.filter(t => t.found).length;
+            const coverage = rawData.coverage || 0;
+            const total = rawData.tokens.length;
+            const found = rawData.tokens.filter(t => t.found).length;
             const notFound = total - found;
 
             document.getElementById('cf2fr-layer2-stats').innerHTML = `
@@ -1056,8 +1210,27 @@
               </div>
             `;
           }
+        }
+
+        // Step 2: Get LLM refined translation
+        const llmResponse = await fetch('/api/translate/conf2fr/llm', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            text,
+            variant: 'ancien',
+            provider: settings.provider || 'anthropic',
+            model: settings.model || 'claude-sonnet-4-20250514'
+          }),
+        });
+
+        const llmData = await llmResponse.json();
+
+        if (llmResponse.ok) {
+          // Display refined translation
+          document.getElementById('cf2fr-layer1-content').textContent = llmData.refinedTranslation || llmData.rawTranslation || 'Traduction effectuée';
         } else {
-          document.getElementById('cf2fr-layer1-content').innerHTML = `<span class="error">Erreur: ${data.error}</span>`;
+          document.getElementById('cf2fr-layer1-content').innerHTML = `<span class="error">Erreur LLM: ${llmData.error}</span>`;
         }
       } catch (error) {
         document.getElementById('cf2fr-layer1-content').innerHTML = `<span class="error">Erreur: ${error.message}</span>`;

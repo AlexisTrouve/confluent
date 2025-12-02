@@ -858,10 +858,10 @@
       "racine_fr": "exist",
       "traductions": [
         {
-          "confluent": "kulak",
+          "confluent": "zunop",
           "type": "verbe_irregulier",
           "racine": "kula",
-          "forme_liee": "kul",
+          "forme_liee": "zuno",
           "structure": "VCVC",
           "domaine": "action_existentielle",
           "note": "Verbe irrégulier existentiel - 'il y a', présence, existence. Dérivé de la racine sacrée 'ura' (eau/flux vital)"
@@ -1035,10 +1035,10 @@
       "racine_fr": "vol",
       "traductions": [
         {
-          "confluent": "aliuk",
+          "confluent": "vemep",
           "type": "verbe",
           "racine": "aliu",
-          "forme_liee": "ali",
+          "forme_liee": "veme",
           "structure": "CVCVC",
           "domaine": "action",
           "note": "Voler, s'envoler, planer dans les airs"

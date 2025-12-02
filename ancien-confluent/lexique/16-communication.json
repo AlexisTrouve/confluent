@@ -32,7 +32,7 @@
     "ecriture": {
       "traductions": [
         {
-          "confluent": "kovausili",
+          "confluent": "mkopisuzlu",
           "type": "composition",
           "composition": "kov-a-sili",
           "sens_litteral": "Gravure avec regard",
@@ -77,9 +77,9 @@
     "rhombe": {
       "traductions": [
         {
-          "confluent": "onu",
+          "confluent": "ieto",
           "type": "racine_sacree",
-          "forme_liee": "on",
+          "forme_liee": "iet",
           "domaine": "objet_rituel",
           "note": "Instrument produisant le son sacré"
         }
@@ -88,7 +88,7 @@
     "recit": {
       "traductions": [
         {
-          "confluent": "vokiaita",
+          "confluent": "llisisita",
           "type": "composition",
           "composition": "vok-i-aita",
           "sens_litteral": "Voix des ancêtres",
@@ -139,7 +139,7 @@
     "chant": {
       "traductions": [
         {
-          "confluent": "onuvoki",
+          "confluent": "oukekaza",
           "type": "composition",
           "composition": "on-u-voki",
           "sens_litteral": "Son de la voix",
@@ -229,9 +229,9 @@
     "loi": {
       "traductions": [
         {
-          "confluent": "loku",
+          "confluent": "vsone",
           "type": "racine",
-          "forme_liee": "lok",
+          "forme_liee": "vson",
           "domaine": "communication"
         }
       ]
@@ -314,9 +314,9 @@
     "secret": {
       "traductions": [
         {
-          "confluent": "zoku",
+          "confluent": "bnavi",
           "type": "racine",
-          "forme_liee": "zok",
+          "forme_liee": "bnav",
           "domaine": "communication"
         }
       ]
@@ -339,9 +339,9 @@
     "promesse": {
       "traductions": [
         {
-          "confluent": "savu",
+          "confluent": "kbevi",
           "type": "racine",
-          "forme_liee": "sav",
+          "forme_liee": "kbev",
           "domaine": "communication"
         }
       ]

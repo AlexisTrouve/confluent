@@ -39,42 +39,79 @@ console.log(`[morphologicalDecomposer] Chargé ${Object.keys(SACRED_LIAISONS).le
 // ============================================================================
 
 /**
+ * Cherche une racine en tenant compte de la forme liée (CVC/VC au lieu de CVCV/VCV)
+ * @param {string} part - Partie tronquée (forme liée)
+ * @param {Object} reverseIndex - Index de recherche
+ * @param {boolean} isLastRoot - Si c'est la dernière racine (pas de troncature)
+ * @returns {{found: boolean, fullRoot: string|null, entry: Object|null, confidence: number}}
+ */
+function findRootWithFormeLiee(part, reverseIndex, isLastRoot = false) {
+  if (!reverseIndex || !reverseIndex.byWord) {
+    return { found: false, fullRoot: null, entry: null, confidence: 0 };
+  }
+
+  // Si c'est la dernière racine, chercher directement
+  if (isLastRoot) {
+    if (reverseIndex.byWord[part]) {
+      return {
+        found: true,
+        fullRoot: part,
+        entry: reverseIndex.byWord[part],
+        confidence: 1.0
+      };
+    }
+    return { found: false, fullRoot: null, entry: null, confidence: 0 };
+  }
+
+  // Sinon, c'est une racine intermédiaire (forme liée = sans voyelle finale)
+  // Essayer d'ajouter chaque voyelle possible
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+  for (const vowel of vowels) {
+    const fullRoot = part + vowel;
+    if (reverseIndex.byWord[fullRoot]) {
+      return {
+        found: true,
+        fullRoot,
+        entry: reverseIndex.byWord[fullRoot],
+        confidence: 0.95
+      };
+    }
+  }
+
+  // Pas trouvé avec forme liée
+  return { found: false, fullRoot: null, entry: null, confidence: 0 };
+}
+
+/**
  * Vérifie si une partie ressemble à une racine valide du Confluent
  * @param {string} part - Partie à valider
  * @param {Object} reverseIndex - Index de recherche (optionnel)
- * @returns {{isValid: boolean, found: boolean, confidence: number}}
+ * @param {boolean} isLastRoot - Si c'est la dernière racine
+ * @returns {{isValid: boolean, found: boolean, confidence: number, fullRoot: string|null, entry: Object|null}}
  */
-function validateRoot(part, reverseIndex = null) {
+function validateRoot(part, reverseIndex = null, isLastRoot = false) {
   // Critères de base
   if (part.length < 2) {
-    return { isValid: false, found: false, confidence: 0 };
+    return { isValid: false, found: false, confidence: 0, fullRoot: null, entry: null };
   }
 
   let confidence = 0.5; // base
   let found = false;
+  let fullRoot = null;
+  let entry = null;
 
-  // 1. Vérifier si la partie existe dans l'index de recherche
+  // 1. Vérifier si la partie existe dans l'index de recherche (avec forme liée)
   if (reverseIndex) {
-    // Recherche exacte
-    if (reverseIndex.byWord && reverseIndex.byWord[part]) {
-      found = true;
-      confidence = 1.0;
-      return { isValid: true, found: true, confidence };
-    }
-
-    // Recherche par forme liée (enlever dernière voyelle)
-    if (reverseIndex.byFormeLiee) {
-      const formeLiee = part.endsWith('a') || part.endsWith('e') ||
-                        part.endsWith('i') || part.endsWith('o') ||
-                        part.endsWith('u')
-                        ? part.slice(0, -1)
-                        : part;
-
-      if (reverseIndex.byFormeLiee[formeLiee]) {
-        found = true;
-        confidence = 0.95;
-        return { isValid: true, found: true, confidence };
-      }
+    const result = findRootWithFormeLiee(part, reverseIndex, isLastRoot);
+    if (result.found) {
+      return {
+        isValid: true,
+        found: true,
+        confidence: result.confidence,
+        fullRoot: result.fullRoot,
+        entry: result.entry
+      };
     }
   }
 
@@ -84,25 +121,40 @@ function validateRoot(part, reverseIndex = null) {
   const lastChar = part[part.length - 1];
   const secondLastChar = part.length > 1 ? part[part.length - 2] : '';
 
-  // Finit par voyelle = probable racine
-  if (vowels.includes(lastChar)) {
-    confidence += 0.2;
-
-    // Pattern CV en fin = très probable
-    if (secondLastChar && !vowels.includes(secondLastChar)) {
+  // Pour la dernière racine : doit finir par voyelle
+  if (isLastRoot) {
+    if (vowels.includes(lastChar)) {
       confidence += 0.2;
+      if (secondLastChar && !vowels.includes(secondLastChar)) {
+        confidence += 0.2;
+      }
+    } else {
+      // Dernière racine sans voyelle = invalide
+      confidence = 0.2;
+    }
+  } else {
+    // Pour racine intermédiaire : doit finir par consonne (forme liée)
+    if (!vowels.includes(lastChar)) {
+      confidence += 0.2;
+      if (secondLastChar && vowels.includes(secondLastChar)) {
+        confidence += 0.2; // Pattern VC ou CVC
+      }
     }
   }
 
-  // 3. Longueur typique (3-4 caractères pour racines)
-  if (part.length >= 3 && part.length <= 5) {
+  // 3. Longueur typique (2-4 caractères pour racines tronquées, 3-5 pour complètes)
+  const minLen = isLastRoot ? 3 : 2;
+  const maxLen = isLastRoot ? 5 : 4;
+  if (part.length >= minLen && part.length <= maxLen) {
     confidence += 0.1;
   }
 
   return {
     isValid: confidence >= 0.5,
     found: false,
-    confidence: Math.min(confidence, 1.0)
+    confidence: Math.min(confidence, 1.0),
+    fullRoot: null,
+    entry: null
   };
 }
 
@@ -111,13 +163,20 @@ function validateRoot(part, reverseIndex = null) {
 // ============================================================================
 
 /**
- * Décompose un mot composé non trouvé
- * @param {string} word - Mot composé en confluent
- * @param {Object} reverseIndex - Index de recherche (optionnel, pour validation)
- * @returns {Array<{part1: string, liaison: string, liaisonMeaning: string, part2: string, pattern: string, confidence: number, part1Valid: boolean, part2Valid: boolean}>}
+ * Décompose récursivement un mot en N racines
+ * @param {string} word - Mot à décomposer
+ * @param {Object} reverseIndex - Index de recherche
+ * @param {number} depth - Profondeur de récursion (pour éviter boucle infinie)
+ * @returns {Array<Object>} Liste de décompositions possibles
  */
-function decomposeWord(word, reverseIndex = null) {
+function decomposeWordRecursive(word, reverseIndex, depth = 0) {
+  const MAX_DEPTH = 10; // Max 10 racines dans un mot
   const decompositions = [];
+
+  // Limite de profondeur
+  if (depth >= MAX_DEPTH || word.length < 2) {
+    return decompositions;
+  }
 
   // Trier les liaisons par longueur décroissante (essayer 'aa' avant 'a')
   const liaisonsSorted = Object.keys(SACRED_LIAISONS).sort((a, b) => b.length - a.length);
@@ -128,47 +187,154 @@ function decomposeWord(word, reverseIndex = null) {
 
     // La liaison doit être au milieu du mot, pas au début ni à la fin
     if (index > 0 && index < word.length - liaison.length) {
-      const part1 = word.substring(0, index);
-      const part2 = word.substring(index + liaison.length);
+      const leftPart = word.substring(0, index);
+      const rightPart = word.substring(index + liaison.length);
 
-      // Valider les deux parties
-      const part1Validation = validateRoot(part1, reverseIndex);
-      const part2Validation = validateRoot(part2, reverseIndex);
+      // Valider la partie gauche (jamais la dernière racine)
+      const leftValidation = validateRoot(leftPart, reverseIndex, false);
 
-      // Les deux parties doivent ressembler à des racines
-      if (part1Validation.isValid && part2Validation.isValid) {
+      if (!leftValidation.isValid) continue;
+
+      // La partie droite peut être :
+      // 1. Une racine simple (dernière racine)
+      // 2. Un mot composé à décomposer récursivement
+
+      // Essai 1 : rightPart est la dernière racine
+      const rightValidation = validateRoot(rightPart, reverseIndex, true);
+
+      if (rightValidation.isValid) {
         const liaisonData = SACRED_LIAISONS[liaison];
 
         decompositions.push({
-          part1,
-          part1Found: part1Validation.found,
-          part1Confidence: part1Validation.confidence,
-          liaison,
-          liaisonDomaine: liaisonData.domaine,
-          liaisonConcept: liaisonData.concept,
-          liaisonDescription: liaisonData.description,
-          part2,
-          part2Found: part2Validation.found,
-          part2Confidence: part2Validation.confidence,
-          pattern: `${part1}-${liaison}-${part2}`,
-          confidence: calculateConfidence(
-            part1,
+          type: 'simple',
+          roots: [
+            {
+              part: leftPart,
+              fullRoot: leftValidation.fullRoot || leftPart,
+              found: leftValidation.found,
+              confidence: leftValidation.confidence,
+              entry: leftValidation.entry,
+              isLast: false
+            },
+            {
+              part: rightPart,
+              fullRoot: rightValidation.fullRoot || rightPart,
+              found: rightValidation.found,
+              confidence: rightValidation.confidence,
+              entry: rightValidation.entry,
+              isLast: true
+            }
+          ],
+          liaisons: [
+            {
+              liaison,
+              domaine: liaisonData.domaine,
+              concept: liaisonData.concept,
+              description: liaisonData.description
+            }
+          ],
+          pattern: `${leftValidation.fullRoot || leftPart}-${liaison}-${rightValidation.fullRoot || rightPart}`,
+          confidence: calculateConfidenceRecursive([leftValidation, rightValidation], 1)
+        });
+      }
+
+      // Essai 2 : rightPart est un mot composé
+      const rightDecompositions = decomposeWordRecursive(rightPart, reverseIndex, depth + 1);
+
+      for (const rightDecomp of rightDecompositions) {
+        const liaisonData = SACRED_LIAISONS[liaison];
+
+        // Combiner left + liaison + rightDecomp
+        const allRoots = [
+          {
+            part: leftPart,
+            fullRoot: leftValidation.fullRoot || leftPart,
+            found: leftValidation.found,
+            confidence: leftValidation.confidence,
+            entry: leftValidation.entry,
+            isLast: false
+          },
+          ...rightDecomp.roots
+        ];
+
+        const allLiaisons = [
+          {
             liaison,
-            part2,
-            part1Validation,
-            part2Validation
-          )
+            domaine: liaisonData.domaine,
+            concept: liaisonData.concept,
+            description: liaisonData.description
+          },
+          ...rightDecomp.liaisons
+        ];
+
+        const pattern = `${leftValidation.fullRoot || leftPart}-${liaison}-${rightDecomp.pattern}`;
+        const allValidations = [leftValidation, ...rightDecomp.roots.map(r => ({ found: r.found, confidence: r.confidence }))];
+
+        decompositions.push({
+          type: 'recursive',
+          roots: allRoots,
+          liaisons: allLiaisons,
+          pattern,
+          confidence: calculateConfidenceRecursive(allValidations, allLiaisons.length)
         });
       }
     }
   }
+
+  return decompositions;
+}
+
+/**
+ * Décompose un mot composé non trouvé (wrapper public)
+ * @param {string} word - Mot composé en confluent
+ * @param {Object} reverseIndex - Index de recherche (optionnel, pour validation)
+ * @returns {Array<Object>} Liste de décompositions possibles, triées par confiance
+ */
+function decomposeWord(word, reverseIndex = null) {
+  const decompositions = decomposeWordRecursive(word, reverseIndex, 0);
 
   // Trier par confiance décroissante
   return decompositions.sort((a, b) => b.confidence - a.confidence);
 }
 
 /**
- * Calcule la confiance d'une décomposition
+ * Calcule la confiance d'une décomposition récursive avec N racines
+ * @param {Array<Object>} validations - Liste des validations de racines
+ * @param {number} liaisonCount - Nombre de liaisons
+ * @returns {number} Score de confiance entre 0 et 1
+ */
+function calculateConfidenceRecursive(validations, liaisonCount) {
+  let score = 0.3; // base conservative
+
+  // Compter combien de racines sont trouvées dans le lexique
+  const foundCount = validations.filter(v => v.found).length;
+  const totalCount = validations.length;
+
+  // Score basé sur le pourcentage de racines trouvées
+  if (foundCount === totalCount) {
+    score = 0.95; // Toutes les racines trouvées = très haute confiance
+  } else if (foundCount >= totalCount * 0.75) {
+    score = 0.85; // 75%+ trouvées = haute confiance
+  } else if (foundCount >= totalCount * 0.5) {
+    score = 0.70; // 50%+ trouvées = bonne confiance
+  } else if (foundCount > 0) {
+    score = 0.55; // Au moins une trouvée = confiance moyenne
+  } else {
+    // Aucune trouvée : utiliser la moyenne des confiances heuristiques
+    const avgConfidence = validations.reduce((sum, v) => sum + v.confidence, 0) / totalCount;
+    score = avgConfidence * 0.8; // Pénalité car aucune racine confirmée
+  }
+
+  // Pénalité pour longueur : plus il y a de racines, moins on est sûr
+  if (liaisonCount > 2) {
+    score *= Math.pow(0.95, liaisonCount - 2); // -5% par liaison supplémentaire
+  }
+
+  return Math.min(score, 1.0);
+}
+
+/**
+ * Calcule la confiance d'une décomposition (version legacy pour compatibilité)
  * @param {string} part1 - Première partie (racine)
  * @param {string} liaison - Liaison sacrée
  * @param {string} part2 - Deuxième partie (racine)
@@ -177,34 +343,13 @@ function decomposeWord(word, reverseIndex = null) {
  * @returns {number} Score de confiance entre 0 et 1
  */
 function calculateConfidence(part1, liaison, part2, part1Validation, part2Validation) {
-  let score = 0.3; // base plus conservative
-
-  // BONUS MAJEUR : Si les deux parties sont trouvées dans le lexique
-  if (part1Validation.found && part2Validation.found) {
-    score = 0.95; // Très haute confiance !
-  } else if (part1Validation.found || part2Validation.found) {
-    score = 0.75; // Une partie trouvée = bonne confiance
-  } else {
-    // Utiliser la confiance des validations heuristiques
-    score = (part1Validation.confidence + part2Validation.confidence) / 2;
-  }
-
-  // Bonus si liaison courante (i, u, a sont plus fréquentes)
-  if (['i', 'u', 'a'].includes(liaison)) {
-    score += 0.05;
-  } else if (['aa', 'ii'].includes(liaison)) {
-    score += 0.03;
-  }
-
-  // Bonus si longueurs de parties équilibrées
-  const ratio = Math.min(part1.length, part2.length) / Math.max(part1.length, part2.length);
-  score += ratio * 0.05;
-
-  return Math.min(score, 1.0);
+  return calculateConfidenceRecursive([part1Validation, part2Validation], 1);
 }
 
 module.exports = {
   decomposeWord,
+  decomposeWordRecursive,
   SACRED_LIAISONS,
-  validateRoot
+  validateRoot,
+  findRootWithFormeLiee
 };

@@ -5,7 +5,7 @@
     "Arbitre des Esprits": {
       "traductions": [
         {
-          "confluent": "zakiiumi",
+          "confluent": "kpihepalu",
           "type": "nom_propre",
           "composition": "zak-ii-umi",
           "sens_litteral": "Celui qui EST gardien des esprits",
@@ -61,7 +61,7 @@
     "Proclamateur": {
       "traductions": [
         {
-          "confluent": "vokiueka",
+          "confluent": "bpotomeli",
           "type": "nom_propre",
           "composition": "vok-i-eka",
           "sens_litteral": "Voix de la totalité",
@@ -91,7 +91,7 @@
     "Faucon Chasseur": {
       "traductions": [
         {
-          "confluent": "akoazana",
+          "confluent": "uuzivenna",
           "type": "nom_propre",
           "composition": "ak-oa-zana",
           "sens_litteral": "Faucon vainqueur de la chasse",
@@ -222,7 +222,7 @@
     "Aile-Grise": {
       "traductions": [
         {
-          "confluent": "aliaska",
+          "confluent": "iezevipe",
           "type": "nom_propre",
           "composition": "al-i-aska",
           "sens_litteral": "Porteur de la grue libre",
@@ -276,7 +276,7 @@
     "guide des ames": {
       "traductions": [
         {
-          "confluent": "tekiuumi",
+          "confluent": "mtovemaba",
           "type": "composition",
           "composition": "tek-i-umi",
           "sens_litteral": "Chemin des esprits",
@@ -306,7 +306,7 @@
     "Passe-bien": {
       "traductions": [
         {
-          "confluent": "kanutosa",
+          "confluent": "vbuvaloli",
           "type": "nom_propre",
           "composition": "tak-i-tosa",
           "sens_litteral": "Porteur du bien",
@@ -321,7 +321,7 @@
     "Porteur de Flamme": {
       "traductions": [
         {
-          "confluent": "kanuusuki",
+          "confluent": "bzilikukva",
           "type": "nom_propre",
           "composition": "tak-i-suki",
           "sens_litteral": "Porteur du feu",
@@ -466,9 +466,9 @@
     "ancetre": {
       "traductions": [
         {
-          "confluent": "aita",
+          "confluent": "ietni",
           "type": "racine_sacree",
-          "forme_liee": "ait",
+          "forme_liee": "ietn",
           "domaine": "famille"
         }
       ]
