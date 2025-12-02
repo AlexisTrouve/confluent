@@ -33,8 +33,6 @@ function loadTokens() {
       apiKey: uuidv4(),
       createdAt: new Date().toISOString(),
       active: true,
-      requestsToday: 0,
-      dailyLimit: -1, // illimité
       // Tracking des tokens LLM
       llmTokens: {
         totalInput: 0,
@@ -44,10 +42,7 @@ function loadTokens() {
           output: 0,
           date: new Date().toISOString().split('T')[0]
         }
-      },
-      // Rate limiting LLM (illimité pour admin)
-      llmRequestsToday: 0,
-      llmDailyLimit: -1
+      }
     }
   };
 
@@ -89,20 +84,7 @@ function authenticate(req, res, next) {
     return res.status(403).json({ error: 'Token disabled' });
   }
 
-  // Vérifier la limite quotidienne
-  const today = new Date().toISOString().split('T')[0];
-  const tokenToday = token.lastUsed?.split('T')[0];
-
-  if (tokenToday !== today) {
-    token.requestsToday = 0;
-  }
-
-  if (token.dailyLimit > 0 && token.requestsToday >= token.dailyLimit) {
-    return res.status(429).json({ error: 'Daily limit reached' });
-  }
-
   // Mettre à jour les stats
-  token.requestsToday++;
   token.lastUsed = new Date().toISOString();
   saveTokens();
 
@@ -125,7 +107,7 @@ function requireAdmin(req, res, next) {
 }
 
 // Créer un nouveau token
-function createToken(name, role = 'user', dailyLimit = 100) {
+function createToken(name, role = 'user') {
   const id = uuidv4();
   const apiKey = uuidv4();
 
@@ -136,8 +118,6 @@ function createToken(name, role = 'user', dailyLimit = 100) {
     apiKey,
     createdAt: new Date().toISOString(),
     active: true,
-    requestsToday: 0,
-    dailyLimit,
     // Tracking des tokens LLM
     llmTokens: {
       totalInput: 0,
@@ -147,10 +127,7 @@ function createToken(name, role = 'user', dailyLimit = 100) {
         output: 0,
         date: new Date().toISOString().split('T')[0]
       }
-    },
-    // Rate limiting LLM
-    llmRequestsToday: 0,
-    llmDailyLimit: 20
+    }
   };
 
   saveTokens();
@@ -166,8 +143,6 @@ function listTokens() {
     apiKey: t.apiKey.substring(0, 8) + '...',
     createdAt: t.createdAt,
     active: t.active,
-    requestsToday: t.requestsToday,
-    dailyLimit: t.dailyLimit,
     lastUsed: t.lastUsed
   }));
 }
@@ -210,8 +185,7 @@ function getGlobalStats() {
   const tokenList = Object.values(tokens);
   return {
     totalTokens: tokenList.length,
-    activeTokens: tokenList.filter(t => t.active).length,
-    totalRequestsToday: tokenList.reduce((sum, t) => sum + t.requestsToday, 0)
+    activeTokens: tokenList.filter(t => t.active).length
   };
 }
 
@@ -225,7 +199,7 @@ function checkLLMLimit(apiKey) {
   if (token.llmRequestsToday === undefined) {
     token.llmRequestsToday = 0;
     token.llmDailyLimit = token.role === 'admin' ? -1 : 20;
-    saveTokens(); // Sauvegarder l'initialisation
+    saveTokens();
   }
 
   // Initialiser llmTokens.today.date si n'existe pas

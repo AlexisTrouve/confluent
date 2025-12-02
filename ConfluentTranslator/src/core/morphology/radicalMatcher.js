@@ -2,7 +2,7 @@
 // Système de recherche par radicaux pour le traducteur Confluent→Français
 // Permet de trouver les formes conjuguées et dérivées à partir des racines
 
-const lexique = require('../data/lexique.json');
+const lexique = require('../../data/lexique.json');
 
 // ============================================================================
 // CHARGEMENT DYNAMIQUE DES SUFFIXES DEPUIS LE LEXIQUE

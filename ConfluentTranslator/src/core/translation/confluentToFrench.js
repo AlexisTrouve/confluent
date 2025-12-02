@@ -9,8 +9,8 @@
  * 5. Décomposition morphologique (nouveauté)
  */
 
-const { extractRadicals } = require('./radicalMatcher');
-const { decomposeWord } = require('./morphologicalDecomposer');
+const { extractRadicals } = require('../morphology/radicalMatcher');
+const { decomposeWord } = require('../morphology/morphologicalDecomposer');
 
 /**
  * Tokenize un texte Confluent

@@ -10,7 +10,7 @@
  * 6. Conversion automatique des nombres français → Confluent
  */
 
-const { convertFrenchNumber, isNumber } = require('./numberConverter');
+const { convertFrenchNumber, isNumber } = require('../numbers/numberConverter');
 
 /**
  * FONCTION CENTRALE DE NORMALISATION

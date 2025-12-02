@@ -10,7 +10,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { preprocessNumbers } = require('./numberPreprocessor');
+const { preprocessNumbers } = require('../numbers/numberPreprocessor');
 
 /**
  * Charge le template de prompt de base depuis les fichiers

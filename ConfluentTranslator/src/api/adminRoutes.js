@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const { requireAdmin, createToken, listTokens, disableToken, enableToken, deleteToken, getGlobalStats } = require('./auth');
-const { getLogs, getLogStats } = require('./logger');
-const { adminLimiter } = require('./rateLimiter');
+const { requireAdmin, createToken, listTokens, disableToken, enableToken, deleteToken, getGlobalStats } = require('../utils/auth');
+const { getLogs, getLogStats } = require('../utils/logger');
+const { adminLimiter } = require('../utils/rateLimiter');
 
 // Appliquer l'auth et rate limiting à toutes les routes admin
 router.use(requireAdmin);
@@ -16,13 +16,13 @@ router.get('/tokens', (req, res) => {
 
 // Créer un nouveau token
 router.post('/tokens', (req, res) => {
-  const { name, role = 'user', dailyLimit = 100 } = req.body;
+  const { name, role = 'user' } = req.body;
 
   if (!name) {
     return res.status(400).json({ error: 'Missing parameter: name' });
   }
 
-  const token = createToken(name, role, dailyLimit);
+  const token = createToken(name, role);
   res.json({
     success: true,
     token: {

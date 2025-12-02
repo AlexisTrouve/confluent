@@ -536,7 +536,7 @@
         border-radius: 6px;
         display: none;
       ">
-        <span id="llm-limit-text">Requêtes LLM: 20/20</span>
+        <span id="llm-limit-text">Requêtes LLM: 0/20</span>
       </div>
       <div>
         <button class="logout-btn" onclick="goToAdmin()" id="admin-btn" style="display:none; margin-right: 10px;">🔐 Admin</button>
@@ -810,24 +810,6 @@
           </label>
         </div>
 
-        <h2 style="margin-top: 30px;">🔑 API Keys (optionnel)</h2>
-
-        <div class="form-group">
-          <label>Anthropic API Key</label>
-          <input type="password" id="settings-anthropic-key" placeholder="sk-ant-...">
-          <small style="color: #888; display: block; margin-top: 5px;">
-            Laisser vide pour utiliser la clé du serveur
-          </small>
-        </div>
-
-        <div class="form-group">
-          <label>OpenAI API Key</label>
-          <input type="password" id="settings-openai-key" placeholder="sk-...">
-          <small style="color: #888; display: block; margin-top: 5px;">
-            Laisser vide pour utiliser la clé du serveur
-          </small>
-        </div>
-
         <button onclick="saveSettings()" style="margin-top: 20px;">💾 Sauvegarder les paramètres</button>
         <div id="settings-saved-message" style="display: none; color: #4a9eff; margin-top: 10px; font-weight: 600;">
           ✓ Paramètres sauvegardés !
@@ -885,8 +867,8 @@
           // User with limited requests
           counter.style.display = 'block';
           const limit = data.limit || 20;
-          const remaining = data.remaining !== undefined ? data.remaining : (limit - (data.used || 0));
-          text.textContent = `Requêtes LLM restantes: ${remaining}/${limit}`;
+          const used = data.used || 0;
+          text.textContent = `Requêtes LLM: ${used}/${limit}`;
         }
       } catch (error) {
         console.error('Error loading LLM limit:', error);
@@ -951,9 +933,6 @@
           login();
         }
       });
-
-      // Note: LLM limit counter is updated after each translation
-      // No need for automatic polling every few seconds
     });
 
     // Authenticated fetch wrapper with auto-logout on 401/403
@@ -1195,8 +1174,6 @@
       document.getElementById('temp-value').textContent = settings.temperature;
       document.getElementById('settings-theme').value = settings.theme;
       document.getElementById('settings-verbose').checked = settings.verbose;
-      document.getElementById('settings-anthropic-key').value = settings.anthropicKey;
-      document.getElementById('settings-openai-key').value = settings.openaiKey;
 
       // Apply theme
       applyTheme(settings.theme);
@@ -1208,14 +1185,18 @@
     };
 
     const saveSettings = () => {
+      // Load existing settings to preserve API keys
+      const existingSettings = JSON.parse(localStorage.getItem('confluentSettings') || '{}');
+
       const settings = {
         provider: document.getElementById('settings-provider').value,
         model: document.getElementById('settings-model').value,
         temperature: parseFloat(document.getElementById('settings-temperature').value),
         theme: document.getElementById('settings-theme').value,
         verbose: document.getElementById('settings-verbose').checked,
-        anthropicKey: document.getElementById('settings-anthropic-key').value,
-        openaiKey: document.getElementById('settings-openai-key').value
+        // Preserve API keys from localStorage
+        anthropicKey: existingSettings.anthropicKey || '',
+        openaiKey: existingSettings.openaiKey || ''
       };
 
       localStorage.setItem('confluentSettings', JSON.stringify(settings));
