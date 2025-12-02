@@ -17,7 +17,7 @@ const { translateConfluentToFrench, translateConfluentDetailed } = require('./co
 
 // Security modules
 const { authenticate, requireAdmin, createToken, listTokens, disableToken, enableToken, deleteToken, getGlobalStats, trackLLMUsage, checkLLMLimit } = require('./auth');
-const { globalLimiter, translationLimiter, adminLimiter } = require('./rateLimiter');
+const { adminLimiter } = require('./rateLimiter');
 const { requestLogger, getLogs, getLogStats } = require('./logger');
 
 const app = express();
@@ -26,7 +26,7 @@ const PORT = process.env.PORT || 3000;
 // Middlewares
 app.use(express.json());
 app.use(requestLogger);      // Log toutes les requêtes
-app.use(globalLimiter);       // Rate limiting global
+// Rate limiting: on utilise uniquement checkLLMLimit() par API key, pas de rate limit global par IP
 
 // Route protégée pour admin.html (AVANT express.static)
 // Vérifie l'auth seulement si API key présente, sinon laisse passer (le JS client vérifiera)
@@ -378,7 +378,7 @@ app.post('/api/analyze/coverage', authenticate, (req, res) => {
 });
 
 // Translation endpoint (NOUVEAU SYSTÈME CONTEXTUEL)
-app.post('/translate', authenticate, translationLimiter, async (req, res) => {
+app.post('/translate', authenticate, async (req, res) => {
   const { text, target, provider, model, temperature = 1.0, useLexique = true, customAnthropicKey, customOpenAIKey } = req.body;
 
   if (!text || !target || !provider || !model) {
@@ -586,7 +586,7 @@ function parseTranslationResponse(response) {
 }
 
 // Raw translation endpoint (for debugging - returns unprocessed LLM output) - SECURED
-app.post('/api/translate/raw', authenticate, translationLimiter, async (req, res) => {
+app.post('/api/translate/raw', authenticate, async (req, res) => {
   const { text, target, provider, model, useLexique = true, customAnthropicKey, customOpenAIKey } = req.body;
 
   if (!text || !target || !provider || !model) {
@@ -700,7 +700,7 @@ app.post('/api/translate/raw', authenticate, translationLimiter, async (req, res
 });
 
 // Batch translation endpoint - SECURED
-app.post('/api/translate/batch', authenticate, translationLimiter, async (req, res) => {
+app.post('/api/translate/batch', authenticate, async (req, res) => {
   const { words, target = 'ancien' } = req.body;
 
   if (!words || !Array.isArray(words)) {
@@ -727,7 +727,7 @@ app.post('/api/translate/batch', authenticate, translationLimiter, async (req, r
 });
 
 // Confluent → French translation endpoint (traduction brute) - SECURED
-app.post('/api/translate/conf2fr', authenticate, translationLimiter, (req, res) => {
+app.post('/api/translate/conf2fr', authenticate, (req, res) => {
   const { text, variant = 'ancien', detailed = false } = req.body;
 
   if (!text) {
@@ -755,7 +755,7 @@ app.post('/api/translate/conf2fr', authenticate, translationLimiter, (req, res) 
 });
 
 // NEW: Confluent → French with LLM refinement
-app.post('/api/translate/conf2fr/llm', authenticate, translationLimiter, async (req, res) => {
+app.post('/api/translate/conf2fr/llm', authenticate, async (req, res) => {
   const { text, variant = 'ancien', provider = 'anthropic', model = 'claude-sonnet-4-20250514', customAnthropicKey, customOpenAIKey } = req.body;
 
   if (!text) {

@@ -884,9 +884,8 @@
         } else {
           // User with limited requests
           counter.style.display = 'block';
-          const used = data.used || 0;
           const limit = data.limit || 20;
-          const remaining = limit - used;
+          const remaining = data.remaining !== undefined ? data.remaining : (limit - (data.used || 0));
           text.textContent = `Requêtes LLM restantes: ${remaining}/${limit}`;
         }
       } catch (error) {
@@ -953,23 +952,8 @@
         }
       });
 
-      // Refresh LLM limit counter every 3 seconds if logged in
-      let limitErrorCount = 0;
-      const limitInterval = setInterval(() => {
-        if (getApiKey()) {
-          updateLLMLimit().catch(err => {
-            limitErrorCount++;
-            // Stop polling after 5 consecutive errors
-            if (limitErrorCount >= 5) {
-              console.warn('Too many errors loading LLM limit, stopping auto-refresh');
-              clearInterval(limitInterval);
-            }
-          });
-        } else {
-          // Reset error count if not logged in
-          limitErrorCount = 0;
-        }
-      }, 3000);
+      // Note: LLM limit counter is updated after each translation
+      // No need for automatic polling every few seconds
     });
 
     // Authenticated fetch wrapper with auto-logout on 401/403
@@ -1421,6 +1405,10 @@
         } else {
           document.getElementById('layer1-content').innerHTML = `<span class="error">Erreur: ${data.error}</span>`;
         }
+
+        // Update LLM limit counter after translation
+        updateLLMLimit().catch(err => console.error('Error updating LLM limit:', err));
+
       } catch (error) {
         document.getElementById('layer1-content').innerHTML = `<span class="error">Erreur: ${error.message}</span>`;
       } finally {
@@ -1533,6 +1521,10 @@
         } else {
           document.getElementById('cf2fr-layer1-content').innerHTML = `<span class="error">Erreur LLM: ${llmData.error}</span>`;
         }
+
+        // Update LLM limit counter after translation
+        updateLLMLimit().catch(err => console.error('Error updating LLM limit:', err));
+
       } catch (error) {
         document.getElementById('cf2fr-layer1-content').innerHTML = `<span class="error">Erreur: ${error.message}</span>`;
       } finally {
