@@ -789,7 +789,7 @@ app.post('/api/translate/conf2fr/llm', authenticate, async (req, res) => {
     const rawTranslation = translateConfluentToFrench(text, confluentIndexes[variantKey]);
 
     // Step 2: Load refinement prompt
-    const refinementPrompt = fs.readFileSync(path.join(__dirname, 'prompts', 'cf2fr-refinement.txt'), 'utf-8');
+    const refinementPrompt = fs.readFileSync(path.join(__dirname, '..', '..', 'prompts', 'cf2fr-refinement.txt'), 'utf-8');
 
     // Step 3: Use LLM to refine translation
     let refinedText;

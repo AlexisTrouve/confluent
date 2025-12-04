@@ -18,7 +18,7 @@ const { preprocessNumbers } = require('../numbers/numberPreprocessor');
  * @returns {string} - Template de prompt
  */
 function loadBaseTemplate(variant) {
-  const templatePath = path.join(__dirname, 'prompts', `${variant}-system.txt`);
+  const templatePath = path.join(__dirname, '..', '..', '..', 'prompts', `${variant}-system.txt`);
 
   if (!fs.existsSync(templatePath)) {
     throw new Error(`Template not found: ${templatePath}`);

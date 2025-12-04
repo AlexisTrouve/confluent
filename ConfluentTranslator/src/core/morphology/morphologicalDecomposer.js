@@ -2,7 +2,7 @@
 // Système de décomposition morphologique pour le Confluent
 // Permet de décomposer les mots composés selon le pattern Racine-Liaison-Racine
 
-const lexique = require('../../data/lexique.json');
+const lexique = require('../../../../data/lexique.json');
 
 // ============================================================================
 // CHARGEMENT DYNAMIQUE DES LIAISONS DEPUIS LE LEXIQUE

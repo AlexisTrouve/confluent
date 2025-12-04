@@ -4,7 +4,7 @@ const { v4: uuidv4 } = require('uuid');
 const fs = require('fs');
 const path = require('path');
 
-const TOKENS_FILE = path.join(__dirname, 'data', 'tokens.json');
+const TOKENS_FILE = path.join(__dirname, '..', '..', 'data', 'tokens.json');
 const JWT_SECRET = process.env.JWT_SECRET || 'confluent-secret-key-change-in-production';
 
 // Structure des tokens
@@ -12,7 +12,7 @@ let tokens = {};
 
 function loadTokens() {
   try {
-    const dataDir = path.join(__dirname, 'data');
+    const dataDir = path.join(__dirname, '..', '..', 'data');
     if (!fs.existsSync(dataDir)) {
       fs.mkdirSync(dataDir, { recursive: true });
     }
