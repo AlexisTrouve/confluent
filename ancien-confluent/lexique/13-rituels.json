@@ -1,0 +1,395 @@
+{
+  "_comment": "Rituels, traditions et pratiques sacrées",
+  "_mots_a_gerer": [],
+  "dictionnaire": {
+    "Rituel du Regard Partage": {
+      "traductions": [
+        {
+          "confluent": "asausiliaakota",
+          "type": "nom_propre",
+          "composition": "as-a-sil-aa-kota",
+          "sens_litteral": "Sacré avec regard-mêlé-à-union",
+          "racines": [
+            "asa",
+            "sili",
+            "kota"
+          ],
+          "categorie": "rituel_majeur",
+          "note": "Rituel central de la civilisation"
+        }
+      ]
+    },
+    "pelerinage": {
+      "traductions": [
+        {
+          "confluent": "tekiuasa",
+          "type": "composition",
+          "composition": "tek-i-asa",
+          "sens_litteral": "Chemin du sacré",
+          "racines": [
+            "teki",
+            "asa"
+          ],
+          "domaine": "rituel"
+        }
+      ]
+    },
+    "rites funeraires": {
+      "traductions": [
+        {
+          "confluent": "asauosi",
+          "type": "composition",
+          "composition": "as-a-osi",
+          "sens_litteral": "Sacré avec mort",
+          "racines": [
+            "asa",
+            "osi"
+          ],
+          "domaine": "rituel"
+        }
+      ]
+    },
+    "Cercles de Vigile": {
+      "traductions": [
+        {
+          "confluent": "ntanazaza",
+          "type": "nom_propre",
+          "composition": "sik-u-vela",
+          "sens_litteral": "Cercle de la vigile",
+          "racines": [
+            "siku",
+            "vela"
+          ],
+          "categorie": "rituel"
+        }
+      ]
+    },
+    "Communion des esprits": {
+      "traductions": [
+        {
+          "confluent": "kotamuumi",
+          "type": "nom_propre",
+          "composition": "kot-a-m-umi",
+          "sens_litteral": "Union avec esprits",
+          "racines": [
+            "kota",
+            "umi"
+          ],
+          "categorie": "rituel"
+        }
+      ]
+    },
+    "Lois du Sang et de la Bete": {
+      "traductions": [
+        {
+          "confluent": "lokuulasubetu",
+          "type": "nom_propre",
+          "composition": "lok-u-pasu-betu",
+          "sens_litteral": "Loi du sang et de la bête",
+          "racines": [
+            "loku",
+            "pasu",
+            "betu"
+          ],
+          "categorie": "loi_sacree"
+        }
+      ]
+    },
+    "Porteur de Flamme": {
+      "traductions": [
+        {
+          "confluent": "kanuusuki",
+          "type": "nom_propre",
+          "composition": "tak-i-suki",
+          "sens_litteral": "Porteur du feu",
+          "racines": [
+            "taka",
+            "suki"
+          ],
+          "categorie": "titre_rituel"
+        }
+      ]
+    },
+    "Memento": {
+      "traductions": [
+        {
+          "confluent": "memuuaita",
+          "type": "nom_propre",
+          "composition": "mem-u-aita",
+          "sens_litteral": "Mémoire des ancêtres",
+          "racines": [
+            "memu",
+            "aita"
+          ],
+          "categorie": "objet_rituel"
+        }
+      ]
+    },
+    "serment sacre": {
+      "traductions": [
+        {
+          "confluent": "savuuasa",
+          "type": "composition",
+          "composition": "sav-u-asa",
+          "sens_litteral": "Serment du sacré",
+          "racines": [
+            "savu",
+            "asa"
+          ],
+          "domaine": "rituel"
+        }
+      ]
+    },
+    "Glyphes du Gouffre": {
+      "traductions": [
+        {
+          "confluent": "kovuuvuku",
+          "type": "nom_propre",
+          "composition": "kov-u-vuku",
+          "sens_litteral": "Gravures du gouffre",
+          "racines": [
+            "kova",
+            "vuku"
+          ],
+          "categorie": "objet_rituel"
+        }
+      ]
+    },
+    "Colliers de glyphes": {
+      "traductions": [
+        {
+          "confluent": "kopuukova",
+          "type": "composition",
+          "composition": "kop-u-kova",
+          "sens_litteral": "Corde de gravures",
+          "racines": [
+            "kopu",
+            "kova"
+          ],
+          "domaine": "objet_rituel"
+        }
+      ]
+    },
+    "Tablettes d'argile": {
+      "traductions": [
+        {
+          "confluent": "tabuutoka",
+          "type": "composition",
+          "composition": "tab-u-toka",
+          "sens_litteral": "Tablette de terre",
+          "racines": [
+            "tabu",
+            "toka"
+          ],
+          "domaine": "objet_rituel"
+        }
+      ]
+    },
+    "ideoglyphes": {
+      "traductions": [
+        {
+          "confluent": "kovausili",
+          "type": "composition",
+          "composition": "kov-a-sili",
+          "sens_litteral": "Gravure avec regard",
+          "racines": [
+            "kova",
+            "sili"
+          ],
+          "domaine": "communication"
+        }
+      ],
+      "synonymes_fr": [
+        "écriture"
+      ]
+    },
+    "argile vivante": {
+      "traductions": [
+        {
+          "confluent": "tokauita",
+          "type": "composition",
+          "composition": "tok-a-ita",
+          "sens_litteral": "Terre avec vie",
+          "racines": [
+            "toka",
+            "ita"
+          ],
+          "domaine": "materiau_rituel"
+        }
+      ]
+    },
+    "lait de pierre": {
+      "traductions": [
+        {
+          "confluent": "miluukali",
+          "type": "composition",
+          "composition": "mil-u-kali",
+          "sens_litteral": "Lait de pierre",
+          "racines": [
+            "milu",
+            "kali"
+          ],
+          "domaine": "materiau_rituel"
+        }
+      ]
+    },
+    "roche braise": {
+      "traductions": [
+        {
+          "confluent": "kaliusuki",
+          "type": "composition",
+          "composition": "kal-i-suki",
+          "sens_litteral": "Pierre du feu",
+          "racines": [
+            "kali",
+            "suki"
+          ],
+          "domaine": "materiau_rituel"
+        }
+      ]
+    },
+    "pigments anciens": {
+      "traductions": [
+        {
+          "confluent": "koluuaita",
+          "type": "composition",
+          "composition": "kol-u-aita",
+          "sens_litteral": "Couleurs des ancêtres",
+          "racines": [
+            "kolu",
+            "aita"
+          ],
+          "domaine": "materiau_rituel"
+        }
+      ]
+    },
+    "Rhombes sacres": {
+      "traductions": [
+        {
+          "confluent": "onuuasa",
+          "type": "nom_propre",
+          "composition": "on-u-asa",
+          "sens_litteral": "Son du sacré",
+          "racines": [
+            "onu",
+            "asa"
+          ],
+          "categorie": "objet_rituel",
+          "note": "Instruments produisant le son sacré"
+        }
+      ]
+    },
+    "Rhombes geants": {
+      "traductions": [
+        {
+          "confluent": "onuumako",
+          "type": "nom_propre",
+          "composition": "on-u-mako",
+          "sens_litteral": "Son de grandeur",
+          "racines": [
+            "onu",
+            "mako"
+          ],
+          "categorie": "objet_rituel"
+        }
+      ]
+    },
+    "Rhombe miniature": {
+      "traductions": [
+        {
+          "confluent": "onuupisu",
+          "type": "composition",
+          "composition": "on-u-pisu",
+          "sens_litteral": "Son petit",
+          "racines": [
+            "onu",
+            "pisu"
+          ],
+          "domaine": "objet_rituel"
+        }
+      ]
+    },
+    "artefact multi-generationnel": {
+      "traductions": [
+        {
+          "confluent": "nekauekaaita",
+          "type": "composition",
+          "composition": "nek-a-eka-aita",
+          "sens_litteral": "Œuvre avec totalité des ancêtres",
+          "racines": [
+            "neka",
+            "eka",
+            "aita"
+          ],
+          "domaine": "objet_rituel"
+        }
+      ]
+    },
+    "Grande Fresque": {
+      "traductions": [
+        {
+          "confluent": "oemonona",
+          "type": "nom_propre",
+          "composition": "ek-a-kova",
+          "sens_litteral": "Totalité avec peinture",
+          "racines": [
+            "eka",
+            "kova"
+          ],
+          "categorie": "lieu_rituel"
+        }
+      ]
+    },
+    "fenetre temporelle": {
+      "traductions": [
+        {
+          "confluent": "siluutemi",
+          "type": "composition",
+          "composition": "sil-u-temi",
+          "sens_litteral": "Regard du temps",
+          "racines": [
+            "sili",
+            "temi"
+          ],
+          "domaine": "concept_rituel"
+        }
+      ]
+    },
+    "Autel des Pionniers": {
+      "traductions": [
+        {
+          "confluent": "asauenuaita",
+          "type": "nom_propre",
+          "composition": "as-a-en-u-aita",
+          "sens_litteral": "Sacré avec origine des ancêtres",
+          "racines": [
+            "asa",
+            "ena",
+            "aita"
+          ],
+          "categorie": "lieu_rituel"
+        }
+      ]
+    },
+    "tradition": {
+      "traductions": [
+        {
+          "confluent": "aitatoku",
+          "type": "composition",
+          "composition": "ait-a-toku",
+          "sens_litteral": "Ancêtre avec savoir",
+          "racines": [
+            "aita",
+            "toku"
+          ],
+          "domaine": "rituel"
+        }
+      ],
+      "synonymes_fr": [
+        "traditions",
+        "coutume",
+        "coutumes"
+      ]
+    }
+  }
+}

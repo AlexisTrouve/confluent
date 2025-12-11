@@ -1,0 +1,205 @@
+{
+  "_comment": "Institutions politiques et gouvernementales",
+  "_mots_a_gerer": [],
+  "dictionnaire": {
+    "Cercle des Sages": {
+      "traductions": [
+        {
+          "confluent": "likuusekitoli",
+          "type": "nom_propre",
+          "composition": "sik-u-sek-i-toli",
+          "sens_litteral": "Cercle des porteurs-de-savoir",
+          "racines": [
+            "siku",
+            "seka",
+            "toli"
+          ],
+          "categorie": "institution",
+          "note": "Institution centrale"
+        }
+      ]
+    },
+    "Tribunal des Mœurs": {
+      "traductions": [
+        {
+          "confluent": "velimuloku",
+          "type": "nom_propre",
+          "composition": "vel-i-m-loku",
+          "sens_litteral": "Lieu de vérité des mœurs",
+          "racines": [
+            "veli",
+            "loku"
+          ],
+          "categorie": "institution"
+        }
+      ]
+    },
+    "Proclamateur": {
+      "traductions": [
+        {
+          "confluent": "zzulosika",
+          "type": "nom_propre",
+          "composition": "vok-i-eka",
+          "sens_litteral": "Voix de la totalité",
+          "racines": [
+            "voki",
+            "eka"
+          ],
+          "categorie": "titre"
+        }
+      ]
+    },
+    "Assemblee des Chefs": {
+      "traductions": [
+        {
+          "confluent": "kotaukasi",
+          "type": "nom_propre",
+          "composition": "kot-a-kasi",
+          "sens_litteral": "Union avec les chefs",
+          "racines": [
+            "kota",
+            "kasi"
+          ],
+          "categorie": "institution"
+        }
+      ]
+    },
+    "Maison des Decouvertes": {
+      "traductions": [
+        {
+          "confluent": "nutuumili",
+          "type": "nom_propre",
+          "composition": "nut-u-milis",
+          "sens_litteral": "Maison de la découverte",
+          "racines": [
+            "nutu",
+            "milis"
+          ],
+          "categorie": "institution"
+        }
+      ]
+    },
+    "Arbitre des Esprits": {
+      "traductions": [
+        {
+          "confluent": "zakiiumi",
+          "type": "nom_propre",
+          "composition": "zak-ii-umi",
+          "sens_litteral": "Celui qui EST gardien des esprits",
+          "racines": [
+            "zaki",
+            "umi"
+          ],
+          "categorie": "titre_supreme",
+          "note": "Entité tutélaire du jeu, pouvoir de réserve"
+        }
+      ]
+    },
+    "Directoire": {
+      "traductions": [
+        {
+          "confluent": "kasiiukota",
+          "type": "nom_propre",
+          "composition": "kas-ii-kota",
+          "sens_litteral": "Chefs unis",
+          "racines": [
+            "kasi",
+            "kota"
+          ],
+          "categorie": "institution"
+        }
+      ]
+    },
+    "Hall des Serments": {
+      "traductions": [
+        {
+          "confluent": "szuvozeni",
+          "type": "nom_propre",
+          "composition": "tal-u-savu",
+          "sens_litteral": "Hall du serment",
+          "racines": [
+            "talu",
+            "savu"
+          ],
+          "categorie": "lieu_institution"
+        }
+      ]
+    },
+    "Conseil du Village": {
+      "traductions": [
+        {
+          "confluent": "kotaulikusi",
+          "type": "composition",
+          "composition": "kot-a-sik-u-si",
+          "sens_litteral": "Union avec cercle de regard",
+          "racines": [
+            "kota",
+            "siku",
+            "sili"
+          ],
+          "categorie": "institution"
+        }
+      ]
+    },
+    "Autel ancestral": {
+      "traductions": [
+        {
+          "confluent": "asauaita",
+          "type": "composition",
+          "composition": "as-a-aita",
+          "sens_litteral": "Sacré avec ancêtre",
+          "racines": [
+            "asa",
+            "aita"
+          ],
+          "categorie": "lieu_sacre"
+        }
+      ]
+    },
+    "Vigile Lunaire": {
+      "traductions": [
+        {
+          "confluent": "velauluna",
+          "type": "composition",
+          "composition": "vel-a-luna",
+          "sens_litteral": "Vigile avec lune",
+          "racines": [
+            "vela",
+            "luna"
+          ],
+          "categorie": "rituel"
+        }
+      ]
+    },
+    "Jour des Ancetres": {
+      "traductions": [
+        {
+          "confluent": "solauaita",
+          "type": "composition",
+          "composition": "sol-a-aita",
+          "sens_litteral": "Jour avec ancêtres",
+          "racines": [
+            "sora",
+            "aita"
+          ],
+          "categorie": "celebration"
+        }
+      ]
+    },
+    "Jour du Faucon": {
+      "traductions": [
+        {
+          "confluent": "solauaki",
+          "type": "composition",
+          "composition": "sol-a-aki",
+          "sens_litteral": "Jour avec faucon",
+          "racines": [
+            "sora",
+            "aki"
+          ],
+          "categorie": "celebration"
+        }
+      ]
+    }
+  }
+}

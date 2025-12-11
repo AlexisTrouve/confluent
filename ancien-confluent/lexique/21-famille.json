@@ -1,0 +1,142 @@
+{
+  "_comment": "Relations familiales",
+  "_mots_a_gerer": [],
+  "dictionnaire": {
+    "frere": {
+      "traductions": [
+        {
+          "confluent": "vaki",
+          "type": "racine",
+          "forme_liee": "vak",
+          "domaine": "famille",
+          "note": "Frère de sang"
+        }
+      ],
+      "synonymes_fr": [
+        "frères"
+      ]
+    },
+    "sœur": {
+      "traductions": [
+        {
+          "confluent": "seki",
+          "type": "racine",
+          "forme_liee": "sek",
+          "domaine": "famille",
+          "note": "Sœur de sang"
+        }
+      ],
+      "synonymes_fr": [
+        "sœurs"
+      ]
+    },
+    "mere": {
+      "traductions": [
+        {
+          "confluent": "matu",
+          "type": "racine",
+          "forme_liee": "mat",
+          "domaine": "famille",
+          "note": "Mère biologique"
+        }
+      ]
+    },
+    "pere": {
+      "traductions": [
+        {
+          "confluent": "patu",
+          "type": "racine",
+          "forme_liee": "pat",
+          "domaine": "famille",
+          "note": "Père biologique"
+        }
+      ]
+    },
+    "famille": {
+      "traductions": [
+        {
+          "confluent": "mzoba",
+          "type": "racine",
+          "forme_liee": "mzob",
+          "domaine": "famille",
+          "note": "Unité familiale"
+        }
+      ]
+    },
+    "homme": {
+      "traductions": [
+        {
+          "confluent": "toko",
+          "type": "racine",
+          "forme_liee": "tok",
+          "domaine": "personne",
+          "note": "Homme adulte"
+        }
+      ],
+      "synonymes_fr": [
+        "hommes"
+      ]
+    },
+    "femme": {
+      "traductions": [
+        {
+          "confluent": "nako",
+          "type": "racine",
+          "forme_liee": "nak",
+          "domaine": "personne",
+          "note": "Femme adulte"
+        }
+      ],
+      "synonymes_fr": [
+        "femmes"
+      ]
+    },
+    "fille": {
+      "traductions": [
+        {
+          "confluent": "naku",
+          "type": "racine",
+          "forme_liee": "nak",
+          "domaine": "personne",
+          "note": "Fille, enfant féminin"
+        }
+      ],
+      "synonymes_fr": [
+        "filles"
+      ]
+    },
+    "garcon": {
+      "traductions": [
+        {
+          "confluent": "zliva",
+          "type": "racine",
+          "forme_liee": "zliv",
+          "domaine": "personne",
+          "note": "Garçon, enfant masculin"
+        }
+      ],
+      "synonymes_fr": [
+        "garçon",
+        "garcons",
+        "garçons"
+      ]
+    },
+    "freres et sœurs": {
+      "traductions": [
+        {
+          "confluent": "vakisu",
+          "type": "composition",
+          "composition": "vaki + su",
+          "sens_litteral": "Frères (pluriel inclusif)",
+          "racines": [
+            "vaki"
+          ],
+          "domaine": "famille"
+        }
+      ],
+      "synonymes_fr": [
+        "fratrie"
+      ]
+    }
+  }
+}

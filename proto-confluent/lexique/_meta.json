@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "version": "1.0",
+    "langue_source": "Français",
+    "langue_cible": "Proto-Confluent",
+    "description": "Métadonnées et index de normalisation pour le lexique proto",
+    "note": "Proto-Confluent = racines primitives, structure simple, vocabulaire réduit",
+    "domaines": [
+      "01-racines-primitives",
+      "02-elements-nature",
+      "03-corps-actions",
+      "04-concepts-base",
+      "05-relations-sociales"
+    ]
+  },
+  "index_normalisation": {
+    "_comment": "Mapping des variants français vers la forme canonique",
+    "_note": "Proto = vocabulaire réduit, beaucoup de concepts modernes n'existent pas encore",
+    "eaux": "eau",
+    "pierres": "pierre",
+    "cieux": "ciel",
+    "yeux": "œil",
+    "mains": "main"
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "meta": {
+    "categorie": "nombres",
+    "description": "Système de numération en base 12 des Siliaska",
+    "base": 12,
+    "origine_culturelle": "Comptage sur 12 phalanges, 12 cycles lunaires par année"
+  },
+  "chiffres_base": [
+    {
+      "valeur_base10": 0,
+      "valeur_base12": "0",
+      "confluent": "zaro",
+      "sens": "zéro, vide, néant"
+    },
+    {
+      "valeur_base10": 1,
+      "valeur_base12": "1",
+      "confluent": "iko",
+      "sens": "un, unique",
+      "racine_sacree": true,
+      "note": "Racine sacrée existante"
+    },
+    {
+      "valeur_base10": 2,
+      "valeur_base12": "2",
+      "confluent": "diku",
+      "sens": "deux, paire"
+    },
+    {
+      "valeur_base10": 3,
+      "valeur_base12": "3",
+      "confluent": "tiru",
+      "sens": "trois, triade"
+    },
+    {
+      "valeur_base10": 4,
+      "valeur_base12": "4",
+      "confluent": "katu",
+      "sens": "quatre"
+    },
+    {
+      "valeur_base10": 5,
+      "valeur_base12": "5",
+      "confluent": "penu",
+      "sens": "cinq"
+    },
+    {
+      "valeur_base10": 6,
+      "valeur_base12": "6",
+      "confluent": "seku",
+      "sens": "six, demi-douzaine"
+    },
+    {
+      "valeur_base10": 7,
+      "valeur_base12": "7",
+      "confluent": "sivu",
+      "sens": "sept"
+    },
+    {
+      "valeur_base10": 8,
+      "valeur_base12": "8",
+      "confluent": "oktu",
+      "sens": "huit"
+    },
+    {
+      "valeur_base10": 9,
+      "valeur_base12": "9",
+      "confluent": "novu",
+      "sens": "neuf"
+    },
+    {
+      "valeur_base10": 10,
+      "valeur_base12": "A",
+      "confluent": "deku",
+      "sens": "dix"
+    },
+    {
+      "valeur_base10": 11,
+      "valeur_base12": "B",
+      "confluent": "levu",
+      "sens": "onze"
+    },
+    {
+      "valeur_base10": 12,
+      "valeur_base12": "10",
+      "confluent": "tolu",
+      "sens": "douze, douzaine",
+      "sacre": true,
+      "note": "Nombre parfait, cycle complet"
+    }
+  ],
+  "puissances_de_12": [
+    {
+      "exposant": 1,
+      "valeur_base10": 12,
+      "valeur_base12": "10",
+      "confluent": "tolu",
+      "sens": "douzaine simple"
+    },
+    {
+      "exposant": 2,
+      "valeur_base10": 144,
+      "valeur_base12": "100",
+      "confluent": "tolusa",
+      "composition": "tol-u-sa",
+      "sens": "grosse, douzaine sacrée (gross en anglais)"
+    },
+    {
+      "exposant": 3,
+      "valeur_base10": 1728,
+      "valeur_base12": "1000",
+      "confluent": "toluaa",
+      "composition": "tol-aa-tol",
+      "sens": "confluence de douzaines (great gross)"
+    },
+    {
+      "exposant": 4,
+      "valeur_base10": 20736,
+      "valeur_base12": "10000",
+      "confluent": "tolumako",
+      "composition": "tol-u-mako",
+      "sens": "grande douzaine"
+    },
+    {
+      "exposant": 5,
+      "valeur_base10": 248832,
+      "valeur_base12": "100000",
+      "confluent": "tolueka",
+      "composition": "tol-u-eka",
+      "sens": "douzaine totale"
+    }
+  ],
+  "construction_nombres": {
+    "principe": "Position + composition",
+    "exemples": [
+      {
+        "valeur_base10": 13,
+        "valeur_base12": "11",
+        "confluent": "tolu iko",
+        "litteral": "douze un",
+        "structure": "DOUZAINE + UNITE"
+      },
+      {
+        "valeur_base10": 25,
+        "valeur_base12": "21",
+        "confluent": "diku tolu iko",
+        "litteral": "deux douze un",
+        "structure": "COEFFICIENT + tolu + UNITE"
+      },
+      {
+        "valeur_base10": 144,
+        "valeur_base12": "100",
+        "confluent": "tolusa",
+        "litteral": "grosse",
+        "structure": "PUISSANCE"
+      },
+      {
+        "valeur_base10": 156,
+        "valeur_base12": "110",
+        "confluent": "tolusa tolu",
+        "litteral": "une grosse et une douzaine",
+        "structure": "GROSSE + DOUZAINE"
+      },
+      {
+        "valeur_base10": 157,
+        "valeur_base12": "111",
+        "confluent": "tolusa tolu iko",
+        "litteral": "une grosse, une douzaine et un",
+        "structure": "GROSSE + DOUZAINE + UNITE"
+      }
+    ]
+  },
+  "nombres_speciaux": [
+    {
+      "confluent": "mako",
+      "sens": "grand nombre, beaucoup",
+      "usage": "Quantité indéterminée mais grande"
+    },
+    {
+      "confluent": "pisu",
+      "sens": "petit nombre, peu",
+      "usage": "Quantité indéterminée mais petite"
+    },
+    {
+      "confluent": "seku tolu",
+      "valeur_base10": 6,
+      "sens": "demi-douzaine (idiomatique)",
+      "usage": "Exactement 6, couramment utilisé"
+    }
+  ],
+  "quantificateurs": [
+    {
+      "confluent": "su",
+      "sens": "pluriel (plusieurs)",
+      "usage": "Particule de pluriel, pas un nombre précis"
+    },
+    {
+      "confluent": "iko",
+      "sens": "un seul, unique",
+      "usage": "Singulier emphatique"
+    },
+    {
+      "confluent": "diku",
+      "sens": "une paire, deux",
+      "usage": "Souvent pour les choses qui vont par deux"
+    },
+    {
+      "confluent": "tiru tiru",
+      "sens": "quelques (littéralement 'trois trois')",
+      "usage": "Quantité vague, environ 3-9"
+    },
+    {
+      "confluent": "tolu tolu",
+      "sens": "plusieurs douzaines, beaucoup",
+      "usage": "Répétition = multiplicité"
+    }
+  ],
+  "operations": [
+    {
+      "operation": "addition",
+      "verbe": "samuk",
+      "racine": "samu",
+      "sens": "assembler, ajouter"
+    },
+    {
+      "operation": "soustraction",
+      "verbe": "pasak",
+      "racine": "pasa",
+      "sens": "prendre, retirer"
+    },
+    {
+      "operation": "multiplication",
+      "construction": "miku + liaison -aa-",
+      "racine": "miku",
+      "sens": "mélanger, multiplier"
+    },
+    {
+      "operation": "division",
+      "verbe": "kisun",
+      "racine": "kisu",
+      "sens": "transmettre, partager, diviser"
+    },
+    {
+      "operation": "compter",
+      "verbe": "toluk",
+      "racine": "tolu",
+      "sens": "compter, dénombrer"
+    }
+  ],
+  "expressions_idiomatiques": [
+    {
+      "confluent": "Tolu miraku",
+      "litteral": "Je vois douze",
+      "sens": "Je comprends complètement, c'est clair"
+    },
+    {
+      "confluent": "Seku zo tolu",
+      "litteral": "Six n'est pas douze",
+      "sens": "C'est incomplet, il manque quelque chose"
+    },
+    {
+      "confluent": "Kanu sili tolu",
+      "litteral": "La main voit douze",
+      "sens": "Maîtriser le comptage de base, être éduqué"
+    },
+    {
+      "confluent": "Tolusa aita",
+      "litteral": "Grosse d'ancêtres",
+      "sens": "Lignée très ancienne (144 générations)"
+    }
+  ],
+  "usage_culturel": {
+    "comptage_corporel": "12 phalanges sur 4 doigts (main gauche), pouce comme pointeur",
+    "comptage_avance": "Main droite compte les douzaines (5 doigts × 12 = 60 max)",
+    "calendrier": "12 lunaisons par année",
+    "commerce": "Grosses (144) pour quantités importantes",
+    "architecture": "Multiples de 12 pour faciliter divisions",
+    "rituel": "Nombres divisibles par 3, 4, 6 préférés"
+  }
+}

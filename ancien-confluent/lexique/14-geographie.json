@@ -1,0 +1,309 @@
+{
+  "_comment": "Caractéristiques géographiques",
+  "_mots_a_gerer": [],
+  "dictionnaire": {
+    "confluence de rivieres": {
+      "traductions": [
+        {
+          "confluent": "mnebinuppo",
+          "type": "composition",
+          "composition": "nul-aa-kota",
+          "sens_litteral": "Rivière mêlée à union",
+          "racines": [
+            "nula",
+            "kota"
+          ],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "riviere azur": {
+      "traductions": [
+        {
+          "confluent": "klisuzale",
+          "type": "composition",
+          "composition": "nul-u-zelu",
+          "sens_litteral": "Rivière du ciel",
+          "racines": [
+            "nula",
+            "zelu"
+          ],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "riviere verte": {
+      "traductions": [
+        {
+          "confluent": "lvekobeni",
+          "type": "composition",
+          "composition": "nul-u-viku",
+          "sens_litteral": "Rivière de la forêt",
+          "racines": [
+            "nula",
+            "viku"
+          ],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "promontoire": {
+      "traductions": [
+        {
+          "confluent": "tmunoboli",
+          "type": "composition",
+          "composition": "tas-u-melu",
+          "sens_litteral": "Montagne de la mer",
+          "racines": [
+            "tasa",
+            "melu"
+          ],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "pic": {
+      "traductions": [
+        {
+          "confluent": "pkuzezelo",
+          "type": "composition",
+          "composition": "tas-u-piki",
+          "sens_litteral": "Montagne pointue",
+          "racines": [
+            "tasa",
+            "piki"
+          ],
+          "domaine": "geographie"
+        }
+      ],
+      "synonymes_fr": [
+        "cime"
+      ]
+    },
+    "vallee": {
+      "traductions": [
+        {
+          "confluent": "bpuse",
+          "type": "racine",
+          "forme_liee": "bpus",
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "est": {
+      "traductions": [
+        {
+          "confluent": "solaola",
+          "type": "composition",
+          "composition": "sol-a-ola",
+          "sens_litteral": "Soleil de l'aurore",
+          "racines": [
+            "sora",
+            "ora"
+          ],
+          "domaine": "direction",
+          "note": "Est - direction du soleil levant/aurore"
+        }
+      ],
+      "synonymes_fr": [
+        "levant",
+        "orient"
+      ]
+    },
+    "ouest": {
+      "traductions": [
+        {
+          "confluent": "solaluna",
+          "type": "composition",
+          "composition": "sol-a-luna",
+          "sens_litteral": "Soleil vers la nuit",
+          "racines": [
+            "sora",
+            "luna"
+          ],
+          "domaine": "direction",
+          "note": "Ouest - direction où le soleil va vers la nuit"
+        }
+      ],
+      "synonymes_fr": [
+        "couchant",
+        "occident"
+      ]
+    },
+    "mer": {
+      "traductions": [
+        {
+          "confluent": "kzome",
+          "type": "racine",
+          "forme_liee": "kzom",
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "cote": {
+      "traductions": [
+        {
+          "confluent": "nbupukapu",
+          "type": "composition",
+          "composition": "tok-u-melu",
+          "sens_litteral": "Terre de la mer",
+          "racines": [
+            "toka",
+            "melu"
+          ],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "horizon": {
+      "traductions": [
+        {
+          "confluent": "btalatuka",
+          "type": "composition",
+          "composition": "zel-u-toka",
+          "sens_litteral": "Ciel de la terre",
+          "racines": [
+            "zelu",
+            "toka"
+          ],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "grotte": {
+      "traductions": [
+        {
+          "confluent": "bsekusoto",
+          "type": "composition",
+          "composition": "vuk-u-toka",
+          "sens_litteral": "Gouffre dans la terre",
+          "racines": [
+            "vuku",
+            "toka"
+          ],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "source": {
+      "traductions": [
+        {
+          "confluent": "euvikpi",
+          "type": "composition",
+          "composition": "en-u-ula",
+          "sens_litteral": "Origine de l'eau",
+          "racines": [
+            "ena",
+            "ura"
+          ],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "cascade": {
+      "traductions": [
+        {
+          "confluent": "eotesehevi",
+          "type": "composition",
+          "composition": "ul-oa-vuku",
+          "sens_litteral": "Eau vers le gouffre",
+          "racines": [
+            "ura",
+            "vuku"
+          ],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "eboulement": {
+      "traductions": [
+        {
+          "confluent": "kaliovuku",
+          "type": "composition",
+          "composition": "kal-oa-vuku",
+          "sens_litteral": "Pierre vers le gouffre",
+          "racines": [
+            "kali",
+            "vuku"
+          ],
+          "domaine": "danger_naturel"
+        }
+      ]
+    },
+    "inondation": {
+      "traductions": [
+        {
+          "confluent": "ulaueki",
+          "type": "composition",
+          "composition": "ul-a-eki",
+          "sens_litteral": "Eau avec totalité",
+          "racines": [
+            "ura",
+            "eka"
+          ],
+          "domaine": "danger_naturel"
+        }
+      ]
+    },
+    "crevasse": {
+      "traductions": [
+        {
+          "confluent": "ktovoleno",
+          "type": "composition",
+          "composition": "vuk-u-kali",
+          "sens_litteral": "Gouffre dans la pierre",
+          "racines": [
+            "vuku",
+            "kali"
+          ],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "roche impenetrable": {
+      "traductions": [
+        {
+          "confluent": "kaliuzoki",
+          "type": "composition",
+          "composition": "kal-i-zoki",
+          "sens_litteral": "Pierre de l'épreuve",
+          "racines": [
+            "kali",
+            "oki"
+          ],
+          "domaine": "geographie"
+        }
+      ]
+    },
+    "avalanche": {
+      "traductions": [
+        {
+          "confluent": "nisaoavuku",
+          "type": "composition",
+          "composition": "nis-oa-vuku",
+          "sens_litteral": "Neige vers le gouffre",
+          "racines": [
+            "nisa",
+            "vuku"
+          ],
+          "domaine": "danger_naturel"
+        }
+      ]
+    },
+    "feu sauvage": {
+      "traductions": [
+        {
+          "confluent": "sukiuzoka",
+          "type": "composition",
+          "composition": "suk-i-zoka",
+          "sens_litteral": "Feu de l'ennemi",
+          "racines": [
+            "suki",
+            "zoka"
+          ],
+          "domaine": "danger_naturel"
+        }
+      ]
+    }
+  }
+}

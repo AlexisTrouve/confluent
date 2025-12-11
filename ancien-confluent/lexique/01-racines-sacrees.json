@@ -1,0 +1,281 @@
+{
+  "_comment": "Les 19 racines sacrées (commencent par une voyelle)",
+  "_mots_a_gerer": [],
+  "dictionnaire": {
+    "libre": {
+      "traductions": [
+        {
+          "confluent": "aska",
+          "type": "racine_sacree",
+          "forme_liee": "ask",
+          "domaine": "concept_fondateur",
+          "note": "Concept central de la civilisation"
+        }
+      ],
+      "synonymes_fr": [
+        "liberté"
+      ]
+    },
+    "ancetre": {
+      "traductions": [
+        {
+          "confluent": "aita",
+          "type": "racine_sacree",
+          "forme_liee": "ait",
+          "domaine": "lignee_sacree",
+          "note": "Ceux qui sont venus avant"
+        }
+      ],
+      "synonymes_fr": [
+        "ancien",
+        "aïeul",
+        "anciens",
+        "ancienne",
+        "anciennes",
+        "ancêtre",
+        "ancêtres"
+      ]
+    },
+    "sacre": {
+      "traductions": [
+        {
+          "confluent": "asa",
+          "type": "racine_sacree",
+          "forme_liee": "as",
+          "domaine": "spirituel",
+          "note": "Ce qui est intouchable, divin"
+        }
+      ],
+      "synonymes_fr": [
+        "divin",
+        "saint",
+        "sacrés",
+        "sacrée",
+        "sacrées",
+        "sacré"
+      ]
+    },
+    "oiseau": {
+      "traductions": [
+        {
+          "confluent": "apo",
+          "type": "racine_sacree",
+          "forme_liee": "ap",
+          "domaine": "nature_sacree",
+          "note": "Vol, créature ailée"
+        }
+      ],
+      "synonymes_fr": [
+        "vol"
+      ]
+    },
+    "grue": {
+      "traductions": [
+        {
+          "confluent": "alu",
+          "type": "racine_sacree",
+          "forme_liee": "al",
+          "domaine": "animal_sacre",
+          "note": "Regard-Libre, animal sacré central"
+        }
+      ],
+      "synonymes_fr": [
+        "Regard-Libre"
+      ]
+    },
+    "faucon": {
+      "traductions": [
+        {
+          "confluent": "aki",
+          "type": "racine_sacree",
+          "forme_liee": "ak",
+          "domaine": "animal_sacre",
+          "note": "Oiseau de proie sacré"
+        }
+      ]
+    },
+    "eau": {
+      "traductions": [
+        {
+          "confluent": "ura",
+          "type": "racine_sacree",
+          "forme_liee": "ur",
+          "domaine": "element_primordial",
+          "note": "Élément primordial, fluide"
+        }
+      ],
+      "synonymes_fr": [
+        "fluide"
+      ]
+    },
+    "esprit": {
+      "traductions": [
+        {
+          "confluent": "umi",
+          "type": "racine_sacree",
+          "forme_liee": "um",
+          "domaine": "spirituel",
+          "note": "Souffle vital, essence"
+        }
+      ],
+      "synonymes_fr": [
+        "souffle",
+        "âme"
+      ]
+    },
+    "un": {
+      "traductions": [
+        {
+          "confluent": "iko",
+          "type": "racine_sacree",
+          "forme_liee": "ik",
+          "domaine": "concept_fondateur",
+          "note": "Unicité, premier nombre"
+        }
+      ],
+      "synonymes_fr": [
+        "unique",
+        "seul"
+      ]
+    },
+    "etre": {
+      "traductions": [
+        {
+          "confluent": "ita",
+          "type": "racine_sacree",
+          "forme_liee": "it",
+          "domaine": "existence",
+          "note": "Exister, vivre"
+        }
+      ],
+      "synonymes_fr": [
+        "exister",
+        "vivre"
+      ]
+    },
+    "origine": {
+      "traductions": [
+        {
+          "confluent": "ena",
+          "type": "racine_sacree",
+          "forme_liee": "en",
+          "domaine": "dimension",
+          "note": "Source, naissance, commencement"
+        }
+      ],
+      "synonymes_fr": [
+        "source",
+        "naissance"
+      ]
+    },
+    "tout": {
+      "traductions": [
+        {
+          "confluent": "eka",
+          "type": "racine_sacree",
+          "forme_liee": "ek",
+          "domaine": "dimension",
+          "note": "Totalité, entièreté"
+        }
+      ],
+      "synonymes_fr": [
+        "entier",
+        "totalité"
+      ]
+    },
+    "epreuve": {
+      "traductions": [
+        {
+          "confluent": "oki",
+          "type": "racine_sacree",
+          "forme_liee": "ok",
+          "domaine": "conflit_sacre",
+          "note": "Défi, danger, test"
+        }
+      ],
+      "synonymes_fr": [
+        "défi",
+        "danger"
+      ]
+    },
+    "aurore": {
+      "traductions": [
+        {
+          "confluent": "ora",
+          "type": "racine_sacree",
+          "forme_liee": "or",
+          "domaine": "moment_sacre",
+          "note": "Aube, moment de transition sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "aube"
+      ]
+    },
+    "son": {
+      "traductions": [
+        {
+          "confluent": "onu",
+          "type": "racine_sacree",
+          "forme_liee": "on",
+          "domaine": "rituel",
+          "note": "Vibration, lié aux rhombes sacrés"
+        }
+      ],
+      "synonymes_fr": [
+        "vibration"
+      ]
+    },
+    "ame": {
+      "traductions": [
+        {
+          "confluent": "uuto",
+          "type": "racine_sacree",
+          "forme_liee": "uut",
+          "domaine": "spirituel",
+          "note": "Même racine que 'esprit'"
+        }
+      ],
+      "synonymes_fr": [
+        "conscience"
+      ]
+    },
+    "etoile": {
+      "traductions": [
+        {
+          "confluent": "atu",
+          "type": "racine_sacree",
+          "forme_liee": "at",
+          "domaine": "celeste",
+          "note": "Nouvelle racine sacrée - points lumineux du ciel nocturne"
+        }
+      ]
+    },
+    "mort": {
+      "traductions": [
+        {
+          "confluent": "osi",
+          "type": "racine_sacree",
+          "forme_liee": "os",
+          "domaine": "existence",
+          "note": "Nouvelle racine sacrée - fin de l'existence"
+        }
+      ],
+      "synonymes_fr": [
+        "mourir",
+        "trépas"
+      ]
+    },
+    "aile": {
+      "traductions": [
+        {
+          "confluent": "apa",
+          "type": "racine_sacree",
+          "forme_liee": "ap",
+          "domaine": "nature_sacree",
+          "note": "Lié à oiseau/vol mais distinct"
+        }
+      ]
+    }
+  }
+}

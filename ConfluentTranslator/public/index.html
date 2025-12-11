@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConfluentTranslator</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html {
+      background: #1a1a1a;
+      min-height: 100%;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1a1a1a;
+      color: #e0e0e0;
+      padding: 20px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    .container { max-width: 900px; margin: 0 auto; }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #4a9eff;
+      font-size: 2em;
+    }
+    .panel {
+      background: #2a2a2a;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #3a3a3a;
+    }
+    .panel h2 {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      color: #4a9eff;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #b0b0b0;
+      font-size: 0.9em;
+    }
+    select, input, textarea {
+      width: 100%;
+      padding: 10px;
+      background: #1a1a1a !important;
+      border: 1px solid #3a3a3a;
+      border-radius: 4px;
+      color: #e0e0e0 !important;
+      font-family: inherit;
+    }
+    select option {
+      background: #1a1a1a !important;
+      background-color: #1a1a1a !important;
+      color: #e0e0e0 !important;
+      padding: 10px;
+    }
+    /* Force dark background on select dropdown in dark mode */
+    body:not(.light-theme) select,
+    body:not(.light-theme) select option {
+      background: #1a1a1a !important;
+      background-color: #1a1a1a !important;
+      color: #e0e0e0 !important;
+    }
+    select:focus {
+      outline: none;
+      border-color: #4a9eff;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+      font-size: 0.95em;
+    }
+    button {
+      background: #4a9eff;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    button:hover { background: #357abd; }
+    button:disabled { background: #555; cursor: not-allowed; }
+    .row { display: flex; gap: 15px; }
+    .row .form-group { flex: 1; }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #3a3a3a;
+    }
+    .tab {
+      background: transparent;
+      padding: 10px 20px;
+      border: none;
+      color: #b0b0b0;
+      cursor: pointer;
+      font-weight: 600;
+      border-bottom: 3px solid transparent;
+      transition: all 0.2s;
+    }
+    .tab:hover { color: #e0e0e0; }
+    .tab.active {
+      color: #4a9eff;
+      border-bottom-color: #4a9eff;
+    }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    /* 3 LAYERS SYSTEM */
+    .layer {
+      background: #2a2a2a;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #3a3a3a;
+      overflow: hidden;
+    }
+
+    /* Layer 1 - Always visible */
+    .layer1 {
+      padding: 20px;
+      background: #1a1a1a;
+      border: 2px solid #4a9eff;
+    }
+    .layer1-title {
+      font-size: 0.9em;
+      color: #4a9eff;
+      margin-bottom: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .layer1-content {
+      font-size: 1.3em;
+      color: #4a9eff;
+      font-family: 'Courier New', monospace;
+      line-height: 1.8;
+      padding: 10px 0;
+    }
+
+    /* Layer 2 & 3 - Collapsible */
+    .layer-header {
+      padding: 15px 20px;
+      background: #2a2a2a;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.2s;
+      user-select: none;
+    }
+    .layer-header:hover {
+      background: #333;
+    }
+    .layer-title {
+      font-size: 1em;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .layer-icon {
+      font-size: 1.2em;
+    }
+    .layer-arrow {
+      transition: transform 0.3s;
+      font-size: 1.2em;
+      color: #4a9eff;
+    }
+    .layer-arrow.expanded {
+      transform: rotate(180deg);
+    }
+    .layer-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background: #1a1a1a;
+    }
+    .layer-content.expanded {
+      max-height: 1000px;
+      transition: max-height 0.5s ease-in;
+    }
+    .layer-content-inner {
+      padding: 20px;
+    }
+
+    /* Layer 2 specific styles */
+    .context-item {
+      margin-bottom: 15px;
+    }
+    .context-label {
+      color: #b0b0b0;
+      font-size: 0.85em;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .word-match {
+      display: inline-block;
+      background: #2a2a2a;
+      padding: 5px 10px;
+      margin: 3px;
+      border-radius: 4px;
+      font-size: 0.9em;
+      border-left: 3px solid #4a9eff;
+    }
+    .word-match-input {
+      color: #e0e0e0;
+    }
+    .word-match-arrow {
+      color: #4a9eff;
+      margin: 0 5px;
+    }
+    .word-match-output {
+      color: #4a9eff;
+      font-family: monospace;
+    }
+    .word-match-score {
+      color: #888;
+      font-size: 0.85em;
+      margin-left: 5px;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .stat-box {
+      background: #2a2a2a;
+      padding: 10px;
+      border-radius: 4px;
+      border-left: 3px solid #4a9eff;
+    }
+    .stat-value {
+      font-size: 1.5em;
+      color: #4a9eff;
+      font-weight: 700;
+    }
+    .stat-label {
+      color: #b0b0b0;
+      font-size: 0.85em;
+    }
+
+    /* Layer 3 specific styles */
+    .decomposition-line {
+      font-family: 'Courier New', monospace;
+      margin: 5px 0;
+      padding-left: 10px;
+      border-left: 2px solid #3a3a3a;
+      color: #e0e0e0;
+    }
+    .notes-text {
+      color: #b0b0b0;
+      line-height: 1.8;
+    }
+
+    /* Empty state */
+    .empty-state {
+      color: #b0b0b0;
+      text-align: center;
+      padding: 30px;
+      font-style: italic;
+    }
+
+    /* Lexique styles */
+    .lexique-results {
+      max-height: 400px;
+      overflow-y: auto;
+      margin-top: 15px;
+    }
+    .lexique-item {
+      background: #1a1a1a;
+      padding: 10px;
+      margin-bottom: 8px;
+      border-radius: 4px;
+      border-left: 3px solid #4a9eff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .lexique-fr {
+      color: #e0e0e0;
+      font-weight: 500;
+    }
+    .lexique-cf {
+      color: #4a9eff;
+      font-family: monospace;
+      font-size: 1.1em;
+    }
+    .lexique-count {
+      color: #b0b0b0;
+      font-size: 0.9em;
+      margin-top: 10px;
+    }
+    .no-results {
+      color: #b0b0b0;
+      text-align: center;
+      padding: 20px;
+      font-style: italic;
+    }
+    .error { color: #ff4a4a; }
+
+    /* Light theme */
+    body.light-theme {
+      background: #f5f5f5;
+      color: #1a1a1a;
+    }
+    body.light-theme html {
+      background: #f5f5f5;
+    }
+    body.light-theme h1 {
+      color: #2563eb;
+    }
+    body.light-theme .panel {
+      background: #ffffff;
+      border-color: #e5e5e5;
+    }
+    body.light-theme .panel h2 {
+      color: #2563eb;
+    }
+    body.light-theme label {
+      color: #666;
+    }
+    body.light-theme select,
+    body.light-theme input,
+    body.light-theme textarea {
+      background: #f9f9f9;
+      border-color: #e5e5e5;
+      color: #1a1a1a;
+    }
+    body.light-theme select option {
+      background: #ffffff;
+      color: #1a1a1a;
+    }
+    body.light-theme .tab {
+      color: #666;
+    }
+    body.light-theme .tab.active {
+      color: #2563eb;
+      border-bottom-color: #2563eb;
+    }
+    body.light-theme .tabs {
+      border-bottom-color: #e5e5e5;
+    }
+    body.light-theme .layer {
+      background: #ffffff;
+      border-color: #e5e5e5;
+    }
+    body.light-theme .layer1 {
+      background: #f9f9f9;
+      border-color: #2563eb;
+    }
+    body.light-theme .layer1-title {
+      color: #2563eb;
+    }
+    body.light-theme .layer1-content {
+      color: #2563eb;
+    }
+    body.light-theme .layer-header {
+      background: #ffffff;
+    }
+    body.light-theme .layer-header:hover {
+      background: #f5f5f5;
+    }
+    body.light-theme .layer-content {
+      background: #f9f9f9;
+    }
+    body.light-theme .layer-arrow {
+      color: #2563eb;
+    }
+    body.light-theme .word-match {
+      background: #ffffff;
+      border-left-color: #2563eb;
+    }
+    body.light-theme .word-match-output {
+      color: #2563eb;
+    }
+    body.light-theme .stat-box {
+      background: #ffffff;
+      border-left-color: #2563eb;
+    }
+    body.light-theme .stat-value {
+      color: #2563eb;
+    }
+    body.light-theme .lexique-item {
+      background: #f9f9f9;
+      border-left-color: #2563eb;
+    }
+    body.light-theme .lexique-cf {
+      color: #2563eb;
+    }
+
+    /* Light theme red counter - darker red */
+    body.light-theme #llm-limit-counter {
+      color: #c41e1e;
+      background: rgba(196, 30, 30, 0.1);
+      border-color: #c41e1e;
+    }
+
+    /* Settings indicator */
+    .settings-indicator {
+      font-size: 0.75em;
+      color: #888;
+      text-align: center;
+      padding: 8px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #3a3a3a;
+    }
+    body.light-theme .settings-indicator {
+      color: #666;
+      border-bottom-color: #e0e0e0;
+    }
+
+    /* Login overlay */
+    .login-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.95);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    .login-overlay.hidden {
+      display: none;
+    }
+    .login-modal {
+      background: #2a2a2a;
+      border: 2px solid #4a9eff;
+      border-radius: 12px;
+      padding: 40px;
+      max-width: 500px;
+      width: 90%;
+      box-shadow: 0 10px 40px rgba(74, 158, 255, 0.3);
+    }
+    .login-modal h2 {
+      color: #4a9eff;
+      margin-bottom: 20px;
+      font-size: 1.5em;
+      text-align: center;
+    }
+    .login-modal p {
+      color: #b0b0b0;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .login-modal .form-group {
+      margin-bottom: 20px;
+    }
+    .login-modal input {
+      width: 100%;
+      padding: 12px;
+      font-size: 1em;
+      font-family: monospace;
+    }
+    .login-modal button {
+      width: 100%;
+      padding: 14px;
+      font-size: 1.1em;
+    }
+    .login-error {
+      color: #ff4a4a;
+      margin-top: 10px;
+      text-align: center;
+      display: none;
+    }
+    body.light-theme .login-modal {
+      background: #ffffff;
+      border-color: #2563eb;
+      box-shadow: 0 10px 40px rgba(37, 99, 235, 0.3);
+    }
+    body.light-theme .login-modal h2 {
+      color: #2563eb;
+    }
+
+    /* Logout button */
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .logout-btn {
+      background: #555;
+      padding: 8px 16px;
+      font-size: 0.9em;
+      font-weight: normal;
+    }
+    .logout-btn:hover {
+      background: #666;
+    }
+  </style>
+</head>
+<body>
+  <!-- Login overlay -->
+  <div id="login-overlay" class="login-overlay">
+    <div class="login-modal">
+      <h2>🔐 Connexion requise</h2>
+      <p>Entrez votre clé API pour accéder au traducteur Confluent.</p>
+      <div class="form-group">
+        <label>API Key</label>
+        <input type="password" id="login-api-key" placeholder="c32b04be-2e68-4e15-8362-...">
+      </div>
+      <button onclick="login()">Se connecter</button>
+      <div id="login-error" class="login-error">Clé API invalide</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header-container">
+      <h1>ConfluentTranslator</h1>
+      <!-- LLM Rate Limit Counter (CENTER, RED) -->
+      <div id="llm-limit-counter" style="
+        color: #ff4444;
+        font-weight: bold;
+        font-size: 1.1em;
+        text-align: center;
+        padding: 8px 16px;
+        background: rgba(255, 68, 68, 0.1);
+        border: 2px solid #ff4444;
+        border-radius: 6px;
+        display: none;
+      ">
+        <span id="llm-limit-text">Requêtes LLM: 0/20</span>
+      </div>
+      <div>
+        <button class="logout-btn" onclick="goToAdmin()" id="admin-btn" style="display:none; margin-right: 10px;">🔐 Admin</button>
+        <button class="logout-btn" onclick="logout()">Déconnexion</button>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" data-tab="traduction">Français → Confluent</button>
+      <button class="tab" data-tab="cf2fr">Confluent → Français</button>
+      <button class="tab" data-tab="lexique">Lexique</button>
+      <button class="tab" data-tab="stats">📊 Stats</button>
+      <button class="tab" data-tab="settings">⚙️ Settings</button>
+    </div>
+
+    <!-- Tab: Traduction Français → Confluent -->
+    <div id="tab-traduction" class="tab-content active">
+      <div class="settings-indicator" id="settings-indicator-fr2cf"></div>
+      <div class="panel">
+        <h2>Traduction Français → Confluent</h2>
+        <div class="form-group">
+          <label>Texte français</label>
+          <textarea id="input" placeholder="Entrez votre texte en français..."></textarea>
+        </div>
+        <button id="translate">Traduire</button>
+      </div>
+
+      <!-- LAYER 1: TRADUCTION (Always visible) -->
+      <div id="result-container" style="display: none;">
+        <div class="layer layer1">
+          <div class="layer1-title">Traduction</div>
+          <div id="layer1-content" class="layer1-content"></div>
+        </div>
+
+        <!-- LAYER 2: CONTEXTE (Collapsible) -->
+        <div class="layer">
+          <div class="layer-header" onclick="toggleLayer('layer2')">
+            <div class="layer-title">
+              <span class="layer-icon">📚</span>
+              <span>Contexte Lexical</span>
+            </div>
+            <span class="layer-arrow" id="layer2-arrow">▼</span>
+          </div>
+          <div id="layer2-content" class="layer-content">
+            <div class="layer-content-inner">
+              <div class="context-item">
+                <div class="context-label">Mots trouvés dans le lexique</div>
+                <div id="layer2-words"></div>
+              </div>
+              <div class="context-item">
+                <div class="context-label">Optimisation</div>
+                <div class="stats-grid" id="layer2-stats"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LAYER 3: EXPLICATIONS LLM (Collapsible) -->
+        <div class="layer">
+          <div class="layer-header" onclick="toggleLayer('layer3')">
+            <div class="layer-title">
+              <span class="layer-icon">💡</span>
+              <span>Explications</span>
+            </div>
+            <span class="layer-arrow" id="layer3-arrow">▼</span>
+          </div>
+          <div id="layer3-content" class="layer-content">
+            <div class="layer-content-inner">
+              <div class="context-item">
+                <div class="context-label">Décomposition</div>
+                <div id="layer3-decomposition"></div>
+              </div>
+              <div class="context-item" id="layer3-notes-container" style="display: none;">
+                <div class="context-label">Notes linguistiques</div>
+                <div id="layer3-notes" class="notes-text"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Confluent → Français -->
+    <div id="tab-cf2fr" class="tab-content">
+      <div class="settings-indicator" id="settings-indicator-cf2fr"></div>
+      <div class="panel">
+        <h2>Traduction Confluent → Français</h2>
+        <div class="form-group">
+          <label>Texte en Confluent</label>
+          <textarea id="cf-input" placeholder="Entrez votre texte en Confluent..."></textarea>
+        </div>
+        <button id="translate-cf2fr">Traduire</button>
+      </div>
+
+      <!-- Résultat -->
+      <div id="cf2fr-result-container" style="display: none;">
+        <div class="layer layer1">
+          <div class="layer1-title">Traduction</div>
+          <div id="cf2fr-layer1-content" class="layer1-content"></div>
+        </div>
+
+        <!-- LAYER 2: DÉTAILS (Collapsible) -->
+        <div class="layer">
+          <div class="layer-header" onclick="toggleLayer('cf2fr-layer2')">
+            <div class="layer-title">
+              <span class="layer-icon">📚</span>
+              <span>Détails de la traduction</span>
+            </div>
+            <span class="layer-arrow" id="cf2fr-layer2-arrow">▼</span>
+          </div>
+          <div id="cf2fr-layer2-content" class="layer-content">
+            <div class="layer-content-inner">
+              <div class="context-item">
+                <div class="context-label">Mots traduits</div>
+                <div id="cf2fr-layer2-tokens"></div>
+              </div>
+              <div class="context-item">
+                <div class="context-label">Couverture</div>
+                <div class="stats-grid" id="cf2fr-layer2-stats"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Lexique -->
+    <div id="tab-lexique" class="tab-content">
+      <div class="settings-indicator" id="settings-indicator-lexique"></div>
+
+      <!-- Recherche -->
+      <div class="panel">
+        <h2>Recherche dans le lexique</h2>
+        <div class="form-group">
+          <label>Rechercher un mot français</label>
+          <input type="text" id="lexique-search" placeholder="Tapez un mot en français...">
+        </div>
+        <div class="lexique-count" id="lexique-count">0 résultat(s)</div>
+        <div class="lexique-results" id="lexique-results">
+          <div class="no-results">Commencez à taper pour rechercher...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Stats -->
+    <div id="tab-stats" class="tab-content">
+      <div class="settings-indicator" id="settings-indicator-stats"></div>
+
+      <div class="panel">
+        <h2>📊 Statistiques du lexique</h2>
+
+        <h3 style="color: #4a9eff; margin-top: 20px; margin-bottom: 15px; font-size: 1.1em;">Couverture générale</h3>
+        <div class="stats-grid" id="stats-general">
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Mots CF uniques</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Entrées FR</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Total traductions</div>
+          </div>
+        </div>
+
+        <h3 style="color: #4a9eff; margin-top: 30px; margin-bottom: 15px; font-size: 1.1em;">Racines</h3>
+        <div class="stats-grid" id="stats-racines">
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Total racines</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Racines sacrées</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Racines standards</div>
+          </div>
+        </div>
+
+        <h3 style="color: #4a9eff; margin-top: 30px; margin-bottom: 15px; font-size: 1.1em;">Types de mots</h3>
+        <div class="stats-grid" id="stats-types">
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Compositions</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Verbes</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Verbes irréguliers</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Particules</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Noms propres</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Pronoms</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Marqueurs</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value">-</div>
+            <div class="stat-label">Autres</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Settings -->
+    <div id="tab-settings" class="tab-content">
+      <div class="panel">
+        <h2>⚙️ Paramètres globaux</h2>
+
+        <h2>🤖 Configuration LLM</h2>
+
+        <div class="row">
+          <div class="form-group">
+            <label>Provider</label>
+            <select id="settings-provider">
+              <option value="anthropic">Anthropic</option>
+              <option value="openai">OpenAI</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Modèle</label>
+            <select id="settings-model">
+              <option value="claude-sonnet-4-20250514">Claude Sonnet 4.5 (latest)</option>
+              <option value="claude-haiku-4-20250514">Claude Haiku 4.5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Température (créativité)</label>
+          <input type="range" id="settings-temperature" min="0" max="2" step="0.1" value="1.0">
+          <div style="display: flex; justify-content: space-between; color: #888; font-size: 0.85em;">
+            <span>Précis (0.0)</span>
+            <span id="temp-value">1.0</span>
+            <span>Créatif (2.0)</span>
+          </div>
+        </div>
+
+        <h2 style="margin-top: 30px;">🎨 Interface</h2>
+
+        <div class="form-group">
+          <label>Thème</label>
+          <select id="settings-theme">
+            <option value="dark">Sombre</option>
+            <option value="light">Clair</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label style="display: flex; align-items: center; cursor: pointer;">
+            <input type="checkbox" id="settings-verbose" style="width: auto; margin-right: 10px;">
+            <span>Mode verbose (afficher plus de détails)</span>
+          </label>
+        </div>
+
+        <button onclick="saveSettings()" style="margin-top: 20px;">💾 Sauvegarder les paramètres</button>
+        <div id="settings-saved-message" style="display: none; color: #4a9eff; margin-top: 10px; font-weight: 600;">
+          ✓ Paramètres sauvegardés !
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // === AUTHENTICATION SYSTEM ===
+
+    // Get API key from localStorage
+    const getApiKey = () => localStorage.getItem('confluentApiKey');
+
+    // Set API key to localStorage
+    const setApiKey = (key) => localStorage.setItem('confluentApiKey', key);
+
+    // Remove API key from localStorage
+    const clearApiKey = () => localStorage.removeItem('confluentApiKey');
+
+    // Check if user is authenticated
+    const checkAuth = () => {
+      const apiKey = getApiKey();
+      const overlay = document.getElementById('login-overlay');
+
+      if (!apiKey) {
+        // Show login overlay
+        overlay.classList.remove('hidden');
+      } else {
+        // Hide login overlay
+        overlay.classList.add('hidden');
+        // Load LLM limit counter
+        updateLLMLimit();
+      }
+
+      return !!apiKey;
+    };
+
+    // Update LLM rate limit counter
+    const updateLLMLimit = async () => {
+      try {
+        const response = await authFetch('/api/llm/limit');
+        const data = await response.json();
+
+        console.log('LLM Limit data:', data); // Debug
+
+        const counter = document.getElementById('llm-limit-counter');
+        const text = document.getElementById('llm-limit-text');
+
+        if (data.limit === -1) {
+          // Admin with unlimited requests
+          counter.style.display = 'none';
+        } else {
+          // User with limited requests
+          counter.style.display = 'block';
+          const limit = data.limit || 20;
+          const used = data.used || 0;
+          text.textContent = `Requêtes LLM: ${used}/${limit}`;
+        }
+      } catch (error) {
+        console.error('Error loading LLM limit:', error);
+      }
+    };
+
+    // Login function
+    const login = async () => {
+      const apiKey = document.getElementById('login-api-key').value.trim();
+      const errorDiv = document.getElementById('login-error');
+
+      if (!apiKey) {
+        errorDiv.textContent = 'Veuillez entrer une clé API';
+        errorDiv.style.display = 'block';
+        return;
+      }
+
+      // Test the API key with the validation endpoint
+      try {
+        const response = await fetch('/api/validate', {
+          headers: {
+            'x-api-key': apiKey
+          }
+        });
+
+        if (response.ok) {
+          // Key is valid
+          setApiKey(apiKey);
+          checkAuth();
+          errorDiv.style.display = 'none';
+          document.getElementById('login-api-key').value = '';
+
+          // Load initial data after successful login
+          await loadLexique();
+        } else if (response.status === 401 || response.status === 403) {
+          // Invalid key
+          errorDiv.textContent = 'Clé API invalide';
+          errorDiv.style.display = 'block';
+        } else {
+          // Other error
+          errorDiv.textContent = `Erreur: ${response.status}`;
+          errorDiv.style.display = 'block';
+        }
+      } catch (error) {
+        errorDiv.textContent = `Erreur de connexion: ${error.message}`;
+        errorDiv.style.display = 'block';
+      }
+    };
+
+    // Logout function
+    const logout = () => {
+      if (confirm('Êtes-vous sûr de vouloir vous déconnecter ?')) {
+        clearApiKey();
+        checkAuth();
+      }
+    };
+
+    // Add enter key support for login
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('login-api-key').addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          login();
+        }
+      });
+    });
+
+    // Authenticated fetch wrapper with auto-logout on 401/403
+    const authFetch = async (url, options = {}) => {
+      const apiKey = getApiKey();
+
+      // Merge headers
+      const headers = {
+        ...options.headers,
+        'x-api-key': apiKey
+      };
+
+      const response = await fetch(url, {
+        ...options,
+        headers
+      });
+
+      // Auto-logout on authentication errors
+      if (response.status === 401 || response.status === 403) {
+        console.warn('Authentication failed - logging out');
+        clearApiKey();
+        checkAuth();
+        throw new Error('Session expirée. Veuillez vous reconnecter.');
+      }
+
+      return response;
+    };
+
+    // Lexique data
+    let lexiqueData = null;
+
+    // Load lexique
+    const loadLexique = async () => {
+      try {
+        const niveau = 'ancien';
+        const response = await authFetch(`/api/lexique/${niveau}`);
+        lexiqueData = await response.json();
+
+        // Load stats
+        await loadStats(niveau);
+      } catch (error) {
+        console.error('Error loading lexique:', error);
+      }
+    };
+
+    // Load statistics
+    const loadStats = async (niveau) => {
+      try {
+        const response = await authFetch(`/api/stats?variant=${niveau}`);
+        const stats = await response.json();
+
+        // Update general stats
+        const statsGeneral = document.getElementById('stats-general');
+        if (statsGeneral) {
+          statsGeneral.innerHTML = `
+            <div class="stat-box">
+              <div class="stat-value">${stats.motsCF || 0}</div>
+              <div class="stat-label">Mots CF uniques</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.motsFR || 0}</div>
+              <div class="stat-label">Entrées FR</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.totalTraductions || 0}</div>
+              <div class="stat-label">Total traductions</div>
+            </div>
+          `;
+        }
+
+        // Update racines stats
+        const statsRacines = document.getElementById('stats-racines');
+        if (statsRacines) {
+          statsRacines.innerHTML = `
+            <div class="stat-box">
+              <div class="stat-value">${stats.racines || 0}</div>
+              <div class="stat-label">Total racines</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.racinesSacrees || 0}</div>
+              <div class="stat-label">Racines sacrées</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.racinesStandards || 0}</div>
+              <div class="stat-label">Racines standards</div>
+            </div>
+          `;
+        }
+
+        // Update types stats
+        const statsTypes = document.getElementById('stats-types');
+        if (statsTypes) {
+          statsTypes.innerHTML = `
+            <div class="stat-box">
+              <div class="stat-value">${stats.compositions || 0}</div>
+              <div class="stat-label">Compositions</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.verbes || 0}</div>
+              <div class="stat-label">Verbes</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.verbesIrreguliers || 0}</div>
+              <div class="stat-label">Verbes irréguliers</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.particules || 0}</div>
+              <div class="stat-label">Particules</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.nomsPropes || 0}</div>
+              <div class="stat-label">Noms propres</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.pronoms || 0}</div>
+              <div class="stat-label">Pronoms</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.marqueurs || 0}</div>
+              <div class="stat-label">Marqueurs</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">${stats.autres || 0}</div>
+              <div class="stat-label">Autres</div>
+            </div>
+          `;
+        }
+      } catch (error) {
+        console.error('Error loading stats:', error);
+      }
+    };
+
+    // Toggle layer (expand/collapse)
+    function toggleLayer(layerId) {
+      const content = document.getElementById(`${layerId}-content`);
+      const arrow = document.getElementById(`${layerId}-arrow`);
+
+      content.classList.toggle('expanded');
+      arrow.classList.toggle('expanded');
+    }
+
+    // Tab switching
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+        tab.classList.add('active');
+        const tabName = tab.dataset.tab;
+        document.getElementById(`tab-${tabName}`).classList.add('active');
+      });
+    });
+
+    // Lexique search
+    const searchLexique = () => {
+      const query = document.getElementById('lexique-search').value.toLowerCase().trim();
+      const resultsDiv = document.getElementById('lexique-results');
+      const countDiv = document.getElementById('lexique-count');
+
+      if (!lexiqueData || !lexiqueData.dictionnaire) {
+        resultsDiv.innerHTML = '<div class="no-results">Lexique en cours de chargement...</div>';
+        return;
+      }
+
+      if (!query) {
+        resultsDiv.innerHTML = '<div class="no-results">Commencez à taper pour rechercher...</div>';
+        countDiv.textContent = '0 résultat(s)';
+        return;
+      }
+
+      const dict = lexiqueData.dictionnaire;
+      const results = [];
+
+      for (const [key, data] of Object.entries(dict)) {
+        if (key.includes(query) || (data.mot_francais && data.mot_francais.toLowerCase().includes(query))) {
+          if (data.is_synonym_of) continue;
+
+          const cf = data.traductions && data.traductions.length > 0
+            ? data.traductions[0].confluent
+            : '?';
+
+          results.push({
+            fr: data.mot_francais || key,
+            cf: cf,
+            type: data.traductions?.[0]?.type || '',
+            domaine: data.traductions?.[0]?.domaine || ''
+          });
+        }
+      }
+
+      results.sort((a, b) => {
+        const aExact = a.fr.toLowerCase() === query;
+        const bExact = b.fr.toLowerCase() === query;
+        if (aExact && !bExact) return -1;
+        if (!aExact && bExact) return 1;
+
+        const aStarts = a.fr.toLowerCase().startsWith(query);
+        const bStarts = b.fr.toLowerCase().startsWith(query);
+        if (aStarts && !bStarts) return -1;
+        if (!aStarts && bStarts) return 1;
+        return a.fr.localeCompare(b.fr);
+      });
+
+      if (results.length === 0) {
+        resultsDiv.innerHTML = '<div class="no-results">Aucun résultat trouvé</div>';
+        countDiv.textContent = '0 résultat(s)';
+      } else {
+        const html = results.map(r => `
+          <div class="lexique-item">
+            <span class="lexique-fr">${r.fr}</span>
+            <span class="lexique-cf">${r.cf}</span>
+          </div>
+        `).join('');
+        resultsDiv.innerHTML = html;
+        countDiv.textContent = `${results.length} résultat(s)`;
+      }
+    };
+
+    document.getElementById('lexique-search').addEventListener('input', searchLexique);
+
+    // Settings management
+    const DEFAULT_SETTINGS = {
+      provider: 'anthropic',
+      model: 'claude-sonnet-4-20250514',
+      temperature: 1.0,
+      theme: 'light',
+      verbose: false,
+      anthropicKey: '',
+      openaiKey: ''
+    };
+
+    const loadSettings = () => {
+      const settings = { ...DEFAULT_SETTINGS, ...JSON.parse(localStorage.getItem('confluentSettings') || '{}') };
+
+      // Apply to settings page
+      document.getElementById('settings-provider').value = settings.provider;
+      document.getElementById('settings-model').value = settings.model;
+      document.getElementById('settings-temperature').value = settings.temperature;
+      document.getElementById('temp-value').textContent = settings.temperature;
+      document.getElementById('settings-theme').value = settings.theme;
+      document.getElementById('settings-verbose').checked = settings.verbose;
+
+      // Apply theme
+      applyTheme(settings.theme);
+
+      // Update model options based on provider
+      updateModelOptions(settings.provider);
+
+      return settings;
+    };
+
+    const saveSettings = () => {
+      // Load existing settings to preserve API keys
+      const existingSettings = JSON.parse(localStorage.getItem('confluentSettings') || '{}');
+
+      const settings = {
+        provider: document.getElementById('settings-provider').value,
+        model: document.getElementById('settings-model').value,
+        temperature: parseFloat(document.getElementById('settings-temperature').value),
+        theme: document.getElementById('settings-theme').value,
+        verbose: document.getElementById('settings-verbose').checked,
+        // Preserve API keys from localStorage
+        anthropicKey: existingSettings.anthropicKey || '',
+        openaiKey: existingSettings.openaiKey || ''
+      };
+
+      localStorage.setItem('confluentSettings', JSON.stringify(settings));
+
+      // Apply theme
+      applyTheme(settings.theme);
+
+      // Reload lexique if target changed
+      loadLexique();
+
+      // Update settings indicators
+      updateSettingsIndicators();
+
+      // Show saved message
+      const msg = document.getElementById('settings-saved-message');
+      msg.style.display = 'block';
+      setTimeout(() => { msg.style.display = 'none'; }, 2000);
+    };
+
+    const applyTheme = (theme) => {
+      if (theme === 'light') {
+        document.body.classList.add('light-theme');
+      } else {
+        document.body.classList.remove('light-theme');
+      }
+    };
+
+    const updateSettingsIndicators = () => {
+      const settings = { ...DEFAULT_SETTINGS, ...JSON.parse(localStorage.getItem('confluentSettings') || '{}') };
+
+      const providerLabel = settings.provider === 'anthropic' ? 'Anthropic' : 'OpenAI';
+
+      // Better model label detection
+      let modelLabel = 'Model';
+      if (settings.model.includes('sonnet')) {
+        modelLabel = 'Sonnet 4.5';
+      } else if (settings.model.includes('haiku')) {
+        modelLabel = 'Haiku 4.5';
+      } else if (settings.model === 'chatgpt-4o-latest') {
+        modelLabel = 'ChatGPT-5.1';
+      } else if (settings.model === 'gpt-4o-mini') {
+        modelLabel = 'GPT-4o Mini';
+      } else if (settings.model === 'gpt-4o') {
+        modelLabel = 'GPT-4o';
+      }
+
+      const indicatorText = `Ancien Confluent • ${providerLabel} ${modelLabel} • Temp: ${settings.temperature}`;
+
+      document.getElementById('settings-indicator-fr2cf').textContent = indicatorText;
+      document.getElementById('settings-indicator-cf2fr').textContent = indicatorText;
+      document.getElementById('settings-indicator-lexique').textContent = indicatorText;
+      document.getElementById('settings-indicator-stats').textContent = indicatorText;
+    };
+
+    const updateModelOptions = (provider) => {
+      const modelSelect = document.getElementById('settings-model');
+      modelSelect.innerHTML = '';
+
+      if (provider === 'anthropic') {
+        modelSelect.innerHTML = `
+          <option value="claude-sonnet-4-20250514">Claude Sonnet 4.5 (latest)</option>
+          <option value="claude-haiku-4-20250514">Claude Haiku 4.5</option>
+        `;
+      } else if (provider === 'openai') {
+        modelSelect.innerHTML = `
+          <option value="chatgpt-4o-latest">ChatGPT-5.1 (latest)</option>
+          <option value="gpt-4o">GPT-4o</option>
+          <option value="gpt-4o-mini">GPT-4o Mini</option>
+        `;
+      }
+    };
+
+    // Settings event listeners
+    document.getElementById('settings-provider').addEventListener('change', (e) => {
+      updateModelOptions(e.target.value);
+    });
+
+    document.getElementById('settings-temperature').addEventListener('input', (e) => {
+      document.getElementById('temp-value').textContent = e.target.value;
+    });
+
+    // Translation with 3 layers
+    document.getElementById('translate').addEventListener('click', async () => {
+      const button = document.getElementById('translate');
+      const text = document.getElementById('input').value.trim();
+      const resultContainer = document.getElementById('result-container');
+
+      if (!text) {
+        alert('Veuillez entrer un texte.');
+        return;
+      }
+
+      button.disabled = true;
+      resultContainer.style.display = 'none';
+
+      // Show loading in layer 1
+      resultContainer.style.display = 'block';
+      document.getElementById('layer1-content').textContent = 'Traduction en cours...';
+
+      const settings = JSON.parse(localStorage.getItem('confluentSettings') || '{}');
+      const config = {
+        text,
+        target: 'ancien',
+        provider: settings.provider || 'anthropic',
+        model: settings.model || 'claude-sonnet-4-20250514',
+        temperature: settings.temperature || 1.0,
+      };
+
+      // Add custom API keys if provided
+      if (settings.anthropicKey && settings.anthropicKey.trim()) {
+        config.customAnthropicKey = settings.anthropicKey.trim();
+      }
+      if (settings.openaiKey && settings.openaiKey.trim()) {
+        config.customOpenAIKey = settings.openaiKey.trim();
+      }
+
+      try {
+        const response = await authFetch('/translate', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(config),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          // LAYER 1: Translation
+          document.getElementById('layer1-content').textContent = data.layer1.translation;
+
+          // LAYER 2: Context
+          if (data.layer2) {
+            const wordsHtml = data.layer2.wordsFound && data.layer2.wordsFound.length > 0
+              ? data.layer2.wordsFound.map(w => `
+                  <div class="word-match">
+                    <span class="word-match-input">${w.input}</span>
+                    <span class="word-match-arrow">→</span>
+                    <span class="word-match-output">${w.confluent}</span>
+                    <span class="word-match-score">(${w.score.toFixed(2)})</span>
+                  </div>
+                `).join('')
+              : '<div class="no-results">Aucun mot trouvé (fallback racines activé)</div>';
+
+            document.getElementById('layer2-words').innerHTML = wordsHtml;
+
+            const statsHtml = `
+              <div class="stat-box">
+                <div class="stat-value">${data.layer2.entriesUsed || 0}</div>
+                <div class="stat-label">Entrées utilisées</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-value">${data.layer2.tokensSaved || 0}</div>
+                <div class="stat-label">Tokens économisés</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-value">${data.layer2.savingsPercent || 0}%</div>
+                <div class="stat-label">Économie</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-value">${
+                  data.layer2.useFallback ? 'RACINES SEULES' :
+                  (data.layer2.rootsUsed > 0 ? 'VOCAB + RACINES' : 'VOCAB SEUL')
+                }</div>
+                <div class="stat-label">Mode</div>
+              </div>
+            `;
+            document.getElementById('layer2-stats').innerHTML = statsHtml;
+          }
+
+          // LAYER 3: Explanations
+          if (data.layer3) {
+            const decompHtml = data.layer3.decomposition
+              ? data.layer3.decomposition.split('\n').map(line =>
+                  `<div class="decomposition-line">${line}</div>`
+                ).join('')
+              : '<div class="no-results">Pas de décomposition disponible</div>';
+
+            document.getElementById('layer3-decomposition').innerHTML = decompHtml;
+
+            if (data.layer3.notes) {
+              document.getElementById('layer3-notes').textContent = data.layer3.notes;
+              document.getElementById('layer3-notes-container').style.display = 'block';
+            } else {
+              document.getElementById('layer3-notes-container').style.display = 'none';
+            }
+          }
+
+        } else {
+          document.getElementById('layer1-content').innerHTML = `<span class="error">Erreur: ${data.error}</span>`;
+        }
+
+        // Update LLM limit counter after translation
+        updateLLMLimit().catch(err => console.error('Error updating LLM limit:', err));
+
+      } catch (error) {
+        document.getElementById('layer1-content').innerHTML = `<span class="error">Erreur: ${error.message}</span>`;
+      } finally {
+        button.disabled = false;
+      }
+    });
+
+    // Confluent → Français translation
+    document.getElementById('translate-cf2fr').addEventListener('click', async () => {
+      const button = document.getElementById('translate-cf2fr');
+      const text = document.getElementById('cf-input').value.trim();
+      const resultContainer = document.getElementById('cf2fr-result-container');
+
+      if (!text) {
+        alert('Veuillez entrer un texte en Confluent.');
+        return;
+      }
+
+      button.disabled = true;
+      resultContainer.style.display = 'none';
+
+      // Show loading
+      resultContainer.style.display = 'block';
+      document.getElementById('cf2fr-layer1-content').textContent = 'Traduction en cours...';
+
+      const settings = JSON.parse(localStorage.getItem('confluentSettings') || '{}');
+
+      try {
+        // Step 1: Get raw translation to show details immediately
+        const rawResponse = await authFetch('/api/translate/conf2fr', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            text,
+            variant: 'ancien',
+            detailed: true
+          }),
+        });
+
+        const rawData = await rawResponse.json();
+
+        if (rawResponse.ok) {
+          // Display detailed tokens immediately
+          if (rawData.tokens && rawData.tokens.length > 0) {
+            const tokensHtml = rawData.tokens.map(token => {
+              const statusClass = token.found ? 'found' : 'not-found';
+              const frText = token.francais || '❓';
+              const typeText = token.type ? `[${token.type}]` : '';
+
+              return `
+                <div class="word-item ${statusClass}">
+                  <span class="word-cf">${token.confluent}</span>
+                  <span class="word-arrow">→</span>
+                  <span class="word-fr">${frText} ${typeText}</span>
+                </div>
+              `;
+            }).join('');
+            document.getElementById('cf2fr-layer2-tokens').innerHTML = tokensHtml;
+
+            // Display stats
+            const coverage = rawData.coverage || 0;
+            const total = rawData.tokens.length;
+            const found = rawData.tokens.filter(t => t.found).length;
+            const notFound = total - found;
+
+            document.getElementById('cf2fr-layer2-stats').innerHTML = `
+              <div class="stat-box">
+                <div class="stat-label">Couverture</div>
+                <div class="stat-value">${coverage}%</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-label">Mots trouvés</div>
+                <div class="stat-value">${found}/${total}</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-label">Mots inconnus</div>
+                <div class="stat-value">${notFound}</div>
+              </div>
+            `;
+          }
+        }
+
+        // Step 2: Get LLM refined translation
+        const llmConfig = {
+          text,
+          variant: 'ancien',
+          provider: settings.provider || 'anthropic',
+          model: settings.model || 'claude-sonnet-4-20250514'
+        };
+
+        // Add custom API keys if provided
+        if (settings.anthropicKey && settings.anthropicKey.trim()) {
+          llmConfig.customAnthropicKey = settings.anthropicKey.trim();
+        }
+        if (settings.openaiKey && settings.openaiKey.trim()) {
+          llmConfig.customOpenAIKey = settings.openaiKey.trim();
+        }
+
+        const llmResponse = await authFetch('/api/translate/conf2fr/llm', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(llmConfig),
+        });
+
+        const llmData = await llmResponse.json();
+
+        if (llmResponse.ok) {
+          // Display refined translation
+          document.getElementById('cf2fr-layer1-content').textContent = llmData.refinedTranslation || llmData.rawTranslation || 'Traduction effectuée';
+        } else {
+          document.getElementById('cf2fr-layer1-content').innerHTML = `<span class="error">Erreur LLM: ${llmData.error}</span>`;
+        }
+
+        // Update LLM limit counter after translation
+        updateLLMLimit().catch(err => console.error('Error updating LLM limit:', err));
+
+      } catch (error) {
+        document.getElementById('cf2fr-layer1-content').innerHTML = `<span class="error">Erreur: ${error.message}</span>`;
+      } finally {
+        button.disabled = false;
+      }
+    });
+
+    // Listen to theme change in settings
+    document.getElementById('settings-theme').addEventListener('change', (e) => {
+      applyTheme(e.target.value);
+    });
+
+    // Go to admin panel
+    const goToAdmin = () => {
+      window.location.href = '/admin.html';
+    };
+
+    // Check if user is admin and show admin button
+    const checkAdminRole = async () => {
+      try {
+        const response = await authFetch('/api/validate');
+        if (response.ok) {
+          const data = await response.json();
+          if (data.role === 'admin') {
+            document.getElementById('admin-btn').style.display = 'inline-block';
+          }
+        }
+      } catch (error) {
+        console.log('Not admin or error checking role');
+      }
+    };
+
+    // Initialize
+    checkAuth();  // Check if user is logged in
+    loadSettings();
+    loadLexique();
+    updateSettingsIndicators();
+    checkAdminRole();  // Check if admin to show admin button
+  </script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+{
+  "_comment": "Langage, communication et écriture",
+  "_mots_a_gerer": [],
+  "dictionnaire": {
+    "langage": {
+      "traductions": [
+        {
+          "confluent": "vokiukota",
+          "type": "composition",
+          "composition": "vok-i-kota",
+          "sens_litteral": "Voix d'union",
+          "racines": [
+            "voki",
+            "kota"
+          ],
+          "domaine": "communication",
+          "note": "Concept de langue comme union"
+        }
+      ]
+    },
+    "glyphe": {
+      "traductions": [
+        {
+          "confluent": "kova",
+          "type": "racine",
+          "forme_liee": "kov",
+          "domaine": "communication",
+          "note": "Gravure, signe écrit"
+        }
+      ]
+    },
+    "ecriture": {
+      "traductions": [
+        {
+          "confluent": "mkopisuzlu",
+          "type": "composition",
+          "composition": "kov-a-sili",
+          "sens_litteral": "Gravure avec regard",
+          "racines": [
+            "kova",
+            "sili"
+          ],
+          "domaine": "communication"
+        }
+      ]
+    },
+    "symbole": {
+      "traductions": [
+        {
+          "confluent": "silukova",
+          "type": "composition",
+          "composition": "sil-u-kova",
+          "sens_litteral": "Regard de la gravure",
+          "racines": [
+            "sili",
+            "kova"
+          ],
+          "domaine": "communication"
+        }
+      ]
+    },
+    "trace": {
+      "traductions": [
+        {
+          "confluent": "tekikova",
+          "type": "composition",
+          "composition": "tek-i-kova",
+          "sens_litteral": "Chemin de la gravure",
+          "racines": [
+            "teki",
+            "kova"
+          ],
+          "domaine": "communication"
+        }
+      ]
+    },
+    "rhombe": {
+      "traductions": [
+        {
+          "confluent": "ieto",
+          "type": "racine_sacree",
+          "forme_liee": "iet",
+          "domaine": "objet_rituel",
+          "note": "Instrument produisant le son sacré"
+        }
+      ]
+    },
+    "recit": {
+      "traductions": [
+        {
+          "confluent": "llisisita",
+          "type": "composition",
+          "composition": "vok-i-aita",
+          "sens_litteral": "Voix des ancêtres",
+          "racines": [
+            "voki",
+            "aita"
+          ],
+          "domaine": "communication"
+        }
+      ],
+      "synonymes_fr": [
+        "légende"
+      ]
+    },
+    "histoire vraie": {
+      "traductions": [
+        {
+          "confluent": "vokiuveli",
+          "type": "composition",
+          "composition": "vok-i-veli",
+          "sens_litteral": "Voix de vérité",
+          "racines": [
+            "voki",
+            "veli"
+          ],
+          "domaine": "communication"
+        }
+      ]
+    },
+    "poeme": {
+      "traductions": [
+        {
+          "confluent": "onuvoki",
+          "type": "composition",
+          "composition": "on-u-voki",
+          "sens_litteral": "Son de la voix",
+          "racines": [
+            "onu",
+            "voki"
+          ],
+          "domaine": "communication"
+        }
+      ],
+      "synonymes_fr": [
+        "vers"
+      ]
+    },
+    "chant": {
+      "traductions": [
+        {
+          "confluent": "oukekaza",
+          "type": "composition",
+          "composition": "on-u-voki",
+          "sens_litteral": "Son de la voix",
+          "racines": [
+            "onu",
+            "voki"
+          ],
+          "domaine": "communication"
+        }
+      ]
+    },
+    "chant sacre": {
+      "traductions": [
+        {
+          "confluent": "onuasa",
+          "type": "composition",
+          "composition": "on-u-asa",
+          "sens_litteral": "Son du sacré",
+          "racines": [
+            "onu",
+            "asa"
+          ],
+          "domaine": "communication"
+        }
+      ]
+    },
+    "message": {
+      "traductions": [
+        {
+          "confluent": "vokiuteki",
+          "type": "composition",
+          "composition": "vok-i-teki",
+          "sens_litteral": "Voix du chemin",
+          "racines": [
+            "voki",
+            "teki"
+          ],
+          "domaine": "communication"
+        }
+      ]
+    },
+    "rapport": {
+      "traductions": [
+        {
+          "confluent": "vokiumila",
+          "type": "composition",
+          "composition": "vok-i-mila",
+          "sens_litteral": "Voix de l'observation",
+          "racines": [
+            "voki",
+            "mila"
+          ],
+          "domaine": "communication"
+        }
+      ]
+    },
+    "chronique": {
+      "traductions": [
+        {
+          "confluent": "vokiutemi",
+          "type": "composition",
+          "composition": "vok-i-temi",
+          "sens_litteral": "Voix du temps",
+          "racines": [
+            "voki",
+            "temi"
+          ],
+          "domaine": "communication"
+        }
+      ]
+    },
+    "traite": {
+      "traductions": [
+        {
+          "confluent": "tabusavu",
+          "type": "composition",
+          "composition": "tab-u-savu",
+          "sens_litteral": "Tablette du serment",
+          "racines": [
+            "tabu",
+            "savu"
+          ],
+          "domaine": "communication"
+        }
+      ]
+    },
+    "loi": {
+      "traductions": [
+        {
+          "confluent": "vsone",
+          "type": "racine",
+          "forme_liee": "vson",
+          "domaine": "communication"
+        }
+      ]
+    },
+    "decret": {
+      "traductions": [
+        {
+          "confluent": "lokukasi",
+          "type": "composition",
+          "composition": "lok-u-kasi",
+          "sens_litteral": "Loi du chef",
+          "racines": [
+            "loku",
+            "kasi"
+          ],
+          "domaine": "communication"
+        }
+      ]
+    },
+    "proclamation": {
+      "traductions": [
+        {
+          "confluent": "vokiueka",
+          "type": "composition",
+          "composition": "vok-i-eka",
+          "sens_litteral": "Voix de la totalité",
+          "racines": [
+            "voki",
+            "eka"
+          ],
+          "domaine": "communication"
+        }
+      ]
+    },
+    "conseil": {
+      "traductions": [
+        {
+          "confluent": "sekavoki",
+          "type": "composition",
+          "composition": "sek-a-voki",
+          "sens_litteral": "Savoir avec voix",
+          "racines": [
+            "seka",
+            "voki"
+          ],
+          "domaine": "communication"
+        }
+      ]
+    },
+    "debat": {
+      "traductions": [
+        {
+          "confluent": "vokioavoki",
+          "type": "composition",
+          "composition": "vok-oa-voki",
+          "sens_litteral": "Voix contre voix",
+          "racines": [
+            "voki",
+            "voki"
+          ],
+          "domaine": "communication"
+        }
+      ]
+    },
+    "silence": {
+      "traductions": [
+        {
+          "confluent": "zovoki",
+          "type": "composition",
+          "composition": "zo-voki",
+          "sens_litteral": "Sans voix",
+          "racines": [
+            "zo",
+            "voki"
+          ],
+          "domaine": "communication"
+        }
+      ]
+    },
+    "secret": {
+      "traductions": [
+        {
+          "confluent": "bnavi",
+          "type": "racine",
+          "forme_liee": "bnav",
+          "domaine": "communication"
+        }
+      ]
+    },
+    "mensonge": {
+      "traductions": [
+        {
+          "confluent": "zoveli",
+          "type": "composition",
+          "composition": "zo-veli",
+          "sens_litteral": "Sans vérité",
+          "racines": [
+            "zo",
+            "veli"
+          ],
+          "domaine": "communication"
+        }
+      ]
+    },
+    "promesse": {
+      "traductions": [
+        {
+          "confluent": "kbevi",
+          "type": "racine",
+          "forme_liee": "kbev",
+          "domaine": "communication"
+        }
+      ]
+    }
+  }
+}

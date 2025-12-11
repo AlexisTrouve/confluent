@@ -1,0 +1,1029 @@
+{
+  "_comment": "Racines standards diverses (commencent par une consonne)",
+  "_mots_a_gerer": [],
+  "dictionnaire": {
+    "vrai": {
+      "traductions": [
+        {
+          "confluent": "veli",
+          "type": "racine",
+          "forme_liee": "vel",
+          "domaine": "concept_abstrait",
+          "note": "Racine fondamentale"
+        }
+      ],
+      "synonymes_fr": [
+        "vérité"
+      ]
+    },
+    "bon": {
+      "traductions": [
+        {
+          "confluent": "tosa",
+          "type": "racine",
+          "forme_liee": "tos",
+          "domaine": "concept_abstrait",
+          "note": "Bien, positif"
+        }
+      ],
+      "synonymes_fr": [
+        "bien"
+      ]
+    },
+    "grand": {
+      "traductions": [
+        {
+          "confluent": "mako",
+          "type": "racine",
+          "forme_liee": "mak",
+          "domaine": "qualificatif",
+          "note": "Vaste, important"
+        }
+      ],
+      "synonymes_fr": [
+        "vaste",
+        "grande",
+        "grands",
+        "grandes"
+      ]
+    },
+    "petit": {
+      "traductions": [
+        {
+          "confluent": "pisu",
+          "type": "racine",
+          "forme_liee": "pis",
+          "domaine": "qualificatif",
+          "note": "Fin, menu"
+        }
+      ],
+      "synonymes_fr": [
+        "fin",
+        "petite",
+        "petits",
+        "petites"
+      ]
+    },
+    "lent": {
+      "traductions": [
+        {
+          "confluent": "telu",
+          "type": "racine",
+          "forme_liee": "tel",
+          "domaine": "qualificatif",
+          "note": "Lent, sans hâte"
+        }
+      ],
+      "synonymes_fr": [
+        "lente",
+        "lents",
+        "lentes",
+        "lentement"
+      ]
+    },
+    "rapide": {
+      "traductions": [
+        {
+          "confluent": "kazo",
+          "type": "racine",
+          "forme_liee": "kaz",
+          "domaine": "qualificatif",
+          "note": "Rapide, vif"
+        }
+      ],
+      "synonymes_fr": [
+        "rapides",
+        "rapidement",
+        "vif",
+        "vifs",
+        "vive",
+        "vives"
+      ]
+    },
+    "nouveau": {
+      "traductions": [
+        {
+          "confluent": "nuvi",
+          "type": "racine",
+          "forme_liee": "nov",
+          "domaine": "qualificatif",
+          "note": "Jeune, récent"
+        }
+      ],
+      "synonymes_fr": [
+        "jeune",
+        "nouvelle",
+        "nouveaux",
+        "nouvelles"
+      ]
+    },
+    "echanger": {
+      "traductions": [
+        {
+          "confluent": "kilu",
+          "type": "racine",
+          "forme_liee": "kil",
+          "domaine": "action",
+          "note": "Troquer, commercer"
+        }
+      ],
+      "synonymes_fr": [
+        "troquer"
+      ]
+    },
+    "pont": {
+      "traductions": [
+        {
+          "confluent": "vasi",
+          "type": "racine",
+          "forme_liee": "vas",
+          "domaine": "structure",
+          "note": "Lien, passage entre deux"
+        }
+      ],
+      "synonymes_fr": [
+        "lien",
+        "passage"
+      ]
+    },
+    "bois": {
+      "traductions": [
+        {
+          "confluent": "viku",
+          "type": "racine",
+          "forme_liee": "vik",
+          "domaine": "materiau",
+          "note": "Même racine que forêt/arbre"
+        }
+      ]
+    },
+    "sombre": {
+      "traductions": [
+        {
+          "confluent": "kumu",
+          "type": "racine",
+          "forme_liee": "kum",
+          "domaine": "qualificatif",
+          "note": "Obscur, sans lumière"
+        }
+      ],
+      "synonymes_fr": [
+        "obscur",
+        "sombres"
+      ]
+    },
+    "couleur": {
+      "traductions": [
+        {
+          "confluent": "kolu",
+          "type": "racine",
+          "forme_liee": "kol",
+          "domaine": "perception",
+          "note": "Nouvelle racine - teinte visible"
+        }
+      ]
+    },
+    "cendre": {
+      "traductions": [
+        {
+          "confluent": "senu",
+          "type": "racine",
+          "forme_liee": "sen",
+          "domaine": "materiau",
+          "note": "Nouvelle racine - reste du feu"
+        }
+      ]
+    },
+    "gris": {
+      "traductions": [
+        {
+          "confluent": "bkula",
+          "type": "racine",
+          "forme_liee": "bkul",
+          "domaine": "couleur",
+          "note": "Même racine que cendre"
+        }
+      ]
+    },
+    "sang": {
+      "traductions": [
+        {
+          "confluent": "pasu",
+          "type": "racine",
+          "forme_liee": "ras",
+          "domaine": "corps",
+          "note": "Fluide vital rouge"
+        }
+      ]
+    },
+    "assemblee": {
+      "traductions": [
+        {
+          "confluent": "kotaitoli",
+          "type": "composition",
+          "composition": "kot-a-toli",
+          "sens_litteral": "Union avec personnes",
+          "racines": [
+            "kota",
+            "toli"
+          ],
+          "domaine": "institution"
+        }
+      ]
+    },
+    "lait": {
+      "traductions": [
+        {
+          "confluent": "milu",
+          "type": "racine",
+          "forme_liee": "mil",
+          "domaine": "materiau",
+          "note": "Nouvelle racine - fluide blanc nourricier"
+        }
+      ]
+    },
+    "loi": {
+      "traductions": [
+        {
+          "confluent": "loku",
+          "type": "racine",
+          "forme_liee": "lok",
+          "domaine": "institution",
+          "note": "Nouvelle racine - règle fixée"
+        }
+      ],
+      "synonymes_fr": [
+        "règle"
+      ]
+    },
+    "ligne": {
+      "traductions": [
+        {
+          "confluent": "linu",
+          "type": "racine",
+          "forme_liee": "lin",
+          "domaine": "forme",
+          "note": "Nouvelle racine - trait"
+        }
+      ]
+    },
+    "corde": {
+      "traductions": [
+        {
+          "confluent": "kopu",
+          "type": "racine",
+          "forme_liee": "kop",
+          "domaine": "outil",
+          "note": "Nouvelle racine - lien tressé"
+        }
+      ]
+    },
+    "lieu": {
+      "traductions": [
+        {
+          "confluent": "plozi",
+          "type": "racine",
+          "forme_liee": "ploz",
+          "domaine": "espace",
+          "note": "Endroit, place"
+        }
+      ],
+      "synonymes_fr": [
+        "endroit"
+      ]
+    },
+    "memoire": {
+      "traductions": [
+        {
+          "confluent": "memu",
+          "type": "racine",
+          "forme_liee": "mem",
+          "domaine": "concept_abstrait",
+          "note": "Nouvelle racine - ce qu'on retient"
+        }
+      ],
+      "synonymes_fr": [
+        "souvenir"
+      ]
+    },
+    "navire": {
+      "traductions": [
+        {
+          "confluent": "vanu",
+          "type": "racine",
+          "forme_liee": "nav",
+          "domaine": "objet",
+          "note": "Nouvelle racine - embarcation"
+        }
+      ]
+    },
+    "paix": {
+      "traductions": [
+        {
+          "confluent": "lsezi",
+          "type": "racine",
+          "forme_liee": "lsez",
+          "domaine": "etat",
+          "note": "Même racine que 'bon' - état bon"
+        }
+      ],
+      "synonymes_fr": [
+        "calme"
+      ]
+    },
+    "poisson": {
+      "traductions": [
+        {
+          "confluent": "ltiti",
+          "type": "racine",
+          "forme_liee": "ltit",
+          "domaine": "animal",
+          "note": "Nouvelle racine - créature de l'eau"
+        }
+      ]
+    },
+    "pointe": {
+      "traductions": [
+        {
+          "confluent": "piki",
+          "type": "racine",
+          "forme_liee": "pik",
+          "domaine": "forme",
+          "note": "Extrémité aiguë"
+        }
+      ]
+    },
+    "poison": {
+      "traductions": [
+        {
+          "confluent": "toku",
+          "type": "racine",
+          "forme_liee": "tok",
+          "domaine": "danger",
+          "note": "Nouvelle racine - substance mortelle"
+        }
+      ]
+    },
+    "rouge": {
+      "traductions": [
+        {
+          "confluent": "kzunu",
+          "type": "racine",
+          "forme_liee": "kzun",
+          "domaine": "couleur",
+          "note": "Couleur du sang, yeux des Ciels-clairs"
+        }
+      ]
+    },
+    "recit": {
+      "traductions": [
+        {
+          "confluent": "vokiaita",
+          "type": "composition",
+          "composition": "vok-i-aita",
+          "sens_litteral": "Voix des ancêtres",
+          "racines": [
+            "voki",
+            "aita"
+          ],
+          "domaine": "communication"
+        }
+      ],
+      "synonymes_fr": [
+        "histoire"
+      ]
+    },
+    "route": {
+      "traductions": [
+        {
+          "confluent": "teki",
+          "type": "racine",
+          "forme_liee": "tek",
+          "domaine": "lieu",
+          "note": "Chemin, voie"
+        }
+      ]
+    },
+    "sac": {
+      "traductions": [
+        {
+          "confluent": "saku",
+          "type": "racine",
+          "forme_liee": "sak",
+          "domaine": "objet",
+          "note": "Nouvelle racine - contenant souple"
+        }
+      ],
+      "synonymes_fr": [
+        "contenant"
+      ]
+    },
+    "sel": {
+      "traductions": [
+        {
+          "confluent": "salu",
+          "type": "racine",
+          "forme_liee": "sal",
+          "domaine": "materiau",
+          "note": "Nouvelle racine - cristal marin"
+        }
+      ]
+    },
+    "mer": {
+      "traductions": [
+        {
+          "confluent": "melu",
+          "type": "racine",
+          "forme_liee": "mel",
+          "domaine": "geographie",
+          "note": "Nouvelle racine - grande eau salée"
+        }
+      ]
+    },
+    "vieux": {
+      "traductions": [
+        {
+          "confluent": "eabme",
+          "type": "racine_sacree",
+          "forme_liee": "eabm",
+          "domaine": "qualificatif",
+          "note": "Même racine que ancêtre"
+        }
+      ],
+      "synonymes_fr": [
+        "âgé",
+        "vieille",
+        "vieilles"
+      ]
+    },
+    "signe": {
+      "traductions": [
+        {
+          "confluent": "sili",
+          "type": "racine",
+          "forme_liee": "sil",
+          "domaine": "communication",
+          "note": "Lié à regard - ce qu'on montre"
+        }
+      ],
+      "synonymes_fr": [
+        "marque"
+      ]
+    },
+    "frapper": {
+      "traductions": [
+        {
+          "confluent": "bopak",
+          "type": "verbe",
+          "racine": "bopu",
+          "forme_liee": "bop",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ]
+    },
+    "sommet": {
+      "traductions": [
+        {
+          "confluent": "tasa",
+          "type": "racine",
+          "forme_liee": "tas",
+          "domaine": "geographie",
+          "note": "Même racine que montagne - point haut"
+        }
+      ]
+    },
+    "tablette": {
+      "traductions": [
+        {
+          "confluent": "tabu",
+          "type": "racine",
+          "forme_liee": "tab",
+          "domaine": "objet",
+          "note": "Nouvelle racine - surface plate pour écrire"
+        }
+      ]
+    },
+    "vallee": {
+      "traductions": [
+        {
+          "confluent": "valu",
+          "type": "racine",
+          "forme_liee": "val",
+          "domaine": "geographie",
+          "note": "Nouvelle racine - creux entre montagnes"
+        }
+      ]
+    },
+    "travail": {
+      "traductions": [
+        {
+          "confluent": "neka",
+          "type": "racine",
+          "forme_liee": "nek",
+          "domaine": "action",
+          "note": "Même racine que faire/créer"
+        }
+      ],
+      "synonymes_fr": [
+        "œuvre"
+      ]
+    },
+    "temps": {
+      "traductions": [
+        {
+          "confluent": "temi",
+          "type": "racine",
+          "forme_liee": "tem",
+          "domaine": "temps",
+          "note": "Nouvelle racine - durée"
+        }
+      ],
+      "synonymes_fr": [
+        "durée"
+      ]
+    },
+    "tribu": {
+      "traductions": [
+        {
+          "confluent": "kota",
+          "type": "racine",
+          "forme_liee": "kot",
+          "domaine": "social",
+          "note": "Même racine que union/confluence"
+        }
+      ]
+    },
+    "tombe": {
+      "traductions": [
+        {
+          "confluent": "osiiutoka",
+          "type": "composition",
+          "composition": "os-i-toka",
+          "sens_litteral": "Mort dans la terre",
+          "racines": [
+            "osi",
+            "toka"
+          ],
+          "domaine": "lieu"
+        }
+      ]
+    },
+    "valeur": {
+      "traductions": [
+        {
+          "confluent": "vbite",
+          "type": "racine",
+          "forme_liee": "vbit",
+          "domaine": "concept_abstrait",
+          "note": "Nouvelle racine - mérite"
+        }
+      ],
+      "synonymes_fr": [
+        "mérite"
+      ]
+    },
+    "guerre": {
+      "traductions": [
+        {
+          "confluent": "uovi",
+          "type": "racine_sacree",
+          "forme_liee": "uov",
+          "domaine": "conflit",
+          "note": "Même racine que épreuve/défi"
+        }
+      ],
+      "synonymes_fr": [
+        "combat"
+      ]
+    },
+    "serpent": {
+      "traductions": [
+        {
+          "confluent": "sepu",
+          "type": "racine",
+          "forme_liee": "sep",
+          "domaine": "animal",
+          "note": "Nouvelle racine - créature rampante"
+        }
+      ]
+    },
+    "secret": {
+      "traductions": [
+        {
+          "confluent": "zoku",
+          "type": "racine",
+          "forme_liee": "zok",
+          "domaine": "communication",
+          "note": "Nouvelle racine - ce qui est caché"
+        }
+      ]
+    },
+    "bas": {
+      "traductions": [
+        {
+          "confluent": "baso",
+          "type": "racine",
+          "forme_liee": "bas",
+          "domaine": "qualificatif",
+          "note": "Bas, inférieur (opposé de haut)"
+        }
+      ],
+      "synonymes_fr": [
+        "basse",
+        "basses"
+      ]
+    },
+    "long": {
+      "traductions": [
+        {
+          "confluent": "lono",
+          "type": "racine",
+          "forme_liee": "lon",
+          "domaine": "qualificatif",
+          "note": "Long, étendu (opposé de court)"
+        }
+      ],
+      "synonymes_fr": [
+        "longue",
+        "longs",
+        "longues"
+      ]
+    },
+    "chaud": {
+      "traductions": [
+        {
+          "confluent": "suka",
+          "type": "racine",
+          "forme_liee": "suk",
+          "domaine": "qualificatif",
+          "note": "Chaud, chaleureux (lié à feu)"
+        }
+      ],
+      "synonymes_fr": [
+        "chaude",
+        "chauds",
+        "chaudes",
+        "chaleur"
+      ]
+    },
+    "froid": {
+      "traductions": [
+        {
+          "confluent": "kiso",
+          "type": "racine",
+          "forme_liee": "kis",
+          "domaine": "qualificatif",
+          "note": "Froid, frais, glacé"
+        }
+      ],
+      "synonymes_fr": [
+        "froide",
+        "froids",
+        "froides",
+        "frais",
+        "fraîche"
+      ]
+    },
+    "mauvais": {
+      "traductions": [
+        {
+          "confluent": "taku",
+          "type": "racine",
+          "forme_liee": "tak",
+          "domaine": "qualificatif",
+          "note": "Mauvais, négatif (opposé de bon)"
+        }
+      ],
+      "synonymes_fr": [
+        "mauvaise",
+        "mauvaises",
+        "mal"
+      ]
+    },
+    "clair": {
+      "traductions": [
+        {
+          "confluent": "sora",
+          "type": "racine",
+          "forme_liee": "sor",
+          "domaine": "qualificatif",
+          "note": "Clair, lumineux (lié à lumière)"
+        }
+      ],
+      "synonymes_fr": [
+        "claire",
+        "clairs",
+        "claires",
+        "lumineux",
+        "lumineuse"
+      ]
+    },
+    "honteux": {
+      "traductions": [
+        {
+          "confluent": "paka",
+          "type": "racine",
+          "forme_liee": "pak",
+          "domaine": "qualificatif",
+          "note": "Honteux, indigne, déshonorant - inspiration basque"
+        }
+      ],
+      "synonymes_fr": [
+        "indigne",
+        "déshonorant",
+        "infâme"
+      ]
+    },
+    "personne": {
+      "traductions": [
+        {
+          "confluent": "toli",
+          "type": "racine",
+          "forme_liee": "tol",
+          "domaine": "social",
+          "note": "Personne, agent, individu - utilisé dans tous les rôles"
+        }
+      ],
+      "synonymes_fr": [
+        "agent",
+        "individu"
+      ]
+    },
+    "nourriture": {
+      "traductions": [
+        {
+          "confluent": "nutu",
+          "type": "racine",
+          "forme_liee": "nut",
+          "domaine": "alimentation",
+          "note": "Nourriture, aliment - racine fondamentale"
+        }
+      ],
+      "synonymes_fr": [
+        "aliment",
+        "manger"
+      ]
+    },
+    "bois_materiau": {
+      "traductions": [
+        {
+          "confluent": "vito",
+          "type": "racine",
+          "forme_liee": "vit",
+          "domaine": "materiau",
+          "note": "Bois (matériau de construction) - distinct de viku (forêt)"
+        }
+      ],
+      "synonymes_fr": [
+        "bois de construction"
+      ]
+    },
+    "garder": {
+      "traductions": [
+        {
+          "confluent": "konu",
+          "type": "racine",
+          "forme_liee": "kon",
+          "domaine": "action",
+          "note": "Garder, protéger, maintenir - racine sécuritaire"
+        }
+      ],
+      "synonymes_fr": [
+        "protéger",
+        "maintenir",
+        "défendre"
+      ]
+    },
+    "duree": {
+      "traductions": [
+        {
+          "confluent": "aika",
+          "type": "racine_sacree",
+          "forme_liee": "aik",
+          "domaine": "temporel",
+          "note": "Temps, durée, époque - du finnois 'aika'"
+        }
+      ],
+      "synonymes_fr": [
+        "temps",
+        "époque",
+        "ère"
+      ]
+    },
+    "souvenir": {
+      "traductions": [
+        {
+          "confluent": "nemu",
+          "type": "racine",
+          "forme_liee": "nem",
+          "domaine": "mental",
+          "note": "Mémoire, souvenir - distinct de memu (mémoire collective)"
+        }
+      ],
+      "synonymes_fr": [
+        "mémoire",
+        "rappel"
+      ]
+    },
+    "demeurer": {
+      "traductions": [
+        {
+          "confluent": "tuli",
+          "type": "racine",
+          "forme_liee": "tul",
+          "domaine": "etat",
+          "note": "Être, rester, demeurer - du finnois 'tulla'"
+        }
+      ],
+      "synonymes_fr": [
+        "rester",
+        "être",
+        "habiter"
+      ]
+    },
+    "ciel": {
+      "traductions": [
+        {
+          "confluent": "zeru",
+          "type": "racine",
+          "forme_liee": "zer",
+          "domaine": "nature",
+          "note": "Ciel, voûte céleste - utilisé dans Ciels-clairs"
+        }
+      ],
+      "synonymes_fr": [
+        "voûte céleste",
+        "firmament"
+      ]
+    },
+    "presage": {
+      "traductions": [
+        {
+          "confluent": "novi",
+          "type": "racine",
+          "forme_liee": "nov",
+          "domaine": "concept",
+          "note": "Présage, signe du futur"
+        }
+      ],
+      "synonymes_fr": [
+        "augure",
+        "signe"
+      ]
+    },
+    "faim": {
+      "traductions": [
+        {
+          "confluent": "muta",
+          "type": "racine",
+          "forme_liee": "mut",
+          "domaine": "besoin",
+          "note": "Faim, manque, besoin de nourriture"
+        }
+      ],
+      "synonymes_fr": [
+        "manque",
+        "privation"
+      ]
+    },
+    "intimite": {
+      "traductions": [
+        {
+          "confluent": "supu",
+          "type": "racine",
+          "forme_liee": "sup",
+          "domaine": "espace",
+          "note": "Intérieur, intimité, espace privé"
+        }
+      ],
+      "synonymes_fr": [
+        "intérieur",
+        "privé"
+      ]
+    },
+    "sale": {
+      "traductions": [
+        {
+          "confluent": "selu",
+          "type": "racine",
+          "forme_liee": "sel",
+          "domaine": "qualificatif",
+          "note": "Salé, eau salée - distinct de salu (sel cristal)"
+        }
+      ],
+      "synonymes_fr": [
+        "salé",
+        "saumâtre"
+      ]
+    },
+    "charge": {
+      "traductions": [
+        {
+          "confluent": "saki",
+          "type": "racine",
+          "forme_liee": "sak",
+          "domaine": "action",
+          "note": "Charge, fardeau, ce qu'on porte"
+        }
+      ],
+      "synonymes_fr": [
+        "fardeau",
+        "cargaison"
+      ]
+    }
+  },
+  "pronoms": {
+    "je": {
+      "traductions": [
+        {
+          "confluent": "miki",
+          "type": "pronom",
+          "forme_liee": "mik",
+          "personne": "1sg",
+          "note": "Première personne singulier, inspiré du finnois 'minä'"
+        }
+      ],
+      "synonymes_fr": [
+        "moi"
+      ]
+    },
+    "tu": {
+      "traductions": [
+        {
+          "confluent": "sinu",
+          "type": "pronom",
+          "forme_liee": "sin",
+          "personne": "2sg",
+          "note": "Deuxième personne singulier, inspiré du finnois 'sinä'"
+        }
+      ],
+      "synonymes_fr": [
+        "toi"
+      ]
+    },
+    "il": {
+      "traductions": [
+        {
+          "confluent": "tani",
+          "type": "pronom",
+          "forme_liee": "tan",
+          "personne": "3sg",
+          "note": "Troisième personne singulier neutre (il/elle/iel)"
+        }
+      ],
+      "synonymes_fr": [
+        "elle",
+        "iel"
+      ]
+    },
+    "nous": {
+      "traductions": [
+        {
+          "confluent": "mikisu",
+          "type": "pronom",
+          "composition": "miki-su",
+          "racines": [
+            "miki",
+            "su"
+          ],
+          "personne": "1pl",
+          "note": "Première personne pluriel - miki (je) + su (pluriel)"
+        }
+      ]
+    },
+    "vous": {
+      "traductions": [
+        {
+          "confluent": "sinusu",
+          "type": "pronom",
+          "composition": "sinu-su",
+          "racines": [
+            "sinu",
+            "su"
+          ],
+          "personne": "2pl",
+          "note": "Deuxième personne pluriel - sinu (tu) + su (pluriel)"
+        }
+      ]
+    },
+    "ils": {
+      "traductions": [
+        {
+          "confluent": "tanisu",
+          "type": "pronom",
+          "composition": "tani-su",
+          "racines": [
+            "tani",
+            "su"
+          ],
+          "personne": "3pl",
+          "note": "Troisième personne pluriel - tani (il/elle) + su (pluriel)"
+        }
+      ],
+      "synonymes_fr": [
+        "elles"
+      ]
+    }
+  }
+}

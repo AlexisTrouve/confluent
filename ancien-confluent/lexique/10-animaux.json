@@ -1,0 +1,225 @@
+{
+  "_comment": "Animaux et créatures",
+  "_mots_a_gerer": [],
+  "dictionnaire": {
+    "grue": {
+      "traductions": [
+        {
+          "confluent": "iena",
+          "type": "racine_sacree",
+          "forme_liee": "ien",
+          "domaine": "animal_sacre",
+          "note": "Animal sacré central dans la culture"
+        }
+      ],
+      "synonymes_fr": [
+        "grues"
+      ]
+    },
+    "Regards-Libres": {
+      "traductions": [
+        {
+          "confluent": "aluaska",
+          "type": "composition",
+          "composition": "al-u-aska",
+          "sens_litteral": "Grue de liberté",
+          "racines": [
+            "alu",
+            "aska"
+          ],
+          "categorie": "animal_sacre",
+          "note": "Grues domestiquées, messagers sacrés"
+        }
+      ]
+    },
+    "grue cendree": {
+      "traductions": [
+        {
+          "confluent": "alusenu",
+          "type": "composition",
+          "composition": "al-u-senu",
+          "sens_litteral": "Grue de cendre",
+          "racines": [
+            "alu",
+            "senu"
+          ],
+          "categorie": "animal"
+        }
+      ]
+    },
+    "faucon": {
+      "traductions": [
+        {
+          "confluent": "euto",
+          "type": "racine_sacree",
+          "forme_liee": "eut",
+          "domaine": "animal_sacre",
+          "note": "Oiseau de proie sacré"
+        }
+      ]
+    },
+    "bete": {
+      "traductions": [
+        {
+          "confluent": "betu",
+          "type": "racine",
+          "forme_liee": "bet",
+          "domaine": "animal",
+          "note": "Animal générique"
+        }
+      ],
+      "synonymes_fr": [
+        "animal"
+      ]
+    },
+    "bete sacree": {
+      "traductions": [
+        {
+          "confluent": "asaubetu",
+          "type": "composition",
+          "composition": "as-a-betu",
+          "sens_litteral": "Sacré avec bête",
+          "racines": [
+            "asa",
+            "betu"
+          ],
+          "categorie": "animal_sacre"
+        }
+      ]
+    },
+    "gibier": {
+      "traductions": [
+        {
+          "confluent": "zanubetu",
+          "type": "composition",
+          "composition": "zan-u-betu",
+          "sens_litteral": "Bête de chasse",
+          "racines": [
+            "zana",
+            "betu"
+          ],
+          "domaine": "animal"
+        }
+      ]
+    },
+    "poisson": {
+      "traductions": [
+        {
+          "confluent": "mzoti",
+          "type": "racine",
+          "forme_liee": "mzot",
+          "domaine": "animal",
+          "note": "Créature de l'eau"
+        }
+      ]
+    },
+    "poisson de riviere": {
+      "traductions": [
+        {
+          "confluent": "pisunula",
+          "type": "composition",
+          "composition": "pis-u-nula",
+          "sens_litteral": "Poisson de rivière",
+          "racines": [
+            "pisu",
+            "nula"
+          ],
+          "domaine": "animal"
+        }
+      ]
+    },
+    "serpent": {
+      "traductions": [
+        {
+          "confluent": "btite",
+          "type": "racine",
+          "forme_liee": "btit",
+          "domaine": "animal",
+          "note": "Créature rampante"
+        }
+      ]
+    },
+    "serpent d'eau": {
+      "traductions": [
+        {
+          "confluent": "sepuula",
+          "type": "composition",
+          "composition": "sep-u-ula",
+          "sens_litteral": "Serpent de l'eau",
+          "racines": [
+            "sepu",
+            "ura"
+          ],
+          "domaine": "animal"
+        }
+      ]
+    },
+    "oiseau": {
+      "traductions": [
+        {
+          "confluent": "ioze",
+          "type": "racine_sacree",
+          "forme_liee": "ioz",
+          "domaine": "animal",
+          "note": "Créature ailée"
+        }
+      ]
+    },
+    "oiseau de proie": {
+      "traductions": [
+        {
+          "confluent": "aviuzana",
+          "type": "composition",
+          "composition": "ap-i-zana",
+          "sens_litteral": "Oiseau de chasse",
+          "racines": [
+            "apo",
+            "zana"
+          ],
+          "domaine": "animal"
+        }
+      ]
+    },
+    "creature inconnue": {
+      "traductions": [
+        {
+          "confluent": "zomila",
+          "type": "composition",
+          "composition": "zo-mila",
+          "sens_litteral": "Sans vue",
+          "racines": [
+            "zo",
+            "mila"
+          ],
+          "domaine": "animal",
+          "note": "Créature jamais observée"
+        }
+      ]
+    },
+    "loup": {
+      "traductions": [
+        {
+          "confluent": "ltute",
+          "type": "racine",
+          "forme_liee": "ltut",
+          "domaine": "animal",
+          "note": "Prédateur sauvage"
+        }
+      ]
+    },
+    "meute": {
+      "traductions": [
+        {
+          "confluent": "lokusu",
+          "type": "composition",
+          "composition": "loku + su",
+          "sens_litteral": "Loups (pluriel)",
+          "racines": [
+            "loku"
+          ],
+          "domaine": "animal"
+        }
+      ]
+    }
+  }
+}

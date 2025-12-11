@@ -1,0 +1,173 @@
+ConfluentTranslator/
+│
+├── testsAPI/                    [NOUVEAU DOSSIER]
+│   │
+│   ├── 📄 Scripts de test (.bat)
+│   │   ├── test-health.bat                 (598 bytes)   1 test   ~2s
+│   │   ├── test-unauthorized.bat           (2.7 KB)      13 tests ~10s
+│   │   ├── test-authorized.bat             (3.4 KB)      8 tests  ~8s
+│   │   └── test-all.bat                    (1.8 KB)      22 tests ~20s
+│   │
+│   ├── 🔧 Scripts utilitaires (.bat)
+│   │   ├── quick-check.bat                 (2.3 KB)      4 checks
+│   │   └── get-token.bat                   (1.3 KB)      Extract token
+│   │
+│   └── 📚 Documentation (.md)
+│       ├── README.md                       (8.2 KB)      Doc complète
+│       ├── QUICKSTART.md                   (1.9 KB)      Guide 2min
+│       ├── INDEX.md                        (5.3 KB)      Navigation
+│       └── STRUCTURE.txt                   (Ce fichier)
+│
+├── 📄 Documentation principale
+│   ├── README_SECURITY.md                  Guide sécurité principal
+│   ├── SECURITY_TEST.md                    Tests manuels détaillés
+│   ├── CHANGELOG_SECURITY.md               Historique modifications
+│   ├── COMMIT_SUMMARY.md                   Résumé technique
+│   └── TESTS_SUMMARY.md                    Résumé des tests
+│
+├── 🔧 Scripts shell (Linux/Mac)
+│   └── test-security.sh                    Tests Bash (12 tests)
+│
+└── 📁 Code source modifié
+    ├── server.js                           [MODIFIÉ] 15 endpoints sécurisés
+    └── public/index.html                   [MODIFIÉ] authFetch() partout
+
+
+═══════════════════════════════════════════════════════════════════════
+
+STATISTIQUES
+═══════════════════════════════════════════════════════════════════════
+
+Scripts de test (Windows)
+  • 6 fichiers .bat
+  • ~400 lignes de code
+  • 22 tests automatisés
+  • 100% couverture endpoints
+
+Documentation
+  • 9 fichiers .md
+  • ~650 lignes de texte
+  • 3 niveaux (Quick, Standard, Complet)
+  • ~25 KB total
+
+Total testsAPI/
+  • 9 fichiers
+  • 1075 lignes
+  • ~48 KB sur disque
+
+═══════════════════════════════════════════════════════════════════════
+
+WORKFLOW RECOMMANDÉ
+═══════════════════════════════════════════════════════════════════════
+
+1. cd ConfluentTranslator\testsAPI
+2. quick-check.bat              → Vérifier prérequis
+3. get-token.bat                → Récupérer token admin
+4. notepad test-authorized.bat  → Configurer token
+5. test-all.bat                 → Lancer tous les tests
+
+═══════════════════════════════════════════════════════════════════════
+
+RÉSULTATS ATTENDUS
+═══════════════════════════════════════════════════════════════════════
+
+Test 1: Health check
+  ✅ 1/1 endpoint accessible (200)
+
+Test 2: Sans authentification
+  ✅ 13/13 endpoints protégés (401)
+
+Test 3: Avec authentification
+  ✅ 8/8 endpoints accessibles (200)
+
+TOTAL: 22/22 tests passés ✅
+🔒 Système correctement sécurisé
+
+═══════════════════════════════════════════════════════════════════════
+
+FICHIERS PAR TYPE
+═══════════════════════════════════════════════════════════════════════
+
+Tests principaux (.bat)
+  • test-health.bat         → Endpoint public
+  • test-unauthorized.bat   → Sécurité sans auth
+  • test-authorized.bat     → Accès avec auth
+  • test-all.bat            → Tous les tests
+
+Utilitaires (.bat)
+  • quick-check.bat         → Vérification rapide
+  • get-token.bat           → Extraction token
+
+Documentation (.md)
+  • README.md               → Doc complète (8KB)
+  • QUICKSTART.md           → Guide 2min
+  • INDEX.md                → Navigation
+
+═══════════════════════════════════════════════════════════════════════
+
+ENDPOINTS TESTÉS (22)
+═══════════════════════════════════════════════════════════════════════
+
+Public (1)
+  ✅ GET  /api/health
+
+Protégés GET (6)
+  ✅ GET  /api/stats
+  ✅ GET  /api/lexique/ancien
+  ✅ GET  /api/lexique/proto
+  ✅ GET  /api/search
+  ✅ GET  /api/validate
+  ✅ GET  /lexique
+
+Protégés POST (8)
+  ✅ POST /translate
+  ✅ POST /api/reload
+  ✅ POST /api/debug/prompt
+  ✅ POST /api/analyze/coverage
+  ✅ POST /api/translate/raw
+  ✅ POST /api/translate/batch
+  ✅ POST /api/translate/conf2fr
+  ✅ POST /api/translate/conf2fr/llm
+
+═══════════════════════════════════════════════════════════════════════
+
+PRÉREQUIS
+═══════════════════════════════════════════════════════════════════════
+
+Système
+  • Windows 10+ (curl préinstallé)
+  • PowerShell (pour get-token.bat)
+  • Port 3000 disponible
+
+Serveur
+  • ConfluentTranslator démarré (npm start)
+  • Token admin créé (auto premier démarrage)
+  • Lexiques chargés
+
+Configuration
+  • Token copié dans test-authorized.bat
+  • Variable TOKEN=votre-token
+
+═══════════════════════════════════════════════════════════════════════
+
+COMMANDES RAPIDES
+═══════════════════════════════════════════════════════════════════════
+
+Vérifier tout
+  → quick-check.bat
+
+Extraire token
+  → get-token.bat
+
+Test complet
+  → test-all.bat
+
+Test individuel
+  → test-health.bat
+  → test-unauthorized.bat
+  → test-authorized.bat
+
+═══════════════════════════════════════════════════════════════════════
+
+Made with ❤️ for ConfluentTranslator
+Full Lockdown Security Testing Suite v1.0

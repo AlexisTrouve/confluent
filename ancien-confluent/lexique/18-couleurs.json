@@ -1,0 +1,322 @@
+{
+  "_comment": "Couleurs et qualités visuelles",
+  "_mots_a_gerer": [],
+  "dictionnaire": {
+    "rouge": {
+      "traductions": [
+        {
+          "confluent": "zkaba",
+          "type": "racine",
+          "forme_liee": "zkab",
+          "domaine": "couleur",
+          "note": "Couleur importante (yeux des Ciels-clairs)"
+        }
+      ]
+    },
+    "orange": {
+      "traductions": [
+        {
+          "confluent": "sukiusola",
+          "type": "composition",
+          "composition": "suk-i-sola",
+          "sens_litteral": "Feu de lumière",
+          "racines": [
+            "suki",
+            "sora"
+          ],
+          "domaine": "couleur"
+        }
+      ]
+    },
+    "violet": {
+      "traductions": [
+        {
+          "confluent": "zeluulasu",
+          "type": "composition",
+          "composition": "zel-u-pasu",
+          "sens_litteral": "Ciel de sang",
+          "racines": [
+            "zelu",
+            "pasu"
+          ],
+          "domaine": "couleur"
+        }
+      ],
+      "synonymes_fr": [
+        "pourpre"
+      ]
+    },
+    "rose": {
+      "traductions": [
+        {
+          "confluent": "lasuumilu",
+          "type": "composition",
+          "composition": "pas-u-milu",
+          "sens_litteral": "Rouge de lait",
+          "racines": [
+            "pasu",
+            "milu"
+          ],
+          "domaine": "couleur"
+        }
+      ]
+    },
+    "blanc": {
+      "traductions": [
+        {
+          "confluent": "tbibu",
+          "type": "racine",
+          "forme_liee": "tbib",
+          "domaine": "couleur",
+          "note": "Couleur du lait"
+        }
+      ]
+    },
+    "gris": {
+      "traductions": [
+        {
+          "confluent": "msobe",
+          "type": "racine",
+          "forme_liee": "msob",
+          "domaine": "couleur",
+          "note": "Couleur de la cendre"
+        }
+      ],
+      "synonymes_fr": [
+        "gris",
+        "grise",
+        "grises"
+      ]
+    },
+    "noir": {
+      "traductions": [
+        {
+          "confluent": "bkipe",
+          "type": "racine",
+          "forme_liee": "bkip",
+          "domaine": "couleur",
+          "note": "Couleur de l'ombre"
+        }
+      ]
+    },
+    "vert": {
+      "traductions": [
+        {
+          "confluent": "nsime",
+          "type": "racine",
+          "forme_liee": "nsim",
+          "domaine": "couleur",
+          "note": "Couleur de la forêt"
+        }
+      ]
+    },
+    "bleu": {
+      "traductions": [
+        {
+          "confluent": "spati",
+          "type": "racine",
+          "forme_liee": "spat",
+          "domaine": "couleur",
+          "note": "Couleur du ciel"
+        }
+      ]
+    },
+    "azur": {
+      "traductions": [
+        {
+          "confluent": "ssebi",
+          "type": "racine",
+          "forme_liee": "sseb",
+          "domaine": "couleur"
+        }
+      ]
+    },
+    "bleu d'eau": {
+      "traductions": [
+        {
+          "confluent": "zeluuula",
+          "type": "composition",
+          "composition": "zel-u-ula",
+          "sens_litteral": "Ciel de l'eau",
+          "racines": [
+            "zelu",
+            "ura"
+          ],
+          "domaine": "couleur"
+        }
+      ]
+    },
+    "ocre": {
+      "traductions": [
+        {
+          "confluent": "tokausola",
+          "type": "composition",
+          "composition": "tok-a-sola",
+          "sens_litteral": "Terre avec soleil",
+          "racines": [
+            "toka",
+            "sora"
+          ],
+          "domaine": "couleur"
+        }
+      ]
+    },
+    "pale": {
+      "traductions": [
+        {
+          "confluent": "miluukolu",
+          "type": "composition",
+          "composition": "mil-u-kolu",
+          "sens_litteral": "Lait de couleur",
+          "racines": [
+            "milu",
+            "kolu"
+          ],
+          "domaine": "qualificatif"
+        }
+      ],
+      "synonymes_fr": [
+        "pales"
+      ]
+    },
+    "yeux de l'aurore": {
+      "traductions": [
+        {
+          "confluent": "vlibupve",
+          "type": "composition",
+          "composition": "sil-u-ola",
+          "sens_litteral": "Regard de l'aurore",
+          "racines": [
+            "sili",
+            "ora"
+          ],
+          "domaine": "corps_sacre",
+          "note": "Yeux des Ciels-clairs aux couleurs de l'aurore"
+        }
+      ]
+    },
+    "eclat": {
+      "traductions": [
+        {
+          "confluent": "solaumako",
+          "type": "composition",
+          "composition": "sol-a-mako",
+          "sens_litteral": "Lumière avec grandeur",
+          "racines": [
+            "sora",
+            "mako"
+          ],
+          "domaine": "qualificatif"
+        }
+      ],
+      "synonymes_fr": [
+        "eclate",
+        "eclats",
+        "eclates"
+      ]
+    },
+    "translucide": {
+      "traductions": [
+        {
+          "confluent": "solauula",
+          "type": "composition",
+          "composition": "sol-a-ula",
+          "sens_litteral": "Lumière avec eau",
+          "racines": [
+            "sora",
+            "ura"
+          ],
+          "domaine": "qualificatif"
+        }
+      ],
+      "synonymes_fr": [
+        "translucides"
+      ]
+    },
+    "lumineux": {
+      "traductions": [
+        {
+          "confluent": "kvana",
+          "type": "racine",
+          "forme_liee": "kvan",
+          "domaine": "qualificatif"
+        }
+      ],
+      "synonymes_fr": [
+        "lumineuse",
+        "lumineuses"
+      ]
+    },
+    "sombre": {
+      "traductions": [
+        {
+          "confluent": "zpasi",
+          "type": "racine",
+          "forme_liee": "zpas",
+          "domaine": "qualificatif"
+        }
+      ],
+      "synonymes_fr": [
+        "sombres"
+      ]
+    },
+    "patine": {
+      "traductions": [
+        {
+          "confluent": "kmanilimbi",
+          "type": "composition",
+          "composition": "kol-u-aita",
+          "sens_litteral": "Couleur des ancêtres",
+          "racines": [
+            "kolu",
+            "aita"
+          ],
+          "domaine": "qualificatif"
+        }
+      ],
+      "synonymes_fr": [
+        "patines"
+      ]
+    },
+    "gravure": {
+      "traductions": [
+        {
+          "confluent": "lmoso",
+          "type": "racine",
+          "forme_liee": "lmos",
+          "domaine": "art"
+        }
+      ]
+    },
+    "bas-relief": {
+      "traductions": [
+        {
+          "confluent": "kovaukali",
+          "type": "composition",
+          "composition": "kov-a-kali",
+          "sens_litteral": "Gravure avec pierre",
+          "racines": [
+            "kova",
+            "kali"
+          ],
+          "domaine": "art"
+        }
+      ]
+    },
+    "motif": {
+      "traductions": [
+        {
+          "confluent": "kovauliku",
+          "type": "composition",
+          "composition": "kov-a-siku",
+          "sens_litteral": "Gravure avec cercle",
+          "racines": [
+            "kova",
+            "siku"
+          ],
+          "domaine": "art"
+        }
+      ]
+    }
+  }
+}

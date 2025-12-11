@@ -1,0 +1,656 @@
+{
+  "_comment": "Particules grammaticales, marqueurs temporels, négations, etc.",
+  "_source": "Grammaire de l'Ancien Confluent",
+  "dictionnaire": {
+    "va": {
+      "mot_francais": "[SUJET]",
+      "traductions": [
+        {
+          "confluent": "va",
+          "type": "particule",
+          "categorie": "cas",
+          "note": "Marque le sujet de la phrase"
+        }
+      ]
+    },
+    "vo": {
+      "mot_francais": "[OBJET]",
+      "traductions": [
+        {
+          "confluent": "vo",
+          "type": "particule",
+          "categorie": "cas",
+          "note": "Marque l'objet direct"
+        }
+      ]
+    },
+    "no": {
+      "mot_francais": "[DANS/LIEU]",
+      "traductions": [
+        {
+          "confluent": "no",
+          "type": "particule",
+          "categorie": "cas",
+          "note": "Localisation spatiale"
+        }
+      ],
+      "synonymes_fr": [
+        "dans",
+        "sur",
+        "sous"
+      ]
+    },
+    "na": {
+      "mot_francais": "[DE/GÉNITIF]",
+      "traductions": [
+        {
+          "confluent": "na",
+          "type": "particule",
+          "categorie": "cas",
+          "note": "Possession, origine, appartenance"
+        }
+      ]
+    },
+    "se": {
+      "mot_francais": "[POUR/BUT]",
+      "traductions": [
+        {
+          "confluent": "se",
+          "type": "particule",
+          "categorie": "cas",
+          "note": "But, bénéficiaire"
+        }
+      ],
+      "synonymes_fr": [
+        "pour",
+        "contre"
+      ]
+    },
+    "lo": {
+      "mot_francais": "[MAIS/ET]",
+      "traductions": [
+        {
+          "confluent": "lo",
+          "type": "particule",
+          "categorie": "coordination",
+          "note": "Opposition ou coordination selon contexte"
+        }
+      ],
+      "synonymes_fr": [
+        "et",
+        "mais"
+      ]
+    },
+    "vi": {
+      "mot_francais": "[AVEC/INSTRUMENT]",
+      "traductions": [
+        {
+          "confluent": "vi",
+          "type": "particule",
+          "categorie": "cas",
+          "note": "Instrument, accompagnement"
+        }
+      ],
+      "synonymes_fr": [
+        "avec"
+      ]
+    },
+    "ve": {
+      "mot_francais": "[ORIGINE]",
+      "traductions": [
+        {
+          "confluent": "ve",
+          "type": "particule",
+          "categorie": "cas",
+          "note": "Origine, source (depuis)"
+        }
+      ]
+    },
+    "at": {
+      "mot_francais": "[PASSÉ-VÉCU]",
+      "traductions": [
+        {
+          "confluent": "at",
+          "type": "marqueur_temps",
+          "categorie": "temps",
+          "note": "Passé récent ou vécu directement"
+        }
+      ],
+      "synonymes_fr": [
+        "pendant"
+      ]
+    },
+    "u": {
+      "mot_francais": "[PRÉSENT]",
+      "traductions": [
+        {
+          "confluent": "u",
+          "type": "marqueur_temps",
+          "categorie": "temps",
+          "note": "Présent ou vérité générale"
+        }
+      ]
+    },
+    "ok": {
+      "mot_francais": "[FUTUR/VOLONTÉ]",
+      "traductions": [
+        {
+          "confluent": "ok",
+          "type": "marqueur_temps",
+          "categorie": "temps",
+          "note": "Futur ou intention volontaire"
+        }
+      ]
+    },
+    "en": {
+      "mot_francais": "[IMPÉRATIF]",
+      "traductions": [
+        {
+          "confluent": "en",
+          "type": "marqueur_temps",
+          "categorie": "mode",
+          "note": "Ordre ou demande"
+        }
+      ]
+    },
+    "ui": {
+      "mot_francais": "[INFINITIF]",
+      "traductions": [
+        {
+          "confluent": "ui",
+          "type": "marqueur_temps",
+          "categorie": "mode",
+          "note": "Forme infinitive du verbe"
+        }
+      ]
+    },
+    "ul": {
+      "mot_francais": "[NÉG-POUVOIR]",
+      "traductions": [
+        {
+          "confluent": "ul",
+          "type": "marqueur_temps",
+          "categorie": "modalité",
+          "note": "Impossibilité, négation de capacité"
+        }
+      ]
+    },
+    "aan": {
+      "mot_francais": "[PASSÉ-REGRETTÉ]",
+      "traductions": [
+        {
+          "confluent": "aan",
+          "type": "marqueur_temps",
+          "categorie": "temps",
+          "note": "Passé avec regret ou nostalgie"
+        }
+      ]
+    },
+    "eol": {
+      "mot_francais": "[HABITUEL]",
+      "traductions": [
+        {
+          "confluent": "eol",
+          "type": "marqueur_aspect",
+          "categorie": "aspect",
+          "note": "Aspect habituel (fait régulièrement)"
+        }
+      ]
+    },
+    "zo": {
+      "mot_francais": "[NÉG]",
+      "traductions": [
+        {
+          "confluent": "zo",
+          "type": "negation",
+          "categorie": "négation",
+          "note": "Négation générale"
+        }
+      ],
+      "synonymes_fr": [
+        "sans"
+      ]
+    },
+    "zom": {
+      "mot_francais": "[JAMAIS]",
+      "traductions": [
+        {
+          "confluent": "zom",
+          "type": "negation",
+          "categorie": "négation",
+          "note": "Négation temporelle absolue (jamais)"
+        }
+      ]
+    },
+    "su": {
+      "mot_francais": "[PLURIEL]",
+      "traductions": [
+        {
+          "confluent": "su",
+          "type": "marqueur_nombre",
+          "categorie": "quantité",
+          "note": "Marque le pluriel"
+        }
+      ]
+    },
+    "ku": {
+      "mot_francais": "[QUESTION]",
+      "traductions": [
+        {
+          "confluent": "ku",
+          "type": "interrogation",
+          "categorie": "question",
+          "note": "Marque l'interrogation"
+        }
+      ]
+    },
+    "riku": {
+      "mot_francais": "[POURQUOI]",
+      "traductions": [
+        {
+          "confluent": "riku",
+          "type": "interrogation",
+          "categorie": "question",
+          "note": "Question causale (pourquoi)"
+        }
+      ]
+    },
+    "siku": {
+      "mot_francais": "[COMMENT]",
+      "traductions": [
+        {
+          "confluent": "siku",
+          "type": "interrogation",
+          "categorie": "question",
+          "note": "Question de manière (comment)"
+        }
+      ]
+    },
+    "tiku": {
+      "mot_francais": "[QUAND]",
+      "traductions": [
+        {
+          "confluent": "tiku",
+          "type": "interrogation",
+          "categorie": "question",
+          "note": "Question temporelle (quand)"
+        }
+      ]
+    },
+    "viku": {
+      "mot_francais": "[OÙ]",
+      "traductions": [
+        {
+          "confluent": "psopo",
+          "type": "interrogation",
+          "categorie": "question",
+          "note": "Question spatiale (où)"
+        }
+      ]
+    },
+    "tova": {
+      "mot_francais": "ceci/cela",
+      "traductions": [
+        {
+          "confluent": "tova",
+          "type": "demonstratif",
+          "categorie": "démonstratif",
+          "note": "Démonstratif neutre"
+        }
+      ],
+      "synonymes_fr": [
+        "ceci",
+        "cela",
+        "ça",
+        "ce"
+      ]
+    },
+    "tovak": {
+      "mot_francais": "faire-cela",
+      "traductions": [
+        {
+          "confluent": "tovak",
+          "type": "verbe",
+          "categorie": "action",
+          "note": "Faire cela, agir ainsi (tova + faire)"
+        }
+      ],
+      "synonymes_fr": [
+        "agir",
+        "faire",
+        "accomplir"
+      ]
+    },
+    "taki": {
+      "mot_francais": "celui-ci/celui-là",
+      "traductions": [
+        {
+          "confluent": "kanu",
+          "type": "demonstratif",
+          "categorie": "démonstratif",
+          "note": "Démonstratif pour personnes"
+        }
+      ]
+    },
+    "dessus": {
+      "traductions": [
+        {
+          "confluent": "ze",
+          "type": "particule",
+          "domaine": "spatial",
+          "note": "Au-dessus, en haut"
+        }
+      ],
+      "synonymes_fr": [
+        "au-dessus",
+        "au dessus"
+      ]
+    },
+    "tous": {
+      "traductions": [
+        {
+          "confluent": "susu",
+          "type": "quantificateur",
+          "domaine": "quantite",
+          "note": "Tous, toutes, ensemble"
+        }
+      ],
+      "synonymes_fr": [
+        "toutes",
+        "tout",
+        "toute"
+      ]
+    },
+    "qui": {
+      "traductions": [
+        {
+          "confluent": "ki",
+          "type": "relatif",
+          "categorie": "pronom",
+          "note": "Pronom relatif (qui, que)"
+        }
+      ],
+      "synonymes_fr": [
+        "que",
+        "dont"
+      ]
+    },
+    "leurs": {
+      "traductions": [
+        {
+          "confluent": "nasu",
+          "type": "possessif",
+          "categorie": "pronom",
+          "note": "Possessif 3ème personne pluriel"
+        }
+      ],
+      "synonymes_fr": [
+        "leur"
+      ]
+    },
+    "ces": {
+      "traductions": [
+        {
+          "confluent": "tovasu",
+          "type": "demonstratif",
+          "categorie": "determinant",
+          "note": "Démonstratif pluriel (ces, ceux-ci)"
+        }
+      ],
+      "synonymes_fr": [
+        "ceux",
+        "celles"
+      ]
+    },
+    "chaque": {
+      "traductions": [
+        {
+          "confluent": "oubo",
+          "type": "quantificateur",
+          "categorie": "determinant",
+          "note": "Chaque, chacun (distributif)"
+        }
+      ],
+      "synonymes_fr": [
+        "chacun",
+        "chacune"
+      ]
+    },
+    "depuis": {
+      "traductions": [
+        {
+          "confluent": "mle",
+          "type": "particule",
+          "categorie": "temps",
+          "note": "Depuis (origine temporelle) - utilise particule ve (origine)"
+        }
+      ]
+    },
+    "sa": {
+      "traductions": [
+        {
+          "confluent": "tla",
+          "type": "particule",
+          "categorie": "possession",
+          "note": "Possessif (réutilise particule génitif na)"
+        }
+      ],
+      "synonymes_fr": [
+        "son",
+        "ses",
+        "mon",
+        "ma",
+        "mes",
+        "ton",
+        "ta",
+        "tes",
+        "notre",
+        "nos",
+        "votre",
+        "vos",
+        "leur",
+        "leurs"
+      ]
+    },
+    "ce": {
+      "traductions": [
+        {
+          "confluent": "ko",
+          "type": "determinant",
+          "categorie": "demonstratif",
+          "note": "Démonstratif (radical ko-)"
+        }
+      ],
+      "synonymes_fr": [
+        "cet",
+        "cette",
+        "ces"
+      ]
+    },
+    "avant": {
+      "traductions": [
+        {
+          "confluent": "isu",
+          "type": "particule",
+          "categorie": "temps",
+          "note": "Avant/passé (réutilise marqueur passé at)"
+        }
+      ],
+      "synonymes_fr": [
+        "hier",
+        "auparavant"
+      ]
+    },
+    "apres": {
+      "traductions": [
+        {
+          "confluent": "alo",
+          "type": "particule",
+          "categorie": "temps",
+          "note": "Après/futur (réutilise marqueur futur ok)"
+        }
+      ],
+      "synonymes_fr": [
+        "après",
+        "demain",
+        "ensuite"
+      ]
+    },
+    "autour": {
+      "traductions": [
+        {
+          "confluent": "mla",
+          "type": "particule",
+          "categorie": "lieu",
+          "note": "Autour/spatial (réutilise particule locative no)"
+        }
+      ],
+      "synonymes_fr": [
+        "près",
+        "proche",
+        "alentour"
+      ]
+    },
+    "tandis": {
+      "traductions": [
+        {
+          "confluent": "ta",
+          "type": "particule",
+          "categorie": "temporel",
+          "note": "Tandis que, pendant que - conjonction temporelle de simultanéité"
+        }
+      ],
+      "synonymes_fr": [
+        "tandis que",
+        "pendant",
+        "pendant que",
+        "alors que"
+      ]
+    },
+    "ai": {
+      "mot_francais": "avoir (1sg présent)",
+      "traductions": [
+        {
+          "confluent": "iku",
+          "type": "auxiliaire",
+          "categorie": "verbe",
+          "note": "J'ai - auxiliaire avoir 1ère personne singulier présent"
+        }
+      ],
+      "synonymes_fr": [
+        "j'ai"
+      ]
+    },
+    "as": {
+      "mot_francais": "avoir (2sg présent)",
+      "traductions": [
+        {
+          "confluent": "euma",
+          "type": "auxiliaire",
+          "categorie": "verbe",
+          "note": "Tu as - auxiliaire avoir 2ème personne singulier"
+        }
+      ],
+      "synonymes_fr": [
+        "tu as"
+      ]
+    },
+    "a": {
+      "mot_francais": "avoir (3sg présent)",
+      "traductions": [
+        {
+          "confluent": "oape",
+          "type": "auxiliaire",
+          "categorie": "verbe",
+          "note": "Il/elle a - auxiliaire avoir 3ème personne singulier"
+        }
+      ],
+      "synonymes_fr": [
+        "il a",
+        "elle a",
+        "on a"
+      ]
+    },
+    "avons": {
+      "mot_francais": "avoir (1pl présent)",
+      "traductions": [
+        {
+          "confluent": "uila",
+          "type": "auxiliaire",
+          "categorie": "verbe",
+          "note": "Nous avons - auxiliaire avoir 1ère personne pluriel"
+        }
+      ],
+      "synonymes_fr": [
+        "nous avons"
+      ]
+    },
+    "avez": {
+      "mot_francais": "avoir (2pl présent)",
+      "traductions": [
+        {
+          "confluent": "aila",
+          "type": "auxiliaire",
+          "categorie": "verbe",
+          "note": "Vous avez - auxiliaire avoir 2ème personne pluriel"
+        }
+      ],
+      "synonymes_fr": [
+        "vous avez"
+      ]
+    },
+    "ont": {
+      "mot_francais": "avoir (3pl présent)",
+      "traductions": [
+        {
+          "confluent": "oolu",
+          "type": "auxiliaire",
+          "categorie": "verbe",
+          "note": "Ils/elles ont - auxiliaire avoir 3ème personne pluriel"
+        }
+      ],
+      "synonymes_fr": [
+        "ils ont",
+        "elles ont"
+      ]
+    },
+    "avais": {
+      "mot_francais": "avoir (imparfait)",
+      "traductions": [
+        {
+          "confluent": "ikuat",
+          "type": "auxiliaire",
+          "categorie": "verbe",
+          "note": "Avais - auxiliaire avoir imparfait (iku + marqueur passé at)"
+        }
+      ],
+      "synonymes_fr": [
+        "j'avais",
+        "tu avais",
+        "il avait",
+        "nous avions",
+        "vous aviez",
+        "ils avaient"
+      ]
+    },
+    "aurai": {
+      "mot_francais": "avoir (futur)",
+      "traductions": [
+        {
+          "confluent": "ikuok",
+          "type": "auxiliaire",
+          "categorie": "verbe",
+          "note": "Aurai - auxiliaire avoir futur (iku + marqueur futur ok)"
+        }
+      ],
+      "synonymes_fr": [
+        "j'aurai",
+        "tu auras",
+        "il aura",
+        "nous aurons",
+        "vous aurez",
+        "ils auront"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1186 @@
+{
+  "_comment": "Verbes et actions (forme racine + forme verbale CVCVC)",
+  "_mots_a_gerer": [],
+  "dictionnaire": {
+    "voir": {
+      "racine_fr": "voi",
+      "traductions": [
+        {
+          "confluent": "milak",
+          "type": "verbe",
+          "racine": "mila",
+          "forme_liee": "mil",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Verbe fondamental lié à l'observation"
+        }
+      ],
+      "synonymes_fr": [
+        "observer",
+        "regarder",
+        "regarde",
+        "regardes",
+        "regardons",
+        "regardez",
+        "regardent",
+        "regardais",
+        "regardait",
+        "regardions",
+        "regardiez",
+        "regardaient",
+        "regardant",
+        "regardé",
+        "vois",
+        "voit",
+        "voyons",
+        "voyez",
+        "voient",
+        "voyais",
+        "voyait",
+        "voyions",
+        "voyiez",
+        "voyaient",
+        "voyant",
+        "vu",
+        "vus",
+        "vue",
+        "vues"
+      ]
+    },
+    "aller": {
+      "racine_fr": null,
+      "traductions": [
+        {
+          "confluent": "tekis",
+          "type": "verbe",
+          "racine": "teki",
+          "forme_liee": "tek",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Mouvement, chemin"
+        }
+      ],
+      "synonymes_fr": [
+        "va",
+        "vas",
+        "vais",
+        "vont",
+        "allons",
+        "allez",
+        "allais",
+        "allait",
+        "allions",
+        "alliez",
+        "allaient",
+        "allant",
+        "allé",
+        "irai",
+        "iras",
+        "ira",
+        "irons",
+        "irez",
+        "iront",
+        "aille",
+        "ailles",
+        "aillent",
+        "aillions",
+        "ailliez"
+      ]
+    },
+    "marcher": {
+      "racine_fr": "march",
+      "traductions": [
+        {
+          "confluent": "tekam",
+          "type": "verbe",
+          "racine": "teka",
+          "forme_liee": "tek",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Marcher, se déplacer à pied"
+        }
+      ],
+      "synonymes_fr": [
+        "marche",
+        "marches",
+        "marchons",
+        "marchez",
+        "marchent",
+        "marchais",
+        "marchait",
+        "marchions",
+        "marchiez",
+        "marchaient",
+        "marchant",
+        "marché"
+      ]
+    },
+    "courir": {
+      "racine_fr": "cour",
+      "traductions": [
+        {
+          "confluent": "kazok",
+          "type": "verbe",
+          "racine": "kazo",
+          "forme_liee": "kaz",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Courir, se déplacer rapidement"
+        }
+      ],
+      "synonymes_fr": [
+        "cours",
+        "court",
+        "courons",
+        "courez",
+        "courent",
+        "courais",
+        "courait",
+        "courions",
+        "couriez",
+        "couraient",
+        "courant",
+        "couru"
+      ]
+    },
+    "couler": {
+      "racine_fr": "coul",
+      "traductions": [
+        {
+          "confluent": "kulak",
+          "type": "verbe",
+          "racine": "kula",
+          "forme_liee": "kul",
+          "structure": "VCVC",
+          "domaine": "action",
+          "note": "Couler, s'écouler - lié à l'eau"
+        }
+      ],
+      "synonymes_fr": [
+        "coule",
+        "coules",
+        "coulons",
+        "coulez",
+        "coulent",
+        "coulais",
+        "coulait",
+        "coulions",
+        "couliez",
+        "coulaient",
+        "coulant",
+        "coulé"
+      ]
+    },
+    "donner": {
+      "racine_fr": "donn",
+      "traductions": [
+        {
+          "confluent": "kitan",
+          "type": "verbe",
+          "racine": "kita",
+          "forme_liee": "kit",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ]
+    },
+    "prendre": {
+      "racine_fr": "pren",
+      "traductions": [
+        {
+          "confluent": "pasak",
+          "type": "verbe",
+          "racine": "pasa",
+          "forme_liee": "pas",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ],
+      "synonymes_fr": [
+        "prennent",
+        "pris",
+        "prisse"
+      ]
+    },
+    "faire": {
+      "racine_fr": "fai",
+      "traductions": [
+        {
+          "confluent": "nekan",
+          "type": "verbe",
+          "racine": "neka",
+          "forme_liee": "nek",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ],
+      "synonymes_fr": [
+        "créer",
+        "font",
+        "ferai",
+        "feras",
+        "fera",
+        "ferons",
+        "ferez",
+        "feront"
+      ]
+    },
+    "dire": {
+      "racine_fr": "di",
+      "traductions": [
+        {
+          "confluent": "vosak",
+          "type": "verbe",
+          "racine": "vosa",
+          "forme_liee": "vos",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ],
+      "synonymes_fr": [
+        "parler",
+        "dites",
+        "dit",
+        "murmurer",
+        "murmure",
+        "murmures",
+        "murmurons",
+        "murmurez",
+        "murmurent",
+        "chuchoter"
+      ]
+    },
+    "savoir": {
+      "racine_fr": "sav",
+      "traductions": [
+        {
+          "confluent": "sekam",
+          "type": "verbe",
+          "racine": "seka",
+          "forme_liee": "sek",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ],
+      "synonymes_fr": [
+        "connaître",
+        "savent",
+        "su",
+        "sache",
+        "saches",
+        "sachent",
+        "sachions",
+        "sachiez",
+        "comprendre",
+        "comprends",
+        "comprenons",
+        "comprenez",
+        "comprennent"
+      ]
+    },
+    "apprendre": {
+      "racine_fr": "appren",
+      "traductions": [
+        {
+          "confluent": "mokis",
+          "type": "verbe",
+          "racine": "moki",
+          "forme_liee": "mok",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Recevoir le savoir"
+        }
+      ],
+      "synonymes_fr": [
+        "apprennent",
+        "appris"
+      ]
+    },
+    "transmettre": {
+      "racine_fr": "transmet",
+      "traductions": [
+        {
+          "confluent": "kisun",
+          "type": "verbe",
+          "racine": "kisu",
+          "forme_liee": "kis",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Enseigner, passer le savoir"
+        }
+      ],
+      "synonymes_fr": [
+        "enseigner",
+        "transmet",
+        "transmets",
+        "transmettons",
+        "transmettez",
+        "transmettent",
+        "transmettais",
+        "transmettait",
+        "transmettions",
+        "transmettez",
+        "transmettaient",
+        "transmettant",
+        "transmis"
+      ]
+    },
+    "garder": {
+      "racine_fr": "gard",
+      "traductions": [
+        {
+          "confluent": "zakis",
+          "type": "verbe",
+          "racine": "zaki",
+          "forme_liee": "zak",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ],
+      "synonymes_fr": [
+        "protéger"
+      ]
+    },
+    "porter": {
+      "racine_fr": "port",
+      "traductions": [
+        {
+          "confluent": "takan",
+          "type": "verbe",
+          "racine": "taka",
+          "forme_liee": "tak",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ],
+      "synonymes_fr": [
+        "transporter"
+      ]
+    },
+    "chasser": {
+      "racine_fr": "chass",
+      "traductions": [
+        {
+          "confluent": "zanak",
+          "type": "verbe",
+          "racine": "zana",
+          "forme_liee": "zan",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ],
+      "synonymes_fr": [
+        "traquer",
+        "chasse",
+        "chasses",
+        "chassons",
+        "chassez",
+        "chassent",
+        "chassais",
+        "chassait",
+        "chassions",
+        "chassiez",
+        "chassaient",
+        "chassant",
+        "chassé"
+      ]
+    },
+    "mediter": {
+      "racine_fr": "médit",
+      "traductions": [
+        {
+          "confluent": "umiak",
+          "type": "verbe",
+          "racine": "umi",
+          "forme_liee": "um",
+          "structure": "VCVC",
+          "domaine": "action_spirituelle",
+          "note": "Verbe sacré dérivé de 'esprit'"
+        }
+      ],
+      "synonymes_fr": [
+        "prier"
+      ]
+    },
+    "invoquer": {
+      "racine_fr": "invoqu",
+      "traductions": [
+        {
+          "confluent": "onak",
+          "type": "verbe",
+          "racine": "onu",
+          "forme_liee": "on",
+          "structure": "VCVC",
+          "domaine": "action_spirituelle",
+          "note": "Utiliser le son sacré"
+        }
+      ]
+    },
+    "benir": {
+      "racine_fr": "béni",
+      "traductions": [
+        {
+          "confluent": "asak",
+          "type": "verbe",
+          "racine": "asa",
+          "forme_liee": "as",
+          "structure": "VCVC",
+          "domaine": "action_spirituelle"
+        }
+      ],
+      "synonymes_fr": [
+        "bénit"
+      ]
+    },
+    "communier": {
+      "racine_fr": "communi",
+      "traductions": [
+        {
+          "confluent": "kotam",
+          "type": "verbe",
+          "racine": "kota",
+          "forme_liee": "kot",
+          "structure": "CVCVC",
+          "domaine": "action_spirituelle",
+          "note": "S'unir spirituellement"
+        }
+      ]
+    },
+    "mourir": {
+      "racine_fr": "meur",
+      "traductions": [
+        {
+          "confluent": "osiak",
+          "type": "verbe",
+          "racine": "osi",
+          "forme_liee": "os",
+          "structure": "VCVC",
+          "domaine": "action_sacree"
+        }
+      ],
+      "synonymes_fr": [
+        "meurent",
+        "mort"
+      ]
+    },
+    "graver": {
+      "racine_fr": "grav",
+      "traductions": [
+        {
+          "confluent": "kovak",
+          "type": "verbe",
+          "racine": "kova",
+          "forme_liee": "kov",
+          "structure": "CVCVC",
+          "domaine": "action_artisanale"
+        }
+      ],
+      "synonymes_fr": [
+        "sculpter"
+      ]
+    },
+    "peindre": {
+      "racine_fr": "pein",
+      "traductions": [
+        {
+          "confluent": "kovam",
+          "type": "verbe",
+          "racine": "kova",
+          "forme_liee": "kov",
+          "structure": "CVCVC",
+          "domaine": "action_artisanale",
+          "note": "Même racine que graver - art visuel"
+        }
+      ],
+      "synonymes_fr": [
+        "peignent",
+        "peint"
+      ]
+    },
+    "assembler": {
+      "racine_fr": "assembl",
+      "traductions": [
+        {
+          "confluent": "kotak",
+          "type": "verbe",
+          "racine": "kota",
+          "forme_liee": "kot",
+          "structure": "CVCVC",
+          "domaine": "action_artisanale"
+        }
+      ]
+    },
+    "construire": {
+      "racine_fr": "construi",
+      "traductions": [
+        {
+          "confluent": "nekis",
+          "type": "verbe",
+          "racine": "neka",
+          "forme_liee": "nek",
+          "structure": "CVCVC",
+          "domaine": "action_artisanale"
+        }
+      ],
+      "synonymes_fr": [
+        "construisent",
+        "construit"
+      ]
+    },
+    "creuser": {
+      "racine_fr": "creus",
+      "traductions": [
+        {
+          "confluent": "vukan",
+          "type": "verbe",
+          "racine": "vuku",
+          "forme_liee": "vuk",
+          "structure": "CVCVC",
+          "domaine": "action_artisanale"
+        }
+      ]
+    },
+    "tisser": {
+      "racine_fr": "tiss",
+      "traductions": [
+        {
+          "confluent": "vasin",
+          "type": "verbe",
+          "racine": "vasi",
+          "forme_liee": "vas",
+          "structure": "CVCVC",
+          "domaine": "action_artisanale",
+          "note": "Lier des fils ensemble"
+        }
+      ]
+    },
+    "forger": {
+      "racine_fr": "forg",
+      "traductions": [
+        {
+          "confluent": "sukam",
+          "type": "verbe",
+          "racine": "suki",
+          "forme_liee": "suk",
+          "structure": "CVCVC",
+          "domaine": "action_artisanale",
+          "note": "Travailler par le feu"
+        }
+      ]
+    },
+    "ecouter": {
+      "racine_fr": "écout",
+      "traductions": [
+        {
+          "confluent": "tikam",
+          "type": "verbe",
+          "racine": "tiku",
+          "forme_liee": "tik",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ]
+    },
+    "etudier": {
+      "racine_fr": "étudi",
+      "traductions": [
+        {
+          "confluent": "sekis",
+          "type": "verbe",
+          "racine": "seka",
+          "forme_liee": "sek",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ]
+    },
+    "decouvrir": {
+      "racine_fr": "découvr",
+      "traductions": [
+        {
+          "confluent": "milis",
+          "type": "verbe",
+          "racine": "mila",
+          "forme_liee": "mil",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Voir pour la première fois"
+        }
+      ],
+      "synonymes_fr": [
+        "explorer",
+        "découvert"
+      ]
+    },
+    "memoriser": {
+      "racine_fr": "mémoris",
+      "traductions": [
+        {
+          "confluent": "memak",
+          "type": "verbe",
+          "racine": "memu",
+          "forme_liee": "mem",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ]
+    },
+    "interpreter": {
+      "racine_fr": "interprèt",
+      "traductions": [
+        {
+          "confluent": "sekun",
+          "type": "verbe",
+          "racine": "seka",
+          "forme_liee": "sek",
+          "structure": "CVCVC",
+          "domaine": "action"
+        }
+      ]
+    },
+    "defendre": {
+      "racine_fr": "défen",
+      "traductions": [
+        {
+          "confluent": "zakam",
+          "type": "verbe",
+          "racine": "zaki",
+          "forme_liee": "zak",
+          "structure": "CVCVC",
+          "domaine": "action_combat"
+        }
+      ],
+      "synonymes_fr": [
+        "défendent",
+        "défendu"
+      ]
+    },
+    "surveiller": {
+      "racine_fr": "surveill",
+      "traductions": [
+        {
+          "confluent": "velak",
+          "type": "verbe",
+          "racine": "vela",
+          "forme_liee": "vel",
+          "structure": "CVCVC",
+          "domaine": "action_combat"
+        }
+      ],
+      "synonymes_fr": [
+        "veiller",
+        "veille",
+        "veilles",
+        "veillons",
+        "veillez",
+        "veillent",
+        "veillais",
+        "veillait",
+        "veillions",
+        "veilliez",
+        "veillaient",
+        "veillant",
+        "veillé",
+        "surveille",
+        "surveilles",
+        "surveillons",
+        "surveillez",
+        "surveillent",
+        "surveillais",
+        "surveillait",
+        "surveillions",
+        "surveilliez",
+        "surveillaient",
+        "surveillant",
+        "surveillé"
+      ]
+    },
+    "attaquer": {
+      "racine_fr": "attaqu",
+      "traductions": [
+        {
+          "confluent": "okiak",
+          "type": "verbe",
+          "racine": "oki",
+          "forme_liee": "ok",
+          "structure": "VCVC",
+          "domaine": "action_combat"
+        }
+      ]
+    },
+    "capturer": {
+      "racine_fr": "captur",
+      "traductions": [
+        {
+          "confluent": "pasik",
+          "type": "verbe",
+          "racine": "pasa",
+          "forme_liee": "pas",
+          "structure": "CVCVC",
+          "domaine": "action_combat"
+        }
+      ]
+    },
+    "fuir": {
+      "racine_fr": "fui",
+      "traductions": [
+        {
+          "confluent": "tekun",
+          "type": "verbe",
+          "racine": "teki",
+          "forme_liee": "tek",
+          "structure": "CVCVC",
+          "domaine": "action_combat"
+        }
+      ],
+      "synonymes_fr": [
+        "fuient",
+        "fuyent"
+      ]
+    },
+    "vaincre": {
+      "racine_fr": "vainc",
+      "traductions": [
+        {
+          "confluent": "okian",
+          "type": "verbe",
+          "racine": "oki",
+          "forme_liee": "ok",
+          "structure": "VCVC",
+          "domaine": "action_combat"
+        }
+      ],
+      "synonymes_fr": [
+        "vainquent",
+        "vaincu"
+      ]
+    },
+    "troquer": {
+      "racine_fr": "troqu",
+      "traductions": [
+        {
+          "confluent": "kilak",
+          "type": "verbe",
+          "racine": "kilu",
+          "forme_liee": "kil",
+          "structure": "CVCVC",
+          "domaine": "action_commerce"
+        }
+      ]
+    },
+    "entreposer": {
+      "racine_fr": "entrepos",
+      "traductions": [
+        {
+          "confluent": "zakun",
+          "type": "verbe",
+          "racine": "zaki",
+          "forme_liee": "zak",
+          "structure": "CVCVC",
+          "domaine": "action_commerce"
+        }
+      ]
+    },
+    "arbitrer": {
+      "racine_fr": "arbitr",
+      "traductions": [
+        {
+          "confluent": "velim",
+          "type": "verbe",
+          "racine": "veli",
+          "forme_liee": "vel",
+          "structure": "CVCVC",
+          "domaine": "action_justice",
+          "note": "Juger selon la vérité"
+        }
+      ]
+    },
+    "pecher": {
+      "racine_fr": "pêch",
+      "traductions": [
+        {
+          "confluent": "pisak",
+          "type": "verbe",
+          "racine": "pisu",
+          "forme_liee": "pis",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Chasser dans l'eau"
+        }
+      ]
+    },
+    "manger": {
+      "racine_fr": "mang",
+      "traductions": [
+        {
+          "confluent": "mukis",
+          "type": "verbe",
+          "racine": "muki",
+          "forme_liee": "muk",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Consommer de la nourriture"
+        }
+      ],
+      "synonymes_fr": [
+        "mange",
+        "manges",
+        "mangeons",
+        "mangez",
+        "mangent",
+        "mangeais",
+        "mangeait",
+        "mangions",
+        "mangiez",
+        "mangeaient",
+        "mangeant",
+        "mangé"
+      ]
+    },
+    "devorer": {
+      "racine_fr": "dévor",
+      "traductions": [
+        {
+          "confluent": "mukiuzana",
+          "type": "composition",
+          "composition": "muk-i-zana",
+          "sens_litteral": "Manger avec chasse",
+          "racines": [
+            "muki",
+            "zana"
+          ],
+          "domaine": "action",
+          "note": "Manger violemment, comme un prédateur"
+        }
+      ]
+    },
+    "exister": {
+      "racine_fr": "exist",
+      "traductions": [
+        {
+          "confluent": "zunop",
+          "type": "verbe_irregulier",
+          "racine": "kula",
+          "forme_liee": "zuno",
+          "structure": "VCVC",
+          "domaine": "action_existentielle",
+          "note": "Verbe irrégulier existentiel - 'il y a', présence, existence. Dérivé de la racine sacrée 'ura' (eau/flux vital)"
+        }
+      ],
+      "synonymes_fr": [
+        "il y a",
+        "y a-t-il",
+        "existe",
+        "existent",
+        "existant"
+      ]
+    },
+    "planer": {
+      "racine_fr": "plan",
+      "traductions": [
+        {
+          "confluent": "aliuk",
+          "type": "verbe",
+          "racine": "aliu",
+          "forme_liee": "ali",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Voler, planer dans les airs"
+        }
+      ],
+      "synonymes_fr": [
+        "planer",
+        "plane",
+        "planes",
+        "planons",
+        "planez",
+        "planent",
+        "planais",
+        "planait",
+        "planions",
+        "planiez",
+        "planaient",
+        "planant",
+        "plané"
+      ]
+    },
+    "resonner": {
+      "racine_fr": "résonn",
+      "traductions": [
+        {
+          "confluent": "kekak",
+          "type": "verbe",
+          "racine": "keka",
+          "forme_liee": "kek",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Résonner, faire écho"
+        }
+      ],
+      "synonymes_fr": [
+        "résonner",
+        "résonne",
+        "résonnes",
+        "résonnons",
+        "résonnez",
+        "résonnent",
+        "résonnais",
+        "résonnait",
+        "résonnions",
+        "résonniez",
+        "résonnaient",
+        "résonnant",
+        "résonné"
+      ]
+    },
+    "rejoindre": {
+      "racine_fr": "rejoind",
+      "traductions": [
+        {
+          "confluent": "kotan",
+          "type": "verbe",
+          "racine": "kota",
+          "forme_liee": "kot",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Rejoindre, se réunir"
+        }
+      ],
+      "synonymes_fr": [
+        "rejoindre",
+        "rejoinds",
+        "rejoint",
+        "rejoignons",
+        "rejoignez",
+        "rejoignent",
+        "rejoignais",
+        "rejoignait",
+        "rejoignions",
+        "rejoigniez",
+        "rejoignaient",
+        "rejoignant",
+        "rejoint"
+      ]
+    },
+    "battre": {
+      "racine_fr": "bat",
+      "traductions": [
+        {
+          "confluent": "pulum",
+          "type": "verbe",
+          "racine": "pulu",
+          "forme_liee": "pul",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Battre (cœur), pulser, rythme vital"
+        }
+      ],
+      "synonymes_fr": [
+        "bat",
+        "bats",
+        "battons",
+        "battez",
+        "battent",
+        "battais",
+        "battait",
+        "battions",
+        "battiez",
+        "battaient",
+        "battant",
+        "battu"
+      ]
+    },
+    "penser": {
+      "racine_fr": "pens",
+      "traductions": [
+        {
+          "confluent": "umis",
+          "type": "verbe",
+          "racine": "umi",
+          "forme_liee": "um",
+          "structure": "VCVC",
+          "domaine": "action_cognitive",
+          "note": "Penser, réfléchir - activité mentale (même racine que méditer)"
+        }
+      ],
+      "synonymes_fr": [
+        "réfléchir",
+        "pense",
+        "penses",
+        "pensons",
+        "pensez",
+        "pensent",
+        "pensais",
+        "pensait",
+        "pensions",
+        "pensiez",
+        "pensaient",
+        "pensant",
+        "pensé",
+        "réfléchis",
+        "réfléchit",
+        "réfléchissons",
+        "réfléchissez",
+        "réfléchissent",
+        "réfléchissais",
+        "réfléchissait",
+        "réfléchissions",
+        "réfléchissiez",
+        "réfléchissaient",
+        "réfléchissant",
+        "réfléchi"
+      ]
+    },
+    "voler": {
+      "racine_fr": "vol",
+      "traductions": [
+        {
+          "confluent": "vemep",
+          "type": "verbe",
+          "racine": "aliu",
+          "forme_liee": "veme",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Voler, s'envoler, planer dans les airs"
+        }
+      ],
+      "synonymes_fr": [
+        "vole",
+        "voles",
+        "volons",
+        "volez",
+        "volent",
+        "volais",
+        "volait",
+        "volions",
+        "voliez",
+        "volaient",
+        "volant",
+        "volé",
+        "s'envoler",
+        "envole",
+        "envoles",
+        "envolons",
+        "envolez",
+        "envolent"
+      ]
+    },
+    "aimer": {
+      "racine_fr": "aim",
+      "traductions": [
+        {
+          "confluent": "kolis",
+          "type": "verbe",
+          "racine": "koli",
+          "forme_liee": "kol",
+          "structure": "CVCVC",
+          "domaine": "action_emotion",
+          "note": "Verbe d'amour (du cœur kori)"
+        }
+      ],
+      "synonymes_fr": [
+        "aime",
+        "aimes",
+        "aimons",
+        "aimez",
+        "aiment",
+        "aimais",
+        "aimait",
+        "aimions",
+        "aimiez",
+        "aimaient",
+        "aimant",
+        "aimé"
+      ]
+    },
+    "pouvoir": {
+      "racine_fr": "pouv",
+      "traductions": [
+        {
+          "confluent": "polas",
+          "type": "verbe",
+          "racine": "pola",
+          "forme_liee": "pol",
+          "structure": "CVCVC",
+          "domaine": "action_capacite",
+          "note": "Avoir la capacité de"
+        }
+      ],
+      "synonymes_fr": [
+        "peux",
+        "peut",
+        "pouvons",
+        "pouvez",
+        "peuvent",
+        "pouvais",
+        "pouvait",
+        "pouvions",
+        "pouviez",
+        "pouvaient",
+        "pouvant",
+        "pu"
+      ]
+    },
+    "devoir": {
+      "racine_fr": "dev",
+      "traductions": [
+        {
+          "confluent": "nekas",
+          "type": "verbe",
+          "racine": "neka",
+          "forme_liee": "nek",
+          "structure": "CVCVC",
+          "domaine": "action_obligation",
+          "note": "Être obligé de, avoir l'obligation (lié à œuvre/tâche)"
+        }
+      ],
+      "synonymes_fr": [
+        "dois",
+        "doit",
+        "devons",
+        "devez",
+        "doivent",
+        "devais",
+        "devait",
+        "devions",
+        "deviez",
+        "devaient",
+        "devant",
+        "dû",
+        "due",
+        "dus",
+        "dues"
+      ]
+    },
+    "reposer": {
+      "racine_fr": "repos",
+      "traductions": [
+        {
+          "confluent": "tokas",
+          "type": "verbe",
+          "racine": "toka",
+          "forme_liee": "tok",
+          "structure": "CVCVC",
+          "domaine": "action_fondement",
+          "note": "Reposer sur, être fondé sur (lié à toka=lieu/base)"
+        }
+      ],
+      "synonymes_fr": [
+        "repose",
+        "reposes",
+        "reposons",
+        "reposez",
+        "reposent",
+        "reposais",
+        "reposait",
+        "reposions",
+        "reposiez",
+        "reposaient",
+        "reposant",
+        "reposé",
+        "être fondé",
+        "se fonder"
+      ]
+    }
+  }
+}

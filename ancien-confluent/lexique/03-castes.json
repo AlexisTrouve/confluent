@@ -1,0 +1,379 @@
+{
+  "_comment": "Les six castes et groupes sociaux majeurs",
+  "_mots_a_gerer": [],
+  "dictionnaire": {
+    "Siliaska": {
+      "traductions": [
+        {
+          "confluent": "siliaska",
+          "type": "nom_propre",
+          "composition": "sil-i-aska",
+          "sens_litteral": "Porteurs du regard libre",
+          "racines": [
+            "sili",
+            "aska"
+          ],
+          "categorie": "peuple",
+          "note": "Nom du peuple de la Confluence"
+        }
+      ],
+      "synonymes_fr": [
+        "peuple",
+        "Les porteurs du regard libre"
+      ]
+    },
+    "peuple": {
+      "traductions": [
+        {
+          "confluent": "mkisusonu",
+          "type": "nom_propre",
+          "composition": "sil-i-aska",
+          "sens_litteral": "Porteurs du regard libre",
+          "racines": [
+            "sili",
+            "aska"
+          ],
+          "categorie": "peuple"
+        }
+      ]
+    },
+    "Enfants des Echos": {
+      "traductions": [
+        {
+          "confluent": "nakukeko",
+          "type": "nom_propre",
+          "composition": "nak-u-keko",
+          "sens_litteral": "Enfants de l'écho",
+          "racines": [
+            "naki",
+            "keko"
+          ],
+          "categorie": "caste",
+          "element": "terre",
+          "racines_sacrees": 0,
+          "note": "Souterrains, mineurs, artisans"
+        }
+      ]
+    },
+    "echos": {
+      "traductions": [
+        {
+          "confluent": "keko",
+          "type": "racine",
+          "categorie": "concept",
+          "note": "Écho, résonance (racine extraite de Nakukeko)"
+        }
+      ],
+      "synonymes_fr": [
+        "echo"
+      ]
+    },
+    "Nakukeko": {
+      "traductions": [
+        {
+          "confluent": "nnukamuke",
+          "type": "nom_propre",
+          "composition": "nak-u-keko",
+          "sens_litteral": "Enfants de l'écho",
+          "racines": [
+            "naki",
+            "keko"
+          ],
+          "categorie": "caste",
+          "element": "terre"
+        }
+      ]
+    },
+    "Enfants du Courant": {
+      "traductions": [
+        {
+          "confluent": "nakuura",
+          "type": "nom_propre",
+          "composition": "nak-u-ura",
+          "sens_litteral": "Enfants de l'eau",
+          "racines": [
+            "naki",
+            "ura"
+          ],
+          "categorie": "caste",
+          "element": "eau",
+          "racines_sacrees": 1,
+          "note": "Pêcheurs, villages sur pilotis"
+        }
+      ]
+    },
+    "Nakuura": {
+      "traductions": [
+        {
+          "confluent": "psununzo",
+          "type": "nom_propre",
+          "composition": "nak-u-ura",
+          "sens_litteral": "Enfants de l'eau",
+          "racines": [
+            "naki",
+            "ura"
+          ],
+          "categorie": "caste",
+          "element": "eau"
+        }
+      ]
+    },
+    "Ailes-Grises": {
+      "traductions": [
+        {
+          "confluent": "aliaska",
+          "type": "nom_propre",
+          "composition": "al-i-aska",
+          "sens_litteral": "Porteurs de la grue libre",
+          "racines": [
+            "alu",
+            "aska"
+          ],
+          "categorie": "caste",
+          "element": "air",
+          "racines_sacrees": 2,
+          "note": "Dresseurs de grues, chamans"
+        }
+      ]
+    },
+    "Aliaska": {
+      "traductions": [
+        {
+          "confluent": "iatozupi",
+          "type": "nom_propre",
+          "composition": "al-i-aska",
+          "sens_litteral": "Porteurs de la grue libre",
+          "racines": [
+            "alu",
+            "aska"
+          ],
+          "categorie": "caste",
+          "element": "air"
+        }
+      ]
+    },
+    "Faucons Chasseurs": {
+      "traductions": [
+        {
+          "confluent": "akoazana",
+          "type": "nom_propre",
+          "composition": "ak-oa-zana",
+          "sens_litteral": "Faucon vainqueur de la chasse",
+          "racines": [
+            "aki",
+            "zana"
+          ],
+          "categorie": "caste",
+          "element": "feu",
+          "racines_sacrees": 1,
+          "note": "Élite militaire et judiciaire"
+        }
+      ]
+    },
+    "Akoazana": {
+      "traductions": [
+        {
+          "confluent": "oekovabpo",
+          "type": "nom_propre",
+          "composition": "ak-oa-zana",
+          "sens_litteral": "Faucon vainqueur de la chasse",
+          "racines": [
+            "aki",
+            "zana"
+          ],
+          "categorie": "caste",
+          "element": "feu"
+        }
+      ]
+    },
+    "Passes-bien": {
+      "traductions": [
+        {
+          "confluent": "kanutosa",
+          "type": "nom_propre",
+          "composition": "tak-i-tosa",
+          "sens_litteral": "Porteurs du bien",
+          "racines": [
+            "taka",
+            "tosa"
+          ],
+          "categorie": "caste",
+          "element": "ether",
+          "racines_sacrees": 0,
+          "note": "Marchands, médiateurs"
+        }
+      ]
+    },
+    "Takitosa": {
+      "traductions": [
+        {
+          "confluent": "lkosegusa",
+          "type": "nom_propre",
+          "composition": "tak-i-tosa",
+          "sens_litteral": "Porteurs du bien",
+          "racines": [
+            "taka",
+            "tosa"
+          ],
+          "categorie": "caste",
+          "element": "ether"
+        }
+      ]
+    },
+    "Voix de l'Aurore": {
+      "traductions": [
+        {
+          "confluent": "oraumi",
+          "type": "nom_propre",
+          "composition": "or-a-umi",
+          "sens_litteral": "Aurore avec esprit",
+          "racines": [
+            "ora",
+            "umi"
+          ],
+          "categorie": "groupe_spirituel",
+          "racines_sacrees": 2,
+          "note": "Chamans, gardiens des lois sacrées"
+        }
+      ]
+    },
+    "Oraumi": {
+      "traductions": [
+        {
+          "confluent": "oakegze",
+          "type": "nom_propre",
+          "composition": "or-a-umi",
+          "sens_litteral": "Aurore avec esprit",
+          "racines": [
+            "ora",
+            "umi"
+          ],
+          "categorie": "groupe_spirituel"
+        }
+      ]
+    },
+    "Ciels-clairs": {
+      "traductions": [
+        {
+          "confluent": "zerusora",
+          "type": "composition",
+          "composition": "zer-u-sora",
+          "sens_litteral": "Ciel de lumière",
+          "racines": [
+            "zeru",
+            "sora"
+          ],
+          "categorie": "groupe_social",
+          "note": "Nés sous ciel dégagé, yeux aux couleurs de l'aurore"
+        }
+      ]
+    },
+    "Sans-ciels": {
+      "traductions": [
+        {
+          "confluent": "zozelu",
+          "type": "composition",
+          "composition": "zo-zelu",
+          "sens_litteral": "Sans ciel",
+          "racines": [
+            "zo",
+            "zelu"
+          ],
+          "categorie": "groupe_social",
+          "note": "Nés sous ciel couvert"
+        }
+      ]
+    },
+    "Gardiens de la Confluence": {
+      "traductions": [
+        {
+          "confluent": "zakiulaakota",
+          "type": "composition",
+          "composition": "zak-i-ulaakota",
+          "sens_litteral": "Gardiens de la Confluence",
+          "racines": [
+            "zaki",
+            "uraakota"
+          ],
+          "categorie": "titre"
+        }
+      ]
+    },
+    "Caste de l'Air": {
+      "traductions": [
+        {
+          "confluent": "venaakota",
+          "type": "composition",
+          "composition": "ven-aa-kota",
+          "sens_litteral": "Air mêlé à union",
+          "racines": [
+            "vena",
+            "kota"
+          ],
+          "categorie": "caste_element"
+        }
+      ]
+    },
+    "Caste du Feu": {
+      "traductions": [
+        {
+          "confluent": "sukiaakota",
+          "type": "composition",
+          "composition": "suk-aa-kota",
+          "sens_litteral": "Feu mêlé à union",
+          "racines": [
+            "suki",
+            "kota"
+          ],
+          "categorie": "caste_element"
+        }
+      ]
+    },
+    "Caste de l'Eau": {
+      "traductions": [
+        {
+          "confluent": "uraakota",
+          "type": "composition",
+          "composition": "ur-aa-kota",
+          "sens_litteral": "Eau mêlée à union",
+          "racines": [
+            "ura",
+            "kota"
+          ],
+          "categorie": "caste_element",
+          "note": "Même nom que La Confluence"
+        }
+      ]
+    },
+    "Caste de la Terre": {
+      "traductions": [
+        {
+          "confluent": "tokaakota",
+          "type": "composition",
+          "composition": "tok-aa-kota",
+          "sens_litteral": "Terre mêlée à union",
+          "racines": [
+            "toka",
+            "kota"
+          ],
+          "categorie": "caste_element"
+        }
+      ]
+    },
+    "Caste de l'Ether": {
+      "traductions": [
+        {
+          "confluent": "umiaakota",
+          "type": "composition",
+          "composition": "um-aa-kota",
+          "sens_litteral": "Esprit mêlé à union",
+          "racines": [
+            "umi",
+            "kota"
+          ],
+          "categorie": "caste_element"
+        }
+      ]
+    }
+  }
+}
