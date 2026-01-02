@@ -62,16 +62,16 @@
     "nanzagouet": {
       "traductions": [
         {
-          "confluent": "pupasula",
+          "confluent": "pupupasu",
           "type": "composition",
-          "composition": "pupu-a-pasu-la",
-          "sens_litteral": "Cheveux de sang",
+          "composition": "pup-u-pasu",
+          "sens_litteral": "Cheveux du sang",
           "racines": [
             "pupu",
             "pasu"
           ],
           "domaine": "peuple_etranger",
-          "note": "Nom donné aux étrangers aux cheveux roux - 'Cheveux de Sang'"
+          "note": "Nom donné aux étrangers aux cheveux roux - 'Cheveux de Sang'. Liaison -u- (appartenance)."
         }
       ],
       "synonymes_fr": [
@@ -82,16 +82,16 @@
     "cheveux de sang": {
       "traductions": [
         {
-          "confluent": "mkatuvizi",
+          "confluent": "pupupasu",
           "type": "composition",
-          "composition": "pupu-a-pasu-la",
-          "sens_litteral": "Poils rouges comme le sang",
+          "composition": "pup-u-pasu",
+          "sens_litteral": "Cheveux du sang",
           "racines": [
             "pupu",
             "pasu"
           ],
           "domaine": "description_physique",
-          "note": "Descriptif initial des étrangers aux cheveux roux"
+          "note": "Descriptif des étrangers aux cheveux roux. Liaison -u- (appartenance)."
         }
       ]
     },
@@ -357,7 +357,7 @@
     "commun": {
       "traductions": [
         {
-          "confluent": "bzekazu",
+          "confluent": "kotavi",
           "type": "composition",
           "composition": "kota-vi",
           "sens_litteral": "De la confluence, partagé",
@@ -478,7 +478,7 @@
     "pacifique": {
       "traductions": [
         {
-          "confluent": "tlosovi",
+          "confluent": "tosavi",
           "type": "composition",
           "composition": "tosa-vi",
           "sens_litteral": "De nature bonne/paisible",

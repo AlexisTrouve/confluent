@@ -1,0 +1,57 @@
+{
+  "Salutations & Formules": [
+    { "fr": "Je te vois", "cf": "va miki vo sinu mirak u" },
+    { "fr": "Nous nous voyons", "cf": "va mikisu vo mikisu mirak u" },
+    { "fr": "Que la lumière guide ton chemin", "cf": "va tbime vo onu teki kasi es" },
+    { "fr": "Les ancêtres veillent sur toi", "cf": "va aita vo sinu velak u" },
+    { "fr": "Bienvenue à la Confluence", "cf": "takavi es no uraakota" }
+  ],
+  "Vie quotidienne": [
+    { "fr": "L'enfant apprend le savoir", "cf": "va naki vo silumi sekam u" },
+    { "fr": "Le chef parle dans le hall", "cf": "va kasi no talu voki u" },
+    { "fr": "La personne observe le regard", "cf": "va toli vo spima mirak u" },
+    { "fr": "Je vais vers la montagne", "cf": "va miki vi lnosu tekis u" },
+    { "fr": "Nous donnons l'eau aux enfants", "cf": "va mikisu vo ura ni naki kitan u" },
+    { "fr": "Tu portes la pierre", "cf": "va sinu vo kali tenu u" },
+    { "fr": "Il fait une peinture", "cf": "va tani vo kova nekan u" }
+  ],
+  "Nature & Éléments": [
+    { "fr": "L'eau coule vers la terre", "cf": "va ura vi toka kulak u" },
+    { "fr": "Le soleil éclaire le ciel", "cf": "va mkaso vo zeru tbime u" },
+    { "fr": "La lune brille sur la forêt", "cf": "va luna no zbipo sora u" },
+    { "fr": "Le vent souffle depuis la montagne", "cf": "va vena ve lnosu voki u" },
+    { "fr": "Le feu réchauffe la nuit", "cf": "va suki vo vzena suka u" }
+  ],
+  "Spiritualité & Rituels": [
+    { "fr": "L'esprit voyage de l'eau vers le ciel", "cf": "va umi ve ura vi zeru tekis u" },
+    { "fr": "Les Voix de l'Aurore transmettent le savoir", "cf": "va oraumi vo silumi kisun u" },
+    { "fr": "Le sacré unit les ancêtres et les enfants", "cf": "va asa vo aita aa naki psate u" },
+    { "fr": "Nous observons le rituel ensemble", "cf": "va mikisu vo onu silimila samuk u" },
+    { "fr": "L'aurore apporte la vérité", "cf": "va ora vo veli tekis u" }
+  ],
+  "Castes & Société": [
+    { "fr": "Les Enfants des Échos travaillent la pierre", "cf": "va nakukeko vo kali nekan u" },
+    { "fr": "Les Enfants du Courant pêchent dans l'eau", "cf": "va nakuura no ura pisak u" },
+    { "fr": "Les Ailes-Grises volent avec les grues", "cf": "va aliaska vi alu vemep u" },
+    { "fr": "Les Faucons Chasseurs protègent le peuple", "cf": "va akoazana vo siliaska zakis u" },
+    { "fr": "Les Passes-bien échangent les biens", "cf": "va takitosa vo saki kilak u" }
+  ],
+  "Actions & Mouvement": [
+    { "fr": "Je vais depuis la Confluence vers les Antres", "cf": "va miki ve uraakota vi keku tekis u" },
+    { "fr": "Tu prends le chemin de la lumière", "cf": "va sinu vo tbime teki pasak u" },
+    { "fr": "Nous chassons dans la forêt", "cf": "va mikisu no zbipo zanak u" },
+    { "fr": "L'ancêtre transmet le savoir à l'enfant", "cf": "va aita vo silumi ni naki kisun u" },
+    { "fr": "Le gardien protège la grande fresque", "cf": "va zaki vo mako kova zakis u" }
+  ],
+  "Questions": [
+    { "fr": "Qui observe le ciel ?", "cf": "va ki vo zeru milak u ka" },
+    { "fr": "Où va la personne ?", "cf": "va toli vi plozi tekis u ka" },
+    { "fr": "Quand les ancêtres ont-ils parlé ?", "cf": "va aita amat vosak u ka" },
+    { "fr": "Est-ce que tu vois la lune ?", "cf": "va sinu vo luna milak u ka" }
+  ],
+  "Négation": [
+    { "fr": "Je ne vois pas", "cf": "va miki zo milak u" },
+    { "fr": "Il n'observe jamais le sacré", "cf": "va tani vo asa zom milak u" },
+    { "fr": "Il est interdit de parler ici", "cf": "no tisa vosak zob u" }
+  ]
+}

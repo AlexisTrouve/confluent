@@ -55,7 +55,7 @@ const protoPrompt = fs.readFileSync(path.join(__dirname, '..', '..', 'prompts', 
 const ancienPrompt = fs.readFileSync(path.join(__dirname, '..', '..', 'prompts', 'ancien-system.txt'), 'utf-8');
 
 // Load lexiques dynamically from JSON files
-const baseDir = path.join(__dirname, '..', '..');
+const baseDir = path.join(__dirname, '..', '..', '..');
 let lexiques = { proto: null, ancien: null };
 let reverseIndexes = { proto: null, ancien: null };
 let confluentIndexes = { proto: null, ancien: null };
