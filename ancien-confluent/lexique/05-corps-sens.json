@@ -9,7 +9,11 @@
           "type": "racine",
           "forme_liee": "sil",
           "domaine": "corps_sens",
-          "note": "Concept central : l'observation"
+          "note": "Concept central : l'observation",
+          "definition": "L'organe de la vue et, par extension, le regard porté sur le monde ; concept pivot de la Confluence.",
+          "nuance": "sili = l'œil/le regard (vision active, observation), vs tiku = oreille (écoute) et venu = nez (odorat). Sens cardinal de la culture.",
+          "registre": "sacré",
+          "exemple": "va sili vo ura miraku — l'œil voit l'eau"
         }
       ],
       "synonymes_fr": [
@@ -25,7 +29,11 @@
           "type": "racine",
           "forme_liee": "kan",
           "domaine": "corps_sens",
-          "note": "Partie du corps pour saisir"
+          "note": "Partie du corps pour saisir",
+          "definition": "La main, partie du corps qui saisit, façonne et grave.",
+          "nuance": "kanu = la main (préhension, action) vs sanu = le corps entier ; base de kanuvi (bras), kanuvasi (épaule), kanupisu (doigt).",
+          "registre": "courant",
+          "exemple": "va miki vo kari vu kanu takanu — je porte la pierre avec la main"
         }
       ]
     },
@@ -36,7 +44,10 @@
           "type": "racine",
           "forme_liee": "vok",
           "domaine": "corps_sens",
-          "note": "Organe de la parole"
+          "note": "Organe de la parole",
+          "definition": "La voix, organe et faculté de la parole.",
+          "nuance": "voki = la voix/parole (faculté sonore) vs vokumu = la bouche (organe-ouverture) et vokivi = la langue-organe. Distincte de keko (l'écho).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -50,7 +61,11 @@
           "type": "racine",
           "forme_liee": "tik",
           "domaine": "corps_sens",
-          "note": "Organe de l'écoute"
+          "note": "Organe de l'écoute",
+          "definition": "L'oreille, organe de l'écoute et de la réception du son.",
+          "nuance": "tiku = l'oreille (organe), à ne pas confondre avec le verbe écouter tikam. Pendant auditif de sili (vue).",
+          "registre": "courant",
+          "exemple": "va miki vo keko tikamu — j'écoute l'écho"
         }
       ],
       "synonymes_fr": [
@@ -64,7 +79,10 @@
           "type": "racine",
           "forme_liee": "muk",
           "domaine": "corps_sens",
-          "note": "Face, ce qu'on montre"
+          "note": "Face, ce qu'on montre",
+          "definition": "Le visage, la face que l'on montre aux autres.",
+          "nuance": "muka = le visage (face, surface visible) vs muto = la tête (volume, sommet). Base de mukamako (front), mukavi (joue), mukavuku (menton).",
+          "registre": "courant"
         }
       ]
     },
@@ -75,7 +93,10 @@
           "type": "racine",
           "forme_liee": "kor",
           "domaine": "corps_sens",
-          "note": "Centre vital et émotionnel"
+          "note": "Centre vital et émotionnel",
+          "definition": "Le cœur, centre vital et siège des émotions.",
+          "nuance": "kori = le cœur (centre vital/émotionnel) ; sa forme liée koli entre dans sanukoli (foie = 'cœur du corps'), organe distinct.",
+          "registre": "courant"
         }
       ]
     },
@@ -86,7 +107,10 @@
           "type": "racine",
           "forme_liee": "san",
           "domaine": "corps_sens",
-          "note": "Enveloppe physique"
+          "note": "Enveloppe physique",
+          "definition": "Le corps, enveloppe physique entière de l'être.",
+          "nuance": "sanu = le corps (ensemble) vs niku = la chair (matière vivante) et peli = la peau (surface). Très productif : venusanu, nutusanu, kibusanu.",
+          "registre": "courant"
         }
       ]
     },
@@ -97,7 +121,10 @@
           "type": "racine",
           "forme_liee": "pek",
           "domaine": "corps_sens",
-          "note": "Base, appui"
+          "note": "Base, appui",
+          "definition": "Le pied, base et appui du corps sur le sol.",
+          "nuance": "peki = le pied (appui, base) vs kanu = la main ; base de pekuvi (jambe) et pekupisu (orteil), symétrique de la main.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -111,7 +138,11 @@
           "type": "racine",
           "forme_liee": "kek",
           "domaine": "corps_sens",
-          "note": "Son qui revient, résonance"
+          "note": "Son qui revient, résonance",
+          "definition": "L'écho, son qui revient et résonne ; résonance.",
+          "nuance": "keko = le son qui revient (phénomène) vs tiku = l'oreille (organe) et voki = la voix (qui l'émet). Forte résonance culturelle (Nakukeko, Enfants des Échos).",
+          "registre": "sacré",
+          "exemple": "va keko no vuku kekaku — l'écho résonne dans le gouffre"
         }
       ],
       "synonymes_fr": [
@@ -129,7 +160,10 @@
             "vena",
             "sanu"
           ],
-          "domaine": "corps"
+          "domaine": "corps",
+          "definition": "Le poumon, littéralement 'l'air du corps', organe de la respiration.",
+          "nuance": "venusanu = le poumon (organe interne) vs venu = le nez (orifice de l'air) et puli = le souffle (le flux). Composé sur vena (air) + sanu (corps).",
+          "registre": "courant"
         }
       ]
     },
@@ -140,7 +174,10 @@
           "type": "racine_sacree",
           "forme_liee": "pul",
           "domaine": "corps_esprit",
-          "note": "Même racine que esprit"
+          "note": "Même racine que esprit",
+          "definition": "Le souffle, flux vital de l'air, à dimension spirituelle.",
+          "nuance": "puli = le souffle (flux animant) vs venusanu = le poumon (organe) et vena = l'air (matière).",
+          "registre": "sacré"
         }
       ]
     },
@@ -151,7 +188,10 @@
           "type": "racine",
           "forme_liee": "nik",
           "domaine": "corps",
-          "note": "Même racine que corps"
+          "note": "Même racine que corps",
+          "definition": "La chair, matière vivante du corps ; aussi la viande.",
+          "nuance": "niku = la chair/matière vivante vs peli = la peau (surface) et sanu = le corps (tout).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -165,7 +205,10 @@
           "type": "racine",
           "forme_liee": "pel",
           "domaine": "corps",
-          "note": "Surface, enveloppe extérieure"
+          "note": "Surface, enveloppe extérieure",
+          "definition": "La peau, surface et enveloppe extérieure du corps.",
+          "nuance": "peli = la peau (surface, limite externe) vs niku = la chair (matière dessous) et sanu = le corps entier.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -179,7 +222,10 @@
           "type": "racine",
           "forme_liee": "kin",
           "domaine": "corps",
-          "note": "Fluide vital rouge"
+          "note": "Fluide vital rouge",
+          "definition": "Le sang, fluide vital rouge qui circule dans le corps.",
+          "nuance": "kina = le sang (fluide vital) vs pasu = rouge (la couleur) : concepts distincts, pas un doublon. Pendant liquide de niku (chair solide).",
+          "registre": "courant"
         }
       ]
     },
@@ -195,7 +241,10 @@
             "ora"
           ],
           "domaine": "corps_sacre",
-          "note": "Yeux des Ciels-clairs aux couleurs de l'aurore"
+          "note": "Yeux des Ciels-clairs aux couleurs de l'aurore",
+          "definition": "Les yeux aux couleurs de l'aurore, propres aux Ciels-clairs ; littéralement 'regard de l'aurore'.",
+          "nuance": "siluola = trait sacré (sili + ora, aurore) vs sili = l'œil ordinaire. Marqueur identitaire, pas un simple organe.",
+          "registre": "sacré"
         }
       ]
     },
@@ -206,7 +255,10 @@
           "type": "racine",
           "forme_liee": "mut",
           "domaine": "corps",
-          "note": "Sommet du corps, partie supérieure"
+          "note": "Sommet du corps, partie supérieure",
+          "definition": "La tête, sommet et partie supérieure du corps.",
+          "nuance": "muto = la tête (volume entier) vs muka = le visage (face avant). Base de mutuvasi (cou) et mutukibe (crâne).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -225,7 +277,10 @@
             "kanu"
           ],
           "domaine": "corps",
-          "note": "Membre supérieur jusqu'à la main"
+          "note": "Membre supérieur jusqu'à la main",
+          "definition": "Le bras, membre supérieur allant jusqu'à la main ; littéralement 'membre de la main'.",
+          "nuance": "kanuvi = le bras (membre) vs kanu = la main (extrémité) et kanuvasi = l'épaule (jonction). Symétrique de pekuvi (jambe).",
+          "registre": "courant"
         }
       ]
     },
@@ -240,7 +295,10 @@
             "peki"
           ],
           "domaine": "corps",
-          "note": "Membre inférieur jusqu'au pied"
+          "note": "Membre inférieur jusqu'au pied",
+          "definition": "La jambe, membre inférieur allant jusqu'au pied ; littéralement 'membre du pied'.",
+          "nuance": "pekuvi = la jambe (membre) vs peki = le pied (extrémité). Symétrique de kanuvi (bras).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -259,7 +317,10 @@
             "pisu"
           ],
           "domaine": "corps",
-          "note": "Extrémité de la main"
+          "note": "Extrémité de la main",
+          "definition": "Le doigt, extrémité de la main ; littéralement 'petit de la main'.",
+          "nuance": "kanupisu = le doigt (kanu+pisu) vs pekupisu = l'orteil (même schéma sur le pied).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -278,7 +339,10 @@
             "pisu"
           ],
           "domaine": "corps",
-          "note": "Extrémité du pied"
+          "note": "Extrémité du pied",
+          "definition": "L'orteil, extrémité du pied ; littéralement 'petit du pied'.",
+          "nuance": "pekupisu = l'orteil (peki+pisu) vs kanupisu = le doigt (sur la main).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -296,7 +360,11 @@
             "voki"
           ],
           "domaine": "corps_sens",
-          "note": "Organe de la parole et de l'alimentation"
+          "note": "Organe de la parole et de l'alimentation",
+          "definition": "La bouche, ouverture de la voix servant à parler et à se nourrir.",
+          "nuance": "vokumu = la bouche (l'orifice) vs voki = la voix (faculté) et vokivi = la langue-organe (à l'intérieur).",
+          "registre": "courant",
+          "exemple": "va miki vo nutu vi vokumu takanu — je porte la nourriture vers la bouche"
         }
       ]
     },
@@ -311,7 +379,10 @@
             "voki"
           ],
           "domaine": "corps",
-          "note": "Organe dans la bouche (distinct de langue=langage)"
+          "note": "Organe dans la bouche (distinct de langue=langage)",
+          "definition": "La langue, organe mobile situé dans la bouche.",
+          "nuance": "vokivi = la langue-organe (corps physique) vs voki = la voix et vokumu = la bouche. Distincte de langue=langage.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -325,7 +396,10 @@
           "type": "racine",
           "forme_liee": "bit",
           "domaine": "corps",
-          "note": "Organe pour mordre et mâcher"
+          "note": "Organe pour mordre et mâcher",
+          "definition": "La dent, organe dur servant à mordre et mâcher.",
+          "nuance": "bitu = la dent (dans la bouche) vs kibe = l'os (structure du squelette). Racine simple.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -343,7 +417,10 @@
             "vena"
           ],
           "domaine": "corps_sens",
-          "note": "Organe de l'odorat et de la respiration"
+          "note": "Organe de l'odorat et de la respiration",
+          "definition": "Le nez, organe de l'odorat et de la respiration ; littéralement 'organe de l'air'.",
+          "nuance": "venu = le nez (orifice de l'air) vs venusanu = le poumon (où va l'air). Tous deux sur vena (air).",
+          "registre": "courant"
         }
       ]
     },
@@ -359,7 +436,10 @@
             "mako"
           ],
           "domaine": "corps",
-          "note": "Partie supérieure du visage"
+          "note": "Partie supérieure du visage",
+          "definition": "Le front, partie supérieure du visage ; littéralement 'haut du visage'.",
+          "nuance": "mukamako = le front (haut) vs mukavi = la joue (côté) et mukavuku = le menton (bas) : trois positions sur muka.",
+          "registre": "courant"
         }
       ]
     },
@@ -374,7 +454,10 @@
             "muka"
           ],
           "domaine": "corps",
-          "note": "Côté du visage"
+          "note": "Côté du visage",
+          "definition": "La joue, côté du visage.",
+          "nuance": "mukavi = la joue (côté) vs mukamako = le front (haut) et mukavuku = le menton (bas).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -393,7 +476,10 @@
             "vuku"
           ],
           "domaine": "corps",
-          "note": "Partie inférieure du visage"
+          "note": "Partie inférieure du visage",
+          "definition": "Le menton, partie inférieure du visage ; littéralement 'bas du visage'.",
+          "nuance": "mukavuku = le menton (bas, muka+vuku) vs mukamako = le front (haut) et mukavi = la joue (côté).",
+          "registre": "courant"
         }
       ]
     },
@@ -409,7 +495,10 @@
             "vasi"
           ],
           "domaine": "corps",
-          "note": "Lien entre tête et corps"
+          "note": "Lien entre tête et corps",
+          "definition": "Le cou, lien entre la tête et le corps ; littéralement 'pont de la tête'.",
+          "nuance": "mutuvasi = le cou (jonction tête-corps, sur vasi=pont) vs kanuvasi = l'épaule (jonction bras-corps).",
+          "registre": "courant"
         }
       ]
     },
@@ -425,7 +514,10 @@
             "vasi"
           ],
           "domaine": "corps",
-          "note": "Jonction bras-corps"
+          "note": "Jonction bras-corps",
+          "definition": "L'épaule, jonction du bras et du corps ; littéralement 'pont du bras'.",
+          "nuance": "kanuvasi = l'épaule (jonction bras-corps) vs mutuvasi = le cou (jonction tête-corps) : mêmes 'ponts' (vasi).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -439,7 +531,10 @@
           "type": "racine",
           "forme_liee": "lob",
           "domaine": "corps",
-          "note": "Face postérieure du corps (racine simple ; l'ancien san-u-voli composait à tort avec voli='vouloir')"
+          "note": "Face postérieure du corps (racine simple ; l'ancien san-u-voli composait à tort avec voli='vouloir')",
+          "definition": "Le dos, face postérieure du corps.",
+          "nuance": "loba = le dos (racine simple, corrigée de l'ancien san-u-voli erroné). Opposé au ventre (nutusanu).",
+          "registre": "courant"
         }
       ]
     },
@@ -455,7 +550,10 @@
             "sanu"
           ],
           "domaine": "corps",
-          "note": "Abdomen, partie centrale"
+          "note": "Abdomen, partie centrale",
+          "definition": "Le ventre, partie centrale et abdomen ; littéralement 'corps de nourriture'.",
+          "nuance": "nutusanu = le ventre (région externe/centrale) vs nutusaki = l'estomac (organe interne). Tous deux sur nutu.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -473,7 +571,10 @@
             "nutu"
           ],
           "domaine": "corps",
-          "note": "Organe digestif"
+          "note": "Organe digestif",
+          "definition": "L'estomac, organe digestif ; littéralement 'réservoir de nourriture'.",
+          "nuance": "nutusaki = l'estomac (organe-réservoir, sur saki=sac) vs nutusanu = le ventre (région). Organe vs zone.",
+          "registre": "courant"
         }
       ]
     },
@@ -489,7 +590,10 @@
             "kori"
           ],
           "domaine": "corps",
-          "note": "Organe vital interne"
+          "note": "Organe vital interne",
+          "definition": "Le foie, organe vital interne ; littéralement 'cœur du corps'.",
+          "nuance": "sanukoli = le foie (organe interne, sanu+koli) vs kori = le cœur (centre vital). La forme liée koli marque un autre organe.",
+          "registre": "courant"
         }
       ]
     },
@@ -500,7 +604,10 @@
           "type": "racine",
           "forme_liee": "kib",
           "domaine": "corps",
-          "note": "Structure dure interne du corps"
+          "note": "Structure dure interne du corps",
+          "definition": "L'os, structure dure interne soutenant le corps.",
+          "nuance": "kibe = l'os (élément unitaire) vs kibusanu = le squelette (l'ensemble). Base de mutukibe (crâne) et kibuvi (côte).",
+          "registre": "courant"
         }
       ]
     },
@@ -516,7 +623,10 @@
             "sanu"
           ],
           "domaine": "corps",
-          "note": "Ensemble des os"
+          "note": "Ensemble des os",
+          "definition": "Le squelette, ensemble des os du corps ; littéralement 'os du corps'.",
+          "nuance": "kibusanu = le squelette (totalité, kibe+sanu) vs kibe = un os isolé. Rapport tout/partie.",
+          "registre": "courant"
         }
       ]
     },
@@ -532,7 +642,10 @@
             "kibe"
           ],
           "domaine": "corps",
-          "note": "Os de la tête"
+          "note": "Os de la tête",
+          "definition": "Le crâne, os de la tête ; littéralement 'os de la tête'.",
+          "nuance": "mutukibe = le crâne (os, muto+kibe) vs muto = la tête entière (qui liste 'crâne' en synonyme courant).",
+          "registre": "courant"
         }
       ]
     },
@@ -547,7 +660,10 @@
             "kibe"
           ],
           "domaine": "corps",
-          "note": "Os du thorax"
+          "note": "Os du thorax",
+          "definition": "La côte, os du thorax ; littéralement 'os du côté'.",
+          "nuance": "kibuvi = la côte (os du flanc, kibe+vi) vs kibe = l'os générique et kibusanu = le squelette entier.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
