@@ -8,7 +8,15 @@ const fs = require('fs');
 const path = require('path');
 
 const API_URL = 'http://localhost:3000/translate';
-const API_KEY = 'd9be0765-c454-47e9-883c-bcd93dd19eae';
+// Clé API d'auth pour appeler l'endpoint /translate.
+// POURQUOI env var : un secret hardcodé dans un script versionné fuite dans git (cas réel ici).
+// COMMENT : lue depuis CONFLUENT_API_KEY ; échec franc si absente (pas de fallback masquant — doctrine).
+const API_KEY = process.env.CONFLUENT_API_KEY;
+if (!API_KEY) {
+  console.error("FATAL: variable d'environnement CONFLUENT_API_KEY manquante.");
+  console.error('Usage: CONFLUENT_API_KEY=<votre-cle> node generate-examples.js');
+  process.exit(1);
+}
 
 const phrases = {
   "Salutations & Formules": [

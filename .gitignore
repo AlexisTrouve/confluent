@@ -3,6 +3,22 @@
 .env.local
 .env.production
 
+# Secrets applicatifs — NE JAMAIS versionner
+# tokens.json contient les apiKeys (UUID) d'auth de l'API.
+ConfluentTranslator/data/tokens.json
+*.pem
+*.key
+*.p8
+
+# Outillage local d'orchestration (hors périmètre projet)
+.cogesco-agent/
+.claude-duo-key
+
+# Playwright (artefacts E2E)
+test-results/
+playwright-report/
+.playwright/
+
 # Node.js
 node_modules/
 dist/

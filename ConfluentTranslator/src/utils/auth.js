@@ -1,11 +1,11 @@
-const jwt = require('jsonwebtoken');
-const bcrypt = require('bcryptjs');
+// Auth par lookup d'apiKey (UUID) en clair dans tokens.json — voir authenticate().
+// NOTE: jwt/bcrypt + JWT_SECRET ont été retirés ici (scaffolding mort, jamais utilisé pour signer).
+//       Le faux secret hardcodé 'change-in-production' polluait les audits sécu sans rien protéger.
 const { v4: uuidv4 } = require('uuid');
 const fs = require('fs');
 const path = require('path');
 
 const TOKENS_FILE = path.join(__dirname, '..', '..', 'data', 'tokens.json');
-const JWT_SECRET = process.env.JWT_SECRET || 'confluent-secret-key-change-in-production';
 
 // Structure des tokens
 let tokens = {};
