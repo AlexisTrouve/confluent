@@ -38,8 +38,19 @@ Le Confluent utilise 10 consonnes, choisies pour leur clarté acoustique :
 
 **Évités** :
 - Sons elfiques (th, ch, j)
-- Sons gutturaux (r roulé, h aspiré)
+- Sons gutturaux (h aspiré)
 - Sons trop latins (ph, gh)
+
+#### Exceptions tolérées (hors-norme — NE PAS étendre)
+
+La **norme reste 10 consonnes** (b, k, l, m, n, p, s, t, v, z). Deux phonèmes hors-norme
+sont tolérés dans l'existant mais **interdits dans toute création nouvelle** :
+
+- **r** : vestige primordial, présent dans des racines sacrées/anciennes et formes canoniques
+  (ura, ora, kari, kori, mori, sora, zeru, veri, oraumi, uraakota, riku…). Toléré là où il
+  existe ; **proscrit dans toute nouvelle racine standard**.
+- **d** : présent uniquement dans le **système numérique** (diku=2, deku=10, tiru=3…).
+  Toléré pour les nombres, **hors-norme partout ailleurs**.
 
 **Ratio inspirationnel** :
 - 70% créations originales

@@ -62,6 +62,7 @@ confluent/
 - **Consonnes (10):** b, k, l, m, n, p, s, t, v, z
 - **Voyelles actives (5):** a, e, i, o, u
 - **Voyelles réservées:** y, é, è (expansion future)
+- **Exceptions hors-norme (ne PAS étendre):** `r` toléré dans le sacré/ancien (ura, ora, kari, kori, mori, sora, zeru…) ; `d` toléré uniquement dans les nombres (diku, deku…). La norme pour toute création reste les 10 consonnes.
 
 **⚠️ IMPORTANT : Pas de majuscules en Confluent**
 - Le Confluent n'a PAS de distinction majuscule/minuscule
