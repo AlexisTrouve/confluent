@@ -52,7 +52,7 @@
     "Vukuura": {
       "traductions": [
         {
-          "confluent": "vmavekna",
+          "confluent": "vukuura",
           "type": "nom_propre",
           "composition": "vuk-u-ura",
           "sens_litteral": "Gouffre de l'eau",
@@ -83,7 +83,7 @@
     "Kekutoka": {
       "traductions": [
         {
-          "confluent": "klikubozi",
+          "confluent": "kekutoka",
           "type": "nom_propre",
           "composition": "kek-u-toka",
           "sens_litteral": "Écho de la terre",
@@ -114,7 +114,7 @@
     "Sikuvela": {
       "traductions": [
         {
-          "confluent": "nbabosove",
+          "confluent": "sikuvela",
           "type": "nom_propre",
           "composition": "sik-u-vela",
           "sens_litteral": "Cercle de la vigile",
@@ -145,7 +145,7 @@
     "Talusavu": {
       "traductions": [
         {
-          "confluent": "bpotekike",
+          "confluent": "talusavu",
           "type": "nom_propre",
           "composition": "tal-u-savu",
           "sens_litteral": "Hall du serment",

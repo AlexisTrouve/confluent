@@ -419,7 +419,7 @@
     "depuis": {
       "traductions": [
         {
-          "confluent": "mle",
+          "confluent": "ve",
           "type": "particule",
           "categorie": "temps",
           "note": "Depuis (origine temporelle) - utilise particule ve (origine)"
@@ -429,7 +429,7 @@
     "sa": {
       "traductions": [
         {
-          "confluent": "tla",
+          "confluent": "na",
           "type": "particule",
           "categorie": "possession",
           "note": "Possessif (réutilise particule génitif na)"
@@ -499,7 +499,7 @@
     "autour": {
       "traductions": [
         {
-          "confluent": "mla",
+          "confluent": "no",
           "type": "particule",
           "categorie": "lieu",
           "note": "Autour/spatial (réutilise particule locative no)"
