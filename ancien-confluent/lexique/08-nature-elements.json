@@ -89,9 +89,9 @@
     "montagne": {
       "traductions": [
         {
-          "confluent": "lnosu",
+          "confluent": "tasa",
           "type": "racine",
-          "forme_liee": "lnos",
+          "forme_liee": "tas",
           "domaine": "geographie",
           "note": "Haute terre"
         }
@@ -100,9 +100,9 @@
     "foret": {
       "traductions": [
         {
-          "confluent": "zbipo",
+          "confluent": "viku",
           "type": "racine",
-          "forme_liee": "zbip",
+          "forme_liee": "vik",
           "domaine": "geographie",
           "note": "Beaucoup d'arbres"
         }
@@ -111,9 +111,9 @@
     "arbre": {
       "traductions": [
         {
-          "confluent": "vtese",
+          "confluent": "viku",
           "type": "racine",
-          "forme_liee": "vtes",
+          "forme_liee": "vik",
           "domaine": "nature",
           "note": "Plante haute"
         }
@@ -133,9 +133,9 @@
     "soleil": {
       "traductions": [
         {
-          "confluent": "mkaso",
+          "confluent": "sora",
           "type": "racine",
-          "forme_liee": "mkas",
+          "forme_liee": "sor",
           "domaine": "celeste",
           "note": "Astre du jour"
         }
@@ -144,9 +144,9 @@
     "lumiere": {
       "traductions": [
         {
-          "confluent": "tbime",
+          "confluent": "sora",
           "type": "racine",
-          "forme_liee": "tbim",
+          "forme_liee": "sor",
           "domaine": "perception",
           "note": "Même racine que soleil"
         }
@@ -155,9 +155,9 @@
     "sombre": {
       "traductions": [
         {
-          "confluent": "vtasi",
+          "confluent": "taku",
           "type": "racine",
-          "forme_liee": "vtas",
+          "forme_liee": "tak",
           "domaine": "perception",
           "note": "Sans lumière"
         }
@@ -183,9 +183,9 @@
     "vallee": {
       "traductions": [
         {
-          "confluent": "pbali",
+          "confluent": "tani",
           "type": "racine",
-          "forme_liee": "pbal",
+          "forme_liee": "tan",
           "domaine": "geographie",
           "note": "Creux entre montagnes"
         }
@@ -194,9 +194,9 @@
     "sel": {
       "traductions": [
         {
-          "confluent": "ztozi",
+          "confluent": "seli",
           "type": "racine",
-          "forme_liee": "ztoz",
+          "forme_liee": "sel",
           "domaine": "materiau",
           "note": "Cristal marin"
         }
@@ -205,9 +205,9 @@
     "mer": {
       "traductions": [
         {
-          "confluent": "kzumi",
+          "confluent": "seli",
           "type": "racine",
-          "forme_liee": "kzum",
+          "forme_liee": "sel",
           "domaine": "geographie",
           "note": "Grande eau salée"
         }
@@ -245,9 +245,9 @@
     "cercle": {
       "traductions": [
         {
-          "confluent": "mvitu",
+          "confluent": "siku",
           "type": "racine",
-          "forme_liee": "mvit",
+          "forme_liee": "sik",
           "domaine": "forme",
           "note": "Forme sacrée"
         }

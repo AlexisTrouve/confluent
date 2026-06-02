@@ -5,9 +5,9 @@
     "rouge": {
       "traductions": [
         {
-          "confluent": "zkaba",
+          "confluent": "pasu",
           "type": "racine",
-          "forme_liee": "zkab",
+          "forme_liee": "pas",
           "domaine": "couleur",
           "note": "Couleur importante (yeux des Ciels-clairs)"
         }
@@ -75,9 +75,9 @@
     "gris": {
       "traductions": [
         {
-          "confluent": "msobe",
+          "confluent": "kesa",
           "type": "racine",
-          "forme_liee": "msob",
+          "forme_liee": "kes",
           "domaine": "couleur",
           "note": "Couleur de la cendre"
         }
@@ -250,9 +250,9 @@
     "sombre": {
       "traductions": [
         {
-          "confluent": "zpasi",
+          "confluent": "taku",
           "type": "racine",
-          "forme_liee": "zpas",
+          "forme_liee": "tak",
           "domaine": "qualificatif"
         }
       ],

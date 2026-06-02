@@ -184,9 +184,9 @@
     "poison": {
       "traductions": [
         {
-          "confluent": "vpesu",
+          "confluent": "poku",
           "type": "racine",
-          "forme_liee": "vpes",
+          "forme_liee": "pok",
           "domaine": "danger"
         }
       ]
@@ -194,9 +194,9 @@
     "gouffre": {
       "traductions": [
         {
-          "confluent": "zkito",
+          "confluent": "vuku",
           "type": "racine",
-          "forme_liee": "zkit",
+          "forme_liee": "vuk",
           "domaine": "danger"
         }
       ]

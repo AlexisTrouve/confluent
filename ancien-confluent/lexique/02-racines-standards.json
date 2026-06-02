@@ -197,9 +197,9 @@
     "gris": {
       "traductions": [
         {
-          "confluent": "bkula",
+          "confluent": "kesa",
           "type": "racine",
-          "forme_liee": "bkul",
+          "forme_liee": "kes",
           "domaine": "couleur",
           "note": "Même racine que cendre"
         }
@@ -281,9 +281,9 @@
     "lieu": {
       "traductions": [
         {
-          "confluent": "plozi",
+          "confluent": "loku",
           "type": "racine",
-          "forme_liee": "ploz",
+          "forme_liee": "lok",
           "domaine": "espace",
           "note": "Endroit, place"
         }
@@ -320,9 +320,9 @@
     "paix": {
       "traductions": [
         {
-          "confluent": "lsezi",
+          "confluent": "paku",
           "type": "racine",
-          "forme_liee": "lsez",
+          "forme_liee": "pak",
           "domaine": "etat",
           "note": "Même racine que 'bon' - état bon"
         }
@@ -334,9 +334,9 @@
     "poisson": {
       "traductions": [
         {
-          "confluent": "ltiti",
+          "confluent": "pesa",
           "type": "racine",
-          "forme_liee": "ltit",
+          "forme_liee": "pes",
           "domaine": "animal",
           "note": "Nouvelle racine - créature de l'eau"
         }
@@ -367,9 +367,9 @@
     "rouge": {
       "traductions": [
         {
-          "confluent": "kzunu",
+          "confluent": "pasu",
           "type": "racine",
-          "forme_liee": "kzun",
+          "forme_liee": "pas",
           "domaine": "couleur",
           "note": "Couleur du sang, yeux des Ciels-clairs"
         }
@@ -572,9 +572,9 @@
     "valeur": {
       "traductions": [
         {
-          "confluent": "vbite",
+          "confluent": "valu",
           "type": "racine",
-          "forme_liee": "vbit",
+          "forme_liee": "val",
           "domaine": "concept_abstrait",
           "note": "Nouvelle racine - mérite"
         }

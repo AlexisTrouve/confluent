@@ -5,9 +5,9 @@
     "temps": {
       "traductions": [
         {
-          "confluent": "kpebo",
+          "confluent": "temi",
           "type": "racine",
-          "forme_liee": "kpeb",
+          "forme_liee": "tem",
           "domaine": "temps",
           "note": "Concept fondamental"
         }
@@ -77,9 +77,9 @@
     "lune": {
       "traductions": [
         {
-          "confluent": "bhenu",
+          "confluent": "luna",
           "type": "racine",
-          "forme_liee": "bhen",
+          "forme_liee": "lun",
           "domaine": "temps"
         }
       ]
@@ -271,9 +271,9 @@
     "duree": {
       "traductions": [
         {
-          "confluent": "pmubo",
+          "confluent": "temi",
           "type": "racine",
-          "forme_liee": "pmub",
+          "forme_liee": "tem",
           "domaine": "temps"
         }
       ]

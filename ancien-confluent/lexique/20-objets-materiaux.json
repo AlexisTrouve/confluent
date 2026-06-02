@@ -5,9 +5,9 @@
     "pierre": {
       "traductions": [
         {
-          "confluent": "zmepa",
+          "confluent": "kari",
           "type": "racine",
-          "forme_liee": "zmep",
+          "forme_liee": "kar",
           "domaine": "materiau",
           "note": "Matériau fondamental"
         }
@@ -20,9 +20,9 @@
     "bois": {
       "traductions": [
         {
-          "confluent": "nmeme",
+          "confluent": "buki",
           "type": "racine",
-          "forme_liee": "nmem",
+          "forme_liee": "buk",
           "domaine": "materiau",
           "note": "Matériau de l'arbre/forêt"
         }
@@ -76,9 +76,9 @@
     "cendre": {
       "traductions": [
         {
-          "confluent": "kvile",
+          "confluent": "kesa",
           "type": "racine",
-          "forme_liee": "kvil",
+          "forme_liee": "kes",
           "domaine": "materiau"
         }
       ]
@@ -86,9 +86,9 @@
     "sang": {
       "traductions": [
         {
-          "confluent": "mzune",
+          "confluent": "kina",
           "type": "racine",
-          "forme_liee": "mzun",
+          "forme_liee": "kin",
           "domaine": "materiau"
         }
       ]
@@ -96,9 +96,9 @@
     "lait": {
       "traductions": [
         {
-          "confluent": "stuki",
+          "confluent": "lapu",
           "type": "racine",
-          "forme_liee": "stuk",
+          "forme_liee": "lap",
           "domaine": "materiau"
         }
       ]
@@ -106,9 +106,9 @@
     "ligne": {
       "traductions": [
         {
-          "confluent": "speto",
+          "confluent": "lina",
           "type": "racine",
-          "forme_liee": "spet",
+          "forme_liee": "lin",
           "domaine": "forme"
         }
       ]
@@ -116,9 +116,9 @@
     "corde": {
       "traductions": [
         {
-          "confluent": "kkese",
+          "confluent": "lina",
           "type": "racine",
-          "forme_liee": "kkes",
+          "forme_liee": "lin",
           "domaine": "outil"
         }
       ]
@@ -126,9 +126,9 @@
     "sac": {
       "traductions": [
         {
-          "confluent": "pnomu",
+          "confluent": "saki",
           "type": "racine",
-          "forme_liee": "pnom",
+          "forme_liee": "sak",
           "domaine": "objet"
         }
       ],
@@ -139,9 +139,9 @@
     "tablette": {
       "traductions": [
         {
-          "confluent": "zkami",
+          "confluent": "tabi",
           "type": "racine",
-          "forme_liee": "zkam",
+          "forme_liee": "tab",
           "domaine": "objet"
         }
       ],
@@ -284,9 +284,9 @@
     "zone": {
       "traductions": [
         {
-          "confluent": "pvevi",
+          "confluent": "zoni",
           "type": "racine",
-          "forme_liee": "pvev",
+          "forme_liee": "zon",
           "domaine": "espace"
         }
       ],
@@ -297,9 +297,9 @@
     "navire": {
       "traductions": [
         {
-          "confluent": "bnuve",
+          "confluent": "vanu",
           "type": "racine",
-          "forme_liee": "bnuv",
+          "forme_liee": "van",
           "domaine": "objet"
         }
       ],

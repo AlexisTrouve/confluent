@@ -229,9 +229,9 @@
     "loi": {
       "traductions": [
         {
-          "confluent": "vsone",
+          "confluent": "leku",
           "type": "racine",
-          "forme_liee": "vson",
+          "forme_liee": "lek",
           "domaine": "communication"
         }
       ]
@@ -314,9 +314,9 @@
     "secret": {
       "traductions": [
         {
-          "confluent": "bnavi",
+          "confluent": "seku",
           "type": "racine",
-          "forme_liee": "bnav",
+          "forme_liee": "sek",
           "domaine": "communication"
         }
       ]
@@ -339,9 +339,9 @@
     "promesse": {
       "traductions": [
         {
-          "confluent": "kbevi",
+          "confluent": "savu",
           "type": "racine",
-          "forme_liee": "kbev",
+          "forme_liee": "sav",
           "domaine": "communication"
         }
       ]

@@ -5,9 +5,9 @@
     "lance": {
       "traductions": [
         {
-          "confluent": "skulo",
+          "confluent": "piki",
           "type": "racine",
-          "forme_liee": "skul",
+          "forme_liee": "pik",
           "domaine": "arme",
           "note": "Arme principale"
         }
@@ -191,9 +191,9 @@
     "corde": {
       "traductions": [
         {
-          "confluent": "vkiza",
+          "confluent": "lina",
           "type": "racine",
-          "forme_liee": "vkiz",
+          "forme_liee": "lin",
           "domaine": "outil",
           "note": "Lien tressé"
         }
@@ -277,9 +277,9 @@
     "tablette": {
       "traductions": [
         {
-          "confluent": "pkesa",
+          "confluent": "tabi",
           "type": "racine",
-          "forme_liee": "pkes",
+          "forme_liee": "tab",
           "domaine": "objet",
           "note": "Surface pour écrire"
         }

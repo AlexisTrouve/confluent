@@ -105,9 +105,9 @@
     "poisson": {
       "traductions": [
         {
-          "confluent": "mzoti",
+          "confluent": "pesa",
           "type": "racine",
-          "forme_liee": "mzot",
+          "forme_liee": "pes",
           "domaine": "animal",
           "note": "Créature de l'eau"
         }
@@ -131,9 +131,9 @@
     "serpent": {
       "traductions": [
         {
-          "confluent": "btite",
+          "confluent": "ziku",
           "type": "racine",
-          "forme_liee": "btit",
+          "forme_liee": "zik",
           "domaine": "animal",
           "note": "Créature rampante"
         }

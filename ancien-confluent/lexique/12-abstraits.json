@@ -21,9 +21,9 @@
     "confluence": {
       "traductions": [
         {
-          "confluent": "psate",
+          "confluent": "kota",
           "type": "racine",
-          "forme_liee": "psat",
+          "forme_liee": "kot",
           "domaine": "concept_fondateur",
           "note": "Union, rencontre"
         }
@@ -95,9 +95,9 @@
     "verite": {
       "traductions": [
         {
-          "confluent": "vpuma",
+          "confluent": "veri",
           "type": "racine",
-          "forme_liee": "vpum",
+          "forme_liee": "ver",
           "domaine": "concept_fondateur"
         }
       ]
@@ -362,9 +362,9 @@
     "loi": {
       "traductions": [
         {
-          "confluent": "bmumu",
+          "confluent": "leku",
           "type": "racine",
-          "forme_liee": "bmum",
+          "forme_liee": "lek",
           "domaine": "institution"
         }
       ]
@@ -468,9 +468,9 @@
     "paix": {
       "traductions": [
         {
-          "confluent": "bbolu",
+          "confluent": "paku",
           "type": "racine",
-          "forme_liee": "bbol",
+          "forme_liee": "pak",
           "domaine": "etat"
         }
       ]
@@ -650,9 +650,9 @@
     "mémoire": {
       "traductions": [
         {
-          "confluent": "ltuma",
+          "confluent": "mori",
           "type": "racine",
-          "forme_liee": "ltum",
+          "forme_liee": "mor",
           "domaine": "concept_fondateur",
           "note": "Mémoire - concept central de la civilisation (synonyme normalisé de memoire)"
         }
