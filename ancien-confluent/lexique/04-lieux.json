@@ -14,7 +14,11 @@
             "kota"
           ],
           "categorie": "lieu_majeur",
-          "note": "Lieu central où deux rivières se rejoignent"
+          "note": "Lieu central où deux rivières se rejoignent",
+          "definition": "Le lieu central et fondateur de la civilisation, où deux rivières (une azur, une verte) se rejoignent. Capitale spirituelle et politique des Siliaska.",
+          "nuance": "Composition ur-aa-kota = ura (eau, sacrée) + liaison -aa- (mélange confluent) + kota (union). La double voyelle 'aa' mime le flux. Doublon avec 'Uraakota'.",
+          "registre": "sacré",
+          "exemple": "va tori vi uraakota tekis"
         }
       ]
     },
@@ -29,7 +33,10 @@
             "ura",
             "kota"
           ],
-          "categorie": "lieu_majeur"
+          "categorie": "lieu_majeur",
+          "definition": "Nom propre du lieu de la Confluence des deux rivières, cœur géographique, spirituel et politique de la civilisation.",
+          "nuance": "Composition ur-aa-kota = ura (eau) + -aa- (fusion) + kota (union). Forme identique à 'La Confluence' : doublon entrée francisée / nom propre.",
+          "registre": "sacré"
         }
       ]
     },
@@ -45,7 +52,11 @@
             "ura"
           ],
           "categorie": "lieu_majeur",
-          "note": "Lieu sacré souterrain"
+          "note": "Lieu sacré souterrain",
+          "definition": "Lieu sacré souterrain où repose la mémoire des Premiers Ancêtres ; site du pèlerinage obligatoire pour « porter un regard libre ».",
+          "nuance": "Composition vuk-u-ura = vuku (gouffre, profond) + -u- (appartenance) + ura (eau, sacrée). Littéralement 'gouffre de l'eau'. Doublon avec 'Vukuura'.",
+          "registre": "sacré",
+          "exemple": "va naki ve vukuura tekis"
         }
       ]
     },
@@ -60,7 +71,10 @@
             "vuku",
             "ura"
           ],
-          "categorie": "lieu_majeur"
+          "categorie": "lieu_majeur",
+          "definition": "Nom propre du Gouffre Humide, abîme souterrain sacré abritant les vestiges des Premiers Ancêtres.",
+          "nuance": "Composition vuk-u-ura = vuku (gouffre) + -u- + ura (eau). Forme identique à 'Gouffre Humide' : doublon francisé / nom propre.",
+          "registre": "sacré"
         }
       ]
     },
@@ -76,7 +90,10 @@
             "toka"
           ],
           "categorie": "lieu_majeur",
-          "note": "Grottes souterraines"
+          "note": "Grottes souterraines",
+          "definition": "Réseau de grottes et souterrains habités par les Enfants des Échos (Nakukeko), mineurs et sculpteurs adaptés à l'obscurité.",
+          "nuance": "Composition kek-u-toka = keko (écho) + -u- (appartenance) + toka (terre). Littéralement 'écho de la terre'. Doublon avec 'Kekutoka'.",
+          "registre": "sacré"
         }
       ]
     },
@@ -91,7 +108,10 @@
             "keko",
             "toka"
           ],
-          "categorie": "lieu_majeur"
+          "categorie": "lieu_majeur",
+          "definition": "Nom propre des Antres des Échos, grottes souterraines où vit la caste des Enfants des Échos.",
+          "nuance": "Composition kek-u-toka = keko (écho) + -u- + toka (terre). Forme identique à 'Antres des Echos' : doublon francisé / nom propre.",
+          "registre": "sacré"
         }
       ]
     },
@@ -106,7 +126,10 @@
             "siku",
             "vela"
           ],
-          "categorie": "lieu_majeur"
+          "categorie": "lieu_majeur",
+          "definition": "Les Cercles de Vigile, camps de hauteur et promontoires montagneux servant aux rituels de la Vigile Lunaire et à l'entraînement militaire.",
+          "nuance": "Composition sik-u-vela = siku (cercle) + -u- + vela (veille, vigile). Littéralement 'cercle de la vigile'. Attention : siku désigne aussi 'sec/aride' (homophone) ; ici c'est 'cercle'.",
+          "registre": "sacré"
         }
       ]
     },
@@ -122,7 +145,10 @@
             "savu"
           ],
           "categorie": "lieu_majeur",
-          "note": "Structures gouvernementales"
+          "note": "Structures gouvernementales",
+          "definition": "Structures gouvernementales locales où sont prêtés et conservés les serments ; bâtiments qui grandissent au fil des générations comme artefacts multi-générationnels.",
+          "nuance": "Composition tal-u-savu = talu (hall) + -u- + savu (serment). Littéralement 'hall du serment'. Doublon avec 'Talusavu'.",
+          "registre": "sacré"
         }
       ]
     },
@@ -137,7 +163,10 @@
             "talu",
             "savu"
           ],
-          "categorie": "lieu_majeur"
+          "categorie": "lieu_majeur",
+          "definition": "Nom propre des Halls des Serments, sièges du pouvoir consociationnel et lieux de validation des serments.",
+          "nuance": "Composition tal-u-savu = talu (hall) + -u- + savu (serment). Forme identique à 'Halls des Serments' : doublon francisé / nom propre.",
+          "registre": "sacré"
         }
       ]
     },
@@ -152,7 +181,11 @@
             "eka",
             "kova"
           ],
-          "categorie": "lieu_majeur"
+          "categorie": "lieu_majeur",
+          "definition": "La Grande Fresque, œuvre peinte stratifiée à laquelle chaque génération ajoute sa vision ; emblème de l'artefact multi-générationnel.",
+          "nuance": "Composition ek-a-kova = eka (tout, totalité, sacrée) + -a- (avec) + kova (peinture, fresque). Littéralement 'totalité avec peinture'.",
+          "registre": "sacré",
+          "exemple": "va naki su vo ekakova mirak"
         }
       ]
     },
@@ -167,7 +200,10 @@
             "vuku",
             "mako"
           ],
-          "categorie": "lieu"
+          "categorie": "lieu",
+          "definition": "Lieu géographique désignant une gorge ou un abîme de grande ampleur, distinct du Gouffre Humide sacré.",
+          "nuance": "Composition vuk-u-mako = vuku (gouffre) + -u- + mako (grand, vaste). Littéralement 'gouffre de grandeur'. Partage vuku avec Vukuura mais reste un lieu commun.",
+          "registre": "courant"
         }
       ]
     },
@@ -183,7 +219,10 @@
             "aita"
           ],
           "categorie": "lieu_sacre",
-          "note": "Vestiges de la civilisation disparue"
+          "note": "Vestiges de la civilisation disparue",
+          "definition": "Vestiges de la civilisation disparue des Premiers Ancêtres, technologiquement supérieure et mystérieusement éteinte, source de l'anxiété existentielle des Siliaska.",
+          "nuance": "Composition os-i-aita = osi (mort, sacrée) + -i- + aita (ancêtre, sacrée). Littéralement 'mort des ancêtres'. Double racine sacrée, charge funéraire/mémorielle.",
+          "registre": "sacré"
         }
       ]
     },
@@ -198,7 +237,10 @@
             "kota",
             "zaki"
           ],
-          "categorie": "structure"
+          "categorie": "structure",
+          "definition": "Établissement humain défendu par des structures de protection, combinant habitat collectif et défense.",
+          "nuance": "Composition kot-a-zaki = kota (union) + -a- (avec) + zaki (protection). Littéralement 'union avec protection'. Lieu commun.",
+          "registre": "courant"
         }
       ]
     },
@@ -213,7 +255,10 @@
             "toka",
             "vuku"
           ],
-          "categorie": "region"
+          "categorie": "region",
+          "definition": "Région de plaines en contrebas, vers laquelle la civilisation s'est récemment étendue depuis la vallée montagneuse.",
+          "nuance": "Composition tok-u-vuku = toka (terre) + -u- + vuku (profond, bas). Littéralement 'terre du bas'. Région géographique.",
+          "registre": "courant"
         }
       ]
     },
@@ -228,7 +273,10 @@
             "vela",
             "seli"
           ],
-          "categorie": "structure"
+          "categorie": "structure",
+          "definition": "Poste de guet établi sur le littoral, lié à l'expansion récente vers la côte maritime et à la surveillance de l'inconnu venu de la mer.",
+          "nuance": "Composition vel-a-seli = vela (veille) + -a- (avec) + seli (mer). Littéralement 'vigile avec mer'. Structure récente (premier contact maritime).",
+          "registre": "courant"
         }
       ]
     },
@@ -243,7 +291,10 @@
             "asa",
             "loku"
           ],
-          "categorie": "structure"
+          "categorie": "structure",
+          "definition": "Lieu consacré au sacré, espace de prière et de rituel distinct des grands sites nommés.",
+          "nuance": "Composition as-a-loku = asa (sacré, racine sacrée) + -a- + loku (lieu). Littéralement 'sacré avec lieu'. Charge rituelle via asa, mais terme générique.",
+          "registre": "rituel"
         }
       ]
     },
@@ -258,7 +309,10 @@
             "zaki",
             "kari"
           ],
-          "categorie": "structure"
+          "categorie": "structure",
+          "definition": "Ouvrage défensif majeur bâti en pierre, conçu pour résister et protéger.",
+          "nuance": "Composition zak-i-kari = zaki (protection) + -i- (agent) + kari (pierre). Littéralement 'protection de pierre'. Structure militaire courante.",
+          "registre": "courant"
         }
       ]
     },
@@ -269,7 +323,10 @@
           "type": "racine",
           "forme_liee": "kek",
           "domaine": "lieu",
-          "note": "Caverne, grotte profonde"
+          "note": "Caverne, grotte profonde",
+          "definition": "Caverne ou grotte profonde, terme générique désignant un abri souterrain naturel.",
+          "nuance": "Racine keku (forme liée kek-), domaine 'lieu'. À ne pas confondre avec keko (écho), voisine, qui entre dans Kekutoka. Terme courant.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [

@@ -16,7 +16,10 @@
           "liaison": "i-u",
           "structure": "composition",
           "domaine": "temps",
-          "note": "Nouvelle génération - ceux qui porteront la mémoire (nov=nouveau + i=agentivité + u=appartenance + aita=ancêtres)"
+          "note": "Nouvelle génération - ceux qui porteront la mémoire (nov=nouveau + i=agentivité + u=appartenance + aita=ancêtres)",
+          "definition": "Une nouvelle génération, l'ensemble des jeunes qui deviendront à leur tour les ancêtres porteurs de la mémoire. Désigne aussi les descendants comme maillon de la continuité lignagère.",
+          "nuance": "Composition nov-i-u-aita : nuvi (nouveau, jeune) + liaison i-u + aita (ancêtre, sacrée). Charge culturelle forte : les jeunes sont des ancêtres en devenir. Valorise la transmission multi-générationnelle.",
+          "registre": "rituel"
         }
       ],
       "synonymes_fr": [
@@ -41,7 +44,10 @@
             "mako",
             "temi"
           ],
-          "domaine": "temps"
+          "domaine": "temps",
+          "definition": "Un siècle, une très longue période, le « grand temps » couvrant plusieurs générations.",
+          "nuance": "Composition mak-o-temi : mako (grand, vaste) + liaison o + temi (temps). Opposé d'échelle à pisutemi (moment). Unité longue, proche de la pensée lignagère.",
+          "registre": "courant"
         }
       ]
     },
@@ -56,7 +62,10 @@
             "temi",
             "siku"
           ],
-          "domaine": "temps"
+          "domaine": "temps",
+          "definition": "Une saison, le « temps du cercle », segment du cycle annuel rythmé par les retours réguliers (brumes, aurores, crues).",
+          "nuance": "Composition tem-i-siku : temi (temps) + siku (cercle/cycle). Conçue comme cyclique (aspect -eon-), reflet des 12 cycles lunaires.",
+          "registre": "courant"
         }
       ]
     },
@@ -71,7 +80,10 @@
             "luna",
             "siku"
           ],
-          "domaine": "temps"
+          "domaine": "temps",
+          "definition": "Un mois, le cycle lunaire (« lune avec cercle »), unité de base du calendrier dodécimal (12 cycles lunaires par an).",
+          "nuance": "Composition lun-a-siku : luna (lune) + -a- + siku (cercle). Pivot du système temporel : structure aussi le rituel de la Vigile Lunaire (bimensuel).",
+          "registre": "courant"
         }
       ]
     },
@@ -86,7 +98,10 @@
             "ora",
             "sora"
           ],
-          "domaine": "temps"
+          "domaine": "temps",
+          "definition": "Le matin, le moment de l'aurore et du soleil levant, début sacré de la journée.",
+          "nuance": "Composition ol-a-sola : ora (aurore, sacrée, forme liée ol-) + -a- + sora (soleil). Charge sacrée : l'aurore est signe divin, marque l'élection des Ciels-clairs (cf. Oraumi). Plus chargé qu'un simple repère horaire.",
+          "registre": "sacré"
         }
       ]
     },
@@ -96,7 +111,10 @@
           "confluent": "musu",
           "type": "racine",
           "forme_liee": "mus",
-          "domaine": "temps"
+          "domaine": "temps",
+          "definition": "Le crépuscule, la tombée du jour, moment de transition entre lumière et nuit.",
+          "nuance": "Racine simple (forme liée mus-). Pendant inversé d'olausola (matin) : le matin est sacré et composé, le crépuscule est rendu par une racine brève courante. À distinguer de bami (nuit pleine).",
+          "registre": "courant"
         }
       ]
     },
@@ -107,7 +125,10 @@
           "type": "racine",
           "forme_liee": "bam",
           "domaine": "temps",
-          "note": "Même racine que lune"
+          "note": "Même racine que lune",
+          "definition": "La nuit, période d'obscurité totale, distincte du crépuscule (transition) et associée à la lune.",
+          "nuance": "Racine simple (forme liée bam-). Lien sémantique avec luna (la lune) mais forme distincte. Pas de charge sacrée, contrairement à l'aurore.",
+          "registre": "courant"
         }
       ]
     },
@@ -122,7 +143,10 @@
             "eka",
             "temi"
           ],
-          "domaine": "temps"
+          "domaine": "temps",
+          "definition": "L'éternité, le temps absolu et sans fin, la « totalité du temps ».",
+          "nuance": "Composition ek-a-temi : eka (tout, totalité, sacrée) + -a- + temi (temps). Concept abstrait, à rapprocher de l'aspect -eom- (éternel). Proche de sikueka (cycle éternel) mais insiste sur la durée illimitée.",
+          "registre": "sacré"
         }
       ]
     },
@@ -133,7 +157,10 @@
           "type": "racine_sacree",
           "forme_liee": "ies",
           "domaine": "temps",
-          "note": "Même racine que origine"
+          "note": "Même racine que origine",
+          "definition": "Le passé, ce qui précède le présent ; aussi l'origine, le point de départ temporel.",
+          "nuance": "Racine sacrée (forme liée ies-). 'Même racine que origine' : passé et source se confondent (liaison dimensionnelle -e-). Domaine des ancêtres et de la mémoire (cf. 4 niveaux de passé verbaux at/aan/ait/amat).",
+          "registre": "sacré"
         }
       ]
     },
@@ -144,7 +171,10 @@
           "type": "racine",
           "forme_liee": "saz",
           "domaine": "temps",
-          "note": "Même racine que descendant"
+          "note": "Même racine que descendant",
+          "definition": "Le futur, le temps à venir ; aussi associé à la descendance, ce qui vient après.",
+          "nuance": "Racine (forme liée saz-). 'Même racine que descendant' : le futur conçu comme postérité (liaison -ea-, conjugateur futur -en). Pendant de ieso (passé/origine). Vision orientée transmission.",
+          "registre": "courant"
         }
       ]
     },
@@ -155,7 +185,11 @@
           "type": "racine",
           "forme_liee": "tis",
           "domaine": "temps",
-          "note": "Même racine que ici, proche"
+          "note": "Même racine que ici, proche",
+          "definition": "Le présent, le moment actuel, l'instant que l'on vit ; aussi « ici, proche ».",
+          "nuance": "Racine identique au démonstratif tisa (ici, proche). Fusion spatio-temporelle : le présent = ce qui est ici. Pendant de tova (là-bas, alors). Liaison -ei- (centre, présent), conjugateur présent -u-.",
+          "registre": "courant",
+          "exemple": "tisa va miki mirak"
         }
       ]
     },
@@ -170,7 +204,10 @@
             "siku",
             "eka"
           ],
-          "domaine": "temps"
+          "domaine": "temps",
+          "definition": "Le cycle éternel, le retour perpétuel des choses, le « cercle de la totalité » — image de la continuité cosmique et générationnelle.",
+          "nuance": "Composition sik-u-eka : siku (cercle) + -u- + eka (tout, sacrée). À distinguer d'ekautemi (durée illimitée) : sikueka insiste sur la circularité et le retour (aspect -eon-). Notion fondatrice du rapport au temps.",
+          "registre": "sacré"
         }
       ]
     },
@@ -185,7 +222,10 @@
             "nuvi",
             "ita"
           ],
-          "domaine": "temps"
+          "domaine": "temps",
+          "definition": "La renaissance, le renouvellement de la vie, le surgissement d'une vie nouvelle — sens spirituel de reprise du cycle vital.",
+          "nuance": "Composition nuv-u-ita : nuvi (nouveau) + -u- + ita (être, vie, sacrée). Lié au culte des ancêtres et au cycle vie/mort (osi, sikueka) : la renaissance ferme la boucle.",
+          "registre": "rituel"
         }
       ]
     },
@@ -200,7 +240,10 @@
             "tova",
             "osi"
           ],
-          "domaine": "spirituel"
+          "domaine": "spirituel",
+          "definition": "L'au-delà, le monde des morts et des ancêtres, le « loin de la mort » vers lequel partent les âmes.",
+          "nuance": "Composition tov-a-osi : tova (là-bas, distal) + -a- + osi (mort, sacrée). Charge funéraire : destination des âmes (formules funéraires). Construit sur tova, en miroir de tisa (présent/ici).",
+          "registre": "sacré"
         }
       ]
     },
@@ -215,7 +258,10 @@
             "pisu",
             "temi"
           ],
-          "domaine": "temps"
+          "domaine": "temps",
+          "definition": "Un moment, un court laps de temps, le « petit temps » (par opposition aux grandes unités).",
+          "nuance": "Composition pis-u-temi : pisu (petit) + -u- + temi (temps). Doublon parfait avec 'instant'. Opposé d'échelle à makoutemi (siècle).",
+          "registre": "courant"
         }
       ]
     },
@@ -230,7 +276,10 @@
             "pisu",
             "temi"
           ],
-          "domaine": "temps"
+          "domaine": "temps",
+          "definition": "Un instant, un très bref moment ; le « petit temps ».",
+          "nuance": "Composition pis-u-temi : pisu (petit) + -u- + temi (temps). Strictement identique à 'moment' (doublon assumé) : le Confluent ne distingue pas lexicalement moment et instant.",
+          "registre": "courant"
         }
       ]
     },
@@ -240,7 +289,10 @@
           "confluent": "temi",
           "type": "racine",
           "forme_liee": "tem",
-          "domaine": "temps"
+          "domaine": "temps",
+          "definition": "La durée, le temps en tant que tel — la racine temporelle de base, écoulement abstrait du temps.",
+          "nuance": "Racine simple temi (forme liée tem-), attestée dans data. Brique de presque tous les composés du domaine : makoutemi, pisutemi, ekautemi, temiuliku. Notion neutre, le temps brut.",
+          "registre": "courant"
         }
       ]
     }

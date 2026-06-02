@@ -15,7 +15,10 @@
             "tori"
           ],
           "categorie": "institution",
-          "note": "Institution centrale"
+          "note": "Institution centrale",
+          "definition": "Institution centrale et consultative de la Confluence, conseil des détenteurs du savoir qui orientent les décisions par la connaissance accumulée. Cœur de la gouvernance par l'expérience et la mémoire.",
+          "nuance": "Composition sik-u-sek-i-tori : siku (cercle) + -u- + seka (savoir) + -i- + tori (personne) = 'cercle des porteurs-de-savoir'. siku = cercle institutionnel (cf. Sikuvela). Autorité ancrée dans la connaissance. À distinguer de l'Assemblée des Chefs (autorité politique des castes).",
+          "registre": "sacré"
         }
       ]
     },
@@ -30,7 +33,10 @@
             "veli",
             "loku"
           ],
-          "categorie": "institution"
+          "categorie": "institution",
+          "definition": "Instance de jugement veillant au respect des mœurs et de la vérité au sein de la communauté ; lieu où la conduite est examinée à l'aune de la vérité.",
+          "nuance": "Composition vel-i-m-loku : veli (vérité) + loku (lieu) = 'lieu de vérité'. Charge morale (regard libre) autant que judiciaire. À distinguer de l'Arbitre des Esprits (justice tutélaire) et de zaki (justice/équité).",
+          "registre": "rituel"
         }
       ]
     },
@@ -45,7 +51,10 @@
             "voki",
             "eka"
           ],
-          "categorie": "titre"
+          "categorie": "titre",
+          "definition": "Charge officielle de celui qui énonce publiquement les décisions et lois devant la collectivité entière ; porte-voix de la communauté.",
+          "nuance": "Composition vok-i-eka : voki (voix) + -i- (agent) + eka (tout, totalité, sacrée) = 'voix de la totalité'. eka élève la fonction : voix au nom de tous. À distinguer de vokis (invoquer, spirituel). Titre (charge personnelle).",
+          "registre": "rituel"
         }
       ],
       "synonymes_fr": []
@@ -61,7 +70,10 @@
             "kota",
             "kasi"
           ],
-          "categorie": "institution"
+          "categorie": "institution",
+          "definition": "Organe politique réunissant les chefs des différentes castes pour décider en commun ; expression de la gouvernance consociationnelle de la Confluence.",
+          "nuance": "Composition kot-a-kasi : kota (union) + -a- (avec) + kasi (chef) = 'union avec les chefs'. La liaison -a- marque la concertation (vs Directoire -ii- fusion). Délibère plutôt qu'elle ne commande. À distinguer du Cercle des Sages (savoir) et du Conseil du Village (local).",
+          "registre": "courant"
         }
       ]
     },
@@ -76,7 +88,10 @@
             "nutu",
             "milis"
           ],
-          "categorie": "institution"
+          "categorie": "institution",
+          "definition": "Institution dédiée à la découverte et à la conservation du nouveau savoir ; lieu où les découvertes sont accueillies, étudiées et transmises.",
+          "nuance": "Composition nut-u-milis : nutu (maison) + -u- + milis (découverte). Tournée vers l'apprentissage et l'innovation ('chaque génération doit dépasser la précédente'). Complémentaire du Cercle des Sages (savoir établi).",
+          "registre": "courant"
         }
       ]
     },
@@ -92,7 +107,10 @@
             "umi"
           ],
           "categorie": "titre_supreme",
-          "note": "Entité tutélaire du jeu, pouvoir de réserve"
+          "note": "Entité tutélaire du jeu, pouvoir de réserve",
+          "definition": "Charge suprême et tutélaire, entité quasi divine détenant un pouvoir de réserve et arbitrant les conflits au plan spirituel ; gardien ultime des esprits de la communauté.",
+          "nuance": "Composition zak-ii-umi : zaki (garder/justice) + liaison -ii- (essentiel, 'qui EST') + umi (esprit, sacrée) = 'celui qui EST gardien des esprits'. Statut ontologique unique, au-dessus des institutions humaines. À distinguer de zakin (arbitrer, action ordinaire).",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": []
@@ -108,7 +126,10 @@
             "kasi",
             "kota"
           ],
-          "categorie": "institution"
+          "categorie": "institution",
+          "definition": "Organe exécutif restreint formé de l'union fusionnelle des chefs, agissant comme un corps de direction unifié.",
+          "nuance": "Composition kas-ii-kota : kasi (chef) + -ii- (essentiel) + kota (union) = 'chefs unis'. La liaison -ii- exprime une unité organique (vs Assemblée -a- concertation). Ordre inversé vs kotaukasi : ici 'des chefs' d'abord.",
+          "registre": "courant"
         }
       ]
     },
@@ -123,7 +144,11 @@
             "talu",
             "savu"
           ],
-          "categorie": "lieu_institution"
+          "categorie": "lieu_institution",
+          "definition": "Édifice gouvernemental local où sont prêtés et conservés les serments ; structure qui s'enrichit au fil des générations.",
+          "nuance": "Composition tal-u-savu : talu (hall) + -u- + savu (serment) = 'hall du serment'. Institution comme lieu, siège des Akoazana. Lié au Rituel du Regard Partagé qui scelle les accords.",
+          "registre": "rituel",
+          "exemple": "no talusavu va kasi vo savu kitan"
         }
       ]
     },
@@ -139,7 +164,10 @@
             "siku",
             "sili"
           ],
-          "categorie": "institution"
+          "categorie": "institution",
+          "definition": "Instance de gouvernance locale réunissant les habitants d'un village en cercle pour délibérer du regard commun ; échelon de base de la décision collective.",
+          "nuance": "Composition kot-a-sik-u-sili : kota (union) + -a- + siku (cercle) + sili (regard) = 'union, cercle de regard'. Composition triple. À distinguer de l'Assemblée des Chefs (élites) : ici l'échelon villageois.",
+          "registre": "courant"
         }
       ]
     },
@@ -154,7 +182,10 @@
             "asa",
             "aita"
           ],
-          "categorie": "lieu_sacre"
+          "categorie": "lieu_sacre",
+          "definition": "Lieu sacré dédié au culte des ancêtres, où l'on honore la lignée et où s'accumulent les noms des pionniers ; point de contact rituel avec les Premiers.",
+          "nuance": "Composition as-a-aita : asa (sacré) + -a- (avec) + aita (ancêtre) = 'sacré avec ancêtre'. Double racine sacrée, statut spirituel le plus élevé. Hiatus a-a assumé. Cœur du culte des ancêtres.",
+          "registre": "sacré"
         }
       ]
     },
@@ -169,7 +200,10 @@
             "vela",
             "luna"
           ],
-          "categorie": "rituel"
+          "categorie": "rituel",
+          "definition": "Rituel collectif bimensuel de veille tenu deux jours après la pleine lune, mêlant pratiques sacrées et entraînement ; temps fort du cycle communautaire.",
+          "nuance": "Composition vel-a-luna : vela (veille) + -a- + luna (lune) = 'vigile avec lune'. vela rattache au guet (cf. Sikuvela, velak), luna au cycle lunaire (base 12). Événement cyclique (aspect -eon-).",
+          "registre": "rituel"
         }
       ]
     },
@@ -184,7 +218,10 @@
             "sora",
             "aita"
           ],
-          "categorie": "celebration"
+          "categorie": "celebration",
+          "definition": "Jour de célébration dédié à la mémoire des ancêtres, honorant la lignée et la continuité multi-générationnelle.",
+          "nuance": "Composition sol-a-aita : sora (soleil > jour) + -a- + aita (ancêtre, sacrée) = 'jour avec ancêtres'. Événement ponctuel (vs Vigile Lunaire cyclique). Parallèle exact avec Jour du Faucon (solauaki).",
+          "registre": "rituel"
         }
       ]
     },
@@ -199,7 +236,10 @@
             "sora",
             "aki"
           ],
-          "categorie": "celebration"
+          "categorie": "celebration",
+          "definition": "Jour de célébration consacré au faucon et, par extension, aux Faucons Chasseurs (Akoazana) ; fête de la chasse et de la vigilance guerrière.",
+          "nuance": "Composition sol-a-aki : sora (soleil > jour) + -a- + aki (faucon, sacrée) = 'jour avec faucon'. Relie aux Akoazana. Parallèle direct du Jour des Ancêtres (même moule sol-a-X).",
+          "registre": "rituel"
         }
       ]
     }

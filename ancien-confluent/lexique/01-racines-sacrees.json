@@ -9,7 +9,11 @@
           "type": "racine_sacree",
           "forme_liee": "ask",
           "domaine": "concept_fondateur",
-          "note": "Concept central de la civilisation"
+          "note": "Concept central de la civilisation",
+          "definition": "État de celui qui n'est entravé par rien ; liberté comme valeur fondatrice de la Confluence, acquise notamment par le pèlerinage au Gouffre Humide. Concept central qui donne son nom au peuple (Siliaska, les porteurs du regard libre).",
+          "nuance": "Racine sacrée aska (forme liée ask-), domaine concept_fondateur. C'est l'une des racines cardinales : entre dans siliaska (peuple) et aliaska (Ailes-Grises). Le synonyme couvre l'adjectif (libre) et le concept abstrait (liberté), sans dérivation. Charge spirituelle : regard libre = vision sans préjugé.",
+          "registre": "sacré",
+          "exemple": "va sili aska"
         }
       ],
       "synonymes_fr": [
@@ -23,7 +27,10 @@
           "type": "racine_sacree",
           "forme_liee": "ait",
           "domaine": "lignee_sacree",
-          "note": "Ceux qui sont venus avant"
+          "note": "Ceux qui sont venus avant",
+          "definition": "Celui qui est venu avant ; aïeul de la lignée, objet du culte central de la Confluence fondé sur la transmission et la mémoire. Englobe au sens large 'ancien' et l'ensemble des anciens d'une lignée.",
+          "nuance": "Racine sacrée aita (forme liée ait-), domaine lignee_sacree. Homophonie avec le conjugateur de passé ancestral -ait : le passé ancestral = 'le temps de nos ancêtres'. À distinguer de seni (vieux, simple ancienneté) : aita est la personne révérée.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -43,7 +50,10 @@
           "type": "racine_sacree",
           "forme_liee": "as",
           "domaine": "spirituel",
-          "note": "Ce qui est intouchable, divin"
+          "note": "Ce qui est intouchable, divin",
+          "definition": "Ce qui est intouchable, divin, mis à part du profane ; qualité de ce qui relève des esprits, des ancêtres et des lois anciennes gardées par les Voix de l'Aurore.",
+          "nuance": "Racine sacrée asa (forme liée as-), domaine spirituel. Donne le verbe asavik (prier). Couvre divin/saint/sacré. À distinguer de anu/umi (âme/esprit, l'intériorité) et de aita (ancêtre incarné) : asa qualifie le statut d'intouchabilité, non l'entité.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -62,7 +72,10 @@
           "type": "racine_sacree",
           "forme_liee": "ap",
           "domaine": "nature_sacree",
-          "note": "Vol, créature ailée"
+          "note": "Vol, créature ailée",
+          "definition": "Créature ailée, être du vol ; catégorie sacrée associée à l'élévation et au passage entre la terre et le ciel. Par extension, le vol lui-même.",
+          "nuance": "Racine sacrée apo (forme liée ap-), domaine nature_sacree. Doublon de forme liée avec apa (aile) : ap- partagé, compositions ambiguës. À distinguer des espèces nommées alu (grue) et aki (faucon).",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -76,7 +89,10 @@
           "type": "racine_sacree",
           "forme_liee": "al",
           "domaine": "animal_sacre",
-          "note": "Regard-Libre, animal sacré central"
+          "note": "Regard-Libre, animal sacré central",
+          "definition": "La grue, dite Regard-Libre : oiseau sacré central de la Confluence, domestiqué par les Ailes-Grises comme messager et symbole de la vision au-delà et de la liberté.",
+          "nuance": "Racine sacrée alu (forme liée al-), animal_sacre. Entre dans aliaska (al-i-aska = Ailes-Grises). À distinguer de aki (faucon, chasse, Akoazana) et de la catégorie générique apo (oiseau). Charge symbolique haute : voir au-delà, messager des esprits.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -90,7 +106,10 @@
           "type": "racine_sacree",
           "forme_liee": "ak",
           "domaine": "animal_sacre",
-          "note": "Oiseau de proie sacré"
+          "note": "Oiseau de proie sacré",
+          "definition": "Oiseau de proie sacré, emblème de la chasse et de l'élite guerrière ; symbole des Faucons Chasseurs (Akoazana), caste militaire, judiciaire et religieuse.",
+          "nuance": "Racine sacrée aki (forme liée ak-), animal_sacre. Entre dans akoazana (ak-oa-zana = faucon-chasseur). À distinguer de alu (grue, vision/message, valeurs douces) : aki porte la prédation, la maîtrise, le conflit résolu (liaison -oa-).",
+          "registre": "sacré"
         }
       ]
     },
@@ -101,7 +120,10 @@
           "type": "racine_sacree",
           "forme_liee": "ur",
           "domaine": "element_primordial",
-          "note": "Élément primordial, fluide"
+          "note": "Élément primordial, fluide",
+          "definition": "Élément primordial fluide, au cœur de la cosmologie de la Confluence où deux rivières se rejoignent ; principe de mélange, d'adaptation et d'enrichissement par la rencontre.",
+          "nuance": "Racine sacrée ura (forme liée ur-), element_primordial. Cardinale : entre dans uraakota (La Confluence), nakuura (Enfants du Courant), vukuura (Gouffre Humide). À distinguer de nura (rivière, cours d'eau concret) et seli (mer/sel) : ura est l'élément-principe, métaphore de la confluence.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -116,8 +138,8 @@
           "forme_liee": "um",
           "domaine": "spirituel",
           "note": "Souffle vital, essence",
-          "definition": "L'esprit, principe vital et conscience d'un être ; souffle qui anime.",
-          "nuance": "Racine sacrée. Recoupe partiellement umi (esprit/souffle vital) et anu (âme) de data/lexique : zone de quasi-synonymie spirituelle. Le champ liste 'âme' comme synonyme_fr, donc oelu couvre esprit+âme ici.",
+          "definition": "Souffle vital qui anime un être ; principe de conscience et essence spirituelle. L'une des racines spirituelles fondatrices, présente dans le nom des chamans Voix de l'Aurore.",
+          "nuance": "Racine sacrée umi (forme liée um-), spirituel. Donne umiak (méditer), entre dans oraumi (or-a-umi = Voix de l'Aurore). Quasi-synonymie avec anu (âme, intériorité profonde) : umi = souffle vital/esprit animateur. Recouvre esprit+âme.",
           "registre": "sacré"
         }
       ],
@@ -133,7 +155,10 @@
           "type": "racine_sacree",
           "forme_liee": "ik",
           "domaine": "concept_fondateur",
-          "note": "Unicité, premier nombre"
+          "note": "Unicité, premier nombre",
+          "definition": "L'unité, le premier nombre ; l'unique, ce qui est seul de son espèce. Concept fondateur exprimant à la fois la numération (1) et l'unicité absolue.",
+          "nuance": "Racine sacrée iko (forme liée ik-), concept_fondateur. Aussi le chiffre 1 du système dodécimal. Opposé conceptuel de eka (tout). Ne pas confondre avec eku (étoile, racine homophone). Fonctionne comme nombre, qualifiant (unique) et concept d'unicité.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -148,7 +173,10 @@
           "type": "racine_sacree",
           "forme_liee": "it",
           "domaine": "existence",
-          "note": "Exister, vivre"
+          "note": "Exister, vivre",
+          "definition": "Le fait d'exister, de vivre, d'avoir présence dans le monde. Racine sacrée de l'existence.",
+          "nuance": "Racine sacrée ita (forme liée it-), existence. Tension à noter : la syntaxe emploie le verbe existentiel urak ('il y a') et non une forme dérivée d'ita. À distinguer de osi (mort), terme opposé du cycle d'existence.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -163,7 +191,10 @@
           "type": "racine_sacree",
           "forme_liee": "en",
           "domaine": "dimension",
-          "note": "Source, naissance, commencement"
+          "note": "Source, naissance, commencement",
+          "definition": "La source, le commencement, la naissance ; point de départ d'où tout procède. Dimension primordiale invoquée dans les formules funéraires (l'âme retourne vers l'origine).",
+          "nuance": "Racine sacrée ena (forme liée en-), dimension. Homophonie avec le conjugateur de futur -en, proximité avec la liaison dimensionnelle -e- (source, origine, passé) : ena est la racine pleine de ce champ. À distinguer de aita (l'origine personnifiée).",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -178,7 +209,11 @@
           "type": "racine_sacree",
           "forme_liee": "ek",
           "domaine": "dimension",
-          "note": "Totalité, entièreté"
+          "note": "Totalité, entièreté",
+          "definition": "La totalité, l'ensemble entier, l'intégralité de ce qui est ; dimension de l'englobant et du complet.",
+          "nuance": "Racine sacrée eka (forme liée ek-), dimension. Entre dans ekakova (Grande Fresque, 'tout-avec-fresque'). Doublon de forme liée avec eku (étoile) : ek- partagé. Opposé conceptuel de iko (un/unique).",
+          "registre": "sacré",
+          "exemple": "va aita su vo eka mirakait"
         }
       ],
       "synonymes_fr": [
@@ -193,7 +228,10 @@
           "type": "racine_sacree",
           "forme_liee": "or",
           "domaine": "moment_sacre",
-          "note": "Aube, moment de transition sacré"
+          "note": "Aube, moment de transition sacré",
+          "definition": "L'aube, première lumière du jour ; moment de transition sacré associé à la naissance, à la promesse et à l'élection divine. Signe céleste majeur, lié aux Ciels-clairs aux yeux couleur d'aurore.",
+          "nuance": "Racine sacrée ora (forme liée or-), moment_sacre. Le 'r' est toléré (racine ancienne). Entre dans oraumi (or-a-umi = Voix de l'Aurore). À distinguer de sora (soleil/lumière, l'astre établi) : ora est l'instant liminal nuit→jour.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -207,7 +245,10 @@
           "type": "racine_sacree",
           "forme_liee": "on",
           "domaine": "rituel",
-          "note": "Vibration, lié aux rhombes sacrés"
+          "note": "Vibration, lié aux rhombes sacrés",
+          "definition": "Le son, la vibration acoustique ; phénomène sacré lié aux rhombes, instruments rituels servant à la communication longue distance. Le son comme vecteur du sacré et du message.",
+          "nuance": "Racine sacrée onu (forme liée on-), rituel. À distinguer de keko (écho, le retour du son, central pour les Enfants des Échos) et de voki (voix, parole humaine). Onu est la vibration sacrée elle-même, associée aux rhombes.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -221,7 +262,10 @@
           "type": "racine_sacree",
           "forme_liee": "uut",
           "domaine": "spirituel",
-          "note": "Même racine que 'esprit'"
+          "note": "Même racine que 'esprit'",
+          "definition": "L'âme, la conscience profonde d'un être ; principe d'intériorité distinct du souffle vital. Ce qui, dans les formules funéraires, retourne vers l'origine après la mort.",
+          "nuance": "DOUBLON à signaler : le fichier donne uuto pour 'âme', mais data atteste anu (racine sacrée canonique), et umi couvre déjà esprit+âme. La forme uuto n'apparaît pas dans data ni les compositions (uu- initial atypique). Triple chevauchement umi/anu/uuto à arbitrer.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -235,7 +279,10 @@
           "type": "racine_sacree",
           "forme_liee": "os",
           "domaine": "existence",
-          "note": "Nouvelle racine sacrée - fin de l'existence"
+          "note": "Nouvelle racine sacrée - fin de l'existence",
+          "definition": "La fin de l'existence, le trépas ; passage vers les ancêtres dans la cosmologie de la Confluence, non pas anéantissement mais retour vers l'origine et la lignée.",
+          "nuance": "Racine sacrée osi (forme liée os-), cycle_sacre. Donne osian (mourir). Opposé de ita (être). Charge non négative : passage vers aita (ancêtres) et ena (origine), d'où les formules funéraires.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -250,7 +297,10 @@
           "type": "racine_sacree",
           "forme_liee": "ap",
           "domaine": "nature_sacree",
-          "note": "Lié à oiseau/vol mais distinct"
+          "note": "Lié à oiseau/vol mais distinct",
+          "definition": "L'aile, organe du vol ; partie de l'oiseau associée à l'élévation et, métaphoriquement, à la liberté du regard porté de haut.",
+          "nuance": "Racine sacrée apa (forme liée ap-), nature_sacree. Doublon de forme liée avec apo (oiseau) : ap- partagé. Risque de confusion apa (aile) / apo (oiseau) en composition.",
+          "registre": "sacré"
         }
       ]
     }

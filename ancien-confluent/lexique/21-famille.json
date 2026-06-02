@@ -9,7 +9,11 @@
           "type": "racine",
           "forme_liee": "vak",
           "domaine": "famille",
-          "note": "Frère de sang"
+          "note": "Frère de sang",
+          "definition": "Frère de sang, garçon issu des mêmes parents. Désigne le lien fraternel biologique au sein de la fratrie.",
+          "nuance": "Racine standard (forme liée vak-). Homophone partiel de vaku (ami, allié) : vaki = lien de sang, vaku = lien d'alliance choisie. Distinction nette parenté héritée / amitié élective.",
+          "registre": "courant",
+          "exemple": "va vaki vo ura mirak"
         }
       ],
       "synonymes_fr": [
@@ -23,7 +27,11 @@
           "type": "racine",
           "forme_liee": "sek",
           "domaine": "famille",
-          "note": "Sœur de sang"
+          "note": "Sœur de sang",
+          "definition": "Sœur de sang, fille issue des mêmes parents. Pendant féminin de vaki dans la fratrie.",
+          "nuance": "Racine standard (forme liée sek-). Collision avec seka (savoir) et seka (couper) ; le contexte lève l'ambiguïté. Symétrique de vaki ; regroupés sous vakisu (fratrie), où vaki sert de terme générique.",
+          "registre": "courant",
+          "exemple": "va seki vo naki zakis"
         }
       ],
       "synonymes_fr": [
@@ -37,7 +45,11 @@
           "type": "racine",
           "forme_liee": "mat",
           "domaine": "famille",
-          "note": "Mère biologique"
+          "note": "Mère biologique",
+          "definition": "Mère biologique, génitrice. Désigne le lien maternel de sang.",
+          "nuance": "Racine standard (forme liée mat-). DOUBLON : matu (ici) vs mamu (15-roles-titres). matu = terme neutre régulier (cf. patu), insiste sur la filiation de sang ; mamu (redoublement labial) = registre affectif/vocatif. À arbitrer : matu neutre, mamu tendre.",
+          "registre": "courant",
+          "exemple": "va matu vo naku takan"
         }
       ]
     },
@@ -48,7 +60,11 @@
           "type": "racine",
           "forme_liee": "pat",
           "domaine": "famille",
-          "note": "Père biologique"
+          "note": "Père biologique",
+          "definition": "Père biologique, géniteur. Désigne le lien paternel de sang.",
+          "nuance": "Racine standard (forme liée pat-). DOUBLON : patu (ici) vs papu (15-roles-titres). patu = terme neutre régulier, parallèle exact de matu (paire mat-/pat-) ; papu = appellatif affectif. Même arbitrage que mère.",
+          "registre": "courant",
+          "exemple": "va patu vo seka kisun"
         }
       ]
     },
@@ -59,7 +75,11 @@
           "type": "racine",
           "forme_liee": "tok",
           "domaine": "personne",
-          "note": "Homme adulte"
+          "note": "Homme adulte",
+          "definition": "Homme adulte de sexe masculin. Terme générique pour l'adulte masculin, hors contexte de parenté précise.",
+          "nuance": "Racine standard (domaine personne, forme liée tok-). Quasi-homophone de toka (terre) et toku (toucher) : seule la voyelle -o distingue. S'oppose à nako (femme) et à tebo (garçon, l'âge). N'exprime pas la paternité (patu).",
+          "registre": "courant",
+          "exemple": "va toko vo kari pasak"
         }
       ],
       "synonymes_fr": [
@@ -73,7 +93,10 @@
           "type": "racine",
           "forme_liee": "nak",
           "domaine": "personne",
-          "note": "Femme adulte"
+          "note": "Femme adulte",
+          "definition": "Femme adulte de sexe féminin. Terme générique pour l'adulte féminin, hors contexte de parenté précise.",
+          "nuance": "Racine standard (forme liée nak-). Triplet nak- : nako (femme) / naku (fille) / naki (enfant générique), distingués par la voyelle finale. S'oppose à toko (homme).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -87,7 +110,11 @@
           "type": "racine",
           "forme_liee": "nak",
           "domaine": "personne",
-          "note": "Fille, enfant féminin"
+          "note": "Fille, enfant féminin",
+          "definition": "Fille, enfant de sexe féminin. Descendante féminine, par opposition au garçon.",
+          "nuance": "Racine standard (forme liée nak-). 'fille' = enfant féminine (naku), non 'fille de qqn' (qui se rendrait par naki + possession na). Membre du triplet nak- (nako/naku/naki) ; s'oppose à tebo (garçon).",
+          "registre": "courant",
+          "exemple": "va naku vo apo mirak"
         }
       ],
       "synonymes_fr": [
@@ -101,7 +128,11 @@
           "type": "racine",
           "forme_liee": "teb",
           "domaine": "personne",
-          "note": "Garçon, enfant masculin"
+          "note": "Garçon, enfant masculin",
+          "definition": "Garçon, enfant de sexe masculin. Descendant masculin, pendant de naku (fille).",
+          "nuance": "Racine standard (forme liée teb-). Pas de collision attestée. Paire de genre avec naku (fille) à l'âge enfant ; s'oppose à toko (homme) à l'âge adulte. Ne porte pas la filiation (naki).",
+          "registre": "courant",
+          "exemple": "va tebo vi viku tekis"
         }
       ],
       "synonymes_fr": [
@@ -120,7 +151,10 @@
           "racines": [
             "vaki"
           ],
-          "domaine": "famille"
+          "domaine": "famille",
+          "definition": "La fratrie, l'ensemble des frères et sœurs de sang. Pluriel collectif englobant les germains, quel que soit leur sexe.",
+          "nuance": "Composition vaki (frère) + su (pluriel) : vaki sert de terme générique non marqué pour la fratrie. À distinguer de mitu (famille/clan, parenté étendue) et aita (ancêtres, lignée verticale) : vakisu = strate horizontale d'une même génération.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [

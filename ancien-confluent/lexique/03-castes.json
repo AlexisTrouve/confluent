@@ -14,7 +14,11 @@
             "aska"
           ],
           "categorie": "peuple",
-          "note": "Nom du peuple de la Confluence"
+          "note": "Nom du peuple de la Confluence",
+          "definition": "Nom que le peuple de la Confluence se donne à lui-même, signifiant littéralement « les porteurs du regard libre ». Désigne l'ensemble de la civilisation, par-delà les divisions de castes, unie par le pèlerinage au Gouffre Humide qui confère le « regard libre ».",
+          "nuance": "Composition sil-i-aska : sili (regard) + liaison agentive -i- + aska (libre, racine sacrée fondatrice). Structure standard-liaison-sacrée, valorisée par la racine sacrée finale. Autonyme central, opposé à « l'Autre » (zoka). Doublon avec l'entrée 'peuple'.",
+          "registre": "sacré",
+          "exemple": "va siliaska vo aska mirakeol"
         }
       ],
       "synonymes_fr": [
@@ -33,7 +37,10 @@
             "sili",
             "aska"
           ],
-          "categorie": "peuple"
+          "categorie": "peuple",
+          "definition": "Le peuple dans son ensemble, désigné par son autonyme : les Siliaska, « porteurs du regard libre ». Il n'existe pas de mot générique neutre pour « peuple » distinct du nom propre du peuple lui-même.",
+          "nuance": "Doublon exact de 'Siliaska'. Le français 'peuple' est traité comme synonyme du nom ethnique. Pour un groupe humain abstrait on emploierait tibu (tribu) ou mitu (famille, clan).",
+          "registre": "sacré"
         }
       ]
     },
@@ -51,7 +58,10 @@
           "categorie": "caste",
           "element": "terre",
           "racines_sacrees": 0,
-          "note": "Souterrains, mineurs, artisans"
+          "note": "Souterrains, mineurs, artisans",
+          "definition": "Caste des habitants souterrains : mineurs, carriers, artisans et sculpteurs vivant dans les grottes (Antres des Échos). Littéralement « enfants de l'écho ».",
+          "nuance": "Composition nak-u-keko : naki (enfant) + -u- (appartenance) + keko (écho). Aucune racine sacrée (caste 'Sans-ciels'). La répétition des k mime la réverbération. Doublon avec 'Nakukeko'. Même moule nak-u-X que Nakuura.",
+          "registre": "sacré"
         }
       ]
     },
@@ -61,7 +71,10 @@
           "confluent": "keko",
           "type": "racine",
           "categorie": "concept",
-          "note": "Écho, résonance (racine extraite de Nakukeko)"
+          "note": "Écho, résonance (racine extraite de Nakukeko)",
+          "definition": "Écho, résonance : le retour réfléchi d'un son, phénomène central de la vie souterraine des Nakukeko.",
+          "nuance": "Racine standard keko (forme liée kek-). Concept commun (registre courant), à relier à onu (son sacré) et tiku (oreille) ; keko = le son réfléchi, pas le son originel.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -80,7 +93,10 @@
             "keko"
           ],
           "categorie": "caste",
-          "element": "terre"
+          "element": "terre",
+          "definition": "Forme confluent du nom de la caste des Enfants des Échos : peuple souterrain des mineurs, carriers et sculpteurs, pâles et adaptés à l'obscurité des grottes.",
+          "nuance": "Composition nak-u-keko (enfant-de-écho). Doublon avec 'Enfants des Echos'. Caste 'Sans-ciels' (élément terre), sans racine sacrée, pôle terrestre et technique, par opposition aux Oraumi spirituels.",
+          "registre": "sacré"
         }
       ]
     },
@@ -98,7 +114,10 @@
           "categorie": "caste",
           "element": "eau",
           "racines_sacrees": 1,
-          "note": "Pêcheurs, villages sur pilotis"
+          "note": "Pêcheurs, villages sur pilotis",
+          "definition": "Caste des pêcheurs et maîtres de l'eau, vivant dans des villages sur pilotis le long des rivières. Littéralement « enfants de l'eau », caste 'Sans-ciels' associée à l'élément eau.",
+          "nuance": "Composition nak-u-ura : naki (enfant) + -u- + ura (eau, racine sacrée). Une racine sacrée (ura) qui élève la caste au-dessus des Nakukeko. Même moule nak-u-X. Doublon avec 'Nakuura'.",
+          "registre": "sacré"
         }
       ]
     },
@@ -114,7 +133,10 @@
             "ura"
           ],
           "categorie": "caste",
-          "element": "eau"
+          "element": "eau",
+          "definition": "Forme confluent du nom de la caste des Enfants du Courant : pêcheurs des villages sur pilotis, maîtres de l'élément eau.",
+          "nuance": "Composition nak-u-ura (enfant-de-eau). Doublon avec 'Enfants du Courant'. La racine sacrée ura les relie à Uraakota (La Confluence), source de leur prestige parmi les Sans-ciels.",
+          "registre": "sacré"
         }
       ]
     },
@@ -132,7 +154,10 @@
           "categorie": "caste",
           "element": "air",
           "racines_sacrees": 2,
-          "note": "Dresseurs de grues, chamans"
+          "note": "Dresseurs de grues, chamans",
+          "definition": "Caste des chamans dresseurs de Regards-Libres (les grues), intermédiaires entre le ciel et la terre. Littéralement « porteurs de la grue libre ».",
+          "nuance": "Composition al-i-aska : alu (grue) + -i- (agent) + aska (libre). Deux racines sacrées : structure rare et très valorisée, statut spirituel élevé. Parallèle exact avec Siliaska (X-i-aska). Doublon avec 'Aliaska'.",
+          "registre": "sacré"
         }
       ]
     },
@@ -148,7 +173,10 @@
             "aska"
           ],
           "categorie": "caste",
-          "element": "air"
+          "element": "air",
+          "definition": "Forme confluent du nom de la caste des Ailes-Grises : chamans dresseurs de grues (Regards-Libres), qui mènent le groupe spirituel des Oraumi.",
+          "nuance": "Composition al-i-aska (grue-agent-libre). Doublon avec 'Ailes-Grises'. Le redoublement de racines sacrées (alu + aska) place la caste au sommet de la hiérarchie sacrée, aux côtés des Oraumi.",
+          "registre": "sacré"
         }
       ]
     },
@@ -166,7 +194,10 @@
           "categorie": "caste",
           "element": "feu",
           "racines_sacrees": 1,
-          "note": "Élite militaire et judiciaire"
+          "note": "Élite militaire et judiciaire",
+          "definition": "Caste-élite militaire, judiciaire et religieuse, basée dans les Halls des Serments. Littéralement « faucon ayant vaincu la chasse », guerriers d'élite associés à l'élément feu.",
+          "nuance": "Composition ak-oa-zana : aki (faucon, sacré) + liaison de résolution -oa- (vaincu, accompli) + zana (chasser). La liaison -oa- exprime la maîtrise accomplie. À opposer à zana seul. Doublon avec 'Akoazana'.",
+          "registre": "sacré"
         }
       ]
     },
@@ -182,7 +213,10 @@
             "zana"
           ],
           "categorie": "caste",
-          "element": "feu"
+          "element": "feu",
+          "definition": "Forme confluent du nom de la caste des Faucons Chasseurs : élite guerrière, judiciaire et religieuse émergente de la civilisation.",
+          "nuance": "Composition ak-oa-zana (faucon-vainqueur-chasse). Doublon avec 'Faucons Chasseurs'. Caste de la force légitime et de la justice par les armes, distincte de la justice arbitrale des Oraumi.",
+          "registre": "sacré"
         }
       ]
     },
@@ -200,7 +234,11 @@
           "categorie": "caste",
           "element": "ether",
           "racines_sacrees": 0,
-          "note": "Marchands, médiateurs"
+          "note": "Marchands, médiateurs",
+          "definition": "Caste mixte des marchands et médiateurs, qui font « passer le bien » d'un groupe à l'autre, autant les marchandises que la concorde. Caste associée à l'élément éther.",
+          "nuance": "Composition tak-i-tosa : taka (porter) + -i- (agent) + tosa (bien). Aucune racine sacrée. Double sens de 'bien' : marchandise et bien moral. Doublon avec 'Takitosa'.",
+          "registre": "sacré",
+          "exemple": "va takitosa vo tosa takan"
         }
       ]
     },
@@ -216,7 +254,10 @@
             "tosa"
           ],
           "categorie": "caste",
-          "element": "ether"
+          "element": "ether",
+          "definition": "Forme confluent du nom de la caste des Passes-bien : marchands et médiateurs assurant la circulation des biens et l'entente entre les autres castes.",
+          "nuance": "Composition tak-i-tosa (porter-agent-bien). Doublon avec 'Passes-bien'. Caste sans racine sacrée, ancrage profane et pratique, mais rôle de pont (vasi) indispensable à la confluence sociale.",
+          "registre": "sacré"
         }
       ]
     },
@@ -233,7 +274,10 @@
           ],
           "categorie": "groupe_spirituel",
           "racines_sacrees": 2,
-          "note": "Chamans, gardiens des lois sacrées"
+          "note": "Chamans, gardiens des lois sacrées",
+          "definition": "Groupe spirituel des chamans gardiens des lois sacrées, issus des « Ciels-clairs ». Littéralement « aurore avec esprit », ils incarnent l'élection divine signalée par l'aurore.",
+          "nuance": "Composition or-a-umi : ora (aurore, sacrée) + -a- (avec) + umi (esprit, sacrée). Deux racines sacrées : structure la plus valorisée, statut spirituel suprême. Groupe transversal aux castes. Doublon avec 'Oraumi'.",
+          "registre": "sacré"
         }
       ]
     },
@@ -248,7 +292,10 @@
             "ora",
             "umi"
           ],
-          "categorie": "groupe_spirituel"
+          "categorie": "groupe_spirituel",
+          "definition": "Forme confluent du nom des Voix de l'Aurore : chamans gardiens des lois sacrées, guides spirituels de la civilisation, menés par les Ailes-Grises.",
+          "nuance": "Composition or-a-umi (aurore-avec-esprit). Doublon avec 'Voix de l'Aurore'. La double racine sacrée en fait, avec Aliaska, le sommet de la hiérarchie spirituelle ; autorité des lois anciennes et de la mémoire (mori), non des armes.",
+          "registre": "sacré"
         }
       ]
     },
@@ -264,7 +311,10 @@
             "sora"
           ],
           "categorie": "groupe_social",
-          "note": "Nés sous ciel dégagé, yeux aux couleurs de l'aurore"
+          "note": "Nés sous ciel dégagé, yeux aux couleurs de l'aurore",
+          "definition": "Groupe social supérieur de ceux nés sous un ciel dégagé, aux yeux couleur d'aurore, formant l'élite spirituelle d'où sont issus les Oraumi. Littéralement « ciel de lumière ».",
+          "nuance": "Composition zer-u-sora : zeru (ciel) + -u- + sora (soleil, lumière). Aucune racine sacrée : le statut vient du sens (ciel clair = élection par l'aurore). Couple antithétique avec 'Sans-ciels' (zozeru).",
+          "registre": "sacré"
         }
       ]
     },
@@ -280,7 +330,10 @@
             "zeru"
           ],
           "categorie": "groupe_social",
-          "note": "Nés sous ciel couvert"
+          "note": "Nés sous ciel couvert",
+          "definition": "Groupe social de ceux nés sous un ciel couvert, privés de l'élection de l'aurore, répartis dans les castes spécialisées. Littéralement « sans ciel ».",
+          "nuance": "Composition zo-zeru : négation zo (sans) + zeru (ciel). Négation lexicalisée, terme marqué/privatif. Antonyme structurel de Ciels-clairs (zerusora). Désigne la majorité laborieuse de la société.",
+          "registre": "sacré"
         }
       ]
     },
@@ -295,7 +348,10 @@
             "zaki",
             "uraakota"
           ],
-          "categorie": "titre"
+          "categorie": "titre",
+          "definition": "Titre de ceux qui ont la charge de garder et protéger La Confluence (Uraakota), gardiens du lieu sacré où se rejoignent les deux rivières.",
+          "nuance": "Composition zak-i-uraakota : zaki (garder, protéger ; aussi justice) + -i- (agent) + uraakota (La Confluence). Composition de second degré (racine + nom propre composé). 'l' de liaison amortissant le hiatus. Catégorie titre (fonction, non naissance).",
+          "registre": "sacré"
         }
       ]
     },
@@ -310,7 +366,10 @@
             "vena",
             "kota"
           ],
-          "categorie": "caste_element"
+          "categorie": "caste_element",
+          "definition": "L'une des Cinq Castes de l'oligarchie consociationnelle, définie par l'élément air. Littéralement « air mêlé à l'union », l'air comme composante de la confluence politique.",
+          "nuance": "Composition ven-aa-kota : vena (air, vent) + liaison de fusion -aa- (mêlé à) + kota (union). La liaison -aa- est la signature des cinq castes-éléments. Catégorie politique abstraite, calquée sur Uraakota.",
+          "registre": "sacré"
         }
       ]
     },
@@ -325,7 +384,10 @@
             "suki",
             "kota"
           ],
-          "categorie": "caste_element"
+          "categorie": "caste_element",
+          "definition": "L'une des Cinq Castes politiques, définie par l'élément feu. Littéralement « feu mêlé à l'union », le feu comme composante de la confluence.",
+          "nuance": "Composition suk-aa-kota : suki (feu) + -aa- + kota (union). Même moule X-aa-kota. Le i de suki conservé devant -aa- pour la transparence. À relier symboliquement aux Akoazana (feu).",
+          "registre": "sacré"
         }
       ]
     },
@@ -341,7 +403,10 @@
             "kota"
           ],
           "categorie": "caste_element",
-          "note": "Même nom que La Confluence"
+          "note": "Même nom que La Confluence",
+          "definition": "L'une des Cinq Castes politiques, définie par l'élément eau. Littéralement « eau mêlée à l'union » : porte exactement le même nom que La Confluence elle-même.",
+          "nuance": "Composition ur-aa-kota : ura (eau, racine sacrée) + -aa- + kota (union). Seule caste-élément sur racine sacrée, disant le primat de l'eau. Homonymie totale avec Uraakota (le lieu) : distinction par contexte seul.",
+          "registre": "sacré"
         }
       ]
     },
@@ -356,7 +421,10 @@
             "toka",
             "kota"
           ],
-          "categorie": "caste_element"
+          "categorie": "caste_element",
+          "definition": "L'une des Cinq Castes politiques, définie par l'élément terre. Littéralement « terre mêlée à l'union », la terre comme composante de la confluence.",
+          "nuance": "Composition tok-aa-kota : toka (terre) + -aa- + kota (union). Même moule X-aa-kota. À relier symboliquement aux Nakukeko (terre, souterrains). À ne pas confondre avec kekutoka (Antres des Échos).",
+          "registre": "sacré"
         }
       ]
     },
@@ -371,7 +439,10 @@
             "umi",
             "kota"
           ],
-          "categorie": "caste_element"
+          "categorie": "caste_element",
+          "definition": "L'une des Cinq Castes politiques, définie par l'élément éther (l'esprit, le souffle vital). Littéralement « esprit mêlé à l'union », la dimension spirituelle de la confluence politique.",
+          "nuance": "Composition um-aa-kota : umi (esprit, sacrée) + -aa- + kota (union). Avec la Caste de l'Eau, l'une des deux castes-éléments à racine sacrée. À distinguer d'Oraumi (or-a-umi, le groupe spirituel réel) : umiaakota est la catégorie politique abstraite.",
+          "registre": "sacré"
         }
       ]
     }
