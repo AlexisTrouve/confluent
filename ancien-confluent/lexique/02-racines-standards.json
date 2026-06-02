@@ -586,11 +586,12 @@
     "guerre": {
       "traductions": [
         {
-          "confluent": "uovi",
+          "confluent": "varu",
           "type": "racine_sacree",
           "forme_liee": "uov",
           "domaine": "conflit",
-          "note": "Même racine que épreuve/défi"
+          "note": "Même racine que épreuve/défi",
+          "nuance": "Forme canonique varu (guerre/combat, data ; verbe varum=armer). Les variantes ouso/uovi sont écartées. Conflit armé ouvert ; proche phonétiquement de oki (épreuve) mais distinct."
         }
       ],
       "synonymes_fr": [

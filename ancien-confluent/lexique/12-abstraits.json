@@ -129,12 +129,12 @@
     "liberte": {
       "traductions": [
         {
-          "confluent": "oabsi",
+          "confluent": "aska",
           "type": "racine_sacree",
           "forme_liee": "oabs",
           "domaine": "concept_fondateur",
           "definition": "La liberté comme condition d'un être affranchi, racine sacrée du concept.",
-          "nuance": "QUASI-DOUBLON avec 'liberté'=eilne : deux racines sacrées distinctes glosées 'liberté/concept_fondateur'. oabsi semble la forme historique, eilne la forme normalisée récente. À arbitrer/fusionner. Distinct aussi de aska (libre, attesté) et siliaska (regard libre).",
+          "nuance": "Forme canonique aska (libre/liberté, data). Les variantes oabsi/eilne — racines orphelines non attestées dans data — sont écartées. Distinct de siliaska (regard libre, la posture cognitive du peuple) et de aska=libre (adjectif).",
           "registre": "sacré"
         }
       ]
@@ -473,12 +473,12 @@
     "epreuve": {
       "traductions": [
         {
-          "confluent": "uuno",
+          "confluent": "oki",
           "type": "racine_sacree",
           "forme_liee": "uun",
           "domaine": "concept_fondateur",
           "definition": "Le défi, danger ou test que doit affronter un être ; obstacle spirituel.",
-          "nuance": "INCOHÉRENCE forte : racine sacrée donnée 'uuno' (forme liée uun-) mais le domaine 'épreuve/défi/danger' correspond à la racine attestée oki (data/lexique, id.13). 'epreuve de verite' et 'victoire/defaite' utilisent oki, PAS uuno → quasi-DOUBLON oki/uuno. uuno semble orphelin/non attesté ailleurs.",
+          "nuance": "Forme canonique oki (épreuve/défi/danger, data). La variante orpheline uuno est écartée ; tous les composés (okiveli épreuve-de-vérité, okiatosa victoire, okiazoka défaite) reposent déjà sur oki.",
           "registre": "sacré"
         }
       ]
@@ -540,12 +540,12 @@
     "guerre": {
       "traductions": [
         {
-          "confluent": "ouso",
+          "confluent": "varu",
           "type": "racine_sacree",
           "forme_liee": "ous",
           "domaine": "conflit",
           "definition": "Conflit armé ouvert entre groupes ; affrontement collectif.",
-          "nuance": "QUASI-DOUBLON avec la racine attestée varu (guerre/combat, data/lexique, verbe varum=armer). ouso est ici une racine sacrée distincte non répertoriée dans data/lexique → deux mots pour 'guerre'. Distinct de oki (épreuve) malgré la proximité phonétique.",
+          "nuance": "Forme canonique varu (guerre/combat, data ; verbe varum=armer). Les variantes ouso/uovi sont écartées. Conflit armé ouvert ; proche phonétiquement de oki (épreuve) mais distinct.",
           "registre": "sacré"
         }
       ]
@@ -810,13 +810,13 @@
     "liberté": {
       "traductions": [
         {
-          "confluent": "eilne",
+          "confluent": "aska",
           "type": "racine_sacree",
           "forme_liee": "eiln",
           "domaine": "concept_fondateur",
           "note": "Liberté - racine sacrée centrale (synonyme normalisé de liberte)",
           "definition": "La liberté comme racine sacrée centrale, état d'affranchissement.",
-          "nuance": "QUASI-DOUBLON avec 'liberte'=oabsi : deux racines sacrées concurrentes pour 'liberté/concept_fondateur'. eilne présentée comme 'synonyme normalisé' → arbitrage requis (garder une seule). Distincte de aska (libre) et siliaska (regard libre).",
+          "nuance": "Forme canonique aska (libre/liberté, data). Les variantes oabsi/eilne — racines orphelines non attestées dans data — sont écartées. Distinct de siliaska (regard libre, la posture cognitive du peuple) et de aska=libre (adjectif).",
           "registre": "sacré"
         }
       ],
