@@ -85,24 +85,6 @@
         }
       ]
     },
-    "recit": {
-      "traductions": [
-        {
-          "confluent": "vokiaita",
-          "type": "composition",
-          "composition": "vok-i-aita",
-          "sens_litteral": "Voix des ancêtres",
-          "racines": [
-            "voki",
-            "aita"
-          ],
-          "domaine": "communication"
-        }
-      ],
-      "synonymes_fr": [
-        "légende"
-      ]
-    },
     "histoire vraie": {
       "traductions": [
         {

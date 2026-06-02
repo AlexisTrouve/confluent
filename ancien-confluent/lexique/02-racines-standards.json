@@ -203,6 +203,11 @@
           "domaine": "couleur",
           "note": "Même racine que cendre"
         }
+      ],
+      "synonymes_fr": [
+        "gris",
+        "grise",
+        "grises"
       ]
     },
     "sang": {
@@ -292,20 +297,6 @@
         "endroit"
       ]
     },
-    "memoire": {
-      "traductions": [
-        {
-          "confluent": "mori",
-          "type": "racine",
-          "forme_liee": "mor",
-          "domaine": "concept_abstrait",
-          "note": "Nouvelle racine - ce qu'on retient"
-        }
-      ],
-      "synonymes_fr": [
-        "souvenir"
-      ]
-    },
     "navire": {
       "traductions": [
         {
@@ -315,20 +306,9 @@
           "domaine": "objet",
           "note": "Nouvelle racine - embarcation"
         }
-      ]
-    },
-    "paix": {
-      "traductions": [
-        {
-          "confluent": "paku",
-          "type": "racine",
-          "forme_liee": "pak",
-          "domaine": "etat",
-          "note": "Même racine que 'bon' - état bon"
-        }
       ],
       "synonymes_fr": [
-        "calme"
+        "embarcation"
       ]
     },
     "poisson": {
@@ -340,6 +320,9 @@
           "domaine": "animal",
           "note": "Nouvelle racine - créature de l'eau"
         }
+      ],
+      "synonymes_fr": [
+        "poissons"
       ]
     },
     "pointe": {
@@ -373,7 +356,8 @@
           "domaine": "couleur",
           "note": "Couleur du sang, yeux des Ciels-clairs"
         }
-      ]
+      ],
+      "synonymes_fr": []
     },
     "recit": {
       "traductions": [
@@ -390,7 +374,8 @@
         }
       ],
       "synonymes_fr": [
-        "histoire"
+        "histoire",
+        "légende"
       ]
     },
     "route": {
@@ -426,17 +411,6 @@
           "forme_liee": "sal",
           "domaine": "materiau",
           "note": "Nouvelle racine - cristal marin"
-        }
-      ]
-    },
-    "mer": {
-      "traductions": [
-        {
-          "confluent": "seli",
-          "type": "racine",
-          "forme_liee": "sel",
-          "domaine": "geographie",
-          "note": "Nouvelle racine - grande eau salée"
         }
       ]
     },
@@ -581,21 +555,6 @@
       ],
       "synonymes_fr": [
         "mérite"
-      ]
-    },
-    "guerre": {
-      "traductions": [
-        {
-          "confluent": "varu",
-          "type": "racine_sacree",
-          "forme_liee": "var",
-          "domaine": "conflit",
-          "note": "Même racine que épreuve/défi",
-          "nuance": "Forme canonique varu (guerre/combat, data ; verbe varum=armer). Les variantes ouso/uovi sont écartées. Conflit armé ouvert ; proche phonétiquement de oki (épreuve) mais distinct."
-        }
-      ],
-      "synonymes_fr": [
-        "combat"
       ]
     },
     "serpent": {
@@ -841,21 +800,6 @@
         "rester",
         "être",
         "habiter"
-      ]
-    },
-    "ciel": {
-      "traductions": [
-        {
-          "confluent": "zeru",
-          "type": "racine",
-          "forme_liee": "zer",
-          "domaine": "nature",
-          "note": "Ciel, voûte céleste - utilisé dans Ciels-clairs"
-        }
-      ],
-      "synonymes_fr": [
-        "voûte céleste",
-        "firmament"
       ]
     },
     "presage": {

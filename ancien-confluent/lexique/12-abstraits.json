@@ -137,6 +137,11 @@
           "nuance": "Forme canonique aska (libre/liberté, data). Les variantes oabsi/eilne — racines orphelines non attestées dans data — sont écartées. Distinct de siliaska (regard libre, la posture cognitive du peuple) et de aska=libre (adjectif).",
           "registre": "sacré"
         }
+      ],
+      "synonymes_fr": [
+        "liberte",
+        "libre",
+        "affranchissement"
       ]
     },
     "esprit": {
@@ -265,6 +270,9 @@
           "nuance": "Composé en-u-aita (ena=origine + aita=ancêtres) = « l'origine-ancêtre ». Forme réparée : l'ancien champ 'iusoluke' était corrompu. Désigne la civilisation disparue découverte sous le Gouffre Humide, origine mythique et avertissement. NB : doublon de forme avec une autre entrée 'premiers ancêtres' (enuaita) — à fusionner.",
           "registre": "rituel"
         }
+      ],
+      "synonymes_fr": [
+        "Premiers Ancêtres"
       ]
     },
     "presage": {
@@ -301,7 +309,8 @@
           "nuance": "vena (air) + zoka (ennemi/mal). Famille des composés en -zoka (mal). Distinct de poku (poison, racine attestée) : le miasme est aérien/diffus, le poison matériel.",
           "registre": "courant"
         }
-      ]
+      ],
+      "synonymes_fr": []
     },
     "benediction": {
       "traductions": [
@@ -481,6 +490,10 @@
           "nuance": "Forme canonique oki (épreuve/défi/danger, data). La variante orpheline uuno est écartée ; tous les composés (okiveli épreuve-de-vérité, okiatosa victoire, okiazoka défaite) reposent déjà sur oki.",
           "registre": "sacré"
         }
+      ],
+      "synonymes_fr": [
+        "défi",
+        "danger"
       ]
     },
     "epreuve de verite": {
@@ -548,6 +561,9 @@
           "nuance": "Forme canonique varu (guerre/combat, data ; verbe varum=armer). Les variantes ouso/uovi sont écartées. Conflit armé ouvert ; proche phonétiquement de oki (épreuve) mais distinct.",
           "registre": "sacré"
         }
+      ],
+      "synonymes_fr": [
+        "combat"
       ]
     },
     "ennemi": {
@@ -580,6 +596,9 @@
           "nuance": "Racine (paku, attestée). Distinct de 'harmonie' (kotautosa) : la paix est l'ABSENCE de guerre/tension, l'harmonie une union activement bonne. Antonyme de guerre (ouso/varu).",
           "registre": "courant"
         }
+      ],
+      "synonymes_fr": [
+        "calme"
       ]
     },
     "victoire": {
@@ -805,25 +824,6 @@
         "memoire",
         "souvenir",
         "souvenirs"
-      ]
-    },
-    "liberté": {
-      "traductions": [
-        {
-          "confluent": "aska",
-          "type": "racine_sacree",
-          "forme_liee": "ask",
-          "domaine": "concept_fondateur",
-          "note": "Liberté - racine sacrée centrale (synonyme normalisé de liberte)",
-          "definition": "La liberté comme racine sacrée centrale, état d'affranchissement.",
-          "nuance": "Forme canonique aska (libre/liberté, data). Les variantes oabsi/eilne — racines orphelines non attestées dans data — sont écartées. Distinct de siliaska (regard libre, la posture cognitive du peuple) et de aska=libre (adjectif).",
-          "registre": "sacré"
-        }
-      ],
-      "synonymes_fr": [
-        "liberte",
-        "libre",
-        "affranchissement"
       ]
     }
   }

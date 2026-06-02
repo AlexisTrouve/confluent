@@ -52,17 +52,6 @@
         }
       ]
     },
-    "famille": {
-      "traductions": [
-        {
-          "confluent": "mitu",
-          "type": "racine",
-          "forme_liee": "mit",
-          "domaine": "famille",
-          "note": "Unité familiale"
-        }
-      ]
-    },
     "homme": {
       "traductions": [
         {

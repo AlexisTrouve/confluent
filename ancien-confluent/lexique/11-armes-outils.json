@@ -272,7 +272,8 @@
           ],
           "domaine": "objet"
         }
-      ]
+      ],
+      "synonymes_fr": []
     },
     "tablette": {
       "traductions": [
@@ -373,7 +374,8 @@
           ],
           "domaine": "structure"
         }
-      ]
+      ],
+      "synonymes_fr": []
     }
   }
 }

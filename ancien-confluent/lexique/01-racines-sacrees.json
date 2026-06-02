@@ -183,21 +183,6 @@
         "totalité"
       ]
     },
-    "epreuve": {
-      "traductions": [
-        {
-          "confluent": "oki",
-          "type": "racine_sacree",
-          "forme_liee": "ok",
-          "domaine": "conflit_sacre",
-          "note": "Défi, danger, test"
-        }
-      ],
-      "synonymes_fr": [
-        "défi",
-        "danger"
-      ]
-    },
     "aurore": {
       "traductions": [
         {
@@ -238,17 +223,6 @@
       ],
       "synonymes_fr": [
         "conscience"
-      ]
-    },
-    "etoile": {
-      "traductions": [
-        {
-          "confluent": "eku",
-          "type": "racine_sacree",
-          "forme_liee": "ek",
-          "domaine": "celeste",
-          "note": "Nouvelle racine sacrée - points lumineux du ciel nocturne"
-        }
       ]
     },
     "mort": {

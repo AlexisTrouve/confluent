@@ -95,22 +95,6 @@
         }
       ]
     },
-    "Cercles de Vigile": {
-      "traductions": [
-        {
-          "confluent": "sikuvela",
-          "type": "nom_propre",
-          "composition": "sik-u-vela",
-          "sens_litteral": "Cercle de la vigile",
-          "racines": [
-            "siku",
-            "vela"
-          ],
-          "categorie": "lieu_majeur",
-          "note": "Promontoires de guet"
-        }
-      ]
-    },
     "Sikuvela": {
       "traductions": [
         {
@@ -154,22 +138,6 @@
             "savu"
           ],
           "categorie": "lieu_majeur"
-        }
-      ]
-    },
-    "Grande Fresque": {
-      "traductions": [
-        {
-          "confluent": "ekakova",
-          "type": "nom_propre",
-          "composition": "ek-a-kova",
-          "sens_litteral": "Totalité avec peinture",
-          "racines": [
-            "eka",
-            "kova"
-          ],
-          "categorie": "lieu_majeur",
-          "note": "Artefact multi-générationnel"
         }
       ]
     },

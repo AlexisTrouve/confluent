@@ -2,21 +2,6 @@
   "_comment": "Objets, matériaux et artéfacts",
   "_mots_a_gerer": [],
   "dictionnaire": {
-    "pierre": {
-      "traductions": [
-        {
-          "confluent": "kari",
-          "type": "racine",
-          "forme_liee": "kar",
-          "domaine": "materiau",
-          "note": "Matériau fondamental"
-        }
-      ],
-      "synonymes_fr": [
-        "roche",
-        "pierres"
-      ]
-    },
     "bois": {
       "traductions": [
         {
@@ -200,21 +185,6 @@
         }
       ]
     },
-    "coffret": {
-      "traductions": [
-        {
-          "confluent": "sakuzaki",
-          "type": "composition",
-          "composition": "sak-u-zaki",
-          "sens_litteral": "Contenant protégé",
-          "racines": [
-            "saku",
-            "zaki"
-          ],
-          "domaine": "objet"
-        }
-      ]
-    },
     "foyer": {
       "traductions": [
         {
@@ -225,21 +195,6 @@
           "racines": [
             "suki",
             "loku"
-          ],
-          "domaine": "structure"
-        }
-      ]
-    },
-    "grenier": {
-      "traductions": [
-        {
-          "confluent": "lokuzaki",
-          "type": "composition",
-          "composition": "lok-u-zaki",
-          "sens_litteral": "Lieu gardé",
-          "racines": [
-            "loku",
-            "zaki"
           ],
           "domaine": "structure"
         }
@@ -292,19 +247,6 @@
       ],
       "synonymes_fr": [
         "région"
-      ]
-    },
-    "navire": {
-      "traductions": [
-        {
-          "confluent": "vanu",
-          "type": "racine",
-          "forme_liee": "van",
-          "domaine": "objet"
-        }
-      ],
-      "synonymes_fr": [
-        "embarcation"
       ]
     },
     "barque": {

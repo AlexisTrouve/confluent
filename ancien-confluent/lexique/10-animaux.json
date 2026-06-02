@@ -102,17 +102,6 @@
         }
       ]
     },
-    "poisson": {
-      "traductions": [
-        {
-          "confluent": "pesa",
-          "type": "racine",
-          "forme_liee": "pes",
-          "domaine": "animal",
-          "note": "Créature de l'eau"
-        }
-      ]
-    },
     "poisson de riviere": {
       "traductions": [
         {

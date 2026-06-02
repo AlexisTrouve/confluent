@@ -2,84 +2,6 @@
   "_comment": "Caractéristiques géographiques",
   "_mots_a_gerer": [],
   "dictionnaire": {
-    "confluence de rivieres": {
-      "traductions": [
-        {
-          "confluent": "nuraakota",
-          "type": "composition",
-          "composition": "nur-aa-kota",
-          "sens_litteral": "Rivière mêlée à union",
-          "racines": [
-            "nura",
-            "kota"
-          ],
-          "domaine": "geographie"
-        }
-      ]
-    },
-    "riviere azur": {
-      "traductions": [
-        {
-          "confluent": "nuruzeru",
-          "type": "composition",
-          "composition": "nur-u-zeru",
-          "sens_litteral": "Rivière du ciel",
-          "racines": [
-            "nura",
-            "zeru"
-          ],
-          "domaine": "geographie"
-        }
-      ]
-    },
-    "riviere verte": {
-      "traductions": [
-        {
-          "confluent": "nuruviku",
-          "type": "composition",
-          "composition": "nur-u-viku",
-          "sens_litteral": "Rivière de la forêt",
-          "racines": [
-            "nura",
-            "viku"
-          ],
-          "domaine": "geographie"
-        }
-      ]
-    },
-    "promontoire": {
-      "traductions": [
-        {
-          "confluent": "tasuseli",
-          "type": "composition",
-          "composition": "tas-u-seli",
-          "sens_litteral": "Montagne de la mer",
-          "racines": [
-            "tasa",
-            "seli"
-          ],
-          "domaine": "geographie"
-        }
-      ]
-    },
-    "pic": {
-      "traductions": [
-        {
-          "confluent": "tasupiki",
-          "type": "composition",
-          "composition": "tas-u-piki",
-          "sens_litteral": "Montagne pointue",
-          "racines": [
-            "tasa",
-            "piki"
-          ],
-          "domaine": "geographie"
-        }
-      ],
-      "synonymes_fr": [
-        "cime"
-      ]
-    },
     "vallee": {
       "traductions": [
         {
@@ -130,16 +52,6 @@
         "occident"
       ]
     },
-    "mer": {
-      "traductions": [
-        {
-          "confluent": "seli",
-          "type": "racine",
-          "forme_liee": "sel",
-          "domaine": "geographie"
-        }
-      ]
-    },
     "cote": {
       "traductions": [
         {
@@ -150,36 +62,6 @@
           "racines": [
             "toka",
             "seli"
-          ],
-          "domaine": "geographie"
-        }
-      ]
-    },
-    "horizon": {
-      "traductions": [
-        {
-          "confluent": "zerutoka",
-          "type": "composition",
-          "composition": "zer-u-toka",
-          "sens_litteral": "Ciel de la terre",
-          "racines": [
-            "zeru",
-            "toka"
-          ],
-          "domaine": "geographie"
-        }
-      ]
-    },
-    "grotte": {
-      "traductions": [
-        {
-          "confluent": "vukutoka",
-          "type": "composition",
-          "composition": "vuk-u-toka",
-          "sens_litteral": "Gouffre dans la terre",
-          "racines": [
-            "vuku",
-            "toka"
           ],
           "domaine": "geographie"
         }
@@ -242,21 +124,6 @@
             "eka"
           ],
           "domaine": "danger_naturel"
-        }
-      ]
-    },
-    "crevasse": {
-      "traductions": [
-        {
-          "confluent": "vukukari",
-          "type": "composition",
-          "composition": "vuk-u-kari",
-          "sens_litteral": "Gouffre dans la pierre",
-          "racines": [
-            "vuku",
-            "kari"
-          ],
-          "domaine": "geographie"
         }
       ]
     },

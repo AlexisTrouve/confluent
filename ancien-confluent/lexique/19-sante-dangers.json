@@ -35,21 +35,6 @@
         }
       ]
     },
-    "miasmes": {
-      "traductions": [
-        {
-          "confluent": "venuzoka",
-          "type": "composition",
-          "composition": "ven-u-zoka",
-          "sens_litteral": "Air de l'ennemi",
-          "racines": [
-            "vena",
-            "zoka"
-          ],
-          "domaine": "danger"
-        }
-      ]
-    },
     "infection pulmonaire": {
       "traductions": [
         {
@@ -197,21 +182,6 @@
           "confluent": "vuku",
           "type": "racine",
           "forme_liee": "vuk",
-          "domaine": "danger"
-        }
-      ]
-    },
-    "crevasse": {
-      "traductions": [
-        {
-          "confluent": "vukukari",
-          "type": "composition",
-          "composition": "vuk-u-kari",
-          "sens_litteral": "Gouffre de pierre",
-          "racines": [
-            "vuku",
-            "kari"
-          ],
           "domaine": "danger"
         }
       ]

@@ -2,17 +2,6 @@
   "_comment": "Couleurs et qualités visuelles",
   "_mots_a_gerer": [],
   "dictionnaire": {
-    "rouge": {
-      "traductions": [
-        {
-          "confluent": "pasu",
-          "type": "racine",
-          "forme_liee": "pas",
-          "domaine": "couleur",
-          "note": "Couleur importante (yeux des Ciels-clairs)"
-        }
-      ]
-    },
     "orange": {
       "traductions": [
         {
@@ -70,22 +59,6 @@
           "domaine": "couleur",
           "note": "Couleur du lait"
         }
-      ]
-    },
-    "gris": {
-      "traductions": [
-        {
-          "confluent": "kesa",
-          "type": "racine",
-          "forme_liee": "kes",
-          "domaine": "couleur",
-          "note": "Couleur de la cendre"
-        }
-      ],
-      "synonymes_fr": [
-        "gris",
-        "grise",
-        "grises"
       ]
     },
     "noir": {
@@ -177,22 +150,6 @@
       ],
       "synonymes_fr": [
         "pales"
-      ]
-    },
-    "yeux de l'aurore": {
-      "traductions": [
-        {
-          "confluent": "siluola",
-          "type": "composition",
-          "composition": "sil-u-ola",
-          "sens_litteral": "Regard de l'aurore",
-          "racines": [
-            "sili",
-            "ora"
-          ],
-          "domaine": "corps_sacre",
-          "note": "Yeux des Ciels-clairs aux couleurs de l'aurore"
-        }
       ]
     },
     "eclat": {

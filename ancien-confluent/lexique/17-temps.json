@@ -2,20 +2,6 @@
   "_comment": "Concepts temporels",
   "_mots_a_gerer": [],
   "dictionnaire": {
-    "temps": {
-      "traductions": [
-        {
-          "confluent": "temi",
-          "type": "racine",
-          "forme_liee": "tem",
-          "domaine": "temps",
-          "note": "Concept fondamental"
-        }
-      ],
-      "synonymes_fr": [
-        "durée"
-      ]
-    },
     "generation": {
       "traductions": [
         {
@@ -70,16 +56,6 @@
             "temi",
             "siku"
           ],
-          "domaine": "temps"
-        }
-      ]
-    },
-    "lune": {
-      "traductions": [
-        {
-          "confluent": "luna",
-          "type": "racine",
-          "forme_liee": "lun",
           "domaine": "temps"
         }
       ]

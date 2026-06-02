@@ -16,7 +16,9 @@
         }
       ],
       "synonymes_fr": [
-        "cieux"
+        "cieux",
+        "voûte céleste",
+        "firmament"
       ]
     },
     "terre": {
@@ -85,7 +87,8 @@
         }
       ],
       "synonymes_fr": [
-        "roche"
+        "roche",
+        "pierres"
       ]
     },
     "riviere": {
@@ -160,7 +163,8 @@
           "nuance": "Astre de la nuit, vs 'soleil' (sora, astre du jour) et 'étoile' (aoni/eku). Charge rituelle : règle le calendrier des rituels.",
           "registre": "sacré"
         }
-      ]
+      ],
+      "synonymes_fr": []
     },
     "soleil": {
       "traductions": [
@@ -265,7 +269,8 @@
           "nuance": "DOUBLON de racine avec 'sel' (même forme seli). Vs 'rivière' (nula, eau douce) et eau-élément (ura). Lieu de l'Autre (Nanzagouet maritimes).",
           "registre": "courant"
         }
-      ]
+      ],
+      "synonymes_fr": []
     },
     "humide": {
       "traductions": [
@@ -331,7 +336,8 @@
           "nuance": "Forme canonique eku (alignée sur data ; les variantes aoni/atu sont écartées). Point lumineux du ciel nocturne. Dans le mythe fondateur : « les étoiles que la Voilée allume, dont ils firent des clous pour tenir leurs yeux ouverts ». Vs lune et soleil (sora).",
           "registre": "sacré"
         }
-      ]
+      ],
+      "synonymes_fr": []
     },
     "tempete": {
       "traductions": [
@@ -417,7 +423,8 @@
           "nuance": "Composition vuk-u-toka (gouffre dans la terre). Vs 'crevasse' (vukukali, gouffre dans la PIERRE) : grotte=terre, crevasse=pierre. Habitat des Enfants des Échos.",
           "registre": "courant"
         }
-      ]
+      ],
+      "synonymes_fr": []
     },
     "crevasse": {
       "traductions": [
@@ -435,7 +442,8 @@
           "nuance": "Composition vuk-u-kali (gouffre dans la pierre). Symétrique de 'grotte' (vukutoka, dans la terre) : seul le matériau (kali/toka) les distingue.",
           "registre": "courant"
         }
-      ]
+      ],
+      "synonymes_fr": []
     },
     "promontoire": {
       "traductions": [
@@ -453,7 +461,8 @@
           "nuance": "Composé tas-u-seli (montagne + mer) : hauteur s'avançant au-dessus de la mer. Forme corrigée — l'ancien 'tasumelu' utilisait melu (=doux) au lieu de seli (=mer). Cf 'côte' (tokuseli).",
           "registre": "courant"
         }
-      ]
+      ],
+      "synonymes_fr": []
     },
     "pic": {
       "traductions": [
@@ -510,7 +519,8 @@
           "nuance": "Composé zer-u-toka (ciel + terre) : la ligne où le ciel rencontre la terre. Charge culturelle côté inconnu / ouverture maritime. Vs 'ciel' (zeru, la voûte).",
           "registre": "courant"
         }
-      ]
+      ],
+      "synonymes_fr": []
     },
     "confluence de rivieres": {
       "traductions": [
@@ -528,7 +538,8 @@
           "nuance": "Composition nul-aa-kota (liaison 'aa' = mélange/confluent), cœur symbolique. Vs Uraakota (ur-aa-kota, La Confluence comme lieu) : ici le phénomène géographique générique.",
           "registre": "sacré"
         }
-      ]
+      ],
+      "synonymes_fr": []
     },
     "riviere azur": {
       "traductions": [
@@ -546,7 +557,8 @@
           "nuance": "Composition nul-u-zelu. Paire avec 'rivière verte' (nuluviku) ; ensemble = la Confluence. Toponyme fondateur, charge identitaire.",
           "registre": "sacré"
         }
-      ]
+      ],
+      "synonymes_fr": []
     },
     "riviere verte": {
       "traductions": [
@@ -564,7 +576,8 @@
           "nuance": "Composition nul-u-viku. Paire avec 'rivière azur' (nuluzelu). La racine viku (forêt) la colore en vert. Toponyme fondateur.",
           "registre": "sacré"
         }
-      ]
+      ],
+      "synonymes_fr": []
     }
   }
 }

@@ -2,22 +2,6 @@
   "_comment": "Vocabulaire alimentaire et culinaire de la Confluence",
   "_source": "Basé sur civjdr/Background/2024-10-28-le-village.md",
   "dictionnaire": {
-    "poisson": {
-      "racine_fr": "poiss",
-      "traductions": [
-        {
-          "confluent": "pesa",
-          "type": "racine",
-          "forme_liee": "pes",
-          "structure": "CVCV",
-          "domaine": "nourriture",
-          "note": "Poisson - source vitale de protéines (même racine que pêcher)"
-        }
-      ],
-      "synonymes_fr": [
-        "poissons"
-      ]
-    },
     "gibier": {
       "racine_fr": "gibier",
       "traductions": [
