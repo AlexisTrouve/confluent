@@ -7,7 +7,7 @@
         {
           "confluent": "zeru",
           "type": "racine",
-          "forme_liee": "zel",
+          "forme_liee": "zer",
           "domaine": "element_nature",
           "note": "Élément primordial",
           "definition": "La voûte céleste, espace au-dessus de la terre, lieu des signes divins et des aurores.",
@@ -76,7 +76,7 @@
         {
           "confluent": "kari",
           "type": "racine",
-          "forme_liee": "kal",
+          "forme_liee": "kar",
           "domaine": "element_nature",
           "note": "Matière dure",
           "definition": "La pierre et la roche, matière dure et durable.",
@@ -93,7 +93,7 @@
         {
           "confluent": "nura",
           "type": "racine",
-          "forme_liee": "nul",
+          "forme_liee": "nur",
           "domaine": "geographie",
           "note": "Eau qui coule",
           "definition": "Cours d'eau qui coule, courant fluvial central dans cette civilisation de la confluence.",
@@ -324,7 +324,7 @@
         {
           "confluent": "eku",
           "type": "racine_sacree",
-          "forme_liee": "aon",
+          "forme_liee": "ek",
           "domaine": "celeste",
           "note": "Points lumineux du ciel nocturne",
           "definition": "Point lumineux du ciel nocturne.",

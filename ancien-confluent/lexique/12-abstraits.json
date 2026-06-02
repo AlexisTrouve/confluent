@@ -131,7 +131,7 @@
         {
           "confluent": "aska",
           "type": "racine_sacree",
-          "forme_liee": "oabs",
+          "forme_liee": "ask",
           "domaine": "concept_fondateur",
           "definition": "La liberté comme condition d'un être affranchi, racine sacrée du concept.",
           "nuance": "Forme canonique aska (libre/liberté, data). Les variantes oabsi/eilne — racines orphelines non attestées dans data — sont écartées. Distinct de siliaska (regard libre, la posture cognitive du peuple) et de aska=libre (adjectif).",
@@ -475,7 +475,7 @@
         {
           "confluent": "oki",
           "type": "racine_sacree",
-          "forme_liee": "uun",
+          "forme_liee": "ok",
           "domaine": "concept_fondateur",
           "definition": "Le défi, danger ou test que doit affronter un être ; obstacle spirituel.",
           "nuance": "Forme canonique oki (épreuve/défi/danger, data). La variante orpheline uuno est écartée ; tous les composés (okiveli épreuve-de-vérité, okiatosa victoire, okiazoka défaite) reposent déjà sur oki.",
@@ -542,7 +542,7 @@
         {
           "confluent": "varu",
           "type": "racine_sacree",
-          "forme_liee": "ous",
+          "forme_liee": "var",
           "domaine": "conflit",
           "definition": "Conflit armé ouvert entre groupes ; affrontement collectif.",
           "nuance": "Forme canonique varu (guerre/combat, data ; verbe varum=armer). Les variantes ouso/uovi sont écartées. Conflit armé ouvert ; proche phonétiquement de oki (épreuve) mais distinct.",
@@ -812,7 +812,7 @@
         {
           "confluent": "aska",
           "type": "racine_sacree",
-          "forme_liee": "eiln",
+          "forme_liee": "ask",
           "domaine": "concept_fondateur",
           "note": "Liberté - racine sacrée centrale (synonyme normalisé de liberte)",
           "definition": "La liberté comme racine sacrée centrale, état d'affranchissement.",

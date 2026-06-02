@@ -297,7 +297,7 @@
         {
           "confluent": "mori",
           "type": "racine",
-          "forme_liee": "mem",
+          "forme_liee": "mor",
           "domaine": "concept_abstrait",
           "note": "Nouvelle racine - ce qu'on retient"
         }
@@ -434,7 +434,7 @@
         {
           "confluent": "seli",
           "type": "racine",
-          "forme_liee": "mel",
+          "forme_liee": "sel",
           "domaine": "geographie",
           "note": "Nouvelle racine - grande eau salée"
         }
@@ -588,7 +588,7 @@
         {
           "confluent": "varu",
           "type": "racine_sacree",
-          "forme_liee": "uov",
+          "forme_liee": "var",
           "domaine": "conflit",
           "note": "Même racine que épreuve/défi",
           "nuance": "Forme canonique varu (guerre/combat, data ; verbe varum=armer). Les variantes ouso/uovi sont écartées. Conflit armé ouvert ; proche phonétiquement de oki (épreuve) mais distinct."
@@ -741,7 +741,7 @@
         {
           "confluent": "tori",
           "type": "racine",
-          "forme_liee": "tol",
+          "forme_liee": "tor",
           "domaine": "social",
           "note": "Personne, agent, individu - utilisé dans tous les rôles"
         }
@@ -817,7 +817,7 @@
         {
           "confluent": "mori",
           "type": "racine",
-          "forme_liee": "nem",
+          "forme_liee": "mor",
           "domaine": "mental",
           "note": "Mémoire, souvenir - distinct de memu (mémoire collective)"
         }
