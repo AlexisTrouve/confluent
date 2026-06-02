@@ -99,7 +99,7 @@
     "Lois du Sang et de la Bete": {
       "traductions": [
         {
-          "confluent": "lokuulasubetu",
+          "confluent": "lokuulasubesi",
           "type": "nom_propre",
           "composition": "lok-u-pasu-betu",
           "sens_litteral": "Loi du sang et de la bête",
@@ -136,7 +136,7 @@
     "Memento": {
       "traductions": [
         {
-          "confluent": "memuuaita",
+          "confluent": "moriuaita",
           "type": "nom_propre",
           "composition": "mem-u-aita",
           "sens_litteral": "Mémoire des ancêtres",
@@ -146,7 +146,7 @@
           ],
           "categorie": "objet_rituel",
           "definition": "Objet rituel de mémoire perpétuant le souvenir des ancêtres, support tangible du devoir de ne rien oublier.",
-          "nuance": "Objet-mémoire des ancêtres (memu+aita), distinct des 'rites funéraires' (le passage de la mort) et du 'Memento' comme acte : ici c'est l'artefact qui ancre le souvenir.",
+          "nuance": "Objet rituel de mémoire (mori + aita = mémoire des ancêtres), support tangible du devoir de ne rien oublier. Distinct des 'rites funéraires' (le passage de la mort) : ici c'est l'artefact qui ancre le souvenir.",
           "registre": "rituel",
           "exemple": "va miki vo aita su morikeom"
         }
@@ -266,7 +266,7 @@
     "lait de pierre": {
       "traductions": [
         {
-          "confluent": "miluukali",
+          "confluent": "miluukari",
           "type": "composition",
           "composition": "mil-u-kali",
           "sens_litteral": "Lait de pierre",
@@ -284,7 +284,7 @@
     "roche braise": {
       "traductions": [
         {
-          "confluent": "kaliusuki",
+          "confluent": "kariusuki",
           "type": "composition",
           "composition": "kal-i-suki",
           "sens_litteral": "Pierre du feu",

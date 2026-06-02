@@ -5,13 +5,13 @@
     "ciel": {
       "traductions": [
         {
-          "confluent": "zelu",
+          "confluent": "zeru",
           "type": "racine",
           "forme_liee": "zel",
           "domaine": "element_nature",
           "note": "Élément primordial",
           "definition": "La voûte céleste, espace au-dessus de la terre, lieu des signes divins et des aurores.",
-          "nuance": "Élément primordial et signe divin. Vs 'nuage' (nubu, vapeur passagère) et 'horizon' (zelutoka). NB forme 'zelu' ici mais data atteste 'zeru' — divergence à arbitrer.",
+          "nuance": "Élément primordial et signe divin. Forme canonique zeru (r toléré par la doctrine). Vs 'nuage' (vapeur passagère) et 'horizon' (zerutoka).",
           "registre": "sacré"
         }
       ],
@@ -74,13 +74,13 @@
     "pierre": {
       "traductions": [
         {
-          "confluent": "kali",
+          "confluent": "kari",
           "type": "racine",
           "forme_liee": "kal",
           "domaine": "element_nature",
           "note": "Matière dure",
           "definition": "La pierre et la roche, matière dure et durable.",
-          "nuance": "Matière dure, non primordiale. Vs 'terre' (toka, sol meuble) et 'sel' (seli). Base de 'crevasse'. NB data atteste 'kari' (≠ 'kali' ici).",
+          "nuance": "Matière dure et durable. Forme canonique kari (r toléré). Vs 'terre' (toka, sol meuble) et 'sel' (seli). Base de crevasse (vukukari), métal (karisuki).",
           "registre": "courant"
         }
       ],
@@ -91,13 +91,13 @@
     "riviere": {
       "traductions": [
         {
-          "confluent": "nula",
+          "confluent": "nura",
           "type": "racine",
           "forme_liee": "nul",
           "domaine": "geographie",
           "note": "Eau qui coule",
           "definition": "Cours d'eau qui coule, courant fluvial central dans cette civilisation de la confluence.",
-          "nuance": "Eau en mouvement, vs 'mer' (seli, eau salée) et eau-élément (ura). Les rivières azur/verte définissent la géographie sacrée. NB data atteste 'nura' (≠ 'nula').",
+          "nuance": "Eau en mouvement (nura), vs 'mer' (seli, eau salée) et eau-élément (ura). Les rivières azur/verte (nuruzeru / nuruviku) qui se mêlent définissent la géographie sacrée de la Confluence.",
           "registre": "courant"
         }
       ],
@@ -322,13 +322,13 @@
     "etoile": {
       "traductions": [
         {
-          "confluent": "aoni",
+          "confluent": "eku",
           "type": "racine_sacree",
           "forme_liee": "aon",
           "domaine": "celeste",
           "note": "Points lumineux du ciel nocturne",
           "definition": "Point lumineux du ciel nocturne.",
-          "nuance": "Racine sacrée (V-initial). DOUBLON conceptuel avec 'eku' (étoile sacrée, data) : deux racines pour l'étoile (aoni ici / eku ailleurs) — à arbitrer. Vs luna et sora.",
+          "nuance": "Forme canonique eku (alignée sur data ; les variantes aoni/atu sont écartées). Point lumineux du ciel nocturne. Dans le mythe fondateur : « les étoiles que la Voilée allume, dont ils firent des clous pour tenir leurs yeux ouverts ». Vs lune et soleil (sora).",
           "registre": "sacré"
         }
       ]
@@ -422,7 +422,7 @@
     "crevasse": {
       "traductions": [
         {
-          "confluent": "vukukali",
+          "confluent": "vukukari",
           "type": "composition",
           "composition": "vuk-u-kali",
           "sens_litteral": "Gouffre dans la pierre",
@@ -440,7 +440,7 @@
     "promontoire": {
       "traductions": [
         {
-          "confluent": "tasumelu",
+          "confluent": "tasuseli",
           "type": "composition",
           "composition": "tas-u-melu",
           "sens_litteral": "Montagne de la mer",
@@ -450,7 +450,7 @@
           ],
           "domaine": "geographie",
           "definition": "Hauteur s'avançant au-dessus de la mer.",
-          "nuance": "Composition tas-u-melu. INCOHÉRENCE : melu=doux/tendre (data), PAS 'mer' (=seli) — la glose 'montagne de la mer' ne correspond pas. Cf 'côte' (même anomalie melu).",
+          "nuance": "Composé tas-u-seli (montagne + mer) : hauteur s'avançant au-dessus de la mer. Forme corrigée — l'ancien 'tasumelu' utilisait melu (=doux) au lieu de seli (=mer). Cf 'côte' (tokuseli).",
           "registre": "courant"
         }
       ]
@@ -479,7 +479,7 @@
     "cote": {
       "traductions": [
         {
-          "confluent": "tokumelu",
+          "confluent": "tokuseli",
           "type": "composition",
           "composition": "tok-u-melu",
           "sens_litteral": "Terre de la mer",
@@ -489,7 +489,7 @@
           ],
           "domaine": "geographie",
           "definition": "Bande de terre bordant la mer, littoral.",
-          "nuance": "Composition tok-u-melu. MÊME ANOMALIE que promontoire : melu=doux (≠ mer=seli). Glose 'terre de la mer' incohérente. Lieu de l'expansion et du contact avec l'Autre.",
+          "nuance": "Composé tok-u-seli (terre + mer) : bande de terre bordant la mer, littoral. Forme corrigée (melu=doux → seli=mer). Lieu de l'expansion récente et du contact avec l'Autre.",
           "registre": "courant"
         }
       ]
@@ -497,7 +497,7 @@
     "horizon": {
       "traductions": [
         {
-          "confluent": "zelutoka",
+          "confluent": "zerutoka",
           "type": "composition",
           "composition": "zel-u-toka",
           "sens_litteral": "Ciel de la terre",
@@ -507,7 +507,7 @@
           ],
           "domaine": "geographie",
           "definition": "Ligne où le ciel rencontre la terre.",
-          "nuance": "Composition zel-u-toka (ciel de la terre). Charge culturelle côté inconnu/ouverture maritime. Vs 'ciel' (zelu, la voûte). Reprend 'zelu' (divergence zeru/zelu).",
+          "nuance": "Composé zer-u-toka (ciel + terre) : la ligne où le ciel rencontre la terre. Charge culturelle côté inconnu / ouverture maritime. Vs 'ciel' (zeru, la voûte).",
           "registre": "courant"
         }
       ]
@@ -515,7 +515,7 @@
     "confluence de rivieres": {
       "traductions": [
         {
-          "confluent": "nulaakota",
+          "confluent": "nuraakota",
           "type": "composition",
           "composition": "nul-aa-kota",
           "sens_litteral": "Rivière mêlée à union",
@@ -533,7 +533,7 @@
     "riviere azur": {
       "traductions": [
         {
-          "confluent": "nuluzelu",
+          "confluent": "nuruzeru",
           "type": "composition",
           "composition": "nul-u-zelu",
           "sens_litteral": "Rivière du ciel",
@@ -551,7 +551,7 @@
     "riviere verte": {
       "traductions": [
         {
-          "confluent": "nuluviku",
+          "confluent": "nuruviku",
           "type": "composition",
           "composition": "nul-u-viku",
           "sens_litteral": "Rivière de la forêt",

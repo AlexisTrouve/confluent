@@ -61,7 +61,7 @@
     "bete": {
       "traductions": [
         {
-          "confluent": "betu",
+          "confluent": "besi",
           "type": "racine",
           "forme_liee": "bet",
           "domaine": "animal",
@@ -75,7 +75,7 @@
     "bete sacree": {
       "traductions": [
         {
-          "confluent": "asaubetu",
+          "confluent": "asaubesi",
           "type": "composition",
           "composition": "as-a-betu",
           "sens_litteral": "Sacré avec bête",
@@ -90,7 +90,7 @@
     "gibier": {
       "traductions": [
         {
-          "confluent": "zanubetu",
+          "confluent": "zanubesi",
           "type": "composition",
           "composition": "zan-u-betu",
           "sens_litteral": "Bête de chasse",
@@ -116,7 +116,7 @@
     "poisson de riviere": {
       "traductions": [
         {
-          "confluent": "pisunula",
+          "confluent": "pisunura",
           "type": "composition",
           "composition": "pis-u-nula",
           "sens_litteral": "Poisson de rivière",

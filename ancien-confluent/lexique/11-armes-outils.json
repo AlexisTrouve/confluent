@@ -116,7 +116,7 @@
     "bouclier": {
       "traductions": [
         {
-          "confluent": "zakikali",
+          "confluent": "zakikari",
           "type": "composition",
           "composition": "zak-i-kali",
           "sens_litteral": "Protection de pierre",
@@ -131,7 +131,7 @@
     "pioche": {
       "traductions": [
         {
-          "confluent": "vukukali",
+          "confluent": "vukukari",
           "type": "composition",
           "composition": "vuk-u-kali",
           "sens_litteral": "Pierre du gouffre",
@@ -146,7 +146,7 @@
     "ciseau a pierre": {
       "traductions": [
         {
-          "confluent": "kovukali",
+          "confluent": "kovukari",
           "type": "composition",
           "composition": "kov-u-kali",
           "sens_litteral": "Graveur de pierre",
@@ -161,7 +161,7 @@
     "maillet": {
       "traductions": [
         {
-          "confluent": "bopukali",
+          "confluent": "bopukari",
           "type": "composition",
           "composition": "bop-u-kali",
           "sens_litteral": "Frappeur de pierre",

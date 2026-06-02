@@ -46,7 +46,7 @@
     "metal": {
       "traductions": [
         {
-          "confluent": "kalisuki",
+          "confluent": "karisuki",
           "type": "composition",
           "composition": "kal-i-suki",
           "sens_litteral": "Pierre du feu",
@@ -61,7 +61,7 @@
     "minerai": {
       "traductions": [
         {
-          "confluent": "kaliuvuku",
+          "confluent": "kariuvuku",
           "type": "composition",
           "composition": "kal-i-vuku",
           "sens_litteral": "Pierre du gouffre",
@@ -170,7 +170,7 @@
     "chaine": {
       "traductions": [
         {
-          "confluent": "kopuukali",
+          "confluent": "kopuukari",
           "type": "composition",
           "composition": "kop-u-kali",
           "sens_litteral": "Corde de pierre",
@@ -400,7 +400,7 @@
     "bijou": {
       "traductions": [
         {
-          "confluent": "kaliuola",
+          "confluent": "kariuola",
           "type": "composition",
           "composition": "kal-i-ola",
           "sens_litteral": "Pierre de l'aurore",

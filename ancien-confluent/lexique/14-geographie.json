@@ -5,7 +5,7 @@
     "confluence de rivieres": {
       "traductions": [
         {
-          "confluent": "nulaakota",
+          "confluent": "nuraakota",
           "type": "composition",
           "composition": "nul-aa-kota",
           "sens_litteral": "Rivière mêlée à union",
@@ -20,7 +20,7 @@
     "riviere azur": {
       "traductions": [
         {
-          "confluent": "nuluzelu",
+          "confluent": "nuruzeru",
           "type": "composition",
           "composition": "nul-u-zelu",
           "sens_litteral": "Rivière du ciel",
@@ -35,7 +35,7 @@
     "riviere verte": {
       "traductions": [
         {
-          "confluent": "nuluviku",
+          "confluent": "nuruviku",
           "type": "composition",
           "composition": "nul-u-viku",
           "sens_litteral": "Rivière de la forêt",
@@ -50,7 +50,7 @@
     "promontoire": {
       "traductions": [
         {
-          "confluent": "tasumelu",
+          "confluent": "tasuseli",
           "type": "composition",
           "composition": "tas-u-melu",
           "sens_litteral": "Montagne de la mer",
@@ -143,7 +143,7 @@
     "cote": {
       "traductions": [
         {
-          "confluent": "tokumelu",
+          "confluent": "tokuseli",
           "type": "composition",
           "composition": "tok-u-melu",
           "sens_litteral": "Terre de la mer",
@@ -158,7 +158,7 @@
     "horizon": {
       "traductions": [
         {
-          "confluent": "zelutoka",
+          "confluent": "zerutoka",
           "type": "composition",
           "composition": "zel-u-toka",
           "sens_litteral": "Ciel de la terre",
@@ -218,7 +218,7 @@
     "eboulement": {
       "traductions": [
         {
-          "confluent": "kaliovuku",
+          "confluent": "kariovuku",
           "type": "composition",
           "composition": "kal-oa-vuku",
           "sens_litteral": "Pierre vers le gouffre",
@@ -248,7 +248,7 @@
     "crevasse": {
       "traductions": [
         {
-          "confluent": "vukukali",
+          "confluent": "vukukari",
           "type": "composition",
           "composition": "vuk-u-kali",
           "sens_litteral": "Gouffre dans la pierre",
@@ -263,7 +263,7 @@
     "roche impenetrable": {
       "traductions": [
         {
-          "confluent": "kaliuzoki",
+          "confluent": "kariuzoki",
           "type": "composition",
           "composition": "kal-i-zoki",
           "sens_litteral": "Pierre de l'épreuve",

@@ -144,7 +144,7 @@
     "eboulement": {
       "traductions": [
         {
-          "confluent": "kaloavuku",
+          "confluent": "karoavuku",
           "type": "composition",
           "composition": "kal-oa-vuku",
           "sens_litteral": "Pierre vers le gouffre",
@@ -204,7 +204,7 @@
     "crevasse": {
       "traductions": [
         {
-          "confluent": "vukukali",
+          "confluent": "vukukari",
           "type": "composition",
           "composition": "vuk-u-kali",
           "sens_litteral": "Gouffre de pierre",
@@ -219,7 +219,7 @@
     "roche impenetrable": {
       "traductions": [
         {
-          "confluent": "kaliuoki",
+          "confluent": "kariuoki",
           "type": "composition",
           "composition": "kal-i-oki",
           "sens_litteral": "Pierre de l'épreuve",

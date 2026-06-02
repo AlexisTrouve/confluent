@@ -219,7 +219,7 @@
     "assemblee": {
       "traductions": [
         {
-          "confluent": "kotaitoli",
+          "confluent": "kotaitori",
           "type": "composition",
           "composition": "kot-a-toli",
           "sens_litteral": "Union avec personnes",
@@ -295,7 +295,7 @@
     "memoire": {
       "traductions": [
         {
-          "confluent": "memu",
+          "confluent": "mori",
           "type": "racine",
           "forme_liee": "mem",
           "domaine": "concept_abstrait",
@@ -432,7 +432,7 @@
     "mer": {
       "traductions": [
         {
-          "confluent": "melu",
+          "confluent": "seli",
           "type": "racine",
           "forme_liee": "mel",
           "domaine": "geographie",
@@ -738,7 +738,7 @@
     "personne": {
       "traductions": [
         {
-          "confluent": "toli",
+          "confluent": "tori",
           "type": "racine",
           "forme_liee": "tol",
           "domaine": "social",
@@ -814,7 +814,7 @@
     "souvenir": {
       "traductions": [
         {
-          "confluent": "nemu",
+          "confluent": "mori",
           "type": "racine",
           "forme_liee": "nem",
           "domaine": "mental",

@@ -639,7 +639,7 @@
     "violence bestiale": {
       "traductions": [
         {
-          "confluent": "betuuzoka",
+          "confluent": "besiuzoka",
           "type": "composition",
           "composition": "bet-u-zoka",
           "sens_litteral": "Bête de l'hostilité",
@@ -675,7 +675,7 @@
     "prisonnier": {
       "traductions": [
         {
-          "confluent": "pasikitoli",
+          "confluent": "pasikitori",
           "type": "composition",
           "composition": "pas-ik-i-toli",
           "sens_litteral": "Personne capturée",
@@ -765,7 +765,7 @@
     "connaissance": {
       "traductions": [
         {
-          "confluent": "sekamemu",
+          "confluent": "sekamori",
           "type": "composition",
           "composition": "seka-memu",
           "sens_litteral": "Savoir-en-mémoire",
@@ -776,7 +776,7 @@
           "domaine": "concept_fondateur",
           "note": "Connaissance - le savoir gardé en mémoire (seka=savoir + memu=mémoire)",
           "definition": "Le savoir gardé en mémoire ; ensemble de ce qui est su et conservé.",
-          "nuance": "seka (savoir) + memu (mémoire, var. mori). Triade seka- : distinct de 'sagesse' (sekauaita, savoir ancestral) et 'compétence' (sekautosa, savoir utile). Ici accent sur la CONSERVATION mnésique. NB memu vs racine attestée mori.",
+          "nuance": "seka (savoir) + mori (mémoire) : le savoir gardé en mémoire. Forme corrigée (memu → mori canonique). Triade seka- : distinct de 'sagesse' (savoir ancestral) et 'compétence' (savoir utile) ; ici l'accent est sur la conservation mnésique.",
           "registre": "courant",
           "exemple": "va miki vo seka sekamu"
         }

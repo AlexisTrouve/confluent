@@ -95,7 +95,7 @@
     "relais de mémorisation": {
       "traductions": [
         {
-          "confluent": "vasinemu",
+          "confluent": "vasimori",
           "type": "composition",
           "composition": "vasi-nemu",
           "sens_litteral": "Passage de mémoire",
@@ -325,7 +325,7 @@
     "gloire": {
       "traductions": [
         {
-          "confluent": "nemumako",
+          "confluent": "morimako",
           "type": "composition",
           "composition": "nemu-mako",
           "sens_litteral": "Grande mémoire",
@@ -345,7 +345,7 @@
     "honneur": {
       "traductions": [
         {
-          "confluent": "tosanemu",
+          "confluent": "tosamori",
           "type": "composition",
           "composition": "tosa-nemu",
           "sens_litteral": "Bonne mémoire",

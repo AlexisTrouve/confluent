@@ -197,7 +197,7 @@
     "embouchure": {
       "traductions": [
         {
-          "confluent": "ulakotamelu",
+          "confluent": "ulakotaseli",
           "type": "composition",
           "composition": "ula-kota-melu",
           "sens_litteral": "Confluence d'eau vers la mer",
@@ -256,7 +256,7 @@
     "marée": {
       "traductions": [
         {
-          "confluent": "meluuki",
+          "confluent": "seliuki",
           "type": "composition",
           "composition": "melu-uki",
           "sens_litteral": "Mouvement de la mer",
@@ -275,7 +275,7 @@
     "vague": {
       "traductions": [
         {
-          "confluent": "meluloli",
+          "confluent": "seliloli",
           "type": "composition",
           "composition": "melu-loli",
           "sens_litteral": "Roulement de la mer",
@@ -545,7 +545,7 @@
     "créature flottante": {
       "traductions": [
         {
-          "confluent": "betulatuli",
+          "confluent": "besilatuli",
           "type": "composition",
           "composition": "betu-ula-tuli",
           "sens_litteral": "Bête qui flotte sur l'eau",
@@ -581,7 +581,7 @@
     "tempête marine": {
       "traductions": [
         {
-          "confluent": "meluzelu",
+          "confluent": "selizeru",
           "type": "composition",
           "composition": "melu-zelu",
           "sens_litteral": "Ciel furieux de la mer",
@@ -620,7 +620,7 @@
     "houle": {
       "traductions": [
         {
-          "confluent": "meluloli",
+          "confluent": "seliloli",
           "type": "composition",
           "composition": "melu-loli",
           "sens_litteral": "Ondulation lente de la mer",

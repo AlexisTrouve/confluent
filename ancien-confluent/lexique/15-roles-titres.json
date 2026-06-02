@@ -76,7 +76,7 @@
     "sage": {
       "traductions": [
         {
-          "confluent": "sekitoli",
+          "confluent": "sekitori",
           "type": "composition",
           "composition": "sek-i-toli",
           "sens_litteral": "Porteur de savoir",
@@ -127,7 +127,7 @@
     "traqueur": {
       "traductions": [
         {
-          "confluent": "zanatoli",
+          "confluent": "zanatori",
           "type": "composition",
           "composition": "zan-a-toli",
           "sens_litteral": "Personne de la chasse",
@@ -147,7 +147,7 @@
     "guerrier": {
       "traductions": [
         {
-          "confluent": "okitoli",
+          "confluent": "okitori",
           "type": "composition",
           "composition": "ok-i-toli",
           "sens_litteral": "Personne de l'épreuve",
@@ -162,7 +162,7 @@
     "archer": {
       "traductions": [
         {
-          "confluent": "alkutoli",
+          "confluent": "alkutori",
           "type": "composition",
           "composition": "alk-u-toli",
           "sens_litteral": "Personne de l'arc",
@@ -207,7 +207,7 @@
     "sentinelle": {
       "traductions": [
         {
-          "confluent": "velatoli",
+          "confluent": "velatori",
           "type": "composition",
           "composition": "vel-a-toli",
           "sens_litteral": "Personne de vigile",
@@ -245,7 +245,7 @@
     "chaman": {
       "traductions": [
         {
-          "confluent": "umitoli",
+          "confluent": "umitori",
           "type": "composition",
           "composition": "um-i-toli",
           "sens_litteral": "Personne de l'esprit",
@@ -260,7 +260,7 @@
     "dresseur de grues": {
       "traductions": [
         {
-          "confluent": "aluzakitoli",
+          "confluent": "aluzakitori",
           "type": "composition",
           "composition": "al-u-zak-i-toli",
           "sens_litteral": "Personne gardienne des grues",
@@ -351,7 +351,7 @@
     "faconneur de pierre": {
       "traductions": [
         {
-          "confluent": "nekaukali",
+          "confluent": "nekaukari",
           "type": "composition",
           "composition": "nek-a-kali",
           "sens_litteral": "Faiseur avec pierre",
@@ -366,7 +366,7 @@
     "sculpteur": {
       "traductions": [
         {
-          "confluent": "kovatoli",
+          "confluent": "kovatori",
           "type": "composition",
           "composition": "kov-a-toli",
           "sens_litteral": "Personne de la gravure",
@@ -381,7 +381,7 @@
     "peintre": {
       "traductions": [
         {
-          "confluent": "koluutoli",
+          "confluent": "koluutori",
           "type": "composition",
           "composition": "kol-u-toli",
           "sens_litteral": "Personne des couleurs",
@@ -396,7 +396,7 @@
     "tisserand": {
       "traductions": [
         {
-          "confluent": "vasitoli",
+          "confluent": "vasitori",
           "type": "composition",
           "composition": "vas-i-toli",
           "sens_litteral": "Personne du tissage",
@@ -411,7 +411,7 @@
     "pecheur": {
       "traductions": [
         {
-          "confluent": "pisutoli",
+          "confluent": "pisutori",
           "type": "composition",
           "composition": "pis-u-toli",
           "sens_litteral": "Personne du poisson",
@@ -426,7 +426,7 @@
     "mineur": {
       "traductions": [
         {
-          "confluent": "vukutoli",
+          "confluent": "vukutori",
           "type": "composition",
           "composition": "vuk-u-toli",
           "sens_litteral": "Personne du gouffre",
@@ -441,7 +441,7 @@
     "aine": {
       "traductions": [
         {
-          "confluent": "aitatoli",
+          "confluent": "aitatori",
           "type": "composition",
           "composition": "ait-a-toli",
           "sens_litteral": "Personne avec ancêtre",
@@ -496,7 +496,7 @@
     "epoux": {
       "traductions": [
         {
-          "confluent": "kotautoli",
+          "confluent": "kotautori",
           "type": "composition",
           "composition": "kot-a-toli",
           "sens_litteral": "Personne d'union",
