@@ -13,7 +13,11 @@
             "suki",
             "sora"
           ],
-          "domaine": "couleur"
+          "domaine": "couleur",
+          "definition": "Couleur orangée, teinte du feu éclairé par la lumière. Tonalité chaude associée aux flammes et aux lueurs du jour.",
+          "nuance": "Composition suk-i-sola : suki (feu) + liaison agent -i- + sora (soleil, lumière), litt. « feu de lumière ». L'orangé fait partie de la palette de l'aurore (rouge/orangé/violet), couleur du sang du seuil et des yeux des Ciels-clairs, ce qui lui donne une charge liminale latente. Ici le glissement -sola provient de sora (assimilation finale en composition).",
+          "registre": "courant",
+          "exemple": "va miki vo sukiusola miraku"
         }
       ]
     },
@@ -28,7 +32,10 @@
             "zeru",
             "pasu"
           ],
-          "domaine": "couleur"
+          "domaine": "couleur",
+          "definition": "Couleur violette ou pourpre, teinte du ciel teinté de sang. Couleur la plus liminale de la palette de l'aurore.",
+          "nuance": "Composition zer-u-pasu : zeru (ciel) + liaison appartenance -u- + pasu (rouge), litt. « ciel de sang ». Le violet est la couleur reine de l'aurore (sang du seuil) et celle des yeux des Ciels-clairs les plus élevés ; charge sacrée maximale. Synonyme français : pourpre. La finale -lasu est l'altération de pasu en composition.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -46,7 +53,10 @@
             "pasu",
             "milu"
           ],
-          "domaine": "couleur"
+          "domaine": "couleur",
+          "definition": "Couleur rose, teinte du rouge adouci par le blanc laiteux. Tonalité tendre et pâle.",
+          "nuance": "Composition pas-u-milu : pasu (rouge) + liaison appartenance -u- + milu (lait), litt. « rouge de lait ». Forme atténuée du rouge de l'aurore : le rose garde une trace de la charge liminale du pasu, mais adouci par milu (lait, blancheur), ce qui le ramène au registre courant. Famille du blanc (pabe = couleur du lait).",
+          "registre": "courant"
         }
       ]
     },
@@ -57,7 +67,11 @@
           "type": "racine",
           "forme_liee": "pab",
           "domaine": "couleur",
-          "note": "Couleur du lait"
+          "note": "Couleur du lait",
+          "definition": "Couleur blanche, teinte du lait. Racine simple désignant la blancheur.",
+          "nuance": "Racine standard pabe (forme liée pab-), notée « couleur du lait ». Proche sémantiquement de milu (lait, liquide blanc) et de lapu (lait, liquide blanc) qui servent dans les compositions adoucissantes (rose, pâle). Couleur des Enfants des Échos décrits comme pâles dans la culture.",
+          "registre": "courant",
+          "exemple": "va pabe miraku"
         }
       ]
     },
@@ -68,7 +82,11 @@
           "type": "racine",
           "forme_liee": "kat",
           "domaine": "couleur",
-          "note": "Couleur de l'ombre"
+          "note": "Couleur de l'ombre",
+          "definition": "Couleur noire, teinte de l'ombre. Racine simple désignant l'obscurité visuelle.",
+          "nuance": "Racine standard kate (forme liée kat-), notée « couleur de l'ombre ». À distinguer de taku (sombre, obscur) qui qualifie l'ambiance lumineuse plutôt que la teinte, et de kesa (cendre, gris). Charge culturelle de l'ombre liée aux souterrains (Antres des Échos).",
+          "registre": "courant",
+          "exemple": "va kate miraku"
         }
       ]
     },
@@ -79,7 +97,10 @@
           "type": "racine",
           "forme_liee": "man",
           "domaine": "couleur",
-          "note": "Couleur de la forêt"
+          "note": "Couleur de la forêt",
+          "definition": "Couleur verte, teinte de la forêt. Racine simple désignant le vert végétal.",
+          "nuance": "Racine standard mane (forme liée man-), notée « couleur de la forêt ». Couleur évocatrice de viku (forêt, arbre) ; l'une des deux rivières de la Confluence est verte (l'autre azur), ce qui donne au vert une résonance géographique fondatrice.",
+          "registre": "courant"
         }
       ]
     },
@@ -90,7 +111,10 @@
           "type": "racine",
           "forme_liee": "sab",
           "domaine": "couleur",
-          "note": "Couleur du ciel"
+          "note": "Couleur du ciel",
+          "definition": "Couleur bleue, teinte du ciel. Racine simple désignant le bleu.",
+          "nuance": "Racine standard sabo (forme liée sab-), notée « couleur du ciel ». Liée sémantiquement à zeru (ciel) sans en dériver morphologiquement. Concurrence zale (azur) et zeruuula (bleu d'eau) pour les nuances de bleu.",
+          "registre": "courant"
         }
       ]
     },
@@ -100,7 +124,10 @@
           "confluent": "zale",
           "type": "racine",
           "forme_liee": "zal",
-          "domaine": "couleur"
+          "domaine": "couleur",
+          "definition": "Bleu azur, teinte claire et lumineuse du ciel dégagé. Racine simple pour le bleu vif.",
+          "nuance": "Racine standard zale (forme liée zal-). Doublet de sabo (bleu, couleur du ciel) ; l'azur désigne plus précisément le ciel clair. L'une des deux rivières de la Confluence est azur, ce qui ancre cette teinte dans le paysage fondateur.",
+          "registre": "courant"
         }
       ]
     },
@@ -115,7 +142,10 @@
             "zeru",
             "ura"
           ],
-          "domaine": "couleur"
+          "domaine": "couleur",
+          "definition": "Bleu d'eau, teinte du ciel reflété dans l'onde. Nuance de bleu fluide et changeante.",
+          "nuance": "Composition zer-u-ula : zeru (ciel) + liaison appartenance -u- + ura (eau, fluide), litt. « ciel de l'eau ». Implique la racine sacrée ura (eau, élément primordial), ce qui élève légèrement la teinte ; double voyelle euphonique (-uula) au point de jonction. Doublon de bleu : sabo / zale / zeruuula.",
+          "registre": "courant"
         }
       ]
     },
@@ -130,7 +160,10 @@
             "toka",
             "sora"
           ],
-          "domaine": "couleur"
+          "domaine": "couleur",
+          "definition": "Couleur ocre, teinte de la terre touchée par le soleil. Brun-jaune chaud des sols.",
+          "nuance": "Composition tok-a-sola : toka (terre, sol) + liaison relation -a- (avec) + sora (soleil, lumière), litt. « terre avec soleil ». Couleur des matériaux et de l'argile vivante ; teinte concrète et quotidienne. La finale -sola est l'altération de sora en composition.",
+          "registre": "courant"
         }
       ]
     },
@@ -145,7 +178,10 @@
             "milu",
             "kolu"
           ],
-          "domaine": "qualificatif"
+          "domaine": "qualificatif",
+          "definition": "Pâle, délavé, à la couleur affaiblie. Qualifie une teinte tirant vers le laiteux.",
+          "nuance": "Composition mil-u-kolu : milu (lait) + liaison appartenance -u- + kelu (couleur, teinte), litt. « lait de couleur ». Qualificatif construit sur kelu (couleur), avec ici la variante -kolu. Évoque la pâleur des Enfants des Échos (souterrains). Pluriel français : pâles.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -163,7 +199,10 @@
             "sora",
             "mako"
           ],
-          "domaine": "qualificatif"
+          "domaine": "qualificatif",
+          "definition": "Éclat, brillance intense, rayonnement d'une lumière vaste. Qualité visuelle de ce qui brille fort.",
+          "nuance": "Composition sol-a-mako : sora (soleil, lumière) + liaison relation -a- (avec) + mako (grand, vaste), litt. « lumière avec grandeur ». La racine sora (lumière) y porte une connotation solaire et diurne. Synonymes français : éclate, éclats, éclatés. À distinguer de tame (lumineux), qualité plus diffuse.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -183,7 +222,10 @@
             "sora",
             "ura"
           ],
-          "domaine": "qualificatif"
+          "domaine": "qualificatif",
+          "definition": "Translucide, qui laisse passer la lumière comme l'eau. Qualité d'une matière claire et fluide à la lumière.",
+          "nuance": "Composition sol-a-ula : sora (soleil, lumière) + liaison relation -a- (avec) + ura (eau, fluide), litt. « lumière avec eau ». Implique la racine sacrée ura ; double voyelle euphonique (-uula) au point de jonction. Pluriel français : translucides.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -196,7 +238,10 @@
           "confluent": "tame",
           "type": "racine",
           "forme_liee": "tam",
-          "domaine": "qualificatif"
+          "domaine": "qualificatif",
+          "definition": "Lumineux, clair, qui émet ou réfléchit la lumière. Racine qualificative simple.",
+          "nuance": "Racine standard tame (forme liée tam-). Antonyme direct de taku (sombre, obscur). À distinguer de solaumako (éclat) qui désigne une brillance intense et ponctuelle, là où tame désigne une clarté générale. Variantes françaises : lumineuse, lumineuses.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -210,7 +255,10 @@
           "confluent": "taku",
           "type": "racine",
           "forme_liee": "tak",
-          "domaine": "qualificatif"
+          "domaine": "qualificatif",
+          "definition": "Sombre, obscur, peu éclairé. Racine qualificative simple pour l'absence de lumière.",
+          "nuance": "Racine standard taku (forme liée tak-), aussi listée dans les éléments de nature (sombre, obscur). Antonyme de tame (lumineux). Sert dans les métaphores émotionnelles culturelles : kori taku (cœur-sombre = tristesse), sili taku (regard-obscur = peur). À distinguer de la teinte kate (noir). Pluriel français : sombres.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -228,7 +276,10 @@
             "kolu",
             "aita"
           ],
-          "domaine": "qualificatif"
+          "domaine": "qualificatif",
+          "definition": "Patine, couleur déposée par le temps sur une surface ancienne. Teinte vieillie d'un objet transmis.",
+          "nuance": "Composition kol-u-aita : kelu (couleur, teinte) + liaison appartenance -u- + aita (ancêtre, ancien), litt. « couleur des ancêtres ». La racine sacrée aita (ancêtre) charge le mot d'une dimension de transmission : la patine est la marque du temps sur les artefacts multi-générationnels (Grande Fresque, Autels). La variante kol- correspond à kelu. Pluriel français : patines.",
+          "registre": "rituel"
         }
       ],
       "synonymes_fr": [
@@ -241,7 +292,10 @@
           "confluent": "nave",
           "type": "racine",
           "forme_liee": "nav",
-          "domaine": "art"
+          "domaine": "art",
+          "definition": "Gravure, trait incisé dans une surface. Racine simple du domaine artistique.",
+          "nuance": "Racine standard nave (forme liée nav-), domaine art. À distinguer de kova (peinture, image, fresque) et de sinu (signe, marque) ; la gravure relève des glyphes et tablettes d'argile, supports de la mémoire écrite.",
+          "registre": "courant"
         }
       ]
     },
@@ -256,7 +310,10 @@
             "kova",
             "kari"
           ],
-          "domaine": "art"
+          "domaine": "art",
+          "definition": "Bas-relief, gravure en saillie taillée dans la pierre. Œuvre sculptée du domaine artistique.",
+          "nuance": "Composition kov-a-kari : kova (peinture, image, fresque) + liaison relation -a- (avec) + kari (pierre, roche), litt. « gravure avec pierre ». Apparenté au verbe kovak (sculpter). Note : la composition lie ici kova au sens de gravure/relief, et non de fresque peinte.",
+          "registre": "courant"
         }
       ]
     },
@@ -271,7 +328,10 @@
             "kova",
             "siku"
           ],
-          "domaine": "art"
+          "domaine": "art",
+          "definition": "Motif, dessin gravé en cercles ou en figures répétées. Ornement du domaine artistique.",
+          "nuance": "Composition kov-a-siku : kova (peinture, image, fresque) + liaison relation -a- (avec) + siku (cercle, anneau), litt. « gravure avec cercle ». La finale -liku est l'altération de siku en composition. Renvoie aux Cercles de Vigile (Sikuvela) et aux glyphes modulaires.",
+          "registre": "courant"
         }
       ]
     }

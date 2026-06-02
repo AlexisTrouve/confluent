@@ -14,7 +14,11 @@
             "na"
           ],
           "domaine": "alterite",
-          "note": "Racine sacrée ota (autre, extérieur) + suffixe agent -na"
+          "note": "Racine sacrée ota (autre, extérieur) + suffixe agent -na",
+          "definition": "Celui qui vient de l'extérieur, l'inconnu venu d'ailleurs qui ne partage ni ancêtres, ni langue, ni intentions avec les Siliaska. Désigne la personne étrangère concrète, l'individu de l'Autre.",
+          "nuance": "Composition ota (l'Autre, racine sacrée de l'extérieur) + suffixe agent -na : 'celui de l'extérieur'. Charge culturelle ambivalente : l'étranger n'est pas d'emblée un ennemi (zoka), mais un être à observer avant de juger, selon la posture culturelle 'regarder avant d'agir'. À distinguer de zoka (ennemi/étranger hostile, racine standard 51 du noyau, déjà chargée négativement) : otana est neutre, zoka est belliqueux. Doublon partiel possible avec inconnu (otasili, l'inconnu au regard).",
+          "registre": "courant",
+          "exemple": "va otana vo ura miraku"
         }
       ],
       "synonymes_fr": [
@@ -31,7 +35,10 @@
           "type": "racine_sacree",
           "forme_liee": "ot",
           "domaine": "alterite",
-          "note": "Concept philosophique : celui qui ne partage ni ancêtres, ni langue, ni intentions"
+          "note": "Concept philosophique : celui qui ne partage ni ancêtres, ni langue, ni intentions",
+          "definition": "Concept philosophique fondamental de l'altérité : celui qui ne partage ni ancêtres, ni langue, ni intentions. L'Autre au sens absolu, l'altérité elle-même avant toute personne particulière.",
+          "nuance": "Racine sacrée (forme liée ot-) du domaine alterite, noyau de tout le vocabulaire du contact. Sa nature sacrée marque le poids existentiel de la rencontre avec l'inconnu dans une civilisation hantée par les Premiers Ancêtres et le premier 'Autre' (les Nanzagouet). C'est la racine-mère qui engendre otana (étranger), otavi (différent), otasili (inconnu), linuota (frontière), siliota (curiosité). À ne pas confondre avec zoka (ennemi) : ota est l'altérité brute, neutre ; zoka est l'altérité devenue hostilité.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -50,7 +57,10 @@
             "ota"
           ],
           "domaine": "alterite",
-          "note": "Suffixe adjectival -vi"
+          "note": "Suffixe adjectival -vi",
+          "definition": "Qui est de nature autre, qui ne ressemble pas à soi. Qualifie ce qui appartient à l'altérité, ce qui diverge des manières des Siliaska.",
+          "nuance": "Composition ota (l'Autre) + suffixe adjectival -vi : 'de nature autre'. Charge culturelle plutôt positive ou neutre : la civilisation valorise l'adaptation, 's'enrichir du différent comme les eaux qui se mêlent'. Le différent n'est donc pas un défaut mais une source d'enrichissement potentiel. Antonyme : silikinu (similitude, même apparence). À distinguer de otana (l'étranger-personne) : otavi qualifie une qualité, non un individu.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -71,7 +81,10 @@
             "pasu"
           ],
           "domaine": "peuple_etranger",
-          "note": "Nom donné aux étrangers aux cheveux roux - 'Cheveux de Sang'. Liaison -u- (appartenance)."
+          "note": "Nom donné aux étrangers aux cheveux roux - 'Cheveux de Sang'. Liaison -u- (appartenance).",
+          "definition": "Nom donné par les Siliaska au peuple maritime aux cheveux roux, premier 'Autre' jamais rencontré. Littéralement 'Cheveux de Sang'. Désigne ce peuple étranger venu par la mer sur des navires de bois.",
+          "nuance": "Composition pupu (cheveux) + liaison -u- (appartenance) + pasu (sang/rouge) : 'cheveux du sang'. Charge culturelle historique majeure : ce nom marque le premier contact concret de la civilisation avec l'altérité réelle, événement fondateur dans une culture obsédée par le rapport à l'Autre. Le choix de pasu (sang) plutôt que d'un terme de couleur neutre teinte le nom d'une ambiguïté inquiétante. Exonyme (nom donné de l'extérieur), pas le nom que ce peuple se donne. Doublon strict avec 'cheveux de sang' (même mot pupupasu, registre descriptif).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -91,7 +104,10 @@
             "pasu"
           ],
           "domaine": "description_physique",
-          "note": "Descriptif des étrangers aux cheveux roux. Liaison -u- (appartenance)."
+          "note": "Descriptif des étrangers aux cheveux roux. Liaison -u- (appartenance).",
+          "definition": "Expression descriptive désignant les étrangers à la chevelure rousse, autrement appelés Nanzagouet. La marque physique qui distingue immédiatement ce peuple maritime.",
+          "nuance": "Même composition que 'nanzagouet' : pupu (cheveux) + -u- (appartenance) + pasu (sang). Ici le registre est descriptif/physique plutôt que le nom propre du peuple. Doublon assumé avec nanzagouet : un seul mot confluent pour le nom du peuple et la description de son trait distinctif, ce qui reflète que les Siliaska identifient l'Autre d'abord par l'observation visuelle (valeur du regard). À distinguer de roux (pasovi, couleur abstraite) : ici c'est le sang qui qualifie les cheveux, pas la teinte seule.",
+          "registre": "courant"
         }
       ]
     },
@@ -102,7 +118,10 @@
           "type": "racine",
           "forme_liee": "pup",
           "domaine": "corps",
-          "note": "Partie du corps qui pousse sur la tête"
+          "note": "Partie du corps qui pousse sur la tête",
+          "definition": "La chevelure, les poils qui poussent sur la tête. Partie du corps utilisée comme marqueur d'identité et de différence entre peuples.",
+          "nuance": "Racine standard (forme liée pup-) du domaine corps. Vocabulaire de base nécessaire pour décrire l'Autre (cf. pupupasu, 'cheveux de sang'). Sa présence dans ce fichier de l'altérité souligne combien l'apparence physique sert à catégoriser l'étranger. Doublon de domaine avec le fichier du corps : entrée présente ici parce qu'elle fonde la description des Nanzagouet.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -121,7 +140,10 @@
             "pasu"
           ],
           "domaine": "couleur",
-          "note": "Utilise la racine pasu (sang) pour rouge"
+          "note": "Utilise la racine pasu (sang) pour rouge",
+          "definition": "De couleur rouge ou rousse, comme le sang. Qualifie la couleur caractéristique des cheveux des étrangers maritimes.",
+          "nuance": "Composition paso/pasu (sang) + suffixe adjectival -vi : 'de couleur sang'. La langue n'a pas de mot abstrait pour 'rouge' : elle dérive la couleur du sang (pasu), métaphore corporelle typique du Confluent. Charge culturelle : le rouge des cheveux étrangers évoque le sang, association possiblement inquiétante dans le contexte du premier contact. À distinguer de pasu (le sang/le rouge brut, racine) et de kelu (couleur en général).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -142,7 +164,10 @@
             "sili"
           ],
           "domaine": "alterite",
-          "note": "Ce qui n'a jamais été observé"
+          "note": "Ce qui n'a jamais été observé",
+          "definition": "Ce qui n'a jamais été observé, ce qui échappe au regard et donc à la connaissance. L'étranger au sens de ce qui reste à découvrir.",
+          "nuance": "Composition ota (l'Autre) + sili (regard, œil) : 'autre au regard, non vu'. Charge culturelle forte : dans une civilisation où voir = connaître (le 'regard libre'), l'inconnu est précisément ce qui n'a pas encore été soumis à l'observation. L'inconnu appelle donc le regard (siliota, curiosité) plutôt que le rejet. À distinguer de otana (l'étranger-personne) : otasili est ce qui est inconnu, abstrait ou concret, pas forcément un individu. Synonyme partiel d'étranger via le synonyme_fr 'inconnu' d'otana.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -158,7 +183,10 @@
           "type": "racine",
           "forme_liee": "kotav",
           "domaine": "action_sociale",
-          "note": "Croiser le chemin de, se rencontrer"
+          "note": "Croiser le chemin de, se rencontrer",
+          "definition": "Croiser le chemin de quelqu'un, se trouver face à un autre. L'acte de rencontre, le moment où deux êtres ou groupes se croisent.",
+          "nuance": "Racine verbale (forme liée kotav-), évoque kota (union, confluence) : la rencontre est conçue comme un point de confluence. Charge culturelle positive : rencontrer, c'est amorcer une possible union, conformément à la valeur centrale de la confluence. Attention au doublon de forme : kotavi sert aussi pour 'commun' (kota-vi) dans ce même fichier, et la racine kotavi fonde contact (kotavuki) ; collision homographe à surveiller. À distinguer de venu (venir, arriver, racine 152) qui est le simple déplacement.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -173,7 +201,10 @@
           "type": "racine",
           "forme_liee": "takav",
           "domaine": "action_sociale",
-          "note": "Recevoir, accepter l'arrivée de"
+          "note": "Recevoir, accepter l'arrivée de",
+          "definition": "Recevoir un arrivant, accepter sa venue, lui ouvrir l'accès. L'acte d'accepter l'autre parmi soi.",
+          "nuance": "Racine verbale (forme liée takav-). Charge culturelle : l'accueil de l'étranger est un choix prudent dans une culture de 'méfiance prudente mais pas hostilité aveugle'. Pôle positif du couple accueillir/rejeter (takavi/volaki). À distinguer de pasak (prendre, racine 38) et de takan (porter, racine 45) malgré la proximité sonore : takavi est spécifiquement l'accueil social d'un être.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -188,7 +219,10 @@
           "type": "racine",
           "forme_liee": "volak",
           "domaine": "action_sociale",
-          "note": "Repousser, refuser"
+          "note": "Repousser, refuser",
+          "definition": "Repousser, refuser quelqu'un ou quelque chose, lui fermer l'accès. L'acte de ne pas accepter l'autre.",
+          "nuance": "Racine verbale (forme liée volak-). Pôle négatif du couple accueillir/rejeter (takavi/volaki). Charge culturelle : le rejet n'est pas la posture par défaut (la culture observe avant de juger), mais reste possible face à l'hostilité avérée. À distinguer de zoka/zanaoti (hostilité active) : rejeter est un refus, pas une agression. Possible parenté sonore avec voli (vouloir, racine 129) mais sens opposé : volaki = ne pas vouloir l'autre.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -209,7 +243,10 @@
             "umi"
           ],
           "domaine": "cognition",
-          "note": "Saisir le sens"
+          "note": "Saisir le sens",
+          "definition": "Saisir le sens, voir avec l'esprit. Aller au-delà de la perception pour atteindre la signification, notamment celle de l'étranger et de sa parole.",
+          "nuance": "Composition sili (regard) + umi (esprit, racine sacrée) : 'voir avec l'esprit'. Métaphore cognitive cohérente avec la culture du regard : comprendre, c'est un regard intérieur. Clé du contact interculturel : comprendre l'Autre avant de l'accueillir ou le rejeter. Doublon probable avec le fichier 12-abstraits (cognition) et proche de silumi/seka (savoir, racine 41) : silumi est l'acte de saisir, sekam le fait de connaître. À distinguer de mokis (apprendre).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -228,7 +265,10 @@
             "voki"
           ],
           "domaine": "communication",
-          "note": "Système linguistique (distinct de langue organe)"
+          "note": "Système linguistique (distinct de langue organe)",
+          "definition": "Système de paroles d'un peuple, idiome. L'ensemble des voix par lequel une communauté communique, distinct de la langue-organe.",
+          "nuance": "Composition voki (voix, parole) + suffixe -na (collectif/agent ici nominalisant) : 'ensemble des voix'. Charge culturelle : la langue est l'un des trois critères qui définissent l'Autre ('ni ancêtres, ni langue, ni intentions'). Ne pas partager la vokina est un marqueur d'altérité fondamental ; apprendre celle de l'étranger est un objectif déclaré de la civilisation. Doublon de domaine avec un éventuel fichier communication. À distinguer de voki (voix/parole brute, racine 28) et de paru (parler, discuter, racine 159).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -247,7 +287,10 @@
             "kanu"
           ],
           "domaine": "communication",
-          "note": "Communication non-verbale"
+          "note": "Communication non-verbale",
+          "definition": "Mouvement de la main porteur de sens, communication non-verbale. Le signe corporel utilisé pour se faire comprendre par-delà la barrière de la langue.",
+          "nuance": "Composition kanu (main) + liaison -uki (mouvement). Charge culturelle de contact : face à l'étranger dont on ne partage pas la langue (vokina), le geste devient le premier pont de communication. Outil pratique du premier contact avec les Nanzagouet. À distinguer de toku (toucher, contact physique, racine 120) : kanuki est un signe signifiant, pas un simple contact.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -267,7 +310,10 @@
             "kori"
           ],
           "domaine": "cognition",
-          "note": "Ce qu'on veut faire, la volonté"
+          "note": "Ce qu'on veut faire, la volonté",
+          "definition": "La volonté intérieure, ce qu'un être veut faire, le dessein qui anime ses actes. L'esprit-cœur tourné vers un but.",
+          "nuance": "Composition umi (esprit, racine sacrée) + kori (cœur) : 'esprit-cœur, volonté intérieure'. Charge culturelle capitale : l'intention est le troisième critère définissant l'Autre ('ni ancêtres, ni langue, ni intentions'). Déchiffrer l'umikoli de l'étranger — hostile ou pacifique — est l'enjeu central de l'observation prudente. La double racine umi+kori marque le poids existentiel du concept. Doublon probable avec 12-abstraits (cognition/volonté) et avec voli (vouloir, racine 129) : umikoli est le dessein réfléchi, voli le simple désir.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -288,7 +334,10 @@
             "konu"
           ],
           "domaine": "emotion",
-          "note": "Ne pas faire confiance, observer avec prudence"
+          "note": "Ne pas faire confiance, observer avec prudence",
+          "definition": "Attitude de prudence consistant à observer sans accorder sa confiance, à garder son regard sur l'autre par précaution. Vigilance défensive face à l'inconnu.",
+          "nuance": "Composition sili (regard) + ko (forme liée de konu/garder ou de la racine konu, 'gardé') + nu : 'regard gardé'. Charge culturelle centrale : la méfiance est la posture par défaut face à l'Autre, 'méfiance prudente mais pas hostilité aveugle'. Ce n'est pas du rejet, mais une retenue observatrice — exactement la valeur du regard avant l'action. Antonyme direct : kolaska (confiance, cœur libre). Doublon attendu avec 07-emotions (domaine emotion). À distinguer de siliota (curiosité, regard vers l'autre) : même racine sili, mais silikonu retient, siliota s'ouvre.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -308,7 +357,10 @@
             "aska"
           ],
           "domaine": "emotion",
-          "note": "Ouvrir son cœur sans crainte"
+          "note": "Ouvrir son cœur sans crainte",
+          "definition": "Ouvrir son cœur sans crainte, accorder sa foi à l'autre. L'état du cœur libre qui s'expose sans se protéger.",
+          "nuance": "Composition kori (cœur, forme kol-) + aska (libre, racine sacrée fondatrice) : 'cœur libre'. Charge culturelle profonde : aska (la liberté) est le concept fondateur de la civilisation (cf. siliaska, 'regard libre') ; la confiance est donc un cœur affranchi de la peur. C'est l'aboutissement positif du contact réussi avec l'Autre. Antonyme direct : silikonu (méfiance, regard gardé). Doublon attendu avec 07-emotions. À distinguer de vaku (ami/allié, racine 50) : kolaska est l'émotion, vaku la relation établie.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -327,7 +379,10 @@
             "kilu"
           ],
           "domaine": "action_sociale",
-          "note": "Donner une partie à l'autre"
+          "note": "Donner une partie à l'autre",
+          "definition": "Donner une part à l'autre, mettre en commun. L'acte de céder une portion de ce qu'on a à autrui.",
+          "nuance": "Composition kilu/kiru (échanger, troquer, racine 59) + liaison -u- + -vi : 'faire l'échange'. Charge culturelle forte : partager le savoir est une valeur cardinale ('le savoir gardé pour soi est une trahison'). Avec l'étranger, partager est un acte de confiance et un fondement du commerce (kilukota). À distinguer de kiru (troquer, échange marchand brut, racine 59) et de kitan (donner sans retour, racine 37) : kiluvi implique une mise en commun réciproque. Note de forme : graphie kilu vs racine attestée kiru à surveiller.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -346,7 +401,10 @@
             "kota"
           ],
           "domaine": "social",
-          "note": "Ce qui appartient à tous"
+          "note": "Ce qui appartient à tous",
+          "definition": "Ce qui appartient à tous, partagé entre les membres d'un groupe. Ce qui relève de la confluence collective plutôt que de l'individu.",
+          "nuance": "Composition kota (union, confluence) + suffixe adjectival -vi : 'de la confluence, partagé'. Charge culturelle directe : le commun découle de kota, valeur fondatrice d'union. Trouver un terrain commun avec l'Autre, c'est créer une confluence. Doublon de forme problématique : kotavi est aussi 'rencontrer' (racine verbale) dans ce même fichier — homographe à désambiguïser par le contexte (finale vocalique = nom/adjectif, vs emploi verbal). À distinguer de silikinu (similitude) : le commun est possédé ensemble, la similitude est une ressemblance.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -367,7 +425,10 @@
             "ota"
           ],
           "domaine": "geographie",
-          "note": "Limite entre nous et les autres"
+          "note": "Limite entre nous et les autres",
+          "definition": "Limite séparant le territoire des siens de celui des autres. La ligne au-delà de laquelle commence le domaine de l'Autre.",
+          "nuance": "Composition lina (ligne, corde, racine 83, forme lin-) + liaison -u- (appartenance) + ota (l'Autre, racine sacrée) : 'ligne de l'autre'. Charge culturelle : la frontière définit où finit le nous et commence l'altérité. Concept de contact territorial, pertinent depuis l'expansion vers les basses-terres et la côte. À distinguer de bori (bord, limite, racine 164) qui est une limite physique neutre : linuota est spécifiquement la limite face à l'Autre. Lien avec tokukota (territoire).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -388,7 +449,10 @@
             "kota"
           ],
           "domaine": "geographie",
-          "note": "Terre qui appartient au peuple"
+          "note": "Terre qui appartient au peuple",
+          "definition": "La terre qui appartient au peuple, le domaine où la communauté est chez elle. L'espace propre par opposition à celui de l'Autre.",
+          "nuance": "Composition toka (terre, sol, racine 17, forme tok-) + liaison -u- (appartenance) + kota (union, confluence) : 'terre de la confluence/union'. Charge culturelle : le territoire n'est pas qu'un sol, c'est une terre liée à l'union du peuple — la possession collective y est fondée sur kota. Pertinent dans le contexte d'expansion et de premier contact (revendication de l'espace face aux Nanzagouet). À distinguer de toka (terre brute, racine), loku (lieu, racine 84) et zoni (zone, région, racine 133).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -407,7 +471,10 @@
             "kotavi"
           ],
           "domaine": "action_sociale",
-          "note": "Premier contact, toucher"
+          "note": "Premier contact, toucher",
+          "definition": "Le premier contact, le mouvement initial de rencontre entre deux groupes ou êtres. Le moment fondateur où l'on touche l'Autre pour la première fois.",
+          "nuance": "Composition kotavi (rencontrer) + liaison -uki (mouvement) : 'mouvement de rencontre'. Charge culturelle historique : le 'premier contact' est un événement civilisationnel majeur (les Nanzagouet, le premier Autre). À distinguer de toku (toucher, contact physique brut, racine 120) : kotavuki est le contact social/interculturel, l'événement de la rencontre, pas le simple toucher. Dérive de la racine kotavi déjà chargée d'ambiguïté homographe.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -427,7 +494,10 @@
             "kota"
           ],
           "domaine": "economie",
-          "note": "Échanges réguliers entre groupes"
+          "note": "Échanges réguliers entre groupes",
+          "definition": "Échanges réguliers de biens entre groupes, négoce. Le commerce institué entre les siens et les autres, fondé sur l'échange en confluence.",
+          "nuance": "Composition kilu/kiru (échanger, racine 59) + liaison -u- + kota (union, confluence) : 'échange en confluence'. Charge culturelle : le commerce est une forme pacifique et durable de contact avec l'Autre, pratiqué par la caste des Passes-bien (Takitosa, marchands-médiateurs). Il transforme l'altérité en relation profitable. À distinguer de kiru (troc ponctuel, racine 59) et kiluvi (partager) : kilukota est l'échange marchand régulier et structuré. Note de forme : kilu vs racine attestée kiru.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -447,7 +517,10 @@
             "ota"
           ],
           "domaine": "attitude",
-          "note": "Agressif envers l'étranger"
+          "note": "Agressif envers l'étranger",
+          "definition": "Qui chasse l'autre, qui est agressif envers l'étranger. Qualifie l'attitude belliqueuse face à l'altérité.",
+          "nuance": "Composition zana (chasser, traquer, racine 46) + ota (l'Autre, racine sacrée) + -i : 'qui chasse l'autre'. Charge culturelle nette : l'hostilité est le pôle négatif de l'attitude face à l'étranger, opposé à tosavi (pacifique). Recoupe le sens de zoka (ennemi, étranger hostile, racine 51 du noyau) : zanaoti est l'attitude/qualité hostile, zoka l'être ennemi lui-même. La culture rejette la 'violence bestiale' mais admet la chasse de l'Autre avéré dangereux. À distinguer de varu (guerre, combat, racine 142).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -467,7 +540,10 @@
             "tosa"
           ],
           "domaine": "attitude",
-          "note": "Sans agressivité"
+          "note": "Sans agressivité",
+          "definition": "De nature bonne et paisible, sans agressivité. Qualifie l'attitude bienveillante envers l'autre, dénuée de menace.",
+          "nuance": "Composition tosa (bon, bien, racine 55) + suffixe adjectival -vi : 'de nature bonne/paisible'. Charge culturelle : pôle positif de l'attitude face à l'étranger, opposé à zanaoti (hostile). Cohérent avec la posture de 'méfiance prudente mais pas hostilité aveugle'. À distinguer de paku (paix, calme, racine 92) : tosavi qualifie une disposition bienveillante, paku est l'état de paix. Lien sémantique avec tosan (bénir).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -488,7 +564,10 @@
             "kota"
           ],
           "domaine": "politique",
-          "note": "Accord entre peuples"
+          "note": "Accord entre peuples",
+          "definition": "Accord scellé entre peuples, pacte d'union. L'engagement mutuel qui lie deux groupes par serment.",
+          "nuance": "Composition savu (serment, promesse, racine 65) + liaison -u- + kota (union, confluence) : 'serment de confluence'. Charge culturelle haute : l'alliance unit savu (le serment sacré, cf. Halls des Serments Talusavu) et kota (la confluence) — c'est l'aboutissement politique idéal du contact avec l'Autre. Le serment a un poids rituel fort (cf. Rituel du Regard Partagé qui scelle les accords). À distinguer de savukova (traité, serment gravé/écrit) : savukota est l'accord lui-même, savukova sa forme consignée.",
+          "registre": "rituel"
         }
       ],
       "synonymes_fr": [
@@ -508,7 +587,10 @@
             "kova"
           ],
           "domaine": "politique",
-          "note": "Accord formel écrit"
+          "note": "Accord formel écrit",
+          "definition": "Accord formel écrit, serment gravé sur un support permanent. La forme consignée et durable d'un pacte entre peuples.",
+          "nuance": "Composition savu (serment, racine 65) + liaison -u- + kova (peinture, image, fresque, racine 67) : 'serment gravé'. Charge culturelle : le traité matérialise l'alliance sur un artefact permanent (glyphes, tablettes), conforme à la culture des artefacts multi-générationnels et de l'évidentiel -uv ('c'est écrit'). Plus contraignant et mémorable que l'alliance orale. À distinguer de savukota (alliance, l'accord) : savukova en est la trace écrite. Lien avec kova (fresque) et le verbe sinan (graver).",
+          "registre": "rituel"
         }
       ],
       "synonymes_fr": [
@@ -528,7 +610,10 @@
             "ota"
           ],
           "domaine": "role_politique",
-          "note": "Celui qui parle au nom de son peuple auprès des étrangers"
+          "note": "Celui qui parle au nom de son peuple auprès des étrangers",
+          "definition": "Celui qui parle au nom de son peuple auprès des étrangers, émissaire, envoyé. La voix officielle tournée vers l'Autre.",
+          "nuance": "Composition voki (voix, parole, racine 28) + ota (l'Autre, racine sacrée) + suffixe agent -na : 'voix pour/vers l'autre'. Charge culturelle : rôle politique de médiation avec l'altérité, proche de la caste des Passes-bien (Takitosa, médiateurs). Compose trois éléments, ce qui est rare et marque l'importance de la fonction. À distinguer de vokikota (interprète) : l'ambassadeur (vokiotana) représente et négocie, l'interprète (vokikota) traduit seulement. Lien avec vokina (langue).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -548,7 +633,10 @@
             "kota"
           ],
           "domaine": "role_communication",
-          "note": "Celui qui traduit entre langues"
+          "note": "Celui qui traduit entre langues",
+          "definition": "Celui qui traduit entre deux langues, faisant le pont entre les paroles des siens et celles de l'Autre. Le traducteur, voix de la confluence.",
+          "nuance": "Composition voki (voix, parole, racine 28) + kota (union, confluence) : 'voix de confluence'. Charge culturelle : l'interprète réalise concrètement la confluence des langues, transformant la barrière linguistique (vokina différente) en passage. Fonction indispensable au contact avec les Nanzagouet. À distinguer de vokiotana (ambassadeur) : l'interprète traduit fidèlement, l'ambassadeur parle au nom du peuple. Lien avec vasi (pont, lien, passage, racine 60), même idée de pont.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -567,7 +655,10 @@
             "ota"
           ],
           "domaine": "emotion",
-          "note": "Désir de découvrir l'inconnu"
+          "note": "Désir de découvrir l'inconnu",
+          "definition": "Désir de découvrir l'inconnu, regard tourné vers l'autre par intérêt. L'élan d'observation qui pousse vers ce qu'on ne connaît pas encore.",
+          "nuance": "Composition sili (regard) + ota (l'Autre, racine sacrée) : 'regard vers l'autre'. Charge culturelle profondément positive : la curiosité incarne la valeur cardinale du regard et la 'volonté d'apprendre (langue, technologie)' de l'étranger. C'est le moteur vertueux du contact, opposé à la fermeture du rejet. Antonyme partiel : silikonu (méfiance, regard gardé) — même racine sili, mais siliota s'ouvre, silikonu se protège. Doublon attendu avec 07-emotions (domaine emotion). À distinguer de nuvisili (découverte).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -587,7 +678,10 @@
             "sili"
           ],
           "domaine": "cognition",
-          "note": "Voir pour la première fois"
+          "note": "Voir pour la première fois",
+          "definition": "Le fait de voir pour la première fois, de trouver ce qui était inconnu. Le nouveau regard posé sur ce qu'on ignorait.",
+          "nuance": "Composition nuvi (nouveau, jeune, racine 58) + sili (regard) : 'nouveau regard'. Charge culturelle : la découverte est l'aboutissement de la curiosité (siliota) appliquée à l'inconnu (otasili) — toujours médiée par le regard. Cohérent avec le verbe novak (découvrir, racine nuvi). À distinguer de siliota (curiosité, le désir) et otasili (inconnu, l'objet non vu) : nuvisili est l'acte/résultat de découvrir. Possible doublon de domaine avec 12-abstraits (cognition).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -606,7 +700,10 @@
             "sili"
           ],
           "domaine": "concept",
-          "note": "Ressemblance, points communs"
+          "note": "Ressemblance, points communs",
+          "definition": "Ressemblance, points communs entre deux êtres ou peuples. Le fait de présenter une même apparence ou des traits semblables.",
+          "nuance": "Composition sili (regard, apparence) + ki + nu : 'même regard/apparence'. Charge culturelle : reconnaître une similitude avec l'Autre, c'est le percevoir comme moins étranger, premier pas vers la confluence. Antonyme direct : otavi (différent, de nature autre). À distinguer de kotavi/commun (ce qui est possédé ensemble) : silikinu est une ressemblance perçue, non une possession partagée. Doublon de domaine probable avec 12-abstraits (concept). La composition repose encore sur sili, omniprésente racine du regard.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [

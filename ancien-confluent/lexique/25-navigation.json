@@ -13,7 +13,10 @@
             "ura"
           ],
           "domaine": "action_maritime",
-          "note": "Voyager sur l'eau avec une embarcation"
+          "note": "Voyager sur l'eau avec une embarcation",
+          "definition": "Voyager sur l'eau au moyen d'une embarcation. Verbe d'action du domaine maritime récent, né de l'expansion vers la côte.",
+          "nuance": "Composition ula-ki : ula = variante de ura (eau, racine sacrée, ur-), avec ki tiré de teki/-ki (aller, chemin). Litt. 'aller sur l'eau'. À distinguer de tekis (aller, terrestre/général) et de ulakimako (voyage maritime de longue durée).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -32,7 +35,9 @@
             "ura"
           ],
           "domaine": "role_maritime",
-          "note": "Personne qui navigue"
+          "note": "Personne qui navigue",
+          "definition": "Personne dont l'activité est de naviguer, celui qui va sur l'eau. Rôle social du domaine maritime émergent.",
+          "nuance": "Composition ula-ki-na : ulaki (naviguer) + suffixe agentif -na (issu de naki/na-, l'enfant/celui-qui ; à ne pas confondre avec la liaison agentive standard -i-). Litt. 'celui qui va sur l'eau'. Rôle proche des Nakuura (Enfants du Courant), maîtres de l'eau."
         }
       ],
       "synonymes_fr": [
@@ -52,7 +57,10 @@
             "vanu"
           ],
           "domaine": "objet_maritime",
-          "note": "Bateau, barque - terme générique"
+          "note": "Bateau, barque - terme générique",
+          "definition": "Bateau ou barque, terme générique pour tout véhicule flottant. Objet maritime de base.",
+          "nuance": "Composition ula-vanu : ula (eau) + vanu (navire, embarcation, racine standard van-). Litt. 'chose d'eau'. Doublon partiel avec vanu seul, qui sert déjà de racine 'navire' ; ulavanu insiste sur l'aspect 'objet flottant sur l'eau'.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -71,7 +79,10 @@
             "ura"
           ],
           "domaine": "action_maritime",
-          "note": "Rester à la surface de l'eau"
+          "note": "Rester à la surface de l'eau",
+          "definition": "Rester porté à la surface de l'eau sans couler.",
+          "nuance": "Composition ula-tuli : ula (eau) + tuli (élément 'porter/être porté', non attesté comme racine dans le lexique central — création du domaine maritime). Litt. 'être porté par l'eau'. À distinguer de couler (vanuvuku) et de chavirer (vanuloli).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -90,7 +101,10 @@
             "vanu"
           ],
           "domaine": "accident_maritime",
-          "note": "Le bateau bascule"
+          "note": "Le bateau bascule",
+          "definition": "Basculer, se retourner pour une embarcation, accident maritime fréquent.",
+          "nuance": "Composition vanu-loli : vanu (embarcation) + loli (élément 'retournement/roulis', aussi présent dans seliloli = vague/houle, idée d'ondulation et de roulement). Litt. 'l'embarcation se retourne'. Distinct de couler (vanuvuku) : on peut chavirer sans sombrer.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -110,7 +124,10 @@
             "vuku"
           ],
           "domaine": "accident_maritime",
-          "note": "Sombrer, aller au fond"
+          "note": "Sombrer, aller au fond",
+          "definition": "Sombrer, descendre au fond de l'eau pour une embarcation.",
+          "nuance": "Composition vanu-vuku : vanu (embarcation) + vuku (profond, gouffre, abîme ; même racine que Vukuura, le Gouffre Humide). Litt. 'l'embarcation descend dans le gouffre'. Le choix de vuku charge le mot d'une résonance funeste/sacrée liée au Gouffre.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -130,7 +147,10 @@
             "osi"
           ],
           "domaine": "danger_maritime",
-          "note": "Mort par immersion"
+          "note": "Mort par immersion",
+          "definition": "Mort causée par immersion dans l'eau, danger majeur de la navigation.",
+          "nuance": "Composition ula-osi : ula (eau) + osi (mort, mourir, racine SACRÉE os-). La présence de la racine sacrée osi donne une gravité rituelle au terme malgré son usage courant. Litt. 'mort par l'eau'.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -150,7 +170,10 @@
             "kosti"
           ],
           "domaine": "navigation",
-          "note": "Bateau qui s'arrête sur le rivage involontairement"
+          "note": "Bateau qui s'arrête sur le rivage involontairement",
+          "definition": "Pour un bateau, s'arrêter involontairement sur la rive ou un haut-fond.",
+          "nuance": "Composition vanu-kosti : vanu (embarcation) + kosti (rivage, côte ; racine propre au domaine maritime, voir entrée 'rivage'). Litt. 'l'embarcation touche la rive'. Sens technique (s'enliser) sans la valeur d'erreur du français 'échouer'.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -165,7 +188,9 @@
           "type": "racine",
           "forme_liee": "kost",
           "domaine": "geographie_maritime",
-          "note": "Bord de la mer, côte"
+          "note": "Bord de la mer, côte",
+          "definition": "Bord de la mer, côte, ligne où la terre rencontre l'eau salée.",
+          "nuance": "Racine maritime (forme liée kost-), nouvelle, introduite avec l'expansion côtière ; absente du lexique central. À distinguer de berge (ulalinu, bord de rivière/fleuve) et de bord (bori, limite générale). Réservé au littoral maritime."
         }
       ],
       "synonymes_fr": [
@@ -186,7 +211,10 @@
             "linu"
           ],
           "domaine": "geographie",
-          "note": "Bord de rivière ou fleuve"
+          "note": "Bord de rivière ou fleuve",
+          "definition": "Bord d'une rivière ou d'un fleuve, rive d'eau douce.",
+          "nuance": "Composition ula-linu : ula (eau) + linu (variante de lina, ligne/corde). Litt. 'ligne d'eau'. À opposer à kosti (rivage MARITIME) : ulalinu est fluvial, lié au mode de vie ancestral (villages sur pilotis des Nakuura).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -207,7 +235,10 @@
             "seli"
           ],
           "domaine": "geographie_maritime",
-          "note": "Où le fleuve rencontre la mer"
+          "note": "Où le fleuve rencontre la mer",
+          "definition": "Lieu où un fleuve rejoint la mer, delta. Point de confluence eau douce / eau salée.",
+          "nuance": "Composition ula-kota-seli : ula (eau) + kota (union, confluence) + seli (sel, mer). Litt. 'confluence d'eau vers la mer'. Réutilise kota, racine centrale de la culture (Uraakota = La Confluence) : l'embouchure est une confluence naturelle, chargée de sens.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -226,7 +257,10 @@
             "selu"
           ],
           "domaine": "nature_maritime",
-          "note": "Eau de mer, impure pour boire"
+          "note": "Eau de mer, impure pour boire",
+          "definition": "Eau de mer, impropre à la consommation.",
+          "nuance": "Composition ula-selu : ula (eau) + selu (sel ; lié à seli = sel/mer). Litt. 'eau de sel'. S'oppose directement à eau douce (ulapuli). Attention : seli signifie à la fois 'sel' ET 'mer' — selu/seli partagent cette racine.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -245,7 +279,10 @@
             "ura"
           ],
           "domaine": "nature",
-          "note": "Eau potable de rivière ou source"
+          "note": "Eau potable de rivière ou source",
+          "definition": "Eau potable, de rivière ou de source, propre à boire.",
+          "nuance": "Composition ula-puli : ula (eau) + puli (poumon, souffle — détournée ici vers 'pur/respirable' ; le sens littéral noté 'eau pure' joue sur cette racine). Attention : ne PAS confondre avec melu (doux, tendre) ; ici 'douce' = potable/non salée, pas la douceur tactile. S'oppose à ulaselu (eau salée).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -264,7 +301,10 @@
             "seli"
           ],
           "domaine": "phenomene_maritime",
-          "note": "Montée et descente de l'eau"
+          "note": "Montée et descente de l'eau",
+          "definition": "Montée et descente régulière du niveau de la mer.",
+          "nuance": "Composition seli-uki : seli (mer) + uki (élément 'mouvement', non attesté comme racine centrale). Litt. 'mouvement de la mer'. Phénomène nouveau pour la civilisation, inconnu en milieu fluvial/montagnard — d'où un terme récent.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -283,7 +323,10 @@
             "seli"
           ],
           "domaine": "phenomene_maritime",
-          "note": "Ondulation de l'eau"
+          "note": "Ondulation de l'eau",
+          "definition": "Ondulation de l'eau marine, mouvement de surface de la mer.",
+          "nuance": "Composition seli-loli : seli (mer) + loli (roulement/ondulation, même élément que dans vanuloli = chavirer). Litt. 'roulement de la mer'. Doublon formel exact avec houle (seliloli) : la distinction (vague brève vs houle longue) repose sur le contexte, pas sur la forme.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -303,7 +346,10 @@
             "kanu"
           ],
           "domaine": "action_maritime",
-          "note": "Piloter un bateau"
+          "note": "Piloter un bateau",
+          "definition": "Piloter, diriger une embarcation.",
+          "nuance": "Composition vanu-kanu : vanu (embarcation) + kanu (MAIN, racine kan-). Litt. 'diriger l'embarcation avec les mains'. Attention : kanu = 'main', PAS 'rame' ni 'canoë' ; l'élément kanu (main) revient dans tout le vocabulaire de propulsion (ramer, rame).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -322,7 +368,10 @@
             "kanu"
           ],
           "domaine": "action_maritime",
-          "note": "Faire avancer avec des rames"
+          "note": "Faire avancer avec des rames",
+          "definition": "Faire avancer une embarcation à la force des rames.",
+          "nuance": "Composition kanu-la-ki : kanu (main) + la-ki (eau + aller, comme dans ulaki=naviguer). Litt. 'pousser avec les mains pour aller (sur l'eau)'. Bâti sur kanu (main), pas sur une racine 'rame' autonome.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -342,7 +391,10 @@
             "vito"
           ],
           "domaine": "outil_maritime",
-          "note": "Longue pièce de bois pour propulser"
+          "note": "Longue pièce de bois pour propulser",
+          "definition": "Aviron, longue pièce de bois servant à propulser une embarcation.",
+          "nuance": "Composition kanu-vi : kanu (main) + vi (abrégé de vito, bois ; racine 'bois' centrale). Litt. 'bois de main (pour l'eau)'. L'outil porte le nom de la main qui le tient : prolongement manuel, cohérent avec vanukanu (manœuvrer) et kanulaki (ramer).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -362,7 +414,10 @@
             "vanu"
           ],
           "domaine": "equipement_maritime",
-          "note": "Tissu qui capte le vent"
+          "note": "Tissu qui capte le vent",
+          "definition": "Toile tendue qui capte le vent pour propulser une embarcation.",
+          "nuance": "Composition ven-u-vanu : vena (air, vent ; forme liée ven-) + liaison -u- (appartenance) + vanu (embarcation). Litt. 'air de l'embarcation'. Une des rares entrées du fichier à employer une vraie liaison sacrée (-u-) plutôt qu'une simple agglutination.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -381,7 +436,10 @@
             "peki"
           ],
           "domaine": "equipement_maritime",
-          "note": "Objet lourd qui maintient le bateau"
+          "note": "Objet lourd qui maintient le bateau",
+          "definition": "Objet lourd jeté au fond pour immobiliser un bateau.",
+          "nuance": "Composition vanu-peku : vanu (embarcation) + peku (variante de peki, pied/base, racine pek-). Litt. 'pied de l'embarcation'. Métaphore corporelle (le pied qui ancre au sol) typique du Confluent ; cf. peki = pied/base.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -399,7 +457,10 @@
             "vanu"
           ],
           "domaine": "action_maritime",
-          "note": "Monter à bord (ou attaquer un navire)"
+          "note": "Monter à bord (ou attaquer un navire)",
+          "definition": "Monter à bord d'une embarcation ; par extension, s'approcher d'un navire (y compris pour l'attaquer).",
+          "nuance": "Composition vanu-koti : vanu (embarcation) + koti (rotation, tourner, racine kot- ; ici sens de 'se tourner vers / accoster'). Litt. 'monter sur l'embarcation'. S'oppose à débarquer (vanuvoli). Le double sens 'embarquer / attaquer' reflète le premier contact avec l'Autre (Nanzagouet).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -418,7 +479,10 @@
             "vanu"
           ],
           "domaine": "action_maritime",
-          "note": "Descendre du bateau"
+          "note": "Descendre du bateau",
+          "definition": "Descendre d'une embarcation, quitter le bord pour la terre.",
+          "nuance": "Composition vanu-voli : vanu (embarcation) + voli (vouloir/désir dans le lexique central — détourné ici vers 'quitter/sortir' ; possible confusion à noter). Litt. 'quitter l'embarcation'. Antonyme d'aborder (vanukoti).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -438,7 +502,10 @@
             "saki"
           ],
           "domaine": "commerce_maritime",
-          "note": "Marchandises transportées"
+          "note": "Marchandises transportées",
+          "definition": "Ensemble des marchandises transportées par une embarcation.",
+          "nuance": "Composition vanu-saki : vanu (embarcation) + saki (sac, contenant, racine sak-). Litt. 'sac de l'embarcation'. Concept lié à la caste des Takitosa (marchands, médiateurs) et au commerce maritime naissant.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -458,7 +525,10 @@
             "mako"
           ],
           "domaine": "voyage_maritime",
-          "note": "Voyage de longue durée sur l'eau"
+          "note": "Voyage de longue durée sur l'eau",
+          "definition": "Voyage maritime de longue durée, traversée au long cours.",
+          "nuance": "Composition ula-ki-mako : ulaki (naviguer) + mako (grand, vaste, racine mak-). Litt. 'grand voyage sur l'eau'. Intensifie ulaki (naviguer) ; mako sert ailleurs de quantificateur 'grand nombre'. Évoque l'expansion lointaine de la civilisation.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -478,7 +548,10 @@
             "toka"
           ],
           "domaine": "geographie",
-          "note": "Endroit où trouver de l'eau (source, puits, rivière)"
+          "note": "Endroit où trouver de l'eau (source, puits, rivière)",
+          "definition": "Endroit où l'on peut trouver de l'eau : source, puits, rivière. Repère vital en voyage.",
+          "nuance": "Composition ula-toka : ula (eau) + toka (terre, sol, lieu ; racine tok-). Litt. 'lieu d'eau'. toka apporte la notion de localisation (cf. son emploi dans port = vanukotoka). Logistique de voyage, terrestre ou côtier.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -496,7 +569,10 @@
             "nutu"
           ],
           "domaine": "logistique",
-          "note": "Reconstituer les provisions"
+          "note": "Reconstituer les provisions",
+          "definition": "Action de reconstituer les provisions (eau, vivres) lors d'une expédition.",
+          "nuance": "Composition nutu-kovi : nutu (élément 'réserve/provision', non attesté au lexique central) + kovi (route, chemin, racine kov-). Litt. 'remplir les réserves (en route)'. Vocabulaire logistique lié aux longues traversées (ulakimako).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -516,7 +592,10 @@
             "kilu"
           ],
           "domaine": "logistique",
-          "note": "Obtenir de la nourriture et de l'eau"
+          "note": "Obtenir de la nourriture et de l'eau",
+          "definition": "Obtenir pour soi de la nourriture et de l'eau, par échange ou collecte.",
+          "nuance": "Composition nutu-kili : nutu (provision) + kili (variante de kiru, échanger/troquer, racine kir-). Litt. 'échanger pour obtenir provisions'. Forme 'réfléchie/active' de ravitaillement (nutukovi) ; insiste sur l'acquisition par troc (cf. Takitosa, marchands).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -535,7 +614,10 @@
             "kova"
           ],
           "domaine": "construction",
-          "note": "Structure faite de planches"
+          "note": "Structure faite de planches",
+          "definition": "Structure ou charpente assemblée en planches de bois (coque, pilotis).",
+          "nuance": "Composition vito-kova : vito (bois ; cf. buki=bois-matériau et vi-/vito dans kanuvi=rame) + kova (peinture/image/fresque — détourné vers 'travaillé/assemblé' ; possible confusion avec kova=fresque). Litt. 'bois assemblé'. Lié à la perception des navires Nanzagouet comme constructions de bois, non créatures.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -554,7 +636,10 @@
             "ura"
           ],
           "domaine": "perception",
-          "note": "Perception initiale des navires étrangers comme créatures vivantes"
+          "note": "Perception initiale des navires étrangers comme créatures vivantes",
+          "definition": "Perception initiale d'un navire étranger comme un être vivant flottant sur l'eau.",
+          "nuance": "Composition besi-ula-tuli : besi (bête, animal sauvage, racine bes-) + ula (eau) + tuli (flotter, cf. ulatuli). Litt. 'bête qui flotte sur l'eau'. Terme culturellement marqué : trace de l'incompréhension au premier contact, avant de comprendre (vitokova) qu'il s'agit de bois assemblé.",
+          "registre": "courant"
         }
       ]
     },
@@ -570,7 +655,10 @@
             "toka"
           ],
           "domaine": "geographie_maritime",
-          "note": "Endroit où les bateaux s'arrêtent"
+          "note": "Endroit où les bateaux s'arrêtent",
+          "definition": "Lieu d'accostage où les embarcations s'arrêtent, havre, quai.",
+          "nuance": "Composition vanu-kotoka : vanu (embarcation) + kotoka (kota union + toka lieu, ou redoublement kot-toka 'lieu de rassemblement'). Litt. 'lieu des embarcations'. Infrastructure récente, née de l'ouverture maritime.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -590,7 +678,10 @@
             "zeru"
           ],
           "domaine": "danger_maritime",
-          "note": "Tempête en mer"
+          "note": "Tempête en mer",
+          "definition": "Tempête en mer, déchaînement violent du ciel et de l'eau.",
+          "nuance": "Composition seli-zeru : seli (mer) + zeru (ciel, racine zer- ; aussi présente comme exception 'r' tolérée dans le sacré/ancien). Litt. 'ciel furieux de la mer'. Danger maritime majeur ; le ciel (zeru) y est présenté comme acteur, écho de la cosmologie où le ciel est signe divin.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -609,7 +700,10 @@
             "mako"
           ],
           "domaine": "geographie_maritime",
-          "note": "Eau très profonde"
+          "note": "Eau très profonde",
+          "definition": "Eau très profonde, abîme sous-marin, le fond inaccessible.",
+          "nuance": "Composition vuku-mako : vuku (profond, gouffre, abîme) + mako (grand, vaste). Litt. 'grand gouffre'. vuku relie au Vukuura (Gouffre Humide) et à couler (vanuvuku) : la profondeur marine hérite de la charge sacrée/funeste du gouffre ancestral.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -628,7 +722,10 @@
             "seli"
           ],
           "domaine": "phenomene_maritime",
-          "note": "Vagues longues et régulières"
+          "note": "Vagues longues et régulières",
+          "definition": "Vagues longues et régulières de la mer, ondulation lente de fond.",
+          "nuance": "Composition seli-loli : seli (mer) + loli (ondulation/roulement). Litt. 'ondulation lente de la mer'. DOUBLON formel exact avec vague (seliloli) : même mot pour les deux, désambiguïsé par le contexte (mouvement bref = vague, lent et large = houle).",
+          "registre": "courant"
         }
       ]
     },
@@ -644,7 +741,10 @@
             "milu"
           ],
           "domaine": "phenomene_maritime",
-          "note": "Mousse blanche des vagues"
+          "note": "Mousse blanche des vagues",
+          "definition": "Mousse blanche qui se forme à la crête des vagues.",
+          "nuance": "Composition ula-milu-vi : ula (eau) + milu (élément 'blanc', non attesté au lexique central — distinct de melu=doux/tendre, attention à la proximité phonétique milu/melu) + vi. Litt. 'blanc d'eau'. Détail descriptif du paysage marin.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [

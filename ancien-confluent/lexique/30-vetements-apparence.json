@@ -13,7 +13,10 @@
             "veku"
           ],
           "domaine": "vetement",
-          "note": "Ce qu'on porte sur le corps"
+          "note": "Ce qu'on porte sur le corps",
+          "definition": "Ce que l'on porte sur le corps, l'habit qui recouvre la peau. Terme générique pour tout type de vêtement.",
+          "nuance": "Composition vek-u-vi sur veku (surface/peau, racine du domaine vêtement-corps), littéralement « chose de surface/peau ». DOUBLON : 20-objets-materiaux donne aussi « vêtement » comme vekuuvasi (vek-u-vasi, « peau tissée », veku+vasi=tisser/lien) — deux racines secondaires distinctes (vi vs vasi) pour le même concept, à arbitrer.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -34,7 +37,10 @@
             "veku"
           ],
           "domaine": "vetement",
-          "note": "Ensemble de vêtements"
+          "note": "Ensemble de vêtements",
+          "definition": "Ensemble complet des vêtements portés, l'apparence vestimentaire d'une personne. Costume, parure d'ensemble.",
+          "nuance": "Composition san-u-veku : sanu (corps) + veku (surface/vêtement), littéralement « surface du corps ». Se distingue de vekuvi (un vêtement isolé) par l'idée d'ensemble couvrant tout le corps.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -54,7 +60,10 @@
             "paka"
           ],
           "domaine": "vetement",
-          "note": "Vêtements en mauvais état"
+          "note": "Vêtements en mauvais état",
+          "definition": "Vêtements en mauvais état, haillons, guenilles. Habits usés, déchirés ou misérables.",
+          "nuance": "Composition vek-u-paka : veku (vêtement/surface) + paka (mauvais), littéralement « mauvaise surface/vêtement ». DOUBLON interne au fichier : exactement la même forme vekupaka sert pour « sale » (état souillé) — homonymie totale à signaler, le contexte distingue le vêtement-objet de l'état.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -73,7 +82,10 @@
             "veku"
           ],
           "domaine": "apparence",
-          "note": "Sans vêtement"
+          "note": "Sans vêtement",
+          "definition": "État du corps sans vêtement, dénudé. La nudité.",
+          "nuance": "Composition vek-u-voli : veku (vêtement/surface) + voli (qui sert ici de privatif « sans », au sens de manque/absence), littéralement « sans vêtement ». voli est ailleurs « vouloir, désir » mais fonctionne ici comme marqueur de privation, cohérent avec son emploi dans silivoli (aveugle).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -93,7 +105,10 @@
             "veku"
           ],
           "domaine": "action",
-          "note": "Montrer la nudité"
+          "note": "Montrer la nudité",
+          "definition": "Montrer la nudité, exposer un corps dévêtu au regard.",
+          "nuance": "Composition sili-vek-u-voli : sili (regard/montrer) + vekuvoli (nu), littéralement « montrer sans vêtement ». Composition triple, à la limite des recommandations morphologiques (éviter 3+ racines) ; sili y porte le sens d'exposition au regard, central dans la culture Siliaska.",
+          "registre": "courant"
         }
       ]
     },
@@ -108,7 +123,10 @@
             "bitu"
           ],
           "domaine": "action",
-          "note": "Couper net (cheveux, corde, etc.)"
+          "note": "Couper net (cheveux, corde, etc.)",
+          "definition": "Couper net d'un seul geste : cheveux, corde, lien. Sectionner franchement.",
+          "nuance": "Composition bit-uki sur bitu (dent — racine non listée dans lexique.json, à valider), littéralement « mouvement de dent/couper ». Distinct de couper (voliuki) par la netteté du geste (idée de morsure tranchante). NB : la racine attestée pour « couper/trancher » dans lexique.json est kisu, non utilisée ici.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -125,7 +143,10 @@
           "sens_litteral": "Mouvement de séparation",
           "racines": [],
           "domaine": "action",
-          "note": "Séparer en deux"
+          "note": "Séparer en deux",
+          "definition": "Séparer en deux, découper, diviser un objet ou une matière.",
+          "nuance": "Composition voli-uki, « mouvement de séparation » ; champ racines vide dans la source (composition opaque, à clarifier). Se distingue de bituki (trancher net) par l'idée générale de séparation plutôt que de coupe nette. Doublon de sens avec la racine attestée kisu (couper, trancher).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -145,7 +166,10 @@
             "mako"
           ],
           "domaine": "apparence",
-          "note": "Dimensions corporelles"
+          "note": "Dimensions corporelles",
+          "definition": "Dimensions du corps, stature, grandeur physique d'une personne.",
+          "nuance": "Composition san-u-mako : sanu (corps) + mako (grand, vaste), littéralement « grande mesure du corps ». mako fonctionne ici en quantificateur de dimension, comme dans son usage de « grand nombre ». À ne pas confondre avec « taille » au sens de ceinture/milieu du corps.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -164,7 +188,10 @@
             "sanu"
           ],
           "domaine": "apparence",
-          "note": "Structure physique"
+          "note": "Structure physique",
+          "definition": "Structure et forme physique du corps, conformation corporelle.",
+          "nuance": "Composition san-u-kova : sanu (corps) + kova (peinture/image/forme), littéralement « forme du corps ». DOUBLON interne au fichier : même forme sanukova sert pour « peinture corporelle » (motifs sur la peau) — kova oscille entre « forme » et « gravure/image », homonymie à signaler et résoudre.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -182,7 +209,10 @@
             "kota"
           ],
           "domaine": "relation",
-          "note": "Adéquation de taille, compatibilité"
+          "note": "Adéquation de taille, compatibilité",
+          "definition": "Être adapté, convenir, s'ajuster — notamment pour une taille de vêtement ou une compatibilité.",
+          "nuance": "Composition kota-vi : kota (union, confluence, accord) + suffixe -vi, littéralement « être en confluence/accord ». S'appuie sur la racine maîtresse kota (la confluence, valeur centrale) pour exprimer l'adéquation. Le -vi final reste à formaliser morphologiquement.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -203,7 +233,10 @@
             "veku"
           ],
           "domaine": "couleur_peau",
-          "note": "Couleur de peau claire (Enfants des Échos)"
+          "note": "Couleur de peau claire (Enfants des Échos)",
+          "definition": "Couleur de peau claire, pâleur du teint — caractéristique des Enfants des Échos (Nakukeko), habitants souterrains.",
+          "nuance": "Composition milu-veku : milu (blanc/pâle — racine non listée dans lexique.json) + veku (peau/surface), « peau blanche/pâle ». DOUBLON avec 18-couleurs : la clé « pale » y est miluukolu (mil-u-kolu, « lait de couleur »). Ici l'ancrage est la peau (veku), là la teinte abstraite (kolu) — distinction peau vs couleur générique à signaler.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -223,7 +256,10 @@
             "mako"
           ],
           "domaine": "forme",
-          "note": "Forme corporelle étirée (membres allongés)"
+          "note": "Forme corporelle étirée (membres allongés)",
+          "definition": "Forme corporelle étirée, membres longs et fins. Silhouette élancée.",
+          "nuance": "Composition lin-u-mako : linu/lina (ligne) + mako (grand, vaste), littéralement « grande ligne/longueur ». Décrit une morphologie étirée. linu est la forme liée récurrente pour les objets-lignes (ceinture, collier, bracelet ci-dessous).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -243,7 +279,10 @@
             "sili"
           ],
           "domaine": "handicap",
-          "note": "Perte de vision"
+          "note": "Perte de vision",
+          "definition": "Privé de la vue, non-voyant. La cécité.",
+          "nuance": "Composition sili-voli : sili (regard/vue) + voli (privatif « sans »), littéralement « sans regard/vue », sur le modèle de vekuvoli (nu). Concept fort dans une culture qui valorise le regard ; l'aveuglement physique fait écho à l'« aveuglement volontaire » rejeté culturellement.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -263,7 +302,10 @@
             "kota"
           ],
           "domaine": "evolution",
-          "note": "Changements corporels pour s'adapter à l'environnement"
+          "note": "Changements corporels pour s'adapter à l'environnement",
+          "definition": "Transformation du corps pour s'ajuster à l'environnement, changement corporel adaptatif (ex. pâleur des souterrains).",
+          "nuance": "Composition san-u-kota-vi : sanu (corps) + kotavi (correspondre/être en accord), littéralement « corps en confluence/harmonie ». Reflète la valeur culturelle d'adaptation (« comme les eaux qui se mêlent »). Composition longue (3 racines + suffixe).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -283,7 +325,10 @@
             "mako"
           ],
           "domaine": "vetement",
-          "note": "Vêtement ample qui couvre"
+          "note": "Vêtement ample qui couvre",
+          "definition": "Vêtement ample qui couvre le corps, manteau, grande pièce d'habit protectrice.",
+          "nuance": "Composition vek-u-mako : veku (vêtement/surface) + mako (grand), littéralement « grand vêtement de surface ». DOUBLON avec 20-objets-materiaux qui donne « cape » = vekuuzaki (vek-u-zaki, « peau de protection », veku+zaki=garder/protéger) : ici l'accent est sur la taille (mako), là sur la fonction protectrice (zaki) — à arbitrer.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -303,7 +348,10 @@
             "linu"
           ],
           "domaine": "vetement",
-          "note": "Lien autour de la taille"
+          "note": "Lien autour de la taille",
+          "definition": "Lien porté autour de la taille, ceinture maintenant le vêtement au niveau du ventre.",
+          "nuance": "Composition nutu-linu : nutu (ventre — racine non listée dans lexique.json) + linu/lina (ligne, corde), littéralement « ligne du ventre ». Suit le schéma parure/objet-porté = [partie du corps]+linu (cf. collier, bracelet).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -322,7 +370,10 @@
             "linu"
           ],
           "domaine": "parure",
-          "note": "Objet porté autour du cou"
+          "note": "Objet porté autour du cou",
+          "definition": "Objet de parure porté autour du cou.",
+          "nuance": "Composition mutu-linu : muto (cou — racine non listée dans lexique.json) + linu/lina (ligne/corde), « ligne du cou ». HOMONYMIE à signaler : forme mutulinu identique à « ceinture » (qui dérive de nutu=ventre) — collision phonétique entre nutu/muto. Schéma de parure [corps]+linu, cf. bracelet kanulinu.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -341,7 +392,10 @@
             "linu"
           ],
           "domaine": "parure",
-          "note": "Objet porté au bras"
+          "note": "Objet porté au bras",
+          "definition": "Objet de parure porté au bras ou au poignet.",
+          "nuance": "Composition kan-u-linu : kanu (main, par extension bras/poignet) + linu/lina (ligne/corde), « ligne de bras/poignet ». Même schéma de parure que collier et ceinture ([corps]+linu). kanu est une racine attestée (main).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -360,7 +414,10 @@
             "kova"
           ],
           "domaine": "parure",
-          "note": "Décorations peintes sur la peau"
+          "note": "Décorations peintes sur la peau",
+          "definition": "Motifs et décorations peints ou tatoués sur la peau, ornementation corporelle.",
+          "nuance": "Composition sanu-kova : sanu (corps) + kova (peinture, image, fresque), littéralement « gravure/motif sur le corps ». DOUBLON interne : forme identique à « morphologie » (même sanukova). kova relie cette parure à la Grande Fresque (Ekakova) et à l'art rituel des motifs accumulés.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -380,7 +437,10 @@
             "kova"
           ],
           "domaine": "corps",
-          "note": "Marque permanente sur la peau"
+          "note": "Marque permanente sur la peau",
+          "definition": "Marque permanente inscrite dans la peau, trace durable d'une blessure ; balafre.",
+          "nuance": "Composition vek-u-kova : veku (peau/surface) + kova (gravure/image), littéralement « gravure sur la peau ». kova porte ici son sens de marque permanente ; la cicatrice est conçue comme une image gravée dans la chair, cohérent avec la culture de la trace et de la mémoire.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -400,7 +460,10 @@
             "pupu"
           ],
           "domaine": "corps",
-          "note": "Pilosité faciale"
+          "note": "Pilosité faciale",
+          "definition": "Pilosité du visage, poils du menton et des joues.",
+          "nuance": "Composition muka-pupu : muka (visage, racine attestée) + pupu (cheveux/poils — racine non listée dans lexique.json mais récurrente : coiffure, tresser), littéralement « poils du visage ». pupu est la racine pilosité de ce domaine.",
+          "registre": "courant"
         }
       ]
     },
@@ -416,7 +479,10 @@
             "kova"
           ],
           "domaine": "apparence",
-          "note": "Style de cheveux"
+          "note": "Style de cheveux",
+          "definition": "Style et arrangement des cheveux, manière dont la chevelure est disposée.",
+          "nuance": "Composition pupu-kova : pupu (cheveux) + kova (forme/image), littéralement « forme/arrangement des cheveux ». kova garde son sens de « mise en forme ». Forme parallèle à sanukova (forme du corps).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -435,7 +501,10 @@
             "kota"
           ],
           "domaine": "action_artisanale",
-          "note": "Entrelacer (cheveux, fibres, cordes)"
+          "note": "Entrelacer (cheveux, fibres, cordes)",
+          "definition": "Entrelacer des mèches, fibres ou cordes ; natter les cheveux.",
+          "nuance": "Composition linu-kota-vi : linu/lina (ligne/corde) + kotavi (mettre en confluence/joindre), littéralement « faire confluencer des lignes ». Belle illustration de la métaphore de la confluence (kota) appliquée à l'artisanat. Verbe d'action artisanale ; la finale -vi devrait idéalement laisser place à une forme verbale (cf. tiki=tisser, lier).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -456,7 +525,10 @@
             "paka"
           ],
           "domaine": "etat",
-          "note": "Non propre, souillé"
+          "note": "Non propre, souillé",
+          "definition": "Non propre, souillé, couvert de saleté ; crasseux.",
+          "nuance": "Composition vek-u-paka : veku (surface) + paka (mauvais), « mauvaise surface ». DOUBLON interne : forme identique à « oripeaux » (mêmes vekupaka) — l'un désigne l'état (sale), l'autre l'objet (haillons), homonymie à signaler. S'oppose directement à « propre » (vekupuli).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -475,7 +547,10 @@
             "veku"
           ],
           "domaine": "etat",
-          "note": "Nettoyé, sans saleté"
+          "note": "Nettoyé, sans saleté",
+          "definition": "Nettoyé, sans saleté, net et pur.",
+          "nuance": "Composition vek-u-puli : veku (surface) + puli (poumon/souffle, mais ici au sens de pur — glissement de sens, racine attestée puli=poumon/souffle), littéralement « surface pure ». S'oppose à vekupaka (sale). Le glissement souffle→pur est à valider.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [

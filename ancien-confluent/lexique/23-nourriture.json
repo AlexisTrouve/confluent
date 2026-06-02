@@ -11,7 +11,11 @@
           "forme_liee": "zan",
           "structure": "CVCV",
           "domaine": "nourriture",
-          "note": "Gibier chassé (lié à zanak-chasser)"
+          "note": "Gibier chassé (lié à zanak-chasser)",
+          "definition": "Animal sauvage chassé pour sa viande, proie rapportée de la chasse. Ressource alimentaire centrale d'un peuple de chasseurs-cueilleurs.",
+          "nuance": "Racine standard zana, identique à la racine d'action zana/zanak (chasser, traquer) : le gibier est littéralement 'ce qui est chassé'. Doublon de racine : zana = à la fois le nom 'gibier' et le verbe 'chasser'. Distinct de besi (bête, animal sauvage vivant, data/lexique.json) et de niku (chair, viande crue/cuite, data/lexique.json).",
+          "registre": "courant",
+          "exemple": "va tori vo zana zanaku"
         }
       ],
       "synonymes_fr": [
@@ -27,7 +31,10 @@
           "forme_liee": "bek",
           "structure": "CVCV",
           "domaine": "nourriture",
-          "note": "Baies - fruits sauvages essentiels"
+          "note": "Baies - fruits sauvages essentiels",
+          "definition": "Petit fruit sauvage charnu cueilli dans les forêts et basses-terres, aliment essentiel de la cueillette.",
+          "nuance": "Racine standard beka. Entre dans la composition du plat cérémoniel zeruosi (Larmes-du-ciel). À distinguer de veka (fruit générique) : beka désigne spécifiquement les petits fruits sauvages, veka les fruits en général. Forme liée bek-.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -44,7 +51,10 @@
           "forme_liee": "tub",
           "structure": "CVCV",
           "domaine": "nourriture",
-          "note": "Tubercules, racines comestibles"
+          "note": "Tubercules, racines comestibles",
+          "definition": "Racine comestible déterrée, source de féculents pour la subsistance.",
+          "nuance": "Racine standard tuba (forme liée tub-). Recoupe le sens français 'racine' (synonyme listé), mais reste distinct des racines linguistiques ; désigne uniquement la partie souterraine comestible d'une plante.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -61,7 +71,10 @@
           "forme_liee": "vek",
           "structure": "CVCV",
           "domaine": "nourriture",
-          "note": "Fruits génériques"
+          "note": "Fruits génériques",
+          "definition": "Fruit comestible au sens générique, produit sucré d'une plante.",
+          "nuance": "Racine standard veka (forme liée vek-). Doublon partiel avec beka (baie) : veka = fruit générique, beka = petit fruit sauvage. La proximité phonétique veka/beka peut prêter à confusion à l'oral.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -77,7 +90,10 @@
           "forme_liee": "mol",
           "structure": "CVCV",
           "domaine": "nourriture",
-          "note": "Mollusques, coquillages"
+          "note": "Mollusques, coquillages",
+          "definition": "Mollusque ou coquillage récolté sur la côte maritime et les berges, ressource liée à l'expansion vers la mer.",
+          "nuance": "Racine standard molu (forme liée mol-). Aliment côtier récent, cohérent avec l'expansion des Siliaska vers la côte. Aucun doublon connu.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -94,7 +110,10 @@
           "forme_liee": "sek",
           "structure": "CVCV",
           "domaine": "nourriture",
-          "note": "Graines comestibles"
+          "note": "Graines comestibles",
+          "definition": "Graine ou semence comestible, à la fois nourriture et germe de culture (proto-agriculture).",
+          "nuance": "Racine standard seka. COLLISION DE FORME importante : seka existe déjà dans data/lexique.json comme 'savoir, connaître' (verbe sekam) ET comme racine 'graine'. Forme liée sek- partagée aussi avec sekus (sécher) et le chiffre seku (six). Doublon homographe à signaler — contexte requis pour désambiguïser.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -111,7 +130,10 @@
           "forme_liee": "pan",
           "structure": "CVCV",
           "domaine": "nourriture",
-          "note": "Galette, pain plat"
+          "note": "Galette, pain plat",
+          "definition": "Pain plat ou galette cuite, aliment de base préparé à partir de graines broyées.",
+          "nuance": "Racine standard panu (forme liée pan-). Recouvre 'pain', 'crêpe', 'galette' (synonymes) : un seul terme pour les pains plats. Proche phonétiquement de pala (herbe) et palu (griller) sans lien sémantique.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -129,7 +151,10 @@
           "forme_liee": "pal",
           "structure": "CVCV",
           "domaine": "nourriture",
-          "note": "Herbes aromatiques"
+          "note": "Herbes aromatiques",
+          "definition": "Herbe aromatique cueillie pour parfumer et assaisonner les aliments.",
+          "nuance": "Racine standard pala (forme liée pal-). Base de la composition palusuki (aromate) : pal-u-suki = 'herbe du feu'. Distincte de leva (légume) : pala = herbe aromatique, leva = plante potagère cultivée.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -151,7 +176,10 @@
           "liaison": "u",
           "structure": "composition",
           "domaine": "nourriture",
-          "note": "Aromate, épice - herbe qui réchauffe/brûle (piquant)"
+          "note": "Aromate, épice - herbe qui réchauffe/brûle (piquant)",
+          "definition": "Épice ou aromate piquant qui 'brûle' le goût, herbe relevée employée pour assaisonner.",
+          "nuance": "Composition pal-u-suki = pala (herbe) + liaison -u- (appartenance) + suki (feu) : littéralement 'herbe du feu'. La liaison -u- exprime l'appartenance au domaine du feu (le piquant). Couvre épice(s) et aromate(s). À ne pas confondre avec aiteopalu (gingembre sauvage), épice sacrée spécifique.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -177,7 +205,10 @@
           "liaison": "eo",
           "structure": "composition_sacree",
           "domaine": "nourriture_sacree",
-          "note": "Gingembre sauvage très estimé, épice sacrée - utilise liaison sacrée eo (totalité/éternel)"
+          "note": "Gingembre sauvage très estimé, épice sacrée - utilise liaison sacrée eo (totalité/éternel)",
+          "definition": "Gingembre sauvage très estimé, épice sacrée au goût brûlant, associée aux ancêtres et réservée aux usages cérémoniels.",
+          "nuance": "Composition sacrée ait-eo-palu = aita (ancêtre, racine sacrée) + liaison sacrée -eo- (totalité/éternel) + palu (qui brûle, racine de griller) : 'ancêtre-éternel-qui-brûle'. La liaison -eo- (éternel) marque le caractère sacré et intemporel. Ingrédient du plat cérémoniel zeruosi. Distinct de palusuki (aromate courant) par son registre sacré et son lien ancestral.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -200,7 +231,10 @@
           "liaison": "u",
           "structure": "composition_sacree",
           "domaine": "nourriture_sacree",
-          "note": "Plat cérémoniel traditionnel - poisson fumé, gibier, Morsure-des-Ancêtres, herbes et baies. Utilise liaison u (appartenance)"
+          "note": "Plat cérémoniel traditionnel - poisson fumé, gibier, Morsure-des-Ancêtres, herbes et baies. Utilise liaison u (appartenance)",
+          "definition": "Plat cérémoniel traditionnel réunissant poisson fumé, gibier, Morsure-des-Ancêtres, herbes et baies, servi lors des rituels.",
+          "nuance": "Composition sacrée zer-u-osi = zeru (ciel) + liaison -u- (appartenance) + osi (mort, racine sacrée) : 'ciel-de-mort', les larmes célestes. La liaison -u- rattache le plat au domaine du ciel et du cycle de la mort (dimension funéraire/cérémonielle). Registre rituel : plat de cérémonie, pas un repas ordinaire.",
+          "registre": "rituel"
         }
       ],
       "synonymes_fr": [
@@ -218,7 +252,11 @@
           "forme_liee": "sim",
           "structure": "CVCV",
           "domaine": "technique_culinaire",
-          "note": "Fumer (aliment), technique de conservation"
+          "note": "Fumer (aliment), technique de conservation",
+          "definition": "Fumer un aliment pour le conserver en l'exposant à la fumée. Technique culinaire de conservation des viandes et poissons.",
+          "nuance": "Verbe simus (racine simu, forme liée sim-, suffixe -s de procédé/mouvement). Technique appliquée notamment au poisson du plat cérémoniel zeruosi. Distinct de sekus (sécher) : simus conserve par la fumée, sekus par déshydratation.",
+          "registre": "courant",
+          "exemple": "va tori vo pesa simusu"
         }
       ],
       "synonymes_fr": [
@@ -247,7 +285,10 @@
           "forme_liee": "sek",
           "structure": "CVCV",
           "domaine": "technique_culinaire",
-          "note": "Sécher (aliment), conservation"
+          "note": "Sécher (aliment), conservation",
+          "definition": "Sécher un aliment pour le conserver par déshydratation. Méthode de préservation des réserves.",
+          "nuance": "Verbe sekus (racine seku, forme liée sek-, suffixe -s). COLLISION DE FORME : sek- est partagé avec seka (graine/savoir), seka (savoir->sekam) et le chiffre seku (six) ; sekus lui-même recoupe la racine siku 'sec, aride' (data/lexique.json). Doublon conceptuel avec siku (sec, état) : sekus = action de sécher, siku = état desséché. Distinct de simus (fumer).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -278,7 +319,11 @@
           "forme_liee": "pal",
           "structure": "CVCV",
           "domaine": "technique_culinaire",
-          "note": "Griller, cuire sur feu"
+          "note": "Griller, cuire sur feu",
+          "definition": "Griller ou cuire un aliment directement sur le feu. Mode de cuisson le plus immédiat du gibier et des galettes.",
+          "nuance": "Verbe palus (racine palu, forme liée pal-, suffixe -s). La racine palu (brûler/griller) entre aussi dans aiteopalu (Morsure-des-Ancêtres, 'qui brûle'). Forme liée pal- homographe de pala (herbe). Couvre 'cuire' et 'rôtir' (synonymes).",
+          "registre": "courant",
+          "exemple": "va tori vo niku palusu"
         }
       ],
       "synonymes_fr": [
@@ -313,7 +358,10 @@
           "liaison": "u",
           "structure": "composition",
           "domaine": "technique_culinaire",
-          "note": "Cuisiner, préparer (faire de la nourriture) - muki + liaison u + nekas"
+          "note": "Cuisiner, préparer (faire de la nourriture) - muki + liaison u + nekas",
+          "definition": "Préparer de la nourriture, cuisiner : transformer des ingrédients en repas.",
+          "nuance": "Composition muk-u-nekas = muki (nourriture) + liaison -u- (appartenance) + nekas/neka (faire, créer) : 'nourriture-de-faire', faire de la nourriture. S'appuie sur muki (= nourriture/manger). NB : la forme liée muk- est aussi celle de muka (visage, data/lexique.json) — homographie de radical. Englobe 'préparer la nourriture' (synonyme).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -347,7 +395,10 @@
           ],
           "structure": "composition",
           "domaine": "technique_culinaire",
-          "note": "Infuser, faire tremper dans l'eau"
+          "note": "Infuser, faire tremper dans l'eau",
+          "definition": "Faire tremper ou infuser une plante dans l'eau pour en extraire saveur ou vertu. Préparation des boissons et décoctions.",
+          "nuance": "Verbe lapis (racine lapi, suffixe -s). Données source contradictoires : racine déclarée 'lapi' mais composition annoncée ura (eau) + pisu (petit/tremper) avec sens littéral 'eau-tremper' — à clarifier. Recoupe le sens de 'tremper' (synonyme). ATTENTION : lapi/lapis est aussi la racine donnée pour boire (minet) ; et lapu = lait (data/lexique.json) — famille lap- liée aux liquides, doublons à surveiller.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -365,7 +416,10 @@
           "forme_liee": "zak",
           "structure": "CVCV",
           "domaine": "nourriture",
-          "note": "Réserves alimentaires (lié à garder/protéger)"
+          "note": "Réserves alimentaires (lié à garder/protéger)",
+          "definition": "Réserves alimentaires, provisions stockées pour les périodes de disette ou l'hiver de montagne.",
+          "nuance": "Racine standard zaku (forme liée zak-), apparentée à zaki (garder, protéger / justice) : la réserve est 'ce qui est gardé'. COLLISION : zak- est partagé par zana/zanak (chasser) et zaki (garder->zakis ; justice->zakin). Couvre 'provisions' et 'stock' (synonymes). Conceptuellement liée à tenu (entreposer, tenuk).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -383,7 +437,10 @@
           "forme_liee": "muk",
           "structure": "CVCV",
           "domaine": "nourriture",
-          "note": "Nourriture (racine de manger)"
+          "note": "Nourriture (racine de manger)",
+          "definition": "Nourriture, aliment, repas au sens générique : tout ce qui se mange. Racine centrale du champ alimentaire.",
+          "nuance": "Racine standard muki (forme liée muk-), racine de 'manger'. Terme-pivot du domaine : entre dans mukuneka (cuisiner) et zomuki (manque). Couvre 'aliment(s)' et 'repas' (synonymes) — un seul mot pour les trois. HOMOGRAPHIE de forme liée muk- avec muka (visage, data/lexique.json). Verbe 'manger' attendu mukis (non listé dans ce fichier).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -402,7 +459,10 @@
           "forme_liee": "mine",
           "structure": "CVCVC",
           "domaine": "nourriture",
-          "note": "Boire - utilise racine sacrée ura (eau)"
+          "note": "Boire - utilise racine sacrée ura (eau)",
+          "definition": "Boire, absorber un liquide. Action quotidienne liée à l'eau, élément primordial de la Confluence.",
+          "nuance": "Verbe minet (forme liée mine-, structure CVCVC). Données source incohérentes : 'racine': 'lapi' mais 'note' indiquant l'usage de la racine sacrée ura (eau) — la forme minet ne se dérive transparentement d'aucune des deux ; étymologie à clarifier (doublon possible avec lapis 'infuser', même racine déclarée lapi). Aucune liaison ne relie minet à ura visiblement.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -429,7 +489,10 @@
           "forme_liee": "lev",
           "structure": "CVCV",
           "domaine": "nourriture",
-          "note": "Légume, plante comestible cultivée"
+          "note": "Légume, plante comestible cultivée",
+          "definition": "Légume, plante comestible cultivée : produit de la proto-agriculture en développement chez les Siliaska.",
+          "nuance": "Racine standard leva (forme liée lev-). HOMOGRAPHIE de forme liée lev- avec levi (lever, élever) et le chiffre levu (onze, base 12). Distinct de pala (herbe aromatique) et tuba (tubercule) : leva = plante potagère cultivée au sens large.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -452,7 +515,10 @@
           ],
           "structure": "composition",
           "domaine": "nourriture",
-          "note": "Manque (de nourriture) - zo (négation) + muki (nourriture)"
+          "note": "Manque (de nourriture) - zo (négation) + muki (nourriture)",
+          "definition": "Manque, absence ou pénurie de nourriture ; la disette, crainte fondamentale d'une société de subsistance.",
+          "nuance": "Composition zo-muki = zo (négation 'ne...pas') + muki (nourriture) : littéralement 'non-nourriture', l'absence d'aliment. Construit directement sur la racine-pivot muki. Couvre 'manquer', 'absence', 'pénurie' (synonymes). Emploi du préfixe de négation zo en composition lexicale (et non purement grammaticale).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [

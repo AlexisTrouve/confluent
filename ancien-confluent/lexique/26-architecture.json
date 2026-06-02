@@ -14,7 +14,11 @@
             "peki"
           ],
           "domaine": "architecture",
-          "note": "CRITIQUE - architecture majeure des Enfants du Courant"
+          "note": "CRITIQUE - architecture majeure des Enfants du Courant",
+          "definition": "Pieux plantés dans l'eau qui soutiennent les villages flottants. Architecture majeure et identitaire des Enfants du Courant (Nakuura).",
+          "nuance": "Composition ula-peki (ura=eau, sous forme altérée 'ula' devant le l, + peki=pied/base). Litt. 'pieds dans l'eau'. Élément culturellement central : les villages sur pilotis définissent le mode de vie semi-sédentaire des pêcheurs.",
+          "registre": "courant",
+          "exemple": "va nakuura su vo ulapeki nekanait"
         }
       ],
       "synonymes_fr": [
@@ -34,7 +38,10 @@
             "toka"
           ],
           "domaine": "architecture",
-          "note": "Structure élevée sur pilotis"
+          "note": "Structure élevée sur pilotis",
+          "definition": "Structure horizontale élevée reposant sur des pilotis, sur laquelle on bâtit ou circule.",
+          "nuance": "Composition pek-u-toka (peki=pied/base + liaison -u- d'appartenance + toka=lieu/terre). Litt. 'lieu sur pieds'. Prolonge logiquement 'ulapeki' : la plate-forme est ce que portent les pilotis.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -54,7 +61,10 @@
             "vasi"
           ],
           "domaine": "architecture",
-          "note": "Passage pour monter/descendre"
+          "note": "Passage pour monter/descendre",
+          "definition": "Suite de marches permettant de monter ou descendre entre niveaux.",
+          "nuance": "Composition peki-vasi (peki=pied/base + vasi=pont/passage). Litt. 'pont de pieds'. DOUBLON avec 24-habitat où 'escalier' = vukukari (vuku-kari, 'gouffre de pierre', escalier taillé dans la roche du Gouffre Humide). Distinction : pekivasi = escalier construit/charpenté (architecture sur pilotis), vukukari = escalier creusé dans la pierre (architecture souterraine).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -73,7 +83,10 @@
             "peki"
           ],
           "domaine": "architecture",
-          "note": "Élément d'escalier"
+          "note": "Élément d'escalier",
+          "definition": "Élément individuel d'un escalier, degré sur lequel on pose le pied.",
+          "nuance": "Composition peki-vi (peki=pied/base + 'vi', segment de vasi=passage). Litt. 'partie de pied'. Sous-élément de pekivasi (escalier) : la marche est l'unité dont l'escalier est l'ensemble.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -93,7 +106,10 @@
             "mako"
           ],
           "domaine": "architecture",
-          "note": "Structure haute"
+          "note": "Structure haute",
+          "definition": "Construction haute et étroite s'élevant nettement au-dessus du sol.",
+          "nuance": "Composition toka-mako-uti (toka=lieu + mako=grand/vaste + 'uti' renforçant la hauteur). Litt. 'lieu très haut'. Composition à trois éléments, longue : à utiliser avec prudence selon la règle morphologique qui décourage les compositions de 3+ racines.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -113,7 +129,10 @@
             "toka"
           ],
           "domaine": "architecture_militaire",
-          "note": "Tour pour surveiller"
+          "note": "Tour pour surveiller",
+          "definition": "Tour élevée servant à observer et surveiller les alentours, notamment depuis les Cercles de Vigile.",
+          "nuance": "Composition sili-mako-toka (sili=regard + mako=grand/haut + toka=lieu). Litt. 'haut lieu pour voir'. Domaine militaire ; place le 'regard' (sili) au coeur du concept, conformément à la valeur d'observation des Siliaska. Liée à la pratique de la Vigile.",
+          "registre": "courant"
         }
       ]
     },
@@ -129,7 +148,10 @@
             "konu"
           ],
           "domaine": "architecture",
-          "note": "Paroi de protection"
+          "note": "Paroi de protection",
+          "definition": "Paroi verticale délimitant et protégeant un espace bâti.",
+          "nuance": "Composition lin-u-konu (lina=ligne/corde + liaison -u- + konu, dérivé de konu/garde-protection). Litt. 'ligne gardée'. DOUBLON avec 24-habitat où 'mur' = karisumu (kari-sumu, 'pierre dressée'). Distinction : linukonu insiste sur la fonction de protection/délimitation (ligne défensive), karisumu sur le matériau et la verticalité (pierre élevée). Note : la racine 'konu' n'est pas attestée dans data/lexique.json (kona/garde implicite) - voir 'enceinte' qui réutilise konu.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -150,7 +172,10 @@
             "konu"
           ],
           "domaine": "architecture_militaire",
-          "note": "Fortification"
+          "note": "Fortification",
+          "definition": "Grand mur de fortification ceinturant un lieu pour le défendre.",
+          "nuance": "Composition mako-linu-konu (mako=grand + linu=ligne + konu=garde). Litt. 'grande ligne gardée'. Variante augmentée de 'mur' (linukonu) par préfixation de mako=grand. Domaine militaire ; composition longue (3 racines).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -169,7 +194,10 @@
             "vasi"
           ],
           "domaine": "architecture",
-          "note": "Ouverture pour entrer/sortir"
+          "note": "Ouverture pour entrer/sortir",
+          "definition": "Ouverture aménagée dans un mur permettant d'entrer ou de sortir.",
+          "nuance": "Composition vasi-umu (vasi=pont/passage + 'umu', segment évoquant l'ouverture). Litt. 'passage ouvert'. À distinguer de la racine attestée 'pori' (porte/passage, id.169) : vasiumu insiste sur le passage franchissable, pori est la racine simple. Voir aussi 'seuil' (vasitoka) qui partage la racine vasi.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -189,7 +217,10 @@
             "toka"
           ],
           "domaine": "architecture",
-          "note": "Entrée, limite"
+          "note": "Entrée, limite",
+          "definition": "Limite au sol d'une porte ou d'une entrée, point de passage entre dehors et dedans.",
+          "nuance": "Composition vasi-toka (vasi=pont/passage + toka=lieu). Litt. 'lieu de passage'. Partage la racine vasi avec 'porte' (vasiumu), 'escalier' (pekivasi) et 'linteau' (vasilinu) : vasi est le noyau lexical de tout franchissement architectural.",
+          "registre": "courant"
         }
       ]
     },
@@ -205,7 +236,10 @@
             "veku"
           ],
           "domaine": "architecture",
-          "note": "Ouverture pour la lumière et l'air"
+          "note": "Ouverture pour la lumière et l'air",
+          "definition": "Ouverture dans un mur laissant passer la lumière, l'air et le regard.",
+          "nuance": "Composition sili-veku (sili=regard + 'veku'=surface/paroi). Litt. 'surface pour voir'. DOUBLON avec 24-habitat où 'fenetre' = solatuva (sola-tuva, 'ouverture de lumière', sora=lumière + tuva=ouverture). Distinction : siliveku met l'accent sur le regard/la vue (cohérent avec la culture du regard), solatuva sur la lumière. Note : 'veku' n'est pas attesté dans data/lexique.json (racine de surface implicite, cf. 'peli'=peau/surface).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -224,7 +258,10 @@
             "veku"
           ],
           "domaine": "architecture",
-          "note": "Couverture supérieure"
+          "note": "Couverture supérieure",
+          "definition": "Couverture supérieure d'un bâtiment qui le protège des intempéries.",
+          "nuance": "Composition toka-veku (toka=lieu + veku=surface). Litt. 'surface du lieu'. DOUBLON avec 24-habitat où 'toit' = zakusumu (zaku-sumu, 'protection haute', zaki=garder/protéger + sumu=sommet). Distinction : tokuveku décrit la surface couvrante, zakusumu la fonction protectrice élevée. zakusumu (sumu=sommet, racine attestée id.161) est mieux ancré dans le lexique de référence.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -244,7 +281,11 @@
             "vasi"
           ],
           "domaine": "architecture_souterraine",
-          "note": "Passage souterrain (crucial pour Antres)"
+          "note": "Passage souterrain (crucial pour Antres)",
+          "definition": "Passage souterrain creusé reliant des espaces, crucial dans les Antres des Échos.",
+          "nuance": "Composition vuku-vasi (vuku=profond/gouffre + vasi=passage). Litt. 'passage du gouffre'. Domaine souterrain ; élément central de l'habitat des Enfants des Échos (Nakukeko), mineurs vivant sous terre. Partage vuku avec 'voûte' (vukutoka) et 'fosse' (vukupisu).",
+          "registre": "courant",
+          "exemple": "va nakukeko su no vukuvasi tekiseol"
         }
       ],
       "synonymes_fr": [
@@ -264,7 +305,10 @@
             "toka"
           ],
           "domaine": "architecture_souterraine",
-          "note": "Construction arquée souterraine"
+          "note": "Construction arquée souterraine",
+          "definition": "Construction arquée couvrant un espace souterrain, plafond courbé d'une galerie.",
+          "nuance": "Composition vuku-toka (vuku=profond/gouffre + toka=lieu). Litt. 'lieu du gouffre courbé'. Domaine souterrain. Note : la même paire vuku+toka pourrait prêter à confusion avec d'autres compositions ; ici le sens 'courbé' repose sur le contexte, non sur un morphème explicite.",
+          "registre": "courant"
         }
       ]
     },
@@ -280,7 +324,10 @@
             "pisu"
           ],
           "domaine": "architecture",
-          "note": "Pièce fermée"
+          "note": "Pièce fermée",
+          "definition": "Petite pièce close à l'intérieur d'un bâtiment.",
+          "nuance": "Composition toka-pisu (toka=lieu + pisu=petit/fin). Litt. 'petit lieu'. CONCURRENCE avec la racine attestée 'kama' (chambre/pièce, id.135) qui dit déjà 'chambre' en un seul mot : tokapisu est une composition descriptive, kama la racine simple. Préférer kama pour un usage courant.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -300,7 +347,10 @@
             "toka"
           ],
           "domaine": "architecture",
-          "note": "Lieu de production artisanale"
+          "note": "Lieu de production artisanale",
+          "definition": "Lieu de production artisanale où l'on grave, sculpte et façonne.",
+          "nuance": "Composition kova-toka (kova=peinture/gravure/fresque + toka=lieu). Litt. 'lieu du travail/gravure'. Cohérent avec la culture des artefacts gravés (Grande Fresque, glyphes). Pourrait aussi se composer avec 'tavu'=travail/oeuvre (id.141) ; kova privilégie l'artisanat d'image et de gravure.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -319,7 +369,10 @@
             "kota"
           ],
           "domaine": "architecture",
-          "note": "Stockage de provisions"
+          "note": "Stockage de provisions",
+          "definition": "Grand bâtiment de stockage des provisions et réserves.",
+          "nuance": "Composition nutu-koto-ka (note: 'nutu' non attesté dans data/lexique.json - racine de réserve/provision implicite, + kota=union/lieu). Litt. 'grand lieu de réserves'. Composition longue et opaque ; la racine 'nutu' devrait être validée ou remplacée (cf. 'saki'=sac/contenant id.104, 'tenu'=tenir/garder id.117, verbe 'tenuk'=entreposer).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -339,7 +392,10 @@
             "peki"
           ],
           "domaine": "architecture",
-          "note": "Support vertical"
+          "note": "Support vertical",
+          "definition": "Support vertical portant une charge, pilier d'une construction.",
+          "nuance": "Composition toka-peki (toka=lieu + peki=pied/base). Litt. 'pied du lieu'. peki (pied/base) est la racine-clé de l'architecture portante : partagée avec 'pilotis' (ulapeki), 'plate-forme' (pekutoka), 'escalier' (pekivasi), 'fondation' (tokapeku). Inclut 'pilier' comme synonyme.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -359,7 +415,10 @@
             "linu"
           ],
           "domaine": "architecture",
-          "note": "Élément au-dessus d'une ouverture"
+          "note": "Élément au-dessus d'une ouverture",
+          "definition": "Élément horizontal placé au-dessus d'une porte ou fenêtre pour en soutenir le sommet.",
+          "nuance": "Composition vasi-linu (vasi=passage + lina=ligne). Litt. 'ligne de passage'. Combine la racine du franchissement (vasi) et celle de la ligne droite (linu/lina), aussi présente dans 'mur' (linukonu) et 'poutre' (vitolinumako).",
+          "registre": "courant"
         }
       ]
     },
@@ -375,7 +434,10 @@
             "peki"
           ],
           "domaine": "architecture",
-          "note": "Base d'un bâtiment"
+          "note": "Base d'un bâtiment",
+          "definition": "Base souterraine ou inférieure sur laquelle repose un bâtiment.",
+          "nuance": "Composition toka-peku (toka=lieu + peku, variante de peki=pied/base). Litt. 'base du lieu'. Très proche de 'colonne' (tokupeki) : même paire toka+peki avec voyelles de liaison inversées (tokapeku vs tokupeki), source de confusion possible. Distinction ténue à clarifier.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -395,7 +457,10 @@
             "sanu"
           ],
           "domaine": "architecture",
-          "note": "Structure en bois"
+          "note": "Structure en bois",
+          "definition": "Ossature de bois qui soutient un toit ou une structure.",
+          "nuance": "Composition vito-sanu (note: 'vito' non attesté dans data/lexique.json - racine de bois implicite, alors que 'buki'=bois/matériau id.73 est la racine attestée + sanu=corps). Litt. 'corps de bois'. La racine 'vito' (bois) est employée dans toute cette série (poutre, planche) mais n'apparaît pas au lexique de référence ; à valider ou remplacer par buki.",
+          "registre": "courant"
         }
       ]
     },
@@ -412,7 +477,10 @@
             "mako"
           ],
           "domaine": "architecture",
-          "note": "Élément structurel horizontal"
+          "note": "Élément structurel horizontal",
+          "definition": "Long élément structurel horizontal de bois soutenant un plancher ou un toit.",
+          "nuance": "Composition vito-linu-mako (vito=bois + lina=ligne + mako=grand). Litt. 'grande ligne de bois'. Composition à 3 racines, longue. Réutilise 'vito' (bois, non attesté) ; partage 'linu' avec mur et linteau, 'mako' avec muraille et tour.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -431,7 +499,10 @@
             "veku"
           ],
           "domaine": "architecture",
-          "note": "Morceau de bois plat"
+          "note": "Morceau de bois plat",
+          "definition": "Pièce de bois plate et mince utilisée en construction.",
+          "nuance": "Composition vito-veku (vito=bois + veku=surface). Litt. 'surface de bois'. Réutilise 'vito' (bois, non attesté) et 'veku' (surface, non attesté), tous deux récurrents dans cette série architecturale mais absents du lexique de référence.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -451,7 +522,10 @@
             "vuku"
           ],
           "domaine": "architecture",
-          "note": "Surface au niveau du sol"
+          "note": "Surface au niveau du sol",
+          "definition": "Surface inférieure d'un espace, niveau sur lequel on marche à l'intérieur d'un bâtiment.",
+          "nuance": "Composition toka-vuku (toka=lieu/terre + vuku=profond/bas). Litt. 'bas du lieu'. À distinguer de 'toka' seul (terre/sol naturel, id.17) : tokavuku désigne le plancher/sol construit, par opposition au sol-terre brut. Inclut 'plancher' en synonyme.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -471,7 +545,10 @@
             "konu"
           ],
           "domaine": "architecture_militaire",
-          "note": "Murs qui entourent un lieu"
+          "note": "Murs qui entourent un lieu",
+          "definition": "Ensemble de murs ceinturant et protégeant un lieu habité.",
+          "nuance": "Composition kota-konu (kota=union/confluence/ensemble + konu=garde/protection). Litt. 'protection de la confluence/ensemble'. DOUBLON partiel : 'enceinte' est aussi donné comme synonyme_fr de 'muraille' (makolinukonu). Distinction : kotakonu = l'enceinte comme périmètre protecteur d'un ensemble, makolinukonu = la muraille comme grand mur. Domaine militaire.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -490,7 +567,10 @@
             "pisu"
           ],
           "domaine": "architecture",
-          "note": "Trou creusé"
+          "note": "Trou creusé",
+          "definition": "Petit creux ou trou creusé dans le sol.",
+          "nuance": "Composition vuku-pisu (vuku=profond/gouffre + pisu=petit). Litt. 'petit gouffre'. Antonyme d'échelle de 'gouffre' (vuku seul) : la fosse est un creux mineur, le gouffre l'abîme majeur. Partage vuku avec 'galerie' (vukuvasi) et 'voûte' (vukutoka). Inclut 'fossé' et 'trou' en synonymes.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [

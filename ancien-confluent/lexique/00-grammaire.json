@@ -9,7 +9,11 @@
           "confluent": "va",
           "type": "particule",
           "categorie": "cas",
-          "note": "Marque le sujet de la phrase"
+          "note": "Marque le sujet de la phrase",
+          "definition": "Particule de cas marquant le sujet (l'agent) de la phrase. Identifie celui qui accomplit l'action.",
+          "nuance": "Se place AVANT le nom qu'elle marque. Première particule de la structure SOV : va [sujet] vo [objet] [verbe]. À ne pas confondre avec vo (objet) ni avec va dans son emploi de tête de proposition.",
+          "registre": "courant",
+          "exemple": "va naki vo ura miraku"
         }
       ]
     },
@@ -20,7 +24,11 @@
           "confluent": "vo",
           "type": "particule",
           "categorie": "cas",
-          "note": "Marque l'objet direct"
+          "note": "Marque l'objet direct",
+          "definition": "Particule de cas marquant l'objet direct (le patient) : ce qui subit l'action.",
+          "nuance": "Se place AVANT le nom, après le groupe sujet dans l'ordre SOV. S'oppose à va (sujet) ; le marquage par particules rend l'ordre sujet/objet non ambigu.",
+          "registre": "courant",
+          "exemple": "va miki vo seka sekamu"
         }
       ]
     },
@@ -31,7 +39,10 @@
           "confluent": "no",
           "type": "particule",
           "categorie": "cas",
-          "note": "Localisation spatiale"
+          "note": "Localisation spatiale",
+          "definition": "Particule de cas marquant le lieu : localisation spatiale (dans, à, sur, sous).",
+          "nuance": "Se place AVANT le nom. Comme circonstant de lieu, peut ouvrir la phrase. Statique (où se passe l'action), à distinguer de vi (direction, vers) et ve (origine, depuis).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -47,7 +58,11 @@
           "confluent": "na",
           "type": "particule",
           "categorie": "cas",
-          "note": "Possession, origine, appartenance"
+          "note": "Possession, origine, appartenance",
+          "definition": "Particule de cas marquant la possession, l'origine, l'appartenance (de, génitif).",
+          "nuance": "Se place AVANT le nom possesseur. Possession statique (appartenance), à distinguer de ve qui marque la provenance dynamique. Sert aussi de possessif (son, sa, leur).",
+          "registre": "courant",
+          "exemple": "na aita seka"
         }
       ]
     },
@@ -58,7 +73,11 @@
           "confluent": "se",
           "type": "particule",
           "categorie": "cas",
-          "note": "But, bénéficiaire"
+          "note": "But, bénéficiaire",
+          "definition": "Particule/connecteur exprimant le but ou la cause (pour, car, parce que). Marque le bénéficiaire d'une action ou introduit une proposition causale.",
+          "nuance": "Comme connecteur de cause, se place en début de la phrase causale (Va miki vosaku. Se va miki miraku.). À distinguer de ni (bénéficiaire pur, pour qui) et de se employé comme but.",
+          "registre": "courant",
+          "exemple": "va miki vosaku se va miki miraku"
         }
       ],
       "synonymes_fr": [
@@ -73,7 +92,11 @@
           "confluent": "lo",
           "type": "particule",
           "categorie": "coordination",
-          "note": "Opposition ou coordination selon contexte"
+          "note": "Opposition ou coordination selon contexte",
+          "definition": "Connecteur logique de conséquence (donc) ou de coordination/opposition selon le contexte (et, mais).",
+          "nuance": "Comme conséquence, se place en début de la seconde phrase. À distinguer de ti (et, coordination entre éléments) et bo (mais, opposition).",
+          "registre": "courant",
+          "exemple": "va miki miraku lo va miki vosaku"
         }
       ],
       "synonymes_fr": [
@@ -88,7 +111,10 @@
           "confluent": "vi",
           "type": "particule",
           "categorie": "cas",
-          "note": "Instrument, accompagnement"
+          "note": "Instrument, accompagnement",
+          "definition": "Particule de cas marquant l'instrument/l'accompagnement (avec, au moyen de) ou la direction (vers, à) selon l'emploi.",
+          "nuance": "Se place AVANT le nom. La grammaire de référence emploie vu pour l'instrument et vi pour la direction ; ici vi couvre l'instrument/accompagnement. À distinguer de ve (origine).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -102,7 +128,11 @@
           "confluent": "ve",
           "type": "particule",
           "categorie": "cas",
-          "note": "Origine, source (depuis)"
+          "note": "Origine, source (depuis)",
+          "definition": "Particule de cas marquant l'origine ou la source (de, depuis, à partir de).",
+          "nuance": "Se place AVANT le nom. Provenance dynamique (d'où vient), à distinguer de na (appartenance statique) et no (localisation). Peut aussi marquer une origine temporelle (depuis).",
+          "registre": "courant",
+          "exemple": "va naki ve Vukuura tekisu"
         }
       ]
     },
@@ -113,7 +143,11 @@
           "confluent": "at",
           "type": "marqueur_temps",
           "categorie": "temps",
-          "note": "Passé récent ou vécu directement"
+          "note": "Passé récent ou vécu directement",
+          "definition": "Conjugateur de temps marquant le passé vécu : action accomplie dans la vie du locuteur, vue ou faite directement.",
+          "nuance": "Suffixé EN FIN de verbe (mirak + at -> mirakat). Premier des quatre niveaux de passé ; à distinguer de aan (passé regretté), ait (passé ancestral) et amat (passé mythique).",
+          "registre": "courant",
+          "exemple": "va miki vo aita mirakat"
         }
       ],
       "synonymes_fr": [
@@ -127,7 +161,11 @@
           "confluent": "u",
           "type": "marqueur_temps",
           "categorie": "temps",
-          "note": "Présent ou vérité générale"
+          "note": "Présent ou vérité générale",
+          "definition": "Conjugateur de temps marquant le présent neutre ou la vérité générale.",
+          "nuance": "Suffixé EN FIN de verbe (mirak + u -> miraku). Conjugateur de base le plus fréquent ; sert aussi de support pour les combinaisons temps+aspect (miraku + eol -> mirakueol).",
+          "registre": "courant",
+          "exemple": "va naki vo ura miraku"
         }
       ]
     },
@@ -138,7 +176,10 @@
           "confluent": "ok",
           "type": "marqueur_temps",
           "categorie": "temps",
-          "note": "Futur ou intention volontaire"
+          "note": "Futur ou intention volontaire",
+          "definition": "Conjugateur exprimant le futur/la volonté ou, selon la grammaire de référence, l'impératif (ordre, commande).",
+          "nuance": "Suffixé EN FIN de verbe (mirak + ok -> mirakok). Marque ici futur/intention volontaire ; recoupe le mode impératif. À distinguer de en (futur dans la référence) et ul (capacité).",
+          "registre": "courant"
         }
       ]
     },
@@ -149,7 +190,10 @@
           "confluent": "en",
           "type": "marqueur_temps",
           "categorie": "mode",
-          "note": "Ordre ou demande"
+          "note": "Ordre ou demande",
+          "definition": "Conjugateur de mode exprimant l'impératif : ordre ou demande adressée à l'interlocuteur. (Dans la grammaire de référence, en sert aussi de marqueur de futur.)",
+          "nuance": "Suffixé EN FIN de verbe. Sert à formuler une commande directe ; à distinguer de ok (futur/volonté) et de ui (infinitif).",
+          "registre": "courant"
         }
       ]
     },
@@ -160,7 +204,10 @@
           "confluent": "ui",
           "type": "marqueur_temps",
           "categorie": "mode",
-          "note": "Forme infinitive du verbe"
+          "note": "Forme infinitive du verbe",
+          "definition": "Conjugateur marquant l'infinitif : forme nue du verbe, sans ancrage temporel, personnel ou modal.",
+          "nuance": "Suffixé EN FIN de verbe. Donne la forme citationnelle/non finie ; à distinguer des conjugateurs de temps (u, at, en) qui ancrent l'action dans le temps.",
+          "registre": "courant"
         }
       ]
     },
@@ -171,7 +218,11 @@
           "confluent": "ul",
           "type": "marqueur_temps",
           "categorie": "modalité",
-          "note": "Impossibilité, négation de capacité"
+          "note": "Impossibilité, négation de capacité",
+          "definition": "Conjugateur de mode marquant la capacité (pouvoir, être apte à) et, négativement, l'impossibilité (négation de capacité).",
+          "nuance": "Suffixé EN FIN de verbe (mirak + ul -> mirakul). Exprime l'aptitude ; à distinguer de es (souhait) et ok (impératif). La modalité, pas le temps.",
+          "registre": "courant",
+          "exemple": "va siliaska vo veri mirakul"
         }
       ]
     },
@@ -182,7 +233,10 @@
           "confluent": "aan",
           "type": "marqueur_temps",
           "categorie": "temps",
-          "note": "Passé avec regret ou nostalgie"
+          "note": "Passé avec regret ou nostalgie",
+          "definition": "Conjugateur de temps marquant le passé regretté : action accomplie dans la vie du locuteur, teintée de regret ou de nostalgie.",
+          "nuance": "Suffixé EN FIN de verbe (nekan + aan -> nekaan). Marque la réflexivité et l'apprentissage par l'erreur ; à distinguer de at (passé vécu neutre).",
+          "registre": "courant"
         }
       ]
     },
@@ -193,7 +247,11 @@
           "confluent": "eol",
           "type": "marqueur_aspect",
           "categorie": "aspect",
-          "note": "Aspect habituel (fait régulièrement)"
+          "note": "Aspect habituel (fait régulièrement)",
+          "definition": "Conjugateur d'aspect marquant l'habituel : action régulière, répétée, faite couramment.",
+          "nuance": "Suffixé EN FIN de verbe, après le conjugateur de temps (miraku + eol -> mirakueol). Aspect, donc combinable avec un temps mais pas avec un mode. À distinguer de eon (cyclique) et eom (éternel).",
+          "registre": "courant",
+          "exemple": "va naki vo aita mirakeol"
         }
       ]
     },
@@ -204,7 +262,11 @@
           "confluent": "zo",
           "type": "negation",
           "categorie": "négation",
-          "note": "Négation générale"
+          "note": "Négation générale",
+          "definition": "Particule de négation standard (ne...pas) ; sert aussi à exprimer la privation (sans).",
+          "nuance": "Se place AVANT le verbe, après les compléments : [sujet] [objet] zo [verbe]. Négation de base ; à distinguer de zom (jamais, négation temporelle absolue).",
+          "registre": "courant",
+          "exemple": "va naki vo ura zo miraku"
         }
       ],
       "synonymes_fr": [
@@ -218,7 +280,11 @@
           "confluent": "zom",
           "type": "negation",
           "categorie": "négation",
-          "note": "Négation temporelle absolue (jamais)"
+          "note": "Négation temporelle absolue (jamais)",
+          "definition": "Particule de négation temporelle absolue (jamais) : nie l'action à tout moment.",
+          "nuance": "Se place AVANT le verbe, comme zo. Négation renforcée portant sur le temps ; à distinguer de zo (négation simple ne...pas).",
+          "registre": "courant",
+          "exemple": "va tori su vo apo su zom miraku"
         }
       ]
     },
@@ -229,7 +295,11 @@
           "confluent": "su",
           "type": "marqueur_nombre",
           "categorie": "quantité",
-          "note": "Marque le pluriel"
+          "note": "Marque le pluriel",
+          "definition": "Marqueur de nombre indiquant le pluriel.",
+          "nuance": "EXCEPTION de position : contrairement aux autres particules, su se place APRÈS le nom (va naki su = les enfants), jamais avant. Sert aussi à former les pluriels pronominaux (miki su = nous).",
+          "registre": "courant",
+          "exemple": "va naki su vo ura miraku"
         }
       ]
     },
@@ -240,7 +310,11 @@
           "confluent": "ku",
           "type": "interrogation",
           "categorie": "question",
-          "note": "Marque l'interrogation"
+          "note": "Marque l'interrogation",
+          "definition": "Marqueur d'interrogation. Sert de base à la série interrogative (ku/riku/siku/tiku/viku) et, dans la grammaire de référence, interroge le temps (quand).",
+          "nuance": "Élément interrogatif ; selon l'usage, remplace l'élément questionné ou marque la question. Tête de la série interrogative composée riku/siku/tiku/viku.",
+          "registre": "courant",
+          "exemple": "ku va naki tekisu"
         }
       ]
     },
@@ -251,7 +325,11 @@
           "confluent": "riku",
           "type": "interrogation",
           "categorie": "question",
-          "note": "Question causale (pourquoi)"
+          "note": "Question causale (pourquoi)",
+          "definition": "Mot interrogatif causal : pourquoi. Interroge la raison ou la cause d'une action.",
+          "nuance": "Membre de la série interrogative ku/riku/siku/tiku/viku. Introduit la question ; à distinguer de siku (comment), tiku (quand) et viku (où).",
+          "registre": "courant",
+          "exemple": "riku va naki tekisu"
         }
       ]
     },
@@ -262,7 +340,11 @@
           "confluent": "siku",
           "type": "interrogation",
           "categorie": "question",
-          "note": "Question de manière (comment)"
+          "note": "Question de manière (comment)",
+          "definition": "Mot interrogatif de manière : comment. Interroge le moyen ou la façon dont l'action se déroule.",
+          "nuance": "Membre de la série interrogative ku/riku/siku/tiku/viku. Homophone de la racine siku (sec, aride ; cercle) : c'est le contexte interrogatif qui tranche. À distinguer de riku (pourquoi).",
+          "registre": "courant",
+          "exemple": "siku va naki nekanu"
         }
       ]
     },
@@ -273,7 +355,11 @@
           "confluent": "tiku",
           "type": "interrogation",
           "categorie": "question",
-          "note": "Question temporelle (quand)"
+          "note": "Question temporelle (quand)",
+          "definition": "Mot interrogatif temporel : quand. Interroge le moment de l'action.",
+          "nuance": "Membre de la série interrogative ku/riku/siku/tiku/viku. Homophone de la racine tiku (oreille, écoute) : désambiguïsé par le contexte interrogatif. À distinguer de viku (où).",
+          "registre": "courant",
+          "exemple": "tiku va naki tekisu"
         }
       ]
     },
@@ -284,7 +370,11 @@
           "confluent": "viku",
           "type": "interrogation",
           "categorie": "question",
-          "note": "Question spatiale (où) — série interrogative ku/riku/siku/tiku/viku"
+          "note": "Question spatiale (où) — série interrogative ku/riku/siku/tiku/viku",
+          "definition": "Mot interrogatif spatial : où. Interroge le lieu de l'action.",
+          "nuance": "Clôt la série interrogative ku/riku/siku/tiku/viku. Homophone de la racine viku (forêt, arbre ; victoire) : le contexte interrogatif lève l'ambiguïté. À distinguer de tiku (quand).",
+          "registre": "courant",
+          "exemple": "viku va naki tekisu"
         }
       ]
     },
@@ -295,7 +385,11 @@
           "confluent": "tova",
           "type": "demonstratif",
           "categorie": "démonstratif",
-          "note": "Démonstratif neutre"
+          "note": "Démonstratif neutre",
+          "definition": "Démonstratif neutre désignant un objet/concept distant ou déjà mentionné (ceci, cela, ça, ce). L'une des deux racines démonstratives avec tisa (proche).",
+          "nuance": "Marque l'éloignement (là-bas) face à tisa (ici, proche). Peut prendre un emploi temporel (alors, ce moment-là) et se compose avec liaison (tov-i-loku = cet endroit-là).",
+          "registre": "courant",
+          "exemple": "tova tori vo ura miraku"
         }
       ],
       "synonymes_fr": [
@@ -312,7 +406,11 @@
           "confluent": "tovak",
           "type": "verbe",
           "categorie": "action",
-          "note": "Faire cela, agir ainsi (tova + faire)"
+          "note": "Faire cela, agir ainsi (tova + faire)",
+          "definition": "Verbe de pro-action signifiant faire cela, agir ainsi, accomplir : reprend une action déjà évoquée (tova + faire).",
+          "nuance": "Verbe (finale consonne) : reçoit donc les conjugateurs en fin (tovak + u -> tovaku). Sert d'anaphore d'action, à distinguer du démonstratif nominal tova.",
+          "registre": "courant",
+          "exemple": "va miki tovaku"
         }
       ],
       "synonymes_fr": [
@@ -328,7 +426,10 @@
           "confluent": "kanu",
           "type": "demonstratif",
           "categorie": "démonstratif",
-          "note": "Démonstratif pour personnes"
+          "note": "Démonstratif pour personnes",
+          "definition": "Démonstratif personnel désignant un être humain : celui-ci, celui-là (démonstratif réservé aux personnes).",
+          "nuance": "Forme confluent kanu (homophone de la racine kanu = main : désambiguïsé par le contexte). Spécialisé pour les personnes, là où tova/tisa sont neutres.",
+          "registre": "courant"
         }
       ]
     },
@@ -338,7 +439,10 @@
           "confluent": "ze",
           "type": "particule",
           "domaine": "spatial",
-          "note": "Au-dessus, en haut"
+          "note": "Au-dessus, en haut",
+          "definition": "Particule spatiale exprimant la position au-dessus, en haut (dessus).",
+          "nuance": "Indication spatiale verticale ; complète le système locatif où no marque la localisation générale. Emploi spatial restreint (vers le haut).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -352,7 +456,10 @@
           "confluent": "susu",
           "type": "quantificateur",
           "domaine": "quantite",
-          "note": "Tous, toutes, ensemble"
+          "note": "Tous, toutes, ensemble",
+          "definition": "Quantificateur de totalité : tous, toutes, l'ensemble (la totalité des éléments).",
+          "nuance": "Formé par redoublement de su (pluriel) -> totalité globale. À distinguer du simple pluriel su (plusieurs) et de oubo (chaque, distributif individu par individu).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -367,7 +474,11 @@
           "confluent": "ki",
           "type": "relatif",
           "categorie": "pronom",
-          "note": "Pronom relatif (qui, que)"
+          "note": "Pronom relatif (qui, que)",
+          "definition": "Pronom relatif/interrogatif (qui, que, dont) introduisant ou questionnant un participant.",
+          "nuance": "En emploi interrogatif, remplace le sujet ou l'objet questionné (va ki miraku = qui voit ?). Note : l'Ancien Confluent n'a pas de vraies relatives ; ki sert surtout d'interrogatif, le relatif se contourne par juxtaposition.",
+          "registre": "courant",
+          "exemple": "va ki vo ura miraku"
         }
       ],
       "synonymes_fr": [
@@ -381,7 +492,10 @@
           "confluent": "nasu",
           "type": "possessif",
           "categorie": "pronom",
-          "note": "Possessif 3ème personne pluriel"
+          "note": "Possessif 3ème personne pluriel",
+          "definition": "Possessif de 3e personne du pluriel (leur, leurs) : marque l'appartenance à un groupe.",
+          "nuance": "Composé de na (génitif/possession) + su (pluriel) -> possesseur pluriel. À distinguer de na seul (possession au singulier).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -394,7 +508,10 @@
           "confluent": "tovasu",
           "type": "demonstratif",
           "categorie": "determinant",
-          "note": "Démonstratif pluriel (ces, ceux-ci)"
+          "note": "Démonstratif pluriel (ces, ceux-ci)",
+          "definition": "Démonstratif pluriel : ces, ceux-ci, celles (désigne plusieurs éléments montrés).",
+          "nuance": "Composé de tova (démonstratif) + su (pluriel) -> démonstratif au pluriel. Version plurielle du singulier tova.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -408,7 +525,10 @@
           "confluent": "oubo",
           "type": "quantificateur",
           "categorie": "determinant",
-          "note": "Chaque, chacun (distributif)"
+          "note": "Chaque, chacun (distributif)",
+          "definition": "Quantificateur distributif : chaque, chacun, chacune (considère les éléments un à un).",
+          "nuance": "Distributif (individu par individu), à distinguer de susu (tous, totalité collective) et de su (simple pluriel).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -422,7 +542,10 @@
           "confluent": "ve",
           "type": "particule",
           "categorie": "temps",
-          "note": "Depuis (origine temporelle) - utilise particule ve (origine)"
+          "note": "Depuis (origine temporelle) - utilise particule ve (origine)",
+          "definition": "Particule marquant l'origine temporelle (depuis) : point de départ dans le temps. Réemploi de la particule d'origine ve.",
+          "nuance": "Se place AVANT le complément. Étend l'origine spatiale de ve au domaine temporel (depuis tel moment). Même forme que ve (origine spatiale).",
+          "registre": "courant"
         }
       ]
     },
@@ -432,7 +555,11 @@
           "confluent": "na",
           "type": "particule",
           "categorie": "possession",
-          "note": "Possessif (réutilise particule génitif na)"
+          "note": "Possessif (réutilise particule génitif na)",
+          "definition": "Possessif (son, sa, ses, mon, ma, ton, ta, notre, votre, leur...) : marque l'appartenance. Réemploi de la particule génitif na.",
+          "nuance": "Se place AVANT le nom possédé. Le Confluent n'a pas de série de possessifs distincts : il réutilise na (génitif), la personne se précisant par le contexte ou un pronom. Pluriel possessif : nasu.",
+          "registre": "courant",
+          "exemple": "na naki kanu"
         }
       ],
       "synonymes_fr": [
@@ -458,7 +585,10 @@
           "confluent": "ko",
           "type": "determinant",
           "categorie": "demonstratif",
-          "note": "Démonstratif (radical ko-)"
+          "note": "Démonstratif (radical ko-)",
+          "definition": "Déterminant démonstratif (ce, cet, cette, ces) : désigne le nom qui suit. Radical démonstratif ko-.",
+          "nuance": "Déterminant placé avant le nom. Radical ko- distinct des démonstratifs autonomes tova/tisa ; sert de support au démonstratif déterminant.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -473,7 +603,10 @@
           "confluent": "isu",
           "type": "particule",
           "categorie": "temps",
-          "note": "Avant/passé (réutilise marqueur passé at)"
+          "note": "Avant/passé (réutilise marqueur passé at)",
+          "definition": "Particule temporelle marquant l'antériorité (avant, auparavant, hier) : situe l'action dans un passé relatif.",
+          "nuance": "Circonstant temporel ; s'apparente au domaine du passé (proche du marqueur at). À distinguer de alo (après, postériorité).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -487,7 +620,10 @@
           "confluent": "alo",
           "type": "particule",
           "categorie": "temps",
-          "note": "Après/futur (réutilise marqueur futur ok)"
+          "note": "Après/futur (réutilise marqueur futur ok)",
+          "definition": "Particule temporelle marquant la postériorité (après, ensuite, demain) : situe l'action dans un futur relatif.",
+          "nuance": "Circonstant temporel ; s'apparente au domaine du futur (proche du marqueur ok). Opposé de isu (avant, antériorité).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -502,7 +638,10 @@
           "confluent": "no",
           "type": "particule",
           "categorie": "lieu",
-          "note": "Autour/spatial (réutilise particule locative no)"
+          "note": "Autour/spatial (réutilise particule locative no)",
+          "definition": "Particule spatiale de proximité/entourage (autour, près, proche, alentour). Réemploi de la particule locative no.",
+          "nuance": "Même forme que no (lieu) : étend la localisation générale à l'idée de proximité/entourage. Le sens précis dépend du contexte spatial.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -517,7 +656,10 @@
           "confluent": "ta",
           "type": "particule",
           "categorie": "temporel",
-          "note": "Tandis que, pendant que - conjonction temporelle de simultanéité"
+          "note": "Tandis que, pendant que - conjonction temporelle de simultanéité",
+          "definition": "Conjonction temporelle de simultanéité (tandis que, pendant que, alors que) : marque que deux actions se déroulent en même temps.",
+          "nuance": "Connecteur introduisant une proposition simultanée. Domaine temporel, à distinguer des connecteurs logiques ti (et), bo (mais), lo (donc).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -534,7 +676,10 @@
           "confluent": "iku",
           "type": "auxiliaire",
           "categorie": "verbe",
-          "note": "J'ai - auxiliaire avoir 1ère personne singulier présent"
+          "note": "J'ai - auxiliaire avoir 1ère personne singulier présent",
+          "definition": "Auxiliaire avoir, 1re personne du singulier au présent (j'ai) : marque la possession ou sert d'auxiliaire de temps composé.",
+          "nuance": "Forme fléchie par personne, exceptionnelle dans une langue par ailleurs sans flexion. Base iku- recevant des marqueurs de temps (iku + at -> ikuat = avais ; iku + ok -> ikuok = aurai).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -548,7 +693,10 @@
           "confluent": "euma",
           "type": "auxiliaire",
           "categorie": "verbe",
-          "note": "Tu as - auxiliaire avoir 2ème personne singulier"
+          "note": "Tu as - auxiliaire avoir 2ème personne singulier",
+          "definition": "Auxiliaire avoir, 2e personne du singulier au présent (tu as).",
+          "nuance": "Forme personnelle distincte (paradigme suppletif : iku/euma/oape...). S'emploie comme verbe de possession ou auxiliaire ; spécifique à la 2e personne du singulier.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -562,7 +710,10 @@
           "confluent": "oape",
           "type": "auxiliaire",
           "categorie": "verbe",
-          "note": "Il/elle a - auxiliaire avoir 3ème personne singulier"
+          "note": "Il/elle a - auxiliaire avoir 3ème personne singulier",
+          "definition": "Auxiliaire avoir, 3e personne du singulier au présent (il a, elle a, on a).",
+          "nuance": "Forme personnelle distincte du paradigme avoir. À distinguer de oape vs oolu (3e pers. pluriel, ont). Verbe de possession / auxiliaire.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -578,7 +729,10 @@
           "confluent": "uila",
           "type": "auxiliaire",
           "categorie": "verbe",
-          "note": "Nous avons - auxiliaire avoir 1ère personne pluriel"
+          "note": "Nous avons - auxiliaire avoir 1ère personne pluriel",
+          "definition": "Auxiliaire avoir, 1re personne du pluriel au présent (nous avons).",
+          "nuance": "Forme personnelle du paradigme avoir au pluriel. À distinguer de iku (1re sg) et de uila vs aila (2e pl).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -592,7 +746,10 @@
           "confluent": "aila",
           "type": "auxiliaire",
           "categorie": "verbe",
-          "note": "Vous avez - auxiliaire avoir 2ème personne pluriel"
+          "note": "Vous avez - auxiliaire avoir 2ème personne pluriel",
+          "definition": "Auxiliaire avoir, 2e personne du pluriel au présent (vous avez).",
+          "nuance": "Forme personnelle du paradigme avoir au pluriel. À distinguer de euma (2e sg) et de uila (1re pl).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -606,7 +763,10 @@
           "confluent": "oolu",
           "type": "auxiliaire",
           "categorie": "verbe",
-          "note": "Ils/elles ont - auxiliaire avoir 3ème personne pluriel"
+          "note": "Ils/elles ont - auxiliaire avoir 3ème personne pluriel",
+          "definition": "Auxiliaire avoir, 3e personne du pluriel au présent (ils ont, elles ont).",
+          "nuance": "Forme personnelle du paradigme avoir au pluriel. À distinguer de oape (3e sg, a). Verbe de possession / auxiliaire.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -621,7 +781,10 @@
           "confluent": "ikuat",
           "type": "auxiliaire",
           "categorie": "verbe",
-          "note": "Avais - auxiliaire avoir imparfait (iku + marqueur passé at)"
+          "note": "Avais - auxiliaire avoir imparfait (iku + marqueur passé at)",
+          "definition": "Auxiliaire avoir à l'imparfait/passé (avais, avait, avaient) : possession dans le passé.",
+          "nuance": "Composé de iku (avoir, base 1re sg) + at (marqueur du passé vécu). Illustre la stratégie régulière base avoir + conjugateur de temps. À distinguer de ikuok (futur).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -640,7 +803,10 @@
           "confluent": "ikuok",
           "type": "auxiliaire",
           "categorie": "verbe",
-          "note": "Aurai - auxiliaire avoir futur (iku + marqueur futur ok)"
+          "note": "Aurai - auxiliaire avoir futur (iku + marqueur futur ok)",
+          "definition": "Auxiliaire avoir au futur (aurai, aura, auront) : possession à venir.",
+          "nuance": "Composé de iku (avoir, base) + ok (marqueur de futur/volonté). Pendant futur de ikuat (passé). Même base iku que la 1re personne du présent.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [

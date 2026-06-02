@@ -14,7 +14,10 @@
             "sanu"
           ],
           "domaine": "sante",
-          "note": "Concept de maladie comme mort partielle"
+          "note": "Concept de maladie comme mort partielle",
+          "definition": "Atteinte du corps qui en altère le fonctionnement ; affection, mal physique. Conçue comme une mort partielle qui ronge l'organisme.",
+          "nuance": "Composition os-i-sanu sur osi (mort, mourir ; racine sacrée du cycle sacré, donne osian 'mourir') + sanu (corps), via liaison i (agent) : « mort du corps ». La racine sacrée osi charge la maladie d'une gravité existentielle — elle est une forme de mort à l'œuvre. Tête de série du champ santé : sert de base à 'Maladie des Antres' (osiusanuuvuku). À distinguer de 'blessure' (sanuuzoka, le corps atteint par l'ennemi, soit une cause externe) : la maladie ronge de l'intérieur. NB graphie 'osiusanu' = os-i-sanu avec liaison i.",
+          "registre": "courant"
         }
       ]
     },
@@ -31,7 +34,10 @@
             "vuku"
           ],
           "categorie": "maladie",
-          "note": "Maladie pulmonaire des mineurs"
+          "note": "Maladie pulmonaire des mineurs",
+          "definition": "Maladie pulmonaire propre aux mineurs des souterrains ; mal du gouffre contracté à force de respirer l'air des Antres. Affection emblématique des Enfants des Échos (Nakukeko).",
+          "nuance": "Composition à trois racines os-i-sanu-(u)-vuku sur osi (mort, sacrée) + sanu (corps) + vuku (profond, gouffre, abîme) : « maladie du gouffre ». Nom propre dérivé de 'maladie' (osiusanu) auquel s'ajoute vuku pour localiser le mal dans le Gouffre. Composition de 3+ éléments, rare et déconseillée par la morphologie (préférer juxtaposition), mais figée ici en nom propre culturel. vuku renvoie au Gouffre Humide (Vukuura) et aux colonies souterraines. NB graphie 'osiusanuuvuku' avec hiatus u-u (sanu + vuku) accepté.",
+          "registre": "courant"
         }
       ]
     },
@@ -47,7 +53,10 @@
             "zoka",
             "sanu"
           ],
-          "domaine": "maladie"
+          "domaine": "maladie",
+          "definition": "Maladie des poumons causée par un air corrompu ; affection respiratoire où le souffle même devient hostile au corps.",
+          "nuance": "Composition ven-u-zoka-(u)-sanu sur vena (air, vent ; forme liée ven-) + zoka (ennemi, étranger hostile) + sanu (corps) : « air ennemi du corps ». Composition de 3 racines (rare). zoka personnifie l'air vicié en force hostile, même procédé que 'feu sauvage' (sukizoka) et 'infection' en général. Recoupe 'Maladie des Antres' (osiusanuuvuku) : les deux frappent les poumons des souterrains, mais celle-ci insiste sur l'air corrompu, l'autre sur le lieu (gouffre). NB la racine puli (poumon, souffle) aurait pu servir mais le mot privilégie vena (air) ; graphie ven-u-zoka avec liaison u.",
+          "registre": "courant"
         }
       ]
     },
@@ -62,7 +71,10 @@
             "zo",
             "muta"
           ],
-          "domaine": "maladie"
+          "domaine": "maladie",
+          "definition": "État de privation alimentaire prolongée affaiblissant le corps ; sous-alimentation chronique. Risque réel d'une économie de subsistance (chasse, cueillette, pêche).",
+          "nuance": "Composition zo-muta : particule de négation zo (ne...pas) + muta (faim, manque, besoin de nourriture ; racine standard du fichier 02, forme liée mut-). DISCORDANCE : le sens_litteral du fichier dit « sans manger », mais muta signifie 'faim/manque' (pas 'manger') — zomuta = littéralement « sans faim/sans manque », ce qui contredit le sens visé (malnutrition = excès de manque). Construction suspecte à arbitrer : pour 'privation de nourriture' on attendrait plutôt zonutu (sans nourriture, sur nutu) ou simplement muta intensifié. À réconcilier avec le couple muta (faim) / nutu (nourriture) du fichier 02.",
+          "registre": "courant"
         }
       ]
     },
@@ -77,7 +89,10 @@
             "zo",
             "vena"
           ],
-          "domaine": "danger"
+          "domaine": "danger",
+          "definition": "Manque d'air entraînant l'étouffement ; asphyxie, privation de souffle. Danger des espaces clos et des souterrains.",
+          "nuance": "Composition zo-vena : négation zo (ne...pas) + vena (air, vent) : « sans air ». Construction parallèle à 'malnutrition' (zomuta) — schéma zo + besoin vital privé. Danger lié à la vie souterraine des Enfants des Échos et aux risques d'éboulement/ensevelissement. À distinguer de 'infection pulmonaire' (venuzokausanu, air présent mais hostile) : ici l'air manque purement et simplement. NB la racine puli (souffle/poumon) n'est pas employée, le mot privilégie vena (air ambiant).",
+          "registre": "courant"
         }
       ]
     },
@@ -92,7 +107,10 @@
             "sanu",
             "suki"
           ],
-          "domaine": "maladie"
+          "domaine": "maladie",
+          "definition": "Élévation de la chaleur du corps accompagnant la maladie ; le corps qui brûle. Symptôme courant des affections.",
+          "nuance": "Composition san-u-suki sur sanu (corps) + suki (feu, flamme ; élément primordial, racine de la caste-élément Feu) via liaison u (appartenance) : « corps de feu ». Métaphore corporelle typique du Confluent qui n'a pas de mot abstrait pour les symptômes : la fièvre est dite comme « feu du corps ». suki relie le symptôme à l'élément Feu de la cosmologie. À distinguer de 'colère' (kina suki, sang-feu) qui emploie aussi suki mais sur kina (sang). NB graphie 'sanuusuki' avec hiatus u-u (san-u + suki).",
+          "registre": "courant"
         }
       ]
     },
@@ -107,7 +125,10 @@
             "sanu",
             "zoka"
           ],
-          "domaine": "sante"
+          "domaine": "sante",
+          "definition": "Atteinte physique du corps causée par une agression ou un accident ; plaie, lésion. Dommage subi par le corps du fait d'une force externe.",
+          "nuance": "Composition san-u-zoka sur sanu (corps) + zoka (ennemi, étranger hostile) via liaison u (appartenance) : « corps de l'ennemi », le corps marqué par l'hostile. zoka personnifie la cause externe du dommage, même procédé que 'feu sauvage' (sukizoka) et 'infection pulmonaire' (venuzokausanu). À distinguer de 'maladie' (osiusanu) : la blessure vient du dehors (ennemi, accident), la maladie ronge du dedans (mort interne). NB graphie 'sanuuzoka' avec hiatus u-u (san-u + zoka).",
+          "registre": "courant"
         }
       ]
     },
@@ -122,7 +143,10 @@
             "tosa",
             "sanu"
           ],
-          "domaine": "sante"
+          "domaine": "sante",
+          "definition": "Retour du corps à la santé ; rétablissement, recouvrement de la bonne condition physique. Issue heureuse opposée à la maladie et à la blessure.",
+          "nuance": "Composition tos-a-sanu sur tosa (bon, bien ; donne tosan 'bénir', tosas 'que cela bénisse') + sanu (corps) via liaison a (avec) : « bien avec le corps ». La liaison a (relation, accompagnement) exprime l'harmonie retrouvée du corps. Antonyme structurel de 'maladie' (osiusanu, mort+corps) : ici tosa (bien) remplace osi (mort). tosa porte une charge positive et quasi rituelle (bénédiction). NB graphie 'tosausanu' avec hiatus a-u (tos-a + sanu).",
+          "registre": "courant"
         }
       ]
     },
@@ -137,7 +161,10 @@
             "kari",
             "vuku"
           ],
-          "domaine": "danger"
+          "domaine": "danger",
+          "definition": "Effondrement de pierres ou de roche dévalant une pente vers l'abîme ; chute de roche. Danger des reliefs montagneux et des galeries minières.",
+          "nuance": "Composition kar-oa-vuku sur kari (pierre, roche) + vuku (profond, gouffre) via liaison oa (résolu, surmonté, mouvement accompli) : « pierre vers le gouffre ». DOUBLON avec 14-geographie ('eboulement'), avec GRAPHIE DIVERGENTE à harmoniser : ici 'karoavuku', là 'kariovuku' (composition déclarée kar-oa-vuku dans les deux). Membre de la série des dangers de pente X-oa-vuku : éboulement (kari=pierre), avalanche (nisa=neige/humide), cascade (ura=eau, en 14). À arbitrer avec 14 pour une forme unique.",
+          "registre": "courant"
         }
       ]
     },
@@ -152,7 +179,10 @@
             "ura",
             "eka"
           ],
-          "domaine": "danger"
+          "domaine": "danger",
+          "definition": "Débordement des eaux submergeant la terre ; crue qui recouvre tout. Danger des rivières en confluence, cœur géographique de la civilisation.",
+          "nuance": "Composition ur-a-eka sur ura (eau, fluide ; racine sacrée, élément primordial — le 'r' devient 'l' à l'écrit ici, d'où 'ula-') + eka (tout, entier, totalité ; racine sacrée) via liaison a (avec) : « eau avec totalité », l'eau qui recouvre tout. DOUBLON avec 14-geographie ('inondation'), GRAPHIE DIVERGENTE à harmoniser : ici 'ulaueka', là 'ulaueki' (eka vs forme eki). Deux racines sacrées (ura + eka) donnent au fléau une dimension quasi cosmique. NB le passage ur- → ul- (r→l) est à vérifier vs la norme.",
+          "registre": "courant"
         }
       ]
     },
@@ -162,7 +192,10 @@
           "confluent": "mavi",
           "type": "racine",
           "forme_liee": "mav",
-          "domaine": "danger"
+          "domaine": "danger",
+          "definition": "Substance nocive d'origine naturelle nuisant au corps ; venin, sécrétion empoisonnée (plante, bête, serpent). Danger de l'environnement sauvage.",
+          "nuance": "Racine standard mavi (forme liée mav-), domaine danger. DOUBLON/concurrence avec 'poison' (poku) : poku est la racine attestée dans data (id 97, 'poison, toxique'), tandis que mavi n'y figure pas — les deux se chevauchent sur le champ du poison. À arbitrer : possible distinction toxine (mavi = substance naturelle, venin) vs poison (poku = substance administrée, toxique délibéré), mais non figée. Lié au serpent (ziku) et aux bêtes (besi).",
+          "registre": "courant"
         }
       ]
     },
@@ -172,7 +205,10 @@
           "confluent": "poku",
           "type": "racine",
           "forme_liee": "pok",
-          "domaine": "danger"
+          "domaine": "danger",
+          "definition": "Substance qui tue ou empoisonne quand elle pénètre le corps ; toxique mortel. Arme ou danger lié aux plantes et créatures vénéneuses.",
+          "nuance": "Racine standard poku (forme liée pok-), attestée dans data (id 97, 'poison, toxique'). DOUBLON/concurrence avec 'toxine' (mavi, non attestée dans data) : les deux couvrent le poison. Arbitrage suggéré : poku = le toxique en général (substance et effet), mavi = la sécrétion naturelle (venin). À distinguer de 'infection pulmonaire' (air hostile) : le poison agit par ingestion/pénétration directe.",
+          "registre": "courant"
         }
       ]
     },
@@ -182,7 +218,10 @@
           "confluent": "vuku",
           "type": "racine",
           "forme_liee": "vuk",
-          "domaine": "danger"
+          "domaine": "danger",
+          "definition": "Profondeur abyssale, fosse béante ; abîme, précipice. Lieu à la fois géographique et chargé de sacré (cf. Gouffre Humide, Vukuura).",
+          "nuance": "Racine standard vuku (forme liée vuk-), domaine danger ; sens premier 'profond, gouffre, abîme' (data id 61), donne le verbe vukis (creuser). Entrée racine NUE, qui sert de brique à de nombreux composés du fichier : 'éboulement' (karoavuku), 'avalanche' (nisoavuku), 'Maladie des Antres' (osiusanuuvuku). Recoupe le champ géographique (14) où vuku entre dans cascade et dangers de pente. Charge culturelle majeure : le Gouffre Humide (Vukuura) abrite les Premiers Ancêtres et le pèlerinage initiatique.",
+          "registre": "courant"
         }
       ]
     },
@@ -197,7 +236,10 @@
             "kari",
             "oki"
           ],
-          "domaine": "danger"
+          "domaine": "danger",
+          "definition": "Paroi ou massif de pierre infranchissable ; obstacle minéral que l'on ne peut percer ni traverser. Épreuve concrète des mineurs face à la roche.",
+          "nuance": "Composition kar-i-oki sur kari (pierre, roche) + oki (épreuve, défi, danger ; racine sacrée du conflit sacré) via liaison i (agent) : « pierre de l'épreuve ». DOUBLON avec 14-geographie ('roche impenetrable'), GRAPHIE DIVERGENTE à harmoniser : ici 'kariuoki' (kar-i-oki, hiatus i-o), là 'kariuzoki' (forme zoki avec attaque z, kar-i-zoki). La racine sacrée oki transforme la pierre en obstacle-épreuve, cohérent avec les Enfants des Échos (mineurs) confrontés à la roche. À arbitrer avec 14 sur la forme de oki (oki vs zoki).",
+          "registre": "courant"
         }
       ]
     },
@@ -212,7 +254,10 @@
             "nisa",
             "vuku"
           ],
-          "domaine": "danger"
+          "domaine": "danger",
+          "definition": "Masse de neige ou de matière humide dévalant une pente vers l'abîme ; coulée des hauteurs. Danger des reliefs montagneux enneigés.",
+          "nuance": "Composition nis-oa-vuku sur nisa (humide, mouillé ; ici neige, faute de racine dédiée) + vuku (profond, gouffre) via liaison oa (résolu, mouvement accompli) : « neige vers le gouffre ». DOUBLON avec 14-geographie ('avalanche'), GRAPHIE DIVERGENTE à harmoniser : ici 'nisoavuku', là 'nisaoavuku'. Membre de la série des dangers de pente X-oa-vuku (éboulement kari, cascade ura). La civilisation rattache nisa (humide) à la neige par défaut. À arbitrer avec 14 pour une forme unique.",
+          "registre": "courant"
         }
       ]
     },
@@ -227,7 +272,10 @@
             "suki",
             "zoka"
           ],
-          "domaine": "danger"
+          "domaine": "danger",
+          "definition": "Incendie incontrôlé ravageant la nature ; feu hostile et destructeur. Fléau qui dévore forêts et campements.",
+          "nuance": "Composition suk-i-zoka sur suki (feu, flamme ; élément primordial, racine de la caste-élément Feu) + zoka (ennemi, étranger hostile) via liaison i (agent) : « feu de l'ennemi ». DOUBLON avec 14-geographie ('feu sauvage'), GRAPHIE DIVERGENTE à harmoniser : ici 'sukizoka', là 'sukiuzoka' (suk-i-zoka, même composition). zoka personnifie le feu en force hostile, même procédé que 'blessure' (sanuuzoka) et 'infection pulmonaire' (venuzokausanu). Hors série X-oa-vuku car le feu n'est pas une chute de pente. À arbitrer avec 14 pour une forme unique.",
+          "registre": "courant"
         }
       ]
     }

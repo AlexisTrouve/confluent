@@ -13,7 +13,11 @@
             "konu"
           ],
           "domaine": "action_militaire",
-          "note": "Prendre prisonnier"
+          "note": "Prendre prisonnier",
+          "definition": "Prendre un adversaire et le retenir prisonnier ; faire captif un ennemi vivant.",
+          "nuance": "Composition kon-uki : noyau konu (garder, var. de zaki/tenu) + idée de prise. Sens littéral 'prendre et garder'. DOUBLON IMPORTANT : trois autres formes pour 'capturer' coexistent — kapik (verbe attesté data, racine kapi), pasik (06-actions, spécialisation de pasak 'prendre' pour les êtres) et konumaki/konupaka (ce fichier, nuances de soumission). konuki insiste sur la rétention prolongée du captif (cf. Nanzagouet menés au Gouffre).",
+          "registre": "courant",
+          "exemple": "va aki su vo zoka su konuki"
         }
       ],
       "synonymes_fr": [
@@ -34,7 +38,10 @@
             "sili"
           ],
           "domaine": "action_militaire",
-          "note": "Action d'intimidation"
+          "note": "Action d'intimidation",
+          "definition": "Intimider un adversaire en lui faisant sentir la traque ; afficher une posture hostile pour effrayer.",
+          "nuance": "Composition zana-sili : zana (chasser, traquer) + sili (regard). Sens littéral 'montrer la chasse'. L'intimidation passe par le regard du chasseur — cohérent avec une culture où le regard porte le sens. Distinct de zanak (chasser concrètement) : ici l'acte est seulement signalé, non exécuté.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -54,7 +61,10 @@
             "konu"
           ],
           "domaine": "action_militaire",
-          "note": "Forcer la reddition"
+          "note": "Forcer la reddition",
+          "definition": "Forcer un adversaire à la reddition ; le maintenir sous contrôle par la contrainte.",
+          "nuance": "Composition kon-u-maki : konu (garder) + maki (faire/forcer, cf. tulimaki). Sens littéral 'forcer à garder sous contrôle'. Distinct de konuki (capturer = prise physique) : soumettre vise la volonté, la reddition. Proche de mâter (konupaka), plus brutal.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -73,7 +83,10 @@
             "kori"
           ],
           "domaine": "emotion_combat",
-          "note": "Peur panique"
+          "note": "Peur panique",
+          "definition": "Être saisi d'une peur incontrôlable ; perdre son sang-froid au combat.",
+          "nuance": "Composition koli-volu : koli (var. de kori, cœur) + volu (fuir/désir de fuite, cf. voli). Sens littéral 'cœur qui fuit'. Métaphore corporelle de l'émotion (le cœur, siège des sentiments). Émotion de combat, défaut de la maîtrise valorisée par les Akoazana. À distinguer de siliataku (peur, regard-obscur, 03-grammaire).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -94,7 +107,10 @@
             "veli"
           ],
           "domaine": "action_militaire",
-          "note": "Opposition, défense"
+          "note": "Opposition, défense",
+          "definition": "Tenir bon face à l'assaut ; s'opposer fermement sans céder.",
+          "nuance": "Composition kon-u-veli : konu (garder) + veli (vraiment/fermement, cf. veri 'vrai'). Sens littéral 'garder vraiment, tenir bon'. Opposé de konumaki (soumettre) et okiak (attaquer, 06-actions). Le défenseur 'garde' sa position — racine konu partagée avec capturer/soumettre, mais sens défensif ici.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -114,7 +130,10 @@
             "kopu"
           ],
           "domaine": "violence",
-          "note": "Violence physique répétée"
+          "note": "Violence physique répétée",
+          "definition": "Frapper violemment et à répétition ; battre quelqu'un sans retenue.",
+          "nuance": "Composition kopu-su-vi : kopu (frapper, cf. soki) + su (pluriel/répétition) + vi. Sens littéral 'frapper plusieurs fois'. Violence brutale — culturellement déshonorante (cf. 'frapper comme une bête', le gourdin = déshonneur). Distinct de okiak (attaquer, combat réglé) : ici la violence est bestiale, rejetée.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -134,7 +153,10 @@
             "paka"
           ],
           "domaine": "action_militaire",
-          "note": "Soumettre par la force brutale"
+          "note": "Soumettre par la force brutale",
+          "definition": "Réprimer brutalement ; briser une résistance par la force.",
+          "nuance": "Composition kon-u-paka : konu (garder) + paka (mal/dur, cf. paku 'paix' inversé ou variante). Sens littéral 'garder par le mal'. Plus brutal que konumaki (soumettre) : mâter implique répression violente, briser. Famille konu- (capturer, soumettre, résister) avec nuance de cruauté.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -153,7 +175,10 @@
             "tuli"
           ],
           "domaine": "action_militaire",
-          "note": "Contrainte physique"
+          "note": "Contrainte physique",
+          "definition": "Retenir physiquement quelqu'un contre sa volonté ; immobiliser de force.",
+          "nuance": "Composition tuli-maki : tuli (rester/être, cf. tenu 'tenir') + maki (faire/forcer). Sens littéral 'faire rester'. Partage le formant -maki (forcer) avec konumaki (soumettre). Contrainte physique de mouvement, distincte de la soumission de la volonté.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -173,7 +198,10 @@
             "kazo"
           ],
           "domaine": "action_militaire",
-          "note": "Poursuite"
+          "note": "Poursuite",
+          "definition": "Poursuivre quelqu'un à la course ; pourchasser un fuyard.",
+          "nuance": "Composition peki-kazo : peki (pied, base) + kazo (rapide/vers). Sens littéral 'pieds rapides vers'. Proche de zanak (chasser le gibier) mais centré sur la poursuite humaine à pied. Complète zana 'chasse' dans le registre militaire : courir après = pourchasser un adversaire qui fuit (cf. tekun 'fuir', 06-actions).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -193,7 +221,10 @@
             "muka"
           ],
           "domaine": "action_militaire",
-          "note": "Déguisement/subterfuge"
+          "note": "Déguisement/subterfuge",
+          "definition": "Adopter l'apparence d'un autre ; user de déguisement ou de subterfuge pour tromper.",
+          "nuance": "Composition muka-vi : muka (visage) + vi. Sens littéral 'prendre le visage de'. Métaphore corporelle (le visage = l'identité). Tactique de ruse, cohérente avec l'asymétrie informationnelle recherchée face à l'Autre. Distinct du combat ouvert : relève de la stratégie/feinte.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -214,7 +245,10 @@
             "zana"
           ],
           "domaine": "combat_maritime",
-          "note": "Attaque d'un navire"
+          "note": "Attaque d'un navire",
+          "definition": "Attaque d'un navire ennemi ; assaut maritime contre une embarcation.",
+          "nuance": "Composition vanu-zana-ki : vanu (navire, embarcation) + zana (chasse/attaque) + ki. Sens littéral 'attaque de l'embarcation'. Combat maritime, lexique récent lié à l'expansion vers la côte et au contact avec les Nanzagouet (peuple maritime aux navires de bois). Spécialisation de zana (chasse/attaque) au domaine naval.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -233,7 +267,11 @@
             "konu"
           ],
           "domaine": "tactique_militaire",
-          "note": "Surveillance des ennemis"
+          "note": "Surveillance des ennemis",
+          "definition": "Surveillance vigilante des ennemis ; guet militaire pour anticiper leurs mouvements.",
+          "nuance": "Composition sili-konu : sili (regard) + konu (garder). Sens littéral 'regard gardé/vigilant'. DOUBLON IMPORTANT : 'observation' existe aussi en silimira (sili+mira, 12-abstraits, registre sacré) = l'ACTE général de regarder, valeur cardinale. silikonu se spécialise au sens TACTIQUE : surveillance hostile/défensive (regard de garde). Distinguer aussi de velak 'surveiller' (racine vela, guet) et de silikonu vs konusili (embuscade, ci-dessous) — mêmes racines, ordre inversé.",
+          "registre": "courant",
+          "exemple": "va aki su vo zoka silikonu"
         }
       ],
       "synonymes_fr": [
@@ -254,7 +292,10 @@
             "konu"
           ],
           "domaine": "action_militaire",
-          "note": "Questionnement de captifs"
+          "note": "Questionnement de captifs",
+          "definition": "Questionnement d'un captif pour en tirer des informations ; interroger un prisonnier.",
+          "nuance": "Composition voki-kon-uki : voki (voix, parole) + konu (garder/prendre). Sens littéral 'paroles pour prendre'. Combine la racine voki (parole) et la famille konu- (capturer) : extraire par la parole ce que le captif détient. Lié à konuki (capturer) — l'interrogatoire suit la capture.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -274,7 +315,10 @@
             "sili"
           ],
           "domaine": "tactique_militaire",
-          "note": "Tactique de surprise"
+          "note": "Tactique de surprise",
+          "definition": "Attaque par surprise menée depuis une position dissimulée ; guet-apens.",
+          "nuance": "Composition konu-sili : konu (garder) + sili (regard). Sens littéral 'garde cachée qui observe'. DOUBLON IMPORTANT : 'embuscade' existe aussi en zokuzana (zok-u-zana, 12-abstraits) = 'secret de chasse', via la dissimulation (seku/zoku). konusili insiste sur le guet posté (garde + observation), zokuzana sur le secret de la traque. Noter l'inversion exacte des racines avec silikonu (observation, ci-dessus) : mêmes composants, sens distincts selon l'ordre — silikonu = surveiller, konusili = se poster pour frapper.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -294,7 +338,10 @@
             "mako"
           ],
           "domaine": "tactique_militaire",
-          "note": "Supériorité numérique"
+          "note": "Supériorité numérique",
+          "definition": "Supériorité numérique sur l'adversaire ; avantage du grand nombre au combat.",
+          "nuance": "Composition iko-mako : iko (un/nombre, racine sacrée 'unique') + mako (grand, vaste). Sens littéral 'nombre grand'. Concept tactique. Emploie la racine sacrée iko (un, comptage) détournée vers la quantité — cf. système numérique base 12. Avantage stratégique distinct de la valeur guerrière individuelle.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -312,7 +359,10 @@
             "kanu"
           ],
           "domaine": "action_violente",
-          "note": "Enlever de force"
+          "note": "Enlever de force",
+          "definition": "Enlever de force ; saisir violemment et déchirer ce qu'on prend.",
+          "nuance": "Composition kanu-voli : kanu (main) + voli (vouloir/force, cf. voli 'désir'). Sens littéral 'prendre avec la main en arrachant'. Métaphore corporelle (la main qui agit). Action violente, plus brutale que pasak 'prendre'. Distinct de tiru 'tirer, extraire' (extraction maîtrisée) : ici la violence prime.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -332,7 +382,10 @@
             "pisu"
           ],
           "domaine": "etat_militaire",
-          "note": "État de faiblesse, non protégé"
+          "note": "État de faiblesse, non protégé",
+          "definition": "État de faiblesse ; exposé, mal protégé face à une attaque.",
+          "nuance": "Composition kon-u-pisu : konu (garde, protection) + pisu (petit, fin). Sens littéral 'petite garde/protection'. État militaire défensif faible — l'inverse de konuveli (résister, tenir bon). Famille konu- centrée ici sur la défense insuffisante. Décrit une cible, non une action.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -352,7 +405,10 @@
             "aska"
           ],
           "domaine": "qualite_guerriere",
-          "note": "Qualité de courage"
+          "note": "Qualité de courage",
+          "definition": "Courage face au danger ; bravoure du guerrier qui affronte l'épreuve.",
+          "nuance": "Composition kol-aska : kori (cœur, var. liée kol-) + aska (libre, racine sacrée). Sens littéral 'cœur libre'. Métaphore corporelle (cœur = courage) liée à la racine fondatrice aska (liberté). Qualité guerrière valorisée chez les Akoazana. Distinct de l'orgueil (kolimakovi), défaut, qui partage la racine kori.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -373,7 +429,10 @@
             "mako"
           ],
           "domaine": "defaut_caractere",
-          "note": "Défaut caractériel - arrogance"
+          "note": "Défaut caractériel - arrogance",
+          "definition": "Arrogant, imbu de lui-même ; qui surestime sa propre valeur.",
+          "nuance": "Composition koli-mako-vi : koli (cœur) + mako (grand). Sens littéral 'de très grand cœur' (au sens d'enflé). Défaut de caractère — l'orgueil stérile (gloire sans transmission) figure parmi les valeurs rejetées par la civilisation. Opposé culturel de l'audace (kolaska) malgré la racine kori commune : le cœur 'libre' (brave) vs le cœur 'trop grand' (vaniteux).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -394,7 +453,10 @@
             "veli"
           ],
           "domaine": "qualite",
-          "note": "Vertu - capacité d'attendre"
+          "note": "Vertu - capacité d'attendre",
+          "definition": "Capable d'attendre sans se précipiter ; qui garde son calme avant d'agir.",
+          "nuance": "Composition telu-veli : telu (lent/calme) + veli (vraiment, cf. veri). Sens littéral 'vraiment lent/calme'. Vertu cardinale — la patience et la vision multi-générationnelle sont valorisées ('observer avant d'agir'), la précipitation rejetée. Qualité tactique : attendre le bon moment (cf. embuscade).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -414,7 +476,10 @@
             "kori"
           ],
           "domaine": "qualite_tactique",
-          "note": "Prise de décision autonome"
+          "note": "Prise de décision autonome",
+          "definition": "Prise de décision autonome ; capacité à agir le premier sans attendre d'ordre.",
+          "nuance": "Composition iki-koli : iko (un/premier, racine sacrée, var. liée ik-) + kori (cœur/mouvement, var. koli). Sens littéral 'premier cœur/mouvement'. Qualité tactique : agir en premier. Emploie iko (premier) comme dans ikomako (surnombre). Le cœur (kori) ici = élan, impulsion d'action.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -432,7 +497,10 @@
             "sili"
           ],
           "domaine": "evenement",
-          "note": "Événement inattendu"
+          "note": "Événement inattendu",
+          "definition": "Événement inattendu ; ce qui survient sans avoir été anticipé.",
+          "nuance": "Composition sili-no-vi : sili (regard) + no (négation/lieu) + vi. Sens littéral 'non vu avant'. Métaphore du regard : l'imprévu est ce qui échappe à l'observation préalable — manquement à la valeur cardinale de prévoyance. Pertinent en contexte militaire (surprise tactique, cf. konusili embuscade subie).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -451,7 +519,10 @@
             "kota"
           ],
           "domaine": "etat",
-          "note": "Chaos, absence d'organisation"
+          "note": "Chaos, absence d'organisation",
+          "definition": "Chaos, absence d'organisation ; rupture de la cohésion d'un groupe.",
+          "nuance": "Composition kota-voli : kota (union, confluence) + voli (négation/dispersion). Sens littéral 'hors de la confluence/ordre'. Antithèse de la valeur centrale (kota = union/confluence) : le désordre est la confluence rompue. État dangereux d'une troupe au combat. Base de émeute (kotavolisu).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -471,7 +542,10 @@
             "kopu"
           ],
           "domaine": "emotion",
-          "note": "Traumatisme émotionnel violent"
+          "note": "Traumatisme émotionnel violent",
+          "definition": "Traumatisme émotionnel violent ; stupeur causée par un événement brutal.",
+          "nuance": "Composition koli-kopu-vi : koli (cœur, var. kori) + kopu (frapper, cf. kopusuvi). Sens littéral 'coup au cœur'. Métaphore corporelle : l'émotion frappe le cœur. Partage le formant kopu (frapper) avec 'rouer de coups' (kopusuvi) mais désigne l'impact psychique, non physique.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -490,7 +564,10 @@
             "kota"
           ],
           "domaine": "social_violent",
-          "note": "Rébellion collective"
+          "note": "Rébellion collective",
+          "definition": "Révolte collective ; soulèvement violent d'un groupe contre l'ordre établi.",
+          "nuance": "Composition kota-voli-su : désordre (kotavoli) + su (pluriel/collectif). Sens littéral 'multiples hors de l'ordre'. Dérivé direct de kotavoli (désordre) pluralisé : le chaos devenu mouvement de masse. Le suffixe su (pluriel, postposé) marque ici la dimension collective de la rébellion.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -511,7 +588,10 @@
             "toka"
           ],
           "domaine": "structure_militaire",
-          "note": "Groupe de défense permanent"
+          "note": "Groupe de défense permanent",
+          "definition": "Groupe de défense permanent posté en un lieu ; garnison militaire.",
+          "nuance": "Composition kon-u-tuli-toka : konu (garde) + tuli (rester, permanence) + toka (terre, lieu). Sens littéral 'lieu de garde permanente'. Composition à 3 racines (rare, déconseillée par la morphologie pour la longueur). Structure militaire fixe, cohérente avec les Cercles de Vigile (Sikuvela, camps de hauteur). Combine konu (garde) et tuli (rester) déjà vus séparément.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -529,7 +609,10 @@
             "zana"
           ],
           "domaine": "logistique_militaire",
-          "note": "Stocks d'urgence (armes, nourriture)"
+          "note": "Stocks d'urgence (armes, nourriture)",
+          "definition": "Stocks d'urgence (armes, nourriture) constitués pour la guerre ou la chasse.",
+          "nuance": "Composition zana-kovu : zana (chasse/guerre) + kovu (réservoir/contenant, cf. saki 'sac, contenant'). Sens littéral 'réservoir pour la chasse/guerre'. Logistique militaire. Emploie zana (chasse) au sens élargi de guerre — la racine guerrière centrale du fichier avec varu. Distinct des réserves civiles : ici destinées au combat.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [

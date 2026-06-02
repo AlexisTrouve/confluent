@@ -9,7 +9,11 @@
           "type": "racine",
           "forme_liee": "buk",
           "domaine": "materiau",
-          "note": "Matériau de l'arbre/forêt"
+          "note": "Matériau de l'arbre/forêt",
+          "definition": "Le bois en tant que matériau issu de l'arbre et de la forêt, employé pour construire, sculpter et chauffer. Racine standard désignant la matière ligneuse plutôt que l'arbre vivant.",
+          "nuance": "Racine standard (forme liée buk-), homophone de la racine 'viku' (forêt/arbre) qui sert pour 'radeau' (vaniviku = navire de bois). Doublon de matière à signaler : pour 'bois-matériau' on a buki, mais le bois comme essence/forêt est viku. Attention aussi à 'buka' (maison) et 'buki' (bois) qui ne diffèrent que d'une voyelle finale.",
+          "registre": "courant",
+          "exemple": "va miki vo buki pasaku"
         }
       ]
     },
@@ -24,7 +28,10 @@
             "toka",
             "ura"
           ],
-          "domaine": "materiau"
+          "domaine": "materiau",
+          "definition": "Matière façonnable issue de la terre mêlée d'eau, base de la poterie, des tablettes et de l'argile vivante sacrée qui durcit à l'air. Matériau central de la civilisation de la Confluence.",
+          "nuance": "Composition tok-a-ula (toka 'terre' + ura 'eau') = 'terre avec eau'. La graphie 'tokauula' double le u au contact de la liaison -a- et de la racine ura (hiatus accepté, voir morphologie). Lien culturel fort avec l'argile vivante (CONTEXTE_CIVILISATION) : matériau polyvalent et sacré.",
+          "registre": "courant"
         }
       ]
     },
@@ -39,7 +46,10 @@
             "kari",
             "suki"
           ],
-          "domaine": "materiau"
+          "domaine": "materiau",
+          "definition": "Métal travaillé, matière dure extraite et transformée par le feu, employée pour les outils et les bijoux. Composé évoquant la pierre passée par la flamme.",
+          "nuance": "Composition kar-i-suki (kari 'pierre' + suki 'feu') = 'pierre du feu'. DOUBLON important : data/lexique.json possède la racine 'metu' (id 167, sens 'métal, minerai'). Ici 'metal' = karisuki (composé descriptif) alors que la racine simple metu existe aussi — divergence à arbitrer. Distinguer de 'minerai' (kariuvuku, pierre brute du gouffre).",
+          "registre": "courant"
         }
       ]
     },
@@ -54,7 +64,10 @@
             "kari",
             "vuku"
           ],
-          "domaine": "materiau"
+          "domaine": "materiau",
+          "definition": "Roche brute non transformée tirée des profondeurs, matière première du métal avant le travail du feu. Évoque la pierre extraite du gouffre.",
+          "nuance": "Composition kar-i-vuku (kari 'pierre' + vuku 'profond/gouffre') = 'pierre du gouffre'. La graphie 'kariuvuku' insère un u de liaison. DOUBLON : la racine 'metu' (id 167) couvre 'métal, minerai' dans data/lexique.json. Distinction interne : minerai = kariuvuku (brut, du gouffre) vs métal = karisuki (raffiné, du feu). Résonance culturelle avec le Gouffre Humide et les mineurs Nakukeko.",
+          "registre": "courant"
         }
       ]
     },
@@ -64,7 +77,10 @@
           "confluent": "kesa",
           "type": "racine",
           "forme_liee": "kes",
-          "domaine": "materiau"
+          "domaine": "materiau",
+          "definition": "Résidu gris laissé par le feu, et par extension la teinte grise. Racine simple liée au feu éteint et au deuil.",
+          "nuance": "Racine standard (forme liée kes-), confirmée dans data/lexique.json (id 76, sens 'cendre, gris'). Double sens matière/couleur : kesa désigne aussi le gris, couleur associée aux Ailes-Grises (Aliaska). Pas de doublon.",
+          "registre": "courant"
         }
       ]
     },
@@ -74,7 +90,10 @@
           "confluent": "kina",
           "type": "racine",
           "forme_liee": "kin",
-          "domaine": "materiau"
+          "domaine": "materiau",
+          "definition": "Le sang, fluide vital du corps, marqueur de vie, de lignée et d'intensité. Racine simple à forte charge symbolique.",
+          "nuance": "Racine standard (forme liée kin-), confirmée dans data/lexique.json (id 77, corps_sens). Usage émotionnel attesté en grammaire : kina suki 'sang-feu' = colère, et kina marque l'intensité/vitalité. Classé en matériau ici mais relève aussi du corps. Pas de doublon.",
+          "registre": "courant"
         }
       ]
     },
@@ -84,7 +103,10 @@
           "confluent": "lapu",
           "type": "racine",
           "forme_liee": "lap",
-          "domaine": "materiau"
+          "domaine": "materiau",
+          "definition": "Le lait, et plus largement tout liquide blanc nourricier. Racine simple désignant la matière laiteuse.",
+          "nuance": "Racine standard (forme liée lap-), confirmée dans data/lexique.json (id 81, sens 'lait, liquide blanc'). Peut évoquer le 'lait de pierre' mentionné dans le contexte (concrétions minérales des grottes) par juxtaposition lapu kari. Pas de doublon.",
+          "registre": "courant"
         }
       ]
     },
@@ -94,7 +116,10 @@
           "confluent": "lina",
           "type": "racine",
           "forme_liee": "lin",
-          "domaine": "forme"
+          "domaine": "forme",
+          "definition": "Une ligne, un tracé droit, une marque linéaire. Racine désignant la forme géométrique allongée.",
+          "nuance": "Racine standard (forme liée lin-), confirmée dans data/lexique.json (id 83, sens 'ligne, corde'). DOUBLON interne au fichier : 'ligne' et 'corde' partagent exactement la même racine lina, distinguées seulement par le domaine ('forme' vs 'outil'). Le sens concret se désambiguïse par le contexte.",
+          "registre": "courant"
         }
       ]
     },
@@ -104,7 +129,10 @@
           "confluent": "lina",
           "type": "racine",
           "forme_liee": "lin",
-          "domaine": "outil"
+          "domaine": "outil",
+          "definition": "Une corde, un lien souple servant à attacher, lier ou tisser. Même racine que 'ligne', l'objet étant conçu comme une ligne matérialisée.",
+          "nuance": "Racine standard (forme liée lin-), domaine 'outil'. DOUBLON exact avec 'ligne' (même confluent lina, id 83). À noter aussi 'kopu' qui apparaît dans 'chaine' (kopuukari = corde de pierre) comme racine de corde alternative non listée dans data/lexique.json — incohérence de racine à signaler. Distinguer de 'ketu' (chaîne, lien, id 165).",
+          "registre": "courant"
         }
       ]
     },
@@ -114,7 +142,10 @@
           "confluent": "saki",
           "type": "racine",
           "forme_liee": "sak",
-          "domaine": "objet"
+          "domaine": "objet",
+          "definition": "Un sac, un contenant souple servant à porter et conserver. Racine désignant tout contenant pour transporter.",
+          "nuance": "Racine standard (forme liée sak-), confirmée dans data/lexique.json (id 104, sens 'sac, contenant'). Synonyme FR 'contenant'. Sert de base au 'vase rituel' (sakuasa) et à 'lampe' (solausaku). Distinguer de 'saku' (forme liée de saki utilisée dans les compositions). Pas de doublon strict.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -127,7 +158,10 @@
           "confluent": "tabi",
           "type": "racine",
           "forme_liee": "tab",
-          "domaine": "objet"
+          "domaine": "objet",
+          "definition": "Tablette ou plaque (d'argile, de pierre), support plat servant à graver glyphes et inscriptions. Objet clé de l'écriture et de la mémoire.",
+          "nuance": "Racine standard (forme liée tab-), confirmée dans data/lexique.json (id 113, sens 'tablette, plaque'). Synonyme FR 'plaque'. Fortement liée à la culture des glyphes et tablettes du Gouffre (artefacts multi-générationnels). Base de 'document' (tabukova).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -145,7 +179,10 @@
             "tabu",
             "kova"
           ],
-          "domaine": "objet"
+          "domaine": "objet",
+          "definition": "Un document, un écrit gravé, une tablette portant peinture ou inscription. Support permanent du savoir transmis.",
+          "nuance": "Composition tab-u-kova (tabi 'tablette' + kova 'peinture/gravure/fresque') = 'tablette de gravure'. DOUBLON conceptuel : data/lexique.json a la racine 'toku' (id 154, sens 'document, écrit') comme racine simple pour 'document'. Ici on utilise le composé tabukova — divergence à arbitrer. Synonyme FR 'écrit'.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -163,7 +200,10 @@
             "kopu",
             "kari"
           ],
-          "domaine": "objet"
+          "domaine": "objet",
+          "definition": "Une chaîne, un lien rigide fait d'éléments durs assemblés, servant à attacher ou retenir. Conçue comme une corde de pierre.",
+          "nuance": "Composition kop-u-kari (kopu 'corde' + kari 'pierre') = 'corde de pierre'. PROBLÈME : la racine 'kopu' (corde) n'apparaît PAS dans data/lexique.json (qui a lina pour corde et ketu id 165 pour 'chaîne, lien'). DOUBLON : ketu existe déjà comme racine simple pour 'chaîne'. Synonyme FR 'lien'. À arbitrer : kopuukari composé vs ketu racine.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -181,7 +221,10 @@
             "saku",
             "asa"
           ],
-          "domaine": "objet_rituel"
+          "domaine": "objet_rituel",
+          "definition": "Contenant consacré employé dans les cérémonies, réceptacle du sacré pour les offrandes et libations. Objet du domaine rituel.",
+          "nuance": "Composition sak-u-asa (saki 'contenant' + asa 'sacré/divin') = 'contenant du sacré'. Emploie la racine sacrée asa (id 3), ce qui élève le registre. Cohérent avec le culte des ancêtres et les rituels. Pas de doublon.",
+          "registre": "rituel"
         }
       ]
     },
@@ -196,7 +239,10 @@
             "suki",
             "loku"
           ],
-          "domaine": "structure"
+          "domaine": "structure",
+          "definition": "Le foyer, l'âtre où brûle le feu domestique, cœur chaleureux de l'habitation. Lieu du feu plutôt qu'objet mobile.",
+          "nuance": "Composition suk-i-loku (suki 'feu' + loku 'lieu') = 'feu du lieu'. La graphie attendue serait 'sukiuloku' (liaison -i-) mais le fichier note 'sukiloku' — graphie à vérifier. DOUBLON sémantique avec 'maison/buka' (foyer domestique) : buka couvre 'habitation, foyer domestique', tandis que sukiloku est précisément l'âtre. Distinguer aussi de 'chambre' (lokuusupu) qui partage la racine loku.",
+          "registre": "courant"
         }
       ]
     },
@@ -211,7 +257,10 @@
             "loku",
             "supu"
           ],
-          "domaine": "structure"
+          "domaine": "structure",
+          "definition": "Une chambre, une pièce destinée au sommeil et au repos. Lieu intérieur dédié à dormir.",
+          "nuance": "Composition lok-u-supu (loku 'lieu' + supu/sopi 'sommeil') = 'lieu du sommeil'. Synonyme FR 'pièce'. DOUBLON : data/lexique.json a la racine 'kama' (id 135, sens 'chambre, pièce') comme racine simple — divergence à arbitrer (composé lokuusupu vs racine kama). Note : la racine de sommeil est 'sopi' (id 111) dans data, pas 'supu' — incohérence de forme à signaler.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -229,7 +278,10 @@
             "teki",
             "loku"
           ],
-          "domaine": "structure"
+          "domaine": "structure",
+          "definition": "Une porte, un passage ou seuil donnant accès à un lieu. Ouverture conçue comme le chemin d'un lieu.",
+          "nuance": "Composition tek-i-loku (teki 'aller/chemin' + loku 'lieu') = 'chemin du lieu'. Synonyme FR 'passage'. DOUBLON : data/lexique.json a la racine 'pori' (id 169, sens 'porte, passage') comme racine simple — divergence à arbitrer (composé tekiuloku vs racine pori). Partage la racine loku avec 'foyer' et 'chambre'.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -242,7 +294,10 @@
           "confluent": "zoni",
           "type": "racine",
           "forme_liee": "zon",
-          "domaine": "espace"
+          "domaine": "espace",
+          "definition": "Une zone, une région, une étendue d'espace délimitée. Racine désignant une portion de territoire.",
+          "nuance": "Racine standard (forme liée zon-), confirmée dans data/lexique.json (id 133, sens 'zone, region'). Synonyme FR 'région'. Classé en objets/matériaux ici mais relève plutôt de l'espace/lieu. Pas de doublon.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -260,7 +315,10 @@
             "vanu",
             "pisu"
           ],
-          "domaine": "objet"
+          "domaine": "objet",
+          "definition": "Une petite embarcation, barque légère pour la pêche et la navigation fluviale. Petit navire des Enfants du Courant.",
+          "nuance": "Composition van-i-pisu (vanu 'navire' + pisu 'petit') = 'petit navire'. La liaison -i- (agent) est inhabituelle ici pour une qualification de taille (on attendrait juxtaposition ou -a-) — choix à signaler. Distinguer de 'radeau' (vaniviku) qui partage la racine vanu. Culturellement liée aux Nakuura et aux villages sur pilotis.",
+          "registre": "courant"
         }
       ]
     },
@@ -275,7 +333,10 @@
             "vanu",
             "viku"
           ],
-          "domaine": "objet"
+          "domaine": "objet",
+          "definition": "Un radeau, plateforme flottante faite de bois assemblé pour traverser ou transporter sur l'eau. Embarcation rustique en bois.",
+          "nuance": "Composition van-i-viku (vanu 'navire' + viku 'forêt/arbre/bois') = 'navire de bois'. Emploie viku (bois-forêt, id 23) et non buki (bois-matériau) — choix de racine 'bois' à noter, cohérent avec le doublon bois/buki vs viku. Partage la racine vanu avec 'barque'. Évoque les navires-bois des Nanzagouet (premier Autre maritime).",
+          "registre": "courant"
         }
       ]
     },
@@ -290,7 +351,10 @@
             "suki",
             "viku"
           ],
-          "domaine": "objet"
+          "domaine": "objet",
+          "definition": "Une torche, bâton de bois enflammé servant à éclairer les souterrains et les marches nocturnes. Feu porté.",
+          "nuance": "Composition suk-i-viku (suki 'feu' + viku 'bois') = 'feu de bois'. Emploie viku (bois) comme combustible. Distinguer de 'lampe' (solausaku, lumière contenue) : torche = flamme nue portée, lampe = lumière dans un contenant. Outil typique des Nakukeko en grottes.",
+          "registre": "courant"
         }
       ]
     },
@@ -305,7 +369,10 @@
             "sora",
             "saku"
           ],
-          "domaine": "objet"
+          "domaine": "objet",
+          "definition": "Une lampe, source de lumière entretenue dans un contenant (huile, graisse), éclairant durablement un lieu. Lumière domestiquée.",
+          "nuance": "Composition sol-a-saku (sora 'soleil/lumière' + saku/saki 'contenant') = 'lumière avec contenant'. Note phonétique : sora (forme liée sor-) devient 'sol-' au contact de la liaison — la finale r->l est une adaptation à signaler. Distinguer de 'torche' (sukiuviku, flamme nue). Partage saki/contenant avec 'sac' et 'vase rituel'.",
+          "registre": "courant"
         }
       ]
     },
@@ -320,7 +387,10 @@
             "veku",
             "vasi"
           ],
-          "domaine": "objet"
+          "domaine": "objet",
+          "definition": "Un vêtement, étoffe tissée portée sur le corps pour se couvrir et se protéger. Objet de peau travaillée.",
+          "nuance": "Composition vek-u-vasi (veku 'peau' + vasi 'tissé/pont/lien') = 'peau tissée'. PROBLÈME : la racine 'veku' (peau) n'est pas dans data/lexique.json, qui a 'peli' (id 95, sens 'peau, surface') pour peau — incohérence de racine 'peau' à signaler. 'vasi' (id 60) signifie 'pont, lien, passage' dans data, le sens 'tisser/tissé' relève plutôt de 'tiki' (id 119). Partage veku avec 'cape'.",
+          "registre": "courant"
         }
       ]
     },
@@ -335,7 +405,10 @@
             "veku",
             "zaki"
           ],
-          "domaine": "objet"
+          "domaine": "objet",
+          "definition": "Une cape, vêtement enveloppant porté sur les épaules pour se protéger du froid, du vent et des regards. Manteau de protection.",
+          "nuance": "Composition vek-u-zaki (veku 'peau' + zaki 'garder/protéger') = 'peau de protection'. Même problème de racine 'veku' (peau absente de data, où c'est 'peli'). 'zaki' est polysémique dans data : 'garder/protéger' (id 44), 'justice/équité' (id 130), ici sens protecteur. Partage veku avec 'vetement'.",
+          "registre": "courant"
         }
       ]
     },
@@ -350,7 +423,10 @@
             "kari",
             "ora"
           ],
-          "domaine": "objet"
+          "domaine": "objet",
+          "definition": "Un bijou, ornement précieux taillé dans la pierre, porté pour son éclat et sa valeur. Pierre d'aurore parée.",
+          "nuance": "Composition kar-i-ola (kari 'pierre' + ora 'aurore/aube') = 'pierre de l'aurore'. La graphie 'kariuola' / 'ola' adapte la racine sacrée ora (id 14, forme liée or-) — passage ora->ola (r->l) à signaler, parallèle à sora->sol dans 'lampe'. Emploie une racine sacrée (ora), élevant la connotation. Symbolique de l'aurore = élection divine, couleurs des yeux Ciels-clairs.",
+          "registre": "courant"
         }
       ]
     },
@@ -365,7 +441,10 @@
             "kitan",
             "asa"
           ],
-          "domaine": "objet_rituel"
+          "domaine": "objet_rituel",
+          "definition": "Une offrande, don consacré présenté aux ancêtres ou aux esprits lors des rituels. Acte de donner sacralisé.",
+          "nuance": "Composition kit-a-n-asa (kitan 'donner', forme verbale + asa 'sacré') = 'don avec sacré'. Emploie la racine verbale kitan (verbe de kita id 37) plutôt que la racine nominale — nominalisation à noter, et le -n- de liaison est inhabituel. Emploie la racine sacrée asa. Objet rituel central du culte des ancêtres.",
+          "registre": "rituel"
         }
       ]
     },
@@ -380,7 +459,10 @@
             "zaki",
             "mako"
           ],
-          "domaine": "objet"
+          "domaine": "objet",
+          "definition": "Un trésor, bien précieux gardé et de grande valeur, accumulé et protégé au fil des générations. Ce qui est gardé pour sa grandeur.",
+          "nuance": "Composition zak-i-mako (zaki 'garder/protéger' + mako 'grand/vaste') = 'gardé de grandeur'. La graphie 'zakiumako' insère un u. 'zaki' est polysémique (garder id 44 / justice id 130). Cohérent avec la valeur culturelle des artefacts multi-générationnels accumulés. Pas de doublon direct.",
+          "registre": "courant"
         }
       ]
     },
@@ -395,7 +477,10 @@
             "asa",
             "aita"
           ],
-          "domaine": "objet_rituel"
+          "domaine": "objet_rituel",
+          "definition": "Une relique, objet sacré hérité des ancêtres, vénéré comme lien tangible avec la lignée et les Premiers. Vestige consacré du passé.",
+          "nuance": "Composition as-a-aita (asa 'sacré' + aita 'ancêtre/ancien') = 'sacré avec ancêtre'. RARETÉ : double racine sacrée (asa id 3 + aita id 2), structure très valorisée (comme Oraumi), justifiant le registre rituel élevé. Graphie 'asaaita' avec hiatus a-a accepté. Liée au culte des ancêtres et aux Premiers Ancêtres du Gouffre Humide.",
+          "registre": "rituel"
         }
       ]
     },
@@ -406,7 +491,10 @@
           "type": "racine",
           "forme_liee": "buk",
           "domaine": "structure",
-          "note": "Habitation, foyer domestique"
+          "note": "Habitation, foyer domestique",
+          "definition": "Une maison, habitation et foyer domestique où vit la famille. Racine désignant le lieu de vie quotidien.",
+          "nuance": "Racine standard (forme liée buk-), note du fichier 'habitation, foyer domestique'. PROBLÈME : 'buka' (maison) n'est PAS dans data/lexique.json comme racine — racine ajoutée à signaler. Quasi-homophone de 'buki' (bois, id 73) : seule la voyelle finale diffère, risque de confusion. DOUBLON sémantique avec 'foyer' (sukiloku) sur le sens 'foyer domestique'. Synonymes FR : habitation, demeure, logis.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
