@@ -38,7 +38,7 @@
     "miasmes": {
       "traductions": [
         {
-          "confluent": "smiboseve",
+          "confluent": "venuzoka",
           "type": "composition",
           "composition": "ven-u-zoka",
           "sens_litteral": "Air de l'ennemi",
@@ -144,7 +144,7 @@
     "eboulement": {
       "traductions": [
         {
-          "confluent": "tverameppu",
+          "confluent": "kaloavuku",
           "type": "composition",
           "composition": "kal-oa-vuku",
           "sens_litteral": "Pierre vers le gouffre",
@@ -204,7 +204,7 @@
     "crevasse": {
       "traductions": [
         {
-          "confluent": "nvipovito",
+          "confluent": "vukukali",
           "type": "composition",
           "composition": "vuk-u-kali",
           "sens_litteral": "Gouffre de pierre",
@@ -234,7 +234,7 @@
     "avalanche": {
       "traductions": [
         {
-          "confluent": "bvovasapisu",
+          "confluent": "nisoavuku",
           "type": "composition",
           "composition": "nis-oa-vuku",
           "sens_litteral": "Neige vers le gouffre",
@@ -249,7 +249,7 @@
     "feu sauvage": {
       "traductions": [
         {
-          "confluent": "kpizotahvu",
+          "confluent": "sukizoka",
           "type": "composition",
           "composition": "suk-i-zoka",
           "sens_litteral": "Feu de l'ennemi",

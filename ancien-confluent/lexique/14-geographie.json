@@ -5,7 +5,7 @@
     "confluence de rivieres": {
       "traductions": [
         {
-          "confluent": "mnebinuppo",
+          "confluent": "nulaakota",
           "type": "composition",
           "composition": "nul-aa-kota",
           "sens_litteral": "Rivière mêlée à union",
@@ -20,7 +20,7 @@
     "riviere azur": {
       "traductions": [
         {
-          "confluent": "klisuzale",
+          "confluent": "nuluzelu",
           "type": "composition",
           "composition": "nul-u-zelu",
           "sens_litteral": "Rivière du ciel",
@@ -35,7 +35,7 @@
     "riviere verte": {
       "traductions": [
         {
-          "confluent": "lvekobeni",
+          "confluent": "nuluviku",
           "type": "composition",
           "composition": "nul-u-viku",
           "sens_litteral": "Rivière de la forêt",
@@ -65,7 +65,7 @@
     "pic": {
       "traductions": [
         {
-          "confluent": "pkuzezelo",
+          "confluent": "tasupiki",
           "type": "composition",
           "composition": "tas-u-piki",
           "sens_litteral": "Montagne pointue",
@@ -143,7 +143,7 @@
     "cote": {
       "traductions": [
         {
-          "confluent": "nbupukapu",
+          "confluent": "tokumelu",
           "type": "composition",
           "composition": "tok-u-melu",
           "sens_litteral": "Terre de la mer",
@@ -158,7 +158,7 @@
     "horizon": {
       "traductions": [
         {
-          "confluent": "btalatuka",
+          "confluent": "zelutoka",
           "type": "composition",
           "composition": "zel-u-toka",
           "sens_litteral": "Ciel de la terre",
@@ -173,7 +173,7 @@
     "grotte": {
       "traductions": [
         {
-          "confluent": "bsekusoto",
+          "confluent": "vukutoka",
           "type": "composition",
           "composition": "vuk-u-toka",
           "sens_litteral": "Gouffre dans la terre",
@@ -203,7 +203,7 @@
     "cascade": {
       "traductions": [
         {
-          "confluent": "eotesehevi",
+          "confluent": "uloavuku",
           "type": "composition",
           "composition": "ul-oa-vuku",
           "sens_litteral": "Eau vers le gouffre",
@@ -248,7 +248,7 @@
     "crevasse": {
       "traductions": [
         {
-          "confluent": "ktovoleno",
+          "confluent": "vukukali",
           "type": "composition",
           "composition": "vuk-u-kali",
           "sens_litteral": "Gouffre dans la pierre",

@@ -46,7 +46,7 @@
     "metal": {
       "traductions": [
         {
-          "confluent": "vmevubakba",
+          "confluent": "kalisuki",
           "type": "composition",
           "composition": "kal-i-suki",
           "sens_litteral": "Pierre du feu",
@@ -218,7 +218,7 @@
     "foyer": {
       "traductions": [
         {
-          "confluent": "bvuvibolvu",
+          "confluent": "sukiloku",
           "type": "composition",
           "composition": "suk-i-loku",
           "sens_litteral": "Feu du lieu",
@@ -233,7 +233,7 @@
     "grenier": {
       "traductions": [
         {
-          "confluent": "bkisesiku",
+          "confluent": "lokuzaki",
           "type": "composition",
           "composition": "lok-u-zaki",
           "sens_litteral": "Lieu gardé",
@@ -310,7 +310,7 @@
     "barque": {
       "traductions": [
         {
-          "confluent": "naviupisu",
+          "confluent": "vanipisu",
           "type": "composition",
           "composition": "van-i-pisu",
           "sens_litteral": "Petit navire",
@@ -325,7 +325,7 @@
     "radeau": {
       "traductions": [
         {
-          "confluent": "naviuviku",
+          "confluent": "vaniviku",
           "type": "composition",
           "composition": "van-i-viku",
           "sens_litteral": "Navire de bois",
@@ -445,7 +445,7 @@
     "relique": {
       "traductions": [
         {
-          "confluent": "iovenalsa",
+          "confluent": "asaaita",
           "type": "composition",
           "composition": "as-a-aita",
           "sens_litteral": "Sacré avec ancêtre",

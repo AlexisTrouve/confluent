@@ -227,7 +227,7 @@ Lieux:
 - Uraakota (La Confluence): ur-aa-kota
 - Vukuura (Gouffre Humide): vuk-u-ura
 - Kekutoka (Antres des Échos): kek-u-toka
-- Rikuvela (Cercles de Vigile): rik-u-vela
+- Sikuvela (Cercles de Vigile): sik-u-vela
 - Talusavu (Halls des Serments): tal-u-savu
 - Ekakova (Grande Fresque): ek-a-kova
 
