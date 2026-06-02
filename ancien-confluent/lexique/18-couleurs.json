@@ -64,9 +64,9 @@
     "blanc": {
       "traductions": [
         {
-          "confluent": "tbibu",
+          "confluent": "pabe",
           "type": "racine",
-          "forme_liee": "tbib",
+          "forme_liee": "pab",
           "domaine": "couleur",
           "note": "Couleur du lait"
         }
@@ -91,9 +91,9 @@
     "noir": {
       "traductions": [
         {
-          "confluent": "bkipe",
+          "confluent": "kate",
           "type": "racine",
-          "forme_liee": "bkip",
+          "forme_liee": "kat",
           "domaine": "couleur",
           "note": "Couleur de l'ombre"
         }
@@ -102,9 +102,9 @@
     "vert": {
       "traductions": [
         {
-          "confluent": "nsime",
+          "confluent": "mane",
           "type": "racine",
-          "forme_liee": "nsim",
+          "forme_liee": "man",
           "domaine": "couleur",
           "note": "Couleur de la forêt"
         }
@@ -113,9 +113,9 @@
     "bleu": {
       "traductions": [
         {
-          "confluent": "spati",
+          "confluent": "sabo",
           "type": "racine",
-          "forme_liee": "spat",
+          "forme_liee": "sab",
           "domaine": "couleur",
           "note": "Couleur du ciel"
         }
@@ -124,9 +124,9 @@
     "azur": {
       "traductions": [
         {
-          "confluent": "ssebi",
+          "confluent": "zale",
           "type": "racine",
-          "forme_liee": "sseb",
+          "forme_liee": "zal",
           "domaine": "couleur"
         }
       ]
@@ -236,9 +236,9 @@
     "lumineux": {
       "traductions": [
         {
-          "confluent": "kvana",
+          "confluent": "tame",
           "type": "racine",
-          "forme_liee": "kvan",
+          "forme_liee": "tam",
           "domaine": "qualificatif"
         }
       ],
@@ -263,7 +263,7 @@
     "patine": {
       "traductions": [
         {
-          "confluent": "kmanilimbi",
+          "confluent": "koluaita",
           "type": "composition",
           "composition": "kol-u-aita",
           "sens_litteral": "Couleur des ancêtres",
@@ -281,9 +281,9 @@
     "gravure": {
       "traductions": [
         {
-          "confluent": "lmoso",
+          "confluent": "nave",
           "type": "racine",
-          "forme_liee": "lmos",
+          "forme_liee": "nav",
           "domaine": "art"
         }
       ]

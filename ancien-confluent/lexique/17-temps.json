@@ -137,9 +137,9 @@
     "nuit": {
       "traductions": [
         {
-          "confluent": "vzena",
+          "confluent": "bami",
           "type": "racine",
-          "forme_liee": "vzen",
+          "forme_liee": "bam",
           "domaine": "temps",
           "note": "Même racine que lune"
         }
@@ -174,9 +174,9 @@
     "futur": {
       "traductions": [
         {
-          "confluent": "lkopi",
+          "confluent": "saze",
           "type": "racine",
-          "forme_liee": "lkop",
+          "forme_liee": "saz",
           "domaine": "temps",
           "note": "Même racine que descendant"
         }
