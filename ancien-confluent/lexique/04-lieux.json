@@ -254,11 +254,11 @@
         {
           "confluent": "velauseli",
           "type": "composition",
-          "composition": "vel-a-melu",
+          "composition": "vel-a-seli",
           "sens_litteral": "Vigile avec mer",
           "racines": [
             "vela",
-            "melu"
+            "seli"
           ],
           "categorie": "structure"
         }
@@ -284,11 +284,11 @@
         {
           "confluent": "zakiukari",
           "type": "composition",
-          "composition": "zak-i-kali",
+          "composition": "zak-i-kari",
           "sens_litteral": "Protection de pierre",
           "racines": [
             "zaki",
-            "kali"
+            "kari"
           ],
           "categorie": "structure"
         }

@@ -199,12 +199,12 @@
         {
           "confluent": "ulakotaseli",
           "type": "composition",
-          "composition": "ula-kota-melu",
+          "composition": "ula-kota-seli",
           "sens_litteral": "Confluence d'eau vers la mer",
           "racines": [
             "ura",
             "kota",
-            "melu"
+            "seli"
           ],
           "domaine": "geographie_maritime",
           "note": "Où le fleuve rencontre la mer"
@@ -258,10 +258,10 @@
         {
           "confluent": "seliuki",
           "type": "composition",
-          "composition": "melu-uki",
+          "composition": "seli-uki",
           "sens_litteral": "Mouvement de la mer",
           "racines": [
-            "melu"
+            "seli"
           ],
           "domaine": "phenomene_maritime",
           "note": "Montée et descente de l'eau"
@@ -277,10 +277,10 @@
         {
           "confluent": "seliloli",
           "type": "composition",
-          "composition": "melu-loli",
+          "composition": "seli-loli",
           "sens_litteral": "Roulement de la mer",
           "racines": [
-            "melu"
+            "seli"
           ],
           "domaine": "phenomene_maritime",
           "note": "Ondulation de l'eau"
@@ -547,10 +547,10 @@
         {
           "confluent": "besilatuli",
           "type": "composition",
-          "composition": "betu-ula-tuli",
+          "composition": "besi-ula-tuli",
           "sens_litteral": "Bête qui flotte sur l'eau",
           "racines": [
-            "betu",
+            "besi",
             "ura"
           ],
           "domaine": "perception",
@@ -583,11 +583,11 @@
         {
           "confluent": "selizeru",
           "type": "composition",
-          "composition": "melu-zelu",
+          "composition": "seli-zeru",
           "sens_litteral": "Ciel furieux de la mer",
           "racines": [
-            "melu",
-            "zelu"
+            "seli",
+            "zeru"
           ],
           "domaine": "danger_maritime",
           "note": "Tempête en mer"
@@ -622,10 +622,10 @@
         {
           "confluent": "seliloli",
           "type": "composition",
-          "composition": "melu-loli",
+          "composition": "seli-loli",
           "sens_litteral": "Ondulation lente de la mer",
           "racines": [
-            "melu"
+            "seli"
           ],
           "domaine": "phenomene_maritime",
           "note": "Vagues longues et régulières"

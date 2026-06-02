@@ -48,10 +48,10 @@
         {
           "confluent": "karisuki",
           "type": "composition",
-          "composition": "kal-i-suki",
+          "composition": "kar-i-suki",
           "sens_litteral": "Pierre du feu",
           "racines": [
-            "kali",
+            "kari",
             "suki"
           ],
           "domaine": "materiau"
@@ -63,10 +63,10 @@
         {
           "confluent": "kariuvuku",
           "type": "composition",
-          "composition": "kal-i-vuku",
+          "composition": "kar-i-vuku",
           "sens_litteral": "Pierre du gouffre",
           "racines": [
-            "kali",
+            "kari",
             "vuku"
           ],
           "domaine": "materiau"
@@ -172,11 +172,11 @@
         {
           "confluent": "kopuukari",
           "type": "composition",
-          "composition": "kop-u-kali",
+          "composition": "kop-u-kari",
           "sens_litteral": "Corde de pierre",
           "racines": [
             "kopu",
-            "kali"
+            "kari"
           ],
           "domaine": "objet"
         }
@@ -402,10 +402,10 @@
         {
           "confluent": "kariuola",
           "type": "composition",
-          "composition": "kal-i-ola",
+          "composition": "kar-i-ola",
           "sens_litteral": "Pierre de l'aurore",
           "racines": [
-            "kali",
+            "kari",
             "ora"
           ],
           "domaine": "objet"

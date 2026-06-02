@@ -221,11 +221,11 @@
         {
           "confluent": "kotaitori",
           "type": "composition",
-          "composition": "kot-a-toli",
+          "composition": "kot-a-tori",
           "sens_litteral": "Union avec personnes",
           "racines": [
             "kota",
-            "toli"
+            "tori"
           ],
           "domaine": "institution"
         }

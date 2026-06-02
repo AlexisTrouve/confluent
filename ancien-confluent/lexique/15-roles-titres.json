@@ -78,11 +78,11 @@
         {
           "confluent": "sekitori",
           "type": "composition",
-          "composition": "sek-i-toli",
+          "composition": "sek-i-tori",
           "sens_litteral": "Porteur de savoir",
           "racines": [
             "seka",
-            "toli"
+            "tori"
           ],
           "domaine": "titre"
         }
@@ -129,11 +129,11 @@
         {
           "confluent": "zanatori",
           "type": "composition",
-          "composition": "zan-a-toli",
+          "composition": "zan-a-tori",
           "sens_litteral": "Personne de la chasse",
           "racines": [
             "zana",
-            "toli"
+            "tori"
           ],
           "domaine": "titre"
         }
@@ -149,11 +149,11 @@
         {
           "confluent": "okitori",
           "type": "composition",
-          "composition": "ok-i-toli",
+          "composition": "ok-i-tori",
           "sens_litteral": "Personne de l'épreuve",
           "racines": [
             "oki",
-            "toli"
+            "tori"
           ],
           "domaine": "titre"
         }
@@ -164,11 +164,11 @@
         {
           "confluent": "alkutori",
           "type": "composition",
-          "composition": "alk-u-toli",
+          "composition": "alk-u-tori",
           "sens_litteral": "Personne de l'arc",
           "racines": [
             "arku",
-            "toli"
+            "tori"
           ],
           "domaine": "titre"
         }
@@ -209,11 +209,11 @@
         {
           "confluent": "velatori",
           "type": "composition",
-          "composition": "vel-a-toli",
+          "composition": "vel-a-tori",
           "sens_litteral": "Personne de vigile",
           "racines": [
             "vela",
-            "toli"
+            "tori"
           ],
           "domaine": "titre"
         }
@@ -247,11 +247,11 @@
         {
           "confluent": "umitori",
           "type": "composition",
-          "composition": "um-i-toli",
+          "composition": "um-i-tori",
           "sens_litteral": "Personne de l'esprit",
           "racines": [
             "umi",
-            "toli"
+            "tori"
           ],
           "domaine": "titre_spirituel"
         }
@@ -262,12 +262,12 @@
         {
           "confluent": "aluzakitori",
           "type": "composition",
-          "composition": "al-u-zak-i-toli",
+          "composition": "al-u-zak-i-tori",
           "sens_litteral": "Personne gardienne des grues",
           "racines": [
             "alu",
             "zaki",
-            "toli"
+            "tori"
           ],
           "domaine": "titre"
         }
@@ -353,11 +353,11 @@
         {
           "confluent": "nekaukari",
           "type": "composition",
-          "composition": "nek-a-kali",
+          "composition": "nek-a-kari",
           "sens_litteral": "Faiseur avec pierre",
           "racines": [
             "neka",
-            "kali"
+            "kari"
           ],
           "domaine": "titre"
         }
@@ -368,11 +368,11 @@
         {
           "confluent": "kovatori",
           "type": "composition",
-          "composition": "kov-a-toli",
+          "composition": "kov-a-tori",
           "sens_litteral": "Personne de la gravure",
           "racines": [
             "kova",
-            "toli"
+            "tori"
           ],
           "domaine": "titre"
         }
@@ -383,11 +383,11 @@
         {
           "confluent": "koluutori",
           "type": "composition",
-          "composition": "kol-u-toli",
+          "composition": "kol-u-tori",
           "sens_litteral": "Personne des couleurs",
           "racines": [
             "kolu",
-            "toli"
+            "tori"
           ],
           "domaine": "titre"
         }
@@ -398,11 +398,11 @@
         {
           "confluent": "vasitori",
           "type": "composition",
-          "composition": "vas-i-toli",
+          "composition": "vas-i-tori",
           "sens_litteral": "Personne du tissage",
           "racines": [
             "vasi",
-            "toli"
+            "tori"
           ],
           "domaine": "titre"
         }
@@ -413,11 +413,11 @@
         {
           "confluent": "pisutori",
           "type": "composition",
-          "composition": "pis-u-toli",
+          "composition": "pis-u-tori",
           "sens_litteral": "Personne du poisson",
           "racines": [
             "pisu",
-            "toli"
+            "tori"
           ],
           "domaine": "titre"
         }
@@ -428,11 +428,11 @@
         {
           "confluent": "vukutori",
           "type": "composition",
-          "composition": "vuk-u-toli",
+          "composition": "vuk-u-tori",
           "sens_litteral": "Personne du gouffre",
           "racines": [
             "vuku",
-            "toli"
+            "tori"
           ],
           "domaine": "titre"
         }
@@ -443,11 +443,11 @@
         {
           "confluent": "aitatori",
           "type": "composition",
-          "composition": "ait-a-toli",
+          "composition": "ait-a-tori",
           "sens_litteral": "Personne avec ancêtre",
           "racines": [
             "aita",
-            "toli"
+            "tori"
           ],
           "domaine": "titre"
         }
@@ -498,11 +498,11 @@
         {
           "confluent": "kotautori",
           "type": "composition",
-          "composition": "kot-a-toli",
+          "composition": "kot-a-tori",
           "sens_litteral": "Personne d'union",
           "racines": [
             "kota",
-            "toli"
+            "tori"
           ],
           "domaine": "famille"
         }

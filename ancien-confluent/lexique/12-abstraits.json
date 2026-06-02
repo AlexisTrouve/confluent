@@ -641,10 +641,10 @@
         {
           "confluent": "besiuzoka",
           "type": "composition",
-          "composition": "bet-u-zoka",
+          "composition": "bes-u-zoka",
           "sens_litteral": "Bête de l'hostilité",
           "racines": [
-            "betu",
+            "besi",
             "zoka"
           ],
           "domaine": "concept_negatif",
@@ -677,11 +677,11 @@
         {
           "confluent": "pasikitori",
           "type": "composition",
-          "composition": "pas-ik-i-toli",
+          "composition": "pas-ik-i-tori",
           "sens_litteral": "Personne capturée",
           "racines": [
             "pasik",
-            "toli"
+            "tori"
           ],
           "domaine": "conflit",
           "definition": "Personne capturée et retenue ; captif (ex. les Nanzagouet menés au Gouffre Humide).",
@@ -767,11 +767,11 @@
         {
           "confluent": "sekamori",
           "type": "composition",
-          "composition": "seka-memu",
+          "composition": "seka-mori",
           "sens_litteral": "Savoir-en-mémoire",
           "racines": [
             "seka",
-            "memu"
+            "mori"
           ],
           "domaine": "concept_fondateur",
           "note": "Connaissance - le savoir gardé en mémoire (seka=savoir + memu=mémoire)",

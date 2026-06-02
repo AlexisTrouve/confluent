@@ -76,10 +76,10 @@
         {
           "confluent": "karisumu",
           "type": "composition",
-          "composition": "kali-sumu",
+          "composition": "kari-sumu",
           "sens_litteral": "Pierre-dressée",
           "racines": [
-            "kali",
+            "kari",
             "sumu"
           ],
           "structure": "composition",
@@ -99,11 +99,11 @@
         {
           "confluent": "vukukari",
           "type": "composition",
-          "composition": "vuku-kali",
+          "composition": "vuku-kari",
           "sens_litteral": "Gouffre-de-pierre",
           "racines": [
             "vuku",
-            "kali"
+            "kari"
           ],
           "structure": "composition",
           "domaine": "habitat",

@@ -101,12 +101,12 @@
         {
           "confluent": "lokuulasubesi",
           "type": "nom_propre",
-          "composition": "lok-u-pasu-betu",
+          "composition": "lok-u-pasu-besi",
           "sens_litteral": "Loi du sang et de la bête",
           "racines": [
             "loku",
             "pasu",
-            "betu"
+            "besi"
           ],
           "categorie": "loi_sacree",
           "definition": "Corpus de lois sacrées régissant la chasse, le meurtre et le rapport à l'animal, condamnant notamment la violence bestiale.",
@@ -138,10 +138,10 @@
         {
           "confluent": "moriuaita",
           "type": "nom_propre",
-          "composition": "mem-u-aita",
+          "composition": "mor-u-aita",
           "sens_litteral": "Mémoire des ancêtres",
           "racines": [
-            "memu",
+            "mori",
             "aita"
           ],
           "categorie": "objet_rituel",
@@ -268,11 +268,11 @@
         {
           "confluent": "miluukari",
           "type": "composition",
-          "composition": "mil-u-kali",
+          "composition": "mil-u-kari",
           "sens_litteral": "Lait de pierre",
           "racines": [
             "milu",
-            "kali"
+            "kari"
           ],
           "domaine": "materiau_rituel",
           "definition": "Substance minérale laiteuse (concrétion de roche) employée comme matériau rituel.",
@@ -286,10 +286,10 @@
         {
           "confluent": "kariusuki",
           "type": "composition",
-          "composition": "kal-i-suki",
+          "composition": "kar-i-suki",
           "sens_litteral": "Pierre du feu",
           "racines": [
-            "kali",
+            "kari",
             "suki"
           ],
           "domaine": "materiau_rituel",

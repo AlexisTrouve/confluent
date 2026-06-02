@@ -77,11 +77,11 @@
         {
           "confluent": "asaubesi",
           "type": "composition",
-          "composition": "as-a-betu",
+          "composition": "as-a-besi",
           "sens_litteral": "Sacré avec bête",
           "racines": [
             "asa",
-            "betu"
+            "besi"
           ],
           "categorie": "animal_sacre"
         }
@@ -92,11 +92,11 @@
         {
           "confluent": "zanubesi",
           "type": "composition",
-          "composition": "zan-u-betu",
+          "composition": "zan-u-besi",
           "sens_litteral": "Bête de chasse",
           "racines": [
             "zana",
-            "betu"
+            "besi"
           ],
           "domaine": "animal"
         }
@@ -118,11 +118,11 @@
         {
           "confluent": "pisunura",
           "type": "composition",
-          "composition": "pis-u-nula",
+          "composition": "pis-u-nura",
           "sens_litteral": "Poisson de rivière",
           "racines": [
             "pisu",
-            "nula"
+            "nura"
           ],
           "domaine": "animal"
         }

@@ -97,11 +97,11 @@
         {
           "confluent": "vasimori",
           "type": "composition",
-          "composition": "vasi-nemu",
+          "composition": "vasi-mori",
           "sens_litteral": "Passage de mémoire",
           "racines": [
             "vasi",
-            "nemu"
+            "mori"
           ],
           "domaine": "techniques_culturelles",
           "note": "Technique des Ailes-Grises pour interpréter la fresque"
@@ -327,10 +327,10 @@
         {
           "confluent": "morimako",
           "type": "composition",
-          "composition": "nemu-mako",
+          "composition": "mori-mako",
           "sens_litteral": "Grande mémoire",
           "racines": [
-            "nemu",
+            "mori",
             "mako"
           ],
           "domaine": "valeur_sociale",
@@ -347,11 +347,11 @@
         {
           "confluent": "tosamori",
           "type": "composition",
-          "composition": "tosa-nemu",
+          "composition": "tosa-mori",
           "sens_litteral": "Bonne mémoire",
           "racines": [
             "tosa",
-            "nemu"
+            "mori"
           ],
           "domaine": "valeur_sociale",
           "note": "Valeur morale"

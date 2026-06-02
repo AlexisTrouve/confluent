@@ -33,10 +33,10 @@
         {
           "confluent": "zeruulasu",
           "type": "composition",
-          "composition": "zel-u-pasu",
+          "composition": "zer-u-pasu",
           "sens_litteral": "Ciel de sang",
           "racines": [
-            "zelu",
+            "zeru",
             "pasu"
           ],
           "domaine": "couleur"
@@ -136,10 +136,10 @@
         {
           "confluent": "zeruuula",
           "type": "composition",
-          "composition": "zel-u-ula",
+          "composition": "zer-u-ula",
           "sens_litteral": "Ciel de l'eau",
           "racines": [
-            "zelu",
+            "zeru",
             "ura"
           ],
           "domaine": "couleur"
@@ -293,11 +293,11 @@
         {
           "confluent": "kovaukari",
           "type": "composition",
-          "composition": "kov-a-kali",
+          "composition": "kov-a-kari",
           "sens_litteral": "Gravure avec pierre",
           "racines": [
             "kova",
-            "kali"
+            "kari"
           ],
           "domaine": "art"
         }

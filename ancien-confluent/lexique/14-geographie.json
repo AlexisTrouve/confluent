@@ -7,10 +7,10 @@
         {
           "confluent": "nuraakota",
           "type": "composition",
-          "composition": "nul-aa-kota",
+          "composition": "nur-aa-kota",
           "sens_litteral": "Rivière mêlée à union",
           "racines": [
-            "nula",
+            "nura",
             "kota"
           ],
           "domaine": "geographie"
@@ -22,11 +22,11 @@
         {
           "confluent": "nuruzeru",
           "type": "composition",
-          "composition": "nul-u-zelu",
+          "composition": "nur-u-zeru",
           "sens_litteral": "Rivière du ciel",
           "racines": [
-            "nula",
-            "zelu"
+            "nura",
+            "zeru"
           ],
           "domaine": "geographie"
         }
@@ -37,10 +37,10 @@
         {
           "confluent": "nuruviku",
           "type": "composition",
-          "composition": "nul-u-viku",
+          "composition": "nur-u-viku",
           "sens_litteral": "Rivière de la forêt",
           "racines": [
-            "nula",
+            "nura",
             "viku"
           ],
           "domaine": "geographie"
@@ -52,11 +52,11 @@
         {
           "confluent": "tasuseli",
           "type": "composition",
-          "composition": "tas-u-melu",
+          "composition": "tas-u-seli",
           "sens_litteral": "Montagne de la mer",
           "racines": [
             "tasa",
-            "melu"
+            "seli"
           ],
           "domaine": "geographie"
         }
@@ -145,11 +145,11 @@
         {
           "confluent": "tokuseli",
           "type": "composition",
-          "composition": "tok-u-melu",
+          "composition": "tok-u-seli",
           "sens_litteral": "Terre de la mer",
           "racines": [
             "toka",
-            "melu"
+            "seli"
           ],
           "domaine": "geographie"
         }
@@ -160,10 +160,10 @@
         {
           "confluent": "zerutoka",
           "type": "composition",
-          "composition": "zel-u-toka",
+          "composition": "zer-u-toka",
           "sens_litteral": "Ciel de la terre",
           "racines": [
-            "zelu",
+            "zeru",
             "toka"
           ],
           "domaine": "geographie"
@@ -220,10 +220,10 @@
         {
           "confluent": "kariovuku",
           "type": "composition",
-          "composition": "kal-oa-vuku",
+          "composition": "kar-oa-vuku",
           "sens_litteral": "Pierre vers le gouffre",
           "racines": [
-            "kali",
+            "kari",
             "vuku"
           ],
           "domaine": "danger_naturel"
@@ -250,11 +250,11 @@
         {
           "confluent": "vukukari",
           "type": "composition",
-          "composition": "vuk-u-kali",
+          "composition": "vuk-u-kari",
           "sens_litteral": "Gouffre dans la pierre",
           "racines": [
             "vuku",
-            "kali"
+            "kari"
           ],
           "domaine": "geographie"
         }
@@ -265,10 +265,10 @@
         {
           "confluent": "kariuzoki",
           "type": "composition",
-          "composition": "kal-i-zoki",
+          "composition": "kar-i-zoki",
           "sens_litteral": "Pierre de l'épreuve",
           "racines": [
-            "kali",
+            "kari",
             "oki"
           ],
           "domaine": "geographie"

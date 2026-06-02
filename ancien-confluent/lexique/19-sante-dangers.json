@@ -146,10 +146,10 @@
         {
           "confluent": "karoavuku",
           "type": "composition",
-          "composition": "kal-oa-vuku",
+          "composition": "kar-oa-vuku",
           "sens_litteral": "Pierre vers le gouffre",
           "racines": [
-            "kali",
+            "kari",
             "vuku"
           ],
           "domaine": "danger"
@@ -206,11 +206,11 @@
         {
           "confluent": "vukukari",
           "type": "composition",
-          "composition": "vuk-u-kali",
+          "composition": "vuk-u-kari",
           "sens_litteral": "Gouffre de pierre",
           "racines": [
             "vuku",
-            "kali"
+            "kari"
           ],
           "domaine": "danger"
         }
@@ -221,10 +221,10 @@
         {
           "confluent": "kariuoki",
           "type": "composition",
-          "composition": "kal-i-oki",
+          "composition": "kar-i-oki",
           "sens_litteral": "Pierre de l'épreuve",
           "racines": [
-            "kali",
+            "kari",
             "oki"
           ],
           "domaine": "danger"
