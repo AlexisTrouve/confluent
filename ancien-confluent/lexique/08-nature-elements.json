@@ -9,7 +9,10 @@
           "type": "racine",
           "forme_liee": "zel",
           "domaine": "element_nature",
-          "note": "Élément primordial"
+          "note": "Élément primordial",
+          "definition": "La voûte céleste, espace au-dessus de la terre, lieu des signes divins et des aurores.",
+          "nuance": "Élément primordial et signe divin. Vs 'nuage' (nubu, vapeur passagère) et 'horizon' (zelutoka). NB forme 'zelu' ici mais data atteste 'zeru' — divergence à arbitrer.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -23,7 +26,11 @@
           "type": "racine",
           "forme_liee": "tok",
           "domaine": "element_nature",
-          "note": "Sol, terre ferme"
+          "note": "Sol, terre ferme",
+          "definition": "Le sol, la terre ferme sur laquelle on marche et bâtit.",
+          "nuance": "Élément primordial. Sol concret vs 'pierre' (kali, matière dure) et 'mer'/'eau'. Base de grotte (vukutoka), côte (tokumelu).",
+          "registre": "sacré",
+          "exemple": "va naki vo toka mirakat"
         }
       ],
       "synonymes_fr": [
@@ -37,7 +44,10 @@
           "type": "racine",
           "forme_liee": "suk",
           "domaine": "element_nature",
-          "note": "Élément primordial"
+          "note": "Élément primordial",
+          "definition": "La flamme, élément qui brûle et éclaire, primordial.",
+          "nuance": "Élément primordial (caste-élément Feu). Vs 'lumière'/'soleil' (sora, clarté sans combustion). Entre dans kina suki = colère.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -51,7 +61,10 @@
           "type": "racine",
           "forme_liee": "ven",
           "domaine": "element_nature",
-          "note": "Élément primordial"
+          "note": "Élément primordial",
+          "definition": "L'air et le vent, souffle atmosphérique, élément primordial mobile.",
+          "nuance": "Élément primordial (caste-élément Air). Air immobile ET vent. Base de 'tempête' (venaoki). Vs umi/puli (souffle vital spirituel/corporel).",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -65,7 +78,10 @@
           "type": "racine",
           "forme_liee": "kal",
           "domaine": "element_nature",
-          "note": "Matière dure"
+          "note": "Matière dure",
+          "definition": "La pierre et la roche, matière dure et durable.",
+          "nuance": "Matière dure, non primordiale. Vs 'terre' (toka, sol meuble) et 'sel' (seli). Base de 'crevasse'. NB data atteste 'kari' (≠ 'kali' ici).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -79,7 +95,10 @@
           "type": "racine",
           "forme_liee": "nul",
           "domaine": "geographie",
-          "note": "Eau qui coule"
+          "note": "Eau qui coule",
+          "definition": "Cours d'eau qui coule, courant fluvial central dans cette civilisation de la confluence.",
+          "nuance": "Eau en mouvement, vs 'mer' (seli, eau salée) et eau-élément (ura). Les rivières azur/verte définissent la géographie sacrée. NB data atteste 'nura' (≠ 'nula').",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -93,7 +112,11 @@
           "type": "racine",
           "forme_liee": "tas",
           "domaine": "geographie",
-          "note": "Haute terre"
+          "note": "Haute terre",
+          "definition": "Relief élevé, haute terre où vivent les Cercles de Vigile.",
+          "nuance": "Vs 'pic'/'cime' (tasupiki), 'vallée' (tani, creux) et 'promontoire' (tasumelu, montagne maritime). Géographie d'origine de la civilisation.",
+          "registre": "courant",
+          "exemple": "va tasa vo zelu mirakeom"
         }
       ]
     },
@@ -104,7 +127,10 @@
           "type": "racine",
           "forme_liee": "vik",
           "domaine": "geographie",
-          "note": "Beaucoup d'arbres"
+          "note": "Beaucoup d'arbres",
+          "definition": "Étendue d'arbres, lieu boisé.",
+          "nuance": "DOUBLON partiel avec 'arbre' (même forme viku) : masse boisée vs arbre individuel non distingués, contexte requis. Homophone de viku=victoire.",
+          "registre": "courant"
         }
       ]
     },
@@ -115,7 +141,10 @@
           "type": "racine",
           "forme_liee": "vik",
           "domaine": "nature",
-          "note": "Plante haute"
+          "note": "Plante haute",
+          "definition": "Plante haute et ligneuse, l'arbre individuel.",
+          "nuance": "DOUBLON avec 'forêt' (même forme viku). Pour le matériau bois, racine séparée buki.",
+          "registre": "courant"
         }
       ]
     },
@@ -126,7 +155,10 @@
           "type": "racine",
           "forme_liee": "lun",
           "domaine": "celeste",
-          "note": "Astre nocturne"
+          "note": "Astre nocturne",
+          "definition": "Astre nocturne dont le cycle bimensuel rythme la Vigile Lunaire.",
+          "nuance": "Astre de la nuit, vs 'soleil' (sora, astre du jour) et 'étoile' (aoni/eku). Charge rituelle : règle le calendrier des rituels.",
+          "registre": "sacré"
         }
       ]
     },
@@ -137,7 +169,11 @@
           "type": "racine",
           "forme_liee": "sor",
           "domaine": "celeste",
-          "note": "Astre du jour"
+          "note": "Astre du jour",
+          "definition": "Astre du jour, source de lumière et de chaleur.",
+          "nuance": "DOUBLON de racine avec 'lumière' (même forme sora) : soleil et clarté non distingués. Opposé à 'lune' et 'sombre'. Entre dans kori sora = joie.",
+          "registre": "courant",
+          "exemple": "va sora tekiseon"
         }
       ]
     },
@@ -148,7 +184,10 @@
           "type": "racine",
           "forme_liee": "sor",
           "domaine": "perception",
-          "note": "Même racine que soleil"
+          "note": "Même racine que soleil",
+          "definition": "Clarté, luminosité émanant du soleil ou d'une source brillante.",
+          "nuance": "DOUBLON de racine avec 'soleil' (même forme sora). Opposé à 'sombre' (taku). La culture associe lumière/aurore (ora) aux signes divins.",
+          "registre": "courant"
         }
       ]
     },
@@ -159,7 +198,10 @@
           "type": "racine",
           "forme_liee": "tak",
           "domaine": "perception",
-          "note": "Sans lumière"
+          "note": "Sans lumière",
+          "definition": "Obscur, privé de lumière.",
+          "nuance": "Qualité, antonyme de 'lumière' (sora). Charge négative : kori taku = tristesse, sili taku = peur. Vs profondeur physique (vuku).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -173,7 +215,10 @@
           "type": "racine",
           "forme_liee": "sek",
           "domaine": "qualite",
-          "note": "Sans eau"
+          "note": "Sans eau",
+          "definition": "Aride, dépourvu d'eau.",
+          "nuance": "Qualité, antonyme de 'humide' (nisa). COLLISIONS : 'seku' coïncide avec le chiffre six et avec 'secret' (id 150).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -187,7 +232,10 @@
           "type": "racine",
           "forme_liee": "tan",
           "domaine": "geographie",
-          "note": "Creux entre montagnes"
+          "note": "Creux entre montagnes",
+          "definition": "Dépression entre montagnes, creux du relief.",
+          "nuance": "Creux entre hauteurs, vs 'montagne' (tasa) et 'pic' (tasupiki). COLLISION : forme 'tani' identique au pronom 3sg (il/elle), désambiguïsée par le contexte.",
+          "registre": "courant"
         }
       ]
     },
@@ -198,7 +246,10 @@
           "type": "racine",
           "forme_liee": "sel",
           "domaine": "materiau",
-          "note": "Cristal marin"
+          "note": "Cristal marin",
+          "definition": "Cristal marin, minéral extrait de la mer.",
+          "nuance": "DOUBLON de racine avec 'mer' (même forme seli) : le sel = aspect-matière, la mer = aspect-étendue. Vs 'pierre' (kali).",
+          "registre": "courant"
         }
       ]
     },
@@ -209,7 +260,10 @@
           "type": "racine",
           "forme_liee": "sel",
           "domaine": "geographie",
-          "note": "Grande eau salée"
+          "note": "Grande eau salée",
+          "definition": "Grande étendue d'eau salée, frontière maritime de l'expansion récente.",
+          "nuance": "DOUBLON de racine avec 'sel' (même forme seli). Vs 'rivière' (nula, eau douce) et eau-élément (ura). Lieu de l'Autre (Nanzagouet maritimes).",
+          "registre": "courant"
         }
       ]
     },
@@ -220,7 +274,10 @@
           "type": "racine",
           "forme_liee": "nis",
           "domaine": "qualite",
-          "note": "Avec eau"
+          "note": "Avec eau",
+          "definition": "Mouillé, imprégné d'eau.",
+          "nuance": "Qualité, antonyme de 'sec' (seku). Entre dans Vukuura (Gouffre Humide), lieu de pèlerinage. Vs eau-substance (ura) : nisa qualifie, ura nomme.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -234,7 +291,10 @@
           "type": "racine",
           "forme_liee": "vuk",
           "domaine": "qualite",
-          "note": "Gouffre, abîme"
+          "note": "Gouffre, abîme",
+          "definition": "Profondeur extrême, gouffre, abîme.",
+          "nuance": "Qualité (profond) ET entité (gouffre). Racine du Gouffre Humide et base de grotte/crevasse/cascade. Vs 'sombre' (taku) : vuku=verticalité, taku=absence de lumière.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -249,7 +309,10 @@
           "type": "racine",
           "forme_liee": "sik",
           "domaine": "forme",
-          "note": "Forme sacrée"
+          "note": "Forme sacrée",
+          "definition": "Forme circulaire, anneau ; forme sacrée de la civilisation.",
+          "nuance": "Forme à charge rituelle (Cercles de Vigile = Sikuvela). Vs 'sec' (seku, vocalisation distincte). Vs koru (cercle/cycle temporel), autre racine.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -263,7 +326,10 @@
           "type": "racine_sacree",
           "forme_liee": "aon",
           "domaine": "celeste",
-          "note": "Points lumineux du ciel nocturne"
+          "note": "Points lumineux du ciel nocturne",
+          "definition": "Point lumineux du ciel nocturne.",
+          "nuance": "Racine sacrée (V-initial). DOUBLON conceptuel avec 'eku' (étoile sacrée, data) : deux racines pour l'étoile (aoni ici / eku ailleurs) — à arbitrer. Vs luna et sora.",
+          "registre": "sacré"
         }
       ]
     },
@@ -278,7 +344,10 @@
             "vena",
             "oki"
           ],
-          "domaine": "meteo"
+          "domaine": "meteo",
+          "definition": "Violente perturbation atmosphérique, vent de danger.",
+          "nuance": "Composition ven-a-oki (air + épreuve/danger sacré). Vs 'air'/'vent' simple (vena, neutre) : la tempête ajoute oki. Météo, pas élément primordial.",
+          "registre": "courant"
         }
       ]
     },
@@ -289,7 +358,10 @@
           "type": "racine",
           "forme_liee": "nub",
           "domaine": "celeste",
-          "note": "Vapeur du ciel"
+          "note": "Vapeur du ciel",
+          "definition": "Vapeur visible suspendue dans le ciel.",
+          "nuance": "Phénomène transitoire vs 'ciel' permanent (zelu). Les Sans-ciels naissent sous ciel couvert. NB racine 'nubu' non attestée dans data — propre à ce fichier.",
+          "registre": "courant"
         }
       ]
     },
@@ -304,7 +376,10 @@
             "ura",
             "vuku"
           ],
-          "domaine": "geographie"
+          "domaine": "geographie",
+          "definition": "Chute d'eau se précipitant vers un gouffre.",
+          "nuance": "Composition eau (ura) + vers (oa) + gouffre (vuku). Vs 'rivière' (nula, eau horizontale) : la cascade est la chute verticale. NB forme 'ulaoavuku' suspecte (ur-oa-vuku attendu).",
+          "registre": "courant"
         }
       ]
     },
@@ -319,7 +394,10 @@
             "ena",
             "ura"
           ],
-          "domaine": "geographie"
+          "domaine": "geographie",
+          "definition": "Point d'émergence de l'eau, origine d'un cours d'eau.",
+          "nuance": "Composition en-u-ura (origine + eau). Charge symbolique : 'ena'=origine sacrée, lien avec les Premiers Ancêtres. Vs 'rivière' (le flux) et 'confluence' (la rencontre).",
+          "registre": "sacré"
         }
       ]
     },
@@ -334,7 +412,10 @@
             "vuku",
             "toka"
           ],
-          "domaine": "geographie"
+          "domaine": "geographie",
+          "definition": "Cavité profonde creusée dans la terre.",
+          "nuance": "Composition vuk-u-toka (gouffre dans la terre). Vs 'crevasse' (vukukali, gouffre dans la PIERRE) : grotte=terre, crevasse=pierre. Habitat des Enfants des Échos.",
+          "registre": "courant"
         }
       ]
     },
@@ -349,7 +430,10 @@
             "vuku",
             "kali"
           ],
-          "domaine": "geographie"
+          "domaine": "geographie",
+          "definition": "Fissure ou gouffre ouvert dans la pierre.",
+          "nuance": "Composition vuk-u-kali (gouffre dans la pierre). Symétrique de 'grotte' (vukutoka, dans la terre) : seul le matériau (kali/toka) les distingue.",
+          "registre": "courant"
         }
       ]
     },
@@ -364,7 +448,10 @@
             "tasa",
             "melu"
           ],
-          "domaine": "geographie"
+          "domaine": "geographie",
+          "definition": "Hauteur s'avançant au-dessus de la mer.",
+          "nuance": "Composition tas-u-melu. INCOHÉRENCE : melu=doux/tendre (data), PAS 'mer' (=seli) — la glose 'montagne de la mer' ne correspond pas. Cf 'côte' (même anomalie melu).",
+          "registre": "courant"
         }
       ]
     },
@@ -379,7 +466,10 @@
             "tasa",
             "piki"
           ],
-          "domaine": "geographie"
+          "domaine": "geographie",
+          "definition": "Sommet pointu d'une montagne, cime.",
+          "nuance": "Composition tas-u-piki (montagne + pointe). Vs 'montagne' (tasa, relief entier) : le pic est sa pointe. Cf racines concurrentes sumu (sommet), piki (pointe).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -397,7 +487,10 @@
             "toka",
             "melu"
           ],
-          "domaine": "geographie"
+          "domaine": "geographie",
+          "definition": "Bande de terre bordant la mer, littoral.",
+          "nuance": "Composition tok-u-melu. MÊME ANOMALIE que promontoire : melu=doux (≠ mer=seli). Glose 'terre de la mer' incohérente. Lieu de l'expansion et du contact avec l'Autre.",
+          "registre": "courant"
         }
       ]
     },
@@ -412,7 +505,10 @@
             "zelu",
             "toka"
           ],
-          "domaine": "geographie"
+          "domaine": "geographie",
+          "definition": "Ligne où le ciel rencontre la terre.",
+          "nuance": "Composition zel-u-toka (ciel de la terre). Charge culturelle côté inconnu/ouverture maritime. Vs 'ciel' (zelu, la voûte). Reprend 'zelu' (divergence zeru/zelu).",
+          "registre": "courant"
         }
       ]
     },
@@ -427,7 +523,10 @@
             "nula",
             "kota"
           ],
-          "domaine": "geographie"
+          "domaine": "geographie",
+          "definition": "Point où deux rivières se rejoignent et mêlent leurs eaux.",
+          "nuance": "Composition nul-aa-kota (liaison 'aa' = mélange/confluent), cœur symbolique. Vs Uraakota (ur-aa-kota, La Confluence comme lieu) : ici le phénomène géographique générique.",
+          "registre": "sacré"
         }
       ]
     },
@@ -442,7 +541,10 @@
             "nula",
             "zelu"
           ],
-          "domaine": "geographie"
+          "domaine": "geographie",
+          "definition": "L'une des deux rivières fondatrices, celle aux eaux bleues du ciel.",
+          "nuance": "Composition nul-u-zelu. Paire avec 'rivière verte' (nuluviku) ; ensemble = la Confluence. Toponyme fondateur, charge identitaire.",
+          "registre": "sacré"
         }
       ]
     },
@@ -457,7 +559,10 @@
             "nula",
             "viku"
           ],
-          "domaine": "geographie"
+          "domaine": "geographie",
+          "definition": "L'une des deux rivières fondatrices, celle aux eaux vertes de la forêt.",
+          "nuance": "Composition nul-u-viku. Paire avec 'rivière azur' (nuluzelu). La racine viku (forêt) la colore en vert. Toponyme fondateur.",
+          "registre": "sacré"
         }
       ]
     }

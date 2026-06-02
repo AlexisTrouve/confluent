@@ -14,7 +14,11 @@
             "aska"
           ],
           "domaine": "concept_fondateur",
-          "note": "État spirituel central"
+          "note": "État spirituel central",
+          "definition": "L'état spirituel d'observation sans préjugé, capacité de voir la vérité au-delà des apparences, concept fondateur des Siliaska.",
+          "nuance": "Concept identitaire central (sili=regard + aska=libre). Distinct de 'liberté' pure (oabsi/eilne) : c'est une liberté DU regard, une posture cognitive, pas une condition sociale.",
+          "registre": "sacré",
+          "exemple": "va sili vo veri miraku"
         }
       ]
     },
@@ -25,7 +29,10 @@
           "type": "racine",
           "forme_liee": "kot",
           "domaine": "concept_fondateur",
-          "note": "Union, rencontre"
+          "note": "Union, rencontre",
+          "definition": "L'union, la rencontre et le mélange des êtres ou des courants ; force née de ce qui se rejoint.",
+          "nuance": "Racine fondatrice (kota). Sens d'union dynamique/géographique. À distinguer de 'harmonie' (kotautosa) qui ajoute la qualité du bien à l'union.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -43,7 +50,10 @@
             "kota",
             "tosa"
           ],
-          "domaine": "concept_abstrait"
+          "domaine": "concept_abstrait",
+          "definition": "État d'union bonne et équilibrée entre les êtres ou les éléments, fruit réussi de la confluence.",
+          "nuance": "Compose kota (union) + tosa (bien). Distinct de 'paix' (paku, absence de conflit) : l'harmonie est une union POSITIVE active, pas seulement un calme.",
+          "registre": "courant"
         }
       ]
     },
@@ -58,7 +68,11 @@
             "seka",
             "aita"
           ],
-          "domaine": "concept_abstrait"
+          "domaine": "concept_abstrait",
+          "definition": "Le savoir hérité des ancêtres, connaissance mûrie par les générations et porteuse de jugement juste.",
+          "nuance": "seka (savoir) + aita (ancêtres). Se distingue de 'connaissance' (sekamemu, savoir mémorisé brut) et 'compétence' (sekautosa, savoir utile) : ici le savoir tire son autorité de la lignée.",
+          "registre": "sacré",
+          "exemple": "va aita su vo seka kisunait"
         }
       ]
     },
@@ -73,7 +87,10 @@
             "valu",
             "veli"
           ],
-          "domaine": "concept_abstrait"
+          "domaine": "concept_abstrait",
+          "definition": "Mérite tiré de la fidélité à la vérité ; valeur d'un être mesurée à sa droiture.",
+          "nuance": "valu (valeur) + veli (vérité, var. de veri). Distinct de 'valeur/mérite' brut (racine valu) : l'honneur lie spécifiquement la valeur à la vérité, charge morale.",
+          "registre": "sacré"
         }
       ]
     },
@@ -88,7 +105,10 @@
             "veli",
             "kota"
           ],
-          "domaine": "concept_abstrait"
+          "domaine": "concept_abstrait",
+          "definition": "La vérité appliquée à l'union des êtres ; principe qui rétablit l'équité dans la communauté.",
+          "nuance": "veli (vérité) + kota (union). À distinguer de la racine zaki (justice/équité, data/lexique) : ici quasi-DOUBLON conceptuel avec zaki — veliukota insiste sur la vérité-pour-le-collectif, zaki sur l'équité-acte.",
+          "registre": "sacré"
         }
       ]
     },
@@ -98,7 +118,11 @@
           "confluent": "veri",
           "type": "racine",
           "forme_liee": "ver",
-          "domaine": "concept_fondateur"
+          "domaine": "concept_fondateur",
+          "definition": "Ce qui est vrai, réalité conforme à l'observation ; valeur cardinale révélée par le regard libre.",
+          "nuance": "Racine fondatrice (veri, forme liée ver-/veli-). Socle de honneur (valuuveli) et justice (veliukota). Pas de doublon.",
+          "registre": "sacré",
+          "exemple": "va miki vo veri miraku"
         }
       ]
     },
@@ -108,7 +132,10 @@
           "confluent": "oabsi",
           "type": "racine_sacree",
           "forme_liee": "oabs",
-          "domaine": "concept_fondateur"
+          "domaine": "concept_fondateur",
+          "definition": "La liberté comme condition d'un être affranchi, racine sacrée du concept.",
+          "nuance": "QUASI-DOUBLON avec 'liberté'=eilne : deux racines sacrées distinctes glosées 'liberté/concept_fondateur'. oabsi semble la forme historique, eilne la forme normalisée récente. À arbitrer/fusionner. Distinct aussi de aska (libre, attesté) et siliaska (regard libre).",
+          "registre": "sacré"
         }
       ]
     },
@@ -118,7 +145,10 @@
           "confluent": "oelu",
           "type": "racine_sacree",
           "forme_liee": "oel",
-          "domaine": "concept_fondateur"
+          "domaine": "concept_fondateur",
+          "definition": "L'esprit, principe vital et conscience d'un être ; souffle qui anime.",
+          "nuance": "Racine sacrée. Recoupe partiellement umi (esprit/souffle vital) et anu (âme) de data/lexique : zone de quasi-synonymie spirituelle. Le champ liste 'âme' comme synonyme_fr, donc oelu couvre esprit+âme ici.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -136,7 +166,10 @@
             "teki",
             "umi"
           ],
-          "domaine": "concept_abstrait"
+          "domaine": "concept_abstrait",
+          "definition": "Le chemin tracé pour l'esprit d'un être à travers son existence ; trajectoire spirituelle.",
+          "nuance": "teki (chemin/aller) + umi (esprit). Reprend la métaphore culturelle de la 'voie/chemin' (amélioration continue). Pas de doublon.",
+          "registre": "sacré"
         }
       ]
     },
@@ -151,7 +184,10 @@
             "asa",
             "neka"
           ],
-          "domaine": "concept_abstrait"
+          "domaine": "concept_abstrait",
+          "definition": "Obligation rituelle d'accomplir une œuvre tenue pour sacrée ; tâche que les ancêtres imposent.",
+          "nuance": "asa (sacré) + neka (œuvre/faire). Distinct de 'bénédiction/malédiction' (mêmes racine asa) : ici le sacré porte sur un FAIRE obligatoire, pas un état.",
+          "registre": "sacré"
         }
       ]
     },
@@ -166,7 +202,10 @@
             "seka",
             "tosa"
           ],
-          "domaine": "concept_abstrait"
+          "domaine": "concept_abstrait",
+          "definition": "Savoir utile et bien maîtrisé permettant d'agir avec efficacité.",
+          "nuance": "seka (savoir) + tosa (bien). Triade avec 'sagesse' (sekauaita, savoir des anciens) et 'connaissance' (sekamemu, savoir mémorisé) : la compétence est le savoir QUALIFIÉ bon/opérant.",
+          "registre": "courant"
         }
       ]
     },
@@ -181,7 +220,11 @@
             "kisu",
             "aita"
           ],
-          "domaine": "concept_abstrait"
+          "domaine": "concept_abstrait",
+          "definition": "L'enseignement hérité et passé des ancêtres aux vivants ; acte cardinal de la civilisation.",
+          "nuance": "kisu (transmettre) + aita (ancêtres). Valeur culturelle suprême (garder le savoir = trahison). Distinct du verbe kisun (acte de transmettre) : ici le concept nominalisé.",
+          "registre": "sacré",
+          "exemple": "va aita su vo seka kisunait"
         }
       ]
     },
@@ -196,7 +239,10 @@
             "tova"
           ],
           "domaine": "social",
-          "note": "L'étranger, celui qui n'est pas du peuple"
+          "note": "L'étranger, celui qui n'est pas du peuple",
+          "definition": "L'étranger, celui qui ne partage ni ancêtres, ni langue, ni intentions du peuple.",
+          "nuance": "Nom propre conceptuel. ATTENTION : tova est aussi le démonstratif 'là-bas/distant' (data/lexique) — homonymie assumée (l'Autre = 'celui de loin'). Distinct de zoka (ennemi hostile) : l'Autre n'est pas forcément hostile.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -214,7 +260,10 @@
             "ena",
             "aita"
           ],
-          "domaine": "spirituel"
+          "domaine": "spirituel",
+          "definition": "La civilisation disparue et technologiquement supérieure découverte sous le Gouffre Humide, origine mythique et avertissement.",
+          "nuance": "INCOHÉRENCE de données : forme 'iusoluke' mais composition 'en-u-aita' (ena=origine + aita=ancêtres) → devrait donner ~'enuuaita'. La forme actuelle ne correspond pas à sa composition. À vérifier/corriger.",
+          "registre": "rituel"
         }
       ]
     },
@@ -229,7 +278,10 @@
             "sili",
             "novi"
           ],
-          "domaine": "spirituel"
+          "domaine": "spirituel",
+          "definition": "Signe vu annonçant du nouveau ; vision interprétée comme augure de l'avenir.",
+          "nuance": "sili (regard) + novi (nouveau, var. nuvi). Lié au regard libre prophétique. Distinct de 'observation' (silimira) : le présage projette vers l'avenir, l'observation constate le présent.",
+          "registre": "sacré"
         }
       ]
     },
@@ -244,7 +296,10 @@
             "vena",
             "zoka"
           ],
-          "domaine": "danger"
+          "domaine": "danger",
+          "definition": "Air vicié de l'ennemi ; émanation néfaste, souillure invisible portée par le vent.",
+          "nuance": "vena (air) + zoka (ennemi/mal). Famille des composés en -zoka (mal). Distinct de poku (poison, racine attestée) : le miasme est aérien/diffus, le poison matériel.",
+          "registre": "courant"
         }
       ]
     },
@@ -259,7 +314,11 @@
             "asa",
             "tosa"
           ],
-          "domaine": "spirituel"
+          "domaine": "spirituel",
+          "definition": "Faveur sacrée invoquée sur un être ; le sacré joint au bien.",
+          "nuance": "asa (sacré) + tosa (bien). Antonyme structurel exact de 'malédiction' (asauzoka). Lié au verbe tosan (bénir).",
+          "registre": "rituel",
+          "exemple": "va ora ni tani tosanok"
         }
       ]
     },
@@ -274,7 +333,10 @@
             "asa",
             "zoka"
           ],
-          "domaine": "spirituel"
+          "domaine": "spirituel",
+          "definition": "Sort néfaste appelé sur un être ; le sacré joint au mal.",
+          "nuance": "asa (sacré) + zoka (mal). Antonyme structurel exact de 'bénédiction' (asautosa) — paire miroir par opposition tosa/zoka.",
+          "registre": "rituel"
         }
       ]
     },
@@ -289,7 +351,10 @@
             "kota",
             "neka"
           ],
-          "domaine": "social"
+          "domaine": "social",
+          "definition": "Groupe social uni par une œuvre commune ; l'une des divisions fonctionnelles du peuple.",
+          "nuance": "kota (union) + neka (œuvre). INCOHÉRENCE mineure : composition donnée 'kot-a-neka' mais forme finit en -neki. Distinct de 'tribu' (tibu) et 'famille' (mitu) : la caste unit par la FONCTION, pas le sang.",
+          "registre": "courant"
         }
       ]
     },
@@ -300,7 +365,10 @@
           "type": "racine",
           "forme_liee": "lak",
           "domaine": "social",
-          "note": "Union de maisons"
+          "note": "Union de maisons",
+          "definition": "Établissement humain, union de maisons (pilotis, souterrains ou camps de hauteur selon la caste).",
+          "nuance": "Racine. Distinct de 'caste' (kotauneki, groupe fonctionnel) et 'tribu' (tibu) : le village est un lieu d'habitat groupé.",
+          "registre": "courant"
         }
       ]
     },
@@ -311,7 +379,10 @@
           "type": "racine",
           "forme_liee": "mit",
           "domaine": "social",
-          "note": "Groupe de sang"
+          "note": "Groupe de sang",
+          "definition": "Le clan, groupe uni par le sang et la lignée.",
+          "nuance": "Racine (mitu, attestée). Synonyme_fr 'clan'. Base de 'généalogie' (mituuaita). Distinct de caste (union par fonction) : ici le lien est le sang.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -329,7 +400,10 @@
             "mitu",
             "aita"
           ],
-          "domaine": "social"
+          "domaine": "social",
+          "definition": "La lignée familiale remontant aux ancêtres ; chaîne de filiation mémorisée.",
+          "nuance": "mitu (famille) + aita (ancêtres). Reflète le culte des ancêtres. Distinct de 'famille' (mitu, le groupe vivant) : la généalogie est la PROFONDEUR ancestrale du clan.",
+          "registre": "sacré"
         }
       ]
     },
@@ -340,7 +414,10 @@
           "type": "racine",
           "forme_liee": "sav",
           "domaine": "institution",
-          "note": "Promesse sacrée"
+          "note": "Promesse sacrée",
+          "definition": "Promesse sacrée scellée par le rituel du Regard Partagé ; engagement solennel.",
+          "nuance": "Racine (savu, attestée ; cf. Talusavu Halls des Serments). Base de 'serment de sang' (savuulasu) et 'trahison' (zoosavu = sans serment). Pas de doublon.",
+          "registre": "sacré"
         }
       ]
     },
@@ -355,7 +432,10 @@
             "savu",
             "pasu"
           ],
-          "domaine": "institution"
+          "domaine": "institution",
+          "definition": "Serment scellé par le sang, le plus contraignant des engagements.",
+          "nuance": "INCOHÉRENCE : forme 'savuulasu' mais composition 'sav-u-pasu' (savu + pasu=rouge/sang) → devrait donner ~'savuupasu'. Le 'l' de la forme actuelle n'est pas motivé. À vérifier. Renforce 'serment' (savu) par pasu.",
+          "registre": "sacré"
         }
       ]
     },
@@ -365,7 +445,10 @@
           "confluent": "leku",
           "type": "racine",
           "forme_liee": "lek",
-          "domaine": "institution"
+          "domaine": "institution",
+          "definition": "Règle établie qui ordonne la vie de la communauté.",
+          "nuance": "Racine (leku, attestée). Distinct de 'loi sacrée' (lokuuasa) : leku est la règle ordinaire, lokuuasa la loi inviolable des Voix de l'Aurore. NB la composition de loi sacrée utilise 'loku' (lieu) et non 'leku' — possible confusion de racines.",
+          "registre": "courant"
         }
       ]
     },
@@ -380,7 +463,10 @@
             "loku",
             "asa"
           ],
-          "domaine": "institution"
+          "domaine": "institution",
+          "definition": "Loi inviolable d'origine divine, gardée par les chamans Voix de l'Aurore.",
+          "nuance": "composition 'lok-u-asa'. INCOHÉRENCE : utilise loku (lieu/endroit, attesté) au lieu de leku (loi) — sens littéral serait 'lieu du sacré', pas 'loi sacrée'. Devrait probablement être lekuuasa. À corriger.",
+          "registre": "sacré"
         }
       ]
     },
@@ -390,7 +476,10 @@
           "confluent": "uuno",
           "type": "racine_sacree",
           "forme_liee": "uun",
-          "domaine": "concept_fondateur"
+          "domaine": "concept_fondateur",
+          "definition": "Le défi, danger ou test que doit affronter un être ; obstacle spirituel.",
+          "nuance": "INCOHÉRENCE forte : racine sacrée donnée 'uuno' (forme liée uun-) mais le domaine 'épreuve/défi/danger' correspond à la racine attestée oki (data/lexique, id.13). 'epreuve de verite' et 'victoire/defaite' utilisent oki, PAS uuno → quasi-DOUBLON oki/uuno. uuno semble orphelin/non attesté ailleurs.",
+          "registre": "sacré"
         }
       ]
     },
@@ -405,7 +494,10 @@
             "oki",
             "veli"
           ],
-          "domaine": "institution"
+          "domaine": "institution",
+          "definition": "Test rituel destiné à révéler la vérité d'un être ou d'un fait ; ordalie de la Confluence.",
+          "nuance": "oki (épreuve) + veli (vérité). Note : utilise oki, pas la racine 'uuno' de l'entrée 'epreuve' — confirme l'incohérence de uuno. Distinct de 'justice' : l'épreuve est le PROCÉDÉ, la justice le principe.",
+          "registre": "rituel"
         }
       ]
     },
@@ -420,7 +512,10 @@
             "zo",
             "savu"
           ],
-          "domaine": "concept_negatif"
+          "domaine": "concept_negatif",
+          "definition": "Rupture d'un serment ; faute majeure consistant à manquer à sa parole sacrée.",
+          "nuance": "zo (négation/sans) + savu (serment) = 'sans serment'. Culturellement : garder le savoir pour soi est aussi une trahison. Construction par privation, distincte des composés en -zoka (mal/ennemi).",
+          "registre": "sacré"
         }
       ]
     },
@@ -435,7 +530,10 @@
             "zo",
             "kota"
           ],
-          "domaine": "concept_negatif"
+          "domaine": "concept_negatif",
+          "definition": "Bannissement, état de celui retranché de l'union du peuple ; châtiment social majeur.",
+          "nuance": "zo (sans) + kota (union) = 'sans union'. Antonyme structurel de 'confluence' (kota). Même schéma privatif que 'trahison' (zoosavu). Distinct de tova/L'Autre : l'exilé ÉTAIT du peuple.",
+          "registre": "sacré"
         }
       ]
     },
@@ -445,7 +543,10 @@
           "confluent": "ouso",
           "type": "racine_sacree",
           "forme_liee": "ous",
-          "domaine": "conflit"
+          "domaine": "conflit",
+          "definition": "Conflit armé ouvert entre groupes ; affrontement collectif.",
+          "nuance": "QUASI-DOUBLON avec la racine attestée varu (guerre/combat, data/lexique, verbe varum=armer). ouso est ici une racine sacrée distincte non répertoriée dans data/lexique → deux mots pour 'guerre'. Distinct de oki (épreuve) malgré la proximité phonétique.",
+          "registre": "sacré"
         }
       ]
     },
@@ -456,7 +557,10 @@
           "type": "racine",
           "forme_liee": "zok",
           "domaine": "conflit",
-          "note": "Adversaire, hostile, mal"
+          "note": "Adversaire, hostile, mal",
+          "definition": "L'adversaire hostile, l'étranger malveillant ; principe du mal dans les compositions.",
+          "nuance": "Racine (zoka, attestée). Morphème du mal dans miasmes/malédiction/défaite/meurtre. À distinguer nettement de 'L'Autre' (tova) : tova est l'étranger neutre, zoka l'étranger HOSTILE.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -471,7 +575,10 @@
           "confluent": "paku",
           "type": "racine",
           "forme_liee": "pak",
-          "domaine": "etat"
+          "domaine": "etat",
+          "definition": "État de calme et d'absence de conflit ; tranquillité de la communauté.",
+          "nuance": "Racine (paku, attestée). Distinct de 'harmonie' (kotautosa) : la paix est l'ABSENCE de guerre/tension, l'harmonie une union activement bonne. Antonyme de guerre (ouso/varu).",
+          "registre": "courant"
         }
       ]
     },
@@ -486,7 +593,10 @@
             "oki",
             "tosa"
           ],
-          "domaine": "conflit"
+          "domaine": "conflit",
+          "definition": "Issue heureuse d'une épreuve ou d'un conflit ; épreuve résolue dans le bien.",
+          "nuance": "oki (épreuve) + tosa (bien). Antonyme structurel exact de 'défaite' (okiazoka). NB racine attestée viku (victoire, data/lexique) existe aussi → quasi-DOUBLON avec viku.",
+          "registre": "courant"
         }
       ]
     },
@@ -501,7 +611,10 @@
             "oki",
             "zoka"
           ],
-          "domaine": "conflit"
+          "domaine": "conflit",
+          "definition": "Issue malheureuse d'une épreuve ou d'un conflit ; épreuve terminée dans le mal.",
+          "nuance": "oki (épreuve) + zoka (mal). Paire miroir exacte avec 'victoire' (okiatosa) via opposition tosa/zoka.",
+          "registre": "courant"
         }
       ]
     },
@@ -516,7 +629,10 @@
             "osi",
             "zoka"
           ],
-          "domaine": "concept_negatif"
+          "domaine": "concept_negatif",
+          "definition": "Mise à mort hostile d'un être ; tuer par malveillance.",
+          "nuance": "osi (mort) + zoka (hostilité). INCOHÉRENCE : composition 'os-i-a-zoka' donnerait ~'osiazoka', forme actuelle 'osiakuzoka' a un -ku- inexpliqué. Distinct de osian (mourir, passage neutre vers les ancêtres) : ici la mort est CRIMINELLE.",
+          "registre": "courant"
         }
       ]
     },
@@ -531,7 +647,10 @@
             "betu",
             "zoka"
           ],
-          "domaine": "concept_negatif"
+          "domaine": "concept_negatif",
+          "definition": "Brutalité animale, frapper comme une bête ; violence déshonorante rejetée par la civilisation.",
+          "nuance": "INCOHÉRENCE racine : composition cite 'betu' (bête) mais la racine attestée pour bête est besi (data/lexique) ; betu non répertorié. Valeur culturelle : le gourdin/coup brutal = déshonneur. Distinct de guerre (conflit réglé).",
+          "registre": "courant"
         }
       ]
     },
@@ -546,7 +665,10 @@
             "zoku",
             "zana"
           ],
-          "domaine": "conflit"
+          "domaine": "conflit",
+          "definition": "Attaque par surprise dissimulée ; chasse menée en secret contre un adversaire.",
+          "nuance": "zoku (secret/caché, var. seku) + zana (chasse). Tactique de conflit. Distinct de 'chasse' simple (zanak, verbe) par la dimension de dissimulation hostile.",
+          "registre": "courant"
         }
       ]
     },
@@ -561,7 +683,11 @@
             "pasik",
             "toli"
           ],
-          "domaine": "conflit"
+          "domaine": "conflit",
+          "definition": "Personne capturée et retenue ; captif (ex. les Nanzagouet menés au Gouffre Humide).",
+          "nuance": "pasik (capturer, cf. verbe kapik) + toli (?). ATTENTION : racine 'toli' non attestée dans data/lexique (la personne est tori) — probable variante ou erreur de tori. À vérifier.",
+          "registre": "courant",
+          "exemple": "va aki su vo zoka kapikat"
         }
       ]
     },
@@ -578,7 +704,10 @@
           ],
           "liaison": "i",
           "domaine": "concept_fondateur",
-          "note": "Civilisation - l'union des gens qui vivent ensemble (ura=eau/vie + i=agentivité + kota=confluence/union)"
+          "note": "Civilisation - l'union des gens qui vivent ensemble (ura=eau/vie + i=agentivité + kota=confluence/union)",
+          "definition": "L'union des êtres vivant ensemble ; la société comme confluence de vies.",
+          "nuance": "INCOHÉRENCE : forme 'ulaikota' et composition 'ula-i-kota' citent 'ula', mais racines listées = ura (eau/vie) + kota → devrait être 'uraikota'. ura/ula incohérents. Sens : eau=vie + agent + union.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -598,7 +727,11 @@
             "mira"
           ],
           "domaine": "concept_fondateur",
-          "note": "Observation - acte de regarder avec attention (sili=regard + mirak=observer)"
+          "note": "Observation - acte de regarder avec attention (sili=regard + mirak=observer)",
+          "definition": "Acte de regarder avec attention avant d'agir ; valeur cardinale du peuple du regard.",
+          "nuance": "sili (regard) + mira (observer/voir). Redondance volontaire (regard+voir) = intensif. Distinct de 'regard libre' (siliaska, l'état/posture) : silimira est l'ACTE de regarder. Lié au verbe mirak.",
+          "registre": "sacré",
+          "exemple": "va sili vo ura miraku"
         }
       ],
       "synonymes_fr": [
@@ -618,7 +751,10 @@
             "toka"
           ],
           "domaine": "concept_fondateur",
-          "note": "Culture - les lieux/traditions des ancêtres transmis (aita=ancêtres + toka=lieux)"
+          "note": "Culture - les lieux/traditions des ancêtres transmis (aita=ancêtres + toka=lieux)",
+          "definition": "Les traditions et lieux des ancêtres transmis de génération en génération ; patrimoine vivant.",
+          "nuance": "aita (ancêtres) + toka (lieux/terre). Sens 'lieux-des-ancêtres' → traditions enracinées. Recoupe 'transmission' et 'sagesse' (tous bâtis sur aita) mais désigne le PATRIMOINE global, pas l'acte ni le savoir.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -638,7 +774,11 @@
             "memu"
           ],
           "domaine": "concept_fondateur",
-          "note": "Connaissance - le savoir gardé en mémoire (seka=savoir + memu=mémoire)"
+          "note": "Connaissance - le savoir gardé en mémoire (seka=savoir + memu=mémoire)",
+          "definition": "Le savoir gardé en mémoire ; ensemble de ce qui est su et conservé.",
+          "nuance": "seka (savoir) + memu (mémoire, var. mori). Triade seka- : distinct de 'sagesse' (sekauaita, savoir ancestral) et 'compétence' (sekautosa, savoir utile). Ici accent sur la CONSERVATION mnésique. NB memu vs racine attestée mori.",
+          "registre": "courant",
+          "exemple": "va miki vo seka sekamu"
         }
       ],
       "synonymes_fr": [
@@ -654,7 +794,11 @@
           "type": "racine",
           "forme_liee": "mor",
           "domaine": "concept_fondateur",
-          "note": "Mémoire - concept central de la civilisation (synonyme normalisé de memoire)"
+          "note": "Mémoire - concept central de la civilisation (synonyme normalisé de memoire)",
+          "definition": "La mémoire et le souvenir ; faculté de ne rien oublier, pilier de la civilisation (rien ne doit être oublié).",
+          "nuance": "Racine (mori, attestée ; verbe morik=mémoriser). Forme normalisée de 'memoire'. Composant de 'connaissance' (sekamemu, qui utilise la var. memu). Valeur cardinale anti-oubli.",
+          "registre": "sacré",
+          "exemple": "va aita su vo mori morikait"
         }
       ],
       "synonymes_fr": [
@@ -670,7 +814,10 @@
           "type": "racine_sacree",
           "forme_liee": "eiln",
           "domaine": "concept_fondateur",
-          "note": "Liberté - racine sacrée centrale (synonyme normalisé de liberte)"
+          "note": "Liberté - racine sacrée centrale (synonyme normalisé de liberte)",
+          "definition": "La liberté comme racine sacrée centrale, état d'affranchissement.",
+          "nuance": "QUASI-DOUBLON avec 'liberte'=oabsi : deux racines sacrées concurrentes pour 'liberté/concept_fondateur'. eilne présentée comme 'synonyme normalisé' → arbitrage requis (garder une seule). Distincte de aska (libre) et siliaska (regard libre).",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [

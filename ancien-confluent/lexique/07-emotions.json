@@ -14,7 +14,11 @@
             "tosa"
           ],
           "domaine": "emotion_positive",
-          "note": "Composition standard pour exprimer les émotions"
+          "note": "Composition standard pour exprimer les émotions",
+          "definition": "Plénitude émotionnelle vécue comme un cœur empli de bien, l'état positif de référence.",
+          "nuance": "Métaphore kori (cœur) + tosa (bien). Émotion durable et pleine, vs 'soulagement' (kolitosa) = simple retour au bien après tension. La liaison -a- marque un cœur uni au bien de façon stable.",
+          "registre": "courant",
+          "exemple": "va miki kori tosa"
         }
       ],
       "synonymes_fr": [
@@ -33,7 +37,10 @@
             "kori",
             "ora"
           ],
-          "domaine": "emotion_positive"
+          "domaine": "emotion_positive",
+          "definition": "Tension positive du cœur tourné vers l'aurore, attente d'un avenir meilleur.",
+          "nuance": "kori + ora (aurore, promesse). Antonyme de 'désespoir' (kolizoola, cœur SANS aurore). Vs 'joie' (bien déjà présent) : l'espoir vise un bien à venir.",
+          "registre": "courant"
         }
       ]
     },
@@ -48,7 +55,10 @@
             "kori",
             "mako"
           ],
-          "domaine": "emotion_positive"
+          "domaine": "emotion_positive",
+          "definition": "Sentiment d'un cœur empli de grandeur, fierté légitime tirée d'un mérite accompli.",
+          "nuance": "kori + mako (grand). La culture rejette l'orgueil stérile : koliumako = fierté juste, non vanité. Vs 'joie' : porte sur sa propre valeur.",
+          "registre": "courant"
         }
       ]
     },
@@ -63,7 +73,10 @@
             "kori",
             "kota"
           ],
-          "domaine": "emotion_positive"
+          "domaine": "emotion_positive",
+          "definition": "Cœur en état d'union, attachement profond fondé sur la confluence avec l'autre.",
+          "nuance": "kori + kota (union, confluence) — concept central. Pas désir possessif mais fusion. Antonyme 'haine' (koliuzoka).",
+          "registre": "courant"
         }
       ]
     },
@@ -78,7 +91,11 @@
             "kori",
             "sili"
           ],
-          "domaine": "emotion_positive"
+          "domaine": "emotion_positive",
+          "definition": "Cœur tendu vers le regard, désir d'observer et de comprendre l'inconnu.",
+          "nuance": "kori + sili (regard) — seule émotion liant le cœur au regard. Reflète la valeur d'observation. Vs 'espoir' : élan vers le savoir, pas vers l'aurore.",
+          "registre": "courant",
+          "exemple": "va miki kori sili"
         }
       ]
     },
@@ -94,7 +111,10 @@
             "tosa"
           ],
           "domaine": "emotion_positive",
-          "note": "Retour au bien après tension"
+          "note": "Retour au bien après tension",
+          "definition": "Détente du cœur qui retrouve le bien après une période de tension ou de peur.",
+          "nuance": "kori + tosa (bien), sans la liaison -a- de 'joie' (koliatosa). Subtil : joie = bien plein stable ; soulagement = retour transitoire au bien. NON doublon (absence de -a-).",
+          "registre": "courant"
         }
       ]
     },
@@ -109,7 +129,10 @@
             "kori",
             "veli"
           ],
-          "domaine": "emotion_positive"
+          "domaine": "emotion_positive",
+          "definition": "Cœur reposant sur la vérité, assurance accordée à autrui ou à une parole.",
+          "nuance": "kori + veri (vrai). Antonyme de 'méfiance' (kolizoveli, cœur SANS vérité). Liée au Regard Partagé. Vs 'espoir' : repose sur une vérité acquise.",
+          "registre": "courant"
         }
       ]
     },
@@ -124,7 +147,10 @@
             "kori",
             "kitan"
           ],
-          "domaine": "emotion_positive"
+          "domaine": "emotion_positive",
+          "definition": "Cœur empli par le don reçu, reconnaissance envers celui qui a donné ou transmis.",
+          "nuance": "kori + kitan (don). Centrale dans une culture de transmission. Vs 'amour' (union mutuelle) : gratitude asymétrique, dirigée vers un bienfaiteur.",
+          "registre": "courant"
         }
       ]
     },
@@ -140,7 +166,11 @@
             "ura"
           ],
           "domaine": "emotion_positive",
-          "note": "Calme comme l'eau"
+          "note": "Calme comme l'eau",
+          "definition": "Cœur calme et fluide comme l'eau, paix intérieure sans agitation.",
+          "nuance": "kori + ura (eau) — calme de l'eau. Vs 'joie' (présence active d'un bien) : sérénité = absence de trouble. Vs 'soulagement' : sans tension préalable.",
+          "registre": "courant",
+          "exemple": "va miki kori ura"
         }
       ]
     },
@@ -155,7 +185,10 @@
             "kori",
             "oki"
           ],
-          "domaine": "emotion_negative"
+          "domaine": "emotion_negative",
+          "definition": "Cœur dressé face au danger ou à l'épreuve, alarme devant une menace présente.",
+          "nuance": "kori + oki (épreuve/danger, sacré). Liaison -oa- : cœur affrontant l'épreuve. Vs 'angoisse' (kolioavuku, peur du gouffre/vide) : la peur a un objet (oki).",
+          "registre": "courant"
         }
       ]
     },
@@ -170,7 +203,10 @@
             "kori",
             "suki"
           ],
-          "domaine": "emotion_negative"
+          "domaine": "emotion_negative",
+          "definition": "Cœur de feu, embrasement émotionnel face à l'injustice ou l'offense.",
+          "nuance": "kori + suki (feu). Vs 'haine' (koliuzoka) : colère = flambée passagère, haine = état durable. Opposée à la sérénité (feu vs eau dans la poitrine).",
+          "registre": "courant"
         }
       ]
     },
@@ -185,7 +221,10 @@
             "kori",
             "osi"
           ],
-          "domaine": "emotion_negative"
+          "domaine": "emotion_negative",
+          "definition": "Cœur orienté vers la mort, peine et chagrin du deuil ou de la perte.",
+          "nuance": "kori + osi (mort, sacré). Vs 'regret' (kolioaaita, vers le passé) : la tristesse pleure une perte/mort. Charge funéraire possible.",
+          "registre": "courant"
         }
       ]
     },
@@ -201,7 +240,10 @@
             "zo",
             "ora"
           ],
-          "domaine": "emotion_negative"
+          "domaine": "emotion_negative",
+          "definition": "Cœur privé d'aurore, absence totale d'espoir et perte d'horizon.",
+          "nuance": "kori + zo (négation) + ora (aurore) = cœur SANS aurore. Antonyme construit de l'espoir. Plus radical que la tristesse : nie tout avenir.",
+          "registre": "courant"
         }
       ]
     },
@@ -216,7 +258,10 @@
             "kori",
             "kumu"
           ],
-          "domaine": "emotion_negative"
+          "domaine": "emotion_negative",
+          "definition": "Cœur tourné vers l'ombre, sentiment d'indignité face au regard des autres.",
+          "nuance": "kori + kumu (ombre). NB : racine kumu non attestée dans data/lexique (le 'sombre' attesté est taku) — à vérifier. Vs 'tristesse' : la honte est sociale.",
+          "registre": "courant"
         }
       ]
     },
@@ -231,7 +276,10 @@
             "kori",
             "zoka"
           ],
-          "domaine": "emotion_negative"
+          "domaine": "emotion_negative",
+          "definition": "Cœur habité par l'ennemi, hostilité profonde et durable envers l'autre.",
+          "nuance": "kori + zoka (ennemi). Antonyme de l'amour (koliukota, cœur d'union). Vs 'colère' (feu passager) : la haine est un état installé.",
+          "registre": "courant"
         }
       ]
     },
@@ -246,7 +294,10 @@
             "kori",
             "vuku"
           ],
-          "domaine": "emotion_negative"
+          "domaine": "emotion_negative",
+          "definition": "Cœur tourné vers le gouffre, anxiété diffuse devant le vide ou l'inconnu.",
+          "nuance": "kori + vuku (gouffre, abîme) — résonne avec le Gouffre Humide. Vs 'peur' (kolioaoki, objet défini) : l'angoisse vise l'abîme sans objet précis.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -265,7 +316,10 @@
             "zo",
             "veli"
           ],
-          "domaine": "emotion_negative"
+          "domaine": "emotion_negative",
+          "definition": "Cœur privé de vérité, soupçon et réserve face à autrui.",
+          "nuance": "kori + zo (négation) + veri (vérité) = cœur SANS vérité. Antonyme construit de la confiance. Valorisée comme 'méfiance prudente' face à l'Autre.",
+          "registre": "courant"
         }
       ]
     },
@@ -280,7 +334,10 @@
             "kori",
             "aita"
           ],
-          "domaine": "emotion_negative"
+          "domaine": "emotion_negative",
+          "definition": "Cœur tourné vers le passé ancestral, peine de ce qui a été ou aurait dû être.",
+          "nuance": "kori + aita (ancêtre/passé, sacré). Vs 'tristesse' (vers la mort) : le regret porte sur des choix/un temps perdu. Charge sacrée possible.",
+          "registre": "courant"
         }
       ]
     },
@@ -295,7 +352,10 @@
             "kori",
             "kilu"
           ],
-          "domaine": "emotion_negative"
+          "domaine": "emotion_negative",
+          "definition": "Cœur dressé contre l'échange, envie de ce que possède ou reçoit autrui.",
+          "nuance": "kori + kiru (échanger). NB : forme notée 'kilu' mais racine attestée 'kiru' — coquille probable. Vs 'haine' : la jalousie vise un bien convoité.",
+          "registre": "courant"
         }
       ]
     }
