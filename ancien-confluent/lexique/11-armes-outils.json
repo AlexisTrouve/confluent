@@ -9,7 +9,11 @@
           "type": "racine",
           "forme_liee": "pik",
           "domaine": "arme",
-          "note": "Arme principale"
+          "note": "Arme principale",
+          "definition": "Lance, l'arme principale des Siliaska. Racine signifiant aussi pic ou pointe.",
+          "nuance": "Racine pure (piki = pic, pointe ; data id 96). Sert de base productive a toute la categorie des armes pointues (fleche, burin, armurerie). Comme arme de chasse de proximite, elle s'oppose a l'arc (arku), arme de jet.",
+          "registre": "courant",
+          "exemple": "va tori vu piki vo besi zanaku"
         }
       ],
       "synonymes_fr": [
@@ -27,7 +31,10 @@
             "piki",
             "oki"
           ],
-          "domaine": "arme"
+          "domaine": "arme",
+          "definition": "Lance specifiquement destinee au combat et a l'epreuve, par opposition a la lance de chasse ordinaire.",
+          "nuance": "Composition pik-i-oki = pointe de l'epreuve, ou oki est la racine SACREE epreuve/defi/danger (data id 13). Le recours a une racine sacree elevate l'objet : la guerre est un defi grave, pas une simple chasse. Doublon partiel avec piki (lance generique) que cette forme specialise vers l'usage guerrier des Akoazana.",
+          "registre": "courant"
         }
       ]
     },
@@ -38,7 +45,10 @@
           "type": "racine",
           "forme_liee": "ark",
           "domaine": "arme",
-          "note": "Nouvelle racine - arme de jet"
+          "note": "Nouvelle racine - arme de jet",
+          "definition": "Arc, arme de jet permettant de frapper a distance.",
+          "nuance": "Racine nouvelle introduite dans ce fichier (forme liee ark-) ; absente de data/lexique.json. Phonologie atypique (debut vocalique avec r, profil quasi-sacre alors que c'est un objet courant). Distinction d'usage : l'arc atteint la proie a distance la ou la lance (piki) frappe au contact.",
+          "registre": "courant"
         }
       ]
     },
@@ -53,7 +63,10 @@
             "piki",
             "arku"
           ],
-          "domaine": "arme"
+          "domaine": "arme",
+          "definition": "Fleche, projectile pointu lance par l'arc.",
+          "nuance": "Composition pik-i-arku = pointe de l'arc, sur piki (pointe) et arku (arc, racine locale). La liaison agent -i- designe la pointe comme l'element actif qui frappe. Outil de chasse a distance, complementaire du gibier traque par les Akoazana.",
+          "registre": "courant"
         }
       ]
     },
@@ -68,7 +81,10 @@
             "piki",
             "toku"
           ],
-          "domaine": "arme"
+          "domaine": "arme",
+          "definition": "Fleche dont la pointe est enduite de poison, pour abattre rapidement une proie ou un ennemi.",
+          "nuance": "Composition pik-i-toku = pointe de poison. Attention : le sens 'poison' attendu correspond a la racine poku (data id 97, poison/toxique) ; toku en data signifie 'toucher/contact' ou 'document/ecrit'. La forme retenue toku est donc une approximation phonetique de poku ou un sens local 'poison'. Arme de chasse efficace, mais a la limite du deshonneur car elle tue sans affronter franchement la proie.",
+          "registre": "courant"
         }
       ]
     },
@@ -79,7 +95,10 @@
           "type": "racine",
           "forme_liee": "kut",
           "domaine": "outil",
-          "note": "Lame pour couper"
+          "note": "Lame pour couper",
+          "definition": "Hachette ou lame servant a couper et fendre, outil polyvalent.",
+          "nuance": "Racine locale kutu (forme liee kut-, lame), proche phonetiquement de kisu (couper/trancher, data id 78). Sert de base au couteau (kutupisu). Outil de travail avant tout, pas une arme dediee.",
+          "registre": "courant"
         }
       ]
     },
@@ -94,7 +113,10 @@
             "kutu",
             "pisu"
           ],
-          "domaine": "outil"
+          "domaine": "outil",
+          "definition": "Couteau, petite lame portative pour decouper, tailler ou depecer.",
+          "nuance": "Composition kut-u-pisu = lame petite, sur kutu (lame) et pisu (petit/fin, data id 57). La liaison -u- (appartenance) plus que la juxtaposition adjectivale ; litteralement 'lame du petit (format)'. Distinction nette avec kutu, la hachette plus grande.",
+          "registre": "courant"
         }
       ]
     },
@@ -109,7 +131,10 @@
             "bopu",
             "viku"
           ],
-          "domaine": "arme"
+          "domaine": "arme",
+          "definition": "Gourdin, masse de bois brut servant a frapper.",
+          "nuance": "Composition bop-u-viku = frappeur de bois, sur bopu (frappeur, racine locale absente de data) et viku (foret/arbre/bois, data id 23). Note culturelle forte : le gourdin symbolise la violence bestiale rejetee par la civilisation (frapper comme une bete = deshonneur, cf. CONTEXTE). Arme meprisee, non noble.",
+          "registre": "courant"
         }
       ]
     },
@@ -124,7 +149,11 @@
             "zaki",
             "kari"
           ],
-          "domaine": "arme"
+          "domaine": "arme",
+          "definition": "Bouclier, piece d'equipement de pierre servant a se proteger des coups.",
+          "nuance": "Composition zak-i-kari = protection de pierre, sur zaki (garder/proteger, data id 44) et kari (pierre/roche, data id 20). La liaison agent -i- fait du bouclier 'celui qui protege'. Equipement defensif des guerriers Akoazana.",
+          "registre": "courant",
+          "exemple": "va tori vu zakikari vo sanu zakisu"
         }
       ]
     },
@@ -139,7 +168,10 @@
             "vuku",
             "kari"
           ],
-          "domaine": "outil"
+          "domaine": "outil",
+          "definition": "Pioche, outil pour creuser et extraire la roche dans les souterrains.",
+          "nuance": "Composition vuk-u-kari = pierre du gouffre, sur vuku (profond/gouffre/abime, data id 61) et kari (pierre). Outil emblematique des Nakukeko (Enfants des Echos), mineurs et carriers des Antres. Le sens litteral evoque le Gouffre Humide plus que la fonction de creusement.",
+          "registre": "courant"
         }
       ]
     },
@@ -154,7 +186,10 @@
             "kova",
             "kari"
           ],
-          "domaine": "outil"
+          "domaine": "outil",
+          "definition": "Ciseau du tailleur de pierre, pour graver et sculpter la roche.",
+          "nuance": "Composition kov-u-kari = graveur de pierre, sur kova (peinture/image/fresque, qui porte aussi le verbe kovak 'sculpter', data id 67) et kari (pierre). Outil des sculpteurs Nakukeko ; partage la racine kova avec le burin (kovupiki), distingue par le second element (pierre vs pointe).",
+          "registre": "courant"
         }
       ]
     },
@@ -169,7 +204,10 @@
             "bopu",
             "kari"
           ],
-          "domaine": "outil"
+          "domaine": "outil",
+          "definition": "Maillet, outil de frappe en pierre pour cogner sur un ciseau ou enfoncer.",
+          "nuance": "Composition bop-u-kari = frappeur de pierre, meme racine de frappe bopu que le gourdin (bopuviku) mais second element kari (pierre) au lieu de viku (bois). Ici l'outil de travail est noble (artisanat) la ou le gourdin-bois est meprise : la matiere distingue l'usage.",
+          "registre": "courant"
         }
       ]
     },
@@ -184,7 +222,10 @@
             "kova",
             "piki"
           ],
-          "domaine": "outil"
+          "domaine": "outil",
+          "definition": "Burin, outil pointu de graveur pour inciser la pierre ou tracer des glyphes.",
+          "nuance": "Composition kov-u-piki = graveur pointu, sur kova (graver/sculpter) et piki (pointe). Outil essentiel pour graver les glyphes du Gouffre et les tablettes (artefacts multi-generationnels). Doublon de domaine avec kovukari (ciseau) : le burin precise par la pointe (piki), le ciseau par la matiere travaillee (kari).",
+          "registre": "courant"
         }
       ]
     },
@@ -195,7 +236,10 @@
           "type": "racine",
           "forme_liee": "lin",
           "domaine": "outil",
-          "note": "Lien tressé"
+          "note": "Lien tressé",
+          "definition": "Corde, lien tresse servant a attacher, lier ou suspendre.",
+          "nuance": "Racine lina (forme liee lin- ; data id 83 = ligne, corde). Materiau de base pour le filet et d'autres outils tresses. A distinguer de kopu (autre racine 'corde' locale utilisee pour filet et collier) : doublon lexical possible entre lina et kopu.",
+          "registre": "courant"
         }
       ]
     },
@@ -210,7 +254,10 @@
             "kopu",
             "pisu"
           ],
-          "domaine": "outil"
+          "domaine": "outil",
+          "definition": "Filet, maillage de cordes servant a capturer poissons ou gibier.",
+          "nuance": "Composition kop-u-pisu = corde a poisson, sur kopu (corde, racine locale absente de data ; concurrente de lina) et pisu (petit/fin ; ici glose 'poisson' dans le source, vraisemblablement par confusion avec pesa, data id 94). Outil central des Nakuura (Enfants du Courant, pecheurs).",
+          "registre": "courant"
         }
       ]
     },
@@ -225,7 +272,10 @@
             "saku",
             "vasi"
           ],
-          "domaine": "outil"
+          "domaine": "outil",
+          "definition": "Panier, contenant tresse pour transporter recoltes, poissons ou objets.",
+          "nuance": "Composition sak-u-vasi = sac tisse, sur saku (sac/contenant, data id 104) et vasi (pont/lien/passage, data id 60 ; ici detourne vers le sens 'tisse/lie'). Le second element evoque le tressage par la notion de lien plus que par tiki (tisser, data id 119).",
+          "registre": "courant"
         }
       ]
     },
@@ -240,7 +290,10 @@
             "zoku",
             "zana"
           ],
-          "domaine": "outil"
+          "domaine": "outil",
+          "definition": "Piege de chasse, dispositif cache pour capturer le gibier.",
+          "nuance": "Composition zok-u-zana = secret de chasse, sur une racine de secret (cf. seku, data id 150 'secret/cache' ; zoku en est une variante phonetique, a ne pas confondre avec zoka 'ennemi') et zana (chasser/traquer, data id 46). Outil des chasseurs ; la notion de dissimulation (secret) est centrale au piege.",
+          "registre": "courant"
         }
       ]
     },
@@ -255,7 +308,10 @@
             "saku",
             "asa"
           ],
-          "domaine": "objet_rituel"
+          "domaine": "objet_rituel",
+          "definition": "Vase ou contenant consacre, reserve aux usages ceremoniels et aux offrandes.",
+          "nuance": "Composition sak-u-asa = contenant sacre, sur saku (contenant) et asa (racine SACREE sacre/divin, data id 3). L'association d'un objet courant (saku) a une racine sacree le fait basculer dans le rituel, comme pour le foyer eternel (sukiueka). Hiatus assume entre -u- et asa.",
+          "registre": "rituel"
         }
       ]
     },
@@ -270,7 +326,10 @@
             "saku",
             "zaki"
           ],
-          "domaine": "objet"
+          "domaine": "objet",
+          "definition": "Coffret, contenant ferme servant a garder et proteger des objets de valeur.",
+          "nuance": "Composition sak-u-zaki = contenant protege, sur saku (contenant) et zaki (garder/proteger, data id 44). Famille des contenants saku- : se distingue du panier (sakuvasi, ouvert/tisse) et du vase rituel (sakuuasa, sacre) par la fonction de protection. Proche du grenier (lokuzaki) qui protege un lieu plutot qu'un contenant.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": []
@@ -282,7 +341,10 @@
           "type": "racine",
           "forme_liee": "tab",
           "domaine": "objet",
-          "note": "Surface pour écrire"
+          "note": "Surface pour écrire",
+          "definition": "Tablette, surface (d'argile ou de pierre) destinee a recevoir une ecriture ou des glyphes.",
+          "nuance": "Racine tabi (forme liee tab- ; data id 113 = tablette, plaque). Support de l'ecriture par glyphes, artefact multi-generationnel central a la civilisation. Base de la tablette gravee (tabuukova).",
+          "registre": "courant"
         }
       ]
     },
@@ -297,7 +359,10 @@
             "tabu",
             "kova"
           ],
-          "domaine": "objet"
+          "domaine": "objet",
+          "definition": "Tablette portant des glyphes graves, document permanent servant de reference.",
+          "nuance": "Composition tab-u-kova = tablette de gravure, sur tabi (tablette) et kova (peinture/image, racine du verbe kovak 'sculpter/graver'). Incarnation de la memoire ecrite et de l'evidentiel -uv ('c'est ecrit') ; les tablettes de glyphes deviennent references transmissibles. Hiatus -u-u- assume entre liaison et racine.",
+          "registre": "courant"
         }
       ]
     },
@@ -312,7 +377,10 @@
             "kopu",
             "veku"
           ],
-          "domaine": "objet"
+          "domaine": "objet",
+          "definition": "Collier, parure ou cordon porte autour du cou.",
+          "nuance": "Composition kop-u-vek-i = corde de la peau, sur kopu (corde, racine locale) et veku (peau ; cf. peli data id 95 'peau/surface', veku en etant une variante). Le sens litteral 'corde de peau' renvoie au materiau (lien en cuir). Reutilise la racine kopu du filet, ce qui en fait un objet du quotidien plutot qu'un bijou precieux.",
+          "registre": "courant"
         }
       ]
     },
@@ -327,7 +395,10 @@
             "suki",
             "loku"
           ],
-          "domaine": "structure"
+          "domaine": "structure",
+          "definition": "Foyer domestique, l'emplacement du feu au sein d'une habitation.",
+          "nuance": "Composition suk-i-loku = feu du lieu, sur suki (feu/flamme, data id 18) et loku (lieu/endroit, data id 84). La liaison agent -i- fait du feu l'element central du lieu. Structure domestique courante, a distinguer du foyer eternel (sukiueka), sacre.",
+          "registre": "courant"
         }
       ]
     },
@@ -342,7 +413,10 @@
             "suki",
             "eka"
           ],
-          "domaine": "objet_sacre"
+          "domaine": "objet_sacre",
+          "definition": "Feu sacre entretenu sans interruption, symbole de continuite et de memoire de la communaute.",
+          "nuance": "Composition suk-i-eka = feu de totalite, sur suki (feu) et eka (racine SACREE tout/entier/totalite, data id 12). La racine sacree eka transforme le simple foyer (sukiuloku) en objet sacre perpetuel. A rapprocher de l'aspect verbal -eom (eternel) : le feu qui ne s'eteint jamais.",
+          "registre": "sacre"
         }
       ]
     },
@@ -357,7 +431,10 @@
             "loku",
             "piki"
           ],
-          "domaine": "structure"
+          "domaine": "structure",
+          "definition": "Armurerie, lieu ou sont conservees les armes de la communaute.",
+          "nuance": "Composition lok-u-piki = lieu des lances, sur loku (lieu, data id 84) et piki (lance/pointe), avec hiatus -u-u-. La lance (piki) sert ici de synecdoque pour l'ensemble des armes. Structure liee aux Akoazana, gardiens militaires bases dans les Halls des Serments.",
+          "registre": "courant"
         }
       ]
     },
@@ -372,7 +449,10 @@
             "loku",
             "zaki"
           ],
-          "domaine": "structure"
+          "domaine": "structure",
+          "definition": "Grenier ou reserve, lieu protege ou l'on entrepose vivres et biens.",
+          "nuance": "Composition lok-u-zaki = lieu garde, sur loku (lieu) et zaki (garder/proteger). Meme schema que l'armurerie (lokuupiki) mais axe sur la protection generale (zaki) plutot que sur les armes. Parallele avec le coffret (sakuzaki) : meme racine zaki, contenant-objet vs lieu.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": []

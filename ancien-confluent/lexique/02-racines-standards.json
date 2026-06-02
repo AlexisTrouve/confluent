@@ -9,7 +9,11 @@
           "type": "racine",
           "forme_liee": "vel",
           "domaine": "concept_abstrait",
-          "note": "Racine fondamentale"
+          "note": "Racine fondamentale",
+          "definition": "Ce qui est conforme à la réalité ; la vérité, valeur cardinale d'un peuple voué à l'observation et au 'regard libre' qui voit sans préjugé. Couvre l'adjectif (vrai) et le substantif (vérité).",
+          "nuance": "Racine standard (forme liée vel-), concept_abstrait. ATTENTION : le fichier donne 'veli', mais data atteste 'veri' (forme liée ver-) pour vrai/vérité ; doublon veli/veri à arbitrer (le 'r' de veri est plus conforme à l'usage attesté dans les compositions du type sil-eo-veri). À distinguer de tosa (bon, valeur morale) : veli est la conformité au réel, non la valeur positive.",
+          "registre": "courant",
+          "exemple": "va miki vo veli miraku"
         }
       ],
       "synonymes_fr": [
@@ -23,7 +27,10 @@
           "type": "racine",
           "forme_liee": "tos",
           "domaine": "concept_abstrait",
-          "note": "Bien, positif"
+          "note": "Bien, positif",
+          "definition": "Ce qui est bien, positif, conforme au bien ; qualité morale fondamentale invoquée dans les souhaits et bénédictions de la Confluence. Couvre 'bon' et 'bien'.",
+          "nuance": "Racine standard tosa (forme liée tos-), concept_abstrait. Donne le verbe tosan (bénir). Entre dans takitosa (Passes-bien, tak-i-tosa) et la formule 'va kota tosa' (que l'union soit bonne). À distinguer de veli/veri (le vrai) : tosa est la valeur morale, opposée à taku (mauvais).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -37,7 +44,11 @@
           "type": "racine",
           "forme_liee": "mak",
           "domaine": "qualificatif",
-          "note": "Vaste, important"
+          "note": "Vaste, important",
+          "definition": "De grande taille ou de grande importance ; vaste, étendu, majeur. Sert aussi à exprimer le grand nombre (quantificateur vague 'beaucoup').",
+          "nuance": "Racine standard mako (forme liée mak-), qualificatif. S'emploie aussi comme quantificateur approximatif (grand nombre). Opposé de pisu (petit). Pas d'adjectif morphologique : se juxtapose au nom (tori mako = grande personne). Synonymes fr couvrent toutes les flexions (grande, grands, grandes).",
+          "registre": "courant",
+          "exemple": "va tori mako miraku"
         }
       ],
       "synonymes_fr": [
@@ -54,7 +65,10 @@
           "type": "racine",
           "forme_liee": "pis",
           "domaine": "qualificatif",
-          "note": "Fin, menu"
+          "note": "Fin, menu",
+          "definition": "De petite taille ; fin, menu, réduit. Sert aussi à exprimer le petit nombre (quantificateur vague).",
+          "nuance": "Racine standard pisu (forme liée pis-), qualificatif. Quantificateur approximatif (petit nombre) opposé à mako. Opposé qualitatif de mako (grand). Juxtaposition au nom, pas de dérivation adjectivale. Synonymes fr couvrent les flexions (petite, petits, petites) et 'fin'.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -71,7 +85,10 @@
           "type": "racine",
           "forme_liee": "tel",
           "domaine": "qualificatif",
-          "note": "Lent, sans hâte"
+          "note": "Lent, sans hâte",
+          "definition": "Qui se déplace ou agit sans hâte ; la lenteur, qualité valorisée par une civilisation qui prône la patience et l'observation avant l'action.",
+          "nuance": "Racine standard telu (forme liée tel-), qualificatif. Couvre lent/lente/lents/lentes et l'adverbe 'lentement' (pas de forme adverbiale dédiée : juxtaposition ou liaison -e-). Opposé de kazo (rapide). Charge culturelle positive (patience), contrairement à la précipitation rejetée.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -88,7 +105,10 @@
           "type": "racine",
           "forme_liee": "kaz",
           "domaine": "qualificatif",
-          "note": "Rapide, vif"
+          "note": "Rapide, vif",
+          "definition": "Qui se déplace ou agit vite ; vif, prompt. La rapidité, par opposition à la lenteur réfléchie valorisée.",
+          "nuance": "Racine standard kazo (forme liée kaz-), qualificatif. Couvre rapide/rapidement et vif/vive/vifs/vives. Opposé de telu (lent). Nuance culturelle : la précipitation (agir sans observer) est rejetée, donc kazo peut porter une charge ambivalente.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -107,7 +127,10 @@
           "type": "racine",
           "forme_liee": "nov",
           "domaine": "qualificatif",
-          "note": "Jeune, récent"
+          "note": "Jeune, récent",
+          "definition": "Récent, jeune, qui vient d'apparaître ; le neuf par opposition à l'ancien. Couvre 'nouveau' et 'jeune'.",
+          "nuance": "DOUBLON DE FORME LIÉE à signaler : le fichier note forme_liee 'nov', mais data atteste nuvi avec forme liée 'nuv' ; par ailleurs 'novi' sert pour présage et le verbe novak (découvrir) est rattaché à nuvi. À distinguer de seni (vieux). Juxtaposition au nom, pas d'adjectif morphologique.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -124,7 +147,10 @@
           "type": "racine",
           "forme_liee": "kil",
           "domaine": "action",
-          "note": "Troquer, commercer"
+          "note": "Troquer, commercer",
+          "definition": "Donner une chose pour en recevoir une autre ; troquer, commercer, activité centrale des Passes-bien (Takitosa), caste de marchands et médiateurs.",
+          "nuance": "DOUBLON à signaler : le fichier donne 'kilu' (forme liée kil-), mais data atteste 'kiru' (forme liée kir-, verbe kirum 'troquer'). kilu/kiru à arbitrer. À distinguer de kitan (donner sans contrepartie) : l'échange suppose réciprocité, fondement du commerce.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -138,7 +164,10 @@
           "type": "racine",
           "forme_liee": "vas",
           "domaine": "structure",
-          "note": "Lien, passage entre deux"
+          "note": "Lien, passage entre deux",
+          "definition": "Structure ou lien reliant deux points ; au figuré, passage et connexion entre deux entités. Résonne avec la valeur de confluence (union de ce qui était séparé).",
+          "nuance": "Racine standard vasi (forme liée vas-), structure. Couvre pont/lien/passage. À distinguer de teki/kovi (route, chemin parcouru) et de pori (porte, ouverture) : vasi est ce qui joint deux rives. Proche culturellement de kota (union) et vasi peut métaphoriser la médiation.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -153,7 +182,10 @@
           "type": "racine",
           "forme_liee": "kum",
           "domaine": "qualificatif",
-          "note": "Obscur, sans lumière"
+          "note": "Obscur, sans lumière",
+          "definition": "Privé de lumière, obscur ; l'obscurité physique. Par extension métaphorique, entre dans les images émotionnelles négatives (cœur sombre = tristesse, regard sombre = peur).",
+          "nuance": "DOUBLON à signaler : le fichier donne 'kumu' (forme liée kum-), mais data atteste 'taku' (forme liée tak-) pour sombre/obscur, lequel sert aussi aux métaphores émotionnelles (kori taku, sili taku). kumu/taku à arbitrer. À distinguer de kiso (froid) et de kesa (gris).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -168,7 +200,10 @@
           "type": "racine",
           "forme_liee": "kol",
           "domaine": "perception",
-          "note": "Nouvelle racine - teinte visible"
+          "note": "Nouvelle racine - teinte visible",
+          "definition": "Teinte visible perçue par l'œil ; la couleur en général, catégorie perceptive importante pour un peuple dont les Ciels-clairs se distinguent par la couleur de leurs yeux (aurore).",
+          "nuance": "DOUBLON à signaler : le fichier donne 'kolu' (forme liée kol-), mais data atteste 'kelu' (forme liée kel-, verbe kelum 'peindre'). kolu/kelu à arbitrer. Domaine perception. Couleurs concrètes dérivées : kesa (gris/cendre), pasu (rouge).",
+          "registre": "courant"
         }
       ]
     },
@@ -179,7 +214,10 @@
           "type": "racine",
           "forme_liee": "kes",
           "domaine": "couleur",
-          "note": "Même racine que cendre"
+          "note": "Même racine que cendre",
+          "definition": "Couleur intermédiaire entre clair et sombre ; teinte de la cendre. Couleur emblématique des Ailes-Grises (Aliaska), chamans dresseurs de grues.",
+          "nuance": "Racine standard kesa (forme liée kes-), couleur. Même racine que 'cendre' (data : kesa = cendre, gris) : la couleur tire son nom du matériau. À distinguer de pasu (rouge) et kumu/taku (sombre). Charge culturelle via les Ailes-Grises.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -195,7 +233,10 @@
           "type": "racine",
           "forme_liee": "ras",
           "domaine": "corps",
-          "note": "Fluide vital rouge"
+          "note": "Fluide vital rouge",
+          "definition": "Fluide vital rouge circulant dans le corps ; symbole de vie et de lignée. Donne son surnom aux Nanzagouet, les 'Cheveux de Sang', premiers étrangers rencontrés.",
+          "nuance": "DOUBLONS multiples à signaler : (1) le fichier donne forme_liee 'ras' incohérente avec pasu ; (2) data atteste 'kina' (forme liée kin-) pour sang, et kina sert aux métaphores (kina suki = colère) ; (3) pasu est par ailleurs attesté pour 'rouge' (couleur du sang). Donc pasu chevauche sang/rouge, et kina/pasu se concurrencent pour 'sang'. À arbitrer.",
+          "registre": "courant"
         }
       ]
     },
@@ -210,7 +251,11 @@
             "kota",
             "tori"
           ],
-          "domaine": "institution"
+          "domaine": "institution",
+          "definition": "Réunion de personnes en vue de décider ou délibérer ; institution politique reflétant l'oligarchie consociationnelle des castes. Littéralement 'union avec personnes'.",
+          "nuance": "Composition kot-a-tori (kota 'union' + liaison -a- 'avec' + tori 'personne'). NOTE : la graphie attendue serait plutôt kotatori (kot+a+tori) ; le 'i' médian de 'kotaitori' n'est pas justifié par la décomposition donnée. À distinguer de koni (data : assemblée, réunion, racine simple) : doublon composition/racine.",
+          "registre": "courant",
+          "exemple": "va tori su kotaitori nekanu"
         }
       ]
     },
@@ -221,7 +266,10 @@
           "type": "racine",
           "forme_liee": "lok",
           "domaine": "institution",
-          "note": "Nouvelle racine - règle fixée"
+          "note": "Nouvelle racine - règle fixée",
+          "definition": "Règle fixée régissant la communauté ; ordre normatif gardé par les Voix de l'Aurore (Oraumi), gardiens des lois sacrées. Couvre 'loi' et 'règle'.",
+          "nuance": "DOUBLON CRITIQUE à signaler : le fichier donne 'loku' pour loi ET pour lieu (deux entrées homophones, même forme liée lok-) ; or data atteste 'leku' (forme liée lek-) pour loi/règle et réserve 'loku' (lok-) à lieu/endroit (verbe lokun 'construire'). loku=loi est très probablement une erreur pour leku. À arbitrer en priorité.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -235,7 +283,10 @@
           "type": "racine",
           "forme_liee": "kop",
           "domaine": "outil",
-          "note": "Nouvelle racine - lien tressé"
+          "note": "Nouvelle racine - lien tressé",
+          "definition": "Lien tressé en fibres servant à attacher ou relier ; outil quotidien, notamment pour les villages sur pilotis et la pêche des Enfants du Courant.",
+          "nuance": "DOUBLON à signaler : le fichier donne 'kopu' (forme liée kop-), mais data atteste 'lina' (forme liée lin-) pour ligne/corde et 'ketu' (ket-) pour chaîne/lien. kopu/lina/ketu se chevauchent pour le champ 'lien physique'. À distinguer de vasi (pont, lien abstrait) et ketu (chaîne en métal).",
+          "registre": "courant"
         }
       ]
     },
@@ -246,7 +297,11 @@
           "type": "racine",
           "forme_liee": "lok",
           "domaine": "espace",
-          "note": "Endroit, place"
+          "note": "Endroit, place",
+          "definition": "Endroit, place occupant l'espace ; localisation générique. Sert de base au verbe lokun (construire) et aux compositions de lieu.",
+          "nuance": "Racine standard loku (forme liée lok-), espace. Donne lokun (construire). Entre dans tisiloku/toviloku (cet endroit-ci/là). HOMOPHONIE PROBLÉMATIQUE : 'loku' est aussi donné pour 'loi' dans ce fichier (cf. entrée loi) — collision à résoudre (loi devrait être leku). Couvre lieu/endroit.",
+          "registre": "courant",
+          "exemple": "va tori no loku tuliu"
         }
       ],
       "synonymes_fr": [
@@ -260,7 +315,10 @@
           "type": "racine",
           "forme_liee": "nav",
           "domaine": "objet",
-          "note": "Nouvelle racine - embarcation"
+          "note": "Nouvelle racine - embarcation",
+          "definition": "Embarcation de bois servant à naviguer ; objet emblématique des Nanzagouet, étrangers maritimes dont les navires furent d'abord pris pour des créatures.",
+          "nuance": "Racine standard vanu (forme liée van-), objet. NOTE : le fichier indique forme_liee 'nav' (calque du français), incohérente ; data atteste vanu avec forme liée 'van'. À distinguer de ura/nura (eau, rivière) : vanu est l'artefact construit. Charge culturelle forte (premier contact avec l'Autre).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -274,7 +332,11 @@
           "type": "racine",
           "forme_liee": "pes",
           "domaine": "animal",
-          "note": "Nouvelle racine - créature de l'eau"
+          "note": "Nouvelle racine - créature de l'eau",
+          "definition": "Créature aquatique ; ressource alimentaire majeure pêchée par les Enfants du Courant (Nakuura), maîtres de l'eau vivant sur pilotis.",
+          "nuance": "Racine standard pesa (forme liée pes-), animal. Donne le verbe pesak (pêcher). À distinguer de besi (bête, animal sauvage terrestre) et ziku (serpent). Champ alimentaire central pour la caste fluviale.",
+          "registre": "courant",
+          "exemple": "va naki su vo pesa pasaku"
         }
       ],
       "synonymes_fr": [
@@ -288,7 +350,10 @@
           "type": "racine",
           "forme_liee": "pik",
           "domaine": "forme",
-          "note": "Extrémité aiguë"
+          "note": "Extrémité aiguë",
+          "definition": "Extrémité aiguë d'un objet ; bout effilé, sommet pointu. Sert à désigner ce qui perce ou culmine.",
+          "nuance": "Racine standard piki (forme liée pik-), forme. Data atteste piki = pic, pointe. À distinguer de sumu (sommet, haut d'une élévation) et tasa (sommet de montagne). piki insiste sur l'acuité, non la hauteur.",
+          "registre": "courant"
         }
       ]
     },
@@ -299,7 +364,10 @@
           "type": "racine",
           "forme_liee": "pas",
           "domaine": "couleur",
-          "note": "Couleur du sang, yeux des Ciels-clairs"
+          "note": "Couleur du sang, yeux des Ciels-clairs",
+          "definition": "Couleur du sang ; teinte des yeux des Ciels-clairs (aux couleurs de l'aurore) et des cheveux des Nanzagouet. Couleur à forte charge symbolique.",
+          "nuance": "Racine standard pasu (forme liée pas-), couleur. CHEVAUCHEMENT : pasu est aussi donné pour 'sang' dans ce fichier (la couleur tire son nom du fluide). ATTENTION : forme liée 'pas-' identique à pasa (prendre, verbe pasak) — collision en composition. À distinguer de kesa (gris) et kelu/kolu (couleur générique).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": []
@@ -315,7 +383,10 @@
             "voki",
             "aita"
           ],
-          "domaine": "communication"
+          "domaine": "communication",
+          "definition": "Histoire transmise oralement, légende ; récit qui porte la mémoire des ancêtres. Littéralement 'voix des ancêtres', incarnant la valeur de transmission.",
+          "nuance": "Composition vok-i-aita (voki 'voix' + -i- agent + aita 'ancêtre'). Charge culturelle haute : le récit EST la voix des aïeux, support de la mémoire collective. DOUBLON : data atteste 'leki' (lek-) pour récit/histoire (racine simple) ; vokiaita est une composition plus marquée, quasi rituelle. Couvre histoire/légende.",
+          "registre": "rituel"
         }
       ],
       "synonymes_fr": [
@@ -330,7 +401,11 @@
           "type": "racine",
           "forme_liee": "tek",
           "domaine": "lieu",
-          "note": "Chemin, voie"
+          "note": "Chemin, voie",
+          "definition": "Chemin, voie de circulation ; tracé que l'on parcourt. Au figuré, la 'voie' comme processus d'amélioration continue, concept central de la civilisation.",
+          "nuance": "DOUBLON à signaler : le fichier donne 'teki' (forme liée tek-), mais teki est avant tout la racine d'action 'aller, chemin' (verbe tekis) ; data réserve 'kovi' (kov-) à route/chemin comme substantif. teki/kovi à distinguer (teki = mouvement, kovi = la voie physique). Charge métaphorique : la voie de l'excellence.",
+          "registre": "courant",
+          "exemple": "va tori vi teki tekisu"
         }
       ]
     },
@@ -341,7 +416,10 @@
           "type": "racine_sacree",
           "forme_liee": "eabm",
           "domaine": "qualificatif",
-          "note": "Même racine que ancêtre"
+          "note": "Même racine que ancêtre",
+          "definition": "Âgé, ancien ; ce qui dure depuis longtemps. Qualité liée au respect dû à l'ancienneté dans une culture du culte des ancêtres.",
+          "nuance": "ENTRÉE PROBLÉMATIQUE à signaler : le fichier la classe 'racine_sacree' eabme (forme eabm-), mais cette forme n'est PAS attestée dans data, viole la phonotactique (groupe -bm-, finale en C, pas de structure VCV sacrée) et est dite 'même racine qu'ancêtre' alors qu'ancêtre = aita. data atteste 'seni' (sen-) pour vieux/ancien. eabme est très douteux ; seni recommandé. À distinguer de nuvi (nouveau).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -357,7 +435,10 @@
           "type": "racine",
           "forme_liee": "sil",
           "domaine": "communication",
-          "note": "Lié à regard - ce qu'on montre"
+          "note": "Lié à regard - ce qu'on montre",
+          "definition": "Marque visible porteuse de sens ; ce qu'on montre pour signifier. Lié au regard, sens premier de la racine, car le signe est ce qui s'offre à la vue.",
+          "nuance": "DOUBLON CRITIQUE : le fichier donne 'sili' (regard/œil, racine cardinale) pour 'signe', mais data atteste 'sinu' (sin-, verbe sinan 'graver') pour signe/marque. ATTENTION sinu (signe) est aussi le pronom 'tu' (sinu) — collision. sili=signe semble une erreur (sili = regard, base de siliaska). Couvre signe/marque. À arbitrer.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -372,7 +453,11 @@
           "racine": "bopu",
           "forme_liee": "bop",
           "structure": "CVCVC",
-          "domaine": "action"
+          "domaine": "action",
+          "definition": "Porter un coup ; action de heurter violemment. Verbe à charge culturelle négative : frapper comme une bête (au gourdin) est un déshonneur dans la Confluence.",
+          "nuance": "Verbe bopak (racine bopu, forme liée bop-, structure CVCVC, suffixe -k de perception/impact). DOUBLON : data atteste 'soki' (sok-) pour frapper/battre. bopak/soki à arbitrer. Charge culturelle : la 'violence bestiale' est explicitement rejetée (rejet du gourdin).",
+          "registre": "courant",
+          "exemple": "va tani vo zoka bopaku"
         }
       ]
     },
@@ -383,7 +468,10 @@
           "type": "racine",
           "forme_liee": "tas",
           "domaine": "geographie",
-          "note": "Même racine que montagne - point haut"
+          "note": "Même racine que montagne - point haut",
+          "definition": "Point le plus haut d'une montagne ; cime. Lié au relief montagneux du territoire d'origine de la Confluence, où se tiennent les Cercles de Vigile.",
+          "nuance": "DOUBLON à signaler : le fichier donne 'tasa' (forme liée tas-) = même racine que montagne (data : tasa = montagne), donc 'sommet' = le haut de la montagne ; mais data atteste aussi 'sumu' (sum-) pour sommet/haut. tasa/sumu à distinguer (tasa = la montagne et son point haut, sumu = la hauteur abstraite). À distinguer de piki (pointe aiguë).",
+          "registre": "courant"
         }
       ]
     },
@@ -394,7 +482,10 @@
           "type": "racine",
           "forme_liee": "tab",
           "domaine": "objet",
-          "note": "Nouvelle racine - surface plate pour écrire"
+          "note": "Nouvelle racine - surface plate pour écrire",
+          "definition": "Surface plate, d'argile durcie, servant à écrire les glyphes ; support des archives permanentes, artefact multi-générationnel central pour la mémoire écrite.",
+          "nuance": "DOUBLON à signaler : le fichier donne 'tabu' (forme liée tab-), mais data atteste 'tabi' (tab-) pour tablette/plaque. tabu/tabi simple variante de voyelle finale à unifier. Charge culturelle forte : les tablettes de glyphes sont la base de l'évidentiel -uv ('c'est écrit'). Liée à toku (document, écrit).",
+          "registre": "courant"
         }
       ]
     },
@@ -405,7 +496,10 @@
           "type": "racine",
           "forme_liee": "val",
           "domaine": "geographie",
-          "note": "Nouvelle racine - creux entre montagnes"
+          "note": "Nouvelle racine - creux entre montagnes",
+          "definition": "Dépression de terrain entre des montagnes ; creux où coulent les rivières. Géographie d'origine de la Confluence : la vallée où deux rivières se rejoignent.",
+          "nuance": "DOUBLONS à signaler : (1) le fichier donne 'valu' (val-) pour vallée ET pour 'valeur' (deux entrées homophones) ; (2) data atteste 'tani' (tan-) pour vallée — mais tani est aussi le pronom 'il/elle'. Triple collision valu(vallée)/valu(valeur)/tani(vallée≈il). À arbitrer. Charge culturelle : berceau géographique du peuple.",
+          "registre": "courant"
         }
       ]
     },
@@ -416,7 +510,11 @@
           "type": "racine",
           "forme_liee": "nek",
           "domaine": "action",
-          "note": "Même racine que faire/créer"
+          "note": "Même racine que faire/créer",
+          "definition": "Activité de production ou de création ; l'œuvre, le labeur. Même racine que faire/créer, car travailler c'est créer dans la vision de la Confluence.",
+          "nuance": "DOUBLON à signaler : le fichier donne 'neka' (nek-, racine de l'action faire/créer, verbe nekan), mais data atteste 'tavu' (tav-) pour travail/œuvre. neka/tavu se chevauchent : neka = l'acte de faire, tavu = l'œuvre comme champ. La nominalisation 'nekatava' (neka+tava=création) combine d'ailleurs les deux. Couvre travail/œuvre.",
+          "registre": "courant",
+          "exemple": "va tori vo neka nekanu"
         }
       ],
       "synonymes_fr": [
@@ -430,7 +528,10 @@
           "type": "racine",
           "forme_liee": "tem",
           "domaine": "temps",
-          "note": "Nouvelle racine - durée"
+          "note": "Nouvelle racine - durée",
+          "definition": "Durée, écoulement temporel ; le temps comme dimension. Concept clé d'une civilisation à vision multi-générationnelle, dotée de quatre niveaux de passé.",
+          "nuance": "Racine standard temi (forme liée tem-), domaine temps. Couvre temps/durée. À distinguer des démonstratifs temporels tisa (maintenant) / tova (alors) et des conjugateurs de temps (u, at, ait, amat, en). temi est le temps-substance, support de la mémoire (mori) et de la transmission.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -444,7 +545,10 @@
           "type": "racine",
           "forme_liee": "kot",
           "domaine": "social",
-          "note": "Même racine que union/confluence"
+          "note": "Même racine que union/confluence",
+          "definition": "Groupe humain uni par des liens communs ; communauté. Même racine que union/confluence, car la tribu est l'union des personnes.",
+          "nuance": "DOUBLON à signaler : le fichier donne 'kota' (kot-, racine cardinale union/confluence, verbe kotam 'communier'), mais data atteste 'tibu' (tib-) pour tribu/groupe et 'mitu' (mit-) pour famille/clan. kota(union)/tibu(tribu)/mitu(clan) se chevauchent. kota porte la charge sacrée de confluence (uraakota) ; l'employer pour 'tribu' est plus abstrait/noble. À distinguer.",
+          "registre": "courant"
         }
       ]
     },
@@ -459,7 +563,10 @@
             "osi",
             "toka"
           ],
-          "domaine": "lieu"
+          "domaine": "lieu",
+          "definition": "Lieu où repose un mort enseveli ; sépulture. Littéralement 'mort dans la terre', reflétant que la mort est un retour à la terre et un passage vers les ancêtres.",
+          "nuance": "Composition os-i-toka (osi 'mort' racine sacrée + -i- + toka 'terre'). NOTE : la graphie 'osiiutoka' (os+i+i+u+toka ?) ne correspond pas à la décomposition os-i-toka annoncée — surplus de voyelles inexpliqué, graphie à corriger en osiitoka ou osatoka. DOUBLON : data atteste 'tumi' (tum-) pour tombe/enterrer (racine simple). osi+toka (composition) vs tumi à arbitrer.",
+          "registre": "rituel"
         }
       ]
     },
@@ -470,7 +577,10 @@
           "type": "racine",
           "forme_liee": "val",
           "domaine": "concept_abstrait",
-          "note": "Nouvelle racine - mérite"
+          "note": "Nouvelle racine - mérite",
+          "definition": "Mérite, prix, ce qui rend une chose ou une personne digne d'estime. Concept moral lié au mérite individuel reconnu par la communauté.",
+          "nuance": "DOUBLON CRITIQUE : le fichier donne 'valu' (val-) pour valeur ET pour vallée (homophones dans ce même fichier) ; data atteste valu = valeur/mérite. Collision valeur/vallée à arbitrer (différencier l'une des deux formes). À distinguer de tosa (le bien moral) et nelu (noble, élevé) : valu est le mérite estimable.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -484,7 +594,10 @@
           "type": "racine",
           "forme_liee": "bas",
           "domaine": "qualificatif",
-          "note": "Bas, inférieur (opposé de haut)"
+          "note": "Bas, inférieur (opposé de haut)",
+          "definition": "Situé en position inférieure ; le bas par opposition au haut. Sert à décrire l'élévation spatiale, pertinente dans un relief montagneux.",
+          "nuance": "Racine standard baso (forme liée bas-), qualificatif. Opposé de sumu (sommet, haut). NON attestée dans data (ajout du fichier 02). Couvre bas/basse/basses. À distinguer de vuku (profond, gouffre) : baso = inférieur en hauteur, vuku = profondeur abyssale.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -499,7 +612,10 @@
           "type": "racine",
           "forme_liee": "lon",
           "domaine": "qualificatif",
-          "note": "Long, étendu (opposé de court)"
+          "note": "Long, étendu (opposé de court)",
+          "definition": "De grande étendue dans une dimension ; allongé, durable. S'applique à l'espace comme au temps (longue durée).",
+          "nuance": "Racine standard lono (forme liée lon-), qualificatif. Opposé de 'court' (non attesté ici). NON présente dans data (ajout du fichier 02). Couvre long/longue/longs/longues. Juxtaposition au nom, pas d'adjectif morphologique. Proche de teki (chemin, long parcours) en emploi figuré.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -515,7 +631,10 @@
           "type": "racine",
           "forme_liee": "suk",
           "domaine": "qualificatif",
-          "note": "Chaud, chaleureux (lié à feu)"
+          "note": "Chaud, chaleureux (lié à feu)",
+          "definition": "Doté de chaleur ; chaud, chaleureux. Lié au feu, élément de la cosmologie (caste/élément Feu). Couvre la qualité et la sensation de chaleur.",
+          "nuance": "Racine standard suka (forme liée suk-), qualificatif, liée à suki (feu, flamme — data, verbe via la racine du feu). suka(chaud)/suki(feu) variante de voyelle. Opposé de kiso (froid). Couvre chaud/chaude/chauds/chaudes/chaleur. À distinguer de sora (lumineux, soleil) qui touche la lumière, non la température.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -532,7 +651,10 @@
           "type": "racine",
           "forme_liee": "kis",
           "domaine": "qualificatif",
-          "note": "Froid, frais, glacé"
+          "note": "Froid, frais, glacé",
+          "definition": "Privé de chaleur ; froid, frais, glacé. Sensation liée au climat de montagne (brumes, altitude) et à la côte ventée.",
+          "nuance": "Racine standard kiso (forme liée kis-), qualificatif. ATTENTION : forme liée 'kis-' identique à kisu (transmettre/couper, verbe kisun) — collision en composition. Opposé de suka (chaud). Couvre froid(e/s)/frais/fraîche. NON dans data (ajout du fichier 02).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -550,7 +672,10 @@
           "type": "racine",
           "forme_liee": "tak",
           "domaine": "qualificatif",
-          "note": "Mauvais, négatif (opposé de bon)"
+          "note": "Mauvais, négatif (opposé de bon)",
+          "definition": "Négatif, nuisible, contraire au bien ; le mal. Qualité morale opposée au bon, à éviter selon les valeurs de la Confluence.",
+          "nuance": "DOUBLON CRITIQUE : le fichier donne 'taku' (tak-) pour mauvais/mal, mais data atteste taku = sombre/obscur (élément nature) et le réutilise pour les métaphores émotionnelles (kori taku = tristesse). De plus tak- est la forme liée de taka (porter, verbe takan). Triple emploi taku=mauvais/sombre/porter-forme-liée à clarifier. Opposé de tosa (bon).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -566,7 +691,10 @@
           "type": "racine",
           "forme_liee": "sor",
           "domaine": "qualificatif",
-          "note": "Clair, lumineux (lié à lumière)"
+          "note": "Clair, lumineux (lié à lumière)",
+          "definition": "Lumineux, éclairé, baigné de lumière ; clair par opposition à sombre. Lié au soleil et à la lumière, signes célestes valorisés (Ciels-clairs).",
+          "nuance": "DOUBLON à signaler : le fichier donne 'sora' (sor-) pour clair/lumineux, mais data atteste sora = soleil/lumière (élément nature). sora=clair = emploi qualificatif de la racine 'lumière'. Le 'r' est toléré (racine ancienne). Opposé de kumu/taku (sombre). À distinguer de ora (aurore, racine sacrée) : sora = l'astre/lumière établi, ora = l'instant de l'aube.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -584,7 +712,10 @@
           "type": "racine",
           "forme_liee": "pak",
           "domaine": "qualificatif",
-          "note": "Honteux, indigne, déshonorant - inspiration basque"
+          "note": "Honteux, indigne, déshonorant - inspiration basque",
+          "definition": "Indigne, déshonorant, qui couvre de honte ; infâme. Qualité réprouvée dans une culture de l'honneur où l'oubli, la trahison du savoir et la violence bestiale déshonorent.",
+          "nuance": "Racine standard paka (forme liée pak-), qualificatif, inspiration basque. NON dans data (ajout du fichier 02). ATTENTION : forme liée 'pak-' identique à paku (paix/calme, data) — collision en composition. Couvre honteux/indigne/déshonorant/infâme. Charge culturelle forte : déshonneur lié au rejet de l'aveuglement et de la violence.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -600,7 +731,11 @@
           "type": "racine",
           "forme_liee": "tor",
           "domaine": "social",
-          "note": "Personne, agent, individu - utilisé dans tous les rôles"
+          "note": "Personne, agent, individu - utilisé dans tous les rôles",
+          "definition": "Être humain, individu ; agent générique employé dans tous les rôles syntaxiques (sujet, objet, bénéficiaire). Unité de base de la société de la Confluence.",
+          "nuance": "Racine standard tori (forme liée tor-), social. Racine très productive : entre dans akotaitori/kotaitori (assemblée), umiitori (personne-esprit). Couvre personne/agent/individu. À distinguer de naki (enfant/descendant), aita (ancêtre), kasi (chef). Neutre en genre, comme le pronom tani.",
+          "registre": "courant",
+          "exemple": "va tori vo ura miraku"
         }
       ],
       "synonymes_fr": [
@@ -615,7 +750,11 @@
           "type": "racine",
           "forme_liee": "nut",
           "domaine": "alimentation",
-          "note": "Nourriture, aliment - racine fondamentale"
+          "note": "Nourriture, aliment - racine fondamentale",
+          "definition": "Ce qui se mange ; aliment, subsistance. Besoin vital assuré par la chasse, la cueillette et la pêche fluviale de la Confluence.",
+          "nuance": "Racine standard nutu (forme liée nut-), alimentation. NON dans data (ajout du fichier 02). Couvre nourriture/aliment/manger. À distinguer de muta (faim, le manque de nourriture) avec laquelle elle forme un couple besoin/satisfaction, et de niku (chair, viande) et pesa (poisson), aliments concrets.",
+          "registre": "courant",
+          "exemple": "va naki vo nutu pasaku"
         }
       ],
       "synonymes_fr": [
@@ -630,7 +769,10 @@
           "type": "racine",
           "forme_liee": "vit",
           "domaine": "materiau",
-          "note": "Bois (matériau de construction) - distinct de viku (forêt)"
+          "note": "Bois (matériau de construction) - distinct de viku (forêt)",
+          "definition": "Bois en tant que matériau de construction ; ressource pour bâtir pilotis, halls et navires. Distinct de la forêt vivante.",
+          "nuance": "Racine standard vito (forme liée vit-), materiau. Distinction explicite avec viku (forêt/arbre vivant — data) : vito = le bois travaillé. DOUBLON : data atteste aussi 'buki' (buk-) pour bois/arbre (matériau). vito/buki à arbitrer pour le bois-matériau. Lié aux navires (vanu) des Nanzagouet.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -644,7 +786,11 @@
           "type": "racine",
           "forme_liee": "kon",
           "domaine": "action",
-          "note": "Garder, protéger, maintenir - racine sécuritaire"
+          "note": "Garder, protéger, maintenir - racine sécuritaire",
+          "definition": "Conserver, protéger, maintenir en sûreté ; veiller sur. Action sécuritaire liée à la défense de la communauté et de sa mémoire.",
+          "nuance": "DOUBLON CRITIQUE : le fichier donne 'konu' (kon-) pour garder/protéger, mais data atteste 'zaki' (zak-, verbe zakis 'garder, protéger') et 'tenu' (ten-, tenir/garder) pour ce champ. konu/zaki/tenu se chevauchent. ATTENTION kon- = aussi forme liée de koni (assemblée). À distinguer de vela (veille, guet) qui surveille sans protéger. Couvre garder/protéger/maintenir/défendre.",
+          "registre": "courant",
+          "exemple": "va tani vo naki su konu"
         }
       ],
       "synonymes_fr": [
@@ -660,7 +806,11 @@
           "type": "racine",
           "forme_liee": "mor",
           "domaine": "mental",
-          "note": "Mémoire, souvenir - distinct de memu (mémoire collective)"
+          "note": "Mémoire, souvenir - distinct de memu (mémoire collective)",
+          "definition": "Trace mentale du passé conservée ; mémoire individuelle, faculté de se rappeler. Au cœur d'une civilisation pour qui 'rien ne doit être oublié'.",
+          "nuance": "Racine standard mori (forme liée mor-), mental ; le 'r' est toléré (racine ancienne). Donne morik (mémoriser). Couvre mémoire/souvenir/rappel. Le fichier la distingue de 'memu' (mémoire collective) — mais memu n'est PAS attesté dans data (à vérifier). À distinguer de seka (savoir) : mori = se rappeler, seka = connaître.",
+          "registre": "courant",
+          "exemple": "va aita su vo mori morik"
         }
       ],
       "synonymes_fr": [
@@ -675,7 +825,11 @@
           "type": "racine",
           "forme_liee": "tul",
           "domaine": "etat",
-          "note": "Être, rester, demeurer - du finnois 'tulla'"
+          "note": "Être, rester, demeurer - du finnois 'tulla'",
+          "definition": "Rester, persister en un lieu ou un état ; être, habiter. Verbe d'état exprimant la permanence et la sédentarisation en cours de la Confluence.",
+          "nuance": "Racine standard tuli (forme liée tul-), état, du finnois 'tulla' (venir/devenir). Couvre rester/être/habiter/demeurer. CONCURRENCE avec le verbe existentiel urak (être, il y a) employé par la syntaxe pour l'existence, et avec ita (racine sacrée 'être/exister'). tuli/urak/ita à distinguer : tuli = demeurer dans la durée, urak = exister/il y a.",
+          "registre": "courant",
+          "exemple": "va tani no loku tuliu"
         }
       ],
       "synonymes_fr": [
@@ -691,7 +845,10 @@
           "type": "racine",
           "forme_liee": "nov",
           "domaine": "concept",
-          "note": "Présage, signe du futur"
+          "note": "Présage, signe du futur",
+          "definition": "Signe annonciateur du futur ; augure, indice de ce qui adviendra. Notion importante pour des Ciels-clairs lisant les signes du ciel et des aurores.",
+          "nuance": "Racine standard novi (forme liée nov-), concept. DOUBLON : forme liée 'nov-' partagée avec nuvi (nouveau) et le verbe novak (découvrir, rattaché à nuvi) ; novi(présage)/nuvi(nouveau) à distinguer. Couvre présage/augure/signe. Charge divinatoire : lié aux signes célestes (ora, zeru). À distinguer de sinu/sili (signe-marque visible).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -706,7 +863,10 @@
           "type": "racine",
           "forme_liee": "mut",
           "domaine": "besoin",
-          "note": "Faim, manque, besoin de nourriture"
+          "note": "Faim, manque, besoin de nourriture",
+          "definition": "Sensation de manque de nourriture ; besoin vital, privation. Réalité d'une économie de subsistance (chasse, cueillette, pêche).",
+          "nuance": "Racine standard muta (forme liée mut-), besoin. NON dans data (ajout du fichier 02). Couvre faim/manque/privation. Forme le couple complémentaire de nutu (nourriture) : muta = le besoin, nutu = ce qui le comble. Emploi possiblement métaphorique (manque, désir) au-delà de la faim physique.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -721,7 +881,10 @@
           "type": "racine",
           "forme_liee": "sup",
           "domaine": "espace",
-          "note": "Intérieur, intimité, espace privé"
+          "note": "Intérieur, intimité, espace privé",
+          "definition": "Espace intérieur et privé ; intimité, dedans soustrait au regard. Notion sensible chez un peuple voué au regard partagé et à la transparence.",
+          "nuance": "Racine standard supu (forme liée sup-), espace. NON dans data (ajout du fichier 02). Couvre intérieur/privé/intimité. À distinguer de supu vs kama (chambre, pièce — data) et supu (espace privé abstrait). Tension culturelle intéressante : l'intimité face à la valeur du 'regard partagé' qui scelle les accords.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -736,7 +899,10 @@
           "type": "racine",
           "forme_liee": "sel",
           "domaine": "qualificatif",
-          "note": "Salé, eau salée - distinct de salu (sel cristal)"
+          "note": "Salé, eau salée - distinct de salu (sel cristal)",
+          "definition": "Qui contient du sel ; salé, saumâtre. Qualité de l'eau de mer, découverte avec l'expansion récente vers la côte maritime.",
+          "nuance": "Racine standard selu (forme liée sel-), qualificatif. Distinction explicite avec 'salu' (sel cristal) — mais data atteste plutôt 'seli' (sel-) pour sel/mer. selu/seli/salu se chevauchent dans le champ du sel et de la mer. Couvre salé/saumâtre. Charge culturelle : la côte, le sel et le vent sont l'horizon de l'inconnu.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -751,7 +917,11 @@
           "type": "racine",
           "forme_liee": "sak",
           "domaine": "action",
-          "note": "Charge, fardeau, ce qu'on porte"
+          "note": "Charge, fardeau, ce qu'on porte",
+          "definition": "Ce qu'on porte ; fardeau, cargaison. Notion concrète liée au transport et au commerce des Passes-bien (Takitosa).",
+          "nuance": "DOUBLON CRITIQUE : le fichier donne 'saki' (sak-) pour charge/fardeau, mais data atteste saki = sac/contenant ET zaki = justice/équité (verbe zakin 'arbitrer'). De plus sak- recoupe le champ de taka (porter, verbe takan) pour ce qui est porté. saki(charge)/saki(sac)/taka(porter) à clarifier. Couvre charge/fardeau/cargaison.",
+          "registre": "courant",
+          "exemple": "va tori vo saki takan"
         }
       ],
       "synonymes_fr": [

@@ -13,7 +13,10 @@
             "sili",
             "umi"
           ],
-          "domaine": "titre_spirituel"
+          "domaine": "titre_spirituel",
+          "definition": "Devin sacré dont le regard atteint le domaine de l'esprit ; figure spirituelle qui voit au-delà du visible et interprète les signes.",
+          "nuance": "Composition sil-u-umi = 'regard de l'esprit' (sili 'regard' + liaison -u- d'appartenance + umi 'esprit'). N'utilise PAS le motif -i-tori : c'est le regard lui-même qui est rattaché à l'esprit, pas une personne agentive. À distinguer de 'chaman' (umitori) qui est 'la personne de l'esprit' et de 'guide des âmes' (tekiumi).",
+          "registre": "sacré"
         }
       ]
     },
@@ -23,7 +26,11 @@
           "confluent": "kasi",
           "type": "racine",
           "forme_liee": "kas",
-          "domaine": "titre"
+          "domaine": "titre",
+          "definition": "Celui qui guide et dirige un groupe ; autorité de commandement, racine de base désignant le meneur.",
+          "nuance": "Racine pure (kasi, forme liée kas-), pas une composition. Brique de base de nombreux titres dérivés : makokasi 'Grand Chef', kasiuoki 'capitaine'. Sens fondateur 'chef, guide'.",
+          "registre": "courant",
+          "exemple": "va kasi vo naki su kisunu"
         }
       ]
     },
@@ -38,7 +45,10 @@
             "mako",
             "kasi"
           ],
-          "categorie": "titre"
+          "categorie": "titre",
+          "definition": "Chef suprême, meneur d'une grandeur ou d'une vastitude supérieure ; titre du dirigeant le plus élevé.",
+          "nuance": "Composition mak-o-kasi = 'chef de grandeur' (mako 'grand, vaste' + kasi 'chef'). Nom propre / titre. Distinct de kasiuoki 'capitaine' (chef de l'épreuve, militaire) : ici la grandeur (mako) marque la supériorité de rang, pas le domaine d'action.",
+          "registre": "courant"
         }
       ]
     },
@@ -53,7 +63,10 @@
             "seka",
             "tori"
           ],
-          "domaine": "titre"
+          "domaine": "titre",
+          "definition": "Personne dépositaire et porteuse du savoir ; figure respectée pour sa connaissance accumulée.",
+          "nuance": "Composition sek-i-tori sur le motif récurrent racine+i+tori ('la personne qui...') : seka 'savoir, connaître' + -i- agent + tori 'personne' = 'porteur de savoir'. Proche de 'chaman' (umitori) mais profane : le sage tient son autorité du savoir (seka), non de l'esprit (umi).",
+          "registre": "courant"
         }
       ]
     },
@@ -68,7 +81,10 @@
             "aki",
             "zana"
           ],
-          "categorie": "caste"
+          "categorie": "caste",
+          "definition": "Membre de la caste d'élite militaire, judiciaire et religieuse, basée dans les Halls des Serments ; guerrier d'élite emblématique du faucon vainqueur.",
+          "nuance": "Nom propre de caste, composition ak-oa-zana = 'faucon vainqueur de la chasse' (aki 'faucon', racine sacrée + liaison -oa- de résolution/maîtrise + zana 'chasser'). La liaison -oa- exprime la chasse accomplie, maîtrisée. À ne pas confondre avec zanatori 'traqueur/chasseur' (rôle commun) ni akiuaita 'faucon vétéran'.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -89,7 +105,10 @@
             "aki",
             "aita"
           ],
-          "domaine": "titre"
+          "domaine": "titre",
+          "definition": "Faucon Chasseur chevronné, lié aux ancêtres par son ancienneté ; titre d'honneur des aînés de la caste guerrière.",
+          "nuance": "Composition ak-i-aita (notée akiuaita) = 'faucon des ancêtres' (aki 'faucon' sacré + aita 'ancêtre, ancien' sacré). Double racine sacrée, statut valorisé. L'ancienneté (aita) distingue le vétéran du akoazana (caste générale) : c'est le faucon que la lignée légitime.",
+          "registre": "sacré"
         }
       ]
     },
@@ -104,7 +123,11 @@
             "zana",
             "tori"
           ],
-          "domaine": "titre"
+          "domaine": "titre",
+          "definition": "Personne qui chasse et traque le gibier ; rôle courant du chasseur, pisteur d'animaux.",
+          "nuance": "Composition zan-a-tori = 'personne de la chasse' (zana 'chasser, traquer' + tori 'personne'). Variante du motif racine+tori avec liaison -a- (relation) plutôt que -i- agent. Synonyme français 'chasseur' : à distinguer nettement de la caste akoazana 'Faucon Chasseur' (titre sacré d'élite), zanatori étant le métier ordinaire.",
+          "registre": "courant",
+          "exemple": "va zanatori vo besi zanaku"
         }
       ],
       "synonymes_fr": [
@@ -124,7 +147,10 @@
             "oki",
             "tori"
           ],
-          "domaine": "titre"
+          "domaine": "titre",
+          "definition": "Personne de l'épreuve et du combat ; celui qui affronte le danger et fait la guerre.",
+          "nuance": "Composition ok-i-tori = 'personne de l'épreuve' (oki 'épreuve, défi, danger' sacré + -i- agent + tori 'personne'). Le danger (oki) ancre le sens martial. Distinct de okitori vs zanatori (chasse) et de kasiuoki 'capitaine' (chef de l'épreuve) : le guerrier est le combattant de base, pas le meneur.",
+          "registre": "courant"
         }
       ]
     },
@@ -139,7 +165,10 @@
             "arku",
             "tori"
           ],
-          "domaine": "titre"
+          "domaine": "titre",
+          "definition": "Combattant ou chasseur maniant l'arc ; personne de l'arc.",
+          "nuance": "Composition alk-u-tori = 'personne de l'arc' (racine 'arku' arc, forme liée alk- + tori 'personne'). Variante du motif racine+tori avec liaison -u- (appartenance). 'arku' n'est pas dans les racines listées de data/lexique.json (issu du lexique étendu) ; pas d'exemple SOV proposé faute de forme attestée pour 'arc' dans les fichiers vérifiés.",
+          "registre": "courant"
         }
       ]
     },
@@ -154,7 +183,10 @@
             "taka",
             "piki"
           ],
-          "domaine": "titre"
+          "domaine": "titre",
+          "definition": "Combattant armé d'une lance ; celui qui porte la pointe au combat.",
+          "nuance": "Composition tak-i-piki = 'porteur de lance' (taka 'porter, transporter' + -i- agent + piki 'pic, pointe'). Ici le motif est racine-verbale+i+objet (porter+lance), non racine+i+tori : le titre nomme l'acte de porter plutôt que 'la personne'. piki 'pic, pointe' sert de lance par extension.",
+          "registre": "courant"
         }
       ]
     },
@@ -169,7 +201,10 @@
             "kasi",
             "oki"
           ],
-          "domaine": "titre"
+          "domaine": "titre",
+          "definition": "Chef de guerre, meneur d'une troupe au combat ; commandant militaire de rang intermédiaire.",
+          "nuance": "Composition kas-i-oki (notée kasiuoki) = 'chef de l'épreuve' (kasi 'chef, guide' + oki 'épreuve, danger' sacré). Combine kasi (chef) et le domaine martial (oki) : c'est un chef spécialisé dans la guerre, distinct de makokasi 'Grand Chef' (autorité suprême) et de okitori 'guerrier' (combattant non meneur).",
+          "registre": "courant"
         }
       ]
     },
@@ -184,7 +219,11 @@
             "vela",
             "tori"
           ],
-          "domaine": "titre"
+          "domaine": "titre",
+          "definition": "Personne qui monte la garde et veille ; guetteur des Cercles de Vigile.",
+          "nuance": "Composition vel-a-tori = 'personne de vigile' (vela 'veille, vigile, guet' + tori 'personne'), motif racine+a+tori. Lié culturellement aux Cercles de Vigile (Sikuvela) et au rituel de la Vigile Lunaire. Du même radical : velak 'surveiller'. À distinguer de zakiuloku 'gardien des lois' (garde juridique, non visuelle).",
+          "registre": "courant",
+          "exemple": "va velatori vo zoka velaku"
         }
       ]
     },
@@ -199,7 +238,10 @@
             "alu",
             "aska"
           ],
-          "categorie": "caste"
+          "categorie": "caste",
+          "definition": "Membre de la caste des chamans dresseurs de grues (Regards-Libres) ; porteur de la grue libre, guide spirituel lié aux oiseaux sacrés.",
+          "nuance": "Nom propre de caste, composition al-i-aska = 'porteur de la grue libre' (alu 'grue/Regard-Libre' sacré, forme liée al- + -i- agent + aska 'libre' sacré). Même schéma que Siliaska 'porteur du regard libre'. À distinguer de aluzakitori 'dresseur de grues' (métier) : Aliaska est la caste, le statut.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -222,7 +264,10 @@
             "umi",
             "tori"
           ],
-          "domaine": "titre_spirituel"
+          "domaine": "titre_spirituel",
+          "definition": "Personne de l'esprit ; intermédiaire spirituel qui communique avec le souffle vital et les esprits.",
+          "nuance": "Composition um-i-tori = 'personne de l'esprit' (umi 'esprit, souffle vital' sacré + -i- agent + tori 'personne'), motif racine+i+tori appliqué au sacré. Distinct de siluuumi 'oracle' (regard de l'esprit) et tekiumi 'guide des âmes' (chemin des esprits) : umitori est l'incarnation humaine, le praticien spirituel.",
+          "registre": "sacré"
         }
       ]
     },
@@ -238,7 +283,10 @@
             "zaki",
             "tori"
           ],
-          "domaine": "titre"
+          "domaine": "titre",
+          "definition": "Personne qui garde et dresse les grues (Regards-Libres) ; éleveur des oiseaux sacrés servant de messagers.",
+          "nuance": "Composition triple al-u-zak-i-tori = 'personne gardienne des grues' (alu 'grue' sacré + zaki 'garder, protéger' + tori 'personne'). Composition de 3 racines, rare (la morphologie déconseille 3+ éléments mais le titre l'assume). Métier concret, à distinguer de la caste Aliaska 'Aile-Grise' (statut spirituel).",
+          "registre": "courant"
         }
       ]
     },
@@ -253,7 +301,10 @@
             "teki",
             "umi"
           ],
-          "domaine": "titre_spirituel"
+          "domaine": "titre_spirituel",
+          "definition": "Conducteur spirituel qui mène les âmes ; celui qui trace le chemin des esprits, notamment vers les ancêtres.",
+          "nuance": "Composition tek-i-umi = 'chemin des esprits' (teki 'aller, chemin' + umi 'esprit'). Le sens est 'chemin/voie des esprits', pas une personne via -i-tori. Résonne avec les formules funéraires (l'âme qui va vers l'origine). À distinguer de umitori 'chaman' et siluuumi 'oracle'.",
+          "registre": "sacré"
         }
       ]
     },
@@ -268,7 +319,10 @@
             "zaki",
             "loku"
           ],
-          "domaine": "titre"
+          "domaine": "titre",
+          "definition": "Gardien et protecteur des lois ; figure judiciaire veillant au respect des règles sacrées.",
+          "nuance": "Composition zak-i-loku (notée zakiuloku) = 'gardien des lois' (zaki 'garder, protéger / justice, équité' + loku ; ici loku rend 'lois'). Note : data/lexique.json donne 'leku' = loi et 'loku' = lieu ; le titre s'appuie sur zaki (garder + justice). Rôle des Voix de l'Aurore (Oraumi), gardiens des lois sacrées. Du même radical : zakin 'arbitrer'.",
+          "registre": "sacré"
         }
       ]
     },
@@ -283,7 +337,10 @@
             "taka",
             "tosa"
           ],
-          "categorie": "caste"
+          "categorie": "caste",
+          "definition": "Membre de la caste mixte des marchands et médiateurs ; porteur du bien, intermédiaire commercial et diplomatique.",
+          "nuance": "Nom propre de caste, composition tak-i-tosa = 'porteur du bien' (taka 'porter' + -i- agent + tosa 'bon, bien'). Joue sur le double sens de 'bien' (marchandise / bonté). Caste des échanges et de la médiation. À ne pas confondre avec nekatoku/nekaukari (artisanat) : le Passe-bien transporte et négocie, il ne fabrique pas.",
+          "registre": "courant"
         }
       ]
     },
@@ -298,7 +355,10 @@
             "mako",
             "neka"
           ],
-          "domaine": "titre"
+          "domaine": "titre",
+          "definition": "Artisan de haut rang, grand maître de l'œuvre ; figure d'excellence dans la fabrication.",
+          "nuance": "Composition mak-o-neka (notée makouneka) = 'grand de l'œuvre' (mako 'grand, vaste' + neka 'faire, créer'). Le mako marque la maîtrise et le rang, comme dans makokasi 'Grand Chef'. Sommet de la hiérarchie artisanale : au-dessus de nekatoku/nekaukari 'artisan'.",
+          "registre": "courant"
         }
       ]
     },
@@ -313,7 +373,10 @@
             "neka",
             "kari"
           ],
-          "domaine": "titre"
+          "domaine": "titre",
+          "definition": "Artisan qui façonne et travaille la pierre ; tailleur, maçon œuvrant la roche.",
+          "nuance": "Composition nek-a-kari (notée nekaukari) = 'faiseur avec pierre' (neka 'faire, créer' + liaison -a- 'avec' + kari 'pierre, roche'). Motif racine-verbale+a+matériau. Spécialisation de l'artisan général (nekatoku) au matériau pierre. Lié aux Enfants des Échos (Nakukeko), carriers et sculpteurs.",
+          "registre": "courant"
         }
       ]
     },
@@ -328,7 +391,11 @@
             "kova",
             "tori"
           ],
-          "domaine": "titre"
+          "domaine": "titre",
+          "definition": "Personne qui grave et sculpte ; artisan de l'image en relief, façonneur de fresques et reliefs.",
+          "nuance": "Composition kov-a-tori = 'personne de la gravure' (kova 'peinture, image, fresque' + tori 'personne'), motif racine+a+tori. Du même radical : kovak 'sculpter'. kova couvre image/fresque/gravure, d'où proximité avec koluutori 'peintre' : le sculpteur travaille le relief, le peintre la couleur.",
+          "registre": "courant",
+          "exemple": "va kovatori vo kova kovaku"
         }
       ]
     },
@@ -343,7 +410,10 @@
             "kolu",
             "tori"
           ],
-          "domaine": "titre"
+          "domaine": "titre",
+          "definition": "Personne qui applique les couleurs ; artisan de la teinte, contributeur de la Grande Fresque.",
+          "nuance": "Composition kol-u-tori (notée koluutori) = 'personne des couleurs' (racine 'kolu' couleur, forme liée kol- + tori 'personne'). Note : data/lexique.json liste 'kelu' = couleur/teinte (verbe kelum 'peindre') ; le titre s'appuie sur 'kolu' du lexique étendu. Distinct de kovatori 'sculpteur' (relief vs couleur). Lié à la Grande Fresque (Ekakova).",
+          "registre": "courant"
         }
       ]
     },
@@ -358,7 +428,10 @@
             "vasi",
             "tori"
           ],
-          "domaine": "titre"
+          "domaine": "titre",
+          "definition": "Personne qui tisse et relie les fils ; artisan du textile et des liens tressés.",
+          "nuance": "Composition vas-i-tori = 'personne du tissage' (vasi 'pont, lien, passage' + -i- agent + tori 'personne'), motif racine+i+tori. vasi 'pont/lien' rend le tissage par métaphore du fil qui relie. Proche conceptuellement de tiki 'tisser, lier' (autre racine) ; ici c'est vasi qui sert de base.",
+          "registre": "courant"
         }
       ]
     },
@@ -373,7 +446,10 @@
             "pisu",
             "tori"
           ],
-          "domaine": "titre"
+          "domaine": "titre",
+          "definition": "Personne qui pêche le poisson ; rôle central des Enfants du Courant, maîtres de l'eau.",
+          "nuance": "Composition pis-u-tori = 'personne du poisson' (racine 'pisu' poisson, forme liée pis- + tori 'personne'). ATTENTION doublon de forme : data/lexique.json donne 'pisu' = 'petit, fin' et 'pesa' = 'poisson' (verbe pesak 'pêcher'). Le titre s'appuie sur 'pisu' au sens 'poisson' du lexique étendu ; collision homographe avec pisu 'petit' à signaler. Lié à la caste Nakuura.",
+          "registre": "courant"
         }
       ]
     },
@@ -388,7 +464,10 @@
             "vuku",
             "tori"
           ],
-          "domaine": "titre"
+          "domaine": "titre",
+          "definition": "Personne qui creuse dans les profondeurs ; extracteur des souterrains et du Gouffre.",
+          "nuance": "Composition vuk-u-tori = 'personne du gouffre' (vuku 'profond, gouffre, abîme' + tori 'personne'). Du même radical : vukis 'creuser'. Lié aux Enfants des Échos (Nakukeko), mineurs souterrains, et au Gouffre Humide (Vukuura). Motif racine+u+tori (appartenance au lieu/domaine).",
+          "registre": "courant"
         }
       ]
     },
@@ -403,7 +482,10 @@
             "aita",
             "tori"
           ],
-          "domaine": "titre"
+          "domaine": "titre",
+          "definition": "Personne âgée et respectée, liée aux ancêtres ; doyen porteur de la mémoire de la lignée.",
+          "nuance": "Composition ait-a-tori = 'personne avec ancêtre' (aita 'ancêtre, ancien' sacré + liaison -a- 'avec' + tori 'personne'), motif racine+a+tori. La proximité avec aita (ancêtre) confère le respect dû à l'ancienneté. À distinguer de seni 'vieux, ancien' (qualité d'âge brute) : l'aîné est socialement valorisé par la lignée.",
+          "registre": "sacré"
         }
       ]
     },
@@ -413,7 +495,10 @@
           "confluent": "naki",
           "type": "racine",
           "forme_liee": "nak",
-          "domaine": "famille"
+          "domaine": "famille",
+          "definition": "Enfant, descendant d'une lignée ; membre de la génération suivante, héritier de la transmission.",
+          "nuance": "Racine pure (naki, forme liée nak-), pas une composition. Brique fondamentale de nombreux noms de caste : Nakuura 'Enfants du Courant', Nakukeko 'Enfants des Échos'. Double sens 'enfant / descendant'. Doublon conceptuel à signaler avec les entrées familiales mamu 'mère', papu 'père' (même domaine famille/lignée).",
+          "registre": "courant"
         }
       ]
     },
@@ -423,7 +508,10 @@
           "confluent": "mamu",
           "type": "racine",
           "forme_liee": "mam",
-          "domaine": "famille"
+          "domaine": "famille",
+          "definition": "Mère, génitrice ; figure parentale féminine de la lignée familiale.",
+          "nuance": "Racine pure (mamu, forme liée mam-), pas une composition. Doublon assumé avec papu 'père' : paire parentale symétrique (mamu/papu) construite sur redoublement enfantin m-m / p-p. Domaine famille, comme naki 'descendant' et kotautori 'époux'. Cette entrée figure aussi dans le fichier famille (21) — recoupement à signaler.",
+          "registre": "courant"
         }
       ]
     },
@@ -433,7 +521,10 @@
           "confluent": "papu",
           "type": "racine",
           "forme_liee": "pap",
-          "domaine": "famille"
+          "domaine": "famille",
+          "definition": "Père, géniteur ; figure parentale masculine de la lignée familiale.",
+          "nuance": "Racine pure (papu, forme liée pap-), pas une composition. Doublon assumé avec mamu 'mère' : paire parentale symétrique (papu/mamu) sur redoublement p-p / m-m. Domaine famille. Recoupement probable avec le fichier famille (21-famille.json) — à signaler pour éviter la duplication d'entrées.",
+          "registre": "courant"
         }
       ]
     },
@@ -448,7 +539,10 @@
             "kota",
             "tori"
           ],
-          "domaine": "famille"
+          "domaine": "famille",
+          "definition": "Conjoint, personne unie par le mariage ; partenaire dans l'union familiale.",
+          "nuance": "Composition kot-a-tori (notée kotautori) = 'personne d'union' (kota 'union, confluence, ensemble' + tori 'personne'), motif racine+a+tori. kota (confluence) est le cœur culturel : l'époux est la 'personne de la confluence'. Forme neutre en genre — synonymes français épouse/mari/conjoint. Doublon de domaine avec mamu/papu/naki (famille).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -471,7 +565,10 @@
             "neka",
             "toku"
           ],
-          "domaine": "role"
+          "domaine": "role",
+          "definition": "Créateur qui fabrique avec savoir-faire ; ouvrier qualifié des métiers manuels.",
+          "nuance": "Composition nek-a-toku = 'créateur avec savoir' (neka 'faire, créer' + toku ; toku 'toucher/contact' ou 'document/écrit' selon data, ici au sens de savoir-faire/technique). DOUBLON interne du fichier : 'artisan' a deux formes — nekatoku (entrée 'artisan') et makouneka (entrée 'maitre artisan', rang supérieur). nekaukari 'façonneur de pierre' en est la spécialisation. Synonymes fr : artisane, crafteur.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [

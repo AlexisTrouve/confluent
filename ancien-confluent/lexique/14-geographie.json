@@ -8,7 +8,11 @@
           "confluent": "tani",
           "type": "racine",
           "forme_liee": "tan",
-          "domaine": "geographie"
+          "domaine": "geographie",
+          "definition": "Dépression du relief située entre des hauteurs ; creux où s'écoulent les rivières. Géographie d'origine de la civilisation de la Confluence.",
+          "nuance": "Racine standard tani (sur tani=vallée, id 114). DOUBLON exact avec 08-nature-elements ('vallee' = tani) : même entrée dupliquée. Vs 'montagne' (tasa, la hauteur) et 'pic' (tasupiki). COLLISION : forme tani identique au pronom 3sg (il/elle/iel), désambiguïsée par le contexte et la particule de cas.",
+          "registre": "courant",
+          "exemple": "va naki vo tani mirakat"
         }
       ]
     },
@@ -24,7 +28,10 @@
             "ora"
           ],
           "domaine": "direction",
-          "note": "Est - direction du soleil levant/aurore"
+          "note": "Est - direction du soleil levant/aurore",
+          "definition": "Point cardinal du soleil levant, direction de l'aurore. Orient, levant.",
+          "nuance": "Composition sor-a-ola sur sora (soleil) + ora (aurore, racine sacrée, moment sacré) : « soleil de l'aurore ». Direction, pas relief : entrée à part dans ce fichier géographique. Charge culturelle forte car l'aurore (ora) est signe divin et marque l'élection des Ciels-clairs. Symétrique d'ouest (solaluna).",
+          "registre": "rituel"
         }
       ],
       "synonymes_fr": [
@@ -44,7 +51,10 @@
             "luna"
           ],
           "domaine": "direction",
-          "note": "Ouest - direction où le soleil va vers la nuit"
+          "note": "Ouest - direction où le soleil va vers la nuit",
+          "definition": "Point cardinal du soleil couchant, direction où le jour glisse vers la nuit. Occident, couchant.",
+          "nuance": "Composition sor-a-luna sur sora (soleil) + luna (lune) : « soleil vers la nuit ». Direction, pas relief. Symétrique d'est (solaola) : l'est se définit par l'aurore sacrée (ora), l'ouest par la lune (luna). Vs 'lune' simple (luna) qui nomme l'astre, ici elle marque l'orientation.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -63,7 +73,10 @@
             "toka",
             "seli"
           ],
-          "domaine": "geographie"
+          "domaine": "geographie",
+          "definition": "Bande de terre bordant la mer, littoral. Zone de l'expansion maritime récente et lieu du premier contact avec l'Autre.",
+          "nuance": "Composition tok-u-seli sur toka (terre) + seli (mer) : « terre de la mer ». DOUBLON exact avec 08-nature-elements ('cote' = tokuseli). Vs 'promontoire' (tasuseli, montagne maritime) et 'horizon' (zerutoka). seli sert d'aspect-étendue ici (vs seli=sel, matière).",
+          "registre": "courant"
         }
       ]
     },
@@ -78,7 +91,10 @@
             "ena",
             "ura"
           ],
-          "domaine": "geographie"
+          "domaine": "geographie",
+          "definition": "Point d'émergence de l'eau, origine d'un cours d'eau.",
+          "nuance": "DOUBLON avec 08-nature-elements ('source'), mais FORMES DIVERGENTES À RÉCONCILIER : ici confluent='euvikpi' alors que la composition déclarée est 'en-u-ula' (ena origine + ura eau) — euvikpi ne correspond ni à cette composition ni à des racines attestées ; 08 donne 'enuula'. Forme suspecte/corrompue, à corriger sur en-u-ura. Sens visé : origine de l'eau (ena=origine sacrée). Vs 'rivière' (le flux) et 'confluence de rivières' (la rencontre).",
+          "registre": "sacré"
         }
       ]
     },
@@ -93,7 +109,10 @@
             "ura",
             "vuku"
           ],
-          "domaine": "geographie"
+          "domaine": "geographie",
+          "definition": "Chute d'eau se précipitant verticalement vers un gouffre.",
+          "nuance": "Composition ur-oa-vuku sur ura (eau, sacrée) + vuku (gouffre/profond) via liaison oa (résolu, surmonté) : « eau vers le gouffre ». DOUBLON avec 08-nature-elements ('cascade' = ulaoavuku) : les deux fichiers donnent des graphies divergentes (uloavuku vs ulaoavuku), à harmoniser sur ur-oa-vuku. Vs 'rivière' (nura, eau horizontale) : la cascade est la chute verticale.",
+          "registre": "courant"
         }
       ]
     },
@@ -108,7 +127,10 @@
             "kari",
             "vuku"
           ],
-          "domaine": "danger_naturel"
+          "domaine": "danger_naturel",
+          "definition": "Effondrement de pierres ou de roche dévalant une pente. Danger naturel des reliefs montagneux.",
+          "nuance": "Composition kar-oa-vuku sur kari (pierre) + vuku (gouffre) via liaison oa : « pierre vers le gouffre ». Série des dangers de pente partageant le schéma X-oa-vuku : éboulement (kari=pierre), avalanche (nisaoavuku, nisa=humide/neige), cascade (ura=eau). Recoupe le domaine danger_naturel de 08 (cf. tempête venaoki). NB graphie 'kariovuku' (kar-i-o-?) vs composition déclarée kar-oa-vuku : harmoniser.",
+          "registre": "courant"
         }
       ]
     },
@@ -123,7 +145,10 @@
             "ura",
             "eka"
           ],
-          "domaine": "danger_naturel"
+          "domaine": "danger_naturel",
+          "definition": "Débordement des eaux submergeant la terre. Danger naturel lié aux rivières et aux crues.",
+          "nuance": "Composition ur-a-eki sur ura (eau, sacrée) + eka (tout, totalité, sacrée) via liaison a (avec) : « eau avec totalité », l'eau qui recouvre tout. Danger naturel (cf. série dangers de 08). Vs 'cascade' (chute localisée) : l'inondation est l'extension de l'eau. NB graphie 'ulaueki' (l au lieu de r dans ur-) à vérifier.",
+          "registre": "courant"
         }
       ]
     },
@@ -138,7 +163,10 @@
             "kari",
             "oki"
           ],
-          "domaine": "geographie"
+          "domaine": "geographie",
+          "definition": "Paroi ou massif de pierre infranchissable, obstacle minéral que l'on ne peut percer ni traverser.",
+          "nuance": "Composition kar-i-zoki sur kari (pierre) + oki (épreuve, défi, danger ; racine sacrée du conflit sacré) : « pierre de l'épreuve ». Concept propre à 14, sans doublon dans 08. La liaison i (agent) et la racine sacrée oki chargent la pierre d'une valeur d'obstacle-épreuve, cohérente avec les Enfants des Échos (mineurs) confrontés à la roche. NB graphie 'kariuzoki' : zoki ≈ oki avec attaque z.",
+          "registre": "courant"
         }
       ]
     },
@@ -153,7 +181,10 @@
             "nisa",
             "vuku"
           ],
-          "domaine": "danger_naturel"
+          "domaine": "danger_naturel",
+          "definition": "Masse de neige ou de matière humide dévalant une pente vers l'abîme. Danger des hauteurs montagneuses.",
+          "nuance": "Composition nis-oa-vuku sur nisa (humide, ici neige) + vuku (gouffre) via liaison oa : « neige vers le gouffre ». Membre de la série des dangers de pente X-oa-vuku (éboulement kari, cascade ura). La civilisation rattache nisa (humide) à la neige faute de racine dédiée. Recoupe le domaine danger_naturel de 08.",
+          "registre": "courant"
         }
       ]
     },
@@ -168,7 +199,10 @@
             "suki",
             "zoka"
           ],
-          "domaine": "danger_naturel"
+          "domaine": "danger_naturel",
+          "definition": "Incendie incontrôlé qui ravage la nature, feu hostile et destructeur.",
+          "nuance": "Composition suk-i-zoka sur suki (feu, élément primordial) + zoka (ennemi, étranger hostile) via liaison i (agent) : « feu de l'ennemi ». Danger naturel, hors série X-oa-vuku car le feu n'est pas une chute de pente. zoka personnifie le feu en force hostile, écho de la racine suki=feu (caste-élément Feu). NB graphie 'sukiuzoka' : suk-i-zoka avec liaison i.",
+          "registre": "courant"
         }
       ]
     }

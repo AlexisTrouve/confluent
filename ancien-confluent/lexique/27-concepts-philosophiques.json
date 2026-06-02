@@ -15,7 +15,10 @@
             "aska"
           ],
           "domaine": "philosophie_centrale",
-          "note": "Concept central de la civilisation - pèlerinage obligatoire, identité culturelle"
+          "note": "Concept central de la civilisation - pèlerinage obligatoire, identité culturelle",
+          "definition": "Accomplir le geste fondateur de l'identité Siliaska : porter en soi le regard libre, l'observation sans préjugé acquise par le pèlerinage obligatoire au Gouffre Humide.",
+          "nuance": "Composition kanu (main/porter, cf. verbe takan) + sili (regard) + aska (libre/sacrée) : trois racines, composé long et solennel. Reprend et verbalise le concept identitaire 'siliaska' (regard libre, cf. 12-abstraits) en ajoutant l'acte de PORTER. Distinct de 'siliaska' (l'état/le peuple) : ici c'est l'action rituelle de porter ce regard.",
+          "registre": "sacré"
         }
       ]
     },
@@ -32,7 +35,10 @@
             "kota"
           ],
           "domaine": "philosophie_centrale",
-          "note": "Phrase existentielle clé : peur de disparaître comme les Premiers Ancêtres"
+          "note": "Phrase existentielle clé : peur de disparaître comme les Premiers Ancêtres",
+          "definition": "Formule existentielle clé exprimant l'angoisse de disparaître comme les Premiers Ancêtres : un serment de mort partagée, un même destin liant tout le peuple à leur sort.",
+          "nuance": "Composition savu (serment) + osi (mort, sacrée) + kota (union) : 'serment de la mort commune'. Charge culturelle majeure (mission de ne pas répéter les erreurs des Premiers Ancêtres, enuaita). Distinct de 'destinée' (tekiuumi, chemin de l'esprit, 12-abstraits) : ici le destin est COLLECTIF et MORTIFÈRE, un avertissement scellé comme un serment.",
+          "registre": "rituel"
         }
       ]
     },
@@ -49,7 +55,10 @@
             "aita"
           ],
           "domaine": "spiritualite",
-          "note": "Âmes des pionniers morts qui ne peuvent atteindre le ciel"
+          "note": "Âmes des pionniers morts qui ne peuvent atteindre le ciel",
+          "definition": "Âmes des pionniers morts qui, ne pouvant atteindre le ciel, gardent les passages entre les mondes ; veilleurs ancestraux des seuils.",
+          "nuance": "Composition konu (gardien, var. de la racine konu/koni assemblée — cf. konu 'gardien' dans 27-monopole ikokonu) + vasi (pont/lien/passage, attestée) + aita (ancêtres, sacrée). ATTENTION : la racine 'konu' n'est pas isolée dans data/lexique (proche de koni 'assemblée' et de konu utilisé pour 'gardien' dans ikokonu) — à vérifier. Distinct de 'relais' (vasiaita, transmission temporelle) qui partage vasi+aita : ici les ancêtres ne transmettent pas, ils GARDENT, bloqués entre terre et ciel.",
+          "registre": "sacré"
         }
       ]
     },
@@ -65,7 +74,10 @@
             "aita"
           ],
           "domaine": "temps_philosophie",
-          "note": "Qui traverse plusieurs générations (crucial pour artefacts)"
+          "note": "Qui traverse plusieurs générations (crucial pour artefacts)",
+          "definition": "Qui traverse et concerne toutes les générations d'ancêtres ; propriété cardinale des artefacts enrichis par chaque génération (Grande Fresque, Halls des Serments).",
+          "nuance": "Composition eka (tout/totalité, sacrée) + aita (ancêtres, sacrée) + -vi (suffixe adjectival ?). Concept central des artefacts cumulatifs. Quasi-DOUBLON conceptuel avec 'éternel' (ekaaikavi, eka+aika+vi) : ekaitavi insiste sur les GÉNÉRATIONS, ekaaikavi sur le TEMPS. Synonyme_fr 'transgénérationnel'. NB : le -vi final n'est pas une racine attestée (probable marque dérivationnelle de qualité).",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -84,7 +96,10 @@
             "aita"
           ],
           "domaine": "temps_philosophie",
-          "note": "Transmission à travers le temps"
+          "note": "Transmission à travers le temps",
+          "definition": "Transmission d'un héritage à travers le temps, à la manière d'un témoin passé de main en main entre les générations.",
+          "nuance": "Composition vasi (pont/lien/passage, attestée) + aita (ancêtres). Synonymes_fr 'transmission', 'passe-témoin'. Quasi-DOUBLON avec 'transmission' (kisunuaita, kisu+aita, 12-abstraits) : vasiaita est le PASSAGE/relais (métaphore du pont), kisunuaita l'ENSEIGNEMENT transmis. Base de 'relais de mémorisation' (vasimori). Distinct de 'gardiens des passages' (konuvasiaita) qui garde au lieu de relayer.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -104,7 +119,10 @@
             "mori"
           ],
           "domaine": "techniques_culturelles",
-          "note": "Technique des Ailes-Grises pour interpréter la fresque"
+          "note": "Technique des Ailes-Grises pour interpréter la fresque",
+          "definition": "Technique des Ailes-Grises (Aliaska) consistant à transmettre l'interprétation de la Grande Fresque de génération en génération ; pont de mémoire.",
+          "nuance": "Composition vasi (pont/passage) + mori (mémoire, attestée ; verbe morik). Distinct de 'relais' (vasiaita) : ici le passage porte spécifiquement sur la MÉMOIRE (mori) plutôt que sur les ancêtres (aita). Technique culturelle concrète, distincte du concept abstrait de 'connaissance' (sekamori, 12-abstraits, qui partage mori).",
+          "registre": "sacré"
         }
       ]
     },
@@ -121,7 +139,10 @@
             "aika"
           ],
           "domaine": "philosophie",
-          "note": "Concept de l'interprétation multi-générationnelle"
+          "note": "Concept de l'interprétation multi-générationnelle",
+          "definition": "Concept de l'interprétation multi-générationnelle : les voix des ancêtres dialoguent à travers les âges, chaque génération répondant à la précédente.",
+          "nuance": "Composition voki (voix/parole, attestée) + aita (ancêtres) + aika (temps — racine NON attestée dans data/lexique, qui donne 'temi' pour temps ; 'aika' est utilisée largement dans ce fichier mais reste orpheline, à vérifier). Reflète la valeur de transmission/débat (cf. verbe paruk débattre). Distinct de 'relais' (transmission passive) : ici il y a CONFRONTATION dialogique des voix dans le temps.",
+          "registre": "sacré"
         }
       ]
     },
@@ -136,7 +157,10 @@
             "aita"
           ],
           "domaine": "temps",
-          "note": "Unité de temps civilisationnelle"
+          "note": "Unité de temps civilisationnelle",
+          "definition": "Unité de temps civilisationnelle correspondant au cycle d'une lignée d'ancêtres ; mesure du temps long propre à la vision multi-générationnelle.",
+          "nuance": "Composition aita (ancêtres) + kolu (cycle — proche de koru 'cercle/cycle' et koli/koru attestés ; 'kolu' non répertorié tel quel, probable variante de koru, à vérifier). Synonyme_fr 'générations'. Distinct de 'temporalité' (aikakota) et 'génération' multiple (ekaitavi) : ici c'est l'unité-cycle discrète, mesurable.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -155,7 +179,10 @@
             "aika"
           ],
           "domaine": "temps_philosophie",
-          "note": "Sans fin"
+          "note": "Sans fin",
+          "definition": "Qui est de tout temps, sans commencement ni fin ; qualité de ce qui échappe à l'écoulement des âges.",
+          "nuance": "Composition eka (tout/totalité, sacrée) + aika (temps, non attestée — cf. 'temi' attesté) + -vi (suffixe de qualité). Synonymes_fr 'éternité', 'perpétuel'. Quasi-DOUBLON structurel avec 'multi-générationnel' (ekaitavi) : même schéma eka+X+vi, mais X=aika (temps) ici vs aita (ancêtres). Recoupe aussi l'aspect verbal -eom (éternel) et la liaison -eo- (totalité/éternel). Distinct de 'permanent' (aikaveli) : l'éternel est hors du temps, le permanent dure DANS le temps.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -175,7 +202,10 @@
             "kota"
           ],
           "domaine": "philosophie",
-          "note": "Concept du temps"
+          "note": "Concept du temps",
+          "definition": "Le temps conçu comme confluence : les époques se rejoignent et se mêlent comme les eaux, fondement de la pensée du temps stratifié.",
+          "nuance": "Composition aika (temps, non attestée — cf. temi attesté) + kota (union/confluence). Applique la métaphore fondatrice de la confluence au temps. Distinct de 'génération' (aitakolu, unité discrète) et de 'stratification temporelle' (aikakovasu) : ici c'est le CONCEPT global du temps comme union.",
+          "registre": "sacré"
         }
       ]
     },
@@ -191,7 +221,10 @@
             "kova"
           ],
           "domaine": "philosophie",
-          "note": "Couches de temps superposées"
+          "note": "Couches de temps superposées",
+          "definition": "Superposition des couches de temps, comme les strates de peinture de la Grande Fresque où chaque génération recouvre la précédente sans l'effacer.",
+          "nuance": "Composition aika (temps, non attestée) + kova (fresque/peinture/gravure, attestée) + su (pluriel) : 'les multiples gravures du temps'. DOUBLON partiel avec 'multicouche' (kovasu) : aikakovasu = kovasu appliqué au TEMPS spécifiquement. Concept clé des artefacts multi-générationnels. Métaphore directe de la Grande Fresque (Ekakova).",
+          "registre": "sacré"
         }
       ]
     },
@@ -206,7 +239,10 @@
             "tosa"
           ],
           "domaine": "valeur_sociale",
-          "note": "Gagner par le mérite"
+          "note": "Gagner par le mérite",
+          "definition": "Gagner quelque chose par sa valeur morale, aller vers le bien et en recueillir le fruit légitime.",
+          "nuance": "Composition tosa (bon/bien, attestée) + -ki (élément de mouvement/direction, cf. liaison -i- agent ou racine 'ki' aller ; non isolé dans data). Synonymes_fr 'mérite', 'gagner'. Distinct de 'valeur/mérite' (racine valu attestée, et honneur valuuveli en 12-abstraits) : tosaki est l'ACTE de mériter (verbe), valu la qualité. Valeur culturelle : l'excellence se mérite par l'amélioration.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -226,7 +262,10 @@
             "kota"
           ],
           "domaine": "politique",
-          "note": "Fonction politique ou responsabilité"
+          "note": "Fonction politique ou responsabilité",
+          "definition": "Fonction ou responsabilité politique confiée à un membre du peuple ; le poids d'une mission portée au service de la communauté.",
+          "nuance": "Composition kanu (main/porter) + kota (union/confluence) : 'porter pour l'union'. Synonymes_fr 'charges', 'fonction', 'responsabilité'. Distinct de 'caste' (kotauneki, 12-abstraits, groupe fonctionnel) : la charge est la RESPONSABILITÉ individuelle, pas le groupe. Opposé culturel de 'héréditaire' (aitakovi) : la charge se mérite (cf. tosaki), elle ne s'hérite pas.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -246,7 +285,10 @@
             "aita"
           ],
           "domaine": "politique",
-          "note": "Concept à rejeter - transmission familiale du pouvoir"
+          "note": "Concept à rejeter - transmission familiale du pouvoir",
+          "definition": "Transmis par le sang d'une génération à l'autre ; concept de pouvoir hérité, explicitement REJETÉ par la civilisation qui valorise le mérite.",
+          "nuance": "Composition aita (ancêtres) + kovi (route/chemin, attestée — ici 'voie des ancêtres' = transmission par filiation). Charge culturelle NÉGATIVE : concept à rejeter (le pouvoir doit se mériter, pas s'hériter). Distinct de 'généalogie' (mituuaita, 12-abstraits, neutre/sacré) : aitakovi désigne spécifiquement la TRANSMISSION abusive du pouvoir. Paire avec 'fief' (tokaitavi), autre concept rejeté.",
+          "registre": "courant"
         }
       ]
     },
@@ -262,7 +304,10 @@
             "aita"
           ],
           "domaine": "politique",
-          "note": "Concept à rejeter - territoire accordé par hérédité"
+          "note": "Concept à rejeter - territoire accordé par hérédité",
+          "definition": "Territoire accordé et transmis par hérédité ; concept féodal explicitement REJETÉ par la Confluence comme contraire au mérite.",
+          "nuance": "Composition toka (terre/lieu) + aita (ancêtres) + -vi (suffixe de qualité) : 'lieu des ancêtres' (au sens de propriété héritée). Charge culturelle NÉGATIVE, paire avec 'héréditaire' (aitakovi). Distinct de 'culture' (aitatoka, 12-abstraits, toka+aita, sens positif de patrimoine) : tokaitavi inverse la valence — le même couple toka/aita donne ici la possession abusive, là le patrimoine vénéré.",
+          "registre": "courant"
         }
       ]
     },
@@ -278,7 +323,10 @@
             "konu"
           ],
           "domaine": "economie_politique",
-          "note": "Contrôle exclusif (crucial pour économie)"
+          "note": "Contrôle exclusif (crucial pour économie)",
+          "definition": "Contrôle exclusif d'une ressource ou d'un commerce par un seul gardien ; concept économique crucial dans une société d'échange.",
+          "nuance": "Composition iko (un/unique/seul, sacrée) + konu (gardien — cf. ikokonu 'un seul gardien'; konu non isolé dans data, proche de koni 'assemblée'). Distinct de 'charge' (responsabilité partagée) : le monopole est l'accaparement EXCLUSIF. Tension avec les valeurs (transmission, confluence) : retenir pour soi seul s'oppose au partage.",
+          "registre": "courant"
         }
       ]
     },
@@ -294,7 +342,10 @@
             "veli"
           ],
           "domaine": "temps",
-          "note": "Non temporaire"
+          "note": "Non temporaire",
+          "definition": "Qui demeure vrai et stable à travers le temps ; ce qui dure et ne se défait pas.",
+          "nuance": "Composition aika (temps, non attestée) + veli (vrai/vérité, var. de veri attestée) : 'vrai dans le temps'. Synonymes_fr 'permanente', 'durable'. Antonyme exact de 'temporaire' (aikapisu). Distinct de 'éternel' (ekaaikavi) : le permanent dure DANS le temps (sans fin connue), l'éternel est HORS du temps.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -314,7 +365,10 @@
             "pisu"
           ],
           "domaine": "temps",
-          "note": "Opposé de permanent"
+          "note": "Opposé de permanent",
+          "definition": "Qui ne dure qu'un court moment ; ce qui passe et ne s'inscrit pas dans la durée.",
+          "nuance": "Composition aika (temps, non attestée) + pisu (petit/fin, attestée) : 'petit temps'. Synonymes_fr 'transitoire', 'éphémère'. Antonyme exact de 'permanent' (aikaveli) par opposition pisu (petit) / veli (vrai-durable). Construction parallèle à mako/pisu (grand/petit).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -334,7 +388,10 @@
             "mako"
           ],
           "domaine": "valeur_sociale",
-          "note": "Honneur et renommée"
+          "note": "Honneur et renommée",
+          "definition": "Grande renommée, mémoire vaste laissée parmi les vivants ; le fait d'être longuement souvenu.",
+          "nuance": "Composition mori (mémoire, attestée) + mako (grand/vaste, attestée) : 'grande mémoire'. Synonymes_fr 'glorieux', 'renommée'. ATTENTION charge culturelle : la civilisation REJETTE 'l'orgueil stérile' (gloire personnelle sans transmission) — la vraie gloire est mémorielle/collective. Distinct de 'honneur' (tosamori, bonne mémoire) : la gloire est l'ampleur du souvenir, l'honneur sa qualité morale.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -354,7 +411,10 @@
             "mori"
           ],
           "domaine": "valeur_sociale",
-          "note": "Valeur morale"
+          "note": "Valeur morale",
+          "definition": "Valeur morale d'un être méritant d'être bien souvenu ; bonne réputation fondée sur la droiture.",
+          "nuance": "Composition tosa (bon/bien) + mori (mémoire) : 'bonne mémoire'. DOUBLON FR à signaler : 'honneur' existe AUSSI en 12-abstraits sous la forme valuuveli (valeur+vérité). Deux conceptions coexistent : tosamori (honneur = bon souvenir laissé) vs valuuveli (honneur = fidélité à la vérité). À harmoniser/fusionner. Distinct de 'gloire' (morimako) : qualité (tosa) vs ampleur (mako) du souvenir.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -373,7 +433,10 @@
             "mako"
           ],
           "domaine": "emotion",
-          "note": "Sentiment de dignité"
+          "note": "Sentiment de dignité",
+          "definition": "Sentiment de dignité et de grandeur du cœur ; estime de soi tirée de ses actes.",
+          "nuance": "Composition kori (cœur, attestée — forme kol-/kor-) + mako (grand) : 'grand cœur'. Suit le système des émotions par métaphore corporelle (cf. 03-GRAMMAIRE, kori = centre émotionnel). NB orthographe : 'kolimako' mais racine kori → forme attendue plutôt 'korimako'; le l/r relève de la tolérance phonétique. Distinct de 'fierté collective' implicite dans gloire/honneur : ici c'est l'ÉMOTION individuelle. Charge ambivalente (cf. rejet de l'orgueil stérile).",
+          "registre": "courant"
         }
       ]
     },
@@ -389,7 +452,10 @@
             "paka"
           ],
           "domaine": "action_sociale",
-          "note": "Critique"
+          "note": "Critique",
+          "definition": "Critique adressée à un être pour une faute ; parole mauvaise marquant la désapprobation.",
+          "nuance": "Composition voki (voix/parole, attestée) + paka (mauvais — racine NON attestée dans data/lexique ; 'paku' attesté = paix, sens opposé ! probable racine 'paka' du mal/mauvais propre à ce fichier, à vérifier). Synonymes_fr 'reprocher', 'blâme'. Antonyme exact de 'louer' (vokitosa, parole bonne) par opposition paka/tosa. Famille des composés en voki- (parole évaluative).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -409,7 +475,10 @@
             "tosa"
           ],
           "domaine": "action_sociale",
-          "note": "Complimenter, faire l'éloge"
+          "note": "Complimenter, faire l'éloge",
+          "definition": "Faire l'éloge d'un être, complimenter par la parole ; reconnaître publiquement le bien.",
+          "nuance": "Composition voki (parole) + tosa (bon/bien) : 'parole bonne'. Synonymes_fr 'louange', 'éloge', 'complimenter'. Antonyme exact de 'reproche' (vokipaka) via opposition tosa/paka. À distinguer de 'bénir' (verbe tosan) : louer s'adresse à un pair, bénir relève du sacré. Distinct de 'satisfaire' (tosavi).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -430,7 +499,10 @@
             "veli"
           ],
           "domaine": "valeur_sociale",
-          "note": "Déshonorant"
+          "note": "Déshonorant",
+          "definition": "Profondément déshonorant, vraiment mauvais ; qui mérite le blâme et la honte.",
+          "nuance": "Composition paka (mauvais, non attestée — cf. note 'reproche') + veli (vrai/vraiment) : 'vraiment mauvais'. Charge morale forte (déshonneur). ATTENTION construction : ici veli sert d'intensif ('vraiment'), un emploi distinct de veli=vérité dans honneur/justice (12-abstraits). Antonyme implicite de 'honneur' (tosamori). Distinct de zoka (mal hostile) : pakaveli qualifie une INDIGNITÉ morale, pas une hostilité.",
+          "registre": "courant"
         }
       ]
     },
@@ -445,7 +517,10 @@
             "tosa"
           ],
           "domaine": "action_sociale",
-          "note": "Répondre aux attentes"
+          "note": "Répondre aux attentes",
+          "definition": "Rendre bon, combler une attente ; répondre à ce qui est demandé de manière satisfaisante.",
+          "nuance": "Composition tosa (bon/bien) + -vi (suffixe factitif/de qualité, 'rendre') : 'rendre bon'. Synonymes_fr 'satisfaction', 'contenter'. Famille des composés en tosa- (évaluation positive). Distinct de 'louer' (vokitosa, par la parole) : satisfaire est un FAIRE qui comble, pas une parole. NB le suffixe -vi (rendre/qualité) récurrent dans ce fichier (ekaitavi, tosavi, ekaaikavi) n'est pas une racine attestée isolément.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -465,7 +540,10 @@
             "mako"
           ],
           "domaine": "action_sociale",
-          "note": "Demande forte"
+          "note": "Demande forte",
+          "definition": "Demande forte et insistante ; parole pressante qui réclame beaucoup.",
+          "nuance": "Composition voki (parole/demande) + mako (grand) : 'grande parole/demande'. Synonymes_fr 'exiger', 'demande'. Famille des composés en voki- (vokipaka, vokitosa) : ici mako quantifie l'intensité de la demande. Distinct de 'reproche' (vokipaka) : l'exigence réclame, le reproche blâme.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -485,7 +563,10 @@
             "tosa"
           ],
           "domaine": "economie",
-          "note": "Rémunération équitable"
+          "note": "Rémunération équitable",
+          "definition": "Rémunération équitable d'un service ou d'un tort ; bon échange rétablissant l'équilibre.",
+          "nuance": "Composition kilu (échanger/troquer — cf. racine attestée kiru 'échanger/troquer', 'kilu' = probable variante l/r, à vérifier) + tosa (bon/bien) : 'bon échange'. Synonymes_fr 'rémunération', 'rétribution'. Concept économique (caste des Passes-bien, marchands). Distinct de 'monopole' (ikokonu, accaparement) : la compensation est un échange JUSTE et réciproque.",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -505,7 +586,10 @@
             "osi"
           ],
           "domaine": "danger_spirituel",
-          "note": "Effet de rester trop longtemps dans les Antres (spirituel)"
+          "note": "Effet de rester trop longtemps dans les Antres (spirituel)",
+          "definition": "Étouffement spirituel guettant celui qui demeure trop longtemps dans les Antres des Échos ; mort lente par manque d'air.",
+          "nuance": "Composition vena (air/vent, attestée) + osi (mort, sacrée) : 'mort de l'air'. Synonymes_fr 'suffoquer', 'étouffement'. Charge culturelle : danger spirituel propre aux souterrains (cf. Kekutoka, caste des Nakukeko). Distinct de osian (mourir, passage neutre) : ici la mort vient du milieu (air vicié). Voisin conceptuel de 'miasmes' (venuzoka, 12-abstraits, air de l'ennemi) — tous deux en vena- (air néfaste).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -524,7 +608,10 @@
             "kova"
           ],
           "domaine": "art_philosophie",
-          "note": "Concept des fresques à plusieurs strates temporelles"
+          "note": "Concept des fresques à plusieurs strates temporelles",
+          "definition": "Fait de plusieurs strates superposées ; propriété des fresques où chaque génération ajoute sa couche sans effacer les précédentes.",
+          "nuance": "Composition kova (fresque/peinture/gravure, attestée) + su (pluriel) : 'les multiples gravures'. Synonymes_fr 'multi-couche', 'stratifié'. DOUBLON partiel avec 'stratification temporelle' (aikakovasu) : kovasu est la propriété générale, aikakovasu son application au temps. Concept matériel des artefacts multi-générationnels (Grande Fresque, Ekakova).",
+          "registre": "courant"
         }
       ],
       "synonymes_fr": [
@@ -544,7 +631,10 @@
             "keko"
           ],
           "domaine": "tradition",
-          "note": "Tradition des artisans âgés (refus d'enlever le corps, fierté)"
+          "note": "Tradition des artisans âgés (refus d'enlever le corps, fierté)",
+          "definition": "Tradition des artisans âgés des Antres qui refusent qu'on enlève leur corps après la mort, choisissant par fierté de se fondre dans l'écho de la grotte.",
+          "nuance": "Composition tuli (être/devenir — racine NON attestée dans data/lexique ; 'ita' est la racine attestée pour être/exister ; 'tuli' propre à ce fichier, à vérifier) + keko (écho/résonance, attestée). Charge culturelle forte : tradition funéraire propre aux Nakukeko (Enfants des Échos), liée à la fierté (kolimako). Distinct de osian/tumi (mourir/enterrer) : ici le mort DEVIENT le lieu, fusion avec l'Antre (Kekutoka).",
+          "registre": "rituel"
         }
       ]
     }

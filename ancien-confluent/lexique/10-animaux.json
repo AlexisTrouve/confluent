@@ -9,7 +9,10 @@
           "type": "racine_sacree",
           "forme_liee": "ien",
           "domaine": "animal_sacre",
-          "note": "Animal sacré central dans la culture"
+          "note": "Animal sacré central dans la culture",
+          "definition": "La grue, oiseau sacré central de la culture de la Confluence, vénérée comme symbole de la vision au-delà et de la liberté. Animal totémique du peuple, dont les individus domestiqués servent de messagers.",
+          "nuance": "DOUBLON/CONFLIT majeur : ce fichier donne iena pour 'grue', mais 01-racines-sacrees ET data attestent alu (forme liée al-) comme racine canonique de la grue (Regard-Libre). La forme iena n'apparaît ni dans data ni dans aucune composition, alors que alu est productive (aliaska, aluaska). À arbitrer : iena est probablement une variante concurrente non canonisée. La grue reste l'animal sacré central, à distinguer de aki (faucon) et de la catégorie générique apo (oiseau).",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [
@@ -28,7 +31,10 @@
             "aska"
           ],
           "categorie": "animal_sacre",
-          "note": "Grues domestiquées, messagers sacrés"
+          "note": "Grues domestiquées, messagers sacrés",
+          "definition": "Les grues domestiquées par les Ailes-Grises, dressées comme messagers sacrés et emblèmes de la liberté du regard. Nom donné aux Regards-Libres, créatures qui voient au-delà.",
+          "nuance": "Composition al-u-aska = 'grue de liberté' (alu, grue sacrée + liaison -u- d'appartenance + aska, libre), deux racines sacrées attestées dans data. S'appuie sur la forme canonique alu (et non iena de l'entrée 'grue'), ce qui en fait la composition de référence pour l'animal sacré. Famille morphologique de aliaska (Ailes-Grises, al-i-aska, les dresseurs). Double racine sacrée = charge spirituelle élevée.",
+          "registre": "sacré"
         }
       ]
     },
@@ -43,7 +49,10 @@
             "alu",
             "senu"
           ],
-          "categorie": "animal"
+          "categorie": "animal",
+          "definition": "Variété de grue à plumage gris cendré ; sous-type naturaliste de la grue sacrée distingué par sa couleur.",
+          "nuance": "Composition al-u-senu = 'grue de cendre' (alu, grue + -u- + senu). ATTENTION : data n'atteste pas senu pour 'cendre' — la racine attestée de cendre/gris est kesa (forme liée kes-). senu est donc soit une racine non documentée, soit une coquille pour kesa. Animal de registre courant (espèce observée, descriptive) malgré le radical sacré alu, par opposition à aluaska (la grue sacrée idéalisée).",
+          "registre": "courant"
         }
       ]
     },
@@ -54,7 +63,11 @@
           "type": "racine",
           "forme_liee": "bes",
           "domaine": "animal",
-          "note": "Animal générique"
+          "note": "Animal générique",
+          "definition": "Animal au sens générique, créature sauvage non spécifiée ; terme couvrant la faune en général, par opposition aux espèces nommées et aux animaux sacrés.",
+          "nuance": "Racine standard besi (forme liée bes-), attestée dans data (id 72, 'bête, animal sauvage'), domaine etres_relations. C'est le terme générique de la faune : entre dans asaubesi (bête sacrée) et zanubesi (gibier). À distinguer des espèces nommées (alu grue, aki faucon, ziku serpent, pesa poisson) et de la catégorie aérienne apo (oiseau). Synonyme français : animal.",
+          "registre": "courant",
+          "exemple": "va tori vo besi miraku"
         }
       ],
       "synonymes_fr": [
@@ -72,7 +85,10 @@
             "asa",
             "besi"
           ],
-          "categorie": "animal_sacre"
+          "categorie": "animal_sacre",
+          "definition": "Animal revêtu d'un caractère sacré, créature mise à part du profane et associée aux esprits ou aux ancêtres ; bête vénérée plutôt que chassée.",
+          "nuance": "Composition as-a-besi = 'sacré avec bête' (asa, sacré/divin + liaison -a- 'avec' + besi, bête), racines attestées dans data. La liaison -a- (relation, 'avec') accole la qualité sacrée à l'animal générique. À distinguer de aluaska (la grue, animal sacré nommé et spécifique) : asaubesi est la catégorie abstraite de l'animal sacré, sans préciser l'espèce.",
+          "registre": "sacré"
         }
       ]
     },
@@ -87,7 +103,10 @@
             "zana",
             "besi"
           ],
-          "domaine": "animal"
+          "domaine": "animal",
+          "definition": "Animal destiné à la chasse, proie traquée pour la subsistance ; la faune en tant qu'objet de la chasse, activité centrale du mode de vie semi-sédentaire.",
+          "nuance": "Composition zan-u-besi = 'bête de chasse' (zana, chasser/traquer + liaison -u- d'appartenance + besi, bête), racines attestées. zana donne le verbe zanak (chasser) et entre dans akoazana (Faucons Chasseurs). Opposé conceptuel de asaubesi (bête sacrée, vénérée et non chassée). Registre courant, lié à l'activité quotidienne de subsistance.",
+          "registre": "courant"
         }
       ]
     },
@@ -102,7 +121,10 @@
             "pisu",
             "nura"
           ],
-          "domaine": "animal"
+          "domaine": "animal",
+          "definition": "Poisson d'eau courante, gibier aquatique des rivières ; ressource centrale des Enfants du Courant (Nakuura), pêcheurs vivant sur pilotis.",
+          "nuance": "Composition donnée pis-u-nura = 'poisson de rivière' (-u- appartenance + nura, rivière/courant, attesté). CONFLIT sur la première racine : la composition liste 'pisu', mais data atteste pisu = 'petit, fin' et pesa = 'poisson' (forme liée pes-, donne pesak 'pêcher'). 'pisunura' se lit donc littéralement 'petit de rivière', non 'poisson' — la racine attendue serait pesa. À arbitrer : probable confusion pisu/pesa. Lié culturellement à la pêche fluviale (pesak).",
+          "registre": "courant"
         }
       ]
     },
@@ -113,7 +135,10 @@
           "type": "racine",
           "forme_liee": "zik",
           "domaine": "animal",
-          "note": "Créature rampante"
+          "note": "Créature rampante",
+          "definition": "Créature rampante, reptile sans pattes ; animal terrestre générique de la catégorie des rampants.",
+          "nuance": "Racine standard ziku (forme liée zik-), attestée dans data (id 132, 'serpent'), domaine etres_relations. Sert de base à serpent d'eau. Homophonie de forme avec d'autres racines en zik- à surveiller en composition. Registre courant : créature observée du quotidien, sans charge sacrée particulière.",
+          "registre": "courant"
         }
       ]
     },
@@ -128,7 +153,10 @@
             "sepu",
             "ura"
           ],
-          "domaine": "animal"
+          "domaine": "animal",
+          "definition": "Serpent aquatique vivant dans ou près de l'eau ; reptile des milieux humides, rivières et gouffres.",
+          "nuance": "Composition donnée sep-u-ula = 'serpent de l'eau' (-u- appartenance + racines listées sepu + ura). DOUBLE problème d'attestation : (1) data atteste ziku pour 'serpent', pas 'sepu' (sepu non documenté) — alors que l'entrée 'serpent' du même fichier utilise bien ziku ; (2) la racine d'eau attestée est ura (forme ur-), or la forme composée donne 'ula' (l à la place de r). Composition à arbitrer : ni sepu ni la forme ula ne sont attestés dans data.",
+          "registre": "courant"
         }
       ]
     },
@@ -143,7 +171,10 @@
             "apo",
             "zana"
           ],
-          "domaine": "animal"
+          "domaine": "animal",
+          "definition": "Oiseau prédateur, rapace qui chasse ; catégorie aérienne associée à la chasse, dans la mouvance symbolique du faucon.",
+          "nuance": "INCOHÉRENCE interne : le champ 'confluent' donne 'aviuzana' (avec v/i atypiques) mais le champ 'composition' donne ap-i-zana (apo, oiseau + liaison -i- agent + zana, chasser) = 'oiseau chasseur', racines attestées apo et zana. La forme ap-i-zana est régulière et transparente ; 'aviuzana' ne s'en déduit pas et introduit un 'v' non justifié. À arbitrer : la composition (apizana) est correcte, le confluent saisi semble erroné. À distinguer de aki (faucon, espèce sacrée nommée) : ici catégorie fonctionnelle générique.",
+          "registre": "courant"
         }
       ]
     },
@@ -159,7 +190,10 @@
             "mila"
           ],
           "domaine": "animal",
-          "note": "Créature jamais observée"
+          "note": "Créature jamais observée",
+          "definition": "Créature jamais observée, animal hors du champ du connu ; l'inconnu zoologique, ce qui échappe au regard fondateur des Siliaska.",
+          "nuance": "Composition zo-mira = 'sans vue / non vu' (zo, particule de négation + mira, voir/observer), construction culturellement signifiante pour un peuple qui valorise l'observation : ce qui n'a pas été vu n'a pas d'existence assurée. Racine mira attestée (donne mirak, voir). Le champ 'sens_litteral' du fichier indique 'sans vue'. Cas particulier : composé sur une négation + racine d'action plutôt que sur une racine animale.",
+          "registre": "courant"
         }
       ]
     },
@@ -170,7 +204,10 @@
           "type": "racine",
           "forme_liee": "vam",
           "domaine": "animal",
-          "note": "Prédateur sauvage"
+          "note": "Prédateur sauvage",
+          "definition": "Prédateur sauvage de meute, carnivore terrestre ; bête de chasse redoutée, figure du danger sauvage.",
+          "nuance": "Racine vamo (forme liée vam-) NON attestée dans data : aucune racine 'vamo' ni 'loup' n'y figure (le prédateur hostile le plus proche y est zoka, 'ennemi, étranger hostile'). Racine probablement propre à ce fichier, à canoniser. La syntaxe (04) emploie 'zoka' (loup) dans ses exemples de propositions relatives ('le loup qui chasse' → zokiazana / va zoka zanaku), ce qui révèle un CONFLIT vamo/zoka pour 'loup'. Registre courant.",
+          "registre": "courant"
         }
       ]
     },
@@ -184,7 +221,10 @@
           "racines": [
             "loku"
           ],
-          "domaine": "animal"
+          "domaine": "animal",
+          "definition": "Groupe de loups, bande de prédateurs chassant ensemble ; collectif animal de la faune sauvage.",
+          "nuance": "Composition donnée loku + su = 'loups (pluriel)'. DOUBLE problème : (1) la racine source 'loku' est ici glosée 'loup', mais data atteste loku = 'lieu, endroit' (id 84) — la racine de loup serait plutôt vamo (entrée précédente) ; 'lokusu' se lit donc littéralement 'lieux', non 'loups'. (2) Le pluriel su est une particule syntaxique postposée (va vamo su = 'les loups'), non un suffixe lexical figé : agglutiner su dans un mot de dictionnaire est irrégulier. Entrée à arbitrer entièrement (racine + procédé).",
+          "registre": "courant"
         }
       ]
     }
