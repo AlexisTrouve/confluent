@@ -434,7 +434,24 @@ app.post('/translate', authenticate, async (req, res) => {
     let translation;
     let rawResponse;
 
-    if (provider === 'anthropic') {
+    // Mode mock LLM pour tests E2E (flag env LLM_MOCK=1).
+    // POURQUOI : l'appel LLM se fait côté serveur (non-déterministe, payant, lent) donc
+    // non mockable depuis le navigateur ; ce flag rend le flux de traduction E2E-testable
+    // sans réseau (doctrine : pas de dépendance non-mockable qui bloque le harness).
+    // COMMENT : court-circuite l'appel SDK et fournit une réponse au format COT attendu par
+    // parseTranslationResponse — le parsing serveur s'exécute donc réellement (on le couvre).
+    // GARDE : neutralisé si NODE_ENV=production (jamais de traduction mockée servie en prod,
+    // même si LLM_MOCK était activé par erreur dans l'environnement).
+    if (process.env.LLM_MOCK === '1' && process.env.NODE_ENV !== 'production') {
+      rawResponse = [
+        'ANALYSE:', '(mock) Requête de test E2E.',
+        'STRATÉGIE:', '(mock) Réponse déterministe, sans appel LLM.',
+        'Confluent:', 'siliaska mira',
+        'Décomposition:', 'siliaska (regard libre) + mira (voir)',
+        'Notes:', 'Réponse générée par LLM_MOCK pour le test E2E.'
+      ].join('\n');
+      translation = rawResponse;
+    } else if (provider === 'anthropic') {
       const anthropic = new Anthropic({
         apiKey: customAnthropicKey || process.env.ANTHROPIC_API_KEY,
       });
