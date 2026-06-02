@@ -252,7 +252,7 @@
     "Premiers Ancetres": {
       "traductions": [
         {
-          "confluent": "iusoluke",
+          "confluent": "enuaita",
           "type": "nom_propre",
           "composition": "en-u-aita",
           "sens_litteral": "Origine des ancêtres",
@@ -262,7 +262,7 @@
           ],
           "domaine": "spirituel",
           "definition": "La civilisation disparue et technologiquement supérieure découverte sous le Gouffre Humide, origine mythique et avertissement.",
-          "nuance": "INCOHÉRENCE de données : forme 'iusoluke' mais composition 'en-u-aita' (ena=origine + aita=ancêtres) → devrait donner ~'enuuaita'. La forme actuelle ne correspond pas à sa composition. À vérifier/corriger.",
+          "nuance": "Composé en-u-aita (ena=origine + aita=ancêtres) = « l'origine-ancêtre ». Forme réparée : l'ancien champ 'iusoluke' était corrompu. Désigne la civilisation disparue découverte sous le Gouffre Humide, origine mythique et avertissement. NB : doublon de forme avec une autre entrée 'premiers ancêtres' (enuaita) — à fusionner.",
           "registre": "rituel"
         }
       ]

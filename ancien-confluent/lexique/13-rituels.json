@@ -118,7 +118,7 @@
     "Porteur de Flamme": {
       "traductions": [
         {
-          "confluent": "kanuusuki",
+          "confluent": "takisuki",
           "type": "nom_propre",
           "composition": "tak-i-suki",
           "sens_litteral": "Porteur du feu",
@@ -128,7 +128,7 @@
           ],
           "categorie": "titre_rituel",
           "definition": "Titre rituel désignant celui qui porte et garde le feu sacré lors des cérémonies, chargé de transmettre la flamme entre les générations.",
-          "nuance": "Titre fondé sur le port du feu (suki), distinct des autres rôles rituels ; FLAG INCOHÉRENCE : le champ 'composition' indique tak-i-suki (taka=porter) mais la forme 'kanuusuki' repose sur kanu (main) + suki, soit 'feu de la main' - la forme et la composition déclarées ne concordent pas. Forme reprise telle quelle comme demandé.",
+          "nuance": "Composé tak-i-suki (taka=porter + suki=feu) = « celui qui porte le feu ». Forme réparée : l'ancien 'kanuusuki' (sur kanu=main) ne correspondait pas à sa composition. Titre rituel : garde et transmet la flamme sacrée entre les générations.",
           "registre": "rituel"
         }
       ]
@@ -394,7 +394,7 @@
     "Grande Fresque": {
       "traductions": [
         {
-          "confluent": "oemonona",
+          "confluent": "ekakova",
           "type": "nom_propre",
           "composition": "ek-a-kova",
           "sens_litteral": "Totalité avec peinture",
@@ -404,7 +404,7 @@
           ],
           "categorie": "lieu_rituel",
           "definition": "Artefact pictural majeur où chaque génération superpose sa couche de peinture, mémoire visuelle accumulée de la Confluence.",
-          "nuance": "Instance d'artefact multi-générationnel sous forme peinte ; FLAG INCOHÉRENCE : le 05-VOCABULAIRE et lexique.json attestent 'Ekakova' (ek-a-kova) pour 'Grande Fresque', et la 'composition' du fichier indique ek-a-kova, mais le champ 'confluent' porte 'oemonona' - forme divergente et non transparente. Forme reprise telle quelle comme demandé, mais à vérifier.",
+          "nuance": "= Ekakova (ek-a-kova : totalité + peinture), le grand artefact pictural où chaque génération superpose sa couche de peinture. Forme alignée sur le canonique du CLAUDE.md ; l'ancien 'oemonona' était une forme divergente corrompue. Même référent que l'entrée 'Ekakova' (04-lieux).",
           "registre": "sacré"
         }
       ]
