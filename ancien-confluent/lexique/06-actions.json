@@ -6,9 +6,9 @@
       "racine_fr": "voi",
       "traductions": [
         {
-          "confluent": "milak",
+          "confluent": "mirak",
           "type": "verbe",
-          "racine": "mila",
+          "racine": "mira",
           "forme_liee": "mil",
           "structure": "CVCVC",
           "domaine": "action",
@@ -600,7 +600,7 @@
         {
           "confluent": "milis",
           "type": "verbe",
-          "racine": "mila",
+          "racine": "mira",
           "forme_liee": "mil",
           "structure": "CVCVC",
           "domaine": "action",

@@ -589,13 +589,13 @@
     "observation": {
       "traductions": [
         {
-          "confluent": "silimila",
+          "confluent": "silimira",
           "type": "composition",
-          "composition": "sili-mila",
+          "composition": "sili-mira",
           "sens_litteral": "Regard-observant",
           "racines": [
             "sili",
-            "milak"
+            "mira"
           ],
           "domaine": "concept_fondateur",
           "note": "Observation - acte de regarder avec attention (sili=regard + mirak=observer)"

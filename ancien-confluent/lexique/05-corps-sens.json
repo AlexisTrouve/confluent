@@ -136,9 +136,9 @@
     "souffle": {
       "traductions": [
         {
-          "confluent": "eila",
+          "confluent": "puli",
           "type": "racine_sacree",
-          "forme_liee": "eil",
+          "forme_liee": "pul",
           "domaine": "corps_esprit",
           "note": "Même racine que esprit"
         }
@@ -161,9 +161,9 @@
     "peau": {
       "traductions": [
         {
-          "confluent": "veku",
+          "confluent": "peli",
           "type": "racine",
-          "forme_liee": "vek",
+          "forme_liee": "pel",
           "domaine": "corps",
           "note": "Surface, enveloppe extérieure"
         }
@@ -435,15 +435,11 @@
     "dos": {
       "traductions": [
         {
-          "confluent": "sanuvoli",
-          "type": "composition",
-          "composition": "san-u-voli",
-          "sens_litteral": "Arrière du corps",
-          "racines": [
-            "sanu"
-          ],
+          "confluent": "loba",
+          "type": "racine",
+          "forme_liee": "lob",
           "domaine": "corps",
-          "note": "Face postérieure"
+          "note": "Face postérieure du corps (racine simple ; l'ancien san-u-voli composait à tort avec voli='vouloir')"
         }
       ]
     },
@@ -469,9 +465,9 @@
     "estomac": {
       "traductions": [
         {
-          "confluent": "nutukovu",
+          "confluent": "nutusaki",
           "type": "composition",
-          "composition": "nutu-kovu",
+          "composition": "nutu-saki",
           "sens_litteral": "Réservoir de nourriture",
           "racines": [
             "nutu"
@@ -500,9 +496,9 @@
     "os": {
       "traductions": [
         {
-          "confluent": "talu",
+          "confluent": "kibe",
           "type": "racine",
-          "forme_liee": "tal",
+          "forme_liee": "kib",
           "domaine": "corps",
           "note": "Structure dure interne du corps"
         }
@@ -511,12 +507,12 @@
     "squelette": {
       "traductions": [
         {
-          "confluent": "talusanu",
+          "confluent": "kibusanu",
           "type": "composition",
-          "composition": "tal-u-sanu",
+          "composition": "kib-u-sanu",
           "sens_litteral": "Os du corps",
           "racines": [
-            "talu",
+            "kibe",
             "sanu"
           ],
           "domaine": "corps",
@@ -527,13 +523,13 @@
     "crâne": {
       "traductions": [
         {
-          "confluent": "mututalu",
+          "confluent": "mutukibe",
           "type": "composition",
-          "composition": "mutu-talu",
+          "composition": "mutu-kibe",
           "sens_litteral": "Os de la tête",
           "racines": [
             "muto",
-            "talu"
+            "kibe"
           ],
           "domaine": "corps",
           "note": "Os de la tête"
@@ -543,12 +539,12 @@
     "côte": {
       "traductions": [
         {
-          "confluent": "taluvi",
+          "confluent": "kibuvi",
           "type": "composition",
-          "composition": "tal-u-vi",
+          "composition": "kib-u-vi",
           "sens_litteral": "Os du côté",
           "racines": [
-            "talu"
+            "kibe"
           ],
           "domaine": "corps",
           "note": "Os du thorax"
