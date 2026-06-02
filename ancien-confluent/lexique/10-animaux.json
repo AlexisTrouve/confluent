@@ -47,17 +47,6 @@
         }
       ]
     },
-    "faucon": {
-      "traductions": [
-        {
-          "confluent": "euto",
-          "type": "racine_sacree",
-          "forme_liee": "eut",
-          "domaine": "animal_sacre",
-          "note": "Oiseau de proie sacré"
-        }
-      ]
-    },
     "bete": {
       "traductions": [
         {
@@ -140,17 +129,6 @@
             "ura"
           ],
           "domaine": "animal"
-        }
-      ]
-    },
-    "oiseau": {
-      "traductions": [
-        {
-          "confluent": "ioze",
-          "type": "racine_sacree",
-          "forme_liee": "ioz",
-          "domaine": "animal",
-          "note": "Créature ailée"
         }
       ]
     },

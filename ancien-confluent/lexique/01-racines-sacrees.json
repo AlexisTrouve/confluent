@@ -115,7 +115,10 @@
           "type": "racine_sacree",
           "forme_liee": "um",
           "domaine": "spirituel",
-          "note": "Souffle vital, essence"
+          "note": "Souffle vital, essence",
+          "definition": "L'esprit, principe vital et conscience d'un être ; souffle qui anime.",
+          "nuance": "Racine sacrée. Recoupe partiellement umi (esprit/souffle vital) et anu (âme) de data/lexique : zone de quasi-synonymie spirituelle. Le champ liste 'âme' comme synonyme_fr, donc oelu couvre esprit+âme ici.",
+          "registre": "sacré"
         }
       ],
       "synonymes_fr": [

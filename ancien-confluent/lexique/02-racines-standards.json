@@ -146,17 +146,6 @@
         "passage"
       ]
     },
-    "bois": {
-      "traductions": [
-        {
-          "confluent": "viku",
-          "type": "racine",
-          "forme_liee": "vik",
-          "domaine": "materiau",
-          "note": "Même racine que forêt/arbre"
-        }
-      ]
-    },
     "sombre": {
       "traductions": [
         {
@@ -180,17 +169,6 @@
           "forme_liee": "kol",
           "domaine": "perception",
           "note": "Nouvelle racine - teinte visible"
-        }
-      ]
-    },
-    "cendre": {
-      "traductions": [
-        {
-          "confluent": "senu",
-          "type": "racine",
-          "forme_liee": "sen",
-          "domaine": "materiau",
-          "note": "Nouvelle racine - reste du feu"
         }
       ]
     },
@@ -236,17 +214,6 @@
         }
       ]
     },
-    "lait": {
-      "traductions": [
-        {
-          "confluent": "milu",
-          "type": "racine",
-          "forme_liee": "mil",
-          "domaine": "materiau",
-          "note": "Nouvelle racine - fluide blanc nourricier"
-        }
-      ]
-    },
     "loi": {
       "traductions": [
         {
@@ -259,17 +226,6 @@
       ],
       "synonymes_fr": [
         "règle"
-      ]
-    },
-    "ligne": {
-      "traductions": [
-        {
-          "confluent": "linu",
-          "type": "racine",
-          "forme_liee": "lin",
-          "domaine": "forme",
-          "note": "Nouvelle racine - trait"
-        }
       ]
     },
     "corde": {
@@ -336,17 +292,6 @@
         }
       ]
     },
-    "poison": {
-      "traductions": [
-        {
-          "confluent": "toku",
-          "type": "racine",
-          "forme_liee": "tok",
-          "domaine": "danger",
-          "note": "Nouvelle racine - substance mortelle"
-        }
-      ]
-    },
     "rouge": {
       "traductions": [
         {
@@ -386,31 +331,6 @@
           "forme_liee": "tek",
           "domaine": "lieu",
           "note": "Chemin, voie"
-        }
-      ]
-    },
-    "sac": {
-      "traductions": [
-        {
-          "confluent": "saku",
-          "type": "racine",
-          "forme_liee": "sak",
-          "domaine": "objet",
-          "note": "Nouvelle racine - contenant souple"
-        }
-      ],
-      "synonymes_fr": [
-        "contenant"
-      ]
-    },
-    "sel": {
-      "traductions": [
-        {
-          "confluent": "salu",
-          "type": "racine",
-          "forme_liee": "sal",
-          "domaine": "materiau",
-          "note": "Nouvelle racine - cristal marin"
         }
       ]
     },
@@ -555,28 +475,6 @@
       ],
       "synonymes_fr": [
         "mérite"
-      ]
-    },
-    "serpent": {
-      "traductions": [
-        {
-          "confluent": "sepu",
-          "type": "racine",
-          "forme_liee": "sep",
-          "domaine": "animal",
-          "note": "Nouvelle racine - créature rampante"
-        }
-      ]
-    },
-    "secret": {
-      "traductions": [
-        {
-          "confluent": "zoku",
-          "type": "racine",
-          "forme_liee": "zok",
-          "domaine": "communication",
-          "note": "Nouvelle racine - ce qui est caché"
-        }
       ]
     },
     "bas": {
@@ -753,22 +651,6 @@
         "protéger",
         "maintenir",
         "défendre"
-      ]
-    },
-    "duree": {
-      "traductions": [
-        {
-          "confluent": "aika",
-          "type": "racine_sacree",
-          "forme_liee": "aik",
-          "domaine": "temporel",
-          "note": "Temps, durée, époque - du finnois 'aika'"
-        }
-      ],
-      "synonymes_fr": [
-        "temps",
-        "époque",
-        "ère"
       ]
     },
     "souvenir": {
