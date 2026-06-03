@@ -196,13 +196,13 @@
     "couleur": {
       "traductions": [
         {
-          "confluent": "kolu",
+          "confluent": "kelu",
           "type": "racine",
-          "forme_liee": "kol",
+          "forme_liee": "kel",
           "domaine": "perception",
-          "note": "Nouvelle racine - teinte visible",
+          "note": "Teinte visible",
           "definition": "Teinte visible perçue par l'œil ; la couleur en général, catégorie perceptive importante pour un peuple dont les Ciels-clairs se distinguent par la couleur de leurs yeux (aurore).",
-          "nuance": "DOUBLON à signaler : le fichier donne 'kolu' (forme liée kol-), mais data atteste 'kelu' (forme liée kel-, verbe kelum 'peindre'). kolu/kelu à arbitrer. Domaine perception. Couleurs concrètes dérivées : kesa (gris/cendre), pasu (rouge).",
+          "nuance": "Forme alignée sur data : kelu (forme liée kel-, verbe kelum 'peindre'). Domaine perception. Couleurs concrètes dérivées : kesa (gris/cendre), pasu (rouge). À ne pas confondre avec koru (cercle/cycle).",
           "registre": "courant"
         }
       ]

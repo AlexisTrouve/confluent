@@ -170,9 +170,9 @@
     "pale": {
       "traductions": [
         {
-          "confluent": "miluukolu",
+          "confluent": "miluukelu",
           "type": "composition",
-          "composition": "mil-u-kolu",
+          "composition": "mil-u-kelu",
           "sens_litteral": "Lait de couleur",
           "racines": [
             "milu",
@@ -268,9 +268,9 @@
     "patine": {
       "traductions": [
         {
-          "confluent": "koluaita",
+          "confluent": "keluaita",
           "type": "composition",
-          "composition": "kol-u-aita",
+          "composition": "kel-u-aita",
           "sens_litteral": "Couleur des ancêtres",
           "racines": [
             "kolu",

@@ -402,12 +402,12 @@
     "peintre": {
       "traductions": [
         {
-          "confluent": "koluutori",
+          "confluent": "keluutori",
           "type": "composition",
-          "composition": "kol-u-tori",
+          "composition": "kel-u-tori",
           "sens_litteral": "Personne des couleurs",
           "racines": [
-            "kolu",
+            "kelu",
             "tori"
           ],
           "domaine": "titre",

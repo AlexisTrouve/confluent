@@ -75,9 +75,9 @@
     "paniquer": {
       "traductions": [
         {
-          "confluent": "kolivolu",
+          "confluent": "korivolu",
           "type": "composition",
-          "composition": "koli-volu",
+          "composition": "kori-volu",
           "sens_litteral": "Cœur qui fuit",
           "racines": [
             "kori"
@@ -396,9 +396,9 @@
     "audace": {
       "traductions": [
         {
-          "confluent": "kolaska",
+          "confluent": "koraska",
           "type": "composition",
-          "composition": "kol-aska",
+          "composition": "kor-aska",
           "sens_litteral": "Cœur libre",
           "racines": [
             "kori",
@@ -407,7 +407,7 @@
           "domaine": "qualite_guerriere",
           "note": "Qualité de courage",
           "definition": "Courage face au danger ; bravoure du guerrier qui affronte l'épreuve.",
-          "nuance": "Composition kol-aska : kori (cœur, var. liée kol-) + aska (libre, racine sacrée). Sens littéral 'cœur libre'. Métaphore corporelle (cœur = courage) liée à la racine fondatrice aska (liberté). Qualité guerrière valorisée chez les Akoazana. Distinct de l'orgueil (kolimakovi), défaut, qui partage la racine kori.",
+          "nuance": "Composition kor-aska : kori (cœur, var. liée kor-) + aska (libre, racine sacrée). Sens littéral 'cœur libre'. Métaphore corporelle (cœur = courage) liée à la racine fondatrice aska (liberté). Qualité guerrière valorisée chez les Akoazana. Distinct de l'orgueil (korimakovi), défaut, qui partage la racine kori.",
           "registre": "courant"
         }
       ],
@@ -420,9 +420,9 @@
     "orgueilleux": {
       "traductions": [
         {
-          "confluent": "kolimakovi",
+          "confluent": "korimakovi",
           "type": "composition",
-          "composition": "koli-mako-vi",
+          "composition": "kori-mako-vi",
           "sens_litteral": "De très grand cœur",
           "racines": [
             "kori",
@@ -431,7 +431,7 @@
           "domaine": "defaut_caractere",
           "note": "Défaut caractériel - arrogance",
           "definition": "Arrogant, imbu de lui-même ; qui surestime sa propre valeur.",
-          "nuance": "Composition koli-mako-vi : koli (cœur) + mako (grand). Sens littéral 'de très grand cœur' (au sens d'enflé). Défaut de caractère — l'orgueil stérile (gloire sans transmission) figure parmi les valeurs rejetées par la civilisation. Opposé culturel de l'audace (kolaska) malgré la racine kori commune : le cœur 'libre' (brave) vs le cœur 'trop grand' (vaniteux).",
+          "nuance": "Composition kori-mako-vi : kori (cœur) + mako (grand). Sens littéral 'de très grand cœur' (au sens d'enflé). Défaut de caractère — l'orgueil stérile (gloire sans transmission) figure parmi les valeurs rejetées par la civilisation. Opposé culturel de l'audace (koraska) malgré la racine kori commune : le cœur 'libre' (brave) vs le cœur 'trop grand' (vaniteux).",
           "registre": "courant"
         }
       ],
@@ -467,9 +467,9 @@
     "initiative": {
       "traductions": [
         {
-          "confluent": "ikikoli",
+          "confluent": "ikikori",
           "type": "composition",
-          "composition": "iki-koli",
+          "composition": "iki-kori",
           "sens_litteral": "Premier cœur/mouvement",
           "racines": [
             "iko",
@@ -478,7 +478,7 @@
           "domaine": "qualite_tactique",
           "note": "Prise de décision autonome",
           "definition": "Prise de décision autonome ; capacité à agir le premier sans attendre d'ordre.",
-          "nuance": "Composition iki-koli : iko (un/premier, racine sacrée, var. liée ik-) + kori (cœur/mouvement, var. koli). Sens littéral 'premier cœur/mouvement'. Qualité tactique : agir en premier. Emploie iko (premier) comme dans ikomako (surnombre). Le cœur (kori) ici = élan, impulsion d'action.",
+          "nuance": "Composition iki-kori : iko (un/premier, racine sacrée, var. liée ik-) + kori (cœur/mouvement). Sens littéral 'premier cœur/mouvement'. Qualité tactique : agir en premier. Emploie iko (premier) comme dans ikomako (surnombre). Le cœur (kori) ici = élan, impulsion d'action.",
           "registre": "courant"
         }
       ],
@@ -533,9 +533,9 @@
     "choc": {
       "traductions": [
         {
-          "confluent": "kolikopuvi",
+          "confluent": "korikopuvi",
           "type": "composition",
-          "composition": "koli-kopu-vi",
+          "composition": "kori-kopu-vi",
           "sens_litteral": "Coup au cœur",
           "racines": [
             "kori",
