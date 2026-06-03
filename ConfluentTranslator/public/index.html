@@ -852,6 +852,10 @@
           </div>
           <div id="layer3-content" class="layer-content">
             <div class="layer-content-inner">
+              <div class="context-item" id="layer3-raisonnement-container" style="display: none;">
+                <div class="context-label">Raisonnement (analyse & stratégie)</div>
+                <div id="layer3-raisonnement" class="notes-text"></div>
+              </div>
               <div class="context-item">
                 <div class="context-label">Décomposition</div>
                 <div id="layer3-decomposition"></div>
@@ -1306,10 +1310,8 @@
 
         <div class="row">
           <div class="form-group">
-            <label>Provider</label>
-            <select id="settings-provider">
-              <option value="anthropic">Anthropic (proxy Etheryale)</option>
-            </select>
+            <label>Moteur</label>
+            <div style="padding: 8px 0; color: #b0b0b0;">Etheryale (proxy)</div>
           </div>
           <div class="form-group">
             <label>Modèle</label>
@@ -1702,20 +1704,16 @@
 
     // Settings management
     const DEFAULT_SETTINGS = {
-      provider: 'anthropic',
       model: 'claude-haiku-4-5-20251001',
       temperature: 1.0,
       theme: 'light',
-      verbose: false,
-      anthropicKey: '',
-      openaiKey: ''
+      verbose: false
     };
 
     const loadSettings = () => {
       const settings = { ...DEFAULT_SETTINGS, ...JSON.parse(localStorage.getItem('confluentSettings') || '{}') };
 
       // Apply to settings page
-      document.getElementById('settings-provider').value = settings.provider;
       document.getElementById('settings-model').value = settings.model;
       document.getElementById('settings-temperature').value = settings.temperature;
       document.getElementById('temp-value').textContent = settings.temperature;
@@ -1725,25 +1723,18 @@
       // Apply theme
       applyTheme(settings.theme);
 
-      // Update model options based on provider
-      updateModelOptions(settings.provider);
+      // Mettre à jour les options de modèle (provider unique : Etheryale).
+      updateModelOptions();
 
       return settings;
     };
 
     const saveSettings = () => {
-      // Load existing settings to preserve API keys
-      const existingSettings = JSON.parse(localStorage.getItem('confluentSettings') || '{}');
-
       const settings = {
-        provider: document.getElementById('settings-provider').value,
         model: document.getElementById('settings-model').value,
         temperature: parseFloat(document.getElementById('settings-temperature').value),
         theme: document.getElementById('settings-theme').value,
-        verbose: document.getElementById('settings-verbose').checked,
-        // Preserve API keys from localStorage
-        anthropicKey: existingSettings.anthropicKey || '',
-        openaiKey: existingSettings.openaiKey || ''
+        verbose: document.getElementById('settings-verbose').checked
       };
 
       localStorage.setItem('confluentSettings', JSON.stringify(settings));
@@ -1774,7 +1765,7 @@
     const updateSettingsIndicators = () => {
       const settings = { ...DEFAULT_SETTINGS, ...JSON.parse(localStorage.getItem('confluentSettings') || '{}') };
 
-      const providerLabel = 'Anthropic';
+      const providerLabel = 'Etheryale';
 
       // Détection du label de modèle (3 modèles Claude actuels).
       let modelLabel = 'Modèle';
@@ -1796,7 +1787,7 @@
 
     const updateModelOptions = () => {
       const modelSelect = document.getElementById('settings-model');
-      // Un seul provider (Anthropic via proxy Etheryale). Haiku 4.5 par défaut : coût minimal,
+      // Un seul moteur (proxy Etheryale). Haiku 4.5 par défaut : coût minimal,
       // la qualité vient de l'agent outillé + du gate phonotactique (prouvé sur Haiku).
       const current = modelSelect.value;
       modelSelect.innerHTML = `
@@ -1808,10 +1799,6 @@
     };
 
     // Settings event listeners
-    document.getElementById('settings-provider').addEventListener('change', (e) => {
-      updateModelOptions(e.target.value);
-    });
-
     document.getElementById('settings-temperature').addEventListener('input', (e) => {
       document.getElementById('temp-value').textContent = e.target.value;
     });
@@ -1835,21 +1822,13 @@
       document.getElementById('layer1-content').textContent = 'Traduction en cours...';
 
       const settings = JSON.parse(localStorage.getItem('confluentSettings') || '{}');
+      // Provider unique = proxy Etheryale (géré côté serveur). On n'envoie QUE texte/cible/modèle —
+      // aucun provider, aucune clé (ni anthropic ni openai). Modèle par défaut serveur = Haiku 4.5.
       const config = {
         text,
         target: 'ancien',
-        provider: settings.provider || 'anthropic',
-        model: settings.model || 'claude-sonnet-4-20250514',
-        temperature: settings.temperature || 1.0,
+        model: settings.model || 'claude-haiku-4-5-20251001',
       };
-
-      // Add custom API keys if provided
-      if (settings.anthropicKey && settings.anthropicKey.trim()) {
-        config.customAnthropicKey = settings.anthropicKey.trim();
-      }
-      if (settings.openaiKey && settings.openaiKey.trim()) {
-        config.customOpenAIKey = settings.openaiKey.trim();
-      }
 
       try {
         const response = await authFetch('/translate', {
@@ -1913,6 +1892,15 @@
 
             document.getElementById('layer3-decomposition').innerHTML = decompHtml;
 
+            // Raisonnement de l'agent (analyse + stratégie) si présents.
+            const raison = [data.layer3.analyse, data.layer3.strategie].filter(Boolean).join('\n\n');
+            if (raison) {
+              document.getElementById('layer3-raisonnement').textContent = raison;
+              document.getElementById('layer3-raisonnement-container').style.display = 'block';
+            } else {
+              document.getElementById('layer3-raisonnement-container').style.display = 'none';
+            }
+
             if (data.layer3.notes) {
               document.getElementById('layer3-notes').textContent = data.layer3.notes;
               document.getElementById('layer3-notes-container').style.display = 'block';
@@ -1922,7 +1910,13 @@
           }
 
         } else {
-          document.getElementById('layer1-content').innerHTML = `<span class="error">Erreur: ${data.error}</span>`;
+          // 422 = validation échouée (formes invalides non réparées) : on détaille les formes fautives.
+          let msg = data.error || 'Erreur inconnue';
+          if (Array.isArray(data.invalides) && data.invalides.length > 0) {
+            const formes = data.invalides.map(i => `${i.mot} (${(i.erreurs || []).join(', ')})`).join(' ; ');
+            msg += ' — formes invalides : ' + formes;
+          }
+          document.getElementById('layer1-content').innerHTML = `<span class="error">Erreur: ${msg}</span>`;
         }
 
         // Update LLM limit counter after translation
@@ -2010,21 +2004,12 @@
           }
         }
 
-        // Step 2: Get LLM refined translation
+        // Step 2: raffinement LLM via le proxy Etheryale (aucun provider/clé : géré côté serveur).
         const llmConfig = {
           text,
           variant: 'ancien',
-          provider: settings.provider || 'anthropic',
-          model: settings.model || 'claude-sonnet-4-20250514'
+          model: settings.model || 'claude-haiku-4-5-20251001'
         };
-
-        // Add custom API keys if provided
-        if (settings.anthropicKey && settings.anthropicKey.trim()) {
-          llmConfig.customAnthropicKey = settings.anthropicKey.trim();
-        }
-        if (settings.openaiKey && settings.openaiKey.trim()) {
-          llmConfig.customOpenAIKey = settings.openaiKey.trim();
-        }
 
         const llmResponse = await authFetch('/api/translate/conf2fr/llm', {
           method: 'POST',
