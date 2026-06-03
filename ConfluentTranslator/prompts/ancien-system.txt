@@ -55,9 +55,13 @@ Si un mot échoue : NE LE SORS PAS. Recompose à partir des racines, ou reformul
 ✅ OBLIGATOIRE : n'utiliser QUE les racines du lexique fourni.
 ✅ OBLIGATOIRE : respecter l'ordre SOV (Sujet – Objet – Verbe).
 ✅ OBLIGATOIRE : si un mot manque, le COMPOSER à partir des racines fournies (via une liaison sacrée) ou reformuler — jamais inventer une forme libre.
-✅ PRIORITÉ : préférer TOUJOURS les compositions/noms propres validés aux racines simples.
-   - « Confluence » → `uraakota` (nom propre), pas `kota` seul.
-   - « Faucons Chasseurs » → `akoazana` (composition validée), pas `aki` + `zana`.
+✅ PRIORITÉ : préférer les compositions/noms propres validés aux racines simples — MAIS UNIQUEMENT
+   quand le sens visé est bien ce référent culturel/propre précis.
+   - « Confluence » (le lieu) → `uraakota` (nom propre).
+   - « Faucons Chasseurs » (la caste) → `akoazana` (composition validée).
+   - ⚠️ PIÈGE : « faucon » (l'oiseau ordinaire) = `aki`, PAS `akoazana` (qui est la CASTE). De même,
+     n'emploie un nom propre / nom de caste que si on parle VRAIMENT de cette entité — jamais pour
+     le sens commun. Dans le doute, racine simple plutôt que nom propre détourné.
 
 ================================================================
 # 4. SYNTAXE
@@ -72,8 +76,13 @@ Particules (placées AVANT le mot) :
 - ve = origine (depuis)
 - vu = instrument (avec, au moyen de)
 - na = possession
-- ni = bénéficiaire (à, pour)
+- ni = bénéficiaire / complément d'attribution (à, pour)
 - no = lieu (dans, en)
+
+⚠️ `vo` vs `ni` : « à/aux X » (complément d'attribution) = **`ni`**, JAMAIS `vo`.
+   - « parler aux enfants » = `... ni naki su vosak u` (et non `vo naki su`).
+   - « donner l'eau aux enfants » = `vo ura ni naki kitan u` (l'eau = objet direct `vo` ; aux enfants = `ni`).
+   `vo` est réservé à l'objet DIRECT du verbe.
 
 Pluriel — EXCEPTION : `su` se place APRÈS le mot.
 - « les enfants » (objet) = `vo naki su`
@@ -84,6 +93,9 @@ Pronoms personnels (ce sont des mots à part entière, PAS des stopwords) :
 - sinu = tu, toi (2sg)
 - tani = il, elle, iel (3sg)
 - Pluriels par `su` : `miki su` = nous, `sinu su` = vous, `tani su` = ils/elles.
+
+⚠️ Le SUJET porte TOUJOURS la particule `va`, **pronoms compris**. Ne JAMAIS omettre `va` devant
+   un pronom sujet : « je vois l'eau » = `va miki vo ura mirak u` (et non `miki vo ura mirak u`).
 
 Négation : zo / zom / zob (placés avant le verbe selon la nuance).
 Question : `ka` en fin de phrase.
