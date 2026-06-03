@@ -22,7 +22,6 @@ const { validateForm, validateTranslation } = require('../validation/phonotactic
 const { searchWord, normalizeFrenchText, analyzeContext } = require('./contextAnalyzer');
 const { decomposeWord } = require('../morphology/morphologicalDecomposer');
 const { extractRadicals, CONJUGATEURS } = require('../morphology/radicalMatcher');
-const { translateConfluentDetailed } = require('./confluentToFrench');
 
 // QUOI : grammaire canonique de référence, source = data/lexique.json (repo root, le même que
 //        consomment les modules morpho) complété par des constantes documentées.
@@ -45,6 +44,18 @@ const PARTICULES = {
   no: 'lieu (dans/en)', su: 'pluriel (APRÈS le mot)'
 };
 const NEGATION = { zo: 'négation simple', zom: 'négation jamais', zob: 'négation interdiction' };
+
+// Rôles grammaticaux pour la back-translation (particules + négation + question).
+const ROLE_GRAMMATICAL = {
+  va: '[sujet]', vo: '[objet]', vi: '[direction]', ve: '[origine]', vu: '[instrument]',
+  na: '[possession]', ni: '[bénéficiaire]', no: '[lieu]', su: '[pluriel]',
+  zo: '[nég]', zom: '[nég-jamais]', zob: '[nég-interdit]', ka: '[question]'
+};
+// Sens court des conjugateurs (pour gloser un verbe conjugué ou un conjugateur isolé).
+const CONJ_SENS = {
+  u: 'présent', at: 'passé', aan: 'passé-regret', ait: 'passé-anc', amat: 'passé-myth', en: 'futur',
+  il: 'accompli', eol: 'habituel', eon: 'cyclique', eom: 'éternel', ok: 'impératif', es: 'souhait', ul: 'pouvoir', uv: 'écrit'
+};
 
 // QUOI : réduit une définition longue à une glose courte. POURQUOI : prémâché — le modèle n'a pas
 // besoin du paragraphe ethnographique pour traduire, juste un repère de sens (paie moins de tokens).
@@ -430,20 +441,42 @@ function execCheckComposition(input, ctx) {
 function execBackTranslate(input, ctx) {
   const cf = String(input.confluent || '').trim();
   if (!cf) return { erreur: 'entrée vide' };
-  // translateConfluentDetailed : glose PRIMAIRE par token (sans dump de synonymes) → léger.
-  const r = translateConfluentDetailed(cf, ctx.morphReverseIndex);
-  const par_mot = (r.tokens || []).map(t => ({ cf: t.confluent, fr: t.found ? t.francais : null }));
-  const non_reconnus = par_mot.filter(p => !p.fr).map(p => p.cf);
+
+  // COMMENT : token par token — particule/conjugateur → rôle grammatical ; sinon verify_word
+  //   (qui gère DIRECT + verbe CONJUGUÉ + COMPOSITION/liaison). Ainsi la back-translation couvre
+  //   les trois mécanismes (liaisons, conjugaison, particules), pas seulement les noms.
+  const tokens = cf.toLowerCase().split(/[\s.,!?;:]+/).filter(Boolean);
+  const par_mot = [];
+  const non_reconnus = [];
+
+  for (const tok of tokens) {
+    // 1. Particule / négation / question → rôle
+    if (ROLE_GRAMMATICAL[tok]) { par_mot.push({ cf: tok, fr: ROLE_GRAMMATICAL[tok] }); continue; }
+    // 2. Conjugateur isolé (écrit séparément) → temps/aspect
+    if (CONJ_SENS[tok]) { par_mot.push({ cf: tok, fr: `[${CONJ_SENS[tok]}]` }); continue; }
+    // 3. Mot de contenu : verify_word (direct / verbe conjugué / composition)
+    const v = execVerifyWord({ confluent: tok }, ctx);
+    let fr = null;
+    if (v.reconnu) {
+      if (v.mode === 'verbe_conjugue') fr = `${v.francais} [${CONJ_SENS[v.conjugateur] || v.conjugateur}]`;
+      else if (v.mode === 'composition') fr = '[' + (v.racines || []).map(x => x.francais || x.racine).join(' + ') + ']';
+      else fr = v.francais;
+    }
+    if (!fr) non_reconnus.push(tok);
+    par_mot.push({ cf: tok, fr });
+  }
+
   const francais_mot_a_mot = par_mot.map(p => p.fr || `[${p.cf}?]`).join(' ');
+  const couverture = tokens.length ? Math.round(100 * (tokens.length - non_reconnus.length) / tokens.length) : 0;
   return {
     confluent: cf,
     francais_mot_a_mot,
     par_mot,
     non_reconnus,
-    couverture: (r.coverage != null ? r.coverage : 0) + '%',
+    couverture: couverture + '%',
     note: "Compare 'francais_mot_a_mot' au sens FR voulu. Divergence (mauvais mot, nom propre/caste au " +
-          "lieu du sens commun) ou 'non_reconnus' → corrige. Ne suppose jamais que c'est bon. " +
-          "(Les nombres et certaines particules peuvent apparaître non reconnus : c'est normal.)"
+          "lieu du sens commun, mauvais temps) ou 'non_reconnus' → corrige. Ne suppose jamais que c'est bon. " +
+          "(Les nombres peuvent apparaître non reconnus : c'est normal.)"
   };
 }
 
