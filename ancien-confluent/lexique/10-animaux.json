@@ -41,9 +41,9 @@
     "grue cendree": {
       "traductions": [
         {
-          "confluent": "alusenu",
+          "confluent": "alukesa",
           "type": "composition",
-          "composition": "al-u-senu",
+          "composition": "al-u-kesa",
           "sens_litteral": "Grue de cendre",
           "racines": [
             "alu",
@@ -163,7 +163,7 @@
     "oiseau de proie": {
       "traductions": [
         {
-          "confluent": "aviuzana",
+          "confluent": "apizana",
           "type": "composition",
           "composition": "ap-i-zana",
           "sens_litteral": "Oiseau de chasse",

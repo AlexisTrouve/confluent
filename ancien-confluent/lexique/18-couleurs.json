@@ -24,7 +24,7 @@
     "violet": {
       "traductions": [
         {
-          "confluent": "zeruulasu",
+          "confluent": "zeruupasu",
           "type": "composition",
           "composition": "zer-u-pasu",
           "sens_litteral": "Ciel de sang",
@@ -320,7 +320,7 @@
     "motif": {
       "traductions": [
         {
-          "confluent": "kovauliku",
+          "confluent": "kovasiku",
           "type": "composition",
           "composition": "kov-a-siku",
           "sens_litteral": "Gravure avec cercle",

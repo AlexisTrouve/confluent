@@ -417,7 +417,7 @@
     "serment de sang": {
       "traductions": [
         {
-          "confluent": "savuulasu",
+          "confluent": "savuupasu",
           "type": "composition",
           "composition": "sav-u-pasu",
           "sens_litteral": "Serment du sang",
@@ -624,7 +624,7 @@
     "meurtre": {
       "traductions": [
         {
-          "confluent": "osiakuzoka",
+          "confluent": "osiazoka",
           "type": "composition",
           "composition": "os-i-a-zoka",
           "sens_litteral": "Mort avec hostilité",

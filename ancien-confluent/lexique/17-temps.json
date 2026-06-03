@@ -54,7 +54,7 @@
     "saison": {
       "traductions": [
         {
-          "confluent": "temiuliku",
+          "confluent": "temisiku",
           "type": "composition",
           "composition": "tem-i-siku",
           "sens_litteral": "Temps du cercle",
@@ -72,7 +72,7 @@
     "mois": {
       "traductions": [
         {
-          "confluent": "lunaliku",
+          "confluent": "lunasiku",
           "type": "composition",
           "composition": "lun-a-siku",
           "sens_litteral": "Lune avec cercle",
