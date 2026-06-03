@@ -19,7 +19,7 @@
 'use strict';
 
 const { validateForm, validateTranslation } = require('../validation/phonotactics');
-const { searchLexique } = require('../../utils/lexiqueLoader');
+const { searchWord, normalizeFrenchText } = require('./contextAnalyzer');
 const { decomposeWord } = require('../morphology/morphologicalDecomposer');
 const { extractRadicals, CONJUGATEURS } = require('../morphology/radicalMatcher');
 
@@ -139,13 +139,22 @@ const TOOL_DEFINITIONS = [
 
 /**
  * lookup_concept — forme canonique d'un concept français.
- * COMMENT : recherche fr2conf (exact puis partiel), formes dédupliquées avec type/compo/sens.
+ *
+ * QUOI : renvoie les formes Confluent attestées pour un mot/concept FR, du meilleur match au moins bon.
+ * POURQUOI : on veut un SIGNAL (la bonne forme), pas un DUMP. L'ancienne implémentation (searchLexique
+ *        en sous-chaîne) renvoyait du bruit — « eau » ramenait « oiseau », « nouveau »… On utilise donc
+ *        le matcher SCORÉ de contextAnalyzer (exact / lemme / synonyme), sans match en sous-chaîne.
+ * COMMENT : normaliser le FR → searchWord (score 1.0 exact, 0.95 lemme, 0.9/0.85 synonyme) → trier par
+ *        score → dédupliquer par forme confluent → max 6. Le score est remonté au modèle pour qu'il
+ *        distingue un match sûr d'un match approché.
  */
 function execLookupConcept(input, ctx) {
   const francais = String(input.francais || '').trim();
   if (!francais) return { found: false, francais, formes: [], note: 'requête vide' };
 
-  const results = searchLexique(ctx.lexique, francais, 'fr2conf');
+  const norm = normalizeFrenchText(francais).trim();
+  const results = searchWord(norm, ctx.lexique.dictionnaire).sort((a, b) => b.score - a.score);
+
   const vues = new Set();
   const formes = [];
   for (const r of results) {
@@ -158,10 +167,10 @@ function execLookupConcept(input, ctx) {
         type: trad.type || 'inconnu',
         composition: trad.composition || null,
         sens: trad.sens_litteral || trad.definition || null,
-        match: r.match
+        score: Number(r.score.toFixed(2))
       });
     }
-    if (formes.length >= 8) break;
+    if (formes.length >= 6) break;
   }
 
   return {
