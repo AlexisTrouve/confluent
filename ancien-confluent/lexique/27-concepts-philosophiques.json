@@ -509,17 +509,18 @@
     "satisfaire": {
       "traductions": [
         {
-          "confluent": "tosavi",
+          "confluent": "tosanekan",
           "type": "composition",
-          "composition": "tosa-vi",
+          "composition": "tosa-nekan",
           "sens_litteral": "Rendre bon",
           "racines": [
-            "tosa"
+            "tosa",
+            "neka"
           ],
           "domaine": "action_sociale",
           "note": "Répondre aux attentes",
           "definition": "Rendre bon, combler une attente ; répondre à ce qui est demandé de manière satisfaisante.",
-          "nuance": "Composition tosa (bon/bien) + -vi (suffixe factitif/de qualité, 'rendre') : 'rendre bon'. Synonymes_fr 'satisfaction', 'contenter'. Famille des composés en tosa- (évaluation positive). Distinct de 'louer' (vokitosa, par la parole) : satisfaire est un FAIRE qui comble, pas une parole. NB le suffixe -vi (rendre/qualité) récurrent dans ce fichier (ekaitavi, tosavi, ekaaikavi) n'est pas une racine attestée isolément.",
+          "nuance": "Verbe factitif : tosa (bien) + nekan (faire) = « rendre bon, combler ». Finale verbale conjugable. Forme corrigée — 'tosavi' est réservé à l'adjectif 'pacifique'.",
           "registre": "courant"
         }
       ],

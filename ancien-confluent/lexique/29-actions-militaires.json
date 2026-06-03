@@ -213,17 +213,18 @@
     "se faire passer pour": {
       "traductions": [
         {
-          "confluent": "mukavi",
+          "confluent": "mukakinu",
           "type": "composition",
-          "composition": "muka-vi",
+          "composition": "muk-a-kinu",
           "sens_litteral": "Prendre le visage de",
           "racines": [
-            "muka"
+            "muka",
+            "kinu"
           ],
           "domaine": "action_militaire",
           "note": "Déguisement/subterfuge",
           "definition": "Adopter l'apparence d'un autre ; user de déguisement ou de subterfuge pour tromper.",
-          "nuance": "Composition muka-vi : muka (visage) + vi. Sens littéral 'prendre le visage de'. Métaphore corporelle (le visage = l'identité). Tactique de ruse, cohérente avec l'asymétrie informationnelle recherchée face à l'Autre. Distinct du combat ouvert : relève de la stratégie/feinte.",
+          "nuance": "Verbe d'imposture : muka (visage) + -a- + kinu (rendre semblable) = adopter le visage/l'identité d'un autre. Forme corrigée — l'ancien 'mukavi' collisionnait avec joue (corps).",
           "registre": "courant"
         }
       ],
@@ -258,18 +259,18 @@
     "observation": {
       "traductions": [
         {
-          "confluent": "silikonu",
+          "confluent": "silimira",
           "type": "composition",
-          "composition": "sili-konu",
+          "composition": "sili-mira",
           "sens_litteral": "Regard gardé/vigilant",
           "racines": [
             "sili",
-            "konu"
+            "mira"
           ],
           "domaine": "tactique_militaire",
           "note": "Surveillance des ennemis",
           "definition": "Surveillance vigilante des ennemis ; guet militaire pour anticiper leurs mouvements.",
-          "nuance": "Composition sili-konu : sili (regard) + konu (garder). Sens littéral 'regard gardé/vigilant'. DOUBLON IMPORTANT : 'observation' existe aussi en silimira (sili+mira, 12-abstraits, registre sacré) = l'ACTE général de regarder, valeur cardinale. silikonu se spécialise au sens TACTIQUE : surveillance hostile/défensive (regard de garde). Distinguer aussi de velak 'surveiller' (racine vela, guet) et de silikonu vs konusili (embuscade, ci-dessous) — mêmes racines, ordre inversé.",
+          "nuance": "Acte de regarder avec attention avant d'agir (forme alignée sur 12-abstraits). Forme corrigée — 'silikonu' (regard gardé) est réservé à 'méfiance'.",
           "registre": "courant",
           "exemple": "va aki su vo zoka silikonu"
         }

@@ -423,13 +423,17 @@
       "mot_francais": "celui-ci/celui-là",
       "traductions": [
         {
-          "confluent": "kanu",
+          "confluent": "tora",
           "type": "demonstratif",
           "categorie": "démonstratif",
           "note": "Démonstratif pour personnes",
           "definition": "Démonstratif personnel désignant un être humain : celui-ci, celui-là (démonstratif réservé aux personnes).",
-          "nuance": "Forme confluent kanu (homophone de la racine kanu = main : désambiguïsé par le contexte). Spécialisé pour les personnes, là où tova/tisa sont neutres.",
-          "registre": "courant"
+          "nuance": "Démonstratif personnel « celui-ci/celui-là » (réservé aux personnes) : tor- (forme liée de tori=personne) + -a déictique. Paradigme tisa (ici) / tova (là-bas) / tora (personnes). Forme corrigée — l'ancien 'kanu' collisionnait avec main (corps).",
+          "registre": "courant",
+          "composition": "tor-a",
+          "racines": [
+            "tori"
+          ]
         }
       ]
     },

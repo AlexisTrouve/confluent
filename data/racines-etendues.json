@@ -23,6 +23,7 @@
     "paso":  { "forme_liee": "pas",  "sens": "roux, fauve (couleur)", "note": "roux ; distinct de pasa (prendre) et pasu (rouge/sang)" },
     "laki":  { "forme_liee": "lak",  "sens": "ramer, mouvement répété de la main sur l'eau", "note": "ramer (kanu-laki)" },
     "kotoka":{ "forme_liee": "kotok","sens": "lieu d'accostage, dépôt, terre d'accueil", "note": "contraction lexicalisée de kota (union) + toka (terre) ; port (vanu-kotoka), entrepôt (nutu-kotoka)" },
-    "kinu":  { "forme_liee": "kin",  "sens": "semblable, identique, même apparence", "note": "similitude (sili-kinu)" }
+    "kinu":  { "forme_liee": "kin",  "sens": "semblable, identique, même apparence", "note": "similitude (sili-kinu), correspondre (kota-kinu), imposture (muka-kinu)" },
+    "vito":  { "forme_liee": "vit",  "sens": "bois travaillé, planche, bois de construction", "note": "matériau ouvré ; distinct de viku (arbre vivant) et buki (bois brut) ; charpente, rame (lakuvito)" }
   }
 }

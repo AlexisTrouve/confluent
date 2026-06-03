@@ -109,19 +109,19 @@
       "racine_fr": "escalier",
       "traductions": [
         {
-          "confluent": "vukukari",
+          "confluent": "pekivasi",
           "type": "composition",
-          "composition": "vuku-kari",
+          "composition": "peki-vasi",
           "sens_litteral": "Gouffre-de-pierre",
           "racines": [
-            "vuku",
-            "kari"
+            "peki",
+            "vasi"
           ],
           "structure": "composition",
           "domaine": "habitat",
           "note": "Escalier - montée de pierre (référence au Gouffre Humide avec ses escaliers dans la roche, vuku=gouffre + kari=pierre)",
           "definition": "Suite de marches taillées ou montées permettant de passer d'un niveau à un autre, notamment dans la roche.",
-          "nuance": "Composition vuku(profond/gouffre/abîme, id.61) + kari(pierre, id.20) = \"gouffre-de-pierre\", référence directe au Gouffre Humide (Vukuura) dont les escaliers sont creusés dans la roche. Image culturellement marquée (descente/montée rituelle vers les Antres) plutôt que neutre. Recoupe 26-architecture (élément de circulation vertical) ; partage kari avec mur. À noter : le sens littéral évoque la descente (vuku) alors que le verbe associé est monter (sumus) — tension étymologique assumée.",
+          "nuance": "Escalier : peki (pied/base) + vasi (pont/passage) = « pont de pieds ». Forme alignée sur 26-architecture — 'vukukari' est réservé à 'crevasse'.",
           "registre": "courant"
         }
       ],

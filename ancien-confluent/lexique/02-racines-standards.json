@@ -262,13 +262,13 @@
     "loi": {
       "traductions": [
         {
-          "confluent": "loku",
+          "confluent": "leku",
           "type": "racine",
           "forme_liee": "lok",
           "domaine": "institution",
           "note": "Nouvelle racine - règle fixée",
           "definition": "Règle fixée régissant la communauté ; ordre normatif gardé par les Voix de l'Aurore (Oraumi), gardiens des lois sacrées. Couvre 'loi' et 'règle'.",
-          "nuance": "DOUBLON CRITIQUE à signaler : le fichier donne 'loku' pour loi ET pour lieu (deux entrées homophones, même forme liée lok-) ; or data atteste 'leku' (forme liée lek-) pour loi/règle et réserve 'loku' (lok-) à lieu/endroit (verbe lokun 'construire'). loku=loi est très probablement une erreur pour leku. À arbitrer en priorité.",
+          "nuance": "Racine leku (loi, règle établie ; data). Forme corrigée — l'ancien 'loku' collisionnait avec lieu. Vs 'loi sacrée' (lekuuasa).",
           "registre": "courant"
         }
       ],
@@ -464,13 +464,13 @@
     "sommet": {
       "traductions": [
         {
-          "confluent": "tasa",
+          "confluent": "sumu",
           "type": "racine",
           "forme_liee": "tas",
           "domaine": "geographie",
           "note": "Même racine que montagne - point haut",
           "definition": "Point le plus haut d'une montagne ; cime. Lié au relief montagneux du territoire d'origine de la Confluence, où se tiennent les Cercles de Vigile.",
-          "nuance": "DOUBLON à signaler : le fichier donne 'tasa' (forme liée tas-) = même racine que montagne (data : tasa = montagne), donc 'sommet' = le haut de la montagne ; mais data atteste aussi 'sumu' (sum-) pour sommet/haut. tasa/sumu à distinguer (tasa = la montagne et son point haut, sumu = la hauteur abstraite). À distinguer de piki (pointe aiguë).",
+          "nuance": "Racine sumu (sommet, cime, le plus haut ; data). Forme corrigée — l'ancien 'tasa' collisionnait avec montagne (tasa reste montagne).",
           "registre": "courant"
         }
       ]
@@ -492,13 +492,13 @@
     "vallee": {
       "traductions": [
         {
-          "confluent": "valu",
+          "confluent": "tani",
           "type": "racine",
           "forme_liee": "val",
           "domaine": "geographie",
           "note": "Nouvelle racine - creux entre montagnes",
           "definition": "Dépression de terrain entre des montagnes ; creux où coulent les rivières. Géographie d'origine de la Confluence : la vallée où deux rivières se rejoignent.",
-          "nuance": "DOUBLONS à signaler : (1) le fichier donne 'valu' (val-) pour vallée ET pour 'valeur' (deux entrées homophones) ; (2) data atteste 'tani' (tan-) pour vallée — mais tani est aussi le pronom 'il/elle'. Triple collision valu(vallée)/valu(valeur)/tani(vallée≈il). À arbitrer. Charge culturelle : berceau géographique du peuple.",
+          "nuance": "Racine tani (vallée, creux entre hauteurs ; data). Homophone du pronom 3sg, désambiguïsé par le contexte (polysémie documentée). Forme corrigée — l'ancien 'valu' collisionnait avec valeur.",
           "registre": "courant"
         }
       ]
@@ -541,13 +541,13 @@
     "tribu": {
       "traductions": [
         {
-          "confluent": "kota",
+          "confluent": "tibu",
           "type": "racine",
           "forme_liee": "kot",
           "domaine": "social",
           "note": "Même racine que union/confluence",
           "definition": "Groupe humain uni par des liens communs ; communauté. Même racine que union/confluence, car la tribu est l'union des personnes.",
-          "nuance": "DOUBLON à signaler : le fichier donne 'kota' (kot-, racine cardinale union/confluence, verbe kotam 'communier'), mais data atteste 'tibu' (tib-) pour tribu/groupe et 'mitu' (mit-) pour famille/clan. kota(union)/tibu(tribu)/mitu(clan) se chevauchent. kota porte la charge sacrée de confluence (uraakota) ; l'employer pour 'tribu' est plus abstrait/noble. À distinguer.",
+          "nuance": "Racine tibu (tribu, groupe uni par le sang/le territoire ; data). Forme corrigée — l'ancien 'kota' collisionnait avec confluence/union. Vs 'caste' (union par fonction) et 'famille' (mitu).",
           "registre": "courant"
         }
       ]
@@ -913,15 +913,20 @@
     "charge": {
       "traductions": [
         {
-          "confluent": "saki",
+          "confluent": "kanukota",
           "type": "racine",
           "forme_liee": "sak",
           "domaine": "action",
           "note": "Charge, fardeau, ce qu'on porte",
           "definition": "Ce qu'on porte ; fardeau, cargaison. Notion concrète liée au transport et au commerce des Passes-bien (Takitosa).",
-          "nuance": "DOUBLON CRITIQUE : le fichier donne 'saki' (sak-) pour charge/fardeau, mais data atteste saki = sac/contenant ET zaki = justice/équité (verbe zakin 'arbitrer'). De plus sak- recoupe le champ de taka (porter, verbe takan) pour ce qui est porté. saki(charge)/saki(sac)/taka(porter) à clarifier. Couvre charge/fardeau/cargaison.",
+          "nuance": "Composé kanu (main) + kota (union) = « ce que les mains réunissent », charge/fardeau. Forme corrigée — l'ancien 'saki' collisionnait avec sac.",
           "registre": "courant",
-          "exemple": "va tori vo saki takan"
+          "exemple": "va tori vo saki takan",
+          "composition": "kanu-kota",
+          "racines": [
+            "kanu",
+            "kota"
+          ]
         }
       ],
       "synonymes_fr": [

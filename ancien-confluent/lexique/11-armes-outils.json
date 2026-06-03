@@ -160,17 +160,17 @@
     "pioche": {
       "traductions": [
         {
-          "confluent": "vukukari",
+          "confluent": "pikukari",
           "type": "composition",
-          "composition": "vuk-u-kari",
+          "composition": "pik-u-kari",
           "sens_litteral": "Pierre du gouffre",
           "racines": [
-            "vuku",
+            "piki",
             "kari"
           ],
           "domaine": "outil",
           "definition": "Pioche, outil pour creuser et extraire la roche dans les souterrains.",
-          "nuance": "Composition vuk-u-kari = pierre du gouffre, sur vuku (profond/gouffre/abime, data id 61) et kari (pierre). Outil emblematique des Nakukeko (Enfants des Echos), mineurs et carriers des Antres. Le sens litteral evoque le Gouffre Humide plus que la fonction de creusement.",
+          "nuance": "Outil de carrier : piki (pointe) + -u- + kari (pierre) = « le pic de la pierre ». Forme corrigée — 'vukukari' est réservé à 'crevasse'.",
           "registre": "courant"
         }
       ]

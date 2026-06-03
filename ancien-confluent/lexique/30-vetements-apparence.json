@@ -51,18 +51,18 @@
     "oripeaux": {
       "traductions": [
         {
-          "confluent": "vekupaka",
+          "confluent": "vekuseni",
           "type": "composition",
-          "composition": "vek-u-paka",
+          "composition": "vek-u-seni",
           "sens_litteral": "Mauvaise surface/vêtement",
           "racines": [
             "veku",
-            "paka"
+            "seni"
           ],
           "domaine": "vetement",
           "note": "Vêtements en mauvais état",
           "definition": "Vêtements en mauvais état, haillons, guenilles. Habits usés, déchirés ou misérables.",
-          "nuance": "Composition vek-u-paka : veku (vêtement/surface) + paka (mauvais), littéralement « mauvaise surface/vêtement ». DOUBLON interne au fichier : exactement la même forme vekupaka sert pour « sale » (état souillé) — homonymie totale à signaler, le contexte distingue le vêtement-objet de l'état.",
+          "nuance": "Haillons : veku (vêtement) + -u- + seni (vieux) = « vieux vêtement usé ». Forme corrigée — 'vekupaka' est réservé à la qualité 'sale' (paire vekupaka/vekupuli).",
           "registre": "courant"
         }
       ],
@@ -180,17 +180,18 @@
     "morphologie": {
       "traductions": [
         {
-          "confluent": "sanukova",
+          "confluent": "sanumoki",
           "type": "composition",
-          "composition": "san-u-kova",
-          "sens_litteral": "Forme du corps",
+          "composition": "san-u-moki",
+          "sens_litteral": "Moule/forme du corps",
           "racines": [
-            "sanu"
+            "sanu",
+            "moki"
           ],
           "domaine": "apparence",
           "note": "Structure physique",
           "definition": "Structure et forme physique du corps, conformation corporelle.",
-          "nuance": "Composition san-u-kova : sanu (corps) + kova (peinture/image/forme), littéralement « forme du corps ». DOUBLON interne au fichier : même forme sanukova sert pour « peinture corporelle » (motifs sur la peau) — kova oscille entre « forme » et « gravure/image », homonymie à signaler et résoudre.",
+          "nuance": "Composition san-u-moki : sanu (corps) + liaison -u- (appartenance, « de ») + moki (moule, forme — racine id 87), littéralement « moule/forme du corps ». Renommé depuis l'ancien sanukova : kova (id 67) signifie « peinture, image, fresque », pas « forme » — l'ancien usage détournait kova et entrait en collision avec « peinture corporelle » (qui garde sanukova à juste titre). moki id 87 exprime la conformation physique de manière exacte. NB homonymie tolérée : moki est aussi « apprendre » (id 42), résolue par le contexte comme ailleurs dans le corpus ; la composition san-u-moki reste sans ambiguïté pratique. Schéma cohérent avec le paradigme san-u-X du fichier (sanuveku tenue, sanumako taille, sanukotavi adaptation).",
           "registre": "courant"
         }
       ],
@@ -201,17 +202,18 @@
     "correspondre": {
       "traductions": [
         {
-          "confluent": "kotavi",
+          "confluent": "kotakinu",
           "type": "composition",
-          "composition": "kota-vi",
-          "sens_litteral": "Être en confluence/accord",
+          "composition": "kot-a-kinu",
+          "sens_litteral": "Confluence de similitude",
           "racines": [
-            "kota"
+            "kota",
+            "kinu"
           ],
           "domaine": "relation",
           "note": "Adéquation de taille, compatibilité",
           "definition": "Être adapté, convenir, s'ajuster — notamment pour une taille de vêtement ou une compatibilité.",
-          "nuance": "Composition kota-vi : kota (union, confluence, accord) + suffixe -vi, littéralement « être en confluence/accord ». S'appuie sur la racine maîtresse kota (la confluence, valeur centrale) pour exprimer l'adéquation. Le -vi final reste à formaliser morphologiquement.",
+          "nuance": "Composition kot-a-kinu : kota (union, confluence, accord) + -a- (relation) + kinu (semblable, s'ajuster) = « confluence de similitude » = convenir, s'ajuster. Forme corrigée — l'ancien 'kotavi' est désormais réservé à l'adjectif 'commun'. Statif (finale vocalique).",
           "registre": "courant"
         }
       ],
@@ -416,7 +418,7 @@
           "domaine": "parure",
           "note": "Décorations peintes sur la peau",
           "definition": "Motifs et décorations peints ou tatoués sur la peau, ornementation corporelle.",
-          "nuance": "Composition sanu-kova : sanu (corps) + kova (peinture, image, fresque), littéralement « gravure/motif sur le corps ». DOUBLON interne : forme identique à « morphologie » (même sanukova). kova relie cette parure à la Grande Fresque (Ekakova) et à l'art rituel des motifs accumulés.",
+          "nuance": "Composition san-u-kova : sanu (corps) + liaison -u- (« de ») + kova (peinture, image, fresque), littéralement « peinture du corps ». Usage canonique de kova (id 67, sens propre « peinture/image/fresque ») : c'est cet emploi qui GARDE sanukova. Relie la parure à la Grande Fresque (ekakova) et au réseau de la gravure/marque (vekukova cicatrice, kovak sculpter), au cœur de l'art rituel des motifs accumulés. Collision résolue : « morphologie » (qui détournait kova vers « forme ») a été renommée sanumoki.",
           "registre": "courant"
         }
       ],

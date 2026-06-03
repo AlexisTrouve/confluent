@@ -383,18 +383,18 @@
     "rame": {
       "traductions": [
         {
-          "confluent": "kanuvi",
+          "confluent": "lakuvito",
           "type": "composition",
-          "composition": "kanu-vi",
+          "composition": "lak-u-vito",
           "sens_litteral": "Bois de main pour l'eau",
           "racines": [
-            "kanu",
+            "laki",
             "vito"
           ],
           "domaine": "outil_maritime",
           "note": "Longue pièce de bois pour propulser",
           "definition": "Aviron, longue pièce de bois servant à propulser une embarcation.",
-          "nuance": "Composition kanu-vi : kanu (main) + vi (abrégé de vito, bois ; racine 'bois' centrale). Litt. 'bois de main (pour l'eau)'. L'outil porte le nom de la main qui le tient : prolongement manuel, cohérent avec vanukanu (manœuvrer) et kanulaki (ramer).",
+          "nuance": "Aviron : laki (ramer) + -u- (appartenance) + vito (bois travaillé) = « le bois de l'action de ramer ». Forme corrigée — l'ancien 'kanuvi' collisionnait avec bras, et sa décomposition (vi=bois) était erronée.",
           "registre": "courant"
         }
       ],

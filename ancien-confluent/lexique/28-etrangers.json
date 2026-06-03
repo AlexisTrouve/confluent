@@ -179,14 +179,19 @@
     "rencontrer": {
       "traductions": [
         {
-          "confluent": "kotavi",
+          "confluent": "kotatekis",
           "type": "racine",
           "forme_liee": "kotav",
           "domaine": "action_sociale",
           "note": "Croiser le chemin de, se rencontrer",
           "definition": "Croiser le chemin de quelqu'un, se trouver face à un autre. L'acte de rencontre, le moment où deux êtres ou groupes se croisent.",
-          "nuance": "Racine verbale (forme liée kotav-), évoque kota (union, confluence) : la rencontre est conçue comme un point de confluence. Charge culturelle positive : rencontrer, c'est amorcer une possible union, conformément à la valeur centrale de la confluence. Attention au doublon de forme : kotavi sert aussi pour 'commun' (kota-vi) dans ce même fichier, et la racine kotavi fonde contact (kotavuki) ; collision homographe à surveiller. À distinguer de venu (venir, arriver, racine 152) qui est le simple déplacement.",
-          "registre": "courant"
+          "nuance": "Verbe : kota (confluence) + -a- (relation) + tekis (aller) = « aller en confluence, croiser les chemins ». Finale verbale -kis. Forme corrigée — 'kotavi' est désormais réservé à l'adjectif 'commun'.",
+          "registre": "courant",
+          "composition": "kot-a-tekis",
+          "racines": [
+            "kota",
+            "teki"
+          ]
         }
       ],
       "synonymes_fr": [
@@ -348,18 +353,18 @@
     "confiance": {
       "traductions": [
         {
-          "confluent": "koraska",
+          "confluent": "koriuveli",
           "type": "composition",
-          "composition": "kor-aska",
+          "composition": "kor-i-veli",
           "sens_litteral": "Cœur libre",
           "racines": [
             "kori",
-            "aska"
+            "veli"
           ],
           "domaine": "emotion",
           "note": "Ouvrir son cœur sans crainte",
           "definition": "Ouvrir son cœur sans crainte, accorder sa foi à l'autre. L'état du cœur libre qui s'expose sans se protéger.",
-          "nuance": "Composition kori (cœur, forme kol-) + aska (libre, racine sacrée fondatrice) : 'cœur libre'. Charge culturelle profonde : aska (la liberté) est le concept fondateur de la civilisation (cf. siliaska, 'regard libre') ; la confiance est donc un cœur affranchi de la peur. C'est l'aboutissement positif du contact réussi avec l'Autre. Antonyme direct : silikonu (méfiance, regard gardé). Doublon attendu avec 07-emotions. À distinguer de vaku (ami/allié, racine 50) : kolaska est l'émotion, vaku la relation établie.",
+          "nuance": "Cœur de vérité (forme alignée sur 07-emotions). Forme corrigée — 'koraska' (cœur libre) est réservé à 'audace'.",
           "registre": "courant"
         }
       ],

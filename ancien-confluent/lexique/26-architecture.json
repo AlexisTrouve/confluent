@@ -283,7 +283,7 @@
           "domaine": "architecture_souterraine",
           "note": "Passage souterrain (crucial pour Antres)",
           "definition": "Passage souterrain creusé reliant des espaces, crucial dans les Antres des Échos.",
-          "nuance": "Composition vuku-vasi (vuku=profond/gouffre + vasi=passage). Litt. 'passage du gouffre'. Domaine souterrain ; élément central de l'habitat des Enfants des Échos (Nakukeko), mineurs vivant sous terre. Partage vuku avec 'voûte' (vukutoka) et 'fosse' (vukupisu).",
+          "nuance": "Composition vuku-vasi (vuku=profond/gouffre + vasi=passage). Litt. 'passage du gouffre'. Domaine souterrain ; élément central de l'habitat des Enfants des Échos (Nakukeko), mineurs vivant sous terre. Partage vuku avec 'fosse' (vukupisu). Note : 'voûte' ne porte plus vukutoka (renommée kotuveku) ni 'grotte' (vukutoka, 08-nature-elements).",
           "registre": "courant",
           "exemple": "va nakukeko su no vukuvasi tekiseol"
         }
@@ -296,18 +296,18 @@
     "voûte": {
       "traductions": [
         {
-          "confluent": "vukutoka",
+          "confluent": "kotuveku",
           "type": "composition",
-          "composition": "vuku-toka",
-          "sens_litteral": "Lieu du gouffre courbé",
+          "composition": "kot-u-veku",
+          "sens_litteral": "Couverture tournée",
           "racines": [
-            "vuku",
-            "toka"
+            "koti",
+            "veku"
           ],
-          "domaine": "architecture_souterraine",
-          "note": "Construction arquée souterraine",
-          "definition": "Construction arquée couvrant un espace souterrain, plafond courbé d'une galerie.",
-          "nuance": "Composition vuku-toka (vuku=profond/gouffre + toka=lieu). Litt. 'lieu du gouffre courbé'. Domaine souterrain. Note : la même paire vuku+toka pourrait prêter à confusion avec d'autres compositions ; ici le sens 'courbé' repose sur le contexte, non sur un morphème explicite.",
+          "domaine": "architecture",
+          "note": "Couverture arquée construite",
+          "definition": "Couverture courbée en arc fermant le haut d'un espace bâti, plafond arqué d'une galerie ou d'une salle.",
+          "nuance": "Composition kot-u-veku (koti=rotation/tourner, id.170 + liaison -u- d'appartenance + veku=couvrir/surface/toit). Litt. 'couverture tournée/courbée'. Renommage : 'voûte' portait auparavant vukutoka, en collision avec 'grotte' (vukutoka, 'gouffre dans la terre', 08-nature-elements) et dont le sens 'courbé' ne reposait sur aucun morphème explicite. kotuveku corrige ce défaut : koti porte explicitement la courbure (l'arc qui 'tourne'), veku la couverture. Belle paire minimale avec 'toit' (tokuveku, tok-=lieu, plat) : la voûte est un toit qui tourne, distinction kot-/tok-. Quitte le registre souterrain (vuku-) pour le registre construit, ce qui est correct : une voûte est une architecture, pas une cavité naturelle. Réutilise la racine -veku- de la série architecturale (fenêtre siliveku, planche vitoveku, toit tokuveku).",
           "registre": "courant"
         }
       ]
@@ -569,7 +569,7 @@
           "domaine": "architecture",
           "note": "Trou creusé",
           "definition": "Petit creux ou trou creusé dans le sol.",
-          "nuance": "Composition vuku-pisu (vuku=profond/gouffre + pisu=petit). Litt. 'petit gouffre'. Antonyme d'échelle de 'gouffre' (vuku seul) : la fosse est un creux mineur, le gouffre l'abîme majeur. Partage vuku avec 'galerie' (vukuvasi) et 'voûte' (vukutoka). Inclut 'fossé' et 'trou' en synonymes.",
+          "nuance": "Composition vuku-pisu (vuku=profond/gouffre + pisu=petit). Litt. 'petit gouffre'. Antonyme d'échelle de 'gouffre' (vuku seul) : la fosse est un creux mineur, le gouffre l'abîme majeur. Partage vuku avec 'galerie' (vukuvasi). Inclut 'fossé' et 'trou' en synonymes.",
           "registre": "courant"
         }
       ],

@@ -125,17 +125,17 @@
     "poeme": {
       "traductions": [
         {
-          "confluent": "onuvoki",
+          "confluent": "onukeko",
           "type": "composition",
-          "composition": "on-u-voki",
-          "sens_litteral": "Son de la voix",
+          "composition": "on-u-keko",
+          "sens_litteral": "Son de l'écho",
           "racines": [
             "onu",
-            "voki"
+            "keko"
           ],
           "domaine": "communication",
-          "definition": "Poème, vers, composition rythmée de la parole. Forme élevée du langage où le son devient porteur de beauté et de mémoire.",
-          "nuance": "Composition on-u-voki (son + voix, sur la racine sacrée onu « son, vibration » + voki « voix ») : litt. « son de la voix ». La présence de la racine sacrée onu donne une coloration rituelle/élevée. Synonyme fr. « vers ». À distinguer de leki (récit, histoire, data) qui est narratif et non versifié.",
+          "definition": "Poème, vers, composition rythmée de la parole. Forme élevée du langage où le son résonne et revient, porteur de beauté et de mémoire.",
+          "nuance": "Composition on-u-keko (son + écho, sur la racine sacrée onu « son, vibration » + keko « écho, résonance ») : litt. « son de l'écho ». Le trait distinctif du poème n'est pas la mélodie de la voix (cela, c'est le chant, onuvoki) mais le retour structuré de la parole : le vers est un motif rythmé qui résonne et revient, d'où keko. La racine sacrée onu conserve la coloration rituelle/élevée et inscrit le terme dans la famille onu- (onuvoki = chant, onuasa = chant sacré). Synonyme fr. « vers ». À distinguer de leki (récit, histoire, data) qui est narratif et non versifié. Renommé depuis onuvoki (collision résolue : onuvoki revient au chant).",
           "registre": "rituel"
         }
       ],
@@ -156,7 +156,7 @@
           ],
           "domaine": "communication",
           "definition": "Chant, mélodie portée par la voix. Expression musicale de la parole, support de transmission orale et de cohésion collective.",
-          "nuance": "L'entrée porte une composition annotée on-u-voki (son + voix) identique à celle de poeme, alors que la forme confluent recopiée est « oukekaza » — il y a donc une incohérence/doublon entre la forme et sa décomposition (vraisemblablement un mélange avec keko « écho »). Forme conservée telle quelle. À comparer avec onuasa (chant sacré).",
+          "nuance": "Composition on-u-voki (son + voix, sur la racine sacrée onu « son, vibration » + voki « voix ») : litt. « son de la voix » — l'étymologie colle au chant, où la voix devient son et vibration mélodique. La racine sacrée onu donne une coloration rituelle/élevée et inscrit le terme dans la famille onu- (onukeko = poème, onuasa = chant sacré). Collision résolue : onuvoki est désormais réservé au chant, le poème prend onukeko. (Une forme parasite « oukekaza », phonotactiquement corrompue, avait jadis brouillé cette entrée — abandonnée.)",
           "registre": "courant"
         }
       ]
@@ -174,7 +174,7 @@
           ],
           "domaine": "communication",
           "definition": "Chant sacré, hymne rituel adressé aux ancêtres ou aux esprits. Vibration consacrée employée dans le culte et les cérémonies.",
-          "nuance": "Composition on-u-asa (son + sacré, deux racines sacrées : onu « son/vibration » + asa « sacré/divin ») : litt. « son du sacré ». La double racine sacrée signale un registre cérémoniel élevé. Variante consacrée du chant (oukekaza/onuvoki) ; lié au culte des ancêtres et aux rituels.",
+          "nuance": "Composition on-u-asa (son + sacré, deux racines sacrées : onu « son/vibration » + asa « sacré/divin ») : litt. « son du sacré ». La double racine sacrée signale un registre cérémoniel élevé. Variante consacrée du chant (onuvoki) ; lié au culte des ancêtres et aux rituels.",
           "registre": "sacré"
         }
       ]
@@ -261,7 +261,7 @@
           "forme_liee": "lek",
           "domaine": "communication",
           "definition": "Loi, règle établie. Norme gardée et transmise par les Voix de l'Aurore, gardiens des lois sacrées.",
-          "nuance": "Racine leku (forme liée lek-, attestée en data sous concepts_abstraits, « loi, règle »). Terme simple, non composé. Base de decret (lokukasi n'en dérive pas directement — voir nuance là). Charge institutionnelle : les lois sont sacrées et transmises par lignée (passé ancestral -ait).",
+          "nuance": "Racine leku (loi, règle ; data). Forme corrigée — l'ancien 'loku' (=lieu) était une collision.",
           "registre": "courant"
         }
       ]
@@ -361,12 +361,12 @@
     "secret": {
       "traductions": [
         {
-          "confluent": "seku",
+          "confluent": "zoku",
           "type": "racine",
           "forme_liee": "sek",
           "domaine": "communication",
           "definition": "Secret, ce qui est tenu caché. Savoir ou information soustraits au regard et à la transmission.",
-          "nuance": "Racine seku (forme liée sek-, attestée en data sous concepts_abstraits, « secret, caché »). Tension culturelle : le secret s'oppose à la valeur cardinale de transmission (« le savoir gardé pour soi est une trahison »), même si l'asymétrie informationnelle est recherchée face à l'Autre. Attention à l'homophonie avec seka (savoir) et la forme liée sek- partagée avec seku/seka.",
+          "nuance": "Racine zoku (secret, caché). Forme corrigée — libère 'seku' pour 'sec'.",
           "registre": "courant"
         }
       ]
