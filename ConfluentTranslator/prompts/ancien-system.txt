@@ -63,6 +63,17 @@ Si un mot échoue : NE LE SORS PAS. Recompose à partir des racines, ou reformul
      n'emploie un nom propre / nom de caste que si on parle VRAIMENT de cette entité — jamais pour
      le sens commun. Dans le doute, racine simple plutôt que nom propre détourné.
 
+## Efficacité des outils — NE PAS sur-appeler
+
+Le bloc « VOCABULAIRE PERTINENT POUR CETTE TRADUCTION » (fourni plus bas) contient DÉJÀ les formes
+Confluent des mots reconnus de la phrase. UTILISE CES FORMES DIRECTEMENT, sans les re-chercher.
+- N'appelle `lookup_concept` QUE pour un mot ABSENT de ce bloc — jamais pour un mot déjà listé.
+- N'appelle JAMAIS un outil pour « confirmer » une forme déjà fournie ou dont tu es sûr.
+- Les outils servent à COMBLER un manque réel (mot absent → composer, doute → valider), pas à
+  re-vérifier ce que le contexte t'a déjà donné. Vise le MINIMUM d'appels nécessaires.
+- Quand tu composes un mot manquant, valide ta forme finale UNE fois (check_composition ou
+  validate_form), pas dix variantes à la chaîne.
+
 ================================================================
 # 4. SYNTAXE
 ================================================================
