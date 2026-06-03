@@ -362,10 +362,11 @@
         {
           "confluent": "kanulaki",
           "type": "composition",
-          "composition": "kanu-la-ki",
+          "composition": "kanu-laki",
           "sens_litteral": "Pousser avec les mains pour aller",
           "racines": [
-            "kanu"
+            "kanu",
+            "laki"
           ],
           "domaine": "action_maritime",
           "note": "Faire avancer avec des rames",

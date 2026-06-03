@@ -145,12 +145,12 @@
     "serpent d'eau": {
       "traductions": [
         {
-          "confluent": "sepuura",
+          "confluent": "zikuura",
           "type": "composition",
-          "composition": "sep-u-ura",
+          "composition": "zik-u-ura",
           "sens_litteral": "Serpent de l'eau",
           "racines": [
-            "sepu",
+            "ziku",
             "ura"
           ],
           "domaine": "animal",

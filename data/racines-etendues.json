@@ -1,0 +1,28 @@
+{
+  "_comment": "Registre des RACINES ÉTENDUES de l'Ancien Confluent. data/lexique.json (148) est le noyau sacré + validé ; ce fichier déclare les racines supplémentaires réellement employées dans les composés du lexique (ancien-confluent/lexique/*.json), avec leur glose. Décidées à la main d'après les contextes d'emploi. Norme phono : 10 consonnes + r/d tolérés ; r/d réservés au canonique.",
+  "racines": {
+    "linu":  { "forme_liee": "lin",  "sens": "ligne, bord, rebord", "note": "extension de lina (corde/ligne) ; berge, muraille, linteau, poutre" },
+    "uki":   { "forme_liee": "uk",   "sens": "mouvement, geste, déplacement", "note": "marée, geste, contact, capturer" },
+    "aika":  { "forme_liee": "aik",  "sens": "temps, durée (abstrait/long)", "note": "registre abstrait ; cf. temi (temps concret) ; éternel, temporalité" },
+    "veku":  { "forme_liee": "vek",  "sens": "couvrir, surface, peau-vêtement", "note": "fenêtre, toit, planche, tenue, cape, vêtement" },
+    "mutu":  { "forme_liee": "mut",  "sens": "cou, nuque", "note": "cou, crâne, collier" },
+    "milu":  { "forme_liee": "mil",  "sens": "blanc, laiteux, pâle", "note": "rose, écume, pâle, lait de pierre" },
+    "loli":  { "forme_liee": "lol",  "sens": "onde, vague, oscillation", "note": "chavirer, vague, houle" },
+    "umu":   { "forme_liee": "um",   "sens": "bouche, ouverture orale", "note": "bouche, porte ; distinct de umi (esprit)" },
+    "alku":  { "forme_liee": "alk",  "sens": "flèche, trait", "note": "flèche, archer" },
+    "peku":  { "forme_liee": "pek",  "sens": "pieu, base, ancrage", "note": "ancre, fondation, pilotis" },
+    "maki":  { "forme_liee": "mak",  "sens": "forcer, contraindre", "note": "soumettre, forcer à rester ; distinct de mako (grand)" },
+    "saku":  { "forme_liee": "sak",  "sens": "récipient, contenant", "note": "lampe, vase ; distinct de saki (sac)" },
+    "palu":  { "forme_liee": "pal",  "sens": "croc, morsure, mordre", "note": "morsure-des-ancêtres" },
+    "tuva":  { "forme_liee": "tuv",  "sens": "ouverture, fente", "note": "fenêtre, ouvrir" },
+    "kili":  { "forme_liee": "kil",  "sens": "ravitailler, approvisionner", "note": "se ravitailler" },
+    "uti":   { "forme_liee": "ut",   "sens": "tour, hauteur, guet", "note": "tour" },
+    "kovu":  { "forme_liee": "kov",  "sens": "réserve, provision", "note": "réserves ; distinct de kova (gravure/peinture)" },
+    "volu":  { "forme_liee": "vol",  "sens": "fuir, disperser, défaire", "note": "paniquer, désordre ; privatif de mouvement" },
+    "iki":   { "forme_liee": "ik",   "sens": "commencer, entamer, premier élan", "note": "initiative ; distinct de iko (un)" },
+    "paso":  { "forme_liee": "pas",  "sens": "roux, fauve (couleur)", "note": "roux ; distinct de pasa (prendre) et pasu (rouge/sang)" },
+    "laki":  { "forme_liee": "lak",  "sens": "ramer, mouvement répété de la main sur l'eau", "note": "ramer (kanu-laki)" },
+    "kotoka":{ "forme_liee": "kotok","sens": "lieu d'accostage, dépôt, terre d'accueil", "note": "contraction lexicalisée de kota (union) + toka (terre) ; port (vanu-kotoka), entrepôt (nutu-kotoka)" },
+    "kinu":  { "forme_liee": "kin",  "sens": "semblable, identique, même apparence", "note": "similitude (sili-kinu)" }
+  }
+}

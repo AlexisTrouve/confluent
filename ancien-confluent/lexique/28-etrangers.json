@@ -327,7 +327,7 @@
         {
           "confluent": "silikonu",
           "type": "composition",
-          "composition": "sili-ko-nu",
+          "composition": "sili-konu",
           "sens_litteral": "Regard gardé",
           "racines": [
             "sili",
@@ -694,10 +694,11 @@
         {
           "confluent": "silikinu",
           "type": "composition",
-          "composition": "sili-ki-nu",
+          "composition": "sili-kinu",
           "sens_litteral": "Même regard/apparence",
           "racines": [
-            "sili"
+            "sili",
+            "kinu"
           ],
           "domaine": "concept",
           "note": "Ressemblance, points communs",
