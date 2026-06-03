@@ -45,6 +45,20 @@ const PARTICULES = {
 };
 const NEGATION = { zo: 'négation simple', zom: 'négation jamais', zob: 'négation interdiction' };
 
+// QUOI : réduit une définition longue à une glose courte. POURQUOI : prémâché — le modèle n'a pas
+// besoin du paragraphe ethnographique pour traduire, juste un repère de sens (paie moins de tokens).
+function briefSens(s) {
+  if (!s) return null;
+  const clean = String(s).replace(/\s+/g, ' ').trim();
+  return clean.length <= 80 ? clean : clean.slice(0, 80).replace(/\s+\S*$/, '') + '…';
+}
+// QUOI : aplatit {code:{sens,...}} en {code: glose}. POURQUOI : sortie grammaire légère et directe.
+function flat(obj) {
+  if (!obj) return {};
+  return Object.fromEntries(Object.entries(obj).map(([k, v]) =>
+    [k, typeof v === 'string' ? v : (v.sens || v.description || v.concept || '')]));
+}
+
 // ============================================================================
 // SCHÉMAS DES OUTILS (format Anthropic `tools`)
 // ============================================================================
@@ -166,7 +180,7 @@ function execLookupConcept(input, ctx) {
         confluent: cf,
         type: trad.type || 'inconnu',
         composition: trad.composition || null,
-        sens: trad.sens_litteral || trad.definition || null,
+        sens: briefSens(trad.sens_litteral || trad.definition),
         score: Number(r.score.toFixed(2))
       });
     }
@@ -193,14 +207,14 @@ function execGetGrammar(input) {
 
   const conjugateurs = () => ({
     regle: 'VERBE (finit par consonne) + CONJUGATEUR. Liste EXHAUSTIVE, aucun autre.',
-    temps: dataLexique.conjugateurs?.temps || { u: 'présent', at: 'passé vécu', aan: 'passé regretté', ait: 'passé ancestral', amat: 'passé mythique', en: 'futur' },
-    aspects: dataLexique.conjugateurs?.aspects || { il: 'accompli', eol: 'habituel', eon: 'cyclique', eom: 'éternel' },
-    modes: dataLexique.conjugateurs?.modes || { ok: 'impératif', es: 'souhait', ul: 'capacité' },
-    evidentiel: dataLexique.conjugateurs?.evidentiel || { uv: "c'est écrit" }
+    temps: flat(dataLexique.conjugateurs?.temps),
+    aspects: flat(dataLexique.conjugateurs?.aspects),
+    modes: flat(dataLexique.conjugateurs?.modes),
+    evidentiel: flat(dataLexique.conjugateurs?.evidentiel)
   });
   const liaisons = () => ({
     regle: 'racine1(forme liée) + liaison + racine2. JAMAIS comme pronom relatif "qui/que".',
-    liaisons: dataLexique.liaisons || {},
+    liaisons: flat(dataLexique.liaisons),
     familles: { I: 'agentivité (i,ie,ii,iu)', U: 'appartenance (u,ui)', A: 'relation (a,aa,ae,ao)', O: 'tension (o,oa)', E: 'dimension (e,ei,ea,eo)' }
   });
   const particules = () => ({ regle: 'AVANT le mot, sauf su (pluriel) APRÈS.', particules: PARTICULES });

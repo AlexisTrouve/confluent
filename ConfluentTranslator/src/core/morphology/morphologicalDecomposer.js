@@ -183,10 +183,18 @@ function decomposeWordRecursive(word, reverseIndex, depth = 0) {
 
   // Essayer chaque liaison sacrée
   for (const liaison of liaisonsSorted) {
-    const index = word.indexOf(liaison);
+    // QUOI : essayer TOUTES les occurrences de la liaison, pas seulement la première.
+    // POURQUOI : avec word.indexOf (1ère occurrence) seule, une racine contenant une lettre-liaison
+    //   (ex: 'kota' contient 'o') faisait rater le bon découpage des mots à 3+ racines
+    //   (ex: 'silikotanaki' coupé à tort en 'silik-o-...'). En balayant toutes les positions, le
+    //   bon split (toutes racines trouvées → confiance 0.95) est généré puis remonté par le tri.
+    let searchFrom = 0;
+    let index;
+    while ((index = word.indexOf(liaison, searchFrom)) !== -1) {
+      searchFrom = index + 1;
 
-    // La liaison doit être au milieu du mot, pas au début ni à la fin
-    if (index > 0 && index < word.length - liaison.length) {
+      // La liaison doit être au milieu du mot, pas au début ni à la fin
+      if (!(index > 0 && index < word.length - liaison.length)) continue;
       const leftPart = word.substring(0, index);
       const rightPart = word.substring(index + liaison.length);
 
