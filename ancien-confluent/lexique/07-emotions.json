@@ -5,9 +5,9 @@
     "joie": {
       "traductions": [
         {
-          "confluent": "koliatosa",
+          "confluent": "koriatosa",
           "type": "composition",
-          "composition": "kol-i-a-tosa",
+          "composition": "kor-i-a-tosa",
           "sens_litteral": "Cœur avec bien",
           "racines": [
             "kori",
@@ -16,7 +16,7 @@
           "domaine": "emotion_positive",
           "note": "Composition standard pour exprimer les émotions",
           "definition": "Plénitude émotionnelle vécue comme un cœur empli de bien, l'état positif de référence.",
-          "nuance": "Métaphore kori (cœur) + tosa (bien). Émotion durable et pleine, vs 'soulagement' (kolitosa) = simple retour au bien après tension. La liaison -a- marque un cœur uni au bien de façon stable.",
+          "nuance": "Métaphore kori (cœur) + tosa (bien). Émotion durable et pleine, vs 'soulagement' (koritosa) = simple retour au bien après tension. La liaison -a- marque un cœur uni au bien de façon stable.",
           "registre": "courant",
           "exemple": "va miki kori tosa"
         }
@@ -29,9 +29,9 @@
     "espoir": {
       "traductions": [
         {
-          "confluent": "koliuola",
+          "confluent": "koriuora",
           "type": "composition",
-          "composition": "kol-i-ola",
+          "composition": "kor-i-ora",
           "sens_litteral": "Cœur de l'aurore",
           "racines": [
             "kori",
@@ -39,7 +39,7 @@
           ],
           "domaine": "emotion_positive",
           "definition": "Tension positive du cœur tourné vers l'aurore, attente d'un avenir meilleur.",
-          "nuance": "kori + ora (aurore, promesse). Antonyme de 'désespoir' (kolizoola, cœur SANS aurore). Vs 'joie' (bien déjà présent) : l'espoir vise un bien à venir.",
+          "nuance": "kori + ora (aurore, promesse). Antonyme de 'désespoir' (korizoora, cœur SANS aurore). Vs 'joie' (bien déjà présent) : l'espoir vise un bien à venir.",
           "registre": "courant"
         }
       ]
@@ -47,9 +47,9 @@
     "fierte": {
       "traductions": [
         {
-          "confluent": "koliumako",
+          "confluent": "koriumako",
           "type": "composition",
-          "composition": "kol-i-mako",
+          "composition": "kor-i-mako",
           "sens_litteral": "Cœur de grandeur",
           "racines": [
             "kori",
@@ -57,7 +57,7 @@
           ],
           "domaine": "emotion_positive",
           "definition": "Sentiment d'un cœur empli de grandeur, fierté légitime tirée d'un mérite accompli.",
-          "nuance": "kori + mako (grand). La culture rejette l'orgueil stérile : koliumako = fierté juste, non vanité. Vs 'joie' : porte sur sa propre valeur.",
+          "nuance": "kori + mako (grand). La culture rejette l'orgueil stérile : koriumako = fierté juste, non vanité. Vs 'joie' : porte sur sa propre valeur.",
           "registre": "courant"
         }
       ]
@@ -65,9 +65,9 @@
     "amour": {
       "traductions": [
         {
-          "confluent": "koliukota",
+          "confluent": "koriukota",
           "type": "composition",
-          "composition": "kol-i-kota",
+          "composition": "kor-i-kota",
           "sens_litteral": "Cœur d'union",
           "racines": [
             "kori",
@@ -75,7 +75,7 @@
           ],
           "domaine": "emotion_positive",
           "definition": "Cœur en état d'union, attachement profond fondé sur la confluence avec l'autre.",
-          "nuance": "kori + kota (union, confluence) — concept central. Pas désir possessif mais fusion. Antonyme 'haine' (koliuzoka).",
+          "nuance": "kori + kota (union, confluence) — concept central. Pas désir possessif mais fusion. Antonyme 'haine' (koriuzoka).",
           "registre": "courant"
         }
       ]
@@ -83,9 +83,9 @@
     "curiosite": {
       "traductions": [
         {
-          "confluent": "koliusili",
+          "confluent": "koriusili",
           "type": "composition",
-          "composition": "kol-i-sili",
+          "composition": "kor-i-sili",
           "sens_litteral": "Cœur du regard",
           "racines": [
             "kori",
@@ -102,9 +102,9 @@
     "soulagement": {
       "traductions": [
         {
-          "confluent": "kolitosa",
+          "confluent": "koritosa",
           "type": "composition",
-          "composition": "kol-i-tosa",
+          "composition": "kor-i-tosa",
           "sens_litteral": "Cœur avec bien",
           "racines": [
             "kori",
@@ -113,7 +113,7 @@
           "domaine": "emotion_positive",
           "note": "Retour au bien après tension",
           "definition": "Détente du cœur qui retrouve le bien après une période de tension ou de peur.",
-          "nuance": "kori + tosa (bien), sans la liaison -a- de 'joie' (koliatosa). Subtil : joie = bien plein stable ; soulagement = retour transitoire au bien. NON doublon (absence de -a-).",
+          "nuance": "kori + tosa (bien), sans la liaison -a- de 'joie' (koriatosa). Subtil : joie = bien plein stable ; soulagement = retour transitoire au bien. NON doublon (absence de -a-).",
           "registre": "courant"
         }
       ]
@@ -121,9 +121,9 @@
     "confiance": {
       "traductions": [
         {
-          "confluent": "koliuveli",
+          "confluent": "koriuveli",
           "type": "composition",
-          "composition": "kol-i-veli",
+          "composition": "kor-i-veli",
           "sens_litteral": "Cœur de vérité",
           "racines": [
             "kori",
@@ -131,7 +131,7 @@
           ],
           "domaine": "emotion_positive",
           "definition": "Cœur reposant sur la vérité, assurance accordée à autrui ou à une parole.",
-          "nuance": "kori + veri (vrai). Antonyme de 'méfiance' (kolizoveli, cœur SANS vérité). Liée au Regard Partagé. Vs 'espoir' : repose sur une vérité acquise.",
+          "nuance": "kori + veri (vrai). Antonyme de 'méfiance' (korizoveli, cœur SANS vérité). Liée au Regard Partagé. Vs 'espoir' : repose sur une vérité acquise.",
           "registre": "courant"
         }
       ]
@@ -139,9 +139,9 @@
     "gratitude": {
       "traductions": [
         {
-          "confluent": "koliukita",
+          "confluent": "koriukitan",
           "type": "composition",
-          "composition": "kol-i-kitan",
+          "composition": "kor-i-kitan",
           "sens_litteral": "Cœur du don",
           "racines": [
             "kori",
@@ -157,9 +157,9 @@
     "serenite": {
       "traductions": [
         {
-          "confluent": "koliuula",
+          "confluent": "koriuura",
           "type": "composition",
-          "composition": "kol-i-ula",
+          "composition": "kor-i-ura",
           "sens_litteral": "Cœur de l'eau",
           "racines": [
             "kori",
@@ -177,9 +177,9 @@
     "peur": {
       "traductions": [
         {
-          "confluent": "kolioaoki",
+          "confluent": "korioaoki",
           "type": "composition",
-          "composition": "kol-oa-oki",
+          "composition": "kor-oa-oki",
           "sens_litteral": "Cœur face au danger",
           "racines": [
             "kori",
@@ -187,7 +187,7 @@
           ],
           "domaine": "emotion_negative",
           "definition": "Cœur dressé face au danger ou à l'épreuve, alarme devant une menace présente.",
-          "nuance": "kori + oki (épreuve/danger, sacré). Liaison -oa- : cœur affrontant l'épreuve. Vs 'angoisse' (kolioavuku, peur du gouffre/vide) : la peur a un objet (oki).",
+          "nuance": "kori + oki (épreuve/danger, sacré). Liaison -oa- : cœur affrontant l'épreuve. Vs 'angoisse' (korioavuku, peur du gouffre/vide) : la peur a un objet (oki).",
           "registre": "courant"
         }
       ]
@@ -195,9 +195,9 @@
     "colere": {
       "traductions": [
         {
-          "confluent": "koliusuki",
+          "confluent": "koriusuki",
           "type": "composition",
-          "composition": "kol-i-suki",
+          "composition": "kor-i-suki",
           "sens_litteral": "Cœur de feu",
           "racines": [
             "kori",
@@ -205,7 +205,7 @@
           ],
           "domaine": "emotion_negative",
           "definition": "Cœur de feu, embrasement émotionnel face à l'injustice ou l'offense.",
-          "nuance": "kori + suki (feu). Vs 'haine' (koliuzoka) : colère = flambée passagère, haine = état durable. Opposée à la sérénité (feu vs eau dans la poitrine).",
+          "nuance": "kori + suki (feu). Vs 'haine' (koriuzoka) : colère = flambée passagère, haine = état durable. Opposée à la sérénité (feu vs eau dans la poitrine).",
           "registre": "courant"
         }
       ]
@@ -213,9 +213,9 @@
     "tristesse": {
       "traductions": [
         {
-          "confluent": "kolioaosi",
+          "confluent": "korioaosi",
           "type": "composition",
-          "composition": "kol-oa-osi",
+          "composition": "kor-oa-osi",
           "sens_litteral": "Cœur vers la mort",
           "racines": [
             "kori",
@@ -223,7 +223,7 @@
           ],
           "domaine": "emotion_negative",
           "definition": "Cœur orienté vers la mort, peine et chagrin du deuil ou de la perte.",
-          "nuance": "kori + osi (mort, sacré). Vs 'regret' (kolioaaita, vers le passé) : la tristesse pleure une perte/mort. Charge funéraire possible.",
+          "nuance": "kori + osi (mort, sacré). Vs 'regret' (korioaaita, vers le passé) : la tristesse pleure une perte/mort. Charge funéraire possible.",
           "registre": "courant"
         }
       ]
@@ -231,9 +231,9 @@
     "desespoir": {
       "traductions": [
         {
-          "confluent": "kolizoola",
+          "confluent": "korizoora",
           "type": "composition",
-          "composition": "kol-i-zo-ola",
+          "composition": "kor-i-zo-ora",
           "sens_litteral": "Cœur sans aurore",
           "racines": [
             "kori",
@@ -250,9 +250,9 @@
     "honte": {
       "traductions": [
         {
-          "confluent": "kolioakumu",
+          "confluent": "korioakumu",
           "type": "composition",
-          "composition": "kol-oa-kumu",
+          "composition": "kor-oa-kumu",
           "sens_litteral": "Cœur vers l'ombre",
           "racines": [
             "kori",
@@ -260,7 +260,7 @@
           ],
           "domaine": "emotion_negative",
           "definition": "Cœur tourné vers l'ombre, sentiment d'indignité face au regard des autres.",
-          "nuance": "kori + kumu (ombre). NB : racine kumu non attestée dans data/lexique (le 'sombre' attesté est taku) — à vérifier. Vs 'tristesse' : la honte est sociale.",
+          "nuance": "kori + kumu (ombre/honte). kumu est une racine étendue (registre étendu) distincte de taku (sombre, ténèbres) : kumu porte la honte sociale, taku l'obscurité physique. Vs 'tristesse' : la honte est sociale, devant le regard d'autrui.",
           "registre": "courant"
         }
       ]
@@ -268,9 +268,9 @@
     "haine": {
       "traductions": [
         {
-          "confluent": "koliuzoka",
+          "confluent": "koriuzoka",
           "type": "composition",
-          "composition": "kol-i-zoka",
+          "composition": "kor-i-zoka",
           "sens_litteral": "Cœur de l'ennemi",
           "racines": [
             "kori",
@@ -278,7 +278,7 @@
           ],
           "domaine": "emotion_negative",
           "definition": "Cœur habité par l'ennemi, hostilité profonde et durable envers l'autre.",
-          "nuance": "kori + zoka (ennemi). Antonyme de l'amour (koliukota, cœur d'union). Vs 'colère' (feu passager) : la haine est un état installé.",
+          "nuance": "kori + zoka (ennemi). Antonyme de l'amour (koriukota, cœur d'union). Vs 'colère' (feu passager) : la haine est un état installé.",
           "registre": "courant"
         }
       ]
@@ -286,9 +286,9 @@
     "angoisse": {
       "traductions": [
         {
-          "confluent": "kolioavuku",
+          "confluent": "korioavuku",
           "type": "composition",
-          "composition": "kol-oa-vuku",
+          "composition": "kor-oa-vuku",
           "sens_litteral": "Cœur vers le gouffre",
           "racines": [
             "kori",
@@ -296,7 +296,7 @@
           ],
           "domaine": "emotion_negative",
           "definition": "Cœur tourné vers le gouffre, anxiété diffuse devant le vide ou l'inconnu.",
-          "nuance": "kori + vuku (gouffre, abîme) — résonne avec le Gouffre Humide. Vs 'peur' (kolioaoki, objet défini) : l'angoisse vise l'abîme sans objet précis.",
+          "nuance": "kori + vuku (gouffre, abîme) — résonne avec le Gouffre Humide. Vs 'peur' (korioaoki, objet défini) : l'angoisse vise l'abîme sans objet précis.",
           "registre": "courant"
         }
       ],
@@ -307,9 +307,9 @@
     "mefiance": {
       "traductions": [
         {
-          "confluent": "kolizoveli",
+          "confluent": "korizoveli",
           "type": "composition",
-          "composition": "kol-i-zo-veli",
+          "composition": "kor-i-zo-veli",
           "sens_litteral": "Cœur sans vérité",
           "racines": [
             "kori",
@@ -326,9 +326,9 @@
     "regret": {
       "traductions": [
         {
-          "confluent": "kolioaaita",
+          "confluent": "korioaaita",
           "type": "composition",
-          "composition": "kol-oa-aita",
+          "composition": "kor-oa-aita",
           "sens_litteral": "Cœur vers le passé",
           "racines": [
             "kori",
@@ -344,17 +344,17 @@
     "jalousie": {
       "traductions": [
         {
-          "confluent": "kolioakilu",
+          "confluent": "korioakiru",
           "type": "composition",
-          "composition": "kol-oa-kilu",
+          "composition": "kor-oa-kiru",
           "sens_litteral": "Cœur contre l'échange",
           "racines": [
             "kori",
-            "kilu"
+            "kiru"
           ],
           "domaine": "emotion_negative",
           "definition": "Cœur dressé contre l'échange, envie de ce que possède ou reçoit autrui.",
-          "nuance": "kori + kiru (échanger). NB : forme notée 'kilu' mais racine attestée 'kiru' — coquille probable. Vs 'haine' : la jalousie vise un bien convoité.",
+          "nuance": "kori + kiru (échanger). Forme alignée sur la racine attestée kiru (l'ancienne 'kilu' était une coquille). Vs 'haine' : la jalousie vise un bien convoité.",
           "registre": "courant"
         }
       ]

@@ -697,9 +697,9 @@
     "civilisation": {
       "traductions": [
         {
-          "confluent": "ulaikota",
+          "confluent": "uraikota",
           "type": "composition",
-          "composition": "ula-i-kota",
+          "composition": "ura-i-kota",
           "sens_litteral": "Confluence-de-vie",
           "racines": [
             "ura",
@@ -709,7 +709,7 @@
           "domaine": "concept_fondateur",
           "note": "Civilisation - l'union des gens qui vivent ensemble (ura=eau/vie + i=agentivité + kota=confluence/union)",
           "definition": "L'union des êtres vivant ensemble ; la société comme confluence de vies.",
-          "nuance": "INCOHÉRENCE : forme 'ulaikota' et composition 'ula-i-kota' citent 'ula', mais racines listées = ura (eau/vie) + kota → devrait être 'uraikota'. ura/ula incohérents. Sens : eau=vie + agent + union.",
+          "nuance": "ura (eau/vie) + liaison -i- (agent) + kota (union/confluence) = « la confluence des vies ». Forme alignée sur la racine ura (l'ancienne 'ula' était une corruption r→l). Concept fondateur : la société comme eaux qui se mêlent.",
           "registre": "courant"
         }
       ],

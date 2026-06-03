@@ -374,9 +374,9 @@
     "cascade": {
       "traductions": [
         {
-          "confluent": "ulaoavuku",
+          "confluent": "uraoavuku",
           "type": "composition",
-          "composition": "ul-oa-vuku",
+          "composition": "ur-oa-vuku",
           "sens_litteral": "Eau vers le gouffre",
           "racines": [
             "ura",
@@ -384,7 +384,7 @@
           ],
           "domaine": "geographie",
           "definition": "Chute d'eau se précipitant vers un gouffre.",
-          "nuance": "Composition eau (ura) + vers (oa) + gouffre (vuku). Vs 'rivière' (nula, eau horizontale) : la cascade est la chute verticale. NB forme 'ulaoavuku' suspecte (ur-oa-vuku attendu).",
+          "nuance": "Composition eau (ura) + vers (oa) + gouffre (vuku). Vs 'rivière' (nura, eau horizontale) : la cascade est la chute verticale. Forme alignée sur ura (l'ancienne 'ulaoavuku' était une corruption r→l).",
           "registre": "courant"
         }
       ]
