@@ -31,19 +31,19 @@
       "racine_fr": "fenêtr",
       "traductions": [
         {
-          "confluent": "soratuva",
+          "confluent": "siliveku",
           "type": "composition",
-          "composition": "sora-tuva",
+          "composition": "sili-veku",
           "sens_litteral": "Ouverture-de-lumière",
           "racines": [
-            "sora",
-            "tuva"
+            "sili",
+            "veku"
           ],
           "structure": "composition",
           "domaine": "habitat",
           "note": "Fenêtre - ouverture qui laisse passer la lumière (sora=lumière + tuva=ouverture)",
           "definition": "Ouverture pratiquée dans un mur ou une paroi qui laisse entrer la lumière du jour dans l'habitation.",
-          "nuance": "Composition sora(lumière/soleil, id.25, forme liée sor- réalisée \"sola\") + tuva(ouverture). Définie par sa fonction lumineuse plutôt que comme simple trou : pertinent pour les Enfants des Échos en souterrain, où une ouverture vers la lumière est un objet rare et valorisé. Élément architectural recoupant 26-architecture (ouverture, paroi) : ici l'angle est l'usage domestique. Le tuva final est aussi la racine du verbe \"ouvrir\" (cf. tuvas dans ce fichier).",
+          "nuance": "Forme consolidée sur siliveku : même concept que l'entrée parallèle du lexique (doublon inter-fichiers résolu, aligné sur la forme canonique).",
           "registre": "courant"
         }
       ],
@@ -57,19 +57,19 @@
       "racine_fr": "toit",
       "traductions": [
         {
-          "confluent": "zakusumu",
+          "confluent": "tokuveku",
           "type": "composition",
-          "composition": "zaku-sumu",
+          "composition": "toka-veku",
           "sens_litteral": "Protection-haute",
           "racines": [
-            "zaku",
-            "sumu"
+            "toka",
+            "veku"
           ],
           "structure": "composition",
           "domaine": "habitat",
           "note": "Toit - protection en hauteur (zaku=protection/réserve + sumu=haut)",
           "definition": "Couverture supérieure d'une habitation qui protège l'intérieur des intempéries et délimite l'abri par le haut.",
-          "nuance": "Composition zaku(protection/garde, cf. racine zaki=garder, protéger, id.44, forme liée zak-) + sumu(haut/sommet, id.161) = \"protection-en-hauteur\". Recoupe 26-architecture (élément structurel d'un bâtiment) ; l'entrée habitat insiste sur la fonction abri. Le sumu final est partagé avec mur (karisumu) et avec le verbe monter (sumus), tous bâtis sur l'idée d'élévation.",
+          "nuance": "Forme consolidée sur tokuveku : même concept que l'entrée parallèle du lexique (doublon inter-fichiers résolu, aligné sur la forme canonique).",
           "registre": "courant"
         }
       ],
@@ -83,19 +83,19 @@
       "racine_fr": "mur",
       "traductions": [
         {
-          "confluent": "karisumu",
+          "confluent": "linukonu",
           "type": "composition",
-          "composition": "kari-sumu",
+          "composition": "lin-u-konu",
           "sens_litteral": "Pierre-dressée",
           "racines": [
-            "kari",
-            "sumu"
+            "lin",
+            "konu"
           ],
           "structure": "composition",
           "domaine": "habitat",
           "note": "Mur - pierre élevée (kari=pierre + sumu=haut/élevé)",
           "definition": "Paroi verticale de pierre qui délimite, ferme ou soutient une habitation ou un espace bâti.",
-          "nuance": "Composition kari(pierre/roche, id.20) + sumu(haut/dressé, id.161) = \"pierre-dressée\". Suppose une construction en pierre, cohérent avec les colonies souterraines et les camps de hauteur (kari taillé dans la roche) plutôt qu'avec les villages sur pilotis (qui seraient en bois, buki). Doublon de domaine avec 26-architecture (paroi, cloison) : à arbitrer pour éviter deux entrées concurrentes. Partage le composant sumu avec toit (zakusumu) et escalier indirectement.",
+          "nuance": "Forme consolidée sur linukonu : même concept que l'entrée parallèle du lexique (doublon inter-fichiers résolu, aligné sur la forme canonique).",
           "registre": "courant"
         }
       ],
@@ -119,9 +119,9 @@
           ],
           "structure": "composition",
           "domaine": "habitat",
-          "note": "Escalier - montée de pierre (référence au Gouffre Humide avec ses escaliers dans la roche, vuku=gouffre + kari=pierre)",
+          "note": "Escalier - passage à enjamber au pied (peki=pied/base + vasi=pont/passage)",
           "definition": "Suite de marches taillées ou montées permettant de passer d'un niveau à un autre, notamment dans la roche.",
-          "nuance": "Escalier : peki (pied/base) + vasi (pont/passage) = « pont de pieds ». Forme alignée sur 26-architecture — 'vukukari' est réservé à 'crevasse'.",
+          "nuance": "Composition peki(pied/base) + vasi(pont/passage) = « pont de pieds ». Partage la racine vasi avec porte (vasiumu) et la racine peki avec pilotis (urapeki) et plate-forme (pekutoka) : peki est la racine-clé de l'architecture portante. La marche, unité de l'escalier, se dit pekivi.",
           "registre": "courant"
         }
       ],
@@ -143,7 +143,7 @@
           "domaine": "action",
           "note": "Ouvrir, créer une ouverture",
           "definition": "Pratiquer une ouverture, dégager un passage ou écarter ce qui ferme (porte, ouverture, accès).",
-          "nuance": "Verbe issu de la racine tuva(ouverture), forme liée tuv- + suffixe verbal -s (groupe mouvement/ouverture). Même racine que le second élément de fenêtre (soratuva), reliant l'action et son résultat concret. Verbe d'action et non un terme d'habitat à proprement parler : présent ici parce qu'attaché au champ des ouvertures domestiques.",
+          "nuance": "Verbe issu de la racine tuva(ouverture), forme liée tuv- + suffixe verbal -s (groupe mouvement/ouverture). Même racine que le second élément de fenêtre (siliveku), reliant l'action et son résultat concret. Verbe d'action et non un terme d'habitat à proprement parler : présent ici parce qu'attaché au champ des ouvertures domestiques.",
           "registre": "courant",
           "exemple": "va miki vo solatuva tuvasok"
         }
@@ -176,7 +176,7 @@
           "domaine": "action",
           "note": "Monter, s'élever (même racine que haut)",
           "definition": "S'élever d'un niveau inférieur vers un niveau supérieur ; gravir, grimper.",
-          "nuance": "Verbe issu de la racine sumu(haut/sommet, id.161), forme liée sum- + suffixe verbal -s (mouvement). Même racine que les noms toit (zakusumu) et mur (karisumu) et solidaire de l'idée d'élévation centrale aux camps de hauteur (Cercles de Vigile). Verbe d'action plus que terme d'habitat ; figure ici par couplage avec escalier (vukukari). Pas de verbe \"descendre\" attesté en regard, malgré le composant vuku de l'escalier.",
+          "nuance": "Verbe issu de la racine sumu(haut/sommet, id.161), forme liée sum- + suffixe verbal -s (mouvement). Même racine que les noms toit (tokuveku) et mur (linukonu) et solidaire de l'idée d'élévation centrale aux camps de hauteur (Cercles de Vigile). Verbe d'action plus que terme d'habitat ; figure ici par couplage avec escalier (pekivasi).",
           "registre": "courant",
           "exemple": "va naki vo vukukari sumusu"
         }

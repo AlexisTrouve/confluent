@@ -113,7 +113,7 @@
           "categorie": "cas",
           "note": "Instrument, accompagnement",
           "definition": "Particule de cas marquant l'instrument/l'accompagnement (avec, au moyen de) ou la direction (vers, à) selon l'emploi.",
-          "nuance": "Se place AVANT le nom. La grammaire de référence emploie vu pour l'instrument et vi pour la direction ; ici vi couvre l'instrument/accompagnement. À distinguer de ve (origine).",
+          "nuance": "Se place AVANT le nom. Couvre l'instrument/accompagnement (avec, au moyen de) et, selon l'emploi, la direction (vers). À distinguer de ve (origine).",
           "registre": "courant"
         }
       ],
@@ -177,8 +177,8 @@
           "type": "marqueur_temps",
           "categorie": "temps",
           "note": "Futur ou intention volontaire",
-          "definition": "Conjugateur exprimant le futur/la volonté ou, selon la grammaire de référence, l'impératif (ordre, commande).",
-          "nuance": "Suffixé EN FIN de verbe (mirak + ok -> mirakok). Marque ici futur/intention volontaire ; recoupe le mode impératif. À distinguer de en (futur dans la référence) et ul (capacité).",
+          "definition": "Conjugateur exprimant le futur/la volonté, qui recoupe aussi l'impératif (ordre, commande).",
+          "nuance": "Suffixé EN FIN de verbe (mirak + ok -> mirakok). Marque le futur/l'intention volontaire et recoupe le mode impératif. À distinguer de en (impératif) et ul (capacité).",
           "registre": "courant"
         }
       ]
@@ -191,7 +191,7 @@
           "type": "marqueur_temps",
           "categorie": "mode",
           "note": "Ordre ou demande",
-          "definition": "Conjugateur de mode exprimant l'impératif : ordre ou demande adressée à l'interlocuteur. (Dans la grammaire de référence, en sert aussi de marqueur de futur.)",
+          "definition": "Conjugateur de mode exprimant l'impératif : ordre ou demande adressée à l'interlocuteur.",
           "nuance": "Suffixé EN FIN de verbe. Sert à formuler une commande directe ; à distinguer de ok (futur/volonté) et de ui (infinitif).",
           "registre": "courant"
         }
@@ -311,7 +311,7 @@
           "type": "interrogation",
           "categorie": "question",
           "note": "Marque l'interrogation",
-          "definition": "Marqueur d'interrogation. Sert de base à la série interrogative (ku/riku/siku/tiku/viku) et, dans la grammaire de référence, interroge le temps (quand).",
+          "definition": "Marqueur d'interrogation générale. Sert de base à la série interrogative (ku/riku/siku/tiku/viku) ; seul, il marque la question, le sens précis étant porté par les formes dérivées.",
           "nuance": "Élément interrogatif ; selon l'usage, remplace l'élément questionné ou marque la question. Tête de la série interrogative composée riku/siku/tiku/viku.",
           "registre": "courant",
           "exemple": "ku va naki tekisu"
@@ -428,7 +428,7 @@
           "categorie": "démonstratif",
           "note": "Démonstratif pour personnes",
           "definition": "Démonstratif personnel désignant un être humain : celui-ci, celui-là (démonstratif réservé aux personnes).",
-          "nuance": "Démonstratif personnel « celui-ci/celui-là » (réservé aux personnes) : tor- (forme liée de tori=personne) + -a déictique. Paradigme tisa (ici) / tova (là-bas) / tora (personnes). Forme corrigée — l'ancien 'kanu' collisionnait avec main (corps).",
+          "nuance": "Démonstratif personnel « celui-ci/celui-là » (réservé aux personnes) : tor- (forme liée de tori=personne) + -a déictique. Paradigme tisa (ici) / tova (là-bas) / tora (personnes).",
           "registre": "courant",
           "composition": "tor-a",
           "racines": [

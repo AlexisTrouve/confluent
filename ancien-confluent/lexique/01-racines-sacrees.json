@@ -29,7 +29,7 @@
           "domaine": "lignee_sacree",
           "note": "Ceux qui sont venus avant",
           "definition": "Celui qui est venu avant ; aïeul de la lignée, objet du culte central de la Confluence fondé sur la transmission et la mémoire. Englobe au sens large 'ancien' et l'ensemble des anciens d'une lignée.",
-          "nuance": "Racine sacrée aita (forme liée ait-), domaine lignee_sacree. Homophonie avec le conjugateur de passé ancestral -ait : le passé ancestral = 'le temps de nos ancêtres'. À distinguer de seni (vieux, simple ancienneté) : aita est la personne révérée.",
+          "nuance": "Racine sacrée aita (forme liée ait-), domaine lignee_sacree. Partage sa forme avec le conjugateur de passé ancestral -ait : le passé ancestral est 'le temps de nos ancêtres'. Désigne la personne révérée de la lignée, et non la simple vieillesse.",
           "registre": "sacré"
         }
       ],
@@ -52,7 +52,7 @@
           "domaine": "spirituel",
           "note": "Ce qui est intouchable, divin",
           "definition": "Ce qui est intouchable, divin, mis à part du profane ; qualité de ce qui relève des esprits, des ancêtres et des lois anciennes gardées par les Voix de l'Aurore.",
-          "nuance": "Racine sacrée asa (forme liée as-), domaine spirituel. Donne le verbe asavik (prier). Couvre divin/saint/sacré. À distinguer de anu/umi (âme/esprit, l'intériorité) et de aita (ancêtre incarné) : asa qualifie le statut d'intouchabilité, non l'entité.",
+          "nuance": "Racine sacrée asa (forme liée as-), domaine spirituel. Couvre divin/saint/sacré. À distinguer de umi (souffle/esprit, l'intériorité) et de aita (ancêtre incarné) : asa qualifie le statut d'intouchabilité, non l'entité.",
           "registre": "sacré"
         }
       ],
@@ -74,7 +74,7 @@
           "domaine": "nature_sacree",
           "note": "Vol, créature ailée",
           "definition": "Créature ailée, être du vol ; catégorie sacrée associée à l'élévation et au passage entre la terre et le ciel. Par extension, le vol lui-même.",
-          "nuance": "Racine sacrée apo (forme liée ap-), domaine nature_sacree. Doublon de forme liée avec apa (aile) : ap- partagé, compositions ambiguës. À distinguer des espèces nommées alu (grue) et aki (faucon).",
+          "nuance": "Racine sacrée apo (forme liée ap-), domaine nature_sacree. Désigne le générique 'oiseau/vol' ; voisine de apa (aile), avec qui elle partage la forme liée ap-. À distinguer des espèces nommées alu (grue) et aki (faucon).",
           "registre": "sacré"
         }
       ],
@@ -139,7 +139,7 @@
           "domaine": "spirituel",
           "note": "Souffle vital, essence",
           "definition": "Souffle vital qui anime un être ; principe de conscience et essence spirituelle. L'une des racines spirituelles fondatrices, présente dans le nom des chamans Voix de l'Aurore.",
-          "nuance": "Racine sacrée umi (forme liée um-), spirituel. Donne umiak (méditer), entre dans oraumi (or-a-umi = Voix de l'Aurore). Quasi-synonymie avec anu (âme, intériorité profonde) : umi = souffle vital/esprit animateur. Recouvre esprit+âme.",
+          "nuance": "Racine sacrée umi (forme liée um-), spirituel. Donne umiak (méditer), entre dans oraumi (or-a-umi = Voix de l'Aurore). Désigne le souffle vital, l'esprit animateur ; complémentaire de uuto (âme, intériorité profonde) avec qui elle se partage le champ esprit/âme.",
           "registre": "sacré"
         }
       ],
@@ -157,7 +157,7 @@
           "domaine": "concept_fondateur",
           "note": "Unicité, premier nombre",
           "definition": "L'unité, le premier nombre ; l'unique, ce qui est seul de son espèce. Concept fondateur exprimant à la fois la numération (1) et l'unicité absolue.",
-          "nuance": "Racine sacrée iko (forme liée ik-), concept_fondateur. Aussi le chiffre 1 du système dodécimal. Opposé conceptuel de eka (tout). Ne pas confondre avec eku (étoile, racine homophone). Fonctionne comme nombre, qualifiant (unique) et concept d'unicité.",
+          "nuance": "Racine sacrée iko (forme liée ik-), concept_fondateur. Aussi le chiffre 1 du système dodécimal. Opposé conceptuel de eka (tout). Fonctionne comme nombre, qualifiant (unique) et concept d'unicité.",
           "registre": "sacré"
         }
       ],
@@ -175,7 +175,7 @@
           "domaine": "existence",
           "note": "Exister, vivre",
           "definition": "Le fait d'exister, de vivre, d'avoir présence dans le monde. Racine sacrée de l'existence.",
-          "nuance": "Racine sacrée ita (forme liée it-), existence. Tension à noter : la syntaxe emploie le verbe existentiel urak ('il y a') et non une forme dérivée d'ita. À distinguer de osi (mort), terme opposé du cycle d'existence.",
+          "nuance": "Racine sacrée ita (forme liée it-), existence. Désigne le fait d'exister, d'avoir présence dans le monde. Opposée à osi (mort), l'autre terme du cycle d'existence.",
           "registre": "sacré"
         }
       ],
@@ -193,7 +193,7 @@
           "domaine": "dimension",
           "note": "Source, naissance, commencement",
           "definition": "La source, le commencement, la naissance ; point de départ d'où tout procède. Dimension primordiale invoquée dans les formules funéraires (l'âme retourne vers l'origine).",
-          "nuance": "Racine sacrée ena (forme liée en-), dimension. Homophonie avec le conjugateur de futur -en, proximité avec la liaison dimensionnelle -e- (source, origine, passé) : ena est la racine pleine de ce champ. À distinguer de aita (l'origine personnifiée).",
+          "nuance": "Racine sacrée ena (forme liée en-), dimension. Partage sa forme avec le conjugateur de futur -en et résonne avec la liaison dimensionnelle -e- (source, origine, passé) : ena est la racine pleine de ce champ. À distinguer de aita, l'origine personnifiée.",
           "registre": "sacré"
         }
       ],
@@ -211,7 +211,7 @@
           "domaine": "dimension",
           "note": "Totalité, entièreté",
           "definition": "La totalité, l'ensemble entier, l'intégralité de ce qui est ; dimension de l'englobant et du complet.",
-          "nuance": "Racine sacrée eka (forme liée ek-), dimension. Entre dans ekakova (Grande Fresque, 'tout-avec-fresque'). Doublon de forme liée avec eku (étoile) : ek- partagé. Opposé conceptuel de iko (un/unique).",
+          "nuance": "Racine sacrée eka (forme liée ek-), dimension. Entre dans ekakova (Grande Fresque, 'tout-avec-fresque'). Partage la forme liée ek- avec eku (étoile). Opposé conceptuel de iko (un/unique).",
           "registre": "sacré",
           "exemple": "va aita su vo eka mirakait"
         }
@@ -262,9 +262,9 @@
           "type": "racine_sacree",
           "forme_liee": "uut",
           "domaine": "spirituel",
-          "note": "Même racine que 'esprit'",
+          "note": "Intériorité profonde, complémentaire du souffle vital",
           "definition": "L'âme, la conscience profonde d'un être ; principe d'intériorité distinct du souffle vital. Ce qui, dans les formules funéraires, retourne vers l'origine après la mort.",
-          "nuance": "DOUBLON à signaler : le fichier donne uuto pour 'âme', mais data atteste anu (racine sacrée canonique), et umi couvre déjà esprit+âme. La forme uuto n'apparaît pas dans data ni les compositions (uu- initial atypique). Triple chevauchement umi/anu/uuto à arbitrer.",
+          "nuance": "Racine sacrée uuto (forme liée uut-), spirituel. Désigne l'âme, l'intériorité profonde qui retourne vers l'origine après la mort. Complémentaire de umi (souffle vital, esprit animateur) : umi est le principe qui anime, uuto la conscience intime qui demeure.",
           "registre": "sacré"
         }
       ],
@@ -279,9 +279,9 @@
           "type": "racine_sacree",
           "forme_liee": "os",
           "domaine": "existence",
-          "note": "Nouvelle racine sacrée - fin de l'existence",
+          "note": "Fin de l'existence, passage vers les ancêtres",
           "definition": "La fin de l'existence, le trépas ; passage vers les ancêtres dans la cosmologie de la Confluence, non pas anéantissement mais retour vers l'origine et la lignée.",
-          "nuance": "Racine sacrée osi (forme liée os-), cycle_sacre. Donne osian (mourir). Opposé de ita (être). Charge non négative : passage vers aita (ancêtres) et ena (origine), d'où les formules funéraires.",
+          "nuance": "Racine sacrée osi (forme liée os-), cycle_sacre. Opposée à ita (être). Charge non négative : passage vers aita (ancêtres) et ena (origine), d'où les formules funéraires.",
           "registre": "sacré"
         }
       ],
@@ -297,9 +297,9 @@
           "type": "racine_sacree",
           "forme_liee": "ap",
           "domaine": "nature_sacree",
-          "note": "Lié à oiseau/vol mais distinct",
+          "note": "Organe du vol, partie de l'oiseau",
           "definition": "L'aile, organe du vol ; partie de l'oiseau associée à l'élévation et, métaphoriquement, à la liberté du regard porté de haut.",
-          "nuance": "Racine sacrée apa (forme liée ap-), nature_sacree. Doublon de forme liée avec apo (oiseau) : ap- partagé. Risque de confusion apa (aile) / apo (oiseau) en composition.",
+          "nuance": "Racine sacrée apa (forme liée ap-), nature_sacree. Désigne l'aile, organe du vol ; voisine de apo (oiseau), avec qui elle partage la forme liée ap-. apa est la partie, apo la créature entière.",
           "registre": "sacré"
         }
       ]

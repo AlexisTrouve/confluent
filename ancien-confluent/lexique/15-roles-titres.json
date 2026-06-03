@@ -167,7 +167,7 @@
           ],
           "domaine": "titre",
           "definition": "Combattant ou chasseur maniant l'arc ; personne de l'arc.",
-          "nuance": "Composition alk-u-tori = 'personne de l'arc' (racine 'arku' arc, forme liée alk- + tori 'personne'). Variante du motif racine+tori avec liaison -u- (appartenance). 'arku' n'est pas dans les racines listées de data/lexique.json (issu du lexique étendu) ; pas d'exemple SOV proposé faute de forme attestée pour 'arc' dans les fichiers vérifiés.",
+          "nuance": "Composition alk-u-tori = 'personne de l'arc' (racine arku 'arc', forme liée alk- + tori 'personne'). Variante du motif racine+tori avec liaison -u- (appartenance). Construit sur arku 'arc' : combattant ou chasseur défini par son arme de jet, distinct de okitori 'guerrier' (combattant générique) et de zanatori 'traqueur' (chasse au sens large).",
           "registre": "courant"
         }
       ]
@@ -285,7 +285,7 @@
           ],
           "domaine": "titre",
           "definition": "Personne qui garde et dresse les grues (Regards-Libres) ; éleveur des oiseaux sacrés servant de messagers.",
-          "nuance": "Composition triple al-u-zak-i-tori = 'personne gardienne des grues' (alu 'grue' sacré + zaki 'garder, protéger' + tori 'personne'). Composition de 3 racines, rare (la morphologie déconseille 3+ éléments mais le titre l'assume). Métier concret, à distinguer de la caste Aliaska 'Aile-Grise' (statut spirituel).",
+          "nuance": "Composition triple al-u-zak-i-tori = 'personne gardienne des grues' (alu 'grue' sacré + zaki 'garder, protéger' + tori 'personne'). Composition à 3 racines, rare dans la langue, que ce titre technique assume pour nommer précisément le métier. Métier concret, distinct de la caste Aliaska 'Aile-Grise' (statut spirituel).",
           "registre": "courant"
         }
       ]
@@ -321,7 +321,7 @@
           ],
           "domaine": "titre",
           "definition": "Gardien et protecteur des lois ; figure judiciaire veillant au respect des règles sacrées.",
-          "nuance": "Composition zak-i-loku (notée zakiuloku) = 'gardien des lois' (zaki 'garder, protéger / justice, équité' + loku ; ici loku rend 'lois'). Note : data/lexique.json donne 'leku' = loi et 'loku' = lieu ; le titre s'appuie sur zaki (garder + justice). Rôle des Voix de l'Aurore (Oraumi), gardiens des lois sacrées. Du même radical : zakin 'arbitrer'.",
+          "nuance": "Composition zak-i-loku (notée zakiuloku) = 'gardien des lois' (zaki 'garder, protéger / justice, équité' + loku). Le sens repose sur zaki, racine de la justice et de la garde : celui qui veille au respect des règles sacrées. Rôle des Voix de l'Aurore (Oraumi). Du même radical : zakin 'arbitrer'. À distinguer de velatori 'sentinelle' (garde visuelle, non juridique).",
           "registre": "sacré"
         }
       ]
@@ -412,7 +412,7 @@
           ],
           "domaine": "titre",
           "definition": "Personne qui applique les couleurs ; artisan de la teinte, contributeur de la Grande Fresque.",
-          "nuance": "Composition kol-u-tori (notée koluutori) = 'personne des couleurs' (racine 'kelu' couleur, forme liée kol- + tori 'personne'). Note : data/lexique.json liste 'kelu' = couleur/teinte (verbe kelum 'peindre') ; le titre s'appuie sur 'kelu' du lexique étendu. Distinct de kovatori 'sculpteur' (relief vs couleur). Lié à la Grande Fresque (Ekakova).",
+          "nuance": "Composition kel-u-tori (notée keluutori) = 'personne des couleurs' (racine kelu 'couleur, teinte', forme liée kel- + tori 'personne'), motif racine+u+tori. Du même radical : kelum 'peindre'. Distinct de kovatori 'sculpteur' (relief vs couleur). Lié à la Grande Fresque (Ekakova).",
           "registre": "courant"
         }
       ]
@@ -448,7 +448,7 @@
           ],
           "domaine": "titre",
           "definition": "Personne qui pêche le poisson ; rôle central des Enfants du Courant, maîtres de l'eau.",
-          "nuance": "Composition pis-u-tori = 'personne du poisson' (racine 'pisu' poisson, forme liée pis- + tori 'personne'). ATTENTION doublon de forme : data/lexique.json donne 'pisu' = 'petit, fin' et 'pesa' = 'poisson' (verbe pesak 'pêcher'). Le titre s'appuie sur 'pisu' au sens 'poisson' du lexique étendu ; collision homographe avec pisu 'petit' à signaler. Lié à la caste Nakuura.",
+          "nuance": "Composition pis-u-tori = 'personne du poisson' (racine pisu 'poisson', forme liée pis- + tori 'personne'), motif racine+u+tori. pisu 'poisson' partage sa forme avec pisu 'petit, fin' (perception) : polysémie levée par le contexte. Proche de pesa 'poisson' (racine animale, verbe pesak 'pêcher'). Lié à la caste Nakuura (Enfants du Courant), maîtres de l'eau.",
           "registre": "courant"
         }
       ]
@@ -497,7 +497,7 @@
           "forme_liee": "nak",
           "domaine": "famille",
           "definition": "Enfant, descendant d'une lignée ; membre de la génération suivante, héritier de la transmission.",
-          "nuance": "Racine pure (naki, forme liée nak-), pas une composition. Brique fondamentale de nombreux noms de caste : Nakuura 'Enfants du Courant', Nakukeko 'Enfants des Échos'. Double sens 'enfant / descendant'. Doublon conceptuel à signaler avec les entrées familiales mamu 'mère', papu 'père' (même domaine famille/lignée).",
+          "nuance": "Racine pure (naki, forme liée nak-), pas une composition. Brique fondamentale de nombreux noms de caste : Nakuura 'Enfants du Courant', Nakukeko 'Enfants des Échos'. Double sens 'enfant / descendant'. Du même domaine famille/lignée que matu 'mère' et patu 'père' : naki désigne la génération qui hérite et transmet.",
           "registre": "courant"
         }
       ]
@@ -505,12 +505,12 @@
     "mere": {
       "traductions": [
         {
-          "confluent": "mamu",
+          "confluent": "matu",
           "type": "racine",
           "forme_liee": "mam",
           "domaine": "famille",
           "definition": "Mère, génitrice ; figure parentale féminine de la lignée familiale.",
-          "nuance": "Racine pure (mamu, forme liée mam-), pas une composition. Doublon assumé avec papu 'père' : paire parentale symétrique (mamu/papu) construite sur redoublement enfantin m-m / p-p. Domaine famille, comme naki 'descendant' et kotautori 'époux'. Cette entrée figure aussi dans le fichier famille (21) — recoupement à signaler.",
+          "nuance": "Forme consolidée sur matu : même concept que l'entrée parallèle du lexique (doublon inter-fichiers résolu, aligné sur la forme canonique).",
           "registre": "courant"
         }
       ]
@@ -518,12 +518,12 @@
     "pere": {
       "traductions": [
         {
-          "confluent": "papu",
+          "confluent": "patu",
           "type": "racine",
           "forme_liee": "pap",
           "domaine": "famille",
           "definition": "Père, géniteur ; figure parentale masculine de la lignée familiale.",
-          "nuance": "Racine pure (papu, forme liée pap-), pas une composition. Doublon assumé avec mamu 'mère' : paire parentale symétrique (papu/mamu) sur redoublement p-p / m-m. Domaine famille. Recoupement probable avec le fichier famille (21-famille.json) — à signaler pour éviter la duplication d'entrées.",
+          "nuance": "Forme consolidée sur patu : même concept que l'entrée parallèle du lexique (doublon inter-fichiers résolu, aligné sur la forme canonique).",
           "registre": "courant"
         }
       ]
@@ -541,7 +541,7 @@
           ],
           "domaine": "famille",
           "definition": "Conjoint, personne unie par le mariage ; partenaire dans l'union familiale.",
-          "nuance": "Composition kot-a-tori (notée kotautori) = 'personne d'union' (kota 'union, confluence, ensemble' + tori 'personne'), motif racine+a+tori. kota (confluence) est le cœur culturel : l'époux est la 'personne de la confluence'. Forme neutre en genre — synonymes français épouse/mari/conjoint. Doublon de domaine avec mamu/papu/naki (famille).",
+          "nuance": "Composition kot-a-tori (notée kotautori) = 'personne d'union' (kota 'union, confluence, ensemble' + tori 'personne'), motif racine+a+tori. kota (confluence) est le cœur culturel : l'époux est la 'personne de la confluence'. Forme neutre en genre — synonymes français épouse/mari/conjoint. Même domaine famille que matu 'mère', patu 'père' et naki 'descendant'.",
           "registre": "courant"
         }
       ],
@@ -567,7 +567,7 @@
           ],
           "domaine": "role",
           "definition": "Créateur qui fabrique avec savoir-faire ; ouvrier qualifié des métiers manuels.",
-          "nuance": "Composition nek-a-toku = 'créateur avec savoir' (neka 'faire, créer' + toku ; toku 'toucher/contact' ou 'document/écrit' selon data, ici au sens de savoir-faire/technique). DOUBLON interne du fichier : 'artisan' a deux formes — nekatoku (entrée 'artisan') et makouneka (entrée 'maitre artisan', rang supérieur). nekaukari 'façonneur de pierre' en est la spécialisation. Synonymes fr : artisane, crafteur.",
+          "nuance": "Composition nek-a-toku = 'créateur avec savoir' (neka 'faire, créer' + toku, ici au sens de savoir-faire / technique). nekatoku est l'artisan de base ; makouneka 'maître artisan' en marque le rang supérieur et nekaukari 'façonneur de pierre' la spécialisation au matériau. Synonymes fr : artisane, crafteur.",
           "registre": "courant"
         }
       ],

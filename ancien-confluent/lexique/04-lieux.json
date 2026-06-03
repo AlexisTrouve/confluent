@@ -16,7 +16,7 @@
           "categorie": "lieu_majeur",
           "note": "Lieu central où deux rivières se rejoignent",
           "definition": "Le lieu central et fondateur de la civilisation, où deux rivières (une azur, une verte) se rejoignent. Capitale spirituelle et politique des Siliaska.",
-          "nuance": "Composition ur-aa-kota = ura (eau, sacrée) + liaison -aa- (mélange confluent) + kota (union). La double voyelle 'aa' mime le flux. Doublon avec 'Uraakota'.",
+          "nuance": "Composition ur-aa-kota = ura (eau, sacrée) + liaison -aa- (mélange confluent) + kota (union). La double voyelle 'aa' mime le flux. Entrée francisée du nom propre 'Uraakota'.",
           "registre": "sacré",
           "exemple": "va tori vi uraakota tekis"
         }
@@ -35,7 +35,7 @@
           ],
           "categorie": "lieu_majeur",
           "definition": "Nom propre du lieu de la Confluence des deux rivières, cœur géographique, spirituel et politique de la civilisation.",
-          "nuance": "Composition ur-aa-kota = ura (eau) + -aa- (fusion) + kota (union). Forme identique à 'La Confluence' : doublon entrée francisée / nom propre.",
+          "nuance": "Composition ur-aa-kota = ura (eau) + -aa- (fusion) + kota (union). Forme du nom propre, équivalente à l'entrée francisée 'La Confluence'.",
           "registre": "sacré"
         }
       ]
@@ -54,7 +54,7 @@
           "categorie": "lieu_majeur",
           "note": "Lieu sacré souterrain",
           "definition": "Lieu sacré souterrain où repose la mémoire des Premiers Ancêtres ; site du pèlerinage obligatoire pour « porter un regard libre ».",
-          "nuance": "Composition vuk-u-ura = vuku (gouffre, profond) + -u- (appartenance) + ura (eau, sacrée). Littéralement 'gouffre de l'eau'. Doublon avec 'Vukuura'.",
+          "nuance": "Composition vuk-u-ura = vuku (gouffre, profond) + -u- (appartenance) + ura (eau, sacrée). Littéralement 'gouffre de l'eau'. Entrée francisée du nom propre 'Vukuura'.",
           "registre": "sacré",
           "exemple": "va naki ve vukuura tekis"
         }
@@ -73,7 +73,7 @@
           ],
           "categorie": "lieu_majeur",
           "definition": "Nom propre du Gouffre Humide, abîme souterrain sacré abritant les vestiges des Premiers Ancêtres.",
-          "nuance": "Composition vuk-u-ura = vuku (gouffre) + -u- + ura (eau). Forme identique à 'Gouffre Humide' : doublon francisé / nom propre.",
+          "nuance": "Composition vuk-u-ura = vuku (gouffre) + -u- + ura (eau). Forme du nom propre, équivalente à l'entrée francisée 'Gouffre Humide'.",
           "registre": "sacré"
         }
       ]
@@ -92,7 +92,7 @@
           "categorie": "lieu_majeur",
           "note": "Grottes souterraines",
           "definition": "Réseau de grottes et souterrains habités par les Enfants des Échos (Nakukeko), mineurs et sculpteurs adaptés à l'obscurité.",
-          "nuance": "Composition kek-u-toka = keko (écho) + -u- (appartenance) + toka (terre). Littéralement 'écho de la terre'. Doublon avec 'Kekutoka'.",
+          "nuance": "Composition kek-u-toka = keko (écho) + -u- (appartenance) + toka (terre). Littéralement 'écho de la terre'. Entrée francisée du nom propre 'Kekutoka'.",
           "registre": "sacré"
         }
       ]
@@ -110,7 +110,7 @@
           ],
           "categorie": "lieu_majeur",
           "definition": "Nom propre des Antres des Échos, grottes souterraines où vit la caste des Enfants des Échos.",
-          "nuance": "Composition kek-u-toka = keko (écho) + -u- + toka (terre). Forme identique à 'Antres des Echos' : doublon francisé / nom propre.",
+          "nuance": "Composition kek-u-toka = keko (écho) + -u- + toka (terre). Forme du nom propre, équivalente à l'entrée francisée 'Antres des Echos'.",
           "registre": "sacré"
         }
       ]
@@ -128,7 +128,7 @@
           ],
           "categorie": "lieu_majeur",
           "definition": "Les Cercles de Vigile, camps de hauteur et promontoires montagneux servant aux rituels de la Vigile Lunaire et à l'entraînement militaire.",
-          "nuance": "Composition sik-u-vela = siku (cercle) + -u- + vela (veille, vigile). Littéralement 'cercle de la vigile'. Attention : siku désigne aussi 'sec/aride' (homophone) ; ici c'est 'cercle'.",
+          "nuance": "Composition sik-u-vela = siku (cercle) + -u- + vela (veille, vigile). Littéralement 'cercle de la vigile'. Ici siku porte le sens 'cercle' (forme sacrée), vs siku interrogatif (comment), homophone tranché par le contexte.",
           "registre": "sacré"
         }
       ]
@@ -147,7 +147,7 @@
           "categorie": "lieu_majeur",
           "note": "Structures gouvernementales",
           "definition": "Structures gouvernementales locales où sont prêtés et conservés les serments ; bâtiments qui grandissent au fil des générations comme artefacts multi-générationnels.",
-          "nuance": "Composition tal-u-savu = talu (hall) + -u- + savu (serment). Littéralement 'hall du serment'. Doublon avec 'Talusavu'.",
+          "nuance": "Composition tal-u-savu = talu (hall) + -u- + savu (serment). Littéralement 'hall du serment'. Entrée francisée du nom propre 'Talusavu'.",
           "registre": "sacré"
         }
       ]
@@ -165,7 +165,7 @@
           ],
           "categorie": "lieu_majeur",
           "definition": "Nom propre des Halls des Serments, sièges du pouvoir consociationnel et lieux de validation des serments.",
-          "nuance": "Composition tal-u-savu = talu (hall) + -u- + savu (serment). Forme identique à 'Halls des Serments' : doublon francisé / nom propre.",
+          "nuance": "Composition tal-u-savu = talu (hall) + -u- + savu (serment). Forme du nom propre, équivalente à l'entrée francisée 'Halls des Serments'.",
           "registre": "sacré"
         }
       ]
@@ -325,7 +325,7 @@
           "domaine": "lieu",
           "note": "Caverne, grotte profonde",
           "definition": "Caverne ou grotte profonde, terme générique désignant un abri souterrain naturel.",
-          "nuance": "Racine keku (forme liée kek-), domaine 'lieu'. À ne pas confondre avec keko (écho), voisine, qui entre dans Kekutoka. Terme courant.",
+          "nuance": "Racine keku (forme liée kek-), domaine 'lieu'. Distincte de keko (écho), racine voisine qui entre dans Kekutoka. Terme courant.",
           "registre": "courant"
         }
       ],

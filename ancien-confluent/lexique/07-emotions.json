@@ -83,17 +83,17 @@
     "curiosite": {
       "traductions": [
         {
-          "confluent": "koriusili",
+          "confluent": "siliota",
           "type": "composition",
-          "composition": "kor-i-sili",
+          "composition": "sili-ota",
           "sens_litteral": "Cœur du regard",
           "racines": [
-            "kori",
-            "sili"
+            "sili",
+            "ota"
           ],
           "domaine": "emotion_positive",
           "definition": "Cœur tendu vers le regard, désir d'observer et de comprendre l'inconnu.",
-          "nuance": "kori + sili (regard) — seule émotion liant le cœur au regard. Reflète la valeur d'observation. Vs 'espoir' : élan vers le savoir, pas vers l'aurore.",
+          "nuance": "Forme consolidée sur siliota : même concept que l'entrée parallèle du lexique (doublon inter-fichiers résolu, aligné sur la forme canonique).",
           "registre": "courant",
           "exemple": "va miki kori sili"
         }
@@ -113,7 +113,7 @@
           "domaine": "emotion_positive",
           "note": "Retour au bien après tension",
           "definition": "Détente du cœur qui retrouve le bien après une période de tension ou de peur.",
-          "nuance": "kori + tosa (bien), sans la liaison -a- de 'joie' (koriatosa). Subtil : joie = bien plein stable ; soulagement = retour transitoire au bien. NON doublon (absence de -a-).",
+          "nuance": "kori + tosa (bien), sans la liaison -a- de 'joie' (koriatosa). La distinction est portée par cette liaison : joie = bien plein et stable ; soulagement = retour transitoire au bien après tension.",
           "registre": "courant"
         }
       ]
@@ -131,7 +131,7 @@
           ],
           "domaine": "emotion_positive",
           "definition": "Cœur reposant sur la vérité, assurance accordée à autrui ou à une parole.",
-          "nuance": "kori + veri (vrai). Antonyme de 'méfiance' (korizoveli, cœur SANS vérité). Liée au Regard Partagé. Vs 'espoir' : repose sur une vérité acquise.",
+          "nuance": "kori + veri (vrai). Antonyme de 'méfiance' (silikonu, cœur SANS vérité). Liée au Regard Partagé. Vs 'espoir' : repose sur une vérité acquise.",
           "registre": "courant"
         }
       ]
@@ -307,18 +307,17 @@
     "mefiance": {
       "traductions": [
         {
-          "confluent": "korizoveli",
+          "confluent": "silikonu",
           "type": "composition",
-          "composition": "kor-i-zo-veli",
+          "composition": "sili-konu",
           "sens_litteral": "Cœur sans vérité",
           "racines": [
-            "kori",
-            "zo",
-            "veli"
+            "sili",
+            "konu"
           ],
           "domaine": "emotion_negative",
           "definition": "Cœur privé de vérité, soupçon et réserve face à autrui.",
-          "nuance": "kori + zo (négation) + veri (vérité) = cœur SANS vérité. Antonyme construit de la confiance. Valorisée comme 'méfiance prudente' face à l'Autre.",
+          "nuance": "Forme consolidée sur silikonu : même concept que l'entrée parallèle du lexique (doublon inter-fichiers résolu, aligné sur la forme canonique).",
           "registre": "courant"
         }
       ]
@@ -354,7 +353,7 @@
           ],
           "domaine": "emotion_negative",
           "definition": "Cœur dressé contre l'échange, envie de ce que possède ou reçoit autrui.",
-          "nuance": "kori + kiru (échanger). Forme alignée sur la racine attestée kiru (l'ancienne 'kilu' était une coquille). Vs 'haine' : la jalousie vise un bien convoité.",
+          "nuance": "kori + kiru (échanger), liaison -oa- : le cœur se dresse contre l'échange dont il est exclu. Vs 'haine' : la jalousie vise un bien convoité, non l'autre lui-même.",
           "registre": "courant"
         }
       ]

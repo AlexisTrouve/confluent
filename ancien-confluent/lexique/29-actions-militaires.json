@@ -15,7 +15,7 @@
           "domaine": "action_militaire",
           "note": "Prendre prisonnier",
           "definition": "Prendre un adversaire et le retenir prisonnier ; faire captif un ennemi vivant.",
-          "nuance": "Composition kon-uki : noyau konu (garder, var. de zaki/tenu) + idée de prise. Sens littéral 'prendre et garder'. DOUBLON IMPORTANT : trois autres formes pour 'capturer' coexistent — kapik (verbe attesté data, racine kapi), pasik (06-actions, spécialisation de pasak 'prendre' pour les êtres) et konumaki/konupaka (ce fichier, nuances de soumission). konuki insiste sur la rétention prolongée du captif (cf. Nanzagouet menés au Gouffre).",
+          "nuance": "Composition kon-uki : noyau konu (garder) + idée de prise. Sens littéral 'prendre et garder'. konuki insiste sur la rétention prolongée du captif vivant (cf. Nanzagouet menés au Gouffre). Vs pasik (06-actions, prise d'un être, sans la durée de rétention) et vs konumaki / konupaka (soumission de la volonté, non simple prise physique).",
           "registre": "courant",
           "exemple": "va aki su vo zoka su konuki"
         }
@@ -224,7 +224,7 @@
           "domaine": "action_militaire",
           "note": "Déguisement/subterfuge",
           "definition": "Adopter l'apparence d'un autre ; user de déguisement ou de subterfuge pour tromper.",
-          "nuance": "Verbe d'imposture : muka (visage) + -a- + kinu (rendre semblable) = adopter le visage/l'identité d'un autre. Forme corrigée — l'ancien 'mukavi' collisionnait avec joue (corps).",
+          "nuance": "Verbe d'imposture : muka (visage) + -a- + kinu (rendre semblable) = adopter le visage/l'identité d'un autre. Subterfuge tactique : prendre l'apparence d'autrui pour tromper l'adversaire.",
           "registre": "courant"
         }
       ],
@@ -270,7 +270,7 @@
           "domaine": "tactique_militaire",
           "note": "Surveillance des ennemis",
           "definition": "Surveillance vigilante des ennemis ; guet militaire pour anticiper leurs mouvements.",
-          "nuance": "Acte de regarder avec attention avant d'agir (forme alignée sur 12-abstraits). Forme corrigée — 'silikonu' (regard gardé) est réservé à 'méfiance'.",
+          "nuance": "Composition sili-mira : sili (regard) + mira (gardé, vigilant). Sens littéral 'regard gardé/vigilant'. Acte de regarder avec attention avant d'agir, appliqué au guet militaire. Vs silikonu (méfiance, regard gardé sur l'Autre par précaution) : silimira vise l'anticipation des mouvements ennemis.",
           "registre": "courant",
           "exemple": "va aki su vo zoka silikonu"
         }
@@ -318,7 +318,7 @@
           "domaine": "tactique_militaire",
           "note": "Tactique de surprise",
           "definition": "Attaque par surprise menée depuis une position dissimulée ; guet-apens.",
-          "nuance": "Composition konu-sili : konu (garder) + sili (regard). Sens littéral 'garde cachée qui observe'. DOUBLON IMPORTANT : 'embuscade' existe aussi en zokuzana (zok-u-zana, 12-abstraits) = 'secret de chasse', via la dissimulation (seku/zoku). konusili insiste sur le guet posté (garde + observation), zokuzana sur le secret de la traque. Noter l'inversion exacte des racines avec silikonu (observation, ci-dessus) : mêmes composants, sens distincts selon l'ordre — silikonu = surveiller, konusili = se poster pour frapper.",
+          "nuance": "Composition konu-sili : konu (garder) + sili (regard). Sens littéral 'garde cachée qui observe'. konusili insiste sur le guet posté (garde + observation, se poster pour frapper). Vs konusili (12-abstraits, 'secret de chasse'), qui met l'accent sur le secret de la traque via la dissimulation. Inversion exacte des racines avec silikonu (méfiance, 28-étrangers, sili + konu) : mêmes composants, sens distincts selon l'ordre.",
           "registre": "courant"
         }
       ],

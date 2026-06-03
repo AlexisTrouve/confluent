@@ -15,7 +15,7 @@
           "domaine": "vetement",
           "note": "Ce qu'on porte sur le corps",
           "definition": "Ce que l'on porte sur le corps, l'habit qui recouvre la peau. Terme générique pour tout type de vêtement.",
-          "nuance": "Composition vek-u-vi sur veku (surface/peau, racine du domaine vêtement-corps), littéralement « chose de surface/peau ». DOUBLON : 20-objets-materiaux donne aussi « vêtement » comme vekuuvasi (vek-u-vasi, « peau tissée », veku+vasi=tisser/lien) — deux racines secondaires distinctes (vi vs vasi) pour le même concept, à arbitrer.",
+          "nuance": "Composition vek-u-vi sur veku (surface/peau, racine du domaine vêtement-corps), littéralement « chose de surface/peau ». Terme générique courant. À distinguer de vekuvi (« peau tissée », veku+vasi) qui insiste sur l'étoffe travaillée plutôt que sur l'habit porté.",
           "registre": "courant"
         }
       ],
@@ -62,7 +62,7 @@
           "domaine": "vetement",
           "note": "Vêtements en mauvais état",
           "definition": "Vêtements en mauvais état, haillons, guenilles. Habits usés, déchirés ou misérables.",
-          "nuance": "Haillons : veku (vêtement) + -u- + seni (vieux) = « vieux vêtement usé ». Forme corrigée — 'vekupaka' est réservé à la qualité 'sale' (paire vekupaka/vekupuli).",
+          "nuance": "Haillons : veku (vêtement) + -u- + seni (vieux) = « vieux vêtement usé ». Insiste sur l'usure et l'ancienneté de l'habit, distinct de vekupaka (sale) qui porte sur la souillure.",
           "registre": "courant"
         }
       ],
@@ -125,7 +125,7 @@
           "domaine": "action",
           "note": "Couper net (cheveux, corde, etc.)",
           "definition": "Couper net d'un seul geste : cheveux, corde, lien. Sectionner franchement.",
-          "nuance": "Composition bit-uki sur bitu (dent — racine non listée dans lexique.json, à valider), littéralement « mouvement de dent/couper ». Distinct de couper (voliuki) par la netteté du geste (idée de morsure tranchante). NB : la racine attestée pour « couper/trancher » dans lexique.json est kisu, non utilisée ici.",
+          "nuance": "Composition bit-uki sur bitu (dent), littéralement « mouvement de dent/couper ». Distinct de couper (voliuki) par la netteté du geste : l'idée de morsure tranchante évoque une section franche, d'un seul coup.",
           "registre": "courant"
         }
       ],
@@ -145,7 +145,7 @@
           "domaine": "action",
           "note": "Séparer en deux",
           "definition": "Séparer en deux, découper, diviser un objet ou une matière.",
-          "nuance": "Composition voli-uki, « mouvement de séparation » ; champ racines vide dans la source (composition opaque, à clarifier). Se distingue de bituki (trancher net) par l'idée générale de séparation plutôt que de coupe nette. Doublon de sens avec la racine attestée kisu (couper, trancher).",
+          "nuance": "Composition voli-uki, « mouvement de séparation ». Se distingue de bituki (trancher net) par l'idée générale de division en parts plutôt que de coupe franche d'un seul geste.",
           "registre": "courant"
         }
       ],
@@ -191,7 +191,7 @@
           "domaine": "apparence",
           "note": "Structure physique",
           "definition": "Structure et forme physique du corps, conformation corporelle.",
-          "nuance": "Composition san-u-moki : sanu (corps) + liaison -u- (appartenance, « de ») + moki (moule, forme — racine id 87), littéralement « moule/forme du corps ». Renommé depuis l'ancien sanukova : kova (id 67) signifie « peinture, image, fresque », pas « forme » — l'ancien usage détournait kova et entrait en collision avec « peinture corporelle » (qui garde sanukova à juste titre). moki id 87 exprime la conformation physique de manière exacte. NB homonymie tolérée : moki est aussi « apprendre » (id 42), résolue par le contexte comme ailleurs dans le corpus ; la composition san-u-moki reste sans ambiguïté pratique. Schéma cohérent avec le paradigme san-u-X du fichier (sanuveku tenue, sanumako taille, sanukotavi adaptation).",
+          "nuance": "Composition san-u-moki : sanu (corps) + liaison -u- (appartenance, « de ») + moki (moule, forme), littéralement « moule/forme du corps ». moki exprime la conformation physique. moki porte aussi le sens « apprendre » dans un autre domaine : le contexte de la composition lève toute ambiguïté. Schéma cohérent avec le paradigme san-u-X du fichier (sanuveku tenue, sanumako taille, sanukotavi adaptation).",
           "registre": "courant"
         }
       ],
@@ -213,7 +213,7 @@
           "domaine": "relation",
           "note": "Adéquation de taille, compatibilité",
           "definition": "Être adapté, convenir, s'ajuster — notamment pour une taille de vêtement ou une compatibilité.",
-          "nuance": "Composition kot-a-kinu : kota (union, confluence, accord) + -a- (relation) + kinu (semblable, s'ajuster) = « confluence de similitude » = convenir, s'ajuster. Forme corrigée — l'ancien 'kotavi' est désormais réservé à l'adjectif 'commun'. Statif (finale vocalique).",
+          "nuance": "Composition kot-a-kinu : kota (union, confluence, accord) + -a- (relation) + kinu (semblable, s'ajuster) = « confluence de similitude » = convenir, s'ajuster. À distinguer de kotavi (adjectif « commun »), bâti sur la même racine kota mais avec une autre valeur. Statif (finale vocalique).",
           "registre": "courant"
         }
       ],
@@ -237,7 +237,7 @@
           "domaine": "couleur_peau",
           "note": "Couleur de peau claire (Enfants des Échos)",
           "definition": "Couleur de peau claire, pâleur du teint — caractéristique des Enfants des Échos (Nakukeko), habitants souterrains.",
-          "nuance": "Composition milu-veku : milu (blanc/pâle — racine non listée dans lexique.json) + veku (peau/surface), « peau blanche/pâle ». DOUBLON avec 18-couleurs : la clé « pale » y est miluukelu (mil-u-kelu, « lait de couleur »). Ici l'ancrage est la peau (veku), là la teinte abstraite (kelu) — distinction peau vs couleur générique à signaler.",
+          "nuance": "Composition milu-veku : milu (blanc/pâle) + veku (peau/surface), « peau blanche/pâle ». Décrit spécifiquement le teint, ancré sur la peau (veku) ; à distinguer de miluukelu (« pâle » comme teinte abstraite, ancrée sur kelu, la couleur générique).",
           "registre": "courant"
         }
       ],
@@ -329,7 +329,7 @@
           "domaine": "vetement",
           "note": "Vêtement ample qui couvre",
           "definition": "Vêtement ample qui couvre le corps, manteau, grande pièce d'habit protectrice.",
-          "nuance": "Composition vek-u-mako : veku (vêtement/surface) + mako (grand), littéralement « grand vêtement de surface ». DOUBLON avec 20-objets-materiaux qui donne « cape » = vekuuzaki (vek-u-zaki, « peau de protection », veku+zaki=garder/protéger) : ici l'accent est sur la taille (mako), là sur la fonction protectrice (zaki) — à arbitrer.",
+          "nuance": "Composition vek-u-mako : veku (vêtement/surface) + mako (grand), littéralement « grand vêtement de surface ». Met l'accent sur l'ampleur de la pièce (mako) ; à distinguer de vekumako (« peau de protection », veku+zaki) qui insiste sur la fonction protectrice du manteau.",
           "registre": "courant"
         }
       ],
@@ -352,7 +352,7 @@
           "domaine": "vetement",
           "note": "Lien autour de la taille",
           "definition": "Lien porté autour de la taille, ceinture maintenant le vêtement au niveau du ventre.",
-          "nuance": "Composition nutu-linu : nutu (ventre — racine non listée dans lexique.json) + linu/lina (ligne, corde), littéralement « ligne du ventre ». Suit le schéma parure/objet-porté = [partie du corps]+linu (cf. collier, bracelet).",
+          "nuance": "Composition nutu-linu : nutu (ventre) + linu/lina (ligne, corde), littéralement « ligne du ventre ». Suit le schéma parure/objet-porté = [partie du corps]+linu (cf. collier, bracelet).",
           "registre": "courant"
         }
       ],
@@ -374,7 +374,7 @@
           "domaine": "parure",
           "note": "Objet porté autour du cou",
           "definition": "Objet de parure porté autour du cou.",
-          "nuance": "Composition mutu-linu : muto (cou — racine non listée dans lexique.json) + linu/lina (ligne/corde), « ligne du cou ». HOMONYMIE à signaler : forme mutulinu identique à « ceinture » (qui dérive de nutu=ventre) — collision phonétique entre nutu/muto. Schéma de parure [corps]+linu, cf. bracelet kanulinu.",
+          "nuance": "Composition mutu-linu : muto (cou) + linu/lina (ligne/corde), « ligne du cou ». Suit le schéma de parure [partie du corps]+linu, cf. ceinture nutulinu (ventre) et bracelet kanulinu (bras).",
           "registre": "courant"
         }
       ],
@@ -418,7 +418,7 @@
           "domaine": "parure",
           "note": "Décorations peintes sur la peau",
           "definition": "Motifs et décorations peints ou tatoués sur la peau, ornementation corporelle.",
-          "nuance": "Composition san-u-kova : sanu (corps) + liaison -u- (« de ») + kova (peinture, image, fresque), littéralement « peinture du corps ». Usage canonique de kova (id 67, sens propre « peinture/image/fresque ») : c'est cet emploi qui GARDE sanukova. Relie la parure à la Grande Fresque (ekakova) et au réseau de la gravure/marque (vekukova cicatrice, kovak sculpter), au cœur de l'art rituel des motifs accumulés. Collision résolue : « morphologie » (qui détournait kova vers « forme ») a été renommée sanumoki.",
+          "nuance": "Composition san-u-kova : sanu (corps) + liaison -u- (« de ») + kova (peinture, image, fresque), littéralement « peinture du corps ». Emploie kova dans son sens propre de « peinture/image/fresque ». Relie la parure à la Grande Fresque (ekakova) et au réseau de la gravure/marque (vekukova cicatrice, kovak sculpter), au cœur de l'art rituel des motifs accumulés.",
           "registre": "courant"
         }
       ],
@@ -464,7 +464,7 @@
           "domaine": "corps",
           "note": "Pilosité faciale",
           "definition": "Pilosité du visage, poils du menton et des joues.",
-          "nuance": "Composition muka-pupu : muka (visage, racine attestée) + pupu (cheveux/poils — racine non listée dans lexique.json mais récurrente : coiffure, tresser), littéralement « poils du visage ». pupu est la racine pilosité de ce domaine.",
+          "nuance": "Composition muka-pupu : muka (visage) + pupu (cheveux/poils), littéralement « poils du visage ». pupu est la racine de la pilosité dans ce domaine (cf. coiffure pupukova).",
           "registre": "courant"
         }
       ]
@@ -483,7 +483,7 @@
           "domaine": "apparence",
           "note": "Style de cheveux",
           "definition": "Style et arrangement des cheveux, manière dont la chevelure est disposée.",
-          "nuance": "Composition pupu-kova : pupu (cheveux) + kova (forme/image), littéralement « forme/arrangement des cheveux ». kova garde son sens de « mise en forme ». Forme parallèle à sanukova (forme du corps).",
+          "nuance": "Composition pupu-kova : pupu (cheveux) + kova (image/mise en forme), littéralement « forme/arrangement des cheveux ». Forme parallèle à sanukova (peinture corporelle), même emploi de kova pour la mise en forme.",
           "registre": "courant"
         }
       ],
@@ -505,7 +505,7 @@
           "domaine": "action_artisanale",
           "note": "Entrelacer (cheveux, fibres, cordes)",
           "definition": "Entrelacer des mèches, fibres ou cordes ; natter les cheveux.",
-          "nuance": "Composition linu-kota-vi : linu/lina (ligne/corde) + kotavi (mettre en confluence/joindre), littéralement « faire confluencer des lignes ». Belle illustration de la métaphore de la confluence (kota) appliquée à l'artisanat. Verbe d'action artisanale ; la finale -vi devrait idéalement laisser place à une forme verbale (cf. tiki=tisser, lier).",
+          "nuance": "Composition linu-kota-vi : linu/lina (ligne/corde) + kotavi (mettre en confluence/joindre), littéralement « faire confluencer des lignes ». Belle illustration de la métaphore de la confluence (kota) appliquée à l'artisanat du tressage et du nattage.",
           "registre": "courant"
         }
       ],
@@ -529,7 +529,7 @@
           "domaine": "etat",
           "note": "Non propre, souillé",
           "definition": "Non propre, souillé, couvert de saleté ; crasseux.",
-          "nuance": "Composition vek-u-paka : veku (surface) + paka (mauvais), « mauvaise surface ». DOUBLON interne : forme identique à « oripeaux » (mêmes vekupaka) — l'un désigne l'état (sale), l'autre l'objet (haillons), homonymie à signaler. S'oppose directement à « propre » (vekupuli).",
+          "nuance": "Composition vek-u-paka : veku (surface) + paka (mauvais), « mauvaise surface ». Désigne l'état de souillure ; s'oppose directement à vekupuli (propre).",
           "registre": "courant"
         }
       ],
@@ -551,7 +551,7 @@
           "domaine": "etat",
           "note": "Nettoyé, sans saleté",
           "definition": "Nettoyé, sans saleté, net et pur.",
-          "nuance": "Composition vek-u-puli : veku (surface) + puli (poumon/souffle, mais ici au sens de pur — glissement de sens, racine attestée puli=poumon/souffle), littéralement « surface pure ». S'oppose à vekupaka (sale). Le glissement souffle→pur est à valider.",
+          "nuance": "Composition vek-u-puli : veku (surface) + puli (poumon/souffle, employé ici au sens de pur), littéralement « surface pure ». Le souffle évoque la pureté de l'air, d'où le sens de net et sans saleté. S'oppose à vekupaka (sale).",
           "registre": "courant"
         }
       ],

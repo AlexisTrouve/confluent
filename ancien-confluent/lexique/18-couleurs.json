@@ -15,7 +15,7 @@
           ],
           "domaine": "couleur",
           "definition": "Couleur orangée, teinte du feu éclairé par la lumière. Tonalité chaude associée aux flammes et aux lueurs du jour.",
-          "nuance": "Composition suk-i-sola : suki (feu) + liaison agent -i- + sora (soleil, lumière), litt. « feu de lumière ». L'orangé fait partie de la palette de l'aurore (rouge/orangé/violet), couleur du sang du seuil et des yeux des Ciels-clairs, ce qui lui donne une charge liminale latente. Ici le glissement -sola provient de sora (assimilation finale en composition).",
+          "nuance": "Composition suk-i-sora : suki (feu) + liaison agent -i- + sora (soleil, lumière), litt. « feu de lumière ». L'orangé fait partie de la palette de l'aurore (rouge/orangé/violet), couleur du sang du seuil et des yeux des Ciels-clairs, ce qui lui donne une charge liminale latente.",
           "registre": "courant",
           "exemple": "va miki vo sukiusola miraku"
         }
@@ -34,7 +34,7 @@
           ],
           "domaine": "couleur",
           "definition": "Couleur violette ou pourpre, teinte du ciel teinté de sang. Couleur la plus liminale de la palette de l'aurore.",
-          "nuance": "Composition zer-u-pasu : zeru (ciel) + liaison appartenance -u- + pasu (rouge), litt. « ciel de sang ». Le violet est la couleur reine de l'aurore (sang du seuil) et celle des yeux des Ciels-clairs les plus élevés ; charge sacrée maximale. Synonyme français : pourpre. La finale -lasu est l'altération de pasu en composition.",
+          "nuance": "Composition zer-u-pasu : zeru (ciel) + liaison appartenance -u- + pasu (rouge), litt. « ciel de sang ». Le violet est la couleur reine de l'aurore (sang du seuil) et celle des yeux des Ciels-clairs les plus élevés ; charge sacrée maximale. Synonyme français : pourpre.",
           "registre": "sacré"
         }
       ],
@@ -180,7 +180,7 @@
           ],
           "domaine": "qualificatif",
           "definition": "Pâle, délavé, à la couleur affaiblie. Qualifie une teinte tirant vers le laiteux.",
-          "nuance": "Composition mil-u-kelu : milu (lait) + liaison appartenance -u- + kelu (couleur, teinte), litt. « lait de couleur ». Qualificatif construit sur kelu (couleur), avec ici la variante -kelu. Évoque la pâleur des Enfants des Échos (souterrains). Pluriel français : pâles.",
+          "nuance": "Composition mil-u-kelu : milu (blanc, laiteux) + liaison appartenance -u- + kelu (couleur, teinte), litt. « lait de couleur ». Qualificatif construit sur kelu (couleur) : une teinte tirée vers le blanc laiteux. Évoque la pâleur des Enfants des Échos (souterrains). Pluriel français : pâles.",
           "registre": "courant"
         }
       ],
@@ -224,7 +224,7 @@
           ],
           "domaine": "qualificatif",
           "definition": "Translucide, qui laisse passer la lumière comme l'eau. Qualité d'une matière claire et fluide à la lumière.",
-          "nuance": "Composition sol-a-ula : sora (soleil, lumière) + liaison relation -a- (avec) + ura (eau, fluide), litt. « lumière avec eau ». Implique la racine sacrée ura ; double voyelle euphonique (-uula) au point de jonction. Pluriel français : translucides.",
+          "nuance": "Composition sor-a-ura : sora (soleil, lumière) + liaison relation -a- (avec) + ura (eau, fluide), litt. « lumière avec eau ». Implique la racine sacrée ura ; double voyelle euphonique (-uura) au point de jonction. Pluriel français : translucides.",
           "registre": "courant"
         }
       ],
@@ -278,7 +278,7 @@
           ],
           "domaine": "qualificatif",
           "definition": "Patine, couleur déposée par le temps sur une surface ancienne. Teinte vieillie d'un objet transmis.",
-          "nuance": "Composition kol-u-aita : kelu (couleur, teinte) + liaison appartenance -u- + aita (ancêtre, ancien), litt. « couleur des ancêtres ». La racine sacrée aita (ancêtre) charge le mot d'une dimension de transmission : la patine est la marque du temps sur les artefacts multi-générationnels (Grande Fresque, Autels). La variante kol- correspond à kelu. Pluriel français : patines.",
+          "nuance": "Composition kel-u-aita : kelu (couleur, teinte) + liaison appartenance -u- + aita (ancêtre, ancien), litt. « couleur des ancêtres ». La racine sacrée aita (ancêtre) charge le mot d'une dimension de transmission : la patine est la marque du temps sur les artefacts multi-générationnels (Grande Fresque, Autels). Pluriel français : patines.",
           "registre": "rituel"
         }
       ],
@@ -312,7 +312,7 @@
           ],
           "domaine": "art",
           "definition": "Bas-relief, gravure en saillie taillée dans la pierre. Œuvre sculptée du domaine artistique.",
-          "nuance": "Composition kov-a-kari : kova (peinture, image, fresque) + liaison relation -a- (avec) + kari (pierre, roche), litt. « gravure avec pierre ». Apparenté au verbe kovak (sculpter). Note : la composition lie ici kova au sens de gravure/relief, et non de fresque peinte.",
+          "nuance": "Composition kov-a-kari : kova (peinture, image, fresque) + liaison relation -a- (avec) + kari (pierre, roche), litt. « gravure avec pierre ». Apparenté au verbe kovak (sculpter). Ici kova est pris au sens de gravure/relief taillé, et non de fresque peinte.",
           "registre": "courant"
         }
       ]
@@ -330,7 +330,7 @@
           ],
           "domaine": "art",
           "definition": "Motif, dessin gravé en cercles ou en figures répétées. Ornement du domaine artistique.",
-          "nuance": "Composition kov-a-siku : kova (peinture, image, fresque) + liaison relation -a- (avec) + siku (cercle, anneau), litt. « gravure avec cercle ». La finale -liku est l'altération de siku en composition. Renvoie aux Cercles de Vigile (Sikuvela) et aux glyphes modulaires.",
+          "nuance": "Composition kov-a-siku : kova (peinture, image, fresque) + liaison relation -a- (avec) + siku (cercle, anneau), litt. « gravure avec cercle ». Renvoie aux Cercles de Vigile (Sikuvela) et aux glyphes modulaires.",
           "registre": "courant"
         }
       ]

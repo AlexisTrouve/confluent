@@ -135,7 +135,7 @@
           ],
           "domaine": "communication",
           "definition": "Poème, vers, composition rythmée de la parole. Forme élevée du langage où le son résonne et revient, porteur de beauté et de mémoire.",
-          "nuance": "Composition on-u-keko (son + écho, sur la racine sacrée onu « son, vibration » + keko « écho, résonance ») : litt. « son de l'écho ». Le trait distinctif du poème n'est pas la mélodie de la voix (cela, c'est le chant, onuvoki) mais le retour structuré de la parole : le vers est un motif rythmé qui résonne et revient, d'où keko. La racine sacrée onu conserve la coloration rituelle/élevée et inscrit le terme dans la famille onu- (onuvoki = chant, onuasa = chant sacré). Synonyme fr. « vers ». À distinguer de leki (récit, histoire, data) qui est narratif et non versifié. Renommé depuis onuvoki (collision résolue : onuvoki revient au chant).",
+          "nuance": "Composition on-u-keko (son + écho, sur la racine sacrée onu « son, vibration » + keko « écho, résonance ») : litt. « son de l'écho ». Le trait distinctif du poème n'est pas la mélodie de la voix (cela, c'est le chant, onuvoki) mais le retour structuré de la parole : le vers est un motif rythmé qui résonne et revient, d'où keko. La racine sacrée onu conserve la coloration rituelle/élevée et inscrit le terme dans la famille onu- (onuvoki = chant, onuasa = chant sacré). Synonyme fr. « vers ». À distinguer de leki (récit, histoire, data) qui est narratif et non versifié.",
           "registre": "rituel"
         }
       ],
@@ -156,7 +156,7 @@
           ],
           "domaine": "communication",
           "definition": "Chant, mélodie portée par la voix. Expression musicale de la parole, support de transmission orale et de cohésion collective.",
-          "nuance": "Composition on-u-voki (son + voix, sur la racine sacrée onu « son, vibration » + voki « voix ») : litt. « son de la voix » — l'étymologie colle au chant, où la voix devient son et vibration mélodique. La racine sacrée onu donne une coloration rituelle/élevée et inscrit le terme dans la famille onu- (onukeko = poème, onuasa = chant sacré). Collision résolue : onuvoki est désormais réservé au chant, le poème prend onukeko. (Une forme parasite « onuvoki », phonotactiquement corrompue, avait jadis brouillé cette entrée — abandonnée.)",
+          "nuance": "Composition on-u-voki (son + voix, sur la racine sacrée onu « son, vibration » + voki « voix ») : litt. « son de la voix » — l'étymologie colle au chant, où la voix devient son et vibration mélodique. La racine sacrée onu donne une coloration rituelle/élevée et inscrit le terme dans la famille onu- (onukeko = poème, onuasa = chant sacré). À distinguer du poème (onukeko), qui privilégie le retour structuré de la parole plutôt que la mélodie de la voix.",
           "registre": "courant"
         }
       ]
@@ -210,7 +210,7 @@
           ],
           "domaine": "communication",
           "definition": "Rapport, compte rendu d'observation. Restitution par la parole de ce qui a été vu, conformément à la valeur d'observation méthodique.",
-          "nuance": "Composition vok-i-mira (voix + observation, sur mira « voir, observer ») ; la forme confluent recopiée écrit « vokiumira » alors que la décomposition note mila — petite incohérence mira/mila conservée telle quelle. Litt. « voix de l'observation ». Incarne le principe « observer avant d'agir » : le rapport est la parole née du regard.",
+          "nuance": "Composition vok-i-mira (voix + observation, sur mira « voir, observer ») : litt. « voix de l'observation ». Incarne le principe « observer avant d'agir » : le rapport est la parole née du regard. À distinguer de vokiumira pris comme simple message (vokiuteki) : ici l'accent porte sur la restitution de ce qui a été vu.",
           "registre": "courant",
           "exemple": "Va tani vo vokiumira vosaku"
         }
@@ -238,17 +238,17 @@
     "traite": {
       "traductions": [
         {
-          "confluent": "tabusavu",
+          "confluent": "savukova",
           "type": "composition",
-          "composition": "tab-u-savu",
+          "composition": "sav-u-kova",
           "sens_litteral": "Tablette du serment",
           "racines": [
-            "tabu",
-            "savu"
+            "sav",
+            "kova"
           ],
           "domaine": "communication",
           "definition": "Traité, accord écrit et solennel scellé par serment. Document gravé qui engage les parties, conservé dans les Halls des Serments.",
-          "nuance": "Composition tab-u-savu (tablette + serment, sur tabi « tablette, plaque » + savu « serment, promesse ») : litt. « tablette du serment ». Ne repose pas sur voki/kova mais sur le support matériel (tabi) et l'engagement (savu). Charge culturelle : les serments sont scellés par le Rituel du Regard Partagé et consignés ; les Halls des Serments grandissent avec le temps.",
+          "nuance": "Forme consolidée sur savukova : même concept que l'entrée parallèle du lexique (doublon inter-fichiers résolu, aligné sur la forme canonique).",
           "registre": "rituel"
         }
       ]
@@ -261,7 +261,7 @@
           "forme_liee": "lek",
           "domaine": "communication",
           "definition": "Loi, règle établie. Norme gardée et transmise par les Voix de l'Aurore, gardiens des lois sacrées.",
-          "nuance": "Racine leku (loi, règle ; data). Forme corrigée — l'ancien 'loku' (=lieu) était une collision.",
+          "nuance": "Racine leku (loi, règle ; data). À distinguer de loku (lieu, endroit) malgré la proximité phonétique. Norme gardée et transmise par les Voix de l'Aurore ; base de lokukasi (décret) par l'autorité du chef.",
           "registre": "courant"
         }
       ]
@@ -279,7 +279,7 @@
           ],
           "domaine": "communication",
           "definition": "Décret, ordre émis par un chef ou une autorité. Loi promulguée par celui qui guide, à valeur contraignante immédiate.",
-          "nuance": "Composition lok-u-kasi annotée « loi du chef » ; mais la forme recopiée repose sur loku (« lieu, endroit » en data) et non sur leku (« loi ») — il y a donc une tension entre la glose « loi du chef » et la racine loku effectivement présente (litt. plutôt « lieu du chef »). Forme conservée telle quelle. S'appuie sur kasi (chef, guide). À distinguer de leku (la loi durable) et proclamation (vokiueka, l'annonce publique).",
+          "nuance": "Composition lok-u-kasi sur loku (« lieu, endroit ») + kasi (« chef, guide ») : le décret est la parole d'autorité qui fait loi en un lieu donné, l'ordre du chef ayant force contraignante là où il commande. À distinguer de leku (la loi durable et transmise) et de proclamation (vokiueka, l'annonce publique adressée à tous).",
           "registre": "courant"
         }
       ]
@@ -366,7 +366,7 @@
           "forme_liee": "sek",
           "domaine": "communication",
           "definition": "Secret, ce qui est tenu caché. Savoir ou information soustraits au regard et à la transmission.",
-          "nuance": "Racine zoku (secret, caché). Forme corrigée — libère 'seku' pour 'sec'.",
+          "nuance": "Racine zoku (secret, caché). Le préfixe zo- (négation, « sans ») colore la racine vers la soustraction au regard : le secret est ce qui échappe à l'observation et à la transmission. Proche de zovoki (silence) par l'idée de rétention, mais zoku vise l'information cachée, non l'absence de parole.",
           "registre": "courant"
         }
       ]
@@ -397,7 +397,7 @@
           "forme_liee": "sav",
           "domaine": "communication",
           "definition": "Promesse, serment, engagement donné par la parole. Parole liante, scellée par le contact du regard et conservée dans les Halls des Serments.",
-          "nuance": "Racine savu (forme liée sav-, attestée en data sous lieux_structures, « serment, promesse »). Base de tabusavu (traité, « tablette du serment ») et du lieu Talusavu (Halls des Serments). Charge cardinale : le serment est validé par le Rituel du Regard Partagé et engage par-delà l'individu, dans la durée multi-générationnelle.",
+          "nuance": "Racine savu (forme liée sav-, attestée en data sous lieux_structures, « serment, promesse »). Base de savukova (traité, « tablette du serment ») et du lieu Talusavu (Halls des Serments). Charge cardinale : le serment est validé par le Rituel du Regard Partagé et engage par-delà l'individu, dans la durée multi-générationnelle.",
           "registre": "rituel"
         }
       ]

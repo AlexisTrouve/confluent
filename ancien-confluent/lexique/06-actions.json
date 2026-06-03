@@ -14,7 +14,7 @@
           "domaine": "action",
           "note": "Verbe fondamental lié à l'observation",
           "definition": "Percevoir par les yeux, observer. Verbe fondamental de la civilisation des Siliaska, pour qui l'observation précède toute action.",
-          "nuance": "Racine verbale mira (voir, observer), forme liée mil-. Suffixe -k typique des verbes de perception. Couvre voir, regarder, observer indifféremment. À distinguer de mirak/milis 'découvrir' (voir pour la première fois) et de tikam 'écouter' (perception auditive). Conjugaison par conjugateurs suffixés (miraku présent, mirakat passé vécu, mirakem futur).",
+          "nuance": "Racine verbale mira (voir, observer), forme liée mil-. Suffixe -k typique des verbes de perception. Couvre voir, regarder, observer indifféremment. À distinguer de milis 'découvrir' (voir pour la première fois) et de tikam 'écouter' (perception auditive). Conjugaison par conjugateurs suffixés (miraku présent, mirakat passé vécu, mirakem futur).",
           "registre": "courant",
           "exemple": "va naki vo ura miraku"
         }
@@ -106,7 +106,7 @@
           "domaine": "action",
           "note": "Marcher, se déplacer à pied",
           "definition": "Se déplacer à pied, avancer pas à pas.",
-          "nuance": "Racine verbale teka (marcher), forme liée tek-, très proche de teki 'aller'. Suffixe -m. Précise le mode de déplacement (à pied) là où tekis 'aller' reste générique. Doublon de racine quasi homophone avec tekis/tekun : la distinction se fait par le sens et la finale.",
+          "nuance": "Racine verbale teka (marcher), forme liée tek-, proche de teki 'aller'. Suffixe -m. Précise le mode de déplacement (à pied) là où tekis 'aller' reste générique. Membre de la famille du déplacement avec tekis 'aller' et tekun 'fuir', distingués par le sens et la finale verbale.",
           "registre": "courant",
           "exemple": "va tori vi tasa tekamu"
         }
@@ -237,7 +237,7 @@
           "structure": "CVCVC",
           "domaine": "action",
           "definition": "Réaliser, créer, accomplir. Verbe d'action et de création par excellence.",
-          "nuance": "Racine verbale neka (faire, créer), forme liée nek-. Suffixe -n d'action/création. Verbe très productif : même racine pour nekis 'construire' (création matérielle) et nekas 'devoir' (obligation, lié à œuvre/tâche). Distinct de samuk 'assembler' et lokun 'construire' (variantes de fabrication).",
+          "nuance": "Racine verbale neka (faire, créer), forme liée nek-. Suffixe -n d'action/création. Verbe très productif : même racine pour nekis 'construire' (création matérielle) et nekas 'devoir' (obligation, lié à œuvre/tâche). Distinct de kotak 'assembler' (joindre des éléments).",
           "registre": "courant"
         }
       ],
@@ -263,7 +263,7 @@
           "structure": "CVCVC",
           "domaine": "action",
           "definition": "Énoncer par la parole, communiquer oralement.",
-          "nuance": "Racine verbale vosa (dire, parler), forme liée vos-. Suffixe -k. Verbe générique de la parole, englobe parler, murmurer, chuchoter. À distinguer de paru/paruk 'débattre, discuter' (échange argumenté) et de vokis 'invoquer' (appel rituel, racine voki=voix).",
+          "nuance": "Racine verbale vosa (dire, parler), forme liée vos-. Suffixe -k. Verbe générique de la parole, englobe parler, murmurer, chuchoter. À distinguer de la racine voki (voix, parole), réservée à l'appel et à la dimension rituelle de la voix.",
           "registre": "courant"
         }
       ],
@@ -345,7 +345,7 @@
           "domaine": "action",
           "note": "Enseigner, passer le savoir",
           "definition": "Passer le savoir, enseigner. Acte fondateur de la civilisation : garder le savoir pour soi est une trahison.",
-          "nuance": "Racine verbale kisu (transmettre, enseigner), forme liée kis-. Suffixe -n. Verbe central de la culture, souvent employé au passé ancestral (kisunit) ou éternel (kisuneom). Pôle émetteur opposé à mokis 'apprendre'. Attention : une racine homophone kisu signifie aussi 'couper, trancher' (homonymie).",
+          "nuance": "Racine verbale kisu (transmettre, enseigner), forme liée kis-. Suffixe -n. Verbe central de la culture, souvent employé au passé ancestral (kisunit) ou éternel (kisuneom). Pôle émetteur opposé à mokis 'apprendre'.",
           "registre": "rituel"
         }
       ],
@@ -466,7 +466,7 @@
           "domaine": "action_spirituelle",
           "note": "Utiliser le son sacré",
           "definition": "Appeler les esprits par le son sacré. Acte rituel.",
-          "nuance": "Racine verbale onu (son, vibration), racine sacrée, forme liée on-, structure VCVC. Utilise le son sacré (onu, racine des rhombes et du rituel) pour appeler les esprits. À distinguer de vokis 'invoquer' (racine voki=voix) listé ailleurs : onak privilégie la vibration sacrée, vokis l'appel vocal.",
+          "nuance": "Racine verbale onu (son, vibration), racine sacrée, forme liée on-, structure VCVC. Utilise le son sacré (onu, racine des rhombes et du rituel) pour appeler les esprits : onak privilégie la vibration sacrée, là où la racine voki (voix) relève de l'appel vocal.",
           "registre": "sacré"
         }
       ]
@@ -482,7 +482,7 @@
           "structure": "VCVC",
           "domaine": "action_spirituelle",
           "definition": "Conférer une grâce sacrée, sanctifier. Acte des chamans Voix de l'Aurore.",
-          "nuance": "Racine verbale asa (sacré, divin), racine sacrée, forme liée as-, structure VCVC. Verbe de bénédiction directement issu du concept de sacré. Doublon fonctionnel avec tosan 'bénir' (racine tosa=bon/bien) attesté dans data : asak insiste sur la dimension divine, tosan sur le souhait de bien.",
+          "nuance": "Racine verbale asa (sacré, divin), racine sacrée, forme liée as-, structure VCVC. Verbe de bénédiction directement issu du concept de sacré : bénir, c'est conférer la dimension divine (asa), distinct de la racine tosa (bon, bien) qui exprime le souhait de bien.",
           "registre": "sacré"
         }
       ],
@@ -518,7 +518,7 @@
           "structure": "VCVC",
           "domaine": "action_sacree",
           "definition": "Cesser de vivre, passer vers les ancêtres. Étape du cycle sacré.",
-          "nuance": "Racine verbale osi (mort, mourir), racine sacrée, forme liée os-, structure VCVC. Verbe du cycle sacré : la mort est un passage vers les Premiers Ancêtres, non une fin. Variante osian attestée dans data avec le suffixe -n. Liée aux formules funéraires (l'âme anu vers l'origine ena).",
+          "nuance": "Racine verbale osi (mort, mourir), racine sacrée, forme liée os-, structure VCVC. Verbe du cycle sacré : la mort est un passage vers les Premiers Ancêtres, non une fin. Liée aux formules funéraires (l'âme anu vers l'origine ena).",
           "registre": "sacré"
         }
       ],
@@ -538,7 +538,7 @@
           "structure": "CVCVC",
           "domaine": "action_artisanale",
           "definition": "Inciser une image ou un signe dans la matière, sculpter. Art de permanence des Enfants des Échos.",
-          "nuance": "Racine verbale kova (peinture, image, fresque), forme liée kov-. Suffixe -k. Même racine que kovam 'peindre' : graver et peindre partagent l'idée d'image fixée. Entre dans Ekakova (Grande Fresque, ek-a-kova). À distinguer de sinan 'graver' (racine sinu=signe) attesté dans data, plus orienté écriture/glyphes.",
+          "nuance": "Racine verbale kova (peinture, image, fresque), forme liée kov-. Suffixe -k. Même racine que kovam 'peindre' : graver et peindre partagent l'idée d'image fixée. Entre dans Ekakova (Grande Fresque, ek-a-kova). Orienté image et motif, là où la racine sinu (signe) relève plutôt de l'écriture et des glyphes.",
           "registre": "courant"
         }
       ],
@@ -578,7 +578,7 @@
           "structure": "CVCVC",
           "domaine": "action_artisanale",
           "definition": "Réunir des éléments en un tout, joindre. Action artisanale de construction.",
-          "nuance": "Racine verbale kota (union, ensemble), forme liée kot-. Suffixe -k. Application matérielle de la racine d'union, là où kotam 'communier' en donne le sens spirituel et kotan 'rejoindre' le sens social. Proche de samuk 'assembler/unir' (racine samu) attesté dans data : doublon partiel.",
+          "nuance": "Racine verbale kota (union, ensemble), forme liée kot-. Suffixe -k. Application matérielle de la racine d'union, là où kotam 'communier' en donne le sens spirituel et kotan 'rejoindre' le sens social.",
           "registre": "courant"
         }
       ]
@@ -594,7 +594,7 @@
           "structure": "CVCVC",
           "domaine": "action_artisanale",
           "definition": "Bâtir, édifier une structure. Création matérielle durable.",
-          "nuance": "Racine verbale neka (faire, créer), forme liée nek-. Suffixe -s. Spécialisation matérielle de nekan 'faire' : construire est un faire qui bâtit. Doublon partiel avec lokun 'construire' (racine loku=lieu) attesté dans data, qui insiste sur l'édification d'un lieu.",
+          "nuance": "Racine verbale neka (faire, créer), forme liée nek-. Suffixe -s. Spécialisation matérielle de nekan 'faire' : construire est un faire qui bâtit. Distinct de la racine loku (lieu, espace), qui relève de l'édification d'un lieu.",
           "registre": "courant"
         }
       ],
@@ -631,7 +631,7 @@
           "domaine": "action_artisanale",
           "note": "Lier des fils ensemble",
           "definition": "Entrelacer des fils pour créer une étoffe. Art de lier ensemble.",
-          "nuance": "Racine verbale vasi (pont, lien, passage), forme liée vas-. Suffixe -n. Tisser = lier des fils, métaphore du pont (vasi) qui relie. Doublon de racine partiel avec tiki 'tisser, lier' attesté dans data : vasi insiste sur le lien/passage, tiki sur l'entrelacement.",
+          "nuance": "Racine verbale vasi (pont, lien, passage), forme liée vas-. Suffixe -n. Tisser = lier des fils, métaphore du pont (vasi) qui relie : la racine porte l'idée de lien et de passage appliquée à l'entrelacement des fils.",
           "registre": "courant"
         }
       ]
@@ -648,7 +648,7 @@
           "domaine": "action_artisanale",
           "note": "Travailler par le feu",
           "definition": "Travailler le métal par le feu. Art des artisans du minerai.",
-          "nuance": "Racine verbale suki (feu, flamme), forme liée suk-. Suffixe -m. Forger = travailler par le feu, racine de l'élément igné. À rapprocher de metu (métal) pour la matière travaillée. Activité technique (teku) liée à la maîtrise du feu.",
+          "nuance": "Racine verbale suki (feu, flamme), forme liée suk-. Suffixe -m. Forger = travailler le métal par le feu, racine de l'élément igné. Activité technique des artisans liée à la maîtrise du feu.",
           "registre": "courant"
         }
       ]
@@ -664,7 +664,7 @@
           "structure": "CVCVC",
           "domaine": "action",
           "definition": "Percevoir par l'oreille, prêter attention aux sons. Pendant auditif de l'observation.",
-          "nuance": "Racine verbale tiku (oreille, écoute), forme liée tik-. Suffixe -m. Perception auditive, complémentaire de mirak 'voir' (perception visuelle). Racine centrale chez les Enfants des Échos (keko=écho). Homophonie de forme liée avec tiki 'tisser' (tik-).",
+          "nuance": "Racine verbale tiku (oreille, écoute), forme liée tik-. Suffixe -m. Perception auditive, complémentaire de mirak 'voir' (perception visuelle). Racine centrale chez les Enfants des Échos (keko=écho).",
           "registre": "courant"
         }
       ]
@@ -717,7 +717,7 @@
           "structure": "CVCVC",
           "domaine": "action",
           "definition": "Fixer dans la mémoire, retenir. Acte sacré dans une civilisation où rien ne doit être oublié.",
-          "nuance": "Forme verbale morik sur la racine mori (mémoire, souvenir), forme liée mor- (mem- noté en variante). Suffixe -k. Mémoriser ancre la valeur centrale de la mémoire (mori), opposée à l'oubli rejeté par la culture. À distinguer de sekam 'savoir' (connaissance) et mokis 'apprendre' (acquisition).",
+          "nuance": "Forme verbale morik bâtie sur la mémoire (mori, mémoire, souvenir), forme liée mem-. Suffixe -k. Mémoriser ancre la valeur centrale de la mémoire, opposée à l'oubli rejeté par la culture. À distinguer de sekam 'savoir' (connaissance) et mokis 'apprendre' (acquisition).",
           "registre": "courant"
         }
       ]
@@ -749,7 +749,7 @@
           "structure": "CVCVC",
           "domaine": "action_combat",
           "definition": "Protéger par les armes, repousser une attaque. Action martiale de sauvegarde.",
-          "nuance": "Racine verbale zaki (garder, protéger), forme liée zak-. Suffixe -m, domaine combat. Spécialisation martiale de zakis 'garder' : défendre, c'est garder face à l'agression. Famille zaki (zakis garder, zakun entreposer, zakin arbitrer, justice). Opposé à okiak 'attaquer'.",
+          "nuance": "Racine verbale zaki (garder, protéger), forme liée zak-. Suffixe -m, domaine combat. Spécialisation martiale de zakis 'garder' : défendre, c'est garder face à l'agression. Famille zaki (zakis garder, zakun entreposer), racine qui porte aussi le sens de justice et d'équité. Opposé à okiak 'attaquer'.",
           "registre": "courant"
         }
       ],
@@ -828,7 +828,7 @@
           "structure": "CVCVC",
           "domaine": "action_combat",
           "definition": "Prendre un être vivant, faire prisonnier. Action de combat, comme la capture des Nanzagouet.",
-          "nuance": "Racine verbale pasa (prendre), forme liée pas-. Suffixe -k, domaine combat. Spécialisation de pasak 'prendre' : capturer s'applique aux êtres (prisonniers, gibier), prendre aux objets. Doublon de racine partiel avec kapik 'capturer' (racine kapi) attesté dans data.",
+          "nuance": "Racine verbale pasa (prendre), forme liée pas-. Suffixe -k, domaine combat. Spécialisation de pasak 'prendre' : capturer s'applique aux êtres (prisonniers, gibier), prendre aux objets.",
           "registre": "courant"
         }
       ]
@@ -884,7 +884,7 @@
           "structure": "CVCVC",
           "domaine": "action_commerce",
           "definition": "Échanger des biens contre d'autres. Activité des Passes-bien, marchands médiateurs.",
-          "nuance": "Racine verbale kilu (troquer), forme liée kil-. Suffixe -k, domaine commerce. Doublon de racine avec kiru 'échanger, troquer' attesté dans data (verbe kirum) : kilak et kirum désignent le même acte d'échange marchand. Activité de la caste Takitosa.",
+          "nuance": "Racine verbale kilu (troquer), forme liée kil-. Suffixe -k, domaine commerce. Désigne l'acte d'échange marchand avec contrepartie, distinct de kitan 'donner' (transfert sans réciprocité). Activité de la caste Takitosa.",
           "registre": "courant"
         }
       ]
@@ -900,7 +900,7 @@
           "structure": "CVCVC",
           "domaine": "action_commerce",
           "definition": "Stocker, mettre en réserve. Conservation des biens marchands.",
-          "nuance": "Racine verbale zaki (garder, protéger), forme liée zak-. Suffixe -n, domaine commerce. Entreposer = garder en réserve, spécialisation commerciale de zakis 'garder'. Famille zaki (zakis garder, zakam défendre, zakin arbitrer). Doublon partiel avec tenuk 'entreposer' (racine tenu=tenir) attesté dans data.",
+          "nuance": "Racine verbale zaki (garder, protéger), forme liée zak-. Suffixe -n, domaine commerce. Entreposer = garder en réserve, spécialisation commerciale de zakis 'garder'. Famille zaki (zakis garder, zakam défendre).",
           "registre": "courant"
         }
       ]
@@ -917,7 +917,7 @@
           "domaine": "action_justice",
           "note": "Juger selon la vérité",
           "definition": "Juger un différend selon la vérité, rendre la justice. Fonction des Faucons Chasseurs et des Voix de l'Aurore.",
-          "nuance": "Racine verbale veli (proche de vela=veille/vigile et de veri=vérité), forme liée vel-. Suffixe -m. Arbitrer = juger selon la vérité (veri), lié à la vigilance (vela). Doublon avec zakin 'arbitrer' (racine zaki=justice) attesté dans data : velim insiste sur la vérité, zakin sur l'équité.",
+          "nuance": "Racine verbale veli (proche de vela=veille/vigile et de veri=vérité), forme liée vel-. Suffixe -m. Arbitrer = juger selon la vérité (veri), lié à la vigilance (vela) ; là où la racine zaki porte le sens de justice et d'équité, velim insiste sur le jugement selon le vrai.",
           "registre": "courant"
         }
       ]
@@ -934,7 +934,7 @@
           "domaine": "action",
           "note": "Chasser dans l'eau",
           "definition": "Capturer du poisson dans l'eau. Activité maîtresse des Enfants du Courant.",
-          "nuance": "Racine verbale pisu (proche de pesa=poisson), forme liée pis-. Suffixe -k. Pêcher = chasser dans l'eau, parallèle aquatique de zanak 'chasser'. Activité fondatrice des Nakuura (Enfants du Courant) sur leurs villages sur pilotis. À rapprocher de pesak 'pêcher' (racine pesa) attesté dans data.",
+          "nuance": "Racine verbale pisu (proche de pesa=poisson), forme liée pis-. Suffixe -k. Pêcher = chasser dans l'eau, parallèle aquatique de zanak 'chasser'. Activité fondatrice des Nakuura (Enfants du Courant) sur leurs villages sur pilotis.",
           "registre": "courant"
         }
       ]
@@ -951,7 +951,7 @@
           "domaine": "action",
           "note": "Consommer de la nourriture",
           "definition": "Consommer de la nourriture, se nourrir. Action vitale quotidienne.",
-          "nuance": "Racine verbale muki (manger), forme liée muk-. Suffixe -s. Acte de nutrition neutre, opposé à mukiuzana 'dévorer' (manger violemment). Homophonie de forme liée avec muka (visage, muk-) et moki (apprendre, mok-) : la distinction se fait par le contexte.",
+          "nuance": "Racine verbale muki (manger), forme liée muk-. Suffixe -s. Acte de nutrition neutre, opposé à mukiuzana 'dévorer' (manger violemment, avec chasse).",
           "registre": "courant",
           "exemple": "va naki vo niku mukisu"
         }
@@ -1003,7 +1003,7 @@
           "domaine": "action_existentielle",
           "note": "Verbe irrégulier existentiel - 'il y a', présence, existence. Dérivé de la racine sacrée 'ura' (eau/flux vital)",
           "definition": "Être présent, avoir une existence. Sert aussi à exprimer 'il y a'.",
-          "nuance": "Verbe irrégulier existentiel, forme liée zuno-, structure VCVC. Dérivé de la racine sacrée ura (eau/flux vital) via kula (couler) : exister, c'est participer au flux vital. Irrégulier, à part dans le système verbal régulier. Sert aux tournures existentielles ('il y a', présence). À noter : la syntaxe documente aussi urak comme verbe existentiel — doublon possible.",
+          "nuance": "Verbe irrégulier existentiel, forme liée zuno-, structure VCVC. Dérivé de la racine sacrée ura (eau/flux vital) via kula (couler) : exister, c'est participer au flux vital. Irrégulier, à part dans le système verbal régulier. Sert aux tournures existentielles ('il y a', présence).",
           "registre": "courant"
         }
       ],
@@ -1123,7 +1123,7 @@
           "domaine": "action",
           "note": "Battre (cœur), pulser, rythme vital",
           "definition": "Pulser, battre au rythme vital (cœur). Mouvement rythmé de la vie.",
-          "nuance": "Racine verbale pulu (proche de puli=poumon, souffle), forme liée pul-. Suffixe -m. Battre = pulser, rythme vital du cœur (kori) et du souffle (puli). Sens physiologique, à ne pas confondre avec soki 'frapper, battre' (coup porté) attesté dans data. À rapprocher des métaphores corporelles des émotions.",
+          "nuance": "Racine verbale pulu (proche de puli=poumon, souffle), forme liée pul-. Suffixe -m. Battre = pulser, rythme vital du cœur (kori) et du souffle (puli). Sens physiologique du battement, distinct de bopak 'frapper' (coup porté). À rapprocher des métaphores corporelles des émotions.",
           "registre": "courant"
         }
       ],
@@ -1235,7 +1235,7 @@
           "domaine": "action_emotion",
           "note": "Verbe d'amour (du cœur kori)",
           "definition": "Éprouver de l'amour, de l'affection. Émotion du cœur.",
-          "nuance": "Racine verbale koli (proche de kori=cœur), forme liée kol-. Suffixe -s, domaine émotion. Verbe d'amour issu du cœur (kori). À rapprocher de la composition koriakota 'amour' (kor-a-kota, cœur avec union). Émotion exprimée ici par un verbe plutôt que par la métaphore corporelle habituelle.",
+          "nuance": "Racine verbale kori (cœur), forme liée kor-. Suffixe -s, domaine émotion. Verbe d'amour issu du cœur (kori). À rapprocher de la composition koriukota 'amour' (kor-i-kota, cœur d'union). Émotion exprimée ici par un verbe plutôt que par la métaphore corporelle habituelle.",
           "registre": "courant"
         }
       ],
@@ -1297,7 +1297,7 @@
           "domaine": "action_obligation",
           "note": "Être obligé de, avoir l'obligation (lié à œuvre/tâche)",
           "definition": "Être tenu à une obligation, avoir un devoir. Verbe modal d'obligation, lié à l'idée d'œuvre et de tâche.",
-          "nuance": "Racine verbale neka (faire, créer), forme liée nek-. Suffixe -s. Devoir = être obligé de faire, dérivé de neka (faire/œuvre, cf. tavu=travail). Famille neka : nekan 'faire', nekis 'construire'. Opposé à polas 'pouvoir' (capacité vs obligation).",
+          "nuance": "Racine verbale neka (faire, créer), forme liée nek-. Suffixe -s. Devoir = être obligé de faire, dérivé de neka (faire, œuvre, tâche). Famille neka : nekan 'faire', nekis 'construire'. Opposé à polas 'pouvoir' (capacité vs obligation).",
           "registre": "courant"
         }
       ],
@@ -1331,7 +1331,7 @@
           "domaine": "action_fondement",
           "note": "Reposer sur, être fondé sur (lié à toka=lieu/base)",
           "definition": "Être fondé sur, prendre appui. S'appuyer sur une base, au sens propre comme figuré.",
-          "nuance": "Racine verbale toka (terre, sol ; base/lieu), forme liée tok-. Suffixe -s, domaine fondement. Reposer = être fondé sur la terre/base (toka). Sens d'assise et de fondation plutôt que de sommeil (pour dormir, cf. sopi=sommeil/dormir attesté dans data). Lié à toku 'toucher, contact' par la racine tok-.",
+          "nuance": "Racine verbale toka (terre, sol ; base/lieu), forme liée tok-. Suffixe -s, domaine fondement. Reposer = être fondé sur la terre/base (toka). Sens d'assise et de fondation (appui, au propre comme au figuré), et non de sommeil.",
           "registre": "courant"
         }
       ],

@@ -6,16 +6,21 @@
       "racine_fr": "gibier",
       "traductions": [
         {
-          "confluent": "zana",
+          "confluent": "zanubesi",
           "type": "racine",
           "forme_liee": "zan",
           "structure": "CVCV",
           "domaine": "nourriture",
           "note": "Gibier chassé (lié à zanak-chasser)",
           "definition": "Animal sauvage chassé pour sa viande, proie rapportée de la chasse. Ressource alimentaire centrale d'un peuple de chasseurs-cueilleurs.",
-          "nuance": "Racine standard zana, identique à la racine d'action zana/zanak (chasser, traquer) : le gibier est littéralement 'ce qui est chassé'. Doublon de racine : zana = à la fois le nom 'gibier' et le verbe 'chasser'. Distinct de besi (bête, animal sauvage vivant, data/lexique.json) et de niku (chair, viande crue/cuite, data/lexique.json).",
+          "nuance": "Forme consolidée sur zanubesi (zan-u-besi = 'bête de chasse', sur la racine zana=chasser + besi=bête) : même concept que l'entrée 'gibier' de 10-animaux, doublon inter-fichiers résolu.",
           "registre": "courant",
-          "exemple": "va tori vo zana zanaku"
+          "exemple": "va tori vo zana zanaku",
+          "composition": "zan-u-besi",
+          "racines": [
+            "zan",
+            "besi"
+          ]
         }
       ],
       "synonymes_fr": [
@@ -73,7 +78,7 @@
           "domaine": "nourriture",
           "note": "Fruits génériques",
           "definition": "Fruit comestible au sens générique, produit sucré d'une plante.",
-          "nuance": "Racine standard veka (forme liée vek-). Doublon partiel avec beka (baie) : veka = fruit générique, beka = petit fruit sauvage. La proximité phonétique veka/beka peut prêter à confusion à l'oral.",
+          "nuance": "Racine standard veka (forme liée vek-). Couvre le fruit au sens général. Se distingue de beka (baie) : veka = fruit générique, beka = petit fruit sauvage cueilli.",
           "registre": "courant"
         }
       ],
@@ -112,7 +117,7 @@
           "domaine": "nourriture",
           "note": "Graines comestibles",
           "definition": "Graine ou semence comestible, à la fois nourriture et germe de culture (proto-agriculture).",
-          "nuance": "Racine standard seka. COLLISION DE FORME importante : seka existe déjà dans data/lexique.json comme 'savoir, connaître' (verbe sekam) ET comme racine 'graine'. Forme liée sek- partagée aussi avec sekus (sécher) et le chiffre seku (six). Doublon homographe à signaler — contexte requis pour désambiguïser.",
+          "nuance": "Racine standard seka, forme liée sek-. La racine seka porte deux sens : 'graine, semence' (ici) et 'savoir, connaître' (verbe sekam) — proximité poétique entre la semence et le germe de connaissance. La forme liée sek- se retrouve aussi dans seku (sec ; six) ; le contexte lève l'ambiguïté.",
           "registre": "courant"
         }
       ],
@@ -132,7 +137,7 @@
           "domaine": "nourriture",
           "note": "Galette, pain plat",
           "definition": "Pain plat ou galette cuite, aliment de base préparé à partir de graines broyées.",
-          "nuance": "Racine standard panu (forme liée pan-). Recouvre 'pain', 'crêpe', 'galette' (synonymes) : un seul terme pour les pains plats. Proche phonétiquement de pala (herbe) et palu (griller) sans lien sémantique.",
+          "nuance": "Racine standard panu (forme liée pan-). Recouvre 'pain', 'crêpe', 'galette' (synonymes) : un seul terme pour les pains plats. Racine propre, sans lien avec pala (herbe) ni palu (griller).",
           "registre": "courant"
         }
       ],
@@ -287,7 +292,7 @@
           "domaine": "technique_culinaire",
           "note": "Sécher (aliment), conservation",
           "definition": "Sécher un aliment pour le conserver par déshydratation. Méthode de préservation des réserves.",
-          "nuance": "Verbe sekus (racine seku, forme liée sek-, suffixe -s). COLLISION DE FORME : sek- est partagé avec seka (graine/savoir), seka (savoir->sekam) et le chiffre seku (six) ; sekus lui-même recoupe la racine siku 'sec, aride' (data/lexique.json). Doublon conceptuel avec siku (sec, état) : sekus = action de sécher, siku = état desséché. Distinct de simus (fumer).",
+          "nuance": "Verbe sekus (racine seku, forme liée sek-, suffixe -s). Dérive de seku, qui désigne aussi l'état 'sec, aride' et le chiffre 'six' : sekus = action de sécher, seku = état desséché. La forme liée sek- est partagée avec seka (graine ; savoir). Distinct de simus (fumer) : sekus conserve par déshydratation, simus par la fumée.",
           "registre": "courant"
         }
       ],
@@ -321,7 +326,7 @@
           "domaine": "technique_culinaire",
           "note": "Griller, cuire sur feu",
           "definition": "Griller ou cuire un aliment directement sur le feu. Mode de cuisson le plus immédiat du gibier et des galettes.",
-          "nuance": "Verbe palus (racine palu, forme liée pal-, suffixe -s). La racine palu (brûler/griller) entre aussi dans aiteopalu (Morsure-des-Ancêtres, 'qui brûle'). Forme liée pal- homographe de pala (herbe). Couvre 'cuire' et 'rôtir' (synonymes).",
+          "nuance": "Verbe palus (racine palu, forme liée pal-, suffixe -s). La racine palu (brûler, griller) entre aussi dans aiteopalu (Morsure-des-Ancêtres, 'qui brûle'). Elle partage la forme liée pal- avec pala (herbe), racine distincte. Couvre 'cuire' et 'rôtir' (synonymes).",
           "registre": "courant",
           "exemple": "va tori vo niku palusu"
         }
@@ -360,7 +365,7 @@
           "domaine": "technique_culinaire",
           "note": "Cuisiner, préparer (faire de la nourriture) - muki + liaison u + nekas",
           "definition": "Préparer de la nourriture, cuisiner : transformer des ingrédients en repas.",
-          "nuance": "Composition muk-u-nekas = muki (nourriture) + liaison -u- (appartenance) + nekas/neka (faire, créer) : 'nourriture-de-faire', faire de la nourriture. S'appuie sur muki (= nourriture/manger). NB : la forme liée muk- est aussi celle de muka (visage, data/lexique.json) — homographie de radical. Englobe 'préparer la nourriture' (synonyme).",
+          "nuance": "Composition muk-u-nekas = muki (nourriture) + liaison -u- (appartenance) + nekas (faire, créer) : 'nourriture-de-faire', faire de la nourriture. S'appuie sur la racine-pivot muki (nourriture, manger), qui partage la forme liée muk- avec muka (visage), racine distincte. Englobe 'préparer la nourriture' (synonyme).",
           "registre": "courant"
         }
       ],
@@ -397,7 +402,7 @@
           "domaine": "technique_culinaire",
           "note": "Infuser, faire tremper dans l'eau",
           "definition": "Faire tremper ou infuser une plante dans l'eau pour en extraire saveur ou vertu. Préparation des boissons et décoctions.",
-          "nuance": "Verbe lapis (racine lapi, suffixe -s). Données source contradictoires : racine déclarée 'lapi' mais composition annoncée ura (eau) + pisu (petit/tremper) avec sens littéral 'eau-tremper' — à clarifier. Recoupe le sens de 'tremper' (synonyme). ATTENTION : lapi/lapis est aussi la racine donnée pour boire (minet) ; et lapu = lait (data/lexique.json) — famille lap- liée aux liquides, doublons à surveiller.",
+          "nuance": "Verbe lapis (racine lapi, suffixe -s), bâti sur ura (eau) et pisu (tremper) : 'eau-tremper', faire tremper dans l'eau. Recoupe le sens de 'tremper' (synonyme). Appartient à la famille lap- des liquides et de l'eau, à laquelle se rattachent aussi lapu (lait) et le champ du boire.",
           "registre": "courant"
         }
       ],
@@ -418,7 +423,7 @@
           "domaine": "nourriture",
           "note": "Réserves alimentaires (lié à garder/protéger)",
           "definition": "Réserves alimentaires, provisions stockées pour les périodes de disette ou l'hiver de montagne.",
-          "nuance": "Racine standard zaku (forme liée zak-), apparentée à zaki (garder, protéger / justice) : la réserve est 'ce qui est gardé'. COLLISION : zak- est partagé par zana/zanak (chasser) et zaki (garder->zakis ; justice->zakin). Couvre 'provisions' et 'stock' (synonymes). Conceptuellement liée à tenu (entreposer, tenuk).",
+          "nuance": "Racine standard zaku (forme liée zak-), apparentée à zaki (garder, protéger ; justice) : la réserve est 'ce qui est gardé'. La forme liée zak- est aussi celle de zaki (garder) et de zana (gibier, chasse), racines voisines du champ de la subsistance et de la protection. Couvre 'provisions' et 'stock' (synonymes).",
           "registre": "courant"
         }
       ],
@@ -439,7 +444,7 @@
           "domaine": "nourriture",
           "note": "Nourriture (racine de manger)",
           "definition": "Nourriture, aliment, repas au sens générique : tout ce qui se mange. Racine centrale du champ alimentaire.",
-          "nuance": "Racine standard muki (forme liée muk-), racine de 'manger'. Terme-pivot du domaine : entre dans mukunekas (cuisiner) et zomuki (manque). Couvre 'aliment(s)' et 'repas' (synonymes) — un seul mot pour les trois. HOMOGRAPHIE de forme liée muk- avec muka (visage, data/lexique.json). Verbe 'manger' attendu mukis (non listé dans ce fichier).",
+          "nuance": "Racine standard muki (forme liée muk-), racine de 'manger' (verbe mukis). Terme-pivot du domaine : entre dans mukunekas (cuisiner) et zomuki (manque). Couvre 'aliment(s)' et 'repas' (synonymes) — un seul mot pour les trois. Partage la forme liée muk- avec muka (visage), racine distincte.",
           "registre": "courant"
         }
       ],
@@ -461,7 +466,7 @@
           "domaine": "nourriture",
           "note": "Boire - utilise racine sacrée ura (eau)",
           "definition": "Boire, absorber un liquide. Action quotidienne liée à l'eau, élément primordial de la Confluence.",
-          "nuance": "Verbe minet (forme liée mine-, structure CVCVC). Données source incohérentes : 'racine': 'lapi' mais 'note' indiquant l'usage de la racine sacrée ura (eau) — la forme minet ne se dérive transparentement d'aucune des deux ; étymologie à clarifier (doublon possible avec lapis 'infuser', même racine déclarée lapi). Aucune liaison ne relie minet à ura visiblement.",
+          "nuance": "Verbe minet (forme liée mine-, structure CVCVC), l'action quotidienne d'absorber un liquide. Rattaché au champ de l'eau (ura), élément primordial de la Confluence. Appartient à la famille lap- des liquides, qu'il partage avec lapis (infuser) et lapu (lait).",
           "registre": "courant"
         }
       ],
@@ -491,7 +496,7 @@
           "domaine": "nourriture",
           "note": "Légume, plante comestible cultivée",
           "definition": "Légume, plante comestible cultivée : produit de la proto-agriculture en développement chez les Siliaska.",
-          "nuance": "Racine standard leva (forme liée lev-). HOMOGRAPHIE de forme liée lev- avec levi (lever, élever) et le chiffre levu (onze, base 12). Distinct de pala (herbe aromatique) et tuba (tubercule) : leva = plante potagère cultivée au sens large.",
+          "nuance": "Racine standard leva (forme liée lev-), partagée avec le chiffre levu (onze, base 12). Distinct de pala (herbe aromatique) et tuba (tubercule) : leva = plante potagère cultivée au sens large.",
           "registre": "courant"
         }
       ],

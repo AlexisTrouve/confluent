@@ -100,7 +100,7 @@
           ],
           "domaine": "temps",
           "definition": "Le matin, le moment de l'aurore et du soleil levant, début sacré de la journée.",
-          "nuance": "Composition ol-a-sola : ora (aurore, sacrée, forme liée ol-) + -a- + sora (soleil). Charge sacrée : l'aurore est signe divin, marque l'élection des Ciels-clairs (cf. Oraumi). Plus chargé qu'un simple repère horaire.",
+          "nuance": "Composition or-a-sora : ora (aurore, sacrée, forme liée or-) + -a- + sora (soleil, lumière). Charge sacrée : l'aurore est signe divin, marque l'élection des Ciels-clairs (cf. oraumi). Plus chargé qu'un simple repère horaire.",
           "registre": "sacré"
         }
       ]
@@ -291,7 +291,7 @@
           "forme_liee": "tem",
           "domaine": "temps",
           "definition": "La durée, le temps en tant que tel — la racine temporelle de base, écoulement abstrait du temps.",
-          "nuance": "Racine simple temi (forme liée tem-), attestée dans data. Brique de presque tous les composés du domaine : makoutemi, pisutemi, ekautemi, temisiku. Notion neutre, le temps brut.",
+          "nuance": "Racine simple temi (forme liée tem-). Brique de presque tous les composés du domaine : makoutemi, pisutemi, ekautemi, temisiku. Notion neutre, le temps brut.",
           "registre": "courant"
         }
       ]

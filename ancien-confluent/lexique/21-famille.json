@@ -11,7 +11,7 @@
           "domaine": "famille",
           "note": "Frère de sang",
           "definition": "Frère de sang, garçon issu des mêmes parents. Désigne le lien fraternel biologique au sein de la fratrie.",
-          "nuance": "Racine standard (forme liée vak-). Homophone partiel de vaku (ami, allié) : vaki = lien de sang, vaku = lien d'alliance choisie. Distinction nette parenté héritée / amitié élective.",
+          "nuance": "Racine standard (forme liée vak-). Désigne le lien fraternel de sang, parenté héritée plutôt qu'alliance choisie. Terme générique de la fratrie : sert de base à vakisu (frères et sœurs).",
           "registre": "courant",
           "exemple": "va vaki vo ura mirak"
         }
@@ -29,7 +29,7 @@
           "domaine": "famille",
           "note": "Sœur de sang",
           "definition": "Sœur de sang, fille issue des mêmes parents. Pendant féminin de vaki dans la fratrie.",
-          "nuance": "Racine standard (forme liée sek-). Collision avec seka (savoir) et seka (couper) ; le contexte lève l'ambiguïté. Symétrique de vaki ; regroupés sous vakisu (fratrie), où vaki sert de terme générique.",
+          "nuance": "Racine standard (forme liée sek-). Partage la racine seka avec « savoir » (verbe sekam) et « graine » : le contexte familial lève l'ambiguïté. Symétrique de vaki ; regroupés sous vakisu (fratrie), où vaki sert de terme générique.",
           "registre": "courant",
           "exemple": "va seki vo naki zakis"
         }
@@ -47,7 +47,7 @@
           "domaine": "famille",
           "note": "Mère biologique",
           "definition": "Mère biologique, génitrice. Désigne le lien maternel de sang.",
-          "nuance": "Racine standard (forme liée mat-). DOUBLON : matu (ici) vs mamu (15-roles-titres). matu = terme neutre régulier (cf. patu), insiste sur la filiation de sang ; mamu (redoublement labial) = registre affectif/vocatif. À arbitrer : matu neutre, mamu tendre.",
+          "nuance": "Racine standard (forme liée mat-). Terme neutre régulier de la filiation maternelle de sang, parallèle exact de patu (père). Coexiste avec matu (registre affectif/vocatif, redoublement labial tendre) : matu désigne le lien, matu l'appellatif intime.",
           "registre": "courant",
           "exemple": "va matu vo naku takan"
         }
@@ -62,7 +62,7 @@
           "domaine": "famille",
           "note": "Père biologique",
           "definition": "Père biologique, géniteur. Désigne le lien paternel de sang.",
-          "nuance": "Racine standard (forme liée pat-). DOUBLON : patu (ici) vs papu (15-roles-titres). patu = terme neutre régulier, parallèle exact de matu (paire mat-/pat-) ; papu = appellatif affectif. Même arbitrage que mère.",
+          "nuance": "Racine standard (forme liée pat-). Terme neutre régulier de la filiation paternelle de sang, parallèle exact de matu (paire mat-/pat-). Coexiste avec patu (appellatif affectif) : patu désigne le lien, patu l'appellatif intime.",
           "registre": "courant",
           "exemple": "va patu vo seka kisun"
         }
@@ -77,7 +77,7 @@
           "domaine": "personne",
           "note": "Homme adulte",
           "definition": "Homme adulte de sexe masculin. Terme générique pour l'adulte masculin, hors contexte de parenté précise.",
-          "nuance": "Racine standard (domaine personne, forme liée tok-). Quasi-homophone de toka (terre) et toku (toucher) : seule la voyelle -o distingue. S'oppose à nako (femme) et à tebo (garçon, l'âge). N'exprime pas la paternité (patu).",
+          "nuance": "Racine standard (domaine personne, forme liée tok-). Partage la forme liée tok- avec toka (terre), distingué par la voyelle finale. S'oppose à nako (femme) et à tebo (garçon, par l'âge). N'exprime pas la paternité (patu).",
           "registre": "courant",
           "exemple": "va toko vo kari pasak"
         }
@@ -130,7 +130,7 @@
           "domaine": "personne",
           "note": "Garçon, enfant masculin",
           "definition": "Garçon, enfant de sexe masculin. Descendant masculin, pendant de naku (fille).",
-          "nuance": "Racine standard (forme liée teb-). Pas de collision attestée. Paire de genre avec naku (fille) à l'âge enfant ; s'oppose à toko (homme) à l'âge adulte. Ne porte pas la filiation (naki).",
+          "nuance": "Racine standard (forme liée teb-). Paire de genre avec naku (fille) à l'âge enfant ; s'oppose à toko (homme) à l'âge adulte. Ne porte pas la filiation (naki).",
           "registre": "courant",
           "exemple": "va tebo vi viku tekis"
         }

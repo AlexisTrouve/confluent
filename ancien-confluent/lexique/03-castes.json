@@ -16,7 +16,7 @@
           "categorie": "peuple",
           "note": "Nom du peuple de la Confluence",
           "definition": "Nom que le peuple de la Confluence se donne à lui-même, signifiant littéralement « les porteurs du regard libre ». Désigne l'ensemble de la civilisation, par-delà les divisions de castes, unie par le pèlerinage au Gouffre Humide qui confère le « regard libre ».",
-          "nuance": "Composition sil-i-aska : sili (regard) + liaison agentive -i- + aska (libre, racine sacrée fondatrice). Structure standard-liaison-sacrée, valorisée par la racine sacrée finale. Autonyme central, opposé à « l'Autre » (zoka). Doublon avec l'entrée 'peuple'.",
+          "nuance": "Composition sil-i-aska : sili (regard) + liaison agentive -i- + aska (libre, racine sacrée fondatrice). Structure standard-liaison-sacrée, valorisée par la racine sacrée finale. Autonyme central, opposé à « l'Autre » (zoka). Sert aussi à traduire 'peuple', le peuple n'ayant pas d'autre nom que le sien.",
           "registre": "sacré",
           "exemple": "va siliaska vo aska mirakeol"
         }
@@ -39,7 +39,7 @@
           ],
           "categorie": "peuple",
           "definition": "Le peuple dans son ensemble, désigné par son autonyme : les Siliaska, « porteurs du regard libre ». Il n'existe pas de mot générique neutre pour « peuple » distinct du nom propre du peuple lui-même.",
-          "nuance": "Doublon exact de 'Siliaska'. Le français 'peuple' est traité comme synonyme du nom ethnique. Pour un groupe humain abstrait on emploierait tibu (tribu) ou mitu (famille, clan).",
+          "nuance": "Le français 'peuple' se rend par l'autonyme siliaska (voir cette entrée) : le peuple est désigné par son propre nom ethnique. Pour un groupe humain abstrait on emploierait tibu (tribu) ou mitu (famille, clan).",
           "registre": "sacré"
         }
       ]
@@ -60,7 +60,7 @@
           "racines_sacrees": 0,
           "note": "Souterrains, mineurs, artisans",
           "definition": "Caste des habitants souterrains : mineurs, carriers, artisans et sculpteurs vivant dans les grottes (Antres des Échos). Littéralement « enfants de l'écho ».",
-          "nuance": "Composition nak-u-keko : naki (enfant) + -u- (appartenance) + keko (écho). Aucune racine sacrée (caste 'Sans-ciels'). La répétition des k mime la réverbération. Doublon avec 'Nakukeko'. Même moule nak-u-X que Nakuura.",
+          "nuance": "Composition nak-u-keko : naki (enfant) + -u- (appartenance) + keko (écho). Aucune racine sacrée (caste 'Sans-ciels'). La répétition des k mime la réverbération. Même moule nak-u-X que Nakuura (Enfants du Courant).",
           "registre": "sacré"
         }
       ]
@@ -95,7 +95,7 @@
           "categorie": "caste",
           "element": "terre",
           "definition": "Forme confluent du nom de la caste des Enfants des Échos : peuple souterrain des mineurs, carriers et sculpteurs, pâles et adaptés à l'obscurité des grottes.",
-          "nuance": "Composition nak-u-keko (enfant-de-écho). Doublon avec 'Enfants des Echos'. Caste 'Sans-ciels' (élément terre), sans racine sacrée, pôle terrestre et technique, par opposition aux Oraumi spirituels.",
+          "nuance": "Composition nak-u-keko (enfant-de-écho) ; forme confluent de l'entrée française 'Enfants des Echos'. Caste 'Sans-ciels' (élément terre), sans racine sacrée, pôle terrestre et technique, par opposition aux Oraumi spirituels.",
           "registre": "sacré"
         }
       ]
@@ -116,7 +116,7 @@
           "racines_sacrees": 1,
           "note": "Pêcheurs, villages sur pilotis",
           "definition": "Caste des pêcheurs et maîtres de l'eau, vivant dans des villages sur pilotis le long des rivières. Littéralement « enfants de l'eau », caste 'Sans-ciels' associée à l'élément eau.",
-          "nuance": "Composition nak-u-ura : naki (enfant) + -u- + ura (eau, racine sacrée). Une racine sacrée (ura) qui élève la caste au-dessus des Nakukeko. Même moule nak-u-X. Doublon avec 'Nakuura'.",
+          "nuance": "Composition nak-u-ura : naki (enfant) + -u- + ura (eau, racine sacrée). Une racine sacrée (ura) qui élève la caste au-dessus des Nakukeko. Même moule nak-u-X que Nakukeko (Enfants des Échos).",
           "registre": "sacré"
         }
       ]
@@ -135,7 +135,7 @@
           "categorie": "caste",
           "element": "eau",
           "definition": "Forme confluent du nom de la caste des Enfants du Courant : pêcheurs des villages sur pilotis, maîtres de l'élément eau.",
-          "nuance": "Composition nak-u-ura (enfant-de-eau). Doublon avec 'Enfants du Courant'. La racine sacrée ura les relie à Uraakota (La Confluence), source de leur prestige parmi les Sans-ciels.",
+          "nuance": "Composition nak-u-ura (enfant-de-eau) ; forme confluent de l'entrée française 'Enfants du Courant'. La racine sacrée ura les relie à Uraakota (La Confluence), source de leur prestige parmi les Sans-ciels.",
           "registre": "sacré"
         }
       ]
@@ -156,7 +156,7 @@
           "racines_sacrees": 2,
           "note": "Dresseurs de grues, chamans",
           "definition": "Caste des chamans dresseurs de Regards-Libres (les grues), intermédiaires entre le ciel et la terre. Littéralement « porteurs de la grue libre ».",
-          "nuance": "Composition al-i-aska : alu (grue) + -i- (agent) + aska (libre). Deux racines sacrées : structure rare et très valorisée, statut spirituel élevé. Parallèle exact avec Siliaska (X-i-aska). Doublon avec 'Aliaska'.",
+          "nuance": "Composition al-i-aska : alu (grue) + -i- (agent) + aska (libre). Deux racines sacrées : structure rare et très valorisée, statut spirituel élevé. Parallèle exact avec Siliaska (même moule X-i-aska).",
           "registre": "sacré"
         }
       ]
@@ -175,7 +175,7 @@
           "categorie": "caste",
           "element": "air",
           "definition": "Forme confluent du nom de la caste des Ailes-Grises : chamans dresseurs de grues (Regards-Libres), qui mènent le groupe spirituel des Oraumi.",
-          "nuance": "Composition al-i-aska (grue-agent-libre). Doublon avec 'Ailes-Grises'. Le redoublement de racines sacrées (alu + aska) place la caste au sommet de la hiérarchie sacrée, aux côtés des Oraumi.",
+          "nuance": "Composition al-i-aska (grue-agent-libre) ; forme confluent de l'entrée française 'Ailes-Grises'. Le redoublement de racines sacrées (alu + aska) place la caste au sommet de la hiérarchie sacrée, aux côtés des Oraumi.",
           "registre": "sacré"
         }
       ]
@@ -196,7 +196,7 @@
           "racines_sacrees": 1,
           "note": "Élite militaire et judiciaire",
           "definition": "Caste-élite militaire, judiciaire et religieuse, basée dans les Halls des Serments. Littéralement « faucon ayant vaincu la chasse », guerriers d'élite associés à l'élément feu.",
-          "nuance": "Composition ak-oa-zana : aki (faucon, sacré) + liaison de résolution -oa- (vaincu, accompli) + zana (chasser). La liaison -oa- exprime la maîtrise accomplie. À opposer à zana seul. Doublon avec 'Akoazana'.",
+          "nuance": "Composition ak-oa-zana : aki (faucon, sacré) + liaison de résolution -oa- (vaincu, accompli) + zana (chasser). La liaison -oa- exprime la maîtrise accomplie, par contraste avec zana seul (chasser, action simple).",
           "registre": "sacré"
         }
       ]
@@ -215,7 +215,7 @@
           "categorie": "caste",
           "element": "feu",
           "definition": "Forme confluent du nom de la caste des Faucons Chasseurs : élite guerrière, judiciaire et religieuse émergente de la civilisation.",
-          "nuance": "Composition ak-oa-zana (faucon-vainqueur-chasse). Doublon avec 'Faucons Chasseurs'. Caste de la force légitime et de la justice par les armes, distincte de la justice arbitrale des Oraumi.",
+          "nuance": "Composition ak-oa-zana (faucon-vainqueur-chasse) ; forme confluent de l'entrée française 'Faucons Chasseurs'. Caste de la force légitime et de la justice par les armes, distincte de la justice arbitrale des Oraumi.",
           "registre": "sacré"
         }
       ]
@@ -236,7 +236,7 @@
           "racines_sacrees": 0,
           "note": "Marchands, médiateurs",
           "definition": "Caste mixte des marchands et médiateurs, qui font « passer le bien » d'un groupe à l'autre, autant les marchandises que la concorde. Caste associée à l'élément éther.",
-          "nuance": "Composition tak-i-tosa : taka (porter) + -i- (agent) + tosa (bien). Aucune racine sacrée. Double sens de 'bien' : marchandise et bien moral. Doublon avec 'Takitosa'.",
+          "nuance": "Composition tak-i-tosa : taka (porter) + -i- (agent) + tosa (bien). Aucune racine sacrée. Double sens voulu de 'bien' : marchandise et bien moral, les deux que la caste fait circuler.",
           "registre": "sacré",
           "exemple": "va takitosa vo tosa takan"
         }
@@ -256,7 +256,7 @@
           "categorie": "caste",
           "element": "ether",
           "definition": "Forme confluent du nom de la caste des Passes-bien : marchands et médiateurs assurant la circulation des biens et l'entente entre les autres castes.",
-          "nuance": "Composition tak-i-tosa (porter-agent-bien). Doublon avec 'Passes-bien'. Caste sans racine sacrée, ancrage profane et pratique, mais rôle de pont (vasi) indispensable à la confluence sociale.",
+          "nuance": "Composition tak-i-tosa (porter-agent-bien) ; forme confluent de l'entrée française 'Passes-bien'. Caste sans racine sacrée, ancrage profane et pratique, mais rôle de pont (vasi) indispensable à la confluence sociale.",
           "registre": "sacré"
         }
       ]
@@ -276,7 +276,7 @@
           "racines_sacrees": 2,
           "note": "Chamans, gardiens des lois sacrées",
           "definition": "Groupe spirituel des chamans gardiens des lois sacrées, issus des « Ciels-clairs ». Littéralement « aurore avec esprit », ils incarnent l'élection divine signalée par l'aurore.",
-          "nuance": "Composition or-a-umi : ora (aurore, sacrée) + -a- (avec) + umi (esprit, sacrée). Deux racines sacrées : structure la plus valorisée, statut spirituel suprême. Groupe transversal aux castes. Doublon avec 'Oraumi'.",
+          "nuance": "Composition or-a-umi : ora (aurore, sacrée) + -a- (avec) + umi (esprit, sacrée). Deux racines sacrées : structure la plus valorisée, statut spirituel suprême. Groupe transversal aux castes.",
           "registre": "sacré"
         }
       ]
@@ -294,7 +294,7 @@
           ],
           "categorie": "groupe_spirituel",
           "definition": "Forme confluent du nom des Voix de l'Aurore : chamans gardiens des lois sacrées, guides spirituels de la civilisation, menés par les Ailes-Grises.",
-          "nuance": "Composition or-a-umi (aurore-avec-esprit). Doublon avec 'Voix de l'Aurore'. La double racine sacrée en fait, avec Aliaska, le sommet de la hiérarchie spirituelle ; autorité des lois anciennes et de la mémoire (mori), non des armes.",
+          "nuance": "Composition or-a-umi (aurore-avec-esprit) ; forme confluent de l'entrée française 'Voix de l'Aurore'. La double racine sacrée en fait, avec Aliaska, le sommet de la hiérarchie spirituelle ; autorité des lois anciennes et de la mémoire (mori), non des armes.",
           "registre": "sacré"
         }
       ]

@@ -10,7 +10,7 @@
           "forme_liee": "tan",
           "domaine": "geographie",
           "definition": "Dépression du relief située entre des hauteurs ; creux où s'écoulent les rivières. Géographie d'origine de la civilisation de la Confluence.",
-          "nuance": "Racine standard tani (sur tani=vallée, id 114). DOUBLON exact avec 08-nature-elements ('vallee' = tani) : même entrée dupliquée. Vs 'montagne' (tasa, la hauteur) et 'pic' (tasupiki). COLLISION : forme tani identique au pronom 3sg (il/elle/iel), désambiguïsée par le contexte et la particule de cas.",
+          "nuance": "Racine standard tani (forme liée tan) : creux du relief entre des hauteurs. Vs 'montagne' (tasa, la hauteur) et 'pic' (tasupiki). La forme tani coïncide avec le pronom 3sg (il/elle/iel), désambiguïsée par le contexte et la particule de cas.",
           "registre": "courant",
           "exemple": "va naki vo tani mirakat"
         }
@@ -75,7 +75,7 @@
           ],
           "domaine": "geographie",
           "definition": "Bande de terre bordant la mer, littoral. Zone de l'expansion maritime récente et lieu du premier contact avec l'Autre.",
-          "nuance": "Composition tok-u-seli sur toka (terre) + seli (mer) : « terre de la mer ». DOUBLON exact avec 08-nature-elements ('cote' = tokuseli). Vs 'promontoire' (tasuseli, montagne maritime) et 'horizon' (zerutoka). seli sert d'aspect-étendue ici (vs seli=sel, matière).",
+          "nuance": "Composition tok-u-seli sur toka (terre) + seli (mer) : « terre de la mer ». Vs 'promontoire' (tasuseli, montagne maritime) et 'horizon' (zerutoka). seli porte ici le sens « mer/étendue » (vs seli=sel, la matière).",
           "registre": "courant"
         }
       ]
@@ -93,7 +93,7 @@
           ],
           "domaine": "geographie",
           "definition": "Point d'émergence de l'eau, origine d'un cours d'eau.",
-          "nuance": "DOUBLON avec 08-nature-elements ('source'), mais FORMES DIVERGENTES À RÉCONCILIER : ici confluent='enuura' alors que la composition déclarée est 'en-u-ula' (ena origine + ura eau) — enuura ne correspond ni à cette composition ni à des racines attestées ; 08 donne 'enuura'. Forme suspecte/corrompue, à corriger sur en-u-ura. Sens visé : origine de l'eau (ena=origine sacrée). Vs 'rivière' (le flux) et 'confluence de rivières' (la rencontre).",
+          "nuance": "Composition en-u-ura sur ena (origine, source, racine sacrée de la dimension) + ura (eau, sacrée) via liaison u (appartenance) : « origine de l'eau ». Le point d'où jaillit l'eau, chargé par ena qui dit la naissance et l'origine. Vs 'rivière' (nura, le flux) et la confluence (la rencontre des eaux).",
           "registre": "sacré"
         }
       ]
@@ -101,17 +101,17 @@
     "cascade": {
       "traductions": [
         {
-          "confluent": "uloavuku",
+          "confluent": "uroavuku",
           "type": "composition",
-          "composition": "ul-oa-vuku",
+          "composition": "ur-oa-vuku",
           "sens_litteral": "Eau vers le gouffre",
           "racines": [
-            "ura",
+            "ur",
             "vuku"
           ],
           "domaine": "geographie",
           "definition": "Chute d'eau se précipitant verticalement vers un gouffre.",
-          "nuance": "Composition ur-oa-vuku sur ura (eau, sacrée) + vuku (gouffre/profond) via liaison oa (résolu, surmonté) : « eau vers le gouffre ». DOUBLON avec 08-nature-elements ('cascade' = uraoavuku) : les deux fichiers donnent des graphies divergentes (uloavuku vs uraoavuku), à harmoniser sur ur-oa-vuku. Vs 'rivière' (nura, eau horizontale) : la cascade est la chute verticale.",
+          "nuance": "Forme consolidée sur uroavuku : même concept que l'entrée parallèle du lexique (doublon inter-fichiers résolu, aligné sur la forme canonique).",
           "registre": "courant"
         }
       ]
@@ -119,17 +119,17 @@
     "eboulement": {
       "traductions": [
         {
-          "confluent": "kariovuku",
+          "confluent": "karoavuku",
           "type": "composition",
           "composition": "kar-oa-vuku",
           "sens_litteral": "Pierre vers le gouffre",
           "racines": [
-            "kari",
+            "kar",
             "vuku"
           ],
           "domaine": "danger_naturel",
           "definition": "Effondrement de pierres ou de roche dévalant une pente. Danger naturel des reliefs montagneux.",
-          "nuance": "Composition kar-oa-vuku sur kari (pierre) + vuku (gouffre) via liaison oa : « pierre vers le gouffre ». Série des dangers de pente partageant le schéma X-oa-vuku : éboulement (kari=pierre), avalanche (nisaoavuku, nisa=humide/neige), cascade (ura=eau). Recoupe le domaine danger_naturel de 08 (cf. tempête venaoki). NB graphie 'kariovuku' (kar-i-o-?) vs composition déclarée kar-oa-vuku : harmoniser.",
+          "nuance": "Forme consolidée sur karoavuku : même concept que l'entrée parallèle du lexique (doublon inter-fichiers résolu, aligné sur la forme canonique).",
           "registre": "courant"
         }
       ]
@@ -147,7 +147,7 @@
           ],
           "domaine": "danger_naturel",
           "definition": "Débordement des eaux submergeant la terre. Danger naturel lié aux rivières et aux crues.",
-          "nuance": "Composition ur-a-eki sur ura (eau, sacrée) + eka (tout, totalité, sacrée) via liaison a (avec) : « eau avec totalité », l'eau qui recouvre tout. Danger naturel (cf. série dangers de 08). Vs 'cascade' (chute localisée) : l'inondation est l'extension de l'eau. NB graphie 'uraueka' (l au lieu de r dans ur-) à vérifier.",
+          "nuance": "Composition ur-a-eka sur ura (eau, sacrée) + eka (tout, totalité, sacrée de la dimension) via liaison a (relation, avec) : « eau avec totalité », l'eau qui recouvre tout. Danger naturel lié aux rivières et aux crues. Vs 'cascade' (chute localisée) : l'inondation est l'extension de l'eau sur la terre.",
           "registre": "courant"
         }
       ]
@@ -165,7 +165,7 @@
           ],
           "domaine": "geographie",
           "definition": "Paroi ou massif de pierre infranchissable, obstacle minéral que l'on ne peut percer ni traverser.",
-          "nuance": "Composition kar-i-zoki sur kari (pierre) + oki (épreuve, défi, danger ; racine sacrée du conflit sacré) : « pierre de l'épreuve ». Concept propre à 14, sans doublon dans 08. La liaison i (agent) et la racine sacrée oki chargent la pierre d'une valeur d'obstacle-épreuve, cohérente avec les Enfants des Échos (mineurs) confrontés à la roche. NB graphie 'kariuzoki' : zoki ≈ oki avec attaque z.",
+          "nuance": "Composition kar-i-oki sur kari (pierre) + oki (épreuve, défi, danger ; racine sacrée du conflit sacré) via liaison i (agent) : « pierre de l'épreuve ». La liaison i (agent) et la racine sacrée oki chargent la pierre d'une valeur d'obstacle-épreuve, cohérente avec les Enfants des Échos (mineurs) confrontés à la roche.",
           "registre": "courant"
         }
       ]
@@ -173,17 +173,17 @@
     "avalanche": {
       "traductions": [
         {
-          "confluent": "nisaoavuku",
+          "confluent": "nisoavuku",
           "type": "composition",
           "composition": "nis-oa-vuku",
           "sens_litteral": "Neige vers le gouffre",
           "racines": [
-            "nisa",
+            "nis",
             "vuku"
           ],
           "domaine": "danger_naturel",
           "definition": "Masse de neige ou de matière humide dévalant une pente vers l'abîme. Danger des hauteurs montagneuses.",
-          "nuance": "Composition nis-oa-vuku sur nisa (humide, ici neige) + vuku (gouffre) via liaison oa : « neige vers le gouffre ». Membre de la série des dangers de pente X-oa-vuku (éboulement kari, cascade ura). La civilisation rattache nisa (humide) à la neige faute de racine dédiée. Recoupe le domaine danger_naturel de 08.",
+          "nuance": "Forme consolidée sur nisoavuku : même concept que l'entrée parallèle du lexique (doublon inter-fichiers résolu, aligné sur la forme canonique).",
           "registre": "courant"
         }
       ]
@@ -191,17 +191,17 @@
     "feu sauvage": {
       "traductions": [
         {
-          "confluent": "sukiuzoka",
+          "confluent": "sukizoka",
           "type": "composition",
           "composition": "suk-i-zoka",
           "sens_litteral": "Feu de l'ennemi",
           "racines": [
-            "suki",
+            "suk",
             "zoka"
           ],
           "domaine": "danger_naturel",
           "definition": "Incendie incontrôlé qui ravage la nature, feu hostile et destructeur.",
-          "nuance": "Composition suk-i-zoka sur suki (feu, élément primordial) + zoka (ennemi, étranger hostile) via liaison i (agent) : « feu de l'ennemi ». Danger naturel, hors série X-oa-vuku car le feu n'est pas une chute de pente. zoka personnifie le feu en force hostile, écho de la racine suki=feu (caste-élément Feu). NB graphie 'sukiuzoka' : suk-i-zoka avec liaison i.",
+          "nuance": "Forme consolidée sur sukizoka : même concept que l'entrée parallèle du lexique (doublon inter-fichiers résolu, aligné sur la forme canonique).",
           "registre": "courant"
         }
       ]

@@ -11,7 +11,7 @@
           "domaine": "element_nature",
           "note": "Élément primordial",
           "definition": "La voûte céleste, espace au-dessus de la terre, lieu des signes divins et des aurores.",
-          "nuance": "Élément primordial et signe divin. Forme canonique zeru (r toléré par la doctrine). Vs 'nuage' (vapeur passagère) et 'horizon' (zerutoka).",
+          "nuance": "Élément primordial et signe divin. Le r y est toléré (forme sacrée/ancienne). Vs 'nuage' (vapeur passagère) et 'horizon' (zerutoka).",
           "registre": "sacré"
         }
       ],
@@ -82,7 +82,7 @@
           "domaine": "element_nature",
           "note": "Matière dure",
           "definition": "La pierre et la roche, matière dure et durable.",
-          "nuance": "Matière dure et durable. Forme canonique kari (r toléré). Vs 'terre' (toka, sol meuble) et 'sel' (seli). Base de crevasse (vukukari), métal (karisuki).",
+          "nuance": "Matière dure et durable ; le r y est toléré (héritage ancien). Vs 'terre' (toka, sol meuble) et 'sel' (seli). Base de crevasse (vukukari), métal (karisuki).",
           "registre": "courant"
         }
       ],
@@ -132,7 +132,7 @@
           "domaine": "geographie",
           "note": "Beaucoup d'arbres",
           "definition": "Étendue d'arbres, lieu boisé.",
-          "nuance": "DOUBLON partiel avec 'arbre' (même forme viku) : masse boisée vs arbre individuel non distingués, contexte requis. Homophone de viku=victoire.",
+          "nuance": "Partage la forme viku avec 'arbre' : la masse boisée et l'arbre individuel se distinguent par le contexte. Même forme aussi que viku 'victoire' (racine distincte).",
           "registre": "courant"
         }
       ]
@@ -146,7 +146,7 @@
           "domaine": "nature",
           "note": "Plante haute",
           "definition": "Plante haute et ligneuse, l'arbre individuel.",
-          "nuance": "DOUBLON avec 'forêt' (même forme viku). Pour le matériau bois, racine séparée buki.",
+          "nuance": "Partage la forme viku avec 'forêt' : l'arbre individuel se distingue de la masse boisée par le contexte. Pour le matériau bois, racine séparée buki.",
           "registre": "courant"
         }
       ]
@@ -160,7 +160,7 @@
           "domaine": "celeste",
           "note": "Astre nocturne",
           "definition": "Astre nocturne dont le cycle bimensuel rythme la Vigile Lunaire.",
-          "nuance": "Astre de la nuit, vs 'soleil' (sora, astre du jour) et 'étoile' (eku/eku). Charge rituelle : règle le calendrier des rituels.",
+          "nuance": "Astre de la nuit, vs 'soleil' (sora, astre du jour) et 'étoile' (eku). Charge rituelle : règle le calendrier des rituels.",
           "registre": "sacré"
         }
       ],
@@ -175,7 +175,7 @@
           "domaine": "celeste",
           "note": "Astre du jour",
           "definition": "Astre du jour, source de lumière et de chaleur.",
-          "nuance": "DOUBLON de racine avec 'lumière' (même forme sora) : soleil et clarté non distingués. Opposé à 'lune' et 'sombre'. Entre dans kori sora = joie.",
+          "nuance": "Partage la racine sora avec 'lumière' : l'astre du jour et la clarté qu'il diffuse relèvent d'un même mot. Opposé à 'lune' et 'sombre' (taku). Entre dans kori sora = joie.",
           "registre": "courant",
           "exemple": "va sora tekiseon"
         }
@@ -190,7 +190,7 @@
           "domaine": "perception",
           "note": "Même racine que soleil",
           "definition": "Clarté, luminosité émanant du soleil ou d'une source brillante.",
-          "nuance": "DOUBLON de racine avec 'soleil' (même forme sora). Opposé à 'sombre' (taku). La culture associe lumière/aurore (ora) aux signes divins.",
+          "nuance": "Partage la racine sora avec 'soleil' : la clarté et l'astre qui l'émet relèvent d'un même mot. Opposé à 'sombre' (taku). La culture associe lumière/aurore (ora) aux signes divins.",
           "registre": "courant"
         }
       ]
@@ -221,7 +221,7 @@
           "domaine": "qualite",
           "note": "Sans eau",
           "definition": "Aride, dépourvu d'eau.",
-          "nuance": "Qualité, antonyme de 'humide' (nisa). COLLISIONS : 'seku' coïncide avec le chiffre six et avec 'secret' (id 150).",
+          "nuance": "Qualité, antonyme de 'humide' (nisa). Même forme que le nombre 'six' (seku) : le contexte lève l'ambiguïté.",
           "registre": "courant"
         }
       ],
@@ -238,7 +238,7 @@
           "domaine": "geographie",
           "note": "Creux entre montagnes",
           "definition": "Dépression entre montagnes, creux du relief.",
-          "nuance": "Creux entre hauteurs, vs 'montagne' (tasa) et 'pic' (tasupiki). COLLISION : forme 'tani' identique au pronom 3sg (il/elle), désambiguïsée par le contexte.",
+          "nuance": "Creux entre hauteurs, vs 'montagne' (tasa) et 'pic' (tasupiki). Même forme que le pronom 3sg tani (il/elle), désambiguïsée par le contexte.",
           "registre": "courant"
         }
       ]
@@ -252,7 +252,7 @@
           "domaine": "materiau",
           "note": "Cristal marin",
           "definition": "Cristal marin, minéral extrait de la mer.",
-          "nuance": "DOUBLON de racine avec 'mer' (même forme seli) : le sel = aspect-matière, la mer = aspect-étendue. Vs 'pierre' (kari).",
+          "nuance": "Partage la racine seli avec 'mer' : le sel en est l'aspect-matière, la mer l'aspect-étendue. Vs 'pierre' (kari).",
           "registre": "courant"
         }
       ]
@@ -266,7 +266,7 @@
           "domaine": "geographie",
           "note": "Grande eau salée",
           "definition": "Grande étendue d'eau salée, frontière maritime de l'expansion récente.",
-          "nuance": "DOUBLON de racine avec 'sel' (même forme seli). Vs 'rivière' (nura, eau douce) et eau-élément (ura). Lieu de l'Autre (Nanzagouet maritimes).",
+          "nuance": "Partage la racine seli avec 'sel' : la mer en est l'aspect-étendue, le sel l'aspect-matière. Vs 'rivière' (nura, eau douce) et eau-élément (ura). Lieu de l'Autre (Nanzagouet maritimes).",
           "registre": "courant"
         }
       ],
@@ -333,7 +333,7 @@
           "domaine": "celeste",
           "note": "Points lumineux du ciel nocturne",
           "definition": "Point lumineux du ciel nocturne.",
-          "nuance": "Forme canonique eku (alignée sur data ; les variantes eku/atu sont écartées). Point lumineux du ciel nocturne. Dans le mythe fondateur : « les étoiles que la Voilée allume, dont ils firent des clous pour tenir leurs yeux ouverts ». Vs lune et soleil (sora).",
+          "nuance": "Point lumineux du ciel nocturne. Dans le mythe fondateur : « les étoiles que la Voilée allume, dont ils firent des clous pour tenir leurs yeux ouverts ». Vs lune (luna) et soleil (sora).",
           "registre": "sacré"
         }
       ],
@@ -366,7 +366,7 @@
           "domaine": "celeste",
           "note": "Vapeur du ciel",
           "definition": "Vapeur visible suspendue dans le ciel.",
-          "nuance": "Phénomène transitoire vs 'ciel' permanent (zeru). Les Sans-ciels naissent sous ciel couvert. NB racine 'nubu' non attestée dans data — propre à ce fichier.",
+          "nuance": "Phénomène transitoire vs 'ciel' permanent (zeru). Les Sans-ciels naissent sous ciel couvert.",
           "registre": "courant"
         }
       ]
@@ -374,17 +374,17 @@
     "cascade": {
       "traductions": [
         {
-          "confluent": "uraoavuku",
+          "confluent": "uroavuku",
           "type": "composition",
           "composition": "ur-oa-vuku",
           "sens_litteral": "Eau vers le gouffre",
           "racines": [
-            "ura",
+            "ur",
             "vuku"
           ],
           "domaine": "geographie",
           "definition": "Chute d'eau se précipitant vers un gouffre.",
-          "nuance": "Composition eau (ura) + vers (oa) + gouffre (vuku). Vs 'rivière' (nura, eau horizontale) : la cascade est la chute verticale. Forme alignée sur ura (l'ancienne 'uraoavuku' était une corruption r→l).",
+          "nuance": "Forme consolidée sur uroavuku : même concept que l'entrée parallèle du lexique (doublon inter-fichiers résolu, aligné sur la forme canonique).",
           "registre": "courant"
         }
       ]
@@ -458,7 +458,7 @@
           ],
           "domaine": "geographie",
           "definition": "Hauteur s'avançant au-dessus de la mer.",
-          "nuance": "Composé tas-u-seli (montagne + mer) : hauteur s'avançant au-dessus de la mer. Forme corrigée — l'ancien 'tasuseli' utilisait melu (=doux) au lieu de seli (=mer). Cf 'côte' (tokuseli).",
+          "nuance": "Composé tas-u-seli (montagne + mer) : hauteur s'avançant au-dessus de la mer. Cf 'côte' (tokuseli), sa contrepartie au niveau du sol.",
           "registre": "courant"
         }
       ],
@@ -498,7 +498,7 @@
           ],
           "domaine": "geographie",
           "definition": "Bande de terre bordant la mer, littoral.",
-          "nuance": "Composé tok-u-seli (terre + mer) : bande de terre bordant la mer, littoral. Forme corrigée (melu=doux → seli=mer). Lieu de l'expansion récente et du contact avec l'Autre.",
+          "nuance": "Composé tok-u-seli (terre + mer) : bande de terre bordant la mer, littoral. Lieu de l'expansion récente et du contact avec l'Autre.",
           "registre": "courant"
         }
       ]
@@ -535,7 +535,7 @@
           ],
           "domaine": "geographie",
           "definition": "Point où deux rivières se rejoignent et mêlent leurs eaux.",
-          "nuance": "Composition nul-aa-kota (liaison 'aa' = mélange/confluent), cœur symbolique. Vs Uraakota (ur-aa-kota, La Confluence comme lieu) : ici le phénomène géographique générique.",
+          "nuance": "Composition nur-aa-kota (liaison 'aa' = mélange/confluent), cœur symbolique. Vs Uraakota (ur-aa-kota, La Confluence comme lieu) : ici le phénomène géographique générique.",
           "registre": "sacré"
         }
       ],
@@ -554,7 +554,7 @@
           ],
           "domaine": "geographie",
           "definition": "L'une des deux rivières fondatrices, celle aux eaux bleues du ciel.",
-          "nuance": "Composition nul-u-zeru. Paire avec 'rivière verte' (nuruviku) ; ensemble = la Confluence. Toponyme fondateur, charge identitaire.",
+          "nuance": "Composition nur-u-zeru. Paire avec 'rivière verte' (nuruviku) ; ensemble = la Confluence. Toponyme fondateur, charge identitaire.",
           "registre": "sacré"
         }
       ],
@@ -573,7 +573,7 @@
           ],
           "domaine": "geographie",
           "definition": "L'une des deux rivières fondatrices, celle aux eaux vertes de la forêt.",
-          "nuance": "Composition nul-u-viku. Paire avec 'rivière azur' (nuruzeru). La racine viku (forêt) la colore en vert. Toponyme fondateur.",
+          "nuance": "Composition nur-u-viku. Paire avec 'rivière azur' (nuruzeru). La racine viku (forêt) la colore en vert. Toponyme fondateur.",
           "registre": "sacré"
         }
       ],

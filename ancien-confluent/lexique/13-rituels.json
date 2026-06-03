@@ -129,7 +129,7 @@
           ],
           "categorie": "titre_rituel",
           "definition": "Titre rituel désignant celui qui porte et garde le feu sacré lors des cérémonies, chargé de transmettre la flamme entre les générations.",
-          "nuance": "Composé tak-i-suki (taka=porter + suki=feu) = « celui qui porte le feu ». Forme réparée : l'ancien 'takisuki' (sur kanu=main) ne correspondait pas à sa composition. Titre rituel : garde et transmet la flamme sacrée entre les générations.",
+          "nuance": "Composé tak-i-suki (taka=porter + suki=feu) = « celui qui porte le feu ». Titre rituel : garde et transmet la flamme sacrée entre les générations ; partage la racine suki avec 'roche braise' (kariusuki) mais désigne une personne, non une matière.",
           "registre": "rituel"
         }
       ],
@@ -406,7 +406,7 @@
           ],
           "categorie": "lieu_rituel",
           "definition": "Artefact pictural majeur où chaque génération superpose sa couche de peinture, mémoire visuelle accumulée de la Confluence.",
-          "nuance": "= Ekakova (ek-a-kova : totalité + peinture), le grand artefact pictural où chaque génération superpose sa couche de peinture. Forme alignée sur le canonique du CLAUDE.md ; l'ancien 'ekakova' était une forme divergente corrompue. Même référent que l'entrée 'Ekakova' (04-lieux).",
+          "nuance": "= Ekakova (ek-a-kova : totalité + peinture), le grand artefact pictural où chaque génération superpose sa couche de peinture. Instance concrète de l''artefact multi-générationnel' (nekauekaaita) sous forme picturale, distincte du 'Memento' (objet de mémoire) et de l''Autel des Pionniers' (lieu-autel). Même référent que l'entrée 'Ekakova' (04-lieux).",
           "registre": "sacré"
         }
       ],
@@ -444,7 +444,7 @@
           ],
           "categorie": "lieu_rituel",
           "definition": "Lieu sacré accumulant les noms de ceux qui ont osé et transmis, autel dédié à l'origine et aux ancêtres fondateurs.",
-          "nuance": "Instance d'artefact multi-générationnel sous forme de lieu-autel (sacré+origine+ancêtres), distinct de la 'Grande Fresque' (pictural) ; FLAG : champ 'racines' liste 'ena' alors que 'composition' écrit 'en-u' - cohérent (en- = forme liée d'ena, origine). Forme reprise telle quelle.",
+          "nuance": "Instance d''artefact multi-générationnel' (nekauekaaita) sous forme de lieu-autel (sacré + origine + ancêtres ; en- = forme liée d'ena, origine), distincte de la 'Grande Fresque' (pictural) : ici l'accent porte sur l'origine et les ancêtres fondateurs.",
           "registre": "sacré"
         }
       ]
