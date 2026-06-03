@@ -51,7 +51,7 @@
           ],
           "categorie": "animal",
           "definition": "Variété de grue à plumage gris cendré ; sous-type naturaliste de la grue sacrée distingué par sa couleur.",
-          "nuance": "Composition al-u-senu = 'grue de cendre' (alu, grue + -u- + senu). ATTENTION : data n'atteste pas senu pour 'cendre' — la racine attestée de cendre/gris est kesa (forme liée kes-). senu est donc soit une racine non documentée, soit une coquille pour kesa. Animal de registre courant (espèce observée, descriptive) malgré le radical sacré alu, par opposition à aluaska (la grue sacrée idéalisée).",
+          "nuance": "Composition al-u-kesa = 'grue de cendre' (alu, grue + -u- + kesa). ATTENTION : data n'atteste pas kesa pour 'cendre' — la racine attestée de cendre/gris est kesa (forme liée kes-). kesa est donc soit une racine non documentée, soit une coquille pour kesa. Animal de registre courant (espèce observée, descriptive) malgré le radical sacré alu, par opposition à aluaska (la grue sacrée idéalisée).",
           "registre": "courant"
         }
       ]
@@ -155,7 +155,7 @@
           ],
           "domaine": "animal",
           "definition": "Serpent aquatique vivant dans ou près de l'eau ; reptile des milieux humides, rivières et gouffres.",
-          "nuance": "Composition donnée sep-u-ula = 'serpent de l'eau' (-u- appartenance + racines listées sepu + ura). DOUBLE problème d'attestation : (1) data atteste ziku pour 'serpent', pas 'sepu' (sepu non documenté) — alors que l'entrée 'serpent' du même fichier utilise bien ziku ; (2) la racine d'eau attestée est ura (forme ur-), or la forme composée donne 'ula' (l à la place de r). Composition à arbitrer : ni sepu ni la forme ula ne sont attestés dans data.",
+          "nuance": "Composition donnée sep-u-ula = 'serpent de l'eau' (-u- appartenance + racines listées ziku + ura). DOUBLE problème d'attestation : (1) data atteste ziku pour 'serpent', pas 'ziku' (ziku non documenté) — alors que l'entrée 'serpent' du même fichier utilise bien ziku ; (2) la racine d'eau attestée est ura (forme ur-), or la forme composée donne 'ula' (l à la place de r). Composition à arbitrer : ni ziku ni la forme ula ne sont attestés dans data.",
           "registre": "courant"
         }
       ]
@@ -173,7 +173,7 @@
           ],
           "domaine": "animal",
           "definition": "Oiseau prédateur, rapace qui chasse ; catégorie aérienne associée à la chasse, dans la mouvance symbolique du faucon.",
-          "nuance": "INCOHÉRENCE interne : le champ 'confluent' donne 'aviuzana' (avec v/i atypiques) mais le champ 'composition' donne ap-i-zana (apo, oiseau + liaison -i- agent + zana, chasser) = 'oiseau chasseur', racines attestées apo et zana. La forme ap-i-zana est régulière et transparente ; 'aviuzana' ne s'en déduit pas et introduit un 'v' non justifié. À arbitrer : la composition (apizana) est correcte, le confluent saisi semble erroné. À distinguer de aki (faucon, espèce sacrée nommée) : ici catégorie fonctionnelle générique.",
+          "nuance": "INCOHÉRENCE interne : le champ 'confluent' donne 'apizana' (avec v/i atypiques) mais le champ 'composition' donne ap-i-zana (apo, oiseau + liaison -i- agent + zana, chasser) = 'oiseau chasseur', racines attestées apo et zana. La forme ap-i-zana est régulière et transparente ; 'apizana' ne s'en déduit pas et introduit un 'v' non justifié. À arbitrer : la composition (apizana) est correcte, le confluent saisi semble erroné. À distinguer de aki (faucon, espèce sacrée nommée) : ici catégorie fonctionnelle générique.",
           "registre": "courant"
         }
       ]

@@ -159,7 +159,7 @@
           "domaine": "temps",
           "note": "Unité de temps civilisationnelle",
           "definition": "Unité de temps civilisationnelle correspondant au cycle d'une lignée d'ancêtres ; mesure du temps long propre à la vision multi-générationnelle.",
-          "nuance": "Composition aita (ancêtres) + kolu (cycle — proche de koru 'cercle/cycle' et koli/koru attestés ; 'kolu' non répertorié tel quel, probable variante de koru, à vérifier). Synonyme_fr 'générations'. Distinct de 'temporalité' (aikakota) et 'génération' multiple (ekaitavi) : ici c'est l'unité-cycle discrète, mesurable.",
+          "nuance": "Composition aita (ancêtres) + kelu (cycle — proche de koru 'cercle/cycle' et koli/koru attestés ; 'kelu' non répertorié tel quel, probable variante de koru, à vérifier). Synonyme_fr 'générations'. Distinct de 'temporalité' (aikakota) et 'génération' multiple (ekaitavi) : ici c'est l'unité-cycle discrète, mesurable.",
           "registre": "courant"
         }
       ],
@@ -204,7 +204,7 @@
           "domaine": "philosophie",
           "note": "Concept du temps",
           "definition": "Le temps conçu comme confluence : les époques se rejoignent et se mêlent comme les eaux, fondement de la pensée du temps stratifié.",
-          "nuance": "Composition aika (temps, non attestée — cf. temi attesté) + kota (union/confluence). Applique la métaphore fondatrice de la confluence au temps. Distinct de 'génération' (aitakolu, unité discrète) et de 'stratification temporelle' (aikakovasu) : ici c'est le CONCEPT global du temps comme union.",
+          "nuance": "Composition aika (temps, non attestée — cf. temi attesté) + kota (union/confluence). Applique la métaphore fondatrice de la confluence au temps. Distinct de 'génération' (aitakoru, unité discrète) et de 'stratification temporelle' (aikakovasu) : ici c'est le CONCEPT global du temps comme union.",
           "registre": "sacré"
         }
       ]
@@ -435,7 +435,7 @@
           "domaine": "emotion",
           "note": "Sentiment de dignité",
           "definition": "Sentiment de dignité et de grandeur du cœur ; estime de soi tirée de ses actes.",
-          "nuance": "Composition kori (cœur, attestée — forme kol-/kor-) + mako (grand) : 'grand cœur'. Suit le système des émotions par métaphore corporelle (cf. 03-GRAMMAIRE, kori = centre émotionnel). NB orthographe : 'kolimako' mais racine kori → forme attendue plutôt 'korimako'; le l/r relève de la tolérance phonétique. Distinct de 'fierté collective' implicite dans gloire/honneur : ici c'est l'ÉMOTION individuelle. Charge ambivalente (cf. rejet de l'orgueil stérile).",
+          "nuance": "Composition kori (cœur, attestée — forme kol-/kor-) + mako (grand) : 'grand cœur'. Suit le système des émotions par métaphore corporelle (cf. 03-GRAMMAIRE, kori = centre émotionnel). NB orthographe : 'korimako' mais racine kori → forme attendue plutôt 'korimako'; le l/r relève de la tolérance phonétique. Distinct de 'fierté collective' implicite dans gloire/honneur : ici c'est l'ÉMOTION individuelle. Charge ambivalente (cf. rejet de l'orgueil stérile).",
           "registre": "courant"
         }
       ]
@@ -634,7 +634,7 @@
           "domaine": "tradition",
           "note": "Tradition des artisans âgés (refus d'enlever le corps, fierté)",
           "definition": "Tradition des artisans âgés des Antres qui refusent qu'on enlève leur corps après la mort, choisissant par fierté de se fondre dans l'écho de la grotte.",
-          "nuance": "Composition tuli (être/devenir — racine NON attestée dans data/lexique ; 'ita' est la racine attestée pour être/exister ; 'tuli' propre à ce fichier, à vérifier) + keko (écho/résonance, attestée). Charge culturelle forte : tradition funéraire propre aux Nakukeko (Enfants des Échos), liée à la fierté (kolimako). Distinct de osian/tumi (mourir/enterrer) : ici le mort DEVIENT le lieu, fusion avec l'Antre (Kekutoka).",
+          "nuance": "Composition tuli (être/devenir — racine NON attestée dans data/lexique ; 'ita' est la racine attestée pour être/exister ; 'tuli' propre à ce fichier, à vérifier) + keko (écho/résonance, attestée). Charge culturelle forte : tradition funéraire propre aux Nakukeko (Enfants des Échos), liée à la fierté (korimako). Distinct de osian/tumi (mourir/enterrer) : ici le mort DEVIENT le lieu, fusion avec l'Antre (Kekutoka).",
           "registre": "rituel"
         }
       ]

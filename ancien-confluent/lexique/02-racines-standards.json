@@ -366,7 +366,7 @@
           "domaine": "couleur",
           "note": "Couleur du sang, yeux des Ciels-clairs",
           "definition": "Couleur du sang ; teinte des yeux des Ciels-clairs (aux couleurs de l'aurore) et des cheveux des Nanzagouet. Couleur à forte charge symbolique.",
-          "nuance": "Racine standard pasu (forme liée pas-), couleur. CHEVAUCHEMENT : pasu est aussi donné pour 'sang' dans ce fichier (la couleur tire son nom du fluide). ATTENTION : forme liée 'pas-' identique à pasa (prendre, verbe pasak) — collision en composition. À distinguer de kesa (gris) et kelu/kolu (couleur générique).",
+          "nuance": "Racine standard pasu (forme liée pas-), couleur. CHEVAUCHEMENT : pasu est aussi donné pour 'sang' dans ce fichier (la couleur tire son nom du fluide). ATTENTION : forme liée 'pas-' identique à pasa (prendre, verbe pasak) — collision en composition. À distinguer de kesa (gris) et kelu/kelu (couleur générique).",
           "registre": "courant"
         }
       ],
@@ -806,9 +806,9 @@
           "type": "racine",
           "forme_liee": "mor",
           "domaine": "mental",
-          "note": "Mémoire, souvenir - distinct de memu (mémoire collective)",
+          "note": "Mémoire, souvenir - distinct de mori (mémoire collective)",
           "definition": "Trace mentale du passé conservée ; mémoire individuelle, faculté de se rappeler. Au cœur d'une civilisation pour qui 'rien ne doit être oublié'.",
-          "nuance": "Racine standard mori (forme liée mor-), mental ; le 'r' est toléré (racine ancienne). Donne morik (mémoriser). Couvre mémoire/souvenir/rappel. Le fichier la distingue de 'memu' (mémoire collective) — mais memu n'est PAS attesté dans data (à vérifier). À distinguer de seka (savoir) : mori = se rappeler, seka = connaître.",
+          "nuance": "Racine standard mori (forme liée mor-), mental ; le 'r' est toléré (racine ancienne). Donne morik (mémoriser). Couvre mémoire/souvenir/rappel. Le fichier la distingue de 'mori' (mémoire collective) — mais mori n'est PAS attesté dans data (à vérifier). À distinguer de seka (savoir) : mori = se rappeler, seka = connaître.",
           "registre": "courant",
           "exemple": "va aita su vo mori morik"
         }
@@ -899,9 +899,9 @@
           "type": "racine",
           "forme_liee": "sel",
           "domaine": "qualificatif",
-          "note": "Salé, eau salée - distinct de salu (sel cristal)",
+          "note": "Salé, saumâtre",
           "definition": "Qui contient du sel ; salé, saumâtre. Qualité de l'eau de mer, découverte avec l'expansion récente vers la côte maritime.",
-          "nuance": "Racine standard selu (forme liée sel-), qualificatif. Distinction explicite avec 'salu' (sel cristal) — mais data atteste plutôt 'seli' (sel-) pour sel/mer. selu/seli/salu se chevauchent dans le champ du sel et de la mer. Couvre salé/saumâtre. Charge culturelle : la côte, le sel et le vent sont l'horizon de l'inconnu.",
+          "nuance": "Racine standard selu (forme liée sel-), qualificatif : salé, saumâtre. Vs seli (sel/mer, la matière et l'étendue) : selu qualifie, seli nomme. Charge culturelle liée à la côte et au sel (expansion maritime récente).",
           "registre": "courant"
         }
       ],

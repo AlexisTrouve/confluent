@@ -15,7 +15,7 @@
           "domaine": "action_maritime",
           "note": "Voyager sur l'eau avec une embarcation",
           "definition": "Voyager sur l'eau au moyen d'une embarcation. Verbe d'action du domaine maritime récent, né de l'expansion vers la côte.",
-          "nuance": "Composition ula-ki : ula = variante de ura (eau, racine sacrée, ur-), avec ki tiré de teki/-ki (aller, chemin). Litt. 'aller sur l'eau'. À distinguer de tekis (aller, terrestre/général) et de ulakimako (voyage maritime de longue durée).",
+          "nuance": "Composition ula-ki : ula = variante de ura (eau, racine sacrée, ur-), avec ki tiré de teki/-ki (aller, chemin). Litt. 'aller sur l'eau'. À distinguer de tekis (aller, terrestre/général) et de urakimako (voyage maritime de longue durée).",
           "registre": "courant"
         }
       ],
@@ -37,7 +37,7 @@
           "domaine": "role_maritime",
           "note": "Personne qui navigue",
           "definition": "Personne dont l'activité est de naviguer, celui qui va sur l'eau. Rôle social du domaine maritime émergent.",
-          "nuance": "Composition ula-ki-na : ulaki (naviguer) + suffixe agentif -na (issu de naki/na-, l'enfant/celui-qui ; à ne pas confondre avec la liaison agentive standard -i-). Litt. 'celui qui va sur l'eau'. Rôle proche des Nakuura (Enfants du Courant), maîtres de l'eau."
+          "nuance": "Composition ula-ki-na : uraki (naviguer) + suffixe agentif -na (issu de naki/na-, l'enfant/celui-qui ; à ne pas confondre avec la liaison agentive standard -i-). Litt. 'celui qui va sur l'eau'. Rôle proche des Nakuura (Enfants du Courant), maîtres de l'eau."
         }
       ],
       "synonymes_fr": [
@@ -59,7 +59,7 @@
           "domaine": "objet_maritime",
           "note": "Bateau, barque - terme générique",
           "definition": "Bateau ou barque, terme générique pour tout véhicule flottant. Objet maritime de base.",
-          "nuance": "Composition ula-vanu : ula (eau) + vanu (navire, embarcation, racine standard van-). Litt. 'chose d'eau'. Doublon partiel avec vanu seul, qui sert déjà de racine 'navire' ; ulavanu insiste sur l'aspect 'objet flottant sur l'eau'.",
+          "nuance": "Composition ula-vanu : ula (eau) + vanu (navire, embarcation, racine standard van-). Litt. 'chose d'eau'. Doublon partiel avec vanu seul, qui sert déjà de racine 'navire' ; uravanu insiste sur l'aspect 'objet flottant sur l'eau'.",
           "registre": "courant"
         }
       ],
@@ -190,7 +190,7 @@
           "domaine": "geographie_maritime",
           "note": "Bord de la mer, côte",
           "definition": "Bord de la mer, côte, ligne où la terre rencontre l'eau salée.",
-          "nuance": "Racine maritime (forme liée kost-), nouvelle, introduite avec l'expansion côtière ; absente du lexique central. À distinguer de berge (ulalinu, bord de rivière/fleuve) et de bord (bori, limite générale). Réservé au littoral maritime."
+          "nuance": "Racine maritime (forme liée kost-), nouvelle, introduite avec l'expansion côtière ; absente du lexique central. À distinguer de berge (uralinu, bord de rivière/fleuve) et de bord (bori, limite générale). Réservé au littoral maritime."
         }
       ],
       "synonymes_fr": [
@@ -213,7 +213,7 @@
           "domaine": "geographie",
           "note": "Bord de rivière ou fleuve",
           "definition": "Bord d'une rivière ou d'un fleuve, rive d'eau douce.",
-          "nuance": "Composition ula-linu : ula (eau) + linu (variante de lina, ligne/corde). Litt. 'ligne d'eau'. À opposer à kosti (rivage MARITIME) : ulalinu est fluvial, lié au mode de vie ancestral (villages sur pilotis des Nakuura).",
+          "nuance": "Composition ula-linu : ula (eau) + linu (variante de lina, ligne/corde). Litt. 'ligne d'eau'. À opposer à kosti (rivage MARITIME) : uralinu est fluvial, lié au mode de vie ancestral (villages sur pilotis des Nakuura).",
           "registre": "courant"
         }
       ],
@@ -259,7 +259,7 @@
           "domaine": "nature_maritime",
           "note": "Eau de mer, impure pour boire",
           "definition": "Eau de mer, impropre à la consommation.",
-          "nuance": "Composition ula-selu : ula (eau) + selu (sel ; lié à seli = sel/mer). Litt. 'eau de sel'. S'oppose directement à eau douce (ulapuli). Attention : seli signifie à la fois 'sel' ET 'mer' — selu/seli partagent cette racine.",
+          "nuance": "Composition ula-selu : ula (eau) + selu (sel ; lié à seli = sel/mer). Litt. 'eau de sel'. S'oppose directement à eau douce (urapuli). Attention : seli signifie à la fois 'sel' ET 'mer' — selu/seli partagent cette racine.",
           "registre": "courant"
         }
       ],
@@ -281,7 +281,7 @@
           "domaine": "nature",
           "note": "Eau potable de rivière ou source",
           "definition": "Eau potable, de rivière ou de source, propre à boire.",
-          "nuance": "Composition ula-puli : ula (eau) + puli (poumon, souffle — détournée ici vers 'pur/respirable' ; le sens littéral noté 'eau pure' joue sur cette racine). Attention : ne PAS confondre avec melu (doux, tendre) ; ici 'douce' = potable/non salée, pas la douceur tactile. S'oppose à ulaselu (eau salée).",
+          "nuance": "Composition ula-puli : ula (eau) + puli (poumon, souffle — détournée ici vers 'pur/respirable' ; le sens littéral noté 'eau pure' joue sur cette racine). Attention : ne PAS confondre avec melu (doux, tendre) ; ici 'douce' = potable/non salée, pas la douceur tactile. S'oppose à uraselu (eau salée).",
           "registre": "courant"
         }
       ],
@@ -371,7 +371,7 @@
           "domaine": "action_maritime",
           "note": "Faire avancer avec des rames",
           "definition": "Faire avancer une embarcation à la force des rames.",
-          "nuance": "Composition kanu-la-ki : kanu (main) + la-ki (eau + aller, comme dans ulaki=naviguer). Litt. 'pousser avec les mains pour aller (sur l'eau)'. Bâti sur kanu (main), pas sur une racine 'rame' autonome.",
+          "nuance": "Composition kanu-la-ki : kanu (main) + la-ki (eau + aller, comme dans uraki=naviguer). Litt. 'pousser avec les mains pour aller (sur l'eau)'. Bâti sur kanu (main), pas sur une racine 'rame' autonome.",
           "registre": "courant"
         }
       ],
@@ -528,7 +528,7 @@
           "domaine": "voyage_maritime",
           "note": "Voyage de longue durée sur l'eau",
           "definition": "Voyage maritime de longue durée, traversée au long cours.",
-          "nuance": "Composition ula-ki-mako : ulaki (naviguer) + mako (grand, vaste, racine mak-). Litt. 'grand voyage sur l'eau'. Intensifie ulaki (naviguer) ; mako sert ailleurs de quantificateur 'grand nombre'. Évoque l'expansion lointaine de la civilisation.",
+          "nuance": "Composition ula-ki-mako : uraki (naviguer) + mako (grand, vaste, racine mak-). Litt. 'grand voyage sur l'eau'. Intensifie uraki (naviguer) ; mako sert ailleurs de quantificateur 'grand nombre'. Évoque l'expansion lointaine de la civilisation.",
           "registre": "courant"
         }
       ],
@@ -572,7 +572,7 @@
           "domaine": "logistique",
           "note": "Reconstituer les provisions",
           "definition": "Action de reconstituer les provisions (eau, vivres) lors d'une expédition.",
-          "nuance": "Composition nutu-kovi : nutu (élément 'réserve/provision', non attesté au lexique central) + kovi (route, chemin, racine kov-). Litt. 'remplir les réserves (en route)'. Vocabulaire logistique lié aux longues traversées (ulakimako).",
+          "nuance": "Composition nutu-kovi : nutu (élément 'réserve/provision', non attesté au lexique central) + kovi (route, chemin, racine kov-). Litt. 'remplir les réserves (en route)'. Vocabulaire logistique lié aux longues traversées (urakimako).",
           "registre": "courant"
         }
       ],
@@ -639,7 +639,7 @@
           "domaine": "perception",
           "note": "Perception initiale des navires étrangers comme créatures vivantes",
           "definition": "Perception initiale d'un navire étranger comme un être vivant flottant sur l'eau.",
-          "nuance": "Composition besi-ula-tuli : besi (bête, animal sauvage, racine bes-) + ula (eau) + tuli (flotter, cf. ulatuli). Litt. 'bête qui flotte sur l'eau'. Terme culturellement marqué : trace de l'incompréhension au premier contact, avant de comprendre (vitokova) qu'il s'agit de bois assemblé.",
+          "nuance": "Composition besi-ula-tuli : besi (bête, animal sauvage, racine bes-) + ula (eau) + tuli (flotter, cf. uratuli). Litt. 'bête qui flotte sur l'eau'. Terme culturellement marqué : trace de l'incompréhension au premier contact, avant de comprendre (vitokova) qu'il s'agit de bois assemblé.",
           "registre": "courant"
         }
       ]

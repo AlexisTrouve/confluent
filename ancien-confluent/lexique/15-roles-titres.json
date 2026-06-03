@@ -412,7 +412,7 @@
           ],
           "domaine": "titre",
           "definition": "Personne qui applique les couleurs ; artisan de la teinte, contributeur de la Grande Fresque.",
-          "nuance": "Composition kol-u-tori (notée koluutori) = 'personne des couleurs' (racine 'kolu' couleur, forme liée kol- + tori 'personne'). Note : data/lexique.json liste 'kelu' = couleur/teinte (verbe kelum 'peindre') ; le titre s'appuie sur 'kolu' du lexique étendu. Distinct de kovatori 'sculpteur' (relief vs couleur). Lié à la Grande Fresque (Ekakova).",
+          "nuance": "Composition kol-u-tori (notée koluutori) = 'personne des couleurs' (racine 'kelu' couleur, forme liée kol- + tori 'personne'). Note : data/lexique.json liste 'kelu' = couleur/teinte (verbe kelum 'peindre') ; le titre s'appuie sur 'kelu' du lexique étendu. Distinct de kovatori 'sculpteur' (relief vs couleur). Lié à la Grande Fresque (Ekakova).",
           "registre": "courant"
         }
       ]

@@ -16,7 +16,7 @@
           "domaine": "concept_fondateur",
           "note": "État spirituel central",
           "definition": "L'état spirituel d'observation sans préjugé, capacité de voir la vérité au-delà des apparences, concept fondateur des Siliaska.",
-          "nuance": "Concept identitaire central (sili=regard + aska=libre). Distinct de 'liberté' pure (oabsi/eilne) : c'est une liberté DU regard, une posture cognitive, pas une condition sociale.",
+          "nuance": "Concept identitaire central (sili=regard + aska=libre). Distinct de 'liberté' pure (aska/aska) : c'est une liberté DU regard, une posture cognitive, pas une condition sociale.",
           "registre": "sacré",
           "exemple": "va sili vo veri miraku"
         }
@@ -70,7 +70,7 @@
           ],
           "domaine": "concept_abstrait",
           "definition": "Le savoir hérité des ancêtres, connaissance mûrie par les générations et porteuse de jugement juste.",
-          "nuance": "seka (savoir) + aita (ancêtres). Se distingue de 'connaissance' (sekamemu, savoir mémorisé brut) et 'compétence' (sekautosa, savoir utile) : ici le savoir tire son autorité de la lignée.",
+          "nuance": "seka (savoir) + aita (ancêtres). Se distingue de 'connaissance' (sekamori, savoir mémorisé brut) et 'compétence' (sekautosa, savoir utile) : ici le savoir tire son autorité de la lignée.",
           "registre": "sacré",
           "exemple": "va aita su vo seka kisunait"
         }
@@ -134,7 +134,7 @@
           "forme_liee": "ask",
           "domaine": "concept_fondateur",
           "definition": "La liberté comme condition d'un être affranchi, racine sacrée du concept.",
-          "nuance": "Forme canonique aska (libre/liberté, data). Les variantes oabsi/eilne — racines orphelines non attestées dans data — sont écartées. Distinct de siliaska (regard libre, la posture cognitive du peuple) et de aska=libre (adjectif).",
+          "nuance": "Forme canonique aska (libre/liberté, data). Les variantes aska/aska — racines orphelines non attestées dans data — sont écartées. Distinct de siliaska (regard libre, la posture cognitive du peuple) et de aska=libre (adjectif).",
           "registre": "sacré"
         }
       ],
@@ -193,7 +193,7 @@
           ],
           "domaine": "concept_abstrait",
           "definition": "Savoir utile et bien maîtrisé permettant d'agir avec efficacité.",
-          "nuance": "seka (savoir) + tosa (bien). Triade avec 'sagesse' (sekauaita, savoir des anciens) et 'connaissance' (sekamemu, savoir mémorisé) : la compétence est le savoir QUALIFIÉ bon/opérant.",
+          "nuance": "seka (savoir) + tosa (bien). Triade avec 'sagesse' (sekauaita, savoir des anciens) et 'connaissance' (sekamori, savoir mémorisé) : la compétence est le savoir QUALIFIÉ bon/opérant.",
           "registre": "courant"
         }
       ]
@@ -251,7 +251,7 @@
           ],
           "domaine": "spirituel",
           "definition": "La civilisation disparue et technologiquement supérieure découverte sous le Gouffre Humide, origine mythique et avertissement.",
-          "nuance": "Composé en-u-aita (ena=origine + aita=ancêtres) = « l'origine-ancêtre ». Forme réparée : l'ancien champ 'iusoluke' était corrompu. Désigne la civilisation disparue découverte sous le Gouffre Humide, origine mythique et avertissement. NB : doublon de forme avec une autre entrée 'premiers ancêtres' (enuaita) — à fusionner.",
+          "nuance": "Composé en-u-aita (ena=origine + aita=ancêtres) = « l'origine-ancêtre ». Forme réparée : l'ancien champ 'enuaita' était corrompu. Désigne la civilisation disparue découverte sous le Gouffre Humide, origine mythique et avertissement. NB : doublon de forme avec une autre entrée 'premiers ancêtres' (enuaita) — à fusionner.",
           "registre": "rituel"
         }
       ],
@@ -409,7 +409,7 @@
           "domaine": "institution",
           "note": "Promesse sacrée",
           "definition": "Promesse sacrée scellée par le rituel du Regard Partagé ; engagement solennel.",
-          "nuance": "Racine (savu, attestée ; cf. Talusavu Halls des Serments). Base de 'serment de sang' (savuulasu) et 'trahison' (zoosavu = sans serment). Pas de doublon.",
+          "nuance": "Racine (savu, attestée ; cf. Talusavu Halls des Serments). Base de 'serment de sang' (savuupasu) et 'trahison' (zoosavu = sans serment). Pas de doublon.",
           "registre": "sacré"
         }
       ]
@@ -427,7 +427,7 @@
           ],
           "domaine": "institution",
           "definition": "Serment scellé par le sang, le plus contraignant des engagements.",
-          "nuance": "INCOHÉRENCE : forme 'savuulasu' mais composition 'sav-u-pasu' (savu + pasu=rouge/sang) → devrait donner ~'savuupasu'. Le 'l' de la forme actuelle n'est pas motivé. À vérifier. Renforce 'serment' (savu) par pasu.",
+          "nuance": "INCOHÉRENCE : forme 'savuupasu' mais composition 'sav-u-pasu' (savu + pasu=rouge/sang) → devrait donner ~'savuupasu'. Le 'l' de la forme actuelle n'est pas motivé. À vérifier. Renforce 'serment' (savu) par pasu.",
           "registre": "sacré"
         }
       ]
@@ -471,7 +471,7 @@
           "forme_liee": "ok",
           "domaine": "concept_fondateur",
           "definition": "Le défi, danger ou test que doit affronter un être ; obstacle spirituel.",
-          "nuance": "Forme canonique oki (épreuve/défi/danger, data). La variante orpheline uuno est écartée ; tous les composés (okiveli épreuve-de-vérité, okiatosa victoire, okiazoka défaite) reposent déjà sur oki.",
+          "nuance": "Forme canonique oki (épreuve/défi/danger, data). La variante orpheline oki est écartée ; tous les composés (okiveli épreuve-de-vérité, okiatosa victoire, okiazoka défaite) reposent déjà sur oki.",
           "registre": "sacré"
         }
       ],
@@ -493,7 +493,7 @@
           ],
           "domaine": "institution",
           "definition": "Test rituel destiné à révéler la vérité d'un être ou d'un fait ; ordalie de la Confluence.",
-          "nuance": "oki (épreuve) + veli (vérité). Note : utilise oki, pas la racine 'uuno' de l'entrée 'epreuve' — confirme l'incohérence de uuno. Distinct de 'justice' : l'épreuve est le PROCÉDÉ, la justice le principe.",
+          "nuance": "oki (épreuve) + veli (vérité). Note : utilise oki, pas la racine 'oki' de l'entrée 'epreuve' — confirme l'incohérence de oki. Distinct de 'justice' : l'épreuve est le PROCÉDÉ, la justice le principe.",
           "registre": "rituel"
         }
       ]
@@ -542,7 +542,7 @@
           "forme_liee": "var",
           "domaine": "conflit",
           "definition": "Conflit armé ouvert entre groupes ; affrontement collectif.",
-          "nuance": "Forme canonique varu (guerre/combat, data ; verbe varum=armer). Les variantes ouso/uovi sont écartées. Conflit armé ouvert ; proche phonétiquement de oki (épreuve) mais distinct.",
+          "nuance": "Forme canonique varu (guerre/combat, data ; verbe varum=armer). Les variantes varu/varu sont écartées. Conflit armé ouvert ; proche phonétiquement de oki (épreuve) mais distinct.",
           "registre": "sacré"
         }
       ],
@@ -577,7 +577,7 @@
           "forme_liee": "pak",
           "domaine": "etat",
           "definition": "État de calme et d'absence de conflit ; tranquillité de la communauté.",
-          "nuance": "Racine (paku, attestée). Distinct de 'harmonie' (kotautosa) : la paix est l'ABSENCE de guerre/tension, l'harmonie une union activement bonne. Antonyme de guerre (ouso/varu).",
+          "nuance": "Racine (paku, attestée). Distinct de 'harmonie' (kotautosa) : la paix est l'ABSENCE de guerre/tension, l'harmonie une union activement bonne. Antonyme de guerre (varu/varu).",
           "registre": "courant"
         }
       ],
@@ -634,7 +634,7 @@
           ],
           "domaine": "concept_negatif",
           "definition": "Mise à mort hostile d'un être ; tuer par malveillance.",
-          "nuance": "osi (mort) + zoka (hostilité). INCOHÉRENCE : composition 'os-i-a-zoka' donnerait ~'osiazoka', forme actuelle 'osiakuzoka' a un -ku- inexpliqué. Distinct de osian (mourir, passage neutre vers les ancêtres) : ici la mort est CRIMINELLE.",
+          "nuance": "osi (mort) + zoka (hostilité). INCOHÉRENCE : composition 'os-i-a-zoka' donnerait ~'osiazoka', forme actuelle 'osiazoka' a un -ku- inexpliqué. Distinct de osian (mourir, passage neutre vers les ancêtres) : ici la mort est CRIMINELLE.",
           "registre": "courant"
         }
       ]
@@ -652,7 +652,7 @@
           ],
           "domaine": "concept_negatif",
           "definition": "Brutalité animale, frapper comme une bête ; violence déshonorante rejetée par la civilisation.",
-          "nuance": "INCOHÉRENCE racine : composition cite 'betu' (bête) mais la racine attestée pour bête est besi (data/lexique) ; betu non répertorié. Valeur culturelle : le gourdin/coup brutal = déshonneur. Distinct de guerre (conflit réglé).",
+          "nuance": "INCOHÉRENCE racine : composition cite 'besi' (bête) mais la racine attestée pour bête est besi (data/lexique) ; besi non répertorié. Valeur culturelle : le gourdin/coup brutal = déshonneur. Distinct de guerre (conflit réglé).",
           "registre": "courant"
         }
       ]
@@ -688,7 +688,7 @@
           ],
           "domaine": "conflit",
           "definition": "Personne capturée et retenue ; captif (ex. les Nanzagouet menés au Gouffre Humide).",
-          "nuance": "pasik (capturer, cf. verbe kapik) + toli (?). ATTENTION : racine 'toli' non attestée dans data/lexique (la personne est tori) — probable variante ou erreur de tori. À vérifier.",
+          "nuance": "pasik (capturer, cf. verbe kapik) + tori (?). ATTENTION : racine 'tori' non attestée dans data/lexique (la personne est tori) — probable variante ou erreur de tori. À vérifier.",
           "registre": "courant",
           "exemple": "va aki su vo zoka kapikat"
         }
@@ -777,9 +777,9 @@
             "mori"
           ],
           "domaine": "concept_fondateur",
-          "note": "Connaissance - le savoir gardé en mémoire (seka=savoir + memu=mémoire)",
+          "note": "Connaissance - le savoir gardé en mémoire (seka=savoir + mori=mémoire)",
           "definition": "Le savoir gardé en mémoire ; ensemble de ce qui est su et conservé.",
-          "nuance": "seka (savoir) + mori (mémoire) : le savoir gardé en mémoire. Forme corrigée (memu → mori canonique). Triade seka- : distinct de 'sagesse' (savoir ancestral) et 'compétence' (savoir utile) ; ici l'accent est sur la conservation mnésique.",
+          "nuance": "seka (savoir) + mori (mémoire) : le savoir gardé en mémoire. Forme corrigée (mori → mori canonique). Triade seka- : distinct de 'sagesse' (savoir ancestral) et 'compétence' (savoir utile) ; ici l'accent est sur la conservation mnésique.",
           "registre": "courant",
           "exemple": "va miki vo seka sekamu"
         }
@@ -799,7 +799,7 @@
           "domaine": "concept_fondateur",
           "note": "Mémoire - concept central de la civilisation (synonyme normalisé de memoire)",
           "definition": "La mémoire et le souvenir ; faculté de ne rien oublier, pilier de la civilisation (rien ne doit être oublié).",
-          "nuance": "Racine (mori, attestée ; verbe morik=mémoriser). Forme normalisée de 'memoire'. Composant de 'connaissance' (sekamemu, qui utilise la var. memu). Valeur cardinale anti-oubli.",
+          "nuance": "Racine (mori, attestée ; verbe morik=mémoriser). Forme normalisée de 'memoire'. Composant de 'connaissance' (sekamori, qui utilise la var. mori). Valeur cardinale anti-oubli.",
           "registre": "sacré",
           "exemple": "va aita su vo mori morikait"
         }

@@ -93,7 +93,7 @@
           ],
           "domaine": "geographie",
           "definition": "Point d'émergence de l'eau, origine d'un cours d'eau.",
-          "nuance": "DOUBLON avec 08-nature-elements ('source'), mais FORMES DIVERGENTES À RÉCONCILIER : ici confluent='euvikpi' alors que la composition déclarée est 'en-u-ula' (ena origine + ura eau) — euvikpi ne correspond ni à cette composition ni à des racines attestées ; 08 donne 'enuula'. Forme suspecte/corrompue, à corriger sur en-u-ura. Sens visé : origine de l'eau (ena=origine sacrée). Vs 'rivière' (le flux) et 'confluence de rivières' (la rencontre).",
+          "nuance": "DOUBLON avec 08-nature-elements ('source'), mais FORMES DIVERGENTES À RÉCONCILIER : ici confluent='enuura' alors que la composition déclarée est 'en-u-ula' (ena origine + ura eau) — enuura ne correspond ni à cette composition ni à des racines attestées ; 08 donne 'enuura'. Forme suspecte/corrompue, à corriger sur en-u-ura. Sens visé : origine de l'eau (ena=origine sacrée). Vs 'rivière' (le flux) et 'confluence de rivières' (la rencontre).",
           "registre": "sacré"
         }
       ]
@@ -111,7 +111,7 @@
           ],
           "domaine": "geographie",
           "definition": "Chute d'eau se précipitant verticalement vers un gouffre.",
-          "nuance": "Composition ur-oa-vuku sur ura (eau, sacrée) + vuku (gouffre/profond) via liaison oa (résolu, surmonté) : « eau vers le gouffre ». DOUBLON avec 08-nature-elements ('cascade' = ulaoavuku) : les deux fichiers donnent des graphies divergentes (uloavuku vs ulaoavuku), à harmoniser sur ur-oa-vuku. Vs 'rivière' (nura, eau horizontale) : la cascade est la chute verticale.",
+          "nuance": "Composition ur-oa-vuku sur ura (eau, sacrée) + vuku (gouffre/profond) via liaison oa (résolu, surmonté) : « eau vers le gouffre ». DOUBLON avec 08-nature-elements ('cascade' = uraoavuku) : les deux fichiers donnent des graphies divergentes (uloavuku vs uraoavuku), à harmoniser sur ur-oa-vuku. Vs 'rivière' (nura, eau horizontale) : la cascade est la chute verticale.",
           "registre": "courant"
         }
       ]
@@ -147,7 +147,7 @@
           ],
           "domaine": "danger_naturel",
           "definition": "Débordement des eaux submergeant la terre. Danger naturel lié aux rivières et aux crues.",
-          "nuance": "Composition ur-a-eki sur ura (eau, sacrée) + eka (tout, totalité, sacrée) via liaison a (avec) : « eau avec totalité », l'eau qui recouvre tout. Danger naturel (cf. série dangers de 08). Vs 'cascade' (chute localisée) : l'inondation est l'extension de l'eau. NB graphie 'ulaueki' (l au lieu de r dans ur-) à vérifier.",
+          "nuance": "Composition ur-a-eki sur ura (eau, sacrée) + eka (tout, totalité, sacrée) via liaison a (avec) : « eau avec totalité », l'eau qui recouvre tout. Danger naturel (cf. série dangers de 08). Vs 'cascade' (chute localisée) : l'inondation est l'extension de l'eau. NB graphie 'uraueka' (l au lieu de r dans ur-) à vérifier.",
           "registre": "courant"
         }
       ]

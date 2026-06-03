@@ -40,7 +40,7 @@
           "domaine": "architecture",
           "note": "Structure élevée sur pilotis",
           "definition": "Structure horizontale élevée reposant sur des pilotis, sur laquelle on bâtit ou circule.",
-          "nuance": "Composition pek-u-toka (peki=pied/base + liaison -u- d'appartenance + toka=lieu/terre). Litt. 'lieu sur pieds'. Prolonge logiquement 'ulapeki' : la plate-forme est ce que portent les pilotis.",
+          "nuance": "Composition pek-u-toka (peki=pied/base + liaison -u- d'appartenance + toka=lieu/terre). Litt. 'lieu sur pieds'. Prolonge logiquement 'urapeki' : la plate-forme est ce que portent les pilotis.",
           "registre": "courant"
         }
       ],
@@ -238,7 +238,7 @@
           "domaine": "architecture",
           "note": "Ouverture pour la lumière et l'air",
           "definition": "Ouverture dans un mur laissant passer la lumière, l'air et le regard.",
-          "nuance": "Composition sili-veku (sili=regard + 'veku'=surface/paroi). Litt. 'surface pour voir'. DOUBLON avec 24-habitat où 'fenetre' = solatuva (sola-tuva, 'ouverture de lumière', sora=lumière + tuva=ouverture). Distinction : siliveku met l'accent sur le regard/la vue (cohérent avec la culture du regard), solatuva sur la lumière. Note : 'veku' n'est pas attesté dans data/lexique.json (racine de surface implicite, cf. 'peli'=peau/surface).",
+          "nuance": "Composition sili-veku (sili=regard + 'veku'=surface/paroi). Litt. 'surface pour voir'. DOUBLON avec 24-habitat où 'fenetre' = soratuva (sola-tuva, 'ouverture de lumière', sora=lumière + tuva=ouverture). Distinction : siliveku met l'accent sur le regard/la vue (cohérent avec la culture du regard), soratuva sur la lumière. Note : 'veku' n'est pas attesté dans data/lexique.json (racine de surface implicite, cf. 'peli'=peau/surface).",
           "registre": "courant"
         }
       ],
@@ -394,7 +394,7 @@
           "domaine": "architecture",
           "note": "Support vertical",
           "definition": "Support vertical portant une charge, pilier d'une construction.",
-          "nuance": "Composition toka-peki (toka=lieu + peki=pied/base). Litt. 'pied du lieu'. peki (pied/base) est la racine-clé de l'architecture portante : partagée avec 'pilotis' (ulapeki), 'plate-forme' (pekutoka), 'escalier' (pekivasi), 'fondation' (tokapeku). Inclut 'pilier' comme synonyme.",
+          "nuance": "Composition toka-peki (toka=lieu + peki=pied/base). Litt. 'pied du lieu'. peki (pied/base) est la racine-clé de l'architecture portante : partagée avec 'pilotis' (urapeki), 'plate-forme' (pekutoka), 'escalier' (pekivasi), 'fondation' (tokapeku). Inclut 'pilier' comme synonyme.",
           "registre": "courant"
         }
       ],

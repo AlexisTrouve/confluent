@@ -30,7 +30,7 @@
           "domaine": "element_nature",
           "note": "Sol, terre ferme",
           "definition": "Le sol, la terre ferme sur laquelle on marche et bâtit.",
-          "nuance": "Élément primordial. Sol concret vs 'pierre' (kali, matière dure) et 'mer'/'eau'. Base de grotte (vukutoka), côte (tokumelu).",
+          "nuance": "Élément primordial. Sol concret vs 'pierre' (kari, matière dure) et 'mer'/'eau'. Base de grotte (vukutoka), côte (tokuseli).",
           "registre": "sacré",
           "exemple": "va naki vo toka mirakat"
         }
@@ -117,7 +117,7 @@
           "domaine": "geographie",
           "note": "Haute terre",
           "definition": "Relief élevé, haute terre où vivent les Cercles de Vigile.",
-          "nuance": "Vs 'pic'/'cime' (tasupiki), 'vallée' (tani, creux) et 'promontoire' (tasumelu, montagne maritime). Géographie d'origine de la civilisation.",
+          "nuance": "Vs 'pic'/'cime' (tasupiki), 'vallée' (tani, creux) et 'promontoire' (tasuseli, montagne maritime). Géographie d'origine de la civilisation.",
           "registre": "courant",
           "exemple": "va tasa vo zelu mirakeom"
         }
@@ -160,7 +160,7 @@
           "domaine": "celeste",
           "note": "Astre nocturne",
           "definition": "Astre nocturne dont le cycle bimensuel rythme la Vigile Lunaire.",
-          "nuance": "Astre de la nuit, vs 'soleil' (sora, astre du jour) et 'étoile' (aoni/eku). Charge rituelle : règle le calendrier des rituels.",
+          "nuance": "Astre de la nuit, vs 'soleil' (sora, astre du jour) et 'étoile' (eku/eku). Charge rituelle : règle le calendrier des rituels.",
           "registre": "sacré"
         }
       ],
@@ -252,7 +252,7 @@
           "domaine": "materiau",
           "note": "Cristal marin",
           "definition": "Cristal marin, minéral extrait de la mer.",
-          "nuance": "DOUBLON de racine avec 'mer' (même forme seli) : le sel = aspect-matière, la mer = aspect-étendue. Vs 'pierre' (kali).",
+          "nuance": "DOUBLON de racine avec 'mer' (même forme seli) : le sel = aspect-matière, la mer = aspect-étendue. Vs 'pierre' (kari).",
           "registre": "courant"
         }
       ]
@@ -266,7 +266,7 @@
           "domaine": "geographie",
           "note": "Grande eau salée",
           "definition": "Grande étendue d'eau salée, frontière maritime de l'expansion récente.",
-          "nuance": "DOUBLON de racine avec 'sel' (même forme seli). Vs 'rivière' (nula, eau douce) et eau-élément (ura). Lieu de l'Autre (Nanzagouet maritimes).",
+          "nuance": "DOUBLON de racine avec 'sel' (même forme seli). Vs 'rivière' (nura, eau douce) et eau-élément (ura). Lieu de l'Autre (Nanzagouet maritimes).",
           "registre": "courant"
         }
       ],
@@ -333,7 +333,7 @@
           "domaine": "celeste",
           "note": "Points lumineux du ciel nocturne",
           "definition": "Point lumineux du ciel nocturne.",
-          "nuance": "Forme canonique eku (alignée sur data ; les variantes aoni/atu sont écartées). Point lumineux du ciel nocturne. Dans le mythe fondateur : « les étoiles que la Voilée allume, dont ils firent des clous pour tenir leurs yeux ouverts ». Vs lune et soleil (sora).",
+          "nuance": "Forme canonique eku (alignée sur data ; les variantes eku/atu sont écartées). Point lumineux du ciel nocturne. Dans le mythe fondateur : « les étoiles que la Voilée allume, dont ils firent des clous pour tenir leurs yeux ouverts ». Vs lune et soleil (sora).",
           "registre": "sacré"
         }
       ],
@@ -366,7 +366,7 @@
           "domaine": "celeste",
           "note": "Vapeur du ciel",
           "definition": "Vapeur visible suspendue dans le ciel.",
-          "nuance": "Phénomène transitoire vs 'ciel' permanent (zelu). Les Sans-ciels naissent sous ciel couvert. NB racine 'nubu' non attestée dans data — propre à ce fichier.",
+          "nuance": "Phénomène transitoire vs 'ciel' permanent (zeru). Les Sans-ciels naissent sous ciel couvert. NB racine 'nubu' non attestée dans data — propre à ce fichier.",
           "registre": "courant"
         }
       ]
@@ -384,7 +384,7 @@
           ],
           "domaine": "geographie",
           "definition": "Chute d'eau se précipitant vers un gouffre.",
-          "nuance": "Composition eau (ura) + vers (oa) + gouffre (vuku). Vs 'rivière' (nura, eau horizontale) : la cascade est la chute verticale. Forme alignée sur ura (l'ancienne 'ulaoavuku' était une corruption r→l).",
+          "nuance": "Composition eau (ura) + vers (oa) + gouffre (vuku). Vs 'rivière' (nura, eau horizontale) : la cascade est la chute verticale. Forme alignée sur ura (l'ancienne 'uraoavuku' était une corruption r→l).",
           "registre": "courant"
         }
       ]
@@ -420,7 +420,7 @@
           ],
           "domaine": "geographie",
           "definition": "Cavité profonde creusée dans la terre.",
-          "nuance": "Composition vuk-u-toka (gouffre dans la terre). Vs 'crevasse' (vukukali, gouffre dans la PIERRE) : grotte=terre, crevasse=pierre. Habitat des Enfants des Échos.",
+          "nuance": "Composition vuk-u-toka (gouffre dans la terre). Vs 'crevasse' (vukukari, gouffre dans la PIERRE) : grotte=terre, crevasse=pierre. Habitat des Enfants des Échos.",
           "registre": "courant"
         }
       ],
@@ -439,7 +439,7 @@
           ],
           "domaine": "geographie",
           "definition": "Fissure ou gouffre ouvert dans la pierre.",
-          "nuance": "Composition vuk-u-kali (gouffre dans la pierre). Symétrique de 'grotte' (vukutoka, dans la terre) : seul le matériau (kali/toka) les distingue.",
+          "nuance": "Composition vuk-u-kari (gouffre dans la pierre). Symétrique de 'grotte' (vukutoka, dans la terre) : seul le matériau (kari/toka) les distingue.",
           "registre": "courant"
         }
       ],
@@ -458,7 +458,7 @@
           ],
           "domaine": "geographie",
           "definition": "Hauteur s'avançant au-dessus de la mer.",
-          "nuance": "Composé tas-u-seli (montagne + mer) : hauteur s'avançant au-dessus de la mer. Forme corrigée — l'ancien 'tasumelu' utilisait melu (=doux) au lieu de seli (=mer). Cf 'côte' (tokuseli).",
+          "nuance": "Composé tas-u-seli (montagne + mer) : hauteur s'avançant au-dessus de la mer. Forme corrigée — l'ancien 'tasuseli' utilisait melu (=doux) au lieu de seli (=mer). Cf 'côte' (tokuseli).",
           "registre": "courant"
         }
       ],
@@ -554,7 +554,7 @@
           ],
           "domaine": "geographie",
           "definition": "L'une des deux rivières fondatrices, celle aux eaux bleues du ciel.",
-          "nuance": "Composition nul-u-zelu. Paire avec 'rivière verte' (nuluviku) ; ensemble = la Confluence. Toponyme fondateur, charge identitaire.",
+          "nuance": "Composition nul-u-zeru. Paire avec 'rivière verte' (nuruviku) ; ensemble = la Confluence. Toponyme fondateur, charge identitaire.",
           "registre": "sacré"
         }
       ],
@@ -573,7 +573,7 @@
           ],
           "domaine": "geographie",
           "definition": "L'une des deux rivières fondatrices, celle aux eaux vertes de la forêt.",
-          "nuance": "Composition nul-u-viku. Paire avec 'rivière azur' (nuluzelu). La racine viku (forêt) la colore en vert. Toponyme fondateur.",
+          "nuance": "Composition nul-u-viku. Paire avec 'rivière azur' (nuruzeru). La racine viku (forêt) la colore en vert. Toponyme fondateur.",
           "registre": "sacré"
         }
       ],

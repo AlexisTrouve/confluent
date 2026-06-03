@@ -53,7 +53,7 @@
           ],
           "domaine": "rituel",
           "definition": "Ensemble des rites sacrés accompagnant la mort, par lesquels le défunt rejoint les ancêtres et son regard est orienté vers la lignée.",
-          "nuance": "Centré sur le passage de la mort (osi), distinct du 'Memento' (memuuaita) qui perpétue la mémoire après coup, et du culte des ancêtres en général ; rite de transition, non d'archivage.",
+          "nuance": "Centré sur le passage de la mort (osi), distinct du 'Memento' (moriuaita) qui perpétue la mémoire après coup, et du culte des ancêtres en général ; rite de transition, non d'archivage.",
           "registre": "rituel",
           "exemple": "va aita su no vukuura osianait"
         }
@@ -129,7 +129,7 @@
           ],
           "categorie": "titre_rituel",
           "definition": "Titre rituel désignant celui qui porte et garde le feu sacré lors des cérémonies, chargé de transmettre la flamme entre les générations.",
-          "nuance": "Composé tak-i-suki (taka=porter + suki=feu) = « celui qui porte le feu ». Forme réparée : l'ancien 'kanuusuki' (sur kanu=main) ne correspondait pas à sa composition. Titre rituel : garde et transmet la flamme sacrée entre les générations.",
+          "nuance": "Composé tak-i-suki (taka=porter + suki=feu) = « celui qui porte le feu ». Forme réparée : l'ancien 'takisuki' (sur kanu=main) ne correspondait pas à sa composition. Titre rituel : garde et transmet la flamme sacrée entre les générations.",
           "registre": "rituel"
         }
       ],
@@ -314,7 +314,7 @@
           ],
           "domaine": "materiau_rituel",
           "definition": "Couleurs héritées des ancêtres servant à peindre les artefacts rituels, notamment les couches de la Grande Fresque.",
-          "nuance": "Matériau colorant (kolu, couleur) marqué par l'héritage ancestral (aita), distinct de l''argile vivante' (support) : ici c'est ce qui colore, transmis de génération en génération.",
+          "nuance": "Matériau colorant (kelu, couleur) marqué par l'héritage ancestral (aita), distinct de l''argile vivante' (support) : ici c'est ce qui colore, transmis de génération en génération.",
           "registre": "rituel"
         }
       ]
@@ -406,7 +406,7 @@
           ],
           "categorie": "lieu_rituel",
           "definition": "Artefact pictural majeur où chaque génération superpose sa couche de peinture, mémoire visuelle accumulée de la Confluence.",
-          "nuance": "= Ekakova (ek-a-kova : totalité + peinture), le grand artefact pictural où chaque génération superpose sa couche de peinture. Forme alignée sur le canonique du CLAUDE.md ; l'ancien 'oemonona' était une forme divergente corrompue. Même référent que l'entrée 'Ekakova' (04-lieux).",
+          "nuance": "= Ekakova (ek-a-kova : totalité + peinture), le grand artefact pictural où chaque génération superpose sa couche de peinture. Forme alignée sur le canonique du CLAUDE.md ; l'ancien 'ekakova' était une forme divergente corrompue. Même référent que l'entrée 'Ekakova' (04-lieux).",
           "registre": "sacré"
         }
       ],

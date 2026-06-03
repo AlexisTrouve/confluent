@@ -237,7 +237,7 @@
           "domaine": "couleur_peau",
           "note": "Couleur de peau claire (Enfants des Échos)",
           "definition": "Couleur de peau claire, pâleur du teint — caractéristique des Enfants des Échos (Nakukeko), habitants souterrains.",
-          "nuance": "Composition milu-veku : milu (blanc/pâle — racine non listée dans lexique.json) + veku (peau/surface), « peau blanche/pâle ». DOUBLON avec 18-couleurs : la clé « pale » y est miluukolu (mil-u-kolu, « lait de couleur »). Ici l'ancrage est la peau (veku), là la teinte abstraite (kolu) — distinction peau vs couleur générique à signaler.",
+          "nuance": "Composition milu-veku : milu (blanc/pâle — racine non listée dans lexique.json) + veku (peau/surface), « peau blanche/pâle ». DOUBLON avec 18-couleurs : la clé « pale » y est miluukelu (mil-u-kelu, « lait de couleur »). Ici l'ancrage est la peau (veku), là la teinte abstraite (kelu) — distinction peau vs couleur générique à signaler.",
           "registre": "courant"
         }
       ],

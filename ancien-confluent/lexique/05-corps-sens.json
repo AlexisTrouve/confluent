@@ -95,7 +95,7 @@
           "domaine": "corps_sens",
           "note": "Centre vital et émotionnel",
           "definition": "Le cœur, centre vital et siège des émotions.",
-          "nuance": "kori = le cœur (centre vital/émotionnel) ; sa forme liée koli entre dans sanukoli (foie = 'cœur du corps'), organe distinct.",
+          "nuance": "kori = le cœur (centre vital/émotionnel) ; sa forme liée koli entre dans sanukori (foie = 'cœur du corps'), organe distinct.",
           "registre": "courant"
         }
       ]
@@ -243,7 +243,7 @@
           "domaine": "corps_sacre",
           "note": "Yeux des Ciels-clairs aux couleurs de l'aurore",
           "definition": "Les yeux aux couleurs de l'aurore, propres aux Ciels-clairs ; littéralement 'regard de l'aurore'.",
-          "nuance": "siluola = trait sacré (sili + ora, aurore) vs sili = l'œil ordinaire. Marqueur identitaire, pas un simple organe.",
+          "nuance": "siluora = trait sacré (sili + ora, aurore) vs sili = l'œil ordinaire. Marqueur identitaire, pas un simple organe.",
           "registre": "sacré"
         }
       ],
@@ -593,7 +593,7 @@
           "domaine": "corps",
           "note": "Organe vital interne",
           "definition": "Le foie, organe vital interne ; littéralement 'cœur du corps'.",
-          "nuance": "sanukoli = le foie (organe interne, sanu+koli) vs kori = le cœur (centre vital). La forme liée koli marque un autre organe.",
+          "nuance": "sanukori = le foie (organe interne, sanu+koli) vs kori = le cœur (centre vital). La forme liée koli marque un autre organe.",
           "registre": "courant"
         }
       ]

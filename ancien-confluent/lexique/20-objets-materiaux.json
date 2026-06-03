@@ -30,7 +30,7 @@
           ],
           "domaine": "materiau",
           "definition": "Matière façonnable issue de la terre mêlée d'eau, base de la poterie, des tablettes et de l'argile vivante sacrée qui durcit à l'air. Matériau central de la civilisation de la Confluence.",
-          "nuance": "Composition tok-a-ula (toka 'terre' + ura 'eau') = 'terre avec eau'. La graphie 'tokauula' double le u au contact de la liaison -a- et de la racine ura (hiatus accepté, voir morphologie). Lien culturel fort avec l'argile vivante (CONTEXTE_CIVILISATION) : matériau polyvalent et sacré.",
+          "nuance": "Composition tok-a-ula (toka 'terre' + ura 'eau') = 'terre avec eau'. La graphie 'tokauura' double le u au contact de la liaison -a- et de la racine ura (hiatus accepté, voir morphologie). Lien culturel fort avec l'argile vivante (CONTEXTE_CIVILISATION) : matériau polyvalent et sacré.",
           "registre": "courant"
         }
       ]
@@ -144,7 +144,7 @@
           "forme_liee": "sak",
           "domaine": "objet",
           "definition": "Un sac, un contenant souple servant à porter et conserver. Racine désignant tout contenant pour transporter.",
-          "nuance": "Racine standard (forme liée sak-), confirmée dans data/lexique.json (id 104, sens 'sac, contenant'). Synonyme FR 'contenant'. Sert de base au 'vase rituel' (sakuasa) et à 'lampe' (solausaku). Distinguer de 'saku' (forme liée de saki utilisée dans les compositions). Pas de doublon strict.",
+          "nuance": "Racine standard (forme liée sak-), confirmée dans data/lexique.json (id 104, sens 'sac, contenant'). Synonyme FR 'contenant'. Sert de base au 'vase rituel' (sakuasa) et à 'lampe' (sorausaku). Distinguer de 'saku' (forme liée de saki utilisée dans les compositions). Pas de doublon strict.",
           "registre": "courant"
         }
       ],
@@ -353,7 +353,7 @@
           ],
           "domaine": "objet",
           "definition": "Une torche, bâton de bois enflammé servant à éclairer les souterrains et les marches nocturnes. Feu porté.",
-          "nuance": "Composition suk-i-viku (suki 'feu' + viku 'bois') = 'feu de bois'. Emploie viku (bois) comme combustible. Distinguer de 'lampe' (solausaku, lumière contenue) : torche = flamme nue portée, lampe = lumière dans un contenant. Outil typique des Nakukeko en grottes.",
+          "nuance": "Composition suk-i-viku (suki 'feu' + viku 'bois') = 'feu de bois'. Emploie viku (bois) comme combustible. Distinguer de 'lampe' (sorausaku, lumière contenue) : torche = flamme nue portée, lampe = lumière dans un contenant. Outil typique des Nakukeko en grottes.",
           "registre": "courant"
         }
       ]
