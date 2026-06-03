@@ -56,6 +56,11 @@ const CONJ_SENS = {
   u: 'présent', at: 'passé', aan: 'passé-regret', ait: 'passé-anc', amat: 'passé-myth', en: 'futur',
   il: 'accompli', eol: 'habituel', eon: 'cyclique', eom: 'éternel', ok: 'impératif', es: 'souhait', ul: 'pouvoir', uv: 'écrit'
 };
+// Glose courte de chaque liaison (concept), pour rendre le SENS d'une composition en back-translation
+// (sinon « naki-u-kari » → « descendant pierre » perd le « de » de la liaison -u-).
+const LIAISON_GLOSS = Object.fromEntries(
+  Object.entries(dataLexique.liaisons || {}).map(([k, v]) => [k, v.concept || v.domaine || ''])
+);
 
 // QUOI : réduit une définition longue à une glose courte. POURQUOI : prémâché — le modèle n'a pas
 // besoin du paragraphe ethnographique pour traduire, juste un repère de sens (paie moins de tokens).
@@ -459,8 +464,16 @@ function execBackTranslate(input, ctx) {
     let fr = null;
     if (v.reconnu) {
       if (v.mode === 'verbe_conjugue') fr = `${v.francais} [${CONJ_SENS[v.conjugateur] || v.conjugateur}]`;
-      else if (v.mode === 'composition') fr = '[' + (v.racines || []).map(x => x.francais || x.racine).join(' + ') + ']';
-      else fr = v.francais;
+      else if (v.mode === 'composition') {
+        // Intercaler la glose de chaque liaison entre les racines (le SENS de la composition).
+        const ra = v.racines || [], li = v.liaisons || [];
+        const parts = [];
+        ra.forEach((r, i) => {
+          parts.push(r.francais || r.racine);
+          if (i < li.length && LIAISON_GLOSS[li[i]]) parts.push(`-${LIAISON_GLOSS[li[i]]}-`);
+        });
+        fr = '[' + parts.join(' ') + ']';
+      } else fr = v.francais;
     }
     if (!fr) non_reconnus.push(tok);
     par_mot.push({ cf: tok, fr });
