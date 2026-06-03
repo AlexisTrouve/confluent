@@ -19,7 +19,7 @@
 'use strict';
 
 const { validateForm, validateTranslation } = require('../validation/phonotactics');
-const { searchWord, normalizeFrenchText } = require('./contextAnalyzer');
+const { searchWord, normalizeFrenchText, analyzeContext } = require('./contextAnalyzer');
 const { decomposeWord } = require('../morphology/morphologicalDecomposer');
 const { extractRadicals, CONJUGATEURS } = require('../morphology/radicalMatcher');
 
@@ -64,6 +64,21 @@ function flat(obj) {
 // ============================================================================
 
 const TOOL_DEFINITIONS = [
+  {
+    name: 'analyze_text',
+    description:
+      "Pré-analyse une phrase/texte FRANÇAIS à traduire et renvoie le PLAN complet EN UN SEUL APPEL : " +
+      "mots TROUVÉS (forme Confluent prête à l'emploi), mots À COMPOSER (sans forme directe), VERBES " +
+      "(à conjuguer) et la couverture. APPELLE CET OUTIL EN PREMIER pour toute traduction : il évite de " +
+      "chercher les mots un par un. Ensuite, n'utilise lookup_concept/check_composition que pour le reste.",
+    input_schema: {
+      type: 'object',
+      properties: {
+        francais: { type: 'string', description: 'La phrase ou le texte français à traduire.' }
+      },
+      required: ['francais']
+    }
+  },
   {
     name: 'lookup_concept',
     description:
@@ -150,6 +165,35 @@ const TOOL_DEFINITIONS = [
 // ============================================================================
 // EXÉCUTEURS
 // ============================================================================
+
+/**
+ * analyze_text — pré-analyse d'une phrase FR : le PLAN de traduction en un seul appel.
+ *
+ * QUOI : tokenise le français, sépare les mots trouvés (forme prête) / à composer / verbes, donne
+ *        la couverture. Remplace N appels lookup_concept par 1 appel structuré et prémâché.
+ * POURQUOI : « on point » — le modèle reçoit d'emblée tout le plan, sans chercher mot par mot.
+ * COMMENT : réutilise analyzeContext (déjà testé : tokenisation + searchWord scoré + nombres +
+ *        couverture). On remonte une vue compacte + un rappel des conjugateurs pour les verbes.
+ */
+function execAnalyzeText(input, ctx) {
+  const texte = String(input.francais || input.texte || '').trim();
+  if (!texte) return { erreur: 'entrée vide' };
+
+  const cr = analyzeContext(texte, ctx.lexique);
+  const m = cr.metadata;
+  const trouves = (m.wordsFound || []).map(w => ({ fr: w.input, confluent: w.confluent, type: w.type }));
+  const verbes = trouves.filter(w => /verbe/.test(w.type || '')).map(w => ({ fr: w.fr, confluent: w.confluent }));
+
+  return {
+    couverture: (m.coveragePercent != null ? m.coveragePercent : 0) + '%',
+    trouves,                                  // formes prêtes — À UTILISER DIRECTEMENT
+    a_composer: m.wordsNotFound || [],        // pas de forme directe → composer ou approximer
+    verbes,                                   // ajouter un conjugateur après chacun
+    conjugateurs: flat(dataLexique.conjugateurs?.temps),  // rappel concis (présent/passé/futur)
+    note: "Utilise 'trouves' tel quel. Compose 'a_composer'. Ajoute un conjugateur à chaque verbe. " +
+          "N'appelle d'autres outils que pour 'a_composer' ou un doute réel."
+  };
+}
 
 /**
  * lookup_concept — forme canonique d'un concept français.
@@ -365,6 +409,7 @@ function execCheckComposition(input, ctx) {
  */
 function executeTool(name, input, ctx) {
   switch (name) {
+    case 'analyze_text': return execAnalyzeText(input, ctx);
     case 'lookup_concept': return execLookupConcept(input, ctx);
     case 'get_grammar': return execGetGrammar(input);
     case 'validate_form': return execValidateForm(input);
@@ -378,5 +423,5 @@ module.exports = {
   TOOL_DEFINITIONS,
   executeTool,
   LIAISONS_VALIDES,
-  execLookupConcept, execGetGrammar, execValidateForm, execVerifyWord, execCheckComposition
+  execAnalyzeText, execLookupConcept, execGetGrammar, execValidateForm, execVerifyWord, execCheckComposition
 };

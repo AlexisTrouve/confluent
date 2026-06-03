@@ -33,6 +33,13 @@ check('lumière trouve une forme canon (sora attendu)', lkLumiere.found && lkLum
 const lkMontagne = executeTool('lookup_concept', { francais: 'montagne' }, ctx);
 check('montagne → tasa', lkMontagne.found && lkMontagne.formes.some(f => f.confluent === 'tasa'), lkMontagne);
 
+console.log('\n[analyze_text]');
+const an = executeTool('analyze_text', { francais: "L'enfant voit l'eau" }, ctx);
+check('analyze_text trouve naki + mirak', an.trouves && an.trouves.some(t => t.confluent === 'naki') && an.trouves.some(t => t.confluent === 'mirak'), an);
+check('analyze_text renvoie une couverture', typeof an.couverture === 'string', an.couverture);
+const an2 = executeTool('analyze_text', { francais: 'xyzinconnu glargh' }, ctx);
+check('analyze_text liste les mots à composer', Array.isArray(an2.a_composer) && an2.a_composer.length > 0, an2);
+
 console.log('\n[get_grammar]');
 const grConj = executeTool('get_grammar', { sujet: 'conjugateurs' }, ctx);
 check('conjugateurs.temps contient u (présent)', !!(grConj.conjugateurs && grConj.conjugateurs.temps && grConj.conjugateurs.temps.u), grConj);
