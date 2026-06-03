@@ -3,7 +3,6 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const { Anthropic } = require('@anthropic-ai/sdk');
-const OpenAI = require('openai');
 const {
   loadAllLexiques,
   searchLexique,
@@ -14,6 +13,7 @@ const { analyzeContext } = require('../core/translation/contextAnalyzer');
 const { buildContextualPrompt, getBasePrompt, getPromptStats } = require('../core/translation/promptBuilder');
 const { buildReverseIndex: buildConfluentIndex } = require('../core/morphology/reverseIndexBuilder');
 const { translateConfluentToFrench, translateConfluentDetailed } = require('../core/translation/confluentToFrench');
+const { translateWithAgent } = require('../core/translation/translationAgent');
 
 // Security modules
 const { authenticate, requireAdmin, createToken, listTokens, disableToken, enableToken, deleteToken, getGlobalStats, trackLLMUsage, checkLLMLimit } = require('../utils/auth');
@@ -22,6 +22,18 @@ const { requestLogger, getLogs, getLogStats } = require('../utils/logger');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// QUOI : client LLM unique, pointé sur le proxy Etheryale (un seul provider désormais).
+// POURQUOI : tout passe par le proxy (cache auto, OAuth Claude Max+, pas de limite de tokens) ;
+//        OpenAI/ChatGPT et les clés API custom ont été retirés (décision : proxy Etheryale only).
+// COMMENT : baseURL = proxy, clé eai_ via ETHERYALE_API_KEY. Modèle par défaut = Haiku 4.5 —
+//        coût minimal, car c'est l'agent outillé + le gate phonotactique qui portent la qualité
+//        (prouvé : 5/5 traductions valides sur Haiku là où la simple-request produisait du cassé).
+const anthropicClient = new Anthropic({
+  apiKey: process.env.ETHERYALE_API_KEY,
+  baseURL: process.env.ETHERYALE_BASE_URL || 'https://ai.etheryale.com'
+});
+const DEFAULT_MODEL = process.env.CONFLUENT_MODEL || 'claude-haiku-4-5-20251001';
 
 // Middlewares
 app.use(express.json());
@@ -379,26 +391,21 @@ app.post('/api/analyze/coverage', authenticate, (req, res) => {
 
 // Translation endpoint (NOUVEAU SYSTÈME CONTEXTUEL)
 app.post('/translate', authenticate, async (req, res) => {
-  const { text, target, provider, model, temperature = 1.0, useLexique = true, customAnthropicKey, customOpenAIKey } = req.body;
+  const { text, target, model, useLexique = true } = req.body;
 
-  if (!text || !target || !provider || !model) {
+  if (!text || !target) {
     return res.status(400).json({ error: 'Missing parameters' });
   }
 
-  // Check for custom API keys
-  const usingCustomKey = !!(customAnthropicKey || customOpenAIKey);
-
-  // Only check rate limit if NOT using custom keys
-  if (!usingCustomKey) {
-    const apiKey = req.headers['x-api-key'] || req.query.apiKey;
-    const limitCheck = checkLLMLimit(apiKey);
-    if (!limitCheck.allowed) {
-      return res.status(429).json({
-        error: limitCheck.error,
-        limit: limitCheck.limit,
-        used: limitCheck.used
-      });
-    }
+  // Rate limit par API key (plus de clés custom : tout passe par le proxy partagé).
+  const apiKey = req.headers['x-api-key'] || req.query.apiKey;
+  const limitCheck = checkLLMLimit(apiKey);
+  if (!limitCheck.allowed) {
+    return res.status(429).json({
+      error: limitCheck.error,
+      limit: limitCheck.limit,
+      used: limitCheck.used
+    });
   }
 
   const variant = target === 'proto' ? 'proto' : 'ancien';
@@ -431,85 +438,64 @@ app.post('/translate', authenticate, async (req, res) => {
       systemPrompt = getBasePrompt(variant);
     }
 
-    let translation;
     let rawResponse;
+    // QUOI : traduction faisant AUTORITÉ = celle validée par le gate de l'agent.
+    // POURQUOI : re-parser rawResponse côté serveur peut diverger de l'extraction gatée de
+    //        l'agent (ex: blocs ``` parasites) et servir une forme que le gate n'a pas vue.
+    //        On sert donc la traduction gatée ; parseTranslationResponse ne sert que pour les
+    //        sections explicatives (layer3). En mode mock, on retombe sur le parsing.
+    let gatedTranslation = null;
 
     // Mode mock LLM pour tests E2E (flag env LLM_MOCK=1).
     // POURQUOI : l'appel LLM se fait côté serveur (non-déterministe, payant, lent) donc
     // non mockable depuis le navigateur ; ce flag rend le flux de traduction E2E-testable
     // sans réseau (doctrine : pas de dépendance non-mockable qui bloque le harness).
-    // COMMENT : court-circuite l'appel SDK et fournit une réponse au format COT attendu par
+    // COMMENT : court-circuite l'agent et fournit une réponse au format COT attendu par
     // parseTranslationResponse — le parsing serveur s'exécute donc réellement (on le couvre).
-    // GARDE : neutralisé si NODE_ENV=production (jamais de traduction mockée servie en prod,
-    // même si LLM_MOCK était activé par erreur dans l'environnement).
+    // GARDE : neutralisé si NODE_ENV=production (jamais de traduction mockée servie en prod).
     if (process.env.LLM_MOCK === '1' && process.env.NODE_ENV !== 'production') {
       rawResponse = [
         'ANALYSE:', '(mock) Requête de test E2E.',
         'STRATÉGIE:', '(mock) Réponse déterministe, sans appel LLM.',
-        'Confluent:', 'siliaska mira',
-        'Décomposition:', 'siliaska (regard libre) + mira (voir)',
+        'Ancien Confluent:', 'va siliaska mirak u',
+        'Décomposition:', 'siliaska (regard libre) + mirak (voir) + u (présent)',
         'Notes:', 'Réponse générée par LLM_MOCK pour le test E2E.'
       ].join('\n');
-      translation = rawResponse;
-    } else if (provider === 'anthropic') {
-      const anthropic = new Anthropic({
-        apiKey: customAnthropicKey || process.env.ANTHROPIC_API_KEY,
-      });
-
-      const message = await anthropic.messages.create({
-        model: model,
-        max_tokens: 8192, // Max pour Claude Sonnet/Haiku 4.5
-        temperature: temperature / 2, // Diviser par 2 pour Claude (max 1.0)
-        system: systemPrompt,
-        messages: [
-          { role: 'user', content: text }
-        ]
-      });
-
-      rawResponse = message.content[0].text;
-      translation = rawResponse;
-
-      // Track LLM usage (only increment counter if NOT using custom key)
-      const apiKey = req.headers['x-api-key'] || req.query.apiKey;
-      if (apiKey && message.usage && !usingCustomKey) {
-        trackLLMUsage(apiKey, message.usage.input_tokens, message.usage.output_tokens);
-      }
-
-    } else if (provider === 'openai') {
-      const openai = new OpenAI({
-        apiKey: customOpenAIKey || process.env.OPENAI_API_KEY,
-      });
-
-      const completion = await openai.chat.completions.create({
-        model: model,
-        max_tokens: 16384, // Max pour GPT-4o et GPT-4o-mini
-        temperature: temperature,
-        messages: [
-          { role: 'system', content: systemPrompt },
-          { role: 'user', content: text }
-        ]
-      });
-
-      rawResponse = completion.choices[0].message.content;
-      translation = rawResponse;
-
-      // Track LLM usage (only increment counter if NOT using custom key)
-      const apiKey = req.headers['x-api-key'] || req.query.apiKey;
-      if (apiKey && completion.usage && !usingCustomKey) {
-        trackLLMUsage(apiKey, completion.usage.prompt_tokens, completion.usage.completion_tokens);
-      }
     } else {
-      return res.status(400).json({ error: 'Unknown provider' });
+      // Traduction via l'AGENT outillé : le modèle peut consulter le lexique (lookup_concept),
+      // la grammaire (get_grammar), valider/vérifier des formes (validate_form, verify_word) et
+      // composer (check_composition). Le gate phonotactique final REFUSE toute forme cassée et
+      // déclenche une réparation ; échec franc si irréparable (jamais de Confluent invalide servi).
+      const ctx = {
+        lexique: lexiques[variant],
+        morphReverseIndex: confluentIndexes[variant]
+      };
+      const agentResult = await translateWithAgent({
+        text,
+        systemPrompt,
+        anthropic: anthropicClient,
+        model: model || DEFAULT_MODEL,
+        ctx
+      });
+      rawResponse = agentResult.rawResponse;
+      gatedTranslation = agentResult.translation; // déjà validée phonotactiquement
+
+      // Suivi de consommation par API key (tokens agrégés sur tous les tours de l'agent).
+      if (apiKey && agentResult.usage) {
+        trackLLMUsage(apiKey, agentResult.usage.input_tokens, agentResult.usage.output_tokens);
+      }
     }
 
-    // Parser la réponse pour extraire Layer 1 et Layer 3
+    // Parser la réponse pour les sections explicatives (layer3).
     const parsed = parseTranslationResponse(rawResponse);
+    // Traduction servie = celle gatée par l'agent (autorité) ; fallback au parsing en mode mock.
+    const finalTranslation = gatedTranslation || parsed.translation;
 
     // Construire la réponse avec les 3 layers
     const response = {
-      // Layer 1: Traduction
+      // Layer 1: Traduction (validée phonotactiquement par le gate de l'agent)
       layer1: {
-        translation: parsed.translation
+        translation: finalTranslation
       },
 
       // Layer 2: Contexte (COT hors LLM)
@@ -525,13 +511,17 @@ app.post('/translate', authenticate, async (req, res) => {
       },
 
       // Compatibilité avec ancien format
-      translation: parsed.translation
+      translation: finalTranslation
     };
 
     res.json(response);
 
   } catch (error) {
     console.error('Translation error:', error);
+    // Échec franc de validation : on ne sert JAMAIS de Confluent cassé (doctrine anti-fallback).
+    if (error.code === 'TRANSLATION_UNVALIDATED' || error.code === 'AGENT_LOOP_EXHAUSTED') {
+      return res.status(422).json({ error: error.message, invalides: error.invalides || [] });
+    }
     res.status(500).json({ error: error.message });
   }
 });
@@ -604,26 +594,21 @@ function parseTranslationResponse(response) {
 
 // Raw translation endpoint (for debugging - returns unprocessed LLM output) - SECURED
 app.post('/api/translate/raw', authenticate, async (req, res) => {
-  const { text, target, provider, model, useLexique = true, customAnthropicKey, customOpenAIKey } = req.body;
+  const { text, target, model, useLexique = true } = req.body;
 
-  if (!text || !target || !provider || !model) {
+  if (!text || !target) {
     return res.status(400).json({ error: 'Missing parameters' });
   }
 
-  // Check for custom API keys
-  const usingCustomKey = !!(customAnthropicKey || customOpenAIKey);
-
-  // Only check rate limit if NOT using custom keys
-  if (!usingCustomKey) {
-    const apiKey = req.headers['x-api-key'] || req.query.apiKey;
-    const limitCheck = checkLLMLimit(apiKey);
-    if (!limitCheck.allowed) {
-      return res.status(429).json({
-        error: limitCheck.error,
-        limit: limitCheck.limit,
-        used: limitCheck.used
-      });
-    }
+  // Rate limit par API key (plus de clés custom : proxy partagé).
+  const apiKey = req.headers['x-api-key'] || req.query.apiKey;
+  const limitCheck = checkLLMLimit(apiKey);
+  if (!limitCheck.allowed) {
+    return res.status(429).json({
+      error: limitCheck.error,
+      limit: limitCheck.limit,
+      used: limitCheck.used
+    });
   }
 
   const variant = target === 'proto' ? 'proto' : 'ancien';
@@ -653,53 +638,20 @@ app.post('/api/translate/raw', authenticate, async (req, res) => {
       systemPrompt = getBasePrompt(variant);
     }
 
-    let rawResponse;
+    // Appel brut (debug) via le proxy : un seul tour, pas d'outils ni de gate (sortie inspectée telle quelle).
+    const message = await anthropicClient.messages.create({
+      model: model || DEFAULT_MODEL,
+      max_tokens: 8192,
+      system: systemPrompt,
+      messages: [
+        { role: 'user', content: text }
+      ]
+    });
 
-    if (provider === 'anthropic') {
-      const anthropic = new Anthropic({
-        apiKey: customAnthropicKey || process.env.ANTHROPIC_API_KEY,
-      });
+    const rawResponse = message.content[0].text;
 
-      const message = await anthropic.messages.create({
-        model: model,
-        max_tokens: 8192, // Max pour Claude Sonnet/Haiku 4.5
-        system: systemPrompt,
-        messages: [
-          { role: 'user', content: text }
-        ]
-      });
-
-      rawResponse = message.content[0].text;
-
-      // Track LLM usage (only increment counter if NOT using custom key)
-      const apiKey = req.headers['x-api-key'] || req.query.apiKey;
-      if (apiKey && message.usage && !usingCustomKey) {
-        trackLLMUsage(apiKey, message.usage.input_tokens, message.usage.output_tokens);
-      }
-
-    } else if (provider === 'openai') {
-      const openai = new OpenAI({
-        apiKey: customOpenAIKey || process.env.OPENAI_API_KEY,
-      });
-
-      const completion = await openai.chat.completions.create({
-        model: model,
-        max_tokens: 16384, // Max pour GPT-4o et GPT-4o-mini
-        messages: [
-          { role: 'system', content: systemPrompt },
-          { role: 'user', content: text }
-        ]
-      });
-
-      rawResponse = completion.choices[0].message.content;
-
-      // Track LLM usage (only increment counter if NOT using custom key)
-      const apiKey = req.headers['x-api-key'] || req.query.apiKey;
-      if (apiKey && completion.usage && !usingCustomKey) {
-        trackLLMUsage(apiKey, completion.usage.prompt_tokens, completion.usage.completion_tokens);
-      }
-    } else {
-      return res.status(400).json({ error: 'Unknown provider' });
+    if (apiKey && message.usage) {
+      trackLLMUsage(apiKey, message.usage.input_tokens, message.usage.output_tokens);
     }
 
     // Retourner la réponse BRUTE sans parsing
@@ -773,26 +725,21 @@ app.post('/api/translate/conf2fr', authenticate, (req, res) => {
 
 // NEW: Confluent → French with LLM refinement
 app.post('/api/translate/conf2fr/llm', authenticate, async (req, res) => {
-  const { text, variant = 'ancien', provider = 'anthropic', model = 'claude-sonnet-4-20250514', customAnthropicKey, customOpenAIKey } = req.body;
+  const { text, variant = 'ancien', model } = req.body;
 
   if (!text) {
     return res.status(400).json({ error: 'Missing parameter: text' });
   }
 
-  // Check for custom API keys
-  const usingCustomKey = !!(customAnthropicKey || customOpenAIKey);
-
-  // Only check rate limit if NOT using custom keys
-  if (!usingCustomKey) {
-    const apiKey = req.headers['x-api-key'] || req.query.apiKey;
-    const limitCheck = checkLLMLimit(apiKey);
-    if (!limitCheck.allowed) {
-      return res.status(429).json({
-        error: limitCheck.error,
-        limit: limitCheck.limit,
-        used: limitCheck.used
-      });
-    }
+  // Rate limit par API key (proxy partagé, plus de clés custom).
+  const apiKey = req.headers['x-api-key'] || req.query.apiKey;
+  const limitCheck = checkLLMLimit(apiKey);
+  if (!limitCheck.allowed) {
+    return res.status(429).json({
+      error: limitCheck.error,
+      limit: limitCheck.limit,
+      used: limitCheck.used
+    });
   }
 
   const variantKey = variant === 'proto' ? 'proto' : 'ancien';
@@ -808,55 +755,23 @@ app.post('/api/translate/conf2fr/llm', authenticate, async (req, res) => {
     // Step 2: Load refinement prompt
     const refinementPrompt = fs.readFileSync(path.join(__dirname, '..', '..', 'prompts', 'cf2fr-refinement.txt'), 'utf-8');
 
-    // Step 3: Use LLM to refine translation
-    let refinedText;
+    // Step 3: raffinement via le proxy (CF→FR : pas de gate phonotactique, la sortie est du français).
+    const message = await anthropicClient.messages.create({
+      model: model || DEFAULT_MODEL,
+      max_tokens: 2048,
+      system: refinementPrompt,
+      messages: [
+        {
+          role: 'user',
+          content: `Voici la traduction brute mot-à-mot du Confluent vers le français. Transforme-la en français fluide et naturel:\n\n${rawTranslation.translation}`
+        }
+      ]
+    });
 
-    if (provider === 'anthropic') {
-      const anthropic = new Anthropic({
-        apiKey: customAnthropicKey || process.env.ANTHROPIC_API_KEY,
-      });
+    const refinedText = message.content[0].text.trim();
 
-      const message = await anthropic.messages.create({
-        model: model,
-        max_tokens: 2048,
-        system: refinementPrompt,
-        messages: [
-          {
-            role: 'user',
-            content: `Voici la traduction brute mot-à-mot du Confluent vers le français. Transforme-la en français fluide et naturel:\n\n${rawTranslation.translation}`
-          }
-        ]
-      });
-
-      refinedText = message.content[0].text.trim();
-
-      // Track LLM usage (only increment counter if NOT using custom key)
-      const apiKey = req.headers['x-api-key'] || req.query.apiKey;
-      if (apiKey && message.usage && !usingCustomKey) {
-        trackLLMUsage(apiKey, message.usage.input_tokens, message.usage.output_tokens);
-      }
-    } else if (provider === 'openai') {
-      const openai = new OpenAI({
-        apiKey: customOpenAIKey || process.env.OPENAI_API_KEY,
-      });
-
-      const completion = await openai.chat.completions.create({
-        model: model,
-        messages: [
-          { role: 'system', content: refinementPrompt },
-          { role: 'user', content: `Voici la traduction brute mot-à-mot du Confluent vers le français. Transforme-la en français fluide et naturel:\n\n${rawTranslation.translation}` }
-        ]
-      });
-
-      refinedText = completion.choices[0].message.content.trim();
-
-      // Track LLM usage (only increment counter if NOT using custom key)
-      const apiKey = req.headers['x-api-key'] || req.query.apiKey;
-      if (apiKey && completion.usage && !usingCustomKey) {
-        trackLLMUsage(apiKey, completion.usage.prompt_tokens, completion.usage.completion_tokens);
-      }
-    } else {
-      return res.status(400).json({ error: 'Unsupported provider. Use "anthropic" or "openai".' });
+    if (apiKey && message.usage) {
+      trackLLMUsage(apiKey, message.usage.input_tokens, message.usage.output_tokens);
     }
 
     // Return both raw and refined versions with detailed token info
@@ -869,8 +784,7 @@ app.post('/api/translate/conf2fr/llm', authenticate, async (req, res) => {
       coverage: rawTranslation.coverage || 0,
       wordsTranslated: rawTranslation.wordsTranslated,
       wordsNotTranslated: rawTranslation.wordsNotTranslated,
-      provider,
-      model
+      model: model || DEFAULT_MODEL
     });
 
   } catch (error) {

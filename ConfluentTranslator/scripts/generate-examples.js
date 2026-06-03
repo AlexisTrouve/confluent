@@ -7,7 +7,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const API_URL = 'http://localhost:3000/translate';
+const API_URL = process.env.CONFLUENT_API_URL || 'http://localhost:3000/translate';
 // Clé API d'auth pour appeler l'endpoint /translate.
 // POURQUOI env var : un secret hardcodé dans un script versionné fuite dans git (cas réel ici).
 // COMMENT : lue depuis CONFLUENT_API_KEY ; échec franc si absente (pas de fallback masquant — doctrine).
@@ -85,10 +85,9 @@ async function translatePhrase(text) {
     },
     body: JSON.stringify({
       text,
-      target: 'ancien',
-      provider: 'anthropic',
-      model: 'claude-sonnet-4-20250514',
-      temperature: 0.7
+      target: 'ancien'
+      // provider/model retirés : un seul provider (proxy Etheryale) ; modèle = défaut serveur (Haiku 4.5).
+      // La sortie est déjà validée phonotactiquement par le gate de l'agent côté serveur.
     })
   });
 

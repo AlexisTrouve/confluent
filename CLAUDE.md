@@ -9,11 +9,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## État actuel
 
 Le système linguistique de base est **validé et documenté** :
-- 67 racines (15 sacrées, 52 standards)
-- 16 liaisons sacrées
-- Système verbal complet (12 verbes, conjugateurs)
-- Syntaxe SOV avec particules
+- 16 liaisons sacrées · système verbal complet (conjugateurs) · syntaxe SOV avec particules
 - 6 castes et 6 lieux nommés
+- Dictionnaire vivant : ~1833 entrées (`ancien-confluent/lexique/*.json`), **corpus prouvé 100% cohérent** (audit phonotactique/forme/racines/homophones vert)
+
+Le **traducteur est désormais agentique** (et non plus une simple requête LLM) : un agent outillé qui consulte le lexique/la grammaire et dont **toute sortie passe un gate phonotactique déterministe** — aucune forme cassée ne peut être servie. Voir « Architecture du traducteur » ci-dessous.
 
 ## Structure du projet
 
@@ -131,20 +131,31 @@ Le serveur de traduction (`ConfluentTranslator/server.js`) expose les endpoints 
 - **POST** `/api/analyze/coverage` - Analyse la couverture d'un texte français avant traduction
 
 ### Traduction
-- **POST** `/translate` - Traduction FR → Confluent avec système contextuel (retourne layers 1-3)
-- **POST** `/api/translate/raw` - Traduction brute sans parsing (debug)
-- **POST** `/api/translate/batch` - Traduction par lot de mots
-- **POST** `/api/translate/conf2fr` - Traduction Confluent → FR
+- **POST** `/translate` - FR → Confluent via **l'agent outillé** (gate phonotactique garanti, retourne layers 1-3). `body: { text, target, model? }` — plus de `provider`/clés custom.
+- **POST** `/api/translate/raw` - Appel LLM brut sans agent ni gate (debug)
+- **POST** `/api/translate/batch` - Traduction par lot de mots (lookup lexique pur)
+- **POST** `/api/translate/conf2fr` - Confluent → FR (mot-à-mot) ; `/conf2fr/llm` pour raffinement
 
-### Debug
-- **POST** `/api/debug/prompt` - Génère le prompt système sans appeler le LLM
+> Réponse 422 `TRANSLATION_UNVALIDATED` = l'agent n'a pas pu produire une forme valide après réparations (échec franc, jamais de Confluent cassé servi).
+
+## Architecture du traducteur (agent)
+
+Tout passe par le **proxy Etheryale** (`https://ai.etheryale.com`, OAuth Claude Max+, cache auto) — provider unique, **OpenAI/ChatGPT retiré**. Modèle par défaut **Haiku 4.5** (`CONFLUENT_MODEL`) : la qualité vient des outils + du gate, pas de la puissance brute (prouvé : 5/5 valides sur Haiku).
+
+Modules clés (`ConfluentTranslator/src/`) :
+- `core/validation/phonotactics.js` — **le gate** déterministe (port JS de `audit-coherence.py`). `validateForm`/`validateTranslation`.
+- `core/translation/translationTools.js` — **5 outils** Anthropic : `lookup_concept` (FR→forme canon), `get_grammar`, `validate_form`, `verify_word` (décompo corpus : conjugaison+liaison), `check_composition`.
+- `core/translation/translationAgent.js` — **la boucle** : tool-use → gate final → réparation ciblée (cap) → échec franc.
+- `prompts/ancien-system.txt` — system prompt (règles phonotactiques dures + auto-vérif + exemples vérifiés contre le lexique).
+
+Config : `ETHERYALE_API_KEY` (clé `eai_`), `ETHERYALE_BASE_URL`, `CONFLUENT_MODEL`. Tests : `npm test` (gate + outils + régression), `npm run test:agent` (live, clé requise).
 
 ## Prochaines étapes
 
-1. Enrichir le lexique (verbes, concepts abstraits, émotions...)
+1. Étendre le lexique sur les gaps révélés par l'agent (mots qui forcent une composition)
 2. Définir les formules rituelles
-3. Résoudre les questions ouvertes (nombres, propositions relatives...)
-4. Créer des outils de traduction/génération
+3. Résoudre les questions ouvertes (propositions relatives, subordination)
+4. Étape 2 : Confluent mythologique (transcréation des chants)
 
 ## Conventions de travail
 
