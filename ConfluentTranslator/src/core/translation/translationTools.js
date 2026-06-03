@@ -22,6 +22,7 @@ const { validateForm, validateTranslation } = require('../validation/phonotactic
 const { searchWord, normalizeFrenchText, analyzeContext } = require('./contextAnalyzer');
 const { decomposeWord } = require('../morphology/morphologicalDecomposer');
 const { extractRadicals, CONJUGATEURS } = require('../morphology/radicalMatcher');
+const { translateConfluentDetailed } = require('./confluentToFrench');
 
 // QUOI : grammaire canonique de référence, source = data/lexique.json (repo root, le même que
 //        consomment les modules morpho) complété par des constantes documentées.
@@ -158,6 +159,21 @@ const TOOL_DEFINITIONS = [
         liaison: { type: 'string', description: 'Liaison sacrée employée (ex: "i", "aa").' }
       },
       required: ['forme', 'racines', 'liaison']
+    }
+  },
+  {
+    name: 'back_translate',
+    description:
+      "RE-TRADUIT ta traduction Confluent vers le français, MOT À MOT, pour que tu vérifies le SENS " +
+      "(le contrôle de forme ne suffit pas). Gère verbes conjugués et compositions. UTILISE-LE sur ta " +
+      "traduction finale AVANT de la rendre : compare le français obtenu au sens voulu. Si ça diverge " +
+      "(mauvais mot, caste au lieu du sens commun, mot inconnu), corrige. Ne JAMAIS supposer que c'est bon.",
+    input_schema: {
+      type: 'object',
+      properties: {
+        confluent: { type: 'string', description: 'Ta traduction Confluent (phrase complète) à re-traduire en FR.' }
+      },
+      required: ['confluent']
     }
   }
 ];
@@ -402,6 +418,36 @@ function execCheckComposition(input, ctx) {
 }
 
 /**
+ * back_translate — re-traduit le Confluent vers le français mot à mot (contrôle de SENS).
+ *
+ * QUOI : applique la logique CF→FR (translateConfluentToFrench : exact, verbes conjugués via
+ *        radicaux, compositions N racines, annotations grammaticales) à la sortie de l'agent.
+ * POURQUOI : le gate garantit la forme, pas le sens. La back-translation laisse l'agent COMPARER
+ *        le français obtenu au sens voulu et attraper une dérive (ex: akoazana → « Faucon Chasseur »
+ *        au lieu de « faucon »). Ne jamais supposer : toujours vérifier.
+ * COMMENT : réutilise translateConfluentToFrench avec l'index morpho (byWord/byFormeLiee).
+ */
+function execBackTranslate(input, ctx) {
+  const cf = String(input.confluent || '').trim();
+  if (!cf) return { erreur: 'entrée vide' };
+  // translateConfluentDetailed : glose PRIMAIRE par token (sans dump de synonymes) → léger.
+  const r = translateConfluentDetailed(cf, ctx.morphReverseIndex);
+  const par_mot = (r.tokens || []).map(t => ({ cf: t.confluent, fr: t.found ? t.francais : null }));
+  const non_reconnus = par_mot.filter(p => !p.fr).map(p => p.cf);
+  const francais_mot_a_mot = par_mot.map(p => p.fr || `[${p.cf}?]`).join(' ');
+  return {
+    confluent: cf,
+    francais_mot_a_mot,
+    par_mot,
+    non_reconnus,
+    couverture: (r.coverage != null ? r.coverage : 0) + '%',
+    note: "Compare 'francais_mot_a_mot' au sens FR voulu. Divergence (mauvais mot, nom propre/caste au " +
+          "lieu du sens commun) ou 'non_reconnus' → corrige. Ne suppose jamais que c'est bon. " +
+          "(Les nombres et certaines particules peuvent apparaître non reconnus : c'est normal.)"
+  };
+}
+
+/**
  * Dispatcher central.
  * @param {string} name
  * @param {Object} input
@@ -415,6 +461,7 @@ function executeTool(name, input, ctx) {
     case 'validate_form': return execValidateForm(input);
     case 'verify_word': return execVerifyWord(input, ctx);
     case 'check_composition': return execCheckComposition(input, ctx);
+    case 'back_translate': return execBackTranslate(input, ctx);
     default: return { error: `Outil inconnu: ${name}` };
   }
 }
@@ -423,5 +470,5 @@ module.exports = {
   TOOL_DEFINITIONS,
   executeTool,
   LIAISONS_VALIDES,
-  execAnalyzeText, execLookupConcept, execGetGrammar, execValidateForm, execVerifyWord, execCheckComposition
+  execAnalyzeText, execLookupConcept, execGetGrammar, execValidateForm, execVerifyWord, execCheckComposition, execBackTranslate
 };

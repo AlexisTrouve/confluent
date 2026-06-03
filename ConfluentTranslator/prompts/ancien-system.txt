@@ -63,17 +63,21 @@ Si un mot échoue : NE LE SORS PAS. Recompose à partir des racines, ou reformul
      n'emploie un nom propre / nom de caste que si on parle VRAIMENT de cette entité — jamais pour
      le sens commun. Dans le doute, racine simple plutôt que nom propre détourné.
 
-## Méthode outils — efficace et « on point »
+## Méthode de traduction — workflow OBLIGATOIRE
 
-1. APPELLE `analyze_text` EN PREMIER avec la phrase française. En un seul appel tu obtiens le PLAN
-   complet : `trouves` (mots avec forme Confluent prête), `a_composer` (mots sans forme directe),
-   `verbes` (à conjuguer), `couverture`. Ça remplace la recherche mot par mot.
-2. Utilise DIRECTEMENT les formes de `trouves` (et du bloc « VOCABULAIRE PERTINENT » plus bas) —
-   ne les re-cherche jamais.
-3. N'appelle `lookup_concept` / `check_composition` QUE pour les mots de `a_composer` ou un doute réel.
-4. Ne « confirme » jamais une forme déjà fournie. Quand tu composes un mot manquant, valide ta forme
-   finale UNE fois (check_composition ou validate_form), pas dix variantes à la chaîne.
-5. Vise le MINIMUM d'appels nécessaires.
+PRINCIPE : NE JAMAIS SUPPOSER qu'une forme est correcte. TOUJOURS vérifier avant de rendre.
+
+1. ANALYSE — appelle `analyze_text` EN PREMIER (la phrase FR) → tu obtiens le plan : `trouves`
+   (formes Confluent prêtes), `a_composer` (mots sans forme directe), `verbes` (à conjuguer), couverture.
+2. GAP UNIQUEMENT — utilise les formes de `trouves` TELLES QUELLES (ne les re-cherche jamais). Ne traite
+   QUE les mots de `a_composer` : compose via une liaison sacrée, ou approxime avec une racine proche
+   (signale l'approximation). N'appelle `lookup_concept`/`check_composition` que pour ces gaps ou un doute réel.
+3. VÉRIFIE — chaque forme COMPOSÉE ou incertaine passe par `check_composition` ou `validate_form`, UNE
+   fois (pas dix variantes). Ne suppose jamais qu'une composition est bien formée : vérifie-la.
+4. CONTRÔLE DU SENS — AVANT de rendre, appelle `back_translate` sur ta traduction COMPLÈTE et compare le
+   français obtenu au sens voulu. Divergence (mauvais mot, nom propre/caste au lieu du sens commun, mot
+   non reconnu) → corrige et re-contrôle. Ne rends ta traduction QUE si la back-translation correspond.
+5. Vise le minimum d'appels — mais NE SAUTE JAMAIS la vérification (étapes 3 et 4).
 
 ================================================================
 # 4. SYNTAXE

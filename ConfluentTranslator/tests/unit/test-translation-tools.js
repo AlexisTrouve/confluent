@@ -64,5 +64,11 @@ check('zakitori (zaki-i-tori) phonotactiquement valide + liaison valide', ccOk.f
 const ccBadLi = executeTool('check_composition', { forme: 'zakitori', racines: ['zaki', 'tori'], liaison: 'xx' }, ctx);
 check('liaison inventée "xx" rejetée', ccBadLi.liaison_valide === false, ccBadLi);
 
+console.log('\n[back_translate]');
+const bt = executeTool('back_translate', { confluent: 'va naki vo ura mirak u' }, ctx);
+check('back_translate glose eau + voir', /eau/.test(bt.francais_mot_a_mot) && /voir/.test(bt.francais_mot_a_mot), bt);
+const bt2 = executeTool('back_translate', { confluent: 'va akoazana vemep u' }, ctx);
+check('back_translate révèle akoazana = caste (chasseur)', /chasseur/i.test(bt2.francais_mot_a_mot), bt2.francais_mot_a_mot);
+
 console.log(`\n==== ${pass} pass, ${fail} fail ====`);
 process.exit(fail > 0 ? 1 : 0);
