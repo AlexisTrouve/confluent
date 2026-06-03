@@ -63,3 +63,40 @@ test('traduction FR→Confluent affiche un résultat (LLM mocké)', async ({ pag
   await expect(page.locator('#result-container')).toBeVisible();
   await expect(page.locator('#layer1-content')).toContainText('siliaska');
 });
+
+async function loginUI(page) {
+  await page.goto('/');
+  await page.fill('#login-api-key', getValidApiKey());
+  await page.locator('#login-overlay button').click();
+  await expect(page.locator('#login-overlay')).toBeHidden();
+}
+
+test('onglet Guide : guide GÉNÉRÉ chargé depuis /api/guide et rendu', async ({ page }) => {
+  await loginUI(page);
+  const guideResp = page.waitForResponse((r) => r.url().includes('/api/guide') && r.ok());
+  await page.locator('.tab[data-tab="guide"]').click();
+  await guideResp;
+  const txt = await page.locator('#guide-dynamic').innerText();
+  expect(txt).toContain('Liaisons');     // section générée
+  expect(txt).toContain('mirak');        // un verbe (depuis le lexique)
+  expect(txt).toContain('akoazana');     // une caste (depuis le lexique)
+});
+
+test('onglet Exemples : phrases pré-générées affichées', async ({ page }) => {
+  await loginUI(page);
+  await page.locator('.tab[data-tab="exemples"]').click();
+  await expect(page.locator('#examples-list .example-item').first()).toBeVisible();
+});
+
+test('onglet Settings : le choix de modèle persiste (Etheryale only)', async ({ page }) => {
+  await loginUI(page);
+  await page.locator('.tab[data-tab="settings"]').click();
+  await page.selectOption('#settings-model', 'claude-sonnet-4-6');
+  await page.locator('button:has-text("Sauvegarder")').click();
+  const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('confluentSettings') || '{}').model);
+  expect(stored).toBe('claude-sonnet-4-6');
+  // Plus aucun champ provider/clé anthropic/openai dans les settings sauvegardés.
+  const raw = await page.evaluate(() => localStorage.getItem('confluentSettings') || '');
+  expect(raw).not.toContain('openai');
+  expect(raw).not.toContain('provider');
+});

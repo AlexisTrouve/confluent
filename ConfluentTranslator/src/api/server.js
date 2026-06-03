@@ -14,6 +14,7 @@ const { buildContextualPrompt, getBasePrompt, getPromptStats } = require('../cor
 const { buildReverseIndex: buildConfluentIndex } = require('../core/morphology/reverseIndexBuilder');
 const { translateConfluentToFrench, translateConfluentDetailed } = require('../core/translation/confluentToFrench');
 const { translateWithAgent } = require('../core/translation/translationAgent');
+const { buildGuide } = require('../core/guide/guideBuilder');
 
 // Security modules
 const { authenticate, requireAdmin, createToken, listTokens, disableToken, enableToken, deleteToken, getGlobalStats, trackLLMUsage, checkLLMLimit } = require('../utils/auth');
@@ -97,6 +98,16 @@ app.get('/api/health', (req, res) => {
     timestamp: new Date().toISOString(),
     version: '1.0.0'
   });
+});
+
+// Guide de la langue — GÉNÉRÉ depuis le lexique + data/lexique.json (jamais désync). - SECURED
+app.get('/api/guide', authenticate, (req, res) => {
+  try {
+    res.json(buildGuide(lexiques.ancien));
+  } catch (e) {
+    console.error('Guide build error:', e);
+    res.status(500).json({ error: e.message });
+  }
 });
 
 // Auth validation endpoint (tests API key without exposing data)
