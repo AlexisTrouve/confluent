@@ -210,9 +210,9 @@
     "Jour des Ancetres": {
       "traductions": [
         {
-          "confluent": "solauaita",
+          "confluent": "sorauaita",
           "type": "composition",
-          "composition": "sol-a-aita",
+          "composition": "sor-a-aita",
           "sens_litteral": "Jour avec ancêtres",
           "racines": [
             "sora",
@@ -220,7 +220,7 @@
           ],
           "categorie": "celebration",
           "definition": "Jour de célébration dédié à la mémoire des ancêtres, honorant la lignée et la continuité multi-générationnelle.",
-          "nuance": "Composition sol-a-aita : sora (soleil > jour) + -a- + aita (ancêtre, sacrée) = 'jour avec ancêtres'. Événement ponctuel (vs Vigile Lunaire cyclique). Parallèle exact avec Jour du Faucon (solauaki).",
+          "nuance": "Composition sor-a-aita : sora (soleil > jour) + -a- + aita (ancêtre, sacrée) = 'jour avec ancêtres'. Événement ponctuel (vs Vigile Lunaire cyclique). Parallèle exact avec Jour du Faucon (sorauaki).",
           "registre": "rituel"
         }
       ]
@@ -228,9 +228,9 @@
     "Jour du Faucon": {
       "traductions": [
         {
-          "confluent": "solauaki",
+          "confluent": "sorauaki",
           "type": "composition",
-          "composition": "sol-a-aki",
+          "composition": "sor-a-aki",
           "sens_litteral": "Jour avec faucon",
           "racines": [
             "sora",
@@ -238,7 +238,7 @@
           ],
           "categorie": "celebration",
           "definition": "Jour de célébration consacré au faucon et, par extension, aux Faucons Chasseurs (Akoazana) ; fête de la chasse et de la vigilance guerrière.",
-          "nuance": "Composition sol-a-aki : sora (soleil > jour) + -a- + aki (faucon, sacrée) = 'jour avec faucon'. Relie aux Akoazana. Parallèle direct du Jour des Ancêtres (même moule sol-a-X).",
+          "nuance": "Composition sor-a-aki : sora (soleil > jour) + -a- + aki (faucon, sacrée) = 'jour avec faucon'. Relie aux Akoazana. Parallèle direct du Jour des Ancêtres (même moule sor-a-X).",
           "registre": "rituel"
         }
       ]

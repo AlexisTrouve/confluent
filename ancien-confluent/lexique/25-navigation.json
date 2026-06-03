@@ -5,9 +5,9 @@
     "naviguer": {
       "traductions": [
         {
-          "confluent": "ulaki",
+          "confluent": "uraki",
           "type": "composition",
-          "composition": "ula-ki",
+          "composition": "ura-ki",
           "sens_litteral": "Aller sur l'eau",
           "racines": [
             "ura"
@@ -27,9 +27,9 @@
     "marin": {
       "traductions": [
         {
-          "confluent": "ulakina",
+          "confluent": "urakina",
           "type": "composition",
-          "composition": "ula-ki-na",
+          "composition": "ura-ki-na",
           "sens_litteral": "Celui qui va sur l'eau",
           "racines": [
             "ura"
@@ -48,9 +48,9 @@
     "embarcation": {
       "traductions": [
         {
-          "confluent": "ulavanu",
+          "confluent": "uravanu",
           "type": "composition",
-          "composition": "ula-vanu",
+          "composition": "ura-vanu",
           "sens_litteral": "Chose d'eau",
           "racines": [
             "ura",
@@ -71,9 +71,9 @@
     "flotter": {
       "traductions": [
         {
-          "confluent": "ulatuli",
+          "confluent": "uratuli",
           "type": "composition",
-          "composition": "ula-tuli",
+          "composition": "ura-tuli",
           "sens_litteral": "Être porté par l'eau",
           "racines": [
             "ura"
@@ -138,9 +138,9 @@
     "noyade": {
       "traductions": [
         {
-          "confluent": "ulaosi",
+          "confluent": "uraosi",
           "type": "composition",
-          "composition": "ula-osi",
+          "composition": "ura-osi",
           "sens_litteral": "Mort par l'eau",
           "racines": [
             "ura",
@@ -202,9 +202,9 @@
     "berge": {
       "traductions": [
         {
-          "confluent": "ulalinu",
+          "confluent": "uralinu",
           "type": "composition",
-          "composition": "ula-linu",
+          "composition": "ura-linu",
           "sens_litteral": "Ligne d'eau",
           "racines": [
             "ura",
@@ -225,9 +225,9 @@
     "embouchure": {
       "traductions": [
         {
-          "confluent": "ulakotaseli",
+          "confluent": "urakotaseli",
           "type": "composition",
-          "composition": "ula-kota-seli",
+          "composition": "ura-kota-seli",
           "sens_litteral": "Confluence d'eau vers la mer",
           "racines": [
             "ura",
@@ -248,9 +248,9 @@
     "eau salée": {
       "traductions": [
         {
-          "confluent": "ulaselu",
+          "confluent": "uraselu",
           "type": "composition",
-          "composition": "ula-selu",
+          "composition": "ura-selu",
           "sens_litteral": "Eau de sel",
           "racines": [
             "ura",
@@ -271,9 +271,9 @@
     "eau douce": {
       "traductions": [
         {
-          "confluent": "ulapuli",
+          "confluent": "urapuli",
           "type": "composition",
-          "composition": "ula-puli",
+          "composition": "ura-puli",
           "sens_litteral": "Eau pure",
           "racines": [
             "ura"
@@ -516,9 +516,9 @@
     "pérégrination aquatique": {
       "traductions": [
         {
-          "confluent": "ulakimako",
+          "confluent": "urakimako",
           "type": "composition",
-          "composition": "ula-ki-mako",
+          "composition": "ura-ki-mako",
           "sens_litteral": "Grand voyage sur l'eau",
           "racines": [
             "ura",
@@ -539,9 +539,9 @@
     "point d'eau": {
       "traductions": [
         {
-          "confluent": "ulatoka",
+          "confluent": "uratoka",
           "type": "composition",
-          "composition": "ula-toka",
+          "composition": "ura-toka",
           "sens_litteral": "Lieu d'eau",
           "racines": [
             "ura",
@@ -732,9 +732,9 @@
     "écume": {
       "traductions": [
         {
-          "confluent": "ulamiluvi",
+          "confluent": "uramiluvi",
           "type": "composition",
-          "composition": "ula-milu-vi",
+          "composition": "ura-milu-vi",
           "sens_litteral": "Blanc d'eau",
           "racines": [
             "ura",

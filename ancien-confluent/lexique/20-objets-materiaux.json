@@ -20,9 +20,9 @@
     "argile": {
       "traductions": [
         {
-          "confluent": "tokauula",
+          "confluent": "tokauura",
           "type": "composition",
-          "composition": "tok-a-ula",
+          "composition": "tok-a-ura",
           "sens_litteral": "Terre avec eau",
           "racines": [
             "toka",
@@ -361,9 +361,9 @@
     "lampe": {
       "traductions": [
         {
-          "confluent": "solausaku",
+          "confluent": "sorausaku",
           "type": "composition",
-          "composition": "sol-a-saku",
+          "composition": "sor-a-saku",
           "sens_litteral": "Lumière avec contenant",
           "racines": [
             "sora",
@@ -415,9 +415,9 @@
     "bijou": {
       "traductions": [
         {
-          "confluent": "kariuola",
+          "confluent": "kariuora",
           "type": "composition",
-          "composition": "kar-i-ola",
+          "composition": "kar-i-ora",
           "sens_litteral": "Pierre de l'aurore",
           "racines": [
             "kari",

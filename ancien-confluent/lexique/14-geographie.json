@@ -19,9 +19,9 @@
     "est": {
       "traductions": [
         {
-          "confluent": "solaola",
+          "confluent": "soraora",
           "type": "composition",
-          "composition": "sol-a-ola",
+          "composition": "sor-a-ora",
           "sens_litteral": "Soleil de l'aurore",
           "racines": [
             "sora",
@@ -30,7 +30,7 @@
           "domaine": "direction",
           "note": "Est - direction du soleil levant/aurore",
           "definition": "Point cardinal du soleil levant, direction de l'aurore. Orient, levant.",
-          "nuance": "Composition sor-a-ola sur sora (soleil) + ora (aurore, racine sacrée, moment sacré) : « soleil de l'aurore ». Direction, pas relief : entrée à part dans ce fichier géographique. Charge culturelle forte car l'aurore (ora) est signe divin et marque l'élection des Ciels-clairs. Symétrique d'ouest (solaluna).",
+          "nuance": "Composition sor-a-ora sur sora (soleil) + ora (aurore, racine sacrée, moment sacré) : « soleil de l'aurore ». Direction, pas relief : entrée à part dans ce fichier géographique. Charge culturelle forte car l'aurore (ora) est signe divin et marque l'élection des Ciels-clairs. Symétrique d'ouest (soraluna).",
           "registre": "rituel"
         }
       ],
@@ -42,9 +42,9 @@
     "ouest": {
       "traductions": [
         {
-          "confluent": "solaluna",
+          "confluent": "soraluna",
           "type": "composition",
-          "composition": "sol-a-luna",
+          "composition": "sor-a-luna",
           "sens_litteral": "Soleil vers la nuit",
           "racines": [
             "sora",
@@ -53,7 +53,7 @@
           "domaine": "direction",
           "note": "Ouest - direction où le soleil va vers la nuit",
           "definition": "Point cardinal du soleil couchant, direction où le jour glisse vers la nuit. Occident, couchant.",
-          "nuance": "Composition sor-a-luna sur sora (soleil) + luna (lune) : « soleil vers la nuit ». Direction, pas relief. Symétrique d'est (solaola) : l'est se définit par l'aurore sacrée (ora), l'ouest par la lune (luna). Vs 'lune' simple (luna) qui nomme l'astre, ici elle marque l'orientation.",
+          "nuance": "Composition sor-a-luna sur sora (soleil) + luna (lune) : « soleil vers la nuit ». Direction, pas relief. Symétrique d'est (soraora) : l'est se définit par l'aurore sacrée (ora), l'ouest par la lune (luna). Vs 'lune' simple (luna) qui nomme l'astre, ici elle marque l'orientation.",
           "registre": "courant"
         }
       ],
@@ -137,9 +137,9 @@
     "inondation": {
       "traductions": [
         {
-          "confluent": "ulaueki",
+          "confluent": "uraueka",
           "type": "composition",
-          "composition": "ul-a-eki",
+          "composition": "ur-a-eka",
           "sens_litteral": "Eau avec totalité",
           "racines": [
             "ura",

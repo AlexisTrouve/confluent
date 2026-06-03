@@ -5,9 +5,9 @@
     "orange": {
       "traductions": [
         {
-          "confluent": "sukiusola",
+          "confluent": "sukiusora",
           "type": "composition",
-          "composition": "suk-i-sola",
+          "composition": "suk-i-sora",
           "sens_litteral": "Feu de lumière",
           "racines": [
             "suki",
@@ -134,9 +134,9 @@
     "bleu d'eau": {
       "traductions": [
         {
-          "confluent": "zeruuula",
+          "confluent": "zeruuura",
           "type": "composition",
-          "composition": "zer-u-ula",
+          "composition": "zer-u-ura",
           "sens_litteral": "Ciel de l'eau",
           "racines": [
             "zeru",
@@ -144,7 +144,7 @@
           ],
           "domaine": "couleur",
           "definition": "Bleu d'eau, teinte du ciel reflété dans l'onde. Nuance de bleu fluide et changeante.",
-          "nuance": "Composition zer-u-ula : zeru (ciel) + liaison appartenance -u- + ura (eau, fluide), litt. « ciel de l'eau ». Implique la racine sacrée ura (eau, élément primordial), ce qui élève légèrement la teinte ; double voyelle euphonique (-uula) au point de jonction. Doublon de bleu : sabo / zale / zeruuula.",
+          "nuance": "Composition zer-u-ura : zeru (ciel) + liaison appartenance -u- + ura (eau, fluide), litt. « ciel de l'eau ». Implique la racine sacrée ura (eau, élément primordial), ce qui élève légèrement la teinte ; double voyelle euphonique (-uura) au point de jonction. Doublon de bleu : sabo / zale / zeruuura.",
           "registre": "courant"
         }
       ]
@@ -152,9 +152,9 @@
     "ocre": {
       "traductions": [
         {
-          "confluent": "tokausola",
+          "confluent": "tokausora",
           "type": "composition",
-          "composition": "tok-a-sola",
+          "composition": "tok-a-sora",
           "sens_litteral": "Terre avec soleil",
           "racines": [
             "toka",
@@ -162,7 +162,7 @@
           ],
           "domaine": "couleur",
           "definition": "Couleur ocre, teinte de la terre touchée par le soleil. Brun-jaune chaud des sols.",
-          "nuance": "Composition tok-a-sola : toka (terre, sol) + liaison relation -a- (avec) + sora (soleil, lumière), litt. « terre avec soleil ». Couleur des matériaux et de l'argile vivante ; teinte concrète et quotidienne. La finale -sola est l'altération de sora en composition.",
+          "nuance": "Composition tok-a-sora : toka (terre, sol) + liaison relation -a- (avec) + sora (soleil, lumière), litt. « terre avec soleil ». Couleur des matériaux et de l'argile vivante ; teinte concrète et quotidienne.",
           "registre": "courant"
         }
       ]
@@ -191,9 +191,9 @@
     "eclat": {
       "traductions": [
         {
-          "confluent": "solaumako",
+          "confluent": "soraumako",
           "type": "composition",
-          "composition": "sol-a-mako",
+          "composition": "sor-a-mako",
           "sens_litteral": "Lumière avec grandeur",
           "racines": [
             "sora",
@@ -201,7 +201,7 @@
           ],
           "domaine": "qualificatif",
           "definition": "Éclat, brillance intense, rayonnement d'une lumière vaste. Qualité visuelle de ce qui brille fort.",
-          "nuance": "Composition sol-a-mako : sora (soleil, lumière) + liaison relation -a- (avec) + mako (grand, vaste), litt. « lumière avec grandeur ». La racine sora (lumière) y porte une connotation solaire et diurne. Synonymes français : éclate, éclats, éclatés. À distinguer de tame (lumineux), qualité plus diffuse.",
+          "nuance": "Composition sor-a-mako : sora (soleil, lumière) + liaison relation -a- (avec) + mako (grand, vaste), litt. « lumière avec grandeur ». La racine sora (lumière) y porte une connotation solaire et diurne. Synonymes français : éclate, éclats, éclatés. À distinguer de tame (lumineux), qualité plus diffuse.",
           "registre": "courant"
         }
       ],
@@ -214,9 +214,9 @@
     "translucide": {
       "traductions": [
         {
-          "confluent": "solauula",
+          "confluent": "sorauura",
           "type": "composition",
-          "composition": "sol-a-ula",
+          "composition": "sor-a-ura",
           "sens_litteral": "Lumière avec eau",
           "racines": [
             "sora",
