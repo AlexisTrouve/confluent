@@ -39,21 +39,24 @@ function extractTranslationLine(raw) {
   const lines = String(raw || '').split('\n');
   let capture = false;
   const out = [];
+  // Retire le markdown (**, `, #) pour détecter les en-têtes et nettoyer la traduction :
+  // certains modèles écrivent "**Décomposition**" ou "**Confluent:**", ce qui sinon casse la
+  // détection de section et fait fuiter du texte d'analyse (avec *, é…) dans le gate.
+  const clean = (s) => s.replace(/[*`#]/g, '').trim();
 
   for (const line of lines) {
-    const t = line.trim();
-    if (/^(ancien\s+)?confluent\s*:/i.test(t)) { capture = true; continue; }
-    if (capture) {
-      // Fin de la section traduction
-      if (/^d[ée]composition\s*:/i.test(t) || /^notes?\s*:/i.test(t) || /^analyse\s*:/i.test(t) || /^strat[ée]gie\s*:/i.test(t)) {
-        break;
-      }
-      if (t === '---') break;
-      // Ignorer les délimiteurs de bloc de code (```), que certains modèles ajoutent autour
-      // de la traduction : sinon les backticks polluent la ligne et échouent au gate.
-      if (/^```/.test(t)) continue;
-      if (t) out.push(t);
+    const t = clean(line);
+    if (!capture) {
+      // En-tête de traduction (markdown toléré) ; capture aussi un éventuel contenu inline.
+      const m = t.match(/^(?:ancien\s+)?confluent\s*:\s*(.*)$/i);
+      if (m) { capture = true; if (m[1]) out.push(m[1]); }
+      continue;
     }
+    // Fin de la section traduction (en-têtes, markdown toléré).
+    if (/^(d[ée]composition|notes?|analyse|strat[ée]gie)\b/i.test(t)) break;
+    if (t === '---') break;     // séparateur de section
+    if (t === '') continue;     // ligne vide dans la traduction
+    out.push(t);
   }
   return out.join(' ').trim();
 }
@@ -167,7 +170,8 @@ async function translateWithAgent(opts) {
       .join('\n');
 
     const translationLine = extractTranslationLine(rawResponse);
-    const gate = validateTranslation(translationLine);
+    // Gate avec l'alphabet de l'ÈRE (proto/ancien/mythologique), via ctx.era.
+    const gate = validateTranslation(translationLine, ctx && ctx.era);
 
     // QUOI : une extraction VIDE est un échec, pas un succès.
     // POURQUOI : validateTranslation('') est vacuously valide (0 mot ⇒ 0 erreur) ; sans cette

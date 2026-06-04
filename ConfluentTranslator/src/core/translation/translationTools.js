@@ -22,13 +22,13 @@ const { validateForm, validateTranslation } = require('../validation/phonotactic
 const { searchWord, normalizeFrenchText, analyzeContext } = require('./contextAnalyzer');
 const { decomposeWord } = require('../morphology/morphologicalDecomposer');
 const { extractRadicals, CONJUGATEURS } = require('../morphology/radicalMatcher');
+const { ANCIEN } = require('../eras/eras');
 
-// QUOI : grammaire canonique de référence, source = data/lexique.json (repo root, le même que
-//        consomment les modules morpho) complété par des constantes documentées.
-// POURQUOI : get_grammar doit renvoyer une vérité unique, pas une paraphrase du modèle.
-const dataLexique = require('../../../../data/lexique.json');
+// Résout la config d'ère depuis le contexte (ANCIEN par défaut → compat des appels sans ère).
+const eraOf = (ctx) => (ctx && ctx.era) || ANCIEN;
 
-// Les 16 liaisons sacrées, invariantes (02-MORPHOLOGIE).
+// Les 16 liaisons sacrées de l'ANCIEN, invariantes (02-MORPHOLOGIE) — exporté pour référence.
+// La validation par ère passe par era.liaisons (cf. check_composition) ; ceci reste l'ancien.
 const LIAISONS_VALIDES = new Set([
   'i', 'ie', 'ii', 'iu',      // famille I — agentivité
   'u', 'ui',                  // famille U — appartenance
@@ -45,22 +45,8 @@ const PARTICULES = {
 };
 const NEGATION = { zo: 'négation simple', zom: 'négation jamais', zob: 'négation interdiction' };
 
-// Rôles grammaticaux pour la back-translation (particules + négation + question).
-const ROLE_GRAMMATICAL = {
-  va: '[sujet]', vo: '[objet]', vi: '[direction]', ve: '[origine]', vu: '[instrument]',
-  na: '[possession]', ni: '[bénéficiaire]', no: '[lieu]', su: '[pluriel]',
-  zo: '[nég]', zom: '[nég-jamais]', zob: '[nég-interdit]', ka: '[question]'
-};
-// Sens court des conjugateurs (pour gloser un verbe conjugué ou un conjugateur isolé).
-const CONJ_SENS = {
-  u: 'présent', at: 'passé', aan: 'passé-regret', ait: 'passé-anc', amat: 'passé-myth', en: 'futur',
-  il: 'accompli', eol: 'habituel', eon: 'cyclique', eom: 'éternel', ok: 'impératif', es: 'souhait', ul: 'pouvoir', uv: 'écrit'
-};
-// Glose courte de chaque liaison (concept), pour rendre le SENS d'une composition en back-translation
-// (sinon « naki-u-kari » → « descendant pierre » perd le « de » de la liaison -u-).
-const LIAISON_GLOSS = Object.fromEntries(
-  Object.entries(dataLexique.liaisons || {}).map(([k, v]) => [k, v.concept || v.domaine || ''])
-);
+// (Les maps de back-translation — rôles, conjugateurs, gloses de liaison — sont désormais
+//  construites PAR ÈRE dans execBackTranslate, depuis era.particules/conjugateurs/liaisons.)
 
 // QUOI : réduit une définition longue à une glose courte. POURQUOI : prémâché — le modèle n'a pas
 // besoin du paragraphe ethnographique pour traduire, juste un repère de sens (paie moins de tokens).
@@ -221,7 +207,7 @@ function execAnalyzeText(input, ctx) {
     trouves,                                  // formes prêtes — À UTILISER DIRECTEMENT
     a_composer: m.wordsNotFound || [],        // pas de forme directe → composer ou approximer
     verbes,                                   // ajouter un conjugateur après chacun
-    conjugateurs: flat(dataLexique.conjugateurs?.temps),  // rappel concis (présent/passé/futur)
+    conjugateurs: flat(eraOf(ctx).conjugateurs?.temps),  // rappel concis selon l'ère
     note: "Utilise 'trouves' tel quel. Compose 'a_composer'. Ajoute un conjugateur à chaque verbe. " +
           "N'appelle d'autres outils que pour 'a_composer' ou un doute réel."
   };
@@ -277,24 +263,26 @@ function execLookupConcept(input, ctx) {
  * get_grammar — règles grammaticales officielles par sujet.
  * COMMENT : source = data/lexique.json (liaisons, conjugateurs, pronoms) + constantes canoniques.
  */
-function execGetGrammar(input) {
+function execGetGrammar(input, ctx) {
+  const era = eraOf(ctx);
+  const data = era.grammarData || {};
   const sujet = String(input.sujet || 'all').toLowerCase();
   const out = {};
 
   const conjugateurs = () => ({
-    regle: 'VERBE (finit par consonne) + CONJUGATEUR. Liste EXHAUSTIVE, aucun autre.',
-    temps: flat(dataLexique.conjugateurs?.temps),
-    aspects: flat(dataLexique.conjugateurs?.aspects),
-    modes: flat(dataLexique.conjugateurs?.modes),
-    evidentiel: flat(dataLexique.conjugateurs?.evidentiel)
+    regle: era.hasLiaisons ? 'VERBE (finit par consonne) + CONJUGATEUR. Liste EXHAUSTIVE.' : 'Présent implicite — pas de conjugateur à cette ère.',
+    temps: flat(era.conjugateurs?.temps),
+    aspects: flat(era.conjugateurs?.aspects),
+    modes: flat(era.conjugateurs?.modes),
+    evidentiel: flat(era.conjugateurs?.evidentiel)
   });
   const liaisons = () => ({
-    regle: 'racine1(forme liée) + liaison + racine2. JAMAIS comme pronom relatif "qui/que".',
-    liaisons: flat(dataLexique.liaisons),
-    familles: { I: 'agentivité (i,ie,ii,iu)', U: 'appartenance (u,ui)', A: 'relation (a,aa,ae,ao)', O: 'tension (o,oa)', E: 'dimension (e,ei,ea,eo)' }
+    regle: era.hasLiaisons ? 'racine1(forme liée) + liaison + racine2. JAMAIS comme pronom relatif "qui/que".' : 'Pas de liaisons à cette ère (mots isolés).',
+    liaisons: flat(era.liaisons),
+    familles: era.hasLiaisons ? { I: 'agentivité (i,ie,ii,iu)', U: 'appartenance (u,ui)', A: 'relation (a,aa,ae,ao)', O: 'tension (o,oa)', E: 'dimension (e,ei,ea,eo)' } : {}
   });
-  const particules = () => ({ regle: 'AVANT le mot, sauf su (pluriel) APRÈS.', particules: PARTICULES });
-  const pronoms = () => ({ regle: 'Mots à part entière. Pluriel par su.', pronoms: dataLexique.pronoms || { miki: 'je/moi', sinu: 'tu/toi', tani: 'il/elle/iel' } });
+  const particules = () => ({ regle: `Position : ${era.particulePosition === 'after' ? 'APRÈS' : 'AVANT'} le mot.`, particules: era.particules || PARTICULES });
+  const pronoms = () => ({ regle: 'Mots à part entière.', pronoms: data.pronoms || { miki: 'je/moi', sinu: 'tu/toi', tani: 'il/elle/iel' } });
   const negation = () => ({ regle: 'Avant le verbe.', negation: NEGATION });
   const nombres = () => ({
     regle: 'BASE 12. COEFFICIENT + tolu + UNITÉ. Le nombre précède le nom sans particule.',
@@ -328,8 +316,8 @@ function execGetGrammar(input) {
 /**
  * validate_form — verdict phonotactique pur (mot ou phrase).
  */
-function execValidateForm(input) {
-  return validateTranslation(String(input.confluent || ''));
+function execValidateForm(input, ctx) {
+  return validateTranslation(String(input.confluent || ''), eraOf(ctx));
 }
 
 /**
@@ -341,11 +329,12 @@ function execValidateForm(input) {
  *        (morphologicalDecomposer). Renvoie le mode de reconnaissance + détails.
  */
 function execVerifyWord(input, ctx) {
+  const era = eraOf(ctx);
   const word = String(input.confluent || '').toLowerCase().trim();
   if (!word) return { confluent: word, reconnu: false, raison: 'requête vide' };
 
-  // 1. Phonotactique
-  const phono = validateForm(word);
+  // 1. Phonotactique (alphabet de l'ère)
+  const phono = validateForm(word, era);
   if (!phono.valid) {
     return { confluent: word, phonotactique_valide: false, erreurs: phono.erreurs, reconnu: false,
       note: 'Forme phonotactiquement invalide — ne pas utiliser.' };
@@ -360,10 +349,10 @@ function execVerifyWord(input, ctx) {
       francais: e.francais, type: e.type, composition: e.composition || null };
   }
 
-  // 3. Verbe conjugué ? (radical + conjugateur)
-  const radicaux = extractRadicals(word);
+  // 3. Verbe conjugué ? (radical + conjugateur de l'ère)
+  const radicaux = extractRadicals(word, era.verbalSuffixes, era.conjugateurCodes);
   for (const r of radicaux) {
-    if (r.type === 'conjugaison' && CONJUGATEURS.includes(r.suffix)) {
+    if (r.type === 'conjugaison' && (era.conjugateurCodes || []).includes(r.suffix)) {
       // Le radical doit être un verbe/racine attesté (forme directe ou forme liée connue)
       const radEntry = byWord[r.radical];
       if (radEntry) {
@@ -374,8 +363,8 @@ function execVerifyWord(input, ctx) {
     }
   }
 
-  // 4. Composition racine-liaison-racine ?
-  const decomps = decomposeWord(word, ctx.morphReverseIndex);
+  // 4. Composition racine-liaison-racine (liaisons de l'ère) ?
+  const decomps = decomposeWord(word, ctx.morphReverseIndex, era.liaisons);
   if (decomps.length > 0) {
     const best = decomps[0];
     const racinesDetail = best.roots.map(rt => ({
@@ -405,11 +394,13 @@ function execVerifyWord(input, ctx) {
  * check_composition — racines déclarées + liaison valide + forme phonotactiquement correcte.
  */
 function execCheckComposition(input, ctx) {
+  const era = eraOf(ctx);
   const forme = String(input.forme || '').toLowerCase().trim();
   const racines = Array.isArray(input.racines) ? input.racines.map(r => String(r).toLowerCase().trim()) : [];
   const liaison = String(input.liaison || '').toLowerCase().trim();
 
-  const liaisonValide = LIAISONS_VALIDES.has(liaison);
+  // Liaison valide = présente dans les liaisons de l'ère (proto : aucune liaison → toujours invalide).
+  const liaisonValide = Boolean(era.liaisons && era.liaisons[liaison]);
 
   const byWord = (ctx.morphReverseIndex && ctx.morphReverseIndex.byWord) || {};
   const byFormeLiee = (ctx.morphReverseIndex && ctx.morphReverseIndex.byFormeLiee) || {};
@@ -420,7 +411,7 @@ function execCheckComposition(input, ctx) {
   }));
   const racinesInconnues = racinesVerdict.filter(v => !v.declaree).map(v => v.racine);
 
-  const formeVerdict = validateForm(forme);
+  const formeVerdict = validateForm(forme, era);
   const valid = liaisonValide && racinesInconnues.length === 0 && formeVerdict.valid;
 
   return {
@@ -444,8 +435,20 @@ function execCheckComposition(input, ctx) {
  * COMMENT : réutilise translateConfluentToFrench avec l'index morpho (byWord/byFormeLiee).
  */
 function execBackTranslate(input, ctx) {
+  const era = eraOf(ctx);
   const cf = String(input.confluent || '').trim();
   if (!cf) return { erreur: 'entrée vide' };
+
+  // Maps de l'ère : particules/interrogatifs → rôle, conjugateurs → temps, liaisons → concept.
+  const roleMap = {};
+  for (const [k, v] of Object.entries(era.particules || {})) roleMap[k] = `[${v}]`;
+  for (const [k, v] of Object.entries(era.interrogatifs || {})) roleMap[k] = `[${v}]`;
+  const conjMap = {};
+  for (const grp of Object.values(era.conjugateurs || {})) {
+    if (grp && typeof grp === 'object') for (const [k, v] of Object.entries(grp)) conjMap[k] = (typeof v === 'string' ? v : (v.sens || k));
+  }
+  const liaisonGloss = {};
+  for (const [k, v] of Object.entries(era.liaisons || {})) liaisonGloss[k] = (v && (v.concept || v.description)) || '';
 
   // COMMENT : token par token — particule/conjugateur → rôle grammatical ; sinon verify_word
   //   (qui gère DIRECT + verbe CONJUGUÉ + COMPOSITION/liaison). Ainsi la back-translation couvre
@@ -456,21 +459,21 @@ function execBackTranslate(input, ctx) {
 
   for (const tok of tokens) {
     // 1. Particule / négation / question → rôle
-    if (ROLE_GRAMMATICAL[tok]) { par_mot.push({ cf: tok, fr: ROLE_GRAMMATICAL[tok] }); continue; }
+    if (roleMap[tok]) { par_mot.push({ cf: tok, fr: roleMap[tok] }); continue; }
     // 2. Conjugateur isolé (écrit séparément) → temps/aspect
-    if (CONJ_SENS[tok]) { par_mot.push({ cf: tok, fr: `[${CONJ_SENS[tok]}]` }); continue; }
+    if (conjMap[tok]) { par_mot.push({ cf: tok, fr: `[${conjMap[tok]}]` }); continue; }
     // 3. Mot de contenu : verify_word (direct / verbe conjugué / composition)
     const v = execVerifyWord({ confluent: tok }, ctx);
     let fr = null;
     if (v.reconnu) {
-      if (v.mode === 'verbe_conjugue') fr = `${v.francais} [${CONJ_SENS[v.conjugateur] || v.conjugateur}]`;
+      if (v.mode === 'verbe_conjugue') fr = `${v.francais} [${conjMap[v.conjugateur] || v.conjugateur}]`;
       else if (v.mode === 'composition') {
         // Intercaler la glose de chaque liaison entre les racines (le SENS de la composition).
         const ra = v.racines || [], li = v.liaisons || [];
         const parts = [];
         ra.forEach((r, i) => {
           parts.push(r.francais || r.racine);
-          if (i < li.length && LIAISON_GLOSS[li[i]]) parts.push(`-${LIAISON_GLOSS[li[i]]}-`);
+          if (i < li.length && liaisonGloss[li[i]]) parts.push(`-${liaisonGloss[li[i]]}-`);
         });
         fr = '[' + parts.join(' ') + ']';
       } else fr = v.francais;
@@ -503,8 +506,8 @@ function executeTool(name, input, ctx) {
   switch (name) {
     case 'analyze_text': return execAnalyzeText(input, ctx);
     case 'lookup_concept': return execLookupConcept(input, ctx);
-    case 'get_grammar': return execGetGrammar(input);
-    case 'validate_form': return execValidateForm(input);
+    case 'get_grammar': return execGetGrammar(input, ctx);
+    case 'validate_form': return execValidateForm(input, ctx);
     case 'verify_word': return execVerifyWord(input, ctx);
     case 'check_composition': return execCheckComposition(input, ctx);
     case 'back_translate': return execBackTranslate(input, ctx);

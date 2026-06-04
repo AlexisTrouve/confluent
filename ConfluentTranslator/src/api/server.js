@@ -15,6 +15,7 @@ const { buildReverseIndex: buildConfluentIndex } = require('../core/morphology/r
 const { translateConfluentToFrench, translateConfluentDetailed } = require('../core/translation/confluentToFrench');
 const { translateWithAgent } = require('../core/translation/translationAgent');
 const { buildGuide } = require('../core/guide/guideBuilder');
+const { getEra } = require('../core/eras/eras');
 
 // Security modules
 const { authenticate, requireAdmin, createToken, listTokens, disableToken, enableToken, deleteToken, getGlobalStats, trackLLMUsage, checkLLMLimit } = require('../utils/auth');
@@ -479,7 +480,8 @@ app.post('/translate', authenticate, async (req, res) => {
       // déclenche une réparation ; échec franc si irréparable (jamais de Confluent invalide servi).
       const ctx = {
         lexique: lexiques[variant],
-        morphReverseIndex: confluentIndexes[variant]
+        morphReverseIndex: confluentIndexes[variant],
+        era: getEra(variant)   // alphabet + grammaire de l'ère → gate + outils paramétrés
       };
       const agentResult = await translateWithAgent({
         text,
