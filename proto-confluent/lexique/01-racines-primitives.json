@@ -6,7 +6,7 @@
     "eau": {
       "traductions": [
         {
-          "confluent": "ur",
+          "confluent": "ol",
           "type": "racine_proto_sacree",
           "evolution_ancien": "ura",
           "domaine": "element_primordial",
@@ -17,7 +17,7 @@
     "feu": {
       "traductions": [
         {
-          "confluent": "suk",
+          "confluent": "sok",
           "type": "racine_proto",
           "evolution_ancien": "suki",
           "domaine": "element_primordial",
@@ -28,14 +28,16 @@
     "air": {
       "traductions": [
         {
-          "confluent": "ven",
+          "confluent": "pen",
           "type": "racine_proto",
           "evolution_ancien": "vena",
           "domaine": "element_primordial",
           "note": "Élément primordial, aussi vent"
         }
       ],
-      "synonymes_fr": ["vent"]
+      "synonymes_fr": [
+        "vent"
+      ]
     },
     "terre": {
       "traductions": [
@@ -51,19 +53,21 @@
     "pierre": {
       "traductions": [
         {
-          "confluent": "kar",
+          "confluent": "kal",
           "type": "racine_proto",
           "evolution_ancien": "kari",
           "domaine": "element_primordial",
           "note": "Roche, matériau dur"
         }
       ],
-      "synonymes_fr": ["roche"]
+      "synonymes_fr": [
+        "roche"
+      ]
     },
     "ciel": {
       "traductions": [
         {
-          "confluent": "zer",
+          "confluent": "sel",
           "type": "racine_proto",
           "evolution_ancien": "zeru",
           "domaine": "element_primordial",
@@ -74,19 +78,21 @@
     "soleil": {
       "traductions": [
         {
-          "confluent": "sor",
+          "confluent": "sol",
           "type": "racine_proto",
           "evolution_ancien": "sora",
           "domaine": "element_primordial",
           "note": "Lumière du jour"
         }
       ],
-      "synonymes_fr": ["lumière"]
+      "synonymes_fr": [
+        "lumière"
+      ]
     },
     "lune": {
       "traductions": [
         {
-          "confluent": "lun",
+          "confluent": "lon",
           "type": "racine_proto",
           "evolution_ancien": "luna",
           "domaine": "element_primordial",
@@ -115,7 +121,9 @@
           "note": "Concept central - regard, vision"
         }
       ],
-      "synonymes_fr": ["regard"]
+      "synonymes_fr": [
+        "regard"
+      ]
     },
     "pied": {
       "traductions": [
@@ -131,19 +139,21 @@
     "bouche": {
       "traductions": [
         {
-          "confluent": "vok",
+          "confluent": "pok",
           "type": "racine_proto",
           "evolution_ancien": "voki",
           "domaine": "corps",
           "note": "Parole, voix - même racine"
         }
       ],
-      "synonymes_fr": ["voix"]
+      "synonymes_fr": [
+        "voix"
+      ]
     },
     "cœur": {
       "traductions": [
         {
-          "confluent": "kor",
+          "confluent": "kol",
           "type": "racine_proto",
           "evolution_ancien": "kori",
           "domaine": "corps",
@@ -176,7 +186,7 @@
     "venir": {
       "traductions": [
         {
-          "confluent": "vet",
+          "confluent": "pet",
           "type": "racine_proto_verbale",
           "evolution_ancien": "veti → vetis",
           "domaine": "action",
@@ -187,7 +197,7 @@
     "voir": {
       "traductions": [
         {
-          "confluent": "mir",
+          "confluent": "mil",
           "type": "racine_proto_verbale",
           "evolution_ancien": "mira → mirak",
           "domaine": "action",
@@ -242,7 +252,7 @@
     "deux": {
       "traductions": [
         {
-          "confluent": "tov",
+          "confluent": "top",
           "type": "racine_proto",
           "evolution_ancien": "tovu",
           "domaine": "nombre",
@@ -260,7 +270,10 @@
           "note": "Totalité, multitude - racine sacrée"
         }
       ],
-      "synonymes_fr": ["tous", "tout"]
+      "synonymes_fr": [
+        "tous",
+        "tout"
+      ]
     },
     "peu": {
       "traductions": [
@@ -309,7 +322,7 @@
     "mauvais": {
       "traductions": [
         {
-          "confluent": "zok",
+          "confluent": "sok",
           "type": "racine_proto",
           "evolution_ancien": "zoka",
           "domaine": "qualificatif",
@@ -375,7 +388,7 @@
     "là": {
       "traductions": [
         {
-          "confluent": "tov",
+          "confluent": "top",
           "type": "racine_proto",
           "evolution_ancien": "tova",
           "domaine": "demonstratif",

@@ -6,7 +6,7 @@
     "homme": {
       "traductions": [
         {
-          "confluent": "tor",
+          "confluent": "tol",
           "type": "racine_proto",
           "evolution_ancien": "tori",
           "domaine": "personne",
@@ -83,7 +83,7 @@
     "frère": {
       "traductions": [
         {
-          "confluent": "bor",
+          "confluent": "bol",
           "type": "racine_proto",
           "evolution_ancien": "boru",
           "domaine": "famille",
@@ -116,7 +116,7 @@
     "ami": {
       "traductions": [
         {
-          "confluent": "vak",
+          "confluent": "pak",
           "type": "racine_proto",
           "evolution_ancien": "vaku",
           "domaine": "social",
@@ -127,7 +127,7 @@
     "ennemi": {
       "traductions": [
         {
-          "confluent": "zok",
+          "confluent": "sok",
           "type": "racine_proto",
           "evolution_ancien": "zoka",
           "domaine": "social",
@@ -138,7 +138,7 @@
     "étranger": {
       "traductions": [
         {
-          "confluent": "tov",
+          "confluent": "top",
           "type": "racine_proto",
           "evolution_ancien": "tova",
           "domaine": "social",
@@ -160,7 +160,7 @@
     "guerrier": {
       "traductions": [
         {
-          "confluent": "zan",
+          "confluent": "san",
           "type": "racine_proto",
           "evolution_ancien": "zana",
           "domaine": "social",
@@ -171,7 +171,7 @@
     "chasseur": {
       "traductions": [
         {
-          "confluent": "zan",
+          "confluent": "san",
           "type": "racine_proto",
           "evolution_ancien": "zana",
           "domaine": "social",
@@ -182,7 +182,7 @@
     "shaman": {
       "traductions": [
         {
-          "confluent": "um",
+          "confluent": "om",
           "type": "racine_proto_sacree",
           "evolution_ancien": "umi",
           "domaine": "social",
@@ -226,7 +226,7 @@
     "maison": {
       "traductions": [
         {
-          "confluent": "nut",
+          "confluent": "not",
           "type": "racine_proto",
           "evolution_ancien": "nutu",
           "domaine": "lieu",
@@ -259,7 +259,7 @@
     "chasse": {
       "traductions": [
         {
-          "confluent": "zan",
+          "confluent": "san",
           "type": "racine_proto",
           "evolution_ancien": "zana",
           "domaine": "activite",
@@ -292,7 +292,7 @@
     "mort": {
       "traductions": [
         {
-          "confluent": "mus",
+          "confluent": "mos",
           "type": "racine_proto",
           "evolution_ancien": "musu",
           "domaine": "spirituel",
@@ -303,7 +303,7 @@
     "esprit": {
       "traductions": [
         {
-          "confluent": "um",
+          "confluent": "om",
           "type": "racine_proto_sacree",
           "evolution_ancien": "umi",
           "domaine": "spirituel",
@@ -314,7 +314,7 @@
     "rêve": {
       "traductions": [
         {
-          "confluent": "um",
+          "confluent": "om",
           "type": "racine_proto_sacree",
           "evolution_ancien": "umi",
           "domaine": "spirituel",
@@ -325,7 +325,7 @@
     "parole": {
       "traductions": [
         {
-          "confluent": "vok",
+          "confluent": "pok",
           "type": "racine_proto",
           "evolution_ancien": "voki",
           "domaine": "communication",
@@ -380,7 +380,7 @@
     "échanger": {
       "traductions": [
         {
-          "confluent": "kir",
+          "confluent": "kil",
           "type": "racine_proto_verbale",
           "evolution_ancien": "kiru → kirak",
           "domaine": "action",
@@ -391,7 +391,7 @@
     "voler": {
       "traductions": [
         {
-          "confluent": "zok",
+          "confluent": "sok",
           "type": "racine_proto_verbale",
           "evolution_ancien": "zoka → zokam",
           "domaine": "action",
@@ -413,7 +413,7 @@
     "protéger": {
       "traductions": [
         {
-          "confluent": "zak",
+          "confluent": "sak",
           "type": "racine_proto_verbale",
           "evolution_ancien": "zaki → zakis",
           "domaine": "action",
@@ -424,7 +424,7 @@
     "attaquer": {
       "traductions": [
         {
-          "confluent": "zok",
+          "confluent": "sok",
           "type": "racine_proto_verbale",
           "evolution_ancien": "zoka → zokak",
           "domaine": "action",

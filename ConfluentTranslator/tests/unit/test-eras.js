@@ -48,5 +48,13 @@ check('proto : liaison i INVALIDE (pas de liaisons)', executeTool('check_composi
 console.log('\n[validate_form via outil, par ère]');
 check('proto rejette ura via validate_form', executeTool('validate_form', { confluent: 'ura' }, ctxP).valid === false);
 
+console.log('\n[corpus proto valide au gate proto]');
+const protoForms = [];
+for (const e of Object.values(proto.dictionnaire || {})) for (const t of (e.traductions || [])) {
+  if (t.confluent && !/\s/.test(t.confluent)) protoForms.push(t.confluent);
+}
+const protoBad = protoForms.filter(f => !validateForm(f, PROTO).valid);
+check(`corpus proto 100% valide au gate proto (${protoForms.length} formes, ${protoBad.length} invalides)`, protoBad.length === 0, protoBad.slice(0, 10));
+
 console.log(`\n==== ${pass} pass, ${fail} fail ====`);
 process.exit(fail > 0 ? 1 : 0);

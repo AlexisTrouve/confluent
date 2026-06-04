@@ -23,7 +23,7 @@ Le Proto-Confluent est la langue des premiers clans avant leur unification. C'es
 - **Consonnes (8):** b, k, l, m, n, p, s, t
 
 ### Structure
-- Racines finissent par CV
+- Racines courtes CVC (souvent finale consonne : ol, sok, kal) — dérivées de l'ancien par lois de son
 - ~50% racines sacrées (V initial)
 - Pas de fusion, mots côte à côte
 

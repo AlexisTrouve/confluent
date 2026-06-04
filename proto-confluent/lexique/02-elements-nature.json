@@ -6,7 +6,7 @@
     "eau": {
       "traductions": [
         {
-          "confluent": "ur",
+          "confluent": "ol",
           "type": "racine_proto_sacree",
           "evolution_ancien": "ura",
           "domaine": "element",
@@ -17,7 +17,7 @@
     "feu": {
       "traductions": [
         {
-          "confluent": "suk",
+          "confluent": "sok",
           "type": "racine_proto",
           "evolution_ancien": "suki",
           "domaine": "element",
@@ -28,7 +28,7 @@
     "air": {
       "traductions": [
         {
-          "confluent": "ven",
+          "confluent": "pen",
           "type": "racine_proto",
           "evolution_ancien": "vena",
           "domaine": "element",
@@ -39,7 +39,7 @@
     "vent": {
       "traductions": [
         {
-          "confluent": "ven",
+          "confluent": "pen",
           "type": "racine_proto",
           "evolution_ancien": "vena",
           "domaine": "element",
@@ -61,7 +61,7 @@
     "pierre": {
       "traductions": [
         {
-          "confluent": "kar",
+          "confluent": "kal",
           "type": "racine_proto",
           "evolution_ancien": "kari",
           "domaine": "materiau",
@@ -72,7 +72,7 @@
     "roche": {
       "traductions": [
         {
-          "confluent": "kar",
+          "confluent": "kal",
           "type": "racine_proto",
           "evolution_ancien": "kari",
           "domaine": "materiau",
@@ -83,7 +83,7 @@
     "ciel": {
       "traductions": [
         {
-          "confluent": "zer",
+          "confluent": "sel",
           "type": "racine_proto",
           "evolution_ancien": "zeru",
           "domaine": "celeste",
@@ -94,7 +94,7 @@
     "soleil": {
       "traductions": [
         {
-          "confluent": "sor",
+          "confluent": "sol",
           "type": "racine_proto",
           "evolution_ancien": "sora",
           "domaine": "celeste",
@@ -105,7 +105,7 @@
     "lune": {
       "traductions": [
         {
-          "confluent": "lun",
+          "confluent": "lon",
           "type": "racine_proto",
           "evolution_ancien": "luna",
           "domaine": "celeste",
@@ -116,7 +116,7 @@
     "étoile": {
       "traductions": [
         {
-          "confluent": "zat",
+          "confluent": "sat",
           "type": "racine_proto",
           "evolution_ancien": "zatu",
           "domaine": "celeste",
@@ -127,7 +127,7 @@
     "nuage": {
       "traductions": [
         {
-          "confluent": "nub",
+          "confluent": "nob",
           "type": "racine_proto",
           "evolution_ancien": "nubu",
           "domaine": "celeste",
@@ -149,7 +149,7 @@
     "rivière": {
       "traductions": [
         {
-          "confluent": "nur",
+          "confluent": "nol",
           "type": "racine_proto",
           "evolution_ancien": "nura",
           "domaine": "terrain",
@@ -160,7 +160,7 @@
     "arbre": {
       "traductions": [
         {
-          "confluent": "vik",
+          "confluent": "pik",
           "type": "racine_proto",
           "evolution_ancien": "viku",
           "domaine": "vegetal",
@@ -171,7 +171,7 @@
     "forêt": {
       "traductions": [
         {
-          "confluent": "vik",
+          "confluent": "pik",
           "type": "racine_proto",
           "evolution_ancien": "viku",
           "domaine": "vegetal",
@@ -182,7 +182,7 @@
     "pluie": {
       "traductions": [
         {
-          "confluent": "sur",
+          "confluent": "sol",
           "type": "racine_proto",
           "evolution_ancien": "suru",
           "domaine": "meteo",
@@ -226,7 +226,7 @@
     "jour": {
       "traductions": [
         {
-          "confluent": "sor",
+          "confluent": "sol",
           "type": "racine_proto",
           "evolution_ancien": "sora",
           "domaine": "temps",
@@ -237,7 +237,7 @@
     "nuit": {
       "traductions": [
         {
-          "confluent": "lun",
+          "confluent": "lon",
           "type": "racine_proto",
           "evolution_ancien": "luna",
           "domaine": "temps",
@@ -248,7 +248,7 @@
     "aube": {
       "traductions": [
         {
-          "confluent": "or",
+          "confluent": "ol",
           "type": "racine_proto_sacree",
           "evolution_ancien": "ora",
           "domaine": "temps",
@@ -259,7 +259,7 @@
     "crépuscule": {
       "traductions": [
         {
-          "confluent": "mus",
+          "confluent": "mos",
           "type": "racine_proto",
           "evolution_ancien": "musu",
           "domaine": "temps",
@@ -270,7 +270,7 @@
     "chaud": {
       "traductions": [
         {
-          "confluent": "suk",
+          "confluent": "sok",
           "type": "racine_proto",
           "evolution_ancien": "suki",
           "domaine": "sensation",
@@ -314,7 +314,7 @@
     "lumière": {
       "traductions": [
         {
-          "confluent": "sor",
+          "confluent": "sol",
           "type": "racine_proto",
           "evolution_ancien": "sora",
           "domaine": "perception",
@@ -325,7 +325,7 @@
     "ombre": {
       "traductions": [
         {
-          "confluent": "kum",
+          "confluent": "kom",
           "type": "racine_proto",
           "evolution_ancien": "kumu",
           "domaine": "perception",
@@ -336,7 +336,7 @@
     "sombre": {
       "traductions": [
         {
-          "confluent": "kum",
+          "confluent": "kom",
           "type": "racine_proto",
           "evolution_ancien": "kumu",
           "domaine": "perception",

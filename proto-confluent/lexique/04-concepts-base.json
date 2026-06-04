@@ -39,7 +39,7 @@
     "court": {
       "traductions": [
         {
-          "confluent": "kus",
+          "confluent": "kos",
           "type": "racine_proto",
           "evolution_ancien": "kusu",
           "domaine": "qualificatif",
@@ -61,7 +61,7 @@
     "bas": {
       "traductions": [
         {
-          "confluent": "vuk",
+          "confluent": "pok",
           "type": "racine_proto",
           "evolution_ancien": "vuku",
           "domaine": "qualificatif",
@@ -105,7 +105,7 @@
     "léger": {
       "traductions": [
         {
-          "confluent": "lev",
+          "confluent": "lep",
           "type": "racine_proto",
           "evolution_ancien": "levu",
           "domaine": "qualificatif",
@@ -116,7 +116,7 @@
     "rapide": {
       "traductions": [
         {
-          "confluent": "kur",
+          "confluent": "kol",
           "type": "racine_proto",
           "evolution_ancien": "kuru",
           "domaine": "qualificatif",
@@ -149,7 +149,7 @@
     "jeune": {
       "traductions": [
         {
-          "confluent": "nov",
+          "confluent": "nop",
           "type": "racine_proto",
           "evolution_ancien": "nuvi",
           "domaine": "qualificatif",
@@ -171,7 +171,7 @@
     "mauvais": {
       "traductions": [
         {
-          "confluent": "zok",
+          "confluent": "sok",
           "type": "racine_proto",
           "evolution_ancien": "zoka",
           "domaine": "qualificatif",
@@ -182,7 +182,7 @@
     "beau": {
       "traductions": [
         {
-          "confluent": "sor",
+          "confluent": "sol",
           "type": "racine_proto",
           "evolution_ancien": "sora",
           "domaine": "qualificatif",
@@ -193,7 +193,7 @@
     "laid": {
       "traductions": [
         {
-          "confluent": "kum",
+          "confluent": "kom",
           "type": "racine_proto",
           "evolution_ancien": "kumu",
           "domaine": "qualificatif",
@@ -204,7 +204,7 @@
     "chaud": {
       "traductions": [
         {
-          "confluent": "suk",
+          "confluent": "sok",
           "type": "racine_proto",
           "evolution_ancien": "suki",
           "domaine": "qualificatif",
@@ -226,7 +226,7 @@
     "dur": {
       "traductions": [
         {
-          "confluent": "kar",
+          "confluent": "kal",
           "type": "racine_proto",
           "evolution_ancien": "kari",
           "domaine": "qualificatif",
@@ -259,7 +259,7 @@
     "vide": {
       "traductions": [
         {
-          "confluent": "nul",
+          "confluent": "nol",
           "type": "racine_proto",
           "evolution_ancien": "nulu",
           "domaine": "qualificatif",
@@ -303,7 +303,7 @@
     "deux": {
       "traductions": [
         {
-          "confluent": "tov",
+          "confluent": "top",
           "type": "racine_proto",
           "evolution_ancien": "tovu",
           "domaine": "nombre",
@@ -358,7 +358,7 @@
     "mort": {
       "traductions": [
         {
-          "confluent": "mus",
+          "confluent": "mos",
           "type": "racine_proto",
           "evolution_ancien": "musu",
           "domaine": "etat",
@@ -369,7 +369,7 @@
     "malade": {
       "traductions": [
         {
-          "confluent": "zok",
+          "confluent": "sok",
           "type": "racine_proto",
           "evolution_ancien": "zoka",
           "domaine": "etat",
@@ -402,7 +402,7 @@
     "loin": {
       "traductions": [
         {
-          "confluent": "tov",
+          "confluent": "top",
           "type": "racine_proto",
           "evolution_ancien": "tova",
           "domaine": "spatial",
@@ -413,7 +413,7 @@
     "dedans": {
       "traductions": [
         {
-          "confluent": "nut",
+          "confluent": "not",
           "type": "racine_proto",
           "evolution_ancien": "nutu",
           "domaine": "spatial",
@@ -424,7 +424,7 @@
     "dehors": {
       "traductions": [
         {
-          "confluent": "vek",
+          "confluent": "pek",
           "type": "racine_proto",
           "evolution_ancien": "veku",
           "domaine": "spatial",
@@ -479,7 +479,7 @@
     "jamais": {
       "traductions": [
         {
-          "confluent": "nul",
+          "confluent": "nol",
           "type": "racine_proto",
           "evolution_ancien": "nulu",
           "domaine": "temporel",

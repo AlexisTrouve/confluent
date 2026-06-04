@@ -6,11 +6,17 @@ Langue primitive des ancêtres de la Confluence, parlée avant l'émergence des 
 
 Le Proto-Confluent est la forme archaïque de la langue, utilisée par les premiers clans avant leur unification. C'est une langue directe, concrète, où chaque mot reste isolé. Les concepts abstraits et spirituels sont omniprésents (50% des racines sacrées), reflétant une société où le sacré imprègne le quotidien.
 
-L'évolution vers l'Ancien Confluent apportera :
-- Les liaisons sacrées (fusion des racines)
-- La voyelle **u** (appartenance, union)
-- Les consonnes **v** et **z**
-- Le système temporel complet
+Le proto est **primitif** : inventaire réduit (4 voyelles, 8 consonnes) et racines courtes **CVC**.
+Son inventaire restreint produit beaucoup d'**homophones assumés** (ex. `sok` = feu *et* mauvais) ;
+ces distinctions naîtront dans l'ancien.
+
+L'évolution vers l'Ancien Confluent apportera, par **lois de son** (proto → ancien) :
+- **o → u**, **p → v**, **s → z**, **l → r**, **t → d** (l'ancien fait émerger u, v, z, r, d).
+- **Voyelle finale** : la racine proto CVC gagne une voyelle finale (proto `ol` → ancien `ura` ; `kal` → `kari`).
+- **Liaisons sacrées** (fusion des racines) et **système temporel** (conjugateurs), absents du proto.
+
+> Source de vérité = cette intention. Le lexique proto se **dérive de l'ancien** (socle validé) en
+> appliquant ces lois à l'envers — voir `ConfluentTranslator/scripts/regen-proto-lexique.js`.
 
 ---
 
@@ -37,8 +43,8 @@ L'évolution vers l'Ancien Confluent apportera :
 | **t** | comme "terre" |
 
 ### Structure syllabique
-- Toute racine finit par CV (consonne + voyelle)
-- Pas de groupes consonantiques complexes
+- Racines courtes **CVC** (souvent finissant par une consonne : `ol`, `sok`, `kal`, `mil`)
+- Pas de groupes consonantiques complexes (jamais 2 consonnes en attaque, jamais 3 d'affilée)
 
 ---
 

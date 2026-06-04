@@ -39,7 +39,7 @@
     "bouche": {
       "traductions": [
         {
-          "confluent": "vok",
+          "confluent": "pok",
           "type": "racine_proto",
           "evolution_ancien": "voki",
           "domaine": "corps",
@@ -83,7 +83,7 @@
     "cœur": {
       "traductions": [
         {
-          "confluent": "kor",
+          "confluent": "kol",
           "type": "racine_proto",
           "evolution_ancien": "kori",
           "domaine": "corps",
@@ -116,7 +116,7 @@
     "courir": {
       "traductions": [
         {
-          "confluent": "kur",
+          "confluent": "kol",
           "type": "racine_proto_verbale",
           "evolution_ancien": "kuru → kuris",
           "domaine": "action",
@@ -127,7 +127,7 @@
     "sauter": {
       "traductions": [
         {
-          "confluent": "zup",
+          "confluent": "sop",
           "type": "racine_proto_verbale",
           "evolution_ancien": "zupu → zupan",
           "domaine": "action",
@@ -149,7 +149,7 @@
     "voir": {
       "traductions": [
         {
-          "confluent": "mir",
+          "confluent": "mil",
           "type": "racine_proto_verbale",
           "evolution_ancien": "mira → mirak",
           "domaine": "action",
@@ -193,7 +193,7 @@
     "goûter": {
       "traductions": [
         {
-          "confluent": "vok",
+          "confluent": "pok",
           "type": "racine_proto_verbale",
           "evolution_ancien": "voki → vokim",
           "domaine": "action",
@@ -204,7 +204,7 @@
     "manger": {
       "traductions": [
         {
-          "confluent": "mut",
+          "confluent": "mot",
           "type": "racine_proto_verbale",
           "evolution_ancien": "mutu → mutak",
           "domaine": "action",
@@ -215,7 +215,7 @@
     "boire": {
       "traductions": [
         {
-          "confluent": "biv",
+          "confluent": "bip",
           "type": "racine_proto_verbale",
           "evolution_ancien": "bivu → bivak",
           "domaine": "action",
@@ -226,7 +226,7 @@
     "dormir": {
       "traductions": [
         {
-          "confluent": "sup",
+          "confluent": "sop",
           "type": "racine_proto_verbale",
           "evolution_ancien": "supu → supan",
           "domaine": "action",
@@ -237,7 +237,7 @@
     "rêver": {
       "traductions": [
         {
-          "confluent": "um",
+          "confluent": "om",
           "type": "racine_proto_verbale_sacree",
           "evolution_ancien": "umi → umiak",
           "domaine": "action",
@@ -303,7 +303,7 @@
     "couper": {
       "traductions": [
         {
-          "confluent": "kut",
+          "confluent": "kot",
           "type": "racine_proto_verbale",
           "evolution_ancien": "kutu → kutak",
           "domaine": "action",
@@ -325,7 +325,7 @@
     "lier": {
       "traductions": [
         {
-          "confluent": "vas",
+          "confluent": "pas",
           "type": "racine_proto_verbale",
           "evolution_ancien": "vasi → vasak",
           "domaine": "action",
@@ -336,7 +336,7 @@
     "parler": {
       "traductions": [
         {
-          "confluent": "vos",
+          "confluent": "pos",
           "type": "racine_proto_verbale",
           "evolution_ancien": "vosa → vosak",
           "domaine": "action",
@@ -369,7 +369,7 @@
     "rire": {
       "traductions": [
         {
-          "confluent": "zik",
+          "confluent": "sik",
           "type": "racine_proto_verbale",
           "evolution_ancien": "ziku → zikam",
           "domaine": "action",
@@ -380,7 +380,7 @@
     "pleurer": {
       "traductions": [
         {
-          "confluent": "sur",
+          "confluent": "sol",
           "type": "racine_proto_verbale",
           "evolution_ancien": "suru → suran",
           "domaine": "action",
@@ -413,7 +413,7 @@
     "mourir": {
       "traductions": [
         {
-          "confluent": "mus",
+          "confluent": "mos",
           "type": "racine_proto_verbale",
           "evolution_ancien": "musu → musak",
           "domaine": "action",
@@ -424,7 +424,7 @@
     "chasser": {
       "traductions": [
         {
-          "confluent": "zan",
+          "confluent": "san",
           "type": "racine_proto_verbale",
           "evolution_ancien": "zana → zanak",
           "domaine": "action",
@@ -435,7 +435,7 @@
     "pêcher": {
       "traductions": [
         {
-          "confluent": "nur",
+          "confluent": "nol",
           "type": "racine_proto_verbale",
           "evolution_ancien": "nura → nurak",
           "domaine": "action",
@@ -457,7 +457,7 @@
     "creuser": {
       "traductions": [
         {
-          "confluent": "vuk",
+          "confluent": "pok",
           "type": "racine_proto_verbale",
           "evolution_ancien": "vuku → vukan",
           "domaine": "action",

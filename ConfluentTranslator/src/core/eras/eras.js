@@ -48,8 +48,8 @@ const PROTO = {
   // Phonotactique : 4 voyelles, 8 consonnes. PAS de u, v, z (apparus plus tard).
   consonnes: ['b', 'k', 'l', 'm', 'n', 'p', 's', 't'],
   voyelles: ['a', 'e', 'i', 'o'],
-  tolerees: [],                              // pas de r/d
-  reservees: ['u', 'v', 'z', 'y', 'é', 'è'], // sons inexistants à cette ère
+  tolerees: [],                                        // pas de r/d (l'ancien les a innovés)
+  reservees: ['u', 'v', 'z', 'r', 'd', 'y', 'é', 'è'], // sons innovés par l'ancien, absents du proto primitif
   // Morphologie : aucune (mots isolés, pas de fusion).
   hasLiaisons: false,
   liaisons: {},
