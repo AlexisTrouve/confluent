@@ -2001,6 +2001,261 @@
         "bandes",
         "triangle"
       ]
+    },
+    "taku": {
+      "fr": "sombre(b)",
+      "type": "racine",
+      "atomes": [
+        "croix",
+        "base",
+        "traitH"
+      ]
+    },
+    "nutu": {
+      "fr": "nourriture(b)",
+      "type": "racine",
+      "atomes": [
+        "bouche",
+        "vague",
+        "point"
+      ]
+    },
+    "kasi": {
+      "fr": "tête(b)",
+      "type": "racine",
+      "atomes": [
+        "anneau",
+        "base",
+        "traitV"
+      ]
+    },
+    "takavi": {
+      "fr": "accueillir",
+      "type": "verbe",
+      "atomes": [
+        "mainY",
+        "coeurV"
+      ]
+    },
+    "volaki": {
+      "fr": "rejeter",
+      "type": "verbe",
+      "atomes": [
+        "mainY",
+        "croix"
+      ]
+    },
+    "zaki": {
+      "fr": "gardien",
+      "type": "racine",
+      "atomes": [
+        "figure",
+        "triangle",
+        "traitV"
+      ]
+    },
+    "tavo": {
+      "fr": "distance",
+      "type": "racine",
+      "atomes": [
+        "traitH",
+        "traitH"
+      ]
+    },
+    "melu": {
+      "fr": "doux",
+      "type": "racine",
+      "atomes": [
+        "vague",
+        "coeurV",
+        "traitV"
+      ]
+    },
+    "kiru": {
+      "fr": "échange",
+      "type": "racine",
+      "atomes": [
+        "mainY",
+        "mainY"
+      ]
+    },
+    "tumi": {
+      "fr": "enterrer",
+      "type": "verbe",
+      "atomes": [
+        "base",
+        "fleche",
+        "point"
+      ]
+    },
+    "talu": {
+      "fr": "hall",
+      "type": "racine",
+      "atomes": [
+        "maison",
+        "base",
+        "traitV"
+      ]
+    },
+    "lanu": {
+      "fr": "jeter",
+      "type": "verbe",
+      "atomes": [
+        "mainY",
+        "fleche"
+      ]
+    },
+    "levi": {
+      "fr": "lever",
+      "type": "verbe",
+      "atomes": [
+        "mainY",
+        "traitV"
+      ]
+    },
+    "nomi": {
+      "fr": "nom",
+      "type": "racine",
+      "atomes": [
+        "bandes",
+        "anneau",
+        "point"
+      ]
+    },
+    "tavu": {
+      "fr": "outil",
+      "type": "racine",
+      "atomes": [
+        "triangle",
+        "traitV",
+        "point"
+      ]
+    },
+    "savo": {
+      "fr": "respect",
+      "type": "racine",
+      "atomes": [
+        "figure",
+        "voute"
+      ]
+    },
+    "seru": {
+      "fr": "servir",
+      "type": "verbe",
+      "atomes": [
+        "mainY",
+        "base",
+        "point"
+      ]
+    },
+    "sopi": {
+      "fr": "sommeil",
+      "type": "racine",
+      "atomes": [
+        "coeurV",
+        "base",
+        "point"
+      ]
+    },
+    "teku": {
+      "fr": "technique",
+      "type": "racine",
+      "atomes": [
+        "mainY",
+        "triangle"
+      ]
+    },
+    "tenu": {
+      "fr": "tenir",
+      "type": "verbe",
+      "atomes": [
+        "mainY",
+        "anneau",
+        "point"
+      ]
+    },
+    "venu": {
+      "fr": "venir",
+      "type": "verbe",
+      "atomes": [
+        "fleche",
+        "figure"
+      ]
+    },
+    "vela": {
+      "fr": "vigile",
+      "type": "racine",
+      "atomes": [
+        "oeil",
+        "base",
+        "point"
+      ]
+    },
+    "voli": {
+      "fr": "vouloir",
+      "type": "verbe",
+      "atomes": [
+        "coeurV",
+        "fleche"
+      ]
+    },
+    "neki": {
+      "fr": "créateur",
+      "type": "racine",
+      "atomes": [
+        "mainY",
+        "etoile"
+      ]
+    },
+    "vaku": {
+      "fr": "allié",
+      "type": "racine",
+      "atomes": [
+        "figure",
+        "coeurV",
+        "traitV"
+      ]
+    },
+    "zo": {
+      "fr": "ne...pas",
+      "type": "particule",
+      "atomes": [
+        "croix",
+        "jambe"
+      ]
+    },
+    "zom": {
+      "fr": "jamais",
+      "type": "particule",
+      "atomes": [
+        "croix",
+        "traitH",
+        "point"
+      ]
+    },
+    "zob": {
+      "fr": "interdit",
+      "type": "particule",
+      "atomes": [
+        "croix",
+        "barre"
+      ]
+    },
+    "ok": {
+      "fr": "impératif",
+      "type": "conjugateur",
+      "atomes": [
+        "fleche",
+        "traitV"
+      ]
+    },
+    "tova": {
+      "fr": "là-bas",
+      "type": "racine",
+      "atomes": [
+        "fleche",
+        "point"
+      ]
     }
   }
 }
