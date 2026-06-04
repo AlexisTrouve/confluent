@@ -188,7 +188,7 @@ function composeText(tokens) {
 }
 
 function main() {
-  const cell = (label, edges, uid) => `<div style="text-align:center;margin:18px">`
+  const cell = (label, edges, uid, id = '') => `<div ${id ? `id="${id}"` : ''} style="text-align:center;margin:18px">`
     + `<div>${svg(edges, uid)}</div>`
     + `<div style="color:#c9a86a;font-size:13px;margin-top:4px">${label}</div></div>`;
   // Bibliothèque d'atomes (les marques de base).
@@ -206,7 +206,7 @@ function main() {
     : `<div style="color:#7aa05a;text-align:center;margin-bottom:14px">✓ aucun doublon</div>`;
   // Revue GROUPÉE par type (validation par catégorie).
   const sectionOf = (...types) => entries.filter(([, g]) => types.includes(g.type))
-    .map(([cf, g], i) => cell(cf + ' = ' + g.fr, resolveEdges(g), types[0] + i)).join('');
+    .map(([cf, g], i) => cell(cf + ' = ' + g.fr, resolveEdges(g), types[0] + i, 'g-' + cf)).join('');
   const sec = (titre, contenu) => `<hr style="border-color:#3a2c1c;margin:22px 0">`
     + `<h3 style="color:#c9a86a;text-align:center">${titre}</h3>`
     + `<div style="display:flex;flex-wrap:wrap;justify-content:center">${contenu}</div>`;
