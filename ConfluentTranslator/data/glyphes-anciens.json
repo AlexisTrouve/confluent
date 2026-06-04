@@ -1334,6 +1334,673 @@
         "plante",
         "coeurV"
       ]
+    },
+    "kesa": {
+      "fr": "gris",
+      "type": "racine",
+      "atomes": [
+        "bandes",
+        "point"
+      ]
+    },
+    "pasu": {
+      "fr": "rouge",
+      "type": "racine",
+      "atomes": [
+        "flamme",
+        "point"
+      ]
+    },
+    "pabe": {
+      "fr": "blanc",
+      "type": "racine",
+      "atomes": [
+        "point",
+        "jambe"
+      ]
+    },
+    "kate": {
+      "fr": "noir",
+      "type": "racine",
+      "atomes": [
+        "croix",
+        "base"
+      ]
+    },
+    "mane": {
+      "fr": "vert",
+      "type": "racine",
+      "atomes": [
+        "plante",
+        "traitH"
+      ]
+    },
+    "sabo": {
+      "fr": "bleu",
+      "type": "racine",
+      "atomes": [
+        "vague",
+        "point"
+      ]
+    },
+    "zale": {
+      "fr": "azur",
+      "type": "racine",
+      "atomes": [
+        "vague",
+        "bandes"
+      ]
+    },
+    "mako": {
+      "fr": "grand",
+      "type": "racine",
+      "atomes": [
+        "plus"
+      ]
+    },
+    "pisu": {
+      "fr": "petit",
+      "type": "racine",
+      "atomes": [
+        "point"
+      ]
+    },
+    "telu": {
+      "fr": "lent",
+      "type": "racine",
+      "atomes": [
+        "vague",
+        "traitH"
+      ]
+    },
+    "kazo": {
+      "fr": "rapide",
+      "type": "racine",
+      "atomes": [
+        "fleche",
+        "traitH"
+      ]
+    },
+    "nuvi": {
+      "fr": "nouveau",
+      "type": "racine",
+      "atomes": [
+        "etoile",
+        "traitV"
+      ]
+    },
+    "eabme": {
+      "fr": "vieux",
+      "type": "racine",
+      "atomes": [
+        "bandes",
+        "traitH"
+      ]
+    },
+    "baso": {
+      "fr": "bas",
+      "type": "racine",
+      "atomes": [
+        "base",
+        "traitV"
+      ]
+    },
+    "lono": {
+      "fr": "long",
+      "type": "racine",
+      "atomes": [
+        "traitV",
+        "coeurV"
+      ]
+    },
+    "suka": {
+      "fr": "chaud",
+      "type": "racine",
+      "atomes": [
+        "flamme",
+        "traitH"
+      ]
+    },
+    "kiso": {
+      "fr": "froid",
+      "type": "racine",
+      "atomes": [
+        "croix",
+        "point"
+      ]
+    },
+    "tame": {
+      "fr": "clair",
+      "type": "racine",
+      "atomes": [
+        "etoile",
+        "traitH"
+      ]
+    },
+    "paka": {
+      "fr": "honteux",
+      "type": "racine",
+      "atomes": [
+        "coeurV",
+        "traitH"
+      ]
+    },
+    "selu": {
+      "fr": "sale",
+      "type": "racine",
+      "atomes": [
+        "vague",
+        "croix"
+      ]
+    },
+    "kumu": {
+      "fr": "sombre",
+      "type": "racine",
+      "atomes": [
+        "croix",
+        "traitH"
+      ]
+    },
+    "aska": {
+      "fr": "libre",
+      "type": "racine",
+      "atomes": [
+        "mainY",
+        "voute",
+        "point"
+      ]
+    },
+    "iko": {
+      "fr": "un",
+      "type": "racine",
+      "atomes": [
+        "traitV",
+        "point"
+      ]
+    },
+    "veri": {
+      "fr": "vrai",
+      "type": "racine",
+      "atomes": [
+        "oeil",
+        "traitH"
+      ]
+    },
+    "kota": {
+      "fr": "confluence",
+      "type": "racine",
+      "atomes": [
+        "vague",
+        "plus"
+      ]
+    },
+    "oki": {
+      "fr": "épreuve",
+      "type": "racine",
+      "atomes": [
+        "barre",
+        "point",
+        "point"
+      ]
+    },
+    "veli": {
+      "fr": "vrai(b)",
+      "type": "racine",
+      "atomes": [
+        "oeil",
+        "traitV"
+      ]
+    },
+    "tosa": {
+      "fr": "bon",
+      "type": "racine",
+      "atomes": [
+        "coeurV",
+        "voute",
+        "point"
+      ]
+    },
+    "valu": {
+      "fr": "valeur",
+      "type": "racine",
+      "atomes": [
+        "etoile",
+        "anneau",
+        "point"
+      ]
+    },
+    "kilu": {
+      "fr": "échanger",
+      "type": "racine",
+      "atomes": [
+        "mainY",
+        "vague"
+      ]
+    },
+    "neka": {
+      "fr": "travail",
+      "type": "racine",
+      "atomes": [
+        "mainY",
+        "base"
+      ]
+    },
+    "konu": {
+      "fr": "garder",
+      "type": "racine",
+      "atomes": [
+        "maison",
+        "figure",
+        "point"
+      ]
+    },
+    "vasi": {
+      "fr": "pont",
+      "type": "racine",
+      "atomes": [
+        "traitH",
+        "base"
+      ]
+    },
+    "kama": {
+      "fr": "chambre",
+      "type": "racine",
+      "atomes": [
+        "maison",
+        "point",
+        "point"
+      ]
+    },
+    "buka": {
+      "fr": "maison",
+      "type": "racine",
+      "atomes": [
+        "maison"
+      ]
+    },
+    "kopu": {
+      "fr": "corde",
+      "type": "racine",
+      "atomes": [
+        "vague",
+        "traitV"
+      ]
+    },
+    "lina": {
+      "fr": "corde(b)",
+      "type": "racine",
+      "atomes": [
+        "vague",
+        "bandes",
+        "point"
+      ]
+    },
+    "kutu": {
+      "fr": "hachette",
+      "type": "racine",
+      "atomes": [
+        "triangle",
+        "jambe",
+        "point"
+      ]
+    },
+    "loku": {
+      "fr": "lieu",
+      "type": "racine",
+      "atomes": [
+        "maison",
+        "base",
+        "point"
+      ]
+    },
+    "supu": {
+      "fr": "intimité",
+      "type": "racine",
+      "atomes": [
+        "maison",
+        "coeurV",
+        "point"
+      ]
+    },
+    "zoni": {
+      "fr": "zone",
+      "type": "racine",
+      "atomes": [
+        "anneau",
+        "base",
+        "point"
+      ]
+    },
+    "vanu": {
+      "fr": "navire",
+      "type": "racine",
+      "atomes": [
+        "vague",
+        "coeurV",
+        "point"
+      ]
+    },
+    "tabi": {
+      "fr": "tablette",
+      "type": "racine",
+      "atomes": [
+        "base",
+        "bandes",
+        "point"
+      ]
+    },
+    "saki": {
+      "fr": "sac",
+      "type": "racine",
+      "atomes": [
+        "maison",
+        "vague"
+      ]
+    },
+    "kova": {
+      "fr": "glyphe",
+      "type": "racine",
+      "atomes": [
+        "bandes",
+        "point",
+        "point"
+      ]
+    },
+    "zoku": {
+      "fr": "secret",
+      "type": "racine",
+      "atomes": [
+        "oeil",
+        "croix"
+      ]
+    },
+    "seku": {
+      "fr": "sec",
+      "type": "racine",
+      "atomes": [
+        "base",
+        "traitH",
+        "point"
+      ]
+    },
+    "nisa": {
+      "fr": "humide",
+      "type": "racine",
+      "atomes": [
+        "vague",
+        "goutte"
+      ]
+    },
+    "vuku": {
+      "fr": "profond",
+      "type": "racine",
+      "atomes": [
+        "coeurV",
+        "base"
+      ]
+    },
+    "piki": {
+      "fr": "pointe",
+      "type": "racine",
+      "atomes": [
+        "triangle",
+        "traitH"
+      ]
+    },
+    "siku": {
+      "fr": "cercle",
+      "type": "racine",
+      "atomes": [
+        "anneau",
+        "croix"
+      ]
+    },
+    "teki": {
+      "fr": "route",
+      "type": "racine",
+      "atomes": [
+        "base",
+        "fleche"
+      ]
+    },
+    "keku": {
+      "fr": "antre",
+      "type": "racine",
+      "atomes": [
+        "maison",
+        "triangle"
+      ]
+    },
+    "tuli": {
+      "fr": "demeurer",
+      "type": "racine",
+      "atomes": [
+        "maison",
+        "traitV"
+      ]
+    },
+    "paku": {
+      "fr": "paix",
+      "type": "racine",
+      "atomes": [
+        "coeurV",
+        "voute",
+        "traitV"
+      ]
+    },
+    "varu": {
+      "fr": "guerre",
+      "type": "racine",
+      "atomes": [
+        "barre",
+        "fleche"
+      ]
+    },
+    "zoka": {
+      "fr": "ennemi",
+      "type": "racine",
+      "atomes": [
+        "figure",
+        "barre"
+      ]
+    },
+    "mavi": {
+      "fr": "toxine",
+      "type": "racine",
+      "atomes": [
+        "goutte",
+        "croix"
+      ]
+    },
+    "poku": {
+      "fr": "poison",
+      "type": "racine",
+      "atomes": [
+        "goutte",
+        "barre"
+      ]
+    },
+    "leku": {
+      "fr": "loi",
+      "type": "racine",
+      "atomes": [
+        "bandes",
+        "base",
+        "traitV"
+      ]
+    },
+    "savu": {
+      "fr": "serment",
+      "type": "racine",
+      "atomes": [
+        "anneau",
+        "mainY"
+      ]
+    },
+    "ita": {
+      "fr": "être",
+      "type": "racine",
+      "atomes": [
+        "traitV",
+        "anneau",
+        "traitV"
+      ]
+    },
+    "osi": {
+      "fr": "mort",
+      "type": "racine",
+      "atomes": [
+        "barre",
+        "base",
+        "point"
+      ]
+    },
+    "eka": {
+      "fr": "tous",
+      "type": "racine",
+      "atomes": [
+        "plus",
+        "anneau",
+        "point"
+      ]
+    },
+    "ena": {
+      "fr": "origine",
+      "type": "racine",
+      "atomes": [
+        "point",
+        "anneau",
+        "point"
+      ]
+    },
+    "apo": {
+      "fr": "oiseau",
+      "type": "racine",
+      "atomes": [
+        "voute",
+        "fleche",
+        "point"
+      ]
+    },
+    "apa": {
+      "fr": "aile",
+      "type": "racine",
+      "atomes": [
+        "voute",
+        "coeurV",
+        "traitH"
+      ]
+    },
+    "onu": {
+      "fr": "sa",
+      "type": "racine",
+      "atomes": [
+        "point",
+        "mainY"
+      ]
+    },
+    "aita": {
+      "fr": "ancêtre",
+      "type": "racine",
+      "atomes": [
+        "figure",
+        "etoile",
+        "point"
+      ]
+    },
+    "puli": {
+      "fr": "esprit(c)",
+      "type": "racine",
+      "atomes": [
+        "voute",
+        "point",
+        "point"
+      ]
+    },
+    "ora": {
+      "fr": "aurore",
+      "type": "racine",
+      "atomes": [
+        "voute",
+        "etoile",
+        "point"
+      ]
+    },
+    "mori": {
+      "fr": "souvenir",
+      "type": "racine",
+      "atomes": [
+        "oeil",
+        "anneau"
+      ]
+    },
+    "novi": {
+      "fr": "présage",
+      "type": "racine",
+      "atomes": [
+        "oeil",
+        "etoile",
+        "point"
+      ]
+    },
+    "muta": {
+      "fr": "faim",
+      "type": "racine",
+      "atomes": [
+        "bouche",
+        "vague"
+      ]
+    },
+    "keko": {
+      "fr": "échos",
+      "type": "racine",
+      "atomes": [
+        "anneau",
+        "voute",
+        "point"
+      ]
+    },
+    "arku": {
+      "fr": "arc",
+      "type": "racine",
+      "atomes": [
+        "voute",
+        "traitH"
+      ]
+    },
+    "ieto": {
+      "fr": "rhombe",
+      "type": "racine",
+      "atomes": [
+        "anneau",
+        "croix",
+        "traitH"
+      ]
+    },
+    "nave": {
+      "fr": "gravure",
+      "type": "racine",
+      "atomes": [
+        "base",
+        "croix",
+        "point"
+      ]
+    },
+    "kosti": {
+      "fr": "rivage",
+      "type": "racine",
+      "atomes": [
+        "vague",
+        "triangle"
+      ]
+    },
+    "kelu": {
+      "fr": "couleur",
+      "type": "racine",
+      "atomes": [
+        "bandes",
+        "triangle"
+      ]
     }
   }
 }
