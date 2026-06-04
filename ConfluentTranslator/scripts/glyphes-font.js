@@ -195,19 +195,31 @@ function main() {
   const atomsView = Object.entries(ATOMS_LIB).map(([n, e], i) => cell(n, e, 'a' + i)).join('');
   // Registre : chaque concept résolu en glyphe (depuis ses atomes).
   const entries = Object.entries(GLYPHS);
-  const review = entries.map(([cf, g], i) => cell(cf + ' = ' + g.fr + ' [' + (g.atomes || []).join('+') + ']', resolveEdges(g), i)).join('');
-  // Démo composition AUTOMATIQUE depuis le registre : « l'enfant voit l'eau ».
+  // VÉRIF DOUBLONS : deux concepts produisant le MÊME glyphe (mêmes edges normalisés) = collision.
+  const sig = (edges) => edges.map(e => orient(e).join('|')).sort().join(';');
+  const bySig = {};
+  for (const [cf, g] of entries) { const s = sig(resolveEdges(g)); (bySig[s] = bySig[s] || []).push(cf + '=' + g.fr); }
+  const dups = Object.values(bySig).filter(a => a.length > 1);
+  console.log(dups.length ? '⚠ DOUBLONS (' + dups.length + ') : ' + dups.map(a => a.join('/')).join(' · ') : '✓ aucun doublon');
+  const dupWarn = dups.length
+    ? `<div style="background:#3a1a1a;color:#f0a0a0;padding:10px;text-align:center;border-radius:8px;margin:0 auto 14px;max-width:700px">⚠ ${dups.length} doublon(s) : ${dups.map(a => a.join(' = ')).join(' · ')}</div>`
+    : `<div style="color:#7aa05a;text-align:center;margin-bottom:14px">✓ aucun doublon</div>`;
+  // Revue GROUPÉE par type (validation par catégorie).
+  const sectionOf = (...types) => entries.filter(([, g]) => types.includes(g.type))
+    .map(([cf, g], i) => cell(cf + ' = ' + g.fr, resolveEdges(g), types[0] + i)).join('');
+  const sec = (titre, contenu) => `<hr style="border-color:#3a2c1c;margin:22px 0">`
+    + `<h3 style="color:#c9a86a;text-align:center">${titre}</h3>`
+    + `<div style="display:flex;flex-wrap:wrap;justify-content:center">${contenu}</div>`;
   const collier = composeText(['va', 'naki', 'vo', 'ura', 'mirak', 'u']);
   const html = `<!doctype html><meta charset="utf-8"><body style="background:#15110c;font-family:system-ui;padding:30px">`
-    + `<h2 style="color:#c9a86a;text-align:center">Glyphes du Gouffre — registre (${entries.length}) + composition</h2>`
-    + `<p style="color:#8a7a5a;text-align:center">Phrase composée automatiquement depuis le registre : « l'enfant voit l'eau » (va naki vo ura mirak u)</p>`
-    + `<div style="display:flex;justify-content:center;align-items:flex-start;background:#1c150d;padding:20px;border-radius:12px;margin:0 auto 28px;max-width:fit-content">${collier}</div>`
-    + `<hr style="border-color:#3a2c1c;margin:24px 0">`
-    + `<h3 style="color:#c9a86a;text-align:center">Atomes — marques réutilisables (${Object.keys(ATOMS_LIB).length})</h3>`
-    + `<div style="display:flex;flex-wrap:wrap;justify-content:center">${atomsView}</div>`
-    + `<hr style="border-color:#3a2c1c;margin:24px 0">`
-    + `<h3 style="color:#c9a86a;text-align:center">Registre — concepts composés depuis les atomes (${entries.length})</h3>`
-    + `<div style="display:flex;flex-wrap:wrap;justify-content:center">${review}</div></body>`;
+    + `<h2 style="color:#c9a86a;text-align:center">Glyphes du Gouffre — registre (${entries.length})</h2>`
+    + dupWarn
+    + `<div style="display:flex;justify-content:center;align-items:flex-start;background:#1c150d;padding:14px;border-radius:12px;margin:0 auto;max-width:fit-content">${collier}</div>`
+    + sec('PARTICULES (9)', sectionOf('particule'))
+    + sec('LIAISONS (16)', sectionOf('liaison'))
+    + sec('Racines (échantillon, déjà composées)', sectionOf('racine', 'verbe'))
+    + sec('Atomes (palette de marques)', atomsView)
+    + `</body>`;
   const name = 'glyphes-font.html';
   fs.writeFileSync(path.join(__dirname, '..', 'public', name), html, 'utf-8');
   console.log(name);
