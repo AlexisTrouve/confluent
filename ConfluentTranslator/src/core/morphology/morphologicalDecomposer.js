@@ -169,7 +169,7 @@ function validateRoot(part, reverseIndex = null, isLastRoot = false) {
  * @param {number} depth - Profondeur de récursion (pour éviter boucle infinie)
  * @returns {Array<Object>} Liste de décompositions possibles
  */
-function decomposeWordRecursive(word, reverseIndex, depth = 0) {
+function decomposeWordRecursive(word, reverseIndex, depth = 0, liaisonsMap = SACRED_LIAISONS) {
   const MAX_DEPTH = 10; // Max 10 racines dans un mot
   const decompositions = [];
 
@@ -179,7 +179,7 @@ function decomposeWordRecursive(word, reverseIndex, depth = 0) {
   }
 
   // Trier les liaisons par longueur décroissante (essayer 'aa' avant 'a')
-  const liaisonsSorted = Object.keys(SACRED_LIAISONS).sort((a, b) => b.length - a.length);
+  const liaisonsSorted = Object.keys(liaisonsMap).sort((a, b) => b.length - a.length);
 
   // Essayer chaque liaison sacrée
   for (const liaison of liaisonsSorted) {
@@ -211,7 +211,7 @@ function decomposeWordRecursive(word, reverseIndex, depth = 0) {
       const rightValidation = validateRoot(rightPart, reverseIndex, true);
 
       if (rightValidation.isValid) {
-        const liaisonData = SACRED_LIAISONS[liaison];
+        const liaisonData = liaisonsMap[liaison];
 
         decompositions.push({
           type: 'simple',
@@ -247,10 +247,10 @@ function decomposeWordRecursive(word, reverseIndex, depth = 0) {
       }
 
       // Essai 2 : rightPart est un mot composé
-      const rightDecompositions = decomposeWordRecursive(rightPart, reverseIndex, depth + 1);
+      const rightDecompositions = decomposeWordRecursive(rightPart, reverseIndex, depth + 1, liaisonsMap);
 
       for (const rightDecomp of rightDecompositions) {
-        const liaisonData = SACRED_LIAISONS[liaison];
+        const liaisonData = liaisonsMap[liaison];
 
         // Combiner left + liaison + rightDecomp
         const allRoots = [
@@ -298,8 +298,8 @@ function decomposeWordRecursive(word, reverseIndex, depth = 0) {
  * @param {Object} reverseIndex - Index de recherche (optionnel, pour validation)
  * @returns {Array<Object>} Liste de décompositions possibles, triées par confiance
  */
-function decomposeWord(word, reverseIndex = null) {
-  const decompositions = decomposeWordRecursive(word, reverseIndex, 0);
+function decomposeWord(word, reverseIndex = null, liaisonsMap = SACRED_LIAISONS) {
+  const decompositions = decomposeWordRecursive(word, reverseIndex, 0, liaisonsMap);
 
   // Trier par confiance décroissante
   return decompositions.sort((a, b) => b.confidence - a.confidence);

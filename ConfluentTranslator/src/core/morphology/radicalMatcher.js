@@ -106,16 +106,16 @@ console.log(`  - ${VERBAL_SUFFIXES.length} suffixes verbaux totaux`);
  * @param {string} word - Mot en confluent
  * @returns {Array<{radical: string, suffix: string, type: string, confidence: number}>}
  */
-function extractRadicals(word) {
+function extractRadicals(word, verbalSuffixes = VERBAL_SUFFIXES, conjugateurCodes = CONJUGATEURS) {
   const candidates = [];
 
-  // 1. Essayer chaque suffixe verbal connu (conjugateurs + infinitifs)
-  for (const suffix of VERBAL_SUFFIXES) {
+  // 1. Essayer chaque suffixe verbal connu (conjugateurs + infinitifs) — de l'ère.
+  for (const suffix of verbalSuffixes) {
     if (word.endsWith(suffix) && word.length > suffix.length + 1) {
       const radical = word.slice(0, -suffix.length);
 
       // Différencier conjugateurs et infinitifs pour la confiance
-      const isConjugateur = CONJUGATEURS.includes(suffix);
+      const isConjugateur = conjugateurCodes.includes(suffix);
       const type = isConjugateur ? 'conjugaison' : 'infinitif';
 
       candidates.push({

@@ -27,6 +27,18 @@ function flatGloss(obj) {
     [k, typeof v === 'string' ? v : (v.sens || v.concept || v.description || '')]));
 }
 
+// Aplatit les conjugateurs (temps/aspects/modes/évidentiel) en LISTE de codes (pour la morpho).
+function conjCodes(conjugateurs) {
+  const out = [];
+  for (const groupe of Object.values(conjugateurs || {})) {
+    if (groupe && typeof groupe === 'object') out.push(...Object.keys(groupe));
+    else if (typeof groupe === 'string') out.push(groupe);
+  }
+  return out;
+}
+// Suffixes d'infinitif de l'ancien (racine → verbe), stables — utilisés par radicalMatcher.
+const ANCIEN_INFINITIF_SUFFIXES = ['k', 's', 'n', 'm', 'ak', 'vik', 'an'];
+
 // ============================================================================
 // PROTO-CONFLUENT — langue primitive (avant les liaisons et la conjugaison)
 // ============================================================================
@@ -42,6 +54,8 @@ const PROTO = {
   hasLiaisons: false,
   liaisons: {},
   conjugateurs: {},                          // présent implicite uniquement
+  conjugateurCodes: [],
+  verbalSuffixes: [],
   // Particules POST-posées (≠ ancien qui les antépose).
   particulePosition: 'after',
   particules: { na: 'sujet', no: 'objet direct', ni: 'direction/but', ne: 'origine', si: 'pluriel', so: 'négation', ka: 'question' },
@@ -65,6 +79,8 @@ const ANCIEN = {
   hasLiaisons: true,
   liaisons: ancienGrammar.liaisons || {},                 // 16 liaisons sacrées
   conjugateurs: ancienGrammar.conjugateurs || {},          // temps/aspects/modes/évidentiel
+  conjugateurCodes: conjCodes(ancienGrammar.conjugateurs),
+  verbalSuffixes: [...conjCodes(ancienGrammar.conjugateurs), ...ANCIEN_INFINITIF_SUFFIXES],
   particulePosition: 'before',
   particules: { va: 'sujet', vo: 'objet direct', vi: 'direction', ve: 'origine', vu: 'instrument', na: 'possession', ni: 'bénéficiaire', no: 'lieu', su: 'pluriel (après)' },
   interrogatifs: { ki: 'qui', ke: 'quoi', ko: 'où', ku: 'quand' },
