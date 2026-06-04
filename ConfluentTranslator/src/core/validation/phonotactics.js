@@ -1,66 +1,56 @@
 /**
- * Phonotactics - Validateur déterministe des formes Confluent
+ * Phonotactics - Validateur déterministe des formes Confluent, PARAMÉTRÉ PAR ÈRE.
  *
- * QUOI : valide qu'un mot Confluent respecte les règles de combinaison de la langue.
- *        C'est le GATE dur de l'agent de traduction : aucune forme invalide ne doit
- *        sortir de la boucle. Fonction pure, sans dépendance lexique.
+ * QUOI : valide qu'un mot Confluent respecte les règles de combinaison de SON ère
+ *        (proto : 8C/4V sans u·v·z · ancien : 10C/5V+r/d · mythologique : + y/é/è sacrés).
+ *        C'est le GATE dur de l'agent : aucune forme invalide ne sort de la boucle.
  *
- * POURQUOI : une "simple request" LLM produit des formes cassées (clusters illégaux comme
- *        `tbime`, `lnosu`) sans aucun garde-fou. Une auto-vérification dans le prompt n'est
- *        qu'une AFFIRMATION du modèle ; ce module est la vérification VÉRIFIABLE qui transforme
- *        la promesse en garantie. Il porte en JS la même logique que `audit-coherence.py`
- *        (section A : phonotactique) pour que prompt, audit et runtime partagent UNE vérité.
+ * POURQUOI : la langue a plusieurs ÈRES aux phonologies différentes. Un gate figé sur l'ancien
+ *        rejetterait du proto correct (et le y/é/è du mythologique). On passe donc l'alphabet de
+ *        l'ère en paramètre. Fonction pure : l'ère est une DONNÉE (config), pas une dépendance.
  *
- * COMMENT : 3 règles universelles qui suffisent à attraper tous les bugs observés :
- *        1. alphabet autorisé uniquement (voyelles réservées y/é/è interdites) ;
- *        2. jamais 2 consonnes en attaque de mot ;
- *        3. jamais 3 consonnes consécutives n'importe où.
- *        r/d sont TOLÉRÉS au niveau phonotactique (ils existent dans des racines anciennes/
- *        nombres) ; empêcher d'en INVENTER de nouveaux relève de l'ancrage lexique (outils
- *        lookup/compose), pas de ce gate.
+ * COMMENT : 3 règles universelles (alphabet autorisé · pas d'attaque par 2 consonnes · jamais 3
+ *        consonnes d'affilée) appliquées avec l'alphabet de l'ère. Sans ère fournie → ANCIEN par
+ *        défaut (compat : tout appelant existant reste valide à l'identique).
  */
 
 'use strict';
 
-// QUOI : alphabet actif du Confluent.
-// POURQUOI : tout caractère hors de ces ensembles (hors voyelles réservées/exceptions) est illégal.
-// COMMENT : 10 consonnes standard + r/d tolérés ; 5 voyelles actives.
+// === Défaut ANCIEN (utilisé quand aucune ère n'est fournie ; exporté pour compat) ===
 const CONSONNES = new Set(['b', 'k', 'l', 'm', 'n', 'p', 's', 't', 'v', 'z', 'r', 'd']);
 const VOYELLES = new Set(['a', 'e', 'i', 'o', 'u']);
-// Voyelles réservées à l'expansion future : leur présence dans une forme active = erreur.
 const VOYELLES_RESERVEES = new Set(['y', 'é', 'è', 'ê', 'à', 'ù', 'ô', 'î', 'â']);
 
 /**
- * Indique si un caractère est une consonne Confluent.
- * @param {string} c - caractère unique
- * @returns {boolean}
+ * Construit les ensembles alphabet (consonnes/voyelles/réservées) d'une ère.
+ * @param {Object} [era] - config d'ère { consonnes, voyelles, tolerees, reservees }
+ * @returns {{cons: Set, voy: Set, res: Set}}
  */
-function estConsonne(c) {
-  return CONSONNES.has(c);
+function alphabetOf(era) {
+  if (!era || !Array.isArray(era.consonnes)) {
+    return { cons: CONSONNES, voy: VOYELLES, res: VOYELLES_RESERVEES };
+  }
+  return {
+    cons: new Set([...(era.consonnes || []), ...(era.tolerees || [])]),
+    voy: new Set(era.voyelles || []),
+    res: new Set(era.reservees || [])
+  };
 }
 
-/**
- * Indique si un caractère est une voyelle active Confluent.
- * @param {string} c - caractère unique
- * @returns {boolean}
- */
-function estVoyelle(c) {
-  return VOYELLES.has(c);
-}
+/** Indique si un caractère est une consonne (alphabet ANCIEN par défaut). */
+function estConsonne(c) { return CONSONNES.has(c); }
+/** Indique si un caractère est une voyelle active (alphabet ANCIEN par défaut). */
+function estVoyelle(c) { return VOYELLES.has(c); }
 
 /**
- * Valide une forme Confluent isolée (un seul mot, sans particule ni espace).
+ * Valide une forme Confluent isolée (un mot) selon l'alphabet de l'ère.
  *
- * QUOI : applique les 3 règles dures et renvoie la liste des violations.
- * POURQUOI : un retour structuré (et pas juste true/false) permet à l'agent de RÉPARER
- *        précisément ("attaque-CC 'tb'") plutôt que de regénérer à l'aveugle.
- * COMMENT : 1. normaliser (minuscules, trim) ; 2. scanner caractère par caractère pour
- *        l'alphabet ; 3. tester l'attaque ; 4. fenêtre glissante de 3 pour les clusters.
- *
- * @param {string} mot - forme Confluent à valider (un mot)
+ * @param {string} mot - forme Confluent à valider
+ * @param {Object} [era] - config d'ère (défaut : ANCIEN)
  * @returns {{valid: boolean, mot: string, erreurs: string[]}}
  */
-function validateForm(mot) {
+function validateForm(mot, era) {
+  const { cons, voy, res } = alphabetOf(era);
   const erreurs = [];
   const w = String(mot || '').toLowerCase().trim();
 
@@ -68,25 +58,27 @@ function validateForm(mot) {
     return { valid: false, mot: w, erreurs: ['forme vide'] };
   }
 
-  // RÈGLE 1 — alphabet : aucun caractère hors voyelles/consonnes autorisées.
+  const isCons = (c) => cons.has(c);
+
+  // RÈGLE 1 — alphabet : aucun caractère hors voyelles/consonnes de l'ère.
   for (const c of w) {
-    if (VOYELLES_RESERVEES.has(c)) {
-      erreurs.push(`voyelle réservée interdite '${c}'`);
-    } else if (!estConsonne(c) && !estVoyelle(c)) {
+    if (res.has(c)) {
+      erreurs.push(`son réservé (hors ère) '${c}'`);
+    } else if (!cons.has(c) && !voy.has(c)) {
       erreurs.push(`caractère hors-alphabet '${c}'`);
     }
   }
 
-  // RÈGLE 2 — pas d'attaque par 2 consonnes (les clusters d'attaque sont LE bug récurrent).
-  if (w.length >= 2 && estConsonne(w[0]) && estConsonne(w[1])) {
+  // RÈGLE 2 — pas d'attaque par 2 consonnes.
+  if (w.length >= 2 && isCons(w[0]) && isCons(w[1])) {
     erreurs.push(`attaque par 2 consonnes '${w.slice(0, 2)}'`);
   }
 
   // RÈGLE 3 — jamais 3 consonnes d'affilée (fenêtre glissante).
   for (let i = 0; i + 2 < w.length; i++) {
-    if (estConsonne(w[i]) && estConsonne(w[i + 1]) && estConsonne(w[i + 2])) {
+    if (isCons(w[i]) && isCons(w[i + 1]) && isCons(w[i + 2])) {
       erreurs.push(`3 consonnes consécutives '${w.slice(i, i + 3)}'`);
-      break; // une seule mention suffit à signaler le défaut
+      break;
     }
   }
 
@@ -94,45 +86,51 @@ function validateForm(mot) {
 }
 
 /**
- * Particules et conjugateurs : mots-outils valides qui ne sont pas des "formes" lexicales
- * à valider comme des racines. On les ignore lors du scan d'une phrase complète.
- *
- * POURQUOI : une phrase finale mêle racines, verbes+conjugateurs ET particules ; valider
- *        "u", "va", "su" comme des racines n'a pas de sens. On filtre la grammaire connue.
+ * Mots grammaticaux de l'ANCIEN (particules + négation + conjugateurs) à ne pas valider comme racines.
+ * Défaut quand aucune ère (ou ancien/mythologique) n'est fournie.
  */
 const MOTS_GRAMMATICAUX = new Set([
-  // particules
   'va', 'vo', 'vi', 've', 'vu', 'na', 'ni', 'no', 'su',
-  // négation + question
   'zo', 'zom', 'zob', 'zoe', 'ka',
-  // conjugateurs (suffixes parfois écrits séparément)
   'u', 'at', 'aan', 'ait', 'amat', 'en', 'il', 'eol', 'eon', 'eom', 'ok', 'es', 'ul', 'uv'
 ]);
 
 /**
- * Valide une traduction Confluent complète (phrase ou texte multi-mots).
+ * Ensemble des mots grammaticaux à ignorer pour une ère donnée.
+ * COMMENT : ancien/mythologique → liste ANCIEN (identique au comportement existant) ; autres ères
+ *        (proto…) → construit depuis la config (particules + interrogatifs + conjugateurs).
+ */
+function grammaticalWordsOf(era) {
+  if (!era || era.id === 'ancien' || era.id === 'mythologique') return MOTS_GRAMMATICAUX;
+  const s = new Set();
+  for (const k of Object.keys(era.particules || {})) s.add(k);
+  for (const k of Object.keys(era.interrogatifs || {})) s.add(k);
+  for (const [k, v] of Object.entries(era.conjugateurs || {})) {
+    if (typeof v === 'string') s.add(k);
+    else if (v && typeof v === 'object') Object.keys(v).forEach(kk => s.add(kk));
+  }
+  return s;
+}
+
+/**
+ * Valide une traduction Confluent complète (phrase/texte) selon l'ère.
  *
- * QUOI : découpe le texte en mots, valide chaque mot lexical, agrège les formes fautives.
- * POURQUOI : c'est le gate final de l'agent — il s'applique à la sortie réelle servie.
- * COMMENT : 1. découper sur espaces/ponctuation Confluent ('.', ',') ; 2. ignorer les mots
- *        grammaticaux ; 3. valider le reste ; 4. retourner la liste des mots invalides avec
- *        leurs raisons, pour réparation ciblée.
- *
- * @param {string} texte - traduction Confluent (peut contenir plusieurs phrases)
+ * @param {string} texte - traduction Confluent
+ * @param {Object} [era] - config d'ère (défaut : ANCIEN)
  * @returns {{valid: boolean, invalides: Array<{mot: string, erreurs: string[]}>, motsTestes: number}}
  */
-function validateTranslation(texte) {
+function validateTranslation(texte, era) {
+  const grammaticaux = grammaticalWordsOf(era);
   const t = String(texte || '').toLowerCase();
-  // Découper sur séparateurs : espaces, points, virgules, points d'interrogation.
   const tokens = t.split(/[\s.,!?;:]+/).filter(Boolean);
 
   const invalides = [];
   let motsTestes = 0;
 
   for (const tok of tokens) {
-    if (MOTS_GRAMMATICAUX.has(tok)) continue; // grammaire connue → non testée comme racine
+    if (grammaticaux.has(tok)) continue;
     motsTestes++;
-    const res = validateForm(tok);
+    const res = validateForm(tok, era);
     if (!res.valid) {
       invalides.push({ mot: tok, erreurs: res.erreurs });
     }
@@ -144,6 +142,8 @@ function validateTranslation(texte) {
 module.exports = {
   validateForm,
   validateTranslation,
+  alphabetOf,
+  grammaticalWordsOf,
   estConsonne,
   estVoyelle,
   CONSONNES,
