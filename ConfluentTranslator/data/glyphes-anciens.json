@@ -2256,6 +2256,111 @@
         "fleche",
         "point"
       ]
+    },
+    "at": {
+      "fr": "passé",
+      "type": "conjugateur",
+      "atomes": [
+        "traitH",
+        "point",
+        "point"
+      ]
+    },
+    "aan": {
+      "fr": "passé-regret",
+      "type": "conjugateur",
+      "atomes": [
+        "traitH",
+        "coeurV",
+        "point"
+      ]
+    },
+    "ait": {
+      "fr": "passé-anc",
+      "type": "conjugateur",
+      "atomes": [
+        "traitH",
+        "traitV"
+      ]
+    },
+    "amat": {
+      "fr": "passé-myth",
+      "type": "conjugateur",
+      "atomes": [
+        "traitH",
+        "etoile",
+        "point"
+      ]
+    },
+    "en": {
+      "fr": "futur",
+      "type": "conjugateur",
+      "atomes": [
+        "fleche",
+        "point",
+        "point"
+      ]
+    },
+    "il": {
+      "fr": "accompli",
+      "type": "conjugateur",
+      "atomes": [
+        "point",
+        "point"
+      ]
+    },
+    "eol": {
+      "fr": "habituel",
+      "type": "conjugateur",
+      "atomes": [
+        "anneau",
+        "traitH",
+        "traitV"
+      ]
+    },
+    "eon": {
+      "fr": "cyclique",
+      "type": "conjugateur",
+      "atomes": [
+        "anneau",
+        "point",
+        "jambe"
+      ]
+    },
+    "eom": {
+      "fr": "éternel",
+      "type": "conjugateur",
+      "atomes": [
+        "anneau",
+        "etoile",
+        "traitV"
+      ]
+    },
+    "es": {
+      "fr": "souhait",
+      "type": "conjugateur",
+      "atomes": [
+        "coeurV",
+        "traitH",
+        "traitV"
+      ]
+    },
+    "ul": {
+      "fr": "pouvoir",
+      "type": "conjugateur",
+      "atomes": [
+        "mainY",
+        "traitH"
+      ]
+    },
+    "uv": {
+      "fr": "écrit",
+      "type": "conjugateur",
+      "atomes": [
+        "bandes",
+        "traitH",
+        "point"
+      ]
     }
   }
 }
