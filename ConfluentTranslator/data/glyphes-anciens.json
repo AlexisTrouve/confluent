@@ -1,0 +1,43 @@
+{
+  "_meta": {
+    "ere": "ancien",
+    "note": "Registre MODULAIRE — atomes (marques réutilisables) + glyphes (concept -> liste d'atomes). Un glyphe se COMPOSE de 1-3 atomes : on ne dessine pas 250 glyphes, on combine ~25 atomes. edges = traits sur la grille (c,n,s,e,w,ne,nw,se,sw) : [a,b]=trait, [a,b,courbure]=arc.",
+    "grille": "c=centre, n/s/e/w=cardinaux, ne/nw/se/sw=diagonales"
+  },
+  "atomes": {
+    "vague":    [["n","c",-7],["c","s",7]],
+    "flamme":   [["s","n"],["n","ne"],["n","nw"]],
+    "base":     [["sw","se"],["w","e"]],
+    "voute":    [["nw","n"],["n","ne"]],
+    "oeil":     [["n","e",9],["e","s",9],["s","w",9],["w","n",9],["c","c"]],
+    "bandes":   [["nw","ne"],["w","e"],["sw","se"]],
+    "fleche":   [["n","s"],["s","sw"],["s","se"]],
+    "croix":    [["nw","se"],["ne","sw"]],
+    "anneau":   [["n","e",9],["e","s",9],["s","w",9],["w","n",9]],
+    "figure":   [["n","c"],["c","sw"],["c","se"]],
+    "mainY":    [["s","c"],["c","nw"],["c","ne"]],
+    "coeurV":   [["nw","s"],["ne","s"]],
+    "barre":    [["nw","se"],["ne","sw"],["n","s"]],
+    "triangle": [["sw","n"],["n","se"],["sw","se"]],
+    "maison":   [["sw","nw"],["nw","ne",-7],["ne","se"]],
+    "plus":     [["w","c"],["c","e"],["n","c"],["c","s"]],
+    "plante":   [["s","n"],["c","nw"],["c","ne"]],
+    "etoile":   [["n","s"],["nw","se"],["ne","sw"]],
+    "point":    [["c","c"]],
+    "traitV":   [["n","s"]],
+    "traitH":   [["w","e"]]
+  },
+  "glyphes": {
+    "ura":   { "fr": "eau",    "type": "racine", "atomes": ["vague"] },
+    "suki":  { "fr": "feu",    "type": "racine", "atomes": ["flamme"] },
+    "toka":  { "fr": "terre",  "type": "racine", "atomes": ["base"] },
+    "zeru":  { "fr": "ciel",   "type": "racine", "atomes": ["voute"] },
+    "sili":  { "fr": "regard", "type": "racine", "atomes": ["oeil"] },
+    "naki":  { "fr": "enfant", "type": "racine", "atomes": ["figure"] },
+    "mirak": { "fr": "voir",   "type": "verbe",  "atomes": ["oeil","fleche"] },
+    "sora":  { "fr": "soleil", "type": "racine", "atomes": ["etoile"] },
+    "va":    { "fr": "[sujet]",   "type": "particule",   "atomes": ["traitV"] },
+    "vo":    { "fr": "[objet]",   "type": "particule",   "atomes": ["traitV","point"] },
+    "u":     { "fr": "[présent]", "type": "conjugateur", "atomes": ["traitH"] }
+  }
+}

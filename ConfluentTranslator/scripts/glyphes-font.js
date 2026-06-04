@@ -6,9 +6,16 @@
  *   1 racine = 1 glyphe · 1 particule = 1 glyphe · 1 liaison = 1 glyphe. Un glyphe se COMPOSE
  *   d'« atomes de sens » abstraits, pas dessiné un par un. Kit fini d'atomes -> infinité de glyphes.
  *
+ * ARCHITECTURE MODULAIRE (data : data/glyphes-anciens.json) :
+ *   - atomes = marques réutilisables (nom -> edges). glyphes = concept -> liste d'atomes.
+ *   - resolveEdges(glyphe) = concat des edges de ses atomes -> on COMBINE ~25 atomes, pas 250 glyphes.
+ *   - composeText(tokens) = COLLIER horizontal G->D (nœuds début/fin + cordelette) : écrire une phrase
+ *     = lookup chaque token dans le registre + agencer. (Branchera la décompo morpho du traducteur.)
+ *   - FORMAT PORTRAIT : grille resserrée en x (collier horizontal -> glyphes plus hauts que larges).
+ *
  * CONSTRUCTION GÉOMÉTRIQUE :
- *   - NODES : grille de nœuds partagés (centre + cardinaux + diagonales).
- *   - ATOMS : chaque atome = liste d'ARÊTES [nodeA, nodeB] (trait) ou [nodeA, nodeB, courbure] (arc).
+ *   - NODES : grille PORTRAIT de nœuds (centre + cardinaux + diagonales, x resserré).
+ *   - edges : [nodeA, nodeB] (trait) ou [nodeA, nodeB, courbure] (arc).
  *   - connect() : garantit un glyphe « d'un seul tenant » en ajoutant le PONT le plus court entre
  *     composantes séparées (union-find). PAS de hub central (l'étoile au centre était moche).
  *   - orient() : chaque arête tracée HAUT->BAS / GAUCHE->DROITE (cohérence des jonctions).
@@ -30,8 +37,8 @@
  *     déplacement est tranché droit en haut. FIX : filterUnits="userSpaceOnUse" + zone FIXE généreuse.
  *   - vérifier le rendu SOI-MÊME via Playwright (screenshot d'un .html) plutôt que deviner à l'aveugle.
  *
- * SUITE À FAIRE : étendre le kit d'atomes ; mapping racine->atomes (assisté LLM via le sens FR) pour
- *   couvrir les 231 racines + particules + liaisons ; puis rendu d'une phrase (collier/tablette).
+ * SUITE À FAIRE : REMPLIR le registre (data/glyphes-anciens.json) — mapper MANUELLEMENT (Alexi+moi,
+ *   par lots validés) les 231 racines + 9 particules + 16 liaisons en compositions d'atomes.
  * USAGE : node scripts/glyphes-font.js  -> public/glyphes-font.html
  */
 'use strict';
@@ -42,9 +49,10 @@ const U = 100; // unité de grille du glyphe
 
 // Grille de NŒUDS partagés (centre + cardinaux + diagonales). Tout glyphe se construit dessus,
 // et chaque atome touche le centre -> n'importe quelle combinaison reste CONNECTÉE (d'un seul tenant).
+// Grille PORTRAIT (collier horizontal G->D -> glyphes verticaux) : x resserré, y étiré.
 const NODES = {
-  c: [50, 50], n: [50, 18], s: [50, 82], e: [82, 50], w: [18, 50],
-  ne: [73, 27], nw: [27, 27], se: [73, 73], sw: [27, 73],
+  c: [50, 50], n: [50, 14], s: [50, 86], e: [68, 50], w: [32, 50],
+  ne: [64, 26], nw: [36, 26], se: [64, 74], sw: [36, 74],
 };
 const seg = (a, b) => { const [x1, y1] = NODES[a], [x2, y2] = NODES[b]; return `M${x1},${y1} L${x2},${y2}`; };
 const arc = (a, b, bend) => {
@@ -53,19 +61,13 @@ const arc = (a, b, bend) => {
   return `M${x1},${y1} Q${(mx - dy / L * bend).toFixed(1)},${(my + dx / L * bend).toFixed(1)} ${x2},${y2}`;
 };
 
-// Atomes = arêtes (paire de nœuds, + courbure optionnelle). Pas de centre forcé : connect() relie.
-const ATOMS = {
-  eau:       [['w', 'c', -8], ['c', 'e', 8]],                   // vague en S (sans cusp)
-  feu:       [['s', 'n'], ['n', 'ne'], ['n', 'nw']],            // gerbe montante
-  terre:     [['sw', 'se'], ['w', 'e']],                        // double base
-  ciel:      [['nw', 'n'], ['n', 'ne']],                        // voûte
-  oeil:      [['n', 'e', 9], ['e', 's', 9], ['s', 'w', 9], ['w', 'n', 9], ['c', 'c']], // anneau + pupille
-  parole:    [['nw', 'ne'], ['w', 'e'], ['sw', 'se']],          // bandes empilées (voix)
-  mouvement: [['w', 'e'], ['e', 'ne'], ['e', 'se']],            // flèche ->
-  lien:      [['nw', 'se'], ['ne', 'sw']],                      // croix
-  cycle:     [['n', 'e', 9], ['e', 's', 9], ['s', 'w', 9], ['w', 'n', 9]], // boucle (temps)
-  personne:  [['n', 'c'], ['c', 'sw'], ['c', 'se']],            // figure (tête + jambes)
-};
+// Registre MODULAIRE (source unique : data/glyphes-anciens.json) :
+//   atomes = marques réutilisables (concept -> edges) ; glyphes = concept -> liste d'atomes.
+// Le rendu ET la composition de texte lisent ce registre. On combine ~25 atomes, pas 250 glyphes.
+const REG = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'glyphes-anciens.json'), 'utf-8'));
+const ATOMS_LIB = REG.atomes, GLYPHS = REG.glyphes;
+// Résout un glyphe en edges : concatène les atomes qu'il référence (+ edges bruts éventuels).
+const resolveEdges = (g) => [].concat((g.atomes || []).flatMap(a => ATOMS_LIB[a] || []), g.edges || []);
 
 // Défs : bruit/impuretés UNIQUES par glyphe (id + seed propres) -> déformation différente à chaque
 // instance et à chaque génération (sinon tous partagent #rough -> même déformation partout).
@@ -152,8 +154,8 @@ function pointsToPath(pts) {
 
 // Glyphe d'un seul tenant, dessiné PAR COUCHES (toutes les ombres, puis corps, puis crêtes) :
 // les jonctions fusionnent au lieu de se couper. Bruit = géométrie (pas de filtre = pas de bord).
-function strokes(atomNames, w) {
-  const paths = connect(atomNames.flatMap(nm => ATOMS[nm] || [])).map(e => edgePath(orient(e)));
+function strokes(edges, w) {
+  const paths = connect(edges).map(e => edgePath(orient(e)));
   const cap = `stroke-linecap="round" stroke-linejoin="round" fill="none"`;
   const layer = (color, sw, dx, dy) =>
     `<g transform="translate(${dx},${dy})">` + paths.map(d => `<path d="${d}" stroke="${color}" stroke-width="${sw}" ${cap}/>`).join('') + `</g>`;
@@ -163,45 +165,49 @@ function strokes(atomNames, w) {
     + layer('#e7cf92', w * 0.32, 0, 0);        // centre clair
 }
 
-function svg(atoms, uid) {
+function svg(edges, uid, h = 180) {
   const sr = Math.floor(Math.random() * 9999), sg = Math.floor(Math.random() * 9999);
-  // Marge transparente (viewBox élargie) : aucune dalle/rectangle, le boudin (texturé lui-même) flotte.
-  const M = 9, VB = U + 2 * M;
-  const ropes = `<g filter="url(#rough${uid})">${strokes(atoms, 16)}</g>`;
-  return `<svg viewBox="${-M} ${-M} ${VB} ${VB}" width="180" height="180">${defs(uid, sr, sg)}${ropes}</svg>`;
+  const ropes = `<g filter="url(#rough${uid})">${strokes(edges, 16)}</g>`;
+  // Cellule PORTRAIT (plus haute que large) -> les glyphes s'enchaînent bien dans le collier horizontal.
+  const VBX = 14, VBY = -6, VBW = 72, VBH = 112, w = Math.round(h * VBW / VBH);
+  return `<svg viewBox="${VBX} ${VBY} ${VBW} ${VBH}" width="${w}" height="${h}">${defs(uid, sr, sg)}${ropes}</svg>`;
+}
+
+// COMPOSEUR de texte : une suite de tokens Confluent -> séquence de glyphes du registre (collier).
+// Modulaire : lit uniquement le REGISTRY. (La résolution morpho auto viendra brancher decomposeWord.)
+function composeText(tokens) {
+  const cord = '<div style="width:16px;height:4px;background:#7a5c38;align-self:center;margin-top:-14px"></div>';
+  // Nœud d'argile : le gauche (début) est plus gros = marque le début (canon T16).
+  const knot = (debut) => `<div title="${debut ? 'début' : 'fin'}" style="width:${debut ? 24 : 16}px;height:${debut ? 24 : 16}px;border-radius:50%;background:#8a6a40;align-self:center;margin-top:-14px;box-shadow:inset -2px -2px 4px rgba(0,0,0,.45),0 1px 2px rgba(0,0,0,.4)"></div>`;
+  const glyphs = tokens.map((tok, i) => {
+    const g = GLYPHS[tok];
+    const glyph = g ? svg(resolveEdges(g), 't' + i, 110) : `<div style="width:110px;height:110px;border:1px dashed #5a4226;color:#5a4226;display:flex;align-items:center;justify-content:center;font-size:11px">?${tok}</div>`;
+    return `<div style="text-align:center"><div>${glyph}</div><div style="color:#7a6a4a;font-size:10px">${tok}</div></div>`;
+  }).join(cord);
+  return knot(true) + cord + glyphs + cord + knot(false);
 }
 
 function main() {
-  const items = [
-    ['eau', ['eau']], ['feu', ['feu']], ['regard = œil', ['oeil']],
-    ['parole', ['parole']], ['aller = mouv', ['mouvement']], ['personne', ['personne']],
-    ['temps = cycle', ['cycle']], ['union = lien', ['lien']], ['ciel', ['ciel']],
-    ['voir = œil+mouv', ['oeil', 'mouvement']], ['pleurer = œil+eau', ['oeil', 'eau']],
-    ['soleil = feu+ciel', ['feu', 'ciel']], ['rivière = eau+mouv', ['eau', 'mouvement']],
-    ['vie = personne+cycle', ['personne', 'cycle']], ['monde = ciel+terre', ['ciel', 'terre']],
-  ];
-  const cell = (label, atoms, uid) => `<div style="text-align:center;margin:22px">`
-    + `<div>${svg(atoms, uid)}</div>`
+  const cell = (label, edges, uid) => `<div style="text-align:center;margin:18px">`
+    + `<div>${svg(edges, uid)}</div>`
     + `<div style="color:#c9a86a;font-size:13px;margin-top:4px">${label}</div></div>`;
-  // Rangée démo : le MÊME glyphe (eau) 4× -> déformation différente à chaque écriture.
-  const demo = [0, 1, 2, 3].map(k => cell('eau', ['eau'], 'd' + k)).join('');
-  // Fond d'argile CONTINU : mouchetures douces (tons d'argile) + grain fin subtil -> vraie matière.
-  const pageBg = `<svg style="position:fixed;inset:0;width:100%;height:100%;z-index:0" preserveAspectRatio="none">`
-    + `<defs>`
-    + `<filter id="pgMottle"><feTurbulence type="fractalNoise" baseFrequency="0.014 0.017" numOctaves="5" seed="7" result="t"/>`
-    + `<feColorMatrix in="t" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.5 -0.22"/></filter>`
-    + `<filter id="pgFine"><feTurbulence type="fractalNoise" baseFrequency="0.4" numOctaves="2" seed="19" result="t"/>`
-    + `<feColorMatrix in="t" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.25 -0.12"/></filter>`
-    + `</defs>`
-    + `<rect width="100%" height="100%" fill="#231a0f"/>`
-    + `<rect width="100%" height="100%" fill="#0c0905" filter="url(#pgMottle)"/>`     // creux d'argile sombres
-    + `<rect width="100%" height="100%" fill="#000" filter="url(#pgFine)" opacity="0.45"/></svg>`; // grain fin
+  // Bibliothèque d'atomes (les marques de base).
+  const atomsView = Object.entries(ATOMS_LIB).map(([n, e], i) => cell(n, e, 'a' + i)).join('');
+  // Registre : chaque concept résolu en glyphe (depuis ses atomes).
+  const entries = Object.entries(GLYPHS);
+  const review = entries.map(([cf, g], i) => cell(cf + ' = ' + g.fr + ' [' + (g.atomes || []).join('+') + ']', resolveEdges(g), i)).join('');
+  // Démo composition AUTOMATIQUE depuis le registre : « l'enfant voit l'eau ».
+  const collier = composeText(['va', 'naki', 'vo', 'ura', 'mirak', 'u']);
   const html = `<!doctype html><meta charset="utf-8"><body style="background:#15110c;font-family:system-ui;padding:30px">`
-    + `<h2 style="color:#c9a86a;text-align:center">Glyphes argile — déformation aléatoire par instance</h2>`
-    + `<p style="color:#8a7a5a;text-align:center">Même glyphe « eau » ×4 (chacun déformé différemment) :</p>`
-    + `<div style="display:flex;flex-wrap:wrap;justify-content:center">${demo}</div>`
-    + `<hr style="border-color:#3a2c1c;margin:20px 0">`
-    + `<div style="display:flex;flex-wrap:wrap;justify-content:center">${items.map(([l, a], i) => cell(l, a, i)).join('')}</div></body>`;
+    + `<h2 style="color:#c9a86a;text-align:center">Glyphes du Gouffre — registre (${entries.length}) + composition</h2>`
+    + `<p style="color:#8a7a5a;text-align:center">Phrase composée automatiquement depuis le registre : « l'enfant voit l'eau » (va naki vo ura mirak u)</p>`
+    + `<div style="display:flex;justify-content:center;align-items:flex-start;background:#1c150d;padding:20px;border-radius:12px;margin:0 auto 28px;max-width:fit-content">${collier}</div>`
+    + `<hr style="border-color:#3a2c1c;margin:24px 0">`
+    + `<h3 style="color:#c9a86a;text-align:center">Atomes — marques réutilisables (${Object.keys(ATOMS_LIB).length})</h3>`
+    + `<div style="display:flex;flex-wrap:wrap;justify-content:center">${atomsView}</div>`
+    + `<hr style="border-color:#3a2c1c;margin:24px 0">`
+    + `<h3 style="color:#c9a86a;text-align:center">Registre — concepts composés depuis les atomes (${entries.length})</h3>`
+    + `<div style="display:flex;flex-wrap:wrap;justify-content:center">${review}</div></body>`;
   const name = 'glyphes-font.html';
   fs.writeFileSync(path.join(__dirname, '..', 'public', name), html, 'utf-8');
   console.log(name);
