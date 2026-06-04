@@ -1,0 +1,153 @@
+<!doctype html><meta charset="utf-8"><body style="background:#15110c;font-family:system-ui;padding:30px"><h2 style="color:#c9a86a;text-align:center">Glyphes stroke-based — propre (clair) + argile (bruité)</h2><div style="display:flex;flex-wrap:wrap;justify-content:center"><div style="text-align:center;margin:10px"><div><svg viewBox="0 0 100 100" width="180" height="180"><defs>
+  <filter id="rough" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.035 0.045" numOctaves="2" seed="3" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="10" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="clayrope" x="-40%" y="-40%" width="180%" height="180%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="4" result="nz"/>
+    <feDisplacementMap in="SourceGraphic" in2="nz" scale="5" result="src"/>
+    <feGaussianBlur in="src" stdDeviation="3" result="blur"/>
+    <feSpecularLighting in="blur" surfaceScale="5" specularConstant="0.85" specularExponent="16" lighting-color="#fff3d8" result="spec">
+      <feDistantLight azimuth="225" elevation="58"/>
+    </feSpecularLighting>
+    <feComposite in="spec" in2="src" operator="in" result="specClip"/>
+    <feMerge><feMergeNode in="src"/><feMergeNode in="specClip"/></feMerge>
+  </filter>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" seed="11" result="g"/>
+    <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 -.45"/>
+  </filter>
+</defs><rect width="100" height="100" fill="#1c150d"/><g filter="url(#rough)"><g transform="translate(0.6,2)"><path d="M18,50 Q50.0,37.0 82,50" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 Q50.0,63.0 82,50" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><g transform="translate(0,0)"><path d="M18,50 Q50.0,37.0 82,50" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 Q50.0,63.0 82,50" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><g transform="translate(-0.6,-1.4)"><path d="M18,50 Q50.0,37.0 82,50" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 Q50.0,63.0 82,50" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g></g><rect width="100" height="100" fill="#000" filter="url(#grain)" opacity="0.5"/></svg></div><div style="color:#c9a86a;font-size:13px;margin-top:4px">eau</div></div><div style="text-align:center;margin:10px"><div><svg viewBox="0 0 100 100" width="180" height="180"><defs>
+  <filter id="rough" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.035 0.045" numOctaves="2" seed="3" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="10" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="clayrope" x="-40%" y="-40%" width="180%" height="180%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="4" result="nz"/>
+    <feDisplacementMap in="SourceGraphic" in2="nz" scale="5" result="src"/>
+    <feGaussianBlur in="src" stdDeviation="3" result="blur"/>
+    <feSpecularLighting in="blur" surfaceScale="5" specularConstant="0.85" specularExponent="16" lighting-color="#fff3d8" result="spec">
+      <feDistantLight azimuth="225" elevation="58"/>
+    </feSpecularLighting>
+    <feComposite in="spec" in2="src" operator="in" result="specClip"/>
+    <feMerge><feMergeNode in="src"/><feMergeNode in="specClip"/></feMerge>
+  </filter>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" seed="11" result="g"/>
+    <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 -.45"/>
+  </filter>
+</defs><rect width="100" height="100" fill="#1c150d"/><g filter="url(#rough)"><g transform="translate(0.6,2)"><path d="M18,50 Q50.0,35.0 82,50" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 Q50.0,65.0 82,50" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><g transform="translate(0,0)"><path d="M18,50 Q50.0,35.0 82,50" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 Q50.0,65.0 82,50" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><g transform="translate(-0.6,-1.4)"><path d="M18,50 Q50.0,35.0 82,50" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 Q50.0,65.0 82,50" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g></g><rect width="100" height="100" fill="#000" filter="url(#grain)" opacity="0.5"/></svg></div><div style="color:#c9a86a;font-size:13px;margin-top:4px">regard = œil</div></div><div style="text-align:center;margin:10px"><div><svg viewBox="0 0 100 100" width="180" height="180"><defs>
+  <filter id="rough" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.035 0.045" numOctaves="2" seed="3" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="10" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="clayrope" x="-40%" y="-40%" width="180%" height="180%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="4" result="nz"/>
+    <feDisplacementMap in="SourceGraphic" in2="nz" scale="5" result="src"/>
+    <feGaussianBlur in="src" stdDeviation="3" result="blur"/>
+    <feSpecularLighting in="blur" surfaceScale="5" specularConstant="0.85" specularExponent="16" lighting-color="#fff3d8" result="spec">
+      <feDistantLight azimuth="225" elevation="58"/>
+    </feSpecularLighting>
+    <feComposite in="spec" in2="src" operator="in" result="specClip"/>
+    <feMerge><feMergeNode in="src"/><feMergeNode in="specClip"/></feMerge>
+  </filter>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" seed="11" result="g"/>
+    <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 -.45"/>
+  </filter>
+</defs><rect width="100" height="100" fill="#1c150d"/><g filter="url(#rough)"><g transform="translate(0.6,2)"><path d="M18,50 Q50.0,35.0 82,50" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 Q50.0,65.0 82,50" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 Q50.0,37.0 82,50" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 Q50.0,63.0 82,50" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><g transform="translate(0,0)"><path d="M18,50 Q50.0,35.0 82,50" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 Q50.0,65.0 82,50" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 Q50.0,37.0 82,50" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 Q50.0,63.0 82,50" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><g transform="translate(-0.6,-1.4)"><path d="M18,50 Q50.0,35.0 82,50" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 Q50.0,65.0 82,50" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 Q50.0,37.0 82,50" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 Q50.0,63.0 82,50" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g></g><rect width="100" height="100" fill="#000" filter="url(#grain)" opacity="0.5"/></svg></div><div style="color:#c9a86a;font-size:13px;margin-top:4px">pleurer = œil+eau</div></div><div style="text-align:center;margin:10px"><div><svg viewBox="0 0 100 100" width="180" height="180"><defs>
+  <filter id="rough" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.035 0.045" numOctaves="2" seed="3" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="10" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="clayrope" x="-40%" y="-40%" width="180%" height="180%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="4" result="nz"/>
+    <feDisplacementMap in="SourceGraphic" in2="nz" scale="5" result="src"/>
+    <feGaussianBlur in="src" stdDeviation="3" result="blur"/>
+    <feSpecularLighting in="blur" surfaceScale="5" specularConstant="0.85" specularExponent="16" lighting-color="#fff3d8" result="spec">
+      <feDistantLight azimuth="225" elevation="58"/>
+    </feSpecularLighting>
+    <feComposite in="spec" in2="src" operator="in" result="specClip"/>
+    <feMerge><feMergeNode in="src"/><feMergeNode in="specClip"/></feMerge>
+  </filter>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" seed="11" result="g"/>
+    <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 -.45"/>
+  </filter>
+</defs><rect width="100" height="100" fill="#1c150d"/><g filter="url(#rough)"><g transform="translate(0.6,2)"><path d="M50,18 L50,82" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M50,18 L73,27" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M50,18 L27,27" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><g transform="translate(0,0)"><path d="M50,18 L50,82" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M50,18 L73,27" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M50,18 L27,27" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><g transform="translate(-0.6,-1.4)"><path d="M50,18 L50,82" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M50,18 L73,27" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M50,18 L27,27" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g></g><rect width="100" height="100" fill="#000" filter="url(#grain)" opacity="0.5"/></svg></div><div style="color:#c9a86a;font-size:13px;margin-top:4px">feu</div></div><div style="text-align:center;margin:10px"><div><svg viewBox="0 0 100 100" width="180" height="180"><defs>
+  <filter id="rough" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.035 0.045" numOctaves="2" seed="3" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="10" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="clayrope" x="-40%" y="-40%" width="180%" height="180%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="4" result="nz"/>
+    <feDisplacementMap in="SourceGraphic" in2="nz" scale="5" result="src"/>
+    <feGaussianBlur in="src" stdDeviation="3" result="blur"/>
+    <feSpecularLighting in="blur" surfaceScale="5" specularConstant="0.85" specularExponent="16" lighting-color="#fff3d8" result="spec">
+      <feDistantLight azimuth="225" elevation="58"/>
+    </feSpecularLighting>
+    <feComposite in="spec" in2="src" operator="in" result="specClip"/>
+    <feMerge><feMergeNode in="src"/><feMergeNode in="specClip"/></feMerge>
+  </filter>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" seed="11" result="g"/>
+    <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 -.45"/>
+  </filter>
+</defs><rect width="100" height="100" fill="#1c150d"/><g filter="url(#rough)"><g transform="translate(0.6,2)"><path d="M50,18 L27,27" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M50,18 L73,27" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><g transform="translate(0,0)"><path d="M50,18 L27,27" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M50,18 L73,27" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><g transform="translate(-0.6,-1.4)"><path d="M50,18 L27,27" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M50,18 L73,27" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g></g><rect width="100" height="100" fill="#000" filter="url(#grain)" opacity="0.5"/></svg></div><div style="color:#c9a86a;font-size:13px;margin-top:4px">ciel</div></div><div style="text-align:center;margin:10px"><div><svg viewBox="0 0 100 100" width="180" height="180"><defs>
+  <filter id="rough" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.035 0.045" numOctaves="2" seed="3" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="10" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="clayrope" x="-40%" y="-40%" width="180%" height="180%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="4" result="nz"/>
+    <feDisplacementMap in="SourceGraphic" in2="nz" scale="5" result="src"/>
+    <feGaussianBlur in="src" stdDeviation="3" result="blur"/>
+    <feSpecularLighting in="blur" surfaceScale="5" specularConstant="0.85" specularExponent="16" lighting-color="#fff3d8" result="spec">
+      <feDistantLight azimuth="225" elevation="58"/>
+    </feSpecularLighting>
+    <feComposite in="spec" in2="src" operator="in" result="specClip"/>
+    <feMerge><feMergeNode in="src"/><feMergeNode in="specClip"/></feMerge>
+  </filter>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" seed="11" result="g"/>
+    <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 -.45"/>
+  </filter>
+</defs><rect width="100" height="100" fill="#1c150d"/><g filter="url(#rough)"><g transform="translate(0.6,2)"><path d="M50,18 L27,27" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M50,18 L73,27" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M27,73 L73,73" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 L82,50" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M27,27 L18,50" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 L27,73" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><g transform="translate(0,0)"><path d="M50,18 L27,27" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M50,18 L73,27" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M27,73 L73,73" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 L82,50" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M27,27 L18,50" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 L27,73" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><g transform="translate(-0.6,-1.4)"><path d="M50,18 L27,27" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M50,18 L73,27" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M27,73 L73,73" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 L82,50" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M27,27 L18,50" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 L27,73" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g></g><rect width="100" height="100" fill="#000" filter="url(#grain)" opacity="0.5"/></svg></div><div style="color:#c9a86a;font-size:13px;margin-top:4px">monde = ciel+terre</div></div><div style="text-align:center;margin:10px"><div><svg viewBox="0 0 100 100" width="180" height="180"><defs>
+  <filter id="rough" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.035 0.045" numOctaves="2" seed="3" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="10" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="clayrope" x="-40%" y="-40%" width="180%" height="180%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="4" result="nz"/>
+    <feDisplacementMap in="SourceGraphic" in2="nz" scale="5" result="src"/>
+    <feGaussianBlur in="src" stdDeviation="3" result="blur"/>
+    <feSpecularLighting in="blur" surfaceScale="5" specularConstant="0.85" specularExponent="16" lighting-color="#fff3d8" result="spec">
+      <feDistantLight azimuth="225" elevation="58"/>
+    </feSpecularLighting>
+    <feComposite in="spec" in2="src" operator="in" result="specClip"/>
+    <feMerge><feMergeNode in="src"/><feMergeNode in="specClip"/></feMerge>
+  </filter>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" seed="11" result="g"/>
+    <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 -.45"/>
+  </filter>
+</defs><rect width="100" height="100" fill="#1c150d"/><g filter="url(#rough)"><g transform="translate(0.6,2)"><path d="M27,27 L73,73" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M73,27 L27,73" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M27,27 L73,27" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><g transform="translate(0,0)"><path d="M27,27 L73,73" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M73,27 L27,73" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M27,27 L73,27" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><g transform="translate(-0.6,-1.4)"><path d="M27,27 L73,73" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M73,27 L27,73" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M27,27 L73,27" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g></g><rect width="100" height="100" fill="#000" filter="url(#grain)" opacity="0.5"/></svg></div><div style="color:#c9a86a;font-size:13px;margin-top:4px">union = lien</div></div><div style="text-align:center;margin:10px"><div><svg viewBox="0 0 100 100" width="180" height="180"><defs>
+  <filter id="rough" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.035 0.045" numOctaves="2" seed="3" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="10" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="clayrope" x="-40%" y="-40%" width="180%" height="180%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="4" result="nz"/>
+    <feDisplacementMap in="SourceGraphic" in2="nz" scale="5" result="src"/>
+    <feGaussianBlur in="src" stdDeviation="3" result="blur"/>
+    <feSpecularLighting in="blur" surfaceScale="5" specularConstant="0.85" specularExponent="16" lighting-color="#fff3d8" result="spec">
+      <feDistantLight azimuth="225" elevation="58"/>
+    </feSpecularLighting>
+    <feComposite in="spec" in2="src" operator="in" result="specClip"/>
+    <feMerge><feMergeNode in="src"/><feMergeNode in="specClip"/></feMerge>
+  </filter>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" seed="11" result="g"/>
+    <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 -.45"/>
+  </filter>
+</defs><rect width="100" height="100" fill="#1c150d"/><g filter="url(#rough)"><g transform="translate(0.6,2)"><path d="M18,50 Q50.0,37.0 82,50" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 Q50.0,63.0 82,50" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M27,73 L73,73" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 L82,50" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 L27,73" stroke="#4a3416" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><g transform="translate(0,0)"><path d="M18,50 Q50.0,37.0 82,50" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 Q50.0,63.0 82,50" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M27,73 L73,73" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 L82,50" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 L27,73" stroke="#bf9c60" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><g transform="translate(-0.6,-1.4)"><path d="M18,50 Q50.0,37.0 82,50" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 Q50.0,63.0 82,50" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M27,73 L73,73" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 L82,50" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M18,50 L27,73" stroke="#e9d3a4" stroke-width="5.88" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g></g><rect width="100" height="100" fill="#000" filter="url(#grain)" opacity="0.5"/></svg></div><div style="color:#c9a86a;font-size:13px;margin-top:4px">source = eau+terre</div></div></div></body>
