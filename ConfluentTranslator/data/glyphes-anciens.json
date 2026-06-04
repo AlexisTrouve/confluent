@@ -5,74 +5,1335 @@
     "grille": "c=centre, n/s/e/w=cardinaux, ne/nw/se/sw=diagonales"
   },
   "atomes": {
-    "vague":    [["n","c",-7],["c","s",7]],
-    "flamme":   [["s","n"],["n","ne"],["n","nw"]],
-    "base":     [["sw","se"],["w","e"]],
-    "voute":    [["nw","n"],["n","ne"]],
-    "oeil":     [["n","e",9],["e","s",9],["s","w",9],["w","n",9],["c","c"]],
-    "bandes":   [["nw","ne"],["w","e"],["sw","se"]],
-    "fleche":   [["n","s"],["s","sw"],["s","se"]],
-    "croix":    [["nw","se"],["ne","sw"]],
-    "anneau":   [["n","e",9],["e","s",9],["s","w",9],["w","n",9]],
-    "figure":   [["n","c"],["c","sw"],["c","se"]],
-    "mainY":    [["s","c"],["c","nw"],["c","ne"]],
-    "coeurV":   [["nw","s"],["ne","s"]],
-    "barre":    [["nw","se"],["ne","sw"],["n","s"]],
-    "triangle": [["sw","n"],["n","se"],["sw","se"]],
-    "maison":   [["sw","nw"],["nw","ne",-7],["ne","se"]],
-    "plus":     [["w","c"],["c","e"],["n","c"],["c","s"]],
-    "plante":   [["s","n"],["c","nw"],["c","ne"]],
-    "etoile":   [["n","s"],["nw","se"],["ne","sw"]],
-    "point":    [["c","c"]],
-    "traitV":   [["n","s"]],
-    "traitH":   [["w","e"]]
+    "vague": [
+      [
+        "n",
+        "c",
+        -7
+      ],
+      [
+        "c",
+        "s",
+        7
+      ]
+    ],
+    "flamme": [
+      [
+        "s",
+        "n"
+      ],
+      [
+        "n",
+        "ne"
+      ],
+      [
+        "n",
+        "nw"
+      ]
+    ],
+    "base": [
+      [
+        "sw",
+        "se"
+      ],
+      [
+        "w",
+        "e"
+      ]
+    ],
+    "voute": [
+      [
+        "nw",
+        "n"
+      ],
+      [
+        "n",
+        "ne"
+      ]
+    ],
+    "oeil": [
+      [
+        "n",
+        "e",
+        9
+      ],
+      [
+        "e",
+        "s",
+        9
+      ],
+      [
+        "s",
+        "w",
+        9
+      ],
+      [
+        "w",
+        "n",
+        9
+      ],
+      [
+        "c",
+        "c"
+      ]
+    ],
+    "bandes": [
+      [
+        "nw",
+        "ne"
+      ],
+      [
+        "w",
+        "e"
+      ],
+      [
+        "sw",
+        "se"
+      ]
+    ],
+    "fleche": [
+      [
+        "n",
+        "s"
+      ],
+      [
+        "s",
+        "sw"
+      ],
+      [
+        "s",
+        "se"
+      ]
+    ],
+    "croix": [
+      [
+        "nw",
+        "se"
+      ],
+      [
+        "ne",
+        "sw"
+      ]
+    ],
+    "anneau": [
+      [
+        "n",
+        "e",
+        9
+      ],
+      [
+        "e",
+        "s",
+        9
+      ],
+      [
+        "s",
+        "w",
+        9
+      ],
+      [
+        "w",
+        "n",
+        9
+      ]
+    ],
+    "figure": [
+      [
+        "n",
+        "c"
+      ],
+      [
+        "c",
+        "sw"
+      ],
+      [
+        "c",
+        "se"
+      ]
+    ],
+    "mainY": [
+      [
+        "s",
+        "c"
+      ],
+      [
+        "c",
+        "nw"
+      ],
+      [
+        "c",
+        "ne"
+      ]
+    ],
+    "coeurV": [
+      [
+        "nw",
+        "s"
+      ],
+      [
+        "ne",
+        "s"
+      ]
+    ],
+    "barre": [
+      [
+        "nw",
+        "se"
+      ],
+      [
+        "ne",
+        "sw"
+      ],
+      [
+        "n",
+        "s"
+      ]
+    ],
+    "triangle": [
+      [
+        "sw",
+        "n"
+      ],
+      [
+        "n",
+        "se"
+      ],
+      [
+        "sw",
+        "se"
+      ]
+    ],
+    "maison": [
+      [
+        "sw",
+        "nw"
+      ],
+      [
+        "nw",
+        "ne",
+        -7
+      ],
+      [
+        "ne",
+        "se"
+      ]
+    ],
+    "plus": [
+      [
+        "w",
+        "c"
+      ],
+      [
+        "c",
+        "e"
+      ],
+      [
+        "n",
+        "c"
+      ],
+      [
+        "c",
+        "s"
+      ]
+    ],
+    "plante": [
+      [
+        "s",
+        "n"
+      ],
+      [
+        "c",
+        "nw"
+      ],
+      [
+        "c",
+        "ne"
+      ]
+    ],
+    "etoile": [
+      [
+        "n",
+        "s"
+      ],
+      [
+        "nw",
+        "se"
+      ],
+      [
+        "ne",
+        "sw"
+      ]
+    ],
+    "point": [
+      [
+        "c",
+        "c"
+      ]
+    ],
+    "traitV": [
+      [
+        "n",
+        "s"
+      ]
+    ],
+    "traitH": [
+      [
+        "w",
+        "e"
+      ]
+    ],
+    "goutte": [
+      [
+        "n",
+        "c",
+        -6
+      ],
+      [
+        "n",
+        "c",
+        6
+      ],
+      [
+        "c",
+        "s"
+      ]
+    ],
+    "jambe": [
+      [
+        "n",
+        "s"
+      ],
+      [
+        "s",
+        "se"
+      ]
+    ],
+    "bouche": [
+      [
+        "w",
+        "e",
+        -7
+      ],
+      [
+        "w",
+        "e",
+        7
+      ]
+    ]
   },
   "glyphes": {
-    "ura":   { "fr": "eau",    "type": "racine", "atomes": ["vague"] },
-    "suki":  { "fr": "feu",    "type": "racine", "atomes": ["flamme"] },
-    "toka":  { "fr": "terre",  "type": "racine", "atomes": ["base"] },
-    "zeru":  { "fr": "ciel",   "type": "racine", "atomes": ["voute"] },
-    "sili":  { "fr": "regard", "type": "racine", "atomes": ["oeil"] },
-    "naki":  { "fr": "enfant", "type": "racine", "atomes": ["figure"] },
-    "mirak": { "fr": "voir",   "type": "verbe",  "atomes": ["oeil","fleche"] },
-    "sora":  { "fr": "soleil",   "type": "racine", "atomes": ["anneau","etoile"] },
-    "vena":  { "fr": "air",      "type": "racine", "atomes": ["voute","vague"] },
-    "kari":  { "fr": "pierre",   "type": "racine", "atomes": ["triangle"] },
-    "tasa":  { "fr": "montagne", "type": "racine", "atomes": ["triangle","voute"] },
-    "nura":  { "fr": "rivière",  "type": "racine", "atomes": ["vague","base"] },
-    "viku":  { "fr": "forêt",    "type": "racine", "atomes": ["plante","base"] },
-    "tani":  { "fr": "vallée",   "type": "racine", "atomes": ["coeurV"] },
-    "eku":   { "fr": "étoile",   "type": "racine", "atomes": ["etoile"] },
-    "kanu":  { "fr": "main",     "type": "racine", "atomes": ["mainY"] },
-    "kori":  { "fr": "cœur",     "type": "racine", "atomes": ["coeurV","point"] },
-    "voki":  { "fr": "voix",     "type": "racine", "atomes": ["bandes"] },
-    "muto":  { "fr": "tête",     "type": "racine", "atomes": ["anneau","base"] },
-    "sanu":  { "fr": "corps",    "type": "racine", "atomes": ["figure","base"] },
-    "va": { "fr": "sujet",       "type": "particule", "edges": [["n","s"]] },
-    "vo": { "fr": "objet",       "type": "particule", "edges": [["n","s"],["c","e"]] },
-    "vi": { "fr": "direction",   "type": "particule", "edges": [["sw","n"],["n","se"]] },
-    "ve": { "fr": "origine",     "type": "particule", "edges": [["n","s"],["s","sw"],["s","se"]] },
-    "vu": { "fr": "instrument",  "type": "particule", "edges": [["nw","se"],["ne","sw"]] },
-    "na": { "fr": "possession",  "type": "particule", "edges": [["n","s"],["c","w"]] },
-    "ni": { "fr": "bénéficiaire","type": "particule", "edges": [["n","c"],["c","se"]] },
-    "no": { "fr": "lieu",        "type": "particule", "edges": [["nw","ne"],["ne","se"],["se","sw"],["sw","nw"]] },
-    "su": { "fr": "pluriel",     "type": "particule", "edges": [["nw","sw"],["n","s"],["ne","se"]] },
-
-    "i":  { "fr": "liaison i (agent)",  "type": "liaison", "edges": [["n","s",-8]] },
-    "ie": { "fr": "liaison ie",         "type": "liaison", "edges": [["n","s",-8],["s","e"]] },
-    "ii": { "fr": "liaison ii",         "type": "liaison", "edges": [["n","s",-8],["n","s",8]] },
-    "iu": { "fr": "liaison iu",         "type": "liaison", "edges": [["n","s",-8],["c","e"]] },
-    "u":  { "fr": "liaison u (appart.)","type": "liaison", "edges": [["w","s",-6],["s","e",-6]] },
-    "ui": { "fr": "liaison ui",         "type": "liaison", "edges": [["w","s",-6],["s","e",-6],["c","n"]] },
-    "a":  { "fr": "liaison a (relation)","type":"liaison", "edges": [["w","n",-6],["n","e",-6]] },
-    "aa": { "fr": "liaison aa",         "type": "liaison", "edges": [["w","n",-6],["n","e",-6],["w","e"]] },
-    "ae": { "fr": "liaison ae",         "type": "liaison", "edges": [["w","n",-6],["n","e",-6],["c","s"]] },
-    "ao": { "fr": "liaison ao",         "type": "liaison", "edges": [["w","n",-6],["n","e",-6],["c","c"]] },
-    "o":  { "fr": "liaison o (tension)","type": "liaison", "edges": [["n","e",7],["e","s",7],["s","w",7],["w","n",7]] },
-    "oa": { "fr": "liaison oa",         "type": "liaison", "edges": [["n","e",7],["e","s",7],["s","w",7],["w","n",7],["n","s"]] },
-    "e":  { "fr": "liaison e (dimens.)","type": "liaison", "edges": [["w","e"]] },
-    "ei": { "fr": "liaison ei",         "type": "liaison", "edges": [["w","e"],["e","s"]] },
-    "ea": { "fr": "liaison ea",         "type": "liaison", "edges": [["nw","ne"],["sw","se"]] },
-    "eo": { "fr": "liaison eo",         "type": "liaison", "edges": [["w","e"],["c","c"]] }
+    "ura": {
+      "fr": "eau",
+      "type": "racine",
+      "atomes": [
+        "vague"
+      ]
+    },
+    "suki": {
+      "fr": "feu",
+      "type": "racine",
+      "atomes": [
+        "flamme"
+      ]
+    },
+    "toka": {
+      "fr": "terre",
+      "type": "racine",
+      "atomes": [
+        "base"
+      ]
+    },
+    "zeru": {
+      "fr": "ciel",
+      "type": "racine",
+      "atomes": [
+        "voute"
+      ]
+    },
+    "sili": {
+      "fr": "regard",
+      "type": "racine",
+      "atomes": [
+        "oeil"
+      ]
+    },
+    "naki": {
+      "fr": "enfant",
+      "type": "racine",
+      "atomes": [
+        "figure",
+        "point"
+      ]
+    },
+    "mirak": {
+      "fr": "voir",
+      "type": "verbe",
+      "atomes": [
+        "oeil",
+        "fleche"
+      ]
+    },
+    "sora": {
+      "fr": "soleil",
+      "type": "racine",
+      "atomes": [
+        "anneau",
+        "etoile"
+      ]
+    },
+    "vena": {
+      "fr": "air",
+      "type": "racine",
+      "atomes": [
+        "voute",
+        "vague"
+      ]
+    },
+    "kari": {
+      "fr": "pierre",
+      "type": "racine",
+      "atomes": [
+        "triangle"
+      ]
+    },
+    "tasa": {
+      "fr": "montagne",
+      "type": "racine",
+      "atomes": [
+        "triangle",
+        "voute"
+      ]
+    },
+    "nura": {
+      "fr": "rivière",
+      "type": "racine",
+      "atomes": [
+        "vague",
+        "base"
+      ]
+    },
+    "viku": {
+      "fr": "forêt",
+      "type": "racine",
+      "atomes": [
+        "plante",
+        "base"
+      ]
+    },
+    "tani": {
+      "fr": "vallée",
+      "type": "racine",
+      "atomes": [
+        "coeurV"
+      ]
+    },
+    "eku": {
+      "fr": "étoile",
+      "type": "racine",
+      "atomes": [
+        "etoile"
+      ]
+    },
+    "kanu": {
+      "fr": "main",
+      "type": "racine",
+      "atomes": [
+        "mainY"
+      ]
+    },
+    "kori": {
+      "fr": "cœur",
+      "type": "racine",
+      "atomes": [
+        "coeurV",
+        "point"
+      ]
+    },
+    "voki": {
+      "fr": "voix",
+      "type": "racine",
+      "atomes": [
+        "bandes"
+      ]
+    },
+    "muto": {
+      "fr": "tête",
+      "type": "racine",
+      "atomes": [
+        "anneau",
+        "base"
+      ]
+    },
+    "sanu": {
+      "fr": "corps",
+      "type": "racine",
+      "atomes": [
+        "figure",
+        "base"
+      ]
+    },
+    "kina": {
+      "fr": "sang",
+      "type": "racine",
+      "atomes": [
+        "goutte"
+      ]
+    },
+    "niku": {
+      "fr": "chair",
+      "type": "racine",
+      "atomes": [
+        "figure",
+        "vague"
+      ]
+    },
+    "peli": {
+      "fr": "peau",
+      "type": "racine",
+      "atomes": [
+        "base",
+        "bandes"
+      ]
+    },
+    "bitu": {
+      "fr": "dent",
+      "type": "racine",
+      "atomes": [
+        "triangle",
+        "point"
+      ]
+    },
+    "loba": {
+      "fr": "dos",
+      "type": "racine",
+      "atomes": [
+        "voute",
+        "base"
+      ]
+    },
+    "kibe": {
+      "fr": "os",
+      "type": "racine",
+      "atomes": [
+        "traitV",
+        "bandes"
+      ]
+    },
+    "pupu": {
+      "fr": "cheveux",
+      "type": "racine",
+      "atomes": [
+        "bandes",
+        "voute"
+      ]
+    },
+    "tiku": {
+      "fr": "oreille",
+      "type": "racine",
+      "atomes": [
+        "voute",
+        "coeurV"
+      ]
+    },
+    "muka": {
+      "fr": "visage",
+      "type": "racine",
+      "atomes": [
+        "anneau",
+        "coeurV"
+      ]
+    },
+    "peki": {
+      "fr": "pied",
+      "type": "racine",
+      "atomes": [
+        "jambe"
+      ]
+    },
+    "tori": {
+      "fr": "personne",
+      "type": "racine",
+      "atomes": [
+        "figure"
+      ]
+    },
+    "toko": {
+      "fr": "homme",
+      "type": "racine",
+      "atomes": [
+        "figure",
+        "triangle"
+      ]
+    },
+    "nako": {
+      "fr": "femme",
+      "type": "racine",
+      "atomes": [
+        "figure",
+        "coeurV"
+      ]
+    },
+    "naku": {
+      "fr": "fille",
+      "type": "racine",
+      "atomes": [
+        "figure",
+        "coeurV",
+        "point"
+      ]
+    },
+    "tebo": {
+      "fr": "garçon",
+      "type": "racine",
+      "atomes": [
+        "figure",
+        "triangle",
+        "point"
+      ]
+    },
+    "matu": {
+      "fr": "mère",
+      "type": "racine",
+      "atomes": [
+        "figure",
+        "coeurV",
+        "base"
+      ]
+    },
+    "patu": {
+      "fr": "père",
+      "type": "racine",
+      "atomes": [
+        "figure",
+        "triangle",
+        "base"
+      ]
+    },
+    "vaki": {
+      "fr": "frère",
+      "type": "racine",
+      "atomes": [
+        "figure",
+        "traitV"
+      ]
+    },
+    "seki": {
+      "fr": "sœur",
+      "type": "racine",
+      "atomes": [
+        "figure",
+        "bandes"
+      ]
+    },
+    "tibu": {
+      "fr": "tribu",
+      "type": "racine",
+      "atomes": [
+        "figure",
+        "maison"
+      ]
+    },
+    "lake": {
+      "fr": "village",
+      "type": "racine",
+      "atomes": [
+        "maison",
+        "base"
+      ]
+    },
+    "mitu": {
+      "fr": "famille",
+      "type": "racine",
+      "atomes": [
+        "maison",
+        "coeurV"
+      ]
+    },
+    "ota": {
+      "fr": "L'Autre",
+      "type": "racine",
+      "atomes": [
+        "figure",
+        "croix"
+      ]
+    },
+    "luna": {
+      "fr": "lune",
+      "type": "racine",
+      "atomes": [
+        "anneau",
+        "voute"
+      ]
+    },
+    "nubu": {
+      "fr": "nuage",
+      "type": "racine",
+      "atomes": [
+        "voute",
+        "point"
+      ]
+    },
+    "sumu": {
+      "fr": "sommet",
+      "type": "racine",
+      "atomes": [
+        "triangle",
+        "traitV"
+      ]
+    },
+    "temi": {
+      "fr": "temps",
+      "type": "racine",
+      "atomes": [
+        "anneau"
+      ]
+    },
+    "tisa": {
+      "fr": "présent",
+      "type": "racine",
+      "atomes": [
+        "anneau",
+        "plus"
+      ]
+    },
+    "ieso": {
+      "fr": "passé",
+      "type": "racine",
+      "atomes": [
+        "anneau",
+        "traitH"
+      ]
+    },
+    "saze": {
+      "fr": "futur",
+      "type": "racine",
+      "atomes": [
+        "anneau",
+        "traitV"
+      ]
+    },
+    "bami": {
+      "fr": "nuit",
+      "type": "racine",
+      "atomes": [
+        "etoile",
+        "base"
+      ]
+    },
+    "musu": {
+      "fr": "crépuscule",
+      "type": "racine",
+      "atomes": [
+        "coeurV",
+        "etoile"
+      ]
+    },
+    "va": {
+      "fr": "sujet",
+      "type": "particule",
+      "edges": [
+        [
+          "n",
+          "s"
+        ]
+      ]
+    },
+    "vo": {
+      "fr": "objet",
+      "type": "particule",
+      "edges": [
+        [
+          "n",
+          "s"
+        ],
+        [
+          "c",
+          "e"
+        ]
+      ]
+    },
+    "vi": {
+      "fr": "direction",
+      "type": "particule",
+      "edges": [
+        [
+          "sw",
+          "n"
+        ],
+        [
+          "n",
+          "se"
+        ]
+      ]
+    },
+    "ve": {
+      "fr": "origine",
+      "type": "particule",
+      "edges": [
+        [
+          "n",
+          "s"
+        ],
+        [
+          "s",
+          "sw"
+        ],
+        [
+          "s",
+          "se"
+        ]
+      ]
+    },
+    "vu": {
+      "fr": "instrument",
+      "type": "particule",
+      "edges": [
+        [
+          "nw",
+          "se"
+        ],
+        [
+          "ne",
+          "sw"
+        ]
+      ]
+    },
+    "na": {
+      "fr": "possession",
+      "type": "particule",
+      "edges": [
+        [
+          "n",
+          "s"
+        ],
+        [
+          "c",
+          "w"
+        ]
+      ]
+    },
+    "ni": {
+      "fr": "bénéficiaire",
+      "type": "particule",
+      "edges": [
+        [
+          "n",
+          "c"
+        ],
+        [
+          "c",
+          "se"
+        ]
+      ]
+    },
+    "no": {
+      "fr": "lieu",
+      "type": "particule",
+      "edges": [
+        [
+          "nw",
+          "ne"
+        ],
+        [
+          "ne",
+          "se"
+        ],
+        [
+          "se",
+          "sw"
+        ],
+        [
+          "sw",
+          "nw"
+        ]
+      ]
+    },
+    "su": {
+      "fr": "pluriel",
+      "type": "particule",
+      "edges": [
+        [
+          "nw",
+          "sw"
+        ],
+        [
+          "n",
+          "s"
+        ],
+        [
+          "ne",
+          "se"
+        ]
+      ]
+    },
+    "i": {
+      "fr": "liaison i (agent)",
+      "type": "liaison",
+      "edges": [
+        [
+          "n",
+          "s",
+          -8
+        ]
+      ]
+    },
+    "ie": {
+      "fr": "liaison ie",
+      "type": "liaison",
+      "edges": [
+        [
+          "n",
+          "s",
+          -8
+        ],
+        [
+          "s",
+          "e"
+        ]
+      ]
+    },
+    "ii": {
+      "fr": "liaison ii",
+      "type": "liaison",
+      "edges": [
+        [
+          "n",
+          "s",
+          -8
+        ],
+        [
+          "n",
+          "s",
+          8
+        ]
+      ]
+    },
+    "iu": {
+      "fr": "liaison iu",
+      "type": "liaison",
+      "edges": [
+        [
+          "n",
+          "s",
+          -8
+        ],
+        [
+          "c",
+          "e"
+        ]
+      ]
+    },
+    "u": {
+      "fr": "liaison u (appart.)",
+      "type": "liaison",
+      "edges": [
+        [
+          "w",
+          "s",
+          -6
+        ],
+        [
+          "s",
+          "e",
+          -6
+        ]
+      ]
+    },
+    "ui": {
+      "fr": "liaison ui",
+      "type": "liaison",
+      "edges": [
+        [
+          "w",
+          "s",
+          -6
+        ],
+        [
+          "s",
+          "e",
+          -6
+        ],
+        [
+          "c",
+          "n"
+        ]
+      ]
+    },
+    "a": {
+      "fr": "liaison a (relation)",
+      "type": "liaison",
+      "edges": [
+        [
+          "w",
+          "n",
+          -6
+        ],
+        [
+          "n",
+          "e",
+          -6
+        ]
+      ]
+    },
+    "aa": {
+      "fr": "liaison aa",
+      "type": "liaison",
+      "edges": [
+        [
+          "w",
+          "n",
+          -6
+        ],
+        [
+          "n",
+          "e",
+          -6
+        ],
+        [
+          "w",
+          "e"
+        ]
+      ]
+    },
+    "ae": {
+      "fr": "liaison ae",
+      "type": "liaison",
+      "edges": [
+        [
+          "w",
+          "n",
+          -6
+        ],
+        [
+          "n",
+          "e",
+          -6
+        ],
+        [
+          "c",
+          "s"
+        ]
+      ]
+    },
+    "ao": {
+      "fr": "liaison ao",
+      "type": "liaison",
+      "edges": [
+        [
+          "w",
+          "n",
+          -6
+        ],
+        [
+          "n",
+          "e",
+          -6
+        ],
+        [
+          "c",
+          "c"
+        ]
+      ]
+    },
+    "o": {
+      "fr": "liaison o (tension)",
+      "type": "liaison",
+      "edges": [
+        [
+          "n",
+          "e",
+          7
+        ],
+        [
+          "e",
+          "s",
+          7
+        ],
+        [
+          "s",
+          "w",
+          7
+        ],
+        [
+          "w",
+          "n",
+          7
+        ]
+      ]
+    },
+    "oa": {
+      "fr": "liaison oa",
+      "type": "liaison",
+      "edges": [
+        [
+          "n",
+          "e",
+          7
+        ],
+        [
+          "e",
+          "s",
+          7
+        ],
+        [
+          "s",
+          "w",
+          7
+        ],
+        [
+          "w",
+          "n",
+          7
+        ],
+        [
+          "n",
+          "s"
+        ]
+      ]
+    },
+    "e": {
+      "fr": "liaison e (dimens.)",
+      "type": "liaison",
+      "edges": [
+        [
+          "w",
+          "e"
+        ]
+      ]
+    },
+    "ei": {
+      "fr": "liaison ei",
+      "type": "liaison",
+      "edges": [
+        [
+          "w",
+          "e"
+        ],
+        [
+          "e",
+          "s"
+        ]
+      ]
+    },
+    "ea": {
+      "fr": "liaison ea",
+      "type": "liaison",
+      "edges": [
+        [
+          "nw",
+          "ne"
+        ],
+        [
+          "sw",
+          "se"
+        ]
+      ]
+    },
+    "eo": {
+      "fr": "liaison eo",
+      "type": "liaison",
+      "edges": [
+        [
+          "w",
+          "e"
+        ],
+        [
+          "c",
+          "c"
+        ]
+      ]
+    },
+    "pesa": {
+      "fr": "poisson",
+      "type": "racine",
+      "atomes": [
+        "coeurV",
+        "vague"
+      ]
+    },
+    "besi": {
+      "fr": "bête",
+      "type": "racine",
+      "atomes": [
+        "triangle",
+        "jambe"
+      ]
+    },
+    "ziku": {
+      "fr": "serpent",
+      "type": "racine",
+      "atomes": [
+        "vague",
+        "fleche"
+      ]
+    },
+    "vamo": {
+      "fr": "loup",
+      "type": "racine",
+      "atomes": [
+        "triangle",
+        "coeurV"
+      ]
+    },
+    "alu": {
+      "fr": "grue",
+      "type": "racine",
+      "atomes": [
+        "voute",
+        "jambe"
+      ]
+    },
+    "iena": {
+      "fr": "grue2",
+      "type": "racine",
+      "atomes": [
+        "voute",
+        "mainY"
+      ]
+    },
+    "aki": {
+      "fr": "faucon",
+      "type": "racine",
+      "atomes": [
+        "voute",
+        "fleche"
+      ]
+    },
+    "asa": {
+      "fr": "sacré",
+      "type": "racine",
+      "atomes": [
+        "etoile",
+        "point"
+      ]
+    },
+    "umi": {
+      "fr": "esprit",
+      "type": "racine",
+      "atomes": [
+        "anneau",
+        "vague"
+      ]
+    },
+    "uuto": {
+      "fr": "esprit2",
+      "type": "racine",
+      "atomes": [
+        "voute",
+        "etoile"
+      ]
+    },
+    "vito": {
+      "fr": "bois(mat)",
+      "type": "racine",
+      "atomes": [
+        "plante",
+        "traitV"
+      ]
+    },
+    "seli": {
+      "fr": "sel",
+      "type": "racine",
+      "atomes": [
+        "base",
+        "point"
+      ]
+    },
+    "buki": {
+      "fr": "bois",
+      "type": "racine",
+      "atomes": [
+        "plante",
+        "triangle"
+      ]
+    },
+    "lapu": {
+      "fr": "lait",
+      "type": "racine",
+      "atomes": [
+        "goutte",
+        "base"
+      ]
+    },
+    "muki": {
+      "fr": "nourriture",
+      "type": "racine",
+      "atomes": [
+        "bouche",
+        "point"
+      ]
+    },
+    "beka": {
+      "fr": "baie",
+      "type": "racine",
+      "atomes": [
+        "goutte",
+        "anneau"
+      ]
+    },
+    "tuba": {
+      "fr": "tubercule",
+      "type": "racine",
+      "atomes": [
+        "base",
+        "triangle"
+      ]
+    },
+    "veka": {
+      "fr": "fruit",
+      "type": "racine",
+      "atomes": [
+        "anneau",
+        "plante"
+      ]
+    },
+    "molu": {
+      "fr": "mollusque",
+      "type": "racine",
+      "atomes": [
+        "anneau",
+        "jambe"
+      ]
+    },
+    "seka": {
+      "fr": "graine",
+      "type": "racine",
+      "atomes": [
+        "goutte",
+        "point"
+      ]
+    },
+    "panu": {
+      "fr": "galette",
+      "type": "racine",
+      "atomes": [
+        "anneau",
+        "bandes"
+      ]
+    },
+    "pala": {
+      "fr": "herbe",
+      "type": "racine",
+      "atomes": [
+        "plante",
+        "point"
+      ]
+    },
+    "zaku": {
+      "fr": "réserve",
+      "type": "racine",
+      "atomes": [
+        "maison",
+        "point"
+      ]
+    },
+    "leva": {
+      "fr": "légume",
+      "type": "racine",
+      "atomes": [
+        "plante",
+        "coeurV"
+      ]
+    }
   }
 }
