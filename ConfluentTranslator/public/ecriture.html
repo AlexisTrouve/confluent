@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Écriture — Glyphes du Gouffre</title>
+<!--
+  UI d'écriture : texte Confluent (romanisé) → collier de glyphes « argile ».
+  QUOI : saisie d'un texte, POST /api/ecriture, rendu du collier OU affichage de l'erreur PRÉCISE
+         (ligne/colonne/mot) si une pièce n'a pas de glyphe (doctrine no-fallback).
+  POURQUOI : rendre l'écriture utilisable de bout en bout, sans rien deviner côté manquant.
+  COMMENT : page autonome (lit la clé API dans localStorage 'confluentApiKey', comme index.html).
+         « Redessiner » relance la requête → nouveau seed serveur → chaque caractère redessiné à neuf.
+-->
+<style>
+  :root { --bg:#15110c; --panel:#1c150d; --accent:#c9a86a; --txt:#d8c39a; --err:#f0a0a0; }
+  * { box-sizing:border-box; }
+  body { background:var(--bg); color:var(--txt); font-family:system-ui,sans-serif; margin:0; padding:28px; }
+  h1 { color:var(--accent); text-align:center; font-weight:600; letter-spacing:.5px; }
+  .sub { text-align:center; color:#8a7a5a; margin-top:-8px; font-size:14px; }
+  .wrap { max-width:980px; margin:0 auto; }
+  .panel { background:var(--panel); border:1px solid #2c2114; border-radius:12px; padding:18px; margin-top:18px; }
+  textarea { width:100%; min-height:80px; background:#0f0c08; color:var(--txt); border:1px solid #3a2c1c;
+             border-radius:8px; padding:12px; font-size:16px; resize:vertical; }
+  .row { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top:12px; }
+  button { background:var(--accent); color:#1a1206; border:none; border-radius:8px; padding:10px 18px;
+           font-size:15px; font-weight:600; cursor:pointer; }
+  button.ghost { background:transparent; color:var(--accent); border:1px solid #4a3a22; }
+  button:disabled { opacity:.5; cursor:default; }
+  input[type=password] { background:#0f0c08; color:var(--txt); border:1px solid #3a2c1c; border-radius:8px;
+                         padding:8px 10px; font-size:13px; width:230px; }
+  .key { margin-top:14px; font-size:13px; color:#8a7a5a; }
+  #error { color:var(--err); margin-top:14px; min-height:20px; font-size:15px; }
+  #output { margin-top:16px; min-height:140px; display:flex; justify-content:center; }
+  .hint { color:#6a5c40; font-size:12px; margin-top:6px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Glyphes du Gouffre — Écriture</h1>
+  <div class="sub">Texte Confluent (romanisé) → glyphes d'argile. Lecture en collier, gauche → droite.</div>
+
+  <div class="panel">
+    <textarea id="conf-input" placeholder="ex : va naki vo ura mirak u">va naki vo ura mirak u</textarea>
+    <div class="row">
+      <button id="draw-btn">Dessiner</button>
+      <button id="redraw-btn" class="ghost" style="display:none">Redessiner</button>
+      <span class="hint">Chaque caractère est repressé à neuf — deux fois le même glyphe ne sont jamais identiques.</span>
+    </div>
+    <div id="error"></div>
+    <div id="output"></div>
+    <div class="key">
+      Clé API : <input id="apikey-input" type="password" placeholder="x-api-key">
+      <span class="hint">stockée en local (confluentApiKey)</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Helpers DOM + lecture de la clé (même convention que index.html : localStorage 'confluentApiKey').
+  const $ = (id) => document.getElementById(id);
+  const KEY_STORE = 'confluentApiKey';
+
+  // Dessine : POST /api/ecriture → injecte le collier, OU affiche l'erreur PRÉCISE (ligne/col/mot).
+  async function draw() {
+    const text = $('conf-input').value.trim();
+    $('error').textContent = '';
+    if (!text) { $('error').textContent = 'Saisis un texte Confluent.'; return; }
+
+    // La clé saisie devient la source ; on la persiste pour les visites suivantes.
+    const key = $('apikey-input').value.trim();
+    if (key) localStorage.setItem(KEY_STORE, key);
+
+    $('draw-btn').disabled = true;
+    try {
+      const resp = await fetch('/api/ecriture', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-api-key': key },
+        body: JSON.stringify({ text })
+      });
+      const data = await resp.json().catch(() => ({}));
+
+      if (resp.ok && data.ok) {
+        // Succès : le serveur renvoie le collier déjà rendu (SVG + filtres uniques par glyphe).
+        $('output').innerHTML = data.html;
+        $('redraw-btn').style.display = 'inline-block';
+      } else if (resp.status === 422 && data.erreur) {
+        // Échec franc : pointer exactement la pièce sans glyphe.
+        $('output').innerHTML = '';
+        $('redraw-btn').style.display = 'none';
+        const e = data.erreur;
+        $('error').innerHTML = `✗ Impossible de dessiner — ligne <b>${e.ligne}</b>, colonne <b>${e.col}</b>, `
+          + `mot « <b>${e.mot}</b> » : ${e.raison}`;
+      } else {
+        $('output').innerHTML = '';
+        $('error').textContent = '✗ ' + (data.error || ('Erreur ' + resp.status));
+      }
+    } catch (err) {
+      $('error').textContent = '✗ Réseau : ' + err.message;
+    } finally {
+      $('draw-btn').disabled = false;
+    }
+  }
+
+  // Init : pré-remplir la clé si déjà connue. « Redessiner » = même texte → nouveau seed serveur.
+  $('apikey-input').value = localStorage.getItem(KEY_STORE) || '';
+  $('draw-btn').addEventListener('click', draw);
+  $('redraw-btn').addEventListener('click', draw);
+</script>
+</body>
+</html>

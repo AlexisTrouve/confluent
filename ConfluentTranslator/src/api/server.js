@@ -16,6 +16,9 @@ const { translateConfluentToFrench, translateConfluentDetailed } = require('../c
 const { translateWithAgent } = require('../core/translation/translationAgent');
 const { buildGuide } = require('../core/guide/guideBuilder');
 const { getEra } = require('../core/eras/eras');
+// Écriture (Glyphes du Gouffre) : conversion texte→glyphes (échec franc précis) + rendu collier.
+const { convert: convertToGlyphes } = require('../../scripts/confluent2glyphes');
+const { renderCollier } = require('../core/ecriture/glyphRenderer');
 
 // Security modules
 const { authenticate, requireAdmin, createToken, listTokens, disableToken, enableToken, deleteToken, getGlobalStats, trackLLMUsage, checkLLMLimit } = require('../utils/auth');
@@ -802,6 +805,35 @@ app.post('/api/translate/conf2fr/llm', authenticate, async (req, res) => {
 
   } catch (error) {
     console.error('Confluent→FR LLM refinement error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// ============================================================================
+// ÉCRITURE : Confluent (romanisé) → COLLIER de glyphes (Glyphes du Gouffre)
+// ============================================================================
+// QUOI : convertit un texte confluent en glyphes « argile » rendus (SVG collier), ou échoue
+//        FRANC en pointant la pièce sans glyphe (ligne/colonne/mot). Aucun appel LLM (déterministe, gratuit).
+// POURQUOI : rendre l'écriture utilisable end-to-end depuis l'UI, sans jamais « deviner » un
+//        glyphe manquant (doctrine no-fallback) — on signale précisément le caractère fautif.
+// COMMENT : convertToGlyphes() résout chaque mot (registre → composition morpho → verbe+conjugateur) ;
+//        renderCollier() enfile les glyphes. Chaque caractère est redessiné à neuf (seed random par instance).
+app.post('/api/ecriture', authenticate, (req, res) => {
+  const { text } = req.body;
+  if (!text) {
+    return res.status(400).json({ error: 'Missing parameter: text' });
+  }
+
+  try {
+    const result = convertToGlyphes(text);
+    // Échec franc : une pièce du texte n'a pas de glyphe → 422 + localisation exacte (jamais de rendu partiel deviné).
+    if (result.erreur) {
+      return res.status(422).json({ error: result.erreur.raison, erreur: result.erreur });
+    }
+    // Succès : collier HTML/SVG prêt à injecter + la décomposition mot→glyphes (pour debug/affichage).
+    res.json({ ok: true, html: renderCollier(result.glyphes), words: result.glyphes });
+  } catch (error) {
+    console.error('Écriture error:', error);
     res.status(500).json({ error: error.message });
   }
 });
