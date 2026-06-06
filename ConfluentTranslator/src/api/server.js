@@ -19,6 +19,7 @@ const { getEra } = require('../core/eras/eras');
 // Écriture (Glyphes du Gouffre) : conversion texte→glyphes (échec franc précis) + rendu collier.
 const { convert: convertToGlyphes } = require('../../scripts/confluent2glyphes');
 const { renderCollier } = require('../core/ecriture/glyphRenderer');
+const { renderBook } = require('../core/ecriture/bookRenderer');
 
 // Security modules
 const { authenticate, requireAdmin, createToken, listTokens, disableToken, enableToken, deleteToken, getGlobalStats, trackLLMUsage, checkLLMLimit } = require('../utils/auth');
@@ -835,6 +836,33 @@ app.post('/api/ecriture', authenticate, (req, res) => {
   } catch (error) {
     console.error('Écriture error:', error);
     res.status(500).json({ error: error.message });
+  }
+});
+
+// GET /livre?text=...&theme=clay&title=... → PAGE-LIVRE HTML rendue directement (Confluent romanisé).
+// QUOI : une URL qui « fait le taff » — ouvrir l'adresse rend le livre paginé ; re-seedé à CHAQUE
+//        requête (chaque caractère redessiné à neuf), sans JS ni reload en boucle.
+// POURQUOI : usage le plus simple (partage d'URL, Ctrl+P → PDF). Public + déterministe (aucun LLM, aucun secret).
+// COMMENT : convert() → renderBook(theme). thème en param (alias clay/dark/light) ; erreur = page HTML qui pointe la pièce.
+app.get('/livre', (req, res) => {
+  const { text, title } = req.query;
+  if (!text) {
+    return res.type('html').status(400).send('<body style="background:#15110c;color:#c9a86a;font-family:system-ui;padding:40px">Paramètre <b>text</b> requis — ex : <code>/livre?text=va naki vo ura mirak u&amp;theme=clay</code></body>');
+  }
+  // Normalisation du thème (registre modulaire côté bookRenderer) + alias conviviaux.
+  const alias = { clay: 'tablette', dark: 'parchemin', light: 'clair' };
+  const raw = String(req.query.theme || req.query.style || 'tablette');
+  const theme = alias[raw] || raw;
+  try {
+    const result = convertToGlyphes(String(text));
+    if (result.erreur) {
+      const e = result.erreur; // Échec franc, en HTML lisible (on ne dessine rien de deviné).
+      return res.type('html').status(422).send(`<body style="background:#15110c;color:#f0a0a0;font-family:system-ui;padding:40px">✗ Impossible de dessiner — ligne <b>${e.ligne}</b>, colonne <b>${e.col}</b>, mot « <b>${e.mot}</b> » : ${e.raison}</body>`);
+    }
+    res.type('html').send(renderBook(result.glyphes, { theme, title: title ? String(title) : '' }));
+  } catch (error) {
+    console.error('Livre error:', error);
+    res.type('html').status(500).send('<body style="background:#15110c;color:#f0a0a0;font-family:system-ui;padding:40px">Erreur : ' + error.message + '</body>');
   }
 });
 
