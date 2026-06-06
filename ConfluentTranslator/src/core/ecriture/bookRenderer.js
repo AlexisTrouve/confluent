@@ -12,10 +12,11 @@
 const { GLYPHS, resolveEdges, renderGlyph } = require('./glyphRenderer');
 
 // Registre de THÈMES de page (skin), découplé de la police. `rule` = couleur des réglures/marge.
+// `page` = couleur de fond ; `grain` = intensité de la texture (0 = lisse). Défaut = clay cendré texturé.
 const THEMES = {
-  tablette: { nom: "Tablette d'argile", page: '#2a1d11', frame: '14px solid #7a5230', rule: '#6a4f30', label: '#c9a86a' },
-  parchemin: { nom: 'Parchemin sombre', page: '#15110c', frame: '1px solid #3a2c1c', rule: '#4a3a22', label: '#c9a86a' },
-  clair: { nom: 'Manuscrit clair', page: '#e8dcc0', frame: '1px solid #b8a070', rule: '#b39b6a', label: '#5a4226' },
+  tablette: { nom: 'Clay cendré', page: '#3a352d', frame: '14px solid #645a4a', rule: '#564e40', label: '#cdbf9a', grain: 0.55 },
+  parchemin: { nom: 'Parchemin sombre', page: '#15110c', frame: '1px solid #3a2c1c', rule: '#4a3a22', label: '#c9a86a', grain: 0.4 },
+  clair: { nom: 'Manuscrit clair', page: '#e8dcc0', frame: '1px solid #b8a070', rule: '#b39b6a', label: '#5a4226', grain: 0.35 },
 };
 
 const W_TEXT = 640; // largeur (px) de la zone de texte → longueur des réglures.
@@ -44,6 +45,15 @@ function ruledMargin(height, color) {
     + `<path d="${d}" fill="none" stroke="${color}" stroke-width="1.3" stroke-linecap="round" opacity="0.6"/></svg>`;
 }
 
+// Grain de texture (argile/papier) : turbulence sombre semi-transparente, re-seedée par page (organique).
+function grain() {
+  const s = Math.floor(Math.random() * 9999);
+  return `<svg class="grain" preserveAspectRatio="none"><filter id="gr${s}">`
+    + `<feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="3" seed="${s}" stitchTiles="stitch"/>`
+    + `<feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 -0.22"/></filter>`
+    + `<rect width="100%" height="100%" filter="url(#gr${s})"/></svg>`;
+}
+
 // Aplatit les mots en perles, en marquant le début de chaque mot (espace de séparation).
 function toBeads(words) {
   const beads = [];
@@ -56,7 +66,7 @@ function bead(b, uid, h) {
   const g = GLYPHS[b.key];
   const inner = g ? renderGlyph(resolveEdges(g), uid, h)
     : `<div style="width:${Math.round(h * .62)}px;height:${h}px;border:1px dashed #5a4226;color:#5a4226;display:flex;align-items:center;justify-content:center;font-size:9px">?${b.key}</div>`;
-  return `<div style="margin-left:${b.wordStart ? 14 : 1}px;line-height:0">${inner}</div>`;
+  return `<div style="margin-left:${b.wordStart ? 2 : -12}px;line-height:0">${inner}</div>`;
 }
 
 /**
@@ -66,7 +76,7 @@ function bead(b, uid, h) {
  */
 function renderBook(words, opts = {}) {
   const th = THEMES[opts.theme] || THEMES.tablette;
-  const perLine = opts.perLine || 12, linesPerPage = opts.linesPerPage || 13, glyphH = opts.glyphH || 58, title = opts.title || '';
+  const perLine = opts.perLine || 18, linesPerPage = opts.linesPerPage || 13, glyphH = opts.glyphH || 58, title = opts.title || '';
   const beads = toBeads(words);
 
   // Découpe en LIGNES (serrées) puis en PAGES.
@@ -80,7 +90,7 @@ function renderBook(words, opts = {}) {
     + `<div class="grow">${ln.map((b, i) => bead(b, `l${li}_${i}`, glyphH)).join('')}</div>`
     + `<div class="rule">${ruledLine(W_TEXT, th.rule)}</div></div>`;
 
-  const pageHtml = (pg, n) => `<section class="page"><div class="margin">${ruledMargin(900, th.rule)}</div>`
+  const pageHtml = (pg, n) => `<section class="page" style="--grain:${th.grain != null ? th.grain : 0.5}">${grain()}<div class="margin">${ruledMargin(900, th.rule)}</div>`
     + (n === 0 && title ? `<div class="title">${title}</div><div class="rule">${ruledLine(W_TEXT, th.rule, 1.8)}</div>` : '')
     + `<div class="col">${pg.map((ln, li) => lineHtml(ln, n * linesPerPage + li)).join('')}</div>`
     + `<div class="folio">${n + 1} / ${pages.length}</div></section>`;
@@ -93,7 +103,8 @@ function renderBook(words, opts = {}) {
     .page { width: 210mm; height: 297mm; background: ${th.page}; border: ${th.frame};
             margin: 8mm auto; padding: 20mm 18mm 16mm 26mm; position: relative; overflow: hidden; break-after: page; }
     .margin { position: absolute; left: 16mm; top: 18mm; bottom: 14mm; }
-    .col { }
+    .grain { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; opacity: var(--grain,.5); mix-blend-mode: overlay; pointer-events: none; }
+    .col { position: relative; z-index: 1; }
     .line { margin-bottom: 3px; }
     .grow { display: flex; align-items: flex-end; min-height: ${glyphH}px; }
     .rule { line-height: 0; margin-top: -11px; }
