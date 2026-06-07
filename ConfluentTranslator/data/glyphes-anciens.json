@@ -553,8 +553,23 @@
     "tori": {
       "fr": "personne",
       "type": "racine",
-      "atomes": [
-        "figure"
+      "edges": [
+        [
+          "n",
+          "c"
+        ],
+        [
+          "c",
+          "sw"
+        ],
+        [
+          "c",
+          "se"
+        ],
+        [
+          "ne",
+          "ne"
+        ]
       ]
     },
     "toko": {
@@ -576,19 +591,65 @@
     "naku": {
       "fr": "fille",
       "type": "racine",
-      "atomes": [
-        "figure",
-        "coeurV",
-        "point"
+      "edges": [
+        [
+          "n",
+          "c"
+        ],
+        [
+          "c",
+          "sw"
+        ],
+        [
+          "c",
+          "se"
+        ],
+        [
+          "nw",
+          "s"
+        ],
+        [
+          "ne",
+          "s"
+        ],
+        [
+          "ne",
+          "ne"
+        ]
       ]
     },
     "tebo": {
       "fr": "garçon",
       "type": "racine",
-      "atomes": [
-        "figure",
-        "triangle",
-        "point"
+      "edges": [
+        [
+          "n",
+          "c"
+        ],
+        [
+          "c",
+          "sw"
+        ],
+        [
+          "c",
+          "se"
+        ],
+        [
+          "sw",
+          "n"
+        ],
+        [
+          "n",
+          "se"
+        ],
+        [
+          "sw",
+          "se"
+        ],
+        [
+          "ne",
+          "ne"
+        ]
       ]
     },
     "matu": {
@@ -1298,9 +1359,25 @@
     "seka": {
       "fr": "graine",
       "type": "racine",
-      "atomes": [
-        "goutte",
-        "point"
+      "edges": [
+        [
+          "n",
+          "c",
+          -6
+        ],
+        [
+          "n",
+          "c",
+          6
+        ],
+        [
+          "c",
+          "s"
+        ],
+        [
+          "ne",
+          "ne"
+        ]
       ]
     },
     "panu": {
@@ -1378,9 +1455,21 @@
     "sabo": {
       "fr": "bleu",
       "type": "racine",
-      "atomes": [
-        "vague",
-        "point"
+      "edges": [
+        [
+          "n",
+          "c",
+          -7
+        ],
+        [
+          "c",
+          "s",
+          7
+        ],
+        [
+          "ne",
+          "ne"
+        ]
       ]
     },
     "zale": {
@@ -1504,10 +1593,31 @@
     "aska": {
       "fr": "libre",
       "type": "racine",
-      "atomes": [
-        "mainY",
-        "voute",
-        "point"
+      "edges": [
+        [
+          "s",
+          "c"
+        ],
+        [
+          "c",
+          "nw"
+        ],
+        [
+          "c",
+          "ne"
+        ],
+        [
+          "nw",
+          "n"
+        ],
+        [
+          "n",
+          "ne"
+        ],
+        [
+          "ne",
+          "ne"
+        ]
       ]
     },
     "iko": {
@@ -1588,10 +1698,36 @@
     "konu": {
       "fr": "garder",
       "type": "racine",
-      "atomes": [
-        "maison",
-        "figure",
-        "point"
+      "edges": [
+        [
+          "sw",
+          "nw"
+        ],
+        [
+          "nw",
+          "ne",
+          -7
+        ],
+        [
+          "ne",
+          "se"
+        ],
+        [
+          "n",
+          "c"
+        ],
+        [
+          "c",
+          "sw"
+        ],
+        [
+          "c",
+          "se"
+        ],
+        [
+          "ne",
+          "ne"
+        ]
       ]
     },
     "vasi": {
@@ -1629,10 +1765,33 @@
     "lina": {
       "fr": "corde(b)",
       "type": "racine",
-      "atomes": [
-        "vague",
-        "bandes",
-        "point"
+      "edges": [
+        [
+          "n",
+          "c",
+          -7
+        ],
+        [
+          "c",
+          "s",
+          7
+        ],
+        [
+          "nw",
+          "ne"
+        ],
+        [
+          "w",
+          "e"
+        ],
+        [
+          "sw",
+          "se"
+        ],
+        [
+          "ne",
+          "ne"
+        ]
       ]
     },
     "kutu": {
@@ -1674,10 +1833,29 @@
     "vanu": {
       "fr": "navire",
       "type": "racine",
-      "atomes": [
-        "vague",
-        "coeurV",
-        "point"
+      "edges": [
+        [
+          "n",
+          "c",
+          -7
+        ],
+        [
+          "c",
+          "s",
+          7
+        ],
+        [
+          "nw",
+          "s"
+        ],
+        [
+          "ne",
+          "s"
+        ],
+        [
+          "ne",
+          "ne"
+        ]
       ]
     },
     "tabi": {
@@ -1858,10 +2036,47 @@
     "eka": {
       "fr": "tous",
       "type": "racine",
-      "atomes": [
-        "plus",
-        "anneau",
-        "point"
+      "edges": [
+        [
+          "w",
+          "c"
+        ],
+        [
+          "c",
+          "e"
+        ],
+        [
+          "n",
+          "c"
+        ],
+        [
+          "c",
+          "s"
+        ],
+        [
+          "n",
+          "e",
+          9
+        ],
+        [
+          "e",
+          "s",
+          9
+        ],
+        [
+          "s",
+          "w",
+          9
+        ],
+        [
+          "w",
+          "n",
+          9
+        ],
+        [
+          "ne",
+          "ne"
+        ]
       ]
     },
     "ena": {
@@ -1894,18 +2109,57 @@
     "onu": {
       "fr": "sa",
       "type": "racine",
-      "atomes": [
-        "point",
-        "mainY"
+      "edges": [
+        [
+          "s",
+          "c"
+        ],
+        [
+          "c",
+          "nw"
+        ],
+        [
+          "c",
+          "ne"
+        ],
+        [
+          "ne",
+          "ne"
+        ]
       ]
     },
     "aita": {
       "fr": "ancêtre",
       "type": "racine",
-      "atomes": [
-        "figure",
-        "etoile",
-        "point"
+      "edges": [
+        [
+          "n",
+          "c"
+        ],
+        [
+          "c",
+          "sw"
+        ],
+        [
+          "c",
+          "se"
+        ],
+        [
+          "n",
+          "s"
+        ],
+        [
+          "nw",
+          "se"
+        ],
+        [
+          "ne",
+          "sw"
+        ],
+        [
+          "ne",
+          "ne"
+        ]
       ]
     },
     "puli": {
@@ -2014,10 +2268,31 @@
     "nutu": {
       "fr": "nourriture(b)",
       "type": "racine",
-      "atomes": [
-        "bouche",
-        "vague",
-        "point"
+      "edges": [
+        [
+          "w",
+          "e",
+          -7
+        ],
+        [
+          "w",
+          "e",
+          7
+        ],
+        [
+          "n",
+          "c",
+          -7
+        ],
+        [
+          "c",
+          "s",
+          7
+        ],
+        [
+          "ne",
+          "ne"
+        ]
       ]
     },
     "kasi": {
@@ -2142,10 +2417,31 @@
     "seru": {
       "fr": "servir",
       "type": "verbe",
-      "atomes": [
-        "mainY",
-        "base",
-        "point"
+      "edges": [
+        [
+          "s",
+          "c"
+        ],
+        [
+          "c",
+          "nw"
+        ],
+        [
+          "c",
+          "ne"
+        ],
+        [
+          "sw",
+          "se"
+        ],
+        [
+          "w",
+          "e"
+        ],
+        [
+          "ne",
+          "ne"
+        ]
       ]
     },
     "sopi": {
@@ -2168,10 +2464,43 @@
     "tenu": {
       "fr": "tenir",
       "type": "verbe",
-      "atomes": [
-        "mainY",
-        "anneau",
-        "point"
+      "edges": [
+        [
+          "s",
+          "c"
+        ],
+        [
+          "c",
+          "nw"
+        ],
+        [
+          "c",
+          "ne"
+        ],
+        [
+          "n",
+          "e",
+          9
+        ],
+        [
+          "e",
+          "s",
+          9
+        ],
+        [
+          "s",
+          "w",
+          9
+        ],
+        [
+          "w",
+          "n",
+          9
+        ],
+        [
+          "ne",
+          "ne"
+        ]
       ]
     },
     "venu": {

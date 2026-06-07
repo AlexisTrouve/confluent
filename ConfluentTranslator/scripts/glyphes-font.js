@@ -25,7 +25,13 @@ function main() {
   const entries = Object.entries(GLYPHS);
 
   // VÉRIF DOUBLONS : deux concepts produisant le MÊME glyphe (mêmes edges normalisés) = collision.
-  const sig = (edges) => edges.map(e => orient(e).join('|')).sort().join(';');
+  // Signature VISUELLE : un point central ['c','c'] est INVISIBLE si un trait passe déjà par le
+  // centre → on l'ignore, sinon deux glyphes « base » et « base+point caché » paraîtraient identiques
+  // tout en ayant des sigs différentes (l'angle mort de l'ancien check).
+  const sig = (edges) => {
+    const thruC = edges.some(e => e[0] !== e[1] && (e[0] === 'c' || e[1] === 'c'));
+    return edges.filter(e => !(e[0] === 'c' && e[1] === 'c' && thruC)).map(e => orient(e).join('|')).sort().join(';');
+  };
   const bySig = {};
   for (const [cf, g] of entries) { const s = sig(resolveEdges(g)); (bySig[s] = bySig[s] || []).push(cf + '=' + g.fr); }
   const dups = Object.values(bySig).filter(a => a.length > 1);
