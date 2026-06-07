@@ -3302,6 +3302,33 @@
         "goutte",
         "plus"
       ]
+    },
+    "mil": {
+      "fr": "mil",
+      "type": "suffixe",
+      "atomes": [
+        "oeil",
+        "jambe",
+        "tirethaut"
+      ]
+    },
+    "zan": {
+      "fr": "zan",
+      "type": "suffixe",
+      "atomes": [
+        "chevroni",
+        "triangle",
+        "point"
+      ]
+    },
+    "moki": {
+      "fr": "moki",
+      "type": "suffixe",
+      "atomes": [
+        "oeil",
+        "chevron",
+        "jambe"
+      ]
     }
   }
 }
