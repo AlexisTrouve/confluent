@@ -19,7 +19,7 @@ const { getEra } = require('../core/eras/eras');
 // Écriture (Glyphes du Gouffre) : conversion texte→glyphes (échec franc précis) + rendu collier.
 const { convert: convertToGlyphes } = require('../../scripts/confluent2glyphes');
 const { renderCollier } = require('../core/ecriture/glyphRenderer');
-const { renderBook } = require('../core/ecriture/bookRenderer');
+const { renderMarkdownBook } = require('../core/ecriture/bookMarkdown');
 
 // Security modules
 const { authenticate, requireAdmin, createToken, listTokens, disableToken, enableToken, deleteToken, getGlobalStats, trackLLMUsage, checkLLMLimit } = require('../utils/auth');
@@ -854,12 +854,13 @@ app.get('/livre', (req, res) => {
   const raw = String(req.query.theme || req.query.style || 'tablette');
   const theme = alias[raw] || raw;
   try {
-    const result = convertToGlyphes(String(text));
+    // Markdown → livre paginé (titres/paragraphes/listes/citations/filets/emphase). title = caption lisible.
+    const result = renderMarkdownBook(String(text), { theme, title: title ? String(title) : '' });
     if (result.erreur) {
-      const e = result.erreur; // Échec franc, en HTML lisible (on ne dessine rien de deviné).
-      return res.type('html').status(422).send(`<body style="background:#15110c;color:#f0a0a0;font-family:system-ui;padding:40px">✗ Impossible de dessiner — ligne <b>${e.ligne}</b>, colonne <b>${e.col}</b>, mot « <b>${e.mot}</b> » : ${e.raison}</body>`);
+      const e = result.erreur; // Échec franc : mot sans glyphe (on ne dessine rien de deviné).
+      return res.type('html').status(422).send(`<body style="background:#15110c;color:#f0a0a0;font-family:system-ui;padding:40px">✗ Impossible de dessiner — mot « <b>${e.mot}</b> » (pièce « ${e.piece} ») : ${e.raison}</body>`);
     }
-    res.type('html').send(renderBook(result.glyphes, { theme, title: title ? String(title) : '' }));
+    res.type('html').send(result.html);
   } catch (error) {
     console.error('Livre error:', error);
     res.type('html').status(500).send('<body style="background:#15110c;color:#f0a0a0;font-family:system-ui;padding:40px">Erreur : ' + error.message + '</body>');

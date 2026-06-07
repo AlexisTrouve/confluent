@@ -129,4 +129,4 @@ function renderBook(words, opts = {}) {
     + `<style>${css}</style></head><body>${pages.map(pageHtml).join('')}</body></html>`;
 }
 
-module.exports = { renderBook, THEMES, toLines };
+module.exports = { renderBook, THEMES, toLines, ruledLine, ruledMargin, grain };
