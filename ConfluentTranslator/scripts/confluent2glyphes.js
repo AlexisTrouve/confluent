@@ -26,16 +26,21 @@ const RIDX = buildReverseIndex(ancien);
 function resolveWord(word) {
   if (GLYPHS[word]) return [word];                               // 1. direct (racine/particule/liaison)
 
-  const decomps = decomposeWord(word, RIDX, ANCIEN.liaisons);    // 2. composition racine-liaison-racine
-  if (decomps && decomps.length && decomps[0].roots) {
-    const d = decomps[0], pieces = [];
+  // 2. composition : on essaie TOUTES les décompositions et on retient la 1re dont CHAQUE pièce est
+  //    glyphée. POURQUOI : decomposeWord trie par confiance, mais le « meilleur » découpage [0] n'est
+  //    pas toujours le bon (il peut produire des fragments sans glyphe) ; le découpage entièrement
+  //    glyphable est ailleurs dans la liste. (Jamais de glyphe unique pour une composition : on assemble.)
+  const decomps = decomposeWord(word, RIDX, ANCIEN.liaisons);
+  let bestCompo = null;
+  for (const d of (decomps || [])) {
+    if (!d.roots) continue;
+    const pieces = [];
     d.roots.forEach((r, i) => {
       pieces.push(r.fullRoot || r.part);
       if (i < d.roots.length - 1 && d.liaison) pieces.push(d.liaison);
     });
-    const missing = pieces.filter(p => !GLYPHS[p]);
-    if (missing.length) throw { word, piece: missing[0], raison: `pièce « ${missing[0] }» (de la composition ${pieces.join('-')}) sans glyphe` };
-    return pieces;
+    if (pieces.every(p => GLYPHS[p])) return pieces;
+    if (!bestCompo) bestCompo = pieces.filter(p => !GLYPHS[p]);
   }
 
   const rads = extractRadicals(word, ANCIEN.verbalSuffixes, ANCIEN.conjugateurCodes); // 3. verbe (conjugué OU infinitif)
@@ -48,6 +53,7 @@ function resolveWord(word) {
   // Racine reconnue mais suffixe verbal pas (encore) glyphé → on pointe précisément le suffixe manquant.
   const near = (rads || []).find(r => (r.type === 'conjugaison' || r.type === 'infinitif') && GLYPHS[r.radical || '']);
   if (near) throw { word, piece: near.suffix, raison: `suffixe verbal « ${near.suffix} » non glyphé (racine ${near.radical} OK)` };
+  if (bestCompo) throw { word, piece: bestCompo[0], raison: `composition non résolue : pièce « ${bestCompo[0]} » sans glyphe (découpage morpho imparfait)` };
   throw { word, piece: word, raison: 'aucun glyphe, ni composition, ni verbe reconnu' };
 }
 
