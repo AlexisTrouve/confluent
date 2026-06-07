@@ -3,8 +3,8 @@ const fs = require('fs'), path = require('path');
 const { chromium } = require('playwright');
 const { GLYPHS, resolveEdges, renderGlyph } = require('../src/core/ecriture/glyphRenderer');
 (async () => {
-  const order = ['zaro', 'iko', 'diku', 'tiru', 'katu', 'penu', 'seku', 'sivu', 'oktu', 'novu', 'deku', 'levu', 'tolu'];
-  const cells = order.map((k, i) => `<div style="text-align:center;margin:10px"><div>${renderGlyph(resolveEdges(GLYPHS[k]), 'n' + i, 110)}</div><div style="color:#c9a86a;font-size:13px">${i} · ${k}</div></div>`).join('');
+  const order = ['iko', 'diku', 'tiru', 'katu', 'penu', 'seku', 'sivu', 'oktu', 'novu', 'deku', 'levu', 'tolu'];
+  const cells = order.map((k, i) => `<div style="text-align:center;margin:10px"><div>${renderGlyph(resolveEdges(GLYPHS[k]), 'n' + i, 110)}</div><div style="color:#c9a86a;font-size:13px">${i + 1} · ${k}</div></div>`).join('');
   const html = `<body style="background:#15110c;display:flex;flex-wrap:wrap;justify-content:center;padding:20px">${cells}</body>`;
   const f = path.join(__dirname, '..', 'public', '_nums.html');
   fs.writeFileSync(f, html);
