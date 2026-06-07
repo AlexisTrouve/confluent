@@ -21,14 +21,19 @@ const path = require('path');
 // Grille de NŒUDS partagés (centre + cardinaux + diagonales), PORTRAIT (x resserré, y étiré) :
 // collier horizontal G→D ⇒ glyphes plus hauts que larges, qui s'enchaînent dans la ligne.
 const NODES = {
-  c: [50, 50], n: [50, 14], s: [50, 86], e: [68, 50], w: [32, 50],
-  ne: [64, 26], nw: [36, 26], se: [64, 74], sw: [36, 74],
+  c: [50, 50], n: [50, 18], s: [50, 82], e: [82, 50], w: [18, 50],
+  ne: [73, 27], nw: [27, 27], se: [73, 73], sw: [27, 73],
 };
 const seg = (a, b) => { const [x1, y1] = NODES[a], [x2, y2] = NODES[b]; return `M${x1},${y1} L${x2},${y2}`; };
+// VRAI arc de cercle : on déduit le rayon de la corde + la flèche (bend) et on émet une commande SVG
+// 'A' (arc circulaire). POURQUOI : l'ancien arc quadratique faisait des POINTES aux jonctions → un
+// « cercle » de 4 arcs ressortait en étoile. Avec 'A' à rayon constant, 4 quarts forment un vrai rond.
 const arc = (a, b, bend) => {
   const [x1, y1] = NODES[a], [x2, y2] = NODES[b];
-  const mx = (x1 + x2) / 2, my = (y1 + y2) / 2, dx = x2 - x1, dy = y2 - y1, L = Math.hypot(dx, dy) || 1;
-  return `M${x1},${y1} Q${(mx - dy / L * bend).toFixed(1)},${(my + dx / L * bend).toFixed(1)} ${x2},${y2}`;
+  const c = Math.hypot(x2 - x1, y2 - y1) || 1, sag = Math.abs(bend) || 0.01;
+  const R = (c * c / 4 + sag * sag) / (2 * sag);
+  const sweep = bend > 0 ? 1 : 0;
+  return `M${x1},${y1} A${R.toFixed(1)},${R.toFixed(1)} 0 0 ${sweep} ${x2},${y2}`;
 };
 
 // Registre MODULAIRE (source unique : data/glyphes-anciens.json) : atomes (marque→edges) + glyphes (concept→atomes).
@@ -106,7 +111,7 @@ function renderGlyph(edges, uid, h = 180, weight = 16) {
   const sr = Math.floor(Math.random() * 9999), sg = Math.floor(Math.random() * 9999);
   const ropes = `<g filter="url(#rough${uid})">${strokes(edges, weight)}</g>`;
   // Cellule PORTRAIT (plus haute que large) → les glyphes s'enchaînent bien dans le collier horizontal.
-  const VBX = 14, VBY = -6, VBW = 72, VBH = 112, w = Math.round(h * VBW / VBH);
+  const VBX = 6, VBY = 6, VBW = 88, VBH = 88, w = Math.round(h * VBW / VBH);
   return `<svg viewBox="${VBX} ${VBY} ${VBW} ${VBH}" width="${w}" height="${h}">${defs(uid, sr, sg)}${ropes}</svg>`;
 }
 

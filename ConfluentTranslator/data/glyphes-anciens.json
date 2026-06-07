@@ -175,20 +175,6 @@
         "s"
       ]
     ],
-    "barre": [
-      [
-        "nw",
-        "se"
-      ],
-      [
-        "ne",
-        "sw"
-      ],
-      [
-        "n",
-        "s"
-      ]
-    ],
     "triangle": [
       [
         "sw",
@@ -250,20 +236,6 @@
         "ne"
       ]
     ],
-    "etoile": [
-      [
-        "n",
-        "s"
-      ],
-      [
-        "nw",
-        "se"
-      ],
-      [
-        "ne",
-        "sw"
-      ]
-    ],
     "point": [
       [
         "c",
@@ -319,6 +291,105 @@
         "e",
         7
       ]
+    ],
+    "chevroni": [
+      [
+        "nw",
+        "s"
+      ],
+      [
+        "s",
+        "ne"
+      ]
+    ],
+    "tirethaut": [
+      [
+        "nw",
+        "ne"
+      ]
+    ],
+    "tiretdiag": [
+      [
+        "c",
+        "ne"
+      ]
+    ],
+    "tick": [
+      [
+        "w",
+        "s"
+      ],
+      [
+        "s",
+        "ne"
+      ]
+    ],
+    "flechehd": [
+      [
+        "sw",
+        "ne"
+      ],
+      [
+        "ne",
+        "n"
+      ],
+      [
+        "ne",
+        "e"
+      ]
+    ],
+    "demicercleh": [
+      [
+        "w",
+        "e",
+        32
+      ]
+    ],
+    "carre": [
+      [
+        "nw",
+        "ne"
+      ],
+      [
+        "ne",
+        "se"
+      ],
+      [
+        "se",
+        "sw"
+      ],
+      [
+        "sw",
+        "nw"
+      ]
+    ],
+    "losange": [
+      [
+        "n",
+        "e"
+      ],
+      [
+        "e",
+        "s"
+      ],
+      [
+        "s",
+        "w"
+      ],
+      [
+        "w",
+        "n"
+      ]
+    ],
+    "chevron": [
+      [
+        "sw",
+        "n"
+      ],
+      [
+        "n",
+        "se"
+      ]
     ]
   },
   "glyphes": {
@@ -333,14 +404,16 @@
       "fr": "feu",
       "type": "racine",
       "atomes": [
-        "flamme"
+        "flamme",
+        "tiretdiag"
       ]
     },
     "toka": {
       "fr": "terre",
       "type": "racine",
       "atomes": [
-        "base"
+        "base",
+        "point"
       ]
     },
     "zeru": {
@@ -378,7 +451,7 @@
       "type": "racine",
       "atomes": [
         "anneau",
-        "etoile"
+        "plus"
       ]
     },
     "vena": {
@@ -393,7 +466,8 @@
       "fr": "pierre",
       "type": "racine",
       "atomes": [
-        "triangle"
+        "carre",
+        "tiretdiag"
       ]
     },
     "tasa": {
@@ -431,7 +505,8 @@
       "fr": "étoile",
       "type": "racine",
       "atomes": [
-        "etoile"
+        "croix",
+        "plus"
       ]
     },
     "kanu": {
@@ -453,7 +528,8 @@
       "fr": "voix",
       "type": "racine",
       "atomes": [
-        "bandes"
+        "bouche",
+        "traitV"
       ]
     },
     "muto": {
@@ -491,16 +567,15 @@
       "fr": "peau",
       "type": "racine",
       "atomes": [
-        "base",
-        "bandes"
+        "carre",
+        "traitH"
       ]
     },
     "bitu": {
       "fr": "dent",
       "type": "racine",
       "atomes": [
-        "triangle",
-        "point"
+        "triangle"
       ]
     },
     "loba": {
@@ -515,8 +590,8 @@
       "fr": "os",
       "type": "racine",
       "atomes": [
-        "traitV",
-        "bandes"
+        "jambe",
+        "point"
       ]
     },
     "pupu": {
@@ -547,6 +622,7 @@
       "fr": "pied",
       "type": "racine",
       "atomes": [
+        "demicercleh",
         "jambe"
       ]
     },
@@ -584,38 +660,16 @@
       "fr": "femme",
       "type": "racine",
       "atomes": [
-        "figure",
-        "coeurV"
+        "demicercleh",
+        "traitV"
       ]
     },
     "naku": {
       "fr": "fille",
       "type": "racine",
-      "edges": [
-        [
-          "n",
-          "c"
-        ],
-        [
-          "c",
-          "sw"
-        ],
-        [
-          "c",
-          "se"
-        ],
-        [
-          "nw",
-          "s"
-        ],
-        [
-          "ne",
-          "s"
-        ],
-        [
-          "ne",
-          "ne"
-        ]
+      "atomes": [
+        "triangle",
+        "tirethaut"
       ]
     },
     "tebo": {
@@ -690,8 +744,8 @@
       "fr": "tribu",
       "type": "racine",
       "atomes": [
-        "figure",
-        "maison"
+        "maison",
+        "chevron"
       ]
     },
     "lake": {
@@ -699,7 +753,7 @@
       "type": "racine",
       "atomes": [
         "maison",
-        "base"
+        "point"
       ]
     },
     "mitu": {
@@ -730,7 +784,7 @@
       "fr": "nuage",
       "type": "racine",
       "atomes": [
-        "voute",
+        "demicercleh",
         "point"
       ]
     },
@@ -738,7 +792,7 @@
       "fr": "sommet",
       "type": "racine",
       "atomes": [
-        "triangle",
+        "chevron",
         "traitV"
       ]
     },
@@ -746,57 +800,68 @@
       "fr": "temps",
       "type": "racine",
       "atomes": [
-        "anneau"
+        "anneau",
+        "chevron"
       ]
     },
     "tisa": {
       "fr": "présent",
       "type": "racine",
       "atomes": [
-        "anneau",
-        "plus"
+        "plus",
+        "tirethaut"
       ]
     },
     "ieso": {
       "fr": "passé",
       "type": "racine",
       "atomes": [
-        "anneau",
-        "traitH"
+        "chevroni",
+        "base"
       ]
     },
     "saze": {
       "fr": "futur",
       "type": "racine",
       "atomes": [
-        "anneau",
-        "traitV"
+        "flechehd"
       ]
     },
     "bami": {
       "fr": "nuit",
       "type": "racine",
       "atomes": [
-        "etoile",
-        "base"
+        "demicercleh",
+        "tiretdiag"
       ]
     },
     "musu": {
       "fr": "crépuscule",
       "type": "racine",
       "atomes": [
-        "coeurV",
-        "etoile"
+        "coeurV"
+      ],
+      "edges": [
+        [
+          "nw",
+          "se"
+        ],
+        [
+          "ne",
+          "sw"
+        ],
+        [
+          "n",
+          "s"
+        ]
       ]
     },
     "va": {
       "fr": "sujet",
       "type": "particule",
-      "edges": [
-        [
-          "n",
-          "s"
-        ]
+      "atomes": [
+        "jambe",
+        "tirethaut"
       ]
     },
     "vo": {
@@ -830,33 +895,17 @@
     "ve": {
       "fr": "origine",
       "type": "particule",
-      "edges": [
-        [
-          "n",
-          "s"
-        ],
-        [
-          "s",
-          "sw"
-        ],
-        [
-          "s",
-          "se"
-        ]
+      "atomes": [
+        "point",
+        "tirethaut"
       ]
     },
     "vu": {
       "fr": "instrument",
       "type": "particule",
-      "edges": [
-        [
-          "nw",
-          "se"
-        ],
-        [
-          "ne",
-          "sw"
-        ]
+      "atomes": [
+        "mainY",
+        "jambe"
       ]
     },
     "na": {
@@ -1155,11 +1204,9 @@
     "e": {
       "fr": "liaison e (dimens.)",
       "type": "liaison",
-      "edges": [
-        [
-          "w",
-          "e"
-        ]
+      "atomes": [
+        "traitH",
+        "point"
       ]
     },
     "ei": {
@@ -1193,30 +1240,23 @@
     "eo": {
       "fr": "liaison eo",
       "type": "liaison",
-      "edges": [
-        [
-          "w",
-          "e"
-        ],
-        [
-          "c",
-          "c"
-        ]
+      "atomes": [
+        "traitH",
+        "jambe"
       ]
     },
     "pesa": {
       "fr": "poisson",
       "type": "racine",
       "atomes": [
-        "coeurV",
-        "vague"
+        "losange"
       ]
     },
     "besi": {
       "fr": "bête",
       "type": "racine",
       "atomes": [
-        "triangle",
+        "chevron",
         "jambe"
       ]
     },
@@ -1256,16 +1296,15 @@
       "fr": "faucon",
       "type": "racine",
       "atomes": [
-        "voute",
-        "fleche"
+        "chevroni"
       ]
     },
     "asa": {
       "fr": "sacré",
       "type": "racine",
       "atomes": [
-        "etoile",
-        "point"
+        "triangle",
+        "plus"
       ]
     },
     "umi": {
@@ -1280,24 +1319,24 @@
       "fr": "esprit2",
       "type": "racine",
       "atomes": [
-        "voute",
-        "etoile"
+        "flamme",
+        "tirethaut"
       ]
     },
     "vito": {
       "fr": "bois(mat)",
       "type": "racine",
       "atomes": [
-        "plante",
-        "traitV"
+        "traitV",
+        "tiretdiag"
       ]
     },
     "seli": {
       "fr": "sel",
       "type": "racine",
       "atomes": [
-        "base",
-        "point"
+        "losange",
+        "tiretdiag"
       ]
     },
     "buki": {
@@ -1305,7 +1344,7 @@
       "type": "racine",
       "atomes": [
         "plante",
-        "triangle"
+        "traitV"
       ]
     },
     "lapu": {
@@ -1328,16 +1367,16 @@
       "fr": "baie",
       "type": "racine",
       "atomes": [
-        "goutte",
-        "anneau"
+        "oeil",
+        "tirethaut"
       ]
     },
     "tuba": {
       "fr": "tubercule",
       "type": "racine",
       "atomes": [
-        "base",
-        "triangle"
+        "losange",
+        "base"
       ]
     },
     "veka": {
@@ -1345,15 +1384,15 @@
       "type": "racine",
       "atomes": [
         "anneau",
-        "plante"
+        "jambe"
       ]
     },
     "molu": {
       "fr": "mollusque",
       "type": "racine",
       "atomes": [
-        "anneau",
-        "jambe"
+        "demicercleh",
+        "vague"
       ]
     },
     "seka": {
@@ -1384,8 +1423,8 @@
       "fr": "galette",
       "type": "racine",
       "atomes": [
-        "anneau",
-        "bandes"
+        "losange",
+        "traitH"
       ]
     },
     "pala": {
@@ -1401,7 +1440,7 @@
       "type": "racine",
       "atomes": [
         "maison",
-        "point"
+        "base"
       ]
     },
     "leva": {
@@ -1417,31 +1456,31 @@
       "type": "racine",
       "atomes": [
         "bandes",
-        "point"
+        "tiretdiag"
       ]
     },
     "pasu": {
       "fr": "rouge",
       "type": "racine",
       "atomes": [
-        "flamme",
-        "point"
+        "losange",
+        "traitV"
       ]
     },
     "pabe": {
       "fr": "blanc",
       "type": "racine",
       "atomes": [
-        "point",
-        "jambe"
+        "anneau",
+        "mainY"
       ]
     },
     "kate": {
       "fr": "noir",
       "type": "racine",
       "atomes": [
-        "croix",
-        "base"
+        "chevron",
+        "croix"
       ]
     },
     "mane": {
@@ -1514,16 +1553,16 @@
       "fr": "nouveau",
       "type": "racine",
       "atomes": [
-        "etoile",
-        "traitV"
+        "chevron",
+        "tirethaut"
       ]
     },
     "eabme": {
       "fr": "vieux",
       "type": "racine",
       "atomes": [
-        "bandes",
-        "traitH"
+        "chevron",
+        "base"
       ]
     },
     "baso": {
@@ -1554,16 +1593,16 @@
       "fr": "froid",
       "type": "racine",
       "atomes": [
-        "croix",
-        "point"
+        "losange",
+        "jambe"
       ]
     },
     "tame": {
       "fr": "clair",
       "type": "racine",
       "atomes": [
-        "etoile",
-        "traitH"
+        "losange",
+        "tirethaut"
       ]
     },
     "paka": {
@@ -1571,7 +1610,7 @@
       "type": "racine",
       "atomes": [
         "coeurV",
-        "traitH"
+        "jambe"
       ]
     },
     "selu": {
@@ -1586,8 +1625,8 @@
       "fr": "sombre",
       "type": "racine",
       "atomes": [
-        "croix",
-        "traitH"
+        "chevroni",
+        "tiretdiag"
       ]
     },
     "aska": {
@@ -1624,16 +1663,14 @@
       "fr": "un",
       "type": "racine",
       "atomes": [
-        "traitV",
-        "point"
+        "traitV"
       ]
     },
     "veri": {
       "fr": "vrai",
       "type": "racine",
       "atomes": [
-        "oeil",
-        "traitH"
+        "tick"
       ]
     },
     "kota": {
@@ -1648,17 +1685,16 @@
       "fr": "épreuve",
       "type": "racine",
       "atomes": [
-        "barre",
-        "point",
-        "point"
+        "triangle",
+        "croix"
       ]
     },
     "veli": {
       "fr": "vrai(b)",
       "type": "racine",
       "atomes": [
-        "oeil",
-        "traitV"
+        "tick",
+        "tirethaut"
       ]
     },
     "tosa": {
@@ -1674,9 +1710,8 @@
       "fr": "valeur",
       "type": "racine",
       "atomes": [
-        "etoile",
-        "anneau",
-        "point"
+        "losange",
+        "plus"
       ]
     },
     "kilu": {
@@ -1698,43 +1733,16 @@
     "konu": {
       "fr": "garder",
       "type": "racine",
-      "edges": [
-        [
-          "sw",
-          "nw"
-        ],
-        [
-          "nw",
-          "ne",
-          -7
-        ],
-        [
-          "ne",
-          "se"
-        ],
-        [
-          "n",
-          "c"
-        ],
-        [
-          "c",
-          "sw"
-        ],
-        [
-          "c",
-          "se"
-        ],
-        [
-          "ne",
-          "ne"
-        ]
+      "atomes": [
+        "carre",
+        "tick"
       ]
     },
     "vasi": {
       "fr": "pont",
       "type": "racine",
       "atomes": [
-        "traitH",
+        "demicercleh",
         "base"
       ]
     },
@@ -1743,8 +1751,7 @@
       "type": "racine",
       "atomes": [
         "maison",
-        "point",
-        "point"
+        "traitH"
       ]
     },
     "buka": {
@@ -1799,17 +1806,15 @@
       "type": "racine",
       "atomes": [
         "triangle",
-        "jambe",
-        "point"
+        "jambe"
       ]
     },
     "loku": {
       "fr": "lieu",
       "type": "racine",
       "atomes": [
-        "maison",
-        "base",
-        "point"
+        "carre",
+        "traitV"
       ]
     },
     "supu": {
@@ -1825,46 +1830,23 @@
       "fr": "zone",
       "type": "racine",
       "atomes": [
-        "anneau",
-        "base",
+        "carre",
         "point"
       ]
     },
     "vanu": {
       "fr": "navire",
       "type": "racine",
-      "edges": [
-        [
-          "n",
-          "c",
-          -7
-        ],
-        [
-          "c",
-          "s",
-          7
-        ],
-        [
-          "nw",
-          "s"
-        ],
-        [
-          "ne",
-          "s"
-        ],
-        [
-          "ne",
-          "ne"
-        ]
+      "atomes": [
+        "demicercleh"
       ]
     },
     "tabi": {
       "fr": "tablette",
       "type": "racine",
       "atomes": [
-        "base",
-        "bandes",
-        "point"
+        "carre",
+        "jambe"
       ]
     },
     "saki": {
@@ -1879,16 +1861,15 @@
       "fr": "glyphe",
       "type": "racine",
       "atomes": [
-        "bandes",
-        "point",
-        "point"
+        "losange",
+        "croix"
       ]
     },
     "zoku": {
       "fr": "secret",
       "type": "racine",
       "atomes": [
-        "oeil",
+        "carre",
         "croix"
       ]
     },
@@ -1897,8 +1878,7 @@
       "type": "racine",
       "atomes": [
         "base",
-        "traitH",
-        "point"
+        "tirethaut"
       ]
     },
     "nisa": {
@@ -1913,32 +1893,31 @@
       "fr": "profond",
       "type": "racine",
       "atomes": [
-        "coeurV",
-        "base"
+        "fleche",
+        "point"
       ]
     },
     "piki": {
       "fr": "pointe",
       "type": "racine",
       "atomes": [
-        "triangle",
-        "traitH"
+        "chevroni",
+        "traitV"
       ]
     },
     "siku": {
       "fr": "cercle",
       "type": "racine",
       "atomes": [
-        "anneau",
-        "croix"
+        "anneau"
       ]
     },
     "teki": {
       "fr": "route",
       "type": "racine",
       "atomes": [
-        "base",
-        "fleche"
+        "traitH",
+        "chevron"
       ]
     },
     "keku": {
@@ -1970,16 +1949,29 @@
       "fr": "guerre",
       "type": "racine",
       "atomes": [
-        "barre",
         "fleche"
+      ],
+      "edges": [
+        [
+          "nw",
+          "se"
+        ],
+        [
+          "ne",
+          "sw"
+        ],
+        [
+          "n",
+          "s"
+        ]
       ]
     },
     "zoka": {
       "fr": "ennemi",
       "type": "racine",
       "atomes": [
-        "figure",
-        "barre"
+        "mainY",
+        "chevroni"
       ]
     },
     "mavi": {
@@ -1995,42 +1987,39 @@
       "type": "racine",
       "atomes": [
         "goutte",
-        "barre"
+        "chevroni"
       ]
     },
     "leku": {
       "fr": "loi",
       "type": "racine",
       "atomes": [
-        "bandes",
-        "base",
-        "traitV"
+        "carre",
+        "plus"
       ]
     },
     "savu": {
       "fr": "serment",
       "type": "racine",
       "atomes": [
-        "anneau",
-        "mainY"
+        "mainY",
+        "tick"
       ]
     },
     "ita": {
       "fr": "être",
       "type": "racine",
       "atomes": [
-        "traitV",
-        "anneau",
-        "traitV"
+        "figure",
+        "tirethaut"
       ]
     },
     "osi": {
       "fr": "mort",
       "type": "racine",
       "atomes": [
-        "barre",
-        "base",
-        "point"
+        "croix",
+        "tirethaut"
       ]
     },
     "eka": {
@@ -2083,17 +2072,15 @@
       "fr": "origine",
       "type": "racine",
       "atomes": [
-        "point",
-        "anneau",
-        "point"
+        "goutte",
+        "tirethaut"
       ]
     },
     "apo": {
       "fr": "oiseau",
       "type": "racine",
       "atomes": [
-        "voute",
-        "fleche",
+        "chevron",
         "point"
       ]
     },
@@ -2131,70 +2118,40 @@
     "aita": {
       "fr": "ancêtre",
       "type": "racine",
-      "edges": [
-        [
-          "n",
-          "c"
-        ],
-        [
-          "c",
-          "sw"
-        ],
-        [
-          "c",
-          "se"
-        ],
-        [
-          "n",
-          "s"
-        ],
-        [
-          "nw",
-          "se"
-        ],
-        [
-          "ne",
-          "sw"
-        ],
-        [
-          "ne",
-          "ne"
-        ]
+      "atomes": [
+        "figure",
+        "jambe"
       ]
     },
     "puli": {
       "fr": "esprit(c)",
       "type": "racine",
       "atomes": [
-        "voute",
-        "point",
-        "point"
+        "flamme"
       ]
     },
     "ora": {
       "fr": "aurore",
       "type": "racine",
       "atomes": [
-        "voute",
-        "etoile",
-        "point"
+        "demicercleh",
+        "plus"
       ]
     },
     "mori": {
       "fr": "souvenir",
       "type": "racine",
       "atomes": [
-        "oeil",
-        "anneau"
+        "anneau",
+        "tiretdiag"
       ]
     },
     "novi": {
       "fr": "présage",
       "type": "racine",
       "atomes": [
-        "oeil",
-        "etoile",
-        "point"
+        "triangle",
+        "tiretdiag"
       ]
     },
     "muta": {
@@ -2226,18 +2183,16 @@
       "fr": "rhombe",
       "type": "racine",
       "atomes": [
-        "anneau",
-        "croix",
-        "traitH"
+        "losange",
+        "point"
       ]
     },
     "nave": {
       "fr": "gravure",
       "type": "racine",
       "atomes": [
-        "base",
-        "croix",
-        "point"
+        "bandes",
+        "croix"
       ]
     },
     "kosti": {
@@ -2260,9 +2215,8 @@
       "fr": "sombre(b)",
       "type": "racine",
       "atomes": [
-        "croix",
-        "base",
-        "traitH"
+        "chevroni",
+        "croix"
       ]
     },
     "nutu": {
@@ -2300,8 +2254,7 @@
       "type": "racine",
       "atomes": [
         "anneau",
-        "base",
-        "traitV"
+        "tirethaut"
       ]
     },
     "takavi": {
@@ -2333,34 +2286,31 @@
       "fr": "distance",
       "type": "racine",
       "atomes": [
-        "traitH",
-        "traitH"
+        "base",
+        "jambe"
       ]
     },
     "melu": {
       "fr": "doux",
       "type": "racine",
       "atomes": [
-        "vague",
-        "coeurV",
-        "traitV"
+        "demicercleh",
+        "traitH"
       ]
     },
     "kiru": {
       "fr": "échange",
       "type": "racine",
       "atomes": [
-        "mainY",
-        "mainY"
+        "croix"
       ]
     },
     "tumi": {
       "fr": "enterrer",
       "type": "verbe",
       "atomes": [
-        "base",
         "fleche",
-        "point"
+        "base"
       ]
     },
     "talu": {
@@ -2384,8 +2334,8 @@
       "fr": "lever",
       "type": "verbe",
       "atomes": [
-        "mainY",
-        "traitV"
+        "flechehd",
+        "traitH"
       ]
     },
     "nomi": {
@@ -2393,17 +2343,15 @@
       "type": "racine",
       "atomes": [
         "bandes",
-        "anneau",
-        "point"
+        "mainY"
       ]
     },
     "tavu": {
       "fr": "outil",
       "type": "racine",
       "atomes": [
-        "triangle",
         "traitV",
-        "point"
+        "triangle"
       ]
     },
     "savo": {
@@ -2448,17 +2396,16 @@
       "fr": "sommeil",
       "type": "racine",
       "atomes": [
-        "coeurV",
-        "base",
-        "point"
+        "demicercleh",
+        "chevron"
       ]
     },
     "teku": {
       "fr": "technique",
       "type": "racine",
       "atomes": [
-        "mainY",
-        "triangle"
+        "plus",
+        "mainY"
       ]
     },
     "tenu": {
@@ -2515,8 +2462,7 @@
       "fr": "vigile",
       "type": "racine",
       "atomes": [
-        "oeil",
-        "base",
+        "triangle",
         "point"
       ]
     },
@@ -2532,17 +2478,29 @@
       "fr": "créateur",
       "type": "racine",
       "atomes": [
-        "mainY",
-        "etoile"
+        "mainY"
+      ],
+      "edges": [
+        [
+          "nw",
+          "se"
+        ],
+        [
+          "ne",
+          "sw"
+        ],
+        [
+          "n",
+          "s"
+        ]
       ]
     },
     "vaku": {
       "fr": "allié",
       "type": "racine",
       "atomes": [
-        "figure",
-        "coeurV",
-        "traitV"
+        "mainY",
+        "tirethaut"
       ]
     },
     "zo": {
@@ -2558,23 +2516,22 @@
       "type": "particule",
       "atomes": [
         "croix",
-        "traitH",
-        "point"
+        "tick"
       ]
     },
     "zob": {
       "fr": "interdit",
       "type": "particule",
       "atomes": [
-        "croix",
-        "barre"
+        "anneau",
+        "traitV"
       ]
     },
     "ok": {
       "fr": "impératif",
       "type": "conjugateur",
       "atomes": [
-        "fleche",
+        "flechehd",
         "traitV"
       ]
     },
@@ -2582,16 +2539,15 @@
       "fr": "là-bas",
       "type": "racine",
       "atomes": [
-        "fleche",
-        "point"
+        "flechehd",
+        "tirethaut"
       ]
     },
     "at": {
       "fr": "passé",
       "type": "conjugateur",
       "atomes": [
-        "traitH",
-        "point",
+        "chevroni",
         "point"
       ]
     },
@@ -2599,9 +2555,8 @@
       "fr": "passé-regret",
       "type": "conjugateur",
       "atomes": [
-        "traitH",
         "coeurV",
-        "point"
+        "base"
       ]
     },
     "ait": {
@@ -2616,26 +2571,24 @@
       "fr": "passé-myth",
       "type": "conjugateur",
       "atomes": [
-        "traitH",
-        "etoile",
-        "point"
+        "chevroni",
+        "chevron"
       ]
     },
     "en": {
       "fr": "futur",
       "type": "conjugateur",
       "atomes": [
-        "fleche",
-        "point",
-        "point"
+        "flechehd",
+        "jambe"
       ]
     },
     "il": {
       "fr": "accompli",
       "type": "conjugateur",
       "atomes": [
-        "point",
-        "point"
+        "tick",
+        "jambe"
       ]
     },
     "eol": {
@@ -2643,8 +2596,7 @@
       "type": "conjugateur",
       "atomes": [
         "anneau",
-        "traitH",
-        "traitV"
+        "traitH"
       ]
     },
     "eon": {
@@ -2652,8 +2604,7 @@
       "type": "conjugateur",
       "atomes": [
         "anneau",
-        "point",
-        "jambe"
+        "chevroni"
       ]
     },
     "eom": {
@@ -2661,8 +2612,7 @@
       "type": "conjugateur",
       "atomes": [
         "anneau",
-        "etoile",
-        "traitV"
+        "croix"
       ]
     },
     "es": {
@@ -2687,8 +2637,7 @@
       "type": "conjugateur",
       "atomes": [
         "bandes",
-        "traitH",
-        "point"
+        "traitV"
       ]
     },
     "diku": {
