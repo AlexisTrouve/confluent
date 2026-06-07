@@ -12,7 +12,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
-const { GLYPHS, ATOMS_LIB, resolveEdges, orient, renderGlyph, renderCollier } = require('../src/core/ecriture/glyphRenderer');
+const { GLYPHS, ATOMS_LIB, NODES, resolveEdges, orient, renderGlyph, renderCollier } = require('../src/core/ecriture/glyphRenderer');
 
 function main() {
   // Cellule de revue : un glyphe + son label (id optionnel pour cibler en capture E2E).
@@ -25,12 +25,22 @@ function main() {
   const entries = Object.entries(GLYPHS);
 
   // VÉRIF DOUBLONS : deux concepts produisant le MÊME glyphe (mêmes edges normalisés) = collision.
-  // Signature VISUELLE : un point central ['c','c'] est INVISIBLE si un trait passe déjà par le
-  // centre → on l'ignore, sinon deux glyphes « base » et « base+point caché » paraîtraient identiques
-  // tout en ayant des sigs différentes (l'angle mort de l'ancien check).
+  // Signature RASTERISÉE : on « peint » le glyphe avec l'ÉPAISSEUR réelle des boudins (rayon R) sur
+  // une grille, et on compare les images. POURQUOI : la sig géométrique ratait les doublons visuels
+  // quand un petit repère (point/pip) tombe SOUS un trait épais (centre OU n'importe où) → invisible.
+  // COMMENT : pour chaque arête (trait/arc/point) on remplit les cellules à distance ≤ R ; deux
+  // glyphes au même ensemble de cellules sont identiques à l'œil. (R ≈ demi-largeur du boudin.)
+  const R = 9, STEP = 3;
   const sig = (edges) => {
-    const thruC = edges.some(e => e[0] !== e[1] && (e[0] === 'c' || e[1] === 'c'));
-    return edges.filter(e => !(e[0] === 'c' && e[1] === 'c' && thruC)).map(e => orient(e).join('|')).sort().join(';');
+    const F = new Set();
+    const mark = (x, y) => { for (let gx = Math.floor((x - R) / STEP) * STEP; gx <= x + R; gx += STEP) for (let gy = Math.floor((y - R) / STEP) * STEP; gy <= y + R; gy += STEP) if ((gx - x) ** 2 + (gy - y) ** 2 <= R * R) F.add(gx + ',' + gy); };
+    for (const e of edges) {
+      const [a, b] = e, [x1, y1] = NODES[a], [x2, y2] = NODES[b];
+      if (a === b) { mark(x1, y1); continue; }
+      if (e.length === 3) { const mx = (x1 + x2) / 2, my = (y1 + y2) / 2, dx = x2 - x1, dy = y2 - y1, L = Math.hypot(dx, dy) || 1, cx = mx - dy / L * e[2], cy = my + dx / L * e[2]; for (let t = 0; t <= 1; t += 0.05) { const u = 1 - t, px = u * u * x1 + 2 * u * t * cx + t * t * x2, py = u * u * y1 + 2 * u * t * cy + t * t * y2; mark(px, py); } }
+      else { for (let t = 0; t <= 1; t += 0.04) mark(x1 + (x2 - x1) * t, y1 + (y2 - y1) * t); }
+    }
+    return [...F].sort().join(';');
   };
   const bySig = {};
   for (const [cf, g] of entries) { const s = sig(resolveEdges(g)); (bySig[s] = bySig[s] || []).push(cf + '=' + g.fr); }
