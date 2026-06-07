@@ -54,11 +54,19 @@ function grain() {
     + `<rect width="100%" height="100%" filter="url(#gr${s})"/></svg>`;
 }
 
-// Aplatit les mots en perles, en marquant le début de chaque mot (espace de séparation).
-function toBeads(words) {
-  const beads = [];
-  for (const w of words) (w.glyphes || []).forEach((k, i) => beads.push({ key: k, wordStart: i === 0 }));
-  return beads;
+// Découpe en LIGNES en gardant chaque MOT entier : si le mot n'entre pas sur la ligne courante
+// (et qu'elle n'est pas vide), on passe à la ligne suivante — un mot n'est JAMAIS coupé.
+// (Un mot plus long que perLine occupe seul sa ligne et déborde — cas rare, mots = 1-3 glyphes.)
+function toLines(words, perLine) {
+  const lines = []; let cur = [];
+  for (const w of words) {
+    const g = w.glyphes || [];
+    if (!g.length) continue;
+    if (cur.length && cur.length + g.length > perLine) { lines.push(cur); cur = []; }
+    g.forEach((k, i) => cur.push({ key: k, wordStart: i === 0 }));
+  }
+  if (cur.length) lines.push(cur);
+  return lines;
 }
 
 // Une perle (glyphe redessiné à neuf). Marge gauche élargie en début de mot = séparation des mots.
@@ -77,11 +85,8 @@ function bead(b, uid, h) {
 function renderBook(words, opts = {}) {
   const th = THEMES[opts.theme] || THEMES.tablette;
   const perLine = opts.perLine || 18, linesPerPage = opts.linesPerPage || 13, glyphH = opts.glyphH || 58, title = opts.title || '';
-  const beads = toBeads(words);
-
-  // Découpe en LIGNES (serrées) puis en PAGES.
-  const lines = [];
-  for (let i = 0; i < beads.length; i += perLine) lines.push(beads.slice(i, i + perLine));
+  // Lignes word-aware (mots entiers) puis PAGES.
+  const lines = toLines(words, perLine);
   const pages = [];
   for (let i = 0; i < lines.length; i += linesPerPage) pages.push(lines.slice(i, i + linesPerPage));
   if (!pages.length) pages.push([]);
@@ -116,4 +121,4 @@ function renderBook(words, opts = {}) {
     + `<style>${css}</style></head><body>${pages.map(pageHtml).join('')}</body></html>`;
 }
 
-module.exports = { renderBook, THEMES };
+module.exports = { renderBook, THEMES, toLines };
