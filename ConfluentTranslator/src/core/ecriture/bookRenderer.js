@@ -84,12 +84,20 @@ function bead(b, uid, h) {
  */
 function renderBook(words, opts = {}) {
   const th = THEMES[opts.theme] || THEMES.tablette;
-  const perLine = opts.perLine || 18, linesPerPage = opts.linesPerPage || 13, glyphH = opts.glyphH || 58, title = opts.title || '';
-  // Lignes word-aware (mots entiers) puis PAGES.
+  const perLine = opts.perLine || 18, glyphH = opts.glyphH || 58, title = opts.title || '';
+  // Lignes word-aware (mots entiers).
   const lines = toLines(words, perLine);
+  // Capacité/page CALCULÉE depuis la géométrie A4 (jamais de nombre magique ni de contenu coupé) :
+  // hauteur utile = A4 − paddings haut/bas ; hauteur d'une ligne = glyphe + réglure + interligne.
+  // La 1re page réserve une ligne pour le titre. opts.linesPerPage force la valeur si fourni.
+  const PX_MM = 3.7795, USABLE_MM = 297 - 20 - 16;
+  const rowMm = (glyphH + 16) / PX_MM;
+  const capRest = opts.linesPerPage || Math.max(1, Math.floor(USABLE_MM / rowMm));
+  const capFirst = Math.max(1, capRest - (title ? 1 : 0));
   const pages = [];
-  for (let i = 0; i < lines.length; i += linesPerPage) pages.push(lines.slice(i, i + linesPerPage));
+  for (let i = 0; i < lines.length;) { const cap = pages.length ? capRest : capFirst; pages.push(lines.slice(i, i + cap)); i += cap; }
   if (!pages.length) pages.push([]);
+  let gli = 0; // index de ligne GLOBAL (uid de filtre uniques sur tout le document, pages de tailles variables).
 
   const lineHtml = (ln, li) => `<div class="line">`
     + `<div class="grow">${ln.map((b, i) => bead(b, `l${li}_${i}`, glyphH)).join('')}</div>`
@@ -97,7 +105,7 @@ function renderBook(words, opts = {}) {
 
   const pageHtml = (pg, n) => `<section class="page" style="--grain:${th.grain != null ? th.grain : 0.5}">${grain()}<div class="margin">${ruledMargin(900, th.rule)}</div>`
     + (n === 0 && title ? `<div class="title">${title}</div><div class="rule">${ruledLine(W_TEXT, th.rule, 1.8)}</div>` : '')
-    + `<div class="col">${pg.map((ln, li) => lineHtml(ln, n * linesPerPage + li)).join('')}</div>`
+    + `<div class="col">${pg.map(ln => lineHtml(ln, gli++)).join('')}</div>`
     + `<div class="folio">${n + 1} / ${pages.length}</div></section>`;
 
   // CSS : @page A4 ; chaque .page = une feuille (break-after) ; réglures + marge gauche.

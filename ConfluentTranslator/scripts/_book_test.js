@@ -4,7 +4,7 @@ const { chromium } = require('playwright');
 const { convert } = require('./confluent2glyphes');
 const { renderBook } = require('../src/core/ecriture/bookRenderer');
 (async () => {
-  const txt = Array(22).fill('va naki vo ura mirak u').join(' ');
+  const txt = Array(120).fill('va naki vo ura mirak u').join(' ');
   const r = convert(txt);
   if (r.erreur) { console.error(r.erreur); process.exit(1); }
   const html = renderBook(r.glyphes, { theme: process.argv[2] || 'tablette', title: 'le livre de la foi' });
