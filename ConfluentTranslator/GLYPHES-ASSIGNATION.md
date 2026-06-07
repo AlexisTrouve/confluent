@@ -13,6 +13,13 @@ Glyphes des 41 groupes marqués `_todo` (en attente). On assigne groupe par grou
 
 ---
 
+## Complétion de couverture (« tout est en glyphe ? »)
+Audit après déconfliction : seules 472/759 formes du lexique rendaient. Tous les trous **ATOMIQUES** comblés (0 restant) :
+- **Suffixes d'infinitif** (k, s, n, m, ak, vik, an) glyphés = marqueurs verbaux ; `confluent2glyphes` gère désormais le type 'infinitif' (racine + suffixe) → débloque les verbes.
+- **Pronoms** (miki=je, sinu=tu ; nous/vous = +su composé), **auxiliaires** avoir/être (iku, euma, oape, uila, aila, oolu, zunop — formes à base de `figure`), **mots-fonction** (se, lo, ku, riku, ko, tora, ze, ki, susu, nasu, oubo, isu, alo, ta), **~28 verbes** dont la racine n'était pas un glyphe indépendant (glyphés directement, forme évoquant l'action).
+- **293 glyphes, 0 doublon. Couverture directe = 585/759 (77 %).**
+- **Reste (~174)** = compositions à **3+ racines** (noms propres `Uraakota`, dérivés `korioaoki`=courageux…) que le **décomposeur morpho découpe mal** → c'est LE DÉCOMPOSEUR à améliorer, pas des glyphes manquants.
+
 ## Assignations
 
 ### Groupe — {pierre, dent}

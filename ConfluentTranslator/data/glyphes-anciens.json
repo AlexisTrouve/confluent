@@ -2807,6 +2807,501 @@
           "e"
         ]
       ]
+    },
+    "s": {
+      "fr": "s",
+      "type": "suffixe",
+      "atomes": [
+        "tiretdiag"
+      ]
+    },
+    "n": {
+      "fr": "n",
+      "type": "suffixe",
+      "atomes": [
+        "tirethaut"
+      ]
+    },
+    "m": {
+      "fr": "m",
+      "type": "suffixe",
+      "atomes": [
+        "jambe",
+        "tiretdiag"
+      ]
+    },
+    "ak": {
+      "fr": "ak",
+      "type": "suffixe",
+      "atomes": [
+        "chevroni",
+        "jambe"
+      ]
+    },
+    "an": {
+      "fr": "an",
+      "type": "suffixe",
+      "atomes": [
+        "traitH",
+        "tiretdiag"
+      ]
+    },
+    "vik": {
+      "fr": "vik",
+      "type": "suffixe",
+      "atomes": [
+        "mainY",
+        "chevron"
+      ]
+    },
+    "k": {
+      "fr": "k",
+      "type": "suffixe",
+      "atomes": [
+        "tiretdiag",
+        "chevron"
+      ]
+    },
+    "ku": {
+      "fr": "ku",
+      "type": "interrogation",
+      "atomes": [
+        "tick",
+        "point"
+      ]
+    },
+    "riku": {
+      "fr": "riku",
+      "type": "interrogation",
+      "atomes": [
+        "tick",
+        "chevron"
+      ]
+    },
+    "ko": {
+      "fr": "tova",
+      "type": "determinant",
+      "atomes": [
+        "tiretdiag",
+        "base"
+      ]
+    },
+    "tora": {
+      "fr": "taki",
+      "type": "demonstratif",
+      "atomes": [
+        "flechehd",
+        "chevron"
+      ]
+    },
+    "ze": {
+      "fr": "dessus",
+      "type": "particule",
+      "atomes": [
+        "tirethaut",
+        "tiretdiag"
+      ]
+    },
+    "ki": {
+      "fr": "qui",
+      "type": "relatif",
+      "atomes": [
+        "tiretdiag",
+        "tick"
+      ]
+    },
+    "miki": {
+      "fr": "je",
+      "type": "pronom",
+      "atomes": [
+        "figure",
+        "tiretdiag"
+      ]
+    },
+    "sinu": {
+      "fr": "tu",
+      "type": "pronom",
+      "atomes": [
+        "figure",
+        "chevron"
+      ]
+    },
+    "susu": {
+      "fr": "tous",
+      "type": "quantificateur",
+      "atomes": [
+        "bandes",
+        "tick"
+      ]
+    },
+    "nasu": {
+      "fr": "leurs",
+      "type": "possessif",
+      "atomes": [
+        "mainY",
+        "triangle"
+      ]
+    },
+    "oubo": {
+      "fr": "chaque",
+      "type": "quantificateur",
+      "atomes": [
+        "carre",
+        "chevroni"
+      ]
+    },
+    "isu": {
+      "fr": "avant",
+      "type": "particule",
+      "atomes": [
+        "chevroni",
+        "tick"
+      ]
+    },
+    "alo": {
+      "fr": "apres",
+      "type": "particule",
+      "atomes": [
+        "chevroni",
+        "triangle"
+      ]
+    },
+    "se": {
+      "fr": "se",
+      "type": "particule",
+      "atomes": [
+        "jambe",
+        "tick",
+        "tirethaut"
+      ]
+    },
+    "lo": {
+      "fr": "lo",
+      "type": "particule",
+      "atomes": [
+        "tirethaut",
+        "tick",
+        "point"
+      ]
+    },
+    "ta": {
+      "fr": "tandis",
+      "type": "particule",
+      "atomes": [
+        "chevron",
+        "tick",
+        "point"
+      ]
+    },
+    "iku": {
+      "fr": "ai",
+      "type": "auxiliaire",
+      "atomes": [
+        "figure",
+        "tick"
+      ]
+    },
+    "euma": {
+      "fr": "as",
+      "type": "auxiliaire",
+      "atomes": [
+        "figure",
+        "tick",
+        "tirethaut"
+      ]
+    },
+    "oape": {
+      "fr": "a",
+      "type": "auxiliaire",
+      "atomes": [
+        "figure",
+        "mainY"
+      ]
+    },
+    "uila": {
+      "fr": "avons",
+      "type": "auxiliaire",
+      "atomes": [
+        "figure",
+        "tick",
+        "jambe"
+      ]
+    },
+    "aila": {
+      "fr": "avez",
+      "type": "auxiliaire",
+      "atomes": [
+        "figure",
+        "chevroni"
+      ]
+    },
+    "oolu": {
+      "fr": "ont",
+      "type": "auxiliaire",
+      "atomes": [
+        "figure",
+        "tick",
+        "chevron"
+      ]
+    },
+    "zunop": {
+      "fr": "etre",
+      "type": "verbe_irregulier",
+      "atomes": [
+        "figure",
+        "plus",
+        "chevron"
+      ]
+    },
+    "asanik": {
+      "fr": "sacraliser",
+      "type": "racine",
+      "atomes": [
+        "triangle",
+        "tick",
+        "jambe"
+      ]
+    },
+    "asaum": {
+      "fr": "vénérer",
+      "type": "racine",
+      "atomes": [
+        "triangle",
+        "tick",
+        "chevron"
+      ]
+    },
+    "kilak": {
+      "fr": "echanger",
+      "type": "verbe",
+      "atomes": [
+        "flechehd",
+        "croix"
+      ]
+    },
+    "bopak": {
+      "fr": "frapper",
+      "type": "verbe",
+      "atomes": [
+        "flechehd",
+        "tick",
+        "point"
+      ]
+    },
+    "zakam": {
+      "fr": "garder",
+      "type": "verbe",
+      "atomes": [
+        "maison",
+        "tick"
+      ]
+    },
+    "tekam": {
+      "fr": "marcher",
+      "type": "verbe",
+      "atomes": [
+        "jambe",
+        "chevron",
+        "tirethaut"
+      ]
+    },
+    "kulak": {
+      "fr": "couler",
+      "type": "verbe",
+      "atomes": [
+        "vague",
+        "jambe"
+      ]
+    },
+    "kitan": {
+      "fr": "donner",
+      "type": "verbe",
+      "atomes": [
+        "mainY",
+        "flechehd"
+      ]
+    },
+    "vosak": {
+      "fr": "dire",
+      "type": "verbe",
+      "atomes": [
+        "bouche",
+        "tiretdiag"
+      ]
+    },
+    "mokis": {
+      "fr": "apprendre",
+      "type": "verbe",
+      "atomes": [
+        "oeil",
+        "chevron"
+      ]
+    },
+    "kisun": {
+      "fr": "transmettre",
+      "type": "verbe",
+      "atomes": [
+        "mainY",
+        "flechehd",
+        "tirethaut"
+      ]
+    },
+    "takan": {
+      "fr": "porter",
+      "type": "verbe",
+      "atomes": [
+        "mainY",
+        "tirethaut",
+        "jambe"
+      ]
+    },
+    "zanak": {
+      "fr": "chasser",
+      "type": "verbe",
+      "atomes": [
+        "chevroni",
+        "flechehd"
+      ]
+    },
+    "onak": {
+      "fr": "invoquer",
+      "type": "verbe",
+      "atomes": [
+        "bouche",
+        "tirethaut"
+      ]
+    },
+    "vukan": {
+      "fr": "creuser",
+      "type": "verbe",
+      "atomes": [
+        "fleche",
+        "tiretdiag"
+      ]
+    },
+    "tikam": {
+      "fr": "ecouter",
+      "type": "verbe",
+      "atomes": [
+        "oeil",
+        "tick"
+      ]
+    },
+    "pasik": {
+      "fr": "capturer",
+      "type": "verbe",
+      "atomes": [
+        "maison",
+        "mainY"
+      ]
+    },
+    "pisak": {
+      "fr": "pecher",
+      "type": "verbe",
+      "atomes": [
+        "losange",
+        "tick"
+      ]
+    },
+    "aliuk": {
+      "fr": "planer",
+      "type": "verbe",
+      "atomes": [
+        "chevron",
+        "tirethaut",
+        "point"
+      ]
+    },
+    "kekak": {
+      "fr": "resonner",
+      "type": "verbe",
+      "atomes": [
+        "vague",
+        "chevron"
+      ]
+    },
+    "pulum": {
+      "fr": "battre",
+      "type": "verbe",
+      "atomes": [
+        "coeurV",
+        "tick"
+      ]
+    },
+    "vemep": {
+      "fr": "voler",
+      "type": "verbe",
+      "atomes": [
+        "flechehd",
+        "triangle",
+        "point"
+      ]
+    },
+    "polas": {
+      "fr": "pouvoir",
+      "type": "verbe",
+      "atomes": [
+        "plus",
+        "tick"
+      ]
+    },
+    "simus": {
+      "fr": "fumer",
+      "type": "verbe",
+      "atomes": [
+        "vague",
+        "tirethaut"
+      ]
+    },
+    "palus": {
+      "fr": "griller",
+      "type": "verbe",
+      "atomes": [
+        "flamme",
+        "base"
+      ]
+    },
+    "minet": {
+      "fr": "boire",
+      "type": "verbe",
+      "atomes": [
+        "bouche",
+        "goutte"
+      ]
+    },
+    "tuvas": {
+      "fr": "ouvrir",
+      "type": "verbe",
+      "atomes": [
+        "demicercleh",
+        "tick"
+      ]
+    },
+    "pasak": {
+      "fr": "prendre",
+      "type": "verbe",
+      "atomes": [
+        "mainY",
+        "croix",
+        "tirethaut"
+      ]
+    },
+    "milis": {
+      "fr": "decouvrir",
+      "type": "verbe",
+      "atomes": [
+        "oeil",
+        "chevron",
+        "tirethaut"
+      ]
+    },
+    "lapis": {
+      "fr": "infuser",
+      "type": "verbe",
+      "atomes": [
+        "goutte",
+        "plus"
+      ]
     }
   }
 }

@@ -38,14 +38,16 @@ function resolveWord(word) {
     return pieces;
   }
 
-  const rads = extractRadicals(word, ANCIEN.verbalSuffixes, ANCIEN.conjugateurCodes); // 3. verbe conjugué
+  const rads = extractRadicals(word, ANCIEN.verbalSuffixes, ANCIEN.conjugateurCodes); // 3. verbe (conjugué OU infinitif)
+  // On cherche un découpage racine + suffixe où LES DEUX sont glyphés (conjugateur OU suffixe d'infinitif).
   for (const r of (rads || [])) {
-    if (r.type === 'conjugaison' && GLYPHS[r.radical || '']) {
-      const conj = r.suffix;
-      if (!GLYPHS[conj]) throw { word, piece: conj, raison: `conjugateur « ${conj} » non glyphé (racine ${r.radical} OK)` };
-      return [r.radical, conj];
+    if ((r.type === 'conjugaison' || r.type === 'infinitif') && GLYPHS[r.radical || ''] && GLYPHS[r.suffix]) {
+      return [r.radical, r.suffix];
     }
   }
+  // Racine reconnue mais suffixe verbal pas (encore) glyphé → on pointe précisément le suffixe manquant.
+  const near = (rads || []).find(r => (r.type === 'conjugaison' || r.type === 'infinitif') && GLYPHS[r.radical || '']);
+  if (near) throw { word, piece: near.suffix, raison: `suffixe verbal « ${near.suffix} » non glyphé (racine ${near.radical} OK)` };
   throw { word, piece: word, raison: 'aucun glyphe, ni composition, ni verbe reconnu' };
 }
 
