@@ -43,12 +43,20 @@ function main() {
     return [...F].sort().join(';');
   };
   const bySig = {};
-  for (const [cf, g] of entries) { const s = sig(resolveEdges(g)); (bySig[s] = bySig[s] || []).push(cf + '=' + g.fr); }
+  for (const [cf, g] of entries) { const s = sig(resolveEdges(g)); (bySig[s] = bySig[s] || []).push(cf); }
   const dups = Object.values(bySig).filter(a => a.length > 1);
-  console.log(dups.length ? '⚠ DOUBLONS (' + dups.length + ') : ' + dups.map(a => a.join('/')).join(' · ') : '✓ aucun doublon');
+  const lbl = (cf) => cf + ' = ' + GLYPHS[cf].fr;
+  console.log(dups.length ? '⚠ DOUBLONS (' + dups.length + ') : ' + dups.map(a => a.map(lbl).join('/')).join(' · ') : '✓ aucun doublon');
   const dupWarn = dups.length
-    ? `<div style="background:#3a1a1a;color:#f0a0a0;padding:10px;text-align:center;border-radius:8px;margin:0 auto 14px;max-width:700px">⚠ ${dups.length} doublon(s) : ${dups.map(a => a.join(' = ')).join(' · ')}</div>`
+    ? `<div style="background:#3a1a1a;color:#f0a0a0;padding:10px;text-align:center;border-radius:8px;margin:0 auto 14px;max-width:760px">⚠ ${dups.length} groupe(s) de doublons visuels — voir la section ci-dessous</div>`
     : `<div style="color:#7aa05a;text-align:center;margin-bottom:14px">✓ aucun doublon</div>`;
+  // Section DOUBLONS : chaque GROUPE de glyphes visuellement identiques dans son cadre → vérif facile.
+  const dupCell = (cf, uid) => `<div style="text-align:center;margin:8px"><div>${renderGlyph(resolveEdges(GLYPHS[cf]), uid, 120)}</div><div style="color:#c9a86a;font-size:12px">${lbl(cf)}</div></div>`;
+  const dupSection = dups.length
+    ? `<hr style="border-color:#3a2c1c;margin:22px 0"><h3 style="color:#f0a0a0;text-align:center">⚠ DOUBLONS VISUELS — ${dups.length} groupes (glyphes identiques regroupés)</h3>`
+      + dups.map((grp, gi) => `<div style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;background:#241a10;border:1px solid #5a3a2a;border-radius:8px;margin:10px auto;padding:6px;max-width:fit-content">`
+        + grp.map((cf, i) => dupCell(cf, 'dup' + gi + '_' + i)).join('') + '</div>').join('')
+    : '';
 
   // Revue GROUPÉE par type (validation par catégorie).
   const sectionOf = (...types) => entries.filter(([, g]) => types.includes(g.type))
@@ -64,6 +72,7 @@ function main() {
   const html = `<!doctype html><meta charset="utf-8"><body style="background:#15110c;font-family:system-ui;padding:30px">`
     + `<h2 style="color:#c9a86a;text-align:center">Glyphes du Gouffre — registre (${entries.length})</h2>`
     + dupWarn
+    + dupSection
     + `<div style="display:flex;justify-content:center;margin:0 auto 10px;max-width:fit-content">${collier}</div>`
     + sec('PARTICULES + CONJUGATEURS', sectionOf('particule', 'conjugateur'))
     + sec('LIAISONS (16)', sectionOf('liaison'))
