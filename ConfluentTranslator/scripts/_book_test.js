@@ -3,15 +3,11 @@ const fs = require('fs'), path = require('path');
 const { chromium } = require('playwright');
 const { renderMarkdownBook } = require('../src/core/ecriture/bookMarkdown');
 (async () => {
-  const para = Array(8).fill('va naki vo ura mirak u').join(' ');
   const md = [
     '# va naki ura', '',
-    'va **naki** vo ura *mirak* u. ' + para, '',
-    '## vo va naki', '',
-    '- ura mirak va', '- naki vo va ura', '',
-    '> naki ura mirak va vo naki ura', '',
-    '---', '',
-    para,
+    'va naki vo ura mirak u va naki vo', '',
+    '**va naki vo ura mirak u va naki vo**', '',
+    '*va naki vo ura mirak u va naki vo*', '',
   ].join('\n');
   const r = renderMarkdownBook(md, { theme: process.argv[2] || 'tablette', title: 'le livre de la foi' });
   if (r.erreur) { console.error('ERREUR', r.erreur); process.exit(1); }

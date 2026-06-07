@@ -31,12 +31,12 @@ const STY = {
 
 // Une perle (glyphe redessiné). Emphase : gras → +12% de taille ; italique → inclinaison CSS.
 function bead(b, uid, baseH) {
-  const h = Math.round(baseH * (b.bold ? 1.12 : 1));
   const g = GLYPHS[b.key];
-  const inner = g ? renderGlyph(resolveEdges(g), uid, h)
-    : `<div style="width:${Math.round(h * .62)}px;height:${h}px;border:1px dashed #5a4226;color:#5a4226;display:flex;align-items:center;justify-content:center;font-size:9px">?${b.key}</div>`;
+  const weight = b.bold ? 23 : 16;   // GRAS = boudins plus épais (les glyphes n'ont pas de graisse de police)
+  const inner = g ? renderGlyph(resolveEdges(g), uid, baseH, weight)
+    : `<div style="width:${Math.round(baseH * .62)}px;height:${baseH}px;border:1px dashed #5a4226;color:#5a4226;display:flex;align-items:center;justify-content:center;font-size:9px">?${b.key}</div>`;
   const ml = b.wordStart ? 2 : -Math.round(baseH * 0.2);   // début de mot = espace ; intra-mot = chevauchement (serré)
-  const skew = b.italic ? 'transform:skewX(-11deg);' : '';
+  const skew = b.italic ? 'transform:skewX(-11deg);' : '';  // ITALIQUE = inclinaison CSS
   return `<div style="margin-left:${ml}px;line-height:0;${skew}">${inner}</div>`;
 }
 

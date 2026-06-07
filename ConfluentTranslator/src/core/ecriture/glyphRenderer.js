@@ -102,9 +102,9 @@ function strokes(edges, w) {
 
 // renderGlyph : edges → un <svg> argile complet. uid UNIQUE + seed random ⇒ chaque appel (donc
 // chaque caractère, à chaque écriture) produit une déformation différente. PAS de dalle de fond.
-function renderGlyph(edges, uid, h = 180) {
+function renderGlyph(edges, uid, h = 180, weight = 16) {
   const sr = Math.floor(Math.random() * 9999), sg = Math.floor(Math.random() * 9999);
-  const ropes = `<g filter="url(#rough${uid})">${strokes(edges, 16)}</g>`;
+  const ropes = `<g filter="url(#rough${uid})">${strokes(edges, weight)}</g>`;
   // Cellule PORTRAIT (plus haute que large) → les glyphes s'enchaînent bien dans le collier horizontal.
   const VBX = 14, VBY = -6, VBW = 72, VBH = 112, w = Math.round(h * VBW / VBH);
   return `<svg viewBox="${VBX} ${VBY} ${VBW} ${VBH}" width="${w}" height="${h}">${defs(uid, sr, sg)}${ropes}</svg>`;
