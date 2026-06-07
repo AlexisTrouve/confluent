@@ -51,6 +51,7 @@ function main() {
     + `<div style="display:flex;justify-content:center;margin:0 auto 10px;max-width:fit-content">${collier}</div>`
     + sec('PARTICULES + CONJUGATEURS', sectionOf('particule', 'conjugateur'))
     + sec('LIAISONS (16)', sectionOf('liaison'))
+    + sec('NOMBRES (base 12)', sectionOf('nombre'))
     + sec('Racines (échantillon, déjà composées)', sectionOf('racine', 'verbe'))
     + sec('Atomes (palette de marques)', atomsView)
     + `</body>`;

@@ -2361,6 +2361,248 @@
         "traitH",
         "point"
       ]
+    },
+    "zaro": {
+      "fr": "zéro",
+      "type": "nombre",
+      "edges": [
+        [
+          "nw",
+          "ne"
+        ],
+        [
+          "w",
+          "e"
+        ],
+        [
+          "sw",
+          "se"
+        ],
+        [
+          "s",
+          "sw"
+        ]
+      ]
+    },
+    "diku": {
+      "fr": "deux",
+      "type": "nombre",
+      "edges": [
+        [
+          "nw",
+          "sw"
+        ],
+        [
+          "ne",
+          "se"
+        ]
+      ]
+    },
+    "tiru": {
+      "fr": "trois",
+      "type": "nombre",
+      "edges": [
+        [
+          "nw",
+          "sw"
+        ],
+        [
+          "ne",
+          "se"
+        ],
+        [
+          "w",
+          "e"
+        ]
+      ]
+    },
+    "katu": {
+      "fr": "quatre",
+      "type": "nombre",
+      "edges": [
+        [
+          "nw",
+          "ne"
+        ],
+        [
+          "nw",
+          "sw"
+        ],
+        [
+          "ne",
+          "se"
+        ]
+      ]
+    },
+    "penu": {
+      "fr": "cinq",
+      "type": "nombre",
+      "edges": [
+        [
+          "n",
+          "sw"
+        ],
+        [
+          "sw",
+          "se"
+        ],
+        [
+          "se",
+          "n"
+        ],
+        [
+          "w",
+          "e"
+        ],
+        [
+          "s",
+          "sw"
+        ]
+      ]
+    },
+    "sivu": {
+      "fr": "sept",
+      "type": "nombre",
+      "edges": [
+        [
+          "n",
+          "s"
+        ],
+        [
+          "w",
+          "e"
+        ],
+        [
+          "nw",
+          "se"
+        ]
+      ]
+    },
+    "oktu": {
+      "fr": "huit",
+      "type": "nombre",
+      "edges": [
+        [
+          "nw",
+          "ne"
+        ],
+        [
+          "ne",
+          "se"
+        ],
+        [
+          "se",
+          "sw"
+        ],
+        [
+          "sw",
+          "nw"
+        ],
+        [
+          "nw",
+          "se"
+        ],
+        [
+          "ne",
+          "sw"
+        ]
+      ]
+    },
+    "novu": {
+      "fr": "neuf",
+      "type": "nombre",
+      "edges": [
+        [
+          "n",
+          "s"
+        ],
+        [
+          "w",
+          "e"
+        ],
+        [
+          "ne",
+          "sw"
+        ]
+      ]
+    },
+    "deku": {
+      "fr": "dix",
+      "type": "nombre",
+      "edges": [
+        [
+          "n",
+          "e"
+        ],
+        [
+          "e",
+          "s"
+        ],
+        [
+          "s",
+          "w"
+        ],
+        [
+          "w",
+          "n"
+        ]
+      ]
+    },
+    "levu": {
+      "fr": "onze",
+      "type": "nombre",
+      "edges": [
+        [
+          "n",
+          "e"
+        ],
+        [
+          "e",
+          "s"
+        ],
+        [
+          "s",
+          "w"
+        ],
+        [
+          "w",
+          "n"
+        ],
+        [
+          "n",
+          "s"
+        ]
+      ]
+    },
+    "tolu": {
+      "fr": "douze",
+      "type": "nombre",
+      "edges": [
+        [
+          "n",
+          "e"
+        ],
+        [
+          "e",
+          "s"
+        ],
+        [
+          "s",
+          "w"
+        ],
+        [
+          "w",
+          "n"
+        ],
+        [
+          "nw",
+          "se"
+        ],
+        [
+          "ne",
+          "sw"
+        ]
+      ]
     }
   }
 }
