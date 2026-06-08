@@ -3329,6 +3329,15 @@
         "chevron",
         "jambe"
       ]
+    },
+    "zana": {
+      "fr": "zana",
+      "type": "suffixe",
+      "atomes": [
+        "flechehd",
+        "triangle",
+        "jambe"
+      ]
     }
   }
 }

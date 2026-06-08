@@ -22,6 +22,24 @@ const GLYPHS = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'gl
 const { ancien } = loadAllLexiques(path.join(__dirname, '..', '..'));
 const RIDX = buildReverseIndex(ancien);
 
+// Segmentation DIRECTE en glyphes : découpe le mot en une suite de CLÉS du registre (racines,
+// liaisons, suffixes…). POURQUOI : gère les compositions par CONCATÉNATION directe (racine+racine
+// SANS liaison, ex. zo+zeru, neka+toku) que decomposeWord ne trouve pas (il ne coupe qu'aux liaisons).
+// COMMENT : récursif, plus long préfixe glyphé d'abord (backtracking) ; retourne la 1re segmentation
+// complète, ou null. (Les racines en forme pleine = clés du registre ; les formes liées passent par decomposeWord.)
+function segmentGlyphs(word, depth = 0) {
+  if (!word) return [];
+  if (depth > 9) return null;
+  for (let len = Math.min(word.length, 8); len >= 1; len--) {
+    const pre = word.slice(0, len);
+    if (GLYPHS[pre]) {
+      const rest = segmentGlyphs(word.slice(len), depth + 1);
+      if (rest !== null) return [pre, ...rest];
+    }
+  }
+  return null;
+}
+
 // Résout UN mot -> liste de clés-glyphes, ou jette { word, piece, raison }.
 function resolveWord(word) {
   if (GLYPHS[word]) return [word];                               // 1. direct (racine/particule/liaison)
@@ -37,11 +55,17 @@ function resolveWord(word) {
     const pieces = [];
     d.roots.forEach((r, i) => {
       pieces.push(r.fullRoot || r.part);
-      if (i < d.roots.length - 1 && d.liaison) pieces.push(d.liaison);
+      // Insérer le glyphe de LIAISON entre deux racines. d.liaisons est un TABLEAU
+      // (liaisons[i] = liaison entre racine i et i+1) — vrai pour 'simple' (2 racines) ET 'recursive' (3+).
+      if (i < d.roots.length - 1 && d.liaisons && d.liaisons[i]) pieces.push(d.liaisons[i].liaison);
     });
     if (pieces.every(p => GLYPHS[p])) return pieces;
     if (!bestCompo) bestCompo = pieces.filter(p => !GLYPHS[p]);
   }
+
+  // 2bis. Segmentation directe en glyphes (compositions par concaténation racine+racine sans liaison).
+  const seg = segmentGlyphs(word);
+  if (seg && seg.length > 1) return seg;
 
   const rads = extractRadicals(word, ANCIEN.verbalSuffixes, ANCIEN.conjugateurCodes); // 3. verbe (conjugué OU infinitif)
   // On cherche un découpage racine + suffixe où LES DEUX sont glyphés (conjugateur OU suffixe d'infinitif).
