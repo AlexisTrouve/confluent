@@ -57,3 +57,14 @@ test('écriture : chaque caractère redessiné à neuf (seeds distincts)', async
   expect(seeds.length).toBeGreaterThanOrEqual(3);
   expect(new Set(seeds).size).toBeGreaterThan(1);
 });
+
+test('écriture : français → traduction (LLM mock) → glyphes', async ({ page }) => {
+  await page.goto('/ecriture.html');
+  await page.fill('#apikey-input', getValidApiKey());
+  await page.fill('#fr-input', 'je vois le regard libre');
+  await page.locator('#translate-btn').click();
+  // La traduction (mockée serveur) remplit le champ Confluent, puis le dessin s'enchaîne automatiquement.
+  await expect(page.locator('#conf-input')).not.toHaveValue('');
+  await expect(page.locator('#output svg').first()).toBeVisible();
+  await expect(page.locator('#error')).toHaveText('');
+});

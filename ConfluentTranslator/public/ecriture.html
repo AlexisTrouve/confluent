@@ -38,9 +38,17 @@
 <body>
 <div class="wrap">
   <h1>Glyphes du Gouffre — Écriture</h1>
-  <div class="sub">Texte Confluent (romanisé) → glyphes d'argile. Lecture en collier, gauche → droite.</div>
+  <div class="sub">Français → (IA) → Confluent → glyphes d'argile. Ou colle directement du Confluent. Lecture gauche → droite.</div>
 
   <div class="panel">
+    <label class="hint" style="display:block;margin-bottom:6px">① Français → Confluent (traduction IA)</label>
+    <textarea id="fr-input" placeholder="ex : je vois le regard libre"></textarea>
+    <div class="row">
+      <button id="translate-btn">Traduire ↓</button>
+      <span id="tr-status" class="hint"></span>
+    </div>
+
+    <label class="hint" style="display:block;margin:16px 0 6px">② Confluent (éditable) → glyphes</label>
     <textarea id="conf-input" placeholder="ex : va naki vo ura mirak u">va naki vo ura mirak u</textarea>
     <div class="row">
       <button id="draw-btn">Dessiner</button>
@@ -102,8 +110,40 @@
     }
   }
 
+  // Traduit : FR → Confluent via l'agent LLM (/translate), remplit le champ Confluent puis dessine.
+  // POURQUOI : pont « français → glyphes » en un flux (FR → IA → CF → dessin), CF éditable entre les deux.
+  async function translate() {
+    const fr = $('fr-input').value.trim();
+    if (!fr) { $('tr-status').textContent = 'Saisis du français.'; return; }
+    const key = $('apikey-input').value.trim();
+    if (key) localStorage.setItem(KEY_STORE, key);
+    $('translate-btn').disabled = true;
+    $('tr-status').textContent = '… traduction IA en cours (peut prendre quelques secondes)';
+    try {
+      const resp = await fetch('/translate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-api-key': key },
+        body: JSON.stringify({ text: fr, target: 'ancien' })
+      });
+      const data = await resp.json().catch(() => ({}));
+      const cf = data.translation || (data.layer1 && data.layer1.translation);
+      if (resp.ok && cf) {
+        $('conf-input').value = cf;                       // remplit le Confluent (éditable)
+        $('tr-status').textContent = '✓ traduit — vérifie/édite, puis Dessiner';
+        draw();                                            // enchaîne sur le dessin
+      } else {
+        $('tr-status').textContent = '✗ ' + (data.error || ('Erreur ' + resp.status));
+      }
+    } catch (err) {
+      $('tr-status').textContent = '✗ Réseau : ' + err.message;
+    } finally {
+      $('translate-btn').disabled = false;
+    }
+  }
+
   // Init : pré-remplir la clé si déjà connue. « Redessiner » = même texte → nouveau seed serveur.
   $('apikey-input').value = localStorage.getItem(KEY_STORE) || '';
+  $('translate-btn').addEventListener('click', translate);
   $('draw-btn').addEventListener('click', draw);
   $('redraw-btn').addEventListener('click', draw);
 </script>
