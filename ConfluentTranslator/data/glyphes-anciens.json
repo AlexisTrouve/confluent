@@ -3338,6 +3338,77 @@
         "triangle",
         "jambe"
       ]
+    },
+    "toku": {
+      "fr": "toku",
+      "type": "suffixe",
+      "atomes": [
+        "base",
+        "tick",
+        "point"
+      ]
+    },
+    "veku": {
+      "fr": "veku",
+      "type": "suffixe",
+      "atomes": [
+        "maison",
+        "tirethaut"
+      ]
+    },
+    "loli": {
+      "fr": "loli",
+      "type": "suffixe",
+      "atomes": [
+        "vague",
+        "tick",
+        "point"
+      ]
+    },
+    "volu": {
+      "fr": "volu",
+      "type": "suffixe",
+      "atomes": [
+        "coeurV",
+        "chevroni",
+        "point"
+      ]
+    },
+    "daku": {
+      "fr": "daku",
+      "type": "suffixe",
+      "atomes": [
+        "chevroni",
+        "croix",
+        "jambe"
+      ]
+    },
+    "oti": {
+      "fr": "oti",
+      "type": "suffixe",
+      "atomes": [
+        "chevroni",
+        "tick",
+        "jambe"
+      ]
+    },
+    "rovi": {
+      "fr": "rovi",
+      "type": "suffixe",
+      "atomes": [
+        "base",
+        "chevron",
+        "jambe"
+      ]
+    },
+    "uti": {
+      "fr": "uti",
+      "type": "suffixe",
+      "atomes": [
+        "tick",
+        "chevron",
+        "jambe"
+      ]
     }
   }
 }
