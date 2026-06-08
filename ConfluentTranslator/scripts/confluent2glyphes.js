@@ -100,8 +100,13 @@ function convert(text) {
   const out = [];
   for (let li = 0; li < lines.length; li++) {
     let col = 0;
-    for (const word of lines[li].split(/\s+/).filter(Boolean)) {
-      const c = lines[li].indexOf(word, col); col = c + word.length;
+    for (const raw of lines[li].split(/\s+/).filter(Boolean)) {
+      const c = lines[li].indexOf(raw, col); col = c + raw.length;
+      // Retirer la ponctuation EN BORDURE (. , ; : ! ? « » … etc.). POURQUOI : du vrai texte est ponctué,
+      // mais le Confluent n'a pas de ponctuation propre — « savu. » doit résoudre comme « savu ».
+      // Un token purement ponctuation (tiret isolé…) n'est pas un mot → on l'ignore (pas d'échec franc).
+      const word = raw.replace(/^[^a-zA-Z]+|[^a-zA-Z]+$/g, '');
+      if (!word) continue;
       try { out.push({ word, glyphes: resolveWord(word) }); }
       catch (e) { return { erreur: { ligne: li + 1, col: c + 1, mot: e.word, piece: e.piece, raison: e.raison } }; }
     }
