@@ -22,6 +22,16 @@ const GLYPHS = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'gl
 const { ancien } = loadAllLexiques(path.join(__dirname, '..', '..'));
 const RIDX = buildReverseIndex(ancien);
 
+// Map forme-liée / racine → forme PLEINE (clé de glyphe). POURQUOI : une composition utilise souvent
+// la FORME LIÉE d'une racine (ex. "tok" pour toka, "sil" pour sili, "mira" pour le verbe mirak) ;
+// le segmenteur doit pouvoir mapper ce fragment vers le glyphe de la racine pleine.
+const LIEE2FULL = {};
+for (const e of Object.values(ancien.dictionnaire)) for (const t of (e.traductions || [])) {
+  if (t.confluent && /\s/.test(t.confluent)) continue;            // ignorer les compositions multi-mots
+  if (t.forme_liee && t.confluent) LIEE2FULL[t.forme_liee] = LIEE2FULL[t.forme_liee] || t.confluent;
+  if (t.racine && t.confluent && t.racine !== t.confluent) LIEE2FULL[t.racine] = LIEE2FULL[t.racine] || t.confluent;
+}
+
 // Segmentation DIRECTE en glyphes : découpe le mot en une suite de CLÉS du registre (racines,
 // liaisons, suffixes…). POURQUOI : gère les compositions par CONCATÉNATION directe (racine+racine
 // SANS liaison, ex. zo+zeru, neka+toku) que decomposeWord ne trouve pas (il ne coupe qu'aux liaisons).
@@ -32,9 +42,11 @@ function segmentGlyphs(word, depth = 0) {
   if (depth > 9) return null;
   for (let len = Math.min(word.length, 8); len >= 1; len--) {
     const pre = word.slice(0, len);
-    if (GLYPHS[pre]) {
+    // pièce = clé de glyphe directe, OU forme-liée mappée vers une racine pleine glyphée.
+    const key = GLYPHS[pre] ? pre : (GLYPHS[LIEE2FULL[pre]] ? LIEE2FULL[pre] : null);
+    if (key) {
       const rest = segmentGlyphs(word.slice(len), depth + 1);
-      if (rest !== null) return [pre, ...rest];
+      if (rest !== null) return [key, ...rest];
     }
   }
   return null;
@@ -42,6 +54,7 @@ function segmentGlyphs(word, depth = 0) {
 
 // Résout UN mot -> liste de clés-glyphes, ou jette { word, piece, raison }.
 function resolveWord(word) {
+  word = (word || '').toLowerCase();                             // Confluent = tout en minuscules (noms propres inclus)
   if (GLYPHS[word]) return [word];                               // 1. direct (racine/particule/liaison)
 
   // 2. composition : on essaie TOUTES les décompositions et on retient la 1re dont CHAQUE pièce est
