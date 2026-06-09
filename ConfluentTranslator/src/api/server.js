@@ -25,6 +25,7 @@ const { renderMarkdownBook } = require('../core/ecriture/bookMarkdown');
 const { authenticate, requireAdmin, createToken, listTokens, disableToken, enableToken, deleteToken, getGlobalStats, trackLLMUsage, checkLLMLimit } = require('../utils/auth');
 const { adminLimiter } = require('../utils/rateLimiter');
 const { requestLogger, getLogs, getLogStats, logTranslation } = require('../utils/logger');
+const { reportError } = require('../utils/discordAlert');   // monitoring couche 1 : alerte Discord sur erreur
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -575,8 +576,13 @@ app.post('/translate', authenticate, async (req, res) => {
           trace: error.trace || null
         });
       } catch (e) { console.error('logTranslation (fail) failed:', e.message); }
+      // Alerte Discord seulement sur l'ANORMAL (boucle agent épuisée), PAS sur le 422 attendu
+      // TRANSLATION_UNVALIDATED qui est le système qui marche (échec franc) → sinon spam.
+      if (error.code === 'AGENT_LOOP_EXHAUSTED') reportError('agent loop exhausted', error, { fr: (text || '').slice(0, 80) });
       return res.status(422).json({ error: error.message, invalides: error.invalides || [] });
     }
+    // Vraie erreur serveur (proxy down, exception inattendue…) → alerte Discord.
+    reportError('translate 500', error, { fr: (text || '').slice(0, 80), model: model || DEFAULT_MODEL });
     res.status(500).json({ error: error.message });
   }
 });
@@ -908,6 +914,25 @@ app.get('/livre', (req, res) => {
 // Admin routes
 const adminRoutes = require('./adminRoutes');
 app.use('/api/admin', authenticate, adminRoutes);
+
+// Backstop d'erreurs : tout ce qui remonte non géré jusqu'ici → alerte Discord + 500 propre.
+// (Les routes avec leur propre try/catch, comme /translate, gèrent et alertent déjà chez elles.)
+app.use((err, req, res, next) => {
+  console.error('Unhandled route error:', err);
+  reportError('express ' + req.method + ' ' + req.path, err);
+  if (!res.headersSent) res.status(500).json({ error: 'Erreur interne du serveur' });
+});
+
+// Erreurs niveau PROCESS : on alerte AVANT que pm2 ne relance (sinon une panne passe muette).
+process.on('uncaughtException', (err) => {
+  console.error('uncaughtException:', err);
+  reportError('uncaughtException (crash)', err);
+  setTimeout(() => process.exit(1), 1500);   // laisse l'alerte partir, puis crash → pm2 relance
+});
+process.on('unhandledRejection', (reason) => {
+  console.error('unhandledRejection:', reason);
+  reportError('unhandledRejection', reason);  // observable (Discord + console), pas avalé en silence
+});
 
 app.listen(PORT, () => {
   console.log(`ConfluentTranslator running on http://localhost:${PORT}`);
