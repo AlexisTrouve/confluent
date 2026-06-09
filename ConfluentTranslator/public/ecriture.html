@@ -29,6 +29,8 @@
   button:disabled { opacity:.5; cursor:default; }
   input[type=password] { background:#0f0c08; color:var(--txt); border:1px solid #3a2c1c; border-radius:8px;
                          padding:8px 10px; font-size:13px; width:230px; }
+  select { background:#0f0c08; color:var(--txt); border:1px solid #3a2c1c; border-radius:8px;
+           padding:9px 10px; font-size:14px; cursor:pointer; }
   .key { margin-top:14px; font-size:13px; color:#8a7a5a; }
   #error { color:var(--err); margin-top:14px; min-height:20px; font-size:15px; }
   #output { margin-top:16px; min-height:140px; display:flex; justify-content:center; }
@@ -45,6 +47,11 @@
     <textarea id="fr-input" placeholder="ex : je vois le regard libre"></textarea>
     <div class="row">
       <button id="translate-btn">Traduire ↓</button>
+      <select id="model-select" title="Modèle de traduction (provider Etheryale)">
+        <option value="claude-haiku-4-5-20251001">Haiku 4.5 (défaut)</option>
+        <option value="claude-sonnet-4-6">Sonnet 4.6</option>
+        <option value="claude-opus-4-8">Opus 4.8</option>
+      </select>
       <span id="tr-status" class="hint"></span>
     </div>
 
@@ -68,6 +75,7 @@
   // Helpers DOM + lecture de la clé (même convention que index.html : localStorage 'confluentApiKey').
   const $ = (id) => document.getElementById(id);
   const KEY_STORE = 'confluentApiKey';
+  const MODEL_STORE = 'confluentEcritureModel';   // choix de modèle persistant (pont FR→glyphes)
 
   // Dessine : POST /api/ecriture → injecte le collier, OU affiche l'erreur PRÉCISE (ligne/col/mot).
   async function draw() {
@@ -117,13 +125,15 @@
     if (!fr) { $('tr-status').textContent = 'Saisis du français.'; return; }
     const key = $('apikey-input').value.trim();
     if (key) localStorage.setItem(KEY_STORE, key);
+    const model = $('model-select').value;                 // modèle choisi (provider Etheryale)
+    localStorage.setItem(MODEL_STORE, model);              // persiste le choix entre visites
     $('translate-btn').disabled = true;
-    $('tr-status').textContent = '… traduction IA en cours (peut prendre quelques secondes)';
+    $('tr-status').textContent = '… traduction IA en cours (' + $('model-select').selectedOptions[0].text + ')';
     try {
       const resp = await fetch('/translate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-api-key': key },
-        body: JSON.stringify({ text: fr, target: 'ancien' })
+        body: JSON.stringify({ text: fr, target: 'ancien', model })   // ← le modèle choisi est respecté
       });
       const data = await resp.json().catch(() => ({}));
       const cf = data.translation || (data.layer1 && data.layer1.translation);
@@ -141,8 +151,10 @@
     }
   }
 
-  // Init : pré-remplir la clé si déjà connue. « Redessiner » = même texte → nouveau seed serveur.
+  // Init : pré-remplir la clé + le modèle choisi. « Redessiner » = même texte → nouveau seed serveur.
   $('apikey-input').value = localStorage.getItem(KEY_STORE) || '';
+  $('model-select').value = localStorage.getItem(MODEL_STORE) || 'claude-haiku-4-5-20251001';
+  $('model-select').addEventListener('change', () => localStorage.setItem(MODEL_STORE, $('model-select').value));
   $('translate-btn').addEventListener('click', translate);
   $('draw-btn').addEventListener('click', draw);
   $('redraw-btn').addEventListener('click', draw);

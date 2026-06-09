@@ -68,3 +68,16 @@ test('écriture : français → traduction (LLM mock) → glyphes', async ({ pag
   await expect(page.locator('#output svg').first()).toBeVisible();
   await expect(page.locator('#error')).toHaveText('');
 });
+
+test('écriture : le modèle choisi est bien envoyé dans la requête /translate', async ({ page }) => {
+  await page.goto('/ecriture.html');
+  await page.fill('#apikey-input', getValidApiKey());
+  await page.selectOption('#model-select', 'claude-opus-4-8');
+  await page.fill('#fr-input', 'je vois le regard libre');
+  // Intercepte la requête réelle : le corps doit porter le modèle sélectionné (pont FR→glyphes respecte le choix).
+  const [req] = await Promise.all([
+    page.waitForRequest((r) => r.url().includes('/translate') && r.method() === 'POST'),
+    page.locator('#translate-btn').click(),
+  ]);
+  expect(JSON.parse(req.postData()).model).toBe('claude-opus-4-8');
+});
