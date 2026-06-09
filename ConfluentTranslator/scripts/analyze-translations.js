@@ -64,9 +64,21 @@ console.log(`\n=== ANALYSE TRADUCTIONS (${entries.length} traductions) ===`);
 console.log(`  ✓ réussies : ${ok.length}   ✗ échecs francs : ${fail.length}`);
 console.log(`  réparations : ${avgRepairs.toFixed(2)}/trad en moyenne · ${withRepair} trad ont nécessité ≥1 réparation`);
 
-console.log(`\n--- GAPS DE LEXIQUE (top 25) — concepts/racines cherchés en vain → À AJOUTER ---`);
-if (gaps.length === 0) console.log('  (aucun)');
-else for (const [g, n] of gaps.slice(0, 25)) console.log(`  ${String(n).padStart(3)} × ${g}`);
+// Concepts FR gérés par IDIOME/grammaire (pas par une entrée lexique) → NE PAS ajouter (calque interdit).
+// POURQUOI : sans ce filtre, l'analyseur réclame éternellement « ainsi/comme/vouloir » alors qu'ils
+//        sont déjà couverts par lo/silikinu/en (cf. prompt « Expressions idiomatiques »). Bruit pur.
+const IDIOM = new Set(['ainsi', 'donc', 'comme', 'tel', 'pareil', 'entre', 'vouloir', 'veux', 'veut',
+  'voulons', 'voulez', 'veulent', 'voudrais', 'se souvenir', 'souvient', 'souviens', 'souviennent', 'souvenir']);
+const actionable = gaps.filter(([g]) => !IDIOM.has(g.toLowerCase()));
+const idiomatic = gaps.filter(([g]) => IDIOM.has(g.toLowerCase()));
+
+console.log(`\n--- GAPS ACTIONNABLES (top 20) — vrais mots de contenu sans forme → candidats lexique ---`);
+if (actionable.length === 0) console.log('  (aucun)');
+else for (const [g, n] of actionable.slice(0, 20)) console.log(`  ${String(n).padStart(3)} × ${g}`);
+if (idiomatic.length) {
+  console.log(`\n--- déjà gérés par IDIOME (NE PAS ajouter — éviter le calque français) ---`);
+  console.log('  ' + idiomatic.map(([g, n]) => `${g}(${n})`).join(' · '));
+}
 
 console.log(`\n--- FORMES CASSÉES (top 15) — rejetées par le gate/compo → durcir le prompt ---`);
 if (broken.length === 0) console.log('  (aucune)');
