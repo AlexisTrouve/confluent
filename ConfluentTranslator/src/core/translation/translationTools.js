@@ -19,6 +19,7 @@
 'use strict';
 
 const { validateForm, validateTranslation } = require('../validation/phonotactics');
+const { checkGrammar } = require('../validation/grammarCheck');
 const { searchWord, normalizeFrenchText, analyzeContext } = require('./contextAnalyzer');
 const { decomposeWord } = require('../morphology/morphologicalDecomposer');
 const { extractRadicals, CONJUGATEURS } = require('../morphology/radicalMatcher');
@@ -174,6 +175,22 @@ const TOOL_DEFINITIONS = [
       type: 'object',
       properties: {
         confluent: { type: 'string', description: 'Ta traduction Confluent (phrase complète) à re-traduire en FR.' }
+      },
+      required: ['confluent']
+    }
+  },
+  {
+    name: 'grammar_check',
+    description:
+      "Vérifie la GRAMMAIRE/SYNTAXE de ta traduction Confluent (pas seulement la forme des mots) : un " +
+      "seul conjugateur de temps par proposition (sur le verbe), pluriel 'su' bien placé (après le nom). " +
+      "ADVISORY : renvoie des WARNINGS, ne bloque JAMAIS (la langue est en construction, les tournures " +
+      "originales sont permises). UTILISE-LE sur ta traduction finale avant de la rendre, et corrige les " +
+      "warnings de gravité 'haute' sauf si tu fais un choix stylistique délibéré.",
+    input_schema: {
+      type: 'object',
+      properties: {
+        confluent: { type: 'string', description: 'Ta traduction Confluent (phrase/texte complet) à vérifier.' }
       },
       required: ['confluent']
     }
@@ -497,6 +514,24 @@ function execBackTranslate(input, ctx) {
 }
 
 /**
+ * grammar_check — vérif de structure (ADVISORY), déléguée au module grammarCheck.
+ *
+ * QUOI : renvoie les warnings de grammaire (conjugateur, pluriel) sur la traduction finale.
+ * POURQUOI : miroir déterministe pour l'agent ; ne bloque jamais (warn-not-fail).
+ */
+function execGrammarCheck(input, ctx) {
+  const cf = String(input.confluent || '').trim();
+  if (!cf) return { erreur: 'entrée vide' };
+  const { ok, warnings } = checkGrammar(cf, eraOf(ctx));
+  return {
+    ok, warnings,
+    note: ok
+      ? 'Aucun problème de grammaire détecté (selon les règles encodées — pas une preuve de perfection).'
+      : "Corrige les warnings 'haute' SAUF si c'est un choix stylistique assumé. Ne bloque jamais le rendu."
+  };
+}
+
+/**
  * Dispatcher central.
  * @param {string} name
  * @param {Object} input
@@ -511,6 +546,7 @@ function executeTool(name, input, ctx) {
     case 'verify_word': return execVerifyWord(input, ctx);
     case 'check_composition': return execCheckComposition(input, ctx);
     case 'back_translate': return execBackTranslate(input, ctx);
+    case 'grammar_check': return execGrammarCheck(input, ctx);
     default: return { error: `Outil inconnu: ${name}` };
   }
 }
@@ -519,5 +555,5 @@ module.exports = {
   TOOL_DEFINITIONS,
   executeTool,
   LIAISONS_VALIDES,
-  execAnalyzeText, execLookupConcept, execGetGrammar, execValidateForm, execVerifyWord, execCheckComposition, execBackTranslate
+  execAnalyzeText, execLookupConcept, execGetGrammar, execValidateForm, execVerifyWord, execCheckComposition, execBackTranslate, execGrammarCheck
 };

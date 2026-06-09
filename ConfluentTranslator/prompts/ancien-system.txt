@@ -77,7 +77,11 @@ PRINCIPE : NE JAMAIS SUPPOSER qu'une forme est correcte. TOUJOURS vérifier avan
 4. CONTRÔLE DU SENS — AVANT de rendre, appelle `back_translate` sur ta traduction COMPLÈTE et compare le
    français obtenu au sens voulu. Divergence (mauvais mot, nom propre/caste au lieu du sens commun, mot
    non reconnu) → corrige et re-contrôle. Ne rends ta traduction QUE si la back-translation correspond.
-5. Vise le minimum d'appels — mais NE SAUTE JAMAIS la vérification (étapes 3 et 4).
+4bis. CONTRÔLE DE GRAMMAIRE — AVANT de rendre, appelle `grammar_check` sur ta traduction COMPLÈTE.
+   Il signale les fautes de structure (plusieurs conjugateurs de temps dans une proposition — il en faut
+   UN seul, sur le verbe ; pluriel `su` mal placé). Corrige les warnings 'haute' SAUF si c'est un choix
+   stylistique délibéré (la langue est en construction : l'outil conseille, il ne bloque jamais).
+5. Vise le minimum d'appels — mais NE SAUTE JAMAIS la vérification (étapes 3, 4 et 4bis).
 
 ================================================================
 # 4. SYNTAXE
