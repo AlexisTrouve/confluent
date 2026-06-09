@@ -40,6 +40,15 @@ const CLEAN = 'va naki vo mori u';          // 1 seul temps → propre
   const r3 = await run([textResp(CLEAN)]);
   check('servie direct, exactement 1 closingCheck', r3.valid === true && (r3.trace.closingChecks || []).length === 1);
 
+  console.log('\n[4] VOCAB inventé → la clôture se déclenche aussi (pas que la grammaire)');
+  // ctx AVEC index morpho minimal (seul « naki » attesté) → « koto » = invention non vérifiable.
+  const ctxIdx = { era: ANCIEN, morphReverseIndex: { byWord: { naki: { francais: 'enfant', type: 'racine' } }, byFormeLiee: {} } };
+  const VOCABKO = 'va naki vo koto u';   // grammaire propre (1 temps) MAIS « koto » non vérifiable
+  const r4 = await translateWithAgent({ text: 'x', systemPrompt: 'x', model: 'm', ctx: ctxIdx,
+    anthropic: fakeClient([textResp(VOCABKO), toolResp('confirme_choix', { note: 'néologisme volontaire' }), textResp(VOCABKO)]) });
+  check('clôture déclenchée par un warning VOCAB', (r4.grammarWarnings || []).some(w => w.regle === 'vocab'));
+  check('override capturé (invention assumée)', (r4.overrides || []).length === 1 && /néologisme/.test(r4.overrides[0].note));
+
   console.log(`\n${fail === 0 ? '✓' : '✗'} closing-loop : ${pass} ok, ${fail} ko`);
   process.exit(fail === 0 ? 0 : 1);
 })();

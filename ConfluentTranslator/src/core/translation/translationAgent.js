@@ -23,6 +23,7 @@
 const { TOOL_DEFINITIONS, executeTool } = require('./translationTools');
 const { validateTranslation } = require('../validation/phonotactics');
 const { checkGrammar } = require('../validation/grammarCheck');
+const { checkVocab } = require('../validation/vocabCheck');
 
 /**
  * Extrait la ligne de traduction Confluent de la réponse formatée du modèle.
@@ -271,9 +272,11 @@ async function translateWithAgent(opts) {
     for (const inv of (gate.invalides || [])) if (inv && inv.mot) trace.brokenForms.push(String(inv.mot));
 
     if (gate.valid && !extractionVide) {
-      // VÉRIFICATION DE CLÔTURE — grammaire gravité HAUTE seulement, UNE boucle max, jamais bloquante.
+      // VÉRIFICATION DE CLÔTURE — grammaire + VOCABULAIRE, gravité HAUTE seulement, UNE boucle max,
+      // jamais bloquante. checkVocab réutilise verify_word (no-op sans index morpho).
       const gram = checkGrammar(translationLine, ctx && ctx.era);
-      const high = gram.warnings.filter(w => w.gravite === 'haute');
+      const vocab = checkVocab(translationLine, ctx);
+      const high = [...gram.warnings, ...vocab.warnings].filter(w => w.gravite === 'haute');
       trace.closingChecks.push({ translation: translationLine, high });
       if (high.length > 0 && closingRounds < 1 && !confirmed) {
         // Renvoi unique : l'agent CORRIGE, ou CONFIRME via confirme_choix. On reboucle.
