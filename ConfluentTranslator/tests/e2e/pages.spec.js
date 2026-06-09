@@ -40,6 +40,15 @@ test('livre : titre hostile → AUCUNE injection HTML exécutable', async ({ pag
   expect(await page.locator('img[onerror]').count()).toBe(0);
 });
 
+// ---------- Sécurité : en-têtes HTTP défensifs ----------
+test('sécurité : en-têtes défensifs présents, X-Powered-By retiré', async ({ page }) => {
+  const resp = await page.goto('/');
+  const h = resp.headers();
+  expect(h['x-powered-by'], 'signature serveur retirée').toBeUndefined();
+  expect(h['x-content-type-options']).toBe('nosniff');
+  expect(h['x-frame-options']).toBe('SAMEORIGIN');
+});
+
 // ---------- admin.html (page servie) ----------
 test('admin : la page charge sans crash et présente son UI', async ({ page }) => {
   const errors = [];

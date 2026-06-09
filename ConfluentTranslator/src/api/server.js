@@ -43,6 +43,19 @@ const anthropicClient = new Anthropic({
 const DEFAULT_MODEL = process.env.CONFLUENT_MODEL || 'claude-haiku-4-5-20251001';
 
 // Middlewares
+// Durcissement sécu (couche légère, sans helmet pour ne pas casser les scripts/styles inline des pages) :
+// QUOI : retire la signature serveur + pose les en-têtes défensifs sur TOUTES les réponses.
+// POURQUOI : `X-Powered-By` révélait la stack ; sans X-Frame-Options on est iframable (clickjacking) ;
+//        nosniff bloque le MIME-sniffing ; Referrer-Policy évite de fuiter l'URL vers des tiers.
+// COMMENT : CSP volontairement OMISE ici (les pages ont du JS/CSS inline qu'une CSP stricte casserait) —
+//        à ajouter plus tard avec des nonces si besoin. HSTS laissé à nginx (risque de lock-out si géré ici).
+app.disable('x-powered-by');
+app.use((req, res, next) => {
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+  res.setHeader('Referrer-Policy', 'no-referrer');
+  next();
+});
 app.use(express.json());
 app.use(requestLogger);      // Log toutes les requêtes
 // Rate limiting: on utilise uniquement checkLLMLimit() par API key, pas de rate limit global par IP
