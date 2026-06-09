@@ -82,8 +82,8 @@ function buildRepairMessage(invalides) {
 }
 
 /**
- * Construit le message de la VÉRIFICATION DE CLÔTURE quand grammar_check signale des fautes
- * de gravité HAUTE sur une traduction qui a pourtant passé la phono.
+ * Construit le message de la VÉRIFICATION DE CLÔTURE quand grammaire ou vocabulaire signalent
+ * une faute de gravité HAUTE sur une traduction qui a pourtant passé la phono.
  *
  * QUOI : renvoie l'agent UNE fois — « corrige, OU confirme via confirme_choix(note) ».
  * POURQUOI : le check serveur est systématique (l'agent oublie l'outil advisory 1 fois sur 2),
@@ -92,13 +92,13 @@ function buildRepairMessage(invalides) {
 function buildClosingMessage(highWarnings) {
   const details = highWarnings.map(w => `- ${w.message}`).join('\n');
   return (
-    "VÉRIFICATION DE CLÔTURE — ta traduction est phonotactiquement valide, mais grammar_check " +
-    "signale des fautes de structure probables :\n" + details + "\n\n" +
-    "DEUX options, au choix :\n" +
-    "1. CORRIGE ces formes et re-fournis les 4 sections avec la traduction corrigée ; OU\n" +
-    "2. si c'est un choix DÉLIBÉRÉ (tournure originale, registre rituel), appelle `confirme_choix(note)` " +
-    "avec une justification en une phrase, puis re-fournis ta traduction inchangée.\n" +
-    "Ne fais rien d'autre : soit tu corriges, soit tu confirmes."
+    "VÉRIFICATION DE CLÔTURE — ta traduction est phonotactiquement valide, mais la vérification " +
+    "automatique signale des problèmes probables (grammaire et/ou vocabulaire) :\n" + details + "\n\n" +
+    "Tranche, puis fais EXACTEMENT l'une des deux choses :\n" +
+    "1. Si c'est une vraie faute → CORRIGE et re-fournis les 4 sections avec la traduction corrigée.\n" +
+    "2. Si c'est un choix DÉLIBÉRÉ (tournure originale, registre rituel, néologisme voulu) → appelle " +
+    "`confirme_choix(note)` avec une justification en une phrase, puis re-fournis ta traduction inchangée.\n" +
+    "Rien d'autre : soit tu corriges, soit tu confirmes. Ne confirme pas une vraie faute juste pour finir."
   );
 }
 

@@ -182,11 +182,15 @@ const TOOL_DEFINITIONS = [
   {
     name: 'grammar_check',
     description:
-      "Vérifie la GRAMMAIRE/SYNTAXE de ta traduction Confluent (pas seulement la forme des mots) : un " +
-      "seul conjugateur de temps par proposition (sur le verbe), pluriel 'su' bien placé (après le nom). " +
-      "ADVISORY : renvoie des WARNINGS, ne bloque JAMAIS (la langue est en construction, les tournures " +
-      "originales sont permises). UTILISE-LE sur ta traduction finale avant de la rendre, et corrige les " +
-      "warnings de gravité 'haute' sauf si tu fais un choix stylistique délibéré.",
+      "Vérifie la GRAMMAIRE de ta traduction — la STRUCTURE de la phrase, là où validate_form ne voit que " +
+      "la forme des mots. Deux règles dures :\n" +
+      "  (1) UN SEUL conjugateur de TEMPS par proposition, porté par le verbe. " +
+      "Fautif : « va naki u nura vo mori u » (deux « u »). Correct : « va naki vo mori u ».\n" +
+      "  (2) Le pluriel « su » se place APRÈS le nom. Correct : « va naki su ». Fautif : « va su naki ».\n" +
+      "Renvoie { ok, warnings:[{regle, gravite, message}] }. C'est un CONSEIL, jamais un verrou : il ne " +
+      "bloque RIEN (la langue est en construction, les tournures originales sont permises).\n" +
+      "QUAND : sur ta traduction FINALE, juste avant de la rendre. Corrige tout warning de gravité 'haute', " +
+      "SAUF s'il s'agit d'un choix stylistique assumé — dans ce cas garde ta forme telle quelle.",
     input_schema: {
       type: 'object',
       properties: {
@@ -198,10 +202,13 @@ const TOOL_DEFINITIONS = [
   {
     name: 'confirme_choix',
     description:
-      "À N'UTILISER QUE si la vérification de clôture t'a renvoyé des warnings de grammaire que tu " +
-      "estimes VOLONTAIRES (tournure originale, registre rituel, choix poétique assumé). Confirme que " +
-      "tu gardes ta traduction TELLE QUELLE malgré le warning, en justifiant en une phrase. Sinon : " +
-      "corrige et re-soumets plutôt que de confirmer.",
+      "Répond à la VÉRIFICATION DE CLÔTURE quand elle t'a renvoyé un warning (grammaire ou vocabulaire) " +
+      "que tu juges VOLONTAIRE. Avant d'appeler ceci, tranche honnêtement : est-ce une vraie faute — alors " +
+      "CORRIGE et re-soumets, n'appelle pas cet outil — ou un choix délibéré assumé (tournure originale, " +
+      "registre rituel, néologisme voulu, écho poétique) — alors confirme ici.\n" +
+      "Effet : ta traduction est servie TELLE QUELLE et ta note est conservée (réponse + journal).\n" +
+      "`note` = ta justification en UNE phrase, ex. « formule rituelle figée, le verbe est volontairement omis ».\n" +
+      "Ne confirme JAMAIS par défaut pour aller plus vite : confirmer une vraie faute la grave dans la langue.",
     input_schema: {
       type: 'object',
       properties: {
