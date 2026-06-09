@@ -24,10 +24,15 @@ function caseParticles(era) {
   return new Set(keys.filter(k => k !== 'su'));
 }
 
-// Découpe en propositions (sur la ponctuation forte) puis en tokens minuscules.
+// Découpe en propositions puis en tokens propres.
+// COMMENT : la VIRGULE sépare aussi — une série de verbes coordonnés (« écoute, se souvient,
+//   transmet » → « tikam u, mori u, kisun u ») est LÉGITIME : chaque verbe porte son propre temps.
+//   Sans ça, on crierait au faux positif sur des coordinations valides (langue en construction).
+//   Et on STRIPPE la ponctuation en bordure de chaque token (« u, » → « u ») — sinon un conjugateur
+//   collé à une virgule n'est pas reconnu et on rate la faute (faux NÉGATIF trouvé en prod).
 function clausesOf(cf) {
-  return String(cf || '').toLowerCase().split(/[.!?;]+/)
-    .map(c => c.trim().split(/\s+/).filter(Boolean))
+  return String(cf || '').toLowerCase().split(/[.!?;,]+/)
+    .map(c => c.trim().split(/\s+/).map(t => t.replace(/^[^a-z]+|[^a-z]+$/g, '')).filter(Boolean))
     .filter(toks => toks.length > 0);
 }
 

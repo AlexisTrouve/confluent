@@ -25,6 +25,12 @@ const r2 = warn('va su naki vo ura miraku');               // erreur typique : s
 check('« va su naki » → warning pluriel', !r2.ok && r2.warnings.some(w => w.regle === 'pluriel'));
 check('« va naki su » → OK', warn('va naki su vo ura miraku').ok);
 
+console.log('\n[2bis] Ponctuation (bug trouvé en prod : virgule/point collés aux tokens)');
+// Série de verbes coordonnés : chaque verbe a son propre temps → LÉGITIME, pas un faux positif.
+check('« tikam u, mori u, kisun u » (série virgulée) → OK', warn('va siliaska tikam u, mori u, kisun u').ok);
+// Conjugateur collé à un point dans la même proposition → doit quand même être vu (faux négatif corrigé).
+check('« va naki u u. » (2 temps, point collé) → warning', !warn('va naki u u.').ok);
+
 console.log('\n[3] Pas de FAUX POSITIF sur l\'original');
 check('formule rituelle sans verbe « va sili aska » → OK', warn('va sili aska').ok);
 check('phrase vide → OK (rien à signaler)', warn('').ok);
