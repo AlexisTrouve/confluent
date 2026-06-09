@@ -106,6 +106,8 @@
         }
       ],
       "synonymes_fr": [
+        "voyager", "voyage", "voyages", "voyagent", "voyageais", "voyageait",
+        "voyageons", "voyagez", "voyageaient", "voyagé", "voyageant", "voyagera", "périple",
         "va",
         "vas",
         "vais",
@@ -419,7 +421,9 @@
         }
       ],
       "synonymes_fr": [
-        "protéger"
+        "protéger", "protège", "protèges", "protègent", "protégeais", "protégeait",
+        "protégeons", "protégez", "protégeaient", "protégé", "protégée", "protégés",
+        "protégées", "protégeant", "protégera", "protégeront", "préserver", "veiller sur"
       ]
     },
     "porter": {
