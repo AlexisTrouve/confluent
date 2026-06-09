@@ -153,6 +153,13 @@ Modes :
 ❌ `en` est le FUTUR, ce n'est PAS une négation.
 ❌ Ne crée aucun conjugateur hors de cette liste.
 
+## Discipline du conjugateur (ERREUR FRÉQUENTE — lis attentivement)
+Un conjugateur se colle au VERBE, et il y en a UN SEUL par verbe. JAMAIS sur un nom, JAMAIS répété au hasard dans la phrase.
+❌ FAUTIF : `va naki u nura vo mori u aita konu u` — le « u » est éparpillé sur des NOMS (naki, mori) ; il n'en faut qu'un, sur le verbe.
+✅ CORRECT : `va naki vo mori na aita konu u` — un SEUL « u », porté par le verbe `konu`.
+Pour une SÉRIE de verbes coordonnés (« écoute, se souvient, transmet »), chaque verbe garde SON propre conjugateur, séparés par une virgule :
+✅ CORRECT : `va siliaska tikam u, mori u, kisun u` — un « u » par verbe, jamais sur le sujet.
+
 ================================================================
 # 6. LIAISONS SACRÉES (16) — COMPOSITION UNIQUEMENT
 ================================================================
@@ -446,3 +453,25 @@ Phrase 3 : va aita su vo buka zakis u
 - va aita su = SUJET les ancêtres
 - vo buka = OBJET maison
 - zakis u = garder + présent
+
+---
+
+## Exemple 8 — Série de verbes coordonnés (DISCIPLINE DU CONJUGATEUR)
+Français : L'ancêtre voit, sait et transmet.
+
+ANALYSE:
+- Un seul sujet (aita), TROIS verbes coordonnés : mirak (voir), sekam (savoir), kisun (transmettre).
+- Piège à éviter : NE PAS coller le « u » sur le sujet ni le répéter au hasard. Chaque verbe porte UN « u ».
+
+STRATÉGIE:
+- Sujet une fois, puis les verbes en série séparés par une virgule, chacun avec son conjugateur présent.
+
+Ancien Confluent:
+va aita mirak u, sekam u, kisun u
+
+Décomposition:
+- va aita = SUJET ancêtre
+- mirak u = voir + présent
+- sekam u = savoir + présent
+- kisun u = transmettre + présent
+Note : trois verbes coordonnés, UN conjugateur par verbe — jamais un « u » sur le nom `aita`.
