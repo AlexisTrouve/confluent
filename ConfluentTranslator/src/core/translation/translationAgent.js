@@ -90,6 +90,51 @@ function accumulateUsage(acc, usage) {
   acc.cache_creation_input_tokens += usage.cache_creation_input_tokens || 0;
 }
 
+// Normalise un « mot » de gap (les outils renvoient tantôt une string, tantôt un objet {input,...}).
+const asWord = (w) => (typeof w === 'string' ? w : (w && (w.input || w.word || w.mot || w.fr || w.francais)) || '');
+
+/**
+ * Extrait le SIGNAL APPRENABLE d'un résultat d'outil et l'accumule dans la trace.
+ *
+ * QUOI : repère (a) les GAPS de lexique — concepts/racines que les outils n'ont PAS trouvés —
+ *        et (b) les FORMES CASSÉES rejetées (composition invalide, phonotactique).
+ * POURQUOI : c'est exactement ce qu'on veut apprendre du trafic réel — où le lexique manque
+ *        (→ l'étendre, alimente une étape déjà prévue) et où le modèle dérape sur la forme
+ *        (→ durcir le prompt). Le gate final ne voit QUE la phonotactique ; ces signaux-là
+ *        naissent dans les OUTILS, pendant la génération, et seraient perdus sans cette collecte.
+ * COMMENT : chaque outil a une forme de retour connue (cf. translationTools) ; on en lit les
+ *        champs « négatifs » : found:false, a_composer, racines_inconnues, trouvee:false, valid:false.
+ */
+function collectSignals(trace, name, input, result) {
+  if (!result) return;
+  switch (name) {
+    case 'analyze_text':                                  // plan global : mots sans forme directe
+      for (const w of (result.a_composer || [])) { const g = asWord(w); if (g) trace.gaps.push(g); }
+      break;
+    case 'lookup_concept':                                // concept cherché, aucune forme attestée
+      if (result.found === false) { const g = asWord(result.francais); if (g) trace.gaps.push(g); }
+      break;
+    case 'check_composition':                             // racines non déclarées + forme rejetée
+      for (const r of (result.racines_inconnues || [])) if (r) trace.gaps.push(String(r));
+      if (result.valid === false && result.forme) trace.brokenForms.push(String(result.forme));
+      break;
+    case 'verify_word':                                   // composition dont une racine n'existe pas
+      for (const r of (result.racines || [])) if (r && r.trouvee === false && r.racine) trace.gaps.push(String(r.racine));
+      break;
+    case 'validate_form':                                 // formes phonotactiquement invalides
+      if (result.valid === false) for (const inv of (result.invalides || [])) if (inv && inv.mot) trace.brokenForms.push(String(inv.mot));
+      break;
+  }
+}
+
+// Dédoublonne les listes de signal avant de rendre/attacher la trace (la trace brute peut répéter
+// le même gap à chaque tour ; on veut une liste propre, exploitable telle quelle par l'analyseur).
+function dedupeTrace(trace) {
+  trace.gaps = [...new Set(trace.gaps.filter(Boolean))];
+  trace.brokenForms = [...new Set(trace.brokenForms.filter(Boolean))];
+  return trace;
+}
+
 /**
  * Traduit un texte français via l'agent outillé, avec gate + réparation.
  *
@@ -123,6 +168,10 @@ async function translateWithAgent(opts) {
   let toolRounds = 0;
   let repairs = 0;
 
+  // Trace d'observabilité : trace COMPLÈTE (chaque tool-call + son I/O, pour débugger) ET le SIGNAL
+  // dérivé (gaps de lexique, formes cassées) prêt à l'emploi. Renvoyée au serveur qui la persiste.
+  const trace = { toolCalls: [], gateAttempts: [], gaps: [], brokenForms: [] };
+
   // Boucle principale : alterne appels d'outils et tentatives de réponse finale.
   // Borne dure pour éviter toute boucle infinie (tool rounds + réparations + marge).
   for (let step = 0; step < maxToolRounds + maxRepairs + 2; step++) {
@@ -143,6 +192,9 @@ async function translateWithAgent(opts) {
       for (const block of resp.content) {
         if (block.type === 'tool_use') {
           const result = executeTool(block.name, block.input, ctx);
+          // Trace complète (I/O brut, pour debug) + extraction du signal (gaps / formes cassées).
+          trace.toolCalls.push({ round: toolRounds + 1, name: block.name, input: block.input, result });
+          collectSignals(trace, block.name, block.input, result);
           toolResults.push({
             type: 'tool_result',
             tool_use_id: block.id,
@@ -179,8 +231,12 @@ async function translateWithAgent(opts) {
     //        passer une traduction vide pour valide — exactement le piège low-trust.
     const extractionVide = translationLine.length === 0;
 
+    // Trace : chaque tentative finale passée au gate (la traduction proposée + son verdict).
+    trace.gateAttempts.push({ translation: translationLine, valid: gate.valid && !extractionVide, invalides: gate.invalides || [] });
+    for (const inv of (gate.invalides || [])) if (inv && inv.mot) trace.brokenForms.push(String(inv.mot));
+
     if (gate.valid && !extractionVide) {
-      return { rawResponse, translation: translationLine, valid: true, usage, toolRounds, repairs };
+      return { rawResponse, translation: translationLine, valid: true, usage, toolRounds, repairs, trace: dedupeTrace(trace) };
     }
 
     // Sortie invalide (ou non extractible) : réparer si on a encore des tentatives.
@@ -203,13 +259,15 @@ async function translateWithAgent(opts) {
     err.code = 'TRANSLATION_UNVALIDATED';
     err.invalides = gate.invalides;
     err.lastRaw = rawResponse;
+    err.trace = dedupeTrace(trace);   // trace attachée même sur échec : on apprend AUSSI des ratés
     throw err;
   }
 
   // Garde-fou ultime : boucle épuisée sans réponse finale valide.
   const err = new Error('Agent: boucle épuisée sans traduction valide.');
   err.code = 'AGENT_LOOP_EXHAUSTED';
+  err.trace = dedupeTrace(trace);
   throw err;
 }
 
-module.exports = { translateWithAgent, extractTranslationLine };
+module.exports = { translateWithAgent, extractTranslationLine, collectSignals };

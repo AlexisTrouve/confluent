@@ -24,7 +24,7 @@ const { renderMarkdownBook } = require('../core/ecriture/bookMarkdown');
 // Security modules
 const { authenticate, requireAdmin, createToken, listTokens, disableToken, enableToken, deleteToken, getGlobalStats, trackLLMUsage, checkLLMLimit } = require('../utils/auth');
 const { adminLimiter } = require('../utils/rateLimiter');
-const { requestLogger, getLogs, getLogStats } = require('../utils/logger');
+const { requestLogger, getLogs, getLogStats, logTranslation } = require('../utils/logger');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -455,6 +455,8 @@ app.post('/translate', authenticate, async (req, res) => {
     }
 
     let rawResponse;
+    let agentTrace = null;   // trace de l'agent (tool-calls + signal) — pour le log d'apprentissage
+    let agentMeta = null;    // { repairs, toolRounds } pour le log
     // QUOI : traduction faisant AUTORITÉ = celle validée par le gate de l'agent.
     // POURQUOI : re-parser rawResponse côté serveur peut diverger de l'extraction gatée de
     //        l'agent (ex: blocs ``` parasites) et servir une forme que le gate n'a pas vue.
@@ -496,6 +498,8 @@ app.post('/translate', authenticate, async (req, res) => {
       });
       rawResponse = agentResult.rawResponse;
       gatedTranslation = agentResult.translation; // déjà validée phonotactiquement
+      agentTrace = agentResult.trace || null;     // pour le log d'apprentissage (gaps, formes, trace)
+      agentMeta = { repairs: agentResult.repairs, toolRounds: agentResult.toolRounds };
 
       // Suivi de consommation par API key (tokens agrégés sur tous les tours de l'agent).
       if (apiKey && agentResult.usage) {
@@ -531,12 +535,35 @@ app.post('/translate', authenticate, async (req, res) => {
       translation: finalTranslation
     };
 
+    // Log d'apprentissage : couple FR→CF + signal (gaps, formes cassées) + trace complète.
+    // Uniquement quand l'agent a réellement tourné (agentTrace) → jamais en mode mock E2E.
+    // Enveloppé : une panne de log (disque…) ne doit jamais casser une traduction réussie.
+    if (agentTrace) {
+      try {
+        logTranslation({
+          fr: text, cf: finalTranslation, target: variant, ok: true,
+          model: model || DEFAULT_MODEL,
+          repairs: agentMeta && agentMeta.repairs, toolRounds: agentMeta && agentMeta.toolRounds,
+          gaps: agentTrace.gaps, brokenForms: agentTrace.brokenForms, trace: agentTrace
+        });
+      } catch (e) { console.error('logTranslation (ok) failed:', e.message); }
+    }
+
     res.json(response);
 
   } catch (error) {
     console.error('Translation error:', error);
     // Échec franc de validation : on ne sert JAMAIS de Confluent cassé (doctrine anti-fallback).
     if (error.code === 'TRANSLATION_UNVALIDATED' || error.code === 'AGENT_LOOP_EXHAUSTED') {
+      // On apprend AUSSI des ratés : log de l'échec avec sa trace (gaps/formes restés non résolus).
+      try {
+        logTranslation({
+          fr: text, cf: null, target: variant, ok: false, error: error.message,
+          gaps: (error.trace && error.trace.gaps) || [],
+          brokenForms: (error.trace && error.trace.brokenForms) || [],
+          trace: error.trace || null
+        });
+      } catch (e) { console.error('logTranslation (fail) failed:', e.message); }
       return res.status(422).json({ error: error.message, invalides: error.invalides || [] });
     }
     res.status(500).json({ error: error.message });

@@ -39,6 +39,34 @@ function log(type, data) {
   }
 }
 
+// Fichier de log des TRADUCTIONS (séparé des requêtes HTTP), un par jour, format JSONL.
+function getTranslationLogFile() {
+  const today = new Date().toISOString().split('T')[0];
+  return path.join(LOGS_DIR, `translations-${today}.jsonl`);
+}
+
+/**
+ * Persiste une traduction (entrée FR, sortie CF, signal d'apprentissage, trace complète).
+ *
+ * QUOI : append d'une ligne JSON par traduction dans logs/translations-AAAA-MM-JJ.jsonl.
+ * POURQUOI : on est en phase debug/amélioration — on veut (a) le SIGNAL exploitable (gaps de
+ *        lexique, formes cassées) pour faire grandir la langue là où on s'en sert, et (b) la
+ *        TRACE complète des outils pour comprendre les dérapages. Analysé par
+ *        scripts/analyze-translations.js. JAMAIS appelé en mode mock (pas de pollution de test).
+ * COMMENT : même rotation que les logs de requêtes (archive au-delà de MAX_LOG_SIZE).
+ */
+function logTranslation(entry) {
+  const line = JSON.stringify({ timestamp: new Date().toISOString(), ...entry }) + '\n';
+  const file = getTranslationLogFile();
+  fs.appendFileSync(file, line);
+  try {
+    const stats = fs.statSync(file);
+    if (stats.size > MAX_LOG_SIZE) fs.renameSync(file, file.replace('.jsonl', `-${Date.now()}.jsonl`));
+  } catch (error) {
+    console.error('Error rotating translation log:', error);
+  }
+}
+
 // Middleware de logging
 function requestLogger(req, res, next) {
   const start = Date.now();
@@ -145,7 +173,9 @@ function getLogStats() {
 
 module.exports = {
   log,
+  logTranslation,
   requestLogger,
   getLogs,
-  getLogStats
+  getLogStats,
+  LOGS_DIR
 };
