@@ -554,7 +554,7 @@ app.post('/translate', authenticate, async (req, res) => {
           model: model || DEFAULT_MODEL,
           repairs: agentMeta && agentMeta.repairs, toolRounds: agentMeta && agentMeta.toolRounds,
           grammarWarnings: agentMeta && agentMeta.grammarWarnings, overrides: agentMeta && agentMeta.overrides,
-          gaps: agentTrace.gaps, brokenForms: agentTrace.brokenForms, trace: agentTrace
+          gaps: agentTrace.gaps, rootGaps: agentTrace.rootGaps, brokenForms: agentTrace.brokenForms, trace: agentTrace
         });
       } catch (e) { console.error('logTranslation (ok) failed:', e.message); }
     }
@@ -570,6 +570,7 @@ app.post('/translate', authenticate, async (req, res) => {
         logTranslation({
           fr: text, cf: null, target: variant, ok: false, error: error.message,
           gaps: (error.trace && error.trace.gaps) || [],
+          rootGaps: (error.trace && error.trace.rootGaps) || [],
           brokenForms: (error.trace && error.trace.brokenForms) || [],
           trace: error.trace || null
         });

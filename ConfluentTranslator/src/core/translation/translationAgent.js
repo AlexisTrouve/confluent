@@ -119,8 +119,10 @@ const asWord = (w) => (typeof w === 'string' ? w : (w && (w.input || w.word || w
 /**
  * Extrait le SIGNAL APPRENABLE d'un résultat d'outil et l'accumule dans la trace.
  *
- * QUOI : repère (a) les GAPS de lexique — concepts/racines que les outils n'ont PAS trouvés —
- *        et (b) les FORMES CASSÉES rejetées (composition invalide, phonotactique).
+ * QUOI : repère (a) les GAPS = concepts FR cherchés en vain (analyze_text/lookup_concept) ;
+ *        (b) les ROOTGAPS = racines CF tentées mais non déclarées (check_composition/verify_word) ;
+ *        (c) les FORMES CASSÉES rejetées (composition invalide, phonotactique). FR et CF séparés
+ *        pour que la liste « à ajouter au lexique » ne mélange pas concepts et fragments d'essai.
  * POURQUOI : c'est exactement ce qu'on veut apprendre du trafic réel — où le lexique manque
  *        (→ l'étendre, alimente une étape déjà prévue) et où le modèle dérape sur la forme
  *        (→ durcir le prompt). Le gate final ne voit QUE la phonotactique ; ces signaux-là
@@ -137,12 +139,14 @@ function collectSignals(trace, name, input, result) {
     case 'lookup_concept':                                // concept cherché, aucune forme attestée
       if (result.found === false) { const g = asWord(result.francais); if (g) trace.gaps.push(g); }
       break;
-    case 'check_composition':                             // racines non déclarées + forme rejetée
-      for (const r of (result.racines_inconnues || [])) if (r) trace.gaps.push(String(r));
+    case 'check_composition':                             // racines CF non déclarées + forme rejetée
+      // rootGaps = racines CONFLUENT tentées mais non déclarées (essais de l'agent) — distinct des
+      // concepts FR cherchés en vain (gaps). Mélangés, ils polluaient la liste « à ajouter au lexique ».
+      for (const r of (result.racines_inconnues || [])) if (r) trace.rootGaps.push(String(r));
       if (result.valid === false && result.forme) trace.brokenForms.push(String(result.forme));
       break;
-    case 'verify_word':                                   // composition dont une racine n'existe pas
-      for (const r of (result.racines || [])) if (r && r.trouvee === false && r.racine) trace.gaps.push(String(r.racine));
+    case 'verify_word':                                   // composition CF dont une racine n'existe pas
+      for (const r of (result.racines || [])) if (r && r.trouvee === false && r.racine) trace.rootGaps.push(String(r.racine));
       break;
     case 'validate_form':                                 // formes phonotactiquement invalides
       if (result.valid === false) for (const inv of (result.invalides || [])) if (inv && inv.mot) trace.brokenForms.push(String(inv.mot));
@@ -153,7 +157,8 @@ function collectSignals(trace, name, input, result) {
 // Dédoublonne les listes de signal avant de rendre/attacher la trace (la trace brute peut répéter
 // le même gap à chaque tour ; on veut une liste propre, exploitable telle quelle par l'analyseur).
 function dedupeTrace(trace) {
-  trace.gaps = [...new Set(trace.gaps.filter(Boolean))];
+  trace.gaps = [...new Set(trace.gaps.filter(Boolean))];           // concepts FR cherchés en vain
+  trace.rootGaps = [...new Set(trace.rootGaps.filter(Boolean))];   // racines CF tentées mais non déclarées
   trace.brokenForms = [...new Set(trace.brokenForms.filter(Boolean))];
   return trace;
 }
@@ -200,7 +205,7 @@ async function translateWithAgent(opts) {
 
   // Trace d'observabilité : trace COMPLÈTE (chaque tool-call + son I/O, pour débugger) ET le SIGNAL
   // dérivé (gaps de lexique, formes cassées) prêt à l'emploi. Renvoyée au serveur qui la persiste.
-  const trace = { toolCalls: [], gateAttempts: [], closingChecks: [], gaps: [], brokenForms: [] };
+  const trace = { toolCalls: [], gateAttempts: [], closingChecks: [], gaps: [], rootGaps: [], brokenForms: [] };
 
   // Boucle principale : alterne appels d'outils et tentatives de réponse finale.
   // Borne dure pour éviter toute boucle infinie (tool rounds + réparations + marge).

@@ -15,7 +15,7 @@ function check(label, cond) { if (cond) { pass++; console.log(`  ✓ ${label}`);
 
 // Helper : applique collectSignals à un seul (name, result) sur une trace neuve.
 function run(name, result) {
-  const trace = { toolCalls: [], gateAttempts: [], gaps: [], brokenForms: [] };
+  const trace = { toolCalls: [], gateAttempts: [], gaps: [], rootGaps: [], brokenForms: [] };
   collectSignals(trace, name, {}, result);
   return trace;
 }
@@ -28,15 +28,16 @@ console.log('\n[2] lookup_concept → gap seulement si found:false');
 check('found:false → gap', run('lookup_concept', { found: false, francais: 'brume' }).gaps[0] === 'brume');
 check('found:true → aucun gap', run('lookup_concept', { found: true, francais: 'eau' }).gaps.length === 0);
 
-console.log('\n[3] check_composition → racine inconnue = gap, forme rejetée = cassée');
+console.log('\n[3] check_composition → racine CF inconnue = rootGap (PAS gaps FR), forme rejetée = cassée');
 const cc = run('check_composition', { valid: false, forme: 'tbime', racines_inconnues: ['xyz'] });
-check('racine inconnue → gap', cc.gaps.includes('xyz'));
+check('racine inconnue → rootGap', cc.rootGaps.includes('xyz'));
+check('racine inconnue PAS dans gaps FR', !cc.gaps.includes('xyz'));
 check('forme invalide → brokenForm', cc.brokenForms.includes('tbime'));
 
-console.log('\n[4] verify_word → racine trouvee:false = gap (pas les trouvées)');
+console.log('\n[4] verify_word → racine trouvee:false = rootGap (pas les trouvées)');
 const vw = run('verify_word', { racines: [{ racine: 'daku', trouvee: false }, { racine: 'sili', trouvee: true }] });
-check('daku (absente) → gap', vw.gaps.includes('daku'));
-check('sili (trouvée) → pas un gap', !vw.gaps.includes('sili'));
+check('daku (absente) → rootGap', vw.rootGaps.includes('daku'));
+check('sili (trouvée) → pas un rootGap', !vw.rootGaps.includes('sili'));
 
 console.log('\n[5] validate_form → formes invalides = cassées');
 check('mkaso → brokenForm', run('validate_form', { valid: false, invalides: [{ mot: 'mkaso' }] }).brokenForms.includes('mkaso'));

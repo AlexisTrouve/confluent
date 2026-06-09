@@ -45,7 +45,8 @@ if (entries.length === 0) { console.log('Aucun log de traduction (logs/translati
 
 const ok = entries.filter(e => e.ok);
 const fail = entries.filter(e => !e.ok);
-const gaps = tally(entries.flatMap(e => e.gaps || []));
+const gaps = tally(entries.flatMap(e => e.gaps || []));            // concepts FR cherchés en vain
+const rootGaps = tally(entries.flatMap(e => e.rootGaps || []));    // racines CF tentées non déclarées
 const broken = tally(entries.flatMap(e => e.brokenForms || []));
 const repairsList = ok.map(e => e.repairs || 0);
 const avgRepairs = repairsList.length ? (repairsList.reduce((a, b) => a + b, 0) / repairsList.length) : 0;
@@ -53,7 +54,7 @@ const withRepair = repairsList.filter(r => r > 0).length;
 
 // --- Sorties spécialisées ---
 if (args.has('--json')) {
-  console.log(JSON.stringify({ total: entries.length, ok: ok.length, fail: fail.length, gaps, brokenForms: broken, avgRepairs }, null, 2));
+  console.log(JSON.stringify({ total: entries.length, ok: ok.length, fail: fail.length, gaps, rootGaps, brokenForms: broken, avgRepairs }, null, 2));
   process.exit(0);
 }
 if (args.has('--gaps')) { for (const [g, n] of gaps) console.log(`${n}\t${g}`); process.exit(0); }
@@ -78,6 +79,10 @@ else for (const [g, n] of actionable.slice(0, 20)) console.log(`  ${String(n).pa
 if (idiomatic.length) {
   console.log(`\n--- déjà gérés par IDIOME (NE PAS ajouter — éviter le calque français) ---`);
   console.log('  ' + idiomatic.map(([g, n]) => `${g}(${n})`).join(' · '));
+}
+if (rootGaps.length) {
+  console.log(`\n--- racines CF tentées mais non déclarées (essais internes de l'agent — surtout du bruit) ---`);
+  console.log('  ' + rootGaps.slice(0, 15).map(([g, n]) => `${g}(${n})`).join(' · '));
 }
 
 console.log(`\n--- FORMES CASSÉES (top 15) — rejetées par le gate/compo → durcir le prompt ---`);
