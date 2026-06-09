@@ -8,6 +8,7 @@
  */
 'use strict';
 const { checkGrammar } = require('../../src/core/validation/grammarCheck');
+const { executeTool } = require('../../src/core/translation/translationTools');
 const { ANCIEN } = require('../../src/core/eras/eras');
 
 let pass = 0, fail = 0;
@@ -31,6 +32,11 @@ check('phrase vide → OK (rien à signaler)', warn('').ok);
 console.log('\n[4] Jamais bloquant — structure de retour');
 const r4 = warn('va naki u u');
 check('retourne { ok:false, warnings:[...] } sans throw', r4.ok === false && Array.isArray(r4.warnings));
+
+console.log('\n[5] Câblage outil — executeTool route bien vers grammar_check');
+const viaTool = executeTool('grammar_check', { confluent: 'va naki u nura vo mori u' }, { era: ANCIEN });
+check('executeTool(grammar_check) renvoie {ok, warnings}', viaTool && viaTool.ok === false && Array.isArray(viaTool.warnings) && viaTool.warnings.length >= 1);
+check('entrée vide → erreur propre (pas de crash)', executeTool('grammar_check', { confluent: '' }, { era: ANCIEN }).erreur != null);
 
 console.log(`\n${fail === 0 ? '✓' : '✗'} grammar_check : ${pass} ok, ${fail} ko`);
 process.exit(fail === 0 ? 0 : 1);
