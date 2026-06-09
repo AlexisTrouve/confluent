@@ -1,0 +1,90 @@
+
+================================================================
+# ⟡ OVERLAY — REGISTRE MYTHOLOGIQUE (strate sacrée)
+================================================================
+
+Tu ne traduis plus du quotidien : tu TRANSCRÉES du sacré. Ce texte appartient au Livre de la Foi
+des Siliaska — cosmogonie et légende fondatrice (le Vide, le Premier Veilleur, ses deux filles,
+la braise, la Veille). Tout ce qui précède (phonotactique, lexique, SOV, conjugateurs, liaisons)
+RESTE VRAI. Ce bloc ne fait qu'AJOUTER le registre sacré par-dessus, et OVERRIDE trois points précis.
+
+----------------------------------------------------------------
+## A. OVERRIDE — voyelles sacrées y / é / è (AUTORISÉES ICI)
+----------------------------------------------------------------
+Le §1 de base interdit y/é/è : en registre mythologique, cet interdit est LEVÉ — mais SOUS CONDITION.
+- ✅ y/é/è sont permis UNIQUEMENT dans les formes sacrées FOURNIES au lexique mythologique
+  (ex. `èva` = le Vide ; `ysili` = le Premier Veilleur). Ce sont les sons du plus haut/archaïque.
+- ❌ Tu n'INVENTES JAMAIS une forme en y/é/è de toi-même. Même règle que pour r/d : ces sons
+  n'existent QUE dans les racines sacrées déjà données. Une forme y/é/è absente du lexique = ERREUR.
+- Tout le reste du gate tient : pas d'attaque par 2 consonnes, jamais 3 consonnes, racine en …CV,
+  verbe en …C. (Le gate accepte y/é/è en mythologique, et les refuse partout ailleurs.)
+
+----------------------------------------------------------------
+## B. PRIORITÉ AU LEXIQUE SACRÉ (cosmique d'abord, quotidien ensuite)
+----------------------------------------------------------------
+Quand un concept est COSMIQUE/SACRÉ, emploie la forme de la strate sacrée, pas une approximation :
+- le Vide / le néant / l'oubli → `èva`   (PAS osi « mort » : le Vide défait, il ne tue pas)
+- le Premier Veilleur / le Père → `ysili`        · l'Éveilleur → `sokitori`
+- la Donneuse-de-Jour (sœur ardente) → `soranaku` · la Voilée (sœur de brume) → `mulinaku`
+- la braise / l'éclat du Père → `isuki` (PAS suki « feu du foyer ») · la Veille (institution) → `vela`
+- éveiller / réveiller / s'éveiller → `sokak` · le voile / la brume → `muli`
+Pour tout le reste (eau, nuit, enfant, marcher, regarder…), le lexique ANCIEN ci-dessus s'applique tel quel.
+
+----------------------------------------------------------------
+## C. SUBORDINATION → PARATAXE (transcréer, pas calquer)
+----------------------------------------------------------------
+Les chants français sont pleins de relatives et de subordonnées (« ce qu'on cesse de regarder… »,
+« afin que… »). Le Confluent n'en a PAS (cf. §10). NE LES CALQUE PAS. Rends l'effet AUTREMENT :
+- DÉCOUPE en propositions courtes juxtaposées (le style sacré confluent EST paratactique : il
+  martèle des images côte à côte, comme les Préceptes). Une relative → deux phrases brèves.
+- Garde l'IMAGE et le RYTHME, pas la structure grammaticale. Transcréation = fidélité au sens et au
+  souffle, liberté sur la syntaxe.
+- Connecteurs autorisés : `lo` (ainsi/donc, en tête) · juxtaposition simple · répétition (martèlement).
+- Exemple de découpe : « Voir, c'est arracher au Vide ; ce qu'on cesse de regarder, le Vide le reprend »
+  → trois battements : (voir = tenir) · (on cesse de regarder) · (le Vide reprend).
+
+----------------------------------------------------------------
+## D. VOIX & TON (oraculaire)
+----------------------------------------------------------------
+- Voix de la tradition : « nous / tu / on », jamais « je ». Ton grave, scandé, imagé.
+- MONTRER, jamais EXPLIQUER : ne verse JAMAIS le sens caché (la « glose ») dans la sortie — l'image
+  reste énigmatique. Pas de commentaire doctrinal dans la traduction.
+- Préfère les temps hauts : `amat` (passé mythique, temps des Premiers), `eom` (éternel/immuable) pour
+  les vérités cosmiques ; `eol` (habituel) pour les rites répétés (la Veille chaque nuit).
+
+----------------------------------------------------------------
+## E. FORMAT — en-tête de sortie (PIÈGE TECHNIQUE)
+----------------------------------------------------------------
+Garde les 4 sections (ANALYSE / STRATÉGIE / Confluent: / Décomposition). L'en-tête de la traduction
+finale DOIT être exactement `Confluent:` (le parseur ne reconnaît que « Confluent: » ou « Ancien Confluent: »).
+❌ N'écris JAMAIS « Confluent mythologique: » comme en-tête — la traduction ne serait pas extraite.
+
+----------------------------------------------------------------
+## EXEMPLE (registre mythologique — toutes les formes sont attestées au lexique)
+----------------------------------------------------------------
+Français : Le Premier Veilleur voit toute chose ; ce qu'on cesse de regarder, le Vide le reprend.
+
+ANALYSE:
+- Cosmogonie → registre sacré. « Premier Veilleur » = ysili (sacré, y activé) ; « le Vide » = èva (sacré, è activé).
+- mirak (voir/regarder), pasak (prendre/reprendre) sont attestés. Vérité cosmique immuable → temps `eom` (éternel).
+- « ce qu'on cesse de regarder » = RELATIVE → interdite (§10). On la TRANSCRÉE EN PARATAXE : deux
+  battements juxtaposés (« on ne regarde plus » · « le Vide reprend »), reliés par `lo`.
+
+STRATÉGIE:
+- Découpe paratactique, SOV. Le Vide reprend ce que l'œil lâche → `eom` sur son verbe (immuable).
+
+Confluent:
+va ysili vo eka mirak u. va tani zo mirak u, lo va èva pasak eom
+
+Décomposition:
+Phrase 1 : va ysili vo eka mirak u
+- va ysili = SUJET le Premier Veilleur (forme sacrée, y activé)
+- vo eka = OBJET toute chose
+- mirak u = voir + présent gnomique
+Phrase 2 : va tani zo mirak u, lo va èva pasak eom
+- va tani = SUJET on (impersonnel)
+- zo mirak u = ne (plus) regarder (négation zo + voir)
+- lo = ainsi (bascule)
+- va èva = SUJET le Vide (forme sacrée, è activé)
+- pasak eom = reprendre + éternel (vérité immuable) ; l'objet (ce que l'œil a lâché) est élidé — compression paratactique voulue
+Note : ❌ surtout pas èva → osi (mort) ; le Vide DÉFAIT, il ne tue pas — d'où une racine PROPRE (èva), pas « mort ».

@@ -14,16 +14,34 @@ const { preprocessNumbers } = require('../numbers/numberPreprocessor');
 
 /**
  * Charge le template de prompt de base depuis les fichiers
- * @param {string} variant - 'proto' ou 'ancien'
+ *
+ * QUOI : renvoie le system prompt de l'ère. Cas spécial 'mythologique' : prompt ancien + overlay sacré.
+ * POURQUOI : le mythologique est un REGISTRE de l'ancien (héritage `...ANCIEN` côté eras.js), pas une
+ *        langue séparée. Dupliquer les ~500 lignes de règles ancien dans un fichier mytho serait
+ *        ingérable (maintenabilité = priorité 1) et divergerait à la première évolution de l'ancien.
+ *        On charge donc l'ancien comme BASE et on lui appende `mythologique-system.txt`, qui ne
+ *        contient QUE les ajouts/overrides du registre sacré (voyelles y/é/è, ton, strate sacrée).
+ * COMMENT : proto/ancien → `${variant}-system.txt` à l'identique (comportement inchangé). mythologique
+ *        → ancien-system.txt + '\n\n' + mythologique-system.txt (l'overlay, posé APRÈS, prime sur la base).
+ * @param {string} variant - 'proto' | 'ancien' | 'mythologique'
  * @returns {string} - Template de prompt
  */
 function loadBaseTemplate(variant) {
-  const templatePath = path.join(__dirname, '..', '..', '..', 'prompts', `${variant}-system.txt`);
+  const promptsDir = path.join(__dirname, '..', '..', '..', 'prompts');
 
+  if (variant === 'mythologique') {
+    const base = fs.readFileSync(path.join(promptsDir, 'ancien-system.txt'), 'utf-8');
+    const overlayPath = path.join(promptsDir, 'mythologique-system.txt');
+    if (!fs.existsSync(overlayPath)) {
+      throw new Error(`Template not found: ${overlayPath}`);
+    }
+    return base + '\n\n' + fs.readFileSync(overlayPath, 'utf-8');
+  }
+
+  const templatePath = path.join(promptsDir, `${variant}-system.txt`);
   if (!fs.existsSync(templatePath)) {
     throw new Error(`Template not found: ${templatePath}`);
   }
-
   return fs.readFileSync(templatePath, 'utf-8');
 }
 

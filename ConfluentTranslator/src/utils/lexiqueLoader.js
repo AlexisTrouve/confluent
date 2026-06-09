@@ -177,9 +177,63 @@ function mergeSimpleLexique(baseDir, existingLexique) {
 }
 
 /**
- * Charge les lexiques pour les deux variantes de la langue
+ * Construit le lexique MYTHOLOGIQUE : l'ancien (hérité INTÉGRALEMENT) + une strate sacrée en overlay.
+ *
+ * QUOI : renvoie un lexique = copie de l'ancien sur laquelle on superpose les entrées sacrées
+ *        (le Vide, l'Éveilleur, la Veille…) lues dans `mythologique-confluent/lexique/`.
+ * POURQUOI : le mythologique n'est pas une langue à part — c'est l'ancien diversifié vers le haut.
+ *        Il doit donc disposer de TOUT le lexique quotidien (neige, eau, marcher, enfant…) que les
+ *        chants emploient AUSSI, plus les mots sacrés que l'ancien n'a pas. L'overlay évite la
+ *        duplication et garde l'ancien comme source unique de la base.
+ * COMMENT : 1. DEEP-CLONE de l'ancien (JSON round-trip) — impératif : le merge ci-dessous mute le
+ *        dictionnaire, et l'ancien partage des références de tableaux `traductions` entre un mot et
+ *        ses synonymes (cf. loadLexiqueFromDir) ; muter en place corromprait l'ancien servi ailleurs.
+ *        2. Charge la strate sacrée. 3. Pour chaque entrée sacrée : concept nouveau → ajouté ; concept
+ *        déjà connu de l'ancien → la/les traduction(s) sacrée(s) sont mises EN TÊTE (unshift) pour être
+ *        préférées en registre mythologique (le résumé prompt et les lookups prennent traductions[0]).
  * @param {string} baseDir - Chemin de base du projet confluent
- * @returns {Object} - Lexiques proto et ancien
+ * @param {Object} ancien - Lexique ancien déjà chargé (sert de base)
+ * @returns {Object} - Lexique mythologique (ancien + sacré)
+ */
+function overlayMythologique(baseDir, ancien) {
+  // Copie profonde : aucune mutation ne doit remonter à l'ancien.
+  const mytho = JSON.parse(JSON.stringify(ancien));
+  mytho.meta = { ...mytho.meta, source_dir: 'mythologique (ancien + strate sacrée)', overlay: true };
+
+  const sacredDir = path.join(baseDir, 'mythologique-confluent', 'lexique');
+  if (!fs.existsSync(sacredDir)) {
+    console.warn(`  Strate sacrée absente (${sacredDir}) — mythologique = ancien seul pour l'instant`);
+    return mytho;
+  }
+
+  const sacred = loadLexiqueFromDir(sacredDir);
+  let added = 0, enriched = 0;
+  for (const [key, data] of Object.entries(sacred.dictionnaire)) {
+    if (!mytho.dictionnaire[key]) {
+      mytho.dictionnaire[key] = data;                 // concept sacré inédit → ajouté tel quel
+      added++;
+    } else {
+      // Concept déjà connu : on préfixe la/les forme(s) sacrée(s) (préférées en registre haut).
+      for (const trad of (data.traductions || []).reverse()) {  // reverse → l'ordre source est conservé après unshift
+        if (!mytho.dictionnaire[key].traductions.some(t => t.confluent === trad.confluent)) {
+          mytho.dictionnaire[key].traductions.unshift(trad);
+        }
+      }
+      for (const syn of (data.synonymes_fr || [])) {
+        if (!mytho.dictionnaire[key].synonymes_fr.includes(syn)) mytho.dictionnaire[key].synonymes_fr.push(syn);
+      }
+      enriched++;
+    }
+  }
+  mytho.meta.total_entries = Object.keys(mytho.dictionnaire).length;
+  console.log(`  Mythologique = ancien + strate sacrée : ${added} concepts sacrés ajoutés, ${enriched} enrichis`);
+  return mytho;
+}
+
+/**
+ * Charge les lexiques pour les TROIS ères de la langue (proto / ancien / mythologique).
+ * @param {string} baseDir - Chemin de base du projet confluent
+ * @returns {Object} - Lexiques proto, ancien et mythologique
  */
 function loadAllLexiques(baseDir) {
   const protoDir = path.join(baseDir, 'proto-confluent', 'lexique');
@@ -196,7 +250,11 @@ function loadAllLexiques(baseDir) {
   // Fusionner le lexique simple
   ancien = mergeSimpleLexique(baseDir, ancien);
 
-  return { proto, ancien };
+  // Mythologique = ancien (hérité) + strate sacrée (overlay).
+  console.log('Building Mythologique lexique (overlay)...');
+  const mythologique = overlayMythologique(baseDir, ancien);
+
+  return { proto, ancien, mythologique };
 }
 
 /**
@@ -330,6 +388,7 @@ function generateLexiqueSummary(lexique, maxEntries = 200) {
 module.exports = {
   loadLexiqueFromDir,
   loadAllLexiques,
+  overlayMythologique,
   buildReverseIndex,
   searchLexique,
   generateLexiqueSummary

@@ -1,0 +1,176 @@
+{
+  "_comment": "STRATE SACRÉE du Confluent mythologique — cœur cosmogonique du Livre de la Foi (chants Création/Éveil). Chargée EN OVERLAY de l'ancien (cf. lexiqueLoader.overlayMythologique) : ces concepts s'AJOUTENT au lexique ancien quotidien, ils ne le remplacent pas.",
+  "_DRAFT": "⚠️ FORMES PROPOSÉES, EN ATTENTE DE VALIDATION D'ALEXI (créateur de la langue). L'onomastique divine (noms du Père, des deux sœurs, de l'Éveilleur) est un acte créateur qui lui revient — ces formes sont des amorces raisonnées (phonotactique validée, ancrées GLOSE/canon), pas du canon figé. Révisable.",
+  "_canon": "Source : civjdr/livre_de_la_foi/chants/chant-01-creation.md, chant-02-eveil.md + atelier/GLOSE.md. Axe central : Connaissance (le Regard) ⚔️ le Vide.",
+  "_phonotactique": "Registre sacré : voyelles réservées y/é/è ACTIVÉES (réservées au plus haut/archaïque). r toléré uniquement via racines existantes réemployées (ex. tori).",
+  "dictionnaire": {
+    "vide": {
+      "traductions": [
+        {
+          "confluent": "èva",
+          "type": "racine_sacree",
+          "forme_liee": "èv",
+          "domaine": "cosmogonie",
+          "registre": "mythologique",
+          "note": "L'antagoniste cosmique central — l'oubli/le néant.",
+          "definition": "Le Vide : non le creux entre deux choses, mais l'absence de toute chose et de quiconque pour en souffrir ; ce qui attend sous chaque chose « comme l'eau sous la glace » et reprend ce qu'on cesse de regarder. N'a pas de bête : il a l'attente. Antonyme absolu du Regard (voir = arracher au Vide).",
+          "nuance": "QUOI : nomme l'absence primordiale (oubli, ignorance, néant). POURQUOI è : la voyelle réservée è marque l'antériorité archaïque absolue — le Vide est AVANT la langue, avant le premier œil. À NE PAS confondre avec osi (la mort, qui est un événement subi) : le Vide ne tue pas, il DÉFAIT (on s'y délave en se laissant oublier). DRAFT.",
+          "exemple": "èva vo eka osiak u (le Vide reprend toute chose — DRAFT)",
+          "_draft": true
+        }
+      ],
+      "synonymes_fr": ["le vide", "néant", "oubli primordial"]
+    },
+    "premier veilleur": {
+      "traductions": [
+        {
+          "confluent": "ysili",
+          "type": "racine_sacree",
+          "forme_liee": "ysil",
+          "domaine": "cosmogonie",
+          "registre": "mythologique",
+          "note": "Le Père, l'aïeul du monde — Celui-qui-ouvrit-les-yeux.",
+          "definition": "Le Premier Veilleur : le premier œil qui s'ouvrit dans le Vide ; en regardant, il fit être ce qu'il regardait (voir, c'est tenir). Aïeul du monde, il alluma mille feux sans s'éteindre et se retient de veiller à notre place (« Celui-dont-nous-portons-le-feu »). Demeure au plus haut.",
+          "nuance": "QUOI : nom propre du Père-origine. POURQUOI y + sili (regard) : y (voyelle réservée, registre suprême) élève sili (le regard, racine cardinale) — littéralement « le Regard premier », l'œil dont descendent tous les regards. Cohérent canon : le Père EST un œil. Distinct de aita (ancêtre incarné d'une lignée humaine). DRAFT.",
+          "exemple": "ysili vo eka mirak amat u (le Premier Veilleur vit toute chose, au passé mythique — DRAFT)",
+          "_draft": true
+        }
+      ],
+      "synonymes_fr": ["le père", "veilleur premier", "celui qui ouvrit les yeux", "premier veilleur"]
+    },
+    "braise": {
+      "traductions": [
+        {
+          "confluent": "isuki",
+          "type": "racine_sacree",
+          "forme_liee": "isuk",
+          "domaine": "cosmogonie",
+          "registre": "mythologique",
+          "note": "L'éclat du Père semé dans chaque vivant.",
+          "definition": "La braise / l'éclat : l'un des mille feux que le Premier Veilleur tendit à la terre froide, dormant « sous la cendre des jours » au creux de chaque poitrine — le feu qui sait voir. Chez quelques-uns il s'éveille de lui-même (cf. l'Éveilleur, l'enfant Œil-Ouvert).",
+          "nuance": "QUOI : feu sacré intérieur, fragment de la lumière du Père. POURQUOI i- initial : élévation sacrée (voyelle initiale) de suki (feu, racine standard quotidienne) → isuki = le feu PREMIER/intérieur, par-delà le feu du foyer. « le feu prend où il veut » (mérite > sang). DRAFT.",
+          "exemple": "no kori na siliaska isuki tuli u (la braise demeure au cœur du peuple — DRAFT)",
+          "_draft": true
+        }
+      ],
+      "synonymes_fr": ["éclat", "éclat du père", "feu sacré", "feu intérieur"]
+    },
+    "éveil": {
+      "traductions": [
+        {
+          "confluent": "soku",
+          "type": "racine",
+          "forme_liee": "sok",
+          "domaine": "cosmogonie",
+          "registre": "mythologique",
+          "note": "Racine d'appui : éveil de la braise / du regard.",
+          "definition": "L'éveil : l'instant où la braise prend feu d'elle-même, où un regard s'ouvre pour la première fois (« il levait la tête »). Sert de base au verbe sokak (éveiller) et au titre sokitori (l'Éveilleur).",
+          "nuance": "QUOI : racine support du champ de l'éveil. POURQUOI distincte de vela (la veille = tenir l'œil ouvert dans la durée) : soku = le MOMENT où l'œil s'ouvre ; vela = l'ACTE prolongé de veiller. DRAFT.",
+          "_draft": true
+        }
+      ],
+      "synonymes_fr": ["réveil"]
+    },
+    "éveiller": {
+      "traductions": [
+        {
+          "confluent": "sokak",
+          "type": "verbe",
+          "forme_liee": "sokak",
+          "domaine": "cosmogonie",
+          "registre": "mythologique",
+          "note": "Faire s'ouvrir un regard / une braise (soi ou autrui).",
+          "definition": "Éveiller (et réveiller) : faire prendre la braise, faire s'ouvrir le regard — le sien (s'éveiller) ou celui d'un autre (l'Éveilleur n'éveilla pas que ses propres yeux ; dans la Veille, le veilleur qui faiblit en réveille un autre).",
+          "nuance": "QUOI : verbe (finit par consonne) du champ soku. POURQUOI couvre éveiller ET réveiller : même geste (rouvrir un œil qui se ferme). À distinguer de velak (veiller/surveiller = monter la garde). DRAFT.",
+          "exemple": "va tani vo tani konu sokak u (qu'il en réveille un autre — DRAFT)",
+          "_draft": true
+        }
+      ],
+      "synonymes_fr": ["réveiller", "s'éveiller", "réveille", "éveille"]
+    },
+    "éveilleur": {
+      "traductions": [
+        {
+          "confluent": "sokitori",
+          "type": "composition",
+          "forme_liee": "sokitor",
+          "domaine": "cosmogonie",
+          "registre": "mythologique",
+          "note": "L'Éveilleur — l'éclat du Père qui montre la rivière (chant de l'Éveil).",
+          "definition": "L'Éveilleur : un homme en qui la braise s'éveilla le premier, qui mena le peuple hors de la crevasse en montrant la rivière (jamais le poisson), et s'effaça pour que les siens veillent seuls. Non un dieu — un éclat du Père.",
+          "nuance": "QUOI : titre (composition sok-i-tori = éveil + agent + personne, « celui qui éveille »), bâti comme zak-i-tori (gardien) au lexique ancien. POURQUOI r admis : tori (personne) est une racine EXISTANTE réemployée — aucun r nouvellement créé. DRAFT.",
+          "exemple": "va sokitori vi nura siliaska velak ok (l'Éveilleur fait veiller le peuple vers la rivière — DRAFT)",
+          "_draft": true
+        }
+      ],
+      "synonymes_fr": ["l'éveilleur"]
+    },
+    "voile": {
+      "traductions": [
+        {
+          "confluent": "muli",
+          "type": "racine",
+          "forme_liee": "mul",
+          "domaine": "cosmogonie",
+          "registre": "mythologique",
+          "note": "Racine d'appui : le voile / la brume de la Voilée.",
+          "definition": "Le voile, la brume, le drap de douceur que la Voilée tire sur le monde pour abaisser les paupières trop lourdes et poser le silence sur ce qui ferait trop mal à voir. Champ du sommeil, de l'oubli doux, du repos.",
+          "nuance": "QUOI : racine support du champ du voile/brume. POURQUOI distincte de bami (la nuit, simple absence de jour) : muli = le voile ACTIF, l'acte de cacher/adoucir (≠ taku, l'obscur). DRAFT.",
+          "_draft": true
+        }
+      ],
+      "synonymes_fr": ["brume", "voile de brume"]
+    },
+    "donneuse-de-jour": {
+      "traductions": [
+        {
+          "confluent": "soranaku",
+          "type": "composition",
+          "forme_liee": "soranak",
+          "domaine": "cosmogonie",
+          "registre": "mythologique",
+          "note": "La sœur ardente, née des yeux ouverts du Père.",
+          "definition": "La Donneuse-de-Jour : fille née des yeux OUVERTS du Premier Veilleur, ardente et droite, le visage trop clair pour qu'on le cherche sans s'y brûler. Donner le jour = donner la lumière ET enfanter. Sa bête est le Sans-Sommeil. Aime la vie « à pleins bras » ; veut tout montrer au grand jour.",
+          "nuance": "QUOI : nom propre (composition sor-a-naku = soleil + relation + fille, « la fille du soleil »). POURQUOI sora (soleil) : elle est l'œil-soleil de la Fresque, l'ardeur du jour. À distinguer de la simple aurore (ora). DRAFT — l'image « donner le jour » pourra justifier une forme plus riche.",
+          "exemple": "soranaku vo eka mirak es u (la Donneuse veut voir toute chose — DRAFT)",
+          "_draft": true
+        }
+      ],
+      "synonymes_fr": ["la donneuse-de-jour", "donneuse de jour", "sœur ardente", "la sœur ardente"]
+    },
+    "voilée": {
+      "traductions": [
+        {
+          "confluent": "mulinaku",
+          "type": "composition",
+          "forme_liee": "mulinak",
+          "domaine": "cosmogonie",
+          "registre": "mythologique",
+          "note": "La sœur voilée, née des yeux fermés du Père.",
+          "definition": "La Voilée : fille née des yeux FERMÉS du Premier Veilleur, mêlée de brume et de neige, sans nul trait qu'on pût saisir. Borde les vivants comme les morts, ôte la peur et la douleur — et ne sait plus que sa douceur fait mourir. Sa bête est le Grand-Pâle.",
+          "nuance": "QUOI : nom propre (composition mul-i-naku = voile + agent + fille, « la fille du voile »), parallèle exact de soranaku — les deux sœurs partagent la structure (…naku, filles du même œil). POURQUOI muli : son domaine est le voile/le sommeil. DRAFT.",
+          "exemple": "mulinaku vo siliaska muli es u (la Voilée veut voiler le peuple — DRAFT)",
+          "_draft": true
+        }
+      ],
+      "synonymes_fr": ["la voilée", "sœur voilée", "la sœur voilée"]
+    },
+    "veille": {
+      "traductions": [
+        {
+          "confluent": "vela",
+          "type": "racine_sacree_composee",
+          "forme_liee": "vel",
+          "domaine": "rituel",
+          "registre": "mythologique",
+          "note": "La Veille — première chose sacrée que le peuple inventa de lui-même.",
+          "definition": "La Veille : l'institution par laquelle, à tour de rôle, l'un veille sur le sommeil des autres et en réveille un quand il faiblit — pour qu'il y ait toujours, parmi le peuple, un œil ouvert contre la nuit. Première chose sacrée née d'en bas, qu'aucun ciel ne souffla. Donne son nom aux Cercles de Vigile (sikuvela).",
+          "nuance": "QUOI : élève le sens NOMINAL de vela (vigile) au registre sacré (l'institution de la Veille), là où velak reste le VERBE veiller/surveiller. POURQUOI réemploi : vela est déjà la racine canonique de la vigile (présente dans sikuvela) — la Veille sacrée en est l'apothéose, pas une racine neuve. DRAFT.",
+          "exemple": "no bami va siliaska vela velak eol u (la nuit, le peuple tient la Veille — DRAFT)",
+          "_draft": true
+        }
+      ],
+      "synonymes_fr": ["la veille"]
+    }
+  }
+}

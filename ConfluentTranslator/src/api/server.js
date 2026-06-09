@@ -86,25 +86,40 @@ app.use(express.static(path.join(__dirname, '..', '..', 'public')));
 const protoPrompt = fs.readFileSync(path.join(__dirname, '..', '..', 'prompts', 'proto-system.txt'), 'utf-8');
 const ancienPrompt = fs.readFileSync(path.join(__dirname, '..', '..', 'prompts', 'ancien-system.txt'), 'utf-8');
 
+// Ères de langue reconnues par l'API (= clés des lexiques/index/prompts).
+const KNOWN_VARIANTS = new Set(['proto', 'ancien', 'mythologique']);
+
+/**
+ * Résout le paramètre public (`target` ou `variant`) reçu du client vers une ère interne connue.
+ * QUOI : map la valeur reçue vers 'proto' | 'ancien' | 'mythologique'.
+ * POURQUOI : 7 endpoints dérivaient l'ère par un ternaire `target==='proto'?'proto':'ancien'` qui
+ *        ignorait silencieusement le mythologique (il retombait sur l'ancien). Centraliser garantit
+ *        qu'AJOUTER une ère la rend disponible partout d'un coup — pas d'endpoint oublié.
+ * COMMENT : valeur ∈ ères connues → elle-même ; sinon (inconnue/undefined) → 'ancien' (défaut historique).
+ */
+function resolveVariant(target) {
+  return KNOWN_VARIANTS.has(target) ? target : 'ancien';
+}
+
 // Load lexiques dynamically from JSON files
 const baseDir = path.join(__dirname, '..', '..', '..');
-let lexiques = { proto: null, ancien: null };
-let reverseIndexes = { proto: null, ancien: null };
-let confluentIndexes = { proto: null, ancien: null };
+let lexiques = { proto: null, ancien: null, mythologique: null };
+let reverseIndexes = { proto: null, ancien: null, mythologique: null };
+let confluentIndexes = { proto: null, ancien: null, mythologique: null };
 
 function reloadLexiques() {
   console.log('Loading lexiques...');
   lexiques = loadAllLexiques(baseDir);
-  reverseIndexes = {
-    proto: buildReverseIndex(lexiques.proto),
-    ancien: buildReverseIndex(lexiques.ancien)
-  };
-  confluentIndexes = {
-    proto: buildConfluentIndex(lexiques.proto),
-    ancien: buildConfluentIndex(lexiques.ancien)
-  };
+  // Construit les index pour CHAQUE ère chargée (boucle → toute nouvelle ère est indexée sans code en plus).
+  reverseIndexes = {};
+  confluentIndexes = {};
+  for (const [variant, lex] of Object.entries(lexiques)) {
+    reverseIndexes[variant] = buildReverseIndex(lex);
+    confluentIndexes[variant] = buildConfluentIndex(lex);
+  }
   console.log('Lexiques loaded successfully');
-  console.log(`Confluent→FR index: ${Object.keys(confluentIndexes.ancien || {}).length} entries`);
+  console.log(`Confluent→FR index (ancien): ${Object.keys(confluentIndexes.ancien || {}).length} entries`);
+  console.log(`Confluent→FR index (mythologique): ${Object.keys(confluentIndexes.mythologique || {}).length} entries`);
 }
 
 // Initial load
@@ -163,8 +178,8 @@ app.get('/lexique', authenticate, (req, res) => {
 app.get('/api/lexique/:variant', authenticate, (req, res) => {
   const { variant } = req.params;
 
-  if (variant !== 'proto' && variant !== 'ancien') {
-    return res.status(400).json({ error: 'Invalid variant. Use "proto" or "ancien"' });
+  if (!KNOWN_VARIANTS.has(variant)) {
+    return res.status(400).json({ error: 'Invalid variant. Use "proto", "ancien" or "mythologique"' });
   }
 
   if (!lexiques[variant]) {
@@ -178,8 +193,8 @@ app.get('/api/lexique/:variant', authenticate, (req, res) => {
 app.get('/api/stats', authenticate, (req, res) => {
   const { variant = 'ancien' } = req.query;
 
-  if (variant !== 'proto' && variant !== 'ancien') {
-    return res.status(400).json({ error: 'Invalid variant. Use "proto" or "ancien"' });
+  if (!KNOWN_VARIANTS.has(variant)) {
+    return res.status(400).json({ error: 'Invalid variant. Use "proto", "ancien" or "mythologique"' });
   }
 
   if (!lexiques[variant]) {
@@ -268,8 +283,8 @@ app.get('/api/search', authenticate, (req, res) => {
     return res.status(400).json({ error: 'Missing query parameter "q"' });
   }
 
-  if (variant !== 'proto' && variant !== 'ancien') {
-    return res.status(400).json({ error: 'Invalid variant. Use "proto" or "ancien"' });
+  if (!KNOWN_VARIANTS.has(variant)) {
+    return res.status(400).json({ error: 'Invalid variant. Use "proto", "ancien" or "mythologique"' });
   }
 
   const results = searchLexique(lexiques[variant], q, direction);
@@ -285,7 +300,8 @@ app.post('/api/reload', authenticate, requireAdmin, (req, res) => {
       message: 'Lexiques reloaded',
       stats: {
         proto: lexiques.proto?.meta?.total_entries || 0,
-        ancien: lexiques.ancien?.meta?.total_entries || 0
+        ancien: lexiques.ancien?.meta?.total_entries || 0,
+        mythologique: lexiques.mythologique?.meta?.total_entries || 0
       }
     });
   } catch (error) {
@@ -315,7 +331,7 @@ app.post('/api/debug/prompt', authenticate, (req, res) => {
     return res.status(400).json({ error: 'Missing parameter: text' });
   }
 
-  const variant = target === 'proto' ? 'proto' : 'ancien';
+  const variant = resolveVariant(target);
 
   try {
     let systemPrompt;
@@ -366,7 +382,7 @@ app.post('/api/analyze/coverage', authenticate, (req, res) => {
     return res.status(400).json({ error: 'Missing parameter: text' });
   }
 
-  const variant = target === 'proto' ? 'proto' : 'ancien';
+  const variant = resolveVariant(target);
 
   try {
     // Use the same contextAnalyzer as the translation pipeline
@@ -438,7 +454,7 @@ app.post('/translate', authenticate, async (req, res) => {
     });
   }
 
-  const variant = target === 'proto' ? 'proto' : 'ancien';
+  const variant = resolveVariant(target);
 
   try {
     let systemPrompt;
@@ -685,7 +701,7 @@ app.post('/api/translate/raw', authenticate, async (req, res) => {
     });
   }
 
-  const variant = target === 'proto' ? 'proto' : 'ancien';
+  const variant = resolveVariant(target);
 
   try {
     let systemPrompt;
@@ -750,7 +766,7 @@ app.post('/api/translate/batch', authenticate, async (req, res) => {
     return res.status(400).json({ error: 'Missing or invalid "words" array' });
   }
 
-  const variant = target === 'proto' ? 'proto' : 'ancien';
+  const variant = resolveVariant(target);
   const results = {};
 
   for (const word of words) {
@@ -777,7 +793,7 @@ app.post('/api/translate/conf2fr', authenticate, (req, res) => {
     return res.status(400).json({ error: 'Missing parameter: text' });
   }
 
-  const variantKey = variant === 'proto' ? 'proto' : 'ancien';
+  const variantKey = resolveVariant(variant);
 
   if (!confluentIndexes[variantKey]) {
     return res.status(500).json({ error: `Confluent index for ${variantKey} not loaded` });
@@ -816,7 +832,7 @@ app.post('/api/translate/conf2fr/llm', authenticate, async (req, res) => {
     });
   }
 
-  const variantKey = variant === 'proto' ? 'proto' : 'ancien';
+  const variantKey = resolveVariant(variant);
 
   if (!confluentIndexes[variantKey]) {
     return res.status(500).json({ error: `Confluent index for ${variantKey} not loaded` });

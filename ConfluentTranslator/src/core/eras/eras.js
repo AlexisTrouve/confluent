@@ -90,19 +90,35 @@ const ANCIEN = {
 };
 
 // ============================================================================
-// MYTHOLOGIQUE — strate sacrée supérieure (STUB : à concevoir).
-// Hérite de l'ancien, mais ACTIVE les voyelles réservées y/é/è et (à terme) des liaisons
-// sacrées étendues. Présent pour que l'architecture l'accueille ; ses règles seront affinées.
+// MYTHOLOGIQUE — strate sacrée supérieure (le « Confluent mythologique »).
+//
+// QUOI : registre HAUT/poétique de l'ancien, dédié à la transcréation des textes sacrés
+//        (Livre de la Foi : chants de la Création / de l'Éveil). N'est PAS une langue distincte :
+//        c'est l'ancien DIVERSIFIÉ vers le haut — il en hérite TOUTE la grammaire et TOUT le
+//        lexique, puis ACTIVE les voyelles réservées y/é/è (registre archaïque/rituel, prévu en
+//        doc phono) et SUPERPOSE une strate sacrée (le Vide, l'Éveilleur, la Veille, les sœurs…).
+//
+// POURQUOI : les chants parlent d'un registre que l'ancien quotidien ne porte pas (cosmogonie,
+//        noms divins, subordination poétique). Plutôt qu'une langue parallèle (duplication, dérive),
+//        on en fait une ÈRE qui hérite l'ancien (`...ANCIEN`) — toute amélioration de l'ancien
+//        profite au mythologique, et le gate/les outils s'y branchent sans code spécial.
+//
+// COMMENT : `...ANCIEN` apporte liaisons/conjugateurs/particules/pronoms. On change seulement :
+//        (1) `voyelles` += y/é/è et `reservees` = [] (la strate sacrée a le droit de les employer) ;
+//        (2) `lexiqueDir` → dossier sacré PROPRE, chargé EN OVERLAY de l'ancien (cf. lexiqueLoader) ;
+//        (3) `systemPrompt` → prompt sacré dédié. La grammaire de subordination/relatives (vraie
+//        question ouverte que les chants forcent) n'est PAS figée ici : on la laisse émerger des
+//        transcréations (révélation des trous) avant de l'arrêter — d'où `seed: true`.
 // ============================================================================
 const MYTHOLOGIQUE = {
   ...ANCIEN,
   id: 'mythologique',
   label: 'Confluent mythologique',
-  voyelles: ['a', 'e', 'i', 'o', 'u', 'y', 'é', 'è'], // voyelles sacrées activées
-  reservees: [],
-  lexiqueDir: 'ancien-confluent/lexique',  // provisoire : pas encore de lexique mytho dédié
-  systemPrompt: 'ancien-system.txt',       // provisoire : prompt mytho à écrire
-  stub: true
+  voyelles: ['a', 'e', 'i', 'o', 'u', 'y', 'é', 'è'], // voyelles sacrées activées (registre haut)
+  reservees: [],                                       // plus rien d'interdit dans le sacré
+  lexiqueDir: 'mythologique-confluent/lexique',        // strate sacrée DÉDIÉE (overlay sur l'ancien)
+  systemPrompt: 'mythologique-system.txt',             // prompt sacré dédié
+  seed: true                                           // amorce : lexique sacré + grammaire en cours de spécification
 };
 
 const ERAS = { proto: PROTO, ancien: ANCIEN, mythologique: MYTHOLOGIQUE };
