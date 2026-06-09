@@ -499,7 +499,11 @@ app.post('/translate', authenticate, async (req, res) => {
       rawResponse = agentResult.rawResponse;
       gatedTranslation = agentResult.translation; // déjà validée phonotactiquement
       agentTrace = agentResult.trace || null;     // pour le log d'apprentissage (gaps, formes, trace)
-      agentMeta = { repairs: agentResult.repairs, toolRounds: agentResult.toolRounds };
+      agentMeta = {
+        repairs: agentResult.repairs, toolRounds: agentResult.toolRounds,
+        grammarWarnings: agentResult.grammarWarnings || [],   // fautes de grammaire non résolues (remontées, jamais bloquantes)
+        overrides: agentResult.overrides || []                // choix délibérés assumés par l'agent (+ note)
+      };
 
       // Suivi de consommation par API key (tokens agrégés sur tous les tours de l'agent).
       if (apiKey && agentResult.usage) {
@@ -531,6 +535,11 @@ app.post('/translate', authenticate, async (req, res) => {
         wordsCreated: parsed.wordsCreated || []
       },
 
+      // Vérification de clôture : fautes de grammaire RESTANTES (remontées, jamais bloquantes) +
+      // choix délibérés ASSUMÉS par l'agent (avec note). Vide en mode mock.
+      grammarWarnings: (agentMeta && agentMeta.grammarWarnings) || [],
+      overrides: (agentMeta && agentMeta.overrides) || [],
+
       // Compatibilité avec ancien format
       translation: finalTranslation
     };
@@ -544,6 +553,7 @@ app.post('/translate', authenticate, async (req, res) => {
           fr: text, cf: finalTranslation, target: variant, ok: true,
           model: model || DEFAULT_MODEL,
           repairs: agentMeta && agentMeta.repairs, toolRounds: agentMeta && agentMeta.toolRounds,
+          grammarWarnings: agentMeta && agentMeta.grammarWarnings, overrides: agentMeta && agentMeta.overrides,
           gaps: agentTrace.gaps, brokenForms: agentTrace.brokenForms, trace: agentTrace
         });
       } catch (e) { console.error('logTranslation (ok) failed:', e.message); }

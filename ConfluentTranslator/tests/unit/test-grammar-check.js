@@ -44,5 +44,10 @@ const viaTool = executeTool('grammar_check', { confluent: 'va naki u nura vo mor
 check('executeTool(grammar_check) renvoie {ok, warnings}', viaTool && viaTool.ok === false && Array.isArray(viaTool.warnings) && viaTool.warnings.length >= 1);
 check('entrée vide → erreur propre (pas de crash)', executeTool('grammar_check', { confluent: '' }, { era: ANCIEN }).erreur != null);
 
+console.log('\n[6] confirme_choix — outil de la vérification de clôture (corrige-ou-confirme)');
+const conf = executeTool('confirme_choix', { note: 'formule rituelle figée, pas de verbe attendu' }, { era: ANCIEN });
+check('avec note → { ok:true, confirme:true, note }', conf.ok === true && conf.confirme === true && /rituelle/.test(conf.note));
+check('sans note → refus propre (note requise)', executeTool('confirme_choix', {}, { era: ANCIEN }).ok === false);
+
 console.log(`\n${fail === 0 ? '✓' : '✗'} grammar_check : ${pass} ok, ${fail} ko`);
 process.exit(fail === 0 ? 0 : 1);

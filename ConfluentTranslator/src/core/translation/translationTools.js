@@ -194,6 +194,21 @@ const TOOL_DEFINITIONS = [
       },
       required: ['confluent']
     }
+  },
+  {
+    name: 'confirme_choix',
+    description:
+      "À N'UTILISER QUE si la vérification de clôture t'a renvoyé des warnings de grammaire que tu " +
+      "estimes VOLONTAIRES (tournure originale, registre rituel, choix poétique assumé). Confirme que " +
+      "tu gardes ta traduction TELLE QUELLE malgré le warning, en justifiant en une phrase. Sinon : " +
+      "corrige et re-soumets plutôt que de confirmer.",
+    input_schema: {
+      type: 'object',
+      properties: {
+        note: { type: 'string', description: 'Justification en une phrase du choix délibéré (ex: « formule rituelle figée, pas de verbe attendu »).' }
+      },
+      required: ['note']
+    }
   }
 ];
 
@@ -532,6 +547,20 @@ function execGrammarCheck(input, ctx) {
 }
 
 /**
+ * confirme_choix — l'agent assume un warning de clôture comme choix délibéré.
+ *
+ * QUOI : simple accusé ; l'EFFET (lever le warning bloquant, garder la trad) est géré par la boucle
+ *        de l'agent qui détecte cet appel d'outil et capture la note. Aucune logique ici.
+ * POURQUOI : matérialiser le choix conscient « corrige-ou-confirme » + tracer la justification.
+ */
+function execConfirmeChoix(input) {
+  const note = String(input.note || '').trim();
+  return note
+    ? { ok: true, confirme: true, note }
+    : { ok: false, erreur: 'note de justification requise pour confirmer.' };
+}
+
+/**
  * Dispatcher central.
  * @param {string} name
  * @param {Object} input
@@ -547,6 +576,7 @@ function executeTool(name, input, ctx) {
     case 'check_composition': return execCheckComposition(input, ctx);
     case 'back_translate': return execBackTranslate(input, ctx);
     case 'grammar_check': return execGrammarCheck(input, ctx);
+    case 'confirme_choix': return execConfirmeChoix(input);
     default: return { error: `Outil inconnu: ${name}` };
   }
 }
@@ -555,5 +585,5 @@ module.exports = {
   TOOL_DEFINITIONS,
   executeTool,
   LIAISONS_VALIDES,
-  execAnalyzeText, execLookupConcept, execGetGrammar, execValidateForm, execVerifyWord, execCheckComposition, execBackTranslate, execGrammarCheck
+  execAnalyzeText, execLookupConcept, execGetGrammar, execValidateForm, execVerifyWord, execCheckComposition, execBackTranslate, execGrammarCheck, execConfirmeChoix
 };

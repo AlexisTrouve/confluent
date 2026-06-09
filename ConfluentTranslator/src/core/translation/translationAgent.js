@@ -22,6 +22,7 @@
 
 const { TOOL_DEFINITIONS, executeTool } = require('./translationTools');
 const { validateTranslation } = require('../validation/phonotactics');
+const { checkGrammar } = require('../validation/grammarCheck');
 
 /**
  * Extrait la ligne de traduction Confluent de la réponse formatée du modèle.
@@ -76,6 +77,27 @@ function buildRepairMessage(invalides) {
     "pour trouver la forme canonique existante, ou check_composition pour composer une forme valide. " +
     "Puis re-fournis les 4 sections (ANALYSE / STRATÉGIE / Ancien Confluent / Décomposition) avec la " +
     "traduction corrigée."
+  );
+}
+
+/**
+ * Construit le message de la VÉRIFICATION DE CLÔTURE quand grammar_check signale des fautes
+ * de gravité HAUTE sur une traduction qui a pourtant passé la phono.
+ *
+ * QUOI : renvoie l'agent UNE fois — « corrige, OU confirme via confirme_choix(note) ».
+ * POURQUOI : le check serveur est systématique (l'agent oublie l'outil advisory 1 fois sur 2),
+ *        mais on ne BLOQUE jamais : l'agent garde sa liberté en signant un choix délibéré.
+ */
+function buildClosingMessage(highWarnings) {
+  const details = highWarnings.map(w => `- ${w.message}`).join('\n');
+  return (
+    "VÉRIFICATION DE CLÔTURE — ta traduction est phonotactiquement valide, mais grammar_check " +
+    "signale des fautes de structure probables :\n" + details + "\n\n" +
+    "DEUX options, au choix :\n" +
+    "1. CORRIGE ces formes et re-fournis les 4 sections avec la traduction corrigée ; OU\n" +
+    "2. si c'est un choix DÉLIBÉRÉ (tournure originale, registre rituel), appelle `confirme_choix(note)` " +
+    "avec une justification en une phrase, puis re-fournis ta traduction inchangée.\n" +
+    "Ne fais rien d'autre : soit tu corriges, soit tu confirmes."
   );
 }
 
@@ -168,9 +190,16 @@ async function translateWithAgent(opts) {
   let toolRounds = 0;
   let repairs = 0;
 
+  // Vérification de CLÔTURE (corrige-ou-confirme) : on renvoie l'agent AU PLUS UNE fois sur des fautes
+  // de grammaire gravité HAUTE ; il corrige, ou signe via confirme_choix (overrides). Jamais bloquant.
+  let closingRounds = 0;
+  let confirmed = false;
+  let lastClosingHigh = [];        // warnings du dernier renvoi (rattachés à la note si l'agent confirme)
+  const overrides = [];            // [{ note, warnings }] — choix délibérés assumés par l'agent
+
   // Trace d'observabilité : trace COMPLÈTE (chaque tool-call + son I/O, pour débugger) ET le SIGNAL
   // dérivé (gaps de lexique, formes cassées) prêt à l'emploi. Renvoyée au serveur qui la persiste.
-  const trace = { toolCalls: [], gateAttempts: [], gaps: [], brokenForms: [] };
+  const trace = { toolCalls: [], gateAttempts: [], closingChecks: [], gaps: [], brokenForms: [] };
 
   // Boucle principale : alterne appels d'outils et tentatives de réponse finale.
   // Borne dure pour éviter toute boucle infinie (tool rounds + réparations + marge).
@@ -195,6 +224,12 @@ async function translateWithAgent(opts) {
           // Trace complète (I/O brut, pour debug) + extraction du signal (gaps / formes cassées).
           trace.toolCalls.push({ round: toolRounds + 1, name: block.name, input: block.input, result });
           collectSignals(trace, block.name, block.input, result);
+          // Clôture : l'agent assume un warning délibéré → on lève le blocage et on garde la note.
+          // Garde : honoré SEULEMENT si une clôture a réellement été déclenchée (pas de confirm prématuré).
+          if (block.name === 'confirme_choix' && result && result.ok && closingRounds > 0) {
+            confirmed = true;
+            overrides.push({ note: result.note, warnings: lastClosingHigh });
+          }
           toolResults.push({
             type: 'tool_result',
             tool_use_id: block.id,
@@ -236,7 +271,24 @@ async function translateWithAgent(opts) {
     for (const inv of (gate.invalides || [])) if (inv && inv.mot) trace.brokenForms.push(String(inv.mot));
 
     if (gate.valid && !extractionVide) {
-      return { rawResponse, translation: translationLine, valid: true, usage, toolRounds, repairs, trace: dedupeTrace(trace) };
+      // VÉRIFICATION DE CLÔTURE — grammaire gravité HAUTE seulement, UNE boucle max, jamais bloquante.
+      const gram = checkGrammar(translationLine, ctx && ctx.era);
+      const high = gram.warnings.filter(w => w.gravite === 'haute');
+      trace.closingChecks.push({ translation: translationLine, high });
+      if (high.length > 0 && closingRounds < 1 && !confirmed) {
+        // Renvoi unique : l'agent CORRIGE, ou CONFIRME via confirme_choix. On reboucle.
+        closingRounds++;
+        lastClosingHigh = high;
+        messages.push({ role: 'assistant', content: resp.content });
+        messages.push({ role: 'user', content: buildClosingMessage(high) });
+        continue;
+      }
+      // On SERT : grammaire propre, OU choix confirmé (overrides), OU 1 boucle déjà consommée
+      // (les warnings restants sont REMONTÉS dans la réponse + le log, jamais bloqués).
+      return {
+        rawResponse, translation: translationLine, valid: true, usage, toolRounds, repairs,
+        grammarWarnings: high, overrides, trace: dedupeTrace(trace)
+      };
     }
 
     // Sortie invalide (ou non extractible) : réparer si on a encore des tentatives.
