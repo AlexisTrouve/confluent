@@ -3409,6 +3409,32 @@
         "chevron",
         "jambe"
       ]
+    },
+    "lupak": {
+      "fr": "cacher",
+      "type": "verbe",
+      "atomes": [
+        "voute",
+        "point"
+      ]
+    },
+    "samo": {
+      "fr": "monde",
+      "type": "racine",
+      "atomes": [
+        "anneau",
+        "croix",
+        "jambe"
+      ]
+    },
+    "venak": {
+      "fr": "traverser",
+      "type": "verbe",
+      "atomes": [
+        "vague",
+        "croix",
+        "jambe"
+      ]
     }
   }
 }

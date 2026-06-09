@@ -51,6 +51,44 @@
         "vues"
       ]
     },
+    "cacher": {
+      "racine_fr": "cac",
+      "traductions": [
+        {
+          "confluent": "lupak",
+          "type": "verbe",
+          "racine": "lupa",
+          "forme_liee": "lup",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Dissimuler, soustraire au regard.",
+          "definition": "Cacher, dissimuler, soustraire au regard. Acte moralement chargé chez les Siliaska, peuple du regard libre, pour qui dissimuler va contre la valeur d'observation partagée.",
+          "nuance": "Racine verbale lupa, forme liée lup-. Suffixe -k. Conjugaison suffixée (lupaku présent, lupakat passé vécu). À distinguer de zakis 'garder/protéger' (mettre en sûreté, sans intention de dissimuler).",
+          "registre": "courant",
+          "exemple": "va tani vo kari lupak u"
+        }
+      ],
+      "synonymes_fr": ["dissimuler", "masquer", "cache", "caches", "cachent", "cachais", "cachait", "caché", "cachée", "dissimule", "dissimulent"]
+    },
+    "traverser": {
+      "racine_fr": "tra",
+      "traductions": [
+        {
+          "confluent": "venak",
+          "type": "verbe",
+          "racine": "vena",
+          "forme_liee": "ven",
+          "structure": "CVCVC",
+          "domaine": "action",
+          "note": "Traverser, franchir (notamment l'eau).",
+          "definition": "Traverser, franchir d'un bord à l'autre — en particulier un cours d'eau, geste quotidien au pays de la Confluence. À distinguer de tekis 'aller' (se déplacer) et de ieso 'passer'.",
+          "nuance": "Racine verbale vena, forme liée ven-. Suffixe -k. Conjugaison suffixée (venaku présent, venakat passé vécu).",
+          "registre": "courant",
+          "exemple": "va naki vo nura venak u"
+        }
+      ],
+      "synonymes_fr": ["franchir", "traverse", "traverses", "traversent", "traversais", "traversait", "traversé", "traversée", "franchit", "franchir"]
+    },
     "aller": {
       "racine_fr": null,
       "traductions": [

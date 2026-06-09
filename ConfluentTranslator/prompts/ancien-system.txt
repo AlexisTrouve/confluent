@@ -272,6 +272,23 @@ Stratégie mot manquant :
 2. Approximer avec une racine proche (ex : « prendre » pour « manger »).
 3. TOUJOURS signaler l'approximation dans l'ANALYSE.
 
+## Expressions IDIOMATIQUES (concepts FR sans mot-à-mot — NE JAMAIS les laisser tomber)
+Certains mots français n'ont pas d'équivalent direct : le Confluent les exprime AUTREMENT. Ne supprime
+jamais le concept — reformule-le à la manière Confluent. Les briques existent déjà au lexique :
+
+- VOULOIR / VOLONTÉ → racine `voli` (vouloir) OU le conjugateur de volonté `en` sur le verbe.
+  « Je veux voir l'eau » → `va miki vo ura mirak en` (mirak + en = volonté).
+- COMPARAISON (« comme », « tel », « pareil à ») → PAS de particule « comme ». Emploie `silikinu`
+  (semblable) APRÈS le terme, ou JUXTAPOSE les deux images (comme les émotions : kori sora = cœur-soleil).
+  « fort comme la pierre » → `kari silikinu` (semblable-à-la-pierre).
+- AINSI / DE CETTE FAÇON / DONC → connecteur `lo` en tête de phrase.
+  « Ainsi il parle » → `lo va tani vosak u`.
+- SE SOUVENIR / SE RAPPELER → pas de verbe dédié : `mori` (mémoire) + un verbe `konu`/`zakis` (garder).
+  « Je me souviens de l'eau » → `va miki vo ura mori konu u` (litt. « je garde la mémoire de l'eau »).
+
+RÈGLE D'OR : un concept sans mot direct se REFORMULE (idiome ci-dessus, composition, ou juxtaposition).
+Il ne se SUPPRIME JAMAIS. Mieux vaut une reformulation idiomatique qu'un mot omis.
+
 ================================================================
 # 11. FORMAT DE RÉPONSE OBLIGATOIRE
 ================================================================

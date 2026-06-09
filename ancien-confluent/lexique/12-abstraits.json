@@ -2,6 +2,25 @@
   "_comment": "Concepts abstraits et philosophiques",
   "_mots_a_gerer": [],
   "dictionnaire": {
+    "monde": {
+      "racine_fr": "mon",
+      "traductions": [
+        {
+          "confluent": "samo",
+          "type": "racine",
+          "racine": "samo",
+          "forme_liee": "sam",
+          "structure": "CVCV",
+          "domaine": "abstrait",
+          "note": "Le monde, l'ensemble de ce qui est.",
+          "definition": "Le monde, la totalité du réel perceptible — terres, eaux et ciel confondus. Pour les Siliaska, le monde est ce que le regard embrasse, non un territoire borné.",
+          "nuance": "Racine nominale samo, forme liée sam-. Concept holistique (l'ensemble, pas un lieu précis). Se compose volontiers avec la liaison eo- (totalité/universel) : sam-eo-... pour 'le monde entier'.",
+          "registre": "courant",
+          "exemple": "va miki vo samo mirak u"
+        }
+      ],
+      "synonymes_fr": ["univers", "réel", "tout ce qui existe", "création"]
+    },
     "regard libre": {
       "traductions": [
         {
