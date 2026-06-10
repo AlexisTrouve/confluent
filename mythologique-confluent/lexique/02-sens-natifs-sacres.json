@@ -18,7 +18,12 @@
           "registre": "mythologique"
         }
       ],
-      "synonymes_fr": ["dépérir", "s'effacer", "se délaver", "sombrer dans l'oubli"]
+      "synonymes_fr": [
+        "dépérir",
+        "s'effacer",
+        "se délaver",
+        "sombrer dans l'oubli"
+      ]
     },
     "les bords du monde": {
       "traductions": [
@@ -26,7 +31,10 @@
           "confluent": "samoèva",
           "type": "composition",
           "composition": "samo-èva",
-          "racines": ["samo", "èva"],
+          "racines": [
+            "samo",
+            "èva"
+          ],
           "forme_liee": "samoèv",
           "sens_litteral": "la frange de Vide qui borde le levé",
           "domaine": "cosmogonie",
@@ -36,7 +44,12 @@
           "registre": "mythologique"
         }
       ],
-      "synonymes_fr": ["limbes", "lisière du monde", "non-créé", "frange du Vide"]
+      "synonymes_fr": [
+        "limbes",
+        "lisière du monde",
+        "non-créé",
+        "frange du Vide"
+      ]
     },
     "ciel des veilleurs": {
       "traductions": [
@@ -44,7 +57,10 @@
           "confluent": "veluzeru",
           "type": "composition",
           "composition": "vela-zeru",
-          "racines": ["vela", "zeru"],
+          "racines": [
+            "vela",
+            "zeru"
+          ],
           "forme_liee": "veluzer",
           "sens_litteral": "le ciel-de-la-Veille, le firmament-demeure",
           "domaine": "cosmogonie",
@@ -54,7 +70,12 @@
           "registre": "mythologique"
         }
       ],
-      "synonymes_fr": ["firmament", "cieux", "Mur d'étoiles", "ciel des morts"]
+      "synonymes_fr": [
+        "firmament",
+        "cieux",
+        "Mur d'étoiles",
+        "ciel des morts"
+      ]
     },
     "le commencement": {
       "traductions": [
@@ -62,7 +83,10 @@
           "confluent": "enasoku",
           "type": "composition",
           "composition": "ena-soku",
-          "racines": ["ena", "soku"],
+          "racines": [
+            "ena",
+            "soku"
+          ],
           "forme_liee": "enasok",
           "sens_litteral": "l'instant où le premier œil s'ouvrit",
           "domaine": "cosmogonie",
@@ -72,7 +96,13 @@
           "registre": "mythologique"
         }
       ],
-      "synonymes_fr": ["commencement", "début", "genèse", "aube du monde", "premier matin"]
+      "synonymes_fr": [
+        "commencement",
+        "début",
+        "genèse",
+        "aube du monde",
+        "premier matin"
+      ]
     },
     "âtre sacré": {
       "traductions": [
@@ -80,7 +110,10 @@
           "confluent": "isukibuka",
           "type": "composition",
           "composition": "isuki-buka",
-          "racines": ["isuki", "buka"],
+          "racines": [
+            "isuki",
+            "buka"
+          ],
           "forme_liee": "isukibuk",
           "sens_litteral": "l'âtre comme part des mille feux du Père",
           "domaine": "cosmogonie",
@@ -90,7 +123,173 @@
           "registre": "mythologique"
         }
       ],
-      "synonymes_fr": ["âtre", "foyer", "foyer sacré", "feu du Père"]
+      "synonymes_fr": [
+        "âtre",
+        "foyer",
+        "foyer sacré",
+        "feu du Père"
+      ]
+    },
+    "froid du néant": {
+      "traductions": [
+        {
+          "confluent": "kisoèva",
+          "type": "composition",
+          "composition": "kiso-èva",
+          "racines": [
+            "kiso",
+            "èva"
+          ],
+          "forme_liee": "kisoèv",
+          "definition": "Le froid qui n'est pas une température mais une ENTRÉE : le Néant qui s'engouffre par l'âtre éteint, ce que la chaleur tenait dehors et qui reprend dès que le feu meurt. Le froid comme visage du Vide.",
+          "nuance": "èva (le Vide, voyelle sacrée è) hisse kiso du physique au cosmologique — pendant de sukvasi (le feu-frontière qui le refoule). ≠ kiso quotidien (le froid neutre) : kisoèva est le froid QUI DÉFAIT. Canon : « un âtre froid est une brèche par où entre la nuit ».",
+          "registre": "mythologique"
+        }
+      ],
+      "synonymes_fr": [
+        "froid du néant",
+        "froid qui entre",
+        "froid-Vide",
+        "le froid de la brèche"
+      ]
+    },
+    "braise sous la cendre": {
+      "traductions": [
+        {
+          "confluent": "isukesa",
+          "type": "composition",
+          "composition": "isuki-kesa",
+          "racines": [
+            "isuki",
+            "kesa"
+          ],
+          "forme_liee": "isukes",
+          "definition": "L'éclat assoupi, couvert mais non éteint — le feu qui dort « sous la cendre des jours » au creux d'une poitrine, prêt à reprendre. L'état latent de l'éclat chez qui ne veille pas encore, toujours rallumable.",
+          "nuance": "kesa (cendre) dit le voilement, pas la mort (corruption ≠ extinction). État neutre/dormant, ≠ isukèva (l'éclat retourné, corrompu) : la cendre couvre, le Vide retourne. Cible de lusak. Canon : la braise « dormant sous la cendre des jours ».",
+          "registre": "mythologique"
+        }
+      ],
+      "synonymes_fr": [
+        "braise sous la cendre",
+        "éclat assoupi",
+        "feu qui couve",
+        "braise dormante"
+      ]
+    },
+    "éclat retourné": {
+      "traductions": [
+        {
+          "confluent": "isukèva",
+          "type": "composition",
+          "composition": "isuki-èva",
+          "racines": [
+            "isuki",
+            "èva"
+          ],
+          "forme_liee": "isukèv",
+          "definition": "L'éclat corrompu : le feu qui éclairait retourné en feu qui dévore, le Regard mué en faim. Non un éclat éteint (impossible) mais un éclat à l'envers — il brûle encore, contre les siens. La grise-faim à l'échelle d'une âme.",
+          "nuance": "èva dit le retournement, pas l'anéantissement (on est défait, jamais annihilé). NOYAU-corruption : isukèva (l'âme) = mutaeva (l'appétit) = la grise-faim (la bête). ≠ isukesa (assoupi, neutre) : ici perverti. Toujours rallumable (lusak). Canon : « le feu qui éclaire en feu qui dévore ».",
+          "registre": "mythologique"
+        }
+      ],
+      "synonymes_fr": [
+        "éclat corrompu",
+        "éclat retourné",
+        "braise retournée",
+        "feu qui dévore au-dedans",
+        "éclat-en-faim"
+      ]
+    },
+    "toujours rallumable": {
+      "traductions": [
+        {
+          "confluent": "isukilusak",
+          "type": "composition",
+          "composition": "isuki-lusak",
+          "racines": [
+            "isuki",
+            "lusak"
+          ],
+          "forme_liee": "isukilusak",
+          "definition": "La propriété sacrée de l'éclat : qu'aucune corruption ne le rend irrécupérable — la théologie de l'espérance faite mot. Tant que le Père veille, le feu le plus retourné peut être rallumé ; le Vide ne gagne jamais définitivement.",
+          "nuance": "isuki + lusak (rallumer) pour nommer non un état mais une GARANTIE — ce qui distingue le creusé (atteignable) de la grise-faim (achevée). Fonde le devoir de veiller-sur plutôt que haïr. Canon : « un éclat corrompu peut toujours être rallumé… jusqu'au bout ».",
+          "registre": "mythologique"
+        }
+      ],
+      "synonymes_fr": [
+        "toujours rallumable",
+        "jamais perdu",
+        "l'éclat qu'on peut reprendre",
+        "l'espérance du feu"
+      ]
+    },
+    "faim du néant": {
+      "traductions": [
+        {
+          "confluent": "mutaeva",
+          "type": "composition",
+          "composition": "muta-èva",
+          "racines": [
+            "muta",
+            "èva"
+          ],
+          "forme_liee": "mutaev",
+          "definition": "L'appétit qui ne se comble jamais : le Regard retourné en faim, la faim du Vide qui mord l'isolé sans satiété. La grise-faim, ce que devient un vivant quand le Vide lui a mangé le regard.",
+          "nuance": "muta (faim-besoin, comblable) + èva (le Vide) = la faim qui DÉFAIT. NOYAU-corruption : = isukèva (l'éclat) = la bête. « La plus difficile à haïr » : notre propre faim creusée. ≠ muta neutre (qu'on nourrit). Canon : « on ne cueille pas une faim ».",
+          "registre": "mythologique"
+        }
+      ],
+      "synonymes_fr": [
+        "grise faim",
+        "faim sans fond",
+        "faim du néant",
+        "appétit sans fond",
+        "faim qui dévore"
+      ]
+    },
+    "rallumer un éclat": {
+      "traductions": [
+        {
+          "confluent": "lusak",
+          "type": "verbe",
+          "racine": "lusak",
+          "forme_liee": "lusa",
+          "definition": "Reprendre au Vide un éclat qui s'est retourné ou assoupi — le rallumer en lui : la conversion, le retour. Non créer un feu neuf, non réveiller un dormeur, mais rendre droit un feu qui brûlait à l'envers.",
+          "nuance": "Racine opaque (atome sotériologique). ≠ sokak (éveiller un dormeur, neutre) : lusak agit sur un feu corrompu (isukèva), charge de conversion. ≠ kosam (créer du Vide) : lusak reprend ce qui était déjà feu. Possible car l'éclat est isukilusak. Canon : « on les rallume : vous portez le feu, vous l'avez laissé se vider ».",
+          "registre": "mythologique"
+        }
+      ],
+      "synonymes_fr": [
+        "rallumer",
+        "convertir",
+        "ramener au feu",
+        "reprendre au Vide",
+        "raviver un éclat",
+        "le retour"
+      ]
+    },
+    "ranimer l'âtre": {
+      "traductions": [
+        {
+          "confluent": "sukilusak",
+          "type": "composition",
+          "composition": "suki-lusak",
+          "racines": [
+            "suki",
+            "lusak"
+          ],
+          "forme_liee": "sukilusak",
+          "definition": "Rallumer le feu matériel du foyer au matin, de la braise gardée de la veille — le geste humble et quotidien qui applique lusak à l'âtre : on ne laisse pas mourir le feu, on le reprend chaque jour.",
+          "nuance": "lusak ancré sur suki (le feu domestique) → la conversion au plan concret/journalier. ≠ sukisun (passer-le-feu : en allumer un AUTRE) : ici on ranime le SIEN, de sa braise. ≠ lusak seul (le sacré, l'âme). Canon : « au matin, on la ranime de la braise gardée ».",
+          "registre": "mythologique"
+        }
+      ],
+      "synonymes_fr": [
+        "ranimer l'âtre",
+        "raviver le foyer",
+        "rallumer le feu",
+        "reprendre la braise du matin"
+      ]
     }
   }
 }

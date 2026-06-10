@@ -18,7 +18,16 @@
           "registre": "sacré"
         }
       ],
-      "synonymes_fr": ["voir", "regarder", "demeurer", "rester", "veiller sur", "se souvenir de", "maintenir dans l'être", "tenir dans l'être"]
+      "synonymes_fr": [
+        "voir",
+        "regarder",
+        "demeurer",
+        "rester",
+        "veiller sur",
+        "se souvenir de",
+        "maintenir dans l'être",
+        "tenir dans l'être"
+      ]
     },
     "regard qui glisse": {
       "traductions": [
@@ -35,7 +44,14 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["voir distraitement", "voir sans retenir", "négliger du regard", "laisser à l'oubli", "regarder", "voir"]
+      "synonymes_fr": [
+        "voir distraitement",
+        "voir sans retenir",
+        "négliger du regard",
+        "laisser à l'oubli",
+        "regarder",
+        "voir"
+      ]
     },
     "marque contre l'oubli": {
       "traductions": [
@@ -43,7 +59,10 @@
           "confluent": "silimori",
           "type": "composition",
           "composition": "sili-mori",
-          "racines": ["sili", "mori"],
+          "racines": [
+            "sili",
+            "mori"
+          ],
           "forme_liee": "silimor",
           "sens_litteral": "signe émis, marque-mémoire",
           "domaine": "signe_memoire",
@@ -53,7 +72,14 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["signe", "marque", "marquer", "inscrire", "graver un signe", "laisser une trace"]
+      "synonymes_fr": [
+        "signe",
+        "marque",
+        "marquer",
+        "inscrire",
+        "graver un signe",
+        "laisser une trace"
+      ]
     },
     "trace offerte": {
       "traductions": [
@@ -61,7 +87,10 @@
           "confluent": "morisili",
           "type": "composition",
           "composition": "mori-sili",
-          "racines": ["mori", "sili"],
+          "racines": [
+            "mori",
+            "sili"
+          ],
           "forme_liee": "morisil",
           "sens_litteral": "signe reçu, indice à lire",
           "domaine": "signe_memoire",
@@ -71,7 +100,14 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["signe", "trace", "indice", "empreinte", "vestige", "lire un signe"]
+      "synonymes_fr": [
+        "signe",
+        "trace",
+        "indice",
+        "empreinte",
+        "vestige",
+        "lire un signe"
+      ]
     },
     "connaissance par la rencontre": {
       "traductions": [
@@ -89,7 +125,13 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["connaître", "connaissance", "fréquenter", "faire connaissance", "côtoyer"]
+      "synonymes_fr": [
+        "connaître",
+        "connaissance",
+        "fréquenter",
+        "faire connaissance",
+        "côtoyer"
+      ]
     },
     "discernement": {
       "traductions": [
@@ -107,7 +149,13 @@
           "registre": "sacré"
         }
       ],
-      "synonymes_fr": ["discerner", "distinguer le vrai du faux", "démêler", "déceler", "comprendre"]
+      "synonymes_fr": [
+        "discerner",
+        "distinguer le vrai du faux",
+        "démêler",
+        "déceler",
+        "comprendre"
+      ]
     },
     "veiller sans fermer l'oeil": {
       "traductions": [
@@ -115,7 +163,10 @@
           "confluent": "velakonu",
           "type": "composition",
           "composition": "vela-konu",
-          "racines": ["vela", "konu"],
+          "racines": [
+            "vela",
+            "konu"
+          ],
           "forme_liee": "velakon",
           "sens_litteral": "garder par le Regard continu",
           "domaine": "garde",
@@ -125,7 +176,13 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["veiller", "veiller sur", "monter la garde", "surveiller", "garder"]
+      "synonymes_fr": [
+        "veiller",
+        "veiller sur",
+        "monter la garde",
+        "surveiller",
+        "garder"
+      ]
     },
     "garder en soustrayant": {
       "traductions": [
@@ -133,7 +190,10 @@
           "confluent": "konusupu",
           "type": "composition",
           "composition": "konu-supu",
-          "racines": ["konu", "supu"],
+          "racines": [
+            "konu",
+            "supu"
+          ],
           "forme_liee": "konusup",
           "sens_litteral": "préserver en retirant du flux",
           "domaine": "garde",
@@ -143,7 +203,13 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["préserver", "conserver", "mettre à l'abri", "mettre en réserve", "garder"]
+      "synonymes_fr": [
+        "préserver",
+        "conserver",
+        "mettre à l'abri",
+        "mettre en réserve",
+        "garder"
+      ]
     },
     "tenir le bouclier": {
       "traductions": [
@@ -151,7 +217,10 @@
           "confluent": "konuvaru",
           "type": "composition",
           "composition": "konu-varu",
-          "racines": ["konu", "varu"],
+          "racines": [
+            "konu",
+            "varu"
+          ],
           "forme_liee": "konuvar",
           "sens_litteral": "garder en faisant front",
           "domaine": "garde",
@@ -161,7 +230,12 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["défendre", "faire mur", "tenir un poste", "protéger contre une menace"]
+      "synonymes_fr": [
+        "défendre",
+        "faire mur",
+        "tenir un poste",
+        "protéger contre une menace"
+      ]
     },
     "maintenir l'ordre transmis": {
       "traductions": [
@@ -169,7 +243,10 @@
           "confluent": "konuleku",
           "type": "composition",
           "composition": "konu-leku",
-          "racines": ["konu", "leku"],
+          "racines": [
+            "konu",
+            "leku"
+          ],
           "forme_liee": "konulek",
           "sens_litteral": "garder une coutume à travers les générations",
           "domaine": "garde",
@@ -179,7 +256,12 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["maintenir", "perpétuer", "préserver une coutume", "garder une tradition"]
+      "synonymes_fr": [
+        "maintenir",
+        "perpétuer",
+        "préserver une coutume",
+        "garder une tradition"
+      ]
     },
     "proférer ce qui tient": {
       "traductions": [
@@ -187,7 +269,10 @@
           "confluent": "savuvosak",
           "type": "composition",
           "composition": "savu-vosak",
-          "racines": ["savu", "vosak"],
+          "racines": [
+            "savu",
+            "vosak"
+          ],
           "forme_liee": "savuvos",
           "sens_litteral": "parole performative qui scelle",
           "domaine": "parole",
@@ -197,7 +282,13 @@
           "registre": "sacré"
         }
       ],
-      "synonymes_fr": ["proférer", "jurer", "prononcer un serment", "nommer solennellement", "sceller par la parole"]
+      "synonymes_fr": [
+        "proférer",
+        "jurer",
+        "prononcer un serment",
+        "nommer solennellement",
+        "sceller par la parole"
+      ]
     },
     "dire en transmettant": {
       "traductions": [
@@ -205,7 +296,10 @@
           "confluent": "morivosak",
           "type": "composition",
           "composition": "mori-vosak",
-          "racines": ["mori", "vosak"],
+          "racines": [
+            "mori",
+            "vosak"
+          ],
           "forme_liee": "morivos",
           "sens_litteral": "dire pour faire durer en mémoire",
           "domaine": "parole",
@@ -215,7 +309,13 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["réciter", "transmettre oralement", "redire", "rapporter la lignée", "raconter pour mémoire"]
+      "synonymes_fr": [
+        "réciter",
+        "transmettre oralement",
+        "redire",
+        "rapporter la lignée",
+        "raconter pour mémoire"
+      ]
     },
     "taire": {
       "traductions": [
@@ -232,7 +332,13 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["se taire", "celer", "garder le secret", "passer sous silence", "taire"]
+      "synonymes_fr": [
+        "se taire",
+        "celer",
+        "garder le secret",
+        "passer sous silence",
+        "taire"
+      ]
     },
     "parachever le serment": {
       "traductions": [
@@ -240,7 +346,10 @@
           "confluent": "savunekan",
           "type": "composition",
           "composition": "savu-nekan",
-          "racines": ["savu", "nekan"],
+          "racines": [
+            "savu",
+            "nekan"
+          ],
           "forme_liee": "savunek",
           "sens_litteral": "accomplir une parole liante",
           "domaine": "action",
@@ -250,7 +359,13 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["accomplir", "parachever", "tenir sa parole", "réaliser un vœu", "honorer un serment"]
+      "synonymes_fr": [
+        "accomplir",
+        "parachever",
+        "tenir sa parole",
+        "réaliser un vœu",
+        "honorer un serment"
+      ]
     },
     "adversaire qu'on affronte": {
       "traductions": [
@@ -258,7 +373,10 @@
           "confluent": "zokasili",
           "type": "composition",
           "composition": "zoka-sili",
-          "racines": ["zoka", "sili"],
+          "racines": [
+            "zoka",
+            "sili"
+          ],
           "forme_liee": "zokasil",
           "sens_litteral": "l'ennemi tenu dans le Regard",
           "domaine": "antagonisme",
@@ -268,7 +386,11 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["ennemi", "adversaire", "ennemi déclaré"]
+      "synonymes_fr": [
+        "ennemi",
+        "adversaire",
+        "ennemi déclaré"
+      ]
     },
     "malveillance qui ronge": {
       "traductions": [
@@ -276,7 +398,10 @@
           "confluent": "mukazoka",
           "type": "composition",
           "composition": "muka-zoka",
-          "racines": ["muka", "zoka"],
+          "racines": [
+            "muka",
+            "zoka"
+          ],
           "forme_liee": "mukazok",
           "sens_litteral": "l'ennemi masqué qui ment",
           "domaine": "antagonisme",
@@ -286,7 +411,13 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["malveillant", "hostile", "sournois", "corrupteur", "perfide"]
+      "synonymes_fr": [
+        "malveillant",
+        "hostile",
+        "sournois",
+        "corrupteur",
+        "perfide"
+      ]
     },
     "félon": {
       "traductions": [
@@ -294,7 +425,10 @@
           "confluent": "savuzoka",
           "type": "composition",
           "composition": "savu-zoka",
-          "racines": ["savu", "zoka"],
+          "racines": [
+            "savu",
+            "zoka"
+          ],
           "forme_liee": "savuzok",
           "sens_litteral": "l'ennemi qui rompt le serment",
           "domaine": "antagonisme",
@@ -304,7 +438,13 @@
           "registre": "sacré"
         }
       ],
-      "synonymes_fr": ["traître", "parjure", "renégat", "félon", "déloyal"]
+      "synonymes_fr": [
+        "traître",
+        "parjure",
+        "renégat",
+        "félon",
+        "déloyal"
+      ]
     },
     "obscur qui se dérobe au regard": {
       "traductions": [
@@ -312,7 +452,10 @@
           "confluent": "takusili",
           "type": "composition",
           "composition": "taku-sili",
-          "racines": ["taku", "sili"],
+          "racines": [
+            "taku",
+            "sili"
+          ],
           "forme_liee": "takusil",
           "sens_litteral": "le mauvais-au-regard, qui se dérobe",
           "domaine": "mal",
@@ -322,7 +465,13 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["mauvais", "mal", "néfaste", "obscur (moral)", "sinistre"]
+      "synonymes_fr": [
+        "mauvais",
+        "mal",
+        "néfaste",
+        "obscur (moral)",
+        "sinistre"
+      ]
     },
     "refus de voir": {
       "traductions": [
@@ -340,7 +489,12 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["aveuglement", "refus de voir", "cécité volontaire", "déni"]
+      "synonymes_fr": [
+        "aveuglement",
+        "refus de voir",
+        "cécité volontaire",
+        "déni"
+      ]
     },
     "infamie": {
       "traductions": [
@@ -358,7 +512,13 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["infâme", "indigne", "déshonoré", "déchu", "réprouvé"]
+      "synonymes_fr": [
+        "infâme",
+        "indigne",
+        "déshonoré",
+        "déchu",
+        "réprouvé"
+      ]
     },
     "agir comme une bête": {
       "traductions": [
@@ -366,7 +526,10 @@
           "confluent": "besinekan",
           "type": "composition",
           "composition": "besi-nekan",
-          "racines": ["besi", "nekan"],
+          "racines": [
+            "besi",
+            "nekan"
+          ],
           "forme_liee": "besinek",
           "sens_litteral": "œuvrer comme une bête, sans le Regard",
           "domaine": "honneur",
@@ -376,7 +539,12 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["brutalité", "violence bestiale", "sauvagerie", "déshonneur (acte)"]
+      "synonymes_fr": [
+        "brutalité",
+        "violence bestiale",
+        "sauvagerie",
+        "déshonneur (acte)"
+      ]
     },
     "souillure rituelle": {
       "traductions": [
@@ -384,7 +552,10 @@
           "confluent": "seluvela",
           "type": "composition",
           "composition": "selu-vela",
-          "racines": ["selu", "vela"],
+          "racines": [
+            "selu",
+            "vela"
+          ],
           "forme_liee": "seluvel",
           "sens_litteral": "souillé au regard de la Veille",
           "domaine": "souillure",
@@ -394,7 +565,13 @@
           "registre": "rituel"
         }
       ],
-      "synonymes_fr": ["impur", "souillé", "profané", "contaminé", "immonde"]
+      "synonymes_fr": [
+        "impur",
+        "souillé",
+        "profané",
+        "contaminé",
+        "immonde"
+      ]
     },
     "crasse": {
       "traductions": [
@@ -402,7 +579,10 @@
           "confluent": "selukumu",
           "type": "composition",
           "composition": "selu-kumu",
-          "racines": ["selu", "kumu"],
+          "racines": [
+            "selu",
+            "kumu"
+          ],
           "forme_liee": "selukum",
           "sens_litteral": "saleté physique ordinaire",
           "domaine": "souillure",
@@ -412,7 +592,13 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["sale", "crasseux", "malpropre", "crasse", "sali"]
+      "synonymes_fr": [
+        "sale",
+        "crasseux",
+        "malpropre",
+        "crasse",
+        "sali"
+      ]
     },
     "eau vive": {
       "traductions": [
@@ -430,7 +616,12 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["pur", "eau vive", "limpide", "propre (rituellement)"]
+      "synonymes_fr": [
+        "pur",
+        "eau vive",
+        "limpide",
+        "propre (rituellement)"
+      ]
     },
     "meneur qui voit loin": {
       "traductions": [
@@ -438,7 +629,10 @@
           "confluent": "silikasi",
           "type": "composition",
           "composition": "sili-kasi",
-          "racines": ["sili", "kasi"],
+          "racines": [
+            "sili",
+            "kasi"
+          ],
           "forme_liee": "silikas",
           "sens_litteral": "le chef-par-le-regard",
           "domaine": "pouvoir",
@@ -448,7 +642,13 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["chef", "guide", "meneur", "capitaine", "dirigeant"]
+      "synonymes_fr": [
+        "chef",
+        "guide",
+        "meneur",
+        "capitaine",
+        "dirigeant"
+      ]
     },
     "aîné qui guide": {
       "traductions": [
@@ -456,7 +656,10 @@
           "confluent": "kasiuaita",
           "type": "composition",
           "composition": "kasi-u-aita",
-          "racines": ["kasi", "aita"],
+          "racines": [
+            "kasi",
+            "aita"
+          ],
           "forme_liee": "kasiuait",
           "sens_litteral": "celui qui a vu avant",
           "domaine": "pouvoir",
@@ -466,7 +669,12 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["aîné", "ancien", "doyen", "aïeul guide"]
+      "synonymes_fr": [
+        "aîné",
+        "ancien",
+        "doyen",
+        "aïeul guide"
+      ]
     },
     "repas partagé": {
       "traductions": [
@@ -474,7 +682,10 @@
           "confluent": "kotamuki",
           "type": "composition",
           "composition": "kota-muki",
-          "racines": ["kota", "muki"],
+          "racines": [
+            "kota",
+            "muki"
+          ],
           "forme_liee": "kotamuk",
           "sens_litteral": "manger-ensemble, la confluence des êtres",
           "domaine": "nourriture",
@@ -484,7 +695,14 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["repas", "festin", "banquet", "manger ensemble", "communion", "repas partagé"]
+      "synonymes_fr": [
+        "repas",
+        "festin",
+        "banquet",
+        "manger ensemble",
+        "communion",
+        "repas partagé"
+      ]
     },
     "glyphe-mémoire": {
       "traductions": [
@@ -492,7 +710,10 @@
           "confluent": "kovamori",
           "type": "composition",
           "composition": "kova-mori",
-          "racines": ["kova", "mori"],
+          "racines": [
+            "kova",
+            "mori"
+          ],
           "forme_liee": "kovamor",
           "sens_litteral": "image-mémoire, signe qui sauve du Vide",
           "domaine": "ecriture",
@@ -502,7 +723,13 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["glyphe", "écriture", "signe gravé", "lettre", "caractère"]
+      "synonymes_fr": [
+        "glyphe",
+        "écriture",
+        "signe gravé",
+        "lettre",
+        "caractère"
+      ]
     },
     "effigie": {
       "traductions": [
@@ -510,7 +737,10 @@
           "confluent": "silikova",
           "type": "composition",
           "composition": "sili-kova",
-          "racines": ["sili", "kova"],
+          "racines": [
+            "sili",
+            "kova"
+          ],
           "forme_liee": "silikov",
           "sens_litteral": "l'image qui porte/fixe un regard",
           "domaine": "image",
@@ -520,7 +750,12 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["portrait", "effigie", "icône", "image d'un absent"]
+      "synonymes_fr": [
+        "portrait",
+        "effigie",
+        "icône",
+        "image d'un absent"
+      ]
     },
     "suivre l'eau": {
       "traductions": [
@@ -528,7 +763,10 @@
           "confluent": "urateki",
           "type": "composition",
           "composition": "ura-teki",
-          "racines": ["ura", "teki"],
+          "racines": [
+            "ura",
+            "teki"
+          ],
           "forme_liee": "uratek",
           "sens_litteral": "se mouvoir en épousant la rivière",
           "domaine": "mouvement",
@@ -538,7 +776,11 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["suivre la rivière", "remonter le courant", "longer l'eau"]
+      "synonymes_fr": [
+        "suivre la rivière",
+        "remonter le courant",
+        "longer l'eau"
+      ]
     },
     "pèlerinage": {
       "traductions": [
@@ -546,7 +788,10 @@
           "confluent": "vukuteki",
           "type": "composition",
           "composition": "vuku-teki",
-          "racines": ["vuku", "teki"],
+          "racines": [
+            "vuku",
+            "teki"
+          ],
           "forme_liee": "vukutek",
           "sens_litteral": "la montée rituelle vers le Gouffre",
           "domaine": "mouvement",
@@ -556,7 +801,11 @@
           "registre": "sacré"
         }
       ],
-      "synonymes_fr": ["pèlerinage", "montée sacrée", "aller au Gouffre"]
+      "synonymes_fr": [
+        "pèlerinage",
+        "montée sacrée",
+        "aller au Gouffre"
+      ]
     },
     "marcher vers le non-encore-vu": {
       "traductions": [
@@ -564,7 +813,10 @@
           "confluent": "tekiota",
           "type": "composition",
           "composition": "teki-ota",
-          "racines": ["teki", "ota"],
+          "racines": [
+            "teki",
+            "ota"
+          ],
           "forme_liee": "tekiot",
           "sens_litteral": "avancer dans l'inconnu, étendre le Regard",
           "domaine": "mouvement",
@@ -574,7 +826,12 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["explorer", "s'aventurer", "aller vers l'inconnu", "défricher"]
+      "synonymes_fr": [
+        "explorer",
+        "s'aventurer",
+        "aller vers l'inconnu",
+        "défricher"
+      ]
     },
     "demeurer enraciné": {
       "traductions": [
@@ -582,7 +839,10 @@
           "confluent": "tokituli",
           "type": "composition",
           "composition": "toka-tuli",
-          "racines": ["toka", "tuli"],
+          "racines": [
+            "toka",
+            "tuli"
+          ],
           "forme_liee": "tokitul",
           "sens_litteral": "se fixer au sol, habiter durablement",
           "domaine": "existence",
@@ -592,7 +852,13 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["habiter", "s'établir", "se fixer", "s'enraciner", "demeurer durablement"]
+      "synonymes_fr": [
+        "habiter",
+        "s'établir",
+        "se fixer",
+        "s'enraciner",
+        "demeurer durablement"
+      ]
     },
     "se tenir là": {
       "traductions": [
@@ -600,7 +866,10 @@
           "confluent": "tisatuli",
           "type": "composition",
           "composition": "tisa-tuli",
-          "racines": ["tisa", "tuli"],
+          "racines": [
+            "tisa",
+            "tuli"
+          ],
           "forme_liee": "tisatul",
           "sens_litteral": "être présent à l'instant",
           "domaine": "existence",
@@ -610,7 +879,12 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["être là", "se trouver", "être présent", "rester sur place"]
+      "synonymes_fr": [
+        "être là",
+        "se trouver",
+        "être présent",
+        "rester sur place"
+      ]
     },
     "foyer": {
       "traductions": [
@@ -618,7 +892,10 @@
           "confluent": "sukibuka",
           "type": "composition",
           "composition": "suka-buka",
-          "racines": ["suka", "buka"],
+          "racines": [
+            "suka",
+            "buka"
+          ],
           "forme_liee": "sukibuk",
           "sens_litteral": "le cœur chaud de la demeure, l'âtre veillé",
           "domaine": "habitat",
@@ -628,7 +905,12 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["foyer", "âtre", "feu domestique", "chez-soi"]
+      "synonymes_fr": [
+        "foyer",
+        "âtre",
+        "feu domestique",
+        "chez-soi"
+      ]
     },
     "maison-lignée": {
       "traductions": [
@@ -636,7 +918,10 @@
           "confluent": "aitabuka",
           "type": "composition",
           "composition": "aita-buka",
-          "racines": ["aita", "buka"],
+          "racines": [
+            "aita",
+            "buka"
+          ],
           "forme_liee": "aitabuk",
           "sens_litteral": "la demeure des aïeux, ce qui se transmet",
           "domaine": "habitat",
@@ -646,7 +931,12 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["maisonnée", "demeure familiale", "maison de lignée", "toit des pères"]
+      "synonymes_fr": [
+        "maisonnée",
+        "demeure familiale",
+        "maison de lignée",
+        "toit des pères"
+      ]
     },
     "abri-seuil": {
       "traductions": [
@@ -654,7 +944,10 @@
           "confluent": "vasibuka",
           "type": "composition",
           "composition": "vasi-buka",
-          "racines": ["vasi", "buka"],
+          "racines": [
+            "vasi",
+            "buka"
+          ],
           "forme_liee": "vasibuk",
           "sens_litteral": "la demeure-limite, le toit-frontière",
           "domaine": "habitat",
@@ -664,7 +957,12 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["abri", "refuge", "seuil", "toit"]
+      "synonymes_fr": [
+        "abri",
+        "refuge",
+        "seuil",
+        "toit"
+      ]
     },
     "création continue": {
       "traductions": [
@@ -681,7 +979,13 @@
           "registre": "sacré"
         }
       ],
-      "synonymes_fr": ["création", "créer le monde", "faire lever", "genèse", "engendrer (le monde)"]
+      "synonymes_fr": [
+        "création",
+        "créer le monde",
+        "faire lever",
+        "genèse",
+        "engendrer (le monde)"
+      ]
     },
     "masquer pour tromper": {
       "traductions": [
@@ -698,7 +1002,13 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["masquer", "tromper", "feindre", "duper", "travestir"]
+      "synonymes_fr": [
+        "masquer",
+        "tromper",
+        "feindre",
+        "duper",
+        "travestir"
+      ]
     },
     "voiler pour protéger": {
       "traductions": [
@@ -715,7 +1025,12 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["voiler", "abriter", "couvrir", "soustraire au regard"]
+      "synonymes_fr": [
+        "voiler",
+        "abriter",
+        "couvrir",
+        "soustraire au regard"
+      ]
     },
     "vivre": {
       "traductions": [
@@ -733,7 +1048,11 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["vivre", "être vivant", "être en vie"]
+      "synonymes_fr": [
+        "vivre",
+        "être vivant",
+        "être en vie"
+      ]
     },
     "l'inconnu": {
       "traductions": [
@@ -751,7 +1070,12 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["inconnu", "le non-vu", "à découvrir", "ignoré"]
+      "synonymes_fr": [
+        "inconnu",
+        "le non-vu",
+        "à découvrir",
+        "ignoré"
+      ]
     },
     "soleil": {
       "traductions": [
@@ -768,7 +1092,11 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["soleil", "astre du jour", "disque solaire"]
+      "synonymes_fr": [
+        "soleil",
+        "astre du jour",
+        "disque solaire"
+      ]
     },
     "arme": {
       "traductions": [
@@ -785,7 +1113,10 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["arme", "armement"]
+      "synonymes_fr": [
+        "arme",
+        "armement"
+      ]
     },
     "appeler": {
       "traductions": [
@@ -802,7 +1133,12 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["appeler", "héler", "convoquer", "interpeller"]
+      "synonymes_fr": [
+        "appeler",
+        "héler",
+        "convoquer",
+        "interpeller"
+      ]
     },
     "débutant": {
       "traductions": [
@@ -819,7 +1155,12 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["débutant", "novice", "apprenti", "néophyte"]
+      "synonymes_fr": [
+        "débutant",
+        "novice",
+        "apprenti",
+        "néophyte"
+      ]
     },
     "nez": {
       "traductions": [
@@ -836,7 +1177,9 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["nez"]
+      "synonymes_fr": [
+        "nez"
+      ]
     },
     "promesse": {
       "traductions": [
@@ -853,7 +1196,1227 @@
           "registre": "courant"
         }
       ],
-      "synonymes_fr": ["promesse", "engagement", "parole donnée"]
+      "synonymes_fr": [
+        "promesse",
+        "engagement",
+        "parole donnée"
+      ]
+    },
+    "mort cueillie": {
+      "traductions": [
+        {
+          "confluent": "osiimuli",
+          "type": "composition",
+          "composition": "osi-i-muli",
+          "racines": [
+            "osi",
+            "muli"
+          ],
+          "forme_liee": "osiimul",
+          "definition": "Mourir pris entier par la Voilée AVANT que le Vide ne te creuse : l'éclat resté propre est cueilli sous le voile et monte. La mort comme arrachement au Vide, non comme fin.",
+          "nuance": "À distinguer de osiivuku (chute du souillé) et osieva (effacement). Le voile abrite (≠ mukak le masque). Canon : « la Voilée cueille le bien-mort avant que le Vide ne le creuse ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "mort paisible",
+        "bonne mort",
+        "être pris",
+        "s'éteindre doucement"
+      ]
+    },
+    "dérive au fleuve": {
+      "traductions": [
+        {
+          "confluent": "osiiura",
+          "type": "composition",
+          "composition": "osi-i-ura",
+          "racines": [
+            "osi",
+            "ura"
+          ],
+          "forme_liee": "osiiur",
+          "definition": "Mourir l'éclat propre qui coule au Fleuve Pâle, anonyme, en attente de renaître — le trépas de la multitude souvenue, vivier de la réincarnation.",
+          "nuance": "Le sort PAR DÉFAUT du bon mort. ≠ osiieku (qui sort du courant pour veiller à jamais). Canon : le Fleuve Pâle, « la Donneuse y puise et redonne le jour ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "mort ordinaire",
+        "trépas commun",
+        "couler au fleuve",
+        "attendre de renaître"
+      ]
+    },
+    "montée en étoile": {
+      "traductions": [
+        {
+          "confluent": "osiieku",
+          "type": "composition",
+          "composition": "osi-i-eku",
+          "racines": [
+            "osi",
+            "eku"
+          ],
+          "forme_liee": "osiiek",
+          "definition": "Mourir en héros : sortir du courant et se fixer en étoile nommée, renoncer à renaître pour veiller à jamais — un poste éternel sur le Mur, près du Père.",
+          "nuance": "Étoile FIXE ⚔ Fleuve MOUVANT (osiiura). Réservé aux grands Veilleurs. ≠ eku (l'astre-objet). Canon : « l'âme qui sort du courant se fixe en étoile… veille à jamais ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "mort du héros",
+        "devenir étoile",
+        "veiller à jamais",
+        "mort glorieuse"
+      ]
+    },
+    "chute au gouffre": {
+      "traductions": [
+        {
+          "confluent": "osiivuku",
+          "type": "composition",
+          "composition": "osi-i-vuku",
+          "racines": [
+            "osi",
+            "vuku"
+          ],
+          "forme_liee": "osiivuk",
+          "definition": "Mourir l'éclat souillé : ni monter ni renaître, choir au Gouffre, parent de la grise-faim, glisser vers le Vide. Mort par inéligibilité, non par châtiment.",
+          "nuance": "≠ seluvela (la souillure vivante, l'état) et savuzoka (le parjure, la personne) : ici la MORT au bout. « On ne cueille pas une faim ». Canon : 3e chemin, les mal-morts.",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "mauvaise mort",
+        "mort souillée",
+        "choir au gouffre",
+        "mort du parjure"
+      ]
+    },
+    "seconde mort": {
+      "traductions": [
+        {
+          "confluent": "osieva",
+          "type": "nom",
+          "racine": "osieva",
+          "note": "Racine opaque (primitif anti-axe) — la Seconde Mort est un atome ; le mot évoque osi + le-Vide sans s'y décomposer.",
+          "forme_liee": "osiev",
+          "definition": "L'annihilation par l'oubli : s'effacer au Vide quand les vivants cessent de te nommer. L'oublié dérive hors du Fleuve, son étoile s'éteint, il disparaît à jamais.",
+          "nuance": "⭐ NEXUS. La VRAIE mort (effacement), ≠ osi (le passage). ≠ èva (le Vide-principe), ≠ mevak (le glissement chez le vivant), ≠ kavuno (l'infamie sociale). Le souvenir des vivants est le seul rempart. Canon : « la Seconde Mort = l'oubli = le Vide qui gagne ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "seconde mort",
+        "oubli",
+        "s'effacer",
+        "être oublié",
+        "disparaître à jamais",
+        "mourir une seconde fois"
+      ]
+    },
+    "tuer": {
+      "traductions": [
+        {
+          "confluent": "tonak",
+          "type": "verbe",
+          "racine": "tonak",
+          "forme_liee": "tona",
+          "definition": "Ôter la vie à un autre : faire que son éclat quitte le corps par ta main. Le transitif que osiak (mourir) ne porte pas — acte grave, neutre quant à l'honneur.",
+          "nuance": "Racine opaque (l'acte létal est un primitif). ≠ osiak (mourir, subir). Les pôles d'honneur réutilisent l'existant : tuer-en-faisant-mur = konuvaru ; tuer-en-bête = besinekan (souille → osiivuku).",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "tuer",
+        "abattre",
+        "ôter la vie",
+        "mettre à mort",
+        "occire"
+      ]
+    },
+    "mémorial": {
+      "traductions": [
+        {
+          "confluent": "osikari",
+          "type": "composition",
+          "composition": "osi-kari",
+          "racines": [
+            "osi",
+            "kari"
+          ],
+          "forme_liee": "osikar",
+          "definition": "La pierre qui tient le NOM d'un mort contre l'oubli : stèle, nom gravé, Autel des Pionniers. Non une destination d'âme (l'âme monte), non la tombe-contenant.",
+          "nuance": "≠ osiiutoka (sépulture, le corps) ; ≠ karimori (pierre-mémoire générique) ; ≠ silimori/kovamori (le signe). Canon : « la pierre se souvient ; l'âme s'élève ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "mémorial",
+        "stèle",
+        "monument funéraire",
+        "autel des morts",
+        "pierre du nom"
+      ]
+    },
+    "tertre": {
+      "traductions": [
+        {
+          "confluent": "kesakari",
+          "type": "composition",
+          "composition": "kesa-kari",
+          "racines": [
+            "kesa",
+            "kari"
+          ],
+          "forme_liee": "kesakar",
+          "definition": "Le temple-monticule qui monte poignée après poignée — pierre, terre et cendres des morts liées d'argile, feu perpétuel au sommet. Le repère du village, bâti DES morts, qui croît.",
+          "nuance": "≠ osikari (la pierre d'UN mort) : édifice COLLECTIF de tous les morts. ≠ buka (l'habitat). Canon : le Tertre, « chacun apporte sa pierre… les cendres dans ses flancs ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "tertre",
+        "tumulus",
+        "temple-mont",
+        "butte des morts"
+      ]
+    },
+    "dernière garde": {
+      "traductions": [
+        {
+          "confluent": "velaora",
+          "type": "composition",
+          "composition": "vela-ora",
+          "racines": [
+            "vela",
+            "ora"
+          ],
+          "forme_liee": "velaor",
+          "definition": "La veille tenue toute la nuit sur le bûcher d'un mort, du soir à l'aube — la garde de toujours tenue une dernière fois. À l'aube, ce qui s'est élevé est rendu à la Donneuse.",
+          "nuance": "≠ velak (veiller, degré zéro) et velakonu (veiller une chose en continu) : ici la veille BORNÉE par l'aube, ritualisée pour un mort. Canon : « l'enterrement-feu = la dernière Veille ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "dernière veille",
+        "veillée funèbre",
+        "veiller le bûcher",
+        "veille jusqu'à l'aube"
+      ]
+    },
+    "feu frontière": {
+      "traductions": [
+        {
+          "confluent": "sukvasi",
+          "type": "composition",
+          "composition": "suk-vasi",
+          "racines": [
+            "suki",
+            "vasi"
+          ],
+          "forme_liee": "sukvas",
+          "definition": "Le feu pris comme ligne qui sépare le dedans du dehors — la chaleur qui dit au froid-Vide « tu n'entres pas » ; le plus petit segment du Mur, l'âtre comme frontière.",
+          "nuance": "vasi (limite/passage) charge le feu de sa valeur de bord-gardé. ≠ sukamako (la chaleur qui rassemble) : ici le feu EXCLUT la nuit. Canon : « la chaleur du foyer dit au froid-Vide : tu n'entres pas ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "feu-frontière",
+        "feu du mur",
+        "feu qui garde",
+        "frontière de chaleur"
+      ]
+    },
+    "feu relais": {
+      "traductions": [
+        {
+          "confluent": "sukikanu",
+          "type": "composition",
+          "composition": "suki-kanu",
+          "racines": [
+            "suki",
+            "kanu"
+          ],
+          "forme_liee": "sukikan",
+          "definition": "Le feu qui s'allume d'un autre sans que l'autre diminue — et l'acte de le passer : prendre sa flamme d'un foyer vivant pour en allumer un neuf, jamais du néant. Le don du feu.",
+          "nuance": "≠ kosam (créer du Vide) : sukikanu propage d'une flamme vivante ; ≠ sukilusak (ranimer le sien). Canon : « il alluma mille feux sans s'éteindre » ; les Porteurs de Flamme.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "passer le feu",
+        "transmettre la flamme",
+        "feu-relais",
+        "porter la flamme"
+      ]
+    },
+    "feu révélation": {
+      "traductions": [
+        {
+          "confluent": "sukimil",
+          "type": "composition",
+          "composition": "suki-mil",
+          "racines": [
+            "suki",
+            "milis"
+          ],
+          "forme_liee": "sukimil",
+          "definition": "Le feu en tant qu'il fait VOIR dans la nuit — il débusque le masqué, le corrompu ; « l'œil du pauvre », qui n'a que sa flamme pour percer le mensonge.",
+          "nuance": "milis (voir/découvrir) charge le feu comme outil du Regard. ≠ venat (discerner, le jugement) : ici la flamme éclaire, instrumentale. Canon : « le feu fait voir dans la nuit → démasque le corrompu ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "feu-révélation",
+        "lumière qui démasque",
+        "l'œil du pauvre",
+        "flamme révélatrice"
+      ]
+    },
+    "incendie": {
+      "traductions": [
+        {
+          "confluent": "sukimukis",
+          "type": "composition",
+          "composition": "suki-mukis",
+          "racines": [
+            "suki",
+            "muki"
+          ],
+          "forme_liee": "sukimuk",
+          "definition": "Le feu retourné en faim : non plus celui qui éclaire et chauffe, mais celui qui MANGE — l'incendie, la guerre qui dévore, le déracinement ; le même feu, à l'envers.",
+          "nuance": "mukis (manger) dit le retournement. ≠ suki neutre (le feu qui sert). À l'échelle d'un éclat = isukèva/mutaeva. Canon : « le feu qui éclaire retourné en feu qui dévore ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "incendie",
+        "feu dévorant",
+        "feu qui ravage",
+        "brasier",
+        "feu retourné"
+      ]
+    },
+    "chaleur foyer": {
+      "traductions": [
+        {
+          "confluent": "sukamako",
+          "type": "composition",
+          "composition": "suka-mako",
+          "racines": [
+            "suka",
+            "mako"
+          ],
+          "forme_liee": "sukamak",
+          "definition": "La chaleur qui rayonne sans se thésauriser — elle se donne à tous ceux qui s'en approchent, et c'est pourquoi on se serre autour d'elle ; la chaleur qui fait communauté.",
+          "nuance": "mako (multitude) dit que cette chaleur AGRÈGE. ≠ sukvasi (le feu qui exclut la nuit) : ici elle inclut les vivants ; ≠ sukibuka (l'âtre-lieu). Canon : « la chaleur rayonne… on se serre autour ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "chaleur du foyer",
+        "chaleur qui rassemble",
+        "chaleur partagée"
+      ]
+    },
+    "souvenir vif": {
+      "traductions": [
+        {
+          "confluent": "morisuva",
+          "type": "composition",
+          "composition": "mori-suva",
+          "racines": [
+            "mori",
+            "suvak"
+          ],
+          "forme_liee": "morisuv",
+          "definition": "Le souvenir porté par un vivant comme une braise dans le corps : il éclaire tant qu'on l'entretient, et s'éteint avec celui qui le portait. La mémoire chaude, mortelle.",
+          "nuance": "≠ morileku (la chose transmise qui dure au-delà d'une vie) et morikari (mémoire fixée dans la pierre). Canon : la braise du Père en chaque vivant ; le souvenir des vivants te tient au ciel.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "souvenir",
+        "souvenir vivant",
+        "mémoire vive"
+      ]
+    },
+    "tenir la mémoire d'un autre": {
+      "traductions": [
+        {
+          "confluent": "morituva",
+          "type": "composition",
+          "composition": "mori-tuva",
+          "racines": [
+            "mori",
+            "tuvak"
+          ],
+          "forme_liee": "morituv",
+          "definition": "Tenir en soi la mémoire d'un autre qui ne peut plus la tenir — celle du creusé, du dément, du mort. On est son regard à sa place : tant qu'on le garde, le Vide ne l'a pas pris.",
+          "nuance": "≠ morisuva (mon propre souvenir) et morivosak (l'acte oral). Charge ontologique : maintenir hors du Vide. Canon : « les vivants tiennent son nom à sa place ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "tenir la mémoire de",
+        "garder le souvenir d'un autre",
+        "veiller le souvenir",
+        "porter la mémoire de quelqu'un"
+      ]
+    },
+    "legs de mémoire": {
+      "traductions": [
+        {
+          "confluent": "morileku",
+          "type": "composition",
+          "composition": "mori-leku",
+          "racines": [
+            "mori",
+            "leku"
+          ],
+          "forme_liee": "morilek",
+          "definition": "Le legs de mémoire lui-même — le corps de souvenirs, noms et récits reçu des morts comme une coutume, qu'on garde et qu'on AUGMENTE avant de le passer. La mémoire-patrimoine.",
+          "nuance": "La CHOSE transmise, ≠ les ACTES (morivosak dire, konuleku garder). ≠ morisuva (mortelle) : morileku traverse les générations. Canon : « ajoute ta marque, porte l'œuvre plus loin ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "legs",
+        "héritage de mémoire",
+        "mémoire reçue",
+        "patrimoine des morts"
+      ]
+    },
+    "pierre-mémoire": {
+      "traductions": [
+        {
+          "confluent": "karimori",
+          "type": "composition",
+          "composition": "kari-mori",
+          "racines": [
+            "kari",
+            "mori"
+          ],
+          "forme_liee": "karimor",
+          "definition": "La pierre en tant qu'elle FIXE un nom contre l'oubli — la substance même qui garde, le mémorial générique, le « ceci fut » que la matière tient quand les vivants meurent.",
+          "nuance": "La MATIÈRE qui porte mémoire. ≠ silimori/kovamori (le signe/glyphe) : la pierre tient même sans glyphe. ≠ osikari (le mémorial d'UN mort, funéraire). Canon : « la pierre se souvient ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "mémorial",
+        "pierre du souvenir",
+        "stèle",
+        "pierre qui garde un nom"
+      ]
+    },
+    "mémoire muette": {
+      "traductions": [
+        {
+          "confluent": "morimuli",
+          "type": "composition",
+          "composition": "mori-muli",
+          "racines": [
+            "mori",
+            "muli"
+          ],
+          "forme_liee": "morimul",
+          "definition": "La trace dont le sens s'est embrumé : on voit le signe, on ne peut plus recouvrer ce qu'il disait (la Grande Fresque visible mais muette). Le Vide a mangé le SENS, non la matière.",
+          "nuance": "muli (voile/brume) = le sens VOILÉ, présent mais illisible, PAS effacé (≠ osieva la Seconde Mort). ≠ morisili (signe encore lisible), ≠ mukak (masquer le sens activement). Canon : « le Vide mange le sens, pas la matière ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "mémoire muette",
+        "sens perdu",
+        "trace illisible",
+        "énigme du passé"
+      ]
+    },
+    "trace qui résonne": {
+      "traductions": [
+        {
+          "confluent": "morivoki",
+          "type": "composition",
+          "composition": "mori-voki",
+          "racines": [
+            "mori",
+            "voki"
+          ],
+          "forme_liee": "morivok",
+          "definition": "La mémoire qui revient d'elle-même dans un objet transmis — la patine d'une vieille lance, l'usure d'un outil des aïeux qui « parle » sans qu'on l'ait inscrite. Le murmure des morts.",
+          "nuance": "Mémoire INVOLONTAIRE reçue par RÉSONANCE. ≠ silimori (signe posé) et morisili (indice qu'on déchiffre). voki (la voix) ancre le Chœur. Canon : « la patine des objets parle ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "patine",
+        "mémoire d'un objet",
+        "résonance des morts"
+      ]
+    },
+    "ancêtre au fleuve": {
+      "traductions": [
+        {
+          "confluent": "aitaura",
+          "type": "composition",
+          "composition": "aita-ura",
+          "racines": [
+            "aita",
+            "ura"
+          ],
+          "forme_liee": "aitaur",
+          "definition": "Le bien-mort à l'éclat propre qui coule dans le Fleuve Pâle, anonyme, en attente — prêt à renaître quand la Donneuse le rappellera. Le sort de la multitude souvenue.",
+          "nuance": "L'ancêtre dans le COURANT (mouvant, qui peut renaître). ≠ aitaeku (fixé en étoile). Canon : le Fleuve Pâle, vivier de la réincarnation.",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "ancêtre",
+        "mort en attente",
+        "aïeul du fleuve",
+        "défunt qui renaîtra"
+      ]
+    },
+    "aïeul-étoile": {
+      "traductions": [
+        {
+          "confluent": "aitaeku",
+          "type": "composition",
+          "composition": "aita-eku",
+          "racines": [
+            "aita",
+            "eku"
+          ],
+          "forme_liee": "aitaek",
+          "definition": "Le héros-mort sorti du courant pour se fixer en étoile nommée : il a renoncé à renaître afin de veiller à jamais, un poste éternel près du Père. L'honneur rare, quasi-divin.",
+          "nuance": "L'ancêtre FIXE (veille éternelle), pôle de aitaura (mouvant, renaît). ≠ eku (l'astre physique). Canon : « veiller à jamais ⚔ renaître » ; les héros-étoiles.",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "aïeul-étoile",
+        "héros-étoile",
+        "ancêtre veilleur",
+        "mort fixé au ciel"
+      ]
+    },
+    "mal-mort": {
+      "traductions": [
+        {
+          "confluent": "aitazoka",
+          "type": "composition",
+          "composition": "aita-zoka",
+          "racines": [
+            "aita",
+            "zoka"
+          ],
+          "forme_liee": "aitazok",
+          "definition": "L'ancêtre déchu, à l'éclat souillé, qui ne monte ni ne renaît : il choit au Gouffre, parent de la grise-faim, glissant vers le Vide. Le mort dont on se garde — un tombé pitoyable.",
+          "nuance": "N'EST PAS du Noyau (≠ aitaura/aitaeku). Donne un nom au mal-mort que enuaita (les Premiers Ancêtres corrompus) portait sous aita plat. Canon : le Gouffre, « nos tombés ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "mal-mort",
+        "ancêtre déchu",
+        "mort souillé",
+        "déchu du gouffre",
+        "tombé"
+      ]
+    },
+    "l'oublié": {
+      "traductions": [
+        {
+          "confluent": "aitameva",
+          "type": "composition",
+          "composition": "aita-meva",
+          "racines": [
+            "aita",
+            "mevak"
+          ],
+          "forme_liee": "aitamev",
+          "definition": "L'ancêtre que les vivants cessent de nommer — il dérive hors du Fleuve, son étoile vacille, il s'efface lentement. Encore bon, mais lâché par la mémoire.",
+          "nuance": "Oublié par NÉGLIGENCE (≠ aitazoka, le déchu par souillure). L'entrée de l'oubli dans la lignée ; le procès vers osieva (la Seconde Mort). Canon : « oublié, tu dérives vers le Vide ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "l'oublié",
+        "ancêtre oublié",
+        "mort qu'on ne nomme plus",
+        "aïeul délaissé"
+      ]
+    },
+    "le chœur": {
+      "traductions": [
+        {
+          "confluent": "aitakota",
+          "type": "composition",
+          "composition": "aita-kota",
+          "racines": [
+            "aita",
+            "kota"
+          ],
+          "forme_liee": "aitakot",
+          "definition": "L'assemblée de nos morts prise comme un seul : le Chœur, les Mille-Marques, les Nôtres — la confluence de tous les bien-morts veillant ensemble, la Figure-noyau qui grandit à chaque mort.",
+          "nuance": "Le COLLECTIF déifié (≠ les sorts individuels). kota (confluence) dit le peuple-corps des morts (« nés du sang de nos morts »). Candidat au nom de la Figure-noyau. Canon : le Noyau, « murmure à mille bouches ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "le chœur",
+        "les ancêtres",
+        "l'assemblée des morts",
+        "les nôtres",
+        "nos morts"
+      ]
+    },
+    "nom gagné": {
+      "traductions": [
+        {
+          "confluent": "nuli",
+          "type": "nom",
+          "racine": "nuli",
+          "forme_liee": "nul",
+          "definition": "Le nom qui se GAGNE et ne se transmet pas : le feu qu'on a vu prendre en toi, que les siens reconnaissent par un acte ou un trait et te donnent (Dos-Large, Œil-Ouvert). Le nom-mérite.",
+          "nuance": "Racine opaque (le nom n'avait pas de mot). LE FEU de la paire Feu↔Sang : mérité, individuel, ≠ kinakova (la marque-de-sang, hérité). ≠ voki (la voix). Canon : « on ne naît pas avec un nom, on en gagne un ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "nom",
+        "nom gagné",
+        "nom mérité",
+        "surnom d'honneur"
+      ]
+    },
+    "nommer": {
+      "traductions": [
+        {
+          "confluent": "nulim",
+          "type": "verbe",
+          "racine": "nulim",
+          "forme_liee": "nuli",
+          "definition": "Donner un nom pour faire exister : tirer un être de l'indistinct, reconnaître le feu qu'on a vu prendre en lui. Nommer ne décrit pas — il arrache au Vide.",
+          "nuance": "Verbalisation de nuli. ≠ savuvosak (proférer toute formule performative) : nulim = spécifiquement donner-un-nom. ≠ vokik (héler). Canon : « nommer, c'est arracher au Vide, distinguer ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "nommer",
+        "donner un nom",
+        "reconnaître par un nom",
+        "faire exister par le nom"
+      ]
+    },
+    "nom tenu pour un mort": {
+      "traductions": [
+        {
+          "confluent": "nulituva",
+          "type": "composition",
+          "composition": "nuli-tuva",
+          "racines": [
+            "nuli",
+            "tuvak"
+          ],
+          "forme_liee": "nulituv",
+          "definition": "Le nom d'un mort qu'on redit pour qu'il tienne au Fleuve : le nommer, c'est le maintenir hors du Vide, nourrir son étoile. Tant qu'on prononce son nom, il n'a pas dérivé.",
+          "nuance": "Le nom comme ACTE de maintien post-mortem. ≠ nuli (le nom-mérite du vivant), ≠ morituva (tenir la mémoire, plus large). Frère de morivosak côté parole. Canon : « tant qu'on te nomme tu tiens dans le Fleuve ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "redire le nom d'un mort",
+        "nom du défunt",
+        "tenir le nom",
+        "nommer les morts"
+      ]
+    },
+    "marque de sang": {
+      "traductions": [
+        {
+          "confluent": "kinakova",
+          "type": "composition",
+          "composition": "kina-kova",
+          "racines": [
+            "kina",
+            "kova"
+          ],
+          "forme_liee": "kinakov",
+          "definition": "Le glyphe de lignée pressé dans l'argile, qui dit de quel sang on descend : le rouge qui se transmet, hérité, porté en parallèle du nom-gagné. Là où le nom dit ton mérite, la marque dit d'où tu viens.",
+          "nuance": "Le sang FAIT marque. LE SANG de la paire Feu↔Sang : hérité, ≠ nuli (le nom-feu, mérité). ≠ mituuaita (la généalogie mémorisée) : ici le SIGNE concret. Canon : « le glyphe de lignée… le rouge qui se transmet ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "marque de sang",
+        "glyphe de lignée",
+        "emblème de clan",
+        "blason",
+        "signe de naissance"
+      ]
+    },
+    "eau qui sourd": {
+      "traductions": [
+        {
+          "confluent": "sevuna",
+          "type": "nom",
+          "racine": "sevuna",
+          "forme_liee": "sevun",
+          "definition": "L'eau au moment où elle jaillit de la cime et part — l'origine qui sourd et se met aussitôt en chemin, le surgir même de la Rivière. Non le lieu ni la source-objet, mais l'acte de sourdre.",
+          "nuance": "Racine opaque, ≠ enuura (le lieu-source) : sevuna est le jaillir, le geste. ≠ uramela/limava (l'eau déjà coulante). Canon : « l'eau chaude descendue de la cime ; celle qui est PARTIE ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "source",
+        "jaillir",
+        "sourdre",
+        "surgir",
+        "naître de la cime"
+      ]
+    },
+    "eau qui fugue": {
+      "traductions": [
+        {
+          "confluent": "luvak",
+          "type": "verbe",
+          "racine": "luvak",
+          "forme_liee": "luva",
+          "definition": "Couler sans jamais revenir, vivre en s'en allant, oublier en chemin — le mouvement irréversible de la Rivière qui déracine et n'en garde rien. Avancer au prix de la mémoire.",
+          "nuance": "Racine opaque (le revers de la Rivière). ≠ urateki (épouser l'eau, le voyageur qui choisit) : luvak est subi, sans retour. Pôle-vice d'Avancer (l'oubli-en-chemin), contre-pôle de konuleku. Canon : « elle emporte tout, déracine, oublie en chemin ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "s'écouler sans retour",
+        "fuir",
+        "emporter",
+        "déraciner",
+        "oublier en chemin"
+      ]
+    },
+    "eau qui reflète": {
+      "traductions": [
+        {
+          "confluent": "urasili",
+          "type": "composition",
+          "composition": "ura-sili",
+          "racines": [
+            "ura",
+            "sili"
+          ],
+          "forme_liee": "urasil",
+          "definition": "La surface d'eau calme où l'on voit l'autre, ou ce qu'on aurait pu être — le miroir d'eau, le reflet qui montre un second soi. La Lune lit la Rivière dans le reflet et y voit son contre-destin.",
+          "nuance": "ura+sili soude l'eau et le Regard. ≠ silikova (l'effigie fixée d'un absent) : urasili est vivant, mobile, montre un autre/un soi-possible. ≠ mira (voir directement) : on voit par renvoi. Canon : « la Lune voit la Rivière dans le reflet ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "reflet",
+        "miroir d'eau",
+        "se mirer",
+        "voir dans l'eau",
+        "image renvoyée"
+      ]
+    },
+    "eau morte": {
+      "traductions": [
+        {
+          "confluent": "selura",
+          "type": "composition",
+          "composition": "selu-ura",
+          "racines": [
+            "selu",
+            "ura"
+          ],
+          "forme_liee": "selur",
+          "definition": "L'eau qui ne coule plus, stagne et se corrompt — l'eau qui a cessé de se mêler, refusant la Confluence. Le revers absolu de la Rivière : non l'eau qui part trop, mais qui ne part plus.",
+          "nuance": "selu (croupi) + ura. ≠ limava/uramela (l'eau-vive qui se mêle) : contre-pôle côté immobilité. ≠ seluvela (souillure rituelle) : ici l'eau-chose stagnante. Canon : « ce qui s'arrête meurt ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "eau stagnante",
+        "eau croupie",
+        "mare morte",
+        "eau dormante"
+      ]
+    },
+    "socle": {
+      "traductions": [
+        {
+          "confluent": "karituli",
+          "type": "composition",
+          "composition": "kari-tuli",
+          "racines": [
+            "kari",
+            "tuli"
+          ],
+          "forme_liee": "karitul",
+          "definition": "La pierre qui porte et fonde — l'Ancré, le socle sur quoi tout tient, le pilier ciel-terre. Ce qui ne bouge pas et permet au reste de tenir : la fonction d'appui de la Montagne.",
+          "nuance": "kari+tuli. ≠ tokituli (habiter durablement, l'acte) : karituli est l'OBJET-appui. ≠ karimori (qui se souvient) : porte le poids présent, ne mémorise pas. Canon : « pilier ciel-terre, immobile » ; le Socle-du-Ciel.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "socle",
+        "pilier",
+        "fondation",
+        "assise",
+        "ce qui porte"
+      ]
+    },
+    "pierre qui étouffe": {
+      "traductions": [
+        {
+          "confluent": "karizoka",
+          "type": "composition",
+          "composition": "kari-zoka",
+          "racines": [
+            "kari",
+            "zoka"
+          ],
+          "forme_liee": "karizok",
+          "definition": "La garde retournée en mort : conserver tant qu'on fige, embaume, étouffe ce qui devrait vivre — la sur-conservation qui re-creuse le Vide. La momie, le savoir gardé si fort qu'il ne se transmet plus.",
+          "nuance": "kari+zoka (la pierre devenue ennemie du vivant). ≠ karituli/karimori (les faces saines) : leur excès funeste. Revers de konuleku poussé au-delà (garder SANS transmettre). Canon : « elle fige, embaume, étouffe ce qui devrait vivre ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "figer",
+        "embaumer",
+        "étouffer",
+        "sur-conserver",
+        "momifier"
+      ]
+    },
+    "sang-lignée": {
+      "traductions": [
+        {
+          "confluent": "kinatori",
+          "type": "composition",
+          "composition": "kina-tori",
+          "racines": [
+            "kina",
+            "tori"
+          ],
+          "forme_liee": "kinator",
+          "definition": "Le rouge qui se TRANSMET — le sang qui coule de père en fils, lie les générations, fait « les miens » : la lignée, l'identité héritée, la protection des siens.",
+          "nuance": "Pôle PARTICULIER de la paire Feu↔Sang, ⚔ sukiva (don/mérite, universel). ≠ siluora (l'organe/le sang physique) : kinatori est le sang-valeur. ≠ kinasora (le sang-d'aurore, l'élite). Canon : « le rouge qui se transmet, lie les générations ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "lignée",
+        "ascendance",
+        "sang familial",
+        "les siens",
+        "filiation"
+      ]
+    },
+    "don qui prend où il veut": {
+      "traductions": [
+        {
+          "confluent": "sukiva",
+          "type": "nom",
+          "racine": "sukiva",
+          "forme_liee": "sukiv",
+          "definition": "Le don qui s'allume où il veut sans demander la parenté — le mérite, le talent qui monte d'où qu'il vienne, l'universel. Comme le feu saute d'un bois à l'autre : la valeur qui prend sans regarder le sang.",
+          "nuance": "Racine opaque (écho de suki, le feu-social). Pôle UNIVERSEL de la paire Feu↔Sang, ⚔ kinatori (sang-lignée). ≠ isuki (la braise de vie) : ici la valeur sociale qui circule. ≠ koriumako (fierté de soi). Canon : « le feu prend où il veut, non par le sang ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "mérite",
+        "don",
+        "talent qui s'élève",
+        "valeur acquise"
+      ]
+    },
+    "vendetta": {
+      "traductions": [
+        {
+          "confluent": "kinazoka",
+          "type": "composition",
+          "composition": "kina-zoka",
+          "racines": [
+            "kina",
+            "zoka"
+          ],
+          "forme_liee": "kinazok",
+          "definition": "La dette de sang qui ne s'éteint pas — le meurtre qui appelle le meurtre, le cycle de vengeance où chaque mort réclame une mort. Le vice du pôle Sang : la protection des siens retournée en haine sans fin.",
+          "nuance": "kina+zoka. ≠ kinatori (sa face saine, la lignée qui protège) : son excès (le clan fermé, l'exclusion). ≠ konuvaru (défendre, légitime, ponctuel) : ici le cycle qui ne se clôt jamais. Canon : « la vendetta sans fin — le sang appelle le sang ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "vendetta",
+        "dette de sang",
+        "vengeance de clan",
+        "représailles"
+      ]
+    },
+    "sang d'aurore": {
+      "traductions": [
+        {
+          "confluent": "kinasora",
+          "type": "composition",
+          "composition": "kina-sora",
+          "racines": [
+            "kina",
+            "sora"
+          ],
+          "forme_liee": "kinasor",
+          "definition": "Le sang qui porte la couleur du seuil — l'élection héréditaire des Ciels-clairs, ceux dont les yeux ont la teinte de la rencontre des deux sœurs (rouge/orange de l'aube), transmise de génération en génération.",
+          "nuance": "kina+sora (le sang-lumière). ≠ kinatori (toute lignée) : kinasora est l'élite héréditaire (la noblesse d'aurore). ≠ siluora (l'organe œil). Porte le risque-caste (tension avec sukiva le mérite). Canon : « aïeul des Ciels-clairs, yeux d'aurore ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "sang d'aurore",
+        "ciel-clair",
+        "noblesse d'aurore",
+        "lignée d'élite"
+      ]
+    },
+    "clignement-mesure": {
+      "traductions": [
+        {
+          "confluent": "nelak",
+          "type": "verbe",
+          "racine": "nelak",
+          "forme_liee": "nela",
+          "definition": "Fermer puis rouvrir l'œil à dessein — le geste de la mesure dans le temps : ni le sommeil qui laisse entrer le Vide, ni l'œil fixe qui brûle. Tenir le Regard à la juste ouverture en le reposant sans l'éteindre.",
+          "nuance": "Racine opaque (atome de l'éthique du Regard-mesure). ≠ vela/velak (tenir l'œil ouvert) : nelak rend la veille tenable. ≠ mevak (regard qui glisse, une faute) : nelak est vertueux. Canon : « le clignement = la mesure dans le temps ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "cligner",
+        "ciller",
+        "mesurer son regard",
+        "reposer l'œil sans le fermer"
+      ]
+    },
+    "passer la garde": {
+      "traductions": [
+        {
+          "confluent": "kanuvela",
+          "type": "composition",
+          "composition": "kanu-vela",
+          "racines": [
+            "kanu",
+            "vela"
+          ],
+          "forme_liee": "kanuvel",
+          "definition": "Remettre sa veille à un autre avant que l'œil ne tombe : réveiller le suivant et lui passer la garde, de proche en proche jusqu'au jour. La veille portée comme une flamme qu'on transmet.",
+          "nuance": "kanu (porter/main) + vela. ≠ velakonu (garder soi-même par le regard) : ici on TRANSMET la garde. Frère de morivosak (transmettre par la parole) côté veille. Canon : « le veilleur en réveille un autre… comme on passe une flamme ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "passer la garde",
+        "relever",
+        "réveiller le suivant",
+        "prendre la relève",
+        "relayer la veille"
+      ]
+    },
+    "veille collective": {
+      "traductions": [
+        {
+          "confluent": "velaeka",
+          "type": "composition",
+          "composition": "vela-eka",
+          "racines": [
+            "vela",
+            "eka"
+          ],
+          "forme_liee": "velaek",
+          "definition": "La veille du peuple entier conçue comme un seul œil qui ne se ferme jamais tout à fait : quand l'un dort, un autre rouvre, si bien qu'aucune nuit ne reste sans regard. Le clignement à l'échelle de la totalité.",
+          "nuance": "vela + eka (tout/totalité). ≠ velakonu (un gardien, une chose) et kanuvela (le passage entre deux) : velaeka est l'ÉTAT collectif émergent, la Veille comme institution. Canon : « le peuple est un seul œil qui ne se ferme jamais tout à fait ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "la Veille",
+        "veille collective",
+        "un œil toujours ouvert",
+        "garde du peuple"
+      ]
+    },
+    "veiller le creusé": {
+      "traductions": [
+        {
+          "confluent": "velis",
+          "type": "verbe",
+          "racine": "velis",
+          "forme_liee": "veli",
+          "definition": "Tenir l'œil ouvert à la place de celui que le Vide creuse : être le regard du dément, garder son nom, ses liens, son sens quand le sien faiblit — veiller un vivant qui glisse vers la Seconde Mort sans cesser de respirer.",
+          "nuance": "Racine opaque (devoir cardinal). ≠ tuvak (tenir une chose dans l'être, large) : velis = veiller un esprit qui se vide, charge de compassion (le creusé = VICTIME). ≠ morivosak (tenir le nom d'un mort) : ici le creusé vit, atteignable. Canon : « veiller le creusé = être son regard ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "veiller un dément",
+        "veiller le creusé",
+        "tenir le regard d'un autre",
+        "garder le nom d'un vivant qui s'oublie"
+      ]
+    },
+    "éblouissement": {
+      "traductions": [
+        {
+          "confluent": "solak",
+          "type": "verbe",
+          "racine": "solak",
+          "forme_liee": "sola",
+          "definition": "Se perdre par excès de Regard : tourner sur soi (ou sur autrui) tant de lumière qu'on ne distingue plus rien — l'œil grand ouvert qui ne cligne plus, brûlé. La cécité par le haut, qui tombe dans le même Vide que la cécité par le bas.",
+          "nuance": "Racine opaque — le pendant-HAUT cardinal de lozak (refus-de-voir, le pôle bas). lozak ferme l'œil (trop peu), solak le brûle (trop) : la même cécité. ≠ mevak (distrait) : solak regarde TROP. Matrice du pôle-haut. Canon : « les deux extrêmes se rejoignent, aucun ne voit ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "s'éblouir",
+        "se brûler de lumière",
+        "vouloir tout voir",
+        "s'aveugler par excès",
+        "l'orgueil du regard"
+      ]
+    },
+    "forcer le regard": {
+      "traductions": [
+        {
+          "confluent": "solasavu",
+          "type": "composition",
+          "composition": "sola-savu",
+          "racines": [
+            "solak",
+            "savu"
+          ],
+          "forme_liee": "solasav",
+          "definition": "Contraindre un autre à voir comme on voit, lui imposer son Regard et lui ôter le sien : la tyrannie au sens propre du peuple — non commander, mais forcer l'œil d'autrui, le priver de veiller librement.",
+          "nuance": "sola (l'éblouissement) + savu (le lien sacré qu'on viole). ≠ mukak (tromper par le masque) : la tyrannie CONTRAINT à découvert. ≠ solakasi (la présomption, qui ne touche que soi) : solasavu atteint AUTRUI. Vice des puissants. Canon : « forcer le regard d'autrui = la tyrannie ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "tyranniser",
+        "forcer le regard",
+        "imposer sa vue",
+        "asservir le regard",
+        "contraindre à voir"
+      ]
+    },
+    "présomption": {
+      "traductions": [
+        {
+          "confluent": "solakasi",
+          "type": "composition",
+          "composition": "sola-kasi",
+          "racines": [
+            "solak",
+            "kasi"
+          ],
+          "forme_liee": "solakas",
+          "definition": "S'arroger une hauteur qu'on n'a pas méritée : monter au rang du jour avant l'heure, croire voir de haut sans avoir gravi les degrés — l'hubris d'Icare, le front levé vers ce qu'on n'a pas gagné.",
+          "nuance": "sola + kasi (rang/chef). ≠ koriumako (fierté JUSTE, tirée d'un mérite) : solakasi est la fierté USURPÉE. ≠ solasavu (qui viole autrui) : ici un orgueil tourné vers soi. Canon : l'Ébloui, « qui monte par orgueil est foudroyé ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "présomption",
+        "hubris",
+        "s'arroger un rang",
+        "monter sans mériter",
+        "se croire arrivé"
+      ]
+    },
+    "franchise cruelle": {
+      "traductions": [
+        {
+          "confluent": "solatosa",
+          "type": "composition",
+          "composition": "sola-tosa",
+          "racines": [
+            "solak",
+            "tosa"
+          ],
+          "forme_liee": "solatos",
+          "definition": "Asséner toute la vérité crue sans rien voiler, au nom du bien — la franchise qui blesse, l'exposition totale qui n'abrite aucun regard. Le faux-bien : croire bien faire en brûlant celui qu'on expose.",
+          "nuance": "sola (le trop) + tosa (le bien) = le bien dévoyé par l'excès. Exact opposé de mulik (voiler pour abriter) : solatosa refuse d'abriter. ≠ mukak (mentir) : son tort est de trop dire le vrai, sans mesure. Canon : « la franchise cruelle… s'exposer ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "franchise cruelle",
+        "dire tout cru",
+        "exposer sans ménager",
+        "vérité qui blesse"
+      ]
+    },
+    "folie par privation": {
+      "traductions": [
+        {
+          "confluent": "vesuna",
+          "type": "nom",
+          "racine": "vesuna",
+          "forme_liee": "vesun",
+          "definition": "L'esprit que le Vide creuse en respirant encore : la mémoire qui s'en va, le nom qui se perd, le soi qui se défait sans que le corps meure — la Seconde Mort commencée avant la mort. Une affliction, jamais une faute.",
+          "nuance": "Racine opaque (le Vide-dans-le-vivant). ≠ lozak (la FAUTE de fermer l'œil) : vesuna est SUBI, le dément est victime (compassion, velis). ≠ osi (la mort) : l'éclat est encore là, atteignable. Pôle-bas. Canon : « être creusé par le Vide en respirant encore… une victime ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "folie",
+        "démence",
+        "le creusé",
+        "l'esprit qui s'efface",
+        "perdre la raison"
+      ]
+    },
+    "folie par excès": {
+      "traductions": [
+        {
+          "confluent": "solavela",
+          "type": "composition",
+          "composition": "sola-vela",
+          "racines": [
+            "solak",
+            "vela"
+          ],
+          "forme_liee": "solavel",
+          "definition": "La folie de qui voit trop : l'esprit que l'excès de Regard a brûlé, le délire du voyant — une veille dévoyée qui ne cligne plus et se consume. Ambivalente : parfois pur égarement, parfois un vrai voyant.",
+          "nuance": "NEXUS — sola (le brûlé-de-lumière de solak) + vela (veille) : la veille qui a brûlé son œil. solak est l'ACTE, solavela l'ESPRIT qui en reste creusé. Miroir exact de vesuna (folie par le bas) : deux folies, un seul Vide. Canon : « le délire du voyant, la folie sacrée… ambivalente ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "délire du voyant",
+        "folie sacrée",
+        "brûlé de lumière",
+        "voyant fou",
+        "illuminé"
+      ]
+    },
+    "desserrement": {
+      "traductions": [
+        {
+          "confluent": "desuli",
+          "type": "nom",
+          "racine": "desuli",
+          "forme_liee": "desul",
+          "definition": "Le relâchement sanctionné de qui a porté : poser sa charge, desserrer l'étreinte de la veille — le festin, la danse, l'abandon collectif qui rend la veille tenable. Un pilier sacré : on ne nous prend pas notre joie.",
+          "nuance": "Racine opaque (le 4e pilier, FÊTER). ≠ koriatosa (joie-ÉMOTION, état intérieur) : desuli est l'ACTE/temps social de déposer la charge. Contrepoids de kanukota (porter). Canon : « qui porte doit pouvoir déposer… le grand desserrement ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "fête",
+        "desserrement",
+        "festin",
+        "déposer la charge",
+        "relâche",
+        "célébration"
+      ]
+    },
+    "aube tenue": {
+      "traductions": [
+        {
+          "confluent": "oraveli",
+          "type": "composition",
+          "composition": "ora-veli",
+          "racines": [
+            "ora",
+            "veli"
+          ],
+          "forme_liee": "oravel",
+          "definition": "La joie grave du matin après la plus longue garde : l'aube comme preuve que la nuit a tenu, que le Mur n'a pas cédé. La plénitude de ceux qui ont veillé ensemble et voient revenir la lumière.",
+          "nuance": "ora (aurore) + veli (le vrai/l'éprouvé) = l'aurore VÉRIFIÉE, la promesse tenue. ≠ koriuora (espoir, aurore À VENIR) : oraveli est l'aurore ARRIVÉE (rétrospectif). ≠ koriatosa (joie générique). Canon : « la nuit a tenu, et la fête est de l'avoir tenue ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "aube tenue",
+        "joie de l'aube",
+        "avoir tenu la nuit",
+        "le matin après la veille"
+      ]
+    },
+    "répondre de sa charge": {
+      "traductions": [
+        {
+          "confluent": "kanuvosak",
+          "type": "composition",
+          "composition": "kanu-vosak",
+          "racines": [
+            "kanu",
+            "vosak"
+          ],
+          "forme_liee": "kanuvos",
+          "definition": "Assumer en personne sa veille, son poste, son jugement, et en répondre sans le refiler : la responsabilité faite parole et acte. « Nul ne veille à ta place » — porter sa charge, c'est en rendre compte de sa propre voix.",
+          "nuance": "kanu (porter) + vosak (répondre de). ≠ kanukota (la charge-CHOSE reçue) : kanuvosak est l'acte ÉTHIQUE de l'assumer. ≠ savunekan (accomplir un serment ponctuel) : posture durable. Opposé de l'obéissance aveugle. Canon : « nul ne veille à ta place ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "répondre de sa charge",
+        "assumer",
+        "prendre ses responsabilités",
+        "rendre compte",
+        "ne pas se défausser"
+      ]
+    },
+    "déserter sa veille": {
+      "traductions": [
+        {
+          "confluent": "velalozak",
+          "type": "composition",
+          "composition": "vela-lozak",
+          "racines": [
+            "vela",
+            "lozak"
+          ],
+          "forme_liee": "velaloz",
+          "definition": "Abandonner sa veille, la refiler à un autre, déserter son poste quand on pouvait le tenir : la faute propre au porteur — non s'aveugler en général (lozak), mais lâcher la garde précise qui était la sienne.",
+          "nuance": "vela (poste) + lozak (le refus-de-voir) = lozak appliqué à SA charge : la désertion. ≠ lozak seul (faute générale) : ici la trahison d'un POSTE confié, miroir de kanuvosak. ≠ savuzoka (parjure d'un serment scellé). Canon : « on ne nous fait pas déserter notre charge ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": [
+        "déserter",
+        "abandonner son poste",
+        "refiler sa veille",
+        "lâcher la garde",
+        "se défausser"
+      ]
+    },
+    "discipline libre": {
+      "traductions": [
+        {
+          "confluent": "velaska",
+          "type": "composition",
+          "composition": "vela-aska",
+          "racines": [
+            "vela",
+            "aska"
+          ],
+          "forme_liee": "velask",
+          "definition": "Tenir son poste et garder la formation par sa propre volonté, pour la cause et non par soumission : la discipline de qui veille librement, l'armée d'astres où chacun tient sa lumière de lui-même.",
+          "nuance": "vela (poste) + aska (libre, sacrée) = la veille LIBRE. Tranche avec l'obéissance servile (livrer son œil = corruption). ≠ konuvaru (faire mur, le geste) : velaska est la DISPOSITION morale. Canon : « chacun tient son poste librement… pour la cause, non par soumission ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": [
+        "discipline libre",
+        "tenir son poste",
+        "garder la formation",
+        "ordre librement consenti"
+      ]
     }
   }
 }

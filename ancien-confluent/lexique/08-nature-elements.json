@@ -166,6 +166,21 @@
       ],
       "synonymes_fr": []
     },
+    "voile de brume": {
+      "traductions": [
+        {
+          "confluent": "muli",
+          "type": "racine",
+          "forme_liee": "mul",
+          "domaine": "celeste",
+          "note": "Racine du voile/de la brume — base de mulik (voiler), mulinaku (la Voilée), silimuli (paupière), morimuli (mémoire-voilée).",
+          "definition": "La brume, le voile de vapeur ; par extension le voile qui couvre et abrite. Racine du champ du voilement.",
+          "nuance": "Racine du voile : le voile abrite un regard (≠ le masque muka qui ment). Distincte de kumu (le sombre) et nisa (l'humide).",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": ["brume", "voile de brume", "brouillard", "voile"]
+    },
     "soleil": {
       "traductions": [
         {
