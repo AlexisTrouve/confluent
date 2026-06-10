@@ -1,0 +1,113 @@
+{
+  "_comment": "Sens NATIFS diversifiés (phase FIX) — mots-tiroir éclatés en concepts propres à la vision du monde de la Confluence (Regard distingue/fait-exister ⚔ Vide qui défait), JAMAIS calqués sur le français. Doctrine : docs/langue/06-CONFLUENT-MYTHIQUE.md §3 ; carto : INVENTAIRE-MOTS-TIROIR.md ; propositions+ancrage canon : atelier/FIX-PROPOSITIONS.md. Chaque entrée porte sa DEFINITION + NUANCE (ce qui la distingue des voisins) : c'est ce qui ARME le choix de l'IA (lookup_concept surface ces champs). Les synonymes_fr font surgir le menu de sens au lookup du mot courant. Ajouté champ par champ.",
+  "_mots_a_gerer": [],
+  "dictionnaire": {
+    "tenir dans le regard": {
+      "traductions": [
+        {
+          "confluent": "silituli",
+          "type": "composition",
+          "composition": "sili-tuli",
+          "racines": ["sili", "tuli"],
+          "forme_liee": "silitul",
+          "sens_litteral": "regard qui tient / demeurer tenu par le regard",
+          "domaine": "perception_existence",
+          "champ": "Perception & Connaissance (mirak/tuli)",
+          "definition": "Voir de telle façon que la chose est arrachée au Vide et maintenue dans l'être — et, en miroir, demeurer parce qu'on est vu, nommé, mémorisé. L'acte fondateur du Regard appliqué à une chose unique : la tenir dans l'existence (l'exact inverse d'oublier), comme on veille sur le creusé en étant son regard, comme l'ancêtre demeure tant qu'on le nomme.",
+          "nuance": "sili (regard) + tuli (demeurer/tenir). DEUX faces d'un même mot : tenir (voir-qui-fait-exister) ET être tenu (demeurer-mémorisé). À distinguer de mirak (percevoir, neutre = perception pure) : silituli n'est pas l'œil mais l'ACTE qui maintient dans l'être (charge ontologique). Distinct de milis (voir-pour-la-première-fois) et de vela/velak (la veille/guet). N'emploie QUE quand l'enjeu est faire-persister / arracher-au-Vide / mémoriser — jamais pour un simple « voir ». Ancrage canon : « voir, c'est arracher au Vide » ; la vertu = tenir un œil ouvert, le sien ou celui d'un autre.",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": ["voir", "regarder", "demeurer", "rester", "veiller sur", "se souvenir de", "maintenir dans l'être", "tenir dans l'être"]
+    },
+    "regard qui glisse": {
+      "traductions": [
+        {
+          "confluent": "mirieva",
+          "type": "verbe",
+          "racine": "mirieva",
+          "forme_liee": "miriev",
+          "sens_litteral": "voir sans tenir, laisser retomber au Vide",
+          "domaine": "perception_morale",
+          "champ": "Perception & Connaissance (mirak)",
+          "definition": "Voir sans tenir : poser les yeux sur une chose et la laisser retomber au Vide ; la perception distraite, le coup d'œil qui n'inscrit rien et abandonne ce qu'il voit à l'oubli. Une faute morale (l'œil baissé), pas un simple défaut d'attention.",
+          "nuance": "Racine néologique mira (voir) + èva (le Vide) — déclarée en ancien car la faute « laisser glisser au Vide » est ORDINAIRE (le vice de la multitude), pas réservée au sacré. Exact négatif de silituli (regard-qui-tient). À distinguer de mirak (perception neutre, sans charge) : mirieva est mirak chargé négativement par l'orientation-Vide. Ancrage canon : « oublier, c'est laisser le Vide reprendre » ; le vice par défaut = se laisser à l'oubli, l'œil baissé.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["voir distraitement", "voir sans retenir", "négliger du regard", "laisser à l'oubli", "regarder", "voir"]
+    },
+    "marque contre l'oubli": {
+      "traductions": [
+        {
+          "confluent": "silimori",
+          "type": "composition",
+          "composition": "sili-mori",
+          "racines": ["sili", "mori"],
+          "forme_liee": "silimor",
+          "sens_litteral": "signe émis, marque-mémoire",
+          "domaine": "signe_memoire",
+          "champ": "Perception & Connaissance (sili)",
+          "definition": "Signe délibérément posé pour qu'une chose persiste : la marque-mémoire, le « ceci fut » inscrit, le nom gravé sur la pierre. Un acte sémiotique orienté de l'homme vers le monde — marquer pour retenir, contre l'oubli.",
+          "nuance": "sili (regard/signe) + mori (mémoire) ; l'ordre des racines marque le FLUX : ici on émet (je fixe pour retenir). À distinguer de morisili (le signe REÇU, qu'on lit) — paire miroir. Distinct de kova (le glyphe/l'écriture, le support concret) : silimori est le geste de marquer-pour-mémoire, antérieur au support. Ancrage canon : « la pierre se souvient » ; le souvenir des vivants te maintient au ciel.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["signe", "marque", "marquer", "inscrire", "graver un signe", "laisser une trace"]
+    },
+    "trace offerte": {
+      "traductions": [
+        {
+          "confluent": "morisili",
+          "type": "composition",
+          "composition": "mori-sili",
+          "racines": ["mori", "sili"],
+          "forme_liee": "morisil",
+          "sens_litteral": "signe reçu, indice à lire",
+          "domaine": "signe_memoire",
+          "champ": "Perception & Connaissance (sili)",
+          "definition": "Signe que le monde présente de lui-même au Regard, à lire : l'indice, l'empreinte, le vestige « de ce qui n'est plus », que l'œil recueille et tient pour mémoire. Orienté du monde vers l'homme.",
+          "nuance": "mori (mémoire) + sili (regard) ; l'ordre inverse de silimori marque le flux : la mémoire qui VIENT à l'œil (on reçoit, on déchiffre). À distinguer de silimori (le signe ÉMIS) — paire miroir. À distinguer de novi (l'augure du FUTUR) : morisili lit le passé/présent offert, pas l'avenir. Ancrage canon : lire la Fresque énigmatique des Premiers Ancêtres ; le savoir arraché aux ruines = combat sacré.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["signe", "trace", "indice", "empreinte", "vestige", "lire un signe"]
+    },
+    "connaissance par la rencontre": {
+      "traductions": [
+        {
+          "confluent": "sekakota",
+          "type": "composition",
+          "composition": "seka-kota",
+          "racines": ["seka", "kota"],
+          "forme_liee": "sekakot",
+          "sens_litteral": "connaître par l'avoir-côtoyé",
+          "domaine": "connaissance",
+          "champ": "Perception & Connaissance (sekam/silumi)",
+          "definition": "Connaître un être, un lieu, un ancêtre pour l'avoir côtoyé — le savoir né de la rencontre et du mélange, non de l'étude. Le cognoscere/conocer que le français a perdu : une petite confluence des êtres.",
+          "nuance": "seka (savoir) + kota (union/rencontre/confluence). À distinguer de sekam (savoir-contenu, abstrait et transmissible) : sekakota est RELATIONNEL et NON transmissible (on ne peut pas donner à un autre d'avoir connu quelqu'un). À distinguer de silumi (saisir un SENS) : ici on connaît un être/lieu, pas une signification. Ancrage canon : la confluence (deux rivières mêlées) ; on absorbe l'Autre par la rencontre (parenté déchue).",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["connaître", "connaissance", "fréquenter", "faire connaissance", "côtoyer"]
+    },
+    "discernement": {
+      "traductions": [
+        {
+          "confluent": "siliveli",
+          "type": "composition",
+          "composition": "sili-veli",
+          "racines": ["sili", "veli"],
+          "forme_liee": "silivel",
+          "sens_litteral": "le regard du vrai, qui sépare",
+          "domaine": "connaissance",
+          "champ": "Perception & Connaissance (sekam/silumi)",
+          "definition": "Trancher le vrai du faux, distinguer ce qui tient de ce qui retombe au Vide — voir-vrai sous le masque, séparer le sacré du profane, l'authentique du contrefait. Le Regard appliqué comme une lame.",
+          "nuance": "sili (regard) + veli (vrai) = « le regard du vrai ». À distinguer de sekam (détenir un savoir) : siliveli ne détient rien, il SÉPARE (acte de jugement perceptif). À distinguer de velim (arbitrer un différend, justice sociale) : siliveli tranche entre vrai et faux/masque (épistémique-cosmologique), pas entre personnes. Ancrage canon : le Regard = « distinguer l'indistinct » ; « voir vrai » contre le masque qui « mange le sens ».",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": ["discerner", "distinguer le vrai du faux", "démêler", "déceler", "comprendre"]
+    }
+  }
+}

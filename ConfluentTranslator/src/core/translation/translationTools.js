@@ -88,8 +88,11 @@ const TOOL_DEFINITIONS = [
     description:
       "Cherche la forme Confluent CANONIQUE d'un mot/concept français dans le lexique officiel. " +
       "UTILISE-LE pour CHAQUE mot de contenu avant de le traduire : ne devine jamais une forme qui " +
-      "pourrait déjà exister. Retourne les formes attestées (type, composition, sens). Vide = le mot " +
-      "n'existe pas, il faut composer ou approximer.",
+      "pourrait déjà exister. Retourne les formes attestées (type, composition, sens). " +
+      "⭐ Si le mot a PLUSIEURS sens natifs (la langue diversifie ses mots-tiroir selon SA vision du " +
+      "monde, pas selon le français), chaque forme arrive avec sa `definition` et sa `nuance` (ce qui " +
+      "la distingue de ses voisines) : LIS-les et CHOISIS le sens qui colle au contexte — ne te rabats " +
+      "ni sur le sens générique ni sur le calque français. Vide = le mot n'existe pas, il faut composer.",
     input_schema: {
       type: 'object',
       properties: {
@@ -304,6 +307,14 @@ function execLookupConcept(input, ctx) {
         type: trad.type || 'inconnu',
         composition: trad.composition || null,
         sens: briefSens(trad.sens_litteral || trad.definition),
+        // ARMER LE CHOIX (doctrine 06-CONFLUENT-MYTHIQUE §4) : quand un mot FR a plusieurs sens
+        // NATIFS, l'IA ne doit pas se rabattre sur le mot-tiroir / le calque — il lui faut la
+        // matière pour trancher. On sert donc la DÉFINITION complète + la NUANCE (ce qui
+        // distingue ce sens de ses voisins) quand elles existent. La glose courte (sens) reste
+        // comme repère rapide. Coût tokens payé seulement au lookup, et c'est tout l'enjeu.
+        definition: trad.definition || undefined,
+        nuance: trad.nuance || undefined,
+        registre: trad.registre || undefined,
         score: Number(r.score.toFixed(2))
       });
     }

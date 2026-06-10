@@ -223,7 +223,11 @@ function searchWord(word, dictionnaire, normalizedText = '') {
       score = 0.95;
     }
     // Correspondance sur synonymes
-    else if (entry.synonymes_fr?.some(syn => syn.toLowerCase() === word)) {
+    // On NORMALISE le synonyme (accents + casse) comme l'est déjà `word` : les clés du lexique sont
+    // normalisées au chargement, pas les synonymes_fr. Sans ça, un synonyme accentué (« connaître »)
+    // ne matchait JAMAIS un mot normalisé (« connaitre ») → sens natif invisible au lookup. normalize
+    // des deux côtés = idempotent et robuste quel que soit l'appelant.
+    else if (entry.synonymes_fr?.some(syn => normalizeFrenchText(syn) === normalizeFrenchText(word))) {
       score = 0.9;
     }
     // Correspondance sur synonymes lemmatisés
