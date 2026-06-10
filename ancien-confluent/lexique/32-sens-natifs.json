@@ -575,6 +575,113 @@
         }
       ],
       "synonymes_fr": ["explorer", "s'aventurer", "aller vers l'inconnu", "défricher"]
+    },
+    "demeurer enraciné": {
+      "traductions": [
+        {
+          "confluent": "tokituli",
+          "type": "composition",
+          "composition": "toka-tuli",
+          "racines": ["toka", "tuli"],
+          "forme_liee": "tokitul",
+          "sens_litteral": "se fixer au sol, habiter durablement",
+          "domaine": "existence",
+          "champ": "Existence (tuli)",
+          "definition": "Se fixer au sol, habiter durablement un lieu, la sédentarité d'une lignée attachée à sa terre. Le « demeurer » qui prend racine dans la toka (le sol).",
+          "nuance": "toka (sol) + tuli (demeurer). vs silituli (tenu par un regard, immatériel) : ici c'est la TERRE qui tient, pas le regard — le mode de la Montagne (l'ancré, le socle). Recouvre « habiter » au sens fort de s'établir. vs tisatuli (présence ponctuelle). Ancrage canon : la Montagne, l'Ancré, le Pilier ; la sédentarisation de la Confluence.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["habiter", "s'établir", "se fixer", "s'enraciner", "demeurer durablement"]
+    },
+    "se tenir là": {
+      "traductions": [
+        {
+          "confluent": "tisatuli",
+          "type": "composition",
+          "composition": "tisa-tuli",
+          "racines": ["tisa", "tuli"],
+          "forme_liee": "tisatul",
+          "sens_litteral": "être présent à l'instant",
+          "domaine": "existence",
+          "champ": "Existence (tuli)",
+          "definition": "L'état ponctuel d'être présent maintenant, copule de localisation sans charge de durée — « il est là », « se trouver à ».",
+          "nuance": "tisa (ici/présent) + tuli (demeurer). Le degré zéro temporel : ni tenu (silituli), ni délavé (èvatuli), ni enraciné (tokituli) — juste là, à l'instant. Pour le simple « rester sur place » un moment. Ancrage canon : tisa fusionne ici/présent ; extension spatio-temporelle native de l'état.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["être là", "se trouver", "être présent", "rester sur place"]
+    },
+    "foyer": {
+      "traductions": [
+        {
+          "confluent": "sukibuka",
+          "type": "composition",
+          "composition": "suka-buka",
+          "racines": ["suka", "buka"],
+          "forme_liee": "sukibuk",
+          "sens_litteral": "le cœur chaud de la demeure, l'âtre veillé",
+          "domaine": "habitat",
+          "champ": "Existence (buka)",
+          "definition": "Le cœur chaud de la demeure, le feu entretenu qu'on ne laisse jamais mourir — la maison comme point de chaleur qui tient la nuit-Vide dehors.",
+          "nuance": "suka (feu) + buka (maison). vs aitabuka (la maison comme legs/lignée) : ici la maison comme FEU VIVANT, l'acte quotidien de nourrir la flamme. Forme haute sacrée = isukibuka (mytho, avec isuki = l'éclat du Père, l'âtre comme part des « mille feux »). Ancrage canon : l'entretien-du-foyer, « la chaleur dit au froid-Vide : tu n'entres pas ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["foyer", "âtre", "feu domestique", "chez-soi"]
+    },
+    "maison-lignée": {
+      "traductions": [
+        {
+          "confluent": "aitabuka",
+          "type": "composition",
+          "composition": "aita-buka",
+          "racines": ["aita", "buka"],
+          "forme_liee": "aitabuk",
+          "sens_litteral": "la demeure des aïeux, ce qui se transmet",
+          "domaine": "habitat",
+          "champ": "Existence (buka)",
+          "definition": "La demeure comme artefact bâti et rebâti au fil des générations, et ceux qui l'habitent — la « Maison » au sens de lignée, le toit des pères qui se transmet et garde la mémoire des aïeux.",
+          "nuance": "aita (ancêtre/lignée) + buka (maison). vs sukibuka (le feu, le présent chaud) : ici la dimension TEMPORELLE/mémorielle — ce qui se transmet. Recouvre la « maisonnée » (les gens + les murs). Ancrage canon : le Noyau, « rien ne se perd » ; l'argile vivante (le foyer rebâti).",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["maisonnée", "demeure familiale", "maison de lignée", "toit des pères"]
+    },
+    "abri-seuil": {
+      "traductions": [
+        {
+          "confluent": "vasibuka",
+          "type": "composition",
+          "composition": "vasi-buka",
+          "racines": ["vasi", "buka"],
+          "forme_liee": "vasibuk",
+          "sens_litteral": "la demeure-limite, le toit-frontière",
+          "domaine": "habitat",
+          "champ": "Existence (buka)",
+          "definition": "La demeure prise comme limite — la structure qui sépare le dedans (les siens, le cercle de lumière) du dehors (la nuit, l'Autre) ; le seuil gardé, le passage entre les deux mondes.",
+          "nuance": "vasi (passage/lien entre deux) + buka (maison). vs sukibuka/aitabuka : ni la chaleur ni la lignée, mais la FRONTIÈRE — l'aspect défensif/liminaire, là où finit le « mur » d'une maison. Ancrage canon : « dedans le cercle de lumière, les siens ; dehors, la nuit » (l'entretien-du-foyer) ; le geste-du-seuil.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["abri", "refuge", "seuil", "toit"]
+    },
+    "création continue": {
+      "traductions": [
+        {
+          "confluent": "samenak",
+          "type": "verbe",
+          "racine": "samenak",
+          "forme_liee": "samenak",
+          "sens_litteral": "le monde qui sourd du Vide là où le Regard se pose",
+          "domaine": "cosmogonie",
+          "champ": "Cosmos (samo)",
+          "definition": "L'acte par lequel le monde sourd du Vide là où le Regard se pose — non un événement passé clos, mais un procès toujours en cours : créer, c'est faire encore lever du monde.",
+          "nuance": "Racine néologique (samo monde + nek œuvrer). vs samo (le RÉSULTAT figé, le levé/l'étendue tenue) : ici le verbe de la création-CONTINUE, le monde-en-train-de-se-faire. Pôle-Vide en miroir : samoèva (les bords, le non-encore-levé, registre mythologique). Ancrage canon : « le monde lève du Vide là où le Regard se pose » ; pilier CRÉER.",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": ["création", "créer le monde", "faire lever", "genèse", "engendrer (le monde)"]
     }
   }
 }

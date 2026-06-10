@@ -1,0 +1,96 @@
+{
+  "_comment": "Sens NATIFS diversifiés — strate SACRÉE (registre mythologique, voyelles réservées è activées). Pendant haut du fichier ancien-confluent/lexique/32-sens-natifs.json (phase FIX, champ Existence & Cosmos). Ces sens touchent le Vide (èva), le firmament des veilleurs ou le commencement cosmogonique → ils vivent dans la strate mythologique, pas l'ancien courant. Doctrine : docs/langue/06-CONFLUENT-MYTHIQUE.md ; propositions : atelier/FIX-PROPOSITIONS.md. Chaque entrée porte DÉFINITION + NUANCE (arme le choix de l'IA via lookup_concept).",
+  "_DRAFT": "Onomastique/sens cosmogoniques = actes du créateur, révisables.",
+  "dictionnaire": {
+    "demeurer en s'effaçant": {
+      "traductions": [
+        {
+          "confluent": "èvatuli",
+          "type": "composition",
+          "composition": "èva-tuli",
+          "racines": ["èva", "tuli"],
+          "forme_liee": "èvatul",
+          "sens_litteral": "durer en se délavant vers l'oubli",
+          "domaine": "cosmogonie",
+          "champ": "Existence (tuli) — strate sacrée",
+          "definition": "Durer matériellement tout en se délavant vers l'oubli — être présent mais non-tenu, glisser doucement vers le Vide sans qu'on s'en aperçoive. La chose qui subsiste pendant que son sens, son nom, se refondent dans l'indistinct.",
+          "nuance": "èva (le Vide) + tuli (demeurer). Exact contraire de silituli (demeurer-tenu-par-un-regard) : même verbe tuli, préfixé du Vide au lieu du regard. La Grande Fresque qui demeure visible mais MUETTE en est l'image. Forme sacrée (è activé) car elle nomme l'œuvre du Vide. Ancrage canon : « le Vide ne détruit rien : il dissout le sens, le soi, le nom ».",
+          "registre": "mythologique"
+        }
+      ],
+      "synonymes_fr": ["dépérir", "s'effacer", "se délaver", "sombrer dans l'oubli"]
+    },
+    "les bords du monde": {
+      "traductions": [
+        {
+          "confluent": "samoèva",
+          "type": "composition",
+          "composition": "samo-èva",
+          "racines": ["samo", "èva"],
+          "forme_liee": "samoèv",
+          "sens_litteral": "la frange de Vide qui borde le levé",
+          "domaine": "cosmogonie",
+          "champ": "Cosmos (samo) — strate sacrée",
+          "definition": "La frange de Vide qui borde le levé — la lisière d'où le monde peut encore sourdre (si un regard s'y pose) ou retomber (si on cesse de le regarder) ; le bord non-nommé, le « pas-encore-monde ».",
+          "nuance": "samo (le monde levé) + èva (le Vide) : la couture entre samo et èva — ni pleinement levé ni pur néant, l'horizon mouvant de la création. vs samenak (l'ACTE de lever, ancien) et samo (l'étendue levée). Registre sacré (è) car il touche au Vide primordial. Ancrage canon : « on ne vainc jamais le Vide, on le tient en respect » ; le Regard-mesure (l'arête).",
+          "registre": "mythologique"
+        }
+      ],
+      "synonymes_fr": ["limbes", "lisière du monde", "non-créé", "frange du Vide"]
+    },
+    "ciel des veilleurs": {
+      "traductions": [
+        {
+          "confluent": "veluzeru",
+          "type": "composition",
+          "composition": "vela-zeru",
+          "racines": ["vela", "zeru"],
+          "forme_liee": "veluzer",
+          "sens_litteral": "le ciel-de-la-Veille, le firmament-demeure",
+          "domaine": "cosmogonie",
+          "champ": "Cosmos (zeru) — strate sacrée",
+          "definition": "Le haut sacré comme séjour des veilleurs — le Mur d'étoiles où les héros-morts tiennent leur poste éternel autour du Père, et où coule le Fleuve Pâle des âmes ; littéralement « le ciel-de-la-Veille ».",
+          "nuance": "vela (la Veille) + zeru (ciel). vs zeru (la voûte PHYSIQUE observée d'en bas, qui reste le ciel courant) : ici le ciel PEUPLÉ, l'ordre de bataille céleste. S'articule avec eku (étoile) et ysili (le Père), ne surcharge PAS zeru. Ancrage canon : « les morts montent au Mur d'étoiles » ; la cour d'astres = la Veille parfaite ; le Père au plus haut.",
+          "registre": "mythologique"
+        }
+      ],
+      "synonymes_fr": ["firmament", "cieux", "Mur d'étoiles", "ciel des morts"]
+    },
+    "le commencement": {
+      "traductions": [
+        {
+          "confluent": "enasoku",
+          "type": "composition",
+          "composition": "ena-soku",
+          "racines": ["ena", "soku"],
+          "forme_liee": "enasok",
+          "sens_litteral": "l'instant où le premier œil s'ouvrit",
+          "domaine": "cosmogonie",
+          "champ": "Cosmos (ena) — strate sacrée",
+          "definition": "Le point zéro dans le temps — le tout premier lever du monde, l'instant unique où le premier œil s'ouvrit dans le Vide ; le commencement-événement (« au commencement… »), non répétable.",
+          "nuance": "ena (origine) + soku (éveil). vs ena (le jaillissement-source qui DURE, ancien/sacré) : ici l'origine PONCTUELLE, datée, mythique. Bâti sur soku car dans cette cosmogonie le commencement EST un éveil du Regard, pas une création ex nihilo. Tension réservée (Alexi) : ena (source positive) vs èva (Vide) comme origine ultime — non tranchée ici. Ancrage canon : le Père « s'arrache au Vide en ouvrant les yeux ».",
+          "registre": "mythologique"
+        }
+      ],
+      "synonymes_fr": ["commencement", "début", "genèse", "aube du monde", "premier matin"]
+    },
+    "âtre sacré": {
+      "traductions": [
+        {
+          "confluent": "isukibuka",
+          "type": "composition",
+          "composition": "isuki-buka",
+          "racines": ["isuki", "buka"],
+          "forme_liee": "isukibuk",
+          "sens_litteral": "l'âtre comme part des mille feux du Père",
+          "domaine": "cosmogonie",
+          "champ": "Existence (buka) — strate sacrée",
+          "definition": "L'âtre sacralisé : le feu domestique comme part des « mille feux » du Père, l'éclat (isuki) déposé en chaque foyer et entretenu contre la nuit-Vide.",
+          "nuance": "isuki (la braise, l'éclat du Père) + buka (maison). Forme HAUTE de sukibuka (foyer-braise courant) : ici l'âtre est explicitement une part de la lumière essaimée du Premier Veilleur. Ancrage canon : « un feu allume mille feux sans s'éteindre » ; les éclats = sa Veille répandue.",
+          "registre": "mythologique"
+        }
+      ],
+      "synonymes_fr": ["âtre", "foyer", "foyer sacré", "feu du Père"]
+    }
+  }
+}
