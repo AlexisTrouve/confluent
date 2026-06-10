@@ -15,7 +15,8 @@
           "champ": "Perception & Connaissance (mirak/tuli)",
           "definition": "Voir de telle façon que la chose est arrachée au Vide et maintenue dans l'être — et, en miroir, demeurer parce qu'on est vu, nommé, mémorisé. L'acte fondateur du Regard appliqué à une chose unique : la tenir dans l'existence (l'exact inverse d'oublier), comme on veille sur le creusé en étant son regard, comme l'ancêtre demeure tant qu'on le nomme.",
           "nuance": "Racine opaque, primitif cardinal de la pensée confluente. DEUX faces : tenir (voir-qui-fait-exister) ET être tenu (demeurer-mémorisé). À distinguer de mirak (percevoir, neutre = perception pure) : tuvak n'est pas l'œil mais l'ACTE qui maintient dans l'être (charge ontologique). Distinct de milis (voir-1ʳᵉ-fois) et de vela/velak (la veille/guet). N'emploie QUE quand l'enjeu est faire-persister / arracher-au-Vide / mémoriser — jamais pour un simple « voir ». Pôle inverse : vèluk (demeurer-en-s'effaçant). Ancrage canon : « voir, c'est arracher au Vide ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "regard"
         }
       ],
       "synonymes_fr": [
@@ -41,7 +42,8 @@
           "champ": "Perception & Connaissance (mirak)",
           "definition": "Voir sans tenir : poser les yeux sur une chose et la laisser retomber au Vide ; la perception distraite, le coup d'œil qui n'inscrit rien et abandonne ce qu'il voit à l'oubli. Une faute morale (l'œil baissé), pas un simple défaut d'attention.",
           "nuance": "Racine néologique mira (voir) + èva (le Vide) — déclarée en ancien car la faute « laisser glisser au Vide » est ORDINAIRE (le vice de la multitude), pas réservée au sacré. Exact négatif de tuvak (regard-qui-tient). À distinguer de mirak (perception neutre, sans charge) : mevak est mirak chargé négativement par l'orientation-Vide. Ancrage canon : « oublier, c'est laisser le Vide reprendre » ; le vice par défaut = se laisser à l'oubli, l'œil baissé.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "regard"
         }
       ],
       "synonymes_fr": [
@@ -69,7 +71,8 @@
           "champ": "Perception & Connaissance (sili)",
           "definition": "Signe délibérément posé pour qu'une chose persiste : la marque-mémoire, le « ceci fut » inscrit, le nom gravé sur la pierre. Un acte sémiotique orienté de l'homme vers le monde — marquer pour retenir, contre l'oubli.",
           "nuance": "sili (regard/signe) + mori (mémoire) ; l'ordre des racines marque le FLUX : ici on émet (je fixe pour retenir). À distinguer de morisili (le signe REÇU, qu'on lit) — paire miroir. Distinct de kova (le glyphe/l'écriture, le support concret) : silimori est le geste de marquer-pour-mémoire, antérieur au support. Ancrage canon : « la pierre se souvient » ; le souvenir des vivants te maintient au ciel.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "signe"
         }
       ],
       "synonymes_fr": [
@@ -97,7 +100,8 @@
           "champ": "Perception & Connaissance (sili)",
           "definition": "Signe que le monde présente de lui-même au Regard, à lire : l'indice, l'empreinte, le vestige « de ce qui n'est plus », que l'œil recueille et tient pour mémoire. Orienté du monde vers l'homme.",
           "nuance": "mori (mémoire) + sili (regard) ; l'ordre inverse de silimori marque le flux : la mémoire qui VIENT à l'œil (on reçoit, on déchiffre). À distinguer de silimori (le signe ÉMIS) — paire miroir. À distinguer de novi (l'augure du FUTUR) : morisili lit le passé/présent offert, pas l'avenir. Ancrage canon : lire la Fresque énigmatique des Premiers Ancêtres ; le savoir arraché aux ruines = combat sacré.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "memoire"
         }
       ],
       "synonymes_fr": [
@@ -122,7 +126,8 @@
           "champ": "Perception & Connaissance (sekam/silumi)",
           "definition": "Connaître un être, un lieu, un ancêtre pour l'avoir côtoyé — le savoir né de la rencontre et du mélange, non de l'étude. Le cognoscere/conocer que le français a perdu : une petite confluence des êtres.",
           "nuance": "Racine opaque (le cognoscere/conocer perdu du français). À distinguer de sekam (savoir-contenu, abstrait et transmissible) : motak est RELATIONNEL et NON transmissible (on ne peut pas donner à un autre d'avoir connu quelqu'un). À distinguer de silumi (saisir un SENS) : ici on connaît un être/lieu, pas une signification. Ancrage canon : la confluence (deux rivières mêlées) ; on absorbe l'Autre par la rencontre (parenté déchue).",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "divers"
         }
       ],
       "synonymes_fr": [
@@ -146,7 +151,8 @@
           "champ": "Perception & Connaissance (sekam/silumi)",
           "definition": "Trancher le vrai du faux, distinguer ce qui tient de ce qui retombe au Vide — voir-vrai sous le masque, séparer le sacré du profane, l'authentique du contrefait. Le Regard appliqué comme une lame.",
           "nuance": "Racine opaque. À distinguer de sekam (détenir un savoir) : venat ne détient rien, il SÉPARE (acte de jugement perceptif). À distinguer de velim (arbitrer un différend, justice sociale) : venat tranche entre vrai et faux/masque (épistémique-cosmologique), pas entre personnes. Ancrage canon : le Regard = « distinguer l'indistinct » ; « voir vrai » contre le masque qui « mange le sens ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "regard"
         }
       ],
       "synonymes_fr": [
@@ -173,7 +179,8 @@
           "champ": "Garde, Parole, Action (konu)",
           "definition": "Garder en tenant l'œil ouvert sur la chose, sans jamais la lâcher du Regard — la Veille appliquée : nourrir le feu, écouter le noir, ne pas s'endormir sur ce qu'on garde. Quand l'œil faiblit, on passe la garde à un autre.",
           "nuance": "vela (veille) + konu (garder). Garde par le REGARD CONTINU — pas la mise à l'abri (konusupu) ni la défense armée (konuvaru) : on ne soustrait rien, on ne combat personne, on regarde sans cesse. Échelle d'un foyer comme d'un peuple. Ancrage canon : la Veille (l'un veille pendant que les autres dorment, culte/la-veille) ; le clignement collectif.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "veille"
         }
       ],
       "synonymes_fr": [
@@ -200,7 +207,8 @@
           "champ": "Garde, Parole, Action (konu)",
           "definition": "Préserver une chose en la retirant du regard et de l'usage commun pour qu'elle ne s'use ni ne se disperse — le dépôt mis à l'écart, la relique, la semence gardée dans le dedans. Protéger en abritant, non en surveillant.",
           "nuance": "konu (garder) + supu (l'intérieur soustrait au regard). Inverse de velakonu : on garde EN SOUSTRAYANT (on ferme) là où velakonu garde en regardant (on ouvre l'œil). À distinguer de lupak (cacher pour tromper, le masque) : konusupu abrite (le voile), il ne ment pas. Ancrage canon : le voile abrite ≠ le masque ment ; la Montagne qui retient (le legs dans les Antres).",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "transmettre"
         }
       ],
       "synonymes_fr": [
@@ -227,7 +235,8 @@
           "champ": "Garde, Parole, Action (konu)",
           "definition": "Garder en faisant front contre une menace incarnée — tenir sa place dans la ligne, faire mur de son corps entre la faim et les siens. La garde quand il y a un ennemi en face.",
           "nuance": "konu (garder) + varu (combat/guerre). À distinguer de zakam (défendre = l'acte martial ponctuel, repousser une attaque) : konuvaru est la POSTURE de garde tenue (le mur, la formation, le poste tenu dans la durée). Le canon distingue le mur tenu (héroïsme confluent) de la charge (orgueil) : konuvaru est le mur. Ancrage canon : la Grande Veille / le Mur ; défensif, jamais conquérant.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "transmettre"
         }
       ],
       "synonymes_fr": [
@@ -253,7 +262,8 @@
           "champ": "Garde, Parole, Action (konu)",
           "definition": "Garder en transmettant intact ce qui doit passer aux générations — la coutume, la loi, le serment, la mémoire des morts. Garder, ici, c'est empêcher l'oubli d'une chose qui n'existe que tant qu'on la tient et la redit.",
           "nuance": "konu (garder) + leku (loi/coutume). Là où velakonu garde une chose présente sous l'œil, konuleku garde une chose DANS LE TEMPS (la durée multi-générationnelle). Frère du domaine de la Montagne (le legs) et de morivosak (dire-en-transmettant). À ne pas confondre avec zakun (entreposer des biens) : ici l'immatériel-transmis. Ancrage canon : pilier CRÉER « rien ne se perd » ; devoir de mémoire.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "transmettre"
         }
       ],
       "synonymes_fr": [
@@ -279,7 +289,8 @@
           "champ": "Garde, Parole, Action (vosak)",
           "definition": "Dire une parole qui lie et fait exister : prononcer un serment, donner un nom, proférer la formule qui scelle. La parole n'y décrit pas — elle institue ; une fois dite, elle tient, et celui qui la rompt est parjure.",
           "nuance": "savu (serment) + vosak (parler). Opposé du degré zéro vosak (parole qui passe et s'efface). C'est la parole-ACTE performative. À distinguer de savu (le serment-chose, le nom) : savuvosak est l'acte de le PROFÉRER. Pendant-parole de savunekan (accomplir le serment). Ancrage canon : nommer = arracher au Vide (culte/le-nom) ; le serment.",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "serment"
         }
       ],
       "synonymes_fr": [
@@ -306,7 +317,8 @@
           "champ": "Garde, Parole, Action (vosak)",
           "definition": "Dire pour faire passer et garder : réciter la lignée, redire le savoir reçu, raconter les morts pour qu'on s'en souvienne. La parole y est un relais de mémoire — on parle afin que ce qui est dit demeure chez celui qui écoute.",
           "nuance": "mori (mémoire) + vosak (parler). savuvosak INSTITUE (fait exister du neuf, lie) ; morivosak TRANSMET (fait durer de l'ancien, garde du Vide). Frère de konuleku (côté garde) et de kisun (transmettre le savoir) — mais morivosak est l'acte ORAL de redire-pour-tenir-en-mémoire. Ancrage canon : « tant qu'on te nomme tu tiens dans le Fleuve » ; veiller le creusé = tenir son nom.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "memoire"
         }
       ],
       "synonymes_fr": [
@@ -329,7 +341,8 @@
           "champ": "Garde, Parole, Action (vosak)",
           "definition": "Se taire volontairement, retenir une parole qu'on pourrait dire : garder le secret sacré, ne pas prononcer ce qui doit rester voilé. Non l'absence de parole (mutisme), mais le CHOIX de ne pas dire — un acte de garde.",
           "nuance": "zo (négation) + vosak (parler), racine néologique. À distinguer de zovoki (le silence-état, « sans voix ») et de zoku (le secret-chose) : sumak est l'ACTE de taire. Positif chez ce peuple (la parole retenue protège, comme le voile), à l'opposé du masque (mentir). Ancrage canon : le voile abrite ≠ le masque ment ; « le dire sans le dire » (le non-dit, pas l'interdit).",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "divers"
         }
       ],
       "synonymes_fr": [
@@ -356,7 +369,8 @@
           "champ": "Garde, Parole, Action (gap accomplir)",
           "definition": "Mener à son terme une parole liante : accomplir le serment, réaliser le vœu, parachever ce qui fut promis. Non pas faire du neuf (nekan), mais rendre réel ce qui attendait de l'être — l'acte qui clôt un serment ouvert et le tient.",
           "nuance": "savu (serment) + nekan (œuvrer). nekan crée une œuvre NOUVELLE ; savunekan ACCOMPLIT une promesse déjà donnée (l'acte est commandé par le serment antérieur, pas par l'initiative). Pendant-action de savuvosak (l'un profère le serment, l'autre l'accomplit). Frontière franche avec tovak (simple reprise déictique d'un acte). Ancrage canon : pilier PORTER « nul ne veille à ta place » ; le parjure choit au Gouffre ; le Meiji.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "serment"
         }
       ],
       "synonymes_fr": [
@@ -383,7 +397,8 @@
           "champ": "Mal & Antagonisme (zoka)",
           "definition": "L'ennemi qu'on affronte de face, qu'on tient dans le Regard et combat dignement ; l'adversaire qui se laisse voir.",
           "nuance": "zoka (ennemi) + sili (regard). À distinguer de mukazoka (qui se cache derrière le masque) : le zokasili a le visage ouvert, c'est un vrai ennemi honorable. L'« Autre »-neutre reste tova/ota ; le mal-cosmique reste èva. Ancrage canon : « l'anti-masque = le visage ouvert » ; on combat à découvert (le Mur, pas la traîtrise).",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "divers"
         }
       ],
       "synonymes_fr": [
@@ -408,7 +423,8 @@
           "champ": "Mal & Antagonisme (zoka)",
           "definition": "L'hostilité froide qui agit cachée, par le mensonge et la duperie ; le corrupteur masqué qui « mange le sens » de sa victime au lieu de l'affronter.",
           "nuance": "muka (masque/visage faux) + zoka (ennemi). À distinguer de zokasili (ennemi à découvert) : ici l'ennemi MENT, il porte le masque — arme reine du Vide entre les hommes, hostilité parente du Vide (défait sans se montrer). Ancrage canon : « le masque en assassine un » ; le masque = le signe-roi de l'ennemi.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "masque"
         }
       ],
       "synonymes_fr": [
@@ -435,7 +451,8 @@
           "champ": "Mal & Antagonisme (zoka)",
           "definition": "L'ennemi intérieur qui rompt un serment déjà scellé ; le parjure, celui qui brise le Regard Partagé après l'avoir juré.",
           "nuance": "savu (serment) + zoka (ennemi). À distinguer de mukazoka (étranger qui ment) : le savuzoka était des NÔTRES — sa trahison porte la charge maximale, il défait un lien sacré. À distinguer de èva (le Vide impersonnel) : une personne qui a choisi de trahir. Ancrage canon : la parole brisée ; le parjure choit au Gouffre (mal-mort).",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "serment"
         }
       ],
       "synonymes_fr": [
@@ -462,7 +479,8 @@
           "champ": "Mal (taku)",
           "definition": "Ce qui résiste à être vu, opaque au Regard, illisible ; les prémices du Vide — non une couleur, mais le refus d'une chose à se laisser distinguer.",
           "nuance": "taku (mauvais) + sili (regard). À distinguer de kumu/kate (obscurité/teinte PHYSIQUES, neutres : les Enfants des Échos vivent sous terre, pâles, pas « mauvais ») : takusili est l'opacité MORALE, le mal-comme-illisibilité. Ancrage canon : le Regard = « distinguer l'indistinct » ; le Vide refond dans l'indistinct ce que le Regard distinguait.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "divers"
         }
       ],
       "synonymes_fr": [
@@ -486,7 +504,8 @@
           "champ": "Mal (taku)",
           "definition": "Fermer volontairement son œil, refuser de voir ce qu'on pourrait voir ; le vice cardinal propre au peuple — « cesser de veiller quand on le pouvait ».",
           "nuance": "Racine opaque, le vice cardinal du peuple. À distinguer de takusili (l'objet opaque, PASSIF) : lozak est l'acte ACTIF du sujet qui s'aveugle. C'est la FAUTE, là où le creusé (victime du Vide) appelle compassion. Ancrage canon : « la faute, c'est cesser de veiller quand on le pouvait » ; l'œil fermé qui dort sa garde.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "regard"
         }
       ],
       "synonymes_fr": [
@@ -509,7 +528,8 @@
           "champ": "Honte & Souillure (paka)",
           "definition": "L'indignité constitutive : cesser d'être digne d'être vu, être retranché du Regard Partagé ; une mort sociale, un glissement vers le Vide.",
           "nuance": "Racine opaque. À distinguer de paka (la honte SUBIE, ponctuelle — baisser le front sous un regard) : kavuno est l'état DURABLE d'exclusion du Regard collectif, l'avant-goût social de la Seconde Mort. Culture de la honte (le regard d'autrui), pas de la culpabilité (for intérieur). Ancrage canon : l'honneur = le Regard ; oublié → Vide.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "souillure"
         }
       ],
       "synonymes_fr": [
@@ -536,7 +556,8 @@
           "champ": "Honte & Souillure (paka)",
           "definition": "Le déshonneur ACTIF : frapper au gourdin, prédater, agir sans le Regard qui distingue l'humain — la régression sous l'humain.",
           "nuance": "besi (bête) + nekan (œuvrer/agir). À distinguer de kavuno (un ÉTAT subi d'exclusion) : besinekan est un ACTE qu'on pose. C'est le rejet n°4 du canon (la violence bestiale), distinct de la honte-événement. Ancrage canon : « agir comme une bête, sans le Regard » ; rouer de coups = déshonorant.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "divers"
         }
       ],
       "synonymes_fr": [
@@ -562,7 +583,8 @@
           "champ": "Honte & Souillure (selu)",
           "definition": "Ce qui contamine et interdit l'accès au sacré (la Veille, le serment) avant purification ; l'impureté qui barre le Regard sacré.",
           "nuance": "selu (souillé) + vela (la Veille/le sacré). À distinguer de selu (eau saumâtre, physique) : seluvela est l'impureté RITUELLE — l'axe sacré/profane, absent de selu seul. Levée par purification (l'eau-vive, limava). Ancrage canon : l'éclat souillé ne peut plus monter, choit au Gouffre (rite-de-la-mort).",
-          "registre": "rituel"
+          "registre": "rituel",
+          "famille": "souillure"
         }
       ],
       "synonymes_fr": [
@@ -589,7 +611,8 @@
           "champ": "Honte & Souillure (selu)",
           "definition": "La saleté physique ordinaire, neutre, qu'un lavage ôte ; le degré bas, sans charge rituelle.",
           "nuance": "selu (souillé) + kumu (sombre-physique, neutre). À distinguer de seluvela (impureté qui exclut du sacré) et de selu (eau morte/saumâtre) : selukumu est la crasse TRIVIALE, le pôle bas qui donne son sens aux pôles hauts. Ancrage canon : le sombre/sale physique est neutre (Enfants des Échos pâles, pas mauvais).",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "souillure"
         }
       ],
       "synonymes_fr": [
@@ -613,7 +636,8 @@
           "champ": "Honte & Souillure (selu — pivot pur)",
           "definition": "L'eau vivante qui coule et se mêle purement ; l'opposé fondateur de la souillure — la confluence accomplie, le pur.",
           "nuance": "Racine opaque, le pivot PUR du champ. Contre-pôle de selu (eau croupie/saumâtre = la confluence niée). Sans ce pivot pur, « souillé » n'a pas de relief natif. Sert aussi de pôle « propreté rituelle » (ce qui lève la seluvela). Ancrage canon : la Rivière naît du soleil qui fait fondre les neiges → l'eau qui descend, vit, se mêle vers la Confluence.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "eau"
         }
       ],
       "synonymes_fr": [
@@ -639,7 +663,8 @@
           "champ": "Corps-pouvoir (kasi)",
           "definition": "Le chef en tant qu'il VOIT loin et fait voir : il porte le regard en avant pour ceux qui ne voient pas encore, éclaire la route contre le Vide.",
           "nuance": "sili (regard) + kasi (tête/chef). Légitimité par le REGARD (veille active, tournée vers l'avant) — vs makokasi (légitimité par le rang/grandeur) et kasiuaita (par l'antériorité). La fusion native tête-organe↔chef (kasi) reste entière. Ancrage canon : « diriger = voir loin et faire voir » ; l'Éveilleur ; l'humilité imposée à qui voit le plus loin.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "signe"
         }
       ],
       "synonymes_fr": [
@@ -666,7 +691,8 @@
           "champ": "Corps-pouvoir (kasi)",
           "definition": "Celui dont l'autorité vient de l'ANTÉRIORITÉ du regard et de la mémoire accumulée — « il a vu avant ». L'aîné comme guide-mémoire, gardien de ce qui fut transmis.",
           "nuance": "kasi (chef) + aita (ancêtre/antériorité). Ancre l'autorité dans le TEMPS/la mémoire (vs silikasi le regard-porté-en-avant, vs makokasi le rang). À distinguer de aitatori (l'aîné comme personne/rôle social) : kasiuaita est l'aîné en tant qu'il MÈNE par son antériorité. Ancrage canon : l'aîné = celui qui a vu avant ; « la pierre se souvient ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "ancetre"
         }
       ],
       "synonymes_fr": [
@@ -692,7 +718,8 @@
           "champ": "Nourriture (nutu/muki)",
           "definition": "Le repas pris ensemble comme petite confluence des êtres : la table partagée, la communion par la nourriture, où l'on se lie et où passe la mémoire des aïeux.",
           "nuance": "kota (confluence/union) + muki (manger). Ce n'est PAS la nutrition (besoin = nutu, la substance qui comble muta=faim ; muki/mukis = l'acte de manger) mais l'UNION/transmission — d'où kota en tête. Gap réel que ni « manger » ni « repas » FR ne portent. Ancrage canon : « on mange la soupe de nos morts » (le-repas-du-foyer) ; rien ne se perd.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "fete"
         }
       ],
       "synonymes_fr": [
@@ -720,7 +747,8 @@
           "champ": "Image & Écriture (kova)",
           "definition": "Le glyphe comme mémoire rendue visible : signe lisible délibérément posé pour qu'une chose persiste, l'écriture comme arme contre le Vide.",
           "nuance": "kova (image) + mori (mémoire). Clivage cardinal du champ : image-qui-TRANSMET/SAUVE vs image-qui-MONTRE (kova ordinaire). kovamori = le signe lisible/codé qui sauve, vs Ekakova (la Grande Fresque, narration collective) et silikova (l'effigie, un regard fixé). Distinct de kovasili (idéoglyphes, déjà pris). Ancrage canon : « les glyphes = la grande arme contre le Vide » (le-symbole).",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "memoire"
         }
       ],
       "synonymes_fr": [
@@ -747,7 +775,8 @@
           "champ": "Image & Écriture (kova)",
           "definition": "L'image qui retient le regard d'un absent et le maintient hors du Vide : portrait, icône, visage gardé de celui qui n'est plus.",
           "nuance": "sili (regard) + kova (image) = l'image porteuse d'un regard (un absent qui regarde encore). vs Ekakova (narration collective) et kovamori (signe lisible) : silikova sauve un ÊTRE singulier du Vide par la mémoire. À distinguer de kovasili (idéoglyphes, ordre inverse, déjà pris). Ancrage canon : « le souvenir te maintient au ciel » ; « la pierre garde son nom » (mémoriaux).",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "signe"
         }
       ],
       "synonymes_fr": [
@@ -773,7 +802,8 @@
           "champ": "Mouvement (tekis)",
           "definition": "Se mouvoir en épousant l'eau, suivre ou remonter la rivière ; le déplacement pensé par le fil de l'eau plutôt que par la route.",
           "nuance": "ura (eau) + teki (aller). Un peuple-rivière pense le mouvement par l'EAU, pas par la voie terrestre — sens que « aller » FR n'a pas. vs uraki (naviguer EN embarcation) : urateki = aller LE LONG de / avec l'eau. vs teki (aller neutre, degré zéro). Ancrage canon : « allez où va l'eau » (chant-02) ; la Confluence.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "eau"
         }
       ],
       "synonymes_fr": [
@@ -798,7 +828,8 @@
           "champ": "Mouvement (tekis)",
           "definition": "Le trajet rituel vers le Gouffre (Vukuura) — aux Premiers Ancêtres, à la Grande Fresque ; mouvement de Veille, de mémoire et de dévotion, l'opposé de l'utilitaire.",
           "nuance": "vuku (le Gouffre, racine funeste/sacrée) + teki (aller). Le mouvement comme acte de Veille, vs teki (neutre) et urateki (fluvial profane). Ancrage canon : « on traverse le pays jusqu'au Gouffre Humide pour porter un regard libre » (le-grand-pelerinage) ; le sommet du gradient de dévotion.",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "lieu"
         }
       ],
       "synonymes_fr": [
@@ -823,7 +854,8 @@
           "champ": "Mouvement (tekis)",
           "definition": "Avancer vers ce qui n'est pas encore vu/connu — arracher du territoire au Vide par le regard porté en avant ; l'exploration comme extension du Regard.",
           "nuance": "teki (aller) + ota (l'inconnu/non-vu, ≠ hostilité). Le mouvement vers la frange de Vide, vs vukuteki (vers un lieu sacré connu) et urateki (épouser le connu). Sens introuvable en un mot FR ; lien fort avec silikasi (le meneur) et sili (le regard). Ancrage canon : l'Éveilleur menant vers « un lieu que nul n'a vu » ; Œil-Ouvert qui regardait loin.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "lieu"
         }
       ],
       "synonymes_fr": [
@@ -849,7 +881,8 @@
           "champ": "Existence (tuli)",
           "definition": "Se fixer au sol, habiter durablement un lieu, la sédentarité d'une lignée attachée à sa terre. Le « demeurer » qui prend racine dans la toka (le sol).",
           "nuance": "toka (sol) + tuli (demeurer). vs tuvak (tenu par un regard, immatériel) : ici c'est la TERRE qui tient, pas le regard — le mode de la Montagne (l'ancré, le socle). Recouvre « habiter » au sens fort de s'établir. vs tisatuli (présence ponctuelle). Ancrage canon : la Montagne, l'Ancré, le Pilier ; la sédentarisation de la Confluence.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "lieu"
         }
       ],
       "synonymes_fr": [
@@ -876,7 +909,8 @@
           "champ": "Existence (tuli)",
           "definition": "L'état ponctuel d'être présent maintenant, copule de localisation sans charge de durée — « il est là », « se trouver à ».",
           "nuance": "tisa (ici/présent) + tuli (demeurer). Le degré zéro temporel : ni tenu (tuvak), ni délavé (vèluk), ni enraciné (tokituli) — juste là, à l'instant. Pour le simple « rester sur place » un moment. Ancrage canon : tisa fusionne ici/présent ; extension spatio-temporelle native de l'état.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "lieu"
         }
       ],
       "synonymes_fr": [
@@ -902,7 +936,8 @@
           "champ": "Existence (buka)",
           "definition": "Le cœur chaud de la demeure, le feu entretenu qu'on ne laisse jamais mourir — la maison comme point de chaleur qui tient la nuit-Vide dehors.",
           "nuance": "suka (feu) + buka (maison). vs aitabuka (la maison comme legs/lignée) : ici la maison comme FEU VIVANT, l'acte quotidien de nourrir la flamme. Forme haute sacrée = isukibuka (mytho, avec isuki = l'éclat du Père, l'âtre comme part des « mille feux »). Ancrage canon : l'entretien-du-foyer, « la chaleur dit au froid-Vide : tu n'entres pas ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "feu"
         }
       ],
       "synonymes_fr": [
@@ -928,7 +963,8 @@
           "champ": "Existence (buka)",
           "definition": "La demeure comme artefact bâti et rebâti au fil des générations, et ceux qui l'habitent — la « Maison » au sens de lignée, le toit des pères qui se transmet et garde la mémoire des aïeux.",
           "nuance": "aita (ancêtre/lignée) + buka (maison). vs sukibuka (le feu, le présent chaud) : ici la dimension TEMPORELLE/mémorielle — ce qui se transmet. Recouvre la « maisonnée » (les gens + les murs). Ancrage canon : le Noyau, « rien ne se perd » ; l'argile vivante (le foyer rebâti).",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "ancetre"
         }
       ],
       "synonymes_fr": [
@@ -954,7 +990,8 @@
           "champ": "Existence (buka)",
           "definition": "La demeure prise comme limite — la structure qui sépare le dedans (les siens, le cercle de lumière) du dehors (la nuit, l'Autre) ; le seuil gardé, le passage entre les deux mondes.",
           "nuance": "vasi (passage/lien entre deux) + buka (maison). vs sukibuka/aitabuka : ni la chaleur ni la lignée, mais la FRONTIÈRE — l'aspect défensif/liminaire, là où finit le « mur » d'une maison. Ancrage canon : « dedans le cercle de lumière, les siens ; dehors, la nuit » (l'entretien-du-foyer) ; le geste-du-seuil.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "lieu"
         }
       ],
       "synonymes_fr": [
@@ -976,7 +1013,8 @@
           "champ": "Cosmos (samo)",
           "definition": "L'acte par lequel le monde sourd du Vide là où le Regard se pose — non un événement passé clos, mais un procès toujours en cours : créer, c'est faire encore lever du monde.",
           "nuance": "Racine néologique (samo monde + nek œuvrer). vs samo (le RÉSULTAT figé, le levé/l'étendue tenue) : ici le verbe de la création-CONTINUE, le monde-en-train-de-se-faire. Pôle-Vide en miroir : samoèva (les bords, le non-encore-levé, registre mythologique). Ancrage canon : « le monde lève du Vide là où le Regard se pose » ; pilier CRÉER.",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "cosmos"
         }
       ],
       "synonymes_fr": [
@@ -999,7 +1037,8 @@
           "champ": "Cacher (lupak) — le masque",
           "definition": "Couvrir d'un faux visage pour TROMPER : substituer une apparence mensongère à la vérité, mentir par le masque. Non pas cacher (soustraire à la vue) mais REMPLACER le vrai par un faux.",
           "nuance": "muka (masque/visage faux) verbalisé. À distinguer de lupak (cacher = soustraire un objet à la vue, neutre) et de mulik (voiler = abriter un regard, protège) : mukak MENT — il assassine le regard de l'autre en le trompant, c'est le vecteur du Vide entre les hommes. Frère de mukazoka (l'ennemi masqué). Ancrage canon : « le masque en assassine un » ; le mensonge = vecteur du Vide ; cacher n'est pas mal, mentir l'est.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "masque"
         }
       ],
       "synonymes_fr": [
@@ -1022,7 +1061,8 @@
           "champ": "Cacher (lupak) — le voile",
           "definition": "Couvrir d'un voile pour PROTÉGER : soustraire au regard ce qu'on abrite (un regard, un mystère, une intimité), sans tromper. Le voile cache mais n'efface pas — il garde dessous.",
           "nuance": "muli (voile/brume) verbalisé. À distinguer de mukak (masquer = cacher pour TROMPER, le masque qui ment) : mulik ABRITE (le voile sert le regard dessous, ne le remplace pas). À distinguer de lupak (cacher un objet, neutre) et konusupu (garder en soustrayant). Domaine de la Voilée. Ancrage canon : « le voile abrite un regard ≠ le masque en assassine un » ; cacher pour protéger n'est pas mentir.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "masque"
         }
       ],
       "synonymes_fr": [
@@ -1045,7 +1085,8 @@
           "champ": "Existence (ita) — vivre ≠ exister",
           "definition": "Être vivant : porter la braise allumée, le feu de la vie qui brûle dans le corps. Non pas seulement exister (avoir l'être) mais BRÛLER — l'éclat du Père lit en soi, qui s'éteindra à la mort.",
           "nuance": "Racine opaque. À distinguer de ita (exister = avoir l'être, ontologique : une pierre existe sans vivre) : suvak = être un VIVANT, porter la braise (isuki) allumée — ce qui peut mourir (osi = l'éclat quitte le corps). À distinguer de tuli (durer/demeurer). Ancrage canon : la braise/isuki, éclat du Père en chaque vivant ; à la mort l'éclat quitte le corps.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "divers"
         }
       ],
       "synonymes_fr": [
@@ -1067,7 +1108,8 @@
           "champ": "l'Autre (ota) — l'inconnu épistémique",
           "definition": "Ce qui n'a pas encore été vu ni connu — le non-encore-tenu par le Regard, ce qui attend au bord du connu d'être découvert (ou de retomber au Vide). Neutre : pas l'ennemi, pas l'étranger — l'à-découvrir.",
           "nuance": "Racine opaque. À distinguer de ota (l'Autre = le différent, l'étranger, ce qui n'est pas nous — SOCIAL) : silenu est ÉPISTÉMIQUE (ce que le Regard n'a pas encore tenu), neutre, à arracher au Vide. À distinguer de samoèva (les bords cosmogoniques du monde). Lien avec tekiota (marcher-vers-le-non-encore-vu). Ancrage canon : le Regard arrache au Vide ce qui n'est pas encore tenu ; l'exploration, Œil-Ouvert.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "masque"
         }
       ],
       "synonymes_fr": [
@@ -1089,7 +1131,8 @@
           "champ": "borderline sora — l'astre ≠ la qualité",
           "definition": "L'astre du jour, le disque de lumière qu'on voit lever — manifestation de la Donneuse-de-Jour. Le soleil comme CHOSE, non la qualité lumineuse.",
           "nuance": "À distinguer de sora (lumineux/clair = la QUALITÉ de lumière) : soruma est l'ASTRE lui-même. Dans le mythique, le soleil = la Donneuse (soranaku). Ancrage canon : le Soleil = la Donneuse-de-Jour, l'œil ouvert.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "cosmos"
         }
       ],
       "synonymes_fr": [
@@ -1110,7 +1153,8 @@
           "champ": "borderline varu — l'objet ≠ l'acte",
           "definition": "L'arme : l'objet qui frappe ou protège (lame, pointe, bouclier). L'OUTIL du combat, non le combat lui-même.",
           "nuance": "À distinguer de varu (combat/guerre = l'ACTE, sacré) : pikora est l'OBJET. Écho de piki (pointe/lance). Ancrage canon : « la pointe garde le cercle » — l'arme du gardien (défensive), pas du conquérant.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "divers"
         }
       ],
       "synonymes_fr": [
@@ -1130,7 +1174,8 @@
           "champ": "borderline voki — le verbe ≠ le nom",
           "definition": "Appeler : user de la voix pour héler, convoquer, nommer à voix haute. L'ACTE de la voix.",
           "nuance": "voki (voix/parole) verbalisé. À distinguer de voki (voix/parole = la faculté/le nom). À distinguer de vosak (parler/dire = énoncer un contenu) : vokik héle/convoque. Ancrage canon : la voix, sœur du Regard.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "divers"
         }
       ],
       "synonymes_fr": [
@@ -1152,7 +1197,8 @@
           "champ": "borderline naki — par l'expérience ≠ par le sang",
           "definition": "Le novice : celui qui commence, dont le Regard n'est pas encore formé — l'œil-neuf qui n'a pas encore appris à voir ni à veiller. On peut être novice adulte.",
           "nuance": "À distinguer de naki (enfant/descendant = par le SANG, l'âge) : nuvaki est le débutant par l'EXPÉRIENCE (le Regard pas encore formé), quel que soit l'âge. Écho de nuvi (nouveau) + naki. Ancrage canon : le Regard se cultive (éthique de la vertu) ; le novice apprend à veiller.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "divers"
         }
       ],
       "synonymes_fr": [
@@ -1174,7 +1220,8 @@
           "champ": "borderline venu — lève l'homophonie",
           "definition": "Le nez : l'organe de l'odorat, le relief du visage entre les yeux.",
           "nuance": "Forme propre pour l'organe — lève l'homophonie avec venu (venir, verbe de mouvement) : préférer nesura pour « nez », venu reste « venir ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "divers"
         }
       ],
       "synonymes_fr": [
@@ -1193,7 +1240,8 @@
           "champ": "borderline savu — l'engagement léger ≠ le serment sacré",
           "definition": "La promesse : un engagement donné mais LÉGER — la parole qu'on tient entre soi, sans la charge sacrée du serment.",
           "nuance": "À distinguer de savu (serment = engagement SACRÉ, scellé, dont la rupture = parjure → Gouffre) : tolura est l'engagement ORDINAIRE, profane, qu'on peut donner sans déchoir. Ancrage canon : le serment (savu) est sacré (Halls des Serments) ; la promesse quotidienne, non.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "serment"
         }
       ],
       "synonymes_fr": [
@@ -1215,7 +1263,8 @@
           "forme_liee": "osiimul",
           "definition": "Mourir pris entier par la Voilée AVANT que le Vide ne te creuse : l'éclat resté propre est cueilli sous le voile et monte. La mort comme arrachement au Vide, non comme fin.",
           "nuance": "À distinguer de osiivuku (chute du souillé) et osieva (effacement). Le voile abrite (≠ mukak le masque). Canon : « la Voilée cueille le bien-mort avant que le Vide ne le creuse ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "mort"
         }
       ],
       "synonymes_fr": [
@@ -1238,7 +1287,8 @@
           "forme_liee": "osiiur",
           "definition": "Mourir l'éclat propre qui coule au Fleuve Pâle, anonyme, en attente de renaître — le trépas de la multitude souvenue, vivier de la réincarnation.",
           "nuance": "Le sort PAR DÉFAUT du bon mort. ≠ osiieku (qui sort du courant pour veiller à jamais). Canon : le Fleuve Pâle, « la Donneuse y puise et redonne le jour ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "mort"
         }
       ],
       "synonymes_fr": [
@@ -1261,7 +1311,8 @@
           "forme_liee": "osiiek",
           "definition": "Mourir en héros : sortir du courant et se fixer en étoile nommée, renoncer à renaître pour veiller à jamais — un poste éternel sur le Mur, près du Père.",
           "nuance": "Étoile FIXE ⚔ Fleuve MOUVANT (osiiura). Réservé aux grands Veilleurs. ≠ eku (l'astre-objet). Canon : « l'âme qui sort du courant se fixe en étoile… veille à jamais ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "mort"
         }
       ],
       "synonymes_fr": [
@@ -1284,7 +1335,8 @@
           "forme_liee": "osiivuk",
           "definition": "Mourir l'éclat souillé : ni monter ni renaître, choir au Gouffre, parent de la grise-faim, glisser vers le Vide. Mort par inéligibilité, non par châtiment.",
           "nuance": "≠ seluvela (la souillure vivante, l'état) et savuzoka (le parjure, la personne) : ici la MORT au bout. « On ne cueille pas une faim ». Canon : 3e chemin, les mal-morts.",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "mort"
         }
       ],
       "synonymes_fr": [
@@ -1304,7 +1356,8 @@
           "forme_liee": "osiev",
           "definition": "L'annihilation par l'oubli : s'effacer au Vide quand les vivants cessent de te nommer. L'oublié dérive hors du Fleuve, son étoile s'éteint, il disparaît à jamais.",
           "nuance": "⭐ NEXUS. La VRAIE mort (effacement), ≠ osi (le passage). ≠ èva (le Vide-principe), ≠ mevak (le glissement chez le vivant), ≠ kavuno (l'infamie sociale). Le souvenir des vivants est le seul rempart. Canon : « la Seconde Mort = l'oubli = le Vide qui gagne ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "mort"
         }
       ],
       "synonymes_fr": [
@@ -1325,7 +1378,8 @@
           "forme_liee": "tona",
           "definition": "Ôter la vie à un autre : faire que son éclat quitte le corps par ta main. Le transitif que osiak (mourir) ne porte pas — acte grave, neutre quant à l'honneur.",
           "nuance": "Racine opaque (l'acte létal est un primitif). ≠ osiak (mourir, subir). Les pôles d'honneur réutilisent l'existant : tuer-en-faisant-mur = konuvaru ; tuer-en-bête = besinekan (souille → osiivuku).",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "mort"
         }
       ],
       "synonymes_fr": [
@@ -1349,7 +1403,8 @@
           "forme_liee": "osikar",
           "definition": "La pierre qui tient le NOM d'un mort contre l'oubli : stèle, nom gravé, Autel des Pionniers. Non une destination d'âme (l'âme monte), non la tombe-contenant.",
           "nuance": "≠ osiiutoka (sépulture, le corps) ; ≠ karimori (pierre-mémoire générique) ; ≠ silimori/kovamori (le signe). Canon : « la pierre se souvient ; l'âme s'élève ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "mort"
         }
       ],
       "synonymes_fr": [
@@ -1373,7 +1428,8 @@
           "forme_liee": "kesakar",
           "definition": "Le temple-monticule qui monte poignée après poignée — pierre, terre et cendres des morts liées d'argile, feu perpétuel au sommet. Le repère du village, bâti DES morts, qui croît.",
           "nuance": "≠ osikari (la pierre d'UN mort) : édifice COLLECTIF de tous les morts. ≠ buka (l'habitat). Canon : le Tertre, « chacun apporte sa pierre… les cendres dans ses flancs ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "mort"
         }
       ],
       "synonymes_fr": [
@@ -1396,7 +1452,8 @@
           "forme_liee": "velaor",
           "definition": "La veille tenue toute la nuit sur le bûcher d'un mort, du soir à l'aube — la garde de toujours tenue une dernière fois. À l'aube, ce qui s'est élevé est rendu à la Donneuse.",
           "nuance": "≠ velak (veiller, degré zéro) et velakonu (veiller une chose en continu) : ici la veille BORNÉE par l'aube, ritualisée pour un mort. Canon : « l'enterrement-feu = la dernière Veille ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "mort"
         }
       ],
       "synonymes_fr": [
@@ -1419,7 +1476,8 @@
           "forme_liee": "sukvas",
           "definition": "Le feu pris comme ligne qui sépare le dedans du dehors — la chaleur qui dit au froid-Vide « tu n'entres pas » ; le plus petit segment du Mur, l'âtre comme frontière.",
           "nuance": "vasi (limite/passage) charge le feu de sa valeur de bord-gardé. ≠ sukamako (la chaleur qui rassemble) : ici le feu EXCLUT la nuit. Canon : « la chaleur du foyer dit au froid-Vide : tu n'entres pas ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "feu"
         }
       ],
       "synonymes_fr": [
@@ -1442,7 +1500,8 @@
           "forme_liee": "sukikan",
           "definition": "Le feu qui s'allume d'un autre sans que l'autre diminue — et l'acte de le passer : prendre sa flamme d'un foyer vivant pour en allumer un neuf, jamais du néant. Le don du feu.",
           "nuance": "≠ kosam (créer du Vide) : sukikanu propage d'une flamme vivante ; ≠ sukilusak (ranimer le sien). Canon : « il alluma mille feux sans s'éteindre » ; les Porteurs de Flamme.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "feu"
         }
       ],
       "synonymes_fr": [
@@ -1465,7 +1524,8 @@
           "forme_liee": "sukimil",
           "definition": "Le feu en tant qu'il fait VOIR dans la nuit — il débusque le masqué, le corrompu ; « l'œil du pauvre », qui n'a que sa flamme pour percer le mensonge.",
           "nuance": "milis (voir/découvrir) charge le feu comme outil du Regard. ≠ venat (discerner, le jugement) : ici la flamme éclaire, instrumentale. Canon : « le feu fait voir dans la nuit → démasque le corrompu ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "feu"
         }
       ],
       "synonymes_fr": [
@@ -1488,7 +1548,8 @@
           "forme_liee": "sukimuk",
           "definition": "Le feu retourné en faim : non plus celui qui éclaire et chauffe, mais celui qui MANGE — l'incendie, la guerre qui dévore, le déracinement ; le même feu, à l'envers.",
           "nuance": "mukis (manger) dit le retournement. ≠ suki neutre (le feu qui sert). À l'échelle d'un éclat = isukèva/mutaeva. Canon : « le feu qui éclaire retourné en feu qui dévore ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "feu"
         }
       ],
       "synonymes_fr": [
@@ -1512,7 +1573,8 @@
           "forme_liee": "sukamak",
           "definition": "La chaleur qui rayonne sans se thésauriser — elle se donne à tous ceux qui s'en approchent, et c'est pourquoi on se serre autour d'elle ; la chaleur qui fait communauté.",
           "nuance": "mako (multitude) dit que cette chaleur AGRÈGE. ≠ sukvasi (le feu qui exclut la nuit) : ici elle inclut les vivants ; ≠ sukibuka (l'âtre-lieu). Canon : « la chaleur rayonne… on se serre autour ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "feu"
         }
       ],
       "synonymes_fr": [
@@ -1534,7 +1596,8 @@
           "forme_liee": "morisuv",
           "definition": "Le souvenir porté par un vivant comme une braise dans le corps : il éclaire tant qu'on l'entretient, et s'éteint avec celui qui le portait. La mémoire chaude, mortelle.",
           "nuance": "≠ morileku (la chose transmise qui dure au-delà d'une vie) et morikari (mémoire fixée dans la pierre). Canon : la braise du Père en chaque vivant ; le souvenir des vivants te tient au ciel.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "memoire"
         }
       ],
       "synonymes_fr": [
@@ -1556,7 +1619,8 @@
           "forme_liee": "morituv",
           "definition": "Tenir en soi la mémoire d'un autre qui ne peut plus la tenir — celle du creusé, du dément, du mort. On est son regard à sa place : tant qu'on le garde, le Vide ne l'a pas pris.",
           "nuance": "≠ morisuva (mon propre souvenir) et morivosak (l'acte oral). Charge ontologique : maintenir hors du Vide. Canon : « les vivants tiennent son nom à sa place ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "memoire"
         }
       ],
       "synonymes_fr": [
@@ -1579,7 +1643,8 @@
           "forme_liee": "morilek",
           "definition": "Le legs de mémoire lui-même — le corps de souvenirs, noms et récits reçu des morts comme une coutume, qu'on garde et qu'on AUGMENTE avant de le passer. La mémoire-patrimoine.",
           "nuance": "La CHOSE transmise, ≠ les ACTES (morivosak dire, konuleku garder). ≠ morisuva (mortelle) : morileku traverse les générations. Canon : « ajoute ta marque, porte l'œuvre plus loin ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "memoire"
         }
       ],
       "synonymes_fr": [
@@ -1602,7 +1667,8 @@
           "forme_liee": "karimor",
           "definition": "La pierre en tant qu'elle FIXE un nom contre l'oubli — la substance même qui garde, le mémorial générique, le « ceci fut » que la matière tient quand les vivants meurent.",
           "nuance": "La MATIÈRE qui porte mémoire. ≠ silimori/kovamori (le signe/glyphe) : la pierre tient même sans glyphe. ≠ osikari (le mémorial d'UN mort, funéraire). Canon : « la pierre se souvient ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "pierre"
         }
       ],
       "synonymes_fr": [
@@ -1625,7 +1691,8 @@
           "forme_liee": "morimul",
           "definition": "La trace dont le sens s'est embrumé : on voit le signe, on ne peut plus recouvrer ce qu'il disait (la Grande Fresque visible mais muette). Le Vide a mangé le SENS, non la matière.",
           "nuance": "muli (voile/brume) = le sens VOILÉ, présent mais illisible, PAS effacé (≠ osieva la Seconde Mort). ≠ morisili (signe encore lisible), ≠ mukak (masquer le sens activement). Canon : « le Vide mange le sens, pas la matière ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "memoire"
         }
       ],
       "synonymes_fr": [
@@ -1648,7 +1715,8 @@
           "forme_liee": "morivok",
           "definition": "La mémoire qui revient d'elle-même dans un objet transmis — la patine d'une vieille lance, l'usure d'un outil des aïeux qui « parle » sans qu'on l'ait inscrite. Le murmure des morts.",
           "nuance": "Mémoire INVOLONTAIRE reçue par RÉSONANCE. ≠ silimori (signe posé) et morisili (indice qu'on déchiffre). voki (la voix) ancre le Chœur. Canon : « la patine des objets parle ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "memoire"
         }
       ],
       "synonymes_fr": [
@@ -1670,7 +1738,8 @@
           "forme_liee": "aitaur",
           "definition": "Le bien-mort à l'éclat propre qui coule dans le Fleuve Pâle, anonyme, en attente — prêt à renaître quand la Donneuse le rappellera. Le sort de la multitude souvenue.",
           "nuance": "L'ancêtre dans le COURANT (mouvant, qui peut renaître). ≠ aitaeku (fixé en étoile). Canon : le Fleuve Pâle, vivier de la réincarnation.",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "ancetre"
         }
       ],
       "synonymes_fr": [
@@ -1693,7 +1762,8 @@
           "forme_liee": "aitaek",
           "definition": "Le héros-mort sorti du courant pour se fixer en étoile nommée : il a renoncé à renaître afin de veiller à jamais, un poste éternel près du Père. L'honneur rare, quasi-divin.",
           "nuance": "L'ancêtre FIXE (veille éternelle), pôle de aitaura (mouvant, renaît). ≠ eku (l'astre physique). Canon : « veiller à jamais ⚔ renaître » ; les héros-étoiles.",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "ancetre"
         }
       ],
       "synonymes_fr": [
@@ -1716,7 +1786,8 @@
           "forme_liee": "aitazok",
           "definition": "L'ancêtre déchu, à l'éclat souillé, qui ne monte ni ne renaît : il choit au Gouffre, parent de la grise-faim, glissant vers le Vide. Le mort dont on se garde — un tombé pitoyable.",
           "nuance": "N'EST PAS du Noyau (≠ aitaura/aitaeku). Donne un nom au mal-mort que enuaita (les Premiers Ancêtres corrompus) portait sous aita plat. Canon : le Gouffre, « nos tombés ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "ancetre"
         }
       ],
       "synonymes_fr": [
@@ -1740,7 +1811,8 @@
           "forme_liee": "aitamev",
           "definition": "L'ancêtre que les vivants cessent de nommer — il dérive hors du Fleuve, son étoile vacille, il s'efface lentement. Encore bon, mais lâché par la mémoire.",
           "nuance": "Oublié par NÉGLIGENCE (≠ aitazoka, le déchu par souillure). L'entrée de l'oubli dans la lignée ; le procès vers osieva (la Seconde Mort). Canon : « oublié, tu dérives vers le Vide ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "ancetre"
         }
       ],
       "synonymes_fr": [
@@ -1763,7 +1835,8 @@
           "forme_liee": "aitakot",
           "definition": "L'assemblée de nos morts prise comme un seul : le Chœur, les Mille-Marques, les Nôtres — la confluence de tous les bien-morts veillant ensemble, la Figure-noyau qui grandit à chaque mort.",
           "nuance": "Le COLLECTIF déifié (≠ les sorts individuels). kota (confluence) dit le peuple-corps des morts (« nés du sang de nos morts »). Candidat au nom de la Figure-noyau. Canon : le Noyau, « murmure à mille bouches ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "ancetre"
         }
       ],
       "synonymes_fr": [
@@ -1783,7 +1856,8 @@
           "forme_liee": "nul",
           "definition": "Le nom qui se GAGNE et ne se transmet pas : le feu qu'on a vu prendre en toi, que les siens reconnaissent par un acte ou un trait et te donnent (Dos-Large, Œil-Ouvert). Le nom-mérite.",
           "nuance": "Racine opaque (le nom n'avait pas de mot). LE FEU de la paire Feu↔Sang : mérité, individuel, ≠ kinakova (la marque-de-sang, hérité). ≠ voki (la voix). Canon : « on ne naît pas avec un nom, on en gagne un ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "nom"
         }
       ],
       "synonymes_fr": [
@@ -1802,7 +1876,8 @@
           "forme_liee": "nuli",
           "definition": "Donner un nom pour faire exister : tirer un être de l'indistinct, reconnaître le feu qu'on a vu prendre en lui. Nommer ne décrit pas — il arrache au Vide.",
           "nuance": "Verbalisation de nuli. ≠ savuvosak (proférer toute formule performative) : nulim = spécifiquement donner-un-nom. ≠ vokik (héler). Canon : « nommer, c'est arracher au Vide, distinguer ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "nom"
         }
       ],
       "synonymes_fr": [
@@ -1825,7 +1900,8 @@
           "forme_liee": "nulituv",
           "definition": "Le nom d'un mort qu'on redit pour qu'il tienne au Fleuve : le nommer, c'est le maintenir hors du Vide, nourrir son étoile. Tant qu'on prononce son nom, il n'a pas dérivé.",
           "nuance": "Le nom comme ACTE de maintien post-mortem. ≠ nuli (le nom-mérite du vivant), ≠ morituva (tenir la mémoire, plus large). Frère de morivosak côté parole. Canon : « tant qu'on te nomme tu tiens dans le Fleuve ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "nom"
         }
       ],
       "synonymes_fr": [
@@ -1848,7 +1924,8 @@
           "forme_liee": "kinakov",
           "definition": "Le glyphe de lignée pressé dans l'argile, qui dit de quel sang on descend : le rouge qui se transmet, hérité, porté en parallèle du nom-gagné. Là où le nom dit ton mérite, la marque dit d'où tu viens.",
           "nuance": "Le sang FAIT marque. LE SANG de la paire Feu↔Sang : hérité, ≠ nuli (le nom-feu, mérité). ≠ mituuaita (la généalogie mémorisée) : ici le SIGNE concret. Canon : « le glyphe de lignée… le rouge qui se transmet ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "sang"
         }
       ],
       "synonymes_fr": [
@@ -1868,7 +1945,8 @@
           "forme_liee": "sevun",
           "definition": "L'eau au moment où elle jaillit de la cime et part — l'origine qui sourd et se met aussitôt en chemin, le surgir même de la Rivière. Non le lieu ni la source-objet, mais l'acte de sourdre.",
           "nuance": "Racine opaque, ≠ enuura (le lieu-source) : sevuna est le jaillir, le geste. ≠ uramela/limava (l'eau déjà coulante). Canon : « l'eau chaude descendue de la cime ; celle qui est PARTIE ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "eau"
         }
       ],
       "synonymes_fr": [
@@ -1888,7 +1966,8 @@
           "forme_liee": "luva",
           "definition": "Couler sans jamais revenir, vivre en s'en allant, oublier en chemin — le mouvement irréversible de la Rivière qui déracine et n'en garde rien. Avancer au prix de la mémoire.",
           "nuance": "Racine opaque (le revers de la Rivière). ≠ urateki (épouser l'eau, le voyageur qui choisit) : luvak est subi, sans retour. Pôle-vice d'Avancer (l'oubli-en-chemin), contre-pôle de konuleku. Canon : « elle emporte tout, déracine, oublie en chemin ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "eau"
         }
       ],
       "synonymes_fr": [
@@ -1912,7 +1991,8 @@
           "forme_liee": "urasil",
           "definition": "La surface d'eau calme où l'on voit l'autre, ou ce qu'on aurait pu être — le miroir d'eau, le reflet qui montre un second soi. La Lune lit la Rivière dans le reflet et y voit son contre-destin.",
           "nuance": "ura+sili soude l'eau et le Regard. ≠ silikova (l'effigie fixée d'un absent) : urasili est vivant, mobile, montre un autre/un soi-possible. ≠ mira (voir directement) : on voit par renvoi. Canon : « la Lune voit la Rivière dans le reflet ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "eau"
         }
       ],
       "synonymes_fr": [
@@ -1936,7 +2016,8 @@
           "forme_liee": "selur",
           "definition": "L'eau qui ne coule plus, stagne et se corrompt — l'eau qui a cessé de se mêler, refusant la Confluence. Le revers absolu de la Rivière : non l'eau qui part trop, mais qui ne part plus.",
           "nuance": "selu (croupi) + ura. ≠ limava/uramela (l'eau-vive qui se mêle) : contre-pôle côté immobilité. ≠ seluvela (souillure rituelle) : ici l'eau-chose stagnante. Canon : « ce qui s'arrête meurt ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "souillure"
         }
       ],
       "synonymes_fr": [
@@ -1959,7 +2040,8 @@
           "forme_liee": "karitul",
           "definition": "La pierre qui porte et fonde — l'Ancré, le socle sur quoi tout tient, le pilier ciel-terre. Ce qui ne bouge pas et permet au reste de tenir : la fonction d'appui de la Montagne.",
           "nuance": "kari+tuli. ≠ tokituli (habiter durablement, l'acte) : karituli est l'OBJET-appui. ≠ karimori (qui se souvient) : porte le poids présent, ne mémorise pas. Canon : « pilier ciel-terre, immobile » ; le Socle-du-Ciel.",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "pierre"
         }
       ],
       "synonymes_fr": [
@@ -1983,7 +2065,8 @@
           "forme_liee": "karizok",
           "definition": "La garde retournée en mort : conserver tant qu'on fige, embaume, étouffe ce qui devrait vivre — la sur-conservation qui re-creuse le Vide. La momie, le savoir gardé si fort qu'il ne se transmet plus.",
           "nuance": "kari+zoka (la pierre devenue ennemie du vivant). ≠ karituli/karimori (les faces saines) : leur excès funeste. Revers de konuleku poussé au-delà (garder SANS transmettre). Canon : « elle fige, embaume, étouffe ce qui devrait vivre ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "pierre"
         }
       ],
       "synonymes_fr": [
@@ -2007,7 +2090,8 @@
           "forme_liee": "kinator",
           "definition": "Le rouge qui se TRANSMET — le sang qui coule de père en fils, lie les générations, fait « les miens » : la lignée, l'identité héritée, la protection des siens.",
           "nuance": "Pôle PARTICULIER de la paire Feu↔Sang, ⚔ sukiva (don/mérite, universel). ≠ siluora (l'organe/le sang physique) : kinatori est le sang-valeur. ≠ kinasora (le sang-d'aurore, l'élite). Canon : « le rouge qui se transmet, lie les générations ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "sang"
         }
       ],
       "synonymes_fr": [
@@ -2027,7 +2111,8 @@
           "forme_liee": "sukiv",
           "definition": "Le don qui s'allume où il veut sans demander la parenté — le mérite, le talent qui monte d'où qu'il vienne, l'universel. Comme le feu saute d'un bois à l'autre : la valeur qui prend sans regarder le sang.",
           "nuance": "Racine opaque (écho de suki, le feu-social). Pôle UNIVERSEL de la paire Feu↔Sang, ⚔ kinatori (sang-lignée). ≠ isuki (la braise de vie) : ici la valeur sociale qui circule. ≠ koriumako (fierté de soi). Canon : « le feu prend où il veut, non par le sang ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "feu"
         }
       ],
       "synonymes_fr": [
@@ -2050,7 +2135,8 @@
           "forme_liee": "kinazok",
           "definition": "La dette de sang qui ne s'éteint pas — le meurtre qui appelle le meurtre, le cycle de vengeance où chaque mort réclame une mort. Le vice du pôle Sang : la protection des siens retournée en haine sans fin.",
           "nuance": "kina+zoka. ≠ kinatori (sa face saine, la lignée qui protège) : son excès (le clan fermé, l'exclusion). ≠ konuvaru (défendre, légitime, ponctuel) : ici le cycle qui ne se clôt jamais. Canon : « la vendetta sans fin — le sang appelle le sang ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "sang"
         }
       ],
       "synonymes_fr": [
@@ -2073,7 +2159,8 @@
           "forme_liee": "kinasor",
           "definition": "Le sang qui porte la couleur du seuil — l'élection héréditaire des Ciels-clairs, ceux dont les yeux ont la teinte de la rencontre des deux sœurs (rouge/orange de l'aube), transmise de génération en génération.",
           "nuance": "kina+sora (le sang-lumière). ≠ kinatori (toute lignée) : kinasora est l'élite héréditaire (la noblesse d'aurore). ≠ siluora (l'organe œil). Porte le risque-caste (tension avec sukiva le mérite). Canon : « aïeul des Ciels-clairs, yeux d'aurore ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "sang"
         }
       ],
       "synonymes_fr": [
@@ -2092,7 +2179,8 @@
           "forme_liee": "nela",
           "definition": "Fermer puis rouvrir l'œil à dessein — le geste de la mesure dans le temps : ni le sommeil qui laisse entrer le Vide, ni l'œil fixe qui brûle. Tenir le Regard à la juste ouverture en le reposant sans l'éteindre.",
           "nuance": "Racine opaque (atome de l'éthique du Regard-mesure). ≠ vela/velak (tenir l'œil ouvert) : nelak rend la veille tenable. ≠ mevak (regard qui glisse, une faute) : nelak est vertueux. Canon : « le clignement = la mesure dans le temps ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "veille"
         }
       ],
       "synonymes_fr": [
@@ -2115,7 +2203,8 @@
           "forme_liee": "kanuvel",
           "definition": "Remettre sa veille à un autre avant que l'œil ne tombe : réveiller le suivant et lui passer la garde, de proche en proche jusqu'au jour. La veille portée comme une flamme qu'on transmet.",
           "nuance": "kanu (porter/main) + vela. ≠ velakonu (garder soi-même par le regard) : ici on TRANSMET la garde. Frère de morivosak (transmettre par la parole) côté veille. Canon : « le veilleur en réveille un autre… comme on passe une flamme ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "veille"
         }
       ],
       "synonymes_fr": [
@@ -2139,7 +2228,8 @@
           "forme_liee": "velaek",
           "definition": "La veille du peuple entier conçue comme un seul œil qui ne se ferme jamais tout à fait : quand l'un dort, un autre rouvre, si bien qu'aucune nuit ne reste sans regard. Le clignement à l'échelle de la totalité.",
           "nuance": "vela + eka (tout/totalité). ≠ velakonu (un gardien, une chose) et kanuvela (le passage entre deux) : velaeka est l'ÉTAT collectif émergent, la Veille comme institution. Canon : « le peuple est un seul œil qui ne se ferme jamais tout à fait ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "veille"
         }
       ],
       "synonymes_fr": [
@@ -2158,7 +2248,8 @@
           "forme_liee": "veli",
           "definition": "Tenir l'œil ouvert à la place de celui que le Vide creuse : être le regard du dément, garder son nom, ses liens, son sens quand le sien faiblit — veiller un vivant qui glisse vers la Seconde Mort sans cesser de respirer.",
           "nuance": "Racine opaque (devoir cardinal). ≠ tuvak (tenir une chose dans l'être, large) : velis = veiller un esprit qui se vide, charge de compassion (le creusé = VICTIME). ≠ morivosak (tenir le nom d'un mort) : ici le creusé vit, atteignable. Canon : « veiller le creusé = être son regard ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "veille"
         }
       ],
       "synonymes_fr": [
@@ -2177,7 +2268,8 @@
           "forme_liee": "sola",
           "definition": "Se perdre par excès de Regard : tourner sur soi (ou sur autrui) tant de lumière qu'on ne distingue plus rien — l'œil grand ouvert qui ne cligne plus, brûlé. La cécité par le haut, qui tombe dans le même Vide que la cécité par le bas.",
           "nuance": "Racine opaque — le pendant-HAUT cardinal de lozak (refus-de-voir, le pôle bas). lozak ferme l'œil (trop peu), solak le brûle (trop) : la même cécité. ≠ mevak (distrait) : solak regarde TROP. Matrice du pôle-haut. Canon : « les deux extrêmes se rejoignent, aucun ne voit ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "regard"
         }
       ],
       "synonymes_fr": [
@@ -2201,7 +2293,8 @@
           "forme_liee": "solasav",
           "definition": "Contraindre un autre à voir comme on voit, lui imposer son Regard et lui ôter le sien : la tyrannie au sens propre du peuple — non commander, mais forcer l'œil d'autrui, le priver de veiller librement.",
           "nuance": "sola (l'éblouissement) + savu (le lien sacré qu'on viole). ≠ mukak (tromper par le masque) : la tyrannie CONTRAINT à découvert. ≠ solakasi (la présomption, qui ne touche que soi) : solasavu atteint AUTRUI. Vice des puissants. Canon : « forcer le regard d'autrui = la tyrannie ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "regard"
         }
       ],
       "synonymes_fr": [
@@ -2225,7 +2318,8 @@
           "forme_liee": "solakas",
           "definition": "S'arroger une hauteur qu'on n'a pas méritée : monter au rang du jour avant l'heure, croire voir de haut sans avoir gravi les degrés — l'hubris d'Icare, le front levé vers ce qu'on n'a pas gagné.",
           "nuance": "sola + kasi (rang/chef). ≠ koriumako (fierté JUSTE, tirée d'un mérite) : solakasi est la fierté USURPÉE. ≠ solasavu (qui viole autrui) : ici un orgueil tourné vers soi. Canon : l'Ébloui, « qui monte par orgueil est foudroyé ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "regard"
         }
       ],
       "synonymes_fr": [
@@ -2249,7 +2343,8 @@
           "forme_liee": "solatos",
           "definition": "Asséner toute la vérité crue sans rien voiler, au nom du bien — la franchise qui blesse, l'exposition totale qui n'abrite aucun regard. Le faux-bien : croire bien faire en brûlant celui qu'on expose.",
           "nuance": "sola (le trop) + tosa (le bien) = le bien dévoyé par l'excès. Exact opposé de mulik (voiler pour abriter) : solatosa refuse d'abriter. ≠ mukak (mentir) : son tort est de trop dire le vrai, sans mesure. Canon : « la franchise cruelle… s'exposer ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "regard"
         }
       ],
       "synonymes_fr": [
@@ -2268,7 +2363,8 @@
           "forme_liee": "vesun",
           "definition": "L'esprit que le Vide creuse en respirant encore : la mémoire qui s'en va, le nom qui se perd, le soi qui se défait sans que le corps meure — la Seconde Mort commencée avant la mort. Une affliction, jamais une faute.",
           "nuance": "Racine opaque (le Vide-dans-le-vivant). ≠ lozak (la FAUTE de fermer l'œil) : vesuna est SUBI, le dément est victime (compassion, velis). ≠ osi (la mort) : l'éclat est encore là, atteignable. Pôle-bas. Canon : « être creusé par le Vide en respirant encore… une victime ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "regard"
         }
       ],
       "synonymes_fr": [
@@ -2292,7 +2388,8 @@
           "forme_liee": "solavel",
           "definition": "La folie de qui voit trop : l'esprit que l'excès de Regard a brûlé, le délire du voyant — une veille dévoyée qui ne cligne plus et se consume. Ambivalente : parfois pur égarement, parfois un vrai voyant.",
           "nuance": "NEXUS — sola (le brûlé-de-lumière de solak) + vela (veille) : la veille qui a brûlé son œil. solak est l'ACTE, solavela l'ESPRIT qui en reste creusé. Miroir exact de vesuna (folie par le bas) : deux folies, un seul Vide. Canon : « le délire du voyant, la folie sacrée… ambivalente ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "regard"
         }
       ],
       "synonymes_fr": [
@@ -2312,7 +2409,8 @@
           "forme_liee": "desul",
           "definition": "Le relâchement sanctionné de qui a porté : poser sa charge, desserrer l'étreinte de la veille — le festin, la danse, l'abandon collectif qui rend la veille tenable. Un pilier sacré : on ne nous prend pas notre joie.",
           "nuance": "Racine opaque (le 4e pilier, FÊTER). ≠ koriatosa (joie-ÉMOTION, état intérieur) : desuli est l'ACTE/temps social de déposer la charge. Contrepoids de kanukota (porter). Canon : « qui porte doit pouvoir déposer… le grand desserrement ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "fete"
         }
       ],
       "synonymes_fr": [
@@ -2337,7 +2435,8 @@
           "forme_liee": "oravel",
           "definition": "La joie grave du matin après la plus longue garde : l'aube comme preuve que la nuit a tenu, que le Mur n'a pas cédé. La plénitude de ceux qui ont veillé ensemble et voient revenir la lumière.",
           "nuance": "ora (aurore) + veli (le vrai/l'éprouvé) = l'aurore VÉRIFIÉE, la promesse tenue. ≠ koriuora (espoir, aurore À VENIR) : oraveli est l'aurore ARRIVÉE (rétrospectif). ≠ koriatosa (joie générique). Canon : « la nuit a tenu, et la fête est de l'avoir tenue ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "fete"
         }
       ],
       "synonymes_fr": [
@@ -2360,7 +2459,8 @@
           "forme_liee": "kanuvos",
           "definition": "Assumer en personne sa veille, son poste, son jugement, et en répondre sans le refiler : la responsabilité faite parole et acte. « Nul ne veille à ta place » — porter sa charge, c'est en rendre compte de sa propre voix.",
           "nuance": "kanu (porter) + vosak (répondre de). ≠ kanukota (la charge-CHOSE reçue) : kanuvosak est l'acte ÉTHIQUE de l'assumer. ≠ savunekan (accomplir un serment ponctuel) : posture durable. Opposé de l'obéissance aveugle. Canon : « nul ne veille à ta place ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "veille"
         }
       ],
       "synonymes_fr": [
@@ -2384,7 +2484,8 @@
           "forme_liee": "velaloz",
           "definition": "Abandonner sa veille, la refiler à un autre, déserter son poste quand on pouvait le tenir : la faute propre au porteur — non s'aveugler en général (lozak), mais lâcher la garde précise qui était la sienne.",
           "nuance": "vela (poste) + lozak (le refus-de-voir) = lozak appliqué à SA charge : la désertion. ≠ lozak seul (faute générale) : ici la trahison d'un POSTE confié, miroir de kanuvosak. ≠ savuzoka (parjure d'un serment scellé). Canon : « on ne nous fait pas déserter notre charge ».",
-          "registre": "courant"
+          "registre": "courant",
+          "famille": "veille"
         }
       ],
       "synonymes_fr": [
@@ -2408,7 +2509,8 @@
           "forme_liee": "velask",
           "definition": "Tenir son poste et garder la formation par sa propre volonté, pour la cause et non par soumission : la discipline de qui veille librement, l'armée d'astres où chacun tient sa lumière de lui-même.",
           "nuance": "vela (poste) + aska (libre, sacrée) = la veille LIBRE. Tranche avec l'obéissance servile (livrer son œil = corruption). ≠ konuvaru (faire mur, le geste) : velaska est la DISPOSITION morale. Canon : « chacun tient son poste librement… pour la cause, non par soumission ».",
-          "registre": "sacré"
+          "registre": "sacré",
+          "famille": "veille"
         }
       ],
       "synonymes_fr": [

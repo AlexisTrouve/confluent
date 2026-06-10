@@ -11,6 +11,14 @@
 const fs = require('fs');
 const path = require('path');
 const { preprocessNumbers } = require('../numbers/numberPreprocessor');
+const { getConceptMap } = require('./conceptMap');
+
+// En-tête de la carte des sens natifs injectée dans chaque prompt (cachée par le proxy).
+// POURQUOI : rendre le LLM CONSCIENT des déclinaisons (osiieku « montée en étoile »…) que le lookup
+// mot-à-mot rate ; c'est LUI qui fait le matching sémantique (prouvé : avec la carte il emploie osiieku/
+// aitameva/sukimil ; sans, il compose ou calque le français).
+const CARTE_HEADER = `# CARTE DES SENS NATIFS (déclinaisons du Confluent)
+Cette langue DÉCLINE finement certains concepts : un mot français peut correspondre à plusieurs formes natives selon la nuance (ex. « mort » → osiimuli cueillie / osiieku montée-en-étoile / osieva seconde-mort). Quand le SENS d'un passage correspond à l'une de ces nuances, EMPLOIE la forme dédiée au lieu de composer mot-à-mot ou de calquer le français ; appelle verify_word/lookup_concept pour sa définition et sa forme liée exactes. Format « famille : forme=glose ».`;
 
 /**
  * Charge le template de prompt de base depuis les fichiers
@@ -29,20 +37,27 @@ const { preprocessNumbers } = require('../numbers/numberPreprocessor');
 function loadBaseTemplate(variant) {
   const promptsDir = path.join(__dirname, '..', '..', '..', 'prompts');
 
+  // 1. Texte de base de l'ère (proto/ancien à l'identique ; mythologique = ancien + overlay sacré)
+  let template;
   if (variant === 'mythologique') {
     const base = fs.readFileSync(path.join(promptsDir, 'ancien-system.txt'), 'utf-8');
     const overlayPath = path.join(promptsDir, 'mythologique-system.txt');
     if (!fs.existsSync(overlayPath)) {
       throw new Error(`Template not found: ${overlayPath}`);
     }
-    return base + '\n\n' + fs.readFileSync(overlayPath, 'utf-8');
+    template = base + '\n\n' + fs.readFileSync(overlayPath, 'utf-8');
+  } else {
+    const templatePath = path.join(promptsDir, `${variant}-system.txt`);
+    if (!fs.existsSync(templatePath)) {
+      throw new Error(`Template not found: ${templatePath}`);
+    }
+    template = fs.readFileSync(templatePath, 'utf-8');
   }
 
-  const templatePath = path.join(promptsDir, `${variant}-system.txt`);
-  if (!fs.existsSync(templatePath)) {
-    throw new Error(`Template not found: ${templatePath}`);
-  }
-  return fs.readFileSync(templatePath, 'utf-8');
+  // 2. Carte des sens natifs (statique, cachée) — conscience des déclinaisons. Vide pour proto.
+  const carte = getConceptMap(variant);
+  if (carte) template += '\n\n' + CARTE_HEADER + '\n\n' + carte + '\n';
+  return template;
 }
 
 /**
