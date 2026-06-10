@@ -108,6 +108,149 @@
         }
       ],
       "synonymes_fr": ["discerner", "distinguer le vrai du faux", "démêler", "déceler", "comprendre"]
+    },
+    "veiller sans fermer l'oeil": {
+      "traductions": [
+        {
+          "confluent": "velakonu",
+          "type": "composition",
+          "composition": "vela-konu",
+          "racines": ["vela", "konu"],
+          "forme_liee": "velakon",
+          "sens_litteral": "garder par le Regard continu",
+          "domaine": "garde",
+          "champ": "Garde, Parole, Action (konu)",
+          "definition": "Garder en tenant l'œil ouvert sur la chose, sans jamais la lâcher du Regard — la Veille appliquée : nourrir le feu, écouter le noir, ne pas s'endormir sur ce qu'on garde. Quand l'œil faiblit, on passe la garde à un autre.",
+          "nuance": "vela (veille) + konu (garder). Garde par le REGARD CONTINU — pas la mise à l'abri (konusupu) ni la défense armée (konuvaru) : on ne soustrait rien, on ne combat personne, on regarde sans cesse. Échelle d'un foyer comme d'un peuple. Ancrage canon : la Veille (l'un veille pendant que les autres dorment, culte/la-veille) ; le clignement collectif.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["veiller", "veiller sur", "monter la garde", "surveiller", "garder"]
+    },
+    "garder en soustrayant": {
+      "traductions": [
+        {
+          "confluent": "konusupu",
+          "type": "composition",
+          "composition": "konu-supu",
+          "racines": ["konu", "supu"],
+          "forme_liee": "konusup",
+          "sens_litteral": "préserver en retirant du flux",
+          "domaine": "garde",
+          "champ": "Garde, Parole, Action (konu)",
+          "definition": "Préserver une chose en la retirant du regard et de l'usage commun pour qu'elle ne s'use ni ne se disperse — le dépôt mis à l'écart, la relique, la semence gardée dans le dedans. Protéger en abritant, non en surveillant.",
+          "nuance": "konu (garder) + supu (l'intérieur soustrait au regard). Inverse de velakonu : on garde EN SOUSTRAYANT (on ferme) là où velakonu garde en regardant (on ouvre l'œil). À distinguer de lupak (cacher pour tromper, le masque) : konusupu abrite (le voile), il ne ment pas. Ancrage canon : le voile abrite ≠ le masque ment ; la Montagne qui retient (le legs dans les Antres).",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["préserver", "conserver", "mettre à l'abri", "mettre en réserve", "garder"]
+    },
+    "tenir le bouclier": {
+      "traductions": [
+        {
+          "confluent": "konuvaru",
+          "type": "composition",
+          "composition": "konu-varu",
+          "racines": ["konu", "varu"],
+          "forme_liee": "konuvar",
+          "sens_litteral": "garder en faisant front",
+          "domaine": "garde",
+          "champ": "Garde, Parole, Action (konu)",
+          "definition": "Garder en faisant front contre une menace incarnée — tenir sa place dans la ligne, faire mur de son corps entre la faim et les siens. La garde quand il y a un ennemi en face.",
+          "nuance": "konu (garder) + varu (combat/guerre). À distinguer de zakam (défendre = l'acte martial ponctuel, repousser une attaque) : konuvaru est la POSTURE de garde tenue (le mur, la formation, le poste tenu dans la durée). Le canon distingue le mur tenu (héroïsme confluent) de la charge (orgueil) : konuvaru est le mur. Ancrage canon : la Grande Veille / le Mur ; défensif, jamais conquérant.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["défendre", "faire mur", "tenir un poste", "protéger contre une menace"]
+    },
+    "maintenir l'ordre transmis": {
+      "traductions": [
+        {
+          "confluent": "konuleku",
+          "type": "composition",
+          "composition": "konu-leku",
+          "racines": ["konu", "leku"],
+          "forme_liee": "konulek",
+          "sens_litteral": "garder une coutume à travers les générations",
+          "domaine": "garde",
+          "champ": "Garde, Parole, Action (konu)",
+          "definition": "Garder en transmettant intact ce qui doit passer aux générations — la coutume, la loi, le serment, la mémoire des morts. Garder, ici, c'est empêcher l'oubli d'une chose qui n'existe que tant qu'on la tient et la redit.",
+          "nuance": "konu (garder) + leku (loi/coutume). Là où velakonu garde une chose présente sous l'œil, konuleku garde une chose DANS LE TEMPS (la durée multi-générationnelle). Frère du domaine de la Montagne (le legs) et de morivosak (dire-en-transmettant). À ne pas confondre avec zakun (entreposer des biens) : ici l'immatériel-transmis. Ancrage canon : pilier CRÉER « rien ne se perd » ; devoir de mémoire.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["maintenir", "perpétuer", "préserver une coutume", "garder une tradition"]
+    },
+    "proférer ce qui tient": {
+      "traductions": [
+        {
+          "confluent": "savuvosak",
+          "type": "composition",
+          "composition": "savu-vosak",
+          "racines": ["savu", "vosak"],
+          "forme_liee": "savuvos",
+          "sens_litteral": "parole performative qui scelle",
+          "domaine": "parole",
+          "champ": "Garde, Parole, Action (vosak)",
+          "definition": "Dire une parole qui lie et fait exister : prononcer un serment, donner un nom, proférer la formule qui scelle. La parole n'y décrit pas — elle institue ; une fois dite, elle tient, et celui qui la rompt est parjure.",
+          "nuance": "savu (serment) + vosak (parler). Opposé du degré zéro vosak (parole qui passe et s'efface). C'est la parole-ACTE performative. À distinguer de savu (le serment-chose, le nom) : savuvosak est l'acte de le PROFÉRER. Pendant-parole de savunekan (accomplir le serment). Ancrage canon : nommer = arracher au Vide (culte/le-nom) ; le serment.",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": ["proférer", "jurer", "prononcer un serment", "nommer solennellement", "sceller par la parole"]
+    },
+    "dire en transmettant": {
+      "traductions": [
+        {
+          "confluent": "morivosak",
+          "type": "composition",
+          "composition": "mori-vosak",
+          "racines": ["mori", "vosak"],
+          "forme_liee": "morivos",
+          "sens_litteral": "dire pour faire durer en mémoire",
+          "domaine": "parole",
+          "champ": "Garde, Parole, Action (vosak)",
+          "definition": "Dire pour faire passer et garder : réciter la lignée, redire le savoir reçu, raconter les morts pour qu'on s'en souvienne. La parole y est un relais de mémoire — on parle afin que ce qui est dit demeure chez celui qui écoute.",
+          "nuance": "mori (mémoire) + vosak (parler). savuvosak INSTITUE (fait exister du neuf, lie) ; morivosak TRANSMET (fait durer de l'ancien, garde du Vide). Frère de konuleku (côté garde) et de kisun (transmettre le savoir) — mais morivosak est l'acte ORAL de redire-pour-tenir-en-mémoire. Ancrage canon : « tant qu'on te nomme tu tiens dans le Fleuve » ; veiller le creusé = tenir son nom.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["réciter", "transmettre oralement", "redire", "rapporter la lignée", "raconter pour mémoire"]
+    },
+    "taire": {
+      "traductions": [
+        {
+          "confluent": "zovosak",
+          "type": "verbe",
+          "racine": "zovosak",
+          "forme_liee": "zovosak",
+          "sens_litteral": "retenir volontairement une parole",
+          "domaine": "parole",
+          "champ": "Garde, Parole, Action (vosak)",
+          "definition": "Se taire volontairement, retenir une parole qu'on pourrait dire : garder le secret sacré, ne pas prononcer ce qui doit rester voilé. Non l'absence de parole (mutisme), mais le CHOIX de ne pas dire — un acte de garde.",
+          "nuance": "zo (négation) + vosak (parler), racine néologique. À distinguer de zovoki (le silence-état, « sans voix ») et de zoku (le secret-chose) : zovosak est l'ACTE de taire. Positif chez ce peuple (la parole retenue protège, comme le voile), à l'opposé du masque (mentir). Ancrage canon : le voile abrite ≠ le masque ment ; « le dire sans le dire » (le non-dit, pas l'interdit).",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["se taire", "celer", "garder le secret", "passer sous silence", "taire"]
+    },
+    "parachever le serment": {
+      "traductions": [
+        {
+          "confluent": "savunekan",
+          "type": "composition",
+          "composition": "savu-nekan",
+          "racines": ["savu", "nekan"],
+          "forme_liee": "savunek",
+          "sens_litteral": "accomplir une parole liante",
+          "domaine": "action",
+          "champ": "Garde, Parole, Action (gap accomplir)",
+          "definition": "Mener à son terme une parole liante : accomplir le serment, réaliser le vœu, parachever ce qui fut promis. Non pas faire du neuf (nekan), mais rendre réel ce qui attendait de l'être — l'acte qui clôt un serment ouvert et le tient.",
+          "nuance": "savu (serment) + nekan (œuvrer). nekan crée une œuvre NOUVELLE ; savunekan ACCOMPLIT une promesse déjà donnée (l'acte est commandé par le serment antérieur, pas par l'initiative). Pendant-action de savuvosak (l'un profère le serment, l'autre l'accomplit). Frontière franche avec tovak (simple reprise déictique d'un acte). Ancrage canon : pilier PORTER « nul ne veille à ta place » ; le parjure choit au Gouffre ; le Meiji.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["accomplir", "parachever", "tenir sa parole", "réaliser un vœu", "honorer un serment"]
     }
   }
 }
