@@ -142,6 +142,12 @@ Arbitrages restés OUVERTS (vision Alexi) : (1) *fait* — `mirieva` déclaré e
 origine ultime — **non tranché** (porte cosmogonique réservée) ; (3) consolidation `zakis`→`konu` — **non
 faite** (zakis/zakam laissés intacts ; les 4 sens natifs de konu ajoutés à côté).
 
+**Rebalance racine ↔ composition (juin 2026)** : pour ne pas faire QUE des compositions, 7 primitifs cardinaux
+re-forgés en **racines opaques** (le reste reste composition → vrai mix, ~1/3 racines) :
+`silituli→tuvina`, `siliveli→venaki`, `sekakota→motuna`, `silizo→lozeni`, `pakasili→kavuno`, `uramela→limava`,
+`èvatuli→èluva`. Les entrées par champ ci-dessus gardent les noms d'origine ; **les formes canoniques sont au
+lexique** (`32-sens-natifs.json` / `02-sens-natifs-sacres.json`). Re-vérifié (audit + npm test + live Opus).
+
 **Reste (hors périmètre vocab) :** grammaire (benefactif, copule définitionnelle), transcréation des chants
 en volume. Harnais de test behavioral : `ConfluentTranslator/scripts/test-trad.js`.
 

@@ -5,16 +5,16 @@
     "demeurer en s'effaçant": {
       "traductions": [
         {
-          "confluent": "èvatuli",
-          "type": "composition",
-          "composition": "èva-tuli",
-          "racines": ["èva", "tuli"],
-          "forme_liee": "èvatul",
+          "confluent": "èluva",
+          "type": "verbe",
+          "racine": "èluva",
+          "forme_liee": "èluv",
+          "note": "Racine OPAQUE sacrée (è activé) — pas une composition : le délavement-vers-le-Vide est un primitif cosmogonique, pas « Vide+demeurer » recollé.",
           "sens_litteral": "durer en se délavant vers l'oubli",
           "domaine": "cosmogonie",
           "champ": "Existence (tuli) — strate sacrée",
           "definition": "Durer matériellement tout en se délavant vers l'oubli — être présent mais non-tenu, glisser doucement vers le Vide sans qu'on s'en aperçoive. La chose qui subsiste pendant que son sens, son nom, se refondent dans l'indistinct.",
-          "nuance": "èva (le Vide) + tuli (demeurer). Exact contraire de silituli (demeurer-tenu-par-un-regard) : même verbe tuli, préfixé du Vide au lieu du regard. La Grande Fresque qui demeure visible mais MUETTE en est l'image. Forme sacrée (è activé) car elle nomme l'œuvre du Vide. Ancrage canon : « le Vide ne détruit rien : il dissout le sens, le soi, le nom ».",
+          "nuance": "Racine opaque sacrée (è = touche au Vide). Exact contraire de tuvina (demeurer-tenu-par-un-regard) : là où tuvina tient dans l'être, èluva laisse glisser au Vide. La Grande Fresque qui demeure visible mais MUETTE en est l'image. Ancrage canon : « le Vide ne détruit rien : il dissout le sens, le soi, le nom ».",
           "registre": "mythologique"
         }
       ],

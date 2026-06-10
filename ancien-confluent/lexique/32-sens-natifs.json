@@ -5,16 +5,16 @@
     "tenir dans le regard": {
       "traductions": [
         {
-          "confluent": "silituli",
-          "type": "composition",
-          "composition": "sili-tuli",
-          "racines": ["sili", "tuli"],
-          "forme_liee": "silitul",
-          "sens_litteral": "regard qui tient / demeurer tenu par le regard",
+          "confluent": "tuvina",
+          "type": "verbe",
+          "racine": "tuvina",
+          "forme_liee": "tuvin",
+          "note": "Racine OPAQUE (primitif natif cardinal) — pas une composition : ce concept est un atome de la pensée confluente, pas « regard+demeurer » recollé.",
+          "sens_litteral": "tenir une chose dans l'être par le regard / demeurer ainsi tenu",
           "domaine": "perception_existence",
           "champ": "Perception & Connaissance (mirak/tuli)",
           "definition": "Voir de telle façon que la chose est arrachée au Vide et maintenue dans l'être — et, en miroir, demeurer parce qu'on est vu, nommé, mémorisé. L'acte fondateur du Regard appliqué à une chose unique : la tenir dans l'existence (l'exact inverse d'oublier), comme on veille sur le creusé en étant son regard, comme l'ancêtre demeure tant qu'on le nomme.",
-          "nuance": "sili (regard) + tuli (demeurer/tenir). DEUX faces d'un même mot : tenir (voir-qui-fait-exister) ET être tenu (demeurer-mémorisé). À distinguer de mirak (percevoir, neutre = perception pure) : silituli n'est pas l'œil mais l'ACTE qui maintient dans l'être (charge ontologique). Distinct de milis (voir-pour-la-première-fois) et de vela/velak (la veille/guet). N'emploie QUE quand l'enjeu est faire-persister / arracher-au-Vide / mémoriser — jamais pour un simple « voir ». Ancrage canon : « voir, c'est arracher au Vide » ; la vertu = tenir un œil ouvert, le sien ou celui d'un autre.",
+          "nuance": "Racine opaque, primitif cardinal de la pensée confluente. DEUX faces : tenir (voir-qui-fait-exister) ET être tenu (demeurer-mémorisé). À distinguer de mirak (percevoir, neutre = perception pure) : tuvina n'est pas l'œil mais l'ACTE qui maintient dans l'être (charge ontologique). Distinct de milis (voir-1ʳᵉ-fois) et de vela/velak (la veille/guet). N'emploie QUE quand l'enjeu est faire-persister / arracher-au-Vide / mémoriser — jamais pour un simple « voir ». Pôle inverse : èluva (demeurer-en-s'effaçant). Ancrage canon : « voir, c'est arracher au Vide ».",
           "registre": "sacré"
         }
       ],
@@ -31,7 +31,7 @@
           "domaine": "perception_morale",
           "champ": "Perception & Connaissance (mirak)",
           "definition": "Voir sans tenir : poser les yeux sur une chose et la laisser retomber au Vide ; la perception distraite, le coup d'œil qui n'inscrit rien et abandonne ce qu'il voit à l'oubli. Une faute morale (l'œil baissé), pas un simple défaut d'attention.",
-          "nuance": "Racine néologique mira (voir) + èva (le Vide) — déclarée en ancien car la faute « laisser glisser au Vide » est ORDINAIRE (le vice de la multitude), pas réservée au sacré. Exact négatif de silituli (regard-qui-tient). À distinguer de mirak (perception neutre, sans charge) : mirieva est mirak chargé négativement par l'orientation-Vide. Ancrage canon : « oublier, c'est laisser le Vide reprendre » ; le vice par défaut = se laisser à l'oubli, l'œil baissé.",
+          "nuance": "Racine néologique mira (voir) + èva (le Vide) — déclarée en ancien car la faute « laisser glisser au Vide » est ORDINAIRE (le vice de la multitude), pas réservée au sacré. Exact négatif de tuvina (regard-qui-tient). À distinguer de mirak (perception neutre, sans charge) : mirieva est mirak chargé négativement par l'orientation-Vide. Ancrage canon : « oublier, c'est laisser le Vide reprendre » ; le vice par défaut = se laisser à l'oubli, l'œil baissé.",
           "registre": "courant"
         }
       ],
@@ -76,16 +76,16 @@
     "connaissance par la rencontre": {
       "traductions": [
         {
-          "confluent": "sekakota",
-          "type": "composition",
-          "composition": "seka-kota",
-          "racines": ["seka", "kota"],
-          "forme_liee": "sekakot",
+          "confluent": "motuna",
+          "type": "verbe",
+          "racine": "motuna",
+          "forme_liee": "motun",
+          "note": "Racine OPAQUE (primitif natif) — le connaître-relationnel est un atome, pas « savoir+confluence » recollé.",
           "sens_litteral": "connaître par l'avoir-côtoyé",
           "domaine": "connaissance",
           "champ": "Perception & Connaissance (sekam/silumi)",
           "definition": "Connaître un être, un lieu, un ancêtre pour l'avoir côtoyé — le savoir né de la rencontre et du mélange, non de l'étude. Le cognoscere/conocer que le français a perdu : une petite confluence des êtres.",
-          "nuance": "seka (savoir) + kota (union/rencontre/confluence). À distinguer de sekam (savoir-contenu, abstrait et transmissible) : sekakota est RELATIONNEL et NON transmissible (on ne peut pas donner à un autre d'avoir connu quelqu'un). À distinguer de silumi (saisir un SENS) : ici on connaît un être/lieu, pas une signification. Ancrage canon : la confluence (deux rivières mêlées) ; on absorbe l'Autre par la rencontre (parenté déchue).",
+          "nuance": "Racine opaque (le cognoscere/conocer perdu du français). À distinguer de sekam (savoir-contenu, abstrait et transmissible) : motuna est RELATIONNEL et NON transmissible (on ne peut pas donner à un autre d'avoir connu quelqu'un). À distinguer de silumi (saisir un SENS) : ici on connaît un être/lieu, pas une signification. Ancrage canon : la confluence (deux rivières mêlées) ; on absorbe l'Autre par la rencontre (parenté déchue).",
           "registre": "courant"
         }
       ],
@@ -94,16 +94,16 @@
     "discernement": {
       "traductions": [
         {
-          "confluent": "siliveli",
-          "type": "composition",
-          "composition": "sili-veli",
-          "racines": ["sili", "veli"],
-          "forme_liee": "silivel",
-          "sens_litteral": "le regard du vrai, qui sépare",
+          "confluent": "venaki",
+          "type": "verbe",
+          "racine": "venaki",
+          "forme_liee": "venak",
+          "note": "Racine OPAQUE (primitif natif) — le discernement est un atome, pas « regard+vrai » recollé.",
+          "sens_litteral": "trancher le vrai du faux, voir-vrai sous le masque",
           "domaine": "connaissance",
           "champ": "Perception & Connaissance (sekam/silumi)",
           "definition": "Trancher le vrai du faux, distinguer ce qui tient de ce qui retombe au Vide — voir-vrai sous le masque, séparer le sacré du profane, l'authentique du contrefait. Le Regard appliqué comme une lame.",
-          "nuance": "sili (regard) + veli (vrai) = « le regard du vrai ». À distinguer de sekam (détenir un savoir) : siliveli ne détient rien, il SÉPARE (acte de jugement perceptif). À distinguer de velim (arbitrer un différend, justice sociale) : siliveli tranche entre vrai et faux/masque (épistémique-cosmologique), pas entre personnes. Ancrage canon : le Regard = « distinguer l'indistinct » ; « voir vrai » contre le masque qui « mange le sens ».",
+          "nuance": "Racine opaque. À distinguer de sekam (détenir un savoir) : venaki ne détient rien, il SÉPARE (acte de jugement perceptif). À distinguer de velim (arbitrer un différend, justice sociale) : venaki tranche entre vrai et faux/masque (épistémique-cosmologique), pas entre personnes. Ancrage canon : le Regard = « distinguer l'indistinct » ; « voir vrai » contre le masque qui « mange le sens ».",
           "registre": "sacré"
         }
       ],
@@ -327,16 +327,16 @@
     "refus de voir": {
       "traductions": [
         {
-          "confluent": "silizo",
-          "type": "composition",
-          "composition": "sili-zo",
-          "racines": ["sili", "zo"],
-          "forme_liee": "siliz",
-          "sens_litteral": "le non-regard volontaire",
+          "confluent": "lozeni",
+          "type": "verbe",
+          "racine": "lozeni",
+          "forme_liee": "lozen",
+          "note": "Racine OPAQUE (primitif natif) — le vice cardinal a son propre mot, pas « regard+négation » recollé.",
+          "sens_litteral": "fermer volontairement son œil, refuser de voir",
           "domaine": "mal",
           "champ": "Mal (taku)",
           "definition": "Fermer volontairement son œil, refuser de voir ce qu'on pourrait voir ; le vice cardinal propre au peuple — « cesser de veiller quand on le pouvait ».",
-          "nuance": "sili (regard) + zo (négation). À distinguer de takusili (l'objet opaque, PASSIF) : silizo est l'acte ACTIF du sujet qui s'aveugle. C'est la FAUTE, là où le creusé (victime du Vide) appelle compassion. Ancrage canon : « la faute, c'est cesser de veiller quand on le pouvait » ; l'œil fermé qui dort sa garde.",
+          "nuance": "Racine opaque, le vice cardinal du peuple. À distinguer de takusili (l'objet opaque, PASSIF) : lozeni est l'acte ACTIF du sujet qui s'aveugle. C'est la FAUTE, là où le creusé (victime du Vide) appelle compassion. Ancrage canon : « la faute, c'est cesser de veiller quand on le pouvait » ; l'œil fermé qui dort sa garde.",
           "registre": "courant"
         }
       ],
@@ -345,16 +345,16 @@
     "infamie": {
       "traductions": [
         {
-          "confluent": "pakasili",
-          "type": "composition",
-          "composition": "paka-sili",
-          "racines": ["paka", "sili"],
-          "forme_liee": "pakasil",
-          "sens_litteral": "le retranché du Regard",
+          "confluent": "kavuno",
+          "type": "nom",
+          "racine": "kavuno",
+          "forme_liee": "kavun",
+          "note": "Racine OPAQUE (primitif natif) — l'infamie est un état atomique, pas « honte+regard » recollé.",
+          "sens_litteral": "le retranché du Regard, l'indigne d'être vu",
           "domaine": "honneur",
           "champ": "Honte & Souillure (paka)",
           "definition": "L'indignité constitutive : cesser d'être digne d'être vu, être retranché du Regard Partagé ; une mort sociale, un glissement vers le Vide.",
-          "nuance": "paka (honte) + sili (regard). À distinguer de paka noyau (la honte SUBIE, ponctuelle — baisser le front sous un regard) : pakasili est l'état DURABLE d'exclusion du Regard collectif, l'avant-goût social de la Seconde Mort. Culture de la honte (le regard d'autrui), pas de la culpabilité (for intérieur). Ancrage canon : l'honneur = le Regard ; oublié → Vide.",
+          "nuance": "Racine opaque. À distinguer de paka (la honte SUBIE, ponctuelle — baisser le front sous un regard) : kavuno est l'état DURABLE d'exclusion du Regard collectif, l'avant-goût social de la Seconde Mort. Culture de la honte (le regard d'autrui), pas de la culpabilité (for intérieur). Ancrage canon : l'honneur = le Regard ; oublié → Vide.",
           "registre": "courant"
         }
       ],
@@ -372,7 +372,7 @@
           "domaine": "honneur",
           "champ": "Honte & Souillure (paka)",
           "definition": "Le déshonneur ACTIF : frapper au gourdin, prédater, agir sans le Regard qui distingue l'humain — la régression sous l'humain.",
-          "nuance": "besi (bête) + nekan (œuvrer/agir). À distinguer de pakasili (un ÉTAT subi d'exclusion) : besinekan est un ACTE qu'on pose. C'est le rejet n°4 du canon (la violence bestiale), distinct de la honte-événement. Ancrage canon : « agir comme une bête, sans le Regard » ; rouer de coups = déshonorant.",
+          "nuance": "besi (bête) + nekan (œuvrer/agir). À distinguer de kavuno (un ÉTAT subi d'exclusion) : besinekan est un ACTE qu'on pose. C'est le rejet n°4 du canon (la violence bestiale), distinct de la honte-événement. Ancrage canon : « agir comme une bête, sans le Regard » ; rouer de coups = déshonorant.",
           "registre": "courant"
         }
       ],
@@ -390,7 +390,7 @@
           "domaine": "souillure",
           "champ": "Honte & Souillure (selu)",
           "definition": "Ce qui contamine et interdit l'accès au sacré (la Veille, le serment) avant purification ; l'impureté qui barre le Regard sacré.",
-          "nuance": "selu (souillé) + vela (la Veille/le sacré). À distinguer de selu (eau saumâtre, physique) : seluvela est l'impureté RITUELLE — l'axe sacré/profane, absent de selu seul. Levée par purification (l'eau-vive, uramela). Ancrage canon : l'éclat souillé ne peut plus monter, choit au Gouffre (rite-de-la-mort).",
+          "nuance": "selu (souillé) + vela (la Veille/le sacré). À distinguer de selu (eau saumâtre, physique) : seluvela est l'impureté RITUELLE — l'axe sacré/profane, absent de selu seul. Levée par purification (l'eau-vive, limava). Ancrage canon : l'éclat souillé ne peut plus monter, choit au Gouffre (rite-de-la-mort).",
           "registre": "rituel"
         }
       ],
@@ -417,16 +417,16 @@
     "eau vive": {
       "traductions": [
         {
-          "confluent": "uramela",
-          "type": "composition",
-          "composition": "ura-mela",
-          "racines": ["ura", "mela"],
-          "forme_liee": "uramel",
-          "sens_litteral": "l'eau de dégel qui vit et se mêle",
+          "confluent": "limava",
+          "type": "nom",
+          "racine": "limava",
+          "forme_liee": "limav",
+          "note": "Racine OPAQUE (primitif natif) — la pureté/eau-vive est un atome, pas « eau+dégel » recollé.",
+          "sens_litteral": "l'eau vivante qui coule et se mêle, le pur",
           "domaine": "purete",
           "champ": "Honte & Souillure (selu — pivot pur)",
           "definition": "L'eau vivante qui coule et se mêle purement ; l'opposé fondateur de la souillure — la confluence accomplie, le pur.",
-          "nuance": "ura (eau) + mela (dégel/fonte). Contre-pôle de selu (eau croupie/saumâtre = la confluence niée). Sans ce pivot pur, « souillé » n'a pas de relief natif. Sert aussi de pôle « propreté rituelle » (ce qui lève la seluvela). Ancrage canon : la Rivière naît du soleil qui fait fondre les neiges → l'eau qui descend, vit, se mêle vers la Confluence.",
+          "nuance": "Racine opaque, le pivot PUR du champ. Contre-pôle de selu (eau croupie/saumâtre = la confluence niée). Sans ce pivot pur, « souillé » n'a pas de relief natif. Sert aussi de pôle « propreté rituelle » (ce qui lève la seluvela). Ancrage canon : la Rivière naît du soleil qui fait fondre les neiges → l'eau qui descend, vit, se mêle vers la Confluence.",
           "registre": "courant"
         }
       ],
@@ -588,7 +588,7 @@
           "domaine": "existence",
           "champ": "Existence (tuli)",
           "definition": "Se fixer au sol, habiter durablement un lieu, la sédentarité d'une lignée attachée à sa terre. Le « demeurer » qui prend racine dans la toka (le sol).",
-          "nuance": "toka (sol) + tuli (demeurer). vs silituli (tenu par un regard, immatériel) : ici c'est la TERRE qui tient, pas le regard — le mode de la Montagne (l'ancré, le socle). Recouvre « habiter » au sens fort de s'établir. vs tisatuli (présence ponctuelle). Ancrage canon : la Montagne, l'Ancré, le Pilier ; la sédentarisation de la Confluence.",
+          "nuance": "toka (sol) + tuli (demeurer). vs tuvina (tenu par un regard, immatériel) : ici c'est la TERRE qui tient, pas le regard — le mode de la Montagne (l'ancré, le socle). Recouvre « habiter » au sens fort de s'établir. vs tisatuli (présence ponctuelle). Ancrage canon : la Montagne, l'Ancré, le Pilier ; la sédentarisation de la Confluence.",
           "registre": "courant"
         }
       ],
@@ -606,7 +606,7 @@
           "domaine": "existence",
           "champ": "Existence (tuli)",
           "definition": "L'état ponctuel d'être présent maintenant, copule de localisation sans charge de durée — « il est là », « se trouver à ».",
-          "nuance": "tisa (ici/présent) + tuli (demeurer). Le degré zéro temporel : ni tenu (silituli), ni délavé (èvatuli), ni enraciné (tokituli) — juste là, à l'instant. Pour le simple « rester sur place » un moment. Ancrage canon : tisa fusionne ici/présent ; extension spatio-temporelle native de l'état.",
+          "nuance": "tisa (ici/présent) + tuli (demeurer). Le degré zéro temporel : ni tenu (tuvina), ni délavé (èluva), ni enraciné (tokituli) — juste là, à l'instant. Pour le simple « rester sur place » un moment. Ancrage canon : tisa fusionne ici/présent ; extension spatio-temporelle native de l'état.",
           "registre": "courant"
         }
       ],

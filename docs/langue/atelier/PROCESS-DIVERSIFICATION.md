@@ -57,6 +57,14 @@ l'inventaire, réévalués à la lumière du canon). Pour chaque sens retenu : i
 
 **c. FORGER les formes** — racines/compositions pour les sens retenus, avec les **garanties déterministes**
 (§2). Style : finno-basque/japonisant, pas elfique/latin ; y/é/è réservés au sacré (mythologique).
+> ⚖️ **MIX racine ↔ composition (règle).** Un concept **primitif cardinal** (un atome de la pensée
+> confluente, qu'on ne « sent » pas comme A+B) → **racine OPAQUE** (ex. `tuvina` = tenir-dans-l'être par le
+> regard, PAS `sili+tuli`). Un concept **vraiment analytique** (« X de/par Y ») → **composition** (ex.
+> `vukuteki` = aller+Gouffre = pèlerinage). ⚠️ Le piège : `check-form` valide *plus facilement* une composition
+> (elle se décompose en racines déclarées) qu'une racine neuve (« non reconnu » — mais tout aussi valide :
+> il lui faut juste gate + zéro collision). NE PAS se laisser pousser au tout-composition par ce biais : viser
+> un vrai mix (~1/3 racines visé). Une racine neuve = une racine `check-form` ✅ + un `type: verbe/nom` + une
+> `note` de provenance ; pas de champ `composition`/`racines`.
 
 **d. ÉCRIRE les définitions** — chaque sens reçoit une **définition** (QUOI + nuance + **ce qui le distingue
 des voisins** + ancrage canon). ⚠️ **La définition n'est pas du décor : c'est ELLE qui arme l'IA pour choisir**
@@ -107,6 +115,8 @@ une **glose courte (~80 car.)** → l'IA ne verrait pas les nuances. À faire **
 - ❌ **Sur-diversifier** : ne pas casser les vrais synonymes ni les frontières déjà actées. Trancher = trier.
 - ❌ **Forme sans définition** : un sens natif sans définition claire est inutile (l'IA ne pourra pas choisir).
 - ❌ **Faire confiance à l'agent sur parole** : toute forme passe les garanties §2 ; tout est vérifié.
+- ❌ **Tout-composition** : un primitif cardinal mérite une RACINE OPAQUE (atome de pensée), pas un compound
+  transparent (`sili+tuli` ≈ glose française recollée). Viser un MIX racines/compositions (cf. §1.c).
 - L'IA décide grounded-in-canon ; Alexi garde le veto sur la vision (souverain, pas micro-décideur).
 
 ---
