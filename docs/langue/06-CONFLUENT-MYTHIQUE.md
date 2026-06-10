@@ -136,7 +136,7 @@ Détail : voir l'architecture du traducteur dans `../../CLAUDE.md` et `../../Con
 forge de noms + bénédiction ; transcréations de préceptes prouvées (gate vert).
 
 **En cours / à venir :**
-1. **Diversifier le vocab** (§3) — créer les sens natifs uniques sur les mots-tiroir (le carburant). 🗺️ **Inventaire fait** (cartographie des mots-tiroir + champ FR ancien/noble/sacré + distinctions natives candidates) : `atelier/INVENTAIRE-MOTS-TIROIR.md`. Reste la phase FIX (trancher + forger).
+1. **Diversifier le vocab** (§3) — créer les sens natifs uniques sur les mots-tiroir (le carburant). 🗺️ **Inventaire fait** (cartographie + champ FR ancien/noble/sacré + distinctions candidates) : `atelier/INVENTAIRE-MOTS-TIROIR.md`. **Méthode de la phase FIX** (grounded-in-canon, boucle par champ, garanties) : `atelier/PROCESS-DIVERSIFICATION.md`.
 2. **Enrichir la traduction mythique** (§4) — surfacer les options + définitions à l'agent.
 3. **Grammaire** — devices natifs pour le benefactif (« à ta place »), la copule définitionnelle (« X c'est Y »).
 4. **Transcréer les chants** en volume dans cette strate.
