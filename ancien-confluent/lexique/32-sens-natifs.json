@@ -251,6 +251,330 @@
         }
       ],
       "synonymes_fr": ["accomplir", "parachever", "tenir sa parole", "réaliser un vœu", "honorer un serment"]
+    },
+    "adversaire qu'on affronte": {
+      "traductions": [
+        {
+          "confluent": "zokasili",
+          "type": "composition",
+          "composition": "zoka-sili",
+          "racines": ["zoka", "sili"],
+          "forme_liee": "zokasil",
+          "sens_litteral": "l'ennemi tenu dans le Regard",
+          "domaine": "antagonisme",
+          "champ": "Mal & Antagonisme (zoka)",
+          "definition": "L'ennemi qu'on affronte de face, qu'on tient dans le Regard et combat dignement ; l'adversaire qui se laisse voir.",
+          "nuance": "zoka (ennemi) + sili (regard). À distinguer de mukazoka (qui se cache derrière le masque) : le zokasili a le visage ouvert, c'est un vrai ennemi honorable. L'« Autre »-neutre reste tova/ota ; le mal-cosmique reste èva. Ancrage canon : « l'anti-masque = le visage ouvert » ; on combat à découvert (le Mur, pas la traîtrise).",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["ennemi", "adversaire", "ennemi déclaré"]
+    },
+    "malveillance qui ronge": {
+      "traductions": [
+        {
+          "confluent": "mukazoka",
+          "type": "composition",
+          "composition": "muka-zoka",
+          "racines": ["muka", "zoka"],
+          "forme_liee": "mukazok",
+          "sens_litteral": "l'ennemi masqué qui ment",
+          "domaine": "antagonisme",
+          "champ": "Mal & Antagonisme (zoka)",
+          "definition": "L'hostilité froide qui agit cachée, par le mensonge et la duperie ; le corrupteur masqué qui « mange le sens » de sa victime au lieu de l'affronter.",
+          "nuance": "muka (masque/visage faux) + zoka (ennemi). À distinguer de zokasili (ennemi à découvert) : ici l'ennemi MENT, il porte le masque — arme reine du Vide entre les hommes, hostilité parente du Vide (défait sans se montrer). Ancrage canon : « le masque en assassine un » ; le masque = le signe-roi de l'ennemi.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["malveillant", "hostile", "sournois", "corrupteur", "perfide"]
+    },
+    "félon": {
+      "traductions": [
+        {
+          "confluent": "savuzoka",
+          "type": "composition",
+          "composition": "savu-zoka",
+          "racines": ["savu", "zoka"],
+          "forme_liee": "savuzok",
+          "sens_litteral": "l'ennemi qui rompt le serment",
+          "domaine": "antagonisme",
+          "champ": "Mal & Antagonisme (zoka)",
+          "definition": "L'ennemi intérieur qui rompt un serment déjà scellé ; le parjure, celui qui brise le Regard Partagé après l'avoir juré.",
+          "nuance": "savu (serment) + zoka (ennemi). À distinguer de mukazoka (étranger qui ment) : le savuzoka était des NÔTRES — sa trahison porte la charge maximale, il défait un lien sacré. À distinguer de èva (le Vide impersonnel) : une personne qui a choisi de trahir. Ancrage canon : la parole brisée ; le parjure choit au Gouffre (mal-mort).",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": ["traître", "parjure", "renégat", "félon", "déloyal"]
+    },
+    "obscur qui se dérobe au regard": {
+      "traductions": [
+        {
+          "confluent": "takusili",
+          "type": "composition",
+          "composition": "taku-sili",
+          "racines": ["taku", "sili"],
+          "forme_liee": "takusil",
+          "sens_litteral": "le mauvais-au-regard, qui se dérobe",
+          "domaine": "mal",
+          "champ": "Mal (taku)",
+          "definition": "Ce qui résiste à être vu, opaque au Regard, illisible ; les prémices du Vide — non une couleur, mais le refus d'une chose à se laisser distinguer.",
+          "nuance": "taku (mauvais) + sili (regard). À distinguer de kumu/kate (obscurité/teinte PHYSIQUES, neutres : les Enfants des Échos vivent sous terre, pâles, pas « mauvais ») : takusili est l'opacité MORALE, le mal-comme-illisibilité. Ancrage canon : le Regard = « distinguer l'indistinct » ; le Vide refond dans l'indistinct ce que le Regard distinguait.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["mauvais", "mal", "néfaste", "obscur (moral)", "sinistre"]
+    },
+    "refus de voir": {
+      "traductions": [
+        {
+          "confluent": "silizo",
+          "type": "composition",
+          "composition": "sili-zo",
+          "racines": ["sili", "zo"],
+          "forme_liee": "siliz",
+          "sens_litteral": "le non-regard volontaire",
+          "domaine": "mal",
+          "champ": "Mal (taku)",
+          "definition": "Fermer volontairement son œil, refuser de voir ce qu'on pourrait voir ; le vice cardinal propre au peuple — « cesser de veiller quand on le pouvait ».",
+          "nuance": "sili (regard) + zo (négation). À distinguer de takusili (l'objet opaque, PASSIF) : silizo est l'acte ACTIF du sujet qui s'aveugle. C'est la FAUTE, là où le creusé (victime du Vide) appelle compassion. Ancrage canon : « la faute, c'est cesser de veiller quand on le pouvait » ; l'œil fermé qui dort sa garde.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["aveuglement", "refus de voir", "cécité volontaire", "déni"]
+    },
+    "infamie": {
+      "traductions": [
+        {
+          "confluent": "pakasili",
+          "type": "composition",
+          "composition": "paka-sili",
+          "racines": ["paka", "sili"],
+          "forme_liee": "pakasil",
+          "sens_litteral": "le retranché du Regard",
+          "domaine": "honneur",
+          "champ": "Honte & Souillure (paka)",
+          "definition": "L'indignité constitutive : cesser d'être digne d'être vu, être retranché du Regard Partagé ; une mort sociale, un glissement vers le Vide.",
+          "nuance": "paka (honte) + sili (regard). À distinguer de paka noyau (la honte SUBIE, ponctuelle — baisser le front sous un regard) : pakasili est l'état DURABLE d'exclusion du Regard collectif, l'avant-goût social de la Seconde Mort. Culture de la honte (le regard d'autrui), pas de la culpabilité (for intérieur). Ancrage canon : l'honneur = le Regard ; oublié → Vide.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["infâme", "indigne", "déshonoré", "déchu", "réprouvé"]
+    },
+    "agir comme une bête": {
+      "traductions": [
+        {
+          "confluent": "besinekan",
+          "type": "composition",
+          "composition": "besi-nekan",
+          "racines": ["besi", "nekan"],
+          "forme_liee": "besinek",
+          "sens_litteral": "œuvrer comme une bête, sans le Regard",
+          "domaine": "honneur",
+          "champ": "Honte & Souillure (paka)",
+          "definition": "Le déshonneur ACTIF : frapper au gourdin, prédater, agir sans le Regard qui distingue l'humain — la régression sous l'humain.",
+          "nuance": "besi (bête) + nekan (œuvrer/agir). À distinguer de pakasili (un ÉTAT subi d'exclusion) : besinekan est un ACTE qu'on pose. C'est le rejet n°4 du canon (la violence bestiale), distinct de la honte-événement. Ancrage canon : « agir comme une bête, sans le Regard » ; rouer de coups = déshonorant.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["brutalité", "violence bestiale", "sauvagerie", "déshonneur (acte)"]
+    },
+    "souillure rituelle": {
+      "traductions": [
+        {
+          "confluent": "seluvela",
+          "type": "composition",
+          "composition": "selu-vela",
+          "racines": ["selu", "vela"],
+          "forme_liee": "seluvel",
+          "sens_litteral": "souillé au regard de la Veille",
+          "domaine": "souillure",
+          "champ": "Honte & Souillure (selu)",
+          "definition": "Ce qui contamine et interdit l'accès au sacré (la Veille, le serment) avant purification ; l'impureté qui barre le Regard sacré.",
+          "nuance": "selu (souillé) + vela (la Veille/le sacré). À distinguer de selu (eau saumâtre, physique) : seluvela est l'impureté RITUELLE — l'axe sacré/profane, absent de selu seul. Levée par purification (l'eau-vive, uramela). Ancrage canon : l'éclat souillé ne peut plus monter, choit au Gouffre (rite-de-la-mort).",
+          "registre": "rituel"
+        }
+      ],
+      "synonymes_fr": ["impur", "souillé", "profané", "contaminé", "immonde"]
+    },
+    "crasse": {
+      "traductions": [
+        {
+          "confluent": "selukumu",
+          "type": "composition",
+          "composition": "selu-kumu",
+          "racines": ["selu", "kumu"],
+          "forme_liee": "selukum",
+          "sens_litteral": "saleté physique ordinaire",
+          "domaine": "souillure",
+          "champ": "Honte & Souillure (selu)",
+          "definition": "La saleté physique ordinaire, neutre, qu'un lavage ôte ; le degré bas, sans charge rituelle.",
+          "nuance": "selu (souillé) + kumu (sombre-physique, neutre). À distinguer de seluvela (impureté qui exclut du sacré) et de selu (eau morte/saumâtre) : selukumu est la crasse TRIVIALE, le pôle bas qui donne son sens aux pôles hauts. Ancrage canon : le sombre/sale physique est neutre (Enfants des Échos pâles, pas mauvais).",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["sale", "crasseux", "malpropre", "crasse", "sali"]
+    },
+    "eau vive": {
+      "traductions": [
+        {
+          "confluent": "uramela",
+          "type": "composition",
+          "composition": "ura-mela",
+          "racines": ["ura", "mela"],
+          "forme_liee": "uramel",
+          "sens_litteral": "l'eau de dégel qui vit et se mêle",
+          "domaine": "purete",
+          "champ": "Honte & Souillure (selu — pivot pur)",
+          "definition": "L'eau vivante qui coule et se mêle purement ; l'opposé fondateur de la souillure — la confluence accomplie, le pur.",
+          "nuance": "ura (eau) + mela (dégel/fonte). Contre-pôle de selu (eau croupie/saumâtre = la confluence niée). Sans ce pivot pur, « souillé » n'a pas de relief natif. Sert aussi de pôle « propreté rituelle » (ce qui lève la seluvela). Ancrage canon : la Rivière naît du soleil qui fait fondre les neiges → l'eau qui descend, vit, se mêle vers la Confluence.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["pur", "eau vive", "limpide", "propre (rituellement)"]
+    },
+    "meneur qui voit loin": {
+      "traductions": [
+        {
+          "confluent": "silikasi",
+          "type": "composition",
+          "composition": "sili-kasi",
+          "racines": ["sili", "kasi"],
+          "forme_liee": "silikas",
+          "sens_litteral": "le chef-par-le-regard",
+          "domaine": "pouvoir",
+          "champ": "Corps-pouvoir (kasi)",
+          "definition": "Le chef en tant qu'il VOIT loin et fait voir : il porte le regard en avant pour ceux qui ne voient pas encore, éclaire la route contre le Vide.",
+          "nuance": "sili (regard) + kasi (tête/chef). Légitimité par le REGARD (veille active, tournée vers l'avant) — vs makokasi (légitimité par le rang/grandeur) et kasiuaita (par l'antériorité). La fusion native tête-organe↔chef (kasi) reste entière. Ancrage canon : « diriger = voir loin et faire voir » ; l'Éveilleur ; l'humilité imposée à qui voit le plus loin.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["chef", "guide", "meneur", "capitaine", "dirigeant"]
+    },
+    "aîné qui guide": {
+      "traductions": [
+        {
+          "confluent": "kasiuaita",
+          "type": "composition",
+          "composition": "kasi-u-aita",
+          "racines": ["kasi", "aita"],
+          "forme_liee": "kasiuait",
+          "sens_litteral": "celui qui a vu avant",
+          "domaine": "pouvoir",
+          "champ": "Corps-pouvoir (kasi)",
+          "definition": "Celui dont l'autorité vient de l'ANTÉRIORITÉ du regard et de la mémoire accumulée — « il a vu avant ». L'aîné comme guide-mémoire, gardien de ce qui fut transmis.",
+          "nuance": "kasi (chef) + aita (ancêtre/antériorité). Ancre l'autorité dans le TEMPS/la mémoire (vs silikasi le regard-porté-en-avant, vs makokasi le rang). À distinguer de aitatori (l'aîné comme personne/rôle social) : kasiuaita est l'aîné en tant qu'il MÈNE par son antériorité. Ancrage canon : l'aîné = celui qui a vu avant ; « la pierre se souvient ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["aîné", "ancien", "doyen", "aïeul guide"]
+    },
+    "repas partagé": {
+      "traductions": [
+        {
+          "confluent": "kotamuki",
+          "type": "composition",
+          "composition": "kota-muki",
+          "racines": ["kota", "muki"],
+          "forme_liee": "kotamuk",
+          "sens_litteral": "manger-ensemble, la confluence des êtres",
+          "domaine": "nourriture",
+          "champ": "Nourriture (nutu/muki)",
+          "definition": "Le repas pris ensemble comme petite confluence des êtres : la table partagée, la communion par la nourriture, où l'on se lie et où passe la mémoire des aïeux.",
+          "nuance": "kota (confluence/union) + muki (manger). Ce n'est PAS la nutrition (besoin = nutu, la substance qui comble muta=faim ; muki/mukis = l'acte de manger) mais l'UNION/transmission — d'où kota en tête. Gap réel que ni « manger » ni « repas » FR ne portent. Ancrage canon : « on mange la soupe de nos morts » (le-repas-du-foyer) ; rien ne se perd.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["repas", "festin", "banquet", "manger ensemble", "communion", "repas partagé"]
+    },
+    "glyphe-mémoire": {
+      "traductions": [
+        {
+          "confluent": "kovamori",
+          "type": "composition",
+          "composition": "kova-mori",
+          "racines": ["kova", "mori"],
+          "forme_liee": "kovamor",
+          "sens_litteral": "image-mémoire, signe qui sauve du Vide",
+          "domaine": "ecriture",
+          "champ": "Image & Écriture (kova)",
+          "definition": "Le glyphe comme mémoire rendue visible : signe lisible délibérément posé pour qu'une chose persiste, l'écriture comme arme contre le Vide.",
+          "nuance": "kova (image) + mori (mémoire). Clivage cardinal du champ : image-qui-TRANSMET/SAUVE vs image-qui-MONTRE (kova ordinaire). kovamori = le signe lisible/codé qui sauve, vs Ekakova (la Grande Fresque, narration collective) et silikova (l'effigie, un regard fixé). Distinct de kovasili (idéoglyphes, déjà pris). Ancrage canon : « les glyphes = la grande arme contre le Vide » (le-symbole).",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["glyphe", "écriture", "signe gravé", "lettre", "caractère"]
+    },
+    "effigie": {
+      "traductions": [
+        {
+          "confluent": "silikova",
+          "type": "composition",
+          "composition": "sili-kova",
+          "racines": ["sili", "kova"],
+          "forme_liee": "silikov",
+          "sens_litteral": "l'image qui porte/fixe un regard",
+          "domaine": "image",
+          "champ": "Image & Écriture (kova)",
+          "definition": "L'image qui retient le regard d'un absent et le maintient hors du Vide : portrait, icône, visage gardé de celui qui n'est plus.",
+          "nuance": "sili (regard) + kova (image) = l'image porteuse d'un regard (un absent qui regarde encore). vs Ekakova (narration collective) et kovamori (signe lisible) : silikova sauve un ÊTRE singulier du Vide par la mémoire. À distinguer de kovasili (idéoglyphes, ordre inverse, déjà pris). Ancrage canon : « le souvenir te maintient au ciel » ; « la pierre garde son nom » (mémoriaux).",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["portrait", "effigie", "icône", "image d'un absent"]
+    },
+    "suivre l'eau": {
+      "traductions": [
+        {
+          "confluent": "urateki",
+          "type": "composition",
+          "composition": "ura-teki",
+          "racines": ["ura", "teki"],
+          "forme_liee": "uratek",
+          "sens_litteral": "se mouvoir en épousant la rivière",
+          "domaine": "mouvement",
+          "champ": "Mouvement (tekis)",
+          "definition": "Se mouvoir en épousant l'eau, suivre ou remonter la rivière ; le déplacement pensé par le fil de l'eau plutôt que par la route.",
+          "nuance": "ura (eau) + teki (aller). Un peuple-rivière pense le mouvement par l'EAU, pas par la voie terrestre — sens que « aller » FR n'a pas. vs uraki (naviguer EN embarcation) : urateki = aller LE LONG de / avec l'eau. vs teki (aller neutre, degré zéro). Ancrage canon : « allez où va l'eau » (chant-02) ; la Confluence.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["suivre la rivière", "remonter le courant", "longer l'eau"]
+    },
+    "pèlerinage": {
+      "traductions": [
+        {
+          "confluent": "vukuteki",
+          "type": "composition",
+          "composition": "vuku-teki",
+          "racines": ["vuku", "teki"],
+          "forme_liee": "vukutek",
+          "sens_litteral": "la montée rituelle vers le Gouffre",
+          "domaine": "mouvement",
+          "champ": "Mouvement (tekis)",
+          "definition": "Le trajet rituel vers le Gouffre (Vukuura) — aux Premiers Ancêtres, à la Grande Fresque ; mouvement de Veille, de mémoire et de dévotion, l'opposé de l'utilitaire.",
+          "nuance": "vuku (le Gouffre, racine funeste/sacrée) + teki (aller). Le mouvement comme acte de Veille, vs teki (neutre) et urateki (fluvial profane). Ancrage canon : « on traverse le pays jusqu'au Gouffre Humide pour porter un regard libre » (le-grand-pelerinage) ; le sommet du gradient de dévotion.",
+          "registre": "sacré"
+        }
+      ],
+      "synonymes_fr": ["pèlerinage", "montée sacrée", "aller au Gouffre"]
+    },
+    "marcher vers le non-encore-vu": {
+      "traductions": [
+        {
+          "confluent": "tekiota",
+          "type": "composition",
+          "composition": "teki-ota",
+          "racines": ["teki", "ota"],
+          "forme_liee": "tekiot",
+          "sens_litteral": "avancer dans l'inconnu, étendre le Regard",
+          "domaine": "mouvement",
+          "champ": "Mouvement (tekis)",
+          "definition": "Avancer vers ce qui n'est pas encore vu/connu — arracher du territoire au Vide par le regard porté en avant ; l'exploration comme extension du Regard.",
+          "nuance": "teki (aller) + ota (l'inconnu/non-vu, ≠ hostilité). Le mouvement vers la frange de Vide, vs vukuteki (vers un lieu sacré connu) et urateki (épouser le connu). Sens introuvable en un mot FR ; lien fort avec silikasi (le meneur) et sili (le regard). Ancrage canon : l'Éveilleur menant vers « un lieu que nul n'a vu » ; Œil-Ouvert qui regardait loin.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["explorer", "s'aventurer", "aller vers l'inconnu", "défricher"]
     }
   }
 }
