@@ -162,16 +162,16 @@ Modules clés (`ConfluentTranslator/src/`) :
 - `core/translation/nameForge.js` + `forgedNamesRegistry.js` — forge de noms propres (sous-agent outillé) + registre persistant (provisoire → béni → canon vivant). Bénédiction via `admin.html`.
 - `prompts/ancien-system.txt` (+ `mythologique-system.txt` en overlay sacré) — system prompts.
 
-Config : `ETHERYALE_API_KEY` (clé `eai_`), `ETHERYALE_BASE_URL`, `CONFLUENT_MODEL`, `CONFLUENT_FORGE_MODEL`, `FORGED_NAMES_PATH` (registre, gitignoré). Tests : `npm test` (gate + outils + ères + forge + mytho + régression), `npm run test:e2e` (Playwright), `npm run test:agent` (live, clé requise). **Infra prod** : nginx `confluent.conf` à **300s** (les appels LLM lents).
+Config : `ETHERYALE_API_KEY` (clé `eai_`), `ETHERYALE_BASE_URL`, `CONFLUENT_MODEL`, `CONFLUENT_FORGE_MODEL`, `FORGED_NAMES_PATH` (registre, gitignoré). Tests : `npm test` (gate + outils + ères + forge + mytho + régression), `npm run test:e2e` (Playwright), `npm run test:agent` (live, clé requise). **Scripts dev (atelier vocab)** : `scripts/check-form.js <forme> [ère]` (valide une forme forgée : gate + anti-collision + décompo) · `scripts/scan-tiroirs.js [ère] [--all]` (détecte les VRAIS mots-tiroir restants — union-find sur synonymes/conjugaisons, filtre le bruit) · `scripts/test-trad.js "<fr>" [ère] [modèle]` (test behavioral d'une trad, Opus par défaut). **Infra prod** : nginx `confluent.conf` à **300s** (les appels LLM lents).
 
 ## Prochaines étapes
 
 Cap réel = **transcréer les chants du Livre de la Foi** dans le registre mythologique. En cours (cf. `docs/langue/06-CONFLUENT-MYTHIQUE.md`) :
 
-1. **⭐ Diversifier le vocab** — créer des **sens natifs uniques** sur les mots-tiroir (sans calquer le français). Le carburant de tout le reste.
-2. **Armer la traduction mythique** — surfacer à l'agent les options natives + leurs **définitions** (pour qu'il choisisse en connaissance de cause), au lieu de la glose courte actuelle.
+1. ✅ **Diversifier le vocab** — **FAIT** : ~37 sens natifs (5 champs + tail), `ancien-confluent/lexique/32-sens-natifs.json` + strate sacrée `mythologique-confluent/lexique/02-sens-natifs-sacres.json`. Méthode/résultats : `docs/langue/atelier/{PROCESS-DIVERSIFICATION,INVENTAIRE-MOTS-TIROIR,FIX-PROPOSITIONS}.md`. Gabarit racines : verbe=5 char CVCVC, nom=4/6 char, mix racines/compositions. **Complétude vérifiée** par `scripts/scan-tiroirs.js` (plus aucun gros tiroir ; reste = synonymes/fusions légitimes).
+2. ✅ **Armer la traduction** — **FAIT** : `lookup_concept` surface `definition` + `nuance` complètes → l'IA choisit le bon sens natif (prouvé live Opus).
 3. **Grammaire** — devices natifs pour le benefactif (« à ta place ») et la copule définitionnelle (« X c'est Y »).
-4. **Transcréer les chants** en volume + figer les noms forgés bénis en lexique versionné.
+4. **Transcréer les chants** en volume + figer les noms forgés bénis en lexique versionné. *(2 arbitrages de vision ouverts : `ena` vs `èva` origine ultime ; consolidation `zakis`→`konu`.)*
 
 ## Conventions de travail
 
