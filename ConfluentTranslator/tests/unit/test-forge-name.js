@@ -15,7 +15,7 @@ const os = require('os');
 const path = require('path');
 const { ANCIEN } = require('../../src/core/eras/eras');
 const { validateForm } = require('../../src/core/validation/phonotactics');
-const { loadAllLexiques, } = require('../../src/utils/lexiqueLoader');
+const { loadAllLexiques, overlayBlessedNames } = require('../../src/utils/lexiqueLoader');
 const { buildReverseIndex: buildConfluentIndex } = require('../../src/core/morphology/reverseIndexBuilder');
 const { makeRegistry } = require('../../src/core/translation/forgedNamesRegistry');
 const { forgeProperName, stubForge, defaultLLMForge, rootsDeclared } = require('../../src/core/translation/nameForge');
@@ -113,6 +113,24 @@ const ctxBase = () => ({ era: ANCIEN, lexique: ancien, morphReverseIndex, regist
   check('forge outillée → rend le JSON final parsé', fTool && fTool.confluent === 'silibami');
   check('forge outillée → 1 tour d\'outil puis le final (2 appels)', mcalls === 2);
   check('forge outillée → usage agrégé sur les tours', fTool && fTool._usage && fTool._usage.output_tokens === 11);
+
+  console.log('\n[8] Bénédiction — status beni + renommage + overlay lexique + rejet (remove)');
+  const TMP8 = path.join(os.tmpdir(), 'confluent-test-bless.json');
+  try { fs.unlinkSync(TMP8); } catch (_) {}
+  const reg8 = makeRegistry(TMP8);
+  reg8.add({ nom_fr: 'Dos-Large', confluent: 'lobamako', registre: 'mythologique', status: 'provisoire' });
+  reg8.add({ nom_fr: 'Œil-Bas', confluent: 'silitoka', registre: 'mythologique', status: 'provisoire' });
+  const bl = reg8.setStatus('Dos-Large', 'beni', { confluent: 'dosalaka' });
+  check('setStatus beni + renomme la forme', bl.status === 'beni' && bl.confluent === 'dosalaka');
+  check('blessed() = seulement les bénis', reg8.blessed().length === 1 && reg8.blessed()[0].nom_fr === 'Dos-Large');
+  check('rejet = remove retire l\'entrée', reg8.remove('Œil-Bas') === 1 && reg8.lookup('Œil-Bas') === null);
+  const lex8 = { mythologique: { dictionnaire: {} }, ancien: { dictionnaire: {} }, proto: { dictionnaire: {} } };
+  overlayBlessedNames(lex8, reg8);
+  check('nom béni fusionné au dict mytho (forme renommée)', lex8.mythologique.dictionnaire['dos-large'] && lex8.mythologique.dictionnaire['dos-large'].traductions[0].confluent === 'dosalaka');
+  check('entrée fusionnée = type nom_propre', lex8.mythologique.dictionnaire['dos-large'].traductions[0].type === 'nom_propre');
+  const rbe = await forgeProperName({ nom_fr: 'Dos-Large', sens: 'x' }, { ...ctxBase(), registry: reg8 });
+  check('forge d\'un béni → source lexique + non provisoire', rbe.source === 'lexique' && rbe.provisoire === false && rbe.confluent === 'dosalaka');
+  try { fs.unlinkSync(TMP8); } catch (_) {}
 
   console.log(`\n=== test-forge-name : ${pass} ok, ${fail} ko ===`);
   process.exit(fail === 0 ? 0 : 1);

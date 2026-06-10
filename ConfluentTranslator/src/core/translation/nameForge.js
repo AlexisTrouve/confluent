@@ -191,12 +191,14 @@ async function forgeProperName(input, ctx = {}) {
 
   const registry = ctx.registry || defaultRegistry;
 
-  // 1. LOOKUP-FIRST — nom déjà forgé/canonisé → MÊME forme (stabilité = cohérence).
+  // 1. LOOKUP-FIRST — nom déjà forgé/béni → MÊME forme (stabilité = cohérence). Un nom BÉNI est servi
+  // comme canon (source 'lexique', non provisoire). (Un nom rejeté est SUPPRIMÉ du registre → re-forgé.)
   const known = registry.lookup(nomFr);
   if (known) {
-    return { found: true, source: 'registre', nom_fr: nomFr, confluent: known.confluent,
-      decompo: known.decompo, racines: known.racines, liaison: known.liaison, provisoire: known.provisoire,
-      note: 'Nom déjà forgé — forme stable réutilisée (aucune re-forge, cohérence garantie).' };
+    const beni = known.status === 'beni';
+    return { found: true, source: beni ? 'lexique' : 'registre', nom_fr: nomFr, confluent: known.confluent,
+      decompo: known.decompo, racines: known.racines, liaison: known.liaison, provisoire: !beni, status: known.status,
+      note: beni ? 'Nom béni (canon) — forme stable.' : 'Nom déjà forgé — forme stable réutilisée (aucune re-forge).' };
   }
   const canon = lookupLexique(nomFr, ctx);
   if (canon) {
@@ -234,7 +236,7 @@ async function forgeProperName(input, ctx = {}) {
   registry.add({
     nom_fr: nomFr, sens: sens || null, confluent: candidate.confluent,
     racines: candidate.racines, liaison: candidate.liaison, decompo: candidate.decompo,
-    registre: eraOf(ctx).id, provisoire: true, forge_at: isoNow()
+    registre: eraOf(ctx).id, status: 'provisoire', forge_at: isoNow()
   });
 
   // 5. RETOUR

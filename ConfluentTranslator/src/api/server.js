@@ -15,6 +15,8 @@ const { buildReverseIndex: buildConfluentIndex } = require('../core/morphology/r
 const { translateConfluentToFrench, translateConfluentDetailed } = require('../core/translation/confluentToFrench');
 const { translateWithAgent } = require('../core/translation/translationAgent');
 const { forgeProperName, stubForge } = require('../core/translation/nameForge');   // forge de noms propres (tool + endpoint atelier)
+const { defaultRegistry: forgedRegistry } = require('../core/translation/forgedNamesRegistry');   // registre des noms forgés (revue/bénédiction)
+const { validateForm: validateConfluentForm } = require('../core/validation/phonotactics');   // gate pour valider un nom renommé à la bénédiction
 const { buildGuide } = require('../core/guide/guideBuilder');
 const { getEra } = require('../core/eras/eras');
 // Écriture (Glyphes du Gouffre) : conversion texte→glyphes (échec franc précis) + rendu collier.
@@ -311,6 +313,39 @@ app.post('/api/reload', authenticate, requireAdmin, (req, res) => {
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
+});
+
+// ============================================================================
+// NOMS FORGÉS — atelier de revue / BÉNÉDICTION (admin only)
+// QUOI : lister les noms propres forgés à la volée, puis BÉNIR (canon, fusionné au lexique) ou REJETER.
+// POURQUOI : fermer la boucle de la forge — le créateur valide/renomme. « Béni » = canon VIVANT via le
+//        registre gitignoré (cf. lexiqueLoader.overlayBlessedNames), SANS écrire de fichier git sur prod.
+// ============================================================================
+app.get('/api/admin/forged-names', authenticate, requireAdmin, (req, res) => {
+  res.json({ noms: forgedRegistry.all() });
+});
+
+app.post('/api/admin/forged-names/bless', authenticate, requireAdmin, (req, res) => {
+  const { nom_fr, confluent, sens, decompo } = req.body || {};
+  if (!nom_fr) return res.status(400).json({ error: 'nom_fr requis' });
+  const entry = forgedRegistry.lookup(nom_fr);
+  if (!entry) return res.status(404).json({ error: 'nom introuvable' });
+  // Si renommé, la nouvelle forme DOIT passer le gate phonotactique de son ère (jamais de canon cassé).
+  const newForm = String(confluent || entry.confluent || '').toLowerCase().trim();
+  const gate = validateConfluentForm(newForm, getEra(entry.registre));
+  if (!gate.valid) return res.status(422).json({ error: 'forme invalide', erreurs: gate.erreurs });
+  const updated = forgedRegistry.setStatus(nom_fr, 'beni', { confluent: newForm, sens, decompo });
+  reloadLexiques();   // le nom béni entre dans le lexique → canon vivant (lookup_concept + forge le servent)
+  res.json({ ok: true, entry: updated });
+});
+
+app.post('/api/admin/forged-names/reject', authenticate, requireAdmin, (req, res) => {
+  const { nom_fr } = req.body || {};
+  if (!nom_fr) return res.status(400).json({ error: 'nom_fr requis' });
+  const removed = forgedRegistry.remove(nom_fr);   // suppression nette
+  if (!removed) return res.status(404).json({ error: 'nom introuvable' });
+  reloadLexiques();   // retiré du lexique (n'est plus servi)
+  res.json({ ok: true, removed: nom_fr });
 });
 
 // Build enhanced prompt with lexique data

@@ -52,25 +52,63 @@ function makeRegistry(filePath = DEFAULT_PATH) {
     return load().noms.find(n => norm(n.nom_fr) === k) || null;
   }
 
+  /** Écrit le registre sur disque (best-effort : ne throw jamais). */
+  function persist(reg) {
+    try {
+      fs.mkdirSync(path.dirname(filePath), { recursive: true });
+      fs.writeFileSync(filePath, JSON.stringify(
+        { _comment: 'Noms propres forgés par forge_proper_name. status: provisoire (à bénir) | beni (canon vivant, fusionné au lexique) | rejete. Écrit par le serveur — ne pas éditer à chaud.', noms: reg.noms },
+        null, 2));
+    } catch (_) { /* best-effort : une panne d'écriture ne casse pas une traduction */ }
+  }
+
   /** Ajoute une entrée (idempotent : si le nom existe déjà, renvoie l'existant sans réécrire). */
   function add(entry) {
     const existing = lookup(entry.nom_fr);
     if (existing) return existing;
     const reg = load();
+    if (!entry.status) entry.status = 'provisoire';
     reg.noms.push(entry);
-    try {
-      fs.mkdirSync(path.dirname(filePath), { recursive: true });
-      fs.writeFileSync(filePath, JSON.stringify(
-        { _comment: 'Noms propres forgés à la volée par forge_proper_name. provisoire:true = à bénir/renommer puis promouvoir au lexique. Écrit par le serveur — ne pas éditer à chaud.', noms: reg.noms },
-        null, 2));
-    } catch (_) { /* best-effort : une panne d'écriture ne casse pas la traduction */ }
+    persist(reg);
     return entry;
+  }
+
+  /**
+   * Change le STATUT d'un nom (bénir / rejeter) + applique un patch optionnel (renommer la forme).
+   * QUOI : `setStatus('Œil-Bas', 'beni', { confluent: 'silibasa' })` → marque béni + renomme.
+   * POURQUOI : la bénédiction est l'acte du créateur — il valide/renomme un provisoire ; le statut
+   *        'beni' rend le nom canon (fusionné au lexique au chargement). 'rejete' le retire de l'usage.
+   * @returns {Object|null} l'entrée mise à jour, ou null si le nom est introuvable.
+   */
+  function setStatus(nomFr, status, patch = {}) {
+    const e = lookup(nomFr);
+    if (!e) return null;
+    e.status = status;
+    for (const k of ['confluent', 'forme_liee', 'sens', 'decompo', 'racines', 'liaison']) {
+      if (patch[k] !== undefined && patch[k] !== null && patch[k] !== '') e[k] = patch[k];
+    }
+    delete e.provisoire;   // champ legacy : le statut fait foi désormais
+    persist(load());
+    return e;
+  }
+
+  /** Retire un nom du registre (REJET = suppression nette ; s'il réapparaît, il sera re-forgé). */
+  function remove(nomFr) {
+    const k = norm(nomFr);
+    const reg = load();
+    const before = reg.noms.length;
+    reg.noms = reg.noms.filter(n => norm(n.nom_fr) !== k);
+    if (reg.noms.length !== before) persist(reg);
+    return before - reg.noms.length;   // nb supprimés (0 ou 1)
   }
 
   /** Toutes les entrées (pour revue/atelier). */
   function all() { return load().noms.slice(); }
 
-  return { lookup, add, all, _path: filePath, _reset: () => { cache = null; } };
+  /** Entrées BÉNIES (status: beni) — à fusionner au lexique comme canon. */
+  function blessed() { return load().noms.filter(n => n.status === 'beni'); }
+
+  return { lookup, add, setStatus, remove, all, blessed, _path: filePath, _reset: () => { cache = null; } };
 }
 
 // Singleton de production. Chemin surchargé par FORGED_NAMES_PATH (E2E/tests → fichier temp isolé,

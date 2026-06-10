@@ -364,6 +364,14 @@
         <div class="loading">Chargement des tokens...</div>
       </div>
     </div>
+
+    <!-- Noms forgés (à bénir / rejeter) -->
+    <div class="panel">
+      <h2>🔨 Noms forgés <span style="font-weight:normal;font-size:.65em;opacity:.65;">— relire, renommer, bénir (canon) ou rejeter</span></h2>
+      <div id="forged-list" class="token-list">
+        <div class="loading">Chargement…</div>
+      </div>
+    </div>
   </div>
 
   <!-- Modal pour afficher le nouveau token -->
@@ -643,12 +651,59 @@
       window.location.href = '/';
     };
 
+    // === Noms forgés : revue / bénédiction / rejet ===
+    let _forged = [];
+    const safeHtml = (s) => String(s == null ? '' : s).replace(/[<>&"]/g, c => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;' }[c]));
+    async function loadForgedNames() {
+      const el = document.getElementById('forged-list');
+      try {
+        const resp = await authFetch('/api/admin/forged-names');
+        const data = await resp.json();
+        _forged = data.noms || [];
+        if (!_forged.length) { el.innerHTML = '<div class="loading">Aucun nom forgé pour l\'instant.</div>'; return; }
+        el.innerHTML = _forged.map((n, i) => {
+          const st = n.status || 'provisoire';
+          return `<div class="token-item" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08);">
+            <div style="flex:1;min-width:230px;">
+              <strong>${safeHtml(n.nom_fr)}</strong> →
+              <input value="${safeHtml(n.confluent)}" id="cf-${i}" style="font-family:monospace;width:150px;padding:3px 6px;">
+              <span style="opacity:.55;font-size:.85em;margin-left:6px;">${safeHtml(n.decompo || '')}</span>
+              <div style="opacity:.55;font-size:.8em;margin-top:3px;">${safeHtml(n.sens || '')} · <b>${safeHtml(st)}</b> · ${safeHtml(n.registre || '')}</div>
+            </div>
+            <button onclick="blessName(${i})">✅ Bénir</button>
+            <button onclick="rejectName(${i})" style="opacity:.85;">🗑️ Rejeter</button>
+          </div>`;
+        }).join('');
+      } catch (e) { el.innerHTML = '<div class="loading">Erreur de chargement des noms forgés.</div>'; }
+    }
+    async function blessName(i) {
+      const n = _forged[i]; if (!n) return;
+      const input = document.getElementById('cf-' + i);
+      const confluent = input ? input.value.trim() : undefined;
+      const resp = await authFetch('/api/admin/forged-names/bless', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ nom_fr: n.nom_fr, confluent })
+      });
+      const data = await resp.json().catch(() => ({}));
+      if (resp.ok) { showMessage(`« ${n.nom_fr} » béni → ${data.entry && data.entry.confluent} (canon)`, 'success'); loadForgedNames(); }
+      else { showMessage((data.error || 'erreur') + (data.erreurs ? ' : ' + data.erreurs.join(', ') : ''), 'error'); }
+    }
+    async function rejectName(i) {
+      const n = _forged[i]; if (!n) return;
+      if (!confirm(`Rejeter « ${n.nom_fr} » ? Il sera supprimé du registre.`)) return;
+      const resp = await authFetch('/api/admin/forged-names/reject', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ nom_fr: n.nom_fr })
+      });
+      if (resp.ok) { showMessage(`« ${n.nom_fr} » rejeté`, 'success'); loadForgedNames(); }
+      else { const d = await resp.json().catch(() => ({})); showMessage(d.error || 'erreur', 'error'); }
+    }
+
     // Initialize
     (async () => {
       const hasAccess = await checkAdminAccess();
       if (hasAccess) {
         await loadStats();
         await loadTokens();
+        await loadForgedNames();
       }
     })();
   </script>

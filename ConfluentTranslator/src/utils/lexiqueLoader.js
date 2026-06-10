@@ -1,5 +1,43 @@
 const fs = require('fs');
 const path = require('path');
+const { defaultRegistry, norm: normName } = require('../core/translation/forgedNamesRegistry');
+
+/**
+ * Fusionne les noms forgés BÉNIS (status: beni) du registre dans les lexiques chargés — « canon vivant ».
+ *
+ * QUOI : pour chaque nom béni, ajoute une entrée nom_propre dans le dictionnaire de l'ère cible, pour
+ *        qu'il soit trouvé par lookup_concept (traduction) ET par la forge (lookup-first → source lexique).
+ * POURQUOI : bénir un nom doit le rendre CANON et UTILISABLE immédiatement, SANS écrire dans les .json
+ *        versionnés (le registre reste gitignoré → prod-safe, zéro divergence git). La version git
+ *        permanente est une étape dev séparée.
+ * COMMENT : registre='ancien' → ajouté à ancien ET mythologique (qui hérite l'ancien) ; 'mythologique'
+ *        → mythologique seul ; 'proto' → proto. N'écrase JAMAIS une entrée existante du lexique de base.
+ * @param {Object} lexiques - { proto, ancien, mythologique }
+ * @param {Object} [registry] - registre des noms forgés (défaut : singleton prod)
+ */
+function overlayBlessedNames(lexiques, registry = defaultRegistry) {
+  let count = 0;
+  for (const e of registry.blessed()) {
+    if (!e.nom_fr || !e.confluent) continue;
+    const cibles = e.registre === 'mythologique' ? ['mythologique']
+      : e.registre === 'proto' ? ['proto'] : ['ancien', 'mythologique'];
+    const key = normName(e.nom_fr);
+    for (const v of cibles) {
+      const dict = lexiques[v] && lexiques[v].dictionnaire;
+      if (!dict || dict[key]) continue;   // ère absente, ou concept déjà au lexique → on ne touche pas
+      dict[key] = {
+        mot_francais: e.nom_fr,
+        traductions: [{
+          confluent: e.confluent, type: 'nom_propre', forme_liee: e.forme_liee || e.confluent,
+          domaine: 'nom_propre', registre: e.registre, source: 'forge_beni'
+        }],
+        synonymes_fr: []
+      };
+      count++;
+    }
+  }
+  if (count) console.log(`  Noms forgés bénis fusionnés au lexique : ${count}`);
+}
 
 /**
  * Normalise un texte : lowercase + retire accents + ligatures
@@ -254,7 +292,9 @@ function loadAllLexiques(baseDir) {
   console.log('Building Mythologique lexique (overlay)...');
   const mythologique = overlayMythologique(baseDir, ancien);
 
-  return { proto, ancien, mythologique };
+  const lexiques = { proto, ancien, mythologique };
+  overlayBlessedNames(lexiques);   // noms forgés BÉNIS → canon vivant (fusionnés, prod-safe)
+  return lexiques;
 }
 
 /**
@@ -389,6 +429,7 @@ module.exports = {
   loadLexiqueFromDir,
   loadAllLexiques,
   overlayMythologique,
+  overlayBlessedNames,
   buildReverseIndex,
   searchLexique,
   generateLexiqueSummary
