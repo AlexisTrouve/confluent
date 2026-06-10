@@ -192,17 +192,17 @@
     "Vigile Lunaire": {
       "traductions": [
         {
-          "confluent": "velauluna",
+          "confluent": "velaunelu",
           "type": "composition",
-          "composition": "vel-a-luna",
+          "composition": "vel-a-nelu",
           "sens_litteral": "Vigile avec lune",
           "racines": [
             "vela",
-            "luna"
+            "nelu"
           ],
           "categorie": "rituel",
           "definition": "Rituel collectif bimensuel de veille tenu deux jours après la pleine lune, mêlant pratiques sacrées et entraînement ; temps fort du cycle communautaire.",
-          "nuance": "Composition vel-a-luna : vela (veille) + -a- + luna (lune) = 'vigile avec lune'. vela rattache au guet (cf. Sikuvela, velak), luna au cycle lunaire (base 12). Événement cyclique (aspect -eon-).",
+          "nuance": "Composition vel-a-nelu : vela (veille) + -a- + nelu (lune) = 'vigile avec lune'. vela rattache au guet (cf. Sikuvela, velak), nelu au cycle lunaire (base 12). Événement cyclique (aspect -eon-).",
           "registre": "rituel"
         }
       ]

@@ -72,17 +72,17 @@
     "mois": {
       "traductions": [
         {
-          "confluent": "lunasiku",
+          "confluent": "nelusiku",
           "type": "composition",
-          "composition": "lun-a-siku",
+          "composition": "nel-a-siku",
           "sens_litteral": "Lune avec cercle",
           "racines": [
-            "luna",
+            "nelu",
             "siku"
           ],
           "domaine": "temps",
           "definition": "Un mois, le cycle lunaire (« lune avec cercle »), unité de base du calendrier dodécimal (12 cycles lunaires par an).",
-          "nuance": "Composition lun-a-siku : luna (lune) + -a- + siku (cercle). Pivot du système temporel : structure aussi le rituel de la Vigile Lunaire (bimensuel).",
+          "nuance": "Composition nel-a-siku : nelu (lune) + -a- + siku (cercle). Pivot du système temporel : structure aussi le rituel de la Vigile Lunaire (bimensuel).",
           "registre": "courant"
         }
       ]
@@ -127,7 +127,7 @@
           "domaine": "temps",
           "note": "Même racine que lune",
           "definition": "La nuit, période d'obscurité totale, distincte du crépuscule (transition) et associée à la lune.",
-          "nuance": "Racine simple (forme liée bam-). Lien sémantique avec luna (la lune) mais forme distincte. Pas de charge sacrée, contrairement à l'aurore.",
+          "nuance": "Racine simple (forme liée bam-). Lien sémantique avec nelu (la lune) mais forme distincte. Pas de charge sacrée, contrairement à l'aurore.",
           "registre": "courant"
         }
       ]

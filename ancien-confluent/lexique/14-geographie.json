@@ -30,7 +30,7 @@
           "domaine": "direction",
           "note": "Est - direction du soleil levant/aurore",
           "definition": "Point cardinal du soleil levant, direction de l'aurore. Orient, levant.",
-          "nuance": "Composition sor-a-ora sur sora (soleil) + ora (aurore, racine sacrée, moment sacré) : « soleil de l'aurore ». Direction, pas relief : entrée à part dans ce fichier géographique. Charge culturelle forte car l'aurore (ora) est signe divin et marque l'élection des Ciels-clairs. Symétrique d'ouest (soraluna).",
+          "nuance": "Composition sor-a-ora sur sora (soleil) + ora (aurore, racine sacrée, moment sacré) : « soleil de l'aurore ». Direction, pas relief : entrée à part dans ce fichier géographique. Charge culturelle forte car l'aurore (ora) est signe divin et marque l'élection des Ciels-clairs. Symétrique d'ouest (soranelu).",
           "registre": "rituel"
         }
       ],
@@ -42,18 +42,18 @@
     "ouest": {
       "traductions": [
         {
-          "confluent": "soraluna",
+          "confluent": "soranelu",
           "type": "composition",
-          "composition": "sor-a-luna",
+          "composition": "sor-a-nelu",
           "sens_litteral": "Soleil vers la nuit",
           "racines": [
             "sora",
-            "luna"
+            "nelu"
           ],
           "domaine": "direction",
           "note": "Ouest - direction où le soleil va vers la nuit",
           "definition": "Point cardinal du soleil couchant, direction où le jour glisse vers la nuit. Occident, couchant.",
-          "nuance": "Composition sor-a-luna sur sora (soleil) + luna (lune) : « soleil vers la nuit ». Direction, pas relief. Symétrique d'est (soraora) : l'est se définit par l'aurore sacrée (ora), l'ouest par la lune (luna). Vs 'lune' simple (luna) qui nomme l'astre, ici elle marque l'orientation.",
+          "nuance": "Composition sor-a-nelu sur sora (soleil) + nelu (lune) : « soleil vers la nuit ». Direction, pas relief. Symétrique d'est (soraora) : l'est se définit par l'aurore sacrée (ora), l'ouest par la lune (nelu). Vs 'lune' simple (nelu) qui nomme l'astre, ici elle marque l'orientation.",
           "registre": "courant"
         }
       ],

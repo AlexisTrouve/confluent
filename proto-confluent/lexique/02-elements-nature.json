@@ -105,9 +105,9 @@
     "lune": {
       "traductions": [
         {
-          "confluent": "lon",
+          "confluent": "nelo",
           "type": "racine_proto",
-          "evolution_ancien": "luna",
+          "evolution_ancien": "nelu",
           "domaine": "celeste",
           "note": "Astre nocturne"
         }
@@ -237,9 +237,9 @@
     "nuit": {
       "traductions": [
         {
-          "confluent": "lon",
+          "confluent": "nelo",
           "type": "racine_proto",
-          "evolution_ancien": "luna",
+          "evolution_ancien": "nelu",
           "domaine": "temps",
           "note": "Même racine que 'lune' - période sombre"
         }

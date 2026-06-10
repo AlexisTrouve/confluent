@@ -154,9 +154,9 @@
     "lune": {
       "traductions": [
         {
-          "confluent": "luna",
+          "confluent": "nelu",
           "type": "racine",
-          "forme_liee": "lun",
+          "forme_liee": "nel",
           "domaine": "celeste",
           "note": "Astre nocturne",
           "definition": "Astre nocturne dont le cycle bimensuel rythme la Vigile Lunaire.",
@@ -333,7 +333,7 @@
           "domaine": "celeste",
           "note": "Points lumineux du ciel nocturne",
           "definition": "Point lumineux du ciel nocturne.",
-          "nuance": "Point lumineux du ciel nocturne. Dans le mythe fondateur : « les étoiles que la Voilée allume, dont ils firent des clous pour tenir leurs yeux ouverts ». Vs lune (luna) et soleil (sora).",
+          "nuance": "Point lumineux du ciel nocturne. Dans le mythe fondateur : « les étoiles que la Voilée allume, dont ils firent des clous pour tenir leurs yeux ouverts ». Vs lune (nelu) et soleil (sora).",
           "registre": "sacré"
         }
       ],
