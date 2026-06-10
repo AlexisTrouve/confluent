@@ -752,6 +752,108 @@
         }
       ],
       "synonymes_fr": ["inconnu", "le non-vu", "à découvrir", "ignoré"]
+    },
+    "soleil": {
+      "traductions": [
+        {
+          "confluent": "soruma",
+          "type": "nom",
+          "racine": "soruma",
+          "forme_liee": "sorum",
+          "sens_litteral": "l'astre du jour",
+          "domaine": "cosmos",
+          "champ": "borderline sora — l'astre ≠ la qualité",
+          "definition": "L'astre du jour, le disque de lumière qu'on voit lever — manifestation de la Donneuse-de-Jour. Le soleil comme CHOSE, non la qualité lumineuse.",
+          "nuance": "À distinguer de sora (lumineux/clair = la QUALITÉ de lumière) : soruma est l'ASTRE lui-même. Dans le mythique, le soleil = la Donneuse (soranaku). Ancrage canon : le Soleil = la Donneuse-de-Jour, l'œil ouvert.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["soleil", "astre du jour", "disque solaire"]
+    },
+    "arme": {
+      "traductions": [
+        {
+          "confluent": "pikora",
+          "type": "nom",
+          "racine": "pikora",
+          "forme_liee": "pikor",
+          "sens_litteral": "l'objet qui frappe ou protège",
+          "domaine": "combat",
+          "champ": "borderline varu — l'objet ≠ l'acte",
+          "definition": "L'arme : l'objet qui frappe ou protège (lame, pointe, bouclier). L'OUTIL du combat, non le combat lui-même.",
+          "nuance": "À distinguer de varu (combat/guerre = l'ACTE, sacré) : pikora est l'OBJET. Écho de piki (pointe/lance). Ancrage canon : « la pointe garde le cercle » — l'arme du gardien (défensive), pas du conquérant.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["arme", "armement"]
+    },
+    "appeler": {
+      "traductions": [
+        {
+          "confluent": "vokik",
+          "type": "verbe",
+          "racine": "voki",
+          "forme_liee": "vok",
+          "sens_litteral": "user de la voix pour héler",
+          "domaine": "communication",
+          "champ": "borderline voki — le verbe ≠ le nom",
+          "definition": "Appeler : user de la voix pour héler, convoquer, nommer à voix haute. L'ACTE de la voix.",
+          "nuance": "voki (voix/parole) verbalisé. À distinguer de voki (voix/parole = la faculté/le nom). À distinguer de vosak (parler/dire = énoncer un contenu) : vokik héle/convoque. Ancrage canon : la voix, sœur du Regard.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["appeler", "héler", "convoquer", "interpeller"]
+    },
+    "débutant": {
+      "traductions": [
+        {
+          "confluent": "nuvaki",
+          "type": "nom",
+          "racine": "nuvaki",
+          "forme_liee": "nuvak",
+          "sens_litteral": "l'œil-neuf, qui n'a pas encore appris à voir",
+          "domaine": "connaissance",
+          "champ": "borderline naki — par l'expérience ≠ par le sang",
+          "definition": "Le novice : celui qui commence, dont le Regard n'est pas encore formé — l'œil-neuf qui n'a pas encore appris à voir ni à veiller. On peut être novice adulte.",
+          "nuance": "À distinguer de naki (enfant/descendant = par le SANG, l'âge) : nuvaki est le débutant par l'EXPÉRIENCE (le Regard pas encore formé), quel que soit l'âge. Écho de nuvi (nouveau) + naki. Ancrage canon : le Regard se cultive (éthique de la vertu) ; le novice apprend à veiller.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["débutant", "novice", "apprenti", "néophyte"]
+    },
+    "nez": {
+      "traductions": [
+        {
+          "confluent": "nesura",
+          "type": "nom",
+          "racine": "nesura",
+          "forme_liee": "nesur",
+          "sens_litteral": "l'organe de l'odorat",
+          "domaine": "corps",
+          "champ": "borderline venu — lève l'homophonie",
+          "definition": "Le nez : l'organe de l'odorat, le relief du visage entre les yeux.",
+          "nuance": "Forme propre pour l'organe — lève l'homophonie avec venu (venir, verbe de mouvement) : préférer nesura pour « nez », venu reste « venir ».",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["nez"]
+    },
+    "promesse": {
+      "traductions": [
+        {
+          "confluent": "tolura",
+          "type": "nom",
+          "racine": "tolura",
+          "forme_liee": "tolur",
+          "sens_litteral": "engagement léger, profane",
+          "domaine": "parole",
+          "champ": "borderline savu — l'engagement léger ≠ le serment sacré",
+          "definition": "La promesse : un engagement donné mais LÉGER — la parole qu'on tient entre soi, sans la charge sacrée du serment.",
+          "nuance": "À distinguer de savu (serment = engagement SACRÉ, scellé, dont la rupture = parjure → Gouffre) : tolura est l'engagement ORDINAIRE, profane, qu'on peut donner sans déchoir. Ancrage canon : le serment (savu) est sacré (Halls des Serments) ; la promesse quotidienne, non.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["promesse", "engagement", "parole donnée"]
     }
   }
 }
