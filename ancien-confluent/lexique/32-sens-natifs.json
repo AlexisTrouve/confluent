@@ -682,6 +682,76 @@
         }
       ],
       "synonymes_fr": ["création", "créer le monde", "faire lever", "genèse", "engendrer (le monde)"]
+    },
+    "masquer pour tromper": {
+      "traductions": [
+        {
+          "confluent": "mukak",
+          "type": "verbe",
+          "racine": "muka",
+          "forme_liee": "muk",
+          "sens_litteral": "couvrir d'un faux visage pour tromper",
+          "domaine": "tromperie",
+          "champ": "Cacher (lupak) — le masque",
+          "definition": "Couvrir d'un faux visage pour TROMPER : substituer une apparence mensongère à la vérité, mentir par le masque. Non pas cacher (soustraire à la vue) mais REMPLACER le vrai par un faux.",
+          "nuance": "muka (masque/visage faux) verbalisé. À distinguer de lupak (cacher = soustraire un objet à la vue, neutre) et de mulik (voiler = abriter un regard, protège) : mukak MENT — il assassine le regard de l'autre en le trompant, c'est le vecteur du Vide entre les hommes. Frère de mukazoka (l'ennemi masqué). Ancrage canon : « le masque en assassine un » ; le mensonge = vecteur du Vide ; cacher n'est pas mal, mentir l'est.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["masquer", "tromper", "feindre", "duper", "travestir"]
+    },
+    "voiler pour protéger": {
+      "traductions": [
+        {
+          "confluent": "mulik",
+          "type": "verbe",
+          "racine": "muli",
+          "forme_liee": "mul",
+          "sens_litteral": "couvrir d'un voile pour abriter",
+          "domaine": "protection",
+          "champ": "Cacher (lupak) — le voile",
+          "definition": "Couvrir d'un voile pour PROTÉGER : soustraire au regard ce qu'on abrite (un regard, un mystère, une intimité), sans tromper. Le voile cache mais n'efface pas — il garde dessous.",
+          "nuance": "muli (voile/brume) verbalisé. À distinguer de mukak (masquer = cacher pour TROMPER, le masque qui ment) : mulik ABRITE (le voile sert le regard dessous, ne le remplace pas). À distinguer de lupak (cacher un objet, neutre) et konusupu (garder en soustrayant). Domaine de la Voilée. Ancrage canon : « le voile abrite un regard ≠ le masque en assassine un » ; cacher pour protéger n'est pas mentir.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["voiler", "abriter", "couvrir", "soustraire au regard"]
+    },
+    "vivre": {
+      "traductions": [
+        {
+          "confluent": "suvak",
+          "type": "verbe",
+          "racine": "suvak",
+          "forme_liee": "suva",
+          "note": "Racine opaque (primitif natif) — vivre est un atome, distinct d'exister.",
+          "sens_litteral": "porter la braise allumée, être un vivant",
+          "domaine": "existence",
+          "champ": "Existence (ita) — vivre ≠ exister",
+          "definition": "Être vivant : porter la braise allumée, le feu de la vie qui brûle dans le corps. Non pas seulement exister (avoir l'être) mais BRÛLER — l'éclat du Père lit en soi, qui s'éteindra à la mort.",
+          "nuance": "Racine opaque. À distinguer de ita (exister = avoir l'être, ontologique : une pierre existe sans vivre) : suvak = être un VIVANT, porter la braise (isuki) allumée — ce qui peut mourir (osi = l'éclat quitte le corps). À distinguer de tuli (durer/demeurer). Ancrage canon : la braise/isuki, éclat du Père en chaque vivant ; à la mort l'éclat quitte le corps.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["vivre", "être vivant", "être en vie"]
+    },
+    "l'inconnu": {
+      "traductions": [
+        {
+          "confluent": "silenu",
+          "type": "nom",
+          "racine": "silenu",
+          "forme_liee": "silen",
+          "note": "Racine opaque (écho de sili, le regard) — l'inconnu = le non-encore-regardé.",
+          "sens_litteral": "le non-encore-vu, l'à-découvrir",
+          "domaine": "connaissance",
+          "champ": "l'Autre (ota) — l'inconnu épistémique",
+          "definition": "Ce qui n'a pas encore été vu ni connu — le non-encore-tenu par le Regard, ce qui attend au bord du connu d'être découvert (ou de retomber au Vide). Neutre : pas l'ennemi, pas l'étranger — l'à-découvrir.",
+          "nuance": "Racine opaque. À distinguer de ota (l'Autre = le différent, l'étranger, ce qui n'est pas nous — SOCIAL) : silenu est ÉPISTÉMIQUE (ce que le Regard n'a pas encore tenu), neutre, à arracher au Vide. À distinguer de samoèva (les bords cosmogoniques du monde). Lien avec tekiota (marcher-vers-le-non-encore-vu). Ancrage canon : le Regard arrache au Vide ce qui n'est pas encore tenu ; l'exploration, Œil-Ouvert.",
+          "registre": "courant"
+        }
+      ],
+      "synonymes_fr": ["inconnu", "le non-vu", "à découvrir", "ignoré"]
     }
   }
 }

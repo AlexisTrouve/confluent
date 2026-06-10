@@ -30,7 +30,8 @@ const SENS_NATIFS = [
   'zokasili', 'mukazoka', 'savuzoka', 'takusili', 'lozak', 'kavuno', 'besinekan', 'seluvela', 'selukumu', 'limava',
   'silikasi', 'kasiuaita', 'kotamuki', 'kovamori', 'silikova', 'urateki', 'vukuteki', 'tekiota',
   'tokituli', 'tisatuli', 'sukibuka', 'aitabuka', 'vasibuka', 'kosam',
-  'vèluk', 'samoèva', 'veluzeru', 'enasoku', 'isukibuka'
+  'vèluk', 'samoèva', 'veluzeru', 'enasoku', 'isukibuka',
+  'mukak', 'mulik', 'suvak', 'silenu'
 ];
 
 (async () => {
