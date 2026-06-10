@@ -272,7 +272,7 @@ function execAnalyzeText(input, ctx) {
     a_composer: m.wordsNotFound || [],        // pas de forme directe → composer ou approximer
     verbes,                                   // ajouter un conjugateur après chacun
     conjugateurs: flat(eraOf(ctx).conjugateurs?.temps),  // rappel concis selon l'ère
-    note: "Utilise 'trouves' tel quel. Compose 'a_composer'. Ajoute un conjugateur à chaque verbe. " +
+    note: "Utilise 'trouves' tel quel. AVANT de composer un mot de 'a_composer' (ou si un segment exprime une nuance riche : mort, oubli, feu, veille, folie…), BALAIE la CARTE DES SENS NATIFS du system prompt — si le sens colle à une famille, emploie la forme dédiée (verify_word pour sa forme liée) plutôt que composer ou calquer. Ajoute un conjugateur à chaque verbe. " +
           "N'appelle d'autres outils que pour 'a_composer' ou un doute réel."
   };
 }

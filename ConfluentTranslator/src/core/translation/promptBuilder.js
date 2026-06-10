@@ -17,8 +17,8 @@ const { getConceptMap } = require('./conceptMap');
 // POURQUOI : rendre le LLM CONSCIENT des déclinaisons (osiieku « montée en étoile »…) que le lookup
 // mot-à-mot rate ; c'est LUI qui fait le matching sémantique (prouvé : avec la carte il emploie osiieku/
 // aitameva/sukimil ; sans, il compose ou calque le français).
-const CARTE_HEADER = `# CARTE DES SENS NATIFS (déclinaisons du Confluent)
-Cette langue DÉCLINE finement certains concepts : un mot français peut correspondre à plusieurs formes natives selon la nuance (ex. « mort » → osiimuli cueillie / osiieku montée-en-étoile / osieva seconde-mort). Quand le SENS d'un passage correspond à l'une de ces nuances, EMPLOIE la forme dédiée au lieu de composer mot-à-mot ou de calquer le français ; appelle verify_word/lookup_concept pour sa définition et sa forme liée exactes. Format « famille : forme=glose ».`;
+const CARTE_HEADER = `# CARTE DES SENS NATIFS — À BALAYER AVANT DE COMPOSER
+Cette langue DÉCLINE finement certains concepts : un mot/segment français peut correspondre à une forme native dédiée selon la nuance (ex. « mort » → osiimuli cueillie · osiieku montée-en-étoile · osieva seconde-mort ; « celui qu'on oublie » → aitameva). RÈGLE DE TRAVAIL : avant de composer un mot ou de calquer le français, BALAIE cette carte — si le SENS d'un segment de la phrase colle à une famille, EMPLOIE la forme dédiée (appelle verify_word/lookup_concept pour sa définition + sa forme liée exactes). Si aucune nuance ne colle, compose normalement — ne force pas. Format « famille : forme=glose ».`;
 
 /**
  * Charge le template de prompt de base depuis les fichiers
