@@ -4,36 +4,34 @@
 
 This repository contains:
 - **Complete linguistic system**: phonology, morphology, grammar, syntax
-- **Dual language variants**: Proto-Confluent (primitive) and Ancient Confluent (unified)
-- **Translation API**: French to Confluent using LLMs (Claude/GPT)
-- **Web interface**: Real-time translation with multiple models
-- **Comprehensive documentation**: Full language reference
+- **Three eras**: Proto-Confluent (primitive), Ancient Confluent (unified), **Mythological Confluent** (sacred register, for transcreating the sacred chants — see `docs/langue/06-CONFLUENT-MYTHIQUE.md`)
+- **Agentic translation API**: French → Confluent via a *tool-using LLM agent* whose every output passes a deterministic **phonotactic gate** (broken forms can never be served)
+- **Proper-name forge** (`forge_proper_name`) + admin blessing workflow, and **live SSE streaming** of the agent's work
+- **Web interface** + comprehensive documentation
 
 ## Features
 
 ### Linguistic System
 
-- **67 roots** (15 sacred, 52 standard) with consistent phonology
+- **~1800+ living lexicon entries** (`ancien-confluent/lexique/*.json`), proven 100% coherent (phonotactics/form/roots/homophones audit green)
 - **16 sacred liaisons** for word composition
-- **Complete verbal system** (12 verbs + conjugators)
-- **SOV syntax** with particles
-- **Base-12 number system** (culturally anchored)
-- **Metaphorical emotion system** (body-based expressions)
+- **Complete verbal system** (conjugators: tenses, aspects, modes, evidential)
+- **SOV syntax** with particles · **base-12 number system** · **metaphorical emotion system** (body-based)
+- **Sacred stratum** (mythological register): the Void, the First Watcher, the two sisters, the Watch…
 
 ### Translation Tools
 
-- **Multi-provider support**: Anthropic Claude, OpenAI GPT
-- **Real-time translation**: French → Confluent with layer-by-layer breakdown
-- **Bidirectional support**: Confluent → French translation
-- **Batch processing**: Translate multiple words/phrases at once
-- **Coverage analysis**: Pre-translation text analysis
+- **Single provider**: Anthropic Claude via the **Etheryale proxy** (OpenAI/GPT removed)
+- **Tool-using agent + phonotactic gate**: the agent looks up the lexicon/grammar and self-verifies; no broken form is ever served (frank failure instead of a fallback)
+- **Live streaming (SSE)**: watch the agent's tools, gate attempts and forge in real time
+- **Bidirectional**: Confluent → French · **batch** · **coverage analysis** · **proper-name forge** with admin blessing
 
 ## Quick Start
 
 ### Prerequisites
 
 - Node.js 16+
-- API key from Anthropic or OpenAI
+- An Etheryale proxy key (`ETHERYALE_API_KEY`, `eai_…`) — all LLM calls go through the proxy
 
 ### Installation
 
@@ -122,7 +120,9 @@ confluent/
 
 The ConfluentTranslator API provides:
 
-- `POST /translate` - French → Confluent translation
+- `POST /translate` - French → Confluent (agentic, gated)
+- `GET /translate/stream` - live SSE stream of the agent's work
+- `POST /api/forge-name` - forge a proper name (+ `/api/admin/forged-names/bless|reject`)
 - `POST /api/translate/conf2fr` - Confluent → French translation
 - `GET /api/search` - Search in lexicon
 - `POST /api/analyze/coverage` - Text coverage analysis
@@ -143,6 +143,11 @@ See [API Documentation](ConfluentTranslator/README.md) for details.
 - Complete phonology: 5 vowels, 10 consonants
 - 16 sacred liaisons for composition
 - Full verbal and temporal system
+
+### Mythological Confluent (Sacred register)
+- High/poetic register of Ancient Confluent — inherits everything, activates the reserved vowels `y/é/è` (for the most sacred), adds a sacred stratum (cosmogony of the chants)
+- Used to transcreate the **Livre de la Foi** chants. Vocabulary is diversified into **native unique senses** (not French calques)
+- See [Mythological Confluent](docs/langue/06-CONFLUENT-MYTHIQUE.md)
 
 ## Contributing
 
@@ -171,8 +176,7 @@ Linguistic design inspired by:
 - SOV syntax patterns (~10%)
 
 Translation powered by:
-- Anthropic Claude
-- OpenAI GPT
+- Anthropic Claude (via the Etheryale proxy)
 
 ## Links
 

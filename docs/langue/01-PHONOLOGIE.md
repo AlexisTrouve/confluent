@@ -230,11 +230,15 @@ Le Confluent a évolué depuis une forme proto-linguistique plus simple :
 - **Stabilisation** des finales en voyelle
 - **Différenciation** verbes (C finale) vs racines (V finale)
 
-### Changements à venir (Confluent Classique)
+### Le Confluent mythologique (ex-« Confluent Classique »)
 
-Le système phonétique actuel (Ancien Confluent) est **stable et validé**. Évolutions futures possibles :
+> ✅ **RÉALISÉ** : ce palier d'évolution existe désormais comme le **registre mythologique** (sacré),
+> qui **active les voyelles réservées y/é/è** pour le plus sacré (`èva`=le Vide, `ysili`=le Père).
+> Voir **`06-CONFLUENT-MYTHIQUE.md`**.
 
-1. **Activation des voyelles réservées** (y, é, è)
+Le système phonétique de base (Ancien Confluent) reste **stable et validé**. Évolutions encore ouvertes :
+
+1. **Activation des voyelles réservées** (y, é, è) — faite dans le mythologique
 2. **Diphtongues formelles** (ai, au, ei)
 3. **Tons ou accents** pour nuances sémantiques
 4. **Registres prosodiques** (rituel vs quotidien)
