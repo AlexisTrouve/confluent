@@ -1,0 +1,167 @@
+{
+  "_comment": "Vocabulaire de BASE dérivé du Livre de la Foi (chants Création/Éveil) — partie 2b. Mots QUOTIDIENS que les chants emploient et qui manquaient à l'ancien (nature, géographie du voyage, verbes narratifs, abstraits). RIEN de sacré ici : ces mots vont dans l'ancien, le mythologique en hérite. Le sacré/cosmique (les bêtes, mille feux, paupière) est dans mythologique-confluent/lexique/.",
+  "_DRAFT": "Formes proposées (phonotactique ancien validée, zéro y/é/è, zéro r/d nouveau, aucune collision). Registre finno-basque/japonisant. Révisable par Alexi.",
+  "_provenance": "civjdr/livre_de_la_foi/chants/chant-01-creation.md + chant-02-eveil.md",
+  "dictionnaire": {
+    "neige": {
+      "traductions": [
+        { "confluent": "lumi", "type": "racine", "forme_liee": "lum", "domaine": "nature",
+          "definition": "La neige : le manteau blanc terne du monde-d'avant (« de la neige jusqu'où le regard se perd »), qui fond au dégel pour libérer l'eau et la terre noire.",
+          "nuance": "Racine lumi (forme liée lum-). Le monde primitif des chants est un monde de neige : mot central de l'incipit de l'Éveil. Distincte de lavu (froid) — lumi est la matière, pas la sensation." }
+      ],
+      "synonymes_fr": ["neiges", "neigeux"]
+    },
+    "glace": {
+      "traductions": [
+        { "confluent": "kima", "type": "racine", "forme_liee": "kim", "domaine": "nature",
+          "definition": "La glace : l'eau durcie du gel ; image récurrente du Vide qui « attend sous chaque chose comme l'eau attend sous la glace ».",
+          "nuance": "Racine kima (forme liée kim-). À distinguer de lumi (neige) : kima est l'eau prise, la croûte dure ; lumi est la poudre. La glace cache l'eau vive en-dessous (motif du Vide)." }
+      ],
+      "synonymes_fr": ["glaces", "gel", "givre"]
+    },
+    "dégel": {
+      "traductions": [
+        { "confluent": "mela", "type": "racine", "forme_liee": "mel", "domaine": "nature",
+          "definition": "Le dégel : le moment où « la croûte des neiges se fendit » et où l'eau, dessous, « se souvint qu'elle savait courir » — l'ouverture du monde figé. Titre de la 1ère section de l'Éveil.",
+          "nuance": "Racine mela (forme liée mel-). Concept-charnière : le dégel est l'éveil de la nature (parallèle de l'éveil de la braise). Couvre fonte/débâcle. Verbe « fondre » = melak." }
+      ],
+      "synonymes_fr": ["fonte", "débâcle"]
+    },
+    "aval": {
+      "traductions": [
+        { "confluent": "luva", "type": "racine", "forme_liee": "luv", "domaine": "geographie",
+          "definition": "L'aval : le bas du cours de l'eau, « le bout de l'eau », là où la rivière mène (« suivez-la… au bout, il est un lieu »). Direction du voyage de l'Éveil.",
+          "nuance": "Racine luva (forme liée luv-). Mot de l'avenir-marchable : l'Éveilleur nomme « l'aval » comme une porte. À distinguer de nura (la rivière elle-même) : luva est la direction/destination en bas du courant." }
+      ],
+      "synonymes_fr": ["le bas du courant"]
+    },
+    "gué": {
+      "traductions": [
+        { "confluent": "suvi", "type": "racine", "forme_liee": "suv", "domaine": "geographie",
+          "definition": "Le gué : « la ligne de pierres affleurantes où l'on passait à pied sec », découvert par l'enfant Œil-Ouvert. Lieu du passage et de la révélation du regard neuf.",
+          "nuance": "Racine suvi (forme liée suv-). Passage à pied dans l'eau. À distinguer de venak (franchir, le verbe) : suvi est le lieu franchissable." }
+      ],
+      "synonymes_fr": ["passage à gué"]
+    },
+    "île": {
+      "traductions": [
+        { "confluent": "buli", "type": "racine", "forme_liee": "bul", "domaine": "geographie",
+          "definition": "L'île : « une langue de terre verte que le courant tenait dans ses deux bras sans l'emporter » — la halte tiède de l'Éveil (« un avant-goût du lieu »).",
+          "nuance": "Racine buli (forme liée bul-). Terre cernée d'eau. L'île des chants = répit, pas destination (« ce n'est pas le lieu »)." }
+      ],
+      "synonymes_fr": ["îles", "îlot"]
+    },
+    "plaine": {
+      "traductions": [
+        { "confluent": "lapa", "type": "racine", "forme_liee": "lap", "domaine": "geographie",
+          "definition": "La plaine : « la grande plaine de neige nue », l'étendue plate et découverte où la Donneuse veut voir le peuple à plein jour — et où la grise faim guette les exposés.",
+          "nuance": "Racine lapa (forme liée lap-). Étendue ouverte = lieu de l'exposition (anti-couvert). Charge : à découvert sous l'œil du jour, donc dangereux." }
+      ],
+      "synonymes_fr": ["plaines", "étendue"]
+    },
+    "crête": {
+      "traductions": [
+        { "confluent": "vipa", "type": "racine", "forme_liee": "vip", "domaine": "geographie",
+          "definition": "La crête : la ligne de sommet (« la Donneuse-de-Jour montait à peine au-dessus des crêtes »), horizon du regard qui se lève.",
+          "nuance": "Racine vipa (forme liée vip-). Le haut où le regard porte. À distinguer de vuku (gouffre/creux) — vipa est le sommet, vuku le fond." }
+      ],
+      "synonymes_fr": ["crêtes", "sommet", "cime"]
+    },
+    "bassin": {
+      "traductions": [
+        { "confluent": "kuva", "type": "racine", "forme_liee": "kuv", "domaine": "geographie",
+          "definition": "Le bassin : le creux que l'eau « se creusait depuis toujours » au pied de la chute, où la lumière se brise en couleurs du seuil.",
+          "nuance": "Racine kuva (forme liée kuv-). Creux d'eau au pied d'une chute. À distinguer de vuku (gouffre sec/abîme)." }
+      ],
+      "synonymes_fr": ["bassins", "vasque"]
+    },
+    "attendre": {
+      "traductions": [
+        { "confluent": "vesan", "type": "verbe", "forme_liee": "vesan", "domaine": "action",
+          "definition": "Attendre : le geste DÉFINITOIRE du Vide (« il n'a que l'attente… il attend encore »), mais aussi l'attente patiente des vivants. Le Vide n'agit pas : il attend qu'on s'oublie.",
+          "nuance": "Verbe vesan (+ conjugateur). Mot-clé manquant révélé par la transcréation du précepte (« le Vide attend »). Sans menace par lui-même : c'est l'attente qui ronge, pas une morsure." }
+      ],
+      "synonymes_fr": ["attend", "attends", "attendent", "attente", "guette (sens d'attente)"]
+    },
+    "allumer": {
+      "traductions": [
+        { "confluent": "sukak", "type": "verbe", "forme_liee": "sukak", "domaine": "action",
+          "definition": "Allumer : tendre le feu d'une flamme à une autre sans rien perdre de la sienne (« comme un feu unique tend une braise à un feu froid ») — le geste fondateur du Père qui alluma mille feux.",
+          "nuance": "Verbe sukak, dérivé de suki (feu) + suffixe verbal. POURQUOI motivé : l'acte d'allumer descend directement de la racine du feu. À distinguer de semak (semer/disperser les feux à la volée)." }
+      ],
+      "synonymes_fr": ["allume", "allumèrent", "embraser", "enflammer"]
+    },
+    "semer": {
+      "traductions": [
+        { "confluent": "semak", "type": "verbe", "forme_liee": "semak", "domaine": "action",
+          "definition": "Semer / essaimer : disperser à la volée (« mille feux semés à la volée », les braises « semées au creux des vivants ») ; répandre largement, sans compter.",
+          "nuance": "Verbe semak (+ conjugateur). Le geste de l'essaimage divin (le Père sème sa lumière « partout sur la terre froide »). Couvre semer (graine) et disperser (feux)." }
+      ],
+      "synonymes_fr": ["sème", "sema", "semèrent", "essaimer", "disperser", "répandre"]
+    },
+    "effacer": {
+      "traductions": [
+        { "confluent": "lekan", "type": "verbe", "forme_liee": "lekan", "domaine": "action",
+          "definition": "S'effacer / se retirer : se tenir en retrait pour laisser les autres marcher seuls (« l'Éveilleur s'effaçait, et il s'en réjouissait » ; « telle est la seule victoire d'un Veilleur… le visage d'une disparition »). Aussi : effacer (le Vide efface ce qu'on cesse de regarder).",
+          "nuance": "Verbe lekan (+ conjugateur). Double charge : noble (le guide qui s'efface, le retrait du Père) ET menaçant (le Vide qui efface). Le contexte tranche. À distinguer de tekun (fuir, par peur)." }
+      ],
+      "synonymes_fr": ["s'effacer", "se retirer", "s'efface", "s'effaça", "s'éclipser", "effacer"]
+    },
+    "faiblir": {
+      "traductions": [
+        { "confluent": "lubak", "type": "verbe", "forme_liee": "lubak", "domaine": "action",
+          "definition": "Faiblir : perdre ses forces, vaciller (« quand celui-là faiblit, qu'il en réveille un autre ») — le moment où le veilleur cède au sommeil et doit passer la garde.",
+          "nuance": "Verbe lubak (+ conjugateur). Mot-pivot de la Veille : faiblir n'est pas une faute, c'est le signal de passer le relais. À distinguer de osiak (mourir)." }
+      ],
+      "synonymes_fr": ["faiblit", "faiblissent", "vaciller", "défaillir", "s'affaiblir"]
+    },
+    "montrer": {
+      "traductions": [
+        { "confluent": "silak", "type": "verbe", "forme_liee": "silak", "domaine": "action",
+          "definition": "Montrer : faire voir, désigner du regard (« Je vous montre la rivière : suivez-la » ; « Montre la rivière, jamais le poisson »). Le geste pédagogique central de l'Éveilleur.",
+          "nuance": "Verbe silak, dérivé de sili (regard/œil) + suffixe verbal. POURQUOI motivé : montrer = « porter le regard d'autrui sur ». Précepte-clé : montrer (la voie) > donner (le poisson). À distinguer de mirak (voir, pour soi)." }
+      ],
+      "synonymes_fr": ["montre", "montra", "montrèrent", "désigner", "indiquer"]
+    },
+    "reculer": {
+      "traductions": [
+        { "confluent": "osak", "type": "verbe", "forme_liee": "osak", "domaine": "action",
+          "definition": "Reculer / s'éloigner : céder du terrain (« le Vide reculait à pas comptés » ; « il recule encore d'un pas » chaque fois qu'un œil se rouvre). Le mouvement du Vide face au Regard.",
+          "nuance": "Verbe osak (+ conjugateur). Le Vide ne fuit pas (≠ tekun) : il RECULE, sans hâte, prêt à revenir. Mouvement lent et patient, à pas comptés." }
+      ],
+      "synonymes_fr": ["recule", "recula", "reculait", "s'éloigner", "céder du terrain"]
+    },
+    "guetter": {
+      "traductions": [
+        { "confluent": "likan", "type": "verbe", "forme_liee": "likan", "domaine": "action",
+          "definition": "Guetter / épier : surveiller en prédateur, tapi (« celui qui les guettait n'avait ni dent ni faim » = le Vide ; la grise faim « tapie… à attendre qu'un homme se détache »). Le regard de la menace.",
+          "nuance": "Verbe likan (+ conjugateur). À distinguer de velak (veiller, qui protège) : likan guette pour prendre. Même geste — l'œil ouvert — mais retourné en menace." }
+      ],
+      "synonymes_fr": ["guette", "guettait", "épier", "traquer", "être à l'affût"]
+    },
+    "grandir": {
+      "traductions": [
+        { "confluent": "makak", "type": "verbe", "forme_liee": "makak", "domaine": "action",
+          "definition": "Grandir / croître : devenir plus que ce qu'on est (« pour devenir plus que ce que vous êtes » ; « Je veux les regarder grandir », dit la Donneuse). L'aspiration du peuple en marche.",
+          "nuance": "Verbe makak, dérivé de mako (grand) + suffixe verbal. POURQUOI motivé : grandir = « se faire grand ». Couvre croissance physique et élévation (devenir un peuple)." }
+      ],
+      "synonymes_fr": ["grandit", "grandissent", "croître", "grandirent", "s'élever"]
+    },
+    "don": {
+      "traductions": [
+        { "confluent": "kita", "type": "racine", "forme_liee": "kit", "domaine": "abstrait",
+          "definition": "Le don : ce qui est donné, et surtout la GRADATION du don de l'Éveilleur (« le plus grand de ses dons ») — non le poisson (la chose), mais la voie (l'autonomie).",
+          "nuance": "Racine kita (forme liée kit-), dérivée de kitan (donner). POURQUOI motivé : le don est le fruit nominal de l'acte de donner. Charge doctrinale : le vrai don ne nourrit pas, il rend autonome." }
+      ],
+      "synonymes_fr": ["dons", "présent", "offrande"]
+    },
+    "douleur": {
+      "traductions": [
+        { "confluent": "napu", "type": "racine", "forme_liee": "nap", "domaine": "abstrait",
+          "definition": "La douleur : le mal du corps, « laide, mais à nous » — gardienne au visage affreux, car « c'est par elle que le corps sait où il a mal, et qu'un homme appelle ». Voilée, elle tue en silence (le blessé qui ne geint plus).",
+          "nuance": "Racine napu (forme liée nap-). Précepte : « Garde ta douleur ». À distinguer des émotions (kori X) : napu est la souffrance physique, signal vital. Antonyme du voile doux de la Voilée qui l'ôte." }
+      ],
+      "synonymes_fr": ["douleurs", "souffrance", "mal", "peine (physique)"]
+    }
+  }
+}

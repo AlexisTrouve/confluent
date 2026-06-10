@@ -171,6 +171,70 @@
         }
       ],
       "synonymes_fr": ["la veille"]
+    },
+    "sans-sommeil": {
+      "traductions": [
+        {
+          "confluent": "sorapo",
+          "type": "composition",
+          "forme_liee": "sorap",
+          "domaine": "cosmogonie",
+          "registre": "mythologique",
+          "note": "Le Sans-Sommeil — la bête de la Donneuse-de-Jour (Gardien-du-Jour).",
+          "definition": "Le Sans-Sommeil : grand oiseau « tombé du Soleil », dont l'œil rond n'a pas de paupière et ne se ferme jamais. Il parcourt le jour, ôte l'ombre où les choses se terrent, et de ses serres rejette ce qui rampe pour prendre les vivants exposés. Gardien — mais ce qu'il garde, il le découvre, et découvrir, parfois, c'est livrer.",
+          "nuance": "QUOI : nom propre (composition sor-a-apo = soleil + relation + oiseau, « l'oiseau-soleil »). POURQUOI sora+apo : il est né du Soleil (œil du jour) et reste un oiseau ; son essence (l'œil-soleil qui ne cligne pas) prime sur le littéral « sans-sommeil ». Amour de la Donneuse devenu gardien : des serres, jamais tournées contre ce qu'il garde. DRAFT.",
+          "_draft": true
+        }
+      ],
+      "synonymes_fr": ["le sans-sommeil", "gardien-du-jour", "l'oiseau qui ne cligne pas"]
+    },
+    "grand-pâle": {
+      "traductions": [
+        {
+          "confluent": "pulimuli",
+          "type": "composition",
+          "forme_liee": "pulimul",
+          "domaine": "cosmogonie",
+          "registre": "mythologique",
+          "note": "Le Grand-Pâle — la bête de la Voilée (l'haleine douce).",
+          "definition": "Le Grand-Pâle : couché sous le monde depuis si longtemps qu'on n'en voit jamais que le flanc, sans yeux. Son haleine tiède sent le lait et la pierre mouillée ; il murmure à chacun « assieds-toi, ferme les yeux, tu repartiras après » — et il ne sait plus que sa douceur fait mourir. Tendresse de la Voilée devenue brume.",
+          "nuance": "QUOI : nom propre (composition puli-muli = souffle + voile/brume, « le souffle-brume »). POURQUOI la réduplication puli/muli : elle mime le murmure lulling de l'haleine qui endort. Sans yeux (« qu'en ferait-il, dans le noir ? »). Pas méchant : il ne distingue ni repos/mort ni douleur/souffrance. DRAFT.",
+          "_draft": true
+        }
+      ],
+      "synonymes_fr": ["le grand-pâle", "l'haleine douce", "le souffle pâle"]
+    },
+    "mille feux": {
+      "traductions": [
+        {
+          "confluent": "isukimako",
+          "type": "composition",
+          "forme_liee": "isukimak",
+          "domaine": "cosmogonie",
+          "registre": "mythologique",
+          "note": "Les mille feux — l'essaimage de la lumière du Père.",
+          "definition": "Les mille feux : les mille éclats que le Premier Veilleur tira de son œil et sema à la volée par toute la terre froide — non des morceaux arrachés à lui, mais des enfants de sa lumière, chacun entier comme la flamme qui en allume une autre. Lui ne s'éteignit pas : il essaima sans rien perdre.",
+          "nuance": "QUOI : le collectif sacré (composition isuki-mako = braise + grand nombre, « la multitude des braises »). POURQUOI : isuki (l'éclat individuel) × mako (l'innombrable) = l'essaimage divin, tous les feux semés en tous les vivants. Fonde « tous des Veilleurs ». DRAFT.",
+          "_draft": true
+        }
+      ],
+      "synonymes_fr": ["les mille feux", "mille éclats", "les feux semés"]
+    },
+    "paupière": {
+      "traductions": [
+        {
+          "confluent": "silimuli",
+          "type": "composition",
+          "forme_liee": "silimul",
+          "domaine": "cosmogonie",
+          "registre": "mythologique",
+          "note": "La paupière — le battement du monde (veille/sommeil, vie/mort).",
+          "definition": "La paupière : le voile de l'œil, ce qui s'abaisse sur le regard. Son battement EST le battement du monde : « chaque vivant fait comme le Père — il ouvre les yeux et il les ferme ». Mourir n'est qu'une paupière qui s'abaisse une dernière fois, sur un œil qu'un autre, ailleurs, rouvrira.",
+          "nuance": "QUOI : composition sil-i-muli = œil + agent + voile, « le voile de l'œil ». POURQUOI muli : la paupière relève du domaine de la Voilée (abaisser les paupières, voiler). Concept cosmique, pas seulement anatomique : son battement scande veille/sommeil = vie/mort. DRAFT.",
+          "_draft": true
+        }
+      ],
+      "synonymes_fr": ["paupières", "le voile de l'œil"]
     }
   }
 }
