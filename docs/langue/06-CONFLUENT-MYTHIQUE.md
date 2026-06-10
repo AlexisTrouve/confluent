@@ -136,10 +136,15 @@ Détail : voir l'architecture du traducteur dans `../../CLAUDE.md` et `../../Con
 forge de noms + bénédiction ; transcréations de préceptes prouvées (gate vert).
 
 **En cours / à venir :**
-1. **Diversifier le vocab** (§3) — créer les sens natifs uniques sur les mots-tiroir (le carburant). 🗺️ **Inventaire fait** (cartographie + champ FR ancien/noble/sacré + distinctions candidates) : `atelier/INVENTAIRE-MOTS-TIROIR.md`. **Méthode de la phase FIX** (grounded-in-canon, boucle par champ, garanties) : `atelier/PROCESS-DIVERSIFICATION.md`.
-2. **Enrichir la traduction mythique** (§4) — surfacer les options + définitions à l'agent.
+1. ✅ **Diversifier le vocab** (§3) — **FAIT** : ~33 sens natifs sur 5 champs intégrés au lexique
+   (`ancien-confluent/lexique/32-sens-natifs.json` + strate sacrée `mythologique-confluent/lexique/02-sens-natifs-sacres.json`).
+   Démarche : `atelier/INVENTAIRE-MOTS-TIROIR.md` (carto) → `atelier/PROCESS-DIVERSIFICATION.md` (méthode,
+   grounded-in-canon) → `atelier/FIX-PROPOSITIONS.md` (résultats + vérifs).
+2. ✅ **Enrichir la traduction** (§4) — **FAIT** : `lookup_concept` surface `definition` + `nuance` complètes
+   (l'IA voit le menu de sens et choisit en connaissance de cause). Prouvé live (Opus 4.8).
 3. **Grammaire** — devices natifs pour le benefactif (« à ta place »), la copule définitionnelle (« X c'est Y »).
 4. **Transcréer les chants** en volume dans cette strate.
+   *(2 arbitrages de vision restent ouverts : `ena` vs `èva` comme origine ultime ; consolidation `zakis`→`konu`.)*
 
 ---
 

@@ -127,8 +127,21 @@ Le pivot natif = **tenu-par-le-Regard ⚔️ retombant-au-Vide**, instancié en 
 
 ---
 
-## Prochaine étape : INTÉGRATION (après arbitrages)
-1. Trancher les 3 arbitrages de vision (haut du doc).
-2. Intégrer **champ par champ**, en commençant par **Perception (mirak/sili)** + **armer le pipeline** (`lookup_concept` surface les options + définitions) + **tester** (l'IA choisit-elle le bon sens en contexte ?).
-3. Puis dérouler les autres champs. Audit cohérence VERT + commit à chaque champ.
+## ✅ INTÉGRÉ (juin 2026) — les 5 champs sont au lexique
+
+Les ~33 sens sont entrés au lexique (`ancien-confluent/lexique/32-sens-natifs.json` + strate sacrée
+`mythologique-confluent/lexique/02-sens-natifs-sacres.json`), et le **pipeline est armé** (`lookup_concept`
+surface `definition` + `nuance` complètes ; fix `searchWord` pour les synonymes accentués).
+
+Vérifié : audit-coherence **0/0/0/0** à chaque champ · `npm test` **EXIT 0** · lookups ressortent les menus
+de sens + nuances · **2 tests live (claude-opus-4-8)** prouvant le CHOIX natif en contexte :
+- *ancien* : « tant qu'on se souvient de l'ancêtre, il demeure… » → l'IA choisit `silituli`/`mirieva`.
+- *mythologique* : « au commencement… dépérit vers le Vide » → l'IA choisit `enasoku`/`èvatuli`.
+
+Arbitrages restés OUVERTS (vision Alexi) : (1) *fait* — `mirieva` déclaré en ancien ; (2) `ena` vs `èva`
+origine ultime — **non tranché** (porte cosmogonique réservée) ; (3) consolidation `zakis`→`konu` — **non
+faite** (zakis/zakam laissés intacts ; les 4 sens natifs de konu ajoutés à côté).
+
+**Reste (hors périmètre vocab) :** grammaire (benefactif, copule définitionnelle), transcréation des chants
+en volume. Harnais de test behavioral : `ConfluentTranslator/scripts/test-trad.js`.
 

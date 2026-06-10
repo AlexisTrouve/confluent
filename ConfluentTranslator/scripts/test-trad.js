@@ -23,8 +23,15 @@ const { getEra } = require('../src/core/eras/eras');
 const TEXT = process.argv[2] || "Tant qu'on se souvient de l'ancêtre, il demeure.";
 const VARIANT = process.argv[3] || 'ancien';
 const MODEL = process.argv[4] || 'claude-opus-4-8';
-// Formes natives forgées (champ 1) à repérer dans la sortie pour juger le CHOIX de l'IA.
-const SENS_NATIFS = ['silituli', 'mirieva', 'silimori', 'morisili', 'sekakota', 'siliveli'];
+// Formes natives forgées (5 champs) à repérer dans la sortie pour juger le CHOIX de l'IA.
+const SENS_NATIFS = [
+  'silituli', 'mirieva', 'silimori', 'morisili', 'sekakota', 'siliveli',
+  'velakonu', 'konusupu', 'konuvaru', 'konuleku', 'savuvosak', 'morivosak', 'zovosak', 'savunekan',
+  'zokasili', 'mukazoka', 'savuzoka', 'takusili', 'silizo', 'pakasili', 'besinekan', 'seluvela', 'selukumu', 'uramela',
+  'silikasi', 'kasiuaita', 'kotamuki', 'kovamori', 'silikova', 'urateki', 'vukuteki', 'tekiota',
+  'tokituli', 'tisatuli', 'sukibuka', 'aitabuka', 'vasibuka', 'samenak',
+  'èvatuli', 'samoèva', 'veluzeru', 'enasoku', 'isukibuka'
+];
 
 (async () => {
   const baseDir = path.join(__dirname, '..', '..');
