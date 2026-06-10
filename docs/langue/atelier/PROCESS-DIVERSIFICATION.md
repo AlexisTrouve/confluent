@@ -59,12 +59,16 @@ l'inventaire, réévalués à la lumière du canon). Pour chaque sens retenu : i
 (§2). Style : finno-basque/japonisant, pas elfique/latin ; y/é/è réservés au sacré (mythologique).
 > ⚖️ **MIX racine ↔ composition (règle).** Un concept **primitif cardinal** (un atome de la pensée
 > confluente, qu'on ne « sent » pas comme A+B) → **racine OPAQUE** (ex. `tuvina` = tenir-dans-l'être par le
-> regard, PAS `sili+tuli`). Un concept **vraiment analytique** (« X de/par Y ») → **composition** (ex.
+> regard, PAS `sili+tuli`). [racine canonique : `tuvak`.] Un concept **vraiment analytique** (« X de/par Y ») → **composition** (ex.
 > `vukuteki` = aller+Gouffre = pèlerinage). ⚠️ Le piège : `check-form` valide *plus facilement* une composition
 > (elle se décompose en racines déclarées) qu'une racine neuve (« non reconnu » — mais tout aussi valide :
 > il lui faut juste gate + zéro collision). NE PAS se laisser pousser au tout-composition par ce biais : viser
 > un vrai mix (~1/3 racines visé). Une racine neuve = une racine `check-form` ✅ + un `type: verbe/nom` + une
 > `note` de provenance ; pas de champ `composition`/`racines`.
+> 📏 **Gabarit de longueur des RACINES (décision Alexi)** : **verbe = 5 char** (CVCVC, finit par CONSONNE —
+> gabarit `mirak`/`vosak`/`tekis`) · **nom/sujet = 4 ou 6 char** (finit par voyelle, CV — `sili`=4, `kavuno`=6) ·
+> **7 char = INTERDIT** pour une racine atomique. (Une COMPOSITION peut être plus longue — la règle ne vise
+> que les racines.) Vérifier la longueur AVANT d'adopter une racine forgée.
 
 **d. ÉCRIRE les définitions** — chaque sens reçoit une **définition** (QUOI + nuance + **ce qui le distingue
 des voisins** + ancrage canon). ⚠️ **La définition n'est pas du décor : c'est ELLE qui arme l'IA pour choisir**

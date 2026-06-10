@@ -5,16 +5,16 @@
     "tenir dans le regard": {
       "traductions": [
         {
-          "confluent": "tuvina",
+          "confluent": "tuvak",
           "type": "verbe",
-          "racine": "tuvina",
-          "forme_liee": "tuvin",
+          "racine": "tuvak",
+          "forme_liee": "tuva",
           "note": "Racine OPAQUE (primitif natif cardinal) — pas une composition : ce concept est un atome de la pensée confluente, pas « regard+demeurer » recollé.",
           "sens_litteral": "tenir une chose dans l'être par le regard / demeurer ainsi tenu",
           "domaine": "perception_existence",
           "champ": "Perception & Connaissance (mirak/tuli)",
           "definition": "Voir de telle façon que la chose est arrachée au Vide et maintenue dans l'être — et, en miroir, demeurer parce qu'on est vu, nommé, mémorisé. L'acte fondateur du Regard appliqué à une chose unique : la tenir dans l'existence (l'exact inverse d'oublier), comme on veille sur le creusé en étant son regard, comme l'ancêtre demeure tant qu'on le nomme.",
-          "nuance": "Racine opaque, primitif cardinal de la pensée confluente. DEUX faces : tenir (voir-qui-fait-exister) ET être tenu (demeurer-mémorisé). À distinguer de mirak (percevoir, neutre = perception pure) : tuvina n'est pas l'œil mais l'ACTE qui maintient dans l'être (charge ontologique). Distinct de milis (voir-1ʳᵉ-fois) et de vela/velak (la veille/guet). N'emploie QUE quand l'enjeu est faire-persister / arracher-au-Vide / mémoriser — jamais pour un simple « voir ». Pôle inverse : èluva (demeurer-en-s'effaçant). Ancrage canon : « voir, c'est arracher au Vide ».",
+          "nuance": "Racine opaque, primitif cardinal de la pensée confluente. DEUX faces : tenir (voir-qui-fait-exister) ET être tenu (demeurer-mémorisé). À distinguer de mirak (percevoir, neutre = perception pure) : tuvak n'est pas l'œil mais l'ACTE qui maintient dans l'être (charge ontologique). Distinct de milis (voir-1ʳᵉ-fois) et de vela/velak (la veille/guet). N'emploie QUE quand l'enjeu est faire-persister / arracher-au-Vide / mémoriser — jamais pour un simple « voir ». Pôle inverse : vèluk (demeurer-en-s'effaçant). Ancrage canon : « voir, c'est arracher au Vide ».",
           "registre": "sacré"
         }
       ],
@@ -23,15 +23,15 @@
     "regard qui glisse": {
       "traductions": [
         {
-          "confluent": "mirieva",
+          "confluent": "mevak",
           "type": "verbe",
-          "racine": "mirieva",
-          "forme_liee": "miriev",
+          "racine": "mevak",
+          "forme_liee": "meva",
           "sens_litteral": "voir sans tenir, laisser retomber au Vide",
           "domaine": "perception_morale",
           "champ": "Perception & Connaissance (mirak)",
           "definition": "Voir sans tenir : poser les yeux sur une chose et la laisser retomber au Vide ; la perception distraite, le coup d'œil qui n'inscrit rien et abandonne ce qu'il voit à l'oubli. Une faute morale (l'œil baissé), pas un simple défaut d'attention.",
-          "nuance": "Racine néologique mira (voir) + èva (le Vide) — déclarée en ancien car la faute « laisser glisser au Vide » est ORDINAIRE (le vice de la multitude), pas réservée au sacré. Exact négatif de tuvina (regard-qui-tient). À distinguer de mirak (perception neutre, sans charge) : mirieva est mirak chargé négativement par l'orientation-Vide. Ancrage canon : « oublier, c'est laisser le Vide reprendre » ; le vice par défaut = se laisser à l'oubli, l'œil baissé.",
+          "nuance": "Racine néologique mira (voir) + èva (le Vide) — déclarée en ancien car la faute « laisser glisser au Vide » est ORDINAIRE (le vice de la multitude), pas réservée au sacré. Exact négatif de tuvak (regard-qui-tient). À distinguer de mirak (perception neutre, sans charge) : mevak est mirak chargé négativement par l'orientation-Vide. Ancrage canon : « oublier, c'est laisser le Vide reprendre » ; le vice par défaut = se laisser à l'oubli, l'œil baissé.",
           "registre": "courant"
         }
       ],
@@ -76,16 +76,16 @@
     "connaissance par la rencontre": {
       "traductions": [
         {
-          "confluent": "motuna",
+          "confluent": "motak",
           "type": "verbe",
-          "racine": "motuna",
-          "forme_liee": "motun",
+          "racine": "motak",
+          "forme_liee": "mota",
           "note": "Racine OPAQUE (primitif natif) — le connaître-relationnel est un atome, pas « savoir+confluence » recollé.",
           "sens_litteral": "connaître par l'avoir-côtoyé",
           "domaine": "connaissance",
           "champ": "Perception & Connaissance (sekam/silumi)",
           "definition": "Connaître un être, un lieu, un ancêtre pour l'avoir côtoyé — le savoir né de la rencontre et du mélange, non de l'étude. Le cognoscere/conocer que le français a perdu : une petite confluence des êtres.",
-          "nuance": "Racine opaque (le cognoscere/conocer perdu du français). À distinguer de sekam (savoir-contenu, abstrait et transmissible) : motuna est RELATIONNEL et NON transmissible (on ne peut pas donner à un autre d'avoir connu quelqu'un). À distinguer de silumi (saisir un SENS) : ici on connaît un être/lieu, pas une signification. Ancrage canon : la confluence (deux rivières mêlées) ; on absorbe l'Autre par la rencontre (parenté déchue).",
+          "nuance": "Racine opaque (le cognoscere/conocer perdu du français). À distinguer de sekam (savoir-contenu, abstrait et transmissible) : motak est RELATIONNEL et NON transmissible (on ne peut pas donner à un autre d'avoir connu quelqu'un). À distinguer de silumi (saisir un SENS) : ici on connaît un être/lieu, pas une signification. Ancrage canon : la confluence (deux rivières mêlées) ; on absorbe l'Autre par la rencontre (parenté déchue).",
           "registre": "courant"
         }
       ],
@@ -94,16 +94,16 @@
     "discernement": {
       "traductions": [
         {
-          "confluent": "venaki",
+          "confluent": "venat",
           "type": "verbe",
-          "racine": "venaki",
-          "forme_liee": "venak",
+          "racine": "venat",
+          "forme_liee": "vena",
           "note": "Racine OPAQUE (primitif natif) — le discernement est un atome, pas « regard+vrai » recollé.",
           "sens_litteral": "trancher le vrai du faux, voir-vrai sous le masque",
           "domaine": "connaissance",
           "champ": "Perception & Connaissance (sekam/silumi)",
           "definition": "Trancher le vrai du faux, distinguer ce qui tient de ce qui retombe au Vide — voir-vrai sous le masque, séparer le sacré du profane, l'authentique du contrefait. Le Regard appliqué comme une lame.",
-          "nuance": "Racine opaque. À distinguer de sekam (détenir un savoir) : venaki ne détient rien, il SÉPARE (acte de jugement perceptif). À distinguer de velim (arbitrer un différend, justice sociale) : venaki tranche entre vrai et faux/masque (épistémique-cosmologique), pas entre personnes. Ancrage canon : le Regard = « distinguer l'indistinct » ; « voir vrai » contre le masque qui « mange le sens ».",
+          "nuance": "Racine opaque. À distinguer de sekam (détenir un savoir) : venat ne détient rien, il SÉPARE (acte de jugement perceptif). À distinguer de velim (arbitrer un différend, justice sociale) : venat tranche entre vrai et faux/masque (épistémique-cosmologique), pas entre personnes. Ancrage canon : le Regard = « distinguer l'indistinct » ; « voir vrai » contre le masque qui « mange le sens ».",
           "registre": "sacré"
         }
       ],
@@ -220,15 +220,15 @@
     "taire": {
       "traductions": [
         {
-          "confluent": "zovosak",
+          "confluent": "sumak",
           "type": "verbe",
-          "racine": "zovosak",
-          "forme_liee": "zovosak",
+          "racine": "sumak",
+          "forme_liee": "suma",
           "sens_litteral": "retenir volontairement une parole",
           "domaine": "parole",
           "champ": "Garde, Parole, Action (vosak)",
           "definition": "Se taire volontairement, retenir une parole qu'on pourrait dire : garder le secret sacré, ne pas prononcer ce qui doit rester voilé. Non l'absence de parole (mutisme), mais le CHOIX de ne pas dire — un acte de garde.",
-          "nuance": "zo (négation) + vosak (parler), racine néologique. À distinguer de zovoki (le silence-état, « sans voix ») et de zoku (le secret-chose) : zovosak est l'ACTE de taire. Positif chez ce peuple (la parole retenue protège, comme le voile), à l'opposé du masque (mentir). Ancrage canon : le voile abrite ≠ le masque ment ; « le dire sans le dire » (le non-dit, pas l'interdit).",
+          "nuance": "zo (négation) + vosak (parler), racine néologique. À distinguer de zovoki (le silence-état, « sans voix ») et de zoku (le secret-chose) : sumak est l'ACTE de taire. Positif chez ce peuple (la parole retenue protège, comme le voile), à l'opposé du masque (mentir). Ancrage canon : le voile abrite ≠ le masque ment ; « le dire sans le dire » (le non-dit, pas l'interdit).",
           "registre": "courant"
         }
       ],
@@ -327,16 +327,16 @@
     "refus de voir": {
       "traductions": [
         {
-          "confluent": "lozeni",
+          "confluent": "lozak",
           "type": "verbe",
-          "racine": "lozeni",
-          "forme_liee": "lozen",
+          "racine": "lozak",
+          "forme_liee": "loza",
           "note": "Racine OPAQUE (primitif natif) — le vice cardinal a son propre mot, pas « regard+négation » recollé.",
           "sens_litteral": "fermer volontairement son œil, refuser de voir",
           "domaine": "mal",
           "champ": "Mal (taku)",
           "definition": "Fermer volontairement son œil, refuser de voir ce qu'on pourrait voir ; le vice cardinal propre au peuple — « cesser de veiller quand on le pouvait ».",
-          "nuance": "Racine opaque, le vice cardinal du peuple. À distinguer de takusili (l'objet opaque, PASSIF) : lozeni est l'acte ACTIF du sujet qui s'aveugle. C'est la FAUTE, là où le creusé (victime du Vide) appelle compassion. Ancrage canon : « la faute, c'est cesser de veiller quand on le pouvait » ; l'œil fermé qui dort sa garde.",
+          "nuance": "Racine opaque, le vice cardinal du peuple. À distinguer de takusili (l'objet opaque, PASSIF) : lozak est l'acte ACTIF du sujet qui s'aveugle. C'est la FAUTE, là où le creusé (victime du Vide) appelle compassion. Ancrage canon : « la faute, c'est cesser de veiller quand on le pouvait » ; l'œil fermé qui dort sa garde.",
           "registre": "courant"
         }
       ],
@@ -588,7 +588,7 @@
           "domaine": "existence",
           "champ": "Existence (tuli)",
           "definition": "Se fixer au sol, habiter durablement un lieu, la sédentarité d'une lignée attachée à sa terre. Le « demeurer » qui prend racine dans la toka (le sol).",
-          "nuance": "toka (sol) + tuli (demeurer). vs tuvina (tenu par un regard, immatériel) : ici c'est la TERRE qui tient, pas le regard — le mode de la Montagne (l'ancré, le socle). Recouvre « habiter » au sens fort de s'établir. vs tisatuli (présence ponctuelle). Ancrage canon : la Montagne, l'Ancré, le Pilier ; la sédentarisation de la Confluence.",
+          "nuance": "toka (sol) + tuli (demeurer). vs tuvak (tenu par un regard, immatériel) : ici c'est la TERRE qui tient, pas le regard — le mode de la Montagne (l'ancré, le socle). Recouvre « habiter » au sens fort de s'établir. vs tisatuli (présence ponctuelle). Ancrage canon : la Montagne, l'Ancré, le Pilier ; la sédentarisation de la Confluence.",
           "registre": "courant"
         }
       ],
@@ -606,7 +606,7 @@
           "domaine": "existence",
           "champ": "Existence (tuli)",
           "definition": "L'état ponctuel d'être présent maintenant, copule de localisation sans charge de durée — « il est là », « se trouver à ».",
-          "nuance": "tisa (ici/présent) + tuli (demeurer). Le degré zéro temporel : ni tenu (tuvina), ni délavé (èluva), ni enraciné (tokituli) — juste là, à l'instant. Pour le simple « rester sur place » un moment. Ancrage canon : tisa fusionne ici/présent ; extension spatio-temporelle native de l'état.",
+          "nuance": "tisa (ici/présent) + tuli (demeurer). Le degré zéro temporel : ni tenu (tuvak), ni délavé (vèluk), ni enraciné (tokituli) — juste là, à l'instant. Pour le simple « rester sur place » un moment. Ancrage canon : tisa fusionne ici/présent ; extension spatio-temporelle native de l'état.",
           "registre": "courant"
         }
       ],
@@ -669,10 +669,10 @@
     "création continue": {
       "traductions": [
         {
-          "confluent": "samenak",
+          "confluent": "kosam",
           "type": "verbe",
-          "racine": "samenak",
-          "forme_liee": "samenak",
+          "racine": "kosam",
+          "forme_liee": "kosa",
           "sens_litteral": "le monde qui sourd du Vide là où le Regard se pose",
           "domaine": "cosmogonie",
           "champ": "Cosmos (samo)",

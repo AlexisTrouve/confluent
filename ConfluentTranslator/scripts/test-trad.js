@@ -25,12 +25,12 @@ const VARIANT = process.argv[3] || 'ancien';
 const MODEL = process.argv[4] || 'claude-opus-4-8';
 // Formes natives forgées (5 champs) à repérer dans la sortie pour juger le CHOIX de l'IA.
 const SENS_NATIFS = [
-  'tuvina', 'mirieva', 'silimori', 'morisili', 'motuna', 'venaki',
-  'velakonu', 'konusupu', 'konuvaru', 'konuleku', 'savuvosak', 'morivosak', 'zovosak', 'savunekan',
-  'zokasili', 'mukazoka', 'savuzoka', 'takusili', 'lozeni', 'kavuno', 'besinekan', 'seluvela', 'selukumu', 'limava',
+  'tuvak', 'mevak', 'silimori', 'morisili', 'motak', 'venat',
+  'velakonu', 'konusupu', 'konuvaru', 'konuleku', 'savuvosak', 'morivosak', 'sumak', 'savunekan',
+  'zokasili', 'mukazoka', 'savuzoka', 'takusili', 'lozak', 'kavuno', 'besinekan', 'seluvela', 'selukumu', 'limava',
   'silikasi', 'kasiuaita', 'kotamuki', 'kovamori', 'silikova', 'urateki', 'vukuteki', 'tekiota',
-  'tokituli', 'tisatuli', 'sukibuka', 'aitabuka', 'vasibuka', 'samenak',
-  'èluva', 'samoèva', 'veluzeru', 'enasoku', 'isukibuka'
+  'tokituli', 'tisatuli', 'sukibuka', 'aitabuka', 'vasibuka', 'kosam',
+  'vèluk', 'samoèva', 'veluzeru', 'enasoku', 'isukibuka'
 ];
 
 (async () => {
