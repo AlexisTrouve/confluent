@@ -165,6 +165,28 @@ const TOOL_DEFINITIONS = [
     }
   },
   {
+    name: 'forge_proper_name',
+    description:
+      "FORGE (ou retrouve) la forme Confluent d'un NOM PROPRE : personnage, lieu ou bête du récit " +
+      "(ex : « Œil-Bas », « le Sans-Sommeil », « Bras-Pleins »). UTILISE-LE pour TOUT nom propre sans " +
+      "forme attestée, au lieu d'improviser une forme inline (qui sortirait différente à chaque fois).\n" +
+      "Garantit la COHÉRENCE : si le nom a déjà été forgé, il renvoie la MÊME forme — jamais deux noms " +
+      "pour un même personnage. Sinon il en compose une (racines + liaison sacrée), la VALIDE " +
+      "(phonotactique + anti-collision) et la fige (provisoire, en attente de validation du créateur).\n" +
+      "QUAND : dès qu'un nom propre n'a pas de forme au lexique. PAS pour un mot commun (→ lookup_concept " +
+      "/ check_composition). Donne le SENS descriptif du nom pour une composition juste et cohérente " +
+      "(les noms en « Œil-* » doivent partager la racine sili-).\n" +
+      "Ex : forge_proper_name(nom_fr=\"Œil-Bas\", sens=\"celui qui ne lève jamais le regard\").",
+    input_schema: {
+      type: 'object',
+      properties: {
+        nom_fr: { type: 'string', description: 'Le nom propre français (ex: "Œil-Bas", "le Grand-Pâle").' },
+        sens: { type: 'string', description: 'Sens descriptif du nom, pour composer juste (ex: "le regard tourné vers le bas").' }
+      },
+      required: ['nom_fr']
+    }
+  },
+  {
     name: 'back_translate',
     description:
       "RE-TRADUIT ta traduction Confluent vers le français, MOT À MOT, pour que tu vérifies le SENS " +

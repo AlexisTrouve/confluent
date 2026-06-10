@@ -24,6 +24,7 @@ const { TOOL_DEFINITIONS, executeTool } = require('./translationTools');
 const { validateTranslation } = require('../validation/phonotactics');
 const { checkGrammar } = require('../validation/grammarCheck');
 const { checkVocab } = require('../validation/vocabCheck');
+const { forgeProperName } = require('./nameForge');   // forge_proper_name : exécuteur ASYNC (sous-agent + persist)
 
 /**
  * Extrait la ligne de traduction Confluent de la réponse formatée du modèle.
@@ -226,7 +227,15 @@ async function translateWithAgent(opts) {
       const toolResults = [];
       for (const block of resp.content) {
         if (block.type === 'tool_use') {
-          const result = executeTool(block.name, block.input, ctx);
+          // forge_proper_name est ASYNC (sous-agent LLM + persistance) → traité à part de executeTool
+          // (qui reste synchrone pour tous les autres outils). Son usage tokens est agrégé au total.
+          let result;
+          if (block.name === 'forge_proper_name') {
+            result = await forgeProperName(block.input, ctx);
+            if (result && result._usage) { accumulateUsage(usage, result._usage); delete result._usage; }
+          } else {
+            result = executeTool(block.name, block.input, ctx);
+          }
           // Trace complète (I/O brut, pour debug) + extraction du signal (gaps / formes cassées).
           trace.toolCalls.push({ round: toolRounds + 1, name: block.name, input: block.input, result });
           collectSignals(trace, block.name, block.input, result);

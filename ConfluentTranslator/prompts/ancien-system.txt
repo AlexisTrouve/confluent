@@ -252,6 +252,12 @@ Lieux :
 Peuple :
 - siliaska (les porteurs du regard libre) : sil-i-aska
 
+## Noms propres NOUVEAUX (hors liste ci-dessus) — utilise `forge_proper_name`
+Pour un nom propre de personnage, lieu ou bête qui n'est PAS dans la liste validée (ex : « Œil-Bas »,
+« Bras-Pleins », « le Sans-Sommeil »), n'improvise JAMAIS une forme inline : appelle
+`forge_proper_name(nom_fr, sens)` avec le SENS descriptif. Il renvoie une forme STABLE (la même à
+chaque fois pour un même nom) — déjà validée phonotactiquement et sans collision. Réutilise telle quelle.
+
 ================================================================
 # 10. LIMITATIONS SYNTAXIQUES (structures INEXISTANTES)
 ================================================================

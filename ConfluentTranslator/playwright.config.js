@@ -17,7 +17,8 @@ module.exports = defineConfig({
     command: 'node server.js',
     url: 'http://localhost:3100/api/health',
     // LLM_MOCK=1 : traduction déterministe sans appeler le LLM (E2E sans réseau ni coût).
-    env: { PORT: '3100', LLM_MOCK: '1' },
+    // FORGED_NAMES_PATH : registre de noms forgés isolé (temp) → l'E2E forge sans polluer data/noms-forges.json.
+    env: { PORT: '3100', LLM_MOCK: '1', FORGED_NAMES_PATH: require('path').join(require('os').tmpdir(), 'confluent-e2e-noms-forges.json') },
     timeout: 30000,
     reuseExistingServer: false,
   },

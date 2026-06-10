@@ -6,6 +6,9 @@
 # Secrets applicatifs — NE JAMAIS versionner
 # tokens.json contient les apiKeys (UUID) d'auth de l'API.
 ConfluentTranslator/data/tokens.json
+# État runtime : noms propres forgés à la volée (provisoire), écrit par le serveur. Hors git
+# (sinon le lexique versionné diverge ; on promeut au lexique les noms bénis manuellement).
+ConfluentTranslator/data/noms-forges.json
 *.pem
 *.key
 *.p8

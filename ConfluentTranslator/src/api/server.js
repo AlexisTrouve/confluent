@@ -14,6 +14,7 @@ const { buildContextualPrompt, getBasePrompt, getPromptStats } = require('../cor
 const { buildReverseIndex: buildConfluentIndex } = require('../core/morphology/reverseIndexBuilder');
 const { translateConfluentToFrench, translateConfluentDetailed } = require('../core/translation/confluentToFrench');
 const { translateWithAgent } = require('../core/translation/translationAgent');
+const { forgeProperName, stubForge } = require('../core/translation/nameForge');   // forge de noms propres (tool + endpoint atelier)
 const { buildGuide } = require('../core/guide/guideBuilder');
 const { getEra } = require('../core/eras/eras');
 // Écriture (Glyphes du Gouffre) : conversion texte→glyphes (échec franc précis) + rendu collier.
@@ -435,6 +436,37 @@ app.post('/api/analyze/coverage', authenticate, (req, res) => {
   }
 });
 
+// Forge de noms propres — atelier + surface E2E. - SECURED
+// QUOI : forge (ou retrouve) la forme Confluent d'un nom propre via le MÊME pipeline que le tool
+//        forge_proper_name (lookup-first → sous-agent → validation gate+collision → persistance provisoire).
+// POURQUOI : forger/prévisualiser un nom à la demande (revue créateur) + rendre le forgeur testable
+//        au niveau HTTP (E2E). Lookup-first ⇒ idempotent (2ᵉ appel = même forme, source 'registre').
+app.post('/api/forge-name', authenticate, async (req, res) => {
+  try {
+    const { nom_fr, sens, target, model } = req.body || {};
+    if (!nom_fr) return res.status(400).json({ error: 'nom_fr requis' });
+    const variant = resolveVariant(target);
+    const ctx = {
+      lexique: lexiques[variant],
+      morphReverseIndex: confluentIndexes[variant],
+      era: getEra(variant),
+      anthropic: anthropicClient,
+      model: model || DEFAULT_MODEL,
+      forgeFn: (process.env.LLM_MOCK === '1' && process.env.NODE_ENV !== 'production') ? stubForge : undefined
+    };
+    const result = await forgeProperName({ nom_fr, sens }, ctx);
+    if (result && result.found === false) {
+      // Échec FRANC (aucune forme valide) — attendu, pas une 500 : 422 comme TRANSLATION_UNVALIDATED.
+      return res.status(422).json({ ...result, code: 'NAME_UNFORGEABLE' });
+    }
+    if (result && result._usage) delete result._usage;
+    res.json(result);
+  } catch (e) {
+    reportError('forge-name 500', e, { nom_fr: req.body && req.body.nom_fr });
+    res.status(500).json({ error: e.message });
+  }
+});
+
 // Translation endpoint (NOUVEAU SYSTÈME CONTEXTUEL)
 app.post('/translate', authenticate, async (req, res) => {
   const { text, target, model, useLexique = true } = req.body;
@@ -517,7 +549,13 @@ app.post('/translate', authenticate, async (req, res) => {
       const ctx = {
         lexique: lexiques[variant],
         morphReverseIndex: confluentIndexes[variant],
-        era: getEra(variant)   // alphabet + grammaire de l'ère → gate + outils paramétrés
+        era: getEra(variant),  // alphabet + grammaire de l'ère → gate + outils paramétrés
+        // Forge de noms propres (forge_proper_name) : le sous-agent a besoin du client LLM + modèle.
+        // En mock E2E, on injecte le stub déterministe (le mock /translate court-circuite l'agent, mais
+        // on garde ctx cohérent). Sinon undefined → defaultLLMForge (vrai sous-agent) via nameForge.
+        anthropic: anthropicClient,
+        model: model || DEFAULT_MODEL,
+        forgeFn: (process.env.LLM_MOCK === '1' && process.env.NODE_ENV !== 'production') ? stubForge : undefined
       };
       const agentResult = await translateWithAgent({
         text,
