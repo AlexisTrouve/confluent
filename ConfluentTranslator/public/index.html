@@ -813,6 +813,16 @@
 
       <!-- LAYER 1: TRADUCTION (Always visible) -->
       <div id="result-container" style="display: none;">
+
+        <!-- TRAVAIL DE L'AGENT (live, streaming SSE) — le process de l'agent visible en temps réel -->
+        <div class="layer" id="agent-work-layer" style="display:none;">
+          <div class="layer1-title" style="display:flex;justify-content:space-between;align-items:center;">
+            <span>🔧 Travail de l'agent</span>
+            <span id="agentwork-status" style="opacity:.65;font-size:.78em;font-weight:normal;"></span>
+          </div>
+          <div id="agent-timeline" style="font-family:ui-monospace,monospace;font-size:13px;line-height:1.65;max-height:300px;overflow:auto;margin-top:10px;"></div>
+        </div>
+
         <div class="layer layer1">
           <div class="layer1-title">Traduction</div>
           <div id="layer1-content" class="layer1-content"></div>
@@ -1546,118 +1556,93 @@
       }
 
       button.disabled = true;
-      resultContainer.style.display = 'none';
-
-      // Show loading in layer 1
       resultContainer.style.display = 'block';
-      document.getElementById('layer1-content').textContent = 'Traduction en cours...';
+      document.getElementById('layer1-content').textContent = 'Traduction en cours…';
 
       const settings = JSON.parse(localStorage.getItem('confluentSettings') || '{}');
-      // Provider unique = proxy Etheryale (géré côté serveur). On n'envoie QUE texte/cible/modèle —
-      // aucun provider, aucune clé (ni anthropic ni openai). Modèle par défaut serveur = Haiku 4.5.
-      const config = {
-        text,
-        target: 'ancien',
-        model: settings.model || 'claude-haiku-4-5-20251001',
+      const model = settings.model || 'claude-haiku-4-5-20251001';
+
+      // --- Panneau « travail de l'agent » : on regarde l'agent travailler EN DIRECT (SSE) ---
+      const workLayer = document.getElementById('agent-work-layer');
+      const timeline = document.getElementById('agent-timeline');
+      const statusEl = document.getElementById('agentwork-status');
+      workLayer.style.display = 'block';
+      timeline.innerHTML = '';
+      const esc = (s) => String(s == null ? '' : s).replace(/[<>&]/g, c => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;' }[c]));
+      const ICONS = { analyze_text: '🧭', lookup_concept: '🔍', get_grammar: '📖', validate_form: '🔤', verify_word: '🔬', check_composition: '🧩', back_translate: '↩️', grammar_check: '📐', confirme_choix: '✍️', forge_proper_name: '🔨' };
+      const step = (html, color) => {
+        const d = document.createElement('div');
+        d.className = 'agent-step';
+        d.style.cssText = 'padding:1px 0;' + (color ? 'color:' + color + ';' : '');
+        d.innerHTML = html;
+        timeline.appendChild(d);
+        timeline.scrollTop = timeline.scrollHeight;
       };
 
-      try {
-        const response = await authFetch('/translate', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(config),
-        });
-
-        const data = await response.json();
-
-        if (response.ok) {
-          // LAYER 1: Translation
-          document.getElementById('layer1-content').textContent = data.layer1.translation;
-
-          // LAYER 2: Context
-          if (data.layer2) {
-            const wordsHtml = data.layer2.wordsFound && data.layer2.wordsFound.length > 0
-              ? data.layer2.wordsFound.map(w => `
+      // Rendu des 3 layers depuis l'event 'done' (réutilise l'affichage existant).
+      function renderLayers(data) {
+        if (data.layer1) document.getElementById('layer1-content').textContent = data.layer1.translation;
+        if (data.layer2) {
+          const wordsHtml = data.layer2.wordsFound && data.layer2.wordsFound.length > 0
+            ? data.layer2.wordsFound.map(w => `
                   <div class="word-match">
-                    <span class="word-match-input">${w.input}</span>
+                    <span class="word-match-input">${esc(w.input)}</span>
                     <span class="word-match-arrow">→</span>
-                    <span class="word-match-output">${w.confluent}</span>
-                    <span class="word-match-score">(${w.score.toFixed(2)})</span>
+                    <span class="word-match-output">${esc(w.confluent)}</span>
+                    <span class="word-match-score">(${(w.score || 0).toFixed(2)})</span>
                   </div>
                 `).join('')
-              : '<div class="no-results">Aucun mot trouvé (fallback racines activé)</div>';
-
-            document.getElementById('layer2-words').innerHTML = wordsHtml;
-
-            const statsHtml = `
-              <div class="stat-box">
-                <div class="stat-value">${data.layer2.entriesUsed || 0}</div>
-                <div class="stat-label">Entrées utilisées</div>
-              </div>
-              <div class="stat-box">
-                <div class="stat-value">${data.layer2.tokensSaved || 0}</div>
-                <div class="stat-label">Tokens économisés</div>
-              </div>
-              <div class="stat-box">
-                <div class="stat-value">${data.layer2.savingsPercent || 0}%</div>
-                <div class="stat-label">Économie</div>
-              </div>
-              <div class="stat-box">
-                <div class="stat-value">${
-                  data.layer2.useFallback ? 'RACINES SEULES' :
-                  (data.layer2.rootsUsed > 0 ? 'VOCAB + RACINES' : 'VOCAB SEUL')
-                }</div>
-                <div class="stat-label">Mode</div>
-              </div>
-            `;
-            document.getElementById('layer2-stats').innerHTML = statsHtml;
-          }
-
-          // LAYER 3: Explanations
-          if (data.layer3) {
-            const decompHtml = data.layer3.decomposition
-              ? data.layer3.decomposition.split('\n').map(line =>
-                  `<div class="decomposition-line">${line}</div>`
-                ).join('')
-              : '<div class="no-results">Pas de décomposition disponible</div>';
-
-            document.getElementById('layer3-decomposition').innerHTML = decompHtml;
-
-            // Raisonnement de l'agent (analyse + stratégie) si présents.
-            const raison = [data.layer3.analyse, data.layer3.strategie].filter(Boolean).join('\n\n');
-            if (raison) {
-              document.getElementById('layer3-raisonnement').textContent = raison;
-              document.getElementById('layer3-raisonnement-container').style.display = 'block';
-            } else {
-              document.getElementById('layer3-raisonnement-container').style.display = 'none';
-            }
-
-            if (data.layer3.notes) {
-              document.getElementById('layer3-notes').textContent = data.layer3.notes;
-              document.getElementById('layer3-notes-container').style.display = 'block';
-            } else {
-              document.getElementById('layer3-notes-container').style.display = 'none';
-            }
-          }
-
-        } else {
-          // 422 = validation échouée (formes invalides non réparées) : on détaille les formes fautives.
-          let msg = data.error || 'Erreur inconnue';
-          if (Array.isArray(data.invalides) && data.invalides.length > 0) {
-            const formes = data.invalides.map(i => `${i.mot} (${(i.erreurs || []).join(', ')})`).join(' ; ');
-            msg += ' — formes invalides : ' + formes;
-          }
-          document.getElementById('layer1-content').innerHTML = `<span class="error">Erreur: ${msg}</span>`;
+            : '<div class="no-results">Aucun mot trouvé (fallback racines activé)</div>';
+          document.getElementById('layer2-words').innerHTML = wordsHtml;
+          document.getElementById('layer2-stats').innerHTML = `
+              <div class="stat-box"><div class="stat-value">${data.layer2.entriesUsed || 0}</div><div class="stat-label">Entrées utilisées</div></div>
+              <div class="stat-box"><div class="stat-value">${data.layer2.tokensSaved || 0}</div><div class="stat-label">Tokens économisés</div></div>
+              <div class="stat-box"><div class="stat-value">${data.layer2.savingsPercent || 0}%</div><div class="stat-label">Économie</div></div>
+              <div class="stat-box"><div class="stat-value">${data.layer2.useFallback ? 'RACINES SEULES' : (data.layer2.rootsUsed > 0 ? 'VOCAB + RACINES' : 'VOCAB SEUL')}</div><div class="stat-label">Mode</div></div>`;
         }
-
-        // Update LLM limit counter after translation
-        updateLLMLimit().catch(err => console.error('Error updating LLM limit:', err));
-
-      } catch (error) {
-        document.getElementById('layer1-content').innerHTML = `<span class="error">Erreur: ${error.message}</span>`;
-      } finally {
-        button.disabled = false;
+        if (data.layer3) {
+          document.getElementById('layer3-decomposition').innerHTML = data.layer3.decomposition
+            ? data.layer3.decomposition.split('\n').map(line => `<div class="decomposition-line">${esc(line)}</div>`).join('')
+            : '<div class="no-results">Pas de décomposition disponible</div>';
+          const raison = [data.layer3.analyse, data.layer3.strategie].filter(Boolean).join('\n\n');
+          const rc = document.getElementById('layer3-raisonnement-container');
+          if (raison) { document.getElementById('layer3-raisonnement').textContent = raison; rc.style.display = 'block'; } else { rc.style.display = 'none'; }
+          const nc = document.getElementById('layer3-notes-container');
+          if (data.layer3.notes) { document.getElementById('layer3-notes').textContent = data.layer3.notes; nc.style.display = 'block'; } else { nc.style.display = 'none'; }
+        }
       }
+
+      statusEl.textContent = 'connexion…';
+      const url = `/translate/stream?text=${encodeURIComponent(text)}&target=ancien&model=${encodeURIComponent(model)}&apiKey=${encodeURIComponent(getApiKey() || '')}`;
+      const es = new EventSource(url);
+      let finished = false;
+      const finish = () => { if (!finished) { finished = true; es.close(); button.disabled = false; updateLLMLimit().catch(() => {}); } };
+
+      es.onmessage = (ev) => {
+        let e; try { e = JSON.parse(ev.data); } catch (_) { return; }
+        switch (e.type) {
+          case 'start': statusEl.textContent = 'l\'agent travaille…'; break;
+          case 'tool_call': step(`${ICONS[e.name] || '•'} <b>${esc(e.name)}</b> <span style="opacity:.55">${esc(JSON.stringify(e.input || {}).slice(0, 90))}</span>`); break;
+          case 'tool_result': if (e.summary) step(`&nbsp;&nbsp;&nbsp;↳ ${esc(e.summary)}`, '#1a7a4a'); break;
+          case 'gate': step(e.valid ? '✅ gate : forme valide' : ('⛔ gate : ' + esc((e.invalides || []).join(', '))), e.valid ? '#1a7a4a' : '#c0392b'); break;
+          case 'repair': step('↻ réparation : ' + esc(e.reason || ''), '#d35400'); break;
+          case 'closing': step('🔎 vérif de clôture : ' + esc((e.warnings || []).join(' · ')), '#d35400'); break;
+          case 'final': step('🎯 <b>' + esc(e.translation) + '</b>', '#1a7a4a'); break;
+          case 'done': statusEl.textContent = 'terminé'; renderLayers(e); finish(); break;
+          case 'error': {
+            const msg = e.message || 'erreur';
+            document.getElementById('layer1-content').innerHTML = `<span class="error">Erreur: ${esc(msg)}</span>`;
+            step('❌ ' + esc(msg), '#c0392b'); statusEl.textContent = 'échec'; finish();
+            break;
+          }
+        }
+      };
+      es.onerror = () => {
+        if (!finished) {
+          document.getElementById('layer1-content').innerHTML = `<span class="error">Erreur de connexion au flux.</span>`;
+          statusEl.textContent = 'déconnecté'; finish();
+        }
+      };
     });
 
     // Confluent → Français translation

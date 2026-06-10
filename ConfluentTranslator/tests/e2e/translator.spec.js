@@ -157,18 +157,33 @@ test('onglet Stats : statistiques du lexique chargées', async ({ page }) => {
   await expect(page.locator('#stats-general')).not.toBeEmpty();
 });
 
-test('traduction : serveur 422 (échec franc) → erreur gérée, pas de faux résultat ni blocage', async ({ page }) => {
+test('traduction (flux SSE) : échec franc → erreur gérée, pas de faux résultat ni blocage', async ({ page }) => {
   await loginUI(page);
-  // Force le serveur à répondre 422 (le cas TRANSLATION_UNVALIDATED, jamais émis par le mock).
-  await page.route('**/translate', (route) =>
-    route.fulfill({ status: 422, contentType: 'application/json',
-      body: JSON.stringify({ error: 'TRANSLATION_UNVALIDATED', invalides: [{ mot: 'tbime', erreurs: ['attaque CC'] }] }) }));
+  // Force le FLUX à émettre un échec franc (event 'error') au lieu d'un résultat.
+  await page.route('**/translate/stream**', (route) =>
+    route.fulfill({ status: 200, contentType: 'text/event-stream',
+      body: 'data: {"type":"error","code":"TRANSLATION_UNVALIDATED","message":"formes invalides : tbime"}\n\n' }));
   const errors = [];
   page.on('pageerror', (e) => errors.push(e.message));
   await page.fill('#input', 'phrase qui casse');
   await page.locator('#translate').click();
   await page.waitForTimeout(900);
-  expect(errors, 'aucune exception JS sur réponse 422').toEqual([]);
-  await expect(page.locator('#layer1-content')).not.toContainText('siliaska');  // pas de faux résultat
-  await expect(page.locator('#translate')).toBeEnabled();                       // bouton non bloqué
+  expect(errors, 'aucune exception JS sur le flux en échec').toEqual([]);
+  await expect(page.locator('#layer1-content')).toContainText('Erreur');         // l'échec est affiché
+  await expect(page.locator('#layer1-content')).not.toContainText('siliaska');   // pas de faux résultat
+  await expect(page.locator('#translate')).toBeEnabled();                        // bouton non bloqué
+});
+
+test('traduction (flux SSE) : le TRAVAIL DE L\'AGENT s\'affiche en direct (outils + gate)', async ({ page }) => {
+  await loginUI(page);
+  await page.fill('#input', 'l\'enfant voit l\'eau');
+  await page.locator('#translate').click();
+  // Le panneau « travail de l'agent » apparaît et liste les étapes streamées (mock déterministe).
+  await expect(page.locator('#agent-work-layer')).toBeVisible();
+  const timeline = page.locator('#agent-timeline');
+  await expect(timeline).toContainText('analyze_text');     // appel d'outil visible
+  await expect(timeline).toContainText('lookup_concept');   // 2e outil
+  await expect(timeline).toContainText('gate');             // passage au gate
+  await expect(page.locator('#layer1-content')).toContainText('siliaska');  // traduction finale rendue
+  await expect(page.locator('#agentwork-status')).toContainText('terminé');
 });

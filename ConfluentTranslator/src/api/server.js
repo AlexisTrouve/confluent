@@ -471,6 +471,94 @@ app.post('/api/forge-name', authenticate, async (req, res) => {
   }
 });
 
+// Streaming SSE — « TRAVAIL DE L'AGENT » EN DIRECT. - SECURED
+// QUOI : même traduction que /translate, mais émet CHAQUE étape de l'agent (appel d'outil, résultat,
+//        forge, tentative de gate, réparation, final) en Server-Sent Events → l'UI affiche le process
+//        en temps réel, pas seulement la traduction finale.
+// POURQUOI : rendre le travail de l'agent VISIBLE (demande produit). EventSource = GET + apiKey en query.
+// COMMENT : en-têtes SSE + `X-Accel-Buffering: no` (nginx ne bufferise pas → streaming réel, sans toucher
+//        la conf nginx) ; translateWithAgent({onEvent}) relaie chaque event ; event 'done' (layers) à la
+//        fin. Best-effort : déconnexion client → on cesse d'émettre. Mode mock → séquence déterministe (E2E).
+app.get('/translate/stream', authenticate, async (req, res) => {
+  const { text, target = 'ancien', model } = req.query;
+  const useLexique = req.query.useLexique !== 'false';
+  if (!text) return res.status(400).json({ error: 'Missing parameters (text)' });
+
+  const apiKey = req.headers['x-api-key'] || req.query.apiKey;
+  const limitCheck = checkLLMLimit(apiKey);
+  if (!limitCheck.allowed) return res.status(429).json({ error: limitCheck.error, limit: limitCheck.limit, used: limitCheck.used });
+
+  const variant = resolveVariant(target);
+
+  // En-têtes SSE (avant toute écriture). X-Accel-Buffering:no = streaming réel derrière nginx.
+  res.set({ 'Content-Type': 'text/event-stream', 'Cache-Control': 'no-cache', 'Connection': 'keep-alive', 'X-Accel-Buffering': 'no' });
+  res.flushHeaders();
+  const send = (obj) => { try { res.write(`data: ${JSON.stringify(obj)}\n\n`); } catch (_) {} };
+
+  let aborted = false;
+  req.on('close', () => { aborted = true; });
+
+  try {
+    let systemPrompt, contextMetadata = null;
+    if (useLexique) {
+      const contextResult = analyzeContext(text, lexiques[variant]);
+      systemPrompt = buildContextualPrompt(contextResult, variant, text);
+      const ps = getPromptStats(systemPrompt, contextResult);
+      contextMetadata = {
+        wordsFound: contextResult.metadata.wordsFound, wordsNotFound: contextResult.metadata.wordsNotFound,
+        entriesUsed: contextResult.metadata.entriesUsed, tokensSaved: ps.tokensSaved,
+        savingsPercent: ps.savingsPercent, useFallback: contextResult.useFallback,
+        rootsUsed: (contextResult.rootsFallback && contextResult.rootsFallback.length) || 0
+      };
+    } else {
+      systemPrompt = getBasePrompt(variant);
+    }
+
+    send({ type: 'start', text, variant, model: model || DEFAULT_MODEL });
+
+    // Mode mock E2E : séquence d'events DÉTERMINISTE (pas d'agent réel, pas de réseau).
+    if (process.env.LLM_MOCK === '1' && process.env.NODE_ENV !== 'production') {
+      const tr = 'va siliaska mirak u';
+      for (const e of [
+        { seq: 1, type: 'tool_call', round: 1, name: 'analyze_text', input: { francais: text } },
+        { seq: 2, type: 'tool_result', round: 1, name: 'analyze_text', summary: 'couverture 100%' },
+        { seq: 3, type: 'tool_call', round: 1, name: 'lookup_concept', input: { francais: 'regard' } },
+        { seq: 4, type: 'tool_result', round: 1, name: 'lookup_concept', summary: 'sili' },
+        { seq: 5, type: 'gate', attempt: 1, valid: true, invalides: [] },
+        { seq: 6, type: 'final', translation: tr }
+      ]) { if (!aborted) send(e); }
+      send({ type: 'done', layer1: { translation: tr }, layer2: null, layer3: { decomposition: 'siliaska (regard libre) + mirak (voir) + u (présent)' }, grammarWarnings: [], overrides: [] });
+      return res.end();
+    }
+
+    const ctx = {
+      lexique: lexiques[variant], morphReverseIndex: confluentIndexes[variant], era: getEra(variant),
+      anthropic: anthropicClient, model: model || DEFAULT_MODEL, forgeModel: FORGE_MODEL
+    };
+    const agentResult = await translateWithAgent({
+      text, systemPrompt, anthropic: anthropicClient, model: model || DEFAULT_MODEL, ctx,
+      onEvent: (evt) => { if (!aborted) send(evt); }
+    });
+    if (apiKey && agentResult.usage) trackLLMUsage(apiKey, agentResult.usage.input_tokens, agentResult.usage.output_tokens);
+
+    const parsed = parseTranslationResponse(agentResult.rawResponse);
+    send({ type: 'done',
+      layer1: { translation: agentResult.translation }, layer2: contextMetadata,
+      layer3: { analyse: parsed.analyse, strategie: parsed.strategie, decomposition: parsed.decomposition, notes: parsed.notes },
+      grammarWarnings: agentResult.grammarWarnings || [], overrides: agentResult.overrides || [] });
+
+    if (agentResult.trace) { try { logTranslation({ fr: text, cf: agentResult.translation, target: variant, ok: true,
+      model: model || DEFAULT_MODEL, trace: agentResult.trace,
+      gaps: agentResult.trace.gaps, rootGaps: agentResult.trace.rootGaps, brokenForms: agentResult.trace.brokenForms }); } catch (_) {} }
+    res.end();
+  } catch (error) {
+    // Échec franc → event 'error' (422 attendu = unvalidated, ou 500). Les en-têtes sont déjà partis : on STREAME l'erreur.
+    if ((error.code || '') !== 'TRANSLATION_UNVALIDATED') reportError('translate-stream 500', error, { fr: String(text).slice(0, 80) });
+    send({ type: 'error', code: error.code || 'ERROR', message: error.message });
+    res.end();
+  }
+});
+
 // Translation endpoint (NOUVEAU SYSTÈME CONTEXTUEL)
 app.post('/translate', authenticate, async (req, res) => {
   const { text, target, model, useLexique = true } = req.body;

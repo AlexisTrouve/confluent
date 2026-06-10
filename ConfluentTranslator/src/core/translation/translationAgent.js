@@ -179,11 +179,37 @@ function dedupeTrace(trace) {
  * @returns {Promise<{rawResponse, translation, valid, usage, toolRounds, repairs}>}
  * @throws {Error} si la traduction reste invalide après maxRepairs (échec franc, pas de fallback)
  */
+/**
+ * Résumé COURT et lisible du résultat d'un outil, pour la timeline « travail de l'agent » (UI live).
+ * QUOI : transforme le gros JSON de résultat en une phrase d'une ligne par outil.
+ */
+function summarizeResult(name, r) {
+  if (!r) return '';
+  switch (name) {
+    case 'lookup_concept': return r.found ? (r.formes || []).slice(0, 3).map(f => f.confluent).join(', ') : 'aucune forme attestée';
+    case 'forge_proper_name': return r.confluent ? `${r.confluent}${r.source === 'registre' ? ' (déjà forgé)' : r.forged ? ' (forgé)' : ''}` : (r.error || 'échec');
+    case 'validate_form': return r.valid ? 'phonotactique OK' : 'INVALIDE';
+    case 'check_composition': return r.valid ? 'composition valide' : 'composition rejetée';
+    case 'verify_word': return r.reconnu ? `reconnu (${r.mode})` : 'non reconnu';
+    case 'analyze_text': return `couverture ${r.couverture || '?'}`;
+    case 'back_translate': return (r.francais_mot_a_mot || '').slice(0, 70);
+    case 'grammar_check': return r.ok ? 'grammaire OK' : `${(r.warnings || []).length} warning(s)`;
+    case 'get_grammar': return 'règles consultées';
+    case 'confirme_choix': return r.note || 'choix confirmé';
+    default: return '';
+  }
+}
+
 async function translateWithAgent(opts) {
   const {
-    text, systemPrompt, anthropic, model, ctx,
+    text, systemPrompt, anthropic, model, ctx, onEvent,
     maxTokens = 4096, maxToolRounds = 10, maxRepairs = 3
   } = opts;
+
+  // Émission d'événements de progression (streaming SSE « travail de l'agent »). No-op si non fourni
+  // → le chemin non-streamé (/translate classique) reste identique. `fire` ne throw JAMAIS (best-effort).
+  let evtSeq = 0;
+  const fire = (type, data) => { if (typeof onEvent === 'function') { try { onEvent({ seq: ++evtSeq, type, ...data }); } catch (_) {} } };
 
   // System prompt en texte simple : le proxy Etheryale gère le prompt-caching AUTOMATIQUEMENT
   // (il injecte son propre cache_control ttl=1h sur les messages). Ajouter un cache_control 5m
@@ -229,6 +255,7 @@ async function translateWithAgent(opts) {
         if (block.type === 'tool_use') {
           // forge_proper_name est ASYNC (sous-agent LLM + persistance) → traité à part de executeTool
           // (qui reste synchrone pour tous les autres outils). Son usage tokens est agrégé au total.
+          fire('tool_call', { round: toolRounds + 1, name: block.name, input: block.input });
           let result;
           if (block.name === 'forge_proper_name') {
             result = await forgeProperName(block.input, ctx);
@@ -236,6 +263,7 @@ async function translateWithAgent(opts) {
           } else {
             result = executeTool(block.name, block.input, ctx);
           }
+          fire('tool_result', { round: toolRounds + 1, name: block.name, summary: summarizeResult(block.name, result) });
           // Trace complète (I/O brut, pour debug) + extraction du signal (gaps / formes cassées).
           trace.toolCalls.push({ round: toolRounds + 1, name: block.name, input: block.input, result });
           collectSignals(trace, block.name, block.input, result);
@@ -284,6 +312,7 @@ async function translateWithAgent(opts) {
     // Trace : chaque tentative finale passée au gate (la traduction proposée + son verdict).
     trace.gateAttempts.push({ translation: translationLine, valid: gate.valid && !extractionVide, invalides: gate.invalides || [] });
     for (const inv of (gate.invalides || [])) if (inv && inv.mot) trace.brokenForms.push(String(inv.mot));
+    fire('gate', { attempt: trace.gateAttempts.length, valid: gate.valid && !extractionVide, invalides: (gate.invalides || []).map(i => i.mot) });
 
     if (gate.valid && !extractionVide) {
       // VÉRIFICATION DE CLÔTURE — grammaire + VOCABULAIRE, gravité HAUTE seulement, UNE boucle max,
@@ -296,12 +325,14 @@ async function translateWithAgent(opts) {
         // Renvoi unique : l'agent CORRIGE, ou CONFIRME via confirme_choix. On reboucle.
         closingRounds++;
         lastClosingHigh = high;
+        fire('closing', { warnings: high.map(w => w.message) });
         messages.push({ role: 'assistant', content: resp.content });
         messages.push({ role: 'user', content: buildClosingMessage(high) });
         continue;
       }
       // On SERT : grammaire propre, OU choix confirmé (overrides), OU 1 boucle déjà consommée
       // (les warnings restants sont REMONTÉS dans la réponse + le log, jamais bloqués).
+      fire('final', { translation: translationLine, grammarWarnings: high.map(w => w.message) });
       return {
         rawResponse, translation: translationLine, valid: true, usage, toolRounds, repairs,
         grammarWarnings: high, overrides, trace: dedupeTrace(trace)
@@ -310,6 +341,7 @@ async function translateWithAgent(opts) {
 
     // Sortie invalide (ou non extractible) : réparer si on a encore des tentatives.
     if (repairs < maxRepairs) {
+      fire('repair', { reason: extractionVide ? 'traduction introuvable (hors format)' : 'formes invalides', invalides: (gate.invalides || []).map(i => i.mot) });
       messages.push({ role: 'assistant', content: resp.content });
       const repairMsg = extractionVide
         ? ("Je ne trouve pas ta traduction. Réponds EXACTEMENT au format demandé : une ligne " +
