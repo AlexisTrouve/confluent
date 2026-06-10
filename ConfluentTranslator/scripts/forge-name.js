@@ -19,7 +19,7 @@ const { forgeProperName } = require('../src/core/translation/nameForge');
 const NOM = process.argv[2] || 'Œil-Bas';
 const SENS = process.argv[3] || 'celui qui ne lève jamais le regard';
 const VARIANT = process.argv[4] || 'mythologique';
-const MODEL = process.argv[5] || 'claude-opus-4-8';
+const MODEL = process.argv[5] || 'claude-sonnet-4-6';   // modèle de FORGE (défaut = Sonnet, comme en prod)
 
 (async () => {
   const lexique = loadAllLexiques(path.join(__dirname, '..', '..'))[VARIANT];

@@ -42,6 +42,9 @@ const anthropicClient = new Anthropic({
   baseURL: process.env.ETHERYALE_BASE_URL || 'https://ai.etheryale.com'
 });
 const DEFAULT_MODEL = process.env.CONFLUENT_MODEL || 'claude-haiku-4-5-20251001';
+// Modèle de FORGE de noms propres, DÉCOUPLÉ du modèle de traduction. Forger un nom est RARE (figé au
+// registre ensuite) mais à fort enjeu canon → on ne le laisse PAS retomber sur Haiku. Défaut : Sonnet 4.6.
+const FORGE_MODEL = process.env.CONFLUENT_FORGE_MODEL || 'claude-sonnet-4-6';
 
 // Middlewares
 // Durcissement sécu (couche légère, sans helmet pour ne pas casser les scripts/styles inline des pages) :
@@ -452,6 +455,7 @@ app.post('/api/forge-name', authenticate, async (req, res) => {
       era: getEra(variant),
       anthropic: anthropicClient,
       model: model || DEFAULT_MODEL,
+      forgeModel: FORGE_MODEL,
       forgeFn: (process.env.LLM_MOCK === '1' && process.env.NODE_ENV !== 'production') ? stubForge : undefined
     };
     const result = await forgeProperName({ nom_fr, sens }, ctx);
@@ -555,6 +559,7 @@ app.post('/translate', authenticate, async (req, res) => {
         // on garde ctx cohérent). Sinon undefined → defaultLLMForge (vrai sous-agent) via nameForge.
         anthropic: anthropicClient,
         model: model || DEFAULT_MODEL,
+        forgeModel: FORGE_MODEL,   // le sous-agent forgeur tourne sur ce modèle, pas celui de la traduction
         forgeFn: (process.env.LLM_MOCK === '1' && process.env.NODE_ENV !== 'production') ? stubForge : undefined
       };
       const agentResult = await translateWithAgent({
